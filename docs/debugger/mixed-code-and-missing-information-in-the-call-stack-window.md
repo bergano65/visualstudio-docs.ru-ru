@@ -1,5 +1,6 @@
 ---
-title: Смешанный код и отсутствующие данные в окне стека вызовов | Документация Майкрософт
+title: Смешанный код и отсутствующие данные в окне стека вызовов
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fb7bc54899d8c9a079d3f2706065d690904540
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b32fe52b31daa384718eae629d3051bade93959d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187539"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808159"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Смешанный код и отсутствующие данные в окне стека вызовов
 Из-за различий между стеками вызовов в управляемом и машинном коде отладчик не всегда может отображать полный стек вызовов для кода смешанного типа. Если машинный код вызывает управляемый код, можно заметить следующие несоответствия в окне **Стек вызовов**:

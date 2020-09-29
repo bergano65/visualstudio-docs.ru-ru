@@ -1,7 +1,7 @@
 ---
-title: Отладка динамических виртуальных машин и масштабируемых наборов ASP.NET Azure
+title: Отладка динамических виртуальных машин и масштабируемых наборов Azure в ASP.NET
 description: Узнайте, как настроить точки моментальных снимков и просмотреть моментальные снимки с помощью Snapshot Debugger.
-ms.custom: ''
+ms.custom: SEO-VS-2020
 ms.date: 02/06/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: d1e9248d3e70c885fa072e3bd4682a24f0bcfdd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 040fdee43262279a834978a4619b62fb62b10345
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350619"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809561"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Отладка динамических приложений ASP.NET на виртуальных машинах Azure и масштабируемых наборах виртуальных машин Azure с помощью Snapshot Debugger
 

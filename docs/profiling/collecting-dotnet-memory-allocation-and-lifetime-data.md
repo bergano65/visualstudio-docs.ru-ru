@@ -1,5 +1,6 @@
 ---
-title: Сбор данных о выделении памяти для объектов .NET и времени их жизни | Документы Майкрософт
+title: Сбор данных по выделению памяти для объектов .NET и времени их жизни
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,16 +12,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1c256fcedf3ea1733f620a18528704fe455d1131
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1354fb95b543e73a67d19204871f3b79aec9ece9
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331717"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809431"
 ---
-# <a name="collect-net-memory-allocation-and-lifetime-data"></a>Сбор данных о выделении памяти для объектов .NET и времени их жизни
+# <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>Сбор данных по выделению памяти для объектов .NET Framework и времени их жизни
 
-Средства профилирования Visual Studio позволяют собирать данные о выделении памяти для объектов .NET и времени их жизни. Это помогает выявлять проблемы с производительностью приложения, связанные с памятью.
+Средства профилирования Visual Studio позволяют собирать данные по выделению памяти для объектов .NET Framework и времени их жизни. Это помогает выявлять проблемы с производительностью приложения, связанные с памятью.
 
 - Данные о выделении памяти .NET включают сведения о размере и количестве выделенных объектов памяти .NET Framework.
 

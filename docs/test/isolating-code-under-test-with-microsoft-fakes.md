@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: f92fe91c31f2b352d9d47a2d908a25f7bfdf2a7c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 9ef41b8645e77a28c8422fff49111b41215ba971
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038417"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739880"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Изоляция тестируемого кода с помощью Microsoft Fakes
 
@@ -146,7 +146,7 @@ Fakes предлагает два варианта на выбор:
 
     ```
 
-    Особую роль здесь играет класс `StubIStockFeed`. Для каждого интерфейса в сборке, на которую указывает ссылка, механизм Microsoft Fakes создаст класс заглушки. Имя класса заглушки является производным от имени интерфейса, где `Fakes.Stub` — это префикс, за которым следуют имена типов параметров.
+    Особую роль здесь играет класс `StubIStockFeed`. Для каждого интерфейса в сборке, на которую указывает ссылка, механизм Microsoft Fakes создаст класс заглушки. Имя класса заглушки является производным от имени интерфейса, где `Fakes.Stub` — это префикс, за которым следуют имена типов параметров.
 
     Заглушки также создаются для методов получения и задания свойств, для событий и для универсальных методов. Дополнительные сведения см. в статье [Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 

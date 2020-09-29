@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 09/03/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Узнайте, как задать параметры языка, контактов, уровня подписки и другие параметры на портале администрирования
-ms.openlocfilehash: 7f562e6ca0087a92fcc02550165aa32d23321955
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 58819995966f5cdf17335de474e83d2a77eccc37
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426809"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022619"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Настройка параметров соглашения на портале администрирования
 Суперадминистраторы могут устанавливать определенные параметры на портале администрирования, которые будут применяться глобально для каждого соглашения.  Эти параметры автоматически заполняют сведения о подписке при добавлении подписчиков. Эти параметры может менять только суперадминистратор на глобальном уровне.  
@@ -76,10 +76,10 @@ ms.locfileid: "89426809"
 - [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Узнайте больше об управлении подписками Visual Studio.

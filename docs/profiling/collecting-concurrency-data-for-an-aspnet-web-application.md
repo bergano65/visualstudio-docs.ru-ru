@@ -1,5 +1,6 @@
 ---
-title: Командная строка Profiler для получения данных о параллелизме веб-приложений ASP.NET
+title: 'Командная строка профилировщика: получение данных о параллелизме из ASP.NET'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: b7cb9d1c245f07f27eca097e0fa774710906d38c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2c965866cdd8494af53748e4023196d84136553
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331900"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811140"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Сбор данных параллелизма для веб-приложений ASP.NET с помощью командной строки профилировщика
 Метод параллелизма средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяет собирать данные о конфликтах ресурсов.

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0570aec5e8571e75cf64418a2c8c7c95cf507d31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23f297aa3fc549714a9b6327232a8a0b69c6138f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348708"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808172"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Просмотр кода дизассемблирования в отладчике Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -58,7 +58,7 @@ ms.locfileid: "85348708"
 
 ## <a name="use-the-disassembly-window"></a>Использование окна дизассемблирования
 
-Чтобы включить окно **Дизассемблированный код**, выберите в разделе **Средства** > **Параметры** (или **Средства** > **Параметры**)> **Отладка** вариант **Включить отладку на уровне адреса**.
+Чтобы включить окно **Дизассемблированный код**, выберите в разделе **Сервис** > **Параметры** > **Отладка** параметр **Включить отладку на уровне адреса**.
 
 Чтобы открыть окно **Дизассемблированный код** во время отладки, выберите **Windows** > **Дизассемблированный код** или нажмите сочетание клавиш **ALT**+**8**.
 

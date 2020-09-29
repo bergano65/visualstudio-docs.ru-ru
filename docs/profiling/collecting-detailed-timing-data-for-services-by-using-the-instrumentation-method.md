@@ -1,5 +1,6 @@
 ---
-title: Командная строка профилировщика — инструментирование для получения сведений о времени для службы
+title: 'Командная строка профилировщика: получение данных о времени для службы'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 502ae620dc8641fabc8a5f6225b5673d5530c7f0
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 9fa021ea7602b2268c720bf3e02bab0ed93af775
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331793"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810761"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Сбор подробных данных о времени для служб с использованием метода инструментирования из командной строки профилировщика
 В этом разделе описываются процедуры и параметры сбора подробных данных по производительности для служб Windows с помощью метода инструментирования из командной строки.

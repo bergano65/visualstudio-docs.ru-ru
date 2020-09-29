@@ -1,18 +1,18 @@
 ---
 title: Изменение подписок на портале администрирования | Документация Майкрософт
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 07/30/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: Сведения о том, как администраторы могут изменять назначения подписок.
-ms.openlocfilehash: fb43f9ceae86acf5804a6cd32dd383dcd2e9af38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 060ae7c7679eb1bf9dc4da99ea9a1bf952ebc58b
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453740"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022561"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Изменение назначений для подписок Visual Studio
 Администраторы подписок могут вносить изменения в подписки, назначенные сотрудникам организации.  В этой статье рассмотрены изменения, которые можно внести, и описаны необходимые действия.
@@ -34,6 +34,7 @@ ms.locfileid: "87453740"
 
 Вы можете изменить сразу нескольких подписчиков с помощью процесса массового редактирования. Эта функция используется в основном организациями, где меняются корпоративные адреса электронной почты или принято решение ограничить доступ к скачиваемым файлам.
 
+Просмотрите это видео или прочтите статью, чтобы узнать, как изменить несколько подписчиков с помощью функции массового изменения. 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
@@ -56,10 +57,10 @@ ms.locfileid: "87453740"
 5. После отправки файла вы увидите уведомление о том, что она выполнена успешно. На этом этапе изменения, которые вы внесли, будут отражены в данных о подписчике.
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 - Необходимо назначить определенный идентификатор подписки? Ознакомьтесь с разделом "Назначение идентификатора подписки". 

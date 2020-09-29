@@ -1,6 +1,6 @@
 ---
-title: Присоединение Profiler к приложению ASP.NET для сбора данных о параллелизме
-ms.custom: seodec18
+title: Присоединение профилировщика к ASP.NET для сбора данных о параллелизме
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0e215fdd-55f8-43ef-9534-06542eefe223
@@ -10,14 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: d7e9f2e7fe68dc7bc9d7ceec9e677ab98d4ee1d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939cf4eb16ff685b8ba8dc19064f497f3f7c6464
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329363"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807993"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора данных о параллелизме при помощи командной строки
+
 В этой статье описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для подключения профилировщика к приложению ASP.NET и сбора данных о параллелизме потоков и процессов.
 
 Сведения о пути к средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду.

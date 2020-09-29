@@ -1,6 +1,7 @@
 ---
-title: Отладка нарушений доступа при выполнении приложения вне отладчика
-ms.custom: seodec18
+title: Отладка нарушений доступа при выполнении приложения вне Visual Studio
+titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88dde869e6e9e1551459ce1171364709baf6403e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bbc129c4f5f4aa4d3ed1c6e346f9f8ab0395230
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350437"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852182"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Как отладить нарушения доступа при запуске программы без отладчика?
 

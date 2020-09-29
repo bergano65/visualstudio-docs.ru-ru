@@ -1,18 +1,18 @@
 ---
 title: Использование ключей продуктов | Документация Майкрософт
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 03/09/2020
+ms.date: 09/18/2020
 ms.topic: conceptual
 description: Сведения о том, как получить ключи продукта в подписках Visual Studio и управлять ими.
-ms.openlocfilehash: 10b09275dc1ba3d20e47c097888677e733e21ced
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183929"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005850"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Использование ключей продукта в подписках Visual Studio
 
@@ -52,12 +52,12 @@ ms.locfileid: "84183929"
 Некоторые продукты состоят из нескольких выпусков продукта в одной загрузке. В этом случае устанавливаемый продукт определяется по введенному ключу продукта.
 Некоторые ключи предоставляются автоматически, например "статические" ключи, которые можно использовать неограниченное число раз, так как активация не требуется. Другие ключи нужно запросить, щелкнув ссылку **Получить ключ** для продукта.
 > [!div class="mx-imgBorder"]
-> ![Получение ключа на странице загрузок](_img/product-keys/download-get-key.png)
+> ![Получение ключа на странице загрузок](_img/product-keys/download-get-key.png "Щелкните "Получить ключ", чтобы запросить ключ для скачиваемого продукта.")
 
 Все ключи продуктов в совокупности можно найти на странице [Ключи продуктов](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). На этой странице можно найти статические ключи, которые подходят для всех пользователей продукта, получить пользовательские ключи только для вашего использования, узнать состояние ограничений по запросам ключей и экспортировать все ключи продукта. 
 
 > [!div class="mx-imgBorder"]
-> ![Страница ключей продуктов](_img/product-keys/product-keys-page.png)
+> ![Страница ключей продуктов](_img/product-keys/product-keys-page.png "На странице "Ключи продуктов" представлены полные сведения о ключах продуктов для вашей подписки.")
 
 В зависимости от продукта доступны различные типы ключей.
 
@@ -80,10 +80,10 @@ ms.locfileid: "84183929"
 Вы можете запросить ключ на странице скачивания для продукта или выполнить поиск нужного ключа на странице [Ключи продуктов](https://my.visualstudio.com/productkeys).
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Чтобы запросить ключи, посетите https://my.visualstudio.com/productkeys.  

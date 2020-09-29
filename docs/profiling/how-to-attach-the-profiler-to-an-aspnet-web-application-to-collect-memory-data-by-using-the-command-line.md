@@ -1,6 +1,6 @@
 ---
-title: Присоединение профилировщика к приложению ASP.NET для сбора данных об использовании памяти
-ms.custom: seodec18
+title: Присоединение профилировщика к ASP.NET для сбора данных об использовании памяти
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d608f85a-41ae-4ca7-85e6-b96624dbc83c
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: edf9fec93b8fed4e89e5e7cf0525d4f11ed326fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22a3f7d20b02839ae677b12e5ce8454e63358914
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329353"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807980"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Практическое руководство. присоединение профилировщика к веб-приложению ASP.NET для сбора данных об использовании памяти с помощью командной строки
 В этой статье описан порядок использования программ командной строки для средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с целью подключения профилировщика к веб-приложению [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и сбора данных по количеству выделений памяти .NET Framework и выделяемых объемах. Кроме того, с помощью этих программ можно собирать данные по времени существования объектов памяти .NET Framework.

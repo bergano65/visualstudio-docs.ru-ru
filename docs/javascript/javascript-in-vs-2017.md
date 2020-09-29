@@ -12,12 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdb59c51fe38e3d2e3f2f1fd0b00db285b0de7f1
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649634"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739893"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript в Visual Studio 2017
 
@@ -116,7 +116,7 @@ exports.default = Subscription_1.Subscription;
 
 ## <a name="better-intellisense"></a>Улучшенная поддержка IntelliSense
 
-IntelliSense для JavaScript в [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] теперь отображает гораздо больше информации в списках элементов и параметров. Эта новая информация предоставляется языковой службой TypeScript, которая использует статический анализ, чтобы помочь вам лучше понять код. Дополнительные сведения об улучшении технологии IntelliSense см. [здесь](/visualstudio/ide/javascript-intellisense/).
+IntelliSense для JavaScript в [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] теперь отображает гораздо больше информации в списках элементов и параметров. Эта новая информация предоставляется языковой службой TypeScript, которая использует статический анализ, чтобы помочь вам лучше понять код. Дополнительные сведения об улучшении технологии IntelliSense см. [здесь](../ide/javascript-intellisense.md).
 
 ## <a name="jsx-syntax-support"></a><a name="JSX"></a> Поддержка синтаксиса JSX
 
@@ -241,7 +241,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 
 Раньше было довольно сложно понять, какие файлы входят в область IntelliSense в конкретный момент времени. Иногда желательно было включить в область все ваши файлы, иногда нет, но для этого нужны были сложные конфигурации, в которых требовалось контролировать ссылки вручную. Теперь вам больше не нужно думать об управлении ссылками, ставить к ссылкам комментарии с тремя косыми чертами и создавать файлы `_references.js`.
 
-Дополнительные сведения о работе IntelliSense см. на странице [IntelliSense для JavaScript](/visualstudio/ide/javascript-intellisense/).
+Дополнительные сведения о работе IntelliSense см. на странице [IntelliSense для JavaScript](../ide/javascript-intellisense.md).
 
 ### <a name="vsdoc"></a>VSDoc
 
@@ -250,7 +250,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 
 ### <a name="intellisensejs-extensions"></a>Расширения `.intellisense.js`
 
-Ранее вы могли создавать [расширения IntelliSense](https://msdn.microsoft.com/library/hh874692.aspx), которые позволяли добавлять настраиваемые результаты завершения для сторонних библиотек.
+Ранее вы могли создавать [расширения IntelliSense](../vs-2015/ide/extending-javascript-intellisense.md), которые позволяли добавлять настраиваемые результаты завершения для сторонних библиотек.
 Разрабатывать эти расширения было довольно сложно, а устанавливать их и ссылаться на них — неудобно, поэтому новая языковая служба больше не поддерживает эти файлы.
 В качестве более простой альтернативы вы можете написать файл определения TypeScript, который обеспечит все те же возможности для IntelliSense, которые раньше предлагались расширениями `.intellisense.js`.
 Дополнительные сведения о создании файлов объявлений (`.d.ts`) см. [здесь](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html).

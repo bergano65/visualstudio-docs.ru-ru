@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Отсутствие объектов вследствие заливки вершин | Документация Майкрософт
+title: Пошаговое руководство. Отсутствие объектов вследствие заливки вершин | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cc3bd288044c9fea1da648b64cabc87148b8463a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388605"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843433"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Пошаговое руководство. Отсутствие объектов вследствие заливки вершин
 В данном пошаговом руководстве показано, как с помощью средств диагностики графики [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] исследовать объект, который отсутствует из-за ошибки, возникшей на этапе шейдера вершин.
@@ -33,7 +33,7 @@ ms.locfileid: "63388605"
 
  В этом сценарии при запуске приложения для тестирования фон отрисовывается так, как ожидалось, однако один из объектов не отображается. С помощью диагностики графики можно записать данные о проблеме в журнал графики, чтобы можно было выполнить отладку приложения. Проблема в приложении выглядит следующим образом:
 
- ![Объект не виден. ](media/gfx_diag_demo_missing_object_shader_problem.png "gfx_diag_demo_missing_object_shader_problem")
+ ![Объект не виден.](media/gfx_diag_demo_missing_object_shader_problem.png "gfx_diag_demo_missing_object_shader_problem")
 
 ## <a name="investigation"></a>Исследование
  С помощью средств диагностики графики можно загрузить файл журнала графики для проверки кадров, захваченных в ходе теста.
@@ -65,7 +65,7 @@ ms.locfileid: "63388605"
 
 4. Остановитесь, когда достигнете вызова Draw, соответствующего отсутствующему объекту. В этом сценарии в окне **Этапы графического конвейера** видно, что геометрия была передана в GPU (о чем говорит наличие эскиза сборщика входных данных), однако она не отображается в целевом объекте отрисовки, так как произошла ошибка на этапе шейдера вершин (об этом говорит эскиз шейдера вершин).
 
-    ![Событие DrawIndexed и его влияние на конвейере](media/gfx_diag_demo_missing_object_shader_step_2.png "gfx_diag_demo_missing_object_shader_step_2")
+    ![Событие DrawIndexed и его результат в конвейере](media/gfx_diag_demo_missing_object_shader_step_2.png "gfx_diag_demo_missing_object_shader_step_2")
 
    Убедившись, что приложение передало вызов Draw для геометрии отсутствующего объекта, и обнаружив, что проблема возникает на этапе шейдера вершин, можно использовать отладчик HLSL для проверки шейдера вершин и узнать, что случилось с геометрией объекта. Отладчик HLSL можно использовать для проверки состояния переменных HLSL при выполнении, пошагового выполнения кода HLSL и указания точек останова для помощи в диагностике проблемы.
 
@@ -77,13 +77,13 @@ ms.locfileid: "63388605"
 
 3. При первом изменении `output` член `worldPos` записывается.
 
-    ![Значение «OUTPUT.worldpos "оказывается допустимым отображается разумным](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")
+    ![Значение "output.worldPos" оказывается допустимым](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")
 
     Так как его значение кажется разумным, пошаговое выполнение кода продолжается до следующей строки, которая изменяет `output`.
 
 4. При следующем изменении `output` член `pos` записывается.
 
-    ![Значение «OUTPUT.POS» было обнулено](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")
+    ![Значение "output.pos" было обнулено](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")
 
     На этот раз значение члена `pos` — все нули, и это кажется подозрительным. Далее нужно определить, как случилось так, что `output.pos` имеет все нули в качестве значения.
 
@@ -120,8 +120,8 @@ ms.locfileid: "63388605"
 
    Чтобы устранить проблему, переместите строку кода, которая устанавливает значение `m_marbleConstantBufferData.projection` после строки, которая инициализирует значение локальной переменной `projection`.
 
-   ![Исправленный C&#43; &#43; исходный код](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")
+   ![Исправленный исходный код C&#43;&#43;](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")
 
    Внеся исправления в код, можно заново собрать его и еще раз запустить приложение, чтобы убедиться, что проблема с отрисовкой решена.
 
-   ![Объект появился. ](media/gfx_diag_demo_missing_object_shader_resolution.png "gfx_diag_demo_missing_object_shader_resolution")
+   ![Объект появился.](media/gfx_diag_demo_missing_object_shader_resolution.png "gfx_diag_demo_missing_object_shader_resolution")

@@ -1,21 +1,23 @@
 ---
 title: Назначение уникальных идентификаторов подписчикам Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: lank
-manager: lank
-ms.date: 04/20/2020
+ms.author: v-evwin
+manager: cabuschl
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Узнайте о том, как администраторы могут назначать уникальные идентификаторы (GUID) подписок подписчикам.
-ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31544718683b10a186d4c38486bf0cd7923cd4cf
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235190"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022489"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Посетите портал администрирования подписок Visual Studio, чтобы управлять подписками
 
 Администраторы теперь могут использовать портал администрирования подписок Visual Studio для назначения подписок отдельным пользователям и группам пользователей.  Это может быть полезно в ситуациях, когда в компании есть временный персонал или поставщики, которым требуется доступ к подписке ненадолго.  Администраторы могут назначить подписку, которая уже была частично использована, а новые подписки будут использоваться для постоянных пользователей.  
+
+Просмотрите видео или прочтите статью, чтобы узнать, как назначать пользователям определенные идентификаторы GUID подписок. 
 
 <br>
 
@@ -57,7 +59,7 @@ ms.locfileid: "87235190"
 > - Идентификатор GUID еще не назначен другому пользователю в экспортированном списке. 
 
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
-### <a name="qhow-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>В: Как изменить подписку, назначенную отдельному пользователю?
+### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>Вопрос: Как изменить подписку, назначенную отдельному пользователю?
 Ответ. Если вы хотите изменить назначенный пользователю идентификатор GUID, сначала необходимо удалить подписку для этого пользователя.  Дополнительные сведения см. в нашей статье [Удаление подписки](delete-license.md).  После удаления подписки для этого пользователя используйте описанный выше процесс, чтобы экспортировать список и отправить новые сведения о подписке.  
 
 ## <a name="see-also"></a>См. также
