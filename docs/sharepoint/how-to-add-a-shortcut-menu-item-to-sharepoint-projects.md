@@ -1,5 +1,6 @@
 ---
 title: Как добавить пункт контекстного меню в проекты SharePoint | Документация Майкрософт
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e43d8d7717302eb8ab250935188bc2db3bdd66a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea862eb21aaee75499f3b1bac7007063227150e2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014839"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585853"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Как добавить пункт контекстного меню в проекты SharePoint
   Пункт контекстного меню можно добавить в любой проект SharePoint. Этот пункт меню появляется, когда пользователь щелкает правой кнопкой мыши узел проекта в **Обозреватель решений**.
@@ -50,7 +51,7 @@ ms.locfileid: "86014839"
 ## <a name="deploy-the-extension"></a>Развертывание расширения
  Чтобы развернуть расширение, создайте [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и всех остальных файлов, которые требуется распространить с расширением. Дополнительные сведения см. [в статье Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Расширение проектов SharePoint](../sharepoint/extending-sharepoint-projects.md)
 - [Как создать расширение проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [Как добавить свойство в проекты SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)

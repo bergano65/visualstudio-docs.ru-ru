@@ -1,5 +1,6 @@
 ---
 title: Как создать приемник событий для определенного экземпляра списка | Документация Майкрософт
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54c384742afba3d5af7f08ee62a9ec56c7f1438c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c37da8b798c3b6a0fdc093d5c443584f68b4b5cc
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016956"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585840"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Как создать приемник событий для определенного экземпляра списка
   Приемник событий экземпляра списка реагирует на события, происходящие в любом экземпляре определения списка. Хотя шаблон приемника событий не включает нацеливание определенного экземпляра списка, можно изменить приемник событий, область действия которого определяется определением списка, чтобы реагировать на события в определенном экземпляре списка.
@@ -85,6 +86,6 @@ ms.locfileid: "86016956"
 
      Обратите внимание, что приемник событий не активируется в новом объявлении, так как получатель настроен на реагирование только на события в экземпляре пользовательского списка объявлений **тестаннаунцементс**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Как создать приемник событий](../sharepoint/how-to-create-an-event-receiver.md)
 - [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)

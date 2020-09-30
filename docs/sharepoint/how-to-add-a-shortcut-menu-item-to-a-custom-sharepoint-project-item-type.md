@@ -1,5 +1,6 @@
 ---
 title: Добавить пункт контекстного меню в пользовательский тип элемента проекта SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eef99509048b1dd54576a20449b9d4f51c11439e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39de735c09c97541684628c8e4140aa42d119500
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014886"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585879"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>Как добавить пункт контекстного меню в пользовательский тип элемента проекта SharePoint
   При определении пользовательского типа элемента проекта SharePoint можно добавить пункт контекстного меню в элемент проекта. Этот пункт меню появляется, когда пользователь щелкает правой кнопкой мыши элемент проекта в **Обозреватель решений**.
@@ -54,7 +55,7 @@ ms.locfileid: "86014886"
 
  Чтобы развернуть элемент проекта, создайте [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки, шаблона и других файлов, которые необходимо распространить с элементом проекта. Дополнительные сведения см. [в статье Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Как определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 - [Как добавить свойство в пользовательский тип элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
 - [Определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
