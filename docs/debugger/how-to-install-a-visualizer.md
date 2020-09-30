@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cce59dfb39da71b8ff87efd49de9e2e0f6cdbd0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6410e9ba1250da5a0a247c786e4aada310186c4a
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851415"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211369"
 ---
 # <a name="how-to-install-a-visualizer"></a>Практическое руководство. Установка визуализатора
 После создания визуализатора необходимо установить его так, чтобы он стал доступен в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Установка визуализатора — это простой процесс.
@@ -32,7 +32,7 @@ ms.locfileid: "90851415"
 
 ::: moniker range=">=vs-2019"
 ### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Установка визуализатора для Visual Studio 2019
-  
+
 1. Найдите библиотеку DLL, содержащую построенный визуализатор.
 
    Как правило, лучше всего, если DLL-библиотека на стороне отладчика и библиотека DLL отлаживаемой стороны указывают **любой ЦП** в качестве целевой платформы. DLL-библиотека на стороне отладчика должна быть либо **любым ЦП**, либо **32-битным**. Целевая платформа для библиотеки DLL на стороне отлаживаемого объекта должна соответствовать процессу отладки.
@@ -42,7 +42,7 @@ ms.locfileid: "90851415"
     - *VisualStudioInstallPath*`\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
-    
+
 3. Скопируйте DLL [стороны отлаживаемого объекта](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) в одно из следующих расположений:
 
     - *VisualStudioInstallPath*`\Common7\Packages\Debugger\Visualizers\` *Framework*
@@ -61,7 +61,7 @@ ms.locfileid: "90851415"
 4. Перезапустите сеанс отладки.
 
 > [!NOTE]
-> Процедура отличается в Visual Studio 2017 и более ранних версиях. См. [предыдущую версию](how-to-install-a-visualizer.md?view=vs-2017) этой статьи.
+> Процедура отличается в Visual Studio 2017 и более ранних версиях. См. [предыдущую версию](how-to-install-a-visualizer.md?view=vs-2017&preserve-view=true) этой статьи.
 ::: moniker-end
 
 ::: moniker range="vs-2017"

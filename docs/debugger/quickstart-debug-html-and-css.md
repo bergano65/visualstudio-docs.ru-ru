@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a43ac0930c4805d18c60a18e1b48882b2fed76de
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 5e270956fc6c8f1d7432cb65e1eaf37fdc58907c
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600183"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211093"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Отладка файлов HTML и CSS в приложениях UWP с помощью Visual Studio
 
@@ -237,7 +237,7 @@ ms.locfileid: "89600183"
 
 - с помощью кнопки **Выбор элемента** (Ctrl+B);
 
-- с помощью кнопки `select` , входящей в [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
+- с помощью кнопки `select` , входящей в [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true).
 
   При выборе элементов с помощью окна проводника DOM и наведении указателя мыши на элемент соответствующий элемент выделяется в запущенном приложении. Чтобы выбрать элемент, необходимо щелкнуть по нему в проводнике DOM (или воспользоваться для выбора элементов клавишами со стрелками). Элементы в проводнике DOM можно также выбирать с помощью кнопки **Выбрать элемент** . На следующем рисунке показана кнопка **Выбор элемента** .
 
@@ -259,7 +259,7 @@ ms.locfileid: "89600183"
 - [Отладка приложений в Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Отладка элемента управления WebView](../debugger/debug-a-webview-control.md)
-- [Сочетания клавиш](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
-- [Команды консоли JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
+- [Сочетания клавиш](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017&preserve-view=true)
+- [Команды консоли JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [Отладка примера кода HTML, CSS и JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [Поддержка и специальные возможности продукта](/previous-versions/tzbxw1af(v=vs.120))

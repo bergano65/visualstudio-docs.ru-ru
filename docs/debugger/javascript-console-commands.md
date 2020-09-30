@@ -14,16 +14,16 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: b30b59b95b09cac8308474b2b2963f9b96d58146
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 301461caa15321b5a77f42872c93f52f3ec2c9c1
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731695"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211278"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Консольные команды JavaScript в Visual Studio
 
-Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры использования этого окна см. в [кратком руководстве по отладке JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Информация в этом разделе относится к приложениям Node.js, приложения UWP и приложениям, созданным с помощью инструментов Visual Studio для Apache Cordova.
+Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры использования этого окна см. в [кратком руководстве по отладке JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true). Информация в этом разделе относится к приложениям Node.js, приложения UWP и приложениям, созданным с помощью инструментов Visual Studio для Apache Cordova.
 
 Если окно консоли JavaScript закрыто, его можно открыть при отладке в Visual Studio, выбрав **Отладка** > **Windows** > **Консоль JavaScript**.
 
@@ -127,5 +127,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>См. также
-- [Краткое руководство. Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
-- [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Краткое руководство. Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true)
+- [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017&preserve-view=true)

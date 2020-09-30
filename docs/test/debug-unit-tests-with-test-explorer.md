@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2def56c6a3860ce0476f448f87bdde25c7970807
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 7b811cc3538e3bbb108e50acf50c2fe7a977fe3d
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86393545"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211291"
 ---
 # <a name="debug-and-analyze-unit-tests-with-test-explorer"></a>Отладка и анализ модульных тестов с помощью Обозревателя тестов
 
@@ -38,11 +38,11 @@ ms.locfileid: "86393545"
 ## <a name="diagnose-test-method-performance-issues"></a>Диагностика проблем производительности метода теста
 
 ::: moniker range="vs-2017"
-Чтобы выяснить, почему выполнение метода теста занимает слишком много времени, выберите метод в обозревателе тестов, а затем в контекстном меню пункт **Выбранный профиль тестирования**. См. [Отчет о профилировании инструментирования](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
+Чтобы выяснить, почему выполнение метода теста занимает слишком много времени, выберите метод в обозревателе тестов, а затем в контекстном меню пункт **Выбранный профиль тестирования**. См. [Отчет о профилировании инструментирования](../profiling/understanding-instrumentation-data-values.md?view=vs-2017&preserve-view=true).
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-Чтобы выяснить, почему выполнение метода теста занимает слишком много времени, выберите метод в обозревателе тестов, а затем в контекстном меню пункт **Профиль**. См. [Отчет о профилировании инструментирования](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
+Чтобы выяснить, почему выполнение метода теста занимает слишком много времени, выберите метод в обозревателе тестов, а затем в контекстном меню пункт **Профиль**. См. [Отчет о профилировании инструментирования](../profiling/understanding-instrumentation-data-values.md?view=vs-2017&preserve-view=true).
 ::: moniker-end
 
 > [!NOTE]

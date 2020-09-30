@@ -16,16 +16,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e56350c2fd0583d3fef4e77e559a4df1fd894663
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348110"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211080"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Отладка JavaScript с помощью консоли в Visual Studio
 
-Окно консоли JavaScript можно использовать для взаимодействия и отладки приложений UWP, созданных с использованием JavaScript. Эти возможности поддерживаются для приложений UWP и приложений, созданных с помощью Средств для Apache Cordova в Visual Studio. Справочник по консольным командам см. в разделе [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
+Окно консоли JavaScript можно использовать для взаимодействия и отладки приложений UWP, созданных с использованием JavaScript. Эти возможности поддерживаются для приложений UWP и приложений, созданных с помощью Средств для Apache Cordova в Visual Studio. Справочник по консольным командам см. в разделе [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true).
 
 Окно консоли JavaScript предоставляет вам следующие возможности:
 
@@ -39,7 +39,7 @@ ms.locfileid: "85348110"
 
 - Просмотр ошибок и исключений JavaScript в дополнение к исключениям модели DOM и среды выполнения Windows.
 
-- Выполнение других задач, таких как очистка экрана. Полный список команд см. в разделе [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017) .
+- Выполнение других задач, таких как очистка экрана. Полный список команд см. в разделе [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) .
 
 > [!TIP]
 > Если окно консоли JavaScript закрыто, выберите **Отладка**> **Windows** > **Консоль JavaScript** , чтобы снова открыть его. Окно отображается только во время сеанса отладки скрипта.
@@ -251,9 +251,9 @@ ms.locfileid: "85348110"
 
 ## <a name="see-also"></a>См. также
 - [Отладка приложений в Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
-- [Команды консоли JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
+- [Команды консоли JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [Обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md)
-- [Сочетания клавиш](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
+- [Сочетания клавиш](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017&preserve-view=true)
 - [Отладка примера кода HTML, CSS и JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
 - [Отладка элемента управления WebView](../debugger/debug-a-webview-control.md)

@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a96e4db66ec26870ac92c52209d7aa6f22225b21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0cab4a77c601414e766851aaf048fb3c32f6458
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350645"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211119"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Отладка элемента управления WebView в приложении UWP
 
@@ -27,7 +27,7 @@ ms.locfileid: "85350645"
 
 - Откройте [Проводник DOM](../debugger/quickstart-debug-html-and-css.md) для экземпляра `WebView`, а затем проверьте элементы DOM, изучите проблемы со стилями CSS и протестируйте динамические отрисовываемые изменения в стилях.
 
-- Выберите веб-страницу или `iFrame`, отображаемые в экземпляре `WebView`, в качестве цели в окне [Консоль JavaScript](../debugger/javascript-console-commands.md?view=vs-2017), а затем осуществите взаимодействие с веб-страницей с помощью команд консоли. Консоль предоставляет доступ к текущему контексту выполнения скрипта.
+- Выберите веб-страницу или `iFrame`, отображаемые в экземпляре `WebView`, в качестве цели в окне [Консоль JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true), а затем осуществите взаимодействие с веб-страницей с помощью команд консоли. Консоль предоставляет доступ к текущему контексту выполнения скрипта.
 
 ### <a name="attach-the-debugger-c-visual-basic-c"></a>Добавление делений в код C#, Visual Basic, C++
 
@@ -81,7 +81,7 @@ ms.locfileid: "85350645"
     > [!NOTE]
     > С помощью консоли вы можете одновременно взаимодействовать с отдельным `WebView`, `iFrame`, контрактом отправки данных или рабочим веб-процессом. Каждый элемент требует отдельного экземпляра узла веб-платформы (WWAHost.exe). Одновременно можно взаимодействовать с одним узлом.
 
-6. Просмотрите и измените переменные в приложении или используйте команды консоли, как описано в [кратком руководстве по отладке JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) и [командах консоли JavaScript](../debugger/javascript-console-commands.md?view=vs-2017).
+6. Просмотрите и измените переменные в приложении или используйте команды консоли, как описано в [кратком руководстве по отладке JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) и [командах консоли JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true).
 
 ## <a name="see-also"></a>См. также
 
