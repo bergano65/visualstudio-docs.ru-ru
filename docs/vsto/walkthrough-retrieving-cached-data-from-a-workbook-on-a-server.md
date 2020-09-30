@@ -1,5 +1,6 @@
 ---
 title: Пошаговое руководство. Извлечение кэшированных данных из книги на сервере
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b70283e63a2f71c0c85bf26a24f2e6f4a3492880
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d5a9932a781260609a0b00c8576c9ecc85ad1d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985410"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584954"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Пошаговое руководство. Извлечение кэшированных данных из книги на сервере
   В этом пошаговом руководстве показано, как извлечь данные из набора данных, кэшированного в Microsoft Office книгу Excel, не запуская Excel с помощью <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса.
@@ -250,7 +251,7 @@ ms.locfileid: "72985410"
     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
 
-8. Добавьте следующий код в метод `Main` . Этот код объявляет следующие объекты:
+8. Добавьте в метод `Main` следующий код. Этот код объявляет следующие объекты:
 
    - Экземпляр `AdventureWorksLTDataSet` типа, определенный в проекте **AdventureWorksDataset** .
 
@@ -293,7 +294,7 @@ ms.locfileid: "72985410"
 
 - Изменение данных в кэшированном наборе данных без запуска Excel. Дополнительные сведения см. [в разделе Пошаговое руководство. изменение кэшированных данных в книге на сервере](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Пошаговое руководство. Вставка данных в книгу на сервере](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)
 - [Пошаговое руководство. изменение кэшированных данных в книге на сервере](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

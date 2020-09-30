@@ -1,5 +1,6 @@
 ---
 title: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3b84d901a1fd94d72ff14ec5c481e04676c5cbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51fb7a4fb3d2ccba8c0a811619d7793e730a8ec4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016408"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585462"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2
   После определения пользовательского типа элемента проекта SharePoint и связывания его с шаблоном проекта в Visual Studio может также потребоваться создать мастер для шаблона. Мастер можно использовать для получения сведений от пользователей, если они используют шаблон для создания нового проекта, содержащего элемент проекта. Собранные сведения можно использовать для инициализации элемента проекта.
@@ -334,7 +335,7 @@ ms.locfileid: "86016408"
     <ProjectItem ReplaceParameters="false" TargetFileName="key.snk">key.snk</ProjectItem>
     ```
 
-4. Сохраните и закройте файл.
+4. Сохраните файл и закройте его.
 
 5. В узле **ситеколумнпрожекттемплате** откройте файл ProjectTemplate. csproj или ProjectTemplate. vbproj, а затем удалите `PropertyGroup` из него следующий элемент.
 
@@ -351,7 +352,7 @@ ms.locfileid: "86016408"
     <None Include="key.snk" />
     ```
 
-7. Сохраните и закройте файл.
+7. Сохраните файл и закройте его.
 
 ## <a name="associating-the-wizard-with-the-project-template"></a>Связывание мастера с шаблоном проекта
  После реализации мастера необходимо связать мастер с шаблоном проекта **столбца сайта** . Для этого необходимо выполнить три процедуры.
@@ -405,12 +406,12 @@ ms.locfileid: "86016408"
 
      Дополнительные сведения об `WizardExtension` элементе см. в разделе [визардекстенсион element &#40;Visual Studio templates&#41;](../extensibility/wizardextension-element-visual-studio-templates.md).
 
-3. Сохраните и закройте файл.
+3. Сохраните файл и закройте его.
 
 ## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-project-template"></a>Добавление заменяемых параметров в файл Elements.xml в шаблоне проекта
  Добавьте несколько заменяемых параметров в файл *Elements.xml* в проекте ситеколумнпрожекттемплате. Эти параметры инициализируются в `RunStarted` методе `SiteColumnProjectWizard` класса, который был определен ранее. Когда пользователь создает проект столбца сайта, Visual Studio автоматически заменяет эти параметры в файле *Elements.xml* в новом проекте значениями, указанными в мастере.
 
- Заменяемый параметр — это маркер, который начинается и заканчивается знаком доллара ($). В дополнение к определению собственных заменяемых параметров можно использовать встроенные параметры, которые определяются и инициализируются системой проектов SharePoint. Дополнительные сведения см. в разделе [заменяемые параметры](../sharepoint/replaceable-parameters.md).
+ Заменяемый параметр — это маркер, который начинается и заканчивается знаком доллара ($). В дополнение к определению собственных заменяемых параметров можно использовать встроенные параметры, которые определяются и инициализируются системой проектов SharePoint. Дополнительные сведения см. в разделе [Заменяемые параметры](../sharepoint/replaceable-parameters.md).
 
 #### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>Добавление заменяемых параметров в файл Elements.xml
 
@@ -430,7 +431,7 @@ ms.locfileid: "86016408"
 
      Новый XML изменяет значения `Name` `DisplayName` атрибутов,, `Type` и `Group` на настраиваемые заменяемые параметры.
 
-2. Сохраните и закройте файл.
+2. Сохраните файл и закройте его.
 
 ## <a name="add-the-wizard-to-the-vsix-package"></a>Добавление мастера в пакет VSIX
  Чтобы развернуть мастер с помощью пакета VSIX, содержащего шаблон проекта столбца сайта, добавьте ссылки на проект мастера и проект команд SharePoint в файл Source. extension. vsixmanifest в проекте VSIX.
@@ -538,7 +539,7 @@ ms.locfileid: "86016408"
 
      Дополнительные сведения о развертывании [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] расширений см. в [разделе Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
 - [Определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Создание шаблонов элементов и проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

@@ -1,5 +1,6 @@
 ---
 title: Пошаговое руководство. изменение кэшированных данных в книге на сервере
+titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a88fef7afe198dd15716570b1875ea257d19be8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16d3d69482476149b9a340cabe81e957f39ef6f8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985522"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584338"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Пошаговое руководство. изменение кэшированных данных в книге на сервере
   В этом пошаговом руководстве показано, как изменить набор данных, кэшированный в Microsoft Office книгу Excel, не запуская Excel с помощью <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса.
@@ -262,7 +263,7 @@ ms.locfileid: "72985522"
     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
 
-8. Добавьте следующий код в метод `Main` . Этот код объявляет следующие объекты:
+8. Добавьте в метод `Main` следующий код. Этот код объявляет следующие объекты:
 
    - Экземпляр `AdventureWorksLTDataSet` типа, определенный в проекте **AdventureWorksDataset** .
 
@@ -310,6 +311,6 @@ ms.locfileid: "72985522"
 
 4. Закройте книгу.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Пошаговое руководство. Вставка данных в книгу на сервере](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)

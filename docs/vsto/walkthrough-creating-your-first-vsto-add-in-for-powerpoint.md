@@ -1,5 +1,6 @@
 ---
 title: Пошаговое руководство. Создание первой надстройки VSTO для PowerPoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9bba8095c1e79b8ab8addfd69afc1e89a50e3fce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a50a47a813891151427707c371f1ebf3f75c336f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68871954"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584312"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Пошаговое руководство. Создание первой надстройки VSTO для PowerPoint
   В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office PowerPoint. Функции, создаваемые в подобном решении, доступны для приложения независимо от того, какие презентации открыты. Дополнительные сведения см. в статье [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -129,7 +130,7 @@ ms.locfileid: "68871954"
 
 - Развертывание надстроек VSTO для PowerPoint. Дополнительные сведения см. в разделе [развертывание решения Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
 - [Решения PowerPoint](../vsto/powerpoint-solutions.md)
 - [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)

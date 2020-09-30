@@ -1,5 +1,6 @@
 ---
 title: Руководство. Программное добавление комментариев к тексту в документах
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 88350a0fb50c1d5feb0eba9706ef5b6ad56fd9df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04d4ffdc747823a3df9a884b054b39ad484e09a4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538117"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583792"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Руководство. Программное добавление комментариев к тексту в документах
   Свойство Comments класса Document добавляет комментарий к диапазону текста в Microsoft Office документе Word.
@@ -46,6 +47,6 @@ ms.locfileid: "85538117"
 ## <a name="robust-programming"></a>Отказоустойчивость
  Для изменения инициалов пользователя, добавляемых Word в комментарии, используйте свойство <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Руководство. Программное удаление всех комментариев из документов](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
 - [Ведущий элемент документа](../vsto/document-host-item.md)

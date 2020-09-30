@@ -1,5 +1,6 @@
 ---
 title: Пошаговое руководство. Обновление диаграммы в документе с помощью переключателей
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 88f7bb81557db813912fe4470e63b8d52c0c9371
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4b39949deb3bcbf3d9330ca8d820a5841b0f4c4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981053"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584299"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Пошаговое руководство. Обновление диаграммы в документе с помощью переключателей
   В данном пошаговом руководстве описывается использование переключателей в настройке уровня документа для Microsoft Office Word, позволяющих пользователям выбирать стили диаграмм в документе.
@@ -212,7 +213,7 @@ ms.locfileid: "62981053"
 
 - Изменение форматирования путем выбора стиля из поля со списком. Дополнительные сведения см. в разделе [Пошаговое руководство. изменение форматирования документа с помощью элементов управления CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Пошаговые руководства с использованием Word](../vsto/walkthroughs-using-word.md)
 - [Примеры и пошаговые руководства по разработке решений Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Ограничения элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

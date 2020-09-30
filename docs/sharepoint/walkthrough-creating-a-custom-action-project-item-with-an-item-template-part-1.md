@@ -1,5 +1,6 @@
 ---
 title: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5b19f99cf9688191a5b6ef8ba8d4f58f4c6633c
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 5cdf574d17e63e1ef4906c629d43f5f928784d01
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739945"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585567"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1
   Вы можете расширить систему проектов SharePoint в Visual Studio, создав собственные типы элементов проектов. В этом пошаговом руководстве будет создан элемент проекта, который можно добавить в проект SharePoint для создания настраиваемого действия на сайте SharePoint. Настраиваемое действие добавляет пункт меню в меню **действия сайта** сайта SharePoint.
@@ -46,7 +47,7 @@ ms.locfileid: "90739945"
 > [!NOTE]
 > Вы можете скачать пример из [GitHub](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , в котором показано, как создавать пользовательские действия для рабочего процесса.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Предварительные требования
  Для выполнения этого пошагового руководства на компьютере разработчика потребуются следующие компоненты:
 
 - Поддерживаемые выпуски Microsoft Windows, SharePoint и Visual Studio.
@@ -446,7 +447,7 @@ ms.locfileid: "90739945"
 
 5. Закройте как экспериментальный экземпляр Visual Studio, так и экземпляр, в котором открыто решение Кустомактионпрожектитем.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  После выполнения этого пошагового руководства можно добавить мастер в шаблон элемента. Когда пользователь добавляет элемент проекта настраиваемого действия в проект SharePoint, мастер собирает сведения о действии (например, его расположение и URL-адрес для перехода к, когда действие выбрано) и добавляет эти сведения в файл *Elements.xml* в новом элементе проекта. Дополнительные сведения см. в разделе [Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 ## <a name="see-also"></a>См. также

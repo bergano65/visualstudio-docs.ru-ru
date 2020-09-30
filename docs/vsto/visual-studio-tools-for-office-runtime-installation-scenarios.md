@@ -1,5 +1,6 @@
 ---
 title: Инструменты Visual Studio сценариев установки среды выполнения Office
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54ca03e0af1b492b09b4c06c2fe0fc0b7e107443
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 95d183d2b767738156fc63f95d2a83ed6a1e5714
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810932"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584377"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Инструменты Visual Studio сценариев установки среды выполнения Office
   Установить Visual Studio 2010 Tools для Office Runtime можно тремя способами:
@@ -66,6 +67,6 @@ ms.locfileid: "90810932"
 
  Дополнительные сведения о включении необходимых компонентов в решение ClickOnce см. в разделе [инструкции. Установка необходимых компонентов на компьютерах конечных пользователей для запуска решений Office](/previous-versions/bb608608(v=vs.110)). Дополнительные сведения об установке среды выполнения из распространяемого пакета вручную см. [в разделе как установить распространяемый пакет среды выполнения Office инструменты Visual Studio](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Общие сведения о Инструменты Visual Studio для среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-overview.md)
 - [Сборки в Инструменты Visual Studio среды выполнения Office](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)

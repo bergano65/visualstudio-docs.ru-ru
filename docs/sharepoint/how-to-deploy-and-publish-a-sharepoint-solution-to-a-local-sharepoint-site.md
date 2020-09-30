@@ -1,5 +1,6 @@
 ---
 title: Развертывание & публикация решения SharePoint на локальном сайте SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d4fe41565d0aaf0c52cae9434d4a576dc26baa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78a837cc7145187fbc529e6e86cc27f88dd81f51
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016816"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585801"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Развертывание и публикация решения SharePoint на локальном сайте SharePoint
   Решения SharePoint можно развертывать или публиковать на локальном сервере SharePoint на компьютере разработчика. Процесс развертывания копирует *wspный* файл на сервер SharePoint, устанавливает решение, а затем активирует компоненты. Процесс публикации копирует только файл *WSP* на сервер SharePoint и устанавливает его. Его необходимо активировать вручную, чтобы включить его в SharePoint.
@@ -41,7 +42,7 @@ ms.locfileid: "86016816"
 
      Ход публикации отображается в окне **вывод** Visual Studio. По завершении процесса на локальном сервере SharePoint устанавливается файл решения (*WSP*). Однако он по-прежнему должен быть активирован для использования в SharePoint. Если файл решения уже существует, возникает ошибка и спрашивается, нужно ли перезаписать существующий файл. Сведения об обновлении пакета см. в разделе Обновление удаленных пакетов статьи [развертывание, публикация и обновление решений SharePoint на удаленном сервере](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Развертывание, публикация и обновление решений SharePoint на удаленном сервере](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)
 - [Создание пакетов решений SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Как настроить пакет решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

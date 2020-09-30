@@ -1,5 +1,6 @@
 ---
 title: Создание первой настройки уровня документа для Excel
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d45461c7dab250cd43d7a25d8693658c7b8e164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b75bf6894bff4e5fa8d6ac17ed537f15041b3ede
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74566979"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585006"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Пошаговое руководство. Создание первой настройки уровня документа для Excel
 
@@ -74,7 +75,7 @@ ms.locfileid: "74566979"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. Нажмите кнопку **Далее**.
+4. Щелкните **Далее**.
 
 5. Введите **фирстворкбуккустомизатион** в поле **имя** в диалоговом окне **Настройка нового проекта** и нажмите кнопку **создать**.
 
@@ -182,10 +183,10 @@ ms.locfileid: "74566979"
 
 - Развертывание настроек уровня документа для Excel: [развертывание решения Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [решения Excel](../vsto/excel-solutions.md)
+- [Решения Excel](../vsto/excel-solutions.md)
 - [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)
 - [Общие сведения об объектной модели Excel](../vsto/excel-object-model-overview.md)
 - [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)

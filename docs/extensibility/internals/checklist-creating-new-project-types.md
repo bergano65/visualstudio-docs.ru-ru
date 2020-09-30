@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f166e0b3280783dac891b3b582acd7822a3974c0
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 0aa4ad83428120c68adb89937afc46f51700dbfe
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011922"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583675"
 ---
 # <a name="checklist-create-new-project-types"></a>Контрольный список: создание новых типов проектов
 Для создания нового типа проекта необходимо выполнить несколько задач. В следующем контрольном списке приведено руководство по этим задачам.
@@ -33,7 +33,7 @@ ms.locfileid: "90011922"
 
     - Фабрика проектов для управления созданием новых проектов и открытия существующих проектов. Дополнительные сведения см. в статье [Создание экземпляров проектов с помощью фабрик проекта](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).
 
-    - Иерархия проектов и обработка команд. Дополнительные сведения см. в статьях [Использование классов проектов HierUtil7 для реализации типа проекта (C++)](/previous-versions/bb166212(v=vs.100)), [элементов модели проекта](../../extensibility/internals/elements-of-a-project-model.md), [основных компонентов модели проекта](../../extensibility/internals/project-model-core-components.md), а [команды MenuCommand и олеменукоммандс](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
+    - Иерархия проектов и обработка команд. Дополнительные сведения см. в статьях [Использование классов проектов HierUtil7 для реализации типа проекта (C++)](/previous-versions/bb166212(v=vs.100)), [элементов модели проекта](../../extensibility/internals/elements-of-a-project-model.md), [основных компонентов модели проекта](../../extensibility/internals/project-model-core-components.md), а [команды MenuCommand и олеменукоммандс](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
 
     - Управление элементами проекта, включая добавление проекта в диалоговое окно **Новый проект** . Дополнительные сведения см. в статьях [Добавление шаблонов проектов и элементов проектов](../../extensibility/internals/adding-project-and-project-item-templates.md) и [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md).
 

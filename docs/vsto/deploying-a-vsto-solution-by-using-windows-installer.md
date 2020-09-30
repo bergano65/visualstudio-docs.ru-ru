@@ -1,5 +1,6 @@
 ---
-title: Развертывание Инструменты Visual Studio для решения Office с помощью установщик Windows
+title: Развертывание решения VSTO с помощью установщик Windows
+titleSuffix: ''
 ms.date: 08/18/2010
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46bfa808cbf99e942d7aadd2802f51eecfcefae8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6fd2824ae10ad36a7ed50250620e98575e9ea60
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444910"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585697"
 ---
-# <a name="deploying-a-visual-studio-tools-for-office-solution-using-windows-installer"></a>Развертывание Инструменты Visual Studio для решения Office с помощью установщик Windows
+# <a name="deploying-a-vsto-solution-using-windows-installer"></a>Развертывание решения VSTO с помощью установщик Windows
 
 ## <a name="summary"></a>Сводка
 
@@ -122,7 +123,7 @@ Microsoft Office использует записи реестра для нах�
 ::: moniker-end
 ::: moniker range="=vs-2019"
 3. В диалоговом окне **Добавление нового проекта** выберите шаблон **проекта установки** .
-4. Нажмите кнопку **Далее**.
+4. Щелкните **Далее**.
 ::: moniker-end
 
 5. В поле **имя** введите **OfficeAddInSetup**.
@@ -343,7 +344,7 @@ Microsoft Office находит надстройки с помощью разд�
 |Visio|{3EA123B5-6316-452E-9D51-A489E06E2347}|{C1713368-12A8-41F1-ACA1-934B01AD6EEB}|{2CC0B221-22D2-4C15-A9FB-DE818E51AF75}|{2D4540EC-2C88-4C28-AE88-2614B5460648}|{2D4540EC-2C88-4C28-AE88-2614B5460648}|
 |Word|{8B74A499-37F8-4DEA-B5A0-D72FC501CEFA}|{9FE736B7-B1EE-410C-8D07-082891C3DAC8}|{13C07AF5-B206-4A48-BB5B-B8022333E3CA}|{DC5CCACD-A7AC-4FD3-9F70-9454B5DE5161}|{DC5CCACD-A7AC-4FD3-9F70-9454B5DE5161}|
 |Microsoft Forms 2,0|{B2279272-3FD2-434D-B94E-E4E0F8561AC4}|{B2279272-3FD2-434D-B94E-E4E0F8561AC4}|{A5A30117-2D2A-4C5C-B3C8-8897AC32C2AC}|-|-|
-|Microsoft Graph|{011B9112-EBB1-4A6C-86CB-C2FDC9EA7B0E}|{52DA4B37-B8EB-4B7F-89C1-824654CE4C70}|{24706F33-F0CE-4EB4-BC91-9E935394F510}|-|-|
+|Microsoft Graph|{011B9112-EBB1-4A6C-86CB-C2FDC9EA7B0E}|{52DA4B37-B8EB-4B7F-89C1-824654CE4C70}|{24706F33-F0CE-4EB4-BC91-9E935394F510}|-|-|
 |Смарт-тег|{7102C98C-EF47-4F04-A227-FE33650BF954}|{487A7921-EB3A-4262-BB5B-A5736B732486}|{74EFC1F9-747D-4867-B951-EFCF29F51AF7}|-|-|
 |Office Shared|{64E2917E-AA13-4CA4-BFFE-EA6EDA3AFCB4}|{6A174BDB-0049-4D1C-86EF-3114CB0C4C4E}|{76601EBB-44A7-49EE-8DE3-7B7B9D7EBB05}|{625F5772-C1B3-497E-8ABE-7254EDB00506}|{625F5772-C1B3-497E-8ABE-7254EDB00506}|
 |Project|{957A4EC0-E67B-4E86-A383-6AF7270B216A}|{1C50E422-24FA-44A9-A120-E88280C8C341}|{706D7F44-8231-489D-9B25-3025ADE9F114}|{107BCD9A-F1DC-4004-A444-33706FC10058}|{107BCD9A-F1DC-4004-A444-33706FC10058}|
@@ -580,7 +581,7 @@ s
 
 [Руководство. Установка Инструменты Visual Studio для среды выполнения Office](how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
 
-[Основные сборки взаимодействия Office](office-primary-interop-assemblies.md)
+[Office - основные сборки взаимодействия](office-primary-interop-assemblies.md)
 
 [Записи реестра для надстроек VSTO](registry-entries-for-vsto-add-ins.md)
 

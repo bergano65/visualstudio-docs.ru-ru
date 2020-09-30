@@ -1,5 +1,6 @@
 ---
 title: Пошаговое руководство. импорт области формы, разработанной в Outlook
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a0de1a25a5309e99193b7be8bce2819808665b8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985439"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584980"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Пошаговое руководство. импорт области формы, разработанной в Outlook
   В этом пошаговом руководстве демонстрируется создание области формы в Microsoft Office Outlook, а также ее импорт в проект надстройки Outlook VSTO с помощью мастера **Создать область формы** . Создание области формы в Outlook позволяет добавить собственные элементы управления Outlook в область формы, связанную с данными Outlook. После импорта области формы можно обрабатывать события каждого элемента управления.
@@ -250,7 +251,7 @@ ms.locfileid: "72985439"
 
 - Дополнительные сведения о добавлении настраиваемой области задач в Outlook см. в разделе [настраиваемые области задач](../vsto/custom-task-panes.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md)
 - [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md)
 - [Рекомендации по созданию областей формы Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)

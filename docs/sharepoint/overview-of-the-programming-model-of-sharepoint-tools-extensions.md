@@ -1,5 +1,6 @@
 ---
 title: Общие сведения о модели программирования расширений инструментов SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 160751e7f580ede458232f98dc753a1145094f57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2f7b56b372f1f083b441a5d3e6045ffc7aff7ed
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985144"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585736"
 ---
-# <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Общие сведения о модели программирования расширений инструментов SharePoint
+# <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Обзор модели программирования расширений инструментов SharePoint
   При создании расширения для инструментов SharePoint в Visual Studio сначала необходимо реализовать один или несколько интерфейсов расширения, предоставляемых инструментами SharePoint. Как правило, для реализации возможностей в расширении вы также будете использовать другие типы, предоставляемые инструментами SharePoint. В некоторых случаях можно также использовать типы в других объектных моделях, предоставляемых Visual Studio и SharePoint. Необходимо понимать назначение каждой из этих объектных моделей и уметь использовать их друг с другом для создания расширений для инструментов SharePoint.
 
 ## <a name="extend-the-sharepoint-tools-by-implementing-extensibility-interfaces"></a>Расширение средств SharePoint путем реализации интерфейсов расширяемости
@@ -61,12 +62,12 @@ ms.locfileid: "72985144"
 
 |Пространство имен|Описание|
 |-|-|
-|<xref:Microsoft.VisualStudio.SharePoint>|Содержит типы, используемые для расширения и автоматизации системы проектов SharePoint. Например, можно расширить встроенные проекты и элементы проектов SharePoint или создать собственные элементы проектов. Дополнительные сведения см. [в разделе расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).|
+|<xref:Microsoft.VisualStudio.SharePoint>|Содержит типы, используемые для расширения и автоматизации системы проектов SharePoint. Например, можно расширить встроенные проекты и элементы проектов SharePoint или создать собственные элементы проектов. Дополнительные сведения см. в разделе [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).|
 |<xref:Microsoft.VisualStudio.SharePoint.Deployment>|Содержит типы, используемые для расширения процесса развертывания для проектов SharePoint, например создание шагов и конфигураций развертывания. Дополнительные сведения см. в разделе [Расширение упаковки и развертывания SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).|
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer>|Содержит типы, используемые для расширения узлов в узле **подключения SharePoint** в окне **Обозреватель сервера** или для определения новых типов узлов. Дополнительные сведения см. [в разделе Расширение узла подключений SharePoint в обозреватель сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer>|Содержит типы, используемые для расширения узлов в узле **подключения SharePoint** в окне **Обозреватель сервера** или для определения новых типов узлов. Дополнительные сведения см. в разделе [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
 |<xref:Microsoft.VisualStudio.SharePoint.Features>|Содержит типы, используемые для доступа к определениям компонентов в проекте SharePoint.|
 |<xref:Microsoft.VisualStudio.SharePoint.Packages>|Содержит типы, используемые для доступа к определениям пакетов в решении SharePoint.|
-|<xref:Microsoft.VisualStudio.SharePoint.Validation>|Содержит типы, используемые для настройки поведения проверки компонентов и пакетов для проектов SharePoint. Дополнительные сведения см. [в разделе инструкции. Создание пользовательских правил проверки компонентов и пакетов для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Validation>|Содержит типы, используемые для настройки поведения проверки компонентов и пакетов для проектов SharePoint. Дополнительные сведения см. в разделе [Практическое руководство. Создание пользовательских правил проверки компонентов и пакетов для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|
 
 #### <a name="microsoftvisualstudiosharepointcommandsdll"></a>Microsoft.VisualStudio.SharePoint.Commands.dll
 
@@ -78,7 +79,7 @@ ms.locfileid: "72985144"
 
 |Пространство имен|Описание|
 |-|-|
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>|Содержит типы, которые можно использовать для получения сведений о встроенных **Обозреватель сервера** узлах, представляющих отдельные компоненты на сайте SharePoint, таких как узел, представляющий список, поле или тип содержимого. Дополнительные сведения см. [в разделе Расширение узла подключений SharePoint в обозреватель сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>|Содержит типы, которые можно использовать для получения сведений о встроенных **Обозреватель сервера** узлах, представляющих отдельные компоненты на сайте SharePoint, таких как узел, представляющий список, поле или тип содержимого. Дополнительные сведения см. в разделе [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
 
 ### <a name="visual-studio-automation-object-model"></a>Объектная модель автоматизации Visual Studio
  Объектная модель автоматизации Visual Studio предоставляет API-интерфейсы, которые можно использовать для автоматизации проектов Visual Studio и интегрированной среды разработки. Объектная модель Visual Studio используется для выполнения задач, связанных с проектами, которые не относятся к конкретному проекту SharePoint, или для выполнения других общих задач автоматизации в Visual Studio. Традиционно эта объектная модель часто используется в надстройках и макросах Visual Studio, однако ее также можно использовать в расширениях инструментов SharePoint.
@@ -106,7 +107,7 @@ ms.locfileid: "72985144"
 |Объектная модель сервера|Объектная модель сервера предоставляет доступ ко всем возможностям, предоставляемым [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] и [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] программно. Эта объектная модель предназначена для использования решениями SharePoint, которые выполняются на сервере SharePoint. Большая часть этой объектной модели определена в сборке *Microsoft.SharePoint.dll* . Дополнительные сведения об объектной модели сервера см. [в разделе Использование серверной модели объектов SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
 |Объектная модель клиента|Объектная модель клиента — это подмножество объектной модели сервера, которое можно использовать для взаимодействия с данными SharePoint с удаленного клиента или сервера. Она предназначена для сведения к минимуму числа циклов для выполнения типичных задач. Большая часть клиентской объектной модели определена в сборках *Microsoft.SharePoint.Client.dll* и *Microsoft.SharePoint.Client.Runtime.dll* . Дополнительные сведения о клиентской объектной модели см. в разделе [управляемая клиентская объектная модель](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).|
 
-## <a name="see-also"></a>См. также раздел
-- [Расширение средств SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+## <a name="see-also"></a>См. также
+- [Расширение средств SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md)

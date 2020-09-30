@@ -1,5 +1,6 @@
 ---
 title: Отладка расширений для инструментов SharePoint в Visual Studio | Документация Майкрософт
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1179779d07e7674babc51231ba629d7e25556f89
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64785345"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584637"
 ---
-# <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Расширения отладки для инструментов SharePoint в Visual Studio
+# <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Отладка расширений для инструментов SharePoint в Visual Studio
   Вы можете выполнять отладку расширений инструментов SharePoint в экспериментальном экземпляре или в обычном экземпляре Visual Studio. Если необходимо устранить неполадки расширения, можно также изменить значения реестра, чтобы отобразить дополнительные сведения об ошибке и настроить выполнение команд SharePoint в Visual Studio.
 
 ## <a name="debug-extensions-in-the-experimental-instance-of-visual-studio"></a>Отладка расширений в экспериментальном экземпляре Visual Studio
@@ -127,7 +128,7 @@ ms.locfileid: "64785345"
 |MaxReceivedMessageSize|REG_DWORD, указывающее максимально допустимый размер (в байтах) сообщений WCF, передаваемых между Visual Studio и *vssphost4.exe*.<br /><br /> Значение по умолчанию — 1 048 576 байт (1 МБ).|
 |MaxStringContentLength|REG_DWORD, указывающее максимально допустимый размер (в байтах) строк, передаваемых между Visual Studio и *vssphost4.exe*.<br /><br /> Значение по умолчанию — 1 048 576 байт (1 МБ).|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Расширение средств SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Расширение средств SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

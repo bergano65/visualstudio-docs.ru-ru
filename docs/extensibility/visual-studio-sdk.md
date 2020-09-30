@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8acd7d52478574e8c37474426d27bc5c6a8b7efe
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: aceed2833d0083beccf197c4c681f92270a1f9a4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012364"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583662"
 ---
 # <a name="visual-studio-sdk"></a>SDK для Visual Studio
 Пакет SDK для Visual Studio помогает расширить возможности Visual Studio или интегрировать новые функции в Visual Studio. Вы можете распространять расширения для других пользователей, а также для Visual Studio Marketplace. Ниже перечислены некоторые из способов расширения Visual Studio:
@@ -77,7 +77,7 @@ ms.locfileid: "90012364"
 
 - [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Руководство. Миграция проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [Часто задаваемые вопросы: преобразование надстроек в расширения VSPackage](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015)
+- [Часто задаваемые вопросы: преобразование надстроек в расширения VSPackage](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015&preserve-view=true)
 - [Управление несколькими потоками в управляемом коде](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)
 - [Добавление команд в панели инструментов](../extensibility/adding-commands-to-toolbars.md)

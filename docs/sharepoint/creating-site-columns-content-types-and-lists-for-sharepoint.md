@@ -1,5 +1,6 @@
 ---
 title: Создание столбцов сайта, типов содержимого и списков для SharePoint | Документация Майкрософт
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 538d82794fcecb91e4f13ab6d7718d0bf407b86f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 269be4aaf34e9b6c611a5d79ba38cddba04276bf
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984518"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585110"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Создание столбцов сайта, типов содержимого и списков для SharePoint
   Visual Studio предоставляет шаблоны элементов проектов для множества различных фундаментальных элементов SharePoint, включая *списки* и *типы содержимого*, которые могут включать столбцы сайта (или *поля*). Конструкторы для новых типов содержимого и списков позволяют создать эти элементы проще, чем когда-либо.
@@ -46,7 +47,7 @@ ms.locfileid: "72984518"
 
 |Заголовок|Описание|
 |-----------|-----------------|
-|[Пошаговое руководство. Создание столбца сайта, типа содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Показывает способы создания столбцов сайта, используемые в пользовательском типе содержимого. Тип содержимого затем используется в пользовательском списке.|
+|[Пошаговое руководство: Создание столбца сайта, типа содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Показывает способы создания столбцов сайта, используемые в пользовательском типе содержимого. Тип содержимого затем используется в пользовательском списке.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Приступая к разработке на SharePoint 2010](/sharepoint/dev/)

@@ -1,5 +1,6 @@
 ---
 title: Удаленное развертывание, публикация, & обновление решений SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f05f42f8aed35696b962e71a5fce86c2956b3661
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5de5128ff19472390e65aa5d9a437aee269ff897
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016802"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585788"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Развертывание, публикация и обновление решений SharePoint на удаленном сервере
   Помимо развертывания решений SharePoint в локальной системе, вы можете публиковать изолированные решения SharePoint на удаленные сайты или локальные сайты SharePoint. Процесс удаленной публикации копирует *wspный* файл на сервер SharePoint, устанавливает решение, а затем позволяет активировать решение. Вы также можете обновить удаленную установку решения SharePoint после внесения в нее изменений.
@@ -74,7 +75,7 @@ ms.locfileid: "86016802"
 
      Старая версия решения отключена, новая версия решения обновляется с поддерживаемыми данными из старого решения, а новое решение активируется в SharePoint.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Развертывание и публикация решения SharePoint на локальном сайте SharePoint](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
 - [Создание пакетов решений SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Как настроить пакет решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

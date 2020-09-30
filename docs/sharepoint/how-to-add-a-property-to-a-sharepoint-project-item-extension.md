@@ -1,5 +1,6 @@
 ---
 title: Как добавить свойство в расширение элемента проекта SharePoint | Документация Майкрософт
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 337536d2219ce8494f96769bc79f10967883e61a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 752a782bb4aafd977ff10a0b57dd971f7ad6bed4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015991"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584260"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Как добавить свойство в расширение элемента проекта SharePoint
   Расширение элемента проекта можно использовать для добавления свойства в любой элемент проекта SharePoint, уже установленный в Visual Studio. Свойство отображается в окне **Свойства** при выборе элемента проекта в **Обозреватель решений**.
@@ -68,7 +69,7 @@ ms.locfileid: "86015991"
 ## <a name="deploy-the-extension"></a>Развертывание расширения
  Чтобы развернуть расширение, создайте [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и всех остальных файлов, которые требуется распространить с расширением. Дополнительные сведения см. [в статье Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Как создать расширение элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 - [Как добавить пункт контекстного меню в расширение элемента проекта SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
 - [Расширение элементов проектов SharePoint](../sharepoint/extending-sharepoint-project-items.md)

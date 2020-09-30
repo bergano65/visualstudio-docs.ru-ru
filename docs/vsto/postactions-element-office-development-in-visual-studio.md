@@ -1,5 +1,6 @@
 ---
-title: '&lt;&gt;элемент «действия» (разработка решений Office в Visual Studio)'
+title: '&lt;&gt;элемент «действия» (разработка решений Office)'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfe9ae171f0f6fac1c2b5add5340de1c11f3da0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb716c3d9a20b6bda2cadff178a5126d6815ac00
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544421"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583714"
 ---
-# <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент «действия» (разработка решений Office в Visual Studio)
+# <a name="ltpostactionsgt-element-office-development"></a>&lt;&gt;элемент «действия» (разработка решений Office)
   Элемент `postActions` пространства имен `vstav3` содержит все элементы `postAction` , описывающие действия после развертывания, которые выполняются после установки решений Office.
 
 ## <a name="syntax"></a>Синтаксис

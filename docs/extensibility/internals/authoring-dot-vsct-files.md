@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4a3dba370594397d2f247de90063f69c4195cb6
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 11e55da5f2eb1d8b4671543672a79b508e20a929
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012156"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583688"
 ---
 # <a name="author-vsct-files"></a>Файлы Author. vsct
 В этом документе показано, как создать файл *vsct* для добавления пунктов меню, панелей инструментов и других элементов пользовательского интерфейса в интегрированную среду разработки (IDE) Visual Studio. Используйте эти шаги при добавлении элементов пользовательского интерфейса в пакет Visual Studio (VSPackage), в котором еще нет *vsct* -файла.
@@ -108,7 +108,7 @@ ms.locfileid: "90012156"
        > [!NOTE]
        > Кнопки панели инструментов должны иметь значки.
 
-   Дополнительные сведения см. в разделе [команды MenuCommand и олеменукоммандс](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
+   Дополнительные сведения см. в разделе [команды MenuCommand и олеменукоммандс](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
 
 4. Если какой-либо из команд требует значков, добавьте в элемент элемент [Bitmaps](../../extensibility/bitmaps-element.md) `Commands` . Затем для каждого значка добавьте элемент [Bitmap](../../extensibility/bitmap-element.md) к `Bitmaps` элементу. Здесь указывается расположение ресурса точечного рисунка. Дополнительные сведения см. [в разделе Добавление значков в команды меню](../../extensibility/adding-icons-to-menu-commands.md).
 

@@ -1,5 +1,6 @@
 ---
-title: '&lt;&gt;элемент постактиондата (разработка решений Office в Visual Studio)'
+title: '&lt;&gt;элемент постактиондата (разработка решений Office)'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 104af55fdc11b6afae757eff95a964dad83418a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85e1a02dbb85094cf84e1bba05e900d0e3f2c641
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541873"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583727"
 ---
-# <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент постактиондата (разработка решений Office в Visual Studio)
+# <a name="ltpostactiondatagt-element-office-development"></a>&lt;&gt;элемент постактиондата (разработка решений Office)
   Элемент `postActionData` пространства имен `vstav3` указывает данные, связанные с действиями, выполняемыми после развертывания при установке решений Office.
 
 ## <a name="syntax"></a>Синтаксис

@@ -1,5 +1,6 @@
 ---
 title: Пошаговое руководство. Простая привязка данных в проекте уровня документа
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981066"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584928"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Пошаговое руководство. Простая привязка данных в проекте уровня документа
   В этом пошаговом руководстве демонстрируются основы привязки данных в проекте уровня документа. Одно поле данных в SQL Server базе данных привязано к именованному диапазону в Microsoft Office Excel. В этом пошаговом руководстве также показано, как добавлять элементы управления, позволяющие прокручивать все записи в таблице.
@@ -191,7 +192,7 @@ ms.locfileid: "62981066"
 
 - Используйте <xref:System.Windows.Forms.BindingNavigator> элемент управления для прокрутки записей. Дополнительные сведения см. [в разделе Практические руководства. Навигация по данным с помощью элемента управления Windows Forms BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Данные в решениях Office](../vsto/data-in-office-solutions.md)
 - [Пошаговое руководство. сложная привязка данных в проекте уровня документа](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)

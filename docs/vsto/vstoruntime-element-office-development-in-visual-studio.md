@@ -1,5 +1,6 @@
 ---
 title: '&lt;&gt;элемент всторунтиме (разработка решений Office в Visual Studio)'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 985afe50d7c6edcfdb34e2ca046f59c5f7b664a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffebff9e5cee8666d1b178fca09262ecd45c99b1
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541886"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584364"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент всторунтиме (разработка решений Office в Visual Studio)
   Элемент `vstoRuntime` пространства имен `vstav3` содержит версию среды выполнения Набора инструментов Visual Studio для Office, поддерживаемую конкретным решением Office.
@@ -38,10 +39,10 @@ ms.locfileid: "85541886"
 
  Элемент `vstoRuntime` имеет перечисленные ниже атрибуты.
 
-|Атрибут|Описание|
+|attribute|Описание|
 |---------------|-----------------|
-|`release`|Обязательный. Выпускаемая версия среды выполнения Набора инструментов Visual Studio для Office.|
-|`version`|Обязательный. Номер версии среды выполнения Набора инструментов Visual Studio для Office.|
+|`release`|Обязательный элемент. Выпускаемая версия среды выполнения Набора инструментов Visual Studio для Office.|
+|`version`|Обязательный элемент. Номер версии среды выполнения Набора инструментов Visual Studio для Office.|
 |`supportUrl`|Необязательный элемент. Ссылка на расположение установки среды выполнения Набора инструментов Visual Studio для Office.|
 
  Элемент`vstoRuntime` не содержит элементов.

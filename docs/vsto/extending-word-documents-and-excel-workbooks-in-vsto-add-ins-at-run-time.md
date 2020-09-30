@@ -1,5 +1,6 @@
 ---
 title: Расширение документов Word & книгах Excel в надстройках VSTO во время выполнения
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a80fc10690691e8bd923f9c98270b162e7063ffb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2227aa2db4943ab132a8b2e2f9fc3a6f0ec4096
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253668"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585449"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>Расширение документов Word и книг Excel в надстройках VSTO во время выполнения
   Надстройку VSTO можно использовать для настройки документов Word и книг Excel одним из описанных ниже способов.
@@ -120,7 +121,7 @@ ms.locfileid: "71253668"
 
  Метод `HasVstoObject` полезен в ситуации, когда код необходимо запускать только при условии, что заданный объект Office имеет расширенный объект. Например, если у вас есть Надстройка VSTO для Word, которая обрабатывает <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> событие для удаления управляемых элементов управления из документа перед сохранением, используйте `HasVstoObject` метод, чтобы определить, был ли документ расширен. Если документ не был расширен, он не может иметь управляемые элементы управления, а обработчик событий может возвращать значение без попытки очистки элементов управления в документе.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)

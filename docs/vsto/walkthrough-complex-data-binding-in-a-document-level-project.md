@@ -1,5 +1,6 @@
 ---
 title: Пошаговое руководство. сложная привязка данных в проекте уровня документа
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7aba307bcd76cc055e42c11418d42f3dd0cfba1f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67692340"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584325"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Пошаговое руководство. сложная привязка данных в проекте уровня документа
   В этом пошаговом руководстве демонстрируются основы сложной привязки данных в проекте уровня документа. Можно привязать несколько ячеек в Microsoft Office листе Excel к полям базы данных SQL Server Northwind.
@@ -223,7 +224,7 @@ ms.locfileid: "67692340"
 
 - Создание связи "основной/подробности" между полем и таблицей. Дополнительные сведения см. в разделе [Пошаговое руководство. Создание связи с основными сведениями с помощью кэшированного набора данных](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Данные в решениях Office](../vsto/data-in-office-solutions.md)
 - [Пошаговое руководство. Простая привязка данных в проекте уровня документа](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)

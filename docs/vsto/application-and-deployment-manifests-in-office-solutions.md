@@ -1,5 +1,6 @@
 ---
 title: Манифесты приложений и развертывания в решениях Office
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d22d58eb8a2264d5c7765a15726db556c7d5569f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc4095ce8cd945ff35903c9d8ffc95400cc3b7ab
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62942906"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584442"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Манифесты приложений и развертывания в решениях Office
   Манифест приложения — это XML-файл, который содержит сведения, используемые решением Office для поиска и обновления своих сборок. Манифест приложения может использоваться с манифестом развертывания, представляющим собой XML-файл, который хранится на сервере и содержит сведения, необходимые для поиска самой последней версии манифеста приложения и сборок.
@@ -39,7 +40,7 @@ ms.locfileid: "62942906"
 
  Дополнительные сведения о работе манифестов с решениями Office см. в статье [развертывание решения](../vsto/deploying-an-office-solution.md)Office.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Архитектура настроек уровня документа](../vsto/architecture-of-document-level-customizations.md)
 - [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)

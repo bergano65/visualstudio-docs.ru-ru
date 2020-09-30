@@ -1,5 +1,6 @@
 ---
-title: Изменения, необходимые для переноса проектов Office на .NET Framework 4, 4,5
+title: Изменения, необходимые для переноса проектов Office на платформу .NET 4,5
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 773a4dd319d00487b919721bf3390a7d58c8b03c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 40db3cd629f2c3a2ced37a781dea3244a3f19957
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810971"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584468"
 ---
-# <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Необходимые изменения для запуска проектов Office, переносимых на .NET Framework 4 или .NET Framework 4,5
+# <a name="changes-required-for-office-projects-migrated-to-net-45"></a>Изменения, необходимые для переноса проектов Office на платформу .NET 4,5
+
   Если целевая платформа проекта Office изменена на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздняя из более ранней версии .NET Framework, необходимо выполнить следующие задачи, чтобы обеспечить возможность запуска решения на компьютере разработчика и на компьютерах конечных пользователей.
 
 - Удалите <xref:System.Security.SecurityTransparentAttribute> из проекта, если он был обновлен с версии Visual Studio 2008.
@@ -69,5 +71,5 @@ ms.locfileid: "90810971"
 ## <a name="reinstall-solutions-on-end-user-computers"></a>Переустановка решений на компьютерах конечных пользователей
  Если вы используете технологию ClickOnce для развертывания решения Office, которое ориентируется на платформу .NET Framework 3.5, а затем переориентируете проект на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, необходимо удалить решение, а затем переустановить после его повторной публикации. При повторной публикации перенацеленного решения и обновлении решения на компьютерах конечных пользователей <xref:System.Runtime.InteropServices.COMException> при запуске обновленного решения пользователи получат сообщение.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)

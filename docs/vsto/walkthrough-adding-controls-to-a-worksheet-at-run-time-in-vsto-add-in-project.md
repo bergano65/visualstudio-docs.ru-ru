@@ -1,5 +1,6 @@
 ---
 title: Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5bf2610ca1f3f3767082bf50953f821d37d1af2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec1d1361d7ca58d4292cbbb7bc4ea3b707a748ff
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253896"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584351"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Пошаговое руководство. Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO
   Вы можете добавить элементы управления на любой открытый лист с помощью надстройки VSTO для Excel. В этом пошаговом руководстве показано, как с помощью ленты предоставить пользователям возможность добавлять <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> и <xref:Microsoft.Office.Tools.Excel.ListObject> на лист. Дополнительные сведения см. [в разделе Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -186,9 +187,9 @@ ms.locfileid: "71253896"
 
 - Дополнительные сведения о сохранении элементов управления на листе см. в разделе примеры динамических элементов управления надстройки VSTO для Excel в разделе [образцы разработки Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).
 
-## <a name="see-also"></a>См. также раздел
-- [решения Excel](../vsto/excel-solutions.md)
+## <a name="see-also"></a>См. также
+- [Решения Excel](../vsto/excel-solutions.md)
 - [Общие сведения об элементах управления Windows Forms в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)
 - [Элемент управления NamedRange](../vsto/namedrange-control.md)
-- [ListObject - элемент управления](../vsto/listobject-control.md)
+- [Элемент управления ListObject](../vsto/listobject-control.md)

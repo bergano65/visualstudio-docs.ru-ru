@@ -1,5 +1,6 @@
 ---
 title: Пошаговое руководство. Программирование событий элемента управления NamedRange
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e5ce12e2de8274afd2c27d4ece36529563a6386
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90843133"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584941"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Пошаговое руководство. Программирование событий элемента управления NamedRange
   В этом пошаговом руководстве показано, как добавить <xref:Microsoft.Office.Tools.Excel.NamedRange> элемент управления в Microsoft Office лист Excel и программировать его события с помощью средств разработки Office в Visual Studio.

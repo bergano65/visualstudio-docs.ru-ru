@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f953add14c617d54d44cf8d6bf873c28eea8651
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 83df8926be9cd7217c514a2ed3f242bf8e121913
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012169"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584572"
 ---
 # <a name="automation-model-overview"></a>Общие сведения о модели автоматизации
 Модель автоматизации состоит из набора объектов, с которыми можно создать надстройку или расширение Visual Studio. Надстройка — это приложение, которое может управлять средой Visual Studio и автоматизировать общие задачи. Расширение Visual Studio может создавать пользовательские компоненты Visual Studio или добавлять к функциональным возможностям стандартных компонентов, таких как текстовый редактор.
@@ -32,7 +32,7 @@ ms.locfileid: "90012169"
 
  Места, где можно расдумать расширение модели автоматизации среды:
 
-- Проект
+- Project
 
 - Документ
 
@@ -40,7 +40,7 @@ ms.locfileid: "90012169"
 
 - Сборка
 
-Дополнительные сведения об автоматизации см. в разделе [Автоматизация и расширяемость для Visual Studio](../../vs-2015/extensibility/extensibility-in-visual-studio.md?view=vs-2015). Этот документ и содержащиеся в нем документы содержат ссылки на, которые помогут принять решение о том, как следует предоставлять автоматизацию для VSPackage.
+Дополнительные сведения об автоматизации см. в разделе [Автоматизация и расширяемость для Visual Studio](../../vs-2015/extensibility/extensibility-in-visual-studio.md?view=vs-2015&preserve-view=true). Этот документ и содержащиеся в нем документы содержат ссылки на, которые помогут принять решение о том, как следует предоставлять автоматизацию для VSPackage.
 
 ## <a name="see-also"></a>См. также
 - [Пошаговое руководство. Создание надстройки](/previous-versions/80493a3w(v=vs.140))

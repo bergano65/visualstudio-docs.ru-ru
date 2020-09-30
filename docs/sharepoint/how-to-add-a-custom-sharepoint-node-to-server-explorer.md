@@ -1,5 +1,6 @@
 ---
 title: Как добавить пользовательский узел SharePoint к обозреватель сервера | Документация Майкрософт
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26a2ea6a7ccbfcc80275b55f9230f1a3152ab545
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a74c9c879df57a5ff6444626870ee9f021fb4e9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017054"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584889"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Как добавить пользовательский узел SharePoint к обозреватель сервера
-  В **Обозреватель сервера**можно добавить пользовательские узлы в узле " **подключения SharePoint** ". Это полезно, если требуется отобразить дополнительные компоненты SharePoint, которые не отображаются в **Обозреватель сервера** по умолчанию. Дополнительные сведения см. [в разделе Расширение узла подключений SharePoint в обозреватель сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  В **Обозреватель сервера**можно добавить пользовательские узлы в узле " **подключения SharePoint** ". Это полезно, если требуется отобразить дополнительные компоненты SharePoint, которые не отображаются в **Обозреватель сервера** по умолчанию. Дополнительные сведения см. в разделе [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
  Чтобы добавить пользовательский узел, сначала создайте класс, определяющий новый узел. Затем создайте расширение, добавляющее узел в качестве дочернего узла для существующего узла.
 
@@ -95,7 +96,7 @@ ms.locfileid: "86017054"
 ## <a name="deploy-the-extension"></a>Развертывание расширения
  Чтобы развернуть расширение **Обозреватель сервера** , создайте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и всех остальных файлов, которые требуется распространить с расширением. Дополнительные сведения см. [в статье Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также раздел
-- [Расширение узла подключений SharePoint в обозреватель сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+## <a name="see-also"></a>См. также
+- [Расширение узла подключений SharePoint в обозревателе сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Руководство. расширение узла SharePoint в обозреватель сервера](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [Пошаговое руководство. расширение обозреватель сервера для показа веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

@@ -1,5 +1,6 @@
 ---
 title: 'Конструктор пакетов: Добавление & удаление компонентов и элементов в пакет'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd712eafb6061da89367c247475904886579d2de
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 86dde3abc86ff42d2e558626abdb5faee7e5c90e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740088"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585606"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Пошаговое руководство. Добавление и удаление компонентов и элементов в пакет с помощью конструктора пакетов
   При создании решения SharePoint Visual Studio добавляет компоненты SharePoint по умолчанию в пакет в решении. Перед окончательным развертыванием можно добавлять и удалять элементы и компоненты проекта SharePoint для изменения пакета SharePoint.

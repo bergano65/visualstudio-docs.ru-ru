@@ -1,5 +1,6 @@
 ---
 title: 'Обозреватель пакетов: Добавление & удаление компонентов & элементов в пакет'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3ea7e30737855cbbb9434e8763f4903d80b82da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bc4546d598a2fcca822f1921f778034fb768c2b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014555"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585593"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Пошаговое руководство. Добавление и удаление компонентов и элементов в пакет с помощью обозревателя пакетов
   Чтобы настроить пакет для развертывания элементов и компонентов SharePoint, можно использовать обозреватель пакетов. Можно настроить элементы и компоненты проекта SharePoint в файле. wsp.
@@ -62,5 +63,5 @@ ms.locfileid: "86014555"
 
 2. Откройте контекстное меню для компонента или пакета, а затем выберите **проверить**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

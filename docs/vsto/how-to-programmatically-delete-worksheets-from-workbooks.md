@@ -1,5 +1,6 @@
 ---
 title: Руководство. Программное удаление листов из книг
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38aa92ae1c320ae9eb5ad4bdb1e43b761048661f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fbcffdf56ea2168974658477579428ef546f061
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547138"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585253"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Руководство. Программное удаление листов из книг
   В книге можно удалить любой лист. Для удаления листа используйте ведущий элемент листа или получите доступ к листу с помощью коллекции листов книги.
@@ -64,7 +65,7 @@ ms.locfileid: "85547138"
      [!code-csharp[Trin_VstcoreExcelAutomation#18](codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomation#18](codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Работа с листами](working-with-worksheets.md)
 - [Как программно скрыть листы](how-to-programmatically-hide-worksheets.md)
 - [Руководство. Программное перемещение листов в книгах](how-to-programmatically-move-worksheets-within-workbooks.md)

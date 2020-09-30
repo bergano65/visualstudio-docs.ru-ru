@@ -1,5 +1,6 @@
 ---
 title: Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a32cfc84aa9bc93761dc8b57c13651eb04031a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f311f35ba4a8c443f47941a905ee4cf4d3ebfb2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255527"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585019"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент
   Конструктор лент позволяет создать настраиваемую вкладку, а затем добавить и расположить на ней элементы управления.
@@ -158,7 +159,7 @@ ms.locfileid: "71255527"
 
 - Расширение стандартной или пользовательской формы Microsoft Office Outlook. Дополнительные сведения см. в разделе [Пошаговое руководство. Проектирование области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Общие сведения о ленте](../vsto/ribbon-overview.md)
 - [Конструктор лент](../vsto/ribbon-designer.md)

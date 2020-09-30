@@ -1,5 +1,6 @@
 ---
 title: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c96546f85b21ee0ca8a559059a16158b743cb915
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 957af3fdb4a86f4973ff8ac24251bae923ec299c
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016099"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585475"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2
   После определения пользовательского типа элемента проекта SharePoint и связывания его с шаблоном элемента в Visual Studio может также потребоваться создать мастер для шаблона. С помощью мастера можно получать сведения от пользователей, когда они используют шаблон для добавления нового экземпляра элемента проекта в проект. Собранные сведения можно использовать для инициализации элемента проекта.
@@ -208,12 +209,12 @@ ms.locfileid: "86016099"
 
      Дополнительные сведения об `WizardExtension` элементе см. в разделе [визардекстенсион element &#40;Visual Studio templates&#41;](../extensibility/wizardextension-element-visual-studio-templates.md).
 
-3. Сохраните и закройте файл.
+3. Сохраните файл и закройте его.
 
 ## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>Добавление заменяемых параметров в файл *Elements.xml* в шаблоне элемента
  Добавьте несколько заменяемых параметров в файл *Elements.xml* в проекте ItemTemplate. Эти параметры инициализируются в `PopulateReplacementDictionary` методе `CustomActionWizard` класса, который был определен ранее. Когда пользователь добавляет в проект элемент проекта настраиваемого действия, Visual Studio автоматически заменяет эти параметры в файле *Elements.xml* в новом элементе проекта значениями, указанными в мастере.
 
- Заменяемый параметр — это маркер, который начинается и заканчивается знаком доллара ($). В дополнение к определению собственных заменяемых параметров можно использовать встроенные параметры, определяемые системой проектов SharePoint и инициализирующие их. Дополнительные сведения см. в разделе [заменяемые параметры](../sharepoint/replaceable-parameters.md).
+ Заменяемый параметр — это маркер, который начинается и заканчивается знаком доллара ($). В дополнение к определению собственных заменяемых параметров можно использовать встроенные параметры, определяемые системой проектов SharePoint и инициализирующие их. Дополнительные сведения см. в разделе [Заменяемые параметры](../sharepoint/replaceable-parameters.md).
 
 #### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>Добавление заменяемых параметров в файл *Elements.xml*
 
@@ -235,7 +236,7 @@ ms.locfileid: "86016099"
 
      Новый XML-файл изменяет значения `Id` атрибутов,, `GroupId` `Location` , `Description` и `Url` на заменяемые параметры.
 
-2. Сохраните и закройте файл.
+2. Сохраните файл и закройте его.
 
 ## <a name="add-the-wizard-to-the-vsix-package"></a>Добавление мастера в пакет VSIX
  В файле source. extension. vsixmanifest в проекте VSIX добавьте ссылку на проект мастера, чтобы она была развернута с помощью пакета VSIX, содержащего элемент проекта.
@@ -341,7 +342,7 @@ ms.locfileid: "86016099"
 
 4. Закройте оба экземпляра Visual Studio (экспериментальный экземпляр и экземпляр Visual Studio, в котором открыто решение Кустомактионпрожектитем).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [Определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Создание шаблонов элементов и проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

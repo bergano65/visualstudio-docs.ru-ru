@@ -1,5 +1,6 @@
 ---
 title: Руководство. Программное удаление всех комментариев из документов
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b2b0e2be92ca5d4b548b297d01f8ec31b779510
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee30cb7d4083adfff18261e3267dea1d8a96626f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519890"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584824"
 ---
 # <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Руководство. Программное удаление всех комментариев из документов
   Используйте метод `DeleteAllComments` для удаления всех комментариев из документа Microsoft Office Word.
@@ -41,6 +42,6 @@ ms.locfileid: "85519890"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#119)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#119)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Руководство. Программное добавление комментариев к тексту в документах](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)
 - [Ведущий элемент документа](../vsto/document-host-item.md)

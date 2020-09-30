@@ -1,5 +1,6 @@
 ---
 title: Пошаговое руководство. Вставка текста в документ из панели действий
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90843343"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584967"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Пошаговое руководство. Вставка текста в документ из панели действий
   В этом пошаговом руководстве показано, как создать панель действий в Microsoft Office документе Word. Панель действий содержит два элемента управления, которые собираются входные данные и затем отправляют текст в документ.
@@ -61,7 +62,7 @@ ms.locfileid: "90843343"
 
     **21 марта 2008 г.**
 
-    **имя**;
+    **Имя**
 
     **Адрес**
 
@@ -111,7 +112,7 @@ ms.locfileid: "90843343"
 
     |Свойство|Значение|
     |--------------|-----------|
-    |**имя**;|**getName**|
+    |**Имя**|**getName**|
     |**Размер**|**130, 20**|
 
 5. Добавьте второй элемент управления **Label** в элемент управления панели действий и измените свойство **Text** на **Address**.
@@ -120,7 +121,7 @@ ms.locfileid: "90843343"
 
     |Свойство|Значение|
     |--------------|-----------|
-    |**имя**;|**выадресовать**|
+    |**Имя**|**выадресовать**|
     |**Принимает возврат**|**True**|
     |**Multiline**|**True**|
     |**Размер**|**130, 40**|
@@ -129,7 +130,7 @@ ms.locfileid: "90843343"
 
     |Свойство|Значение|
     |--------------|-----------|
-    |**имя**;|**addText**|
+    |**Имя**|**addText**|
     |**Text**|**Insert**|
 
 ## <a name="add-code-to-insert-text-into-the-document"></a>Добавление кода для вставки текста в документ

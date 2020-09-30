@@ -1,5 +1,6 @@
 ---
 title: Приступая к программированию настроек уровня документа для Word
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2b2872ca6496444cbb3878dc39800a8661400a76
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4cf54dcdd08e7c44e8318973a3653dbe9c5ea1b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62971801"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585671"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Приступая к программированию настроек уровня документа для Word
   Если вы только приступите к созданию настроек уровня документа для Microsoft Office Word с помощью Visual Studio, вот что нужно знать.
@@ -63,10 +64,10 @@ ms.locfileid: "62971801"
 
  Список разделов, в которых описаны некоторые распространенные задачи в проектах Word, см. [в разделе Общие задачи в программировании Office](../vsto/common-tasks-in-office-programming.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)
-- [решения Word](../vsto/word-solutions.md)
+- [Решения Word](../vsto/word-solutions.md)
 - [Пошаговое руководство. Создание первой настройки уровня документа для Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 - [Пошаговые руководства с использованием Word](../vsto/walkthroughs-using-word.md)
 - [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md)

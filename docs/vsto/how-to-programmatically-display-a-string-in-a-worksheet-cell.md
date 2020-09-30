@@ -1,5 +1,6 @@
 ---
 title: Руководство. программное отображение строки в ячейке листа
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed93451942ccb0376c78ebb0e99b269a658131de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb3dbaec2efd95f63428e8494598720953f791e7
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545929"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585227"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Руководство. программное отображение строки в ячейке листа
   В этом примере показано, как программным способом отобразить текст в ячейке. Чтобы отобразить текст в ячейке, используйте либо <xref:Microsoft.Office.Tools.Excel.NamedRange> элемент управления, либо собственный объект диапазона Excel.
@@ -45,7 +46,7 @@ ms.locfileid: "85545929"
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Пошаговое руководство. получение данных с помощью формы Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
 - [Устранение неполадок решений Office](../vsto/troubleshooting-office-solutions.md)
 - [Элемент управления NamedRange](../vsto/namedrange-control.md)

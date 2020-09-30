@@ -1,5 +1,6 @@
 ---
 title: Руководство. Программное добавление фигур в документ Visio
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adde20bff07b54a7fb5777bd9e03a995b4fbd7df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8eb3ad837f699a1bb0bbc327b6e892a20866e0a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538064"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584234"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Руководство. Программное добавление фигур в документ Visio
   Вы можете добавлять фигуры в документ Microsoft Office Visio, извлекая образцы из набора элементов и помещая фигуры на активной странице.
@@ -36,7 +37,7 @@ ms.locfileid: "85538064"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#13)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#13)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Решения Visio](../vsto/visio-solutions.md)
 - [Общие сведения об объектной модели Visio](../vsto/visio-object-model-overview.md)
 - [Работа с фигурами Visio](../vsto/working-with-visio-shapes.md)

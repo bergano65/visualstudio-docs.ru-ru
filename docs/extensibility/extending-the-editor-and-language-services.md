@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2520eb4d1fe9480f1421016883d65c9bde9b422
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 155c703ebbeb2705ac7abbba5cd2c095f520c698
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012325"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584559"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Расширение редактора и языковых служб
 Вы можете добавить функции языковой службы (например, IntelliSense) в собственный редактор и расширить большинство функций редактора кода Visual Studio.  Полный список возможностей, которые можно расширить, см. в разделе [точки расширения языковой службы и редактора](../extensibility/language-service-and-editor-extension-points.md).
@@ -36,7 +36,7 @@ ms.locfileid: "90012325"
 |[Точки расширения языковой службы и редактора](../extensibility/language-service-and-editor-extension-points.md)|Перечисляет точки расширения редактора. Точки расширения представляют функции редактора, которые можно расширять.|
 |[Пошаговое руководство. Создание элемента оформления, команд и параметров представления (направляющие столбцов)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Пошаговые инструкции и описание создания элемента оформления представления, который рисует направляющие столбцов, чтобы обеспечить отображение в коде определенной ширины отображения.  Также демонстрируется чтение и запись параметров, а также объявление и реализация команд, которые можно вызывать из командного окна.|
 |[Импорт в редактор](../extensibility/editor-imports.md)|Список служб, которые может импортировать расширение.|
-|[Адаптация устаревшего кода к редактору](../vs-2015/extensibility/adapting-legacy-code-to-the-editor.md?view=vs-2015)|Описание различных способов адаптации устаревшего кода (до Visual Studio 2010) для расширения редактора.|
+|[Адаптация устаревшего кода к редактору](../vs-2015/extensibility/adapting-legacy-code-to-the-editor.md?view=vs-2015&preserve-view=true)|Описание различных способов адаптации устаревшего кода (до Visual Studio 2010) для расширения редактора.|
 |[Миграция языковой службы прежних версий](../extensibility/internals/migrating-a-legacy-language-service.md)|Объясняется, как выполнить миграцию языковой службы на основе VSPackage.|
 |[Пошаговое руководство. Связывание типа содержимого с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Показывает, как связать тип содержимого с расширением имени файла.|
 |[Пошаговое руководство. Создание глифа поля](../extensibility/walkthrough-creating-a-margin-glyph.md)|Показывает, как добавить значок в поле.|

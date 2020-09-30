@@ -1,5 +1,6 @@
 ---
 title: Создание пользовательского элемента управления для страницы приложения SharePoint или веб-части
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2fbf1b646ae9e7fb697fcab93adfb8661a4372c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9c8a99562d937d7b10c3539888c2dd62eb1d1da
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016977"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584104"
 ---
-# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Как создать пользовательский элемент управления для страницы приложения SharePoint или веб-части
+# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Практическое руководство. Создание пользовательского элемента управления для страницы приложения или веб-части SharePoint
   Можно создавать пользовательские элементы управления, которые предоставляют пользовательские функции для решения SharePoint, и эти функции можно повторно использовать в проекте. Можно включить пользовательские элементы управления в веб-часть или страницу приложения, добавить другие элементы управления ASP.NET и SharePoint и определить свойства и методы для элемента управления. Дополнительные сведения о пользовательских элементах управления см. в разделе [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) , а также [пользовательских элементов управления и серверных элементов управления в SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
 
 ### <a name="to-create-a-user-control-for-sharepoint"></a>Создание пользовательского элемента управления для SharePoint
@@ -52,7 +53,7 @@ ms.locfileid: "86016977"
 
      Этот файл отображается в **Обозреватель решений** в файле пользовательского элемента управления и имеет расширение *CS* или *VB* в зависимости от языка проекта.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
-- [Создание страниц приложения для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)

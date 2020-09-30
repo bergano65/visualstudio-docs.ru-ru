@@ -1,5 +1,6 @@
 ---
 title: Как программно снять защиту с листов
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 72448f9d1e5c24c917459b8c2c59e317190e0a11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0660c703d94111d042b943935c64546d87bc61fa
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519877"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584811"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Как программно снять защиту с листов
   Защиту с листа Microsoft Office Excel можно снять программными средствами.
@@ -43,7 +44,7 @@ ms.locfileid: "85519877"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#18)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Работа с листами](../vsto/working-with-worksheets.md)
 - [Как программно защитить листы](../vsto/how-to-programmatically-protect-worksheets.md)
 - [Руководство. Программная защита книг](../vsto/how-to-programmatically-protect-workbooks.md)

@@ -1,5 +1,6 @@
 ---
 title: 'Обозреватель сервера: расширение узла подключений SharePoint'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf9bf437c7592641f1b9020cdc16b4d702646015
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: d7f1ac5b0fb1f25d04139d76efa816ebd059d7da
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740101"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585580"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Пошаговое руководство. вызов клиентской объектной модели SharePoint в расширении обозреватель сервера
   В этом пошаговом руководстве показано, как вызвать клиентскую объектную модель SharePoint из расширения для узла **подключений SharePoint** в **Обозреватель сервера**. Дополнительные сведения об использовании объектной модели клиента SharePoint см. в разделе [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -38,7 +39,7 @@ ms.locfileid: "90740101"
 > [!NOTE]
 > Расширение, создаваемое в этом пошаговом руководстве, напоминает расширение, созданное в [разделе Пошаговое руководство. расширение обозреватель сервера для показа веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). В этом пошаговом руководстве используется объектная модель сервера SharePoint, но в этом пошаговом руководстве выполняются те же задачи с помощью клиентской объектной модели.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Предварительные требования
  Для выполнения этого пошагового руководства на компьютере разработчика потребуются следующие компоненты:
 
 - Поддерживаемые выпуски Windows, SharePoint и Visual Studio.

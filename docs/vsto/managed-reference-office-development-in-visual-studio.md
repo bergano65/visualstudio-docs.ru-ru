@@ -1,5 +1,6 @@
 ---
 title: Управляемый справочник (разработка решений Office в Visual Studio)
+titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: reference
 dev_langs:
@@ -13,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29e8a2206432555e58b47691233bd46c49791046
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20ae614ceef76a0ab5789c04212a3facfa571662
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519864"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583753"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Управляемый справочник (разработка решений Office в Visual Studio)
   В этом разделе содержится справочная документация по API для пространств имен и типов, используемых в проектах Office, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](includes/net-v45-md.md)]. Справочную документацию по API о пространствах имен и типах, используемых в проектах Office, предназначенных для .NET Framework 3,5, см. в следующем справочном разделе документации по Visual Studio: [управляемый справочник (разработка решений Office в Visual Studio)](managed-reference-office-development-in-visual-studio.md).
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
  <xref:Microsoft.Office.Tools>
 
  Содержит классы, общие для программирования решений Office. К ним относятся базовый класс для надстроек VSTO, классы для создания настраиваемых областей задач в настройках VSTO, классы для создания смарт-тегов в решениях Word и Excel и классы для создания панелей действий в настройках уровня документа.
@@ -70,7 +71,7 @@ ms.locfileid: "85519864"
 
  Содержит классы задач MSBuild, которые используются для сборки проектов Office.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Обзор средств Visual Studio для среды выполнения Office](visual-studio-tools-for-office-runtime-overview.md)
 - [Приступая к работе &#40;разработке решений Office в Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 - [Примеры и пошаговые руководства по разработке решений Office](office-development-samples-and-walkthroughs.md)

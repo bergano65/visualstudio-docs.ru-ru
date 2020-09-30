@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1ba6e9af922a7a7ab4dffe555aa55d3ab7bb9dd
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c43281e52d5a56fd7a888e42ba0bae66f9ac0bd9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012104"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584273"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Цвета и стили для Visual Studio
 
@@ -340,7 +340,7 @@ Windows использует несколько высококонтрастны
 
 Пакет VSPackage может управлять шрифтами и цветами с помощью пользовательских категорий и отображать элементы на странице свойств шрифты и цвета. При использовании этого механизма пакеты VSPackage должны реализовывать интерфейс [ивсфонтандколордефаултспровидер](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) и связанные с ним интерфейсы.
 
-В принципе этот механизм можно использовать для изменения всех существующих отображаемых элементов и категорий, содержащих их. Однако его не следует использовать для изменения категории текстового редактора или ее отображаемых элементов. Дополнительные сведения о категории текстовый редактор см. в разделе [Общие сведения о шрифтах и цветах](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015).
+В принципе этот механизм можно использовать для изменения всех существующих отображаемых элементов и категорий, содержащих их. Однако его не следует использовать для изменения категории текстового редактора или ее отображаемых элементов. Дополнительные сведения о категории текстовый редактор см. в разделе [Общие сведения о шрифтах и цветах](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015&preserve-view=true).
 
 Для реализации пользовательских категорий или отображаемых элементов пакет VSPackage должен:
 
@@ -423,7 +423,7 @@ Windows использует несколько высококонтрастны
 
   **OR**
 
-- **опросить изменения в интегрированной среде разработки**. Это можно сделать с помощью реализованного в системе интерфейса [сбой ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) . Несмотря на то, что в основном для поддержки сохраняемости, метод [DataItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) может получать сведения о шрифтах и цветах для отображаемых элементов. Дополнительные сведения о параметрах шрифтов и цветов см. в статье MSDN [доступ к сохраненным параметрам шрифта и цвета](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015).
+- **опросить изменения в интегрированной среде разработки**. Это можно сделать с помощью реализованного в системе интерфейса [сбой ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) . Несмотря на то, что в основном для поддержки сохраняемости, метод [DataItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) может получать сведения о шрифтах и цветах для отображаемых элементов. Дополнительные сведения о параметрах шрифтов и цветов см. в статье MSDN [доступ к сохраненным параметрам шрифта и цвета](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015&preserve-view=true).
 
 > [!NOTE]
 > Чтобы проверить правильность результатов опроса, используйте интерфейс [ивсфонтандколоркачеманажер](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) , чтобы определить, требуются ли операции очистки и обновления кэша до вызова методов получения интерфейса [сбой ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) .
