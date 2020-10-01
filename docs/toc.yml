@@ -524,15 +524,7 @@
             - name: Соглашения о форматировании EditorConfig на C++
               href: ide/cpp-editorconfig-properties.md
             - name: Соглашения о написании кода на .NET
-              items:
-                - name: Обзор
-                  href: ide/editorconfig-code-style-settings-reference.md
-                - name: Языковые соглашения
-                  href: ide/editorconfig-language-conventions.md
-                - name: Соглашения по форматированию
-                  href: ide/editorconfig-formatting-conventions.md
-                - name: Соглашения об именах
-                  href: ide/editorconfig-naming-conventions.md
+              href: /dotnet/fundamentals/code-analysis/code-style-rule-options
         - name: Настройка полосы прокрутки
           href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
         - name: Установка закладок в коде
@@ -1096,7 +1088,7 @@
                   href: ide/reference/autorecover-environment-options-dialog-box.md
                 - name: Документы
                   href: ide/reference/documents-environment-options-dialog-box.md
-                - name: Расширения
+                - name: Модули
                   href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
                 - name: Найти и заменить
                   href: ide/reference/find-and-replace-environment-options-dialog-box.md
@@ -1176,7 +1168,7 @@
                       href: ide/reference/options-text-editor-c-cpp-experimental.md
                     - name: Форматирование
                       href: ide/reference/options-text-editor-c-cpp-formatting.md
-                    - name: Просмотр
+                    - name: Представление
                       href: ide/reference/options-text-editor-c-cpp-view.md
                 - name: F#
                   items:

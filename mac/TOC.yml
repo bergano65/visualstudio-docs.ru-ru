@@ -1,6 +1,6 @@
 - name: Visual Studio для Mac
   href: index.yml
-- name: Приступая к работе
+- name: Начало работы
   items:
     - name: Обзор интегрированной среды разработки
       href: ide-tour.md
@@ -62,7 +62,7 @@
       href: source-editor.md
     - name: Рефакторинг
       href: refactoring.md
-    - name: технология IntelliSense
+    - name: IntelliSense
       href: intellisense.md
     - name: Отображение элементов импорта
       href: show-imports.md
@@ -185,7 +185,7 @@
         - name: Журнал изменений
           href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
     - name: "Мобильные приложения с\_Xamarin"
-      href: /visualstudio/mac/xamarin
+      href: ./xamarin.md
 - name: Специальные возможности
   items:
     - name: Обзор
