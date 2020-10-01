@@ -9,12 +9,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0aeb2341d905be8f34d47c477f35861b8575dc69
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037534"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352320"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Анализ производительности базы данных с помощью инструмента "База данных"
 
@@ -50,7 +50,7 @@ ms.locfileid: "90037534"
 
 ![Выбор пункта "Перейти к исходному файлу"](./media/db-gotosource.png "Выбор пункта Перейти к исходному файлу")
 
-Если вы укажете диапазон на временной шкале, в таблице будут показаны только те запросы, которые выполнялись в это время. Это особенно полезно при использовании инструмента "База данных" в паре с [инструментом "Загрузка ЦП"](./cpu-usage.md?view=vs-2019).
+Если вы укажете диапазон на временной шкале, в таблице будут показаны только те запросы, которые выполнялись в это время. Это особенно полезно при использовании инструмента "База данных" в паре с [инструментом "Загрузка ЦП"](./cpu-usage.md?view=vs-2019&preserve-view=true).
 
 ## <a name="see-also"></a>См. также
 

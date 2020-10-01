@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: db1e57097b492a8847be6d96719054a6b917e4bd
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.openlocfilehash: ea12076e41185e9de4ee10afe3056ff97403d6ea
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87425411"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352274"
 ---
 # <a name="visual-studio-administrator-guide"></a>Руководство администратора Visual Studio
 
@@ -52,9 +52,9 @@ ms.locfileid: "87425411"
 
   Для компьютеров, не подключенных к Интернету, создание минимального макета — самый простой и быстрый способ обновления автономных экземпляров Visual Studio. Дополнительные сведения см. в статье [Обновление Visual Studio с использованием минимального автономного макета](update-minimal-layout.md).
 
-* Решите, какой набор [рабочих нагрузок и компонентов](workload-and-component-ids.md?view=vs-2019) отвечает потребностям вашей компании.
+* Решите, какой набор [рабочих нагрузок и компонентов](workload-and-component-ids.md?view=vs-2019&preserve-view=true) отвечает потребностям вашей компании.
 
-* Решите, следует ли использовать [файл ответов](automated-installation-with-response-file.md?view=vs-2019) (это упрощает управление сведениями в файле скрипта).
+* Решите, следует ли использовать [файл ответов](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true) (это упрощает управление сведениями в файле скрипта).
 
 * Решите, нужно ли включение групповой политики и хотите ли вы отключить в Visual Studio отправку отзывов пользователей с отдельных компьютеров.
 
@@ -78,9 +78,9 @@ ms.locfileid: "87425411"
 
   Для компьютеров, не подключенных к Интернету, создание минимального макета — самый простой и быстрый способ обновления автономных экземпляров Visual Studio. Дополнительные сведения см. в статье [Обновление Visual Studio с использованием минимального автономного макета](update-minimal-layout.md).
 
-* Решите, какой набор [рабочих нагрузок и компонентов](workload-and-component-ids.md?view=vs-2017) отвечает потребностям вашей компании.
+* Решите, какой набор [рабочих нагрузок и компонентов](workload-and-component-ids.md?view=vs-2017&preserve-view=true) отвечает потребностям вашей компании.
 
-* Решите, следует ли использовать [файл ответов](automated-installation-with-response-file.md?view=vs-2017) (это упрощает управление сведениями в файле скрипта).
+* Решите, следует ли использовать [файл ответов](automated-installation-with-response-file.md?view=vs-2017&preserve-view=true) (это упрощает управление сведениями в файле скрипта).
 
 * Решите, нужно ли включение групповой политики и хотите ли вы отключить в Visual Studio отправку отзывов пользователей с отдельных компьютеров.
 
@@ -90,22 +90,22 @@ ms.locfileid: "87425411"
 
 ## <a name="step-1---download-visual-studio-product-files"></a>Шаг 1.Скачивание файлов продукта Visual Studio
 
-* [Выберите набор рабочих нагрузок и компонентов](workload-and-component-ids.md?view=vs-2019), которые требуется установить.
+* [Выберите набор рабочих нагрузок и компонентов](workload-and-component-ids.md?view=vs-2019&preserve-view=true), которые требуется установить.
 
-* [Создайте общую сетевую папку для файлов продукта Visual Studio](create-a-network-installation-of-visual-studio.md?view=vs-2019).
+* [Создайте общую сетевую папку для файлов продукта Visual Studio](create-a-network-installation-of-visual-studio.md?view=vs-2019&preserve-view=true).
 
 ## <a name="step-2---build-an-installation-script"></a>Шаг 2. Создание скрипта установки
 
-* Создайте скрипт установки, который использует [параметры командной строки](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) для управления установкой.
+* Создайте скрипт установки, который использует [параметры командной строки](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) для управления установкой.
 
   >[!NOTE]
-  > Его можно упростить с помощью [файла ответов](automated-installation-with-response-file.md?view=vs-2019). Обязательно создайте файл ответов с параметрами установки по умолчанию.
+  > Его можно упростить с помощью [файла ответов](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true). Обязательно создайте файл ответов с параметрами установки по умолчанию.
 
-* Также вы можете [применить ключ корпоративной лицензии](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2019) в рамках скрипта установки, чтобы освободить пользователей от дополнительных действия для активации программного обеспечения.
+* Также вы можете [применить ключ корпоративной лицензии](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2019&preserve-view=true) в рамках скрипта установки, чтобы освободить пользователей от дополнительных действия для активации программного обеспечения.
 
-* При необходимости обновите структуру сети для [управления временем и источником обновлений для конечных пользователей](controlling-updates-to-visual-studio-deployments.md?view=vs-2019).
+* При необходимости обновите структуру сети для [управления временем и источником обновлений для конечных пользователей](controlling-updates-to-visual-studio-deployments.md?view=vs-2019&preserve-view=true).
 
-* При необходимости можно задать политики реестра, влияющие на развертывание Visual Studio, например, место, где установлены некоторые пакеты, используемые совместно с другими версиями или экземплярами, [где кэшируются пакеты](set-defaults-for-enterprise-deployments.md?view=vs-2019) или [кэшируются ли пакеты вообще](disable-or-move-the-package-cache.md?view=vs-2019).
+* При необходимости можно задать политики реестра, влияющие на развертывание Visual Studio, например, место, где установлены некоторые пакеты, используемые совместно с другими версиями или экземплярами, [где кэшируются пакеты](set-defaults-for-enterprise-deployments.md?view=vs-2019&preserve-view=true) или [кэшируются ли пакеты вообще](disable-or-move-the-package-cache.md?view=vs-2019&preserve-view=true).
 
 * При необходимости задайте групповую политику. Также можно настроить в Visual Studio [отключение отправки отзывов пользователей с отдельных компьютеров](../ide/visual-studio-experience-improvement-program.md).
 
@@ -115,13 +115,13 @@ ms.locfileid: "87425411"
 
 ## <a name="step-4---deploy-updates"></a>Шаг 4. Развертывание обновлений
 
-* Регулярно [дополняйте расположение сетевой установки последними обновлениями](update-a-network-installation-of-visual-studio.md?view=vs-2019) для Visual Studio, повторно выполняя команду из шага 1 для добавления новых компонентов.
+* Регулярно [дополняйте расположение сетевой установки последними обновлениями](update-a-network-installation-of-visual-studio.md?view=vs-2019&preserve-view=true) для Visual Studio, повторно выполняя команду из шага 1 для добавления новых компонентов.
 
-  Visual Studio можно обновить с помощью скрипта обновления. Чтобы сделать это, используйте параметр командной строки [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019).
+  Visual Studio можно обновить с помощью скрипта обновления. Чтобы сделать это, используйте параметр командной строки [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true).
 
 ## <a name="step-5---optional-use-visual-studio-tools"></a>Шаг 5. Использование инструментов Visual Studio
 
-Мы предлагаем несколько средств, предназначенных для [обнаружения установленных экземпляров Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2019) на клиентских компьютерах и управления ими.
+Мы предлагаем несколько средств, предназначенных для [обнаружения установленных экземпляров Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2019&preserve-view=true) на клиентских компьютерах и управления ими.
 
 ## <a name="advanced-configuration"></a>Расширенная конфигурация
 
@@ -129,7 +129,7 @@ ms.locfileid: "87425411"
 
 **"PutCustomTypeInBingSearch" DWORD 0**
 
-Этот раздел находится в каталоге *Software\Microsoft\VisualStudio\16.0_{InstanceId}\Roslyn\Internal\Diagnostics\* частного куста реестра. Инструкции по открытию куста реестра см. в разделе [Редактирование реестра для экземпляра Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2019#editing-the-registry-for-a-visual-studio-instance).
+Этот раздел находится в каталоге *Software\Microsoft\VisualStudio\16.0_{InstanceId}\Roslyn\Internal\Diagnostics\* частного куста реестра. Инструкции по открытию куста реестра см. в разделе [Редактирование реестра для экземпляра Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2019&preserve-view=true#editing-the-registry-for-a-visual-studio-instance).
 
 ::: moniker-end
 
@@ -137,22 +137,22 @@ ms.locfileid: "87425411"
 
 ## <a name="step-1---download-visual-studio-product-files"></a>Шаг 1.Скачивание файлов продукта Visual Studio
 
-* [Выберите набор рабочих нагрузок и компонентов](workload-and-component-ids.md?view=vs-2017), которые требуется установить.
+* [Выберите набор рабочих нагрузок и компонентов](workload-and-component-ids.md?view=vs-2017&preserve-view=true), которые требуется установить.
 
-* [Создайте общую сетевую папку для файлов продукта Visual Studio](create-a-network-installation-of-visual-studio.md?view=vs-2017).
+* [Создайте общую сетевую папку для файлов продукта Visual Studio](create-a-network-installation-of-visual-studio.md?view=vs-2017&preserve-view=true).
 
 ## <a name="step-2---build-an-installation-script"></a>Шаг 2. Создание скрипта установки
 
-* Создайте скрипт установки, который использует [параметры командной строки](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) для управления установкой.
+* Создайте скрипт установки, который использует [параметры командной строки](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017&preserve-view=true) для управления установкой.
 
   >[!NOTE]
-  > Его можно упростить с помощью [файла ответов](automated-installation-with-response-file.md?view=vs-2017). Обязательно создайте файл ответов с параметрами установки по умолчанию.
+  > Его можно упростить с помощью [файла ответов](automated-installation-with-response-file.md?view=vs-2017&preserve-view=true). Обязательно создайте файл ответов с параметрами установки по умолчанию.
 
-* Также вы можете [применить ключ корпоративной лицензии](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2017) в рамках скрипта установки, чтобы освободить пользователей от дополнительных действия для активации программного обеспечения.
+* Также вы можете [применить ключ корпоративной лицензии](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2017&preserve-view=true) в рамках скрипта установки, чтобы освободить пользователей от дополнительных действия для активации программного обеспечения.
 
-* При необходимости обновите структуру сети для [управления временем и источником обновлений для конечных пользователей](controlling-updates-to-visual-studio-deployments.md?view=vs-2017).
+* При необходимости обновите структуру сети для [управления временем и источником обновлений для конечных пользователей](controlling-updates-to-visual-studio-deployments.md?view=vs-2017&preserve-view=true).
 
-* При необходимости можно задать политики реестра, влияющие на развертывание Visual Studio, например, место, где установлены некоторые пакеты, используемые совместно с другими версиями или экземплярами, [где кэшируются пакеты](set-defaults-for-enterprise-deployments.md?view=vs-2019) или [кэшируются ли пакеты вообще](disable-or-move-the-package-cache.md?view=vs-2017).
+* При необходимости можно задать политики реестра, влияющие на развертывание Visual Studio, например, место, где установлены некоторые пакеты, используемые совместно с другими версиями или экземплярами, [где кэшируются пакеты](set-defaults-for-enterprise-deployments.md?view=vs-2019&preserve-view=true) или [кэшируются ли пакеты вообще](disable-or-move-the-package-cache.md?view=vs-2017&preserve-view=true).
 
 * При необходимости задайте групповую политику. Также можно настроить в Visual Studio [отключение отправки отзывов пользователей с отдельных компьютеров](../ide/visual-studio-experience-improvement-program.md).
 
@@ -162,13 +162,13 @@ ms.locfileid: "87425411"
 
 ## <a name="step-4---deploy-updates"></a>Шаг 4. Развертывание обновлений
 
-* Регулярно [дополняйте расположение сетевой установки последними обновлениями](update-a-network-installation-of-visual-studio.md?view=vs-2017) для Visual Studio, повторно выполняя команду из шага 1 для добавления новых компонентов.
+* Регулярно [дополняйте расположение сетевой установки последними обновлениями](update-a-network-installation-of-visual-studio.md?view=vs-2017&preserve-view=true) для Visual Studio, повторно выполняя команду из шага 1 для добавления новых компонентов.
 
-  Visual Studio можно обновить с помощью скрипта обновления. Чтобы сделать это, используйте параметр командной строки [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019).
+  Visual Studio можно обновить с помощью скрипта обновления. Чтобы сделать это, используйте параметр командной строки [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true).
 
 ## <a name="step-5---optional-use-visual-studio-tools"></a>Шаг 5. Использование инструментов Visual Studio
 
-Мы предлагаем несколько средств, предназначенных для [обнаружения установленных экземпляров Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2017) на клиентских компьютерах и управления ими.
+Мы предлагаем несколько средств, предназначенных для [обнаружения установленных экземпляров Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true) на клиентских компьютерах и управления ими.
 
 ## <a name="advanced-configuration"></a>Расширенная конфигурация
 
@@ -176,7 +176,7 @@ ms.locfileid: "87425411"
 
 **"PutCustomTypeInBingSearch" DWORD 0**
 
-Этот раздел находится в каталоге *Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\* частного куста реестра. Инструкции по открытию куста реестра см. в разделе [Редактирование реестра для экземпляра Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2017#editing-the-registry-for-a-visual-studio-instance).
+Этот раздел находится в каталоге *Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\* частного куста реестра. Инструкции по открытию куста реестра см. в разделе [Редактирование реестра для экземпляра Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true#editing-the-registry-for-a-visual-studio-instance).
 
 ::: moniker-end
 
