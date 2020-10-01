@@ -1,5 +1,5 @@
 ---
-title: Подавлять нарушения анализа кода
+title: Подавление нарушений анализа кода
 ms.date: 08/27/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: aa650197f291c48c0c025563098181ea1cfa19a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adf8e969af4a903aa6ed55b1c92f4ddaffcf77e0
+ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091442"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91604632"
 ---
-# <a name="suppress-code-analysis-violations"></a>Подавлять нарушения анализа кода
+# <a name="suppress-code-analysis-violations"></a>Подавление нарушений анализа кода
 
 Часто бывает полезно указать, что предупреждение неприменимо. Это указывает членам команды, что код был проверен, и что предупреждение можно подавлять. Подавление в исходном код (ISS) использует <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> атрибут для подавления предупреждения. Атрибут можно поместить ближе к сегменту кода, вызвавшему предупреждение. Можно добавить <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> атрибут в исходный файл, введя его в, или можно использовать контекстное меню предупреждения в **Список ошибок** , чтобы добавить его автоматически.
 
@@ -183,19 +183,14 @@ public class Animal
 
 Компиляторы управляемого кода и некоторые сторонние средства создают код для упрощения разработки кода. Созданный компилятором код, который отображается в исходных файлах, обычно отмечается `GeneratedCodeAttribute` атрибутом.
 
-Для анализа исходного кода можно подавить сообщения в созданном коде с помощью файла [. editorconfig](../code-quality/configure-fxcop-analyzers.md) в корне проекта или решения. Используйте шаблон файла для сопоставления с созданным кодом. Например, чтобы исключить предупреждения CS1591 в файлах **. Designer.CS* , используйте его в файле конфигурации.
-
-``` cmd
-[*.designer.cs]
-dotnet_diagnostic.CS1591.severity = none
-```
+Для анализа исходного кода можно подавить сообщения в созданном коде в `.editorconfig` файле. Дополнительные сведения см. в разделе [исключение созданного кода](/dotnet/fundamentals/code-analysis/configuration-options#exclude-generated-code).
 
 Для традиционного анализа кода можно выбрать, следует ли подавлять предупреждения и ошибки анализа кода для созданного кода. Сведения о подавлении таких предупреждений и ошибок см. [в разделе как отключить предупреждения для созданного кода](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
 
 > [!NOTE]
 > Анализ кода игнорируется `GeneratedCodeAttribute` при применении к целой сборке или одному параметру.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

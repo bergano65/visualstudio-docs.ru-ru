@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9408e8615e2a3591a5e93f569546b6161fe40e4c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e59fd8ef3210a19683b428438d2e58ab816e9a40
+ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037254"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91604602"
 ---
 # <a name="code-analysis-faq"></a>Анализ кода: вопросы и ответы
 
@@ -34,7 +34,7 @@ ms.locfileid: "90037254"
 
 Однако EditorConfig файлы предлагают дополнительные способы настройки правил.
 
-- Для анализаторов качества кода .NET файлы EditorConfig позволяют [определить типы анализируемого кода](fxcop-analyzer-options.md).
+- Для анализаторов качества кода .NET файлы EditorConfig позволяют [определить типы анализируемого кода](/dotnet/fundamentals/code-analysis/code-quality-rule-options).
 - Для анализаторов в стиле кода .NET, встроенных в Visual Studio, файлы EditorConfig позволяют [определить предпочтительные стили кода](../ide/editorconfig-code-style-settings-reference.md) для базы кода.
 
 Помимо наборов правил и файлов EditorConfig, некоторые анализаторы настраиваются с помощью текстовых файлов, помеченных как [Дополнительные файлы](../ide/build-actions.md#build-action-values) для компиляторов C# и VB.
@@ -94,7 +94,7 @@ ms.locfileid: "90037254"
 
 Ответ **. Страница свойств "анализ**кода" на уровне решения была удалена в пользу более надежной общей группы свойств. Для управления анализом кода на уровне проекта страница свойств анализ кода по-прежнему доступна. (Для управляемых проектов мы также рекомендуем переходить с набора правил на EditorConfig для конфигурации правила.)  Для совместного использования наборов правил в нескольких и всех проектах в решении или репозитории рекомендуется определить группу свойств с помощью свойства Кодеаналисисрулесет в общем файле PROPS/targets или Directory. props/Directory. targets. Если у вас нет таких общих свойств или целевых объектов, которые импортируются всеми проектами, рекомендуется [добавить такую группу свойств в каталог. props или каталог. targets в каталоге решения верхнего уровня, который автоматически импортируется во все файлы проекта, определенные в каталоге или его подкаталогах](../msbuild/customize-your-build.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Обзор анализаторов](roslyn-analyzers-overview.md)
 - [Параметры соглашений о написании кода .NET в EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
