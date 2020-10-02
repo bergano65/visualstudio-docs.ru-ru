@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 875f6b3aba88fa3786e4c303f23072e586c4848d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4b82bdd63cd8a32ad38ddf949dfbc3dd5bdc193
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587346"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658494"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Набор правил "Рекомендуемые правила для управляемого кода"
 
@@ -23,29 +23,29 @@ ms.locfileid: "75587346"
 
 |Правило|Описание|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001.md)|Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми|
 |[CA1009](../code-quality/ca1009.md)|Правильно объявляйте обработчики событий|
-|[CA1016](../code-quality/ca1016.md)|Пометьте сборки с помощью AssemblyVersionAttribute|
-|[CA1033](../code-quality/ca1033.md)|Методы интерфейса должны быть доступны для вызова дочерними типами|
+|[CA1016](/dotnet/fundamentals/code-analysis/quality-rules/ca1016)|Пометьте сборки с помощью AssemblyVersionAttribute|
+|[CA1033](/dotnet/fundamentals/code-analysis/quality-rules/ca1033)|Методы интерфейса должны быть доступны для вызова дочерними типами|
 |[CA1049](../code-quality/ca1049.md)|Типы, которым принадлежат собственные ресурсы, должны быть освобождаемыми|
-|[CA1060](../code-quality/ca1060.md)|Переместите методы P/Invoke в класс NativeMethods|
-|[CA1061](../code-quality/ca1061.md)|Не скрывайте методы базовых классов|
-|[CA1063](../code-quality/ca1063.md)|Правильно реализуйте IDisposable|
-|[CA1065](../code-quality/ca1065.md)|Не вызывайте исключения в непредвиденных местах|
+|[CA1060](/dotnet/fundamentals/code-analysis/quality-rules/ca1060)|Переместите методы P/Invoke в класс NativeMethods|
+|[CA1061](/dotnet/fundamentals/code-analysis/quality-rules/ca1061)|Не скрывайте методы базовых классов|
+|[CA1063](/dotnet/fundamentals/code-analysis/quality-rules/ca1063)|Правильно реализуйте IDisposable|
+|[CA1065](/dotnet/fundamentals/code-analysis/quality-rules/ca1065)|Не вызывайте исключения в непредвиденных местах|
 |[CA1301](../code-quality/ca1301.md)|Избегайте повторяющихся акселераторов|
 |[CA1400](../code-quality/ca1400.md)|Для методов P/Invoke должны существовать точки входа|
-|[CA1401](../code-quality/ca1401.md)|Методы P/Invoke не должны быть видимыми|
+|[CA1401](/dotnet/fundamentals/code-analysis/quality-rules/ca1401)|Методы P/Invoke не должны быть видимыми|
 |[CA1403](../code-quality/ca1403.md)|Типы с автомакетом не должны быть видимыми для COM|
 |[CA1404](../code-quality/ca1404.md)|Вызывайте GetLastError сразу после P/Invoke|
 |[CA1405](../code-quality/ca1405.md)|Базовые типы, относящиеся к типу, видимому для COM, должны быть видимыми для COM|
 |[CA1410](../code-quality/ca1410.md)|Методы регистрации COM должны быть согласованными|
 |[CA1415](../code-quality/ca1415.md)|Правильно объявляйте методы P/Invoke|
-|[CA1821](../code-quality/ca1821.md)|Удалите пустые методы завершения|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|Удалите пустые методы завершения|
 |[CA1900](../code-quality/ca1900.md)|Поля типов значений должны быть переносимыми|
 |[CA1901](../code-quality/ca1901.md)|Объявления P/Invoke должны быть переносимыми|
-|[CA2002](../code-quality/ca2002.md)|Не блокируйте объекты с ненадежными удостоверениями|
-|[CA2100](../code-quality/ca2100.md)|Проверьте запросы SQL на наличие уязвимостей системы безопасности|
-|[CA2101](../code-quality/ca2101.md)|Укажите тип маршалинга для строковых аргументов P/Invoke|
+|[CA2002](/dotnet/fundamentals/code-analysis/quality-rules/ca2002)|Не блокируйте объекты с ненадежными удостоверениями|
+|[CA2100](/dotnet/fundamentals/code-analysis/quality-rules/ca2100)|Проверьте запросы SQL на наличие уязвимостей системы безопасности|
+|[CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101)|Укажите тип маршалинга для строковых аргументов P/Invoke|
 |[CA2108](../code-quality/ca2108.md)|Проверьте объявляемые параметры безопасности типов значений|
 |[CA2111](../code-quality/ca2111.md)|Указатели не должны быть видимыми|
 |[CA2112](../code-quality/ca2112.md)|Защищенные типы не должны предоставлять поля|
@@ -67,21 +67,21 @@ ms.locfileid: "75587346"
 |[CA2146](../code-quality/ca2146.md)|Типы должны быть по крайней мере настолько же критическими, как их базовые типы и интерфейсы|
 |[CA2147](../code-quality/ca2147.md)|Прозрачные методы могут не использовать утверждения безопасности|
 |[CA2149](../code-quality/ca2149.md)|Прозрачные методы не должны вызывать машинный код|
-|[CA2200](../code-quality/ca2200.md)|Повторно порождайте исключения для сохранения сведений стека|
+|[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200)|Повторно порождайте исключения для сохранения сведений стека|
 |[CA2202](../code-quality/ca2202.md)|Не ликвидируйте объекты несколько раз|
-|[CA2207](../code-quality/ca2207.md)|Используйте встроенную инициализацию статических полей типов значений|
+|[CA2207](/dotnet/fundamentals/code-analysis/quality-rules/ca2207)|Используйте встроенную инициализацию статических полей типов значений|
 |[CA2212](../code-quality/ca2212.md)|Не помечайте обслуживаемые компоненты с помощью WebMethod|
-|[CA2213](../code-quality/ca2213.md)|Следует высвобождать высвобождаемые поля|
-|[CA2214](../code-quality/ca2214.md)|Не вызывайте переопределяемые методы в конструкторах|
-|[CA2216](../code-quality/ca2216.md)|Высвобождаемые типы должны объявлять методы завершения|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|Следует высвобождать высвобождаемые поля|
+|[CA2214](/dotnet/fundamentals/code-analysis/quality-rules/ca2214)|Не вызывайте переопределяемые методы в конструкторах|
+|[CA2216](/dotnet/fundamentals/code-analysis/quality-rules/ca2216)|Высвобождаемые типы должны объявлять методы завершения|
 |[CA2220](../code-quality/ca2220.md)|Методы завершения должны вызывать метод завершения базового класса|
-|[CA2229](../code-quality/ca2229.md)|Реализуйте конструкторы сериализации|
-|[CA2231](../code-quality/ca2231.md)|Перегрузите оператор равенства на переопределяющем типе ValueType.Equals|
+|[CA2229](/dotnet/fundamentals/code-analysis/quality-rules/ca2229)|Реализуйте конструкторы сериализации|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|Перегрузите оператор равенства на переопределяющем типе ValueType.Equals|
 |[CA2232](../code-quality/ca2232.md)|Отметьте точки входа Windows Forms меткой STAThread|
-|[CA2235](../code-quality/ca2235.md)|Пометьте все несериализуемые поля|
+|[CA2235](/dotnet/fundamentals/code-analysis/quality-rules/ca2235)|Пометьте все несериализуемые поля|
 |[CA2236](../code-quality/ca2236.md)|Вызывайте методы базового класса для типов ISerializable|
-|[CA2237](../code-quality/ca2237.md)|Пометьте типы ISerializable атрибутом SerializableAttribute|
+|[CA2237](/dotnet/fundamentals/code-analysis/quality-rules/ca2237)|Пометьте типы ISerializable атрибутом SerializableAttribute|
 |[CA2238](../code-quality/ca2238.md)|Правильно реализуйте методы сериализации|
 |[CA2240](../code-quality/ca2240.md)|Правильно реализуйте ISerializable|
-|[CA2241](../code-quality/ca2241.md)|Задайте правильные аргументы для методов форматирования|
-|[CA2242](../code-quality/ca2242.md)|Правильно выполняйте проверку NaN|
+|[CA2241](/dotnet/fundamentals/code-analysis/quality-rules/ca2241)|Задайте правильные аргументы для методов форматирования|
+|[CA2242](/dotnet/fundamentals/code-analysis/quality-rules/ca2242)|Правильно выполняйте проверку NaN|

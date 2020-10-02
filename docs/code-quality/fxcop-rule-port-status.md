@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28429b43295956d29bb9fc04f80ccf7ba1b1e720
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 945b26158da4c4c7788570db0c565ebbcfc2b460
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508370"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658585"
 ---
 # <a name="fxcop-rule-port-status"></a>Состояние порта правила FxCop
 
@@ -27,179 +27,179 @@ ms.locfileid: "89508370"
 
 В соответствии с датой на этой странице в списке правил FxCop, которые были перенесены в средства [FxCop Analyzer](install-fxcop-analyzers.md) , входят:
 
-Идентификатор правила | Title
+Идентификатор правила | Заголовок
 --------|---------
-[CA1000](ca1000.md) | Не объявляйте статические члены в универсальных типах
-[CA1001](ca1001.md) | Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми
-[CA1002](ca1002.md) | Не предоставляйте универсальные списки
-[CA1003](ca1003.md) | Используйте экземпляры обработчика универсальных событий
-[CA1005](ca1005.md) | Не используйте слишком много параметров в универсальных типах
-[CA1008](ca1008.md) | Перечисляемые типы должны иметь нулевое значение
-[CA1010](ca1010.md) | Коллекции должны реализовать универсальный интерфейс
-[CA1012](ca1012.md) | Абстрактные типы не должны иметь конструкторы
-[CA1014](ca1014.md) | Пометьте сборки с помощью CLSCompliant
-[CA1016](ca1016.md) | Пометить сборки версией сборки
-[CA1017](ca1017.md) | Пометить сборки атрибутом ComVisible
-[CA1018](ca1018.md) | Пометьте атрибуты с помощью AttributeUsageAttribute
-[CA1019](ca1019.md) | Определите методы доступа для аргументов атрибута
-[CA1021](ca1021.md) | Не используйте параметры out
-[CA1024](ca1024.md) | По возможности используйте свойства
-[CA1027](ca1027.md) | Пометьте перечисляемые типы с помощью FlagsAttribute
-[CA1028](ca1028.md) | Хранилище перечислений должно иметь тип Int32
-[CA1030](ca1030.md) | По возможности используйте события
-[CA1031](ca1031.md) | Не перехватывайте типы общих исключений
-[CA1032](ca1032.md) | Реализуйте стандартные конструкторы исключений
-[CA1033](ca1033.md) | Методы интерфейса должны быть доступны для вызова дочерними типами
-[CA1034](ca1034.md) | Вложенные типы не должны быть видимыми
-[CA1036](ca1036.md) | Переопределите методы в сопоставимых типах
-[CA1040](ca1040.md) | Не используйте пустые интерфейсы
-[CA1041](ca1041.md) | Укажите сообщение ObsoleteAttribute
-[CA1043](ca1043.md) | Использование целочисленного или строкового аргумента для индексаторов
-[CA1044](ca1044.md) | Свойства не должны быть доступными только для записи
-[CA1045](ca1045.md) | Не передавайте типы по ссылке
-[CA1046](ca1046.md) | Не перегружайте оператор равенства для ссылочных типов
-[CA1047](ca1047.md) | Не объявляйте защищенные члены в запечатанных типах
-[CA1050](ca1050.md) | Объявите типы в пространствах имен
-[CA1051](ca1051.md) | Не объявляйте видимые поля экземпляров
-[CA1052](ca1052.md) | Типы со статическими заполнителями должны быть статическими или NotInheritable
-[CA1053](ca1053.md) | Типы статических владельцев не должны иметь конструкторы (CA1053 является частью [CA1052](ca1052.md) для анализаторов FxCop)
-[CA1054](ca1054.md) | Параметры URI не должны быть строками
-[CA1055](ca1055.md) | Возвращаемые значения URI не должны быть строками
-[CA1056](ca1056.md) | Свойства URI не должны быть строками
-[CA1058](ca1058.md) | Типы не должны расширять определенные базовые типы
-[CA1060](ca1060.md) | Перемещение пинвокес в класс методов машинного кода
-[CA1061](ca1061.md) | Не скрывайте методы базовых классов
-[CA1062](ca1062.md) | Проверьте аргументы или открытые методы
-[CA1063](ca1063.md) | Правильно реализуйте IDisposable
-[CA1064](ca1064.md) | Исключения должны быть общими
-[CA1065](ca1065.md) | Не вызывайте исключения в непредвиденных местах
-[CA1066](ca1066.md) | Тип {0} должен реализовывать IEquatable, \<T> так как он переопределяет Equals
-[CA1067](ca1067.md) | Переопределить Object. Equals (Object) при реализации IEquatable\<T>
-[CA1303](ca1303.md) | Не передавайте литералы в качестве локализованных параметров
-[CA1304](ca1304.md) | Указывайте CultureInfo
-[CA1305](ca1305.md) | Указывайте IFormatProvider
-[CA1307](ca1307.md) | Укажите StringComparison для ясности
-[CA1308](ca1308.md) | Нормализуйте строки в верхний регистр
-[CA1309](ca1309.md) | Использовать порядковое сравнение строк
-[CA1401](ca1401.md) | Методы P/Invoke не должны быть видимыми
-[CA1501](ca1501.md) | Избегайте излишнего наследования
-[CA1502](ca1502.md) | Избегайте чрезмерной сложности
-[CA1505](ca1505.md) | Избегайте кода, неудобного для поддержки
-[CA1506](ca1506.md) | Избегайте чрезмерной взаимозависимости классов
-[CA1700](ca1700.md) | Не присваивайте перечисляемым значениям имя Reserved
-[CA1707](ca1707.md) | Идентификаторы не должны содержать символы подчеркивания
-[CA1708](ca1708.md) | Идентификаторы должны отличаться не только прописными и строчными буквами
-[CA1710](ca1710.md) | Идентификаторы должны иметь правильные суффиксы
-[CA1711](ca1711.md) | Идентификаторы не должны иметь неправильные суффиксы
-[CA1712](ca1712.md) | Не добавляйте имя типа перед перечисляемыми значениями
-[CA1713](ca1713.md) | События не должны иметь префикс before или after
-[CA1714](ca1714.md) | У перечислений флагов должны быть имена во множественном числе
-[CA1715](ca1715.md) | Идентификаторы должны иметь правильные префиксы
-[CA1716](ca1716.md) | Идентификаторы не должны совпадать с ключевыми словами
-[CA1717](ca1717.md) | Только перечисления FlagsAttribute должны иметь имена во множественном числе
-[CA1720](ca1720.md) | Идентификатор содержит имя типа
-[CA1721](ca1721.md) | Имена свойств не должны совпадать с именами методов get
-[CA1724](ca1724.md) | Имена типов не должны совпадать с именами пространств имен
-[CA1725](ca1725.md) | Имена параметров должны соответствовать базовому объявлению
-[CA1801](ca1801.md) | Проверьте неиспользуемые параметры
-[CA1802](ca1802.md) | Используйте литералы там, где это уместно
-[CA1805](ca1805.md) | Не выполнять инициализацию без необходимости
-[CA1806](ca1806.md) | Не игнорируйте результаты метода
-[CA1810](ca1810.md) | Инициализируйте статические поля ссылочных типов при объявлении
-[CA1812](ca1812.md) | Избегайте неиспользуемых внутренних классов
-[CA1813](ca1813.md) | Избегайте незапечатанных атрибутов
-[CA1814](ca1814.md) | Используйте массивы массивов вместо многомерных массивов
-[CA1815](ca1815.md) | Переопределяйте операторы Equals и равенства для типов значений
-[CA1816](ca1816.md) | Методы Dispose должны вызывать SuppressFinalize
-[CA1819](ca1819.md) | Свойства не должны возвращать массивы
-[CA1820](ca1820.md) | Проверяйте наличие пустых строк, используя длину строки
-[CA1821](ca1821.md) | Удалить пустые методы завершения
-[CA1822](ca1822.md) | Пометьте члены как статические
-[CA1823](ca1823.md) | Избегайте неиспользуемых частных полей
-[CA1824](ca1824.md) | Помечайте сборки с помощью NeutralResourcesLanguageAttribute
-[CA1825](ca1825.md) | Избегайте выделения массивов нулевой длины.
-[CA2000](ca2000.md) | Ликвидируйте объекты перед потерей области
-[CA2002](ca2002.md) | Не блокируйте объекты с ненадежными удостоверениями
-[CA2100](ca2100.md) | Проверьте запросы SQL на наличие уязвимостей системы безопасности
-[CA2101](ca2101.md) | Укажите тип маршалинга для строковых аргументов P/Invoke
-[CA2109](ca2109.md) | Проверьте видимые обработчики событий
-[CA2119](ca2119.md) | Запечатайте методы, соответствующие частным интерфейсам
-[CA2153](ca2153.md) | Не перехватывайте исключения поврежденного состояния
-[CA2200](ca2200.md) | Вызывайте, чтобы сохранить сведения о стеке.
-[CA2201](ca2201.md) | Не порождайте исключения зарезервированных типов
-[CA2207](ca2207.md) | Используйте встроенную инициализацию статических полей типов значений
-[CA2208](ca2208.md) | Правильно создавайте экземпляры исключений аргументов
-[CA2211](ca2211.md) | Поля, не являющиеся константами, не должны быть видимыми
-[CA2213](ca2213.md) | Следует высвобождать высвобождаемые поля
-[CA2214](ca2214.md) | Не вызывайте переопределяемые методы в конструкторах
-[CA2215](ca2215.md) | Метод Dispose должен вызывать базовый класс Dispose
-[CA2216](ca2216.md) | Высвобождаемые типы должны объявлять методы завершения
-[CA2217](ca2217.md) | Не помечайте перечисляемые типы с помощью FlagsAttribute
-[CA2219](ca2219.md) | Не вызывайте исключения в предложениях finally
-[CA2225](ca2225.md) | Для перегрузок операторов существуют варианты с именами
-[CA2226](ca2226.md) | Перегрузки операторов должны быть симметричными
-[CA2227](ca2227.md) | Свойства, возвращающие коллекции, должны быть доступными только для чтения
-[CA2229](ca2229.md) | Реализуйте конструкторы сериализации
-[CA2231](ca2231.md) | Перегруженный оператор равенства при переопределении значения типа Equals
-[CA2234](ca2234.md) | Передавать системные объекты URI вместо строк
-[CA2235](ca2235.md) | Пометьте все несериализуемые поля
-[CA2237](ca2237.md) | Пометьте типы ISerializable атрибутом serializable
-[CA2241](ca2241.md) | Задайте правильные аргументы для методов форматирования
-[CA2242](ca2242.md) | Правильно выполняйте проверку NaN
-[CA2243](ca2243.md) | Синтаксический разбор строковых литералов должен осуществляться правильно
-[CA2300](ca2300.md) | Не используйте небезопасный десериализатор BinaryFormatter
-[CA2301](ca2301.md) | Не вызывайте BinaryFormatter.Deserialize, не задав предварительно BinaryFormatter.Binder
-[CA2302](ca2302.md) | Убедитесь, что BinaryFormatter.Binder задан перед вызовом BinaryFormatter.Deserialize
-[CA2305](ca2305.md) | Не используйте небезопасный десериализатор LosFormatter
-[CA2310](ca2310.md) | Не используйте небезопасный десериализатор NetDataContractSerializer
-[CA2311](ca2311.md) | Не десериализируйте, не задав предварительно NetDataContractSerializer.Binder
-[CA2312](ca2312.md) | Убедитесь, что NetDataContractSerializer.Binder задан перед десериализацией
-[CA2315](ca2315.md) | Не используйте небезопасный десериализатор ObjectStateFormatter
-[CA2321](ca2321.md) | Не десериализируйте с помощью JavaScriptSerializer, используя SimpleTypeResolver
-[CA2322](ca2322.md) | Убедитесь, что JavaScriptSerializer не был инициализирован с помощью SimpleTypeResolver до десериализации
-[CA3001](ca3001.md) | Проверьте код на наличие уязвимостей к внедрению кода SQL
-[CA3002](ca3002.md) | Проверьте код на наличие уязвимостей к межсайтовым сценариям (XSS)
-[CA3003](ca3003.md) | Проверьте код на наличие уязвимостей к внедрению пути к файлу
-[CA3004](ca3004.md) | Проверьте код на наличие уязвимостей к раскрытию информации
-[CA3005](ca3005.md) | Проверьте код на наличие уязвимостей к внедрению LDAP
-[CA3006](ca3006.md) | Проверьте код на наличие уязвимостей к внедрению команд процесса
-[CA3007](ca3007.md) | Проверьте код на наличие уязвимостей к открытому перенаправлению
-[CA3008](ca3008.md) | Проверьте код на наличие уязвимостей к внедрению кода XPath
-[CA3009](ca3009.md) | Проверьте код на наличие уязвимостей к внедрению кода XML
-[CA3010](ca3010.md) | Проверьте код на наличие уязвимостей к внедрению кода XAML
-[CA3011](ca3011.md) | Проверьте код на наличие уязвимостей к внедрению DLL
-[CA3012](ca3012.md) | Проверьте код на наличие уязвимостей к внедрению регулярных выражений
-[CA3061](ca3061.md) | Не добавлять схему по URL-адресу
-[CA3075](ca3075.md) | Небезопасная обработка DTD в формате XML
-[CA3076](ca3076.md) | Незащищенная обработка скриптов XSLT.
-[CA3077](ca3077.md) | Небезопасная обработка в конструкторе API, XmlDocument и XmlTextReader
-[CA3147](ca3147.md) | Помечайте обработчики команд с помощью токена проверки подделки
-[CA5350](ca5350.md) | Не используйте ненадежные алгоритмы шифрования
-[CA5351](ca5351.md) | Не используйте неработающие алгоритмы шифрования
-[CA5358](ca5358.md) | Не используйте небезопасные режимы шифрования
+[CA1000](/dotnet/fundamentals/code-analysis/quality-rules/ca1000) | Не объявляйте статические члены в универсальных типах
+[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001) | Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми
+[CA1002](/dotnet/fundamentals/code-analysis/quality-rules/ca1002) | Не предоставляйте универсальные списки
+[CA1003](/dotnet/fundamentals/code-analysis/quality-rules/ca1003) | Используйте экземпляры обработчика универсальных событий
+[CA1005](/dotnet/fundamentals/code-analysis/quality-rules/ca1005) | Не используйте слишком много параметров в универсальных типах
+[CA1008](/dotnet/fundamentals/code-analysis/quality-rules/ca1008) | Перечисляемые типы должны иметь нулевое значение
+[CA1010](/dotnet/fundamentals/code-analysis/quality-rules/ca1010) | Коллекции должны реализовать универсальный интерфейс
+[CA1012](/dotnet/fundamentals/code-analysis/quality-rules/ca1012) | Абстрактные типы не должны иметь конструкторы
+[CA1014](/dotnet/fundamentals/code-analysis/quality-rules/ca1014) | Пометьте сборки с помощью CLSCompliant
+[CA1016](/dotnet/fundamentals/code-analysis/quality-rules/ca1016) | Пометить сборки версией сборки
+[CA1017](/dotnet/fundamentals/code-analysis/quality-rules/ca1017) | Пометить сборки атрибутом ComVisible
+[CA1018](/dotnet/fundamentals/code-analysis/quality-rules/ca1018) | Пометьте атрибуты с помощью AttributeUsageAttribute
+[CA1019](/dotnet/fundamentals/code-analysis/quality-rules/ca1019) | Определите методы доступа для аргументов атрибута
+[CA1021](/dotnet/fundamentals/code-analysis/quality-rules/ca1021) | Не используйте параметры out
+[CA1024](/dotnet/fundamentals/code-analysis/quality-rules/ca1024) | По возможности используйте свойства
+[CA1027](/dotnet/fundamentals/code-analysis/quality-rules/ca1027) | Пометьте перечисляемые типы с помощью FlagsAttribute
+[CA1028](/dotnet/fundamentals/code-analysis/quality-rules/ca1028) | Хранилище перечислений должно иметь тип Int32
+[CA1030](/dotnet/fundamentals/code-analysis/quality-rules/ca1030) | По возможности используйте события
+[CA1031](/dotnet/fundamentals/code-analysis/quality-rules/ca1031) | Не перехватывайте типы общих исключений
+[CA1032](/dotnet/fundamentals/code-analysis/quality-rules/ca1032) | Реализуйте стандартные конструкторы исключений
+[CA1033](/dotnet/fundamentals/code-analysis/quality-rules/ca1033) | Методы интерфейса должны быть доступны для вызова дочерними типами
+[CA1034](/dotnet/fundamentals/code-analysis/quality-rules/ca1034) | Вложенные типы не должны быть видимыми
+[CA1036](/dotnet/fundamentals/code-analysis/quality-rules/ca1036) | Переопределите методы в сопоставимых типах
+[CA1040](/dotnet/fundamentals/code-analysis/quality-rules/ca1040) | Не используйте пустые интерфейсы
+[CA1041](/dotnet/fundamentals/code-analysis/quality-rules/ca1041) | Укажите сообщение ObsoleteAttribute
+[CA1043](/dotnet/fundamentals/code-analysis/quality-rules/ca1043) | Использование целочисленного или строкового аргумента для индексаторов
+[CA1044](/dotnet/fundamentals/code-analysis/quality-rules/ca1044) | Свойства не должны быть доступными только для записи
+[CA1045](/dotnet/fundamentals/code-analysis/quality-rules/ca1045) | Не передавайте типы по ссылке
+[CA1046](/dotnet/fundamentals/code-analysis/quality-rules/ca1046) | Не перегружайте оператор равенства для ссылочных типов
+[CA1047](/dotnet/fundamentals/code-analysis/quality-rules/ca1047) | Не объявляйте защищенные члены в запечатанных типах
+[CA1050](/dotnet/fundamentals/code-analysis/quality-rules/ca1050) | Объявите типы в пространствах имен
+[CA1051](/dotnet/fundamentals/code-analysis/quality-rules/ca1051) | Не объявляйте видимые поля экземпляров
+[CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) | Типы со статическими заполнителями должны быть статическими или NotInheritable
+[CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | Типы статических владельцев не должны иметь конструкторы (CA1053 является частью [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) для анализаторов FxCop)
+[CA1054](/dotnet/fundamentals/code-analysis/quality-rules/ca1054) | Параметры URI не должны быть строками
+[CA1055](/dotnet/fundamentals/code-analysis/quality-rules/ca1055) | Возвращаемые значения URI не должны быть строками
+[CA1056](/dotnet/fundamentals/code-analysis/quality-rules/ca1056) | Свойства URI не должны быть строками
+[CA1058](/dotnet/fundamentals/code-analysis/quality-rules/ca1058) | Типы не должны расширять определенные базовые типы
+[CA1060](/dotnet/fundamentals/code-analysis/quality-rules/ca1060) | Перемещение пинвокес в класс методов машинного кода
+[CA1061](/dotnet/fundamentals/code-analysis/quality-rules/ca1061) | Не скрывайте методы базовых классов
+[CA1062](/dotnet/fundamentals/code-analysis/quality-rules/ca1062) | Проверьте аргументы или открытые методы
+[CA1063](/dotnet/fundamentals/code-analysis/quality-rules/ca1063) | Правильно реализуйте IDisposable
+[CA1064](/dotnet/fundamentals/code-analysis/quality-rules/ca1064) | Исключения должны быть общими
+[CA1065](/dotnet/fundamentals/code-analysis/quality-rules/ca1065) | Не вызывайте исключения в непредвиденных местах
+[CA1066](/dotnet/fundamentals/code-analysis/quality-rules/ca1066) | Тип {0} должен реализовывать IEquatable, \<T> так как он переопределяет Equals
+[CA1067](/dotnet/fundamentals/code-analysis/quality-rules/ca1067) | Переопределить Object. Equals (Object) при реализации IEquatable\<T>
+[CA1303](/dotnet/fundamentals/code-analysis/quality-rules/ca1303) | Не передавайте литералы в качестве локализованных параметров
+[CA1304](/dotnet/fundamentals/code-analysis/quality-rules/ca1304) | Указывайте CultureInfo
+[CA1305](/dotnet/fundamentals/code-analysis/quality-rules/ca1305) | Указывайте IFormatProvider
+[CA1307](/dotnet/fundamentals/code-analysis/quality-rules/ca1307) | Укажите StringComparison для ясности
+[CA1308](/dotnet/fundamentals/code-analysis/quality-rules/ca1308) | Нормализуйте строки в верхний регистр
+[CA1309](/dotnet/fundamentals/code-analysis/quality-rules/ca1309) | Использовать порядковое сравнение строк
+[CA1401](/dotnet/fundamentals/code-analysis/quality-rules/ca1401) | Методы P/Invoke не должны быть видимыми
+[CA1501](/dotnet/fundamentals/code-analysis/quality-rules/ca1501) | Избегайте излишнего наследования
+[CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502) | Избегайте чрезмерной сложности
+[CA1505](/dotnet/fundamentals/code-analysis/quality-rules/ca1505) | Избегайте кода, неудобного для поддержки
+[CA1506](/dotnet/fundamentals/code-analysis/quality-rules/ca1506) | Избегайте чрезмерной взаимозависимости классов
+[CA1700](/dotnet/fundamentals/code-analysis/quality-rules/ca1700) | Не присваивайте перечисляемым значениям имя Reserved
+[CA1707](/dotnet/fundamentals/code-analysis/quality-rules/ca1707) | Идентификаторы не должны содержать символы подчеркивания
+[CA1708](/dotnet/fundamentals/code-analysis/quality-rules/ca1708) | Идентификаторы должны отличаться не только прописными и строчными буквами
+[CA1710](/dotnet/fundamentals/code-analysis/quality-rules/ca1710) | Идентификаторы должны иметь правильные суффиксы
+[CA1711](/dotnet/fundamentals/code-analysis/quality-rules/ca1711) | Идентификаторы не должны иметь неправильные суффиксы
+[CA1712](/dotnet/fundamentals/code-analysis/quality-rules/ca1712) | Не добавляйте имя типа перед перечисляемыми значениями
+[CA1713](/dotnet/fundamentals/code-analysis/quality-rules/ca1713) | События не должны иметь префикс before или after
+[CA1714](/dotnet/fundamentals/code-analysis/quality-rules/ca1714) | У перечислений флагов должны быть имена во множественном числе
+[CA1715](/dotnet/fundamentals/code-analysis/quality-rules/ca1715) | Идентификаторы должны иметь правильные префиксы
+[CA1716](/dotnet/fundamentals/code-analysis/quality-rules/ca1716) | Идентификаторы не должны совпадать с ключевыми словами
+[CA1717](/dotnet/fundamentals/code-analysis/quality-rules/ca1717) | Только перечисления FlagsAttribute должны иметь имена во множественном числе
+[CA1720](/dotnet/fundamentals/code-analysis/quality-rules/ca1720) | Идентификатор содержит имя типа
+[CA1721](/dotnet/fundamentals/code-analysis/quality-rules/ca1721) | Имена свойств не должны совпадать с именами методов get
+[CA1724](/dotnet/fundamentals/code-analysis/quality-rules/ca1724) | Имена типов не должны совпадать с именами пространств имен
+[CA1725](/dotnet/fundamentals/code-analysis/quality-rules/ca1725) | Имена параметров должны соответствовать базовому объявлению
+[CA1801](/dotnet/fundamentals/code-analysis/quality-rules/ca1801) | Проверьте неиспользуемые параметры
+[CA1802](/dotnet/fundamentals/code-analysis/quality-rules/ca1802) | Используйте литералы там, где это уместно
+[CA1805](/dotnet/fundamentals/code-analysis/quality-rules/ca1805) | Не выполнять инициализацию без необходимости
+[CA1806](/dotnet/fundamentals/code-analysis/quality-rules/ca1806) | Не игнорируйте результаты метода
+[CA1810](/dotnet/fundamentals/code-analysis/quality-rules/ca1810) | Инициализируйте статические поля ссылочных типов при объявлении
+[CA1812](/dotnet/fundamentals/code-analysis/quality-rules/ca1812) | Избегайте неиспользуемых внутренних классов
+[CA1813](/dotnet/fundamentals/code-analysis/quality-rules/ca1813) | Избегайте незапечатанных атрибутов
+[CA1814](/dotnet/fundamentals/code-analysis/quality-rules/ca1814) | Используйте массивы массивов вместо многомерных массивов
+[CA1815](/dotnet/fundamentals/code-analysis/quality-rules/ca1815) | Переопределяйте операторы Equals и равенства для типов значений
+[CA1816](/dotnet/fundamentals/code-analysis/quality-rules/ca1816) | Методы Dispose должны вызывать SuppressFinalize
+[CA1819](/dotnet/fundamentals/code-analysis/quality-rules/ca1819) | Свойства не должны возвращать массивы
+[CA1820](/dotnet/fundamentals/code-analysis/quality-rules/ca1820) | Проверяйте наличие пустых строк, используя длину строки
+[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821) | Удалить пустые методы завершения
+[CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) | Пометьте члены как статические
+[CA1823](/dotnet/fundamentals/code-analysis/quality-rules/ca1823) | Избегайте неиспользуемых частных полей
+[CA1824](/dotnet/fundamentals/code-analysis/quality-rules/ca1824) | Помечайте сборки с помощью NeutralResourcesLanguageAttribute
+[CA1825](/dotnet/fundamentals/code-analysis/quality-rules/ca1825) | Избегайте выделения массивов нулевой длины.
+[CA2000](/dotnet/fundamentals/code-analysis/quality-rules/ca2000) | Ликвидируйте объекты перед потерей области
+[CA2002](/dotnet/fundamentals/code-analysis/quality-rules/ca2002) | Не блокируйте объекты с ненадежными удостоверениями
+[CA2100](/dotnet/fundamentals/code-analysis/quality-rules/ca2100) | Проверьте запросы SQL на наличие уязвимостей системы безопасности
+[CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101) | Укажите тип маршалинга для строковых аргументов P/Invoke
+[CA2109](/dotnet/fundamentals/code-analysis/quality-rules/ca2109) | Проверьте видимые обработчики событий
+[CA2119](/dotnet/fundamentals/code-analysis/quality-rules/ca2119) | Запечатайте методы, соответствующие частным интерфейсам
+[CA2153](/dotnet/fundamentals/code-analysis/quality-rules/ca2153) | Не перехватывайте исключения поврежденного состояния
+[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200) | Вызывайте, чтобы сохранить сведения о стеке.
+[CA2201](/dotnet/fundamentals/code-analysis/quality-rules/ca2201) | Не порождайте исключения зарезервированных типов
+[CA2207](/dotnet/fundamentals/code-analysis/quality-rules/ca2207) | Используйте встроенную инициализацию статических полей типов значений
+[CA2208](/dotnet/fundamentals/code-analysis/quality-rules/ca2208) | Правильно создавайте экземпляры исключений аргументов
+[CA2211](/dotnet/fundamentals/code-analysis/quality-rules/ca2211) | Поля, не являющиеся константами, не должны быть видимыми
+[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213) | Следует высвобождать высвобождаемые поля
+[CA2214](/dotnet/fundamentals/code-analysis/quality-rules/ca2214) | Не вызывайте переопределяемые методы в конструкторах
+[CA2215](/dotnet/fundamentals/code-analysis/quality-rules/ca2215) | Метод Dispose должен вызывать базовый класс Dispose
+[CA2216](/dotnet/fundamentals/code-analysis/quality-rules/ca2216) | Высвобождаемые типы должны объявлять методы завершения
+[CA2217](/dotnet/fundamentals/code-analysis/quality-rules/ca2217) | Не помечайте перечисляемые типы с помощью FlagsAttribute
+[CA2219](/dotnet/fundamentals/code-analysis/quality-rules/ca2219) | Не вызывайте исключения в предложениях finally
+[CA2225](/dotnet/fundamentals/code-analysis/quality-rules/ca2225) | Для перегрузок операторов существуют варианты с именами
+[CA2226](/dotnet/fundamentals/code-analysis/quality-rules/ca2226) | Перегрузки операторов должны быть симметричными
+[CA2227](/dotnet/fundamentals/code-analysis/quality-rules/ca2227) | Свойства, возвращающие коллекции, должны быть доступными только для чтения
+[CA2229](/dotnet/fundamentals/code-analysis/quality-rules/ca2229) | Реализуйте конструкторы сериализации
+[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231) | Перегруженный оператор равенства при переопределении значения типа Equals
+[CA2234](/dotnet/fundamentals/code-analysis/quality-rules/ca2234) | Передавать системные объекты URI вместо строк
+[CA2235](/dotnet/fundamentals/code-analysis/quality-rules/ca2235) | Пометьте все несериализуемые поля
+[CA2237](/dotnet/fundamentals/code-analysis/quality-rules/ca2237) | Пометьте типы ISerializable атрибутом serializable
+[CA2241](/dotnet/fundamentals/code-analysis/quality-rules/ca2241) | Задайте правильные аргументы для методов форматирования
+[CA2242](/dotnet/fundamentals/code-analysis/quality-rules/ca2242) | Правильно выполняйте проверку NaN
+[CA2243](/dotnet/fundamentals/code-analysis/quality-rules/ca2243) | Синтаксический разбор строковых литералов должен осуществляться правильно
+[CA2300](/dotnet/fundamentals/code-analysis/quality-rules/ca2300) | Не используйте небезопасный десериализатор BinaryFormatter
+[CA2301](/dotnet/fundamentals/code-analysis/quality-rules/ca2301) | Не вызывайте BinaryFormatter.Deserialize, не задав предварительно BinaryFormatter.Binder
+[CA2302](/dotnet/fundamentals/code-analysis/quality-rules/ca2302) | Убедитесь, что BinaryFormatter.Binder задан перед вызовом BinaryFormatter.Deserialize
+[CA2305](/dotnet/fundamentals/code-analysis/quality-rules/ca2305) | Не используйте небезопасный десериализатор LosFormatter
+[CA2310](/dotnet/fundamentals/code-analysis/quality-rules/ca2310) | Не используйте небезопасный десериализатор NetDataContractSerializer
+[CA2311](/dotnet/fundamentals/code-analysis/quality-rules/ca2311) | Не десериализируйте, не задав предварительно NetDataContractSerializer.Binder
+[CA2312](/dotnet/fundamentals/code-analysis/quality-rules/ca2312) | Убедитесь, что NetDataContractSerializer.Binder задан перед десериализацией
+[CA2315](/dotnet/fundamentals/code-analysis/quality-rules/ca2315) | Не используйте небезопасный десериализатор ObjectStateFormatter
+[CA2321](/dotnet/fundamentals/code-analysis/quality-rules/ca2321) | Не десериализируйте с помощью JavaScriptSerializer, используя SimpleTypeResolver
+[CA2322](/dotnet/fundamentals/code-analysis/quality-rules/ca2322) | Убедитесь, что JavaScriptSerializer не был инициализирован с помощью SimpleTypeResolver до десериализации
+[CA3001](/dotnet/fundamentals/code-analysis/quality-rules/ca3001) | Проверьте код на наличие уязвимостей к внедрению кода SQL
+[CA3002](/dotnet/fundamentals/code-analysis/quality-rules/ca3002) | Проверьте код на наличие уязвимостей к межсайтовым сценариям (XSS)
+[CA3003](/dotnet/fundamentals/code-analysis/quality-rules/ca3003) | Проверьте код на наличие уязвимостей к внедрению пути к файлу
+[CA3004](/dotnet/fundamentals/code-analysis/quality-rules/ca3004) | Проверьте код на наличие уязвимостей к раскрытию информации
+[CA3005](/dotnet/fundamentals/code-analysis/quality-rules/ca3005) | Проверьте код на наличие уязвимостей к внедрению LDAP
+[CA3006](/dotnet/fundamentals/code-analysis/quality-rules/ca3006) | Проверьте код на наличие уязвимостей к внедрению команд процесса
+[CA3007](/dotnet/fundamentals/code-analysis/quality-rules/ca3007) | Проверьте код на наличие уязвимостей к открытому перенаправлению
+[CA3008](/dotnet/fundamentals/code-analysis/quality-rules/ca3008) | Проверьте код на наличие уязвимостей к внедрению кода XPath
+[CA3009](/dotnet/fundamentals/code-analysis/quality-rules/ca3009) | Проверьте код на наличие уязвимостей к внедрению кода XML
+[CA3010](/dotnet/fundamentals/code-analysis/quality-rules/ca3010) | Проверьте код на наличие уязвимостей к внедрению кода XAML
+[CA3011](/dotnet/fundamentals/code-analysis/quality-rules/ca3011) | Проверьте код на наличие уязвимостей к внедрению DLL
+[CA3012](/dotnet/fundamentals/code-analysis/quality-rules/ca3012) | Проверьте код на наличие уязвимостей к внедрению регулярных выражений
+[CA3061](/dotnet/fundamentals/code-analysis/quality-rules/ca3061) | Не добавлять схему по URL-адресу
+[CA3075](/dotnet/fundamentals/code-analysis/quality-rules/ca3075) | Небезопасная обработка DTD в формате XML
+[CA3076](/dotnet/fundamentals/code-analysis/quality-rules/ca3076) | Незащищенная обработка скриптов XSLT.
+[CA3077](/dotnet/fundamentals/code-analysis/quality-rules/ca3077) | Небезопасная обработка в конструкторе API, XmlDocument и XmlTextReader
+[CA3147](/dotnet/fundamentals/code-analysis/quality-rules/ca3147) | Помечайте обработчики команд с помощью токена проверки подделки
+[CA5350](/dotnet/fundamentals/code-analysis/quality-rules/ca5350) | Не используйте ненадежные алгоритмы шифрования
+[CA5351](/dotnet/fundamentals/code-analysis/quality-rules/ca5351) | Не используйте неработающие алгоритмы шифрования
+[CA5358](/dotnet/fundamentals/code-analysis/quality-rules/ca5358) | Не используйте небезопасные режимы шифрования
 CA5359 | Не отключайте проверку сертификата
 CA5360 | Не вызывайте опасные методы при десериализации
-[CA5361](ca5361.md) | Не отключайте использование стойкого шифрования SChannel
+[CA5361](/dotnet/fundamentals/code-analysis/quality-rules/ca5361) | Не отключайте использование стойкого шифрования SChannel
 CA5362 | Не обращаться к Self в сериализуемых классах
-[CA5363](ca5363.md) | Не отключайте проверку запроса
-[CA5364](ca5364.md) | Не используйте устаревшие протоколы безопасности
+[CA5363](/dotnet/fundamentals/code-analysis/quality-rules/ca5363) | Не отключайте проверку запроса
+[CA5364](/dotnet/fundamentals/code-analysis/quality-rules/ca5364) | Не используйте устаревшие протоколы безопасности
 CA5365 | Не отключайте проверку заголовка HTTP
 CA5366 | Использование XmlReader для чтения XML-данных
 CA5367 | Не сериализовывать типы с полями указателя
 CA5368 | Задать ViewStateUserKey для классов, производных от страницы
-[CA5369](ca5369.md) | Использование XmlReader для десериализации
-[CA5370](ca5370.md) | Использование XmlReader для проверки модуля чтения
-[CA5371](ca5371.md) | Использование XmlReader для чтения схемы
-[CA5372](ca5372.md) | Использование XmlReader для XPathDocument
-[CA5373](ca5373.md) | Не использовать устаревшую функцию формирования ключа
+[CA5369](/dotnet/fundamentals/code-analysis/quality-rules/ca5369) | Использование XmlReader для десериализации
+[CA5370](/dotnet/fundamentals/code-analysis/quality-rules/ca5370) | Использование XmlReader для проверки модуля чтения
+[CA5371](/dotnet/fundamentals/code-analysis/quality-rules/ca5371) | Использование XmlReader для чтения схемы
+[CA5372](/dotnet/fundamentals/code-analysis/quality-rules/ca5372) | Использование XmlReader для XPathDocument
+[CA5373](/dotnet/fundamentals/code-analysis/quality-rules/ca5373) | Не использовать устаревшую функцию формирования ключа
 CA5374 | Не использовать XslTransform
 CA5375 | Не использовать подписанный URL общего доступа
 CA5376 | Использование Шаредакцесспротокол Хттпсонли
 CA5377 | Использовать политику доступа на уровне контейнера
-[CA5378](ca5378.md) | Не отключайте ServicePointManagerSecurityProtocols
+[CA5378](/dotnet/fundamentals/code-analysis/quality-rules/ca5378) | Не отключайте ServicePointManagerSecurityProtocols
 CA5379 | Не используйте алгоритм функции наследования слабых ключей
 CA9999 | Несоответствие версии анализатора
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Правила Microsoft. CodeAnalysis. Фкскопанализерс](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

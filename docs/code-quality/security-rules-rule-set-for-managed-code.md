@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c7ce330a8a2994f827234aae8b8db416da016b29
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 5f3205bf3c81bbb9dac19c810e3a89a5fcd2227b
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509878"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658403"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Набор правил "Правила безопасности" для управляемого кода
 
@@ -21,7 +21,7 @@ ms.locfileid: "89509878"
 
 |Правило|Описание|
 |----------|-----------------|
-|[CA2100](../code-quality/ca2100.md)|Проверьте запросы SQL на наличие уязвимостей системы безопасности|
+|[CA2100](/dotnet/fundamentals/code-analysis/quality-rules/ca2100)|Проверьте запросы SQL на наличие уязвимостей системы безопасности|
 |[CA2102](../code-quality/ca2102.md)|Перехватывайте исключения, не являющиеся CLSCompliant, с помощью общих обработчиков|
 |[CA2103](../code-quality/ca2103.md)|Проверьте принудительную безопасность|
 |[CA2104](../code-quality/ca2104.md)|Не объявляйте изменяющиеся ссылочные типы только для чтения|
@@ -29,7 +29,7 @@ ms.locfileid: "89509878"
 |[CA2106](../code-quality/ca2106.md)|Обеспечьте безопасность утверждений|
 |[CA2107](../code-quality/ca2107.md)|Проверьте использование Deny и Permit Only|
 |[CA2108](../code-quality/ca2108.md)|Проверьте объявляемые параметры безопасности типов значений|
-|[CA2109](../code-quality/ca2109.md)|Проверьте видимые обработчики событий|
+|[CA2109](/dotnet/fundamentals/code-analysis/quality-rules/ca2109)|Проверьте видимые обработчики событий|
 |[CA2111](../code-quality/ca2111.md)|Указатели не должны быть видимыми|
 |[CA2112](../code-quality/ca2112.md)|Защищенные типы не должны предоставлять поля|
 |[CA2114](../code-quality/ca2114.md)|Безопасность метода должна быть надмножеством типа|
@@ -37,7 +37,7 @@ ms.locfileid: "89509878"
 |[CA2116](../code-quality/ca2116.md)|APTCA-методы должны вызывать только APTCA-методы|
 |[CA2117](../code-quality/ca2117.md)|APTCA-типы должны расширять только базовые APTCA-типы|
 |[CA2118](../code-quality/ca2118.md)|Проверьте использование атрибута SuppressUnmanagedCodeSecurityAttribute|
-|[CA2119](../code-quality/ca2119.md)|Запечатайте методы, соответствующие частным интерфейсам|
+|[CA2119](/dotnet/fundamentals/code-analysis/quality-rules/ca2119)|Запечатайте методы, соответствующие частным интерфейсам|
 |[CA2120](../code-quality/ca2120.md)|Обеспечьте безопасность конструкторов сериализации|
 |[CA2121](../code-quality/ca2121.md)|Статические конструкторы должны быть частными|
 |[CA2122](../code-quality/ca2122.md)|Не используйте косвенное представление методов с требованиями ссылки|
@@ -64,27 +64,27 @@ ms.locfileid: "89509878"
 |[CA2147](../code-quality/ca2147.md)|Прозрачные методы могут не использовать утверждения безопасности|
 |[CA2149](../code-quality/ca2149.md)|Прозрачные методы не должны вызывать машинный код|
 |[CA2210](../code-quality/ca2210.md)|Сборки должны иметь допустимые строгие имена|
-|[CA2300](ca2300.md)|Не используйте небезопасный десериализатор BinaryFormatter|
-|[CA2301](ca2301.md)|Не вызывайте BinaryFormatter.Deserialize, не задав предварительно BinaryFormatter.Binder|
-|[CA2302](ca2302.md)|Убедитесь, что BinaryFormatter.Binder задан перед вызовом BinaryFormatter.Deserialize|
-|[CA2305](ca2305.md)|Не используйте небезопасный десериализатор LosFormatter|
-|[CA2310](ca2310.md)|Не используйте небезопасный десериализатор NetDataContractSerializer|
-|[CA2311](ca2311.md)|Не десериализируйте, не задав предварительно NetDataContractSerializer.Binder|
-|[CA2312](ca2312.md)|Убедитесь, что NetDataContractSerializer.Binder задан перед десериализацией|
-|[CA2315](ca2315.md)|Не используйте небезопасный десериализатор ObjectStateFormatter|
-|[CA2321](ca2321.md)|Не десериализируйте с помощью JavaScriptSerializer, используя SimpleTypeResolver|
-|[CA2322](ca2322.md)|Убедитесь, что JavaScriptSerializer не был инициализирован с помощью SimpleTypeResolver до десериализации|
-|[CA3001](../code-quality/ca3001.md)|Проверьте код на наличие уязвимостей к внедрению кода SQL|
-|[CA3002](../code-quality/ca3002.md)|Проверьте код на наличие уязвимостей к межсайтовым сценариям (XSS)|
-|[CA3003](../code-quality/ca3003.md)|Проверьте код на наличие уязвимостей к внедрению пути к файлу|
-|[CA3004](../code-quality/ca3004.md)|Проверьте код на наличие уязвимостей к раскрытию информации|
-|[CA3005](../code-quality/ca3005.md)|Проверьте код на наличие уязвимостей к внедрению LDAP|
-|[CA3006](../code-quality/ca3006.md)|Проверьте код на наличие уязвимостей к внедрению команд процесса|
-|[CA3007](../code-quality/ca3007.md)|Проверьте код на наличие уязвимостей к открытому перенаправлению|
-|[CA3008](../code-quality/ca3008.md)|Проверьте код на наличие уязвимостей к внедрению кода XPath|
-|[CA3009](../code-quality/ca3009.md)|Проверьте код на наличие уязвимостей к внедрению кода XML|
-|[CA3010](../code-quality/ca3010.md)|Проверьте код на наличие уязвимостей к внедрению кода XAML|
-|[CA3011](../code-quality/ca3011.md)|Проверьте код на наличие уязвимостей к внедрению DLL|
-|[CA3012](../code-quality/ca3012.md)|Проверьте код на наличие уязвимостей к внедрению регулярных выражений|
-|[CA5358](../code-quality/ca5358.md)|Не используйте небезопасные режимы шифрования|
-|[CA5403](../code-quality/ca5403.md)|Не используйте жестко заданный сертификат|
+|[CA2300](/dotnet/fundamentals/code-analysis/quality-rules/ca2300)|Не используйте небезопасный десериализатор BinaryFormatter|
+|[CA2301](/dotnet/fundamentals/code-analysis/quality-rules/ca2301)|Не вызывайте BinaryFormatter.Deserialize, не задав предварительно BinaryFormatter.Binder|
+|[CA2302](/dotnet/fundamentals/code-analysis/quality-rules/ca2302)|Убедитесь, что BinaryFormatter.Binder задан перед вызовом BinaryFormatter.Deserialize|
+|[CA2305](/dotnet/fundamentals/code-analysis/quality-rules/ca2305)|Не используйте небезопасный десериализатор LosFormatter|
+|[CA2310](/dotnet/fundamentals/code-analysis/quality-rules/ca2310)|Не используйте небезопасный десериализатор NetDataContractSerializer|
+|[CA2311](/dotnet/fundamentals/code-analysis/quality-rules/ca2311)|Не десериализируйте, не задав предварительно NetDataContractSerializer.Binder|
+|[CA2312](/dotnet/fundamentals/code-analysis/quality-rules/ca2312)|Убедитесь, что NetDataContractSerializer.Binder задан перед десериализацией|
+|[CA2315](/dotnet/fundamentals/code-analysis/quality-rules/ca2315)|Не используйте небезопасный десериализатор ObjectStateFormatter|
+|[CA2321](/dotnet/fundamentals/code-analysis/quality-rules/ca2321)|Не десериализируйте с помощью JavaScriptSerializer, используя SimpleTypeResolver|
+|[CA2322](/dotnet/fundamentals/code-analysis/quality-rules/ca2322)|Убедитесь, что JavaScriptSerializer не был инициализирован с помощью SimpleTypeResolver до десериализации|
+|[CA3001](/dotnet/fundamentals/code-analysis/quality-rules/ca3001)|Проверьте код на наличие уязвимостей к внедрению кода SQL|
+|[CA3002](/dotnet/fundamentals/code-analysis/quality-rules/ca3002)|Проверьте код на наличие уязвимостей к межсайтовым сценариям (XSS)|
+|[CA3003](/dotnet/fundamentals/code-analysis/quality-rules/ca3003)|Проверьте код на наличие уязвимостей к внедрению пути к файлу|
+|[CA3004](/dotnet/fundamentals/code-analysis/quality-rules/ca3004)|Проверьте код на наличие уязвимостей к раскрытию информации|
+|[CA3005](/dotnet/fundamentals/code-analysis/quality-rules/ca3005)|Проверьте код на наличие уязвимостей к внедрению LDAP|
+|[CA3006](/dotnet/fundamentals/code-analysis/quality-rules/ca3006)|Проверьте код на наличие уязвимостей к внедрению команд процесса|
+|[CA3007](/dotnet/fundamentals/code-analysis/quality-rules/ca3007)|Проверьте код на наличие уязвимостей к открытому перенаправлению|
+|[CA3008](/dotnet/fundamentals/code-analysis/quality-rules/ca3008)|Проверьте код на наличие уязвимостей к внедрению кода XPath|
+|[CA3009](/dotnet/fundamentals/code-analysis/quality-rules/ca3009)|Проверьте код на наличие уязвимостей к внедрению кода XML|
+|[CA3010](/dotnet/fundamentals/code-analysis/quality-rules/ca3010)|Проверьте код на наличие уязвимостей к внедрению кода XAML|
+|[CA3011](/dotnet/fundamentals/code-analysis/quality-rules/ca3011)|Проверьте код на наличие уязвимостей к внедрению DLL|
+|[CA3012](/dotnet/fundamentals/code-analysis/quality-rules/ca3012)|Проверьте код на наличие уязвимостей к внедрению регулярных выражений|
+|[CA5358](/dotnet/fundamentals/code-analysis/quality-rules/ca5358)|Не используйте небезопасные режимы шифрования|
+|[CA5403](/dotnet/fundamentals/code-analysis/quality-rules/ca5403)|Не используйте жестко заданный сертификат|

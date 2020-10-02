@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: adf8e969af4a903aa6ed55b1c92f4ddaffcf77e0
-ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
+ms.openlocfilehash: 4ef64528d8686267677020458374ef96143f6e34
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91604632"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658520"
 ---
 # <a name="suppress-code-analysis-violations"></a>Подавление нарушений анализа кода
 
@@ -68,7 +68,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 К свойствам атрибута относятся:
 
-- **Category** — Категория, в которой определено правило. Дополнительные сведения о категориях правил анализа кода см. в разделе [предупреждения управляемого кода](../code-quality/code-analysis-for-managed-code-warnings.md).
+- **Category** — Категория, в которой определено правило. Дополнительные сведения о категориях правил анализа кода см. в разделе [предупреждения управляемого кода](/dotnet/fundamentals/code-analysis/quality-rules/index).
 
 - **CheckId** — идентификатор правила. Поддержка включает короткое и длинное имя для идентификатора правила. Короткое имя — КАКСКСКСКС; длинное имя — КАКСКСКСКС: Фриендлитипенаме.
 
@@ -190,7 +190,7 @@ public class Animal
 > [!NOTE]
 > Анализ кода игнорируется `GeneratedCodeAttribute` при применении к целой сборке или одному параметру.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

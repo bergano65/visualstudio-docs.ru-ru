@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e59fd8ef3210a19683b428438d2e58ab816e9a40
-ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
+ms.openlocfilehash: 134f91531b9485f5a887b2d9785a490fcea605fc
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91604602"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659170"
 ---
 # <a name="code-analysis-faq"></a>Анализ кода: вопросы и ответы
 
@@ -24,7 +24,7 @@ ms.locfileid: "91604602"
 
 **Вопрос**. следует ли использовать анализ кода или EditorConfig для проверки стиля кода?
 
-Ответ **. анализ**кода и файлы EditorConfig работают с руки. При определении стилей кода [в файле EditorConfig](../ide/editorconfig-code-style-settings-reference.md) или на странице [параметров текстового редактора](../ide/code-styles-and-code-cleanup.md) вы фактически настраиваете анализаторы кода, встроенные в Visual Studio. Файлы EditorConfig можно использовать для включения или отключения правил анализатора, а также для настройки пакетов анализатора NuGet.
+Ответ **. анализ**кода и файлы EditorConfig работают с руки. При определении стилей кода [в файле EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options) или на странице [параметров текстового редактора](../ide/code-styles-and-code-cleanup.md) вы фактически настраиваете анализаторы кода, встроенные в Visual Studio. Файлы EditorConfig можно использовать для включения или отключения правил анализатора, а также для настройки пакетов анализатора NuGet.
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig и наборы правил
 
@@ -35,7 +35,7 @@ ms.locfileid: "91604602"
 Однако EditorConfig файлы предлагают дополнительные способы настройки правил.
 
 - Для анализаторов качества кода .NET файлы EditorConfig позволяют [определить типы анализируемого кода](/dotnet/fundamentals/code-analysis/code-quality-rule-options).
-- Для анализаторов в стиле кода .NET, встроенных в Visual Studio, файлы EditorConfig позволяют [определить предпочтительные стили кода](../ide/editorconfig-code-style-settings-reference.md) для базы кода.
+- Для анализаторов в стиле кода .NET, встроенных в Visual Studio, файлы EditorConfig позволяют [определить предпочтительные стили кода](/dotnet/fundamentals/code-analysis/code-style-rule-options) для базы кода.
 
 Помимо наборов правил и файлов EditorConfig, некоторые анализаторы настраиваются с помощью текстовых файлов, помеченных как [Дополнительные файлы](../ide/build-actions.md#build-action-values) для компиляторов C# и VB.
 
@@ -94,7 +94,7 @@ ms.locfileid: "91604602"
 
 Ответ **. Страница свойств "анализ**кода" на уровне решения была удалена в пользу более надежной общей группы свойств. Для управления анализом кода на уровне проекта страница свойств анализ кода по-прежнему доступна. (Для управляемых проектов мы также рекомендуем переходить с набора правил на EditorConfig для конфигурации правила.)  Для совместного использования наборов правил в нескольких и всех проектах в решении или репозитории рекомендуется определить группу свойств с помощью свойства Кодеаналисисрулесет в общем файле PROPS/targets или Directory. props/Directory. targets. Если у вас нет таких общих свойств или целевых объектов, которые импортируются всеми проектами, рекомендуется [добавить такую группу свойств в каталог. props или каталог. targets в каталоге решения верхнего уровня, который автоматически импортируется во все файлы проекта, определенные в каталоге или его подкаталогах](../msbuild/customize-your-build.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор анализаторов](roslyn-analyzers-overview.md)
-- [Параметры соглашений о написании кода .NET в EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Параметры соглашений о написании кода .NET в EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)

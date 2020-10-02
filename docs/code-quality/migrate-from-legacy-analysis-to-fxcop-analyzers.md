@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2109d7cbcaaf56600812e27c3055fb3198848228
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9ce3c8feb3d3bbd458c14ee702d6e8a1668078f3
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810211"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658481"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>Переход от традиционного анализа (FxCop) к исходному анализу (FxCop Analyzer)
 
@@ -36,6 +36,6 @@ ms.locfileid: "90810211"
 
 Дополнительные сведения о настройке анализаторов FxCop:
 
-- Сведения о настройке анализаторов FxCop см. в статье [Настройка средств FxCop Analyzer](../code-quality/configure-fxcop-analyzers.md).
+- Сведения о настройке анализаторов FxCop см. в статье [Настройка средств FxCop Analyzer](/dotnet/fundamentals/code-analysis/code-quality-rule-options).
 
-- Чтобы узнать о настройке анализаторов с помощью стандартных правил с EditorConfig или файла набора правил, см. раздел [Включение категории правил](../code-quality/analyzer-rule-sets.md).
+- Чтобы узнать о настройке анализаторов с помощью стандартных правил с EditorConfig или файла набора правил, см. раздел [Включение категории правил](/dotnet/fundamentals/code-analysis/code-quality-rule-options).
