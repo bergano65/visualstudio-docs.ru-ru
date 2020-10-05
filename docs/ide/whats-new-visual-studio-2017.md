@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 18e373dd8218c9019c2a5ec8a923fdbb2c24cf99
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: db777df991b48d1b6e26d40426d32c07a495efb1
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809522"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352181"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
 
@@ -104,7 +104,7 @@ Visual Studio перемещает свои расширения, а также 
 
 Диспетчер перемещаемых расширений отслеживает все установленные расширения, но вы можете выбрать те, которые нужно добавить в список перемещаемых.
 
-![Visual Studio 2017: диалоговое окно "Расширения и обновления"](media/vs2017ide-RoamingExtensionManager.png)
+![Visual Studio 2017 — диспетчер перемещаемых расширений](media/vs2017ide-RoamingExtensionManager.png)
 
 При использовании диспетчера перемещаемых расширений вы заметите в списке три типа значков.
 
@@ -222,7 +222,7 @@ Visual Studio перемещает свои расширения, а также 
 
 Для просмотра моментальных снимков и перехода между ними используйте кнопки **На шаг назад** и **На шаг вперед** на панели инструментов **Отладка**. С помощью этих кнопок можно перейти к событиям, которые отображаются на вкладке **События** в окне **Средства диагностики**. При переходе на шаг назад или вперед к событию автоматически активируется отладка с ведением журнала для выбранного события.
 
-![Новое диалоговое окно помощника по исправлению ошибок в Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Кнопки Назад и Вперед")
+![Пример перехода на шаг назад IntelliTrace в Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Кнопки Назад и Вперед")
 
 Дополнительные сведения см. на странице [Просмотр моментальных снимков с использованием возврата на шаг назад в IntelliTrace](../debugger/view-historical-application-state.md).
 

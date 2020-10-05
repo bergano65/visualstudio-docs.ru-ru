@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0e127006976c484d1e4fc2fe011af979af7eb7a9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0abe51b9f01d0c1f380c4762a7d0d4f457964aa7
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114983"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135135"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Исправление ошибок сети при установке или использовании Visual Studio
 
@@ -92,11 +92,27 @@ ms.locfileid: "76114983"
 
 ::: moniker-end
 
+## <a name="error-disconnected-from-visual-studio-when-attempting-to-report-a-problem"></a>Ошибка: "Отсутствует подключение к Visual Studio" при попытке сообщить о проблеме
+
+Эта ошибка обычно возникает, когда пользователи подключаются к Интернету через прокси-сервер, который блокирует вызовы Visual Studio к некоторым сетевым ресурсам.
+
+### <a name="to-fix-this-proxy-error"></a>Устранение этой ошибки прокси-сервера
+
+1. Найдите файл **feedback.exe.config** (файл конфигурации feedback.exe) в папке: **%ProgramFiles(x86)%\Microsoft Visual Studio\Installer** или **%ProgramFiles%\Microsoft Visual Studio\Installer**.
+
+2. В файле конфигурации проверьте, присутствует ли следующий код; если код отсутствует, добавьте его перед последней строкой `</configuration>`.
+
+   ```xml
+   <system.net>
+       <defaultProxy useDefaultCredentials="true" />
+   </system.net>
+   ```
+
 ## <a name="error-the-underlying-connection-was-closed"></a>Ошибка: "Используемое соединение было закрыто"
 
 Если вы работаете с Visual Studio в частной сети, где есть брандмауэр, Visual Studio может быть не в состоянии подключиться к некоторым сетевым ресурсам. К таким ресурсам могут относиться Azure DevOps Services для входа и лицензирования, а также NuGet и службы Azure. Если Visual Studio не удается подключиться к одному из этих ресурсов, отображается следующее сообщение об ошибке:
 
-  **Используемое соединение было закрыто: обнаружена неожиданная ошибка при отправке**
+  **Базовое соединение закрыто: непредвиденная ошибка при передаче**
 
 Visual Studio использует протокол TLS 1.2 для подключения к сетевым ресурсам. Устройства для обеспечения безопасности в частных сетях блокируют определенные подключения к серверу, если Visual Studio использует TLS 1.2.
 

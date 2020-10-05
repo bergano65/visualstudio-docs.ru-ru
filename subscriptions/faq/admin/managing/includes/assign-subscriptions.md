@@ -6,13 +6,13 @@ ms.topic: include
 ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 3/3/2020
-ms.openlocfilehash: 192cb7118a9f431ce2e7a9396b67a919fad10bb9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.date: 09/30/2020
+ms.openlocfilehash: add0bac2a9e7eb053c183d66fcee17c8133bb921
+ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84200359"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91642507"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>Как назначать подписки Visual Studio?
 
@@ -39,4 +39,12 @@ ms.locfileid: "84200359"
 4. Вернитесь на сайт [manage.visualstudio.com](https://manage.visualstudio.com), нажмите "Массовое добавление" и отправьте сохраненную копию шаблона Excel.
 5. После отправки отобразится страница подтверждения и список новых подписчиков. Ваши подписчики получат сообщение электронной почты и сразу же смогут начать работу с подпиской Visual Studio (им не нужно ее активировать).
 
-Дополнительные сведения см. в статье о [назначении подписок на портале администрирования подписок на Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/assign-license#individual-assignments).
+Для получения [дополнительных сведений](https://docs.microsoft.com/visualstudio/subscriptions/assign-license#add-a-single-subscriber) о том, как быстро и легко назначить подписки, обратитесь к статье о назначении подписок на Портале администрирования подписок на Visual Studio.  Ознакомьтесь с [дополнительными сведениями](https://docs.microsoft.com/visualstudio/subscriptions/assign-github) об управлении подписками Visual Studio с GitHub Enterprise. 
+
+## <a name="what-is-the-github-enterprise-setup-process"></a>Что представляет собой процесс настройки GitHub Enterprise? 
+
+GitHub Enterprise настраивается отдельно от подписок Visual Studio, и управление им также осуществляется отдельно. После покупки Visual Studio с GitHub Enterprise начинается процесс настройки учетной записи GitHub Enterprise, и одновременно с этим процессом (но отдельно от него) происходит заключение соглашения на сайте manage.visualstudio.com. Настройка учетной записи GitHub Enterprise может занять некоторое время.  
+
+После того как ваша организация настроит учетную запись GitHub Enterprise, подписчики, которым назначены подписки Visual Studio с GitHub Enterprise, получат уведомление от GitHub о том, что их подписки Visual Studio связаны c GitHub Enterprise. После получения этого сообщения подписчики могут обратиться к администратору организации GitHub, чтобы получить приглашение для соответствующей организации. 
+
+[Ознакомьтесь с дополнительными сведениями](https://docs.microsoft.com/visualstudio/subscriptions/assign-github) об управлении подписками Visual Studio с GitHub Enterprise. Дополнительные сведения о процессе настройки GitHub Enterprise см. в [документации для подписчиков](https://docs.microsoft.com/visualstudio/subscriptions/access-github). 

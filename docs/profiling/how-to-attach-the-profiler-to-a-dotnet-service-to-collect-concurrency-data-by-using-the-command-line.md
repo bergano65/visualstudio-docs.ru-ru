@@ -1,5 +1,6 @@
 ---
-title: Присоединение профилировщика к .NET для сбора данных о параллелизме
+title: Присоединение профилировщика к .NET для сбора данных о параллелизме с помощью командной строки
+titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f4b97994a3e24e4c3d4bc13cfe3b28455e0cecc2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7b9b2e9a90df1b9dcfaaa2fd7b77410e24e32a9a
+ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811101"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91421811"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к службе .NET для сбора данных о параллелизме при помощи командной строки
 В этой статье описывается использование программ командной строки Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для подключения профилировщика к службе .NET Framework и сбора данных о параллелизме потоков и процессов с помощью метода выборки.

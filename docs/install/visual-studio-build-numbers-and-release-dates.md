@@ -5,19 +5,19 @@ description: Список выпущенных версий и номеров с
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 09/22/2020
+ms.date: 09/29/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 6e7298a920a970205d336e1db792c7becbf89aec
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c00c37cc685cf6f0bd48ddf481a7c79d8ddcf77b
+ms.sourcegitcommit: 76845bf28da6d994666d5cdddfc5a2711d9a448d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005255"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91544804"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Номера сборки и даты выпуска Visual Studio
 
@@ -29,10 +29,12 @@ ms.locfileid: "91005255"
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.8.0 | Предварительная версия 3.2 | 29 сентября 2020 г. | 16.8.30524.135 |
+| 16.7.5 | Release | 29 сентября 2020 г. |  16.7.30523.141 |
 | 16.8.0 | Предварительная версия 3.1 | 22 сентября 2020 г. | 16.8.30516.212 |
 | 16.7.4 | Release | 21 сентября 2020 г. | 16.7.30517.126 |
 | 16.8.0 | Предварительная версия 3 | 14 сентября 2020 г. | 16.8.30509.190 |
-| 16.7.3 | Release | 8 сентября 2020 г. | 16.7.30503.244 |
+| 16.7.3 | Выпуск | 8 сентября 2020 г. | 16.7.30503.244 |
 | 16.4.13 | Release | 8 сентября 2020 г. | 16.4.30427.197 |
 | 16.0.18 | Выпуск | 8 сентября 2020 г. | 16.0.28803.826 |
 | 16.8.0 | Предварительная версия 2.1 | 31 августа 2020 г. | 16.8.30428.66 |
@@ -166,7 +168,7 @@ ms.locfileid: "91005255"
 | 16.0.0 | Предварительная версия 1 | 4 декабря 2018 г. | 16.0.28329.73 |
 
 > [!NOTE]
-> Список номеров сборки и даты выпуска предыдущей версии см. в статье [Номера сборки и даты выпуска Visual Studio](visual-studio-build-numbers-and-release-dates.md?view=vs-2017).
+> Список номеров сборки и даты выпуска предыдущей версии см. в статье [Номера сборки и даты выпуска Visual Studio](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true).
 
 ::: moniker-end
 
@@ -350,7 +352,7 @@ ms.locfileid: "91005255"
 | 15.0.0 | Выпуск | 7 марта 2017 г. | 15.0.26228.4 |
 
 > [!NOTE]
-> Дополнительные сведения о номерах сборки и датах выпуска следующей версии Visual Studio см. на странице [Номера сборки и даты выпуска Visual Studio](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019).
+> Дополнительные сведения о номерах сборки и датах выпуска следующей версии Visual Studio см. на странице [Номера сборки и даты выпуска Visual Studio](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019&preserve-view=true).
 
 ::: moniker-end
 
