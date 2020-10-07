@@ -5,13 +5,13 @@
   expanded: true
   items:
     - name: Развертывание приложения ASP.NET Core в Azure
-      href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1
+      href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1&preserve-view=true
     - name: Развертывание веб-приложения списка дел на .NET в Azure
-      href: /dotnet/azure/dotnet-quickstart-vs?view=azure-dotnet
+      href: /dotnet/azure/dotnet-quickstart-vs?view=azure-dotnet&preserve-view=true
     - name: Непрерывное развертывание ASP.NET Core в Azure с помощью Visual Studio и Git
-      href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1
+      href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1&preserve-view=true
     - name: Непрерывное развертывание в Azure с помощью Azure Pipelines
-      href: /azure/devops/pipelines/get-started-yaml?view=vsts
+      href: /azure/devops/pipelines/get-started-yaml?view=vsts&preserve-view=true
     - name: Развертывание веб-приложения ASP.NET в виртуальную машину Azure
       href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: Подключение к службам Azure
