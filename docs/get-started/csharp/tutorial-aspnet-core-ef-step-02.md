@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580086"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780987"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Шаг 2. Создание первого веб-приложения ASP.NET Core
 
@@ -100,7 +100,7 @@ public void OnGet()
 
 Добавьте точку останова в метод `OnGet`, где мы присваиваем значение `Time`, и на этот раз запустите отладку приложения.
 
-Выполнение останавливается на этой строке, и вы увидите, что `DateTime.Today` включает дату, но время всегда установлено на полночь, поскольку строка не включает данные о времени. 
+Выполнение останавливается на этой строке, и вы увидите, что `DateTime.Today` включает дату, но время всегда установлено на полночь, поскольку строка не включает данные о времени.
 
 ![Visual Studio 2019. Проект ASP.NET Core в браузере](media/vs-2019/vs2019-breakpoint.png)
 
@@ -128,4 +128,4 @@ public void OnGet()
 
 ## <a name="see-also"></a>См. также
 
-- [Учебник. Создание веб-приложения Razor Pages с помощью ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [Учебник. Создание веб-приложения Razor Pages с помощью ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

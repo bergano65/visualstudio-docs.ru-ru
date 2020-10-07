@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: dd4db2502c65e9330bde5f475fc97b2e86a49e4a
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 10beb7e95807a098cbe6efa89d02fdfa866bc2b8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80544028"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583987"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Расширение Visual Studio для Mac
 
@@ -161,7 +161,7 @@ public enum DateInserterCommands
 
 ## <a name="extending-the-new-editor"></a>Расширение нового редактора
 
-Visual Studio для Mac [предоставляет новый собственный пользовательский интерфейс Cocoa для редактирования текста](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes), созданный на основе тех же слоев редактирования, что и Visual Studio в Windows.
+Visual Studio для Mac [предоставляет новый собственный пользовательский интерфейс Cocoa для редактирования текста](/visualstudio/releasenotes/vs2019-mac-relnotes), созданный на основе тех же слоев редактирования, что и Visual Studio в Windows.
 
 Одним из многих преимуществ совместного использования редактора в Visual Studio и Visual Studio для Mac можно считать то, что предназначенный для редактора Visual Studio код можно легко адаптировать для работы в Visual Studio для Mac.
 

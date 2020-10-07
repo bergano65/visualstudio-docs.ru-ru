@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 07/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: e46a66ab9ec05f8e7ad13091fdced01bffbd93b5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b883979921b3fa1493188a8d0fe75a1c493d5d97
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038677"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584000"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Создание многоконтейнерного приложения с помощью Docker Compose
 
@@ -84,7 +84,7 @@ services:
    ```
    
     > [!NOTE]
-    > В рабочем коде не следует удалять `HttpClient` после каждого запроса. Рекомендации см. в разделе [Использование HttpClientFactory для реализации устойчивых HTTP-запросов](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
+    > В рабочем коде не следует удалять `HttpClient` после каждого запроса. Рекомендации см. в разделе [Использование HttpClientFactory для реализации устойчивых HTTP-запросов](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
 
 1. В файл *Index.cshtml* добавьте строку для отображения `ViewData["Message"]`, чтобы файл выглядел примерно так:
 
@@ -102,7 +102,7 @@ services:
       </div>
       ```
   
-1. В проектах интерфейсной части и веб-API закомментируйте вызов [Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) в методе `Configure` в *Startup.cs*, так как в этом примере кода для вызова веб-API используется HTTP, а не HTTPS.
+1. В проектах интерфейсной части и веб-API закомментируйте вызов [Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection](/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) в методе `Configure` в *Startup.cs*, так как в этом примере кода для вызова веб-API используется HTTP, а не HTTPS.
 
       ```csharp
                   //app.UseHttpsRedirection();

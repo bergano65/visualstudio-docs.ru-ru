@@ -12,22 +12,22 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0489950b9132a36aef8ecb3d8374c02d1a1aee2
-ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
+ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90560740"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658442"
 ---
 # <a name="overview-of-source-code-analysis"></a>Обзор анализа исходного кода
 
-Анализаторы .NET Compiler Platform (Roslyn) выполняют анализ стиля, качества, удобства, структуры и других характеристик кода C# или Visual Basic, а также выявляют проблемы в нем. Эта проверка или анализ выполняется во время разработки во всех открытых файлах. 
+Анализаторы .NET Compiler Platform (Roslyn) выполняют анализ стиля, качества, удобства, структуры и других характеристик кода C# или Visual Basic, а также выявляют проблемы в нем. Эта проверка или анализ выполняется во время разработки во всех открытых файлах.
 
 Анализаторы можно разбить на следующие группы.
 
-- Анализаторы [стиля кода](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019#convention-categories) встроены в Visual Studio. Идентификатор диагностики или код для этих анализаторов имеет формат IDExxxx, например IDE0067. Вы можете настроить параметры на [странице параметров текстового редактора](../ide/code-styles-and-code-cleanup.md) или в [файле EditorConfig](../ide/editorconfig-code-style-settings-reference.md). Начиная с .NET 5.0, анализаторы стиля кода включены в пакет SDK для .NET и могут строго рассматриваться как предупреждения или ошибки сборки. Дополнительные сведения см. [здесь](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
+- Анализаторы [стиля кода](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) встроены в Visual Studio. Идентификатор диагностики или код для этих анализаторов имеет формат IDExxxx, например IDE0067. Вы можете настроить параметры на [странице параметров текстового редактора](../ide/code-styles-and-code-cleanup.md) или в [файле EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options). Начиная с .NET 5.0, анализаторы стиля кода включены в пакет SDK для .NET и могут строго рассматриваться как предупреждения или ошибки сборки. Дополнительные сведения см. [здесь](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
-- Анализаторы [качества кода](code-analysis-warnings-for-managed-code-by-checkid.md) теперь доступны в пакете SDK для .NET 5 и включены по умолчанию. Идентификатор диагностики или код для этих анализаторов имеет формат CAxxxx, например CA1822. Дополнительные сведения см. в разделе об [анализе качества кода](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
+- Анализаторы [качества кода](/dotnet/fundamentals/code-analysis/quality-rules/index) теперь доступны в пакете SDK для .NET 5 и включены по умолчанию. Идентификатор диагностики или код для этих анализаторов имеет формат CAxxxx, например CA1822. Дополнительные сведения см. в разделе об [анализе качества кода](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 
 - Вы можете установить сторонние анализаторы в виде пакета NuGet или расширения Visual Studio. Анализаторы сторонних разработчиков, такие как [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/) и [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
 
@@ -58,7 +58,7 @@ ms.locfileid: "90560740"
 
 ## <a name="configure-analyzer-severity-levels"></a>Настройка уровней серьезности анализатора
 
-Вы можете настроить уровни серьезности правил анализатора или *данные диагностики* в [файле EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) или в [меню лампочки](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu). 
+Вы можете настроить уровни серьезности правил анализатора или *данные диагностики* в [файле EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) или в [меню лампочки](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
 
 Анализаторы также можно настроить для проверки кода во время сборки и в реальном времени по мере ввода. Можно настроить область выполнения динамического анализа кода только для текущего документа, для всех открытых документов или для всего решения. См. практическое руководство по [ Настройка области динамического анализа кода](./configure-live-code-analysis-scope-managed-code.md).
 

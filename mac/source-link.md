@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 12/16/2019
 ms.assetid: 4bcb8acf-db50-4bd8-a48e-86248f00c90b
-ms.openlocfilehash: 530ad09bbf72d9696621f328c2df40b37f362c13
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 307196dc7e33d268c45a9bb126c002ad426c5558
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75439088"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583922"
 ---
 # <a name="debugging-into-nuget-packages-with-source-link"></a>Отладка пакетов NuGet с помощью технологии Source Link
 
@@ -38,4 +38,4 @@ ms.locfileid: "75439088"
 ## <a name="see-also"></a>См. также
 
 - [Репозиторий Source Link на GitHub](https://github.com/dotnet/sourcelink/blob/master/README.md)
-- [Документация .NET](https://docs.microsoft.com/dotnet/standard/library-guidance/sourcelink) по Source Link и дополнительные сведения о добавлении поддержки Source Link в пакеты
+- [Документация .NET](/dotnet/standard/library-guidance/sourcelink) по Source Link и дополнительные сведения о добавлении поддержки Source Link в пакеты

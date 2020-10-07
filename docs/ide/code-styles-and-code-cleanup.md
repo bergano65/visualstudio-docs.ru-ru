@@ -2,20 +2,20 @@
 title: Параметры стиля кода и очистка кода
 ms.date: 04/25/2019
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 75b301f66f597f8b53a2561ffbbe05dfb8a4cb1c
-ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
+ms.openlocfilehash: 82eec2a911ec113c42423fe14b06539e465e8bb3
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90682692"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658390"
 ---
 # <a name="code-style-preferences"></a>Параметры стиля кода
 
@@ -26,7 +26,7 @@ ms.locfileid: "90682692"
 
 ## <a name="code-styles-in-editorconfig-files"></a>Стили кода в EDITORCONFIG-файлах
 
-[Параметры стиля кода](../ide/editorconfig-code-style-settings-reference.md) для .NET можно указать, добавив [EDITORCONFIG-файл](create-portable-custom-editor-options.md) к проекту. EDITORCONFIG-файлы связаны с базой кода, а не с учетной записью персонализации Visual Studio. Параметры в EDITORCONFIG-файле имеют приоритет над параметрами, выбранными в диалоговом окне **Параметры**. Используйте файл EditorConfig, если вы хотите применить стили кода для всех участников к репозиторию или проекту.
+[Параметры стиля кода](/dotnet/fundamentals/code-analysis/code-style-rule-options) для .NET можно указать, добавив [EDITORCONFIG-файл](create-portable-custom-editor-options.md) к проекту. EDITORCONFIG-файлы связаны с базой кода, а не с учетной записью персонализации Visual Studio. Параметры в EDITORCONFIG-файле имеют приоритет над параметрами, выбранными в диалоговом окне **Параметры**. Используйте файл EditorConfig, если вы хотите применить стили кода для всех участников к репозиторию или проекту.
 
 ::: moniker range=">=vs-2019"
 
@@ -112,5 +112,5 @@ ms.locfileid: "90682692"
 ## <a name="see-also"></a>См. также раздел
 
 - [Быстрые действия](../ide/quick-actions.md)
-- [Параметры соглашений о написании кода .NET в EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Параметры соглашений о написании кода .NET в EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [Поведение редактора (Visual Studio для Mac)](/visualstudio/mac/editor-behavior)

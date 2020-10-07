@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 59e226fc0cc09b1eda5197d6accddfa9bd1a20ed
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 277e5cd03d4006ced0791356be73ca1fcbe5c217
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402261"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659255"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Создание переносимых настраиваемых параметров редактора с EditorConfig
 
@@ -68,7 +68,7 @@ ms.locfileid: "89402261"
 - insert\_final_newline
 - корневой
 
-Параметры редактора EditorConfig поддерживаются во всех языках, поддерживаемых Visual Studio, за исключением XML. Кроме того, EditorConfig поддерживает соглашения о [стиле кода](../ide/editorconfig-code-style-settings-reference.md), в том числе соглашения о [языке](../ide/editorconfig-language-conventions.md), [форматировании](../ide/editorconfig-formatting-conventions.md) и [именовании](../ide/editorconfig-naming-conventions.md) для C# и Visual Basic.
+Параметры редактора EditorConfig поддерживаются во всех языках, поддерживаемых Visual Studio, за исключением XML. Кроме того, EditorConfig поддерживает соглашения о [стиле кода](/dotnet/fundamentals/code-analysis/code-style-rule-options), в том числе соглашения о [языке](/dotnet/fundamentals/code-analysis/style-rules/language-rules), [форматировании](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules) и [именовании](/dotnet/fundamentals/code-analysis/style-rules/naming-rules) для C# и Visual Basic.
 
 ## <a name="add-and-remove-editorconfig-files"></a>Добавление и удаление файлов EditorConfig
 
@@ -90,7 +90,7 @@ ms.locfileid: "89402261"
 
    ![Шаблоны элементов для файла EditorConfig в Visual Studio](media/editorconfig-item-templates.png)
 
-1. Выберите шаблон **файл editorconfig (по умолчанию)** , чтобы добавить файл EditorConfig, заполненный двумя основными параметрами EditorConfig для стиля и размера отступов. Вы также можете выбрать шаблон **файл editorconfig (.NET)** , чтобы добавить файл EditorConfig с настроенными стандартными [соглашениями .NET по стилю кода, форматированию и именованию](../ide/editorconfig-code-style-settings-reference.md).
+1. Выберите шаблон **файл editorconfig (по умолчанию)** , чтобы добавить файл EditorConfig, заполненный двумя основными параметрами EditorConfig для стиля и размера отступов. Вы также можете выбрать шаблон **файл editorconfig (.NET)** , чтобы добавить файл EditorConfig с настроенными стандартными [соглашениями .NET по стилю кода, форматированию и именованию](/dotnet/fundamentals/code-analysis/code-style-rule-options).
 
    В обозревателе решений появится файл *EDITORCONFIG*, который откроется в редакторе.
 
@@ -180,7 +180,7 @@ dir .editorconfig /s
 
 ## <a name="see-also"></a>См. также
 
-- [Соглашения о стиле кода .NET](../ide/editorconfig-code-style-settings-reference.md)
+- [Соглашения о стиле кода .NET](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [Поддержка EditorConfig для языковой службы](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](https://editorconfig.org/)
 - [Возможности редактора кода](writing-code-in-the-code-and-text-editor.md)

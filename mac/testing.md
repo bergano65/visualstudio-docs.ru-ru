@@ -7,12 +7,12 @@ helpviewer_keywords:
 - unit tests [Visual Studio for Mac]
 ms.author: jomatthi
 author: jmatthiesen
-ms.openlocfilehash: acf34677e8d9b477512763be3c43bb9df0c53c46
-ms.sourcegitcommit: 935e1388281df0f04147802606b5cb7f513d45ed
+ms.openlocfilehash: 758bdcb0d854247847e4d0d56152840643402bf4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88201794"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91580965"
 ---
 # <a name="testing-tools-in-visual-studio-for-mac"></a>Инструменты тестирования в Visual Studio для Mac
 
@@ -24,7 +24,7 @@ ms.locfileid: "88201794"
 ![Диалоговое окно создания проекта с выбранным разделом "Веб и консоль > Тесты": отображаются проекты xUnit, MSTest и NUnit](media/create-new-test-project.PNG)
 
 > [!NOTE]
-> Дополнительные сведения о модульном тестировании приложений .NET Core и выборе платформ модульного тестирования см. в документации [Модульное тестирование в .NET Core и .NET Standard](https://docs.microsoft.com/dotnet/core/testing/?pivots=xunit).
+> Дополнительные сведения о модульном тестировании приложений .NET Core и выборе платформ модульного тестирования см. в документации [Модульное тестирование в .NET Core и .NET Standard](/dotnet/core/testing/?pivots=xunit).
 
 ## <a name="running-tests"></a>Выполнение тестов
 Окно **Модульные тесты** используется для запуска модульных тестов. Чтобы его открыть, выберите в меню **Вид > Панели > Тесты**. В этом окне автоматически обнаруживаются и отображаются модульные тесты, которые существуют в вашем решении. Здесь вы можете запускать все тесты или ряд выбранных тестов.

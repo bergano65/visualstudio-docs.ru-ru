@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 23b50221845cf2b02b963c98f912a218a60630c6
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509943"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658416"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Руководство по повышению производительности работы в Visual Studio для разработчиков на платформе C#
 
@@ -101,7 +101,7 @@ ms.locfileid: "89509943"
 
    ![Настройте уровень серьезности для правила стиля кода непосредственно в редакторе.](../ide/media/configure-severity-level.png)
 
-Ознакомьтесь с документацией по [вариантам соглашений о написании кода для .NET](editorconfig-code-style-settings-reference.md), где среди прочего есть полный пример файла EditorConfig.
+Ознакомьтесь с документацией по [вариантам соглашений о написании кода для .NET](/dotnet/fundamentals/code-analysis/code-style-rule-options), где среди прочего есть полный пример файла EditorConfig.
 
 ::: moniker range=">=vs-2019"
 

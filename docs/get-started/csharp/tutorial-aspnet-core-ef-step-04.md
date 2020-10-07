@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 5ea9468bdf86986ab542fb1cabc873c9aeb75fd6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 9a2ee576808698e19726cadfea7ba560ce3bdb7c
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580039"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780935"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Шаг 4. Предоставление веб-API приложения ASP.NET Core
 
@@ -208,7 +208,7 @@ services.AddSwaggerGen(c =>
 // Enable middleware to serve generated Swagger as a JSON endpoint.
 app.UseSwagger();
 
-// Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
+// Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
 // specifying the Swagger JSON endpoint.
 app.UseSwaggerUI(c =>
 {
@@ -216,7 +216,7 @@ app.UseSwaggerUI(c =>
 });
 ```
 
-Теперь вы сможете скомпилировать и запустить свое приложение. В браузере перейдите к `/swagger` в адресной строке. Вы увидите список моделей и конечных точек API приложения. 
+Теперь вы сможете скомпилировать и запустить свое приложение. В браузере перейдите к `/swagger` в адресной строке. Вы увидите список моделей и конечных точек API приложения.
 
 ![Visual Studio 2019. Страница Swagger в браузере](media/vs-2019/vs2019-swagger-browser.png)
 
@@ -230,5 +230,5 @@ app.UseSwaggerUI(c =>
 
 ## <a name="see-also"></a>См. также
 
-- [Начало работы со Swashbuckle и ASP.NET Core](/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio)
-- [Страницы справки по веб-API ASP.NET Core с использованием Swagger (OpenAPI)](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2)
+- [Начало работы со Swashbuckle и ASP.NET Core](/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio&preserve-view=true)
+- [Страницы справки по веб-API ASP.NET Core с использованием Swagger (OpenAPI)](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2&preserve-view=true)

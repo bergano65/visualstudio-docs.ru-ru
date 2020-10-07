@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 8020106ed189b1b67b7cc2f475784809fc93aa1e
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: f971237ecc829fcc4ab660263a1b66c701f86f62
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426906"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583961"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Установка Visual Studio для Mac 2019
 
@@ -62,7 +62,7 @@ ms.locfileid: "89426906"
    |**Приложения .NET Core**|         |Выберите платформу **.NET Core**.|         |
    |**Веб-приложения ASP.NET Core**|         |Выберите платформу **.NET Core**.|         |
    |**Функции Azure**|         |Выберите платформу **.NET Core**.|         |
-   |**Разработка кроссплатформенных игр Unity**|         |Не нужно устанавливать дополнительные платформы, кроме Visual Studio для Mac.| Дополнительные сведения об установке расширения Unity вы найдете в [руководстве по установке Unity](/visualstudio/mac/setup-vsmac-tools-unity).|
+   |**Разработка кроссплатформенных игр Unity**|         |Не нужно устанавливать дополнительные платформы, кроме Visual Studio для Mac.| Дополнительные сведения об установке расширения Unity вы найдете в [руководстве по установке Unity](./setup-vsmac-tools-unity.md).|
 
 7. Выбрав нужные параметры, нажмите кнопку **Установить**.
 8. Установщик будет отображать ход выполнения, по мере загрузки и установки Visual Studio для Mac и выбранных рабочих нагрузок. Вам будет предложено ввести пароль, чтобы предоставить привилегии, необходимые для установки.
@@ -75,7 +75,7 @@ ms.locfileid: "89426906"
 
     [![Выберите, какие сочетания клавиш вы хотите использовать](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
 
-Если при установке в корпоративной среде возникают проблемы с сетью, см. инструкции по [установке за брандмауэром или прокси-сервером](/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server).
+Если при установке в корпоративной среде возникают проблемы с сетью, см. инструкции по [установке за брандмауэром или прокси-сервером](#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server).
 
 Сведения об изменениях см. в [заметках о выпуске](/visualstudio/releasenotes/vs2019-mac-relnotes).
 
@@ -88,7 +88,7 @@ ms.locfileid: "89426906"
 
 Настройте сеть, разрешив доступ к следующим расположениям:
 
-- [Конечные точки Visual Studio](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
+- [Конечные точки Visual Studio](./install-behind-a-firewall-or-proxy-server.md)
 
 ## <a name="next-steps"></a>Следующие шаги
 

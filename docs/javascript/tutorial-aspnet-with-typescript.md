@@ -11,16 +11,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8a12c16c4c53ab2d0850bf5b768488160fa729a
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 58e3557d260b821055c533fc703a1f47949c5bfb
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453693"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781060"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Учебник. Создание приложения ASP.NET Core с помощью TypeScript в Visual Studio
 
-В этом учебнике по ASP.NET Core разработки Visual Studio и TypeScript вы создадите простое веб-приложение, добавите код TypeScript, а затем запустите приложение. 
+В этом учебнике по ASP.NET Core разработки Visual Studio и TypeScript вы создадите простое веб-приложение, добавите код TypeScript, а затем запустите приложение.
 
 ::: moniker range="vs-2017"
 
@@ -219,7 +219,7 @@ Visual Studio управляет файлами для отдельного пр
 1. Следуйте инструкциям в разделе по [управлению пакетом npm](../javascript/npm-package-management.md#aspnet-core-projects), чтобы добавить файл `package.json` в проект. В результате в проект будет добавлена поддержка npm.
 
    >[!NOTE]
-   > Для установки клиентских файлов JavaScript и CSS в проектах ASP.NET Core вместо npm можно также использовать [диспетчер библиотек](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) или yarn.
+   > Для установки клиентских файлов JavaScript и CSS в проектах ASP.NET Core вместо npm можно также использовать [диспетчер библиотек](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) или yarn.
 
 1. В этом примере в проект добавляется файл определения TypeScript для jQuery. Включите в файл *package.json* следующий код.
 

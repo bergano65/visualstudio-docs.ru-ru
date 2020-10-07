@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1269049adad3fe2d26caa79721452f7f313e60d5
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: fed525f62466d096aa7868cc57c7fd7c75bf46f8
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739906"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781030"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Управление пакетами npm в Visual Studio
 
@@ -126,7 +126,7 @@ npm позволяет устанавливать пакеты для прило
 * [Установка пакетов с помощью файла package.json](#npmInstallPackage)
 
 >[!NOTE]
-> Для установки клиентских файлов JavaScript и CSS в проектах ASP.NET Core вместо npm можно также использовать [диспетчер библиотек](/aspnet/core/client-side/libman/?view=aspnetcore-3.1) или yarn.
+> Для установки клиентских файлов JavaScript и CSS в проектах ASP.NET Core вместо npm можно также использовать [диспетчер библиотек](/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) или yarn.
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd">Добавление поддержки npm в проект (ASP.NET Core)</a>
 

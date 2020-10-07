@@ -5,18 +5,18 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: d1511434a34017a7f0f7da65fe1ea6956d45d497
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 911d8d3a65c414bc3c98494bda75c46b778e5b2b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71128401"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584026"
 ---
 # <a name="understanding-build-configurations"></a>Общие сведения о конфигурациях сборки
 
 Вы можете сохранять разные конфигурации свойства решения и проекта для использования разных типов сборок в процессе разработки. Проекты, создаваемые в Visual Studio для Mac на основе шаблонов, обычно включают в себя конфигурации отладки и выпуска, которые поддерживают отладку и развертывание приложения соответственно. 
 
-Если вы хотите создать пользовательские конфигурации, см. раздел [Создание и изменение конфигураций сборки](/visualstudio/mac/create-and-edit-configurations).
+Если вы хотите создать пользовательские конфигурации, см. раздел [Создание и изменение конфигураций сборки](./create-and-edit-configurations.md).
 
 >[!NOTE]
 >Этот раздел относится к Visual Studio для Mac. Для Visual Studio в Windows см. статью [Общие сведения о конфигурациях сборки](/visualstudio/ide/understanding-build-configurations).

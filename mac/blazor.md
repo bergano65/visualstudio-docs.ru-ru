@@ -10,18 +10,18 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 0dcc254366e0d652ab7a8442a4d0c526fd72c403
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 3280e63ae92a99cfa076b79e499a7b18952285c4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402545"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584039"
 ---
 # <a name="create-no-locblazor-web-apps"></a>Создание веб-приложений Blazor
 
 Из этого руководства вы узнаете, как создать свое первое веб-приложение Blazor. Более подробные инструкции см. в статье [Введение в ASP.NET Core Blazor](/aspnet/core/blazor/index).
 
-ASP.NET Core Blazor поддерживает два разных варианта размещения: Blazor WebAssembly (WASM) и Blazor Server. Visual Studio для Mac поддерживает обе модели размещения. Visual Studio для Mac начиная с версии 8.4 поддерживает Blazor Server, а начиная с версии 8.6 — оба варианта. Дополнительные сведения о моделях размещения Blazor см. в статье [Модели размещения ASP.NET Core Blazor](https://docs.microsoft.com/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). Поддержка отладки проектов Blazor WebAssembly в Visual Studio для Mac доступна в предварительной версии выпуска 8.8 (предоставляется через канал обновления предварительной версии в меню **Visual Studio > Проверить обновления...** ).
+ASP.NET Core Blazor поддерживает два разных варианта размещения: Blazor WebAssembly (WASM) и Blazor Server. Visual Studio для Mac поддерживает обе модели размещения. Visual Studio для Mac начиная с версии 8.4 поддерживает Blazor Server, а начиная с версии 8.6 — оба варианта. Дополнительные сведения о моделях размещения Blazor см. в статье [Модели размещения ASP.NET Core Blazor](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). Поддержка отладки проектов Blazor WebAssembly в Visual Studio для Mac доступна в предварительной версии выпуска 8.8 (предоставляется через канал обновления предварительной версии в меню **Visual Studio > Проверить обновления...** ).
 
 Что такое Blazor? Blazor — это платформа для создания интерактивных клиентских веб-интерфейсов на основе .NET, которая предоставляет веб-разработчикам следующие преимущества:
 
