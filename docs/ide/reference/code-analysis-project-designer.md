@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b9b61d25d0a08763d55dcfb5d5ddb245471effc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 350c32ea0904913b20f346243de9cb464667289a
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113776"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659359"
 ---
 # <a name="code-analysis-project-designer"></a>"Анализ кода", конструктор проекта
 
@@ -64,6 +64,6 @@ ms.locfileid: "76113776"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Анализ для предупреждений управляемого кода](../../code-quality/code-analysis-for-managed-code-warnings.md)
+- [Анализ для предупреждений управляемого кода](/dotnet/fundamentals/code-analysis/quality-rules/index)
 - [Общие сведения об анализе управляемого кода](../../code-quality/code-analysis-for-managed-code-overview.md)
 - [Пошаговое руководство. Проверка управляемого кода на наличие дефектов](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
