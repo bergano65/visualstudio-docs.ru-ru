@@ -523,7 +523,7 @@
               href: ide/create-portable-custom-editor-options.md
             - name: Соглашения о форматировании EditorConfig на C++
               href: ide/cpp-editorconfig-properties.md
-            - name: Соглашения о написании кода на .NET
+            - name: Соглашения о написании кода .NET >>
               href: /dotnet/fundamentals/code-analysis/code-style-rule-options
         - name: Настройка полосы прокрутки
           href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
