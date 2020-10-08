@@ -12,33 +12,33 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 31d158a0c8f52e6ca8fe496885a0a3d5b862a543
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440740"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91838471"
 ---
 # <a name="enumerating-locals"></a>Перечисление локальных переменных
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Когда Visual Studio будет готова для заполнения **"Локальные"** окна, он вызывает [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) на [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) объект, возвращенный из [ GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) (см. в разделе [реализация GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)). `IDebugProperty2::EnumChildren` Возвращает [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) объекта.  
+ Когда Visual Studio будет готова заполнить окно **локальных переменных** , оно вызывает [Енумчилдрен](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) для объекта [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , возвращаемого из [жетмесодпроперти](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) (см. [реализацию жетмесодпроперти](../../extensibility/debugger/implementing-getmethodproperty.md)). `IDebugProperty2::EnumChildren` Возвращает объект [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) .  
   
  Эта реализация `IDebugProperty2::EnumChildren` выполняет следующие задачи:  
   
-1. Гарантирует, что это представляет метод.  
+1. Гарантирует, что это представляет собой метод.  
   
-2. Использует `guidFilter` аргумент, чтобы определить, какой метод следует вызывать для [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) объекта. Если `guidFilter` равно:  
+2. Использует `guidFilter` аргумент для определения метода, вызываемого для объекта [идебугмесодфиелд](../../extensibility/debugger/reference/idebugmethodfield.md) . Если `guidFilter` равно:  
   
-    1. `guidFilterLocals`, вызовите [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) для получения [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) объекта.  
+    1. `guidFilterLocals`, вызовите [енумлокалс](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) , чтобы получить объект [иенумдебугфиелдс](../../extensibility/debugger/reference/ienumdebugfields.md) .  
   
-    2. `guidFilterArgs`, вызовите [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) для получения `IEnumDebugFields` объекта.  
+    2. `guidFilterArgs`, вызовите [енумаргументс](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) , чтобы получить `IEnumDebugFields` объект.  
   
-    3. `guidFilterLocalsPlusArgs`, перечисление, которое объединяет результаты из синтезировать `IDebugMethodField::EnumLocals` и `IDebugMethodField::EnumArguments`. Этот синтеза представляется классом `CEnumMethodField`.  
+    3. `guidFilterLocalsPlusArgs`, синтезирование перечисления, объединяющего результаты из `IDebugMethodField::EnumLocals` и `IDebugMethodField::EnumArguments` . Этот синтез представлен классом `CEnumMethodField` .  
   
-3. Создает экземпляр класса (называется `CEnumPropertyInfo` в этом примере), реализующий `IEnumDebugPropertyInfo2` интерфейс, а также содержит `IEnumDebugFields` объекта.  
+3. Создает экземпляр класса (вызываемого `CEnumPropertyInfo` в этом примере), который реализует `IEnumDebugPropertyInfo2` интерфейс и содержит `IEnumDebugFields` объект.  
   
 4. Возвращает `IEnumDebugProperty2Info2` интерфейс из `CEnumPropertyInfo` объекта.  
   
@@ -247,7 +247,7 @@ STDMETHODIMP CFieldProperty::EnumChildren(
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Пример реализации локальных переменных](../../extensibility/debugger/sample-implementation-of-locals.md)   
- [Реализация GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)   
+ [Реализация Жетмесодпроперти](../../extensibility/debugger/implementing-getmethodproperty.md)   
  [Контекст вычислений](../../extensibility/debugger/evaluation-context.md)
