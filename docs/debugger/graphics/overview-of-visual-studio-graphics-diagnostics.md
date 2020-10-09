@@ -1,5 +1,6 @@
 ---
 title: Обзор диагностики графики | Документация Майкрософт
+description: Общий обзор диагностики графики в Visual Studio
 ms.custom: seodec18
 ms.date: 02/09/2017
 ms.topic: conceptual
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf8cbcc699f015cae954400744d9bd724d70c57
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 6f9193555ef3c9c69f494a78ac779a3724417f63
+ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187916"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91671410"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Обзор диагностики графики Visual Studio
 *Диагностика графики* Visual Studio — это набор инструментов для регистрации и последующего анализа проблем с производительностью и отрисовкой в приложениях Direct3D. Диагностику графики можно использовать для приложений, которые выполняются локально на компьютере с Windows либо на удаленном компьютере или устройстве.
@@ -27,6 +28,10 @@ ms.locfileid: "73187916"
  Диагностика графики поддерживает приложения, использующие Direct3D 10 или более новой версии, и предоставляет ограниченную поддержку приложений, использующих Direct2D. Она не поддерживает приложения, использующие предыдущие версии Direct3D, DirectDraw или другие графические API.
 
 ### <a name="windows-10-and-direct3d-12"></a>Windows 10 и Direct3D 12
+> [!NOTE]
+> Для игр на основе DirectX 12 в Visual Studio рекомендуется использовать PIX для Windows. [PIX для Windows](https://aka.ms/PIXonWindows) — это средство для настройки производительности и отладки с полной поддержкой DirectX 12. [Ознакомьтесь с дополнительными сведениями](visual-studio-graphics-diagnostics-directx-12.md) или [скачайте средство](https://aka.ms/downloadPIX).
+
+
  В Windows 10 добавлена версия *Direct3D 12*, которая существенно отличается от Direct3D 10 и Direct3D 11. Эти различия обеспечивают соответствие DirectX современному графическому оборудованию и использование полного потенциала этого оборудования, однако они также привносят существенные изменения в API и возлагают большую ответственность на программиста в отношении управления временем существования и состязанием ресурсов. Несмотря на эти различия, диагностика графики с Direct3D 12 по функциональности аналогична диагностике графики с Direct3D 11.2.
 
  Windows 10 также продолжает поддерживать предыдущие версии Direct3D, а также основанные на них игры и приложения. Диагностика графики в Visual Studio продолжает поддерживать Direct3D 10 и Direct3D 11 в Windows 10.

@@ -3,17 +3,17 @@ title: Средства Visual Studio для контейнеров с ASP.NET C
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 author: ghogen
-description: Сведения об использовании средств Visual Studio для контейнеров и Docker для Windows
+description: Сведения об использовании средств Visual Studio для контейнеров и Docker для создания контейнерного одностраничного приложения React
 ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 45dc1f16f1655c5c738804a1c4e0093dd9c8b1f8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 783d7a116dbdf530008c3271d38d15f7db3c3c98
+ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036331"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91750762"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Краткое руководство. Использование Docker с одностраничным приложением React в Visual Studio
 
@@ -31,7 +31,7 @@ ms.locfileid: "90036331"
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) с рабочей нагрузкой **Веб-разработка**, **Средства Azure** и (или) **Кроссплатформенная разработка .NET Core**.
-* [Средства разработки .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) для разработки с использованием .NET Core 2.2.
+* [Средства разработки .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) для разработки с использованием .NET Core 3.1.
 * Для публикации в Реестр контейнеров Azure требуется подписка Azure. [Зарегистрируйтесь для получения бесплатной пробной версии](https://azure.microsoft.com/offers/ms-azr-0044p/).
 * [Node.js](https://nodejs.org/en/download/)
 * Для контейнеров Windows, Windows 10 версии 1903 или более поздней, используйте образы "Docker", о которых идет речь в этой статье.
@@ -47,11 +47,11 @@ ms.locfileid: "90036331"
 1. Создайте проект, используя шаблон **Веб-приложение ASP.NET Core**.
 1. Выберите **React.js**. Вы не можете выбрать **Включить поддержку Docker**, но не беспокойтесь, эту поддержку можно добавить после создания проекта.
 
-   ![Снимок экрана: новый проект React.js](media/container-tools-react/vs2017/new-react-project.png)
+   ![Снимок экрана: новый проект React.js](media/container-tools-react/vs-2017/new-react-project.png)
 
 1. Щелкните правой кнопкой мыши узел проекта и выберите **Добавить** > **Поддержка Docker**, чтобы добавить файл Dockerfile в проект.
 
-   ![Добавление поддержки Docker](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Добавление поддержки Docker](media/container-tools-react/vs-2017/add-docker-support.png)
 
 1. Выберите тип контейнера и нажмите **OK**.
 ::: moniker-end
@@ -59,11 +59,11 @@ ms.locfileid: "90036331"
 1. Создайте проект, используя шаблон **Веб-приложение ASP.NET Core**.
 1. Выберите **React.js** и нажмите кнопку **Создать**. Вы не можете выбрать **Включить поддержку Docker**, но не беспокойтесь, эту поддержку можно добавить позже.
 
-   ![Снимок экрана: новый проект React.js](media/container-tools-react/vs2019/new-react-project.png)
+   ![Снимок экрана: новый проект React.js](media/container-tools-react/vs-2019/new-react-project.png)
 
 1. Щелкните правой кнопкой мыши узел проекта и выберите **Добавить** > **Поддержка Docker**, чтобы добавить файл Dockerfile в проект.
 
-   ![Добавление поддержки Docker](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Добавление поддержки Docker](media/container-tools-react/vs-2017/add-docker-support.png)
 
 1. Выберите тип контейнера.
 ::: moniker-end
@@ -84,30 +84,32 @@ RUN apt-get install -y nodejs
 Теперь файл *Dockerfile* должен выглядеть следующим образом:
 
 ```Dockerfile
-FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim AS base
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
 WORKDIR /app
-EXPOSE 80 
+EXPOSE 80
 EXPOSE 443
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 
-FROM microsoft/dotnet:2.2-sdk-stretch AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 WORKDIR /src
-COPY ["WebApplication37/WebApplication37.csproj", "WebApplication37/"]
-RUN dotnet restore "WebApplication37/WebApplication37.csproj"
+COPY ["WebApplication-ReactSPA/WebApplication-ReactSPA.csproj", "WebApplication-ReactSPA/"]
+RUN dotnet restore "WebApplication-ReactSPA/WebApplication-ReactSPA.csproj"
 COPY . .
-WORKDIR "/src/WebApplication37"
-RUN dotnet build "WebApplication37.csproj" -c Release -o /app
+WORKDIR "/src/WebApplication-ReactSPA"
+RUN dotnet build "WebApplication-ReactSPA.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "WebApplication37.csproj" -c Release -o /app
+RUN dotnet publish "WebApplication-ReactSPA.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "WebApplication37.dll"]
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
 ```
 
 Предыдущий *Dockerfile* основан на образе [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) и включает в себя инструкции по изменению базового образа путем сборки проекта и добавления его в контейнер.
@@ -155,13 +157,13 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       Expand-Archive nodejs.zip -DestinationPath C:\; `
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
 
-      FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1903 AS base
+      FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1903 AS base
       WORKDIR /app
       EXPOSE 80
       EXPOSE 443
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
 
-      FROM mcr.microsoft.com/dotnet/core/sdk:2.2-nanoserver-1903 AS build
+      FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       WORKDIR /src
       COPY ["WebApplication7/WebApplication37.csproj", "WebApplication37/"]
@@ -190,10 +192,10 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
 В браузере отображается домашняя страница приложения.
 
 ::: moniker range="vs-2017"
-   ![Снимок экрана с запущенным приложением](media/container-tools-react/vs2017/running-app.png)
+   ![Снимок экрана с запущенным приложением](media/container-tools-react/vs-2017/running-app.png)
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-   ![Снимок экрана с запущенным приложением](media/container-tools-react/vs2019/running-app.png)
+   ![Снимок экрана с запущенным приложением](media/container-tools-react/vs-2019/running-app.png)
 ::: moniker-end
 
 Попробуйте перейти на страницу *счетчика* и протестировать код на стороне клиента для счетчика, нажав кнопку **Приращение**.
@@ -222,9 +224,11 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
 
 После завершения цикла разработки и отладки приложения можно создать рабочий образ приложения.
 
+:::moniker range="vs-2017"
+
 1. Выберите в раскрывающемся списке конфигурации значение **Выпуск** и выполните сборку приложения.
 1. В **обозревателе решений** щелкните правой кнопкой проект и выберите **Опубликовать**.
-1. В диалоговом окне целевой публикации выберите вкладку **Реестр контейнеров**.
+1. В диалоговом окне "Целевой объект публикации" выберите **Реестр контейнеров**.
 1. Выберите **Создать реестр контейнеров Azure** и щелкните **Опубликовать**.
 1. Заполните нужные значения в окне **Создать новый реестр контейнеров Azure**.
 
@@ -236,11 +240,48 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
     | **[SKU](/azure/container-registry/container-registry-skus)** | Стандартный | Уровень обслуживания в реестре контейнеров  |
     | **Расположение реестра** | Расположение рядом с вами | Выберите расположение в ближайшем [регионе](https://azure.microsoft.com/regions/) или в регионе, расположенном рядом с другими службами, которые будут использовать реестр контейнеров. |
 
-    ![Диалоговое окно "Создание реестра контейнеров Azure" Visual Studio][0]
+    ![Диалоговое окно "Создание реестра контейнеров Azure" Visual Studio](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
 
-1. Нажмите кнопку **Создать**.
+1. Нажмите кнопку **создания**.
 
    ![Снимок экрана с сообщением об успешной публикации](media/container-tools/publish-succeeded.png)
+:::moniker-end
+
+:::moniker range=">=vs-2019"
+
+1. Выберите в раскрывающемся списке конфигурации значение **Выпуск** и выполните сборку приложения.
+1. В **обозревателе решений** щелкните правой кнопкой проект и выберите **Опубликовать**.
+1. В диалоговом окне "Целевой объект публикации" выберите **Реестр контейнеров Docker**.
+
+   ![Выбор реестра контейнеров Docker](media/container-tools-react/vs-2019/publish-dialog1.png)
+
+1. Далее выберите **Реестр контейнеров Azure**.
+
+   ![Выбор реестра контейнеров Azure](media/container-tools-react/vs-2019/publish-dialog-acr.png)
+
+1. Выберите **Создать Реестр контейнеров Azure**.
+1. Заполните нужные значения на экране **Создать реестр контейнеров Azure**.
+
+    | Параметр      | Рекомендуемое значение  | Описание                                |
+    | ------------ |  ------- | -------------------------------------------------- |
+    | **DNS-префикс** | Глобально уникальное имя | Имя, которое однозначно идентифицирует реестр контейнеров. |
+    | **Подписка** | Выберите свою подписку | Подписка Azure, которую нужно использовать. |
+    | **[Группа ресурсов](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Имя группы ресурсов, в которой создается реестр контейнеров. Чтобы создать группу ресурсов, выберите **Создать**.|
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Стандартный | Уровень обслуживания в реестре контейнеров  |
+    | **Расположение реестра** | Расположение рядом с вами | Выберите расположение в ближайшем [регионе](https://azure.microsoft.com/regions/) или в регионе, расположенном рядом с другими службами, которые будут использовать реестр контейнеров. |
+
+    ![Диалоговое окно "Создание реестра контейнеров Azure" Visual Studio](media/container-tools-react/vs-2019/azure-container-registry-details.png)
+
+1. Выберите **Создать**, а затем нажмите кнопку **Готово**.
+
+   ![Выбор или создание Реестра контейнеров Azure](media/container-tools-react/vs-2019/publish-dialog2.png)
+
+   После завершения процесса публикации можно просмотреть параметры публикации, при необходимости изменить их или повторно опубликовать образ с помощью кнопки **Опубликовать**.
+
+   ![Снимок экрана с сообщением об успешной публикации](media/container-tools-react/vs-2019/publish-finished.png)
+
+   Чтобы начать работу с диалоговым окном **Публикация** с самого начала, удалите профиль публикации с помощью ссылки **Удалить** на этой странице, а затем выберите **Опубликовать** еще раз.
+:::moniker-end
 
 ## <a name="next-steps"></a>Следующие шаги
 
@@ -252,9 +293,3 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
 * [Устранение неполадок при разработке с Docker в Visual Studio](troubleshooting-docker-errors.md)
 * [Репозиторий GitHub со средствами Visual Studio для контейнеров](https://github.com/Microsoft/DockerTools)
 
-::: moniker range="vs-2017"
-[0]:media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png
-::: moniker-end
-::: moniker range=">=vs-2019"
-[0]:media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog-2019.png
-::: moniker-end

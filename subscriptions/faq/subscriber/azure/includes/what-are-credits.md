@@ -5,15 +5,23 @@ ms.topic: include
 ms.assetid: 5de7f746-1856-457a-8241-8ac3a4540490
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 4/3/2020
+ms.date: 10/07/2020
 ms.faqid: q5_1
-ms.openlocfilehash: de7b21e66dcc3328398c91184bfbcbec84448f50
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 3c08eb06541484342410c1c8830bbebaee978bb1
+ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386183"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91829066"
 ---
 ## <a name="what-are-the-monthly-azure-credits"></a>Что такое ежемесячные кредиты Azure?
 
-Месячные и годовые облачные подписки автоматически продлеваются до тех пор, пока вы не отмените их. Таким образом, для продления подписки никаких действий с вашей стороны не требуется.
+Используя деньги на счете в Azure, выделяемые ежемесячно, вы можете бесплатно изучать и тестировать разные службы Azure.  Примеры приведены ниже. 
+- Размещение статического веб-сайта
+- Публикация сайта ASP.NET в Azure
+- Развертывание контейнерного веб-сайта
+- Развертывание веб-сайта на виртуальной машине
+- Интеграция данных и служб с использованием бессерверной внутренней части
+- Развертывание веб-приложения Python
+
+Дополнительные сведения об использовании денег на счете в Azure см. на странице [Ежемесячные суммы денег на счете в Azure для подписчиков Visual Studio](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/).

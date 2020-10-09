@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 42bc0442dc5901f92fc8a83b7af41c1fc42f4be4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d01d991daf5c24c02b8cd4976663a9399b251cc
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250796"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780965"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Шаг 3. Работа с данными с использованием Entity Framework
 
@@ -79,7 +79,7 @@ services.AddDbContext<AppDbContext>(options =>
 
 Вы также увидите, что в файл проекта *appsettings.json* была добавлена строка подключения `AppDbContext`.
 
-Если запустить приложение сейчас, это может привести к сбою, поскольку база данных ещё не создана. При необходимости вы можете настроить приложение на автоматическое создание базы данных, [добавив код в Program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio#update-main).
+Если запустить приложение сейчас, это может привести к сбою, поскольку база данных ещё не создана. При необходимости вы можете настроить приложение на автоматическое создание базы данных, [добавив код в Program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true#update-main).
 
 ```csharp
 public static void Main(string[] args)
@@ -135,5 +135,5 @@ using WebApplication1.Models;
 
 ## <a name="see-also"></a>См. также
 
-- [Razor Pages с Entity Framework Core в ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
-- [Razor Pages с EF Core в ASP.NET Core](/aspnet/core/data/?view=aspnetcore-2.1)
+- [Razor Pages с Entity Framework Core в ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true)
+- [Razor Pages с EF Core в ASP.NET Core](/aspnet/core/data/?view=aspnetcore-2.1&preserve-view=true)
