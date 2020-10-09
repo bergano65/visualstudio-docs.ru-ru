@@ -14,12 +14,12 @@ ms.assetid: b5235490-a8e7-42e3-804e-d85235bc6f05
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 44f207d2e32a7ca79ee0d5851a80261c5da9743d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a0e3eb6d1275e5598ad44ea553e22f0b53eeb45
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814594"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862766"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Исключение возникло, но не перехвачено
 Вы включили `throw` в код оператор, но он не был заключен в блок **try** , или нет связанного блока **catch** для перехвата ошибки. Исключения создаются в блоке **try** с помощью инструкции **throw** и перехватываются вне блока **try** с помощью оператора **catch** .  
@@ -32,7 +32,7 @@ ms.locfileid: "85814594"
   
 - Если исключение создается повторно, убедитесь, что имеется другой соответствующий оператор catch.  
   
-## <a name="see-also"></a>См. также раздел  
- [Объект Error](../../javascript/reference/error-object-javascript.md)   
- [Оператор Throw](../../javascript/reference/throw-statement-javascript.md)   
- [Попробуйте... перехватить... Оператор finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Объект Error](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error)   
+ [Оператор Throw](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/throw)   
+ [Попробуйте... перехватить... Оператор finally](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/try...catch)

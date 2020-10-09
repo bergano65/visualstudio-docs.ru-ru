@@ -14,12 +14,12 @@ ms.assetid: a94100f4-6ee5-4759-b635-9d309e47111e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fdce6a86665b942098e4542dc237bc1ef22ad8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b49b5cfe7076a4a9504500a63f4d47d2f54bcc1a
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815517"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862793"
 ---
 # <a name="default-can-only-appear-once-in-a-switch-statement"></a>default может использоваться в операторе switch только один раз
 Предпринята попытка использовать инструкцию **по умолчанию** более одного раза в операторе switch. Регистр по умолчанию всегда является последним оператором case в операторе switch (он является переделами).  
@@ -28,7 +28,7 @@ ms.locfileid: "85815517"
   
 - Удалите все лишние операторы Case **по умолчанию** из `switch` инструкции (используйте не более одного оператора case по умолчанию в операторе switch).  
   
-## <a name="see-also"></a>См. также раздел  
- [Оператор switch](../../javascript/reference/switch-statement-javascript.md)   
- [Управление ходом выполнения программы](../../javascript/controlling-program-flow-javascript.md)   
- [Зарезервированные слова языка JavaScript](../../javascript/reference/javascript-reserved-words.md)
+## <a name="see-also"></a>См. также  
+ [Оператор switch](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/switch)   
+ [Управление ходом выполнения программы](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)   
+ [Зарезервированные слова языка JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar)

@@ -14,12 +14,12 @@ ms.assetid: 11d02172-2a78-4705-a730-d21111db5f42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0959bad452d3b24ca1475b66e37fbdab1e9c3e7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee177c8070fc5af8123d7fd78e69b1f767a5b700
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817662"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862796"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>break не может располагаться вне цикла
 Предпринята попытка использовать ключевое слово **break** вне цикла. Ключевое слово **break** используется для завершения цикла или `switch` оператора. Он должен быть внедрен в тело цикла или `switch` оператора. Однако **Метка** может следовать за ключевым словом break.  
@@ -34,7 +34,7 @@ break labelname;
   
 - Убедитесь, что ключевое слово **break** отображается внутри внешнего цикла или оператора switch.  
   
-## <a name="see-also"></a>См. также раздел  
- [Оператор break](../../javascript/reference/break-statement-javascript.md)   
- [Управление ходом выполнения программы](../../javascript/controlling-program-flow-javascript.md)   
- [Устранение неполадок в скриптах](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Оператор break](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/break)   
+ [Управление ходом выполнения программы](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)   
+ [Устранение неполадок в скриптах](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/What_went_wrong)

@@ -14,12 +14,12 @@ ms.assetid: dc6e32c1-a6e6-4e12-ac99-e3f65f91c8d7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff61894ce808cd33876e876c596e791a3347ab72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e63ee2970c90ffcfff5c02a384d3346b3ea6229
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817597"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862628"
 ---
 # <a name="enumerator-object-expected"></a>Требуется объект Enumerator
 Предпринята попытка вызова метода **Enumerator. prototype. atEnd, перечислителя. prototype. Item, перечислителя. prototype. MoveFirst** или **Enumerator. prototype. MoveNext** для объекта типа, отличного от `Enumerator` . Объект этого типа вызова должен иметь тип `Enumerator` . Ниже приведен пример кода, который нарушает это правило:  
@@ -38,5 +38,5 @@ o.f();
     if(x instanceof Enumerator)  
     ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Объект Enumerator](../../javascript/reference/enumerator-object-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Объект Enumerator](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/Enumerator)

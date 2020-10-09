@@ -14,12 +14,12 @@ ms.assetid: dbe05d7d-fcf6-4823-9c61-4b814d1ad3c4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b0eb1d7a53614f48daaf6459aaadee594b6fa11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ede65345bdaab22b26274323ad08779313d186e
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816180"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862731"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>Число цифр дробной части не соответствует допустимому диапазону
 Предпринята попытка передать недопустимый аргумент в функцию **Number. prototype. toExponential**. Аргумент функции **toExponential ()** должен находиться в диапазоне от 0 до 20 (включительно).  
@@ -28,5 +28,5 @@ ms.locfileid: "85816180"
   
 - Убедитесь, что аргумент для **toExponential ()** не слишком велик или не слишком мал.  
   
-## <a name="see-also"></a>См. также раздел  
- [Метод toExponential (Number)](../../javascript/reference/toexponential-method-number-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод toExponential (Number)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/toexponential)

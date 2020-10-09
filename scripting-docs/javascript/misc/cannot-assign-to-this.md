@@ -14,12 +14,12 @@ ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5c52153da64ff477d89b09d4af17169da18e4e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8985c7201a8e315353dd89ab5e1f5a3ad3b403ea
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817324"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862780"
 ---
 # <a name="cannot-assign-to-this"></a>Нельзя назначить this
 Предпринята попытка присвоить значение **этому**. **это** [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ключевое слово, которое ссылается на один из следующих способов:
@@ -39,7 +39,7 @@ ms.locfileid: "85817324"
   > [!NOTE]
   > Вы не можете присвоить имя созданной **пользователем переменной.** Это [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] зарезервированное слово.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Эта инструкция](../../javascript/reference/this-statement-javascript.md)
-- [Устранение неполадок в скриптах](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
+- [Эта инструкция](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/this)
+- [Устранение неполадок в скриптах](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/What_went_wrong)
