@@ -14,12 +14,12 @@ ms.assetid: 59a030b0-a6c6-47f2-b90e-c0ed204d5116
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da272529768f3227ce6e0ee3e0ebbf086140dd15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 91e32971013d2dfcf0ee2dc901d84681522c7e89
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816128"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861654"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>Условная компиляция отключена
 Предпринята попытка использовать переменную условной компиляции без предварительного включения условной компиляции. Включение условной компиляции означает, что [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] компилятор интерпретирует идентификаторы, начинающиеся с @, как переменные условной компиляции. Для этого необходимо начать условный код с помощью инструкции:  
@@ -36,9 +36,9 @@ ms.locfileid: "85816128"
     /*@cc_on @*/  
     ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Условная компиляция](../../javascript/advanced/conditional-compilation-javascript.md)   
- [Переменные условной компиляции](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_on Баланс](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@if Баланс](../../javascript/reference/at-if-statement-javascript.md)   
- [@set Баланс](../../javascript/reference/at-set-statement-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Условная компиляция](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/121hztk3(v=vs.84))   
+ [Переменные условной компиляции](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/s59bkzce(v=vs.84))   
+ [@cc_on Баланс](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-cc-on)   
+ [@if Баланс](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-if)   
+ [@set Баланс](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-set)

@@ -14,12 +14,12 @@ ms.assetid: 8a437ace-c73e-4340-885c-70ccb4bb2ee4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5ecc9f1129aff02c6c8e32e42f7e9babffab429
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64f03c48b2db8b91d368e5de6e8d24a2330ccf1b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817571"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861513"
 ---
 # <a name="expected-"></a>Ожидался символ "]"
 Вы внесли ссылку на элемент массива, но не включили правую квадратную скобку. Любое выражение, ссылающееся на элемент массива, должно включать открывающую и закрывающую квадратные скобки.  
@@ -28,6 +28,6 @@ ms.locfileid: "85817571"
   
 - Добавьте правую скобку в выражение, которое ссылается на элемент массива.  
   
-## <a name="see-also"></a>См. также раздел  
- [Использование массивов](../../javascript/advanced/using-arrays-javascript.md)   
- [Array, объект](../../javascript/reference/array-object-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Использование массивов](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)   
+ [Array, объект](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)

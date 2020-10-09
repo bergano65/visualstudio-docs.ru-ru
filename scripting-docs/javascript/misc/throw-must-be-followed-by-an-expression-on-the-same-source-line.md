@@ -14,12 +14,12 @@ ms.assetid: b03b7747-01a1-40c6-af80-a1dd70bc5781
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7bc7ff09152cd0ce7b95c6de73ea98446529c44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b1ce004eb523497b912e8d7ec29c3b03044f0220
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815530"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861992"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>throw требует после себя выражение на той же строке
 Вы использовали `throw` ключевое слово, но не выполнили выражение в той же строке исходного кода. `throw`Оператор состоит из двух частей: `throw` ключевого слова, за которым следует вызываемое выражение. Пример:  
@@ -36,7 +36,7 @@ if (denominator == 0) {
   
 - Убедитесь, что `throw` ключевое слово и выражение, которые должны быть созданы, отображаются в одной строке.  
   
-## <a name="see-also"></a>См. также раздел  
- [Объект Error](../../javascript/reference/error-object-javascript.md)   
- [Оператор Throw](../../javascript/reference/throw-statement-javascript.md)   
- [Попробуйте... перехватить... Оператор finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Объект Error](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error)   
+ [Оператор Throw](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/throw)   
+ [Попробуйте... перехватить... Оператор finally](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/try...catch)

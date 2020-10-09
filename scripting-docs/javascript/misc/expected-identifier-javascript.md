@@ -14,12 +14,12 @@ ms.assetid: 92eaa97f-7084-4618-9608-768b51a0600b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71f5e4363481745887371e7d25e308b2856dc00c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b70f42775d627e7e3683aa2cbc771f091b58e761
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816531"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861914"
 ---
 # <a name="expected-identifier-javascript"></a>Ожидался идентификатор (JavaScript)
 Вы использовали нечто, отличное от идентификатора, в контексте, где это требовалось. Идентификатор может быть следующим:  
@@ -36,5 +36,5 @@ ms.locfileid: "85816531"
   
 - Измените выражение, чтобы идентификатор появился слева от знака равенства.  
   
-## <a name="see-also"></a>См. также раздел  
- [Использование массивов](../../javascript/advanced/using-arrays-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Использование массивов](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

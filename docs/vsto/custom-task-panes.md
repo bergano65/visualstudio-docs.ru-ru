@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 804fbf7e6d9069f6d0fb406e2a5191dcbafbbcee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 361b04edf2b677c2842376bd9d8fee0d6f3bda12
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254398"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862364"
 ---
 # <a name="custom-task-panes"></a>Настраиваемые области задач
   Области задач — это панели пользовательского интерфейса, которые обычно прикрепляются к одной стороне окна в приложении Microsoft Office. Настраиваемые области задач позволяют создать собственную область задач и предоставлять пользователям знакомый интерфейс для доступа к возможностям вашего решения. Например, интерфейс может содержать элементы управления, которые выполняют код для изменения документов или отображения данных из источника данных.
@@ -122,7 +122,7 @@ ms.locfileid: "71254398"
 ## <a name="clean-up-resources-used-by-the-task-pane"></a>Очистка ресурсов, используемых областью задач
  После создания настраиваемой области задач объект <xref:Microsoft.Office.Tools.CustomTaskPane> остается в памяти до тех пор, пока ваша надстройка VSTO работает. Объект остается в памяти даже после нажатия пользователем кнопки **закрытия** (X) в углу области задач.
 
- Чтобы освободить ресурсы, используемые областью задач, пока надстройка VSTO продолжает работать, используйте методы <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> или <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>. Эти методы позволяют удалить указанный объект <xref:Microsoft.Office.Tools.CustomTaskPane> из коллекции `CustomTaskPanes` и вызывают метод <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> объекта.
+ Чтобы освободить ресурсы, используемые областью задач, пока надстройка VSTO продолжает работать, используйте методы <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> или <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>. Эти методы позволяют удалить указанный объект <xref:Microsoft.Office.Tools.CustomTaskPane> из коллекции `CustomTaskPanes` и вызывают метод `Dispose` объекта.
 
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] автоматически освобождает ресурсы, используемые настраиваемой областью задач, при выгрузке надстройки VSTO. Не вызывайте <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> методы или <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> в `ThisAddIn_Shutdown` обработчике событий в проекте. Эти методы создадут исключение <xref:System.ObjectDisposedException>, так как [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] освобождает ресурсы, используемые объектом <xref:Microsoft.Office.Tools.CustomTaskPane> перед вызовом `ThisAddIn_Shutdown`. Дополнительные сведения о см `ThisAddIn_Shutdown` . [в разделе события в проектах Office](../vsto/events-in-office-projects.md).
 
@@ -203,17 +203,17 @@ ms.locfileid: "71254398"
 ### <a name="powerpoint-events"></a>События PowerPoint
  Для отслеживания состояния окон документов в PowerPoint можно обрабатывать следующие события.
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. Афтерневпресентатион](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. Афтерневпресентатион](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. Афтерпресентатионопен](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. Афтерпресентатионопен](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. Невпресентатион](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. Невпресентатион](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. Пресентатионопен](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. Пресентатионопен](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. Виндовактивате](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. Виндовактивате](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. Виндовдеактивате](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. Виндовдеактивате](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>См. также
 - [Как добавить настраиваемую область задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d498ee0acfdc87f340a3c5c8848680eaed6276d
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 8fe0d6ad545a197ca03c12acf68d779a42fd91ae
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658559"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860506"
 ---
 # <a name="customize-a-rule-set"></a>Настройка набора правил
 
@@ -61,7 +61,7 @@ ms.locfileid: "91658559"
 
 2. В диалоговом окне **новый файл** выберите категорию **Общие** слева и выберите **набор правил анализа кода**.
 
-3. Выберите **Открыть**.
+3. Выберите **Open** (Открыть).
 
    Новый *RuleSet* – файл откроется в редакторе набора правил.
 
@@ -145,7 +145,7 @@ ms.locfileid: "91658559"
 > [!div class="nextstepaction"]
 > [Изменение правил в редакторе набора правил](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Настройка анализа кода для проекта управляемого кода](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Справочник по набору правил анализа кода](../code-quality/rule-set-reference.md)

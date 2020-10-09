@@ -12,12 +12,12 @@ ms.assetid: 3bc55336-912f-4ff8-8d28-1e26e0144840
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 995a286140464e58635bc485478bb570871f5e09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de5d26f810fc1ab46c5ef09112fd62fada5d7d9b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816791"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862081"
 ---
 # <a name="operator-summary-javascript"></a>Сводный список операторов (JavaScript)
 В следующих таблицах перечислены [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] операторы в соответствующих категориях.  
@@ -26,60 +26,60 @@ ms.locfileid: "85816791"
   
 |Оператор|Символ|  
 |--------------|------------|  
-|[Полняют](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
-|[Decrement](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
-|[Отдел](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Приращение](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
-|[Остаток](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
-|[Умножения](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
-|[Вычитания](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
-|[Унарное отрицание](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
+|[Полняют](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|+|  
+|[Decrement](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Increment)|--|  
+|[Отдел](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|/|  
+|[Приращение](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Increment)|++|  
+|[Остаток](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|%|  
+|[Умножения](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|*|  
+|[Вычитания](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|-|  
+|[Унарное отрицание](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|-|  
   
 ## <a name="logical-operators"></a>Логические операторы  
   
 |Оператор|Символ|  
 |--------------|------------|  
-|[Символа](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
-|[Conditional (Ternary)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
-|[Равенство](../../javascript/reference/comparison-operators-javascript.md)|==|  
-|[Больше чем](../../javascript/reference/comparison-operators-javascript.md)|>|  
-|[Больше или равно](../../javascript/reference/comparison-operators-javascript.md)|>=|  
-|[Идентификация](../../javascript/reference/comparison-operators-javascript.md)|===|  
-|[Неравенство](../../javascript/reference/comparison-operators-javascript.md)|!=|  
-|[Меньше чем](../../javascript/reference/comparison-operators-javascript.md)|<|  
-|[Меньше или равно](../../javascript/reference/comparison-operators-javascript.md)|<=|  
-|[Логическое И](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
-|[Логическое НЕ](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
-|[Логическое или](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
-|[Нетождества](../../javascript/reference/comparison-operators-javascript.md)|!==|  
+|[Запятая](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_Operatorhttps://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_Operator)|,|  
+|[Conditional (Ternary)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)|?:|  
+|[Равенство](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|==|  
+|[Больше чем](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|>|  
+|[Больше или равно](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|>=|  
+|[Удостоверение](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|===|  
+|[Неравенство](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|!=|  
+|[Меньше чем](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|<|  
+|[Меньше или равно](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|<=|  
+|[Логическое И](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|&&|  
+|[Логическое НЕ](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|!|  
+|[Логическое или](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|&#124;&#124;|  
+|[Нетождества](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|!==|  
   
 ## <a name="bitwise-operators"></a>Побитовые операторы  
   
 |Оператор|Символ|  
 |--------------|------------|  
-|[Побитовое И](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)|&|  
-|[Побитовый сдвиг влево](../../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|<\<|  
-|[Побитовое НЕ](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|~|  
-|[Побитовое или](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)|&#124;|  
-|[Побитовый сдвиг вправо](../../javascript/reference/bitwise-right-shift-operator-decrement-javascript.md)|>>|  
-|[Побитовое ИСКЛЮЧАЮЩее](../../javascript/reference/bitwise-xor-operator-decrement-hat-javascript.md)|^|  
-|[Сдвиг вправо без учета знака](../../javascript/reference/unsigned-right-shift-operator-decrement-javascript.md)|>>>|  
+|[Побитовое И](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Bitwise_AND)|&|  
+|[Побитовый сдвиг влево](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Left_shift)|<\<|  
+|[Побитовое НЕ](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Bitwise_NOT)|~|  
+|[Побитовое или](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Bitwise_OR)|&#124;|  
+|[Побитовый сдвиг вправо](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Right_shift)|>>|  
+|[Побитовое ИСКЛЮЧАЮЩее](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Bitwise_XOR)|^|  
+|[Сдвиг вправо без учета знака](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Unsigned_right_shift)|>>>|  
   
 ## <a name="assignment-operators"></a>Операторы присваивания  
- [Операторы присваивания](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)  
+ [Операторы присваивания](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Assignment)  
   
- [Составные операторы присваивания](../../javascript/reference/compound-assignment-operators-javascript.md)  
+ [Составные операторы присваивания](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Assignment_operators)  
   
 ## <a name="miscellaneous-operators"></a>Прочие операторы  
- [delete](../../javascript/reference/delete-operator-decrementjavascript.md)  
+ [delete](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/delete)  
   
- [instanceof](../../javascript/reference/instanceof-operator-decrementjavascript.md)  
+ [instanceof](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/instanceof)  
   
- [new](../../javascript/reference/new-operator-decrementjavascript.md)  
+ [new](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/new)  
   
- [typeof](../../javascript/reference/typeof-operator-decrementjavascript.md)  
+ [typeof](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/typeof)  
   
- [void](../../javascript/reference/void-operator-decrementjavascript.md)  
+ [void](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/void)  
   
 ## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]

@@ -14,12 +14,12 @@ ms.assetid: e226096c-c58f-4bcb-a71e-fa32ce474b67
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9f5816c0bf3ad7c8dbf7d394952c631923d89cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 370e5a8028bae0e60c265ba65dca12668e4b8d8c
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814633"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862065"
 ---
 # <a name="regular-expression-object-expected"></a>Предполагается наличие объекта регулярного выражения
 Предпринята попытка вызвать метод **RegExp. prototype. ToString** или **RegExp. prototype. valueOf** для объекта типа, отличного от `RegExp` . Объект этого типа вызова должен иметь тип `RegExp` .  
@@ -28,6 +28,6 @@ ms.locfileid: "85814633"
   
 - Вызываются только методы **RegExp. prototype. ToString** или **RegExp. prototype. valueOf** для объектов типа `RegExp` .  
   
-## <a name="see-also"></a>См. также раздел  
- [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)   
- [Синтаксис регулярных выражений (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+## <a name="see-also"></a>См. также  
+ [Объект регулярного выражения](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp)   
+ [Синтаксис регулярных выражений (JavaScript)](/previous-versions/1400241x(v=vs.100))

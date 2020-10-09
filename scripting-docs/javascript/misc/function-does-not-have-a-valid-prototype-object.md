@@ -14,12 +14,12 @@ ms.assetid: b9e34652-190f-4b57-b253-df2e8c4d09c6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6f13620bb486cf1663bd5bef9a9a93b2c8a480
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15b00087cd66b873044b7bafb1bfecf4fc91f8d9
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817363"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862403"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>Функция не имеет допустимого объекта прототипа
 Вы попытались использовать **instanceof** , чтобы определить, является ли объект производным от определенного класса функции, но свойство объекта было переопределено `prototype` как либо либо `null` тип внешнего объекта (как недопустимые [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объекты). Внешним объектом может быть объект из объектной модели узла (например, документ или объект окна Internet Explorer) или внешний COM-объект.  
@@ -28,6 +28,6 @@ ms.locfileid: "85817363"
   
 - Убедитесь, что `prototype` свойство функции ссылается на допустимый [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объект.  
   
-## <a name="see-also"></a>См. также раздел  
- [Объект функции](../../javascript/reference/function-object-javascript.md)   
- [Свойство prototype (Object)](../../javascript/reference/prototype-property-object-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Объект функции](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [Свойство prototype (Object)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)

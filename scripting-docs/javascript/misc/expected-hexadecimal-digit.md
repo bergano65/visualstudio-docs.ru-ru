@@ -14,12 +14,12 @@ ms.assetid: 67a86df7-49f9-43cb-99c6-99b1a427827a
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0797d44115fb5b44cb0c670153e8476356bd533
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c6be5302c0c4c6565884fa800da7cb9a002d151
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816570"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861927"
 ---
 # <a name="expected-hexadecimal-digit"></a>Ожидалась шестнадцатеричная цифра
 Вы создали неверную escape-последовательность Юникода. Escape-последовательности Юникода начинаются с \u, за которым следуют ровно четыре шестнадцатеричных цифры (больше и не меньше). Шестнадцатеричные цифры в Юникоде могут содержать только цифры 0-9, прописные буквы A – F, а строчные буквы a – f. В следующем примере показана правильно сформированная escape-последовательность в Юникоде.  
@@ -35,5 +35,5 @@ z = "\u1A5F";
     > [!NOTE]
     > Если вы хотите использовать литеральный текст \u в строке, используйте две обратные косые черты ( \\ \u) — один для экранирования первой обратной косой черты.  
   
-## <a name="see-also"></a>См. также раздел  
- [Типы данных](../../javascript/data-types-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Типы данных](https://developer.mozilla.org/docs/Web/JavaScript/Data_structures)
