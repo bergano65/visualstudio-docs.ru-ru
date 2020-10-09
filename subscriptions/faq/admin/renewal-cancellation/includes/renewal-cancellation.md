@@ -7,12 +7,12 @@ ms.assetid: 2c83cd19-2692-4aef-9cd7-b7842639cbce
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 63e64b64b855df6f287dad0fbec363f8b783f6a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34cf5e16f8718f407c1f6c698f3a6e917219e6d8
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85503442"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838446"
 ---
 ## <a name="how-long-does-it-take-for-my-cloud-subscription-to-be-canceled"></a>Сколько времени требуется для отмены облачной подписки?
 
@@ -22,4 +22,4 @@ ms.locfileid: "85503442"
 
 Отмена годовой облачной подписки вступает в силу с первого дня месяца, следующего за 12-месячным периодом после покупки или предыдущего продления. Например, если вы приобрели годовую облачную подписку на Visual Studio Enterprise 3 января 2018 года, она будет действовать до 1 февраля 2019 года, а затем будет автоматически продлена на следующий год. Если вы отмените подписку после этой даты и до 1 февраля 2020 года, срок ее действия истечет 1 февраля 2020 года. За отмену подписки до окончания срока действия не предусмотрено возмещение.
 
-Дополнительные сведения об облачных подписках см. в разделе [Обработка расходов](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq#how-charges-are-processed).
+Дополнительные сведения об облачных подписках см. в разделе [Обработка расходов](../../../../vscloud-billing-faq.md#how-charges-are-processed).

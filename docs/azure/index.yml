@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 82824b8a2221e710f3f6c8402ae18b7f457c4fe8
-  ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+  ms.openlocfilehash: e2a545d1b9165a158f7d1913668e983386127874
+  ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/07/2020
-  ms.locfileid: "89509748"
+  ms.lasthandoff: 10/09/2020
+  ms.locfileid: "91860533"
 landingContent:
 - title: Развертывание в службе приложений Azure
   linkLists:
@@ -54,7 +54,7 @@ landingContent:
     - text: Средства Visual Studio для контейнеров
       url: ../containers/overview.md
     - text: Средства Kubernetes
-      url: ../containers/tutorial-kubernetes-tools.md
+      url: ../containers/bridge-to-kubernetes.md
 - title: Отладка служб Azure и анализ производительности
   linkLists:
   - linkListType: tutorial
@@ -73,11 +73,11 @@ landingContent:
     links:
     - text: Azure Active Directory
       url: /azure/active-directory/develop/vs-active-directory-add-connected-service
-    - text: Кэш Azure для Redis
+    - text: Кэш Redis для Azure
       url: azure-cache-for-redis-add-connected-service.md
     - text: Azure CosmosDB
       url: azure-cosmosdb-add-connected-service.md
-    - text: Azure Key Vault
+    - text: Хранилище ключей Azure;
       url: /azure/key-vault/vs-key-vault-add-connected-service
     - text: Azure SignalR
       url: azure-signalr-add-connected-service.md
@@ -85,7 +85,7 @@ landingContent:
       url: azure-sql-database-add-connected-service.md
     - text: Хранилище Azure
       url: vs-azure-tools-connected-services-storage.md
-- title: Oблачныe службы Azure
+- title: Облачные службы Azure
   linkLists:
   - linkListType: how-to-guide
     links:

@@ -86,7 +86,7 @@
         - name: Шаблон облачной службы Azure
           href: python-azure-cloud-service-project-template.md
     - name: Пакет Azure SDK для Python
-      href: /python/azure/?view=azure-python
+      href: /python/azure/?view=azure-python&preserve-view=true
 - name: Практические руководства
   items:
     - name: Управление средами Python
