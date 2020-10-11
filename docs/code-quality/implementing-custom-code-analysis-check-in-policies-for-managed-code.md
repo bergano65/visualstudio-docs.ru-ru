@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b9eec66ec24c30b6e0df835d16805ea00eb08ac2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1404386445d24284a2231ed557a65568fdb1ba2b
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371772"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928021"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Реализация настраиваемых политик возврата с анализом кода для управляемого кода
 
@@ -58,7 +58,7 @@ ms.locfileid: "85371772"
 
 1. В **Обозреватель управления исходным кодом**щелкните правой кнопкой мыши новую папку и выберите команду **Добавить элементы в папку**.
 
-     Дополнительные сведения см. в разделе [Git и Azure Repos](/azure/devops/repos/git/overview?view=vsts).
+     Дополнительные сведения см. в разделе [Git и Azure Repos](/azure/devops/repos/git/overview?view=vsts&preserve-view=true).
 
 2. Щелкните созданный файл набора правил и нажмите кнопку **Готово**.
 

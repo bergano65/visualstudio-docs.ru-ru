@@ -1,5 +1,6 @@
 ---
 title: Установка локальной справочной документации
+description: Установка локальной справочной документации и управление ей с помощью окно справки (Майкрософт). Добавление, удаление, обновление и перемещение содержимого справки, установленного на компьютере.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70bb90856fb88738bbc82434c47e375ea453fd08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3401c12e35308b07a3c1bb1884af5acda221e71d
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284910"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879103"
 ---
 # <a name="install-and-manage-local-content"></a>Установка локального содержимого и управление им
 
@@ -129,6 +130,6 @@ ms.locfileid: "85284910"
 
 3. Нажмите кнопку **Закрыть** после перемещения содержимого.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Окно справки (Майкрософт)](../help-viewer/overview.md)

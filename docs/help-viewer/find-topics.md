@@ -1,5 +1,6 @@
 ---
 title: Поиск разделов
+description: Узнайте, как искать темы в окно справки (Майкрософт). Настройка поиска с помощью выражений с подстановочными знаками, логических операторов и расширенных операторов поиска.
 ms.date: 11/02/2017
 ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46eb9c21b5bc6f7d0a577b85d043933b48bf60bc
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284923"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878999"
 ---
 # <a name="how-to-search-for-topics"></a>Практическое руководство. Поиск разделов
 
@@ -76,7 +77,7 @@ ms.locfileid: "85284923"
 
 Часто встречающиеся слова или цифры, которые иногда называются стоп-словами, автоматически игнорируются во время полнотекстового поиска. Например, при поиске фразы "проходить сквозь" результаты поиска будут содержать разделы, которые содержат слово "проходить", но не "сквозь".
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Логические и расширенные операторы](../help-viewer/logical-operators-search-expressions.md)
 - [Практическое руководство. Поиск разделов в индексе](../help-viewer/find-topics-index.md)

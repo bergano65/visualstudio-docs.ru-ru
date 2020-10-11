@@ -468,7 +468,7 @@
                   href: ide/reference/wrap-indent-align-refactorings.md
             - name: Пошаговое руководство. Создание кода в результате использования
               href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
-        - name: IntelliSense
+        - name: технология IntelliSense
           items:
             - name: Использование IntelliSense
               href: ide/using-intellisense.md
@@ -826,7 +826,7 @@
         - name: Разработка приложений с поддержкой множества языков
           displayName: Globalization localization world-ready
           href: ide/globalizing-and-localizing-applications.md
-- name: Сборка
+- name: Построение
   items:
     - name: Обзор
       displayName: Compile build
@@ -878,7 +878,7 @@
       href: msbuild/msbuild.md
     - name: "Azure\_Pipelines и TFS >>"
       displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
-      href: /azure/devops/pipelines/index?view=vsts
+      href: /azure/devops/pipelines/index?view=vsts&preserve-view=true
     - name: Указание событий сборки (Visual Basic)
       href: ide/how-to-specify-build-events-visual-basic.md
     - name: Указание событий сборки (C#)
@@ -1150,7 +1150,7 @@
                       href: ide/reference/options-text-editor-basic-visual-basic.md
                     - name: Стиль кода
                       href: ide/code-styles-and-code-cleanup.md
-                    - name: IntelliSense
+                    - name: технология IntelliSense
                       href: ide/visual-basic-specific-intellisense.md
                 - name: C#
                   items:
@@ -1158,7 +1158,7 @@
                       href: ide/reference/options-text-editor-csharp-advanced.md
                     - name: Стиль кода > Форматирование
                       href: ide/reference/options-text-editor-csharp-formatting.md
-                    - name: IntelliSense
+                    - name: технология IntelliSense
                       href: ide/reference/options-text-editor-csharp-intellisense.md
                 - name: C/C++
                   items:
@@ -1178,7 +1178,7 @@
                       href: ide/reference/options-text-editor-fsharp-code-fixes.md
                     - name: CodeLens
                       href: ide/reference/options-text-editor-fsharp-codelens.md
-                    - name: IntelliSense
+                    - name: технология IntelliSense
                       href: ide/reference/options-text-editor-fsharp-intellisense.md
                 - name: HTML (веб-формы)
                   items:
@@ -1194,7 +1194,7 @@
                       href: ide/reference/options-text-editor-javascript-code-validation.md
                     - name: Форматирование
                       href: ide/reference/options-text-editor-javascript-formatting.md
-                    - name: IntelliSense
+                    - name: технология IntelliSense
                       href: ide/reference/options-text-editor-javascript-intellisense.md
                     - name: Выделение
                       href: ide/reference/options-text-editor-javascript-linting.md
@@ -1204,7 +1204,7 @@
                   items:
                     - name: Форматирование
                       href: ide/reference/options-text-editor-usql-formatting.md
-                    - name: IntelliSense
+                    - name: технология IntelliSense
                       href: ide/reference/options-text-editor-usql-intellisense.md
                 - name: XAML
                   items:

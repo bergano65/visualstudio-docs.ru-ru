@@ -1,5 +1,6 @@
 ---
 title: Логические операторы в выражениях поиска (окно справки)
+description: Узнайте, как использовать логические операторы и операторы расширенного поиска для уточнения выражений поиска в окно справки (Майкрософт).
 ms.custom: SEO-VS-2020
 ms.date: 11/02/2017
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9daceca2540a2da61a46e12a458c012ce7851001
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2bfa869bed2bc4462c050ac77e08665958f60598
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038638"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878934"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Логические и расширенные операторы в выражениях поиска
 
@@ -30,7 +31,7 @@ ms.locfileid: "90038638"
 |Условие, которое требуется найти|Использование|Пример|Результат|
 |-------------------|---------|-------------|------------|
 |Оба условия в одной статье|AND|dib AND palette|Разделы, содержащие "dib" и "palette".|
-|Любое из условий в статье|ИЛИ|raster OR vector|Разделы, содержащие либо "raster", либо "vector".|
+|Любое из условий в статье|OR|raster OR vector|Разделы, содержащие либо "raster", либо "vector".|
 |Первое условие без второго условия в одной статье|NOT|"operating system" NOT DOS|Разделы, содержащие "operating system", но не "DOS".|
 |Оба условия, находящиеся близко друг к другу в статье|NEAR|user NEAR kernel|Разделы, содержащие "user" недалеко от "kernel".|
 
@@ -67,7 +68,7 @@ ms.locfileid: "90038638"
 > [!NOTE]
 > Оператор `code:` находит только то содержимое, которое имеет метку языка программирования, а не просто помечено как код.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Поиск разделов](../help-viewer/find-topics.md)
 - [Окно справки (Майкрософт)](../help-viewer/overview.md)

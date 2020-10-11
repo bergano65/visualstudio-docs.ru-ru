@@ -1,5 +1,6 @@
 ---
 title: Переопределение диспетчера содержимого справки
+description: Сведения о переопределениях диспетчера содержимого справки, которые изменяют поведение по умолчанию средства просмотра справки и функций справки в интегрированной среде разработки Visual Studio.
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c03d631be1bc4a38e514e1019fa230775427a53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60f4e46d8c43c90759c964dbf01145d876a9f413
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825095"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879064"
 ---
 # <a name="help-content-manager-overrides"></a>Переопределение диспетчера содержимого справки
 
@@ -56,12 +57,12 @@ ms.locfileid: "67825095"
 
 Путем задания параметров реестра в редакторе реестра можно управлять двумя вариантами поведения.
 
-|Задача|Ключ реестра|Значение|Данные|
+|Задача|Раздел реестра .|Значение|Данные|
 |----------|-----|------|----|
 |Переопределение приоритета задания BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (на 64-разрядном компьютере)\Microsoft\Help\v2.3|BITSPriority|**foreground**, **high**, **normal** или **low**|
 |Указание на хранилище локального содержимого в сетевой папке с общим доступом|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справка по средству просмотра справки для администраторов](../help-viewer/administrator-guide.md)
 - [Аргументы командной строки для диспетчера содержимого справки](../help-viewer/command-line-arguments.md)

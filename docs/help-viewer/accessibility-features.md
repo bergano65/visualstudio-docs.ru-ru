@@ -1,5 +1,6 @@
 ---
 title: Специальные возможности в окне справки
+description: Ознакомьтесь со списком специальных возможностей в окно справки (Майкрософт), охватывающих доступ к клавиатуре, размер шрифта, размер окна и расположение средства просмотра справки.
 ms.date: 11/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34a5a2f07d17c2ebd607bfe102cc7e3db92d014a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 359a1c4c87a139c35bf38d36edc6a53b2147dd98
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825137"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879077"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Специальные возможности в окне справки
 Корпорация Майкрософт стремится стремится сделать использование своих продуктов и услуг простым для всех пользователей. В этот раздел входит информация о возможностях, продуктах и службах, помогающих предоставить окно справки (Майкрософт) для людей с разными физическими возможностями.
@@ -33,7 +34,7 @@ ms.locfileid: "67825137"
 ## <a name="help-viewer-position"></a>Положение окна справки
 Вы можете изменить положение окна справки, перетащив заголовок окна в другое место.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Окно справки (Майкрософт)](../help-viewer/overview.md)
 - [Сочетания клавиш (окно справки)](../help-viewer/shortcut-keys.md)

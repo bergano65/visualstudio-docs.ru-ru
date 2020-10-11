@@ -1,5 +1,6 @@
 ---
 title: Аргументы командной строки для диспетчера содержимого справки
+description: Используйте аргументы командной строки для диспетчера содержимого справки (HlpCtntMgr.exe), чтобы указать способ развертывания и управления локальным содержимым справки.
 ms.date: 11/01/2017
 ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bead01c6440d5232a91a5e8fe2007b3e30340c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24011c50cf6f8d2204abdaa8b6119f7873470bcf
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72631969"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879051"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Аргументы командной строки для диспетчера содержимого справки
 
@@ -46,7 +47,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 
 В следующей таблице определены параметры и аргументы, которые можно использовать для средства командной строки для диспетчера содержимого справки:
 
-|Коммутатор|Необходим?|Аргументы|
+|Переключатель|Необходим?|Аргументы|
 |------------|---------------|---------------|
 |/operation|Да|-   **Установить**. Добавляет книги из определенного источника установки в хранилище локального содержимого.<br />     Этот ключ требует аргумента /booklist, аргумента /sourceURI или и того, и другого. Если не указан аргумент /sourceURI, то URI Visual Studio по умолчанию используется в качестве источника установки. Если не указан аргумент /booklist, устанавливаются все книги из /sourceUri.<br />-   **Удалить**. Удаляет указанные книги из локального хранилища содержимого.<br />     Этот ключ требует аргумента /booklist или /sourceURI.  Если указан аргумент /sourceURI, удаляются все книги, а аргумент /booklist игнорируется.<br />-   **Переместить**. Перемещает локальное хранилище в указанный путь. В качестве локального пути хранения по умолчанию задается каталог в *%ProgramData%*<br />     Этот параметр требует аргументов /locationPath и /catalogName. Сообщения об ошибке будут записаны в журнал событий при указании пути, который недопустим, или если на диске недостаточно свободного пространства для хранения содержимого.<br />-   **Обновить**. Обновляет разделы, которые были изменены с момента установки или последнего обновления.<br />     Этот параметр требует аргумента /sourceURI.|
 |/catalogName|Да|Указывает имя каталога содержимого. Для Visual Studio 2017 и Visual Studio 2019 это VisualStudio15.|
@@ -90,7 +91,7 @@ OnlineHelpPreferenceDisabled = 1201
 UpdateAlreadyRunning = 1300 - (Signals that the update didn't run because another was in progress.)
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справка по средству просмотра справки для администраторов](../help-viewer/administrator-guide.md)
 - [Переопределение диспетчера содержимого справки](../help-viewer/behavior-overrides.md)

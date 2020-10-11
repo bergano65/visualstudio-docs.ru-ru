@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c01543b290d991a189c0851c64526c9c513068ba
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587086"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927982"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Использование окна "Результаты метрик кода"
 
@@ -82,9 +82,9 @@ ms.locfileid: "75587086"
 
 ## <a name="create-a-work-item-based-on-code-metric-results"></a>Создание рабочего элемента на основе результатов метрик кода
 
-Можно создать [Azure Boards](/azure/devops/boards/index?view=vsts) рабочий элемент, основанный на результатах в окне **результатов метрик кода** . При создании рабочего элемента Visual Studio автоматически вводит заголовок в поле **Title (название** ) и данные метрики кода на вкладке **Журнал** .
+Можно создать [Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true) рабочий элемент, основанный на результатах в окне **результатов метрик кода** . При создании рабочего элемента Visual Studio автоматически вводит заголовок в поле **Title (название** ) и данные метрики кода на вкладке **Журнал** .
 
-Дополнительные сведения о Azure Boards рабочих элементов см. в разделе [рабочие элементы](/azure/devops/boards/work-items/index?view=vsts).
+Дополнительные сведения о Azure Boards рабочих элементов см. в разделе [рабочие элементы](/azure/devops/boards/work-items/index?view=vsts&preserve-view=true).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Создание рабочего элемента на основе результата
 
@@ -106,7 +106,7 @@ ms.locfileid: "75587086"
 
 4. В меню **файл** выберите команду **сохранить все** , чтобы сохранить рабочий элемент.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Значения метрик кода](../code-quality/code-metrics-values.md)
 - [Как создавать данные метрик кода](../code-quality/how-to-generate-code-metrics-data.md)

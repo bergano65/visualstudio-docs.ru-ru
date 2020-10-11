@@ -16,9 +16,9 @@
             - name: Качество кода
               items:
                 - name: Параметры качества кода
-                  href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                  href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
                 - name: Использование файлов EditorConfig для качества кода
-                  href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                  href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
             - name: Стиль кода
               items:
                 - name: Параметры стиля кода
@@ -27,7 +27,7 @@
                   displayName: Configure code style analyzers
                   href: ../ide/create-portable-custom-editor-options.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
                 - name: Параметры правила
-                  href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                  href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
             - name: Настройка динамического анализа кода
               href: configure-live-code-analysis-scope-managed-code.md
             - name: Запуск анализа кода вручную
