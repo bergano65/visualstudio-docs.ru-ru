@@ -11,12 +11,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2d1b51661d9fc9a5492d123bdacd6c49d241ed87
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585604"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959779"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Использование покрытия кода для определения объема протестированного кода
 
@@ -272,7 +272,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 ## <a name="analyze-code-coverage-in-azure-pipelines"></a>Анализ покрытия кода в Azure Pipelines
 
-После возврата измененного кода ваши тесты будут выполняться на сервере сборки вместе с тестами других членов команды. Анализ объема протестированного кода в Azure Pipelines дает наиболее актуальное и исчерпывающее представление о тестировании в масштабе всего проекта. Такой анализ также подразумевает автоматические системные тесты и другие закодированные тесты, которые обычно не выполняются на компьютерах разработчиков. Дополнительные сведения см. в статье о [модульном тестировании сборок](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts).
+После возврата измененного кода ваши тесты будут выполняться на сервере сборки вместе с тестами других членов команды. Анализ объема протестированного кода в Azure Pipelines дает наиболее актуальное и исчерпывающее представление о тестировании в масштабе всего проекта. Такой анализ также подразумевает автоматические системные тесты и другие закодированные тесты, которые обычно не выполняются на компьютерах разработчиков. Дополнительные сведения см. в статье о [модульном тестировании сборок](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true).
 
 ## <a name="analyze-code-coverage-from-the-command-line"></a>Анализ объема протестированного кода в командной строке
 

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d18282cf0fbd8782eb7abce05794e0b2eb1c5c1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eaa1e284394bda78c6892647ce9eca20d372a362
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90035746"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928099"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Использование закодированных тестов пользовательского интерфейса для проверки кода
 
@@ -444,7 +444,7 @@ myWinCheckBox.Checked = true;
 
 - [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)
 
-- [Выполнение тестов в процессе сборки](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+- [Выполнение тестов в процессе сборки](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)
 
 - [Практическое руководство. Настройка агента тестирования для выполнения тестов, взаимодействующих с рабочим столом](/previous-versions/ee291332(v=vs.140))
 
@@ -458,7 +458,7 @@ myWinCheckBox.Checked = true;
 
 ## <a name="see-also"></a>См. также
 
-- [Запись и воспроизведение ручных тестов](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
+- [Запись и воспроизведение ручных тестов](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts&preserve-view=true)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Пошаговое руководство: Создание, изменение и поддержка закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

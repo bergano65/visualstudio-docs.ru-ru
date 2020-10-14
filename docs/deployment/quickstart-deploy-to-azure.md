@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: d17675f5babcdade8e6f96982f175553482920a9
-ms.sourcegitcommit: 036b0dfa651f7218ed33e6a19425613599ee58fa
+ms.openlocfilehash: 5881e1dfb1842e2a6d85efe73534f8db2e2f734e
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91636833"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830747"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Публикация веб-приложения в службе приложений Azure с помощью Visual Studio
 
 Приложения ASP.NET, ASP.NET Core, Node.js и .NET Core можно публиковать в службе приложений Azure или службе приложений Azure для Linux (с использованием контейнеров) одним из следующих методов.
 
-* Для непрерывного (или автоматического) развертывания приложений используйте Azure DevOps с [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
+* Для непрерывного (или автоматического) развертывания приложений используйте Azure DevOps с [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true).
 
 * Для однократного развертывания (или развертывания вручную) используйте средство **публикации** в Visual Studio, чтобы развертывать приложения ASP.NET, ASP.NET Core, Node.js и .NET Core в службе приложений Azure или [службе приложений для Linux](../deployment/quickstart-deploy-to-linux.md) (с помощью контейнеров). Для приложений Python выполните инструкции, приведенные в статье [Python: публикация в службе приложений Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 

@@ -8,12 +8,12 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4fb186c97126d843cc47c16fa16a836914ed2e9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2366e77b0b66e2a31ce17e1aefb9240e4f45df2d
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287770"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928649"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Практическое руководство. включение записей экрана и голоса во время тестирования с помощью параметров тестов
 
@@ -28,7 +28,7 @@ ms.locfileid: "85287770"
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Настройка записи экрана и речи для параметров тестирования
 
-1. Откройте параметры теста, для которых требуется настроить запись экрана и речи. Дополнительные сведения см. в статьях [Сбор диагностических данных во время тестирования (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) и [Сбор диагностических данных с помощью параметров тестирования](../test/collect-diagnostic-information-using-test-settings.md).
+1. Откройте параметры теста, для которых требуется настроить запись экрана и речи. Дополнительные сведения см. в статьях [Сбор диагностических данных во время тестирования (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true) и [Сбор диагностических данных с помощью параметров тестирования](../test/collect-diagnostic-information-using-test-settings.md).
 
 2. В параметрах тестирования выберите **Роль**, которая будет использоваться для записи экрана и речи.
 
@@ -69,7 +69,7 @@ ms.locfileid: "85287770"
 
 ## <a name="see-also"></a>См. также
 
-- [Сбор диагностических данных во время тестирования (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [Сбор диагностических данных в ручных тестах (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+- [Сбор диагностических данных во время тестирования (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
+- [Сбор диагностических данных в ручных тестах (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
 - [Сбор диагностических данных с помощью параметров тестирования](../test/collect-diagnostic-information-using-test-settings.md)
-- [Выполнение тестов вручную (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)
+- [Выполнение тестов вручную (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts&preserve-view=true)

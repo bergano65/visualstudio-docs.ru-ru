@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55f229550dfe74606f4dfb0880b4e91d689d5ad
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2180d535dbdbdc88290a48cf166879525f10b4bb
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809037"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928545"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Компиляция и сборка в Visual Studio
 
@@ -32,7 +32,7 @@ ms.locfileid: "90809037"
 | Командная строка MSBuild| — Сборка проектов без установки Visual Studio.<br />— Запуск многопроцессорных сборок для всех типов проектов.<br />— Настройка большинства аспектов системы сборки.|
 | Azure Pipelines | — Автоматизация процесса сборки в рамках конвейера непрерывной интеграции или поставки.<br />— Применение автоматических тестов для каждой сборки.<br />— Использование практически неограниченных облачных ресурсов для процессов сборки.<br />— Возможность изменения рабочего процесса сборки и создания процедур сборки с подробно настраиваемыми задачами.|
 
-В этом разделе подробно рассматривается сборка на основе IDE. Дополнительные сведения о других методах см. в разделах [MSBuild](../msbuild/msbuild.md) и [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) соответственно.
+В этом разделе подробно рассматривается сборка на основе IDE. Дополнительные сведения о других методах см. в разделах [MSBuild](../msbuild/msbuild.md) и [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true) соответственно.
 
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Компиляция и сборка в Visual Studio для Mac](/visualstudio/mac/compiling-and-building).

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c374951b4d4875e4e754035ac52afb7f8fc5a2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b75ae05a65ae15e82c45ec0cf43935fb0809160
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286900"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928610"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Установка агентов и контроллеров тестирования
 
@@ -83,7 +83,7 @@ ms.locfileid: "85286900"
 
 | Сценарии, поддерживаемые Agents для Visual Studio 2013 | Альтернатива в TFS и Azure Test Plans |
 | - | - |
-| Рабочий процесс "сборка-развертывание-тестирование" в Visual Studio | Пользователи могут использовать [конвейер сборки](/azure/devops/pipelines/index?view=vsts) (не сборку XAML) для сценариев сборки, развертывания и тестирования в TFS. |
+| Рабочий процесс "сборка-развертывание-тестирование" в Visual Studio | Пользователи могут использовать [конвейер сборки](/azure/devops/pipelines/index?view=vsts&preserve-view=true) (не сборку XAML) для сценариев сборки, развертывания и тестирования в TFS. |
 | Нагрузочные тесты (тестирование производительности) с использованием удаленных локальных компьютеров | Используйте обновление 5 для контроллеров и агентов тестирования 2013 для локального выполнения нагрузочных тестов. |
 | Удаленное выполнение автоматических тестов из Microsoft Test Manager (не рекомендуется в Visual Studio 2017) с использованием лабораторной среды | Сейчас альтернативы этому сценарию не существует. Мы рекомендуем использовать задачу "Запуск функциональных тестов" в определениях сборок и выпусков (не в сборке XAML) для удаленного выполнения тестов. |
 | Разработчики, выполняющие удаленные тесты в Visual Studio | Больше не поддерживается. |

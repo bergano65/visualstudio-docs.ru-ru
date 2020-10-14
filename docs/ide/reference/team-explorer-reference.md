@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fa73894d713ded42696f5e47d40dffb2d2405b1a
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74538574"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928086"
 ---
 # <a name="team-explorer-reference"></a>Справка по Team Explorer
 
@@ -26,7 +26,7 @@ ms.locfileid: "74538574"
 - [Веб-портал](/azure/devops/project/navigation/index)
 - [Доска задач](/azure/devops/boards/sprints/task-board)
 
-На **домашней** странице реализуются другие функции в зависимости от того, подключены ли вы к [Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio) или репозиторию [системы управления версиями Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview).
+На **домашней** странице реализуются другие функции в зависимости от того, подключены ли вы к [Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true) или репозиторию [системы управления версиями Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview).
 
 > [!TIP]
 > Сравнение этих двух систем управления версиями см. в разделе [Выбор подходящей системы управления версиями для проекта (Azure DevOps)](/azure/devops/repos/tfvc/comparison-git-tfvc).

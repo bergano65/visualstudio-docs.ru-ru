@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: decbdc244a7947b715b8ba5b27bda5aaf50d2266
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c494f8d8543e0aa51b0c2be0ee52c0cb80aba982
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950612"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862434"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Установка Visual Studio 2017 для Mac
 
@@ -68,7 +68,7 @@ ms.locfileid: "85950612"
       - Полностью кроссплатформенные приложения Xamarin — выберите платформы **Android**, **iOS** и **macOS**.
    * **Приложения .NET Core** — выберите платформу **.NET Core**.
    * **Веб-приложения ASP.NET Core** — выберите платформу **.NET Core**.
-   * **Разработка кроссплатформенных игр Unity** — не нужно устанавливать дополнительные платформы, кроме Visual Studio для Mac. Дополнительные сведения об установке расширения Unity вы найдете в [руководстве по установке Unity](/visualstudio/mac/setup-vsmac-tools-unity).
+   * **Разработка кроссплатформенных игр Unity** — не нужно устанавливать дополнительные платформы, кроме Visual Studio для Mac. Дополнительные сведения об установке расширения Unity вы найдете в [руководстве по установке Unity](./setup-vsmac-tools-unity.md).
 
    На этом экране установки отображается версия и размер каждого компонента. Вы можете щелкнуть каждый из компонентов, чтобы отобразить список его зависимостей (для Android), просмотреть скачиваемые им дополнительные пакеты (для .NET Core) или просмотреть обязательные дополнительные приложения (для iOS и macOS):
 
@@ -120,7 +120,7 @@ ms.locfileid: "85950612"
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Приложения .NET Core, веб-приложения ASP.NET Core, разработка игр Unity
 
-Другие рабочие нагрузки описаны [на этой странице](/visualstudio/mac/workloads).
+Другие рабочие нагрузки описаны [на этой странице](./workloads.md).
 
 ## <a name="related-video"></a>Связанные видео
 

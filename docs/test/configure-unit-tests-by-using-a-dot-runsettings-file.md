@@ -7,18 +7,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 38e542fed0f26422a88644577ec864ef006855c5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8998a9e761716b28bd2815120e350b98804a6395
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038443"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928675"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла *.runsettings*
 
 Модульные тесты в Visual Studio можно настроить с помощью файла *.runsettings*. Например, можно изменить версию платформы .NET, на которой выполняются тесты, каталог для результатов теста и данные, собранные во время тестового запуска. Чаще всего файл *.runsettings* используют для настройки [анализа объема протестированного кода](../test/customizing-code-coverage-analysis.md).
 
-Файлы параметров запуска можно использовать для настройки тестов, которые запускаются из [командной строки](vstest-console-options.md), в интегрированной среде разработки или в [рабочем процессе сборки](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) с помощью Azure Test Plans или Team Foundation Server (TFS).
+Файлы параметров запуска можно использовать для настройки тестов, которые запускаются из [командной строки](vstest-console-options.md), в интегрированной среде разработки или в [рабочем процессе сборки](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true) с помощью Azure Test Plans или Team Foundation Server (TFS).
 
 Файлы параметров запуска являются необязательными. Если вам не требуется специальная конфигурация, файл *.runsettings* не нужен.
 
@@ -35,7 +35,7 @@ ms.locfileid: "90038443"
 
    - [Интегрированная среда разработки Visual Studio](#specify-a-run-settings-file-in-the-ide)
    - [командная строка;](#specify-a-run-settings-file-from-the-command-line)
-   - [рабочий процесс сборки](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) с использованием Azure Test Plans или Team Foundation Server (TFS).
+   - [рабочий процесс сборки](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true) с использованием Azure Test Plans или Team Foundation Server (TFS).
 
 4. Выполните модульные тесты с применением пользовательских параметров запуска.
 
@@ -83,20 +83,20 @@ ms.locfileid: "90038443"
 Чтобы файл параметров запуска определялся автоматически, поместите его в корень решения.
 
 Если включено автоматическое определение файлов параметров запуска, параметры в этом файле применяются ко всем тестовым запускам. Вы можете включить автоматическое обнаружение RUNSETTINGS-файлов двумя способами.
-  
+
 - Выберите **Сервис** > **Параметры** > **Тест** > **Автоматическое обнаружение файлов параметров выполнения**.
 
    ![Параметр "Автоматическое обнаружение файлов параметров выполнения" в Visual Studio 2019](media/vs-2019/auto-detect-runsettings-tools-window.png)
-      
+
 - Выберите **Тест** > **Настройка параметров выполнения** > **Автоматическое обнаружение файлов параметров выполнения**.
-    
+
    ![Меню "Автоматическое обнаружение файлов параметров выполнения" в Visual Studio 2019](media/vs-2019/auto-detect-runsettings-menu.png)
 
 #### <a name="manually-select-the-run-settings-file"></a>Выбор файла параметров запуска вручную
 
 В интегрированной среде разработки выберите **Тест** > **Настройка параметров выполнения** > **Выберите файл параметров выполнения на уровне решения**, а затем выберите файл *RUNSETTINGS*.
 
-   - Этот файл переопределяет *RUNSETTINGS*-файл в корневом каталоге решения, если он существует, и применяется ко всем тестовым запускам.  
+   - Этот файл переопределяет *RUNSETTINGS*-файл в корневом каталоге решения, если он существует, и применяется ко всем тестовым запускам.
    - Этот выбор файла сохраняется только локально.
 
 ![Пункт меню "Выберите файл параметров выполнения на уровне решения" для теста в Visual Studio 2019](media/vs-2019/select-solution-settings-file.png)
@@ -107,10 +107,10 @@ ms.locfileid: "90038443"
 
 - В настоящее время параметры запуска на уровне проекта поддерживаются в проектах C#, VB, C++ и F#.
 - Файл, указанный для проекта, переопределяет любой другой файл параметров запуска, указанный в решении.
-- [Эти свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md) можно использовать для указания пути к файлу параметров запуска. 
+- [Эти свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md) можно использовать для указания пути к файлу параметров запуска.
 
 Пример указания файла с расширением *RUNSETTINGS* для проекта:
-    
+
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
@@ -186,7 +186,7 @@ ms.locfileid: "90038443"
 |**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||Один или несколько путей к каталогу, где находятся адаптеры TestAdapters|
 |**TestSessionTimeout**||Дает пользователям возможность завершить сеанс тестирования, если его длительность превышает заданный промежуток времени. Задав время ожидания, вы обеспечите надлежащее использование ресурсов и ограничите выполнение сеансов тестирования определенным периодом. Этот параметр доступен в **Visual Studio 2017 версии 15.5** и более поздних версий.|
-|**DotnetHostPath**||Укажите пользовательский путь к узлу dotnet, который используется для запуска testhost. Это полезно при создании собственного узла dotnet, например при создании репозитория dotnet/runtime. При указании этого параметра поиск testhost.exe выполняться не будет, и всегда будет использоваться testhost.dll. 
+|**DotnetHostPath**||Укажите пользовательский путь к узлу dotnet, который используется для запуска testhost. Это полезно при создании собственного узла dotnet, например при создании репозитория dotnet/runtime. При указании этого параметра поиск testhost.exe выполняться не будет, и всегда будет использоваться testhost.dll.
 
 ## <a name="datacollectors-element-diagnostic-data-adapters"></a>Элемент DataCollectors (адаптеры диагностических данных)
 
@@ -231,7 +231,7 @@ ms.locfileid: "90038443"
 
 ### <a name="blame-data-collector"></a>Запуск cборщика данных в режиме обвинения
 
-Этот параметр помогает изолировать проблемный тест, из-за которого в узле тестов возникает сбой. При запуске сборщика создается выходной файл (*Sequence.xml*) в *TestResults*, в который записывается порядок выполнения теста перед сбоем. 
+Этот параметр помогает изолировать проблемный тест, из-за которого в узле тестов возникает сбой. При запуске сборщика создается выходной файл (*Sequence.xml*) в *TestResults*, в который записывается порядок выполнения теста перед сбоем.
 
 ```xml
 <DataCollector friendlyName="blame" enabled="True">
@@ -268,7 +268,7 @@ public void HomePageTest()
 
 ```xml
 <LoggerRunSettings>
-    <Loggers>        
+    <Loggers>
       <Logger friendlyName="console" enabled="True">
         <Configuration>
             <Verbosity>quiet</Verbosity>
@@ -392,10 +392,10 @@ public void HomePageTest()
     <Parameter name="webAppUserName" value="Admin" />
     <Parameter name="webAppPassword" value="Password" />
   </TestRunParameters>
-  
+
   <!-- Configuration for loggers -->
   <LoggerRunSettings>
-    <Loggers>      
+    <Loggers>
       <Logger friendlyName="console" enabled="True">
         <Configuration>
             <Verbosity>quiet</Verbosity>
@@ -462,4 +462,4 @@ public void HomePageTest()
 
 - [Настройка тестового запуска](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Настройка анализа объема протестированного кода](../test/customizing-code-coverage-analysis.md)
-- [Задача теста Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
+- [Задача теста Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts&preserve-view=true)

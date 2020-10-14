@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658442"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860494"
 ---
 # <a name="overview-of-source-code-analysis"></a>Обзор анализа исходного кода
 
@@ -77,7 +77,7 @@ ms.locfileid: "91658442"
 
 Чтобы применить правила во время сборки, например с помощью командной строки или в составе сборки непрерывной интеграции (CI), выберите один из следующих вариантов:
 
-- Создайте проект .NET 5.0, который содержит анализаторы по умолчанию в пакете SDK для .NET. Для проектов, предназначенных для .NET 5.0 или более поздней версии анализ кода включен по умолчанию. Вы можете включить анализ кода для проектов, предназначенных для более ранних версий .NET, задав для свойства [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) значение true.
+- Создайте проект .NET 5.0, который содержит анализаторы по умолчанию в пакете SDK для .NET. Для проектов, предназначенных для .NET 5.0 или более поздней версии анализ кода включен по умолчанию. Вы можете включить анализ кода для проектов, предназначенных для более ранних версий .NET, задав для свойства [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) значение true.
 
 - Установите анализаторы в качестве пакета NuGet. Если установить анализатор как расширение, его предупреждения и ошибки не будут отображаться в отчете о сборке.
 

@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 943c0567e3726d014f7dae01915916864e09ed9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d744e7495323c6e0ce565f33e2cfca95feb0a51
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801650"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928688"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Введение в интегрированную среду разработки Visual Studio (Python)
 
@@ -38,7 +38,7 @@ ms.locfileid: "88801650"
 - В окно [вывода](../ide/reference/output-window.md) (в центре внизу) Visual Studio отправляет уведомления, такие как сообщения об отладке и ошибках, предупреждения, сообщения о состоянии публикаций и многие другие. Каждый источник сообщений имеет собственную вкладку.
   - Объект [интерактивное окно REPL для Python](python-interactive-repl-in-visual-studio.md) отображается в той же области, что и окно вывода.
 
-- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (правый нижний угол) позволяет отслеживать рабочие элементы и использовать код совместно с другими пользователями с помощью технологий управления версиями, таких как [Git](https://git-scm.com/) и [система управления версиями Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
+- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts&preserve-view=true) (правый нижний угол) позволяет отслеживать рабочие элементы и использовать код совместно с другими пользователями с помощью технологий управления версиями, таких как [Git](https://git-scm.com/) и [система управления версиями Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true).
 
 ## <a name="editions"></a>Выпуски
 

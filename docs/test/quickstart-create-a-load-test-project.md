@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f186e8c10d894b98e789480046d43fc957edd8a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d883d531737caf32ec202955ff951382b5ff9009
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75566414"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928584"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Краткое руководство: создание проекта нагрузочного тестирования
 
@@ -78,7 +78,7 @@ ms.locfileid: "75566414"
 
    Откроется **мастер тестовой нагрузки**.
 
-1. Выберите параметр **Локальный нагрузочный тест** и нажмите кнопку **Далее**. Дополнительные сведения об облачном нагрузочном тестировании можно найти в [этой статье](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+1. Выберите параметр **Локальный нагрузочный тест** и нажмите кнопку **Далее**. Дополнительные сведения об облачном нагрузочном тестировании можно найти в [этой статье](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts&preserve-view=true).
 
    ![Первая страница мастера тестовой нагрузки](media/load-test-wizard-page-1.png)
 
