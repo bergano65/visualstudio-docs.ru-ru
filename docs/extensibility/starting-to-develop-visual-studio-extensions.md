@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8745acd9af9009a7206eada7ffb64f95759e8399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812c5b2366e40226011a15acfc1cae2327e4b897
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286197"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099392"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Приступая к разработке расширений Visual Studio
 
@@ -91,9 +91,9 @@ ms.locfileid: "85286197"
 ## <a name="how-can-i-distribute-my-extension"></a>Как можно распространить расширение?
  Вы можете установить расширение на другом компьютере или отправить его своим друзьям в виде VSIX-файла, который устанавливается двойным щелчком. Дополнительные сведения о пакетах VSIX см. в статье [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- Вы также можете опубликовать расширение на Visual Studio Marketplace, что делает его видимым для большого числа клиентов Visual Studio. Пример упаковки расширения в Marketplace см. в разделе [Пошаговое руководство. публикация расширения Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Дополнительные сведения о том, что необходимо сделать для публикации в Marketplace, см. в разделе [Products and Extensions for Visual Studio](/azure/devops/extend/overview?view=vsts).
+ Вы также можете опубликовать расширение на Visual Studio Marketplace, что делает его видимым для большого числа клиентов Visual Studio. Пример упаковки расширения в Marketplace см. в разделе [Пошаговое руководство. публикация расширения Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Дополнительные сведения о том, что необходимо сделать для публикации в Marketplace, см. в разделе [Products and Extensions for Visual Studio](/azure/devops/extend/overview?view=vsts&preserve-view=true).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Расширение Visual Studio для Mac](/visualstudio/mac/extending-visual-studio-mac)
 - [Расширение Visual Studio Code](https://code.visualstudio.com/api)

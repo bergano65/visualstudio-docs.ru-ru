@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b10e4b211bb1a187f51f95aa6eb78d2de451516
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddcdf62fbfe6d683159cccce24280bdb08cedc2a
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699647"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099379"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Поддержка пакета SDK для Visual Studio
 Для клиентов, у которых есть вопросы о том, как расширить интегрированную среду разработки (IDE) Visual Studio, доступны несколько вариантов поддержки.
@@ -30,7 +30,7 @@ ms.locfileid: "80699647"
  Участники группы разработки Visual Studio и другие разработчики, которые расширяют Visual Studio, часто участвуют в группе новостей Microsoft. public. встудио. Extensibility. Эта группа новостей является управляемой группой новостей. Если вы являетесь универсальным подписчиком MSDN, убедитесь, что вы зарегистрировали псевдоним без спама, чтобы ответить корпорации Майкрософт.
 
 ### <a name="msdn-forums"></a>Форумы MSDN
- [Форумы MSDN](https://social.msdn.microsoft.com/Forums/en-US/home) предоставляют другой способ общения с коллегами и экспертами. Графический пользовательский интерфейс на форумах предназначен для упрощения их использования, чем группы новостей. [Форум по расширению Visual Studio](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) — это хорошее место для начала поиска ответов на вопросы о расширяемости. Всегда ищите вопрос, так как другой пользователь может уже запросить тот же вопрос.
+ [Форумы MSDN](https://social.msdn.microsoft.com/Forums/en-US/home) предоставляют другой способ общения с коллегами и экспертами. Графический пользовательский интерфейс на форумах предназначен для упрощения их использования, чем группы новостей. [Форум по расширению Visual Studio](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts&preserve-view=true) — это хорошее место для начала поиска ответов на вопросы о расширяемости. Всегда ищите вопрос, так как другой пользователь может уже запросить тот же вопрос.
 
 ### <a name="visual-studio-gallery"></a>Галерея Visual Studio
  [Visual Studio Marketplace](https://marketplace.visualstudio.com/) — это место для расширений и примеров кода. Вы можете найти средства, повышающие производительность и удобство работы пользователей с помощью Visual Studio, примеры приложений, демонстрирующие использование пакетов VSPackage и Managed Extensibility Framework (MEF) и других типов примеров.

@@ -7,12 +7,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2363e5131dd499dd85a5822ed15e2bfe473f1e1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bef53e9288f04c9ed7fce6ff7e5ddd69020798f
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596640"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099288"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Справочник по языку DGML
 
@@ -21,7 +21,7 @@ ms.locfileid: "75596640"
 Обратите внимание, что некоторые версии Visual Studio поддерживают только подмножество возможностей DGML, см. раздел [Поддержка версий для инструментов архитектуры и моделирования](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> При редактировании DGML-файла IntelliSense показывает атрибуты, доступные для данного элемента, и их значения. Задавая цвет с помощью атрибута, можно использовать имена для обычных цветов, например "Blue", или шестнадцатеричные значения ARGB, например "#ffa0b1c3". DGML использует небольшое подмножество форматов определения цветов Windows Presentation Foundation (WPF). Дополнительные сведения см. в разделе [класс Colors](/dotnet/api/system.windows.media.colors?view=netframework-4.8).
+> При редактировании DGML-файла IntelliSense показывает атрибуты, доступные для данного элемента, и их значения. Задавая цвет с помощью атрибута, можно использовать имена для обычных цветов, например "Blue", или шестнадцатеричные значения ARGB, например "#ffa0b1c3". DGML использует небольшое подмножество форматов определения цветов Windows Presentation Foundation (WPF). Дополнительные сведения см. в разделе [класс Colors](/dotnet/api/system.windows.media.colors?view=netframework-4.8&preserve-view=true).
 
 ## <a name="dgml-syntax"></a><a name="DGML"></a> Синтаксис DGML
 
@@ -43,7 +43,7 @@ ms.locfileid: "75596640"
 
    `NeighborhoodDistance` — Если на карте задан макет дерева или быстрый кластер, отображаются только те узлы, которые имеют указанное число (1-7) ссылок за пределами выбранных узлов. См. раздел [изменение макета схемы](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   Пример.
+   Пример
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -70,7 +70,7 @@ ms.locfileid: "75596640"
   > [!NOTE]
   > Если сослаться в элементе `<Link/>` на несуществующий элемент карты, она создаст элемент `<Node/>` автоматически.
 
-   Пример.
+   Пример
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -108,7 +108,7 @@ ms.locfileid: "75596640"
 
    `Reference` — задайте этот атрибут для связывания с документом или URL-адресом. См. статью [связывание документов или URL-адресов с элементами кода и ссылками](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
 
-   Пример.
+   Пример
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -133,7 +133,7 @@ ms.locfileid: "75596640"
 
    Этот элемент содержит список элементов `<Link>`, задающих ссылки между узлами. Дополнительные сведения см. в описании элемента `<Link/>`.
 
-   Пример.
+   Пример
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -167,7 +167,7 @@ ms.locfileid: "75596640"
 
    `Property` — Имя свойства, определяющего элементы, имеющие одинаковое значение свойства. Дополнительные сведения см. в описании элемента `<Property/>`.
 
-   Пример.
+   Пример
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -191,7 +191,7 @@ ms.locfileid: "75596640"
 
    Этот элемент содержит список элементов `<Category/>`. Дополнительные сведения см. в описании элемента `<Category/>`.
 
-   Пример.
+   Пример
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -220,7 +220,7 @@ ms.locfileid: "75596640"
 
    Категории предоставляют также базовый шаблон поведения, который определяет отображение узлов и ссылок на карте. См. раздел [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   Пример.
+   Пример
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -248,7 +248,7 @@ ms.locfileid: "75596640"
 
    Этот элемент содержит список элементов `<Property/>`. Дополнительные сведения см. в описании элемента `<Property/>`.
 
-   Пример.
+   Пример
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -273,7 +273,7 @@ ms.locfileid: "75596640"
 
     См. раздел [Назначение категорий элементам кода и ссылкам](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).
 
-    Пример.
+    Пример
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>

@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2981d510b5f56b89a2cb68d1a6bee93222d71b3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22c18fd457d4827d3abf3a3494ad622873eb5c7b
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596662"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099301"
 ---
 # <a name="develop-tests-from-a-model"></a>Разработка тестов на основе модели
 Чтобы организовать тесты системы и компонентов, можно использовать требования и модели архитектуры. Такой подход позволяет обеспечить проверку требований, важных для пользователей и других заинтересованных лиц, и помогает быстро обновлять тесты при изменении требований. Если вы используете [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], также поддерживаются ссылки между моделями и тестами.
@@ -59,7 +59,7 @@ ms.locfileid: "75596662"
 
 1. В [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] создайте требование и набор тестов на его основе.
 
-    Создаваемое требование является рабочим элементом в [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Это может быть пользовательская история, требование или рабочий элемент варианта использования в зависимости от шаблона процесса, используемого проектом в Team Foundation. Дополнительные сведения см. в разделе [About Agile Tools and Agile Project Management](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    Создаваемое требование является рабочим элементом в [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Это может быть пользовательская история, требование или рабочий элемент варианта использования в зависимости от шаблона процесса, используемого проектом в Team Foundation. Дополнительные сведения см. в разделе [About Agile Tools and Agile Project Management](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true).
 
 2. Свяжите рабочий элемент "требование" с одним или несколькими вариантами использования в модели.
 
@@ -131,7 +131,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Присоединение тестовых случаев к элементам модели
  Если в проекте используется [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], вы можете связать тесты с элементами модели. Это позволяет быстро находить тесты, на которые влияет изменение требований, и помогает отслеживать, в какой степени было удовлетворено требование.
 
- Тесты можно связать со всеми видами элементов. Вот несколько примеров:
+ Тесты можно связать со всеми видами элементов. Ниже приводится несколько примеров.
 
 - Свяжите вариант использования с выполняющими его тестами.
 
@@ -147,7 +147,7 @@ Assert (countAfter == countBefore = 1);
 
 1. В [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] создайте требование и набор тестов на его основе.
 
-    Создаваемое требование является рабочим элементом в [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Это может быть пользовательская история, требование или рабочий элемент варианта использования в зависимости от шаблона процесса, используемого проектом в Team Foundation. Дополнительные сведения см. в разделе [About Agile Tools and Agile Project Management](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    Создаваемое требование является рабочим элементом в [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Это может быть пользовательская история, требование или рабочий элемент варианта использования в зависимости от шаблона процесса, используемого проектом в Team Foundation. Дополнительные сведения см. в разделе [About Agile Tools and Agile Project Management](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true).
 
 2. Свяжите рабочий элемент "требование" с одним или несколькими элементами в модели.
 
