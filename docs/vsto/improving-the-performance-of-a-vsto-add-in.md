@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dccff7206aa9ef71596816d34a863695a10aff6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7529c69270b5f33cde32e8a7907f1b80589c43b7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416553"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298513"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Повышение производительности надстройки VSTO
   Для повышения удобства работы пользователей можно оптимизировать надстройки VSTO, создаваемые для приложений Office, что позволит быстрее выполнять запуск, завершать работу, открывать элементы и выполнять другие задачи. Если ваша надстройка VSTO предназначена для Outlook, можно уменьшить вероятность ее отключения из-за низкой производительности. Для повышения производительности надстройки VSTO можно реализовать следующие стратегии:
@@ -113,8 +113,8 @@ ms.locfileid: "79416553"
 > [!NOTE]
 > Весь код, вызывающий объектную модель Office, должен выполняться в основном потоке.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Загрузка надстроек VSTO по требованию](https://blogs.msdn.microsoft.com/andreww/2008/07/14/demand-loading-vsto-add-ins/)
-- [Отложенная загрузка среды CLR в надстройках Office](https://blogs.msdn.microsoft.com/andreww/2008/04/19/delay-loading-the-clr-in-office-add-ins/)
+- [Загрузка надстроек VSTO по требованию](/archive/blogs/andreww/demand-loading-vsto-add-ins)
+- [Отложенная загрузка среды CLR в надстройках Office](/archive/blogs/andreww/delay-loading-the-clr-in-office-add-ins)
 - [Создание надстроек VSTO для Office с помощью Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)

@@ -1,5 +1,6 @@
 ---
 title: Создание веб-части Silverlight с отображением OData для SharePoint
+titleSuffix: ''
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75653f0357bcc605e666ee271a527b616985b641
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017164"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298505"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Пошаговое руководство. Создание веб-части Silverlight, которая отображает OData для SharePoint
   SharePoint 2010 предоставляет свои данные списка с помощью OData. Служба OData реализована в SharePoint службой RESTful (ListData.svc). В данном пошаговом руководстве показано, как создать веб-часть SharePoint, в которой размещается приложение Silverlight. Приложение Silverlight отображает информацию списка извещений SharePoint с помощью ListData.svc. Дополнительные сведения см. в разделе интерфейс и [Open Data Protocol](https://www.odata.org/) [SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) .
@@ -68,7 +69,7 @@ ms.locfileid: "86017164"
 
 #### <a name="to-customize-the-silverlight-application"></a>Настройка приложения Silverlight
 
-1. Добавьте ссылку на сборку в System.Windows.Data в приложении Silverlight. Дополнительные сведения см. в разделе [как добавить или удалить ссылки с помощью диалогового окна "Добавление ссылки"](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+1. Добавьте ссылку на сборку в System.Windows.Data в приложении Silverlight. Дополнительные сведения см. в разделе [как добавить или удалить ссылки с помощью диалогового окна "Добавление ссылки"](/previous-versions/wkze6zky(v=vs.140)).
 
 2. В **Обозреватель решений**откройте контекстное меню для **ссылок**и выберите **Добавление ссылки на службу**.
 

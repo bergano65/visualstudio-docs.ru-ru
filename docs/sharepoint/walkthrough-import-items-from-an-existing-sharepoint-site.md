@@ -1,5 +1,6 @@
 ---
 title: Пошаговое руководство. Импорт элементов с существующего сайта SharePoint | Документация Майкрософт
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46bc2ceacfde599a70b4e84bba134c4a4d5f9757
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5f9fd5e3cc9b0df5feb60149e58e895996bb1f0
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017123"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298644"
 ---
-# <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Пошаговое руководство. Импорт элементов с существующего сайта SharePoint
+# <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Пошаговое руководство: Импорт элементов с существующего сайта SharePoint
   В этом пошаговом руководстве показано, как импортировать элементы из существующего сайта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проект SharePoint.
 
  В этом пошаговом руководстве описаны следующие задачи.
@@ -38,7 +39,7 @@ ms.locfileid: "86017123"
 
 - Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint.
 
-- Visual Studio.
+- приведенному.
 
 ## <a name="customize-a-sharepoint-site"></a>Настройка сайта SharePoint
  В этом примере создается и настраивается дочерний сайт SharePoint путем добавления нового столбца сайта и создания другого дочернего сайта для последующего использования. Позже будет экспортирован первый дочерний сайт в WSP-файл, а затем импортирован пользовательский столбец сайта во второй дочерний сайт с помощью проекта импорта WSP-файла.

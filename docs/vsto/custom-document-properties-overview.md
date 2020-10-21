@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d9fd14753f447b929faf5aecd37277529e0dd19
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62951179"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298466"
 ---
 # <a name="custom-document-properties-overview"></a>Общие сведения о настраиваемых свойствах документа
 
@@ -55,5 +55,5 @@ ms.locfileid: "62951179"
 - [Архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Архитектура настроек уровня документа](../vsto/architecture-of-document-level-customizations.md)
 - [Манифесты приложений и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Инструкции. Публикация решения Office с помощью ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Инструкции. Публикация решения Office с помощью ClickOnce](/previous-versions/bb386095(v=vs.110))
 - [Как создавать и изменять пользовательские свойства документа](../vsto/how-to-create-and-modify-custom-document-properties.md)

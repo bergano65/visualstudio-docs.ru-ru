@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46f88b47e135331e5f1dc010aa4a73abed520f51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842737"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "92297943"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Пошаговое руководство. вызов кода из VBA в проекте Visual C#
   В этом пошаговом руководстве показано, как вызвать метод в настройке на уровне документа для Microsoft Office Excel из кода Visual Basic для приложений (VBA) в книге. Данная процедура состоит из трех основных этапов: добавление метода в класс ведущего элемента `Sheet1` , представление метода коду VBA в книге и вызов метода из кода VBA в книге.
@@ -66,7 +66,7 @@ ms.locfileid: "90842737"
 
 1. Запустите Excel.
 
-2. Сохраните активный документ в виде **книги Excel с поддержкой макросов ( \* xlsm)** с именем **WorkbookWithVBA**. Сохраните его в удобном месте, например на рабочем столе.
+2. Сохраните активный документ в формате **Excel Macro-Enabled книги ( \* . xlsm)** с именем **WorkbookWithVBA**. Сохраните его в удобном месте, например на рабочем столе.
 
 3. На ленте перейдите на вкладку **Разработчик** .
 
@@ -161,7 +161,7 @@ ms.locfileid: "90842737"
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
 
-3. Добавьте следующий метод в класс `Sheet1`. Этот метод переопределяет метод <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> для возврата текущего экземпляра класса `Sheet1` .
+3. Добавьте следующий метод в класс `Sheet1`. Этот метод переопределяет метод <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> для возврата текущего экземпляра класса `Sheet1` .
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
 
@@ -188,7 +188,7 @@ ms.locfileid: "90842737"
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#4](../vsto/codesnippet/CSharp/CallingCodeFromVBA/ISheet1.cs#4)]
 
-6. Выполните построение проекта.
+6. Создайте проект.
 
 ## <a name="expose-the-method-to-vba-code"></a>Предоставление метода коду VBA
  Для предоставления метода `CreateVstoNamedRange` коду VBA в книге установите для свойства **ReferenceAssemblyFromVbaProject значения** для ведущего элемента `Sheet1` значение **True**.
@@ -203,7 +203,7 @@ ms.locfileid: "90842737"
 
 3. Появляется сообщение, в котором следует нажать кнопку **ОК** .
 
-4. Выполните построение проекта.
+4. Создайте проект.
 
 ## <a name="call-the-method-from-vba-code"></a>Вызов метода из кода VBA
  Теперь можно вызвать метод `CreateVstoNamedRange` из кода VBA в книге.
@@ -246,7 +246,7 @@ ms.locfileid: "90842737"
 
 - Вызов кода в надстройке VSTO из VBA. Дополнительные сведения см. [в разделе Пошаговое руководство. вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Объединение настроек VBA и параметров на уровне документа](../vsto/combining-vba-and-document-level-customizations.md)
 - [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)
 - [Руководство. предоставление кода коду VBA в Visual Basicном проекте](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)

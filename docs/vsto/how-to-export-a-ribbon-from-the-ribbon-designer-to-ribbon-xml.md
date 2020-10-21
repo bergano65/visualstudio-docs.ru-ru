@@ -1,5 +1,6 @@
 ---
 title: Как экспортировать ленту из конструктора лент в XML-ленту
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57918e8a51a3948a2c69eb0c8ab5438b147e44f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf3101a062fa8b30ae821bf6a157319b6f37862a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543472"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298437"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Как экспортировать ленту из конструктора лент в XML-ленту
   Элемент **Лента (визуальный конструктор)** не поддерживает все возможные типы настройки ленты. Чтобы настроить ленту с дополнительными способами, можно экспортировать ленту из конструктора в XML-ленту и изменить XML-код напрямую.
@@ -67,6 +68,6 @@ ms.locfileid: "85543472"
 ## <a name="see-also"></a>См. также раздел
 - [Общие сведения о ленте](../vsto/ribbon-overview.md)
 - [Конструктор лент](../vsto/ribbon-designer.md)
-- [XML-ленты](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
 - [Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Пошаговое руководство. Создание настраиваемой вкладки с помощью XML-ленты](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

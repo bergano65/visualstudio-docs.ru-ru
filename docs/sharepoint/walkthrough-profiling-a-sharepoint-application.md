@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c900a1496d3ef864e50d40092379348c05a4706b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a2e4ca528c7f534cc3a7f04d7e1e2832ee9b412
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017110"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298635"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Пошаговое руководство. Профилирование приложения SharePoint
   В этом пошаговом руководстве рассказывается, как использовать средства профилирования в Visual Studio, чтобы оптимизировать производительность приложений SharePoint. Примером приложения служит приемник событий компонентов SharePoint, который содержит цикл простоя, что ведет к снижению производительности приемника событий компонентов. Профилировщик Visual Studio позволяет нахождение и устранение наиболее дорогостоящей (самой медленной) части проекта, также известной как *горячий путь*.
@@ -275,4 +275,4 @@ ms.locfileid: "86017110"
 ## <a name="see-also"></a>См. также раздел
 - [Обзор сеанса анализа производительности](../profiling/performance-session-overview.md)
 - [Обзор профилирования производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)
-- [Поиск ограничений приложений с профилировщиком Visual Studio](https://msdn.microsoft.com/magazine/cc337887.aspx)
+- [Поиск ограничений приложений с профилировщиком Visual Studio](/archive/msdn-magazine/2008/march/find-application-bottlenecks-with-visual-studio-profiler)

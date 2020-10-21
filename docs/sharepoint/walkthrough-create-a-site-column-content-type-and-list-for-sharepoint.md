@@ -1,5 +1,6 @@
 ---
 title: Создание столбца сайта, типа содержимого и списка для SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -19,14 +20,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ce76c72bad138a5c6c40afe717aadafec02c677
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 041c0ba5174450fca7acf7247b1cf40a98ac147d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015269"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298367"
 ---
-# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Пошаговое руководство. Создание столбца сайта, типа содержимого и списка для SharePoint
+# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Пошаговое руководство: Создание столбца сайта, типа содержимого и списка для SharePoint
   В следующих процедурах показано, как создать настраиваемые столбцы сайта SharePoint (или *поля*), а также тип содержимого, использующего столбцы сайта. Ниже также показан способ создания списка, использующего новый тип содержимого.
 
  В этом пошаговом руководстве рассматриваются следующие задачи:

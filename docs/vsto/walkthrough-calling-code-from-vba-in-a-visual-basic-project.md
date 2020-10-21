@@ -1,5 +1,6 @@
 ---
 title: Пошаговое руководство. вызов кода из VBA в Visual Basicном проекте
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46fa903b0025279fec3b33d3c14ce1661d076926
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad50ed0f55a148a05c0fedc6fe0ccb0dd5b890b9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90843204"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298262"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Пошаговое руководство. вызов кода из VBA в Visual Basicном проекте
   В этом пошаговом руководстве показано, как вызвать метод в настройке на уровне документа для Microsoft Office Word из кода Visual Basic для приложений (VBA) в документе. Данная процедура состоит из трех основных этапов: добавление метода в класс ведущего элемента `ThisDocument` , представление метода коду VBA и вызов метода из кода VBA в документе.
@@ -159,7 +160,7 @@ ms.locfileid: "90843204"
 
      [!code-vb[Trin_CallingVBCustomizationFromVBA#1](../vsto/codesnippet/VisualBasic/CallingCodeFromVBA/ThisDocument.vb#1)]
 
-3. Выполните построение проекта.
+3. Создайте проект.
 
 ## <a name="expose-the-method-to-vba-code"></a>Предоставление метода коду VBA
  Для предоставления метода `CreateTable` коду VBA в документе установите для свойства **EnableVbaCallers** ведущего элемента `ThisDocument` значение **True**.
@@ -174,7 +175,7 @@ ms.locfileid: "90843204"
 
 3. Появляется сообщение, в котором следует нажать кнопку **ОК** .
 
-4. Выполните построение проекта.
+4. Создайте проект.
 
 ## <a name="call-the-method-from-vba-code"></a>Вызов метода из кода VBA
  Теперь можно вызвать метод `CreateTable` из кода VBA в документе.
@@ -215,7 +216,7 @@ ms.locfileid: "90843204"
 
 - Вызов кода в надстройке VSTO из VBA. Дополнительные сведения см. [в разделе Пошаговое руководство. вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Объединение настроек VBA и параметров на уровне документа](../vsto/combining-vba-and-document-level-customizations.md)
 - [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)
 - [Руководство. предоставление кода коду VBA в Visual Basicном проекте](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)

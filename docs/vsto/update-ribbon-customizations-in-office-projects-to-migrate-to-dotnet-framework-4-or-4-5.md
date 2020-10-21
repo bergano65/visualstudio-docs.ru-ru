@@ -1,5 +1,6 @@
 ---
-title: Обновление настроек ленты в проектах Office, перенесенных на .NET Framework 4, 4,5
+title: Обновление настроек ленты, перенесенных на .NET Framework 4,5
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7d7ab5755f592e57e76dcd68f3dcb9dc2a7eab9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8024d6fba419dfe437ca8492010c7e4786861862
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254352"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298605"
 ---
-# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Обновление настроек ленты в проектах Office, переносимых на .NET Framework 4 или .NET Framework 4,5
+# <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>Обновление настроек ленты, перенесенных на .NET Framework 4,5
+
   Если проект содержит настройку ленты, созданную с помощью элемента проекта **Лента (визуальный конструктор)** , необходимо внести следующие изменения в код проекта, если Целевая платформа изменена на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии.
 
 - Измените созданный код ленты.

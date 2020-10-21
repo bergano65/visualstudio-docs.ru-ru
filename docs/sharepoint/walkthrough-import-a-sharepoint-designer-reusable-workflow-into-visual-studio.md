@@ -1,5 +1,6 @@
 ---
-title: Пошаговое руководство. Импорт рабочего процесса с возможностью повторного использования SharePoint Designer в Visual Studio | Документация Майкрософт
+title: Пошаговое руководство. Импорт рабочего процесса для повторного использования в SharePoint Designer | Документация Майкрософт
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,14 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a589f14ea60d50c0062d85be81523f27c81b455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6680c6ff95808db56e5bb32e02e0775c935011
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015700"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298038"
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Пошаговое руководство. Импорт рабочего процесса с возможностью повторного использования SharePoint Designer в Visual Studio
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Пошаговое руководство. Импорт рабочего процесса для повторного использования в SharePoint Designer
+
   В этом пошаговом руководстве показано, как импортировать рабочий процесс с возможностью повторного использования, созданный в SharePoint Designer 2010, в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проект рабочего процесса SharePoint.
 
  Рабочие процессы, созданные в SharePoint Designer или *декларативные рабочие процессы*, состоят из [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] инструкций, а не кода. В SharePoint Designer 2010 представлены *многократно используемые рабочие процессы*, которые являются переносимыми декларативными рабочими процессами, которые могут использоваться различными списками на сайтах SharePoint.
@@ -50,7 +52,7 @@ ms.locfileid: "86015700"
 
 - Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint.
 
-- Visual Studio.
+- приведенному.
 
 - Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010.
 
