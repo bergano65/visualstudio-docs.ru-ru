@@ -1,5 +1,6 @@
 ---
-title: 'Сценарий: изменение проекта с помощью визуализации и моделирования'
+title: Изменение проекта с помощью визуализации и моделирования
+description: Обзор инструментов визуализации и моделирования в Visual Studio.
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -12,15 +13,16 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio ALM], modeling software
 author: JoshuaPartlow
 ms.author: joshuapa
+ms.custom: SEO-VS-2020
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db584adc01a3f0f161d451d73df6a8deab08b869
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: a6ad330c083a97e8a098f05a9e0398a806a9153b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238898"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "92298589"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Сценарий: изменение проекта с помощью визуализации и моделирования
 
@@ -214,9 +216,9 @@ ms.locfileid: "88238898"
 
 См.
 
-- [Сведения о средствах Agile и гибком управлении проектами (Agile)](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
+- [Сведения о средствах Agile и гибком управлении проектами (Agile)](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)
 
-- [Диаграммы, панели мониторинга и мини-приложения (Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts)
+- [Диаграммы, панели мониторинга и мини-приложения (Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts&preserve-view=true)
 
 - [Создание невыполненной работы и задач с помощью Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
@@ -236,13 +238,13 @@ ms.locfileid: "88238898"
 
 См.
 
-- [Тестирование приложения](/azure/devops/test/overview?view=vsts)
+- [Тестирование приложения](/azure/devops/test/overview?view=vsts&preserve-view=true)
 
 - [Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)
 
-- [Использование управления версиями](/azure/devops/repos/tfvc/overview?view=azure-devops)
+- [Использование управления версиями](/azure/devops/repos/tfvc/overview?view=azure-devops&preserve-view=true)
 
-- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)
+- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>Обновление системы с использованием визуализации и моделирования
 
@@ -484,5 +486,5 @@ ms.locfileid: "88238898"
 
 - [Визуализация кода](../modeling/visualize-code.md)
 - [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)
-- [Использование моделей в гибкой разработке](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Использование моделей в гибкой разработке](/previous-versions/ff398061(v=vs.140))
 - [Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)

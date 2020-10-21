@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301089"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "92298734"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Удаленная отладка проекта C++ в Visual Studio
 Чтобы выполнить отладку приложения Visual Studio на другом компьютере, установите и запустите средства удаленной отладки на том компьютере, где будет развернуто приложение, затем настройте в проекте подключение к удаленному компьютеру из Visual Studio и наконец разверните и запустите приложение.

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3d208c59f08ddeb5a322d174a2c6b56dd901c2c4
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: c8e8305cb454bfc9f0fb0be4b9964ac1a7e4fe96
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348123"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "92298711"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Отладка приложений UWP на удаленных компьютерах из Visual Studio
 
@@ -71,7 +71,7 @@ Visual Studio можно использовать для запуска, отл
 
 В диалоговом окне **Удаленные подключения** можно выполнить поиск по имени или IP-адресу удаленного компьютера или воспользоваться функцией автоматического обнаружения подключений, щелкнув значок обновления с закругленной стрелкой. В этом диалоговом окне выполняется поиск только тех устройств в локальной подсети, на которых в этот момент запущен удаленный отладчик. Не все устройства можно обнаружить в диалоговом окне **Удаленные подключения**.
 
- ![Диалоговое окно "Удаленное подключение"](../debugger/media/vsrun_selectremotedebuggerdlg.png "Диалоговое окно Удаленные подключения")
+ ![Диалоговое окно "Удаленное подключение"](../debugger/media/vsrun_selectremotedebuggerdlg.png "Диалоговое окно "Удаленные подключения"")
 
 >[!TIP]
 >Если не удается подключиться к удаленному устройству по имени, попробуйте использовать его IP-адрес. Чтобы определить IP-адрес, на удаленном устройстве введите в окне командной строки **ipconfig**. IP-адрес выглядит как **IPv4-адрес** .
@@ -108,5 +108,5 @@ Visual Studio можно использовать для запуска, отл
 
 ## <a name="see-also"></a>См. также
 - [Дополнительные параметры удаленного развертывания](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
-- [Тестирование приложений UWP в Visual Studio](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio/)
+- [Тестирование приложений UWP в Visual Studio](../test/unit-test-your-code.md)
 - [Отладка приложений UWP в Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

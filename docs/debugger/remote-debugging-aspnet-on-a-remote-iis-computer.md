@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 4d2f2e2a698063dfb5ac6261d8a9b01a073d112e
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 389fe1491a92cacecd772244c2a0facd0d12c887
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173898"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "92298760"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Удаленная отладка ASP.NET Core на удаленном компьютере IIS в Visual Studio
 
@@ -53,7 +53,7 @@ ms.locfileid: "84173898"
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Создание приложения ASP.NET Core на компьютере с Visual Studio
 
-1. Создайте новое веб-приложение ASP.NET Core. 
+1. Создайте новое веб-приложение ASP.NET Core.
 
     ::: moniker range=">=vs-2019"
     В Visual Studio 2019 нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **asp.net**, выберите **Шаблоны**, а затем **Создание проекта веб-приложения ASP.NET Core**. В появившемся диалоговом окне введите имя проекта **MyASPApp** и нажмите **Создать**. Затем выберите **Веб-приложение (модель — представление — контроллер)** и нажмите **Создать**.
@@ -209,7 +209,7 @@ ms.locfileid: "84173898"
 
 6. Введите первую букву имени процесса, чтобы быстро найти приложение.
 
-    * Если в службах IIS используется [модель внутрипроцессного размещения](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models), выберите нужный процесс **w3wp.exe**. Начиная с .NET Core 3, это значение по умолчанию.
+    * Если в службах IIS используется [модель внутрипроцессного размещения](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models), выберите нужный процесс **w3wp.exe**. Начиная с .NET Core 3, это значение по умолчанию.
 
     * В противном случае выберите процесс **dotnet.exe**. (Это модель размещения вне процесса.)
 

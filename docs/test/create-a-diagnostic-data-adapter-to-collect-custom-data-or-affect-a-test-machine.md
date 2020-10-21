@@ -9,12 +9,12 @@ ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a9b6880b2f71079b6b70eeb6c2e9f7b4e81fc19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65d311ec522e5ba5b5c92193a8af3e53a9e9eb35
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288745"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099327"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Создание адаптера диагностических данных для сбора пользовательских данных или воздействия на тестовый компьютер
 
@@ -39,7 +39,7 @@ ms.locfileid: "85288745"
 |Задачи|Связанные разделы|
 |-|-----------------------|
 |**Создание адаптера диагностических данных**. Можно создать адаптер диагностических данных на основе библиотеки классов и использовать интерфейсы API адаптера диагностических данных для сбора сведений или воздействия на систему, применяемую для выполнения тестов.|-   [Практическое руководство. Создание адаптера диагностических данных](../test/how-to-create-a-diagnostic-data-adapter.md)|
-|**Выбор настраиваемого адаптера диагностических данных для использования при выполнении тестов**. Вы можете выбрать адаптер диагностических данных, который следует использовать для параметров тестирования, чтобы он применялся во время выполнения тестов.|-   [Сбор диагностических данных во время тестирования (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [Сбор диагностических данных в ручных тестах (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
+|**Выбор настраиваемого адаптера диагностических данных для использования при выполнении тестов**. Вы можете выбрать адаптер диагностических данных, который следует использовать для параметров тестирования, чтобы он применялся во время выполнения тестов.|-   [Сбор диагностических данных во время тестирования (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)<br />-   [Сбор диагностических данных в ручных тестах (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)|
 
 ## <a name="see-also"></a>См. также
 

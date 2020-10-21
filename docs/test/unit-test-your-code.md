@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ffe383d2195feb6689954a8ec858b196bae8c06a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: be0f8f7eeb116a251477ce57027a2176119c2d17
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565998"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099314"
 ---
 # <a name="unit-test-your-code"></a>Модульное тестирование кода
 
@@ -47,8 +47,8 @@ ms.locfileid: "75565998"
 |**Модульное тестирование кода C++**|- [Написание модульных тестов для C и C++](../test/writing-unit-tests-for-c-cpp.md)|
 |**Изоляция модульных тестов**|- [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**Использование покрытия кода для определения того, какая часть кода проекта тестируется**. Изучите возможности покрытия кода, которые предоставляют средства тестирования Visual Studio.|- [Использование параметра объема протестированного кода для определения объема протестированного кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Анализ нагрузки и производительности с помощью нагрузочных тестов**. Вы можете создать нагрузочные тесты, чтобы выявить проблемы с нагрузкой и производительностью в приложении.|- [Краткое руководство. Создание проекта нагрузочного тестирования](../test/quickstart-create-a-load-test-project.md).<br />- [Нагрузочное тестирование (Azure Test Plans и TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**Установка системы контроля качества**. Вы можете создать систему контроля качества, чтобы выполнять тесты перед сохранением или объединением кода.|- [Политики возврата (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**Анализ нагрузки и производительности с помощью нагрузочных тестов**. Вы можете создать нагрузочные тесты, чтобы выявить проблемы с нагрузкой и производительностью в приложении.|- [Краткое руководство. Создание проекта нагрузочного тестирования](../test/quickstart-create-a-load-test-project.md).<br />- [Нагрузочное тестирование (Azure Test Plans и TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
+|**Установка системы контроля качества**. Вы можете создать систему контроля качества, чтобы выполнять тесты перед сохранением или объединением кода.|- [Политики возврата (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts&preserve-view=true)|
 |**Задание параметров тестирования**. Сведения о настройке параметров теста, например места, где хранятся результаты теста.|[Настройка модульных тестов с помощью файла .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Справочная документация по API

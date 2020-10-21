@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bd4c4ab15364e9e2ac8e189fcde01f65244b7a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7e9f4614967f1307bc1faaaaba12a2dde1e8cad0
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289200"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099275"
 ---
 # <a name="msbuild"></a>MSBuild
 
@@ -47,7 +47,7 @@ Microsoft Build Engine представляет собой платформу д
 Можно написать код в интегрированной среде разработки Visual Studio, но запускать сборку с помощью MSBuild. В качестве альтернативы можно выполнять сборку кода в интегрированной среде разработки на компьютере разработчика, но запускать MSBuild из командной строки для сборки и интеграции кода, полученного от нескольких разработчиков. Для сборки проектов .NET Core можно также применять [интерфейс командной строки (CLI) .NET Core](/dotnet/core/tools/), использующий MSBuild.
 
 > [!NOTE]
-> С помощью Azure Pipelines можно автоматически компилировать, тестировать и развертывать приложение. Система сборки может автоматически запускать сборку, когда разработчики возвращают код (например, как часть стратегии непрерывной интеграции) или по расписанию (например, выполнять ежедневную ночную тестовую сборку). Azure Pipelines компилирует код с использованием MSBuild. Дополнительные сведения см. в описании [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+> С помощью Azure Pipelines можно автоматически компилировать, тестировать и развертывать приложение. Система сборки может автоматически запускать сборку, когда разработчики возвращают код (например, как часть стратегии непрерывной интеграции) или по расписанию (например, выполнять ежедневную ночную тестовую сборку). Azure Pipelines компилирует код с использованием MSBuild. Дополнительные сведения см. в описании [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true).
 
 В статье представлен обзор MSBuild. Вводную информацию см. в статье [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md).
 

@@ -178,6 +178,8 @@
       href: ide/index-writing-code.yml
     - name: Перемещение по интегрированной среде разработки
       href: ide/how-to-move-around-in-the-visual-studio-ide.md
+    - name: "Поиск в Visual\_Studio"
+      href: ide/visual-studio-search.md
     - name: Проекты и решения
       items:
         - name: Работа с решениями и проектами
@@ -504,7 +506,7 @@
               href: ide/how-to-manage-editor-modes.md
             - name: Управление окнами редактора
               href: ide/how-to-manage-editor-windows.md
-            - name: Изменение шрифтов и цветов
+            - name: Изменение шрифта и цветов
               href: ide/reference/how-to-change-fonts-and-colors-in-the-editor.md
             - name: Управление переносом по словам
               href: ide/reference/how-to-manage-word-wrap-in-the-editor.md
@@ -826,7 +828,7 @@
         - name: Разработка приложений с поддержкой множества языков
           displayName: Globalization localization world-ready
           href: ide/globalizing-and-localizing-applications.md
-- name: Построение
+- name: Сборка
   items:
     - name: Обзор
       displayName: Compile build

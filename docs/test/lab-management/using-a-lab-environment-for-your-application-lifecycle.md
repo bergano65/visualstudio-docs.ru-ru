@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4c1cdbea77f8a14e8f4cedcd53b54e2eac65cf75
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1a5958b03b9797882b3df37f4ba99c75ff832d22
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037228"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928112"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Использование лабораторной среды для DevOps
 
@@ -45,7 +45,7 @@ ms.locfileid: "90037228"
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Использование облака с функциями сборок и выпусков в Azure Pipelines или Team Foundation Server
 
-Вы можете выполнить автоматическое тестирование и автоматизировать процесс сборки, развертывания и тестирования с помощью функций [Сборка и выпуск](/azure/devops/pipelines/index?view=vsts) в Team Foundation Server (TFS) и Azure Test Plans. Ниже указаны некоторые преимущества:
+Вы можете выполнить автоматическое тестирование и автоматизировать процесс сборки, развертывания и тестирования с помощью функций [Сборка и выпуск](/azure/devops/pipelines/index?view=vsts&preserve-view=true) в Team Foundation Server (TFS) и Azure Test Plans. Ниже указаны некоторые преимущества:
 
 * Вам не требуется контроллер сборки или контроллер тестирования.
 * Агент тестирования устанавливается с помощью задачи в рамках сборки или выпуска.
@@ -94,7 +94,7 @@ ms.locfileid: "90037228"
 > [!NOTE]
 > Lab Management не поддерживает SCVMM 2016.
 
-Сведения о SCVMM см. в статье о [диспетчере виртуальных машин](/azure/devops/pipelines/?view=vsts).
+Сведения о SCVMM см. в статье о [диспетчере виртуальных машин](/azure/devops/pipelines/?view=vsts&preserve-view=true).
 
 Стандартные среды и среды SCVMM поддерживают много одинаковых возможностей. Тем не менее, есть некоторые существенные отличия. В таблице ниже приводится сравнение функций, доступных для стандартных сред и сред SCVMM.
 

@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731fe05e90e01c60f0a7ff3a14917d6d7625bc1e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 28576fab1ed4b39810b6f4cc32fb2955a7a44039
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570561"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099353"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Выбор элементов панели элементов — компоненты WPF
 
@@ -41,7 +41,7 @@ ms.locfileid: "75570561"
 
 **Пространство имен**
 
-Отображает иерархию пространства имен [API .NET](/dotnet/api/?view=netframework-4.7), которая определяет структуру компонента. Выполните сортировку по этому столбцу, чтобы получить список доступных компонентов в каждом пространстве имен .NET, установленном на компьютере.
+Отображает иерархию пространства имен [API .NET](/dotnet/api/?view=netframework-4.7&preserve-view=true), которая определяет структуру компонента. Выполните сортировку по этому столбцу, чтобы получить список доступных компонентов в каждом пространстве имен .NET, установленном на компьютере.
 
 **Имя сборки**
 
