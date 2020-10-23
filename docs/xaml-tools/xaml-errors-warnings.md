@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b740f0882edb2eae9f00bd7826543e7fe1b4597f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 968e4167da1f8fd9bce21784a011d970014e1b4e
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817272"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467561"
 ---
 # <a name="xaml-errors-and-warnings"></a>Ошибки и предупреждения XAML
 
@@ -23,11 +23,14 @@ ms.locfileid: "85817272"
 
 По сути, при помощи многих средств код XAML анализируется в параллельном режиме. В зависимости от средства, с помощью которого обнаружена ошибка, ошибки XAML делятся на следующие три типа:
 
-|**Средство, с помощью которого обнаружена ошибка**|**Формат кода ошибки**|
-| - |-----------------|
-|Языковая служба XAML (редактор XAML)|XLSxxxx|
-|Конструктор XAML|XDGxxxx|
-|Функция XAML "Изменить и продолжить"|XECxxxx|
+|**Средство, с помощью которого обнаружена ошибка**|**Формат кода ошибки**|**Версия Visual Studio**|
+| - |-----------------| - |
+|Языковая служба XAML (редактор XAML)|XLSxxxx| Все версии |
+|Конструктор XAML|XDGxxxx| Все версии | 
+|Операция "Изменить и продолжить" XAML|XECxxxx| Visual Studio 2019 версии 16,1 или более ранней |
+|Горячая перезагрузка XAML | ксхркскскскс | Visual Studio 2019 версии 16,2 или более поздней |
+
+Дополнительные сведения об изменении фирменной символики для изменения XAML & continue как Горячая перезагрузка XAML см. в [заметках о выпуске](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)
 
 > [!Note]
 > Некоторые ошибки или предупреждения не имеют соответствующего кода. Как правило, это ошибки, обнаруженные при помощи конструктора XAML.
