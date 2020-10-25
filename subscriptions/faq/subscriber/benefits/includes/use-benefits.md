@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 10/13/2020
 ms.faqid: q3_2
-ms.openlocfilehash: ca1f71a16b0d597c3cd4606150bde9618cfbdca9
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 6533a68c334f52310c20a79cf1e6d93d0b967be0
+ms.sourcegitcommit: 296ab61c40bf090c577ef20e84d581939bd1855b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92157801"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92526091"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>Как использовать свои преимущества?
 
@@ -20,6 +20,18 @@ ms.locfileid: "92157801"
 
 Для каждого преимущества, доступного на портале для подписчиков, приводятся статьи, в которых описываются содержащие их подписки, а также способы их активации.
 
-Дополнительные сведения см. в [документации](../../../../whats-new-in-subscriptions.md) (щелкните "Подписки" в левой области навигации и выберите "Преимущества").
+Дополнительные сведения см. в [документации](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions) (щелкните "Подписки" в левой области навигации и выберите "Преимущества").
 
+Управление подписками Visual Studio с GitHub Enterprise осуществляется в два этапа:  
+- Подписка Visual Studio (Enterprise или Professional)  
+- GitHub Enterprise  
 
+Когда ваш администратор подписки Visual Studio назначит вам подписку Visual Studio с GitHub, вы получите уведомление об этом по электронной почте. На этом этапе вы сможете просмотреть доступные преимущества подписки на странице <https://my.visualstudio.com/benefits>. Эти преимущества включают преимущество GitHub Enterprise. 
+
+Управление GitHub Enterprise осуществляет администратор GitHub отдельно от подписок Visual Studio. После того как ваша организация настроит учетную запись GitHub Enterprise, вы получите уведомление от GitHub о том, что ваша подписка Visual Studio связана c GitHub Enterprise, и плитка преимущества будет обновлена. Настройка этой учетной записи может занять некоторое время и зависит от того, завершила ли ваша организация процесс настройки. После получения этого сообщения вы можете обратиться к администратору соответствующей организации GitHub, чтобы запросить приглашение для этой организации и (или) репозитория. 
+
+После отправки приглашения от администратора организации GitHub вы получите сообщение электронной почты от GitHub, и плитка преимущества снова будет обновлена. 
+
+После принятия приглашения в организацию GitHub надпись на плитке преимущества на <https://my.visualstudio.com/benefits> изменится с "Ожидание" на "Активировано", и вы сможете начать пользоваться GitHub Enterprise. 
+
+[Ознакомьтесь с дополнительными сведениями](https://docs.microsoft.com/visualstudio/subscriptions/access-github) о процессе настройки GitHub Enterprise. 
