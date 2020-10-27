@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 6957c1c7d64918e91a95bf569c210c146fec1339
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659476"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298481"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Использование данных времени разработки в Конструкторе XAML в Visual Studio
 
@@ -135,6 +135,43 @@ xmlns:models="clr-namespace:Cities.Models"
 [![Фактическая модель в данных времени разработки для ListView](media\xaml-design-time-listview-models.png "Данные времени разработки фактической модели для ListView")](media\xaml-design-time-listview-models.png#lightbox)
 
 Преимущество заключается в возможности привязки элементов управления к статической версии модели времени разработки.
+
+## <a name="use-design-time-data-with-custom-types-and-properties"></a>Использование данных времени разработки с пользовательскими типами и свойствами
+
+Эта функция по умолчанию работает только с элементами управления и свойствами платформы. В этом разделе мы рассмотрим действия, необходимые для того, чтобы использовать собственные элементы управления в качестве элементов управления времени разработки. Эта новая возможность доступна клиентам, использующим предварительную версию Visual Studio 2019 [16.8](/visualstudio/releases/2019/preview-notes) или более позднюю. Это можно сделать, если выполнены три условия.
+
+- Пользовательское пространство имен xmlns 
+
+    ```xml
+    xmlns:myControls="http://MyCustomControls"
+    ```
+
+- Версия вашего пространства имен, используемая во время разработки. Чтобы сделать это, достаточно добавить в конце /design.
+
+     ```xml
+    xmlns:myDesignTimeControls="http://MyCustomControls/design"
+    ```
+
+- Добавление префикса времени разработки в пространство имен mc:Ignorable
+
+    ```xml
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d myDesignTimeControls"
+    ```
+
+После выполнения всех этих действий вы можете использовать префикс `myDesignTimeControls` для создания элементов управления времени разработки.
+
+```xml
+<myDesignTimeControls:MyButton>I am a design time Button</myDesignTimeControls:MyButton>
+```
+
+### <a name="creating-a-custom-xmlns-namespace"></a>Создание пользовательского пространства имен xmlns
+
+Чтобы создать пользовательское пространство имен xmlns в WPF .NET Core, необходимо сопоставить пользовательское пространство имен XML с пространством имен CLR, в котором находятся элементы управления. Это можно сделать, добавив атрибут уровня сборки `XmlnsDefinition` в файл `AssemblyInfo.cs`. Этот файл находится в корневой иерархии проекта.
+
+   ```C#
+[assembly: XmlnsDefinition("http://MyCustomControls", "MyViews.MyButtons")]
+   ```
 
 ## <a name="troubleshooting"></a>Диагностика
 

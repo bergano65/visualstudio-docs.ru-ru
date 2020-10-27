@@ -9,16 +9,17 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 26562268167abdfc5ee643618ec1610da231f9f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32f6535e92f41d8030b6e060960940339da91fc9
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283168"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92298221"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Отладка приложений в локальном контейнере Docker
 
-Visual Studio обеспечивает согласованную разработку контейнеров Docker и локальную проверку приложения. Вы можете запускать и отлаживать свои приложения в контейнерах Linux или Windows, работающих на локальном рабочем столе Windows с установленным Docker. При этом вам не нужно перезапускать контейнер каждый раз, когда вы вносите изменения в код.
+Visual Studio обеспечивает согласованную разработку контейнеров Docker и локальную проверку приложения.
+Вы можете запускать и отлаживать свои приложения в контейнерах Linux или Windows, работающих на локальном рабочем столе Windows с установленным Docker. При этом вам не нужно перезапускать контейнер каждый раз, когда вы вносите изменения в код.
 
 В этой статье рассказывается, как запускать приложение в локальном контейнере Docker с помощью Visual Studio, вносить изменения и обновлять браузер для их отображения. В ней также показано, как устанавливать точки останова для отладки контейнерных приложений. Поддерживаемые типы проектов включают в себя консольные и веб-приложения .NET Framework и .NET Core. В этой статье используются веб-приложения ASP.NET Core и консольные приложения .NET Framework.
 
@@ -40,7 +41,7 @@ Visual Studio обеспечивает согласованную разрабо
 
 ::: moniker-end
 
-Для запуска контейнеров Docker локально требуется локальный клиент Docker. Можно воспользоваться версией [Docker Toolbox](https://www.docker.com/products/docker-toolbox), для которой требуется отключить Hyper-V. Можно также воспользоваться приложением [Docker для Windows](https://www.docker.com/get-docker), для которой требуются Hyper-V и Windows 10.
+Для запуска контейнеров Docker локально требуется локальный клиент Docker. Можно воспользоваться приложением [Docker для Windows](https://www.docker.com/get-docker), для которой требуются Hyper-V и Windows 10.
 
 Контейнеры Docker доступны для проектов .NET Framework и .NET Core. Рассмотрим два примера. Сначала мы рассмотрим веб-приложение .NET Core. Затем мы рассмотрим консольное приложение .NET Framework.
 
@@ -65,18 +66,18 @@ Visual Studio обеспечивает согласованную разрабо
 
     ```csharp
     public IWebHostEnvironment Env { get; set; }
-    
+
     public void ConfigureServices(IServiceCollection services)
     {
         IMvcBuilder builder = services.AddRazorPages();
-    
+
     #if DEBUG
         if (Env.IsDevelopment())
         {
             builder.AddRazorRuntimeCompilation();
         }
     #endif
-    
+
         // code omitted for brevity
     }
     ```
@@ -91,14 +92,14 @@ Visual Studio обеспечивает согласованную разрабо
     }
     ```
 
-   Дополнительные сведения см. в статье [Компиляция файла Razor в ASP.NET Core](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1).
+   Дополнительные сведения см. в статье [Компиляция файла Razor в ASP.NET Core](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1&preserve-view=true).
 
-1. В качестве **конфигурации решения** выберите **Отладка**. Затем нажмите клавиши **CTRL**+**F5**, чтобы создать образ Docker и запустить его локально.
+1. В качестве **конфигурации решения** выберите **Отладка** . Затем нажмите клавиши **CTRL**+**F5** , чтобы создать образ Docker и запустить его локально.
 
     После сборки и запуска образа контейнера в контейнере Docker среда Visual Studio запустит веб-приложение в вашем браузере по умолчанию.
 
 1. Перейдите на страницу *Index* (Индекс). Мы будем вносить на ней изменения.
-1. Вернитесь в Visual Studio и откройте файл *Index.cshtml*.
+1. Вернитесь в Visual Studio и откройте файл *Index.cshtml* .
 1. Добавьте приведенное ниже содержимое HTML в конец файла и сохраните изменения.
 
     ```html
@@ -118,7 +119,7 @@ Visual Studio обеспечивает согласованную разрабо
 
 Изменения часто требуют дальнейшей проверки. Для этого можно использовать функции отладки Visual Studio.
 
-1. В Visual Studio откройте файл *Index.cshtml.cs*.
+1. В Visual Studio откройте файл *Index.cshtml.cs* .
 2. Замените содержимое метода `OnGet` следующим кодом:
 
    ```csharp
@@ -136,11 +137,11 @@ Visual Studio обеспечивает согласованную разрабо
 При использовании проектов консольных приложений .NET Framework возможность добавления поддержки Docker без оркестрации недоступна. Описанную ниже процедуру можно выполнить, даже если вы используете только один проект Docker.
 
 1. Создайте проект консольного приложения .NET Framework.
-1. В обозревателе решений щелкните правой кнопкой мыши узел проекта и выберите **Добавить** > **Container Orchestration Support** (Поддержка оркестрации контейнеров).  В появившемся диалоговом окне выберите **Docker Compose**. Файл Dockerfile будет добавлен в проект, а проект Docker Compose со вспомогательными файлами будет добавлен в решение.
+1. В обозревателе решений щелкните правой кнопкой мыши узел проекта и выберите **Добавить** > **Container Orchestration Support** (Поддержка оркестрации контейнеров).  В появившемся диалоговом окне выберите **Docker Compose** . Файл Dockerfile будет добавлен в проект, а проект Docker Compose со вспомогательными файлами будет добавлен в решение.
 
 ### <a name="debug-with-breakpoints"></a>Отладка с точками останова
 
-1. В обозревателе решений откройте файл *Program.cs*.
+1. В обозревателе решений откройте файл *Program.cs* .
 2. Замените содержимое метода `Main` следующим кодом:
 
    ```csharp
@@ -157,7 +158,7 @@ Visual Studio обеспечивает согласованную разрабо
 
 Во время цикла разработки среда Visual Studio перестраивает образы контейнеров и сам контейнер только при изменении файла Dockerfile. Если файл Dockerfile не изменяется, Visual Studio повторно использует контейнер из предыдущего запуска.
 
-Если вы вручную изменили контейнер и хотите выполнить перезапуск с чистым образом контейнера, выберите команду **Сборка** > **Очистить**, а затем выполните сборку как обычную.
+Если вы вручную изменили контейнер и хотите выполнить перезапуск с чистым образом контейнера, выберите команду **Сборка** > **Очистить** , а затем выполните сборку как обычную.
 
 ## <a name="troubleshoot"></a>Устранение неполадок
 
@@ -169,7 +170,7 @@ Visual Studio обеспечивает согласованную разрабо
 
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>Дополнительные сведения об использовании Docker с Visual Studio, Windows и Azure
 
-* Дополнительные сведения о [разработке контейнеров с помощью Visual Studio](/visualstudio/containers).
+* Дополнительные сведения о [разработке контейнеров с помощью Visual Studio](./index.yml).
 * Сведения о сборке и развертывании контейнера Docker см. в статье [Интеграция Docker для Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker).
 * Указатель статей, посвященных Windows Server и Nano Server, см. на странице [Контейнеры в документации Windows](/virtualization/windowscontainers/).
 * Ознакомьтесь с общими сведениями о [Службе Azure Kubernetes](https://azure.microsoft.com/services/kubernetes-service/) и [документацией по Службе Azure Kubernetes](/azure/aks).

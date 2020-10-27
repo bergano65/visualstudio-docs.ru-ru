@@ -1,5 +1,7 @@
 ---
 title: Отслеживание с помощью TensorBoard
+description: Сведения о том, как визуально отслеживать процесс обучения модели с помощью TensorBoard в Visual Studio.
+ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jillfra
@@ -8,18 +10,18 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 54b5594eea9b30ca755bd46c00cc2b6e1e0e19fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9242cdd4a09b7d0cb1cae1904800696dc9c3d82
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371603"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099184"
 ---
 # <a name="monitor-with-tensorboard"></a>Отслеживание с помощью TensorBoard
 
 TensorBoard позволяет визуально отслеживать процесс обучения модели.
 
-1. Щелкните проект правой кнопкой мыши и выберите **Запуск TensorBoard**, а затем укажите каталог для журналов TensorBoard с выходными данными.
+1. Щелкните проект правой кнопкой мыши и выберите **Запуск TensorBoard** , а затем укажите каталог для журналов TensorBoard с выходными данными.
 
     ![Запуск TensorBoard](media/monitor-tensorboard/run-tensorboard.png)
 

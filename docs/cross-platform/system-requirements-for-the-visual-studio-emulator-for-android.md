@@ -1,5 +1,6 @@
 ---
 title: Требования к системе для эмулятора Visual Studio для Android
+description: Узнайте о требованиях к системе эмулятора Visual Studio для Android для запуска в качестве виртуальной машины в Hyper-V.
 ms.custom: SEO-VS-2020
 ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 327713a59b7c5c8da5c5b92cd16f3a20a76a7458
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 726a02c852c4b41dacc2cab73ab4000ebda53a8a
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808263"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878947"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Требования к системе для эмулятора Visual Studio для Android
 
@@ -54,7 +55,7 @@ ms.locfileid: "90808263"
 
   - Виртуализация оборудования
 
-  - Преобразование адресов второго уровня (SLAT)
+  - преобразование адресов второго уровня (SLAT);
 
   - Предотвращение исполнения данных на основе оборудования (DEP)
 
@@ -99,7 +100,7 @@ BIOS компьютера должна поддерживать следующи
 
 - Виртуализация оборудования
 
-- Преобразование адресов второго уровня (SLAT)
+- преобразование адресов второго уровня (SLAT);
 
 - Предотвращение исполнения данных на основе оборудования (DEP)
 

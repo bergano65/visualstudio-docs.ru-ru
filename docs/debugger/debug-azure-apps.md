@@ -10,28 +10,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: fad1a7d1f07009b169480a9e071c5cae8498f600
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 18635e4ecbbdb3c3c52be20b197c01168cdb12ff
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350762"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878739"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Отладка служб Azure в Visual Studio
 
 Visual Studio можно использовать для отладки служб Azure в различных сценариях.
 
-- Сведения об отладке рабочего приложения, размещенного в Службе приложений Azure, см. в статье [Отладка интерактивных приложений ASP.NET Azure с помощью Snapshot Debugger](../debugger/debug-live-azure-applications.md).
+Ознакомьтесь со следующими ресурсами в зависимости от места размещения рабочего приложения, которому требуется отладка.
 
-- Сведения об отладке рабочего приложения, размещенного на виртуальной машине Azure или в масштабируемом наборе виртуальных машин Azure, см. в статье [Отладка интерактивных виртуальных машин ASP.NET Azure и масштабируемых наборов виртуальных машин Azure с помощью Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md).
+- Служба приложений Azure (с помощью Visual Studio Enterprise): см. статью [Отладка интерактивных приложений ASP.NET Azure с помощью Snapshot Debugger](../debugger/debug-live-azure-applications.md).
 
-- Сведения об отладке рабочего приложения, размещенного в службе Azure Kubernetes, см. в статье [Отладка интерактивных приложений ASP.NET службы Azure Kubernetes с использованием Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md).
+- Служба приложений Azure или Service Fabric (с помощью Application Insights): см. статью [Отладка моментальных снимков для исключений в приложениях .NET](/azure/application-insights/app-insights-snapshot-debugger).
 
-- Сведения об отладке рабочего приложения с помощью Application Insights и размещении в Службе приложений Azure или Service Fabric см. в статье [Отладка моментальных снимков для исключений в приложениях .NET](/azure/application-insights/app-insights-snapshot-debugger).
+- Виртуальная машина Azure или масштабируемый набор виртуальных машин Azure: см. статью [Отладка интерактивных виртуальных машин ASP.NET Azure и масштабируемых наборов виртуальных машин Azure с помощью Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md).
 
-- Сведения об удаленной отладке ASP.NET в службах IIS (Служба приложений Azure или виртуальная машина Azure) см. в статье [Удаленная отладка ASP.NET в Azure](remote-debugging-azure.md).
+- Служба Azure Kubernetes: см. статью [Отладка интерактивных приложений ASP.NET Службы Azure Kubernetes с использованием Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md).
 
-- Сведения об удаленной отладке ASP.NET в Azure Service Fabric см. в разделе [Отладка удаленного приложения Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
+Ознакомьтесь с указанными ресурсами для удаленной отладки следующего.
+
+- ASP.NET в службах IIS (Служба приложений Azure или виртуальная машина Azure): см. статью [Удаленная отладка ASP.NET в Azure](remote-debugging-azure.md).
+
+- ASP.NET в Azure Service Fabric: см. статью [Отладка удаленного приложения Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
 ## <a name="see-also"></a>См. также
 

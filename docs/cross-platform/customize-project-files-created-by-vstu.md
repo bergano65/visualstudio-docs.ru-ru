@@ -1,5 +1,6 @@
 ---
 title: Настройка файлов проекта, созданных в VSTU | Документация Майкрософт
+description: Сведения о том, как настраивать файлы проекта, создаваемые набором средств Visual Studio для Unity (VSTU). Знакомство с примером кода C#.
 ms.custom: ''
 ms.date: 07/26/2018
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ad52e9f97dfbb9a5d0b3d65085c6c2627ccb2232
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2e4abb707f07e0a781460e5efe6996325e5ca00
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62819533"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039429"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Настройка файлов проекта, созданных в VSTU
 Набор средств Visual Studio для Unity обеспечивает обратный вызов в стиле Unity во время создания файла проекта. Выполните регистрацию с помощью события `VisualStudioIntegration.ProjectFileGeneration`, чтобы изменять файл проекта при каждом его повторном создании.

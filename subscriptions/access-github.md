@@ -1,20 +1,20 @@
 ---
-title: Предложение Visual Studio с GitHub | Документация Майкрософт
+title: Пакет Visual Studio с GitHub Enterprise | Документация Майкрософт
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 02/17/2020
+ms.date: 09/28/2020
 ms.topic: conceptual
-description: Сведения о новом предложении Visual Studio с GitHub
-ms.openlocfilehash: 1cbc1822498dacf3b5e5c5292db28425ced16357
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+description: Узнайте о доступе к GitHub Enterprise в рамках подписок Visual Studio.
+ms.openlocfilehash: 4c3943c9a6229e865bf90a24d12ecbc8b91d2fd5
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006102"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584183"
 ---
-# <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Общие сведения о подписках Visual Studio с GitHub Enterprise  
+# <a name="visual-studio-with-github-enterprise-subscriptions"></a>Подписки Visual Studio с GitHub Enterprise
 
 Клиенты, заключившие с корпорацией Майкрософт соглашения Enterprise (EA), имеют право приобрести новое предложение, в котором объединены стандартные подписки Visual Studio и GitHub Enterprise. Таким образом, подписчики Visual Studio смогут снизить затраты на приобретение GitHub Enterprise. 
 
@@ -24,65 +24,76 @@ ms.locfileid: "91006102"
 
 ## <a name="whats-available"></a>Какие варианты доступны? 
 
-Если ваша организация заключает новое соглашение EA или продлевает существующие, вам будут доступны следующие варианты:
+Доступны следующие варианты:
 
 - Visual Studio Enterprise с GitHub Enterprise
 - Visual Studio Professional с GitHub Enterprise
 
-Если у вашей организации есть действующее соглашение EA, которое пока не требуется продлевать, вы можете приобрести SKU для повышения уровня, чтобы добавить GitHub Enterprise в существующие подписки Visual Studio Enterprise или Visual Studio Professional. В дальнейшем при продлении соглашения вы сможете приобрести само предложение.
+Visual Studio Enterprise, Visual Studio Professional и GitHub Enterprise по-прежнему можно будет приобрести отдельно. 
 
-Существующие SKU для Visual Studio Enterprise, Visual Studio Professional, и GitHub Enterprise по-прежнему можно будет приобрести отдельно. 
+Дополнительные сведения о преимуществах и вариантах см. на странице <https://visualstudio.microsoft.com/subscriptions/visual-studio-github>. 
 
-Дополнительные сведения о преимуществах и вариантах см. на странице https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
+## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Что представляет собой процесс настройки Visual Studio с GitHub Enterprise?
 
-## <a name="getting-your-subscriptions"></a>Получение подписок
-
-Подписки Visual Studio с GitHub Enterprise назначаются в два этапа:
+Управление подписками Visual Studio с GitHub Enterprise осуществляется в два этапа.
 1. Подписка Visual Studio (Enterprise или Professional)
-2. Подписка GitHub Enterprise
+2. GitHub Enterprise 
 
-Подписки, которые приобретает ваша организация, назначаются администраторами. Подписки Visual Studio и GitHub Enterprise назначаются отдельно.  
+Когда ваш администратор подписки Visual Studio назначит вам подписку Visual Studio с GitHub, вы получите уведомление об этом по электронной почте.  На этом этапе вы сможете просмотреть доступные преимущества подписки на странице <https://my.visualstudio.com/benefits>.  Эти преимущества включают преимущество GitHub Enterprise, как показано ниже.
 
-Если ваш администратор подписки Visual Studio назначает подписку Visual Studio с GitHub, вы получите сообщение электронной почты с уведомлением об этом.  С этого момента подписку можно будет просмотреть на странице https://my.visualstudio.com/subscriptions.  
+   > [!div class="mx-imgBorder"]
+   > ![GitHub Enterprise: ожидание настройки корпоративной учетной записи](_img/access-github/pending-account-setup.png "Организация должна сначала настроить учетную запись Enterprise.")  
 
-Поскольку подписки GitHub Enterprise назначаются отдельно, вы можете получить уведомление от другого администратора в зависимости от того, как осуществляется управление подписками в вашей компании.  Между назначением подписок Visual Studio и GitHub Enterprise может пройти определенное время, поэтому не беспокойтесь, если они не становятся доступны одновременно.  Процесс назначения подписки GitHub более сложен и может занимать несколько рабочих дней.  
+Управление GitHub Enterprise осуществляет администратор GitHub отдельно от подписок Visual Studio.  После того как ваша организация настроит учетную запись GitHub Enterprise, вы получите уведомление от GitHub о том, что ваша подписка Visual Studio связана c GitHub Enterprise, а плитка преимущества будет обновлена, как показано ниже.  Настройка этой учетной записи может занять некоторое время и зависит от того, завершила ли ваша организация процесс настройки. После получения этого сообщения вы можете обратиться к администратору соответствующей организации GitHub, чтобы запросить приглашение для этой организации и (или) репозитория.  
 
-## <a name="getting-started-with-github"></a>Начало работы с GitHub
+   > [!div class="mx-imgBorder"]
+   > ![GitHub Enterprise: ожидание приглашения GitHub](_img/access-github/pending-invite.png "Обратитесь к администратору GitHub, чтобы запросить приглашение в организацию GitHub.")  
 
-Если вы ранее не работали с GitHub, попробуйте ознакомиться с некоторыми полезными ресурсами:
+После отправки приглашения от администратора организации GitHub вы получите сообщение электронной почты от GitHub, а плитка преимущества снова будет обновлена.
+
+   > [!div class="mx-imgBorder"]
+   > ![GitHub Enterprise: ожидание принятия приглашения](_img/access-github/pending-acceptance.png "Примите приглашение, полученное в сообщении электронной почты от GitHub.")  
+
+После принятия приглашения GitHub организации состояние, отображаемое на плитке, изменится с "Ожидание" на "Активировано".
+
+   > [!div class="mx-imgBorder"]
+   > ![GitHub Enterprise: активировано](_img/access-github/activated.png "После принятия приглашения на плитке появится сообщение о том, что подписка активирована.")  
+
+## <a name="get-started-with-github"></a>Начало работы с GitHub
+
+Если вы ранее не работали с GitHub, ознакомьтесь с этими полезными ресурсами.
 
 | Субъект                                  | Раздел справки по GitHub                                     |
 |------------------------------------------|-------------------------------------------------------|
-| Общие вопросы и сведения          | [Справка по GitHub](https://help.github.com/en)             |
-| Что такое GitHub?  Где можно получить дополнительную информацию?  | [Сведения о GitHub](https://help.github.com/en/categories/about-github)                                       |
-| С чего начать работу с GitHub?     | [Вводный тренинг](https://help.github.com/en/categories/bootcamp)                                              |
-| Как осуществляется управление учетной записью и профилем пользователя?       | [Настройка учетной записи пользователя GitHub и управление ею](https://help.github.com/en/categories/setting-up-and-managing-your-github-user-account)    |
-| Как осуществляется управление доступом к GitHub?   | [Проверка подлинности в GitHub](https://help.github.com/en/categories/authenticating-to-github)                           |
-| Как GitHub использует и защищает мои данные? | [Общие сведения о том, как GitHub использует и защищает ваши данные](https://help.github.com/en/categories/understanding-how-github-uses-and-protects-your-data)|
+| Общие вопросы и сведения          | [Справка по GitHub](https://help.github.com)             |
+| Что такое GitHub?  Где можно получить дополнительную информацию?  | [Сведения о GitHub](https://help.github.com/categories/about-github)                                       |
+| С чего начать работу с GitHub?     | [Вводный тренинг](https://help.github.com/categories/bootcamp)                                              |
+| Как осуществляется управление учетной записью и профилем пользователя?       | [Настройка учетной записи пользователя GitHub и управление ею](https://help.github.com/categories/setting-up-and-managing-your-github-user-account)    |
+| Как осуществляется управление доступом к GitHub?   | [Проверка подлинности в GitHub](https://help.github.com/categories/authenticating-to-github)                           |
+| Как GitHub использует и защищает мои данные? | [Общие сведения о том, как GitHub использует и защищает ваши данные](https://help.github.com/categories/understanding-how-github-uses-and-protects-your-data)|
 
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 
 ### <a name="q--where-is-my-github-subscription"></a>Вопрос:  Где находится моя подписка GitHub?
-Ответ.  Настройка подписки GitHub занимает некоторое время.  Если вы ждете достаточное время и не получали никаких уведомлений, обратитесь к своему администратору GitHub.  Возможно, администратор по-прежнему выполняет подготовку вашей подписки или принял решение не назначать вам подписку GitHub. 
+Ответ.  Процесс настройки учетной записи GitHub Enterprise может занять некоторое время.  Если вы ждете достаточное время и не получали никаких уведомлений, обратитесь к своему администратору GitHub.  Возможно, администратор по-прежнему выполняет подготовку или принял решение не создавать учетную запись GitHub Enterprise. 
 
-### <a name="q--how-do-i-reach-my-github-administrator"></a>Вопрос:  Как связаться со своим администратором GitHub?
-Ответ.  Если вы используете GitHub Enterprise Server, для связи с администратором нажмите ссылку **Поддержка**, расположенную в нижней части клиента.
-
-### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>Вопрос: Получу ли я полную подписку Visual Studio (Professional или Enterprise) или только интегрированную среду разработки с этим предложением?
-Ответ.  Вместе с подпиской GitHub Enterprise вы получаете полную подписку Visual Studio.  При этом вы получите те же преимущества этих подписок, что и в случае их отдельного приобретения, в том числе скачиваемые файлы программного обеспечения, облачные службы, техническую поддержку и преимущества для партнеров.
+### <a name="q-do-i-get-the-full-visual-studio-subscription-benefits"></a>Вопрос: Получу ли я полные преимущества подписки Visual Studio?
+Ответ.  Вместе с GitHub Enterprise вы получите все преимущества стандартной подписки Visual Studio, включая загрузку программного обеспечения, облачные службы, техническую поддержку и преимущества партнеров так же, как если бы подписка была приобретена отдельно.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
-- В [справке по GitHub](https://help.github.com/en) вы можете найти ответы на самые разные вопросы, связанные с GitHub.
+- Дополнительные сведения о назначении GitHub см. в [документации GitHub](https://docs.github.com/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle).
+- В [справке по GitHub](https://help.github.com) можно найти ответы на самые разные вопросы, связанные с GitHub.
+- Требуется дополнительная помощь?  Обратитесь в [службу поддержки GitHub](https://support.github.com/).
 - Кроме того, вы можете воспользоваться помощью других пользователей GitHub, посетив [форум сообщества GitHub](https://github.community/).
-- По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 - Обратитесь в [службу технической поддержки](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) для GitHub Enterprise.   
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](/visualstudio/)
-- [Документация по Azure DevOps](/azure/devops/)
-- [Документация по Azure](/azure/)
-- [Документация по Microsoft 365](/microsoft-365/)
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Если вы ранее не работали с GitHub, ознакомьтесь с [обучающей лабораторией по GitHub](https://lab.github.com/), в рамках которой вы сможете изучить ряд интересных и практически применимых проектов, работа с которыми будет сопровождаться полезными комментариями.

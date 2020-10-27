@@ -1,5 +1,6 @@
 ---
 title: Управление жизненным циклом приложения (ALM) для приложений Unity | Документы Майкрософт
+description: Общие сведения об использовании управления жизненным циклом приложения (ALM) с приложениями Unity. Ознакомьтесь с инструментами Agile, моделью, кодом, сборкой, тестированием и улучшением качества кода.
 ms.date: 08/21/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
@@ -9,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: be42bf1498746ce57f662f43c12ece80ac6ca9be
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 17cfe2dd0a1ba25eeab6b0bb31ad849303207a02
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509046"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039928"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps с приложениями Unity
 
@@ -26,7 +27,7 @@ Visual Studio (совместно с Azure DevOps Services и Team Foundation Se
 
 ## <a name="agile-tools"></a>Средства Agile
 
-Ссылка для справки: [о средствах гибкой разработки и гибком управлении проектами](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (с использованием Azure Boards или TFS, включая Team Explorer Everywhere)
+Ссылка для справки: [о средствах гибкой разработки и гибком управлении проектами](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true) (с использованием Azure Boards или TFS, включая Team Explorer Everywhere)
 
 Общий комментарий: все возможности планирования и отслеживания не зависят от типа проекта и языков программирования.
 
@@ -59,8 +60,8 @@ Visual Studio (совместно с Azure DevOps Services и Team Foundation Se
 
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|--------------------------|-------------------------|
-|[Использование системы управления версиями Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) или Azure Repos|Да|Проекты Unity представляют собой наборы файлов, которые можно добавлять в системы управления версиями так же, как любые другие проекты. Однако существует ряд особенностей, которые описаны ниже.|
-|[Приступая к работе с Git в Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Да|См. примечания после таблицы.|
+|[Использование системы управления версиями Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) или Azure Repos|Да|Проекты Unity представляют собой наборы файлов, которые можно добавлять в системы управления версиями так же, как любые другие проекты. Однако существует ряд особенностей, которые описаны ниже.|
+|[Приступая к работе с Git в Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true)|Да|См. примечания после таблицы.|
 |[Улучшение качества кода](../test/improve-code-quality.md)|Да||
 |[Поиск изменений кода и других журналов](../ide/find-code-changes-and-other-history-with-codelens.md)|Да||
 |[Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)|Да||
@@ -75,12 +76,12 @@ Visual Studio (совместно с Azure DevOps Services и Team Foundation Se
 
 ## <a name="build"></a>Построение
 
-Ссылка для справки: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
+Ссылка для справки: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)**
 
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|--------------------------|-------------------------|
 |Локальное развертывание Team Foundation Server (TFS)|Возможна|Сборка проектов Unity осуществляется с помощью среды Unity, а не системы сборки Visual Studio (при сборке с помощью набора средств Visual Studio Tools для Unity скрипты компилируются, но исполняемый файл не создается). Вы можете настроить [сборку проектов Unity из командной строки](https://docs.unity3d.com/Manual/CommandLineArguments.html) (документация по Unity), поэтому вы можете настроить процесс MSBuild на сервере TFS для выполнения соответствующих команд Unity, если на этом сервере установлена сама среда Unity.<br /><br /> Unity также предлагает службу [облачной сборки для Unity](https://build.cloud.unity3d.com/landing/), которая отслеживает репозиторий Git или SVN и периодически выполняет сборку. В настоящее время она не работает с TFVC или Azure DevOps Services.|
-|Локальные серверы сборки, связанные с Azure DevOps Services|Возможна|С приведенными выше условиями можно выполнять сборки, запущенные с помощью Azure DevOps Services, на локальном компьютере TFS. Инструкции см. в разделе [Агенты сборки и выпуска](/azure/devops/pipelines/agents/agents?view=vsts).|
+|Локальные серверы сборки, связанные с Azure DevOps Services|Возможна|С приведенными выше условиями можно выполнять сборки, запущенные с помощью Azure DevOps Services, на локальном компьютере TFS. Инструкции см. в разделе [Агенты сборки и выпуска](/azure/devops/pipelines/agents/agents?view=vsts&preserve-view=true).|
 |Служба размещенного контроллера Azure DevOps Services|Нет|Сборки Unity в настоящее время не поддерживаются.|
 |Определения сборки с сценариями до и после сборки|Да|В пользовательском определении сборки, использующем командную строку Unity для выполнения сборки, также можно настроить запуск скриптов до и после сборки.|
 |Непрерывная интеграция, включая условный возврат|Да|Условный возврат доступен только для TFVC, так как Git работает с моделью запроса на включение внесенных изменений, а не с возвратом.|
@@ -110,7 +111,7 @@ Visual Studio (совместно с Azure DevOps Services и Team Foundation Se
 
 ## <a name="release-management"></a>Управление выпуском
 
-Ссылка для справки: [Сборка и выпуск в Azure Pipelines и TFS](/azure/devops/pipelines/overview?view=vsts)
+Ссылка для справки: [Сборка и выпуск в Azure Pipelines и TFS](/azure/devops/pipelines/overview?view=vsts&preserve-view=true)
 
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|--------------------------|-------------------------|

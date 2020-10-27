@@ -1,5 +1,6 @@
 ---
 title: Программирование с набором средств Visual Studio для Unity | Документы Майкрософт
+description: Ознакомьтесь с примерами программирования с помощью API Инструментов Visual Studio для Unity (VSTU). Настройка файлов проекта, созданных в VSTU. Совместное использование обратного вызова журнала Unity с VSTU.
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0811445e2dcf985aef7b6449ff3fb86c5ac9a1c8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0372cfd110df77867a683b27b17f92cd70ba75aa
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62818219"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039889"
 ---
 # <a name="program-visual-studio-tools-for-unity"></a>Программирование с инструментами Visual Studio для Unity
 В этом разделе приведены примеры использования набора средств Visual Studio для Unity API.

@@ -2,7 +2,7 @@
 title: Восстановление Visual Studio
 titleSuffix: ''
 description: Сведения о восстановлении установки Visual Studio 2017
-ms.date: 06/15/2020
+ms.date: 10/12/2020
 ms.custom: seodec18
 ms.topic: how-to
 author: ornellaalt
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fda72206059e5c14c46d332e44ea0de481004296
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: 7b2fd0a49a235827d3a9094aad6cc0f59a0cd403
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85418968"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007110"
 ---
 # <a name="repair-visual-studio"></a>Восстановление Visual Studio
 
@@ -39,14 +39,14 @@ ms.locfileid: "85418968"
 
 1. Найдите **Visual Studio Installer** на своем компьютере.
 
-     Например, на компьютере с юбилейным обновлением или более поздней версией Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **V**, где расположен пункт **Visual Studio Installer**.
+     Например, на компьютере с юбилейным обновлением или более поздней версией Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **V** , где расположен пункт **Visual Studio Installer** .
 
    > [!NOTE]
-   > На некоторых компьютерах установщик Visual Studio может быть указан под буквой **"M"**  — для **Microsoft Visual Studio**.
+   > На некоторых компьютерах установщик Visual Studio может быть указан под буквой **"M"**  — для **Microsoft Visual Studio** .
    >
    > Кроме того, Visual Studio Installer можно найти в следующем расположении: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-1. Откройте установщик, выберите **Дополнительно** и **Восстановить**.
+1. Откройте установщик, выберите **Дополнительно** и **Восстановить** .
 
     ![Восстановление Visual Studio из Visual Studio Installer](media/repair-visual-studio.png "Восстановление Visual Studio из Visual Studio Installer")
 
@@ -55,7 +55,7 @@ ms.locfileid: "85418968"
    >
 
    > [!TIP]
-   > Параметр **Восстановить** отображается только для установленных экземпляров Visual Studio. Если вы не видите параметр **Восстановить**, скорее всего, что вы выбрали пункт **Дополнительно** в версии, которая указана в Visual Studio Installer как доступная вместо установленной.
+   > Параметр **Восстановить** отображается только для установленных экземпляров Visual Studio. Если вы не видите параметр **Восстановить** , скорее всего, что вы выбрали пункт **Дополнительно** в версии, которая указана в Visual Studio Installer как доступная вместо установленной.
 
 ::: moniker-end
 
@@ -63,9 +63,9 @@ ms.locfileid: "85418968"
 
 1. Найдите **Visual Studio Installer** на своем компьютере.
 
-     Например, на компьютере с Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **V**, где расположен пункт **Visual Studio Installer**.
+     В меню "Пуск" Windows можно выполнить поиск по слову "установщик".
 
-     ![Открытие Visual Studio Installer](media/vs-2019/vs-installer-windows-start.png "Открытие Visual Studio Installer")
+     ![Visual Studio Installer](media/vs-2019/visual-studio-installer.png "Поиск установщика Visual Studio Installer")
 
      > [!NOTE]
      > Кроме того, Visual Studio Installer можно найти в следующем расположении:
@@ -74,7 +74,7 @@ ms.locfileid: "85418968"
 
     Для продолжения работы может потребоваться обновление самого установщика. Если это так, следуйте инструкциям на экране.
 
-1. В установщике найдите установленный у вас выпуск Visual Studio. Затем выберите **Дополнительно** и **Восстановить**.
+1. В установщике найдите установленный у вас выпуск Visual Studio. Затем выберите **Дополнительно** и **Восстановить** .
 
      ![Восстановление Visual Studio 2019](media/vs-2019/vs-installer-repair.png "Восстановление Visual Studio 2019")
 
@@ -83,7 +83,7 @@ ms.locfileid: "85418968"
    >
 
    > [!TIP]
-   > Параметр **Восстановить** отображается только для установленных экземпляров Visual Studio. Если вы не видите параметр **Восстановить**, скорее всего, что вы выбрали пункт **Дополнительно** в версии, которая указана в Visual Studio Installer как доступная вместо установленной.
+   > Параметр **Восстановить** отображается только для установленных экземпляров Visual Studio. Если вы не видите параметр **Восстановить** , скорее всего, что вы выбрали пункт **Дополнительно** в версии, которая указана в Visual Studio Installer как доступная вместо установленной.
 
 ::: moniker-end
 

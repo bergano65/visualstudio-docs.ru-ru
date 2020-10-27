@@ -1,5 +1,6 @@
 ---
 title: Инструменты Visual Studio для Unity | Документация Майкрософт
+description: Ознакомьтесь с обзором Инструментов Visual Studio для Unity, которые представляют собой бесплатное расширение Visual Studio, помогающее разрабатывать кроссплатформенные игры и приложения с помощью Unity.
 ms.custom: ''
 ms.date: 10/25/2019
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 967e0bfbaec19d3afa558957008ea14a5c37f359
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb4e5a18bb90bfcb9a57ae85efc947a7f4962f8a
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814958"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039811"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Набор средств Visual Studio для Unity
 

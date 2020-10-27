@@ -1,5 +1,7 @@
 ---
 title: Устранение неполадок и создание журналов по проблемам MSBuild
+description: Сведения о том, как диагностировать проблемы сборки в проекте Visual Studio и при необходимости создавать журнал для отправки в корпорацию Майкрософт на изучение.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2019
 ms.technology: vs-ide-compile
 ms.topic: troubleshooting
@@ -15,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: 24df9f7c44ea2dbb9e9899abf68823683422da71
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: c6b08b243a5b4eec3119ceedbaf2177670aa3e83
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235073"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136580"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Устранение неполадок и создание журналов по проблемам MSBuild
 
@@ -116,8 +118,8 @@ ms.locfileid: "87235073"
 
 ## <a name="create-a-detailed-log"></a>Создание подробного журнала
 
-1. В главном меню Visual Studio последовательно выберите пункты **Средства** > **Параметры** > **Проекты и решения** >**Сборка и запуск**.
-1. В обоих полях со списком для **уровня детализации при сборке проекта MSBuild** выберите **Подробные**. Первый параметр позволяет управлять уровнем детализации сборки в **окне вывода**, а второй — уровнем детализации сборки в файле журнала \<projectname\>.log, который создается в промежуточном каталоге каждого проекта во время сборки.
+1. В главном меню Visual Studio последовательно выберите пункты **Средства** > **Параметры** > **Проекты и решения** >**Сборка и запуск** .
+1. В обоих полях со списком для **уровня детализации при сборке проекта MSBuild** выберите **Подробные** . Первый параметр позволяет управлять уровнем детализации сборки в **окне вывода** , а второй — уровнем детализации сборки в файле журнала \<projectname\>.log, который создается в промежуточном каталоге каждого проекта во время сборки.
 2. В командной строке разработчика Visual Studio введите одну из этих команд, указав фактические значения для пути и конфигурации:
 
     ```cmd

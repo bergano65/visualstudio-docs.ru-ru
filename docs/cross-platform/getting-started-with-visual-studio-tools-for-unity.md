@@ -1,5 +1,6 @@
 ---
 title: Приступая к работе с инструментами Visual Studio для Unity | Документы Майкрософт
+description: Начало работы с инструментами Visual Studio для Unity. Сведения об установке Visual Studio, настройке Unity для работы с Visual Studio, а также поддержке старых версий.
 ms.custom: ''
 ms.date: 05/11/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a8f3e183bd72e9894eae55a5ed7c4f9322d44953
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 223458a448a4b32c3e9480f7189d5dc636ce8375
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250092"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039455"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Начало работы с инструментами Visual Studio для Unity
 
@@ -76,7 +77,7 @@ ms.locfileid: "88250092"
 
 Начиная с Unity 2018.1 Visual Studio будет внешним редактором скриптов по умолчанию для Unity. Вы можете подтвердить это или изменить внешний редактор скриптов на определенную версию Visual Studio.
 
-1. Выберите **Параметры** в меню **Изменить**.
+1. Выберите **Параметры** в меню **Изменить** .
 
    :::moniker range="vs-2017"
    ![Выберите "Параметры"](media/vs-2017/vstu-unity-preferences.png)
@@ -85,7 +86,7 @@ ms.locfileid: "88250092"
    ![Выберите "Параметры"](media/vs-2019/vstu-unity-preferences.png)
    :::moniker-end
 
-2. В диалоговом окне параметров откройте вкладку **Внешние инструменты**.
+2. В диалоговом окне параметров откройте вкладку **Внешние инструменты** .
 
 3. В раскрывающемся списке **внешнего редактора скриптов** выберите необходимую версию элемента Visual Studio, если она присутствует, в противном случае нажмите кнопку **Обзор...** .
 
@@ -96,7 +97,7 @@ ms.locfileid: "88250092"
    ![Выберите Visual Studio](media/vs-2019/vstu-unity-external-tools.png)
    :::moniker-end
 
-4. Если было выбрано **Обзор...** , необходимо перейти в каталог **Common7/IDE**, находящийся в каталоге установки Visual Studio, и выбрать файл **devenv.exe**. Затем щелкните **Открыть**.
+4. Если было выбрано **Обзор...** , необходимо перейти в каталог **Common7/IDE** , находящийся в каталоге установки Visual Studio, и выбрать файл **devenv.exe** . Затем щелкните **Открыть** .
 
    :::moniker range="vs-2017"
    ![Выберите "Открыть"](media/vs-2017/vstu-browse-for-application.png)
@@ -105,9 +106,9 @@ ms.locfileid: "88250092"
    ![Выберите "Открыть"](media/vs-2019/vstu-browse-for-application.png)
    :::moniker-end
 
-5. После выбора Visual Studio из списка **внешнего редактора скриптов**, убедитесь, что флажок **Editor Attaching** (Присоединение редактора) установлен.
+5. После выбора Visual Studio из списка **внешнего редактора скриптов** , убедитесь, что флажок **Editor Attaching** (Присоединение редактора) установлен.
 
-6. Чтобы завершить процесс настройки, закройте диалоговое окно **Параметры**.
+6. Чтобы завершить процесс настройки, закройте диалоговое окно **Параметры** .
 
 ## <a name="support-for-older-versions"></a>Поддержка устаревших версий
 

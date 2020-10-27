@@ -1,5 +1,7 @@
 ---
 title: Общие сведения о платформах сборки
+description: Узнайте, как можно в Visual Studio сохранять различные версии решения и свойств проекта, которые применяются к разным целевым платформам.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -17,18 +19,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3737bbe8fbffcb89ca4e03bcc6063ba45f8a44fd
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115063"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136658"
 ---
 # <a name="understand-build-platforms"></a>Общие сведения о платформах сборки
 
 Можно сохранять различные версии решения и свойств проекта, которые применяются к разным целевым платформам. Например, можно создать конфигурацию отладки, предназначенную для платформы x86, и конфигурацию отладки, предназначенную для платформы x64. Можно быстро изменить активную среду так, чтобы без труда создавать несколько конфигураций.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 
 [Практическое руководство. Настройка целевых платформ в проектах](../ide/how-to-configure-projects-to-target-platforms.md)\
 Описание настройки проекта для определенной платформы.

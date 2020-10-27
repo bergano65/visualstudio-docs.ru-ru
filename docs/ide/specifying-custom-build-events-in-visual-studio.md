@@ -1,5 +1,7 @@
 ---
 title: Указание пользовательских событий сборки
+description: Узнайте, как в Visual Studio автоматически запускать команды перед тем, как сборка запустится, или после того, как она завершится.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -11,22 +13,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fda60ffb97ecb44bd4a881cb42e4d9199cc958b8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f1d339f9bbf170d2df545e69c698f786198695ad
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115340"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136788"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Указание настраиваемых событий сборки в Visual Studio
 
-Указав пользовательское событие сборки, вы можете автоматически запустить команды перед тем, как сборка запустится или после того, как она завершится. Например, можно запустить *BAT*-файл до запуска сборки или скопировать новые файлы в папку после выполнения сборки. События сборки запускаются, только если сборка успешно достигает этих точек в процессе сборки.
+Указав пользовательское событие сборки, вы можете автоматически запустить команды перед тем, как сборка запустится или после того, как она завершится. Например, можно запустить *BAT* -файл до запуска сборки или скопировать новые файлы в папку после выполнения сборки. События сборки запускаются, только если сборка успешно достигает этих точек в процессе сборки.
 
 Конкретные сведения об используемом языке программирования см. в следующих разделах.
 
 - Visual Basic — [Практическое руководство. Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
-- C# и F# — [Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md).
+- C#и F# — [Практическое руководство. Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 - Visual C++ — [Указание событий сборки](/cpp/build/specifying-build-events).
 
@@ -36,7 +38,7 @@ ms.locfileid: "76115340"
 
 Для улучшения результатов воспользуйтесь советами по форматированию:
 
-- Добавьте оператор `call` перед всеми событиями сборки, запускающими *BAT*-файлы.
+- Добавьте оператор `call` перед всеми событиями сборки, запускающими *BAT* -файлы.
 
    Пример: `call C:\MyFile.bat`
 
@@ -60,4 +62,4 @@ ms.locfileid: "76115340"
 - [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md)
 - [Диалоговое окно "Командная строка события перед сборкой" или "Командная строка события после сборки"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Специальные знаки в MSBuild](../msbuild/msbuild-special-characters.md)
-- [Пошаговое руководство. Сборка приложения](../ide/walkthrough-building-an-application.md)
+- [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md)

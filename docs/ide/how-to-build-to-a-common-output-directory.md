@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Создание общего выходного каталога
+description: Узнайте, как можно изменить пути вывода сборки для проекта, чтобы принудительно поместить все выходные данные в одну папку.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a499b5ca5ea64dd9ded10f82b1af43258f346d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a39dae210c2cb9afe3e4b77962b75ddb3be4baeb
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284780"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136970"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Практическое руководство. Создание общего выходного каталога
 
@@ -28,7 +30,7 @@ ms.locfileid: "85284780"
 
 1. Щелкните один проект в решении.
 
-2. В меню **Проект** выберите **Свойства**.
+2. В меню **Проект** выберите **Свойства** .
 
 3. В зависимости от типа проекта откройте вкладку **Компиляция** или **Сборка** и задайте в поле **Выходной путь** папку, которую хотите использовать для всех проектов в решении.
 

@@ -1,5 +1,6 @@
 ---
 title: Кроссплатформенная разработка для мобильных устройств в Visual Studio | Документы Майкрософт
+description: В этой статье рассказывается о создании приложений для устройств под управлением Android, iOS и Windows с помощью Visual Studio.
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
@@ -11,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 12c0da32014581e6e9cc0ea22cb80414462f03bd
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 09b200538f7d6bee55d12a79334811c8ba57515a
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037267"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959839"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 
@@ -43,11 +44,11 @@ ms.locfileid: "90037267"
 
 ### <a name="target-android-ios-and-windows-from-a-single-code-base"></a><a name="AndroidHTML"></a> Целевые устройства Android, iOS и Windows из единой базы кода
 
- Вы можете создавать собственные приложения для Android, iOS и Windows с помощью C# и F# (Visual Basic сейчас не поддерживается).  Для начала работы установите Visual Studio, выберите в установщике параметр **Разработка мобильных приложений на .NET**.
+ Вы можете создавать собственные приложения для Android, iOS и Windows с помощью C# и F# (Visual Basic сейчас не поддерживается).  Для начала работы установите Visual Studio, выберите в установщике параметр **Разработка мобильных приложений на .NET** .
 
  Если у вас уже установлена Visual Studio, повторно запустите **Установщик Visual Studio** и выберите ту же опцию **Разработка мобильных приложений на .NET** для Xamarin (как указано выше).
 
- После окончания установки шаблоны проектов появятся в диалоговом окне **Новый проект**. Чтобы найти шаблоны Xamarin, проще всего ввести "Xamarin" в строке поиска.
+ После окончания установки шаблоны проектов появятся в диалоговом окне **Новый проект** . Чтобы найти шаблоны Xamarin, проще всего ввести "Xamarin" в строке поиска.
 
  Xamarin предоставляет собственные функции Android, iOS и Windows в виде классов и методов .NET. Поэтому ваши приложения будут иметь полный доступ к собственным API-интерфейсам и собственным элементам управления и будут вести себя точно так же, как приложения, написанные на собственных языках платформ.
 
@@ -151,7 +152,7 @@ ms.locfileid: "90037267"
 
 ## <a name="build-a-cross-platform-game-for-android-ios-and-windows-by-using-visual-studio-tools-for-unity"></a>Создание кросс-платформенной игры для устройств Android, iOS и Windows с использованием инструментов Visual Studio для Unity
 
- Инструменты Visual Studio для Unity представляют собой бесплатное расширение Visual Studio, которое интегрирует мощные функции редактирования кода, повышения продуктивности и средства отладки в составе Visual Studio с *Unity*, популярной кроссплатформенной системой и средой разработки для игр и мощных графических приложений на платформах Windows, iOS, Android и других платформах, включая веб-приложения.
+ Инструменты Visual Studio для Unity представляют собой бесплатное расширение Visual Studio, которое интегрирует мощные функции редактирования кода, повышения продуктивности и средства отладки в составе Visual Studio с *Unity* , популярной кроссплатформенной системой и средой разработки для игр и мощных графических приложений на платформах Windows, iOS, Android и других платформах, включая веб-приложения.
 
  ![Среда разработки VSTU](../cross-platform/media/vstu_overview.png "Обзор набора средств Visual Studio для Unity")
 
@@ -163,7 +164,7 @@ ms.locfileid: "90037267"
 |[Подробнее об инструментах Visual Studio для Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Начало работы с инструментами Visual Studio для Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
 |[Читать о последних возможностях Visual Studio Tools для предварительной версии Unity 2.0](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (блог Visual Studio)|
-|[Смотреть видео с введением в Visual Studio Tools для предварительной версии Unity 2.0](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (видео)|
+|[Смотреть видео с введением в Visual Studio Tools для предварительной версии Unity 2.0](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408&preserve-view=true) (видео)|
 |[Сведения о Unity](https://unity.com/) (веб-сайт Unity)|
 
 ## <a name="see-also"></a>См. также
