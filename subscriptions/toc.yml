@@ -48,6 +48,8 @@
       href: contact-my-admin.md
     - name: Преимущества
       items:
+        - name: Сведения о преимуществах
+          href: about-benefits.md
         - name: Инструменты
           items:
             - name: Индивидуальный кредит Azure DevTest
