@@ -1,5 +1,7 @@
 ---
 title: Сборка конкретных целевых объектов в решениях с помощью MSBuild.exe
+description: Сведения о том, как использовать командную строку MSBuild.exe для создания конкретных целей определенных проектов в решениях.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 178dfcaf0bdf8296fd271cb7c4e5dd0bbd251d7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a8d774ace7744c90d0cf092faa2786110ed7309
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633932"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436436"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Практическое руководство. Построение особых целей в решениях с помощью MSBuild.exe
 
@@ -31,7 +33,7 @@ ms.locfileid: "77633932"
 
 ## <a name="example"></a>Пример
 
- В следующем примере выполняется целевой объект `Rebuild` проекта `NotInSlnFolder`, а затем выполняется целевой объект `Clean` проекта `InSolutionFolder`, который находится в папке решения *Новая_папка*.
+ В следующем примере выполняется целевой объект `Rebuild` проекта `NotInSlnFolder`, а затем выполняется целевой объект `Clean` проекта `InSolutionFolder`, который находится в папке решения *Новая_папка* .
 
 ```cmd
 msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
@@ -39,7 +41,7 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 
-Если вы хотите изучить доступные возможности, воспользуйтесь параметром отладки, предоставляемым MSBuild. Задайте переменную среды `MSBUILDEMITSOLUTION=1` и выполните сборку решения. Будет создан файл MSBuild с именем *\<SolutionName>.sln.metaproj*, который отображает внутреннее представление решения во время построения. Просмотрите это представление, чтобы определить, какие целевые объекты доступны для сборки.
+Если вы хотите изучить доступные возможности, воспользуйтесь параметром отладки, предоставляемым MSBuild. Задайте переменную среды `MSBUILDEMITSOLUTION=1` и выполните сборку решения. Будет создан файл MSBuild с именем *\<SolutionName>.sln.metaproj* , который отображает внутреннее представление решения во время построения. Просмотрите это представление, чтобы определить, какие целевые объекты доступны для сборки.
 
 Не выполняйте сборку с этой заданной переменной среды, пока вам не потребуется этом внутреннее представление. Этот параметр может вызвать проблемы сборки в решении.
 

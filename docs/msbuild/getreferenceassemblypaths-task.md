@@ -1,5 +1,7 @@
 ---
 title: Задача GetReferenceAssemblyPaths | Документы Майкрософт
+description: Используйте задачу GetReferenceAssemblyPaths MSBuild, чтобы получить пути к базовым сборкам для различных платформ.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca532e37fa2f70800416539a7de2ff5e9978e2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8bbe9366e9b4b2c795b21ba46bd8320599c9e572
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633984"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436802"
 ---
 # <a name="getreferenceassemblypaths-task"></a>Задача GetReferenceAssemblyPaths
 
@@ -26,9 +28,9 @@ ms.locfileid: "77633984"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `GetReferenceAssemblyPaths`.
+ В следующей таблице приводятся параметры задачи `GetReferenceAssemblyPaths` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |`ReferenceAssemblyPaths`|Необязательный выходной параметр `String[]`.<br /><br /> Возвращает путь на основе параметра `TargetFrameworkMoniker`. Если `TargetFrameworkMoniker` равен NULL или пуст, этот путь имеет значение `String.Empty`.|
 |`FullFrameworkReferenceAssemblyPaths`|Необязательный выходной параметр `String[]`.<br /><br /> Возвращает путь на основе параметра `TargetFrameworkMoniker` без учета профильной части моникера. Если `TargetFrameworkMoniker` равен NULL или пуст, этот путь имеет значение `String.Empty`.|
@@ -41,7 +43,7 @@ ms.locfileid: "77633984"
 
  Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

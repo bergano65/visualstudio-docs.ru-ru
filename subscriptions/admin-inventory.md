@@ -1,23 +1,23 @@
 ---
-title: Инвентаризация подготовительных сред | Visual Studio Marketplace
+title: Предварительная инвентаризация в подписке Visual Studio | Visual Studio Marketplace
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
-ms.date: 03/06/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
-description: Узнайте об обязанностях администраторов проводить предварительную инвентаризацию
-ms.openlocfilehash: 1abc3c15a7bd9e47b0f449c5a49fdbbc8e7bb590
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+description: Узнайте об обязанностях администраторов касательно проведения предварительной инвентаризации
+ms.openlocfilehash: b464a7d9cfa8c802cd2367c5c7d0e76141583f3a
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004161"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467431"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Инвентаризация подготовительной среды
 Подписки на Visual Studio упрощают управление активами благодаря инвентаризации пользователей, а не устройств.
 
-Администраторы Visual Studio должны назначать подписки на Visual Studio **конкретным пользователям по их именам**. Соглашения об именовании, такие как Dev1, Dev2, или использование названий команд, например FeatureTeam, **не допускаются**.
+Администраторы Visual Studio должны назначать подписки Visual Studio **конкретным пользователям по их именам** . Соглашения об именовании, такие как Dev1, Dev2, или использование названий команд, например FeatureTeam, **не допускаются** .
 
 Вот ряд мер, позволяющих упростить инвентаризацию подготовительной среды:
 - Проверьте назначения пользователей. Корпорация Майкрософт предоставляет веб-сайт под названием [Портал администрирования Visual Studio](https://manage.visualstudio.com/), чтобы помочь вам в отслеживании назначений подписок на Visual Studio.

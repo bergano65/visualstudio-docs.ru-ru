@@ -1,7 +1,6 @@
 ---
 title: Поиск и замена текста и выбор нескольких точек вставки
-description: Сведения о том, как использовать функцию поиска и замены в редакторе кода Visual Studio.
-ms.date: 08/14/2018
+ms.date: 10/17/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -31,12 +30,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a74fa1328a3b0079eef6253fa32fc882876a71
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: b878ccbf6714987599d1585ca9c0dc3ceb759144
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298576"
+ms.locfileid: "92334198"
 ---
 # <a name="find-and-replace-text"></a>Поиск и замена текста
 
@@ -123,9 +122,9 @@ ms.locfileid: "92298576"
 |**CTRL**+**ALT** + двойной щелчок|Добавить дополнительное выделенное слово|
 |**CTRL**+**ALT** + щелчок + перетаскивание|Добавить дополнительный выделенный фрагмент|
 |**SHIFT**+**ALT**+ **.**|Добавить следующий совпадающий текст как выделенный фрагмент|
-|**CTRL**+**SHIFT**+**ALT**+ **,**|Выделить все совпадающие фрагменты текста|
+|**SHIFT**+**ALT**+ **;**|Выделить все совпадающие фрагменты текста|
 |**SHIFT**+**ALT**+ **,**|Удалить последний выделенный фрагмент|
-|**CTRL**+**SHIFT**+**ALT**+ **.**|Пропустить следующий совпадающий фрагмент|
+|**SHIFT**+**ALT**+ **/**|Пропустить следующий совпадающий фрагмент|
 |**ALT** + щелчок|Добавить выделенное поле|
 |**ESC** или щелчок|Отменить выбор всех элементов|
 

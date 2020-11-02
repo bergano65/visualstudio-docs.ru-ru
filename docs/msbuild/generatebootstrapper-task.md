@@ -1,5 +1,7 @@
 ---
 title: Задача GenerateBootstrapper | Документы Майкрософт
+description: Используйте задачу GenerateBootstrapper MSBuild, чтобы обеспечить автоматическое обнаружение, скачивание и установку приложения и необходимых для него компонентов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6da773fdf6cd84819ea0e73083995f60e3c17e2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 83bb6b44713ba61d14c508c0db2a51391a350015
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634088"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436478"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper - задача
 
@@ -86,7 +88,7 @@ ms.locfileid: "77634088"
 
    Необязательный выходной параметр `String`.
 
-   Задает расположение сборки для программы *setup.exe*.
+   Задает расположение сборки для программы *setup.exe* .
 
 - `ComponentsLocation`
 
@@ -94,11 +96,11 @@ ms.locfileid: "77634088"
 
    Задает расположение, в котором начальный загрузчик будет искать необходимые компоненты для установки. Этот параметр может иметь следующие значения:
 
-  - `HomeSite`. указывает, что необходимый компонент размещается у поставщика компонентов.
+  - `HomeSite`: указывает, что необходимый компонент размещается у поставщика компонентов.
 
-  - `Relative`. указывает, что необходимый компонент располагается в том же месте, что и приложение.
+  - `Relative`: указывает, что необходимый компонент располагается в том же месте, что и приложение.
 
-  - `Absolute`. указывает, что все компоненты располагаются по единому URL-адресу. Это значение следует использовать в связке со входным параметром `ComponentsUrl`.
+  - `Absolute`: указывает, что все компоненты располагаются по единому URL-адресу. Это значение следует использовать в связке со входным параметром `ComponentsUrl`.
 
     Если параметр `ComponentsLocation` не задан, по умолчанию используется значение `HomeSite`.
 

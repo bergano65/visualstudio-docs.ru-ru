@@ -1,5 +1,7 @@
 ---
 title: Общие элементы проектов MSBuild | Документы Майкрософт
+description: Сведения об элементах проектов MSBuild. Элементы представляют собой именованные ссылки на один или несколько файлов и содержат такие метаданные, как имена файлов, пути и номера версий.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf32bdf56f75ded7d193082f1072b79c3d16b3c
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: b42ba80365b8aedd9527490235efb1228bc2a61d
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136918"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796398"
 ---
 # <a name="common-msbuild-project-items"></a>Общие элементы проектов MSBuild
 

@@ -1,5 +1,7 @@
 ---
 title: Задача FindUnderPath | Документы Майкрософт
+description: Используйте задачу FindUnderPath MSBuild, чтобы найти в определенной коллекции элементы с путями к указанной папке или на более низком уровне.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d97b727dcba8cd16fe97ee33764947797c36db7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0afb9ff23e2f2533b7c51b500806a025691a232b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634140"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436741"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath - задача
 
@@ -31,7 +33,7 @@ ms.locfileid: "77634140"
 
 ## <a name="parameters"></a>Параметры
 
-В следующей таблице приводятся параметры задачи `FindUnderPath`.
+В следующей таблице приводятся параметры задачи `FindUnderPath` .
 
 |Параметр|Description|
 |---------------|-----------------|
@@ -41,13 +43,13 @@ ms.locfileid: "77634140"
 |`Path`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает путь к папке для использования в качестве ссылки.|
 |`UpdateToAbsolutePaths`|Необязательный параметр `Boolean`.<br /><br /> Если имеет значение true, пути к выходным элементам изменяются на абсолютные.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
 
-В этом примере задача `FindUnderPath` используется для определения наличия в файлах, содержащихся в элементе `MyFiles`, путей ниже указанного в свойстве `SearchPath`. После выполнения задачи элемент `FilesNotFoundInPath` содержит файл *File1.txt*, а элемент `FilesFoundInPath` содержит файл *File2.txt*.
+В этом примере задача `FindUnderPath` используется для определения наличия в файлах, содержащихся в элементе `MyFiles`, путей ниже указанного в свойстве `SearchPath`. После выполнения задачи элемент `FilesNotFoundInPath` содержит файл *File1.txt* , а элемент `FilesFoundInPath` содержит файл *File2.txt* .
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -76,7 +78,7 @@ ms.locfileid: "77634140"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
 - [Задачи](../msbuild/msbuild-tasks.md)

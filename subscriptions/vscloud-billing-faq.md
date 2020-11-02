@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 09/08/2020
+ms.date: 10/21/2020
 ms.topic: conceptual
 description: Вопросы выставления счетов за подписки на облачные службы.
-ms.openlocfilehash: ae99e6e843636efc6d81a0c4feebfd3e306f6319
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 0140a6250f2c04ad33fec962283e035393a03aae
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006008"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353425"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Вопросы и ответы о выставлении счетов за облачные подписки Visual Studio
 Сначала [сравните преимущества облачных подписок и цены](https://visualstudio.microsoft.com/vs/pricing/), чтобы понять преимущества каждой подписки Visual Studio, сравнить облачные и стандартные подписки Visual Studio, изучить детали преимуществ для подписчиков и многое другое.
@@ -62,7 +62,7 @@ ms.locfileid: "91006008"
 Отмена годовой облачной подписки вступает в силу с первого дня месяца, следующего за 12-месячным периодом после покупки или предыдущего продления. Например, если вы приобрели годовую облачную подписку на Visual Studio Enterprise 3 января 2018 года, она будет действовать до 1 февраля 2019 года, а затем будет автоматически продлена на следующий год. Если вы отмените подписку после этой даты и до 1 февраля 2020 года, срок ее действия истечет 1 февраля 2020 года. За отмену подписки до окончания срока действия не предусмотрено возмещение.
 
 ### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>Вопрос: Какие скидки существуют для оптовой покупки подписок на Visual Studio?
-Ответ.  Вы можете получить скидку 5 % на шестую и все последующие подписки *каждого типа*:
+Ответ.  Вы можете получить скидку 5 % на шестую и все последующие подписки *каждого типа* :
 
 * Visual Studio Professional — месячная подписка
 * Visual Studio Professional — годовая подписка

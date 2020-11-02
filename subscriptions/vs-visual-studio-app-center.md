@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Сведения о преимуществе Центра приложений Visual Studio, включенном в подписки Visual Studio.
-ms.openlocfilehash: 69d010afddca1f8fc51f77d806c75dc1b7b34256
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6b1fc94d596f3b771f8354c0857ef533c00e1449
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005731"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435734"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Центр приложений Visual Studio в подписках Visual Studio
 
@@ -26,17 +26,17 @@ ms.locfileid: "91005731"
 Начать работу с Центром приложений Visual Studio очень просто.
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Найдите плитку Центра приложений Visual Studio и щелкните **Начало работы**.
+2. Найдите плитку Центра приложений Visual Studio и щелкните **Начало работы** .
     > [!div class="mx-imgBorder"]
-    > ![Плитка Центра приложений Visual Studio](_img/vs-app-center/vs-app-center-tile.png)
+    > ![Плитка Центра приложений Visual Studio](_img/vs-app-center/vs-app-center-tile.png "На плитке Центра приложений Visual Studio щелкните "Начать работу".")
 
 3. Теперь создайте учетную запись.  Вы можете использовать для входа существующие учетные записи Microsoft, Google, GitHub или Facebook либо создать новую учетную запись, указав имя пользователя, адрес электронной почты и пароль.  Щелкните **Create account** (Создать учетную запись), чтобы продолжить.
     > [!div class="mx-imgBorder"]
-    > ![Центр приложений Visual Studio — создание учетной записи](_img/vs-app-center/vs-app-center-create-account.png)
+    > ![Центр приложений Visual Studio — создание учетной записи](_img/vs-app-center/vs-app-center-create-account.png "Выберите способ входа.")
 
 4. Больше ничего не требуется.  Просто щелкните **Add new organization** (Добавить новую организацию) или **Add new app** (Добавить новое приложение), чтобы приступить к работе.
     > [!div class="mx-imgBorder"]
-    > ![Портал Центра приложений Visual Studio](_img/vs-app-center/vs-app-center-portal.png)
+    > ![Портал Центра приложений Visual Studio](_img/vs-app-center/vs-app-center-portal.png "Все готово.  Щелкните Add new organization (Добавить новую организацию) или Add new app (Добавить новое приложение), чтобы приступить к работе.")
 
 ## <a name="eligibility"></a>Право на участие
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
-ms.date: 07/19/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 description: Как добавить альтернативный идентификатор для подписки Visual Studio, который будет использоваться для Azure DevOps и Azure
-ms.openlocfilehash: 5eee6c1d59141c1975a6039f2ab9256b4c9dc735
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: d7820707758cd06209a412b2a860de81cb08c054
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005718"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353184"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Идентификаторы для подписчиков Visual Studio
 Когда вы активируете подписку Visual Studio, мы привязываем ваш идентификатор (или имя пользователя), использованный при активации, к подписке Visual Studio. Таким образом мы сможем узнать вас на [портале подписчиков Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), в Azure DevOps и в Azure.
@@ -22,7 +22,7 @@ ms.locfileid: "91005718"
 
 В Azure мы проверяем состояние вашей подписки Visual Studio при активации [ежемесячного индивидуального кредита Azure DevTest](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/), который является преимуществом подписчиков.
 
-На [портале подписчиков Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs) вы можете добавить **альтернативный идентификатор** — помимо идентификатора, использованного при активации. Вы можете добавить альтернативный идентификатор, если вы использовали учетную запись Майкрософт для активации подписки. Таким образом вы можете добавить рабочую или учебную учетную запись (которую вы используете при входе в Visual Studio, Microsoft 365, сеть организации или школы), чтобы использовать Azure DevOps через личную учетную запись, а также рабочую или учебную учетную запись.
+На [портале подписчиков Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs) вы можете добавить **альтернативный идентификатор**  — помимо идентификатора, использованного при активации. Вы можете добавить альтернативный идентификатор, если вы использовали учетную запись Майкрософт для активации подписки. Таким образом вы можете добавить рабочую или учебную учетную запись (которую вы используете при входе в Visual Studio, Microsoft 365, сеть организации или школы), чтобы использовать Azure DevOps через личную учетную запись, а также рабочую или учебную учетную запись.
 
 ## <a name="add-an-alternate-account-to-your-subscription"></a>Добавление альтернативной учетной записи в подписку
 Добавление альтернативной учетной записи в подписку Visual Studio позволяет получить доступ к преимуществам подписки, таким как Azure DevOps и Azure, с идентификатором, отличным от того, которому назначена подписка. В прошлом эта возможность была доступна, только если подписка Visual Studio была назначена учетной записи Майкрософт. Мы распространили ее на рабочие и учебные учетные записи в Azure Active Directory (Azure AD).
@@ -34,10 +34,10 @@ ms.locfileid: "91005718"
 ### <a name="add-the-alternate-account"></a>Добавление альтернативной учетной записи
 1. Войдите на портал подписчика Visual Studio с помощью учетной записи Майкрософт (https://my.visualstudio.com).
 2. Выберите вкладку **Подписки** .
-3. Щелкните ссылку **Добавить альтернативную учетную запись**.
+3. Щелкните ссылку **Добавить альтернативную учетную запись** .
 4. Добавьте рабочую или учебную учетную запись.
     > [!div class="mx-imgBorder"]
-    > ![Добавление рабочей или учебной учетной записи](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+    > ![Добавление рабочей или учебной учетной записи](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png "Добавление рабочей или учебной учетной записи в качестве альтернативной учетной записи в подписке.")
 
 5. Войдите в Azure DevOps, используя рабочую или учебную учетную запись (https://{ваша_учетная_запись}.visualstudio.com).
 

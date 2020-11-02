@@ -1,5 +1,7 @@
 ---
 title: Задача DownloadFile | Документы Майкрософт
+description: Сведения о параметрах задачи DownloadFile MSBuild, которая скачивает указанные файлы с использованием протокола HTTP.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a9c3b1c22277261276ced1940f1f2e83d11882
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fda3edcd1c8bf173e1b70d8bf2d76d58f6e10d8d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634257"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436660"
 ---
 # <a name="downloadfile-task"></a>Задача DownloadFile
 
@@ -38,19 +40,19 @@ ms.locfileid: "77634257"
 
 ## <a name="parameters"></a>Параметры
 
-В следующей таблице приводятся параметры задачи `DownloadFile`.
+В следующей таблице приводятся параметры задачи `DownloadFile` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |`DestinationFileName`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Имя, используемое для загруженного файла.  По умолчанию имя файла получается от `SourceUrl` или удаленного сервера.|
 |`DestinationFolder`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает папку назначения для загрузки файла.  Если папка не существует, она создается.|
 |`DownloadedFile`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает файл, который вы загрузили.|
 |`Retries`|Необязательный параметр `Int32`.<br /><br /> Задает количество попыток загрузки, если предыдущие попытки не удались. По умолчанию установлен нуль.|
 |`RetryDelayMilliseconds`|Необязательный параметр `Int32`.<br /><br /> Определяет задержку в миллисекундах между попытками. По умолчанию — 5000.|
-|`SkipUnchangedFiles`|Необязательный параметр `Boolean`.<br /><br /> При значении `true` пропускает загрузку файлов, которые не изменились. По умолчанию равен `true`. В задаче `DownloadFile` неизмененными считаются файлы одного размера с одинаковым временем последнего изменения по данным удаленного сервера. <br /><br />**Примечание.** Не все HTTP-серверы указывают дату последнего изменения файла, что приведет к его повторной загрузке.|
+|`SkipUnchangedFiles`|Необязательный параметр `Boolean`.<br /><br /> При значении `true` пропускает загрузку файлов, которые не изменились. По умолчанию — `true`. В задаче `DownloadFile` неизмененными считаются файлы одного размера с одинаковым временем последнего изменения по данным удаленного сервера. <br /><br />**Примечание.** Не все HTTP-серверы указывают дату последнего изменения файла, что приведет к его повторной загрузке.|
 |`SourceUrl`|Обязательный параметр `String`.<br /><br /> Указывает URL-адрес для загрузки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -76,7 +78,7 @@ ms.locfileid: "77634257"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

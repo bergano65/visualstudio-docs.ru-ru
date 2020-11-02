@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5692589192ee4377194f6c42c25d391636f5f42a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: f8b7dc9a388699cc9e323085769d17a00ba4fa6a
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800246"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467639"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером
 
@@ -134,11 +134,11 @@ ms.locfileid: "88800246"
 | Сообщество разработчиков | sendvsfeedback2.azurewebsites.net/api | https/443 | Используется для вызова API средства обратной связи сообщества разработчиков (мои вопросы, поиск, голосование, комментарий, отправка, загрузка, возобновление). |
 | Intellicode | \*.intellicode.vsengsaas.visualstudio.com | https/443 | Используется для вызова API Intellicode |
 | Live Share | \*.liveshare.vsengsaas.visualstudio.com| https/443 | Используется для вызова API Live Share |
-| Visual Studio Codespaces | \*.online.visualstudio.com | https/443 | Используется для вызова Visual Studio Codespaces |
+| GitHub Codespaces | \*.online.visualstudio.com | https/443 | Используется для вызова интерфейсов API GitHub Codespaces |
 | Автоматическое получение типа JavaScript | registry.npmjs.org | https/443 | Используется для установки определений типов TypeScript в целях предоставления IntelliSense для популярных библиотек JavaScript |
 | Служба лицензирования подписок Visual Studio | app.vssps.visualstudio.com/apis/<br/>Licensing/ClientRights | https/443 | Лицензирование для активации через Интернет |
 | Отладчик | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>Используется для скачивания битов отладчика для отладки .NET Core в Unix/macOS через SSH <br><br>2. <br>Используется для скачивания битов отладчика для удаленной отладки контейнера Windows Docker<br><br> 3. Используется для пошагового выполнения исходного кода .NET Framework <br><br> 4. <br>(Если пользователь соглашается) Используется для скачивания символов, опубликованных на сервере символов nuget.org<br><br> 5. (Если пользователь соглашается) Используется для скачивания символов и двоичных файлов Майкрософт, может также потребоваться для отладки управляемого кода в дампах |
-| Visual Studio Codespaces| \*.online.visualstudio.com | https/443 | Используется для вызова Visual Studio Codespaces |
+| GitHub Codespaces| \*.online.visualstudio.com | https/443 | Используется для вызова интерфейсов API GitHub Codespaces |
 | Публикация приложения Xamarin Android | \*.googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Используется для взаимодействия со службой Google Play Маркет для публикации и отправки приложений Xamarin Android непосредственно из Visual Studio. |
 | Реестр контейнеров Azure | *.azurecr.io | https/443 | Доступ к реестрам контейнеров, размещенным в Azure, для настройки конвейеров CICD |
 | | | | |

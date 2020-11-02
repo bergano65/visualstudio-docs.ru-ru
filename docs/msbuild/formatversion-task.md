@@ -1,5 +1,7 @@
 ---
 title: Задача FormatVersion | Документы Майкрософт
+description: Узнайте о различных способах добавления номера редакции и номера версии с помощью задачи FormatVersion MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 250c73ce0395f278b72c18605f1666290670e20a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16da018e49e6cb456074ebabac52a8768d06c1c6
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634114"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436708"
 ---
 # <a name="formatversion-task"></a>Задача FormatVersion
 
@@ -32,9 +34,9 @@ ms.locfileid: "77634114"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `FormatVersion`.
+ В следующей таблице приводятся параметры задачи `FormatVersion` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |`FormatType`|Необязательный параметр `String`.<br /><br /> Определяет тип формата.<br /><br /> — "Version" = версия.<br />— "Path" = замените "." на "_".|
 |`OutputVersion`|Необязательный выходной параметр `String`.<br /><br /> Указывает выходную версию, содержащую номер редакции.|
@@ -45,7 +47,7 @@ ms.locfileid: "77634114"
 
  Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

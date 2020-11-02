@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
-ms.date: 03/02/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Сведения о преимуществе CAST Highlight, доступном в некоторых подписках Visual Studio.
-ms.openlocfilehash: 3273ffb718249a0503531d20b882334cb76f9428
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a6c1836724f05255c5120a336b8976ccae3cadbd
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005954"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353373"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Преимущество CAST Highlight в подписках Visual Studio
 При миграции в облако разработчикам необходимы важные аналитические сведения о переносимом программном обеспечении. С помощью CAST Highlight подписчики Visual Studio могут быстро проверить исходный код приложения, чтобы определить его готовность к облаку для миграции в Azure, и отслеживать ход выполнения во время и после миграции приложения.
@@ -23,17 +23,17 @@ ms.locfileid: "91005954"
 ## <a name="activation-steps"></a>Процедура активации
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Найдите плитку преимущества CAST Highlight в категории "Сервис" и щелкните **Получить код**.
+2. Найдите плитку преимущества CAST Highlight в категории "Сервис" и щелкните **Получить код** .
 
    > [!div class="mx-imgBorder"]
-   > ![Плитка преимущества CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
+   > ![Плитка преимущества CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png "Чтобы приступить к работе, щелкните "Получить код" на плитке преимущества CAST Highlight.")
 
-0. Вы увидите сообщение об успешном получении кода.  Щелкните **Активировать**. (Нет необходимости выполнять активацию прямо сейчас, вы всегда сможете вернуться к плитке CAST Highlight на портале подписки.  Ссылка "Получить код" изменится на "Активировать", щелкнув ее, вы возобновите процесс активации.)
+0. Вы увидите сообщение об успешном получении кода.  Щелкните **Активировать** . (Нет необходимости выполнять активацию прямо сейчас, вы всегда сможете вернуться к плитке CAST Highlight на портале подписки.  Ссылка "Получить код" изменится на "Активировать", щелкнув ее, вы возобновите процесс активации.)
 
 0. Вы будете перенаправлены на страницу CAST Highlight, где сможете просмотреть возможности подписки.  Когда вы будете готовы к созданию учетной записи, просто укажите свои контактные данные в веб-форме и нажмите кнопку **Submit** (Отправить).
 
     > [!div class="mx-imgBorder"]
-    > ![Целевая страница CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-landing.png)
+    > ![Целевая страница CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-landing.png "Укажите личные сведения, чтобы активировать подписку на CAST.")
 
    > [!NOTE]
    > В одной организации преимущество CAST Highlight можно активировать только десять раз.  Если в вашей организации десять активаций уже использованы, вы не сможете активировать преимущество CAST Highlight и получите сообщение электронной почты с дополнительными сведениями.

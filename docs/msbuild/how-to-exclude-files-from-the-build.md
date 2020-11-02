@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Исключение файлов из сборки | Документы Майкрософт
+description: Сведения о том, как явно исключить или условно включить файлы из сборок в файлах проекта MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1914f709a69dbb120e4439ddceeda8b70ad570b4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 48578edd6c7911e858f32b1961b4ef361748788d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633867"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436364"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Практическое руководство. Исключение файлов из сборки
 
@@ -36,7 +38,7 @@ ms.locfileid: "77633867"
 
  Если вы использовали подстановочные знаки для включения всех файлов в одном каталоге или наборе вложенных каталогов в качестве входных данных для сборки, может присутствовать один или несколько файлов или каталог, которые не требуется включать. Чтобы исключить элемент из списка элементов, используйте атрибут `Exclude`.
 
-#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Включение всех файлов с расширением *CS* или *VB*, кроме *Form2*
+#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Включение всех файлов с расширением *CS* или *VB* , кроме *Form2*
 
 - Используйте один из следующих атрибутов `Include` и `Exclude`:
 
@@ -44,13 +46,13 @@ ms.locfileid: "77633867"
     <CSFile Include="*.cs" Exclude="Form2.cs"/>
     ```
 
-    или диспетчер конфигурации служб
+    or
 
     ```xml
     <VBFile Include="*.vb" Exclude="Form2.vb"/>
     ```
 
-#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Включение всех файлов с расширением *CS* или *VB*, кроме *Form2* и *Form3*
+#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Включение всех файлов с расширением *CS* или *VB* , кроме *Form2* и *Form3*
 
 - Используйте один из следующих атрибутов `Include` и `Exclude`:
 
@@ -58,13 +60,13 @@ ms.locfileid: "77633867"
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>
     ```
 
-    или диспетчер конфигурации служб
+    or
 
     ```xml
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>
     ```
 
-#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Включение всех *JPG*-файлов в подкаталогах каталога *Images*, кроме файлов из каталога *Version2*
+#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Включение всех *JPG* -файлов в подкаталогах каталога *Images* , кроме файлов из каталога *Version2*
 
 - Используйте следующие атрибуты `Include` и `Exclude`:
 
@@ -93,7 +95,7 @@ ms.locfileid: "77633867"
 
 ## <a name="example"></a>Пример
 
- В следующем примере кода выполняется сборка проекта со всеми *CS*-файлами из каталога, кроме файла *Form2.cs*.
+ В следующем примере кода выполняется сборка проекта со всеми *CS* -файлами из каталога, кроме файла *Form2.cs* .
 
 ```xml
 <Project DefaultTargets="Compile"
@@ -126,7 +128,7 @@ ms.locfileid: "77633867"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Элементы](../msbuild/msbuild-items.md)
 - [MSBuild](../msbuild/msbuild.md)

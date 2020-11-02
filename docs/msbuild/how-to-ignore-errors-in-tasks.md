@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Игнорирование ошибок в задачах | Документы Майкрософт
+description: Сведения о том, как игнорировать ошибки в задачах MSBuild и определять, нужно ли остановить или продолжить сборку при возникновении сбоя задачи.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 97a2666b32ad7e6bc93865fa36529377652b6453
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633828"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436257"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Практическое руководство. Игнорирование ошибок в задачах
 
@@ -26,15 +28,15 @@ ms.locfileid: "77633828"
 
 Атрибут `ContinueOnError` может содержать одно из следующих значений:
 
-- **WarnAndContinue** или **true**. При сбое задачи последующие задачи в элементе [Target](../msbuild/target-element-msbuild.md) и сборке продолжают выполняться, а все ошибки из задачи рассматриваются как предупреждения.
+- **WarnAndContinue** или **true** . При сбое задачи последующие задачи в элементе [Target](../msbuild/target-element-msbuild.md) и сборке продолжают выполняться, а все ошибки из задачи рассматриваются как предупреждения.
 
-- **ErrorAndContinue**. При сбое задачи последующие задачи в элементе `Target` и сборке продолжают выполняться, а все ошибки из задачи рассматриваются как ошибки.
+- **ErrorAndContinue** . При сбое задачи последующие задачи в элементе `Target` и сборке продолжают выполняться, а все ошибки из задачи рассматриваются как ошибки.
 
 - **ErrorAndStop** или **false** (по умолчанию). При сбое задачи остальные задачи в элементе `Target` и сборке не выполняются, и считается, что возник сбой всего элемента `Target` и всей сборки.
 
 Версии платформы .NET Framework, предшествовавшие 4.5, поддерживали только значения `true` и `false`.
 
-Значение `ContinueOnError` по умолчанию — `ErrorAndStop`. Если задать для атрибута значение `ErrorAndStop`, можно сделать такое поведение явным для всех объектов, считывающих файл проекта.
+Значением свойства `ContinueOnError` по умолчанию является `ErrorAndStop`. Если задать для атрибута значение `ErrorAndStop`, можно сделать такое поведение явным для всех объектов, считывающих файл проекта.
 
 #### <a name="to-ignore-an-error-in-a-task"></a>Игнорирование ошибки в задаче
 
@@ -64,7 +66,7 @@ ms.locfileid: "77633828"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [MSBuild](../msbuild/msbuild.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

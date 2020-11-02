@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 03/25/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Сведения о преимуществе Concierge Chat, входящем в состав подписок Visual Studio.
-ms.openlocfilehash: d7ed217e551057ff12ed4abecedf717c9f3f6ced
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 0aab627d7c870720c0cc0d043ffb6ce556568703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006323"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353386"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat в подписках Visual Studio
 Службы Concierge Chat помогают найти сведения о продуктах и техническую документацию, а также предоставляют помощь по использованию преимуществ подписки Visual Studio.
@@ -23,17 +23,17 @@ ms.locfileid: "91006323"
 Справку через службу Concierge Chat получить очень легко.
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Найдите плитку Concierge Chat в разделе поддержки на странице преимуществ и щелкните ссылку **Чат**.
+2. Найдите плитку Concierge Chat в разделе поддержки на странице преимуществ и щелкните ссылку **Чат** .
     > [!div class="mx-imgBorder"]
-    > ![Плитка Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+    > ![Плитка Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-tile.png "Щелкните "Chat now" (Начать чат), чтобы запустить новый сеанс чата.")
 
-3. Нажмите кнопку **Продолжить**.
+3. Нажмите кнопку **Продолжить** .
 
 4. Откроется окно чата, где вы увидите счетчик текущего положения в очереди.
 
 5. Когда освободится оператор, чат начнется автоматически.
     > [!div class="mx-imgBorder"]
-    > ![Сеанс Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > ![Сеанс Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-session.png "В окне чата вы увидите, когда агент присоединиться к сеансу.")
 
 ## <a name="eligibility"></a>Право на участие
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |

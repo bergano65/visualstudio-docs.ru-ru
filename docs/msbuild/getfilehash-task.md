@@ -1,5 +1,7 @@
 ---
 title: Задача GetFileHash | Документация Майкрософт
+description: Сведения о том, как использовать задачу GetFileHash MSBuild для вычисления контрольных сумм содержимого файла или набора файлов.
+ms.custom: SEO-VS-2020
 ms.date: 01/28/2019
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8f3de9a4f2fe848e1cbd41e14e82498845ca2cf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5e9e6e30cf8a224bfdfbde2c728545092bd1494b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77578660"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436854"
 ---
 # <a name="getfilehash-task"></a>Задача GetFileHash
 
@@ -30,16 +32,16 @@ ms.locfileid: "77578660"
 
 ## <a name="task-parameters"></a>Параметры задачи
 
- В следующей таблице приводятся параметры задачи `GetFileHash`.
+ В следующей таблице приводятся параметры задачи `GetFileHash` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |`Files`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br />Файлы, которые нужно хэшировать.|
 |`Items`|Выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br />Входные данные `Files` с дополнительными метаданными, заданные для хэша файла.|
 |`Hash`|Выходной параметр `String`.<br /><br />Хэш файла. Эти выходные данные задаются только в том случае, если передан только один элемент.|
 |`Algorithm`|Необязательный параметр `String`.<br /><br />Алгоритм. Допустимые значения: `SHA256`, `SHA384`, `SHA512`. По умолчанию = `SHA256`.|
-|`MetadataName`|Необязательный параметр `String`.<br /><br />Имя метаданных, где хранится хэш в каждом элементе. По умолчанию равен `FileHash`.|
-|`HashEncoding`|Необязательный параметр `String`.<br /><br />Кодировка, используемая для созданных хэшей. По умолчанию равен `hex`. Допустимые значения = `hex`, `base64`.|
+|`MetadataName`|Необязательный параметр `String`.<br /><br />Имя метаданных, где хранится хэш в каждом элементе. По умолчанию — `FileHash`.|
+|`HashEncoding`|Необязательный параметр `String`.<br /><br />Кодировка, используемая для созданных хэшей. По умолчанию — `hex`. Допустимые значения = `hex`, `base64`.|
 
 ## <a name="example"></a>Пример
 
@@ -63,7 +65,7 @@ ms.locfileid: "77578660"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 

@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Выбор файлов для сборки | Документация Майкрософт
+description: Сведения о том, как выбрать файлы для сборки в файле проекта MSBuild, указав каждый файл отдельно или используя подстановочные знаки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4593fff50feb0176ea81f70dc297bc39d8dd1936
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633815"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436204"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Практическое руководство. Выбор файлов для сборки
 
@@ -40,7 +42,7 @@ ms.locfileid: "77633815"
     `<VBFile Include="form1.vb"/>`
 
     > [!NOTE]
-    > Если элементы в коллекции элементов не находятся в том же каталоге, что и файл проекта, необходимо указать полный или относительный путь к элементу. Например, `Include="..\..\form2.cs"`.
+    > Если элементы в коллекции элементов не находятся в том же каталоге, что и файл проекта, необходимо указать полный или относительный путь к элементу. Например: `Include="..\..\form2.cs"`.
 
 #### <a name="to-declare-multiple-items"></a>Объявление нескольких элементов
 
@@ -56,7 +58,7 @@ ms.locfileid: "77633815"
 
 Подстановочные знаки можно использовать для рекурсивного включения всех файлов или только определенных файлов из подкаталогов в качестве входных данных для сборки. Дополнительные сведения о подстановочных знаках см. в разделе [Элементы](../msbuild/msbuild-items.md).
 
-В примерах ниже за основу взят проект, в котором содержатся графические файлы в следующих каталогах и подкаталогах (файл проекта находится в каталоге *Project*):
+В примерах ниже за основу взят проект, в котором содержатся графические файлы в следующих каталогах и подкаталогах (файл проекта находится в каталоге *Project* ):
 
 *Project\Images\BestJpgs*
 
@@ -64,13 +66,13 @@ ms.locfileid: "77633815"
 
 *Project\Images\ImgJpgs\Img1*
 
-#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Включение всех *JPG*-файлов в каталоге *Images* и подкаталогах
+#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Включение всех *JPG* -файлов в каталоге *Images* и подкаталогах
 
 - Используйте следующий атрибут `Include`.
 
     `Include="Images\**\*.jpg"`
 
-#### <a name="to-include-all-jpg-files-starting-with-img"></a>Включение всех *JPG*-файлов, начинающихся со слога *img*
+#### <a name="to-include-all-jpg-files-starting-with-img"></a>Включение всех *JPG* -файлов, начинающихся со слога *img*
 
 - Используйте следующий атрибут `Include`.
 
@@ -105,7 +107,7 @@ ms.locfileid: "77633815"
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
-## <a name="example"></a>Пример
+## <a name="example-1"></a>Пример 1
 
 В примере ниже показан проект, в котором все входные файлы включены по отдельности.
 
@@ -140,9 +142,9 @@ ms.locfileid: "77633815"
 </Project>
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-2"></a>Пример 2
 
-В примере ниже используется подстановочный знак для включения всех *CS*-файлов.
+В примере ниже используется подстановочный знак для включения всех *CS* -файлов.
 
 ```xml
 <Project DefaultTargets="Compile"
@@ -175,7 +177,7 @@ ms.locfileid: "77633815"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - [Практическое руководство. Исключение файлов из сборки](../msbuild/how-to-exclude-files-from-the-build.md)
 - [Элементы](../msbuild/msbuild-items.md)

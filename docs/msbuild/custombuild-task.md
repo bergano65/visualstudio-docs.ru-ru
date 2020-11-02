@@ -1,5 +1,7 @@
 ---
 title: Задача CustomBuild | Документация Майкрософт
+description: В этой статье описывается задача CustomBuild MSBuild, которая используется в MSBuild для поддержки настройки процесса сборки C++.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d95b6e7d4197487adc13050572ac31310701c759
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 640c1e6ae286b45f8700709829140093452a9491
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595349"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796554"
 ---
 # <a name="custombuild-task"></a>Задача CustomBuild
 
@@ -30,14 +32,14 @@ ms.locfileid: "75595349"
 
 ## <a name="parameters"></a>Параметры
 
-В следующей таблице приводятся параметры задачи **CustomBuild**.
+В следующей таблице приводятся параметры задачи **CustomBuild** .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
-|**BuildSuffix**|Необязательный параметр типа **string**.|
-|**Источники**|Обязательный параметр **ITaskItem[]** .|
-|**TrackerLogDirectory**|Необязательный параметр типа **string**.|
+|**BuildSuffix**|Необязательный параметр типа **string** .|
+|**Sources**|Обязательный параметр **ITaskItem[]** .|
+|**TrackerLogDirectory**|Необязательный параметр типа **string** .|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

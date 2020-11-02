@@ -10,12 +10,12 @@ ms.date: 08/05/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 204777b0209b2ca0b1c88717e9908828743087d9
-ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
+ms.openlocfilehash: bd31c04569b373591647cf3601d9afa4e63be882
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87805789"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92470875"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Основной редактор Visual Studio (включен в Visual Studio Enterprise 2019)
 
@@ -640,7 +640,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Поддержка вре
 
 **Идентификатор:** Microsoft.VisualStudio.Workload.Node
 
-**Описание.** Создание масштабируемых сетевых приложений при помощи Node.js, асинхронной среды выполнения JavaScript с управлением на основе событий. 
+**Описание.** Создание масштабируемых сетевых приложений при помощи Node.js, асинхронной среды выполнения JavaScript с управлением на основе событий.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
@@ -888,7 +888,7 @@ Microsoft.Net.Core.Component.SDK.3.0 | Среда выполнения .NET Core
 Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | Средства разработки с .NET Core 2.1 | 16.3.29207.166
 Microsoft.NetCore.ComponentGroup.Web.2.1 | Средства разработки веб-приложений с .NET Core 2.1 | 16.3.29207.166
 Microsoft.VisualStudio.Component.AzureDevOps.OfficeIntegration | Установщик интеграции Azure DevOps с Office | 16.0.28625.61
-Microsoft.VisualStudio.Component.Debugger.VSOnline | Отладчик для Visual Studio Codespaces | 16.7.30310.162
+Microsoft.VisualStudio.Component.Debugger.VSOnline | Отладчик для GitHub Codespaces | 16.7.30310.162
 Microsoft.VisualStudio.Component.Git | Git для Windows | 16.0.28625.61
 Microsoft.VisualStudio.Component.LinqToSql | Инструменты LINQ to SQL | 16.0.28625.61
 Microsoft.VisualStudio.Component.TestTools.CodedUITest | Закодированный тест ИП | 16.0.28327.66

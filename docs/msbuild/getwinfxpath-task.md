@@ -1,5 +1,7 @@
 ---
 title: Задача GetWinFXPath | Документация Майкрософт
+description: Узнайте, как использовать задачу GetWinFXPath MSBuild, которая возвращает каталог текущей среды выполнения .NET.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8e15cef722e935dde322072f6834ba00be8bc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 820ca103d88cde941fe558e59ed1c78622adccd4
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633971"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436778"
 ---
 # <a name="getwinfxpath-task"></a>Задача GetWinFXPath
 
@@ -33,13 +35,13 @@ ms.locfileid: "77633971"
 
 | Параметр | Описание |
 |-------------------| - |
-| `WinFXPath` | Необязательный параметр вывода **String**.<br /><br /> Определяет действительный путь к среде выполнения .NET. |
-| `WinFXNativePath` | Обязательный параметр **string**.<br /><br /> Определяет действительный путь к собственной среде выполнения .NET. |
-| `WinFXWowPath` | Обязательный параметр **string**.<br /><br /> Определяет путь к сборкам .NET в 32-разрядном модуле **Windows on Windows** в 64-разрядных системах. |
+| `WinFXPath` | Необязательный параметр вывода **String** .<br /><br /> Определяет действительный путь к среде выполнения .NET. |
+| `WinFXNativePath` | Обязательный параметр **String** .<br /><br /> Определяет действительный путь к собственной среде выполнения .NET. |
+| `WinFXWowPath` | Обязательный параметр **String** .<br /><br /> Определяет путь к сборкам .NET в 32-разрядном модуле **Windows on Windows** в 64-разрядных системах. |
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
- Если задача <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> выполняется в 64-разрядном процессоре, параметру **WinFXPath** присваивается путь, который хранится в параметре **WinFXWowPath**. В противном случае параметру **WinFXPath** присваивается путь, который хранится в параметре **WinFXNativePath**.
+ Если задача <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> выполняется в 64-разрядном процессоре, параметру **WinFXPath** присваивается путь, который хранится в параметре **WinFXWowPath** . В противном случае параметру **WinFXPath** присваивается путь, который хранится в параметре **WinFXNativePath** .
 
 ## <a name="example"></a>Пример
 

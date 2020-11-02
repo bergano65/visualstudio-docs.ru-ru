@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Отображение списка элементов, разделенных запятыми | Документация Майкрософт
+description: Узнайте, как использовать MSBuild для отображения списка элементов, разделенных запятыми, или указать другие строки разделителей для такого списка.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5493d3b95f7e9c0aa08ed3b06a99108e15697349
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: da2a38041a8fa4092e0167e60b00e35a7187866b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633906"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436423"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Практическое руководство. Отображение списка элементов, разделенных запятыми
 
@@ -28,7 +30,7 @@ ms.locfileid: "77633906"
 
 `<Message Text="This is my list of TXT files: @(TXTFile)"/>`
 
-Когда список элементов `@(TXTFile)` содержит элементы *App1.txt*, *App2.txt* и *App3.txt*, сообщение имеет вид:
+Когда список элементов `@(TXTFile)` содержит элементы *App1.txt* , *App2.txt* и *App3.txt* , сообщение имеет вид:
 
 `This is my list of TXT files: App1.txt;App2.txt;App3.txt`
 
@@ -46,7 +48,7 @@ ms.locfileid: "77633906"
 
 ## <a name="example"></a>Пример
 
-В этом примере задача [Exec](../msbuild/exec-task.md) запускает средство findstr для поиска указанных текстовых строк в файле *Phrases.txt*. В команде findstr искомые литеральные строки обозначены параметром **-c:** , поэтому между элементами в списке `@(Phrase)` вставляется разделитель элементов `-c:`.
+В этом примере задача [Exec](../msbuild/exec-task.md) запускает средство findstr для поиска указанных текстовых строк в файле *Phrases.txt* . В команде findstr искомые литеральные строки обозначены параметром **-c:** , поэтому между элементами в списке `@(Phrase)` вставляется разделитель элементов `-c:`.
 
 Для этого примера эквивалентная команда в командной строке имеет вид:
 

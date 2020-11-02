@@ -1,5 +1,7 @@
 ---
 title: Задача CallTarget | Документы Майкрософт
+description: Узнайте, как использовать задачу CallTarget MSBuild для вызова указанных целевых объектов в файле проекта.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26d29c236b89172ab6dc456be97016b98f2cae19
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: efeca838050c9024ad3768b2ac7f73ce7dd06720
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094565"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353295"
 ---
 # <a name="calltarget-task"></a>CallTarget - задача
 
@@ -36,9 +38,9 @@ ms.locfileid: "79094565"
 | `RunEachTargetSeparately` | Необязательный входной параметр `Boolean`.<br /><br /> Если задано значение `true`, модуль MSBuild вызывается однократно для каждого целевого объекта. Если задано значение `false`, модуль MSBuild вызывается однократно для сборки всех целевых объектов. Значение по умолчанию — `false`. |
 | `TargetOutputs` | Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит выходные данные всех собранных целевых объектов. |
 | `Targets` | Необязательный параметр `String[]`.<br /><br /> Указывает один или несколько целевых объектов для сборки. |
-| `UseResultsCache` | Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, возвращается кэшированный результат (при его наличии).<br /><br /> **Примечание**. При выполнении задачи MSBuild ее выходные данные кэшируются в области (ProjectFileName, GlobalProperties)[TargetNames] в виде списка элементов сборки. |
+| `UseResultsCache` | Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, возвращается кэшированный результат (при его наличии).<br /><br /> **Примечание** . При выполнении задачи MSBuild ее выходные данные кэшируются в области (ProjectFileName, GlobalProperties)[TargetNames] в виде списка элементов сборки. |
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
  Если заданный в `Targets` целевой объект завершается сбоем, а `RunEachTargetSeparately` имеет значение `true`, задача продолжает сборку оставшихся целевых объектов.
 

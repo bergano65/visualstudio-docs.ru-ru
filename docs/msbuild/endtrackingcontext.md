@@ -1,5 +1,7 @@
 ---
 title: EndTrackingContext | Документы Майкрософт
+description: Сведения о синтаксисе, возвращаемом значении и требованиях для использования задачи EndTrackingContext MSBuild для завершения текущего контекста отслеживания.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf982200b8e65e404325bdbd189ff3b0f2daebac
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: da1ef921106732a7787f68a979bc88f3ac012b6d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634244"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436673"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 
@@ -34,12 +36,12 @@ HRESULT WINAPI EndTrackingContext();
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-**HRESULT** с установленным битом **SUCCEEDED**, если контекст отслеживания был закончен.
+**HRESULT** с установленным битом **SUCCEEDED** , если контекст отслеживания был закончен.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок.** *FileTracker.h*
+**Заголовок:** *FileTracker.h*
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

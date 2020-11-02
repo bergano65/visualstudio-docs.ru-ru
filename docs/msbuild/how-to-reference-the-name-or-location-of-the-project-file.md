@@ -1,5 +1,6 @@
 ---
 title: Использование ссылки на имя или расположение файла проекта
+description: Узнайте, как использовать зарезервированные свойства MSBuild для указания ссылки на имя или расположение файла проекта, не создавая собственные свойства.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29960de09b512a419a56a61f493702485c287475
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ccc356e1859f447db1ac18a437b8fc2317925b0f
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036461"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436347"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Практическое руководство. Использование ссылки на имя или расположение файла проекта
 
@@ -49,7 +50,7 @@ ms.locfileid: "90036461"
 > [!NOTE]
 > Зарезервированные свойства нельзя переопределить в файле проекта.
 
-## <a name="example"></a>Пример
+## <a name="example-1"></a>Пример 1
 
  В следующем примере файл проекта ссылается на имя проекта как зарезервированное свойство, чтобы указать имя для выходных данных.
 
@@ -78,7 +79,7 @@ ms.locfileid: "90036461"
 </Project>
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-2"></a>Пример 2
 
  В следующем примере файл проекта использует зарезервированное свойство `MSBuildProjectDirectory`, чтобы создать полный путь к файлу в расположении проекта.
 

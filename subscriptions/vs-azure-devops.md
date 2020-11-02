@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Узнайте, как использовать службы Azure DevOps в качестве подписчика Visual Studio.
-ms.openlocfilehash: f449d39866cb5891f2b378acffdd84b38b6408c7
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 536941d02b790349d126257e61164d2b0b98d794
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005090"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92352957"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Преимущества Azure DevOps для подписчиков Visual Studio
 Как действующий подписчик Visual Studio вы можете использовать целый ряд возможностей в Azure DevOps, которые включены в вашу подписку в виде преимуществ. Вы сможете использовать эти возможности в каждой организации Azure DevOps, членом которой вы являетесь, независимо от того, создали вы эту организацию или были добавлены в нее.
@@ -20,7 +20,7 @@ ms.locfileid: "91005090"
 ## <a name="sign-in"></a>Войти
 
    > [!div class="mx-imgBorder"]
-   > ![Фрагмент Azure DevOps](_img/vs-azure-devops/vs-azure-devops-tile.png)
+   > ![Фрагмент Azure DevOps](_img/vs-azure-devops/vs-azure-devops-tile.png "Нажмите кнопку "Начать работу", чтобы войти в Azure DevOps.")
 
    
 Для входа в Azure DevOps вы можете использовать тот же идентификатор, который применялся для активации подписки Visual Studio, или [альтернативный идентификатор](vs-alternate-identity.md) — система распознает вас автоматически.  Таким образом вы можете добавить рабочую или учебную учетную запись (которую вы используете при входе в Visual Studio, Microsoft 365, сеть организации или школы), чтобы использовать Azure DevOps через личную учетную запись, а также рабочую или учебную учетную запись.
@@ -30,17 +30,17 @@ ms.locfileid: "91005090"
 ## <a name="eligibility"></a>Право на участие
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (ценовая категория "Стандартный", ежемесячная облачная подписка)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup>  | Azure Boards и Repos (уровень "Базовый"<sup>2</sup>), Azure Test Plans, локальные параллельные задания [Дополнительные сведения](/azure/devops/organizations/security/access-levels?view=azure-devops)     |  Да          |
-| Visual Studio Enterprise с GitHub Enterprise   | VL| Azure Boards и Repos (уровень "Базовый"<sup>2</sup>), Azure Test Plans, локальные параллельные задания [Дополнительные сведения](/azure/devops/organizations/security/access-levels?view=azure-devops) |  Да          |
-| Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка) | Корпоративная лицензия, Azure, розничная версия                                        | Azure Boards и Repos (уровень "Базовый"<sup>2</sup>) [Дополнительные сведения](/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Да          |
-| Visual Studio Professional с GitHub Enterprise | VL| Azure Boards и Repos (уровень "Базовый"<sup>2</sup>)  [Дополнительные сведения](/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Да          |
-| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Azure Boards и Repos (уровень "Базовый"<sup>2</sup>), Azure Test Plans [Дополнительные сведения](/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Да          |
-| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Azure Boards и Repos (уровень "Базовый"<sup>2</sup>), Azure Test Plans [Дополнительные сведения](/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Да          |
+| Visual Studio Enterprise (ценовая категория "Стандартный", ежемесячная облачная подписка)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup>  | Azure Boards и Azure Repos (Базовый<sup>2</sup>), Azure Test Plans, локальные параллельные задания |  Да          |
+| Visual Studio Enterprise с GitHub Enterprise   | VL| Azure Boards и Azure Repos (Базовый<sup>2</sup>), Azure Test Plans, локальные параллельные задания |  Да          |
+| Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка) | Корпоративная лицензия, Azure, розничная версия                                        | Azure Boards и Azure Repos (Базовый<sup>2</sup>)                                                             |  Да          |
+| Visual Studio Professional с GitHub Enterprise | VL| Azure Boards и Azure Repos (Базовый<sup>2</sup>)                                                             |  Да          |
+| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Azure Boards и Azure Repos (Базовый<sup>2</sup>), Azure Test Plans                                              |  Да          |
+| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Azure Boards и Azure Repos (Базовый<sup>2</sup>), Azure Test Plans                                             |  Да          |
 ||
 
 <sup>1</sup> *Включает:  не для перепродажи (NFR), Most Valuable Professional (MVP), региональный директор (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, разработчик ПО и служб MCT, сотрудник с полной занятостью. Не включает следующие категории: ПО и службы MCT, Imagine.*
 
-<sup>2</sup> *Базовый план включает определение конвейеров выпуска и многоэтапные конвейеры непрерывного развертывания (CD), а также использование утверждений и шлюзов для управления развертываниями. Если функция бесплатного доступа к предварительной версии конвейеров включена, заинтересованные лица получают доступ ко всем функциям Azure Pipelines. Дополнительные сведения о функциях, включаемых в планы, см. на [странице Azure об уровнях доступа](/azure/devops/organizations/security/access-levels?view=azure-devops).*
+<sup>2</sup> *Базовый план включает определение конвейеров выпуска и многоэтапные конвейеры непрерывного развертывания (CD), а также использование утверждений и шлюзов для управления развертываниями. Если функция бесплатного доступа к предварительной версии конвейеров включена, заинтересованные лица получают доступ ко всем функциям Azure Pipelines. *
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).

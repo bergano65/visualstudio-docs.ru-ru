@@ -1,5 +1,7 @@
 ---
 title: Задача GetAssemblyIdentity | Документы Майкрософт
+description: Используйте задачу GetAssemblyIdentity MSBuild для получения идентификаторов сборок из указанных файлов и вывода сведений об идентификаторах.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a09bd4955cee6e50368f7155fb2e03c2c1758bf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d8e242864ca68e0d84ace5f8ebeefd02881a394f
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634023"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436864"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity - задача
 
@@ -31,9 +33,9 @@ ms.locfileid: "77634023"
 
 ## <a name="task-parameters"></a>Параметры задачи
 
-В следующей таблице приводятся параметры задачи `GetAssemblyIdentity`.
+В следующей таблице приводятся параметры задачи `GetAssemblyIdentity` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |`Assemblies`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит извлеченные идентификаторы сборок.|
 |`AssemblyFiles`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает файлы, из которых требуется извлечь идентификаторы.|
@@ -61,7 +63,7 @@ ms.locfileid: "77634023"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

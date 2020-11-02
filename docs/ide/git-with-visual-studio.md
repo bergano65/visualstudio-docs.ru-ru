@@ -2,18 +2,18 @@
 title: Новый интерфейс GIT в Visual Studio (предварительная версия)
 titleSuffix: ''
 description: Сведения о новом интегрированном интерфейсе GIT в Visual Studio 2019
-ms.date: 09/22/2020
+ms.date: 10/13/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1f9dc891219e5563ad6ea72085b0ad28469c7171
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92082061"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334211"
 ---
 # <a name="new-git-experience-in-visual-studio-preview"></a>Новый интерфейс GIT в Visual Studio (предварительная версия)
 
@@ -96,7 +96,7 @@ Visual Studio также позволяет выполнить фиксацию 
 :::image type="content" source="media/git-file-version-compare.png" alt-text="Снимок экрана: раздел &quot;Функции предварительной версии&quot; диалогового окна &quot;Параметры&quot; в Visual Studio":::
 
 > [!TIP]
-> Если вы подключены к репозиторию Azure DevOps, вы можете связать рабочий элемент Azure DevOps с фиксацией, используя символ #. Чтобы подключить репозиторий Azure DevOps, выберите Team Explorer > "Управление подключениями".
+> Если вы подключены к репозиторию Azure DevOps, вы можете связать рабочий элемент Azure DevOps с фиксацией, используя символ #. Чтобы подключить репозиторий Azure DevOps, выберите **Team Explorer** > **Управление подключениями** .
 
 ### <a name="select-an-existing-branch"></a>Выбор существующей ветви
 

@@ -1,5 +1,7 @@
 ---
 title: Задача AssignCulture | Документы Майкрософт
+description: Используйте задачу AssignCulture MSBuild для создания элемента с метаданными Culture, содержащими соответствующий идентификатор языка и региональных параметров.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa9f7bb47efefa3f7a1d4cf52cbfa5891602956f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 94a587ca1395aebaf4af71d04b2f1454ec2702f0
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634569"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353347"
 ---
 # <a name="assignculture-task"></a>AssignCulture - задача
 
@@ -31,9 +33,9 @@ ms.locfileid: "77634569"
 
 ## <a name="task-parameters"></a>Параметры задачи
 
-В следующей таблице приводятся параметры задачи `AssignCulture`.
+В следующей таблице приводятся параметры задачи `AssignCulture` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |`AssignedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит список элементов, полученных в параметре `Files`, с записью метаданных `Culture`, добавленной для каждого элемента.<br /><br /> Если входящий элемент из параметра `Files` уже содержит запись метаданных `Culture`, используется исходная запись метаданных.<br /><br /> Задача назначает запись метаданных `Culture` только в том случае, если имя файла содержит допустимый идентификатор языка и региональных параметров. Идентификатор языка и региональных параметров должен находиться между двумя последними точками в имени файла.|
 |`AssignedFilesWithCulture`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит подмножество элементов из `AssignedFiles` параметра, у которых есть запись метаданных `Culture`.|
@@ -41,7 +43,7 @@ ms.locfileid: "77634569"
 |`CultureNeutralAssignedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит тот же список элементов, который создается в параметре `AssignedFiles`, за исключением того, что из имени файла удалено упоминание языка и региональных параметров.<br /><br /> Задача удаляет язык и региональные параметры из имени файла лишь в том случае, если это допустимый идентификатор.|
 |`Files`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает список файлов с внедренными именами языка и региональных параметров для назначения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -81,7 +83,7 @@ ms.locfileid: "77634569"
 |`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx* (без дополнительных метаданных)|
 |`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (Culture="fr")<br /><br /> *MyResource2.XX.resx* (без дополнительных метаданных)|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

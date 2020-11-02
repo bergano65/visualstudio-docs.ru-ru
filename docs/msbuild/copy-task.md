@@ -1,5 +1,7 @@
 ---
 title: Задача Copy | Документы Майкрософт
+description: Узнайте, как использовать задачу Copy MSBuild для копирования файлов в новый файл или папку в файловой системе.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c298658c7e9f385e5140ea46f8069512c0bf278
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 00544b6d1e797a1fd8a7a197197480cae5620f10
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508045"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796232"
 ---
 # <a name="copy-task"></a>Copy - задача
 
@@ -34,9 +36,9 @@ ms.locfileid: "89508045"
 
 ## <a name="parameters"></a>Параметры
 
-В следующей таблице приводятся параметры задачи `Copy`.
+В следующей таблице приводятся параметры задачи `Copy` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |`CopiedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит успешно скопированные элементы, *включая* те, которые не были скопированы на самом деле, но были пропущены, так как они уже обновлены, а `SkipUnchangedFiles` имел значение `true`.|
 |`DestinationFiles`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает список, в который будут скопированы исходные файлы. Предполагается, что этот список будет взаимно-однозначно сопоставляться со списком в параметре `SourceFiles`. То есть первый файл из списка `SourceFiles` будет скопирован с использованием первого пути, заданного в списке `DestinationFiles`, и т. д.|
@@ -74,9 +76,9 @@ ms.locfileid: "89508045"
 
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Пример
+## <a name="example-1"></a>Пример 1
 
-В следующем примере кода выполняется копирование элементов из коллекции `MySourceFiles` в папку *c:\MyProject\Destination*.
+В следующем примере кода выполняется копирование элементов из коллекции `MySourceFiles` в папку *c:\MyProject\Destination* .
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -95,7 +97,7 @@ ms.locfileid: "89508045"
 </Project>
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-2"></a>Пример 2
 
 В следующем примере кода демонстрируется использование рекурсивного копирования. В этом проекте выполняется рекурсивное копирование всех файлов из папки *c:\MySourceTree* в папку *c:\MyDestinationTree* с сохранением структуры каталогов.
 

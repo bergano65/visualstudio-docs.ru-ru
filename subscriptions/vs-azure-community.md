@@ -7,12 +7,12 @@ ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Сведения о преимуществе поддержки сообщества Azure, включенном в некоторые подписки Visual Studio.
-ms.openlocfilehash: 8c048103d3ecc2aa21f771e88fa8f9b75ad94b4c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 000732d2c46d777c68451153dc5965d45087abce
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006245"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353217"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Доступ к форуму поддержки сообщества Azure в рамках подписки Visual Studio
 Вы можете получить помощь напрямую от команды Azure на нескольких форумах поддержки в сообществе Azure.  Преимущество сообщества Azure предоставляет доступ к коллекции форумов, посвященных темам, связанным с Azure.
@@ -22,7 +22,7 @@ ms.locfileid: "91006245"
 :::row:::
     :::column:::
         - [Azure Active Directory](https://social.msdn.microsoft.com/forums/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)  
-        - [Cлужба управления Azure API](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)  
+        - [Управление API Azure](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)  
         - [Веб-приложения службы приложений Azure](https://social.msdn.microsoft.com/forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
         - [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)  
         - [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)  
@@ -35,7 +35,7 @@ ms.locfileid: "91006245"
         - [Многофакторная идентификация Azure](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazureactiveauthentication&filter=alltypes&sort=lastpostdesc)  
         - [Сетевые возможности Azure (DNS, диспетчер трафика, VPN, VNET)](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesVirtualNetwork&filter=alltypes&sort=lastpostdesc)  
         - [Инструменты Azure для командной строки и написания скриптов](https://social.msdn.microsoft.com/forums/home?forum=azurescripting&filter=alltypes&sort=lastpostdesc)  
-        - [Служебная шина Azure](https://social.msdn.microsoft.com/forums/home?forum=servbus&filter=alltypes&sort=lastpostdesc)  
+        - [служебной шине Azure](https://social.msdn.microsoft.com/forums/home?forum=servbus&filter=alltypes&sort=lastpostdesc)  
         - [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)  
     :::column-end:::
     :::column:::
@@ -43,7 +43,7 @@ ms.locfileid: "91006245"
         - [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)  
         - [Хранилище Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)  
         - [Виртуальные машины Azure](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)  
-        - [Веб-сайтов Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
+        - [Веб-сайты Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
         - [Облачные службы (веб-роль и рабочая роль)](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)  
         - [Цены и выставление счетов](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazurepurchasing&filter=alltypes&sort=lastpostdesc)  
     :::column-end:::
@@ -53,17 +53,17 @@ ms.locfileid: "91006245"
 Вы можете очень легко начать взаимодействие с сообществом Azure.
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Найдите плитку сообщества Azure в разделе поддержки и щелкните ссылку **Центр справки**.
+2. Найдите плитку сообщества Azure в разделе поддержки и щелкните ссылку **Центр справки** .
     > [!div class="mx-imgBorder"]
-    >![Плитка сообщества Azure](_img/vs-azure-community/vs-azure-community-tile.png)
+    >![Плитка сообщества Azure](_img/vs-azure-community/vs-azure-community-tile.png "Чтобы приступить к работе, нажмите кнопку "Вызов справки" на плитке сообщества Azure.")
 
 3. Здесь вы увидите список доступных форумов.  Щелкните тот из них, который вам больше подходит.
     > [!div class="mx-imgBorder"]
-    > ![Форумы сообщества Azure](_img/vs-azure-community/vs-azure-community-forums.png)
+    > ![Форумы сообщества Azure](_img/vs-azure-community/vs-azure-community-forums.png "На странице поддержки сообщества Azure выберите нужный форум.")
 
 4. На форуме вы можете просмотреть темы и ответы, поискать ответы на свой вопрос или опубликовать новый вопрос.
     > [!div class="mx-imgBorder"]
-    > ![Пример сообщества Azure](_img/vs-azure-community/vs-azure-community-example.png)
+    > ![Пример сообщества Azure](_img/vs-azure-community/vs-azure-community-example.png "На форуме можно просмотреть разделы, найти ответы или опубликовать новые вопросы.")
 
 ## <a name="eligibility"></a>Право на участие
 Доступность преимущества сообщества Azure зависит от уровня подписки, как показано ниже.

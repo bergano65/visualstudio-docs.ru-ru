@@ -1,5 +1,7 @@
 ---
 title: Диагностика сбоев задач | Документация Майкрософт
+description: Узнайте, как диагностировать сбои задач MSBuild путем определения задачи, завершающейся сбоем, имени средства и других сведений.
+ms.custom: SEO-VS-2020
 ms.date: 09/25/2019
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89dcb8bddf2c92406ad5eff952d1f4050d7f9262
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eaf55cc529be8fc61e05d1a76096e26d965aa136
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593282"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796476"
 ---
 # <a name="diagnosing-task-failures"></a>Диагностика сбоев задач
 

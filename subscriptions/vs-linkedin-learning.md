@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 10/06/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Сведения о преимуществе LinkedIn Learning, которое входит в состав подписки LinkedIn Premium, включенной в некоторые подписки Visual Studio.
-ms.openlocfilehash: f71510b7d77ce79c1697848d505623c8994d8301
-ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
+ms.openlocfilehash: 7a5e15ad5d1101123a03b98da30d48895410313b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805894"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435855"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Преимущество LinkedIn Learning в подписках Visual Studio
 
@@ -27,7 +27,7 @@ ms.locfileid: "91805894"
 
 2. Найдите плитку LinkedIn Learning в категории "Образование" и щелкните ссылку **Получить код** .
    > [!div class="mx-imgBorder"]
-   > ![Плитка преимущества LinkedIn Learning](_img/vs-linkedin/vs-linkedin-6-month-tile.png)
+   > ![Плитка преимущества LinkedIn Learning](_img/vs-linkedin/vs-linkedin-6-month-tile.png "Щелкните "Получить код", чтобы запросить код и приступить к работе.")
 
 3. Если у вас уже есть учетная запись LinkedIn и вы вошли автоматически, вы немедленно перейдете на страницу активации преимущества LinkedIn Learning.  Если у вас есть учетная запись LinkedIn, но вы не вошли в нее автоматически, просто введите свои имя пользователя и пароль, а затем нажмите кнопку **Вход** .  Чтобы активировать предложение, перейдите к [этому шагу](#activate-your-offer).
 
@@ -57,15 +57,15 @@ ms.locfileid: "91805894"
 ### <a name="activate-your-offer"></a>Активация предложения
 15. После входа в учетную запись LinkedIn или создания новой учетной записи можно активировать подписку Premium и начать пользоваться LinkedIn Learning.  Щелкните **Активировать предложение** .
    > [!div class="mx-imgBorder"]
-   > ![Активация LinkedIn Learning](_img/vs-linkedin/vs-linkedin-Activate1.png)
+   > ![Активация LinkedIn Learning](_img/vs-linkedin/vs-linkedin-Activate1.png "Нажмите кнопку Activate your offer (Активировать предложение), чтобы начать обучение.")
 
 16. Вы можете начать знакомиться с интересующими вас навыками.  Выберите их в списке рекомендаций, выполните поиск других навыков или нажмите кнопку **Пропустить** , чтобы продолжить работу, не выбирая навыков.
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning — навыки](_img/vs-linkedin/vs-linkedin-skills.png)
+   > ![LinkedIn Learning — навыки](_img/vs-linkedin/vs-linkedin-skills.png "Выберите навыки, которые вы хотите освоить.")
 
 17. Вы успешно активировали подписку Premium и можете приступать к использованию LinkedIn Learning и других ее преимуществ.
    > [!div class="mx-imgBorder"]
-   > ![Главная страница LinkedIn Learning](_img/vs-linkedin/vs-linkedin-learning-home.png)
+   > ![Главная страница LinkedIn Learning](_img/vs-linkedin/vs-linkedin-learning-home.png "Добро пожаловать в LinkedIn Premium с поддержкой LinkedIn Learning!")
 
 ## <a name="eligibility"></a>Право на участие
 

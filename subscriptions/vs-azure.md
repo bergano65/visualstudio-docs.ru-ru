@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/28/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Сведения о том, как активировать индивидуальный кредит Azure DevTest, входящий в вашу подписку Visual Studio.
-ms.openlocfilehash: 41d85c939c05a9d29c80c15d1702258ff5b7d5e5
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: de1bfa9591a0dae409ec526429fa0496f3408703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91003850"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353100"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Использование Microsoft Azure по подпискам Visual Studio
 Подписчики Visual Studio могут использовать Microsoft Azure без дополнительной платы.  Вы получаете [ежемесячный индивидуальный кредит Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) и можете использовать Azure как персональную песочницу для разработки и тестирования.  Подготавливайте виртуальные машины, облачные службы и другие ресурсы Azure.  Размер кредита зависит от уровня подписки.
@@ -22,23 +22,23 @@ ms.locfileid: "91003850"
 
 2. Найдите элемент "Azure" в разделе "Инструменты" на странице "Преимущества" и нажмите ссылку **Активировать** в нижней части элемента "Преимущества".
    > [!div class="mx-imgBorder"]
-   > ![Плитка Azure](_img/vs-azure/vs-azure-tile.png)
+   > ![Плитка Azure](_img/vs-azure/vs-azure-tile.png "Чтобы приступить к работе, нажмите кнопку "Активировать" на плитке Azure.")
 
-3. Если у вас нет подписки Azure, вам потребуется указать сведения, необходимые для создания такой подписки.  Сначала нужно предоставить личную информацию, а затем нажать кнопку **Далее**.
+3. Если у вас нет подписки Azure, вам потребуется указать сведения, необходимые для создания такой подписки.  Сначала нужно предоставить личную информацию, а затем нажать кнопку **Далее** .
    > [!div class="mx-imgBorder"]
-   > ![Регистрация в Azure](_img/vs-azure/vs-azure-about-you.png)
+   > ![Регистрация в Azure](_img/vs-azure/vs-azure-about-you.png "Добавьте свои контактные данные в подписку Azure.")
 
-4. Затем необходимо проверить вашу личность с помощью простого кода проверки. Укажите свой номер телефона и выберите способ получения кода (текстовое сообщение или звонок).  Введите полученный код и нажмите **Проверить код**.   
+4. Затем необходимо проверить вашу личность с помощью простого кода проверки. Укажите свой номер телефона и выберите способ получения кода (текстовое сообщение или звонок).  Введите полученный код и нажмите **Проверить код** .   
    > [!div class="mx-imgBorder"]
-   > ![Подготовка Azure](_img/vs-azure/vs-azure-identity.png)
+   > ![Подготовка Azure](_img/vs-azure/vs-azure-identity.png "Запросите код проверки и введите его для продолжения.")
 
-5. На последнем шаге установите флажок, чтобы принять условия, а затем нажмите **Зарегистрироваться**.  Вот и все!
+5. На последнем шаге установите флажок, чтобы принять условия, а затем нажмите **Зарегистрироваться** .  Вот и все!
    > [!div class="mx-imgBorder"]
-   > ![Подготовка Azure](_img/vs-azure/vs-azure-agreement.png)
+   > ![Регистрация в Azure](_img/vs-azure/vs-azure-agreement.png "Нажмите кнопку "Зарегистрироваться", чтобы завершить создание подписки Azure.")
 
 0. Загрузиться панель мониторинга Azure "Центр кратких руководств".  
    > [!div class="mx-imgBorder"]
-   > ![Панель мониторинга Azure](_img/vs-azure/vs-azure-quick-start.png) 
+   > ![Панель мониторинга Azure](_img/vs-azure/vs-azure-quick-start.png "После создания подписки Azure вы будете перенаправлены на портал Azure.") 
 
 0. Добавьте [портал Azure](https://portal.azure.com) в закладки для быстрого доступа в будущем.
 
@@ -50,11 +50,11 @@ ms.locfileid: "91003850"
 
 Существует несколько способов продолжить использование ежемесячного кредита в Azure.  Чтобы сохранить ресурсы Azure, необходимо [перенести ресурсы](/azure/azure-resource-manager/management/move-resource-group-and-subscription) в другую подписку Azure вне зависимости от выбранного действия ниже. 
 
-- **Если вы приобрели подписку Visual Studio напрямую**, приобретите новую или обновите текущую подписку через Microsoft Store.  
+- **Если вы приобрели подписку Visual Studio напрямую** , приобретите новую или обновите текущую подписку через Microsoft Store.  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **Если в вашей организации есть ответственный за приобретение подписок**, [обратитесь к администратору подписки на Visual Studio](./contact-my-admin.md) и запросите подписку, предоставляющую требуемый вам ежемесячный кредит.  
+- **Если в вашей организации есть ответственный за приобретение подписок** , [обратитесь к администратору подписки на Visual Studio](./contact-my-admin.md) и запросите подписку, предоставляющую требуемый вам ежемесячный кредит.  
 - **При наличии другой активной подписки на Visual Studio** того же уровня, которая связана с другой учетной записью Майкрософт, вы можете перенести преимущество Azure в другую активную подписку на Visual Studio, [добавив альтернативную учетную запись](./manage-vs-subscriptions.md#managing-my-profile) на [портале подписок](https://my.visualstudio.com/subscriptions) Visual Studio.  
 
 Таблица "Право на участие" ниже показывает, сколько кредитов включает каждый тип подписки.  

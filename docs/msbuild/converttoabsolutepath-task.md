@@ -1,5 +1,7 @@
 ---
 title: Задача ConvertToAbsolutePath | Документы Майкрософт
+description: Используйте задачу ConvertToAbsolutePath MSBuild для преобразования относительного пути или ссылки в абсолютный путь.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ce6fcad3897443f178c45d84e16f4cff44ab03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ecf9695b36f341fa350abf53062e70095c03c374
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634387"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796164"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath - задача
 
@@ -31,18 +33,18 @@ ms.locfileid: "77634387"
 
 ## <a name="task-parameters"></a>Параметры задачи
 
- В следующей таблице приводятся параметры задачи `ConvertToAbsolutePath`.
+ В следующей таблице приводятся параметры задачи `ConvertToAbsolutePath` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |`Paths`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Список относительных путей, подлежащих преобразованию в абсолютные пути.|
 |`AbsolutePaths`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Список абсолютных путей для переданных элементов.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

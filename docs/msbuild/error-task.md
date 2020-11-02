@@ -1,5 +1,7 @@
 ---
 title: Задача Error | Документы Майкрософт
+description: Используйте задачу Error MSBuild, чтобы остановить сборку и зарегистрировать ошибку на основе вычисленного условного оператора.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd5dd3214c9575a34e9265c33061b024648a221c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2b451f9c3074af7d621576336ea3bf0e05ebea3
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634231"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436639"
 ---
 # <a name="error-task"></a>Error - задача
 
@@ -40,7 +42,7 @@ ms.locfileid: "77634231"
 | `HelpKeyword` | Необязательный параметр `String`.<br /><br /> Ключевое слово справки, связанное с ошибкой. |
 | `Text` | Необязательный параметр `String`.<br /><br /> Текст ошибки, регистрируемый в журнале MSBuild, если результат вычисления параметра `Condition` оказывается равным `true`. |
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Задача `Error` позволяет передавать текст ошибок в средства ведения журнала и останавливать выполнение сборки в проектах MSBuild.
 

@@ -1,5 +1,7 @@
 ---
 title: Задача GetFrameworkPath | Документы Майкрософт
+description: Узнайте, как использовать задачу GetFrameworkPath MSBuild для получения пути к сборкам .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8d54a1029805066f5477cb552f5fcf3f2e09598b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634010"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436841"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath - задача
 
@@ -43,7 +45,7 @@ ms.locfileid: "77634010"
 |`FrameworkVersion40Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к сборкам платформы .NET Framework версии 4.0, если они есть. В противном случае возвращает значение `null`.|
 |`Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к самым новым сборкам платформы, если они есть. В противном случае возвращает значение `null`.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Если установлено несколько версий .NET Framework, эта задача возвращает версию, для которой предназначен MSBuild.
 
