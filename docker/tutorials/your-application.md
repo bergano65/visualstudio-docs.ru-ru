@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: d4538becdf7627cc63ac94f65ac456123c5d9c47
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a66b747eda633d666518bf2d8a48328a25e038d2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739984"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046194"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Сборка и запуск примера приложения Todo
 
@@ -26,7 +26,9 @@ ms.locfileid: "90739984"
 
 ## <a name="get-the-app"></a>Получение приложения
 
-Перед запуском приложения необходимо получить исходный код приложения на компьютере. Для реальных проектов обычно клонируется репозиторий. Но в этом учебнике вы создали ZIP-файл, содержащий приложение.
+Перед запуском приложения необходимо получить исходный код приложения на компьютере. Для реальных проектов обычно клонируется репозиторий. Но в этом учебнике мы создали ZIP-файл, содержащий приложение.
+
+1. Убедитесь, что на локальном компьютере установлен Docker для Windows или Docker Community Edition. См. [документацию по установке Docker для Windows](https://docs.docker.com/docker-for-windows/install/). Процесс установки создает ZIP-файл, содержащий пример, доступный по адресу localhost.
 
 1. [Скачайте ZIP-файл](http://localhost/assets/app.zip). Откройте ZIP-файл и извлеките его содержимое.
 
