@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 04/17/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Сведения о том, как скачать и установить Visual Studio IDE, входящую в вашу подписку Visual Studio.
-ms.openlocfilehash: e955cc0c9e2437da07e48fc7db1c1b4df9e168e7
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 2baf2e452e86d44d814e3f4a511ebb5442b83578
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006310"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435753"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Использование преимущества Visual Studio 2019
 
@@ -26,7 +26,7 @@ ms.locfileid: "91006310"
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Найдите плитку "Visual Studio IDE" в разделе "Средства" и щелкните ссылку **Получить код** в левой нижней части плитки преимущества.  Вы также можете скачать ее со страницы [Загрузки](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
    > [!div class="mx-imgBorder"]
-   > ![Плитка Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png)
+   > ![Плитка Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png "Нажмите кнопку "Скачать" на плитке Visual Studio, чтобы установить Visual Studio.")
 
 3. Вы будете перенаправлены на страницу Visual Studio "Скачать результаты", где сможете скачать интегрированную среду разработки и получить ключ продукта для ее активации. Вы также можете запросить ключ продукта, нажав синюю ссылку **Получить ключ** или отправив запрос со страницы [Ключи продуктов](https://my.visualstudio.com/productkeys).
 4. На вкладке "Сведения" на странице "Скачать результаты" сделайте следующее:
@@ -34,28 +34,28 @@ ms.locfileid: "91006310"
    - Выберите предпочитаемый язык.
 5. Нажмите синюю кнопку "Скачать".
    > [!div class="mx-imgBorder"]
-   > ![Сведения о скачивании Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-download-details.png)
-6. Дважды щелкните скачанный пакет установщика.  При появлении запроса на установку, щелкните **Запустить**.
-7. В диалоговом окне "Контроль учетных записей пользователей" щелкните **Да**.
-8. Нажмите кнопку **Продолжить**, чтобы принять условия лицензионного соглашения.
+   > ![Сведения о скачивании Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-download-details.png "Нажмите кнопку "Скачать", чтобы начать скачивание.")
+6. Дважды щелкните скачанный пакет установщика.  При появлении запроса на установку, щелкните **Запустить** .
+7. В диалоговом окне "Контроль учетных записей пользователей" щелкните **Да** .
+8. Нажмите кнопку **Продолжить** , чтобы принять условия лицензионного соглашения.
 9. При запуске установщика выберите нужные рабочие нагрузки, отдельные компоненты и языковые пакеты на соответствующих вкладках.
    > [!div class="mx-imgBorder"]
-   > ![Настройка Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
+   > ![Настройка Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png "Выберите рабочие нагрузки и другие компоненты.")
 
-10. Нажмите кнопку **Установить**.
+10. Нажмите кнопку **Установить** .
 
-11. По завершении установки вы сможете изменить ее или запустить Visual Studio.  Щелкните **Запустить**, чтобы начать работу.  Если установлено несколько версий, они будут перечислены в списке.
+11. По завершении установки вы сможете изменить ее или запустить Visual Studio.  Щелкните **Запустить** , чтобы начать работу.  Если установлено несколько версий, они будут перечислены в списке.
     > [!div class="mx-imgBorder"]
-    > ![Запуск Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png)
+    > ![Запуск Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png "Нажмите кнопку "Запустить", чтобы запустить Visual Studio.")
 
 12. Войдите в учетную запись, связанную с вашей подпиской Visual Studio.
 
-13. Выберите предпочитаемую тему и щелкните **Запустить Visual Studio**.
+13. Выберите предпочитаемую тему и щелкните **Запустить Visual Studio** .
 
 14. Открывается Visual Studio. Теперь вы готовы начать работу с Visual Studio.
 
     > [!div class="mx-imgBorder"]
-    > ![Начало работы с Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+    > ![Начало работы с Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png "Вас приветствует Visual Studio!")
 
 
 ## <a name="eligibility"></a>Право на участие
