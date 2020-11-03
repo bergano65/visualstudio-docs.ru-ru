@@ -1492,3 +1492,8 @@
       href: ide/developer-community-guidelines.md
     - name: Конфиденциальность данных сообщества разработчиков
       href: ide/developer-community-privacy.md
+- name: Visual Studio 2015
+  expanded: true
+  items:
+    - name: "Документация по Visual Studio\_2015"
+      href: vs-2015-archive.md
