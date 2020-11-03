@@ -1,5 +1,7 @@
 ---
 title: Создание средства ведения журнала переадресации | Документы Майкрософт
+description: Создание средств ведения журналов переадресации MSBuild, повышающих эффективность ведения журналов за счет возможности выбирать события, которые требуется отслеживать при сборке проектов в многопроцессорной системе.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852b783129f130316de88580020e0139925ffb37
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25f8a876ddd4c5c222b608dcea51f98816679181
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634309"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796580"
 ---
 # <a name="create-forwarding-loggers"></a>Создание средства ведения журнала с перенаправлением
 
@@ -36,13 +38,13 @@ ms.locfileid: "77634309"
 
 ## <a name="specify-a-forwarding-logger"></a>Указание средства ведения журнала переадресации
 
- Когда средство ведения журнала переадресации скомпилировано в сборку, в MSBuild нужно передать информацию о том, что это средство ведения журнала следует использовать во время сборки. Для этого используйте параметры `-FileLogger`, `-FileLoggerParameters` и `-DistributedFileLogger` вместе с *MSBuild.exe*. Параметр `-FileLogger` сообщает *MSBuild.exe*, что средство ведения журнала подключено напрямую. Параметр `-DistributedFileLogger` означает, что файл журнала присутствует на каждом узле. Чтобы задать параметры средства ведения журнала переадресации, используйте параметр `-FileLoggerParameters`. Дополнительные сведения об этих и других параметрах *MSBuild.exe* см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).
+ Когда средство ведения журнала переадресации скомпилировано в сборку, в MSBuild нужно передать информацию о том, что это средство ведения журнала следует использовать во время сборки. Для этого используйте параметры `-FileLogger`, `-FileLoggerParameters` и `-DistributedFileLogger` вместе с *MSBuild.exe*. Параметр `-FileLogger` сообщает *MSBuild.exe* , что средство ведения журнала подключено напрямую. Параметр `-DistributedFileLogger` означает, что файл журнала присутствует на каждом узле. Чтобы задать параметры средства ведения журнала переадресации, используйте параметр `-FileLoggerParameters`. Дополнительные сведения об этих и других параметрах *MSBuild.exe* см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="multi-processor-aware-loggers"></a>Средства ведения журнала с поддержкой многопроцессорности
 
  При сборке проекта в многопроцессорной системе сообщения о сборке от каждого процессора не чередуются автоматически в определенной последовательности. Вместо этого нужно назначить приоритет группирования сообщений с помощью класса <xref:Microsoft.Build.Framework.BuildEventContext>, который присоединяется к каждому сообщению. Дополнительные сведения о сборке в многопроцессорной среде см. в разделе [Ведение журнала в многопроцессорной среде](../msbuild/logging-in-a-multi-processor-environment.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Средства ведения журнала сборки](../msbuild/build-loggers.md)
