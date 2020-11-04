@@ -44,6 +44,8 @@
       href: using-the-subscriber-portal.md
     - name: Управление подписками
       href: manage-vs-subscriptions.md
+    - name: При истечении срока подписки
+      href: subscription-expiration.md
     - name: Обратитесь к администратору подписок
       href: contact-my-admin.md
     - name: Преимущества
