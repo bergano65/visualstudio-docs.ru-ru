@@ -1,5 +1,6 @@
 ---
 title: Сочетания клавиш по умолчанию для часто используемых команд
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64c3a163f706898dfb358b15279e62729f40cf84
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596727"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045664"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Популярные сочетания клавиш в Visual Studio
 
@@ -21,7 +22,7 @@ ms.locfileid: "75596727"
 *Глобальный* контекст означает, что сочетание применяется в любом окне инструментов в Visual Studio.
 
 > [!NOTE]
-> Сочетание клавиш для той или иной команды можно [определить](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md), открыв диалоговое окно **Параметры**, развернув узел **Среда** и выбрав элемент **Клавиатура**.
+> Сочетание клавиш для той или иной команды можно [определить](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md), открыв диалоговое окно **Параметры** , развернув узел **Среда** и выбрав элемент **Клавиатура**.
 
 ## <a name="build"></a>Сборка
 
@@ -57,9 +58,9 @@ ms.locfileid: "75596727"
 |Команды|Сочетания клавиш [контексты]|
 |--------------| - |
 |Edit.BreakLine|**ВВОД** [текстовый редактор, конструктор отчетов, конструктор Windows Forms]<br /><br />или **SHIFT+ВВОД** [текстовый редактор]|
-|Edit.CollapseToDefinitions|**CTRL+M**, **CTRL+O** [текстовый редактор]|
-|Edit.CommentSelection|**CTRL+K**, **CTRL+C** [текстовый редактор]|
-|Edit.CompleteWord|**ALT+СТРЕЛКА ВПРАВО** [текстовый редактор, конструктор рабочих процессов]<br /><br />или **CTRL+ПРОБЕЛ** [текстовый редактор, конструктор рабочих процессов]<br /><br />или **CTRL+K**, **W** [конструктор рабочих процессов]<br /><br />или **CTRL+K, CTRL+W** [конструктор рабочих процессов]|
+|Edit.CollapseToDefinitions|**CTRL+M** , **CTRL+O** [текстовый редактор]|
+|Edit.CommentSelection|**CTRL+K** , **CTRL+C** [текстовый редактор]|
+|Edit.CompleteWord|**ALT+СТРЕЛКА ВПРАВО** [текстовый редактор, конструктор рабочих процессов]<br /><br />или **CTRL+ПРОБЕЛ** [текстовый редактор, конструктор рабочих процессов]<br /><br />или **CTRL+K** , **W** [конструктор рабочих процессов]<br /><br />или **CTRL+K, CTRL+W** [конструктор рабочих процессов]|
 |Edit.Copy|**CTRL+C** [глобальный]<br /><br />или **CTRL+INSERT** [глобальный]|
 |Edit.Cut|**CTRL+X** [глобальный]<br /><br />или **SHIFT+DELETE** [глобальный]|
 |Edit.Delete|**DELETE** [глобальный, Team Explorer]<br /><br />или **SHIFT+DELETE** [схема последовательностей, схема действий UML, схема слоев]<br /><br />или **CTRL+DELETE** [схема классов]|
@@ -75,7 +76,7 @@ ms.locfileid: "75596727"
 |Edit.GoToDefinition|**F12**|
 |Edit.GoToFindCombo|**CTRL+D** [глобальный]|
 |Edit.GoToNextLocation|**F8** [глобальный]|
-|Edit.InsertSnippet|**CTRL+K**, **CTRL+X** [глобальный]|
+|Edit.InsertSnippet|**CTRL+K** , **CTRL+X** [глобальный]|
 |Edit.InsertTab|**TAB** [конструктор отчетов, конструктор Windows Forms, текстовый редактор]|
 |Edit.LineCut|**CTRL+L** [текстовый редактор]|
 |Edit.LineDownExtendColumn|**SHIFT+ALT+СТРЕЛКА ВНИЗ** [текстовый редактор]|
