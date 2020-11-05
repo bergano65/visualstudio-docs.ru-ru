@@ -3,18 +3,17 @@ title: Добавление Application Insights Azure с помощью Под�
 description: Добавление Application Insights Azure в приложение с помощью Visual Studio для добавления подключенной службы
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: c15e7a14052efdab82388a950865557cb4425771
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d279de29664dcfc17ebd719fafc95d197a3352a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643291"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398674"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>Добавление Application Insights Azure с помощью Visual Studio Подключенные службы
 
@@ -43,7 +42,7 @@ ms.locfileid: "88643291"
 
 1. Откройте проект в Visual Studio.
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши узел **подключенные службы** и в контекстном меню выберите команду **Добавить подключенную службу**.
+1. В **Обозреватель решений** щелкните правой кнопкой мыши узел **подключенные службы** и в контекстном меню выберите команду **Добавить подключенную службу**.
 
 1. На вкладке **подключенные службы** выберите значок + для **зависимости службы**.
 
@@ -83,7 +82,7 @@ ms.locfileid: "88643291"
 
    ![Зависимости служб](./media/azure-app-insights-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Страница продукта Azure Monitor](https://azure.microsoft.com/services/monitor/)
 - [Документация по Azure App Insights](/azure/azure-monitor/app/app-insights-overview/)

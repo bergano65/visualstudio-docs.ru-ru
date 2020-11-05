@@ -4,17 +4,16 @@ description: Узнайте, как получить доступ к ресур�
 author: ghogen
 manager: jillfra
 assetId: 9d733c8d-703b-44e7-a210-bb75874c45c8
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: 6c1b46e34c688f232ee1f774ff2d19fdad7ff6bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 136c7f4f497c21de24e34c4c426707de94151ddf
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280392"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398739"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>Доступ к частным облакам Azure с помощью Visual Studio
 
@@ -22,11 +21,11 @@ ms.locfileid: "85280392"
 
 1. Скачайте файл параметров публикации с портала Azure для частного облака или запросите этот файл у администратора. (Файл с расширением `.publishsettings`.)
 
-1. В **обозревателе сервера** Visual Studio щелкните правой кнопкой мыши узел **Azure**, а затем выберите **Manage and Filter Subscriptions** (Управление подписками и их фильтрация).
+1. В **обозревателе сервера** Visual Studio щелкните правой кнопкой мыши узел **Azure** , а затем выберите **Manage and Filter Subscriptions** (Управление подписками и их фильтрация).
 
     ![Команда "Управление подписками"](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790778.png)
 
-1. В диалоговом окне **Управление подписками Microsoft Azure** выберите вкладку **Сертификаты**, затем нажмите кнопку **Импорт**.
+1. В диалоговом окне **Управление подписками Microsoft Azure** выберите вкладку **Сертификаты** , затем нажмите кнопку **Импорт**.
 
     ![Импорт сертификатов Azure](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790779.png)
 

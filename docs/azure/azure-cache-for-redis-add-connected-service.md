@@ -3,18 +3,17 @@ title: Добавление кэша Azure для Redis с помощью Под
 description: Добавление в приложение кэша Azure для поддержки Redis с помощью Visual Studio для добавления подключенной службы
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 7583848c4bbe38f9094c60998e16ca3e95cf399f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48554484781cca46ba96f8a075d18ea55ec3ef43
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643279"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398622"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>Добавление кэша Azure для Redis с помощью Visual Studio Подключенные службы
 
@@ -43,7 +42,7 @@ ms.locfileid: "88643279"
 
 1. Откройте проект в Visual Studio.
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши узел **подключенные службы** и в контекстном меню выберите команду **Добавить подключенную службу**.
+1. В **Обозреватель решений** щелкните правой кнопкой мыши узел **подключенные службы** и в контекстном меню выберите команду **Добавить подключенную службу**.
 
 1. На вкладке **подключенные службы** выберите значок + для **зависимости службы**.
 
@@ -83,7 +82,7 @@ ms.locfileid: "88643279"
 
    ![Зависимости служб](./media/azure-redis-cache-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Страница "кэш Azure для Redis продукта"](https://azure.microsoft.com/services/cache)
 - [Документация по кэшу Azure для Redis](/azure/azure-cache-for-redis/)

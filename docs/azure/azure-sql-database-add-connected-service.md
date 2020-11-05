@@ -3,18 +3,17 @@ title: Добавление подключения в базу данных SQL 
 description: Добавление подключения к базе данных SQL Azure в приложение с помощью Visual Studio Подключенные службы
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: e1594ea4239b4200bf72ec4a2ef2c558839ef95c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09ae5768e55ae3e08ec2549faeb7cefa70a5edd1
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643249"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399051"
 ---
 # <a name="add-a-connection-to-azure-sql-database"></a>Добавление подключения к базе данных SQL Azure
 
@@ -43,7 +42,7 @@ ms.locfileid: "88643249"
 
 1. Откройте проект в Visual Studio.
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши узел **подключенные службы** и в контекстном меню выберите команду **Добавить подключенную службу**.
+1. В **Обозреватель решений** щелкните правой кнопкой мыши узел **подключенные службы** и в контекстном меню выберите команду **Добавить подключенную службу**.
 
 1. На вкладке **подключенные службы** выберите значок + для **зависимости службы**.
 
@@ -87,7 +86,7 @@ ms.locfileid: "88643249"
 
    ![Зависимости служб](./media/azure-sql-database-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Страница продукта базы данных SQL Azure](https://azure.microsoft.com/services/sql-database/)
 - [Документация по базе данных SQL Azure](/azure/azure-sql/database/)

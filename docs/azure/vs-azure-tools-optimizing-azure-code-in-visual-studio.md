@@ -5,16 +5,15 @@ author: ghogen
 manager: jillfra
 ms.assetid: ed48ee06-e2d2-4322-af22-07200fb16987
 ms.topic: conceptual
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 3ee226aac0d705da29333260966781d5b9b627ed
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 853b51fb5990d74a79f76cc55743ff9ba50f282e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508461"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399783"
 ---
 # <a name="optimizing-your-azure-code"></a>Оптимизация кода Azure
 Существуют определенные принципы программирования, позволяющие избежать проблем с масштабированием, поведением и производительностью приложений, использующих Microsoft Azure, в облачной среде. Майкрософт предлагает инструмент анализа кода Azure, который распознает и идентифицирует часто встречающиеся проблемы, а также помогает их решить. Его можно загрузить в Visual Studio на платформе NuGet.
@@ -115,12 +114,12 @@ BrokeredMessage receivedMessage = sc.Receive();
 AP2002
 
 ### <a name="description"></a>Описание
-Чтобы избежать вхождения в "цикл получения", для получения сообщений лучше использовать вызов метода **OnMessage**, чем вызов метода **Receive**. Но если необходимо использовать метод **Receive** и задать время ожидания сервера, отличное от значения по умолчанию, убедитесь, что время ожидания сервера превышает одну минуту.
+Чтобы избежать вхождения в "цикл получения", для получения сообщений лучше использовать вызов метода **OnMessage** , чем вызов метода **Receive**. Но если необходимо использовать метод **Receive** и задать время ожидания сервера, отличное от значения по умолчанию, убедитесь, что время ожидания сервера превышает одну минуту.
 
 Делитесь своими идеями и предложениями на [странице отзывов об анализе кода Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Причина
-При вызове метода **OnMessage**клиент начинает процесс обработки внутренних сообщений, который постоянно опрашивает очередь или подписку. Этот процесс обработки сообщений содержит бесконечный цикл, который отправляет вызов для получения сообщений. Если время ожидания вызова истекает, выдается новый вызов. Интервал времени ожидания определяется по значению свойства [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) используемого [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory).
+При вызове метода **OnMessage** клиент начинает процесс обработки внутренних сообщений, который постоянно опрашивает очередь или подписку. Этот процесс обработки сообщений содержит бесконечный цикл, который отправляет вызов для получения сообщений. Если время ожидания вызова истекает, выдается новый вызов. Интервал времени ожидания определяется по значению свойства [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) используемого [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory).
 
 Преимущество метода **OnMessage** по сравнению с методом **Receive** заключается в том, что пользователям не требуется вручную извлекать сообщения, обрабатывать исключения, параллельно обрабатывать несколько сообщений и завершать сообщения.
 
@@ -460,5 +459,5 @@ public class BlogsController : Controller
     }
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 Дополнительные сведения об оптимизации и устранении неполадок приложений Azure см. в статье [Устранение неполадок веб-приложения в службе приложений Azure с помощью Visual Studio](/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio).

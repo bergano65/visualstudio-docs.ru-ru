@@ -3,18 +3,17 @@ title: Добавление Azure SignalR с помощью Подключенн
 description: Добавление в приложение Azure SignalR с помощью Visual Studio для добавления подключенной службы
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 0e44416bd6a55796b62a7590856caab8466a6401
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c61d91ed3824d3ed9c33f579c321e471edb5a4e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643252"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398986"
 ---
 # <a name="add-azure-signalr-by-using-visual-studio-connected-services"></a>Добавление Azure SignalR с помощью Visual Studio Подключенные службы
 
@@ -43,7 +42,7 @@ ms.locfileid: "88643252"
 
 1. Откройте проект в Visual Studio.
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши узел **подключенные службы** и в контекстном меню выберите команду **Добавить подключенную службу**.
+1. В **Обозреватель решений** щелкните правой кнопкой мыши узел **подключенные службы** и в контекстном меню выберите команду **Добавить подключенную службу**.
 
 1. На вкладке **подключенные службы** выберите значок + для **зависимости службы**.
 
@@ -83,7 +82,7 @@ ms.locfileid: "88643252"
 
    ![Зависимости служб](./media/azure-signalr-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Страница продукта Azure SignalR](https://azure.microsoft.com/services/signalr-service/)
 - [Документация по Службе Azure SignalR](/azure/azure-signalr)

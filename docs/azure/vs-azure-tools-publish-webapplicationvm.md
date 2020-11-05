@@ -4,17 +4,16 @@ description: Узнайте, как развернуть веб-приложен
 author: ghogen
 manager: jillfra
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: dd7102873047ed7331547225fa0b32efd33f853f
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: dc8c6083cb0abdcbd8bcd51de717a383cabb5068
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508422"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398570"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (сценарий Windows PowerShell)
 Развертывание веб-приложения на виртуальной машине. и создает необходимые ресурсы в подписке Azure, если они еще не созданы.
@@ -107,7 +106,7 @@ Publish-WebApplicationVM
 | Принимать входные данные конвейера? |false |
 | Принимать символы-шаблоны? |false |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 Подробное описание того, как использовать сценарий для создания сред разработки и тестирования, см. в статье [Использование скриптов Windows PowerShell для публикации в среды разработки и тестирования](vs-azure-tools-publishing-using-powershell-scripts.md).
 
 В файле конфигурации JSON указаны данные объектов, которые необходимо развернуть. Он содержит сведения, указанные при создании проекта, например имя, группу сходства, образ виртуального жесткого диска и размер виртуальной машины. Он также включает конечные точки виртуальной машины, подготавливаемые базы данных (если они есть) и параметры веб-развертывания. В следующем коде показан пример файла конфигурации JSON.

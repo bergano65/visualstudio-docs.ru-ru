@@ -3,18 +3,17 @@ title: Добавление Azure CosmosDB с помощью Подключен�
 description: Добавление в приложение поддержки CosmosDB Azure с помощью Visual Studio для добавления подключенной службы
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2d23081f541fbc12581450c60c6eb4b09f20c64a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bdf07824c7a06a692a81a93eaa5a0fd0536705d
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643273"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398375"
 ---
 # <a name="add-azure-cosmos-db-to-your-app-by-using-visual-studio-connected-services"></a>Добавление Azure Cosmos DB в приложение с помощью Visual Studio Подключенные службы
 
@@ -43,7 +42,7 @@ ms.locfileid: "88643273"
 
 1. Откройте проект в Visual Studio.
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши узел **подключенные службы** и в контекстном меню выберите команду **Добавить подключенную службу**.
+1. В **Обозреватель решений** щелкните правой кнопкой мыши узел **подключенные службы** и в контекстном меню выберите команду **Добавить подключенную службу**.
 
 1. На вкладке **подключенные службы** выберите значок + для **зависимости службы**.
 
@@ -83,7 +82,7 @@ ms.locfileid: "88643273"
 
    ![Зависимости служб](./media/azure-cosmosdb-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Страница продукта Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/)
 - [Документация по Azure Cosmos DB](/azure/cosmos-db/)
