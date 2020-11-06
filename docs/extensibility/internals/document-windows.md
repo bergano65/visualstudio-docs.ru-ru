@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93d8b19569912278f0dea6d849e3a2c6e183dba4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ca834a5414c73f6acf6ac744620a46bba54b8fbf
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584902"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413740"
 ---
 # <a name="document-windows"></a>Окна документов
 В Visual Studio *окно документа* является дочерним окном с фреймами, связанным с окном многодокументного интерфейса (MDI). Окна документов обычно используются для просмотра и изменения исходного кода или текста, но они также могут содержать другие функциональные типы. Окна документов:
@@ -33,7 +33,7 @@ ms.locfileid: "91584902"
   Дополнительные сведения о поведении окон в Visual Studio см. в разделе [Настройка макетов окон](../../ide/customizing-window-layouts-in-visual-studio.md).
 
 ## <a name="document-window-implementation"></a>Реализация окна документа
- Окна документов создаются путем реализации редактора. <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>Интерфейс создает окна документов в процессе создания экземпляра редактора. Дополнительные сведения см. [в разделе устаревшие интерфейсы в редакторе](../../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015&preserve-view=true).
+ Окна документов создаются путем реализации редактора. <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>Интерфейс создает окна документов в процессе создания экземпляра редактора. Дополнительные сведения см. [в разделе устаревшие интерфейсы в редакторе](/previous-versions/visualstudio/visual-studio-2015/extensibility/legacy-interfaces-in-the-editor?preserve-view=true&view=vs-2015).
 
 > [!NOTE]
 > Чтобы обеспечить обратную и прямую точку навигации в окне, реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> интерфейс. Текстовый редактор использует текстовые маркеры для обнаружения точек перехода в документе.

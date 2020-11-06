@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a68273f4fbb2f66986c18c692b91b6e1829a4c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 3b0c785bef80f59c165f251b2986f0db1eb8bc63
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049225"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414481"
 ---
 # <a name="xaml-errors-and-warnings"></a>Ошибки и предупреждения XAML
 
@@ -32,14 +32,14 @@ ms.locfileid: "93049225"
 |Операция "Изменить и продолжить" XAML|XECxxxx| Visual Studio 2019 версии 16,1 или более ранней |
 |Горячая перезагрузка XAML | ксхркскскскс | Visual Studio 2019 версии 16,2 или более поздней |
 
-Дополнительные сведения об изменении фирменной символики для изменения XAML & continue как Горячая перезагрузка XAML см. в [заметках о выпуске](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)
+Дополнительные сведения об изменении фирменной символики для изменения XAML & continue как Горячая перезагрузка XAML см. в [заметках о выпуске](/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)
 
 > [!Note]
 > Некоторые ошибки или предупреждения не имеют соответствующего кода. Как правило, это ошибки, обнаруженные при помощи конструктора XAML.
 
 ## <a name="suppress-xaml-designer-errors"></a>Скрытие ошибок конструктора XAML
 
-Щелкните **Сервис > Параметры** и последовательно выберите **Текстовый редактор > XAML > Разное** , чтоб открыть диалоговое окно **Параметры** .
+Щелкните **Сервис > Параметры** и последовательно выберите **Текстовый редактор > XAML > Разное** , чтоб открыть диалоговое окно **Параметры**.
 
 Снимите флажок **Show errors detected by the XAML designer** (Показывать ошибки, обнаруженные при помощи конструктора XAML).
 

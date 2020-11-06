@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aa4ad83428120c68adb89937afc46f51700dbfe
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 111eb74d388682ff3cf97d5e0aa7e7e5a91cbaf3
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583675"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414195"
 ---
 # <a name="checklist-create-new-project-types"></a>Контрольный список: создание новых типов проектов
 Для создания нового типа проекта необходимо выполнить несколько задач. В следующем контрольном списке приведено руководство по этим задачам.
@@ -33,7 +33,7 @@ ms.locfileid: "91583675"
 
     - Фабрика проектов для управления созданием новых проектов и открытия существующих проектов. Дополнительные сведения см. в статье [Создание экземпляров проектов с помощью фабрик проекта](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).
 
-    - Иерархия проектов и обработка команд. Дополнительные сведения см. в статьях [Использование классов проектов HierUtil7 для реализации типа проекта (C++)](/previous-versions/bb166212(v=vs.100)), [элементов модели проекта](../../extensibility/internals/elements-of-a-project-model.md), [основных компонентов модели проекта](../../extensibility/internals/project-model-core-components.md), а [команды MenuCommand и олеменукоммандс](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
+    - Иерархия проектов и обработка команд. Дополнительные сведения см. в статьях [Использование классов проектов HierUtil7 для реализации типа проекта (C++)](/previous-versions/bb166212(v=vs.100)), [элементов модели проекта](../../extensibility/internals/elements-of-a-project-model.md), [основных компонентов модели проекта](../../extensibility/internals/project-model-core-components.md), а [команды MenuCommand и олеменукоммандс](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015).
 
     - Управление элементами проекта, включая добавление проекта в диалоговое окно **Новый проект** . Дополнительные сведения см. в статьях [Добавление шаблонов проектов и элементов проектов](../../extensibility/internals/adding-project-and-project-item-templates.md) и [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md).
 
@@ -49,13 +49,13 @@ ms.locfileid: "91583675"
 
     - Объекты, или классы, производные от `IDispatch` , доступны для автоматизации.
 
-    - Файлы таблицы команд XML (*. vsct*). Дополнительные сведения см. в разделе [файлы командных таблиц Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+    - Файлы таблицы команд XML ( *. vsct* ). Дополнительные сведения см. в разделе [файлы командных таблиц Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 6. Тестирование, отладка и запуск типа проекта.
 
 7. Откройте проект на вкладке **проект** диалогового окна **Добавление ссылки** , задав в `VARIANT_TRUE` качестве значения параметра `VSHPROPID_ShowProjInSolutionPage` . Дополнительные сведения см. в разделах <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>.
 
-8. Создайте файл установщика Microsoft (*MSI*) для установки пакетов VSPackage. Дополнительные сведения см. в статьях [Установка пакетов VSPackage с установщик Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [регистрация типа проекта](../../extensibility/internals/registering-a-project-type.md)и [пакетов VSPackage](../../extensibility/internals/vspackages.md).
+8. Создайте файл установщика Microsoft ( *MSI* ) для установки пакетов VSPackage. Дополнительные сведения см. в статьях [Установка пакетов VSPackage с установщик Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [регистрация типа проекта](../../extensibility/internals/registering-a-project-type.md)и [пакетов VSPackage](../../extensibility/internals/vspackages.md).
 
 ## <a name="see-also"></a>См. также
 - [Иерархии в Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

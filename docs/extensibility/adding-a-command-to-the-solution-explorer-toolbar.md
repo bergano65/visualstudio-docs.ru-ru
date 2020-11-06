@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32b7de4d3e62c2f1d9de5126217ccede48dfca8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7cc2eee209129867696955eb22c9e851c17973c1
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583701"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414105"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Добавление команды на панель инструментов обозреватель решений
 В этом пошаговом руководстве показано, как добавить кнопку на панель инструментов **Обозреватель решений** .
@@ -27,9 +27,9 @@ ms.locfileid: "91583701"
  Дополнительные сведения о меню, командах панелей инструментов и файлах *vsct* см. в разделе [команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
-> Используйте файлы таблицы команд XML (*vsct*) вместо файлов конфигурации командной таблицы (*. CTC*), чтобы определить, как меню и команды отображаются в пакетах VSPackage. Дополнительные сведения см. в разделе [Командная таблица Visual Studio (. Vsct) файлы](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> Используйте файлы таблицы команд XML ( *vsct* ) вместо файлов конфигурации командной таблицы ( *. CTC* ), чтобы определить, как меню и команды отображаются в пакетах VSPackage. Дополнительные сведения см. в разделе [Командная таблица Visual Studio (. Vsct) файлы](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Обязательные условия
  Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в разделе Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-an-extension-with-a-menu-command"></a>Создание расширения с помощью команды меню
@@ -80,7 +80,7 @@ ms.locfileid: "91583701"
 
 ### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Отображение кнопки при открытии одного или нескольких проектов
 
-1. В `<Buttons>` разделе *тулбарбуттонпаккаже. vsct*добавьте два флага команды в существующий `<Button>` элемент между `<Strings>` `<Icons>` тегами и.
+1. В `<Buttons>` разделе *тулбарбуттонпаккаже. vsct* добавьте два флага команды в существующий `<Button>` элемент между `<Strings>` `<Icons>` тегами и.
 
    ```xml
    <CommandFlag>DefaultInvisible</CommandFlag>
@@ -114,7 +114,7 @@ ms.locfileid: "91583701"
 
 5. В меню **Файл** выберите пункт **Закрыть решение**. Кнопка исчезает с панели инструментов.
 
-   Видимость кнопки контролируется [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] до тех пор, пока не будет загружен пакет VSPackage. После загрузки VSPackage видимость кнопки управляется пакетом VSPackage.  Дополнительные сведения см. в разделе [команды MenuCommand и олеменукоммандс](../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
+   Видимость кнопки контролируется [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] до тех пор, пока не будет загружен пакет VSPackage. После загрузки VSPackage видимость кнопки управляется пакетом VSPackage.  Дополнительные сведения см. в разделе [команды MenuCommand и олеменукоммандс](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015).
 
 ## <a name="see-also"></a>См. также
 - [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
