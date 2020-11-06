@@ -15,12 +15,12 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: 12b9bc70efeb9a64e7847ffa7521acd119b08c9d
-  ms.sourcegitcommit: 677de234a37d615ab52f54be0d23be0a8797b4f6
+  ms.openlocfilehash: ddddea310637a4afd96210441e0c842aaed18c00
+  ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 10/23/2020
-  ms.locfileid: "92493975"
+  ms.lasthandoff: 11/06/2020
+  ms.locfileid: "93414533"
 productDirectory:
   items:
   - title: Visual Studio
@@ -29,7 +29,7 @@ productDirectory:
     - url: ./windows/index.yml?view=vs-2019&preserve-view=true
       text: Visual Studio 2019 (текущая версия)
     - url: ./windows/index.yml?view=vs-2017&preserve-view=true
-      text: Visual Studio 2017
+      text: Visual Studio 2017
     - url: /previous-versions/visualstudio/
       text: Предыдущие версии
     - url: /visualstudio/releases/2019/release-notes
@@ -63,7 +63,7 @@ productDirectory:
       text: Документация
     - url: https://code.visualstudio.com/docs/remote/codespaces/
       text: Использование с помощью Visual Studio Code
-    - url: https://docs.microsoft.com/visualstudio/ide/codespaces/use-visual-studio-with-codespaces/
+    - url: ./ide/codespaces/use-visual-studio-with-codespaces.md
       text: Использование с помощью Visual Studio
     - url: https://github.com/features/codespaces/
       text: Страница продукта

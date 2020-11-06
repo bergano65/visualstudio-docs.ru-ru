@@ -1,6 +1,6 @@
 - name: Visual Studio для Mac
   href: index.yml
-- name: Начало работы
+- name: Приступая к работе
   items:
     - name: Обзор интегрированной среды разработки
       href: ide-tour.md
@@ -62,7 +62,7 @@
       href: source-editor.md
     - name: Рефакторинг
       href: refactoring.md
-    - name: IntelliSense
+    - name: технология IntelliSense
       href: intellisense.md
     - name: Отображение элементов импорта
       href: show-imports.md
@@ -171,19 +171,7 @@
         - name: Создание многоконтейнерного приложения с помощью Docker Compose
           href: docker-multi-container.md
     - name: Разработка игр на Unity
-      items:
-        - name: Разработка игр на Unity
-          href: unity-tools.md
-        - name: Настройка
-          href: setup-vsmac-tools-unity.md
-        - name: "Начало работы с\_Unity"
-          href: unity-walkthrough.md
-        - name: "Использование инструментов\_Unity"
-          href: using-vsmac-tools-unity.md
-        - name: "Использование .NET\_4.x в Unity"
-          href: /visualstudio/cross-platform/unity-scripting-upgrade?context=visualstudio/mac/context
-        - name: Журнал изменений
-          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
+      href: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity.md
     - name: "Мобильные приложения с\_Xamarin"
       href: ./xamarin.md
 - name: Специальные возможности

@@ -6,31 +6,31 @@
 - name: Набор средств Visual Studio для Unity
   items:
     - name: Набор средств Visual Studio для Unity
-      href: visual-studio-tools-for-unity.md
+      href: /gamedev/unity/get-started/visual-studio-tools-for-unity.md
     - name: "Начало работы с инструментами Visual\_Studio для\_Unity"
-      href: getting-started-with-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/get-started/getting-started-with-visual-studio-tools-for-unity.md
     - name: "Использование инструментов Visual\_Studio для\_Unity"
-      href: using-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/get-started/using-visual-studio-tools-for-unity.md
     - name: "Использование .NET\_4.x в Unity"
-      href: unity-scripting-upgrade.md
+      href: /gamedev/unity/unity-scripting-upgrade.md
     - name: "Программирование с инструментами Visual\_Studio для\_Unity"
       items:
         - name: "Программирование с инструментами Visual\_Studio для\_Unity"
-          href: programming-visual-studio-tools-for-unity.md
+          href: /gamedev/unity/extensibility/programming-visual-studio-tools-for-unity.md
         - name: 'Настройка файлов проекта, созданных в VSTU'
-          href: customize-project-files-created-by-vstu.md
+          href: /gamedev/unity/extensibility/customize-project-files-created-by-vstu.md
         - name: Совместное использование обратного вызова журнала Unity с VSTU
-          href: share-the-unity-log-callback-with-vstu.md
+          href: /gamedev/unity/extensibility/share-the-unity-log-callback-with-vstu.md
     - name: "Программирование с Unity и\_Azure"
-      href: visual-studio-tools-for-unity-azure.md
+      href: /gamedev/unity/visual-studio-tools-for-unity-azure.md
     - name: Устранение неполадок и известные проблемы (набор средств Visual Studio для Unity)
-      href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/troubleshooting/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
     - name: 'Журнал изменений (инструменты Visual Studio для Unity, Windows)'
-      href: change-log-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/change-log-visual-studio-tools-for-unity.md
     - name: 'Журнал изменений (инструменты Visual Studio для Unity, Mac)'
-      href: change-log-visual-studio-tools-for-unity-mac.md
+      href: /gamedev/unity/change-log-visual-studio-tools-for-unity-mac.md
     - name: DevOps с приложениями Unity
-      href: application-lifecycle-management-alm-with-unity-apps.md
+      href: /gamedev/unity/application-lifecycle-management-alm-with-unity-apps.md
 - name: Разработка кроссплатформенных мобильных приложений на языке C++
   href: /cpp/cross-platform/
 - name: Разработка приложений для универсальной платформы Windows (UWP)
