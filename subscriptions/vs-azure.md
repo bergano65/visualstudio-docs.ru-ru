@@ -1,18 +1,18 @@
 ---
-title: Преимущество Microsoft Azure | Документация Майкрософт
+title: Преимущество Microsoft 365 в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 10/21/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: Сведения о том, как активировать индивидуальный кредит Azure DevTest, входящий в вашу подписку Visual Studio.
-ms.openlocfilehash: de1bfa9591a0dae409ec526429fa0496f3408703
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: f524f0933d067d0c62c184d54c441edc7b15739d
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353100"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903649"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Использование Microsoft Azure по подпискам Visual Studio
 Подписчики Visual Studio могут использовать Microsoft Azure без дополнительной платы.  Вы получаете [ежемесячный индивидуальный кредит Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) и можете использовать Azure как персональную песочницу для разработки и тестирования.  Подготавливайте виртуальные машины, облачные службы и другие ресурсы Azure.  Размер кредита зависит от уровня подписки.
@@ -24,15 +24,15 @@ ms.locfileid: "92353100"
    > [!div class="mx-imgBorder"]
    > ![Плитка Azure](_img/vs-azure/vs-azure-tile.png "Чтобы приступить к работе, нажмите кнопку "Активировать" на плитке Azure.")
 
-3. Если у вас нет подписки Azure, вам потребуется указать сведения, необходимые для создания такой подписки.  Сначала нужно предоставить личную информацию, а затем нажать кнопку **Далее** .
+3. Если у вас нет подписки Azure, вам потребуется указать сведения, необходимые для создания такой подписки.  Сначала нужно предоставить личную информацию, а затем нажать кнопку **Далее**.
    > [!div class="mx-imgBorder"]
    > ![Регистрация в Azure](_img/vs-azure/vs-azure-about-you.png "Добавьте свои контактные данные в подписку Azure.")
 
-4. Затем необходимо проверить вашу личность с помощью простого кода проверки. Укажите свой номер телефона и выберите способ получения кода (текстовое сообщение или звонок).  Введите полученный код и нажмите **Проверить код** .   
+4. Затем необходимо проверить вашу личность с помощью простого кода проверки. Укажите свой номер телефона и выберите способ получения кода (текстовое сообщение или звонок).  Введите полученный код и нажмите **Проверить код**.   
    > [!div class="mx-imgBorder"]
    > ![Подготовка Azure](_img/vs-azure/vs-azure-identity.png "Запросите код проверки и введите его для продолжения.")
 
-5. На последнем шаге установите флажок, чтобы принять условия, а затем нажмите **Зарегистрироваться** .  Вот и все!
+5. На последнем шаге установите флажок, чтобы принять условия, а затем нажмите **Зарегистрироваться**.  Вот и все!
    > [!div class="mx-imgBorder"]
    > ![Регистрация в Azure](_img/vs-azure/vs-azure-agreement.png "Нажмите кнопку "Зарегистрироваться", чтобы завершить создание подписки Azure.")
 
@@ -54,7 +54,7 @@ ms.locfileid: "92353100"
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **Если в вашей организации есть ответственный за приобретение подписок** , [обратитесь к администратору подписки на Visual Studio](./contact-my-admin.md) и запросите подписку, предоставляющую требуемый вам ежемесячный кредит.  
+- **Если в вашей организации есть ответственный за приобретение подписок** , [обратитесь к администратору подписок Visual Studio](./contact-my-admin.md) и запросите подписку, предоставляющую требуемый вам ежемесячный кредит.  
 - **При наличии другой активной подписки на Visual Studio** того же уровня, которая связана с другой учетной записью Майкрософт, вы можете перенести преимущество Azure в другую активную подписку на Visual Studio, [добавив альтернативную учетную запись](./manage-vs-subscriptions.md#managing-my-profile) на [портале подписок](https://my.visualstudio.com/subscriptions) Visual Studio.  
 
 Таблица "Право на участие" ниже показывает, сколько кредитов включает каждый тип подписки.  

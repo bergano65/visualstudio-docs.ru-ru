@@ -1,25 +1,25 @@
 ---
 title: Предложение Azure DevTest по соглашению Enterprise
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
-ms.date: 02/23/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 description: Узнайте, как использовать специальные цены на Azure DevTest, доступные клиентам с соглашениями Enterprise.
-ms.openlocfilehash: 70f7b9877dcc973d2f649eb0cad53599ff6023f3
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a4da6356c250b3c07cb19fb8bf4c5e260e9d3e29
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005744"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904460"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Предложение Azure DevTest по соглашению Enterprise
 
 Это предложение, являющееся частью соглашения Enterprise, предназначено для команд активных подписчиков Visual Studio. С его помощью они могут выполнять рабочие нагрузки разработки и тестирования в Microsoft Azure со скидками на виртуальные машины Windows и доступом к эксклюзивным образам в коллекции Azure. Это предложение предназначено только для разработки и тестирования и не может использоваться в рабочей среде.  
 
 Процесс использования предложений включает два шага.
-1. Предложения должны быть включены администратором на портале EA.
+1. Предложения должны быть активированы администратором на EA Portal.
 2. Отдельные подписчики должны создать подписки для использования. 
 
 Посмотрите [видеоруководство](https://channel9.msdn.com/blogs/EA.Azure.com/Enabling-and-Creating-EA-DevTest-Subscriptions-through-the-EA-Portal), чтобы узнать больше.  
