@@ -1,5 +1,6 @@
 ---
 title: подписывание файлов установки с помощью программы SignTool.exe (ClickOnce)
+description: Узнайте, как использовать SignTool.exe для подписания программы установки для приложений ClickOnce, что позволяет убедиться, что поддельные файлы не установлены.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,15 +20,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 138e84637acb123c445839dc4810547ed8bc2ed3
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d8907018c7f5b131747e802902d88a02ca95c2cc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809509"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350976"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Практическое руководство. Подписывание файлов установки с помощью программы SignTool.exe (ClickOnce)
-Для подписи программы установки (*setup.exe*) можно использовать *SignTool.exe* . Этот процесс позволяет проверить, не установлены ли на компьютер конечного пользователя измененные злоумышленниками файлы.
+Для подписи программы установки ( *setup.exe* ) можно использовать *SignTool.exe* . Этот процесс позволяет проверить, не установлены ли на компьютер конечного пользователя измененные злоумышленниками файлы.
 
  По умолчанию ClickOnce включает подписанные манифесты и подписанную программу установки. Если вы собираетесь изменить параметры программы установки в дальнейшем, ее следует подписать позже. Если вы измените параметры после того, как программа установки будет подписана, подпись будет повреждена.
 
@@ -63,7 +64,7 @@ ms.locfileid: "90809509"
 
 12. Перейдите в каталог, содержащий файл *.EXE*.
 
-13. Введите следующую команду, чтобы подписать файл *.EXE*:
+13. Введите следующую команду, чтобы подписать файл *.EXE* :
 
     ```cmd
     signtool sign /sha1 CertificateHash Setup.exe
@@ -77,5 +78,5 @@ ms.locfileid: "90809509"
     signtool sign /f CertFileName Setup.exe
     ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Пошаговое руководство. Повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

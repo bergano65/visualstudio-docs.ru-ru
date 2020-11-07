@@ -1,5 +1,7 @@
 ---
 title: Автоматическое обновление приложений с помощью API развертывания ClickOnce
+description: Узнайте, как написать код в ClickOnce, использующий класс Аппликатиондеплоймент для проверки наличия обновлений на основе события, например запроса пользователя.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aee738d972b7c6e8c857ae87bb25758d871fe28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f00bd8aaa5db8ab72e6b6286763fd89fc900599f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382579"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351262"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Практическое руководство. Проверка обновлений для приложения программным способом с помощью развертывания API ClickOnce
 Технология ClickOnce предоставляет два способа обновления приложения после его развертывания. В первом методе можно настроить развертывание ClickOnce для автоматической проверки обновлений через определенные промежутки времени. Во втором методе можно написать код, использующий <xref:System.Deployment.Application.ApplicationDeployment> класс для проверки наличия обновлений на основе события, например запроса пользователя.
@@ -56,10 +58,10 @@ ms.locfileid: "85382579"
 
 - Следуйте инструкциям по развертыванию приложения с помощью Mage.exe, как описано в [разделе Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). На вкладке **Параметры развертывания** задайте для поля **начальное расположение** значение манифест приложения ClickOnce, которое должно проверять наличие обновлений. На вкладке **Параметры обновления** снимите флажок **это приложение должно проверять наличие обновлений** .
 
-## <a name="net-framework-security"></a>Безопасность .NET Framework
+## <a name="net-framework-security"></a>Безопасность платформы .NET Framework
  Приложение должно иметь разрешения полного доверия для использования программного обновления.
 
-## <a name="see-also"></a>См. также раздел
-- [Практическое руководство. Задание альтернативного местоположения для обновлений развертывания](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
+## <a name="see-also"></a>См. также
+- [Как указать альтернативное расположение для обновлений развертывания](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
 - [Выбор стратегии обновления ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)

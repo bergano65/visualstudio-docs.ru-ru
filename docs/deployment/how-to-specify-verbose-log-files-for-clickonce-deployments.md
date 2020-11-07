@@ -1,5 +1,6 @@
 ---
 title: Указать подробные файлы журнала (развертывания ClickOnce)
+description: Узнайте, как указать уровень детализации для журналов действий, которые поддерживает технология ClickOnce для установки, инициализации, обновления и удаления развертывания ClickOnce.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54c90f6a544607e78dd8f294bfc307bc87377b70
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0da285cfef49bd495fbecf39131e49cacd0476a5
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808715"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350924"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Практическое руководство. Указание подробных файлов журнала для развертывания ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] поддерживает файлы журналов действий для всех развертываний. В этих журналах содержатся сведения, относящиеся к установке, инициализации, обновлению и удалению [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания. Чтобы увеличить детализацию [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] записи в эти файлы журнала, используйте редактор реестра (*regedit.exe*), чтобы указать уровень детализации.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] поддерживает файлы журналов действий для всех развертываний. В этих журналах содержатся сведения, относящиеся к установке, инициализации, обновлению и удалению [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания. Чтобы увеличить детализацию [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] записи в эти файлы журнала, используйте редактор реестра ( *regedit.exe* ), чтобы указать уровень детализации.
 
 > [!CAUTION]
 > Неправильное использование редактора реестра может привести к серьезным проблемам, которые могут потребовать переустановки операционной системы. Используйте редактор реестра на свой страх и риск.
@@ -35,11 +36,11 @@ ms.locfileid: "90808715"
 
 1. Откройте *Regedit.exe*.
 
-2. Перейдите к узлу **HKEY_CURRENT_USER \софтваре\классес\софтваре\микрософт\виндовс\куррентверсион\деплоймент**.
+2. Перейдите к **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment** узла.
 
 3. При необходимости создайте новое строковое значение с именем `LogVerbosityLevel` .
 
 4. Установите для `LogVerbosityLevel` значение `1`.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Устранение неполадок развертываний ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

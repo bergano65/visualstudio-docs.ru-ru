@@ -1,5 +1,6 @@
 ---
 title: Задание расположения настраиваемого файла журнала (ошибки развертывания ClickOnce)
+description: Сведения о файлах журнала активации, которые поддерживаются технологией ClickOnce для всех развертываний, в которых содержатся ошибки для установки и инициализации развертывания ClickOnce.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b5cf73a685eb68e389e6531022200acbefbfd2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 3d9c8ce481ab9ca99b7d456f53418641654369ad
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809746"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351041"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Практическое руководство. Задание местоположения файла пользовательского журнала для ошибок развертывания ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] обслуживает файлы журналов активации для всех развертываний. В этих журналах задокументированы все ошибки, относящиеся к установке и инициализации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания. По умолчанию [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] создает один файл журнала для каждой активации развертывания. Эти файлы журналов хранятся в папке Temporary Internet Files. Файл журнала для развертывания отображается для пользователя, когда происходит сбой активации, и пользователь нажимает кнопку **сведения** в диалоговом окне «полученная ошибка».
 
- Это поведение можно изменить для конкретного клиента с помощью редактора реестра (**regedit.exe**), чтобы задать путь к пользовательскому файлу журнала. В этом случае [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ведет журнал успешных и неудачных активаций для всех развертываний в одном файле.
+ Это поведение можно изменить для конкретного клиента с помощью редактора реестра ( **regedit.exe** ), чтобы задать путь к пользовательскому файлу журнала. В этом случае [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ведет журнал успешных и неудачных активаций для всех развертываний в одном файле.
 
 > [!CAUTION]
 > Неправильное использование редактора реестра может вызвать серьезные проблемы, требующие переустановки операционной системы. Используйте редактор реестра на свой страх и риск.
@@ -47,5 +48,5 @@ ms.locfileid: "90809746"
 
      Это расположение должно находиться в каталоге, к которому пользователь имеет доступ на запись. Например, в Windows Vista создайте следующую структуру папок и задайте для нее значение `LogFilePath` *C:\Users \\ \<username> \документс\логс\кликконце\инсталлатион.лог*.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Устранение неполадок развертываний ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

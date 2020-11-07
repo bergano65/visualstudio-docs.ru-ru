@@ -1,5 +1,7 @@
 ---
 title: Защита приложений ClickOnce | Документация Майкрософт
+description: Узнайте о влиянии ограничений управления доступом для кода в .NET Framework, которые могут ограничить доступ к коду для приложений ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 02/17/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d99cbf4aaa30e1afb95a98743c223edee94d98fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cb992355378e6e124cadef3383633a52a9111c2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286309"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350557"
 ---
 # <a name="secure-clickonce-applications"></a>Защита приложений ClickOnce
 К приложению[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] могут применяться ограничения управления доступом для кода на платформе .NET Framework, позволяющие ограничить доступ кода к защищенным ресурсам и операциям. Важно понимать влияние управления доступом для кода, чтобы писать приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] соответствующим образом. Для ограничения доступа приложение может использовать зоны с полным или частичным доверием, такие как Интернет и интрасеть.

@@ -1,5 +1,6 @@
 ---
 title: Задание настраиваемых разрешений (приложение ClickOnce)
+description: Узнайте, как развернуть приложение ClickOnce, которое использует разрешения по умолчанию, или создать пользовательскую зону для конкретных разрешений, необходимых приложению.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c9952573be69299e14dc87f345febb14cdef0ec
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d5d0348b882a3327c02fca6db0628822c0deffeb
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809720"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351002"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Практическое руководство. Установка пользовательских разрешений для приложения ClickOnce
 Можно развернуть приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , которое использует разрешения по умолчанию для зон Интернета или локальной интрасети. Кроме того, можно создать настраиваемую зону с определенными разрешениями, которые нужны приложению. Это можно сделать, настроив разрешения безопасности на странице **Безопасность****конструктора проектов**.
 
 ### <a name="to-customize-a-permission"></a>Настройка разрешения
 
-1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.
+1. Выберите проект в **обозревателе решений** , а затем в меню **Проект** щелкните **Свойства**.
 
 2. Перейдите на вкладку **Безопасность** .
 
@@ -49,6 +50,6 @@ ms.locfileid: "90809720"
     > [!NOTE]
     > Можно использовать метод `ToXml` набора разрешений, чтобы создать XML-код для манифеста приложения. Например, чтобы создать XML-код для набора разрешений <xref:System.Security.Permissions.EnvironmentPermission> , вызовите метод <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Безопасные приложения ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

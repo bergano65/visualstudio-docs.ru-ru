@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;элемент публишеридентити (развертывание ClickOnce) | Документация Майкрософт'
+description: Элемент Публишеридентити содержит сведения о издателе, который подписал манифест развертывания. Элемент необходим для подписанных манифестов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1eb4b67bfdca13c63480f3dde82004d87cd4a12a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62927543"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350690"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;&gt;элемент публишеридентити (развертывание ClickOnce)
 Содержит сведения об издателе, подписавшем этот манифест развертывания.
@@ -40,8 +42,8 @@ ms.locfileid: "62927543"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`name`|Обязательный. Описание удостоверения стороны, опубликовавшего приложение.|
-|`issuerKeyHash`|Обязательный. Содержит хэш SHA-1 открытого ключа издателя сертификата.|
+|`name`|Обязательный элемент. Описание удостоверения стороны, опубликовавшего приложение.|
+|`issuerKeyHash`|Обязательный элемент. Содержит хэш SHA-1 открытого ключа издателя сертификата.|
 
 #### <a name="parameters"></a>Параметры
 

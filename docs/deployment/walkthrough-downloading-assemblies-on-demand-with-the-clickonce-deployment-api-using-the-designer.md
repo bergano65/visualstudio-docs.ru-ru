@@ -1,5 +1,6 @@
 ---
 title: Загрузка сборок по запросу с помощью конструктора (API ClickOnce)
+description: Узнайте, как пометить определенные сборки в приложении ClickOnce как необязательные с помощью конструктора и скачать их, когда они необходимы для среды CLR.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4451f5f4075d512c76119faceb02d2a92fff120c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 597f633c1f92b09add06909b8cb626262de1156f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809267"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350352"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Пошаговое руководство. Загрузка сборок по запросу с помощью API развертывания ClickOnce в конструкторе
 По умолчанию все сборки, включенные в приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , загружаются при первом его запуске. Однако некоторые части приложения могут быть нужны лишь небольшому числу пользователей. В этом случае рекомендуется скачивать сборку только при создании одного из ее типов. В следующем примере показано, как пометить определенные сборки в приложении как "необязательные" и скачивать их с помощью классов в пространстве имен <xref:System.Deployment.Application> , когда среда CLR нуждается в них.
@@ -38,7 +39,7 @@ ms.locfileid: "90809267"
 
 ### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>Создание проекта, использующего сборку по запросу с помощью Visual Studio
 
-1. Создайте проект Windows Forms в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. В меню **Файл** выберите пункт **Добавить**, затем щелкните **Создание проекта**. Выберите проект **Библиотека классов** в диалоговом окне и назовите его `ClickOnceLibrary`.
+1. Создайте проект Windows Forms в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. В меню **Файл** выберите пункт **Добавить** , затем щелкните **Создание проекта**. Выберите проект **Библиотека классов** в диалоговом окне и назовите его `ClickOnceLibrary`.
 
    > [!NOTE]
    > В Visual Basic мы рекомендуем изменить свойства проекта, чтобы сменить корневое пространство имен для этого проекта на `Microsoft.Samples.ClickOnceOnDemand` или то, которое подходит вам. Для простоты два проекта в этом пошаговом руководстве находятся в одном пространстве имен.
@@ -98,6 +99,6 @@ ms.locfileid: "90809267"
 
 2. Когда появится основная форма, нажмите <xref:System.Windows.Forms.Button>. В окне сообщения вы должны видеть строку "Hello, World!"
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Deployment.Application.ApplicationDeployment>

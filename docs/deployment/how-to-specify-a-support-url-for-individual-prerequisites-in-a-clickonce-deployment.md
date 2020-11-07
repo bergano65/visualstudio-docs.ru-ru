@@ -1,5 +1,7 @@
 ---
 title: Поддержка URL-адресов для необходимых компонентов в развертывании ClickOnce
+description: Узнайте, как развертывание ClickOnce проверяет наличие необходимых компонентов для запуска приложения ClickOnce и то, как развертывание работает с недостающими необходимыми компонентами.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381734"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350950"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Практическое руководство. Указание URL-адреса службы поддержки для определенных компонентов, необходимых для развертывания ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Развертывание может проверить наличие ряда предварительных требований, которые должны быть доступны на клиентском компьютере для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] запуска приложения. Эти зависимости включают требуемую минимальную версию .NET Framework, версию операционной системы и все сборки, которые должны быть предварительно установлены в глобальный кэш сборок (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], однако, не может установить ни один из этих компонентов. Если необходимый компонент не найден, он просто останавливает установку и отображает диалоговое окно, объясняющее причину сбоя установки.
 
  Существует два способа установки необходимых компонентов. Их можно установить с помощью приложения начального загрузчика. Кроме того, можно указать URL-адрес поддержки для отдельных необходимых компонентов, которые отображаются для пользователей в диалоговом окне, если необходимый компонент не найден. Страница, на которую ссылается этот URL-адрес, может содержать ссылки на инструкции по установке необходимого компонента. Если приложение не указывает URL-адрес поддержки для отдельного необходимого компонента, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] отображает URL-адрес поддержки, указанный в манифесте развертывания для приложения в целом, если он определен.
 
- Хотя [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , *Mage.exe*и *MageUI.exe* можно использовать для создания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертываний, ни одно из этих средств не поддерживает непосредственное указание URL-адреса поддержки для отдельных необходимых компонентов. В этом документе описывается, как изменить манифест приложения и манифест развертывания развертывания, чтобы включить эти URL-адреса поддержки.
+ Хотя [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , *Mage.exe* и *MageUI.exe* можно использовать для создания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертываний, ни одно из этих средств не поддерживает непосредственное указание URL-адреса поддержки для отдельных необходимых компонентов. В этом документе описывается, как изменить манифест приложения и манифест развертывания развертывания, чтобы включить эти URL-адреса поддержки.
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Укажите URL-адрес поддержки для отдельного необходимого компонента
 
@@ -65,7 +67,7 @@ ms.locfileid: "85381734"
      </dependency>
    ```
 
-5. Необязательный элемент. Для приложений, предназначенных для .NET Framework 4, откройте манифест развертывания (файл *. Application* ) для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения в текстовом редакторе.
+5. Необязательный параметр. Для приложений, предназначенных для .NET Framework 4, откройте манифест развертывания (файл *. Application* ) для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения в текстовом редакторе.
 
 6. Для .NET Framework 4 необходимых компонентов добавьте `supportUrl` атрибут к `compatibleFrameworks` элементу:
 
@@ -81,7 +83,7 @@ ms.locfileid: "85381734"
 ## <a name="net-framework-security"></a>безопасность платформы .NET Framework
  URL-адрес поддержки не отображается в диалоговом окне, если приложение помечено для выполнения в режиме частичного доверия.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [\<compatibleFrameworks> дерев](../deployment/compatibleframeworks-element-clickonce-deployment.md)

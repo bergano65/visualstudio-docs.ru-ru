@@ -1,5 +1,7 @@
 ---
 title: Создание локализованного пакета начального загрузчика | Документация Майкрософт
+description: Узнайте, как создать локализованные версии пакета начального загрузчика в ClickOnce, создав два дополнительных файла для каждого языкового стандарта.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,23 +14,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c673c6488b93802877ef088d9d9a1a4793cf50b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4858a9efdad747293a94563196108d895c40880b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852489"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351249"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Практическое руководство. Создание локализованного пакета начального загрузчика
-После создания пакета начального загрузчика можно создать локализованные версии пакета начального загрузчика, создав два дополнительных файла для каждого языкового стандарта: файл условий лицензии на программное обеспечение (например, *EULA. RTF*) и манифест пакета (*package.xml*).
+После создания пакета начального загрузчика можно создать локализованные версии пакета начального загрузчика, создав два дополнительных файла для каждого языкового стандарта: файл условий лицензии на программное обеспечение (например, *EULA. RTF* ) и манифест пакета ( *package.xml* ).
 
  По умолчанию в Visual Studio 2010 локализованные пакеты начальной загрузки включены только для .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 и F# Runtime 4.0. Чтобы создать локализованные пакеты для других начальных загрузчиков, сделайте следующее.
 
-1. Создайте папку с именем в виде имени локали в *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName> *.
+1. Создайте папку с именем в виде имени локали в *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName>*.
 
 2. Создайте файл, содержащий условия лицензионного соглашения на использование программного обеспечения, для пакета начального загрузчика и сохраните его в новую папку.
 
-3. Создайте манифест пакета с именем *package.xml*, обновите строки и язык и региональные параметры и вставьте файл в новую папку. Если вы уже создали начальный загрузчик Visual Studio на целевом языке, вы можете скопировать файл *package.xml* Visual Studio и изменить его на этом шаге.
+3. Создайте манифест пакета с именем *package.xml* , обновите строки и язык и региональные параметры и вставьте файл в новую папку. Если вы уже создали начальный загрузчик Visual Studio на целевом языке, вы можете скопировать файл *package.xml* Visual Studio и изменить его на этом шаге.
 
 > [!NOTE]
 > Если для развертывания приложений используется проект установки, приложение можно локализовать, изменив свойство **Локализация**.
@@ -39,15 +41,15 @@ ms.locfileid: "90852489"
 
 1. Создайте папку с именем, соответствующим языковому стандарту.
 
-     На 32-разрядных компьютерах создайте папку в папке *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName> \\ * .
+     На 32-разрядных компьютерах создайте папку в папке *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName> \\* .
 
-     На 64-разрядных компьютерах создайте папку в папке *\Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName> \\ * .
+     На 64-разрядных компьютерах создайте папку в папке *\Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName> \\* .
 
      В следующей таблице показано, какие имена папок можно использовать для соотнесения с языковым стандартом.
 
     |Языковой стандарт|Имя папки|
     |------------|-----------------|
-    |Китайский (упрощенное письмо)|zh-Hans|
+    |Китайский (упрощенное письмо)|zh-HanS|
     |Китайский (традиционное письмо)|zh-Hant|
     |Чешский|cs|
     |Немецкий|de|
@@ -76,7 +78,7 @@ ms.locfileid: "90852489"
 
 1. Создайте папку с именем *fr*. Имя папки должно совпадать с именем языкового стандарта.
 
-     На 32-разрядных компьютерах создайте папку в папке *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1 \\ * .
+     На 32-разрядных компьютерах создайте папку в папке *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1 \\* .
 
      На 64-разрядных компьютерах — в папке *\Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*.
 

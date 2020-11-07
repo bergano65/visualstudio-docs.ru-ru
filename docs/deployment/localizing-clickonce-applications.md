@@ -1,5 +1,7 @@
 ---
 title: Локализация приложений ClickOnce | Документация Майкрософт
+description: Узнайте о трех способах локализации приложения ClickOnce до версии, соответствующей конкретным языкам и региональным параметрам.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ee263b3bb908daace4bf27f86cff710ae90684
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97c4fe8d72cc8e2216ee8f5057d032c071974bf3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842676"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350833"
 ---
 # <a name="localize-clickonce-applications"></a>Локализация приложений ClickOnce
 Локализация — это процедура адаптации вашего приложения к конкретному языку и региональным параметрам. Эта процедура включает перевод текста пользовательского интерфейса на определенный язык, использование подходящего формата дат и валюты, изменение размера элементов управления в формах и зеркальное отражение элементов управления справа налево, если необходимо.

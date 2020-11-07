@@ -1,5 +1,7 @@
 ---
 title: Общие сведения о развертывании доверенных приложений | Документация Майкрософт
+description: Узнайте, как развертывать приложения ClickOnce с повышенными разрешениями с помощью технологии развертывания доверенных приложений.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b3fca6db978eefc5af751d793ad299d89688cba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96dfb98b468782f771d866b33b94b2c18de6276f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72806829"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350508"
 ---
 # <a name="trusted-application-deployment-overview"></a>Общие сведения о развертывании доверенных приложений
 Этот раздел содержит общие сведения о том, как развертывать приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с повышенными правами с помощью технологии развертывания доверенных приложений.
@@ -34,7 +36,7 @@ ms.locfileid: "72806829"
 ## <a name="trusted-application-deployment-basics"></a>Основные принципы развертывания надежных приложений
  В следующей таблице показаны объекты и роли, используемые в развертывании надежных приложений.
 
-|Объект или роль|Описание|
+|Объект или роль|Description|
 |--------------------|-----------------|
 |administrator|Лицо организации, отвечающее за обновление и обслуживание клиентских компьютеров.|
 |Диспетчер доверия|Подсистема в среде CLR, ответственная за обеспечение безопасности клиентского приложения.|
@@ -77,7 +79,7 @@ ms.locfileid: "72806829"
 
 - Пространство имен <xref:System.Security.Cryptography?displayProperty=fullName> .
 
-- Компонент Internet Explorer *CertMgr.exe*, который существует во всех версиях Windows начиная с Windows 98. Дополнительные сведения см. в разделе [Certmgr.exe (средство диспетчера сертификатов)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- Компонент Internet Explorer *CertMgr.exe* , который существует во всех версиях Windows начиная с Windows 98. Дополнительные сведения см. в разделе [Certmgr.exe (средство диспетчера сертификатов)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Создание приложения ClickOnce
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Приложение — это .NET Framework клиентское приложение, объединенное с файлами манифестов, описывающее приложение и предоставляя параметры установки. Можно включить свою программу в приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , воспользовавшись командой **Опубликовать** в . [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Кроме того, можно создать все файлы, необходимые для развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , с помощью средств в составе [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Подробные инструкции по [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания, см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).

@@ -1,5 +1,6 @@
 ---
 title: Отключить активацию URL-адресов для приложений ClickOnce
+description: Узнайте, как отключить автоматический запуск при установке для приложения ClickOnce, если вы хотите, чтобы пользователи запускали приложение из меню "Пуск".
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f13921044e188d659ba8cd5b776a006f7af5b1a6
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 46e46278f5465de029aa9536744f51843397d743
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809766"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351236"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Как отключить активацию по URL-адресу приложений ClickOnce
 
@@ -44,6 +45,6 @@ ms.locfileid: "90809766"
 
 4. Сохраните и подпишите манифест.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
