@@ -1,6 +1,8 @@
 ---
 title: Состояние порта правила FxCop
 ms.date: 05/21/2019
+description: Сведения о правилах статического анализа кода, перенесенных в средства FxCop Analyzer в Visual Studio. Просматривайте правила и ресурсы по переносу обновлений.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 945b26158da4c4c7788570db0c565ebbcfc2b460
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: cedd96036a6d0725dbde5f0b11400a20360a20ec
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658585"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348949"
 ---
 # <a name="fxcop-rule-port-status"></a>Состояние порта правила FxCop
 
@@ -27,7 +29,7 @@ ms.locfileid: "91658585"
 
 В соответствии с датой на этой странице в списке правил FxCop, которые были перенесены в средства [FxCop Analyzer](install-fxcop-analyzers.md) , входят:
 
-Идентификатор правила | Заголовок
+Идентификатор правила | Название
 --------|---------
 [CA1000](/dotnet/fundamentals/code-analysis/quality-rules/ca1000) | Не объявляйте статические члены в универсальных типах
 [CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001) | Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми
@@ -200,6 +202,6 @@ CA5377 | Использовать политику доступа на уров�
 CA5379 | Не используйте алгоритм функции наследования слабых ключей
 CA9999 | Несоответствие версии анализатора
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Правила Microsoft. CodeAnalysis. Фкскопанализерс](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

@@ -1,5 +1,6 @@
 ---
 title: Укажите альтернативное расположение для обновлений развертывания
+description: Узнайте, как указать альтернативное расположение обновлений для приложения ClickOnce в манифесте развертывания.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 096e962f9e334b3db9819973a0fbd82d636f7d6f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 698ca2c97bcc4699d2c836eff9fefa371481c9cc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808754"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349650"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Практическое руководство. Задание альтернативного местоположения для обновлений развертывания
 Приложение можно установить [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] изначально с компакт-диска или из общей папки, но приложение должно проверять наличие периодических обновлений в Интернете. Можно указать альтернативное расположение для обновлений в манифесте развертывания, чтобы приложение можно было обновлять из Интернета после первоначальной установки.
@@ -39,7 +40,7 @@ ms.locfileid: "90808754"
 
 3. Перейдите на вкладку **Параметры развертывания**.
 
-4. В текстовом поле имя **запуска**введите URL-адрес каталога, который будет содержать манифест развертывания для обновлений приложения.
+4. В текстовом поле имя **запуска** введите URL-адрес каталога, который будет содержать манифест развертывания для обновлений приложения.
 
 5. Сохраните манифест развертывания.
 
@@ -56,12 +57,12 @@ ms.locfileid: "90808754"
    > [!NOTE]
    > Теперь необходимо повторно подписать файл с помощью *Mage.exe*. Дополнительные сведения см. [в разделе Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
-## <a name="net-framework-security"></a>Безопасность .NET Framework
+## <a name="net-framework-security"></a>Безопасность платформы .NET Framework
  Если приложение устанавливается с автономного носителя, такого как компакт-диск, и компьютер находится в сети, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] сначала проверяет URL-адрес, указанный `<deploymentProvider>` тегом в манифесте развертывания, чтобы определить, содержит ли расположение обновления более новую версию приложения. Если это так, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] устанавливает приложение непосредственно из каталога начальной установки, а среда CLR определяет уровень доверия приложения с помощью `<deploymentProvider>` . Если компьютер находится в автономном режиме или `<deploymentProvider>` недоступен, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] устанавливается с компакт-диска, а среда CLR предоставляет доверие на основе точки установки; для установки с компакт-диска это означает, что приложение получает полное доверие. Все последующие обновления наследуют этот уровень доверия.
 
  Все [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, использующие, `<deploymentProvider>` должны явно объявлять разрешения, необходимые им в манифесте приложения, чтобы приложение не получало разные уровни доверия на разных компьютерах.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)

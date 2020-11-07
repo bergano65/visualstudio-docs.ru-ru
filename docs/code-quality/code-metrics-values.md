@@ -1,6 +1,8 @@
 ---
 title: Вычисление метрик кода
 ms.date: 11/02/2018
+description: Узнайте о сложности сложностью организации циклов, взаимосвязи классов и других метриках кода Visual Studio. Узнайте, как метрики могут отслеживать ход разработки и выявление рисков.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.codemetrics.toolwindow
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 796d8aa15aa3612b140917ccfa9db7663c0b0ad3
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: a5e7ee628f5a48f573afed9753f4fad17f85e33a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599454"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348649"
 ---
 # <a name="code-metrics-values"></a>Значения метрик кода
 
@@ -46,7 +48,7 @@ ms.locfileid: "89599454"
 
 - **Строки исходного кода** — указывает точное число строк исходного кода, имеющихся в исходном файле, включая пустые строки. Эта метрика доступна начиная с Visual Studio 2019 версии 16,4 и Microsoft. CodeAnalysis. метрик (2.9.5).
 
-- **Строки исполняемого кода** — указывает приблизительное количество строк или операций исполняемого кода. Это количество операций в исполняемом коде. Эта метрика доступна начиная с Visual Studio 2019 версии 16,4 и Microsoft. CodeAnalysis. метрик (2.9.5). Значение обычно является близким к предыдущей метрике, **строкам кода**, которая является метрикой на основе инструкций языка MSIL, используемой в устаревшем режиме.
+- **Строки исполняемого кода** — указывает приблизительное количество строк или операций исполняемого кода. Это количество операций в исполняемом коде. Эта метрика доступна начиная с Visual Studio 2019 версии 16,4 и Microsoft. CodeAnalysis. метрик (2.9.5). Значение обычно является близким к предыдущей метрике, **строкам кода** , которая является метрикой на основе инструкций языка MSIL, используемой в устаревшем режиме.
 ::: moniker-end
 ::: moniker range="vs-2017"
 
@@ -66,7 +68,7 @@ ms.locfileid: "89599454"
 
 Код, созданный для Windows Forms, не пропускается, так как это код, который разработчик может просматривать и изменять.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - [Как создавать данные метрик кода](../code-quality/how-to-generate-code-metrics-data.md)
 - [Использование окна "Результаты метрик кода"](../code-quality/working-with-code-metrics-data.md)

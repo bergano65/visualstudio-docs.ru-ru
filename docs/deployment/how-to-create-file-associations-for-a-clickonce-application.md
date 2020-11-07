@@ -1,5 +1,6 @@
 ---
 title: Создание сопоставлений файлов (приложение ClickOnce)
+description: Узнайте, как связать приложение ClickOnce с одним или несколькими расширениями имен файлов, чтобы приложение запускалось, когда пользователь открывает такой файл.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcca57415eae6480286f457755b996f22cb6507a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 21f6923185dbfa79fbe18b7b5c6a5d824a5a2cfe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809785"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350040"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Практическое руководство. Создание ассоциаций файлов для приложения ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения могут быть связаны с одним или несколькими расширениями имен файлов, чтобы приложение автоматически запускалось, когда пользователь открывает файл этих типов. Добавление в приложение поддержки расширений имен файлов [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] осуществляется просто.
@@ -54,7 +55,7 @@ ms.locfileid: "90809785"
 
     Дополнительные сведения см. в разделе [Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [\<fileAssociation> дерев](../deployment/fileassociation-element-clickonce-application.md)
 - [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)
 - [Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

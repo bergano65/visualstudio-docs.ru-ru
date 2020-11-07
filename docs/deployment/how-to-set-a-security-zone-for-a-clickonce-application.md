@@ -1,5 +1,6 @@
 ---
 title: Настройка зоны безопасности (приложение ClickOnce)
+description: Сведения о настройке разрешений управления доступом для кода для приложения ClickOnce, которое начинается с базового набора разрешений в конструкторе проектов.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59b099a406f31bf2a1c1266d76bb037ac3e85e19
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d2e8b49f833b5dd91dc6379d2a015d41a9679afe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809733"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349780"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Практическое руководство. Установка зоны безопасности для ClickOnce-приложения
 При установке разрешений управления доступом для кода для приложения ClickOnce необходимо начать с базового набора разрешений на странице **Безопасность****конструктора проектов**.
@@ -31,7 +32,7 @@ ms.locfileid: "90809733"
 
 ### <a name="to-set-a-security-zone"></a>Задание зоны безопасности
 
-1. Выбрав проект в **Обозреватель решений**, в меню **проект** выберите пункт **Свойства**.
+1. Выбрав проект в **Обозреватель решений** , в меню **проект** выберите пункт **Свойства**.
 
 2. Перейдите на вкладку **Безопасность** .
 
@@ -43,7 +44,7 @@ ms.locfileid: "90809733"
 
 5. В раскрывающемся списке **Зона, из которой приложение будет установлено** выберите зону безопасности.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Как задать пользовательские разрешения для приложения ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

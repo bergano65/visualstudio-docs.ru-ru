@@ -1,6 +1,8 @@
 ---
 title: Устаревший анализ управляемого кода
 ms.date: 06/12/2019
+description: Сведения об устаревшем анализе в Visual Studio. См. раздел Отключение предупреждений и выполнение анализа вручную, автоматически и во время возврата и сборок.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6ab8171d2317549beabe2d8e552eeeefccd02cf
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: c6f1f12fa7fca964c857e534c1ffae50efe70b27
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927995"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348662"
 ---
 # <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Общие сведения об устаревшем анализе управляемого кода в Visual Studio
 
@@ -26,7 +28,7 @@ Visual Studio может выполнять анализ кода управля
 Средство анализа представляет проводимые во время анализа проверки в виде предупреждающих сообщений. В предупреждающих сообщениях указываются все проблемы, связанные с программированием и разработкой, и, по возможности, сведения о методах их устранения.
 
 > [!NOTE]
-> Устаревший анализ (статический анализ кода) не поддерживается для проектов .NET Core и .NET Standard в Visual Studio. При выполнении анализа кода в проекте .NET Core или .NET Standard в составе MSBuild появится сообщение об ошибке, похожее на **ошибку: CA0055: не удалось определить платформу для \<your.dll> **. Для анализа кода в проектах .NET Core или .NET Standard используйте [анализаторы кода](../code-quality/roslyn-analyzers-overview.md) .
+> Устаревший анализ (статический анализ кода) не поддерживается для проектов .NET Core и .NET Standard в Visual Studio. При выполнении анализа кода в проекте .NET Core или .NET Standard в составе MSBuild появится сообщение об ошибке, похожее на **ошибку: CA0055: не удалось определить платформу для \<your.dll>**. Для анализа кода в проектах .NET Core или .NET Standard используйте [анализаторы кода](../code-quality/roslyn-analyzers-overview.md) .
 
 ## <a name="ide-integrated-development-environment-integration"></a>Интеграция интегрированной среды разработки (IDE)
 
@@ -34,7 +36,7 @@ Visual Studio может выполнять анализ кода управля
 
 Для запуска анализа кода при каждом построении проекта выберите параметр на странице свойств **анализ кода** проекта. Дополнительные сведения см. [в разделе инструкции. Включение и отключение автоматического анализа кода](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Чтобы выполнить анализ кода в проекте вручную, в строке меню выберите **анализ**  >  **выполнение анализа кода**  >  **выполнить анализ \<project> кода **.
+Чтобы выполнить анализ кода в проекте вручную, в строке меню выберите **анализ**  >  **выполнение анализа кода**  >  **выполнить анализ \<project> кода**.
 
 ## <a name="rule-sets"></a>Наборы правил
 

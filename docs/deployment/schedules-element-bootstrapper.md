@@ -1,5 +1,7 @@
 ---
 title: '&lt;Элемент Schedules &gt; (начальный загрузчик) | Документация Майкрософт'
+description: Элемент Schedules содержит элементы расписания, которые определяют определенное время выполнения команд, определенных элементом Command.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f6e4ae90dbd36dab4f4df7f72d5ecf57ee04b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f84727647f198c25175139412d3e8509e73fe1c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62927336"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349364"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Элемент Schedules &gt; (начальный загрузчик)
 `Schedules`Элемент содержит `Schedule` элементы, которые определяют определенное время выполнения команд, определенных `Command` элементом.
@@ -49,7 +51,7 @@ ms.locfileid: "62927336"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`Name`|Обязательный. Имя элемента расписания. Это соответствует `ScheduleName` свойству `Command` элемента. Когда объект `Command` ссылается на именованное расписание, он будет выполняться только в момент, указанный этим `Schedule` элементом. Расписания также могут быть связаны с `FailIf` элементами и `BypassIf` , которые ограничивают эти условные тесты для выполнения по указанному расписанию. Дополнительные сведения см. в разделе [\<Commands>Element](../deployment/commands-element-bootstrapper.md).|
+|`Name`|Обязательный элемент. Имя элемента расписания. Это соответствует `ScheduleName` свойству `Command` элемента. Когда объект `Command` ссылается на именованное расписание, он будет выполняться только в момент, указанный этим `Schedule` элементом. Расписания также могут быть связаны с `FailIf` элементами и `BypassIf` , которые ограничивают эти условные тесты для выполнения по указанному расписанию. Дополнительные сведения см. в разделе [\<Commands>Element](../deployment/commands-element-bootstrapper.md).|
 
  Данный `Schedule` элемент может иметь только один из следующих дочерних элементов.
 
@@ -62,6 +64,6 @@ ms.locfileid: "62927336"
 ## <a name="afterpackage"></a>AfterPackage
  `AfterPackage`Элемент указывает установщику выполнить команду после установки указанного пакета.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [\<Product> дерев](../deployment/product-element-bootstrapper.md)
 - [Справочник по схеме продуктов и пакетов](../deployment/product-and-package-schema-reference.md)

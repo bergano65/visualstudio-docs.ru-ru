@@ -1,16 +1,18 @@
 ---
 title: Отключить анализ кода прежних версий
 ms.date: 10/04/2019
+description: Сведения о включении и отключении анализа двоичного кода в Visual Studio. См. раздел Настройка этой функции в проектах с управляемым кодом.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eb4422a12620d7650b4fe150313b10fe59835064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 582d0e0d86909b266bbb18f83745b1b2261f0d10
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801026"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348753"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Как включить и отключить анализ двоичного кода для управляемого кода
 
@@ -21,7 +23,7 @@ ms.locfileid: "88801026"
 
 Чтобы включить или отключить анализ кода прежних версий, выполните следующие действия.
 
-1. В **Обозреватель решений**выберите и удерживайте (или щелкните правой кнопкой мыши) проект, а затем выберите пункт **свойства**.
+1. В **Обозреватель решений** выберите и удерживайте (или щелкните правой кнопкой мыши) проект, а затем выберите пункт **свойства**.
 
 2. В диалоговом окне "Свойства" для проекта перейдите на вкладку " **анализ кода** ".
 

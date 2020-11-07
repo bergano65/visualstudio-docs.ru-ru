@@ -1,5 +1,6 @@
 ---
 title: Загрузка сборок по запросу (API ClickOnce)
+description: Узнайте, как помечать определенные сборки в приложении ClickOnce как необязательные и скачивать их, когда они необходимы для среды CLR.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8452bec3443b93737e4799a8f09c8e342f011976
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fb74d7fd5ad388b9b3dc217bae8782b24517c13b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809254"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349270"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Пошаговое руководство. Загрузка сборок по запросу с помощью API развертывания ClickOnce
 По умолчанию все сборки, включенные в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение, загружаются при первом запуске приложения. Однако у вас могут быть части приложения, которые используются небольшим набором пользователей. В этом случае рекомендуется скачивать сборку только при создании одного из ее типов. В следующем примере показано, как пометить определенные сборки в приложении как "необязательные" и скачивать их с помощью классов в пространстве имен <xref:System.Deployment.Application>, когда среда CLR нуждается в них.
@@ -35,7 +36,7 @@ ms.locfileid: "90809254"
 
 - Windows SDK. Windows SDK можно скачать в центре загрузки Майкрософт.
 
-- Visual Studio.
+- приведенному.
 
 ## <a name="create-the-projects"></a>Создание проектов
 
@@ -58,7 +59,7 @@ ms.locfileid: "90809254"
     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
     [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
 
-6. Сохраните текст в виде файла с именем *ClickOnceLibrary.CS* или *ClickOnceLibrary. vb*в зависимости от используемого языка в каталоге *кликконцеондеманд* .
+6. Сохраните текст в виде файла с именем *ClickOnceLibrary.CS* или *ClickOnceLibrary. vb* в зависимости от используемого языка в каталоге *кликконцеондеманд* .
 
 7. Скомпилируйте файл в сборку.
 
@@ -101,7 +102,7 @@ ms.locfileid: "90809254"
 
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Чтобы пометить сборки как необязательные в приложении ClickOnce с помощью MageUI.exe
 
-1. С помощью *MageUI.exe*создайте манифест приложения, как описано в разделе [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Используйте следующие параметры для манифеста приложения:
+1. С помощью *MageUI.exe* создайте манифест приложения, как описано в разделе [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Используйте следующие параметры для манифеста приложения:
 
     - Назовите манифест приложения `ClickOnceOnDemand` .
 
@@ -109,7 +110,7 @@ ms.locfileid: "90809254"
 
     - На странице **файлы** в строке *ClickOnceLibrary.dll* введите `ClickOnceLibrary.dll` в столбец **Группа** .
 
-2. С помощью *MageUI.exe*создайте манифест развертывания, как описано в разделе [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Используйте следующие параметры для манифеста развертывания:
+2. С помощью *MageUI.exe* создайте манифест развертывания, как описано в разделе [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Используйте следующие параметры для манифеста развертывания:
 
     - Присвойте имя манифесту развертывания `ClickOnceOnDemand` .
 
@@ -127,5 +128,5 @@ ms.locfileid: "90809254"
 
 3. Когда появится основная форма, нажмите <xref:System.Windows.Forms.Button>. В окне сообщения вы должны видеть строку "Hello, World!".
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - <xref:System.Deployment.Application.ApplicationDeployment>

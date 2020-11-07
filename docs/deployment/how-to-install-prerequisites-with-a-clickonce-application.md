@@ -1,5 +1,6 @@
 ---
 title: Установка необходимых компонентов с помощью приложения ClickOnce
+description: Узнайте, как выбрать необходимые компоненты для упаковки вместе с приложением ClickOnce при его установке.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e815c45f776635d811c073114e22c3bd002de0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e4a2f2b951881208d3995aeb1f5f1f655b80674f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809124"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349936"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Практическое руководство. Установка необходимых компонентов для приложения ClickOnce
 Для всех [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений требуется, чтобы на компьютере была установлена правильная версия .NET Framework, прежде чем их можно будет запустить; у многих приложений также есть и другие необходимые компоненты. При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения можно выбрать набор необходимых компонентов, которые будут упакованы вместе с приложением. Во время установки для каждого необходимого компонента будет выполнена проверка, чтобы определить, существует ли он уже. Если это не так, то оно будет установлено до установки [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.
@@ -39,7 +40,7 @@ ms.locfileid: "90809124"
 
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Указание необходимых компонентов для установки с помощью приложения ClickOnce
 
-1. Выбрав проект в **Обозреватель решений**, в меню **проект** выберите пункт **Свойства**.
+1. Выбрав проект в **Обозреватель решений** , в меню **проект** выберите пункт **Свойства**.
 
 2. Выберите панель **Публикация** .
 
@@ -53,7 +54,7 @@ ms.locfileid: "90809124"
 
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Указание другого расположения загрузки для необходимых компонентов
 
-1. Выбрав проект в **Обозреватель решений**, в меню **проект** выберите пункт **Свойства**.
+1. Выбрав проект в **Обозреватель решений** , в меню **проект** выберите пункт **Свойства**.
 
 2. Выберите панель **Публикация** .
 
@@ -68,6 +69,6 @@ ms.locfileid: "90809124"
     > [!NOTE]
     > Необходимо убедиться, что установщики для указанных компонентов существуют в указанном расположении.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Инструкции. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

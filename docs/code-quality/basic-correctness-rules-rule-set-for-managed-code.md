@@ -1,6 +1,8 @@
 ---
 title: Набор правил "Базовые правила определения правильности" для управляемого кода
 ms.date: 11/04/2016
+description: Сведения об основных правилах правил правильности в Visual Studio, в которых основное внимание уделяется ошибкам логических ошибок и распространению ошибок API инфраструктуры. См. Описание правила.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: eef90c024c03c0a8346fda6b90225dd0ebf3ee51
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 532cab657403cf8761d2b53304131b70a951a7ff
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659144"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348493"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Набор правил "Базовые правила определения правильности" для управляемого кода
 

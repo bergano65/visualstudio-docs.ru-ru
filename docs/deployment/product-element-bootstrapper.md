@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;Элемент Product (начальный загрузчик) | Документация Майкрософт'
+description: Элемент Product является элементом XML верхнего уровня в файле продукта. Элемент Product является обязательным в файле продукта.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a46f24adde12415acc20a6afd7298c491a3188c0
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747450"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349481"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;&gt;Элемент Product (начальный загрузчик)
 `Product`Элемент является ЭЛЕМЕНТОМ XML верхнего уровня в файле продукта.
@@ -249,5 +251,5 @@ ProductCode
 </Product>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Справочник по схеме продуктов и пакетов](../deployment/product-and-package-schema-reference.md)

@@ -1,5 +1,7 @@
 ---
 title: Отключение активации URL-адресов для приложений ClickOnce с помощью конструктора
+description: Узнайте, как отключить автоматический запуск при установке для приложения ClickOnce с помощью Visual Studio, чтобы пользователи должны запустить приложение из меню "Пуск".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 818ab634d48fb666ecab5d89464ea017040bd250
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c243b0e0565c082e05fd15a1e02aa0507120e16b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382488"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350014"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Практическое руководство. Отключение активации приложений ClickOnce по URL-адресу с помощью конструктора
 Как правило, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение запустится автоматически сразу после установки с веб-сервера. По соображениям безопасности вы можете отключить это поведение и сообщить пользователям о необходимости запуска приложения из меню " **Пуск** ". Следующая процедура описывает процесс отключения активации через URL.
@@ -34,7 +36,7 @@ ms.locfileid: "85382488"
 
 #### <a name="to-disable-url-activation-for-your-application"></a>Отключение активации приложения с помощью URL
 
-1. Щелкните правой кнопкой мыши имя проекта в **Обозреватель решений**и выберите пункт **свойства**.
+1. Щелкните правой кнопкой мыши имя проекта в **Обозреватель решений** и выберите пункт **свойства**.
 
 2. На странице **Свойства** перейдите на вкладку **Публикация** .
 

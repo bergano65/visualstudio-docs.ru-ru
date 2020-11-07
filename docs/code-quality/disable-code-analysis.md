@@ -1,6 +1,8 @@
 ---
 title: Отключить анализ кода
 ms.date: 09/01/2020
+description: Узнайте, как отключить анализ исходного кода Visual Studio в проектах .NET Core, .NET Standard и .NET Framework.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, disable
@@ -8,12 +10,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 28a95038db83e2a03975b0a5baccdabdd18452d9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e808cb623fa47c9971e1cdceb15a02b5bf46e901
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037150"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348558"
 ---
 # <a name="disable-source-code-analysis-for-net"></a>Отключить анализ исходного кода для .NET
 
@@ -67,7 +69,7 @@ ms.locfileid: "90037150"
 
 ## <a name="source-analysis"></a>Анализ источника
 
-Вы не можете отключить [анализ исходного кода](roslyn-analyzers-overview.md) в Visual Studio 2017. Если вы хотите удалить ошибки анализатора из **Список ошибок**, можно отключить все текущие нарушения, выбрав **анализировать**  >  **выполнение анализа кода и подавлять активные проблемы** в строке меню. Дополнительные сведения см. в разделе [подавлять нарушения](use-roslyn-analyzers.md#suppress-violations).
+Вы не можете отключить [анализ исходного кода](roslyn-analyzers-overview.md) в Visual Studio 2017. Если вы хотите удалить ошибки анализатора из **Список ошибок** , можно отключить все текущие нарушения, выбрав **анализировать**  >  **выполнение анализа кода и подавлять активные проблемы** в строке меню. Дополнительные сведения см. в разделе [подавлять нарушения](use-roslyn-analyzers.md#suppress-violations).
 
 Начиная с Visual Studio 2019 версии 16,3, можно отключить анализ исходного кода или выполнить его по требованию. Рассмотрите возможность обновления до Visual Studio 2019.
 
@@ -77,7 +79,7 @@ ms.locfileid: "90037150"
 
 ::: moniker-end
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Подавлять нарушения](use-roslyn-analyzers.md#suppress-violations)
 - [Как включить и отключить анализ кода прежних версий](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

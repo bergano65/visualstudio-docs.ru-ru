@@ -1,6 +1,8 @@
 ---
 title: FxCopCmd - ошибки
 ms.date: 10/19/2016
+description: Сведения о кодах ошибок, возвращаемых командой FxCopCmd. Узнайте, какой тип ошибок представляет каждый код, и Узнайте, как распознать неустранимые ошибки.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
@@ -10,12 +12,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b72f419331b2a02c55d885a2b8855070698879a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88c900ec10ea13e7f9d7092769565703bf52fe8c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78167615"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348936"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Ошибки средства FxCopCmd
 
@@ -52,6 +54,6 @@ FxCopCmd не учитывает все ошибки как неустраним
 > [!NOTE]
 > Сборка кода возврата FxCopCmd **ссылается на ошибку** 0x200 сама по себе является предупреждением, а не ошибкой. Этот код возврата указывает, что отсутствуют косвенные ссылки, но это FxCopCmd удалось справиться с ними. Предупреждение означает, что есть вероятность, что некоторые результаты анализа могут быть скомпрометированы. Обрабатывать **ссылки на сборки** в виде ошибки, если она сочетается с любым другим кодом возврата.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Ошибки, возникающие при анализе кода](../code-quality/code-analysis-application-errors.md)

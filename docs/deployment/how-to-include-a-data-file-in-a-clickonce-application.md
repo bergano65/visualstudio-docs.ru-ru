@@ -1,5 +1,6 @@
 ---
 title: Включение файла данных в приложение ClickOnce
+description: Узнайте, как добавить файл данных любого типа в приложение ClickOnce для сохранения в каталоге данных на локальном диске конечного компьютера.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdc2154876724feb5c6a0329a2acc5df7ac80fbc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: cb9e346022871a3aa25363aa717f1bf15a3d42a6
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809150"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349949"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Практическое руководство. Включение файла данных в приложение ClickOnce
-Каждому [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] устанавливаемому приложению назначается каталог данных на локальном диске конечного компьютера, где приложение может управлять собственными данными. Файлы данных могут включать файлы любого типа: текстовые файлы, XML-файлы или даже файлы базы данных Microsoft Access (*MDB*). В следующих процедурах показано, как добавить в приложение файл данных любого типа [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
+Каждому [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] устанавливаемому приложению назначается каталог данных на локальном диске конечного компьютера, где приложение может управлять собственными данными. Файлы данных могут включать файлы любого типа: текстовые файлы, XML-файлы или даже файлы базы данных Microsoft Access ( *MDB* ). В следующих процедурах показано, как добавить в приложение файл данных любого типа [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Включение файла данных с помощью Mage.exe
 
@@ -83,5 +84,5 @@ ms.locfileid: "90809150"
 
      Необходимо повторно подписать манифест развертывания, так как его хэш манифеста приложения изменился.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Доступ к локальным и удаленным данным в приложениях ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

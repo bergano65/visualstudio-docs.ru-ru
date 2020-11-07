@@ -1,6 +1,8 @@
 ---
 title: Подавление нарушений анализа кода
 ms.date: 08/27/2020
+description: Сведения о подавлении нарушений анализа кода в Visual Studio. Узнайте, как использовать атрибут Суппрессмессажеаттрибуте для подавления в исходном источнике.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
@@ -14,12 +16,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ef64528d8686267677020458374ef96143f6e34
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: b7a0820404047d123350a27950c5aee254af306f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658520"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348701"
 ---
 # <a name="suppress-code-analysis-violations"></a>Подавление нарушений анализа кода
 
@@ -190,7 +192,7 @@ public class Animal
 > [!NOTE]
 > Анализ кода игнорируется `GeneratedCodeAttribute` при применении к целой сборке или одному параметру.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>
