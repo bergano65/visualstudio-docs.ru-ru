@@ -1,5 +1,7 @@
 ---
 title: Справочные сведения о задачах WPF для MSBuild | Документы Майкрософт
+description: См. ссылку на задачу для процесса сборки Windows Presentation Foundation (WPF), для расширения возможностей MSBuild за счет дополнительных задач.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 395f50db4159e8ace1b317f5926ed676c7462fe3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630851"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047511"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Справочные сведения о задачах WPF для MSBuild
 
@@ -57,7 +59,7 @@ ms.locfileid: "77630851"
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Внедряет один или несколько ресурсов (файлов *JPG*, *ICO*, *BMP*, XAML в двоичном формате и других) в *RESOURCES-файл*.
+ Внедряет один или несколько ресурсов (файлов *JPG* , *ICO* , *BMP* , XAML в двоичном формате и других) в *RESOURCES-файл*.
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -65,7 +67,7 @@ ms.locfileid: "77630851"
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Добавляет элемент **\<hostInBrowser />** в манифест приложения ( *\<projectname>.exe.manifest*) при сборке проекта Приложение обозревателя XAML (XBAP).
+ Добавляет элемент **\<hostInBrowser />** в манифест приложения ( *\<projectname>.exe.manifest* ) при сборке проекта Приложение обозревателя XAML (XBAP).
 
 ## <a name="see-also"></a>См. также
 

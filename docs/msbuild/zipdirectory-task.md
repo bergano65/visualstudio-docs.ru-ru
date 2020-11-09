@@ -1,5 +1,7 @@
 ---
 title: Задача ZipDirectory | Документы Майкрософт
+description: Узнайте об использовании задачи ZipDirectory в MSBuild для создания ZIP-архива из содержимого каталога.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1092add6386ccc5bc1de78efcf7b623a617d920b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e2ffdd5e2601501146f0fa21e4adb572094ddbbf
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183071"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046620"
 ---
 # <a name="zipdirectory-task"></a>Задача ZipDirectory
 
@@ -52,7 +54,7 @@ ms.locfileid: "84183071"
 
 ## <a name="example"></a>Пример
 
- В приведенном ниже примере (используемом в качестве импортируемого файла *.targets*) создается *ZIP-архив* из каталога выходных данных после сборки проекта. Обычно свойство `$(OutputPath)` определяется в файле проекта MSBuild, поэтому для файла проекта, импортирующего следующий файл, создается ZIP-архив `output.zip`:
+ В приведенном ниже примере (используемом в качестве импортируемого файла *.targets* ) создается *ZIP-архив* из каталога выходных данных после сборки проекта. Обычно свойство `$(OutputPath)` определяется в файле проекта MSBuild, поэтому для файла проекта, импортирующего следующий файл, создается ZIP-архив `output.zip`:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

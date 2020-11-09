@@ -1,5 +1,7 @@
 ---
 title: Справочник по MSBuild | Документы Майкрософт
+description: Ссылки на статьи, содержащие справочные сведения о MSBuild, подсистеме сборки для Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,18 +17,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b164d3d141c66817afd0eb88054fd9220656c0f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e5b7bb9287f26825ad1a90c3f339d7308fd6def1
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633269"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046565"
 ---
 # <a name="msbuild-reference"></a>Справочные сведения о MSBuild
 
 MSBuild — это система сборки для Visual Studio. Далее приведены ссылки на разделы, содержащие справочную информацию по MSBuild.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 
 - [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)\
  В нем описаны элементы XML, которые составляют формат файла MSBuild.
@@ -53,13 +55,13 @@ MSBuild — это система сборки для Visual Studio. Далее
  Описаны аргументы и параметры, которые могут использоваться с MSBuild.exe.
 
 - [Файлы TARGETS](../msbuild/msbuild-dot-targets-files.md)\
- Описан *TARGETS*-файл, включенный в MSBuild.
+ Описан *TARGETS* -файл, включенный в MSBuild.
 
 - [Стандартные метаданные элементов](../msbuild/msbuild-well-known-item-metadata.md)\
  Перечислены метаданные, которые создаются вместе с каждым элементом.
 
 - [Файлы ответов](../msbuild/msbuild-response-files.md)\
- Описаны *RSP*-файлы, содержащие параметры командной строки.
+ Описаны *RSP* -файлы, содержащие параметры командной строки.
 
 - [Дополнительные ресурсы](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)\
  Ссылки на веб-узлы и группы новостей по MSBuild.

@@ -1,5 +1,7 @@
 ---
 title: Задача ResolveKeySource | Документы Майкрософт
+description: Сведения о параметрах задачи ResolveKeySource MSBuild, которая определяет источник ключа строгого имени.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa4e2454a0216e697ed12404091eb0ef16416cb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2ed7bf0e831153d1120789d97b2a27aa77822a6b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632710"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048586"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource - задача
 
@@ -31,9 +33,9 @@ ms.locfileid: "77632710"
 
 ## <a name="task-parameters"></a>Параметры задачи
 
- В следующей таблице приводятся параметры задачи `ResolveKeySource`.
+ В следующей таблице приводятся параметры задачи `ResolveKeySource` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |`AutoClosePasswordPromptShow`|Необязательный параметр `Int32`.<br /><br /> Возвращает или задает длительность (в секундах) отображения сообщения с обратным отсчетом.|
 |`AutoClosePasswordPromptTimeout`|Необязательный параметр `Int32`.<br /><br /> Получает или задает интервал времени в секундах перед закрытием диалогового окна запроса пароля.|
@@ -46,7 +48,7 @@ ms.locfileid: "77632710"
 |`ShowImportDialogDespitePreviousFailures`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, нужно отображать диалоговое окно импорта, несмотря на предыдущие сбои.|
 |`SuppressAutoClosePasswordPrompt`|Необязательный параметр `Boolean`.<br /><br /> Получает или задает логическое значение, указывающее, закрывается ли диалоговое окно запроса пароля автоматически.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 

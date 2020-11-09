@@ -1,5 +1,7 @@
 ---
 title: Элемент UsingTask (MSBuild) | Документация Майкрософт
+description: Узнайте об элементе Task в UsingTask MSBuild, который содержит данные, передаваемые в UsingTask TaskFactory.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36644a6b21092361d92dba5f0886eb4198884995
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f99452021b0efef1e5df305e984c684f3f446905
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263192"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047891"
 ---
 # <a name="task-element-of-usingtask-msbuild"></a>Элемент Task элемента UsingTask (MSBuild)
 
 Содержит данные, передаваемые в `UsingTask` `TaskFactory`. Дополнительные сведения см. в статье [Элемент UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project> \<UsingTask> \<Task>
+ \<Project> \<UsingTask>
  \<Task>
 
 ## <a name="syntax"></a>Синтаксис

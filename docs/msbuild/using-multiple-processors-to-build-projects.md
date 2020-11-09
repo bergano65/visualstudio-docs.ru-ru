@@ -1,5 +1,7 @@
 ---
 title: Использование нескольких процессоров при сборке проектов | Документация Майкрософт
+description: Узнайте, как MSBuild использует преимущества систем с несколькими процессорами или ядрами, создавая отдельный процесс сборки для каждого доступного процессора.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dc62112324f7ad19c47b346ac8c1e3f86570b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e6c523d21a194626805168d6fee3054e77586b19
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631306"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047579"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>Использование нескольких процессоров при построении проектов
 
@@ -36,7 +38,7 @@ ms.locfileid: "77631306"
 
 ## <a name="c-project-vcxproj-and-solution-sln-files"></a>Файлы решений (SLN-файлы) и проектов (VCPROJ-файлы) C++
 
- [Задача MSBuild](../msbuild/msbuild-task.md) может принимать файлы решений (*SLN-файлы*) и проектов (*VCХPROJ-файлы*) C++. Для проектов C++ вызывается VCWrapperProject, а затем создается внутренний проект MSBuild. Для решений C++ вызывается SolutionWrapperProject, а затем создается внутренний проект MSBuild. В обоих случаях полученный проект обрабатывается так же, как любой другой проект MSBuild.
+ [Задача MSBuild](../msbuild/msbuild-task.md) может принимать файлы решений ( *SLN-файлы* ) и проектов ( *VCХPROJ-файлы* ) C++. Для проектов C++ вызывается VCWrapperProject, а затем создается внутренний проект MSBuild. Для решений C++ вызывается SolutionWrapperProject, а затем создается внутренний проект MSBuild. В обоих случаях полученный проект обрабатывается так же, как любой другой проект MSBuild.
 
 ## <a name="multi-process-execution"></a>Выполнение нескольких процессов
 
@@ -44,7 +46,7 @@ ms.locfileid: "77631306"
 
  Чтобы эта особенность позволяла использовать несколько процессоров для сборки, MSBuild прибегает к изоляции процессов. Изоляция процессов позволяет MSBuild создавать вплоть до `n` процессов, где `n` равно числу процессоров, доступных в системе. Например если MSBuild собирает решение в системе с двумя процессорами, он создает только два процесса сборки. Эти процессы используются многократно для сборки всех проектов, входящих в решение.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параллельная сборка нескольких проектов](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
 - [Задачи](../msbuild/msbuild-tasks.md)

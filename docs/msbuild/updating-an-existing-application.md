@@ -1,5 +1,7 @@
 ---
 title: Обновление существующего приложения до MSBuild 15 | Документация Майкрософт
+description: Узнайте, как обеспечить соответствие между сборками, выполняемыми программными средствами из приложения, и сборками, выполняемыми в Visual Studio или с помощью MSBuild.exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
@@ -7,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c141d1e35db1e5ce334606b255d99ce2c0afc29b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 65bde46ef959e0d005c9ab90ef8d2807ed240571
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184033"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047653"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Обновление существующего приложения для использования MSBuild 15
 
@@ -22,7 +24,7 @@ ms.locfileid: "84184033"
 
 ## <a name="use-msbuild-from-visual-studio"></a>Использование MSBuild из Visual Studio
 
-Чтобы обеспечить соответствие сборок, выполняемых программными средствами из приложения, сборкам, выполняемым в Visual Studio или *MSBuild.exe*, следует загружать сборки MSBuild из Visual Studio и использовать пакеты SDK, доступные в Visual Studio. Пакет NuGet Microsoft.Build.Locator упрощает этот процесс.
+Чтобы обеспечить соответствие сборок, выполняемых программными средствами из приложения, сборкам, выполняемым в Visual Studio или *MSBuild.exe* , следует загружать сборки MSBuild из Visual Studio и использовать пакеты SDK, доступные в Visual Studio. Пакет NuGet Microsoft.Build.Locator упрощает этот процесс.
 
 ## <a name="use-microsoftbuildlocator"></a>Использование пакета Microsoft.Build.Locator
 
@@ -69,7 +71,7 @@ ms.locfileid: "84184033"
 
 ### <a name="ensure-output-is-clean"></a>Очистка выходных данных
 
-Выполните сборку проекта и проверьте выходной каталог, чтобы убедиться в том, что в нем нет сборок *Microsoft.Build.\*.dll*, кроме сборки *Microsoft.Build.Locator.dll*, которая будет добавлена в следующем шаге.
+Выполните сборку проекта и проверьте выходной каталог, чтобы убедиться в том, что в нем нет сборок *Microsoft.Build.\*.dll* , кроме сборки *Microsoft.Build.Locator.dll* , которая будет добавлена в следующем шаге.
 
 ### <a name="add-package-reference-for-microsoftbuildlocator"></a>Добавление ссылки на пакет Microsoft.Build.Locator
 

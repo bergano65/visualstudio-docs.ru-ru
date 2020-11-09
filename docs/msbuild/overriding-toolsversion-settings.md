@@ -1,5 +1,7 @@
 ---
 title: Переопределение параметров ToolsVersion | Документация Майкрософт
+description: Сведения о нескольких способах изменения или переопределения значения набора инструментов MSBuild для проектов и решений.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 29fed063d4c223cf0b1862384612ea5aa84b52b0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633022"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048912"
 ---
 # <a name="override-toolsversion-settings"></a>Переопределение параметров ToolsVersion
 
@@ -121,13 +123,13 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     1. Если переменная среды `MSBUILDDEFAULTTOOLSVERSION` задана равной существующему параметру `ToolsVersion`, используйте ее.
 
-    2. Если свойство `DefaultOverrideToolsVersion` задано в *MSBuild.exe.config*, используйте его.
+    2. Если свойство `DefaultOverrideToolsVersion` задано в *MSBuild.exe.config* , используйте его.
 
     3. Если в реестре задано свойство `DefaultOverrideToolsVersion`, используйте его.
 
     4. В противном случае используйте текущий параметр `ToolsVersion`.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)
 - [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)

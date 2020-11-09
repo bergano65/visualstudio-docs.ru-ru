@@ -1,5 +1,7 @@
 ---
 title: Задача ResolveComReference | Документы Майкрософт
+description: Сведения о том, как MSBuild использует задачу ResolveComReference для разрешения списка с одним или несколькими именами библиотек типов или с файлами TLB в расположения на диске.
+ms.custom: SEO-VS-2020
 ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b99e743cf5bc9e3e634a8738e30d17c8e5517191
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6e98d0d64a8df1dac29127ffcf76fe8b6cc39a43
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286184"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048628"
 ---
 # <a name="resolvecomreference-task"></a>Задача ResolveComReference
 
@@ -36,7 +38,7 @@ ms.locfileid: "85286184"
 |Параметр|Описание|
 |---------------|-----------------|
 |`DelaySign`|Необязательный параметр `Boolean`.<br /><br /> Если присвоено значение `true`, помещает открытый ключ в сборку. Если присвоено значение `false`, полностью подписывает сборку.|
-|`EnvironmentVariables`|Необязательный параметр `String[]`.<br /><br /> Массив пар переменных среды, разделенных знаками равенства. Эти переменные частично передаются в порожденные процессы *tlbimp.exe* и *aximp.exe*, дополняя или выборочно переопределяя обычный блок среды.|
+|`EnvironmentVariables`|Необязательный параметр `String[]`.<br /><br /> Массив пар переменных среды, разделенных знаками равенства. Эти переменные частично передаются в порожденные процессы *tlbimp.exe* и *aximp.exe* , дополняя или выборочно переопределяя обычный блок среды.|
 |`ExecuteAsTool`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, из соответствующей внепроцессной требуемой версии .NET Framework запустятся процессы *Tlbimp.exe* и *Aximp.exe* для создания необходимых сборок-оболочек. Этот параметр разрешает настройку для различных версий.|
 |`IncludeVersionInInteropName`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, версия библиотеки типов будет включена в имя программы-оболочки. Значение по умолчанию — `false`.|
 |`KeyContainer`|Необязательный параметр `String`.<br /><br /> Задает контейнер, хранящий пару из открытого и закрытого ключей.|

@@ -1,5 +1,7 @@
 ---
-title: Создание операторов сравнения для типов, реализующих интерфейс IComparable
+title: Создание операторов сравнения для IComparable
+ms.custom: SEO-VS-2020
+description: Повышение производительности за счет создания операторов сравнения для типов, реализующих интерфейс IComparable.
 ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31e33b562a5a11ff77c1d610fbce9e90506b036d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 289562b1aebe981b0829a1adac107a607163a859
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290909"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102601"
 ---
 # <a name="generate-comparison-operators-for-types-that-implement-icomparable"></a>Создание операторов сравнения для типов, реализующих интерфейс IComparable
 
@@ -24,7 +26,7 @@ ms.locfileid: "85290909"
 
 **Когда?** Если у вас есть тип, реализующий интерфейс IComparable, операторы сравнения будут добавлены к нему автоматически.
 
-**Зачем?** Если вы реализуете тип значения, рекомендуем переопределить метод **Equals**, чтобы повысить производительность по сравнению со стандартной реализацией метода Equals в ValueType.
+**Зачем?** Если вы реализуете тип значения, рекомендуем переопределить метод **Equals** , чтобы повысить производительность по сравнению со стандартной реализацией метода Equals в ValueType.
 
 ## <a name="how-to"></a>Практические советы
 

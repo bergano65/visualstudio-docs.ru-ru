@@ -1,5 +1,7 @@
 ---
 title: Встроенные задачи MSBuild | Документация Майкрософт
+description: Узнайте, как создать внутренние задачи MSBuild путем компиляции класса, реализующего интерфейс Microsoft.Build.Framework.ITask.
+ms.custom: SEO-VS-2020
 ms.date: 09/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
-ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
+ms.openlocfilehash: 848e9c8c4e3dcc7d364f2001393730fbcc56be7e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "81638037"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046330"
 ---
 # <a name="msbuild-inline-tasks"></a>Встроенные задачи MSBuild
 
@@ -26,7 +28,7 @@ ms.locfileid: "81638037"
  В MSBuild 15.8 был добавлен [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md), позволяющий создавать кроссплатформенные встроенные задачи .NET Standard.  Если вам нужно использовать встроенные задачи в .NET Core, следует использовать RoslynCodeTaskFactory.
 ## <a name="the-structure-of-an-inline-task"></a>Структура встроенной задачи
 
- Элемент [UsingTask](../msbuild/usingtask-element-msbuild.md) содержит встроенную задачу. Встроенная задача и содержащий ее элемент `UsingTask` обычно включены в *TARGETS*-файл и при необходимости импортируются в другие файлы проекта. Ниже представлен пример обычной встроенной задачи. Обратите внимание, что в нем не предусмотрено выполнение каких-либо действий.
+ Элемент [UsingTask](../msbuild/usingtask-element-msbuild.md) содержит встроенную задачу. Встроенная задача и содержащий ее элемент `UsingTask` обычно включены в *TARGETS* -файл и при необходимости импортируются в другие файлы проекта. Ниже представлен пример обычной встроенной задачи. Обратите внимание, что в нем не предусмотрено выполнение каких-либо действий.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -83,7 +85,7 @@ ms.locfileid: "81638037"
 
 - Если значением атрибута `Type` является `Fragment`, тогда код определяет содержимое метода `Execute`, а не сигнатуру или оператор `return`.
 
-Сам код отображается, как правило, между метками `<![CDATA[` и `]]>`. Так как код размещается в разделе CDATA, вы можете не беспокоиться об экранировании зарезервированных знаков, например "\<" или ">".
+Сам код отображается, как правило, между метками `<![CDATA[` и `]]>`. Так как код размещается в разделе CDATA, вам не нужно беспокоиться об экранировании зарезервированных знаков, например \<" or ">.
 
 Вы также можете использовать атрибут `Source` элемента `Code`, чтобы указать расположение файла, содержащего код для задачи. Код в исходном файле должен иметь тип, заданный атрибутом `Type`. Если есть атрибут `Source`, тогда по умолчанию значением атрибута `Type` является `Class`. Если атрибут `Source` отсутствует, значением по умолчанию будет `Fragment`.
 
@@ -117,7 +119,7 @@ Log.LogError("Hello, world!");
 </Project>
 ```
 
- Задачу HelloWorld можно сохранить в файл с именем *HelloWorld.targets*, а затем вызвать его из проекта, как показано ниже.
+ Задачу HelloWorld можно сохранить в файл с именем *HelloWorld.targets* , а затем вызвать его из проекта, как показано ниже.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

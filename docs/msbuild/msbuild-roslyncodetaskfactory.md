@@ -1,5 +1,7 @@
 ---
 title: Встроенные задачи MSBuild с RoslynCodeTaskFactory | Документы Майкрософт
+description: Сведения о фабрике RoslynCodeTaskFactory MSBuild, которая использует кроссплатформенные компиляторы Roslyn для создания сборок задач в памяти, используемых в качестве встроенных задач.
+ms.custom: SEO-VS-2020
 ms.date: 09/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1f606ed9e3d42d9f57cb941ee9518c1abfbc47
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 336c23a5e1357e8e425a74c0954d3c0e28f8a930
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289213"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049131"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Встроенные задачи MSBuild с RoslynCodeTaskFactory
 
@@ -26,7 +28,7 @@ ms.locfileid: "85289213"
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Структура встроенной задачи с RoslynCodeTaskFactory
 
- Встроенные задачи RoslynCodeTaskFactory объявляются так же, как [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md). Единственное отличие заключается в том, что они ориентированы на .NET Standard.  Встроенная задача и содержащий ее элемент `UsingTask` обычно включены в *TARGETS*-файл и при необходимости импортируются в другие файлы проекта. Ниже представлен пример обычной встроенной задачи. Обратите внимание, что в нем не предусмотрено выполнение каких-либо действий.
+ Встроенные задачи RoslynCodeTaskFactory объявляются так же, как [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md). Единственное отличие заключается в том, что они ориентированы на .NET Standard.  Встроенная задача и содержащий ее элемент `UsingTask` обычно включены в *TARGETS* -файл и при необходимости импортируются в другие файлы проекта. Ниже представлен пример обычной встроенной задачи. Обратите внимание, что в нем не предусмотрено выполнение каких-либо действий.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -117,7 +119,7 @@ Log.LogError("Hello, world!");
 </Project>
 ```
 
-Задачу HelloWorld можно сохранить в файл с именем *HelloWorld.targets*, а затем вызвать его из проекта, как показано ниже.
+Задачу HelloWorld можно сохранить в файл с именем *HelloWorld.targets* , а затем вызвать его из проекта, как показано ниже.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

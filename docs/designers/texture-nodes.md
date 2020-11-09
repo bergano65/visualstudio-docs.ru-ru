@@ -1,5 +1,7 @@
 ---
 title: Узлы текстуры
+description: Узнайте об узлах текстуры с примерами разных типов и геометрических объектов текстур, для создания или преобразования координат текстуры в конструкторе шейдеров.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3393bb979b73694c4ac65120ae794ef1205b37c1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c3e45789358e49a0b224a6de3ea6e5dfea44bf01
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589817"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93133966"
 ---
 # <a name="texture-nodes"></a>Узлы текстур
 

@@ -1,5 +1,7 @@
 ---
 title: Задача RequiresFramework35SP1Assembly | Документы Майкрософт
+description: Узнайте, как с помощью задачи RequiresFramework35SP1Assembly в MSBuild определить, что приложению требуется .NET Framework 3.5 с пакетом обновления 1 (SP1).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caefe0887ca23cd4cee60c3a4ba2a6133e9893df
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d1819f72cc0eef389a3ef46148d4462fbd610e1a
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632775"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048692"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly - задача
 
@@ -29,7 +31,7 @@ ms.locfileid: "77632775"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `RequiresFramework35SP1Assembly`.
+ В следующей таблице приводятся параметры задачи `RequiresFramework35SP1Assembly` .
 
 |Параметр|Description|
 |---------------|-----------------|
@@ -42,7 +44,7 @@ ms.locfileid: "77632775"
 |`ReferencedAssemblies`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает сборки, на которые в проекте есть ссылки.|
 |`RequiresMinimumFramework35SP1`|Необязательный выходной параметр `Boolean`.<br /><br /> Если задано значение `true`, для приложения требуется платформа .NET Framework 3.5 с пакетом обновления 1 (SP1).|
 |`SigningManifests`|Необязательный выходной параметр `Boolean`.<br /><br /> Если задано значение `true`, манифесты ClickOnce подписаны.|
-|`SuiteName`|Необязательный параметр `String`.<br /><br /> Задает имя папки в меню **Пуск**, куда будет установлено приложение.|
+|`SuiteName`|Необязательный параметр `String`.<br /><br /> Задает имя папки в меню **Пуск** , куда будет установлено приложение.|
 |`TargetFrameworkVersion`|Необязательный параметр `String`.<br /><br /> Задает версию платформы .NET Framework, для которой предназначено приложение.|
 
 ## <a name="remarks"></a>Remarks

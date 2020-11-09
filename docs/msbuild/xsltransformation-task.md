@@ -1,5 +1,7 @@
 ---
 title: Задача XslTransformation | Документация Майкрософт
+description: Узнайте, как MSBuild использует задачу XslTransformation для преобразования входных данных XML с помощью XSLT и их вывода на выходное устройство или в файл.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d23799e5ce5bf391915ac459c69c27b990211f0a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: da983f6dc215a5afd651733ecea6b62846ca95cc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094547"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047187"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation - задача
 
@@ -41,7 +43,7 @@ ms.locfileid: "79094547"
 |`XslContent`|Необязательный параметр `String`.<br /><br /> Указывает входные данные XSLT в виде строки.|
 |`XslInputPath`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает входной файл XSLT.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
  Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -56,7 +58,7 @@ ms.locfileid: "79094547"
                        Parameters="&lt;Parameter Name='Parameter1' Value='$(Parameter1)'/&gt;"/>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры XSLT](/dotnet/standard/data/xml/xslt-parameters)
 - [Задачи](../msbuild/msbuild-tasks.md)

@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Применение шейдера к трехмерной модели
+description: Сведения о том, как с помощью редактора моделей применить шейдер, написанный на языке Directed Graph Shader Language, к трехмерной модели для придания ей уникального вида.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f1ae981704287a74bb4e37117190b8b6111d0a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b31e9002a97decf699ffbd589a1e0e656e3e403
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769243"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134123"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>Практическое руководство. Применение шейдера к трехмерной модели
 

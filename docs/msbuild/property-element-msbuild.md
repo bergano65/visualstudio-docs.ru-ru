@@ -1,5 +1,7 @@
 ---
 title: Элемент Property (MSBuild) | Документы Майкрософт
+description: Узнайте об элементе Property в MSBuild, который содержит имя и значение определяемого пользователем свойства, которое должно быть задано как дочерний элемент элемента PropertyGroup.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e50a6dd66c2dca7fa4159c578ccd334ed1d26cae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8c17906467579e8fc532372371df8be76b40e7f0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632957"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048831"
 ---
 # <a name="property-element-msbuild"></a>Элемент Property (MSBuild)
 
@@ -63,9 +65,9 @@ ms.locfileid: "77632957"
 
  Этот текст указывает значение свойства и может содержать XML.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
- Имена свойств ограничены только символами ASCII. Значения свойств указываются в проекте путем размещения имени свойства между "`$(`" и "`)`". Например, `$(builddir)\classes` разрешится в *build\classes*, если свойство `builddir` будет иметь значение `build`. Дополнительные сведения о свойствах см. в статье [MSBuild Properties](../msbuild/msbuild-properties.md) (Свойства MSBuild).
+ Имена свойств ограничены только символами ASCII. Значения свойств указываются в проекте путем размещения имени свойства между "`$(`" и "`)`". Например, `$(builddir)\classes` разрешится в *build\classes* , если свойство `builddir` будет иметь значение `build`. Дополнительные сведения о свойствах см. в статье [MSBuild Properties](../msbuild/msbuild-properties.md) (Свойства MSBuild).
 
 ## <a name="example"></a>Пример
 

@@ -1,5 +1,7 @@
 ---
 title: Элемент UsingTask (MSBuild) | Документация Майкрософт
+description: Узнайте об элементе UsingTask в MSBuild, который сопоставляет задачу, на которую ссылается элемент задачи, со сборкой, которая содержит реализацию задачи.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14556467e0907818333695b3388b2d11f3467ed7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5d09f266f5bf51b870dbbbc0f80aa8282e91faa9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289161"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046115"
 ---
 # <a name="usingtask-element-msbuild"></a>Элемент UsingTask (MSBuild)
 
@@ -77,13 +79,13 @@ ms.locfileid: "85289161"
  На переменные среды, свойства командной строки, свойства и элементы уровня проекта можно ссылаться в элементах `UsingTask`, включенных в файл проекта либо напрямую, либо через импортированный файл проекта. Дополнительные сведения см. в разделе [Задачи](../msbuild/msbuild-tasks.md).
 
 > [!NOTE]
-> Свойства и элементы уровня проекта не имеют смысла, если элемент`UsingTask` получен из одного из файлов *TASKS*, зарегистрированных глобально в модуле MSBuild. Значения уровня проекта не являются глобальными по отношению к MSBuild.
+> Свойства и элементы уровня проекта не имеют смысла, если элемент`UsingTask` получен из одного из файлов *TASKS* , зарегистрированных глобально в модуле MSBuild. Значения уровня проекта не являются глобальными по отношению к MSBuild.
 
  В MSBuild 4.0 задачи можно загрузить из файлов *OVERRIDETASK*.
 
 Сборка, содержащая пользовательскую задачу, загружается при первом использовании `Task`.
 
-## <a name="example"></a>Пример
+## <a name="example-1"></a>Пример 1
 
  В следующем примере показано использование элемента `UsingTask` с атрибутом `AssemblyName`.
 
@@ -100,7 +102,7 @@ ms.locfileid: "85289161"
 </UsingTask>
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-2"></a>Пример 2
 
  В следующем примере показано использование элемента `UsingTask` с атрибутом `AssemblyFile`.
 

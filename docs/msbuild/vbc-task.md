@@ -1,5 +1,7 @@
 ---
 title: Задача Vbc| Документация Майкрософт
+description: Узнайте об использовании задачи Vbc в MSBuild для создания программы-оболочки для файла vbc.exe, который создает исполняемые файлы, библиотеки динамической компоновки или модули кода.
+ms.custom: SEO-VS-2020
 ms.date: 04/12/2018
 ms.topic: reference
 f1_keywords:
@@ -18,16 +20,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30f1a45c384495ccd02c624ea42f91a4379226df
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.openlocfilehash: 0177467677c9aef1f41b006bb9b1ddfaed408e40
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167459"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046760"
 ---
 # <a name="vbc-task"></a>Vbc - задача
 
-Использует программу-оболочку для файла *vbc.exe*, который создает исполняемые файлы (*EXE-файлы*), библиотеки динамической компоновки (*DLL-файлы*) или модули кода ( *.netmodule*). Дополнительные сведения о файле *vbc.exe* см. в разделе [Компилятор Visual Basic с интерфейсом командной строки](/dotnet/visual-basic/reference/command-line-compiler/index).
+Использует программу-оболочку для файла *vbc.exe* , который создает исполняемые файлы ( *EXE-файлы* ), библиотеки динамической компоновки ( *DLL-файлы* ) или модули кода ( *.netmodule* ). Дополнительные сведения о файле *vbc.exe* см. в разделе [Компилятор Visual Basic с интерфейсом командной строки](/dotnet/visual-basic/reference/command-line-compiler/index).
 
 ## <a name="parameters"></a>Параметры
 
@@ -79,7 +81,7 @@ ms.locfileid: "82167459"
 | `TargetCompactFramework` | Необязательный параметр `Boolean`.<br /><br /> Если `true`, задача предназначена для .NET Compact Framework. Этот параметр соответствует параметру [-netcf](/dotnet/visual-basic/reference/command-line-compiler/netcf) компилятора *vbc.exe*. |
 | `TargetType` | Необязательный параметр `String`.<br /><br /> Задает формат выходного файла. Этот параметр может принимать одно из следующих значений: `library` (создается библиотека кода), `exe` (создается консольное приложение), `module` (создается модуль) или `winexe` (создается программа Windows). Значение по умолчанию — `library`. Этот параметр соответствует параметру [-target](/dotnet/visual-basic/reference/command-line-compiler/target) компилятора *vbc.exe*. |
 | `Timeout` | Необязательный параметр `Int32`.<br /><br /> Задает промежуток времени в миллисекундах, после которого исполняемый файл задачи прекращается. Значение по умолчанию — `Int.MaxValue`. Оно указывает, что период ожидания отсутствует. |
-| `ToolPath` | Необязательный параметр `String`.<br /><br /> Указывает расположение, из которого задача будет загружать базовый исполняемый файл (*vbc.exe*). Если этот параметр не задан, задача использует путь установки пакета SDK, соответствующий версии платформы, на которой выполняется MSBuild. |
+| `ToolPath` | Необязательный параметр `String`.<br /><br /> Указывает расположение, из которого задача будет загружать базовый исполняемый файл ( *vbc.exe* ). Если этот параметр не задан, задача использует путь установки пакета SDK, соответствующий версии платформы, на которой выполняется MSBuild. |
 | `TreatWarningsAsErrors` | Необязательный параметр `Boolean`.<br /><br /> Если присвоено значение `true`, все предупреждения обрабатываются как ошибки. Дополнительные сведения см. в разделе [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror). |
 | `UseHostCompilerIfAvailable` | Необязательный параметр `Boolean`.<br /><br /> Предписывает задаче использовать внутрипроцессный объект компилятора, если он доступен. Используется только в Visual Studio. |
 | `Utf8Output` | Необязательный параметр `Boolean`.<br /><br /> Регистрирует выходные данные компилятора в кодировке UTF-8. Этот параметр соответствует параметру [-utf8output](/dotnet/visual-basic/reference/command-line-compiler/utf8output) компилятора *vbc.exe*. |
@@ -87,7 +89,7 @@ ms.locfileid: "82167459"
 | `WarningsAsErrors` | Необязательный параметр `String`.<br /><br /> Задает список предупреждений, которые следует обрабатывать как ошибки. Дополнительные сведения см. в разделе [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror).<br /><br /> Этот параметр переопределяет параметр `TreatWarningsAsErrors`. |
 | `WarningsNotAsErrors` | Необязательный параметр `String`.<br /><br /> Задает список предупреждений, которые не следует обрабатывать как ошибки. Дополнительные сведения см. в разделе [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror).<br /><br /> Этот параметр имеет смысл только в том случае, если для параметра `TreatWarningsAsErrors` задано значение `true`. |
 | `Win32Icon` | Необязательный параметр `String`.<br /><br /> Вставляет файл *ICO* в сборку, которая придает выходному файлу необходимый вид в **проводнике**. Этот параметр соответствует параметру [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) компилятора *vbc.exe*. |
-| `Win32Resources` | Необязательный параметр `String`.<br /><br /> Вставляет файл ресурсов Win32 (*RES-файл*) в выходной файл. Этот параметр соответствует параметру [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) компилятора *vbc.exe*. |
+| `Win32Resources` | Необязательный параметр `String`.<br /><br /> Вставляет файл ресурсов Win32 ( *RES-файл* ) в выходной файл. Этот параметр соответствует параметру [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) компилятора *vbc.exe*. |
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 

@@ -1,5 +1,7 @@
 ---
 title: Задача UpdateManifest | Документация Майкрософт
+description: Сведения об использовании задачи UpdateManifest в MSBuild для обновления выбранных свойств в манифесте и повторного подписания.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25e410ba3122e0065f92186195ee5a82d6a55c2f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4fab3844b21e12edceb83da310e9069199578ef6
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631346"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046859"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest - задача
 
@@ -29,16 +31,16 @@ ms.locfileid: "77631346"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `UpdateManifest`.
+ В следующей таблице приводятся параметры задачи `UpdateManifest` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
-|`ApplicationManifest`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает манифест приложения.|
+|`ApplicationManifest`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает манифест приложения.|
 |`ApplicationPath`|Обязательный параметр `String`.<br /><br /> Указывает путь к манифесту приложения.|
 |`InputManifest`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает манифест, подлежащий обновлению.|
 |`OutputManifest`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает манифест, содержащий обновленные свойства.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
  Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описание см. в статье [Базовый класс Task](../msbuild/task-base-class.md).
 

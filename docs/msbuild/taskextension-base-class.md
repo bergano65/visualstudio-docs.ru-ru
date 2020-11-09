@@ -1,5 +1,7 @@
 ---
 title: Базовый класс TaskExtension | Документы Майкрософт
+description: Параметры, которые базовый класс Microsoft.Build.Tasks.TaskExtension добавляет к производным от него задачам.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3dc771f16c7077549ba06d5cdda422319554d40
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 33808468653cf969719b6da5380da96cc53e490a
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631709"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047858"
 ---
 # <a name="taskextension-base-class"></a>Базовый класс TaskExtension
 
@@ -31,7 +33,7 @@ ms.locfileid: "77631709"
 
  В следующей таблице описываются параметры базовых классов.
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine%2A>|Необязательный параметр <xref:Microsoft.Build.Framework.IBuildEngine>.<br /><br /> Задает интерфейс подсистемы сборки, доступный для задач. Подсистема сборки автоматически устанавливает этот параметр, чтобы разрешить задачам обратный вызов.|
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A>|Необязательный параметр <xref:Microsoft.Build.Framework.IBuildEngine2>.<br /><br /> Задает интерфейс подсистемы сборки, доступный для задач. Подсистема сборки автоматически устанавливает этот параметр, чтобы разрешить задачам обратный вызов.<br /><br /> Это свойство предусмотрено для удобства, чтобы разработчикам, наследующим из этого класса, не приходилось приводить значение из `IBuildEngine` в `IBuildEngine2`.|

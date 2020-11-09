@@ -1,5 +1,7 @@
 ---
 title: Задача Touch | Документация Майкрософт
+description: Узнайте о параметрах и использовании задачи Touch в MSBuild, которая задает время доступа и изменения файлов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 873783196a3eebdaca9cc4278b091e084c1488b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 82dbd31edfa72368a85361032e9875b234585a07
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631657"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047013"
 ---
 # <a name="touch-task"></a>Touch - задача
 
@@ -31,9 +33,9 @@ ms.locfileid: "77631657"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `Touch`.
+ В следующей таблице приводятся параметры задачи `Touch` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |`AlwaysCreate`|Необязательный параметр `Boolean`.<br /><br /> Если `true`, создаются файлы, которые еще не существуют.|
 |`Files`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Определяет коллекцию файлов для изменения.|
@@ -41,7 +43,7 @@ ms.locfileid: "77631657"
 |`Time`|Необязательный параметр `String`.<br /><br /> Задает время, отличное от текущего. Формат должен быть допустимым для метода <xref:System.DateTime.Parse%2A>.|
 |`TouchedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит коллекцию успешно измененных элементов.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 

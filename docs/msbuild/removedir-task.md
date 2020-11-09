@@ -1,5 +1,7 @@
 ---
 title: Задача RemoveDir | Документы Майкрософт
+description: Узнайте, как MSBuild использует задачу RemoveDir для удаления указанного каталога и всех его файлов и подкаталогов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26a6feeca7c89a67e7dd51bd0a1f99a182ffac59
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 925e583582acad2492e9dbe9f4470924ac41d379
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632801"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048739"
 ---
 # <a name="removedir-task"></a>RemoveDir - задача
 
@@ -31,14 +33,14 @@ ms.locfileid: "77632801"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `RemoveDir`.
+ В следующей таблице приводятся параметры задачи `RemoveDir` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |`Directories`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает каталоги для удаления.|
 |`RemovedDirectories`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит каталоги, которые были успешно удалены.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 

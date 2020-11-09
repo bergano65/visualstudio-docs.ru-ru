@@ -1,5 +1,7 @@
 ---
 title: Задача VCMessage | Документы Майкрософт
+description: Узнайте, как MSBuild использует задачу VCMessage для записи в журнал предупреждений и сообщений об ошибках во время сборки проектов C++.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.topic: reference
 f1_keywords:
@@ -19,29 +21,29 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2247240ae0992c8275520ec5d7bf94d98ae1053
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8c01c86a5374c14ac27de1535020c5deed29a89f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631215"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046746"
 ---
 # <a name="vcmessage-task"></a>VCMessage - задача
 
 Заносит в журнал предупреждения и сообщения об ошибках, возникшие при сборке.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
- Эта задача помогает реализовать MSBuild для проектов C++ и не предназначена для вызова пользователем. Дополнительные сведения см. в разделе <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.
+ Эта задача помогает реализовать MSBuild для проектов C++ и не предназначена для вызова пользователем. Для получения дополнительной информации см. <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.
 
 ## <a name="parameters"></a>Параметры
 
  В следующей таблице описаны параметры задачи **VCMessage**.
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |**Аргументы**|Необязательный параметр **String** .<br /><br /> Разделенный точками с запятой список отображаемых сообщений.|
-|**Code**|Обязательный параметр **string**.<br /><br /> Номер ошибки, определяющий сообщение.|
+|**Код**|Обязательный параметр **String**.<br /><br /> Номер ошибки, определяющий сообщение.|
 |**Тип**|Необязательный параметр **String** .<br /><br /> Задает тип выдаваемого сообщения. Укажите "Предупреждение", чтобы выдать предупреждающее сообщение, или "Ошибка", чтобы выдать сообщение об ошибке.|
 
 ## <a name="see-also"></a>См. также раздел

@@ -1,5 +1,6 @@
 ---
-title: Преобразование оператора if в оператор switch или в выражение switch
+title: Преобразование инструкции if в инструкцию switch или в выражение switch
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -9,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93ad96809c77d5644b13e6221a41f0b182fb448f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8e093325ff4a4e6a9f8a2623e7e42f69bb6fa62f
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094163"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102536"
 ---
 # <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>Преобразование оператора if в оператор switch или в выражение switch
 
@@ -24,7 +25,7 @@ ms.locfileid: "79094163"
 
 **Что?** Преобразование оператора if в [оператор switch](/dotnet/csharp/language-reference/keywords/switch) или в [выражение switch](/dotnet/csharp/whats-new/csharp-8#switch-expressions) в C# 8.0.
 
-**Когда?** Вам нужно преобразовать инструкцию `if` в инструкцию `switch` или выражение `switch` или наоборот. 
+**Когда?** Вам нужно преобразовать инструкцию `if` в инструкцию `switch` или выражение `switch` или наоборот.
 
 **Зачем?** Если вы используете инструкцию `if`, такой рефакторинг позволяет с легкостью выполнить переход на инструкции `switch` или выражения `switch`.
 
@@ -32,15 +33,15 @@ ms.locfileid: "79094163"
 
 1. Поместите курсор в ключевое слово `if`.
 2. Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
-3. Выберите один из следующих двух параметров: 
+3. Выберите один из следующих двух параметров:
 
     Выберите **Преобразовать в оператор switch**.
 
-   ![Преобразование оператора if в оператор switch](media/convert-if-to-switch-statement.png) 
+   ![Преобразование оператора if в оператор switch](media/convert-if-to-switch-statement.png)
 
-    Выберите **Преобразовать в выражение "switch"**. 
+    Выберите **Преобразовать в выражение "switch"**.
 
-    ![Преобразование оператора if в выражение switch](media/convert-if-to-switch-expression.png) 
+    ![Преобразование оператора if в выражение switch](media/convert-if-to-switch-expression.png)
 
 ## <a name="see-also"></a>См. также
 

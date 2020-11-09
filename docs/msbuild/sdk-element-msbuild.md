@@ -1,5 +1,7 @@
 ---
 title: Элемент SDK (MSBuild) | Документация Майкрософт
+description: Сведения о синтаксисе, атрибутах и элементах для элемента Sdk MSBuild, который позволяет создать ссылку на пакет SDK проекта MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 01/25/2018
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b348cf2af76c439a28bbb58c0050cc3d458d5457
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632476"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048359"
 ---
 # <a name="sdk-element-msbuild"></a>Элемент SDK (MSBuild)
 
@@ -58,8 +60,8 @@ ms.locfileid: "77632476"
 | - | - |
 | [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта MSBuild. |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Практическое руководство. Ссылка на пакет SDK проекта MSBuild](../msbuild/how-to-use-project-sdk.md)
+- [How to: Use MSBuild Project SDKs](../msbuild/how-to-use-project-sdk.md) (Практическое руководство. Использование пакета SDK проекта MSBuild)
 - [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

@@ -1,5 +1,7 @@
 ---
 title: Базовый класс ToolTaskExtension | Документы Майкрософт
+description: Сведения о параметрах, которые базовый класс Microsoft.Build.Tasks.ToolTaskExtension добавляет к производным от него задачам.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aa052a0fd2216d5f3d85e99794d9ac883a09e2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e4b0148a7c42b359906cd316b45dfdf2898e6313
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631696"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047835"
 ---
 # <a name="tooltaskextension-base-class"></a>Базовый класс ToolTaskExtension
 
@@ -47,7 +49,7 @@ ms.locfileid: "77631696"
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | Необязательный параметр `bool`.<br /><br /> Если задано значение `true`, эта задача создает пакетный файл для командной строки и выполняет его с помощью командного процессора вместо непосредственного выполнения команды. |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | Необязательный параметр `bool`.<br /><br /> Если задано значение `true`, эта задача создает узел при выполнении его задачи. |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
 - [Задачи](../msbuild/msbuild-tasks.md)

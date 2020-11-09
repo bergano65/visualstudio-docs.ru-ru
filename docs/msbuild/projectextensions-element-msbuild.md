@@ -1,5 +1,7 @@
 ---
 title: Элемент ProjectExtensions (MSBuild) | Документы Майкрософт
+description: Сведения об элементе MSBuildProjectExtensions, который позволяет хранить в файлах проекта MSBuild сведения, не относящиеся к MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94f2d88aa19bf01ebe6f25c7d80772c812abcc59
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 74f01f9e6a82d89ca99455f160bda1e9b7e24345
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632970"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048847"
 ---
 # <a name="projectextensions-element-msbuild"></a>Элемент ProjectExtensions (MSBuild)
 
@@ -45,11 +47,11 @@ ms.locfileid: "77632970"
 
 ### <a name="attributes"></a>Атрибуты
 
- Отсутствуют
+ None
 
 ### <a name="child-elements"></a>Дочерние элементы
 
- Отсутствуют
+ Нет
 
 ### <a name="parent-elements"></a>Родительские элементы
 

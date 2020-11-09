@@ -1,5 +1,7 @@
 ---
 title: Задача Warning | Документы Майкрософт
+description: Узнайте, как MSBuild использует задачу Warning для записи предупреждения в журнал во время сборки на основе вычисленного условного оператора.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e95b59b4ccc0bd2df89e45512a5bdd05c027556
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ce7104c08ce8f18672bf4d2df93debc3c1d19983
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631098"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047811"
 ---
 # <a name="warning-task"></a>Warning - задача
 
@@ -40,7 +42,7 @@ ms.locfileid: "77631098"
 | `HelpKeyword` | Необязательный параметр `String`.<br /><br /> Ключевое слово справки для связи с предупреждением. |
 | `Text` | Необязательный параметр `String`.<br /><br /> Текст предупреждения, регистрируемый в журнале MSBuild, если результат вычисления параметра `Condition` оказывается равным `true`. |
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
  Задача `Warning` позволяет проектам MSBuild проверять наличие необходимой конфигурации или необходимого свойства перед переходом к следующему шагу сборки.
 

@@ -1,5 +1,7 @@
 ---
 title: Преобразования MSBuild | Документы Майкрософт
+description: Узнайте, как MSBuild использует преобразования "один к одному" для преобразования одного списка элементов в другой, позволяя более эффективно создавать проекты.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34394ba35a349a1564f6c3fdd43052be3e1fdf03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4eb35554c61c532e0d004e5c974345564e17d4ae
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633113"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048997"
 ---
 # <a name="msbuild-transforms"></a>Преобразования MSBuild
 
@@ -32,7 +34,7 @@ ms.locfileid: "77633113"
 @(RESXFile->'%(filename).resources')
 ```
 
-Например, если в списке элементов @(RESXFile) содержатся элементы *Form1.resx*, *Form2.resx* и *Form3.resx*, выходными элементами в преобразованном списке будут *Form1.resources*, *Form2.resources* и *Form3.resources*.
+Например, если в списке элементов @(RESXFile) содержатся элементы *Form1.resx* , *Form2.resx* и *Form3.resx* , выходными элементами в преобразованном списке будут *Form1.resources* , *Form2.resources* и *Form3.resources*.
 
 > [!NOTE]
 > Вы можете указать настраиваемый разделитель для преобразованного списка элементов точно так же, как и для стандартного списка элементов. Например, чтобы разделить преобразованный список элементов с помощью запятой (,), а не используемой по умолчанию точки с запятой (;), используйте следующий код XML: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
@@ -45,7 +47,7 @@ ms.locfileid: "77633113"
 @(RESXFile->'Toolset\%(filename)%(extension)')
 ```
 
- Например, если в списке элементов `RESXFile` содержатся элементы *Project1\Form1.resx*, *Project1\Form2.resx* и *Project1\Form3.text*, выходными элементами в преобразованном списке будут *Toolset\Form1.resx*, *Toolset\Form2.resx* и *Toolset\Form3.text*.
+ Например, если в списке элементов `RESXFile` содержатся элементы *Project1\Form1.resx* , *Project1\Form2.resx* и *Project1\Form3.text* , выходными элементами в преобразованном списке будут *Toolset\Form1.resx* , *Toolset\Form2.resx* и *Toolset\Form3.text*.
 
 ## <a name="dependency-analysis"></a>Анализ зависимостей
 
@@ -69,7 +71,7 @@ ms.locfileid: "77633113"
 
 ### <a name="description"></a>Описание
 
- Следующий пример показывает файл проекта MSBuild, использующий преобразования. В этом примере предполагается, что в каталоге *c:\sub0\sub1\sub2\sub3* есть только один *XSD-файл*, а рабочим каталогом является *c:\sub0*.
+ Следующий пример показывает файл проекта MSBuild, использующий преобразования. В этом примере предполагается, что в каталоге *c:\sub0\sub1\sub2\sub3* есть только один *XSD-файл* , а рабочим каталогом является *c:\sub0*.
 
 ### <a name="code"></a>Код
 

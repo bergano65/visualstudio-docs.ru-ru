@@ -1,5 +1,7 @@
 ---
 title: Задачи MSBuild | Документация Майкрософт
+description: Узнайте, как MSBuild использует задачи или блоки исполняемого кода, выполняющие атомарные операции сборки во время сборки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b065ea8cdaea2e2b39aa78a666ea0348f7b254ae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 76b359eebe0f4a22bef3ff6c6742a5134aa4520c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633139"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049047"
 ---
 # <a name="msbuild-tasks"></a>Задачи MSBuild
 
@@ -67,7 +69,7 @@ ms.locfileid: "77633139"
 
 ## <a name="overridden-tasks"></a>Переопределенные задачи
 
- MSBuild ищет задачи в нескольких местах. Во первых, в файлах с расширением *.OverrideTasks*, которые хранятся в каталогах .NET Framework. Задачи в этих файлах переопределяют любые другие задачи с теми же именами, в том числе задачи в файле проекта. Второе место — файлы с расширением *.Tasks*, расположенные в каталогах .NET Framework. Если задача не найдена ни в одном из этих расположений, выполняется задача из файла проекта.
+ MSBuild ищет задачи в нескольких местах. Во первых, в файлах с расширением *.OverrideTasks* , которые хранятся в каталогах .NET Framework. Задачи в этих файлах переопределяют любые другие задачи с теми же именами, в том числе задачи в файле проекта. Второе место — файлы с расширением *.Tasks* , расположенные в каталогах .NET Framework. Если задача не найдена ни в одном из этих расположений, выполняется задача из файла проекта.
 
 ## <a name="see-also"></a>См. также
 

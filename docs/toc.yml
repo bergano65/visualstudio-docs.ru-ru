@@ -414,12 +414,16 @@
                   href: ide/reference/datetime-timespan-completion.md
                 - name: Инкапсуляция поля
                   href: ide/reference/encapsulate-field.md
+                - name: Извлечение базового класса
+                  href: ide/reference/extract-base-class.md
                 - name: Извлечение интерфейса
                   href: ide/reference/extract-interface.md
                 - name: Извлечение метода
                   href: ide/reference/extract-method.md
                 - name: Извлечение локальной функции
                   href: ide/reference/extract-local-function.md
+                - name: Встроенный метод
+                  href: ide/reference/inline-method.md
                 - name: Встроенная временная переменная
                   href: ide/reference/inline-temporary-variable.md
                 - name: Завершение IntelliSense неимпортируемых типов и методов расширения
@@ -428,8 +432,8 @@
                   href: ide/reference/invert-conditional-logical.md
                 - name: Инверсия инструкции if
                   href: ide/reference/invert-if-statement.md
-                - name: Параметры рефакторинга статических локальных функций
-                  href: ide/reference/static-local-function-refactor-options.md
+                - name: Преобразование класса в абстрактный
+                  href: ide/reference/make-class-abstract.md
                 - name: Как сделать элемент статическим
                   href: ide/reference/make-member-static.md
                 - name: Перемещение объявления к ссылке
@@ -456,6 +460,8 @@
                   href: ide/reference/sort-usings.md
                 - name: Разбиение и объединение операторов If
                   href: ide/reference/split-or-merge-if-statement.md
+                - name: Параметры рефакторинга статических локальных функций
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: Синхронизация пространства имен и имени папки
                   href: ide/reference/sync-namespace-and-folder-name.md
                 - name: Синхронизация типа и имени файла
@@ -464,6 +470,10 @@
                   href: ide/reference/convert-var-to-explicit-type.md
                 - name: Использование тела лямбда-выражения или блока
                   href: ide/reference/use-block-body-lambda.md
+                - name: Использование new()
+                  href: ide/reference/use-new.md
+                - name: Использование сопоставления шаблонов
+                  href: ide/reference/use-pattern-matching.md
                 - name: 'Неиспользуемые назначения, переменные и параметры'
                   href: ide/reference/unused-values-parameters.md
                 - name: 'Рефакторинг для реализации переноса, отступа и выравнивания'
@@ -1082,7 +1092,7 @@
               href: ide/reference/options-dialog-box-visual-studio.md
             - name: Среда
               items:
-                - name: Общие сведения
+                - name: Общее
                   href: ide/reference/general-environment-options-dialog-box.md
                 - name: Учетные записи
                   href: ide/reference/accounts-environment-options-dialog-box.md
@@ -1120,7 +1130,7 @@
                   href: ide/reference/web-browser-environment-options-dialog-box.md
             - name: Проекты и решения
               items:
-                - name: Общие сведения
+                - name: Общее
                   href: ide/reference/projects-and-solutions-options-dialog-box.md
                 - name: Сборка и запуск
                   href: ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md
@@ -1134,13 +1144,13 @@
                   href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
             - name: Текстовый редактор
               items:
-                - name: Общие сведения
+                - name: Общее
                   href: ide/reference/options-text-editor-general.md
                 - name: Расширение файла
                   href: ide/reference/options-text-editor-file-extension.md
                 - name: Все языки
                   items:
-                    - name: Общие сведения
+                    - name: Общее
                       href: ide/reference/options-text-editor-all-languages.md
                     - name: Полосы прокрутки
                       href: ide/reference/options-text-editor-all-languages-scroll-bars.md
@@ -1222,7 +1232,7 @@
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
             - name: Конструктор Windows Forms
               items:
-                - name: Общие сведения
+                - name: Общее
                   href: ide/reference/options-windows-forms-designer.md
                 - name: Настройка пользовательского интерфейса данных
                   href: ide/reference/options-windows-forms-designer-data-ui-customization.md
@@ -1427,7 +1437,7 @@
       items:
         - name: График выпуска
           href: /visualstudio/productinfo/release-rhythm/
-        - name: "Visual\_Studio\_2017"
+        - name: "Visual Studio\_2017"
           items:
             - name: Заметки о текущем выпуске
               href: /visualstudio/releasenotes/vs2017-relnotes/
@@ -1441,7 +1451,7 @@
               href: /visualstudio/productinfo/vs2017-compatibility-vs/
             - name: Требования к системе
               href: /visualstudio/productinfo/vs2017-system-requirements-vs/
-        - name: Visual Studio 2019
+        - name: "Visual Studio\_2019"
           items:
             - name: Заметки о текущем выпуске
               href: /visualstudio/releases/2019/release-notes/

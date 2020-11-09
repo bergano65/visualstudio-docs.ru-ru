@@ -1,5 +1,7 @@
 ---
 title: Задача WriteLinesToFile | Документы Майкрософт
+description: Узнайте, как MSBuild использует задачу WriteLinesToFile для записи путей к указанным элементам в указанный текстовый файл.
+ms.custom: SEO-VS-2020
 ms.date: 09/20/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27673ba3691e53540bce2249700c4453cb56c166
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: a504f4329c9e7b15eb8fbe1b756d682f0de44907
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286106"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047371"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile - задача
 

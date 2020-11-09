@@ -1,5 +1,7 @@
 ---
 title: Задача ResolveManifestFiles | Документация Майкрософт
+description: Узнайте, как MSBuild использует задачу ResolveManifestFiles для разрешения элементов во время сборки в файлы для создания манифеста.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2628f06ac4eafc7d57123460771793005597b039
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ca5b74b32faba4937a821503af3665d1ec1d72c9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632697"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048554"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles - задача
 
@@ -29,9 +31,9 @@ ms.locfileid: "77632697"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `ResolveManifestFiles`.
+ В следующей таблице приводятся параметры задачи `ResolveManifestFiles` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |`DeploymentManifestEntryPoint`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Определяет имя манифеста развертывания.|
 |`EntryPoint`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Определяет управляемую сборку или ссылку на манифест ClickOnce, являющуюся точкой входа в манифест.|

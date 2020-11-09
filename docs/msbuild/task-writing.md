@@ -1,5 +1,7 @@
 ---
 title: Написание задач | Документы Майкрософт
+description: Узнайте, как создавать собственные задачи для предоставления кода, выполняемого во время сборки MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +14,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cbcf47ec83e1b900ba94ab3842c2cfa63fdcc5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1b614fd1705491e676bb89a9527c75cf86bdd36c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631842"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047918"
 ---
 # <a name="task-writing"></a>Написание задач
 
 Задачи содержат код, который выполняется в процессе сборки. Задачи содержатся в целевых объектах. В MSBuild включена библиотека типичных задач, но вы также можете создавать собственные задачи. Дополнительные сведения о библиотеке задач, включенных в MSBuild, см. в статье [Справочник по задачам MSBuild](../msbuild/msbuild-task-reference.md).
 
-## <a name="tasks"></a>Задачи
+## <a name="tasks"></a>Задания
 
  Примеры задач: [Copy](../msbuild/copy-task.md) — копирование одного или нескольких файлов; [MakeDir](../msbuild/makedir-task.md) — создание каталога; [Csc](../msbuild/csc-task.md) — компиляция файлов исходного кода C#. Каждая задача реализуется в виде класса платформы .NET, реализующего интерфейс <xref:Microsoft.Build.Framework.ITask>, который определяется в сборке *Microsoft.Build.Framework.dll*.
 
@@ -97,7 +99,7 @@ namespace MyTasks
 
  Если проекту предстоит запускать задачу, MSBuild необходимо знать, как найти сборку, содержащую класс задачи. Задачи регистрируются с помощью [элемента UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- Файл MSBuild в *Microsoft.Common.Tasks* — это файл проекта, который содержит список элементов `UsingTask`, регистрирующих все задачи предоставленные в MSBuild. Этот файл включается автоматически при сборке каждого проекта. Если задача, зарегистрированная в *Microsoft.Common.Tasks*, зарегистрирована также в текущем файле проекта, текущий файл проекта имеет приоритет. Таким образом можно переопределить задачу по умолчанию собственной задачей с тем же именем.
+ Файл MSBuild в *Microsoft.Common.Tasks*  — это файл проекта, который содержит список элементов `UsingTask`, регистрирующих все задачи предоставленные в MSBuild. Этот файл включается автоматически при сборке каждого проекта. Если задача, зарегистрированная в *Microsoft.Common.Tasks* , зарегистрирована также в текущем файле проекта, текущий файл проекта имеет приоритет. Таким образом можно переопределить задачу по умолчанию собственной задачей с тем же именем.
 
 > [!TIP]
 > Чтобы увидеть список задач, включенных в MSBuild, просмотрите содержимое файла *Microsoft.Common.Tasks*.
@@ -170,7 +172,7 @@ public string RequiredProperty { get; set; }
 
 MSBuild изначально обрабатывает свойства типов `string`, `bool`, `ITaskItem` и `ITaskItem[]`. Если задача принимает параметр другого типа, MSBuild вызывает <xref:System.Convert.ChangeType%2A> для преобразования `string` (со всеми развернутыми свойствами и ссылками на элементы) в целевой тип. Если преобразование для любого входного параметра завершается неудачно, MSBuild выдает ошибку и не вызывает метод `Execute()` задачи.
 
-## <a name="example"></a>Пример
+## <a name="example-1"></a>Пример 1
 
 ### <a name="description"></a>Описание
 
@@ -195,7 +197,7 @@ namespace SimpleTask1
 }
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-2"></a>Пример 2
 
 ### <a name="description"></a>Описание
 
@@ -231,7 +233,7 @@ namespace SimpleTask2
 }
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-3"></a>Пример 3
 
 ### <a name="description"></a>Описание
 
@@ -241,7 +243,7 @@ namespace SimpleTask2
 
 [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
-## <a name="example"></a>Пример
+## <a name="example-4"></a>Пример 4
 
 ### <a name="description"></a>Описание
 

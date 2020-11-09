@@ -1,5 +1,7 @@
 ---
 title: Задача ReadLinesFromFile | Документы Майкрософт
+description: Сведения об использовании задачи ReadLinesFromFile в MSBuild для считывания списка элементов из текстового файла. Этот файл должен иметь по одному элементу на каждой строке.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c926c131fab101563841bea3362e88e27674226
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ff2c43af40ea429714f0624db67c53fa46eb6427
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632905"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048772"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile - задача
 
@@ -31,14 +33,14 @@ ms.locfileid: "77632905"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `ReadLinesFromFile`.
+ В следующей таблице приводятся параметры задачи `ReadLinesFromFile` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
-|`File`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает файл, который нужно прочитать. Этот файл должен иметь по одному элементу на каждой строке.|
+|`File`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает файл, который нужно прочитать. Этот файл должен иметь по одному элементу на каждой строке.|
 |`Lines`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит строки, считываемые из файла.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 

@@ -1,5 +1,7 @@
 ---
 title: Задача ParallelCustomBuild | Документация Майкрософт
+description: Сведения об использовании задачи ParallelCustomBuild в MSBuild для выполнения параллельных экземпляров задачи CustomBuild.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d8a171d393f629d0b6ab3a7fc61ad37862b0da1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f4491d0a5e9c9d3a2554bd32211fd1fa8f7be2d2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77279262"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048890"
 ---
 # <a name="parallelcustombuild-task"></a>Задача ParallelCustomBuild
 
@@ -32,12 +34,12 @@ ms.locfileid: "77279262"
 
 В следующей таблице описаны параметры задачи **ParallelCustomBuild**.
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |**BreakOnFirstFailure**|Необязательный параметр типа **bool**.|
 |**MaxItemsInBatch**|Необязательный параметр типа **int**.|
 |**MaxProcesses**|Необязательный параметр типа **int**.|
-|**Источники**|Обязательный параметр **ITaskItem[]** .|
+|**Sources**|Обязательный параметр **ITaskItem[]** .|
 
 ## <a name="see-also"></a>См. также раздел
 

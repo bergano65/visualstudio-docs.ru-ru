@@ -1,5 +1,7 @@
 ---
 title: Задача ResourcesGenerator | Документация Майкрософт
+description: Узнайте, как в MSBuild используется задача ResourcesGenerator для внедрения одного или нескольких ресурсов в файл RESOURCES.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,23 +19,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5aba45292aaa55a719eb19d6f0f6f115e8b477
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 288d83cd16b9faebc9c6826a08da7c11811663d5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632515"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048480"
 ---
 # <a name="resourcesgenerator-task"></a>Задача ResourcesGenerator
 
-Задача <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> внедряет один или несколько ресурсов (*JPG*, *ICO*, *BMP* и XAML в двоичном формате, а также другие типы расширений) в файл *RESOURCES*.
+Задача <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> внедряет один или несколько ресурсов ( *JPG* , *ICO* , *BMP* и XAML в двоичном формате, а также другие типы расширений) в файл *RESOURCES*.
 
 ## <a name="task-parameters"></a>Параметры задачи
 
 |Параметр|Описание|
 |---------------|-----------------|
-|`OutputPath`|Обязательный параметр **string**.<br /><br /> Определяет абсолютный путь выходного каталога. Если путь не является абсолютным, он интерпретируется относительно корневого каталога проекта.|
-|`OutputResourcesFile`|Обязательный параметр вывода **ITaskItem[]** .<br /><br /> Определяет путь и имя для созданного файла *RESOURCES*. Если путь не является абсолютным, файл *RESOURCES* создается относительно корневого каталога проекта.|
+|`OutputPath`|Обязательный параметр **String**.<br /><br /> Определяет абсолютный путь выходного каталога. Если путь не является абсолютным, он интерпретируется относительно корневого каталога проекта.|
+|`OutputResourcesFile`|Обязательный параметр вывода **ITaskItem[]**.<br /><br /> Определяет путь и имя для созданного файла *RESOURCES*. Если путь не является абсолютным, файл *RESOURCES* создается относительно корневого каталога проекта.|
 |`ResourcesFiles`|Обязательный параметр **ITaskItem[]** .<br /><br /> Определяет один или несколько ресурсов для внедрения в созданный файл *RESOURCES*.|
 
 ## <a name="example"></a>Пример

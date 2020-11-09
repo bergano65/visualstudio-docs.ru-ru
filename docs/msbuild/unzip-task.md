@@ -1,5 +1,7 @@
 ---
 title: Задача Unzip | Документы Майкрософт
+description: Узнайте о параметрах и использовании задачи Unzip в MSBuild, которая распаковывает ZIP-архив в указанное расположение.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d701f70950bb5a5cb2338007db129ca15d194b77
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631514"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046911"
 ---
 # <a name="unzip-task"></a>Задача Unzip
 
@@ -38,16 +40,16 @@ ms.locfileid: "77631514"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `Unzip`.
+ В следующей таблице приводятся параметры задачи `Unzip` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |`DestinationFolder`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem><br /><br /> Указывает папку назначения для распаковки файла.|
-|`OverwriteReadOnlyFiles`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, перезаписывает файлы, доступные только для чтения. По умолчанию равен `false`.|
-|`SkipUnchangedFiles`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, пропускает распаковку файлов, которые не изменились. По умолчанию равен `true`. В задаче `Unzip` неизмененными считаются файлы одного размера с одинаковым временем последнего изменения.|
+|`OverwriteReadOnlyFiles`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, перезаписывает файлы, доступные только для чтения. По умолчанию — `false`.|
+|`SkipUnchangedFiles`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, пропускает распаковку файлов, которые не изменились. По умолчанию — `true`. В задаче `Unzip` неизмененными считаются файлы одного размера с одинаковым временем последнего изменения.|
 |`SourceFiles`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает один или несколько распаковываемых файлов. При указании нескольких файлов они распаковываются по очереди одну папку.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 

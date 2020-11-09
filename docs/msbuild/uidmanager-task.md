@@ -1,5 +1,7 @@
 ---
 title: Задача UidManager | Документация Майкрософт
+description: Узнайте, как задача UidManager в MSBuild проверяет, обновляет и удаляет уникальные идентификаторы (UID) для локализации всех элементов XAML в исходных файлах XAML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37692c541fb2a6e9b2ccf61083dd383e56a79766
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 852b910de742676e1fe7dd0c85129640eb37a9ae
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631527"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046932"
 ---
 # <a name="uidmanager-task"></a>Задача UidManager
 
@@ -34,9 +36,9 @@ ms.locfileid: "77631527"
 
 | Параметр | Описание |
 |-------------------------| - |
-| `IntermediateDirectory` | Необязательный параметр типа **String**.<br /><br /> Определяет каталог, используемый для резервного копирования файлов источника XAML, которые указываются с помощью параметра **MarkupFiles**. |
+| `IntermediateDirectory` | Необязательный параметр **String** .<br /><br /> Определяет каталог, используемый для резервного копирования файлов источника XAML, которые указываются с помощью параметра **MarkupFiles**. |
 | `MarkupFiles` | Обязательный параметр **ITaskItem[]** .<br /><br /> Определяет файлы XAML источника, включаемые для проверки, обновления или удаления UID. |
-| `Task` | Обязательный параметр **string**.<br /><br /> Определяет задачу управления UID для выполнения. Допустимые параметры: **Check**, **Update** и **Remove**. |
+| `Task` | Обязательный параметр **String**.<br /><br /> Определяет задачу управления UID для выполнения. Допустимые параметры: **Check** , **Update** и **Remove**. |
 
 ## <a name="example"></a>Пример
 

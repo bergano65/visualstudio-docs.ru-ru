@@ -1,5 +1,7 @@
 ---
 title: Функции свойств | Документы Майкрософт
+description: Сведения об использовании функций свойств. Эти свойства представляют собой вызовы методов .NET Framework, которые отображаются в определениях свойств MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 4c1e7a90d5d037865d9942ea1b91f33d7724706f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183656"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048818"
 ---
 # <a name="property-functions"></a>Функции свойств
 
@@ -248,9 +250,9 @@ $([MSBuild]::GetPathOfFileAbove(dir.props))
 В следующих примерах показано, как используется эта функция.
 
 ```
-$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
+$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
-$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
+$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
 ```
 
 ## <a name="msbuild-getregistryvaluefromview"></a>MSBuild GetRegistryValueFromView
@@ -263,7 +265,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-64-разрядная операционная система Windows ведет раздел реестра **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node**, содержащий представление реестра **HKEY_LOCAL_MACHINE\SOFTWARE** для 32-разрядных приложений.
+64-разрядная операционная система Windows ведет раздел реестра **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** , содержащий представление реестра **HKEY_LOCAL_MACHINE\SOFTWARE** для 32-разрядных приложений.
 
 По умолчанию 32-разрядное приложение, работающее на WOW64, получает доступ к 32-разрядному представлению реестра, а 64-разрядное приложение — к 64-разрядному представлению реестра.
 
@@ -281,7 +283,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-В этом примере данные **SLRuntimeInstallPath** получаются из раздела **ReferenceAssemblies**, но сначала поиск выполняется в 64-разрядном представлении реестра, а затем — в 32-разрядном.
+В этом примере данные **SLRuntimeInstallPath** получаются из раздела **ReferenceAssemblies** , но сначала поиск выполняется в 64-разрядном представлении реестра, а затем — в 32-разрядном.
 
 ## <a name="msbuild-makerelative"></a>MSBuild MakeRelative
 

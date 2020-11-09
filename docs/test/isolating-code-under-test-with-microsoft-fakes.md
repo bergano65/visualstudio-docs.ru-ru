@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 9ef41b8645e77a28c8422fff49111b41215ba971
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e837b1a0e9a1d8fe06342352e4eedf5ce0fa9117
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739880"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325953"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Изоляция тестируемого кода с помощью Microsoft Fakes
 
@@ -33,16 +33,17 @@ Fakes предлагает два варианта на выбор:
 
 - Visual Studio Enterprise
 - Проект .NET Framework
-- Поддержка проектов .NET Core и в стиле SDK в настоящее время доступна в предварительной версии. [Подробнее](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
+::: moniker range=">=vs-2019"
+- Поддержка проектов в стиле пакета SDK и .NET Core, представленная в Visual Studio 2019 (обновление 6), включена по умолчанию в обновление 8. Дополнительные сведения см. в статье [Microsoft Fakes для проектов .NET Core и проектов в стиле SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+::: moniker-end
 
 > [!NOTE]
-> - Проекты .NET Standard не поддерживаются.
 > - Профилирование с помощью Visual Studio недоступно для тестов, использующих Microsoft Fakes.
 
 ## <a name="choose-between-stub-and-shim-types"></a>Выбор между заглушкой и оболочкой
 Обычно проект Visual Studio считается компонентом, потому что эти классы разрабатываются и обновляются одновременно. Заглушки и оболочки можно использовать для вызовов, осуществляемых проектом в отношении других проектов в решении или других сборок, на которые ссылается проект.
 
-Как правило, заглушки рекомендуется использовать для вызовов в пределах решения Visual Studio, а оболочки — для вызовов других сборок, на которые указывают ссылки. Это происходит потому, что в собственном решении рекомендуется отделять компоненты, указывая интерфейсы нужным заглушкам способом. Однако внешние сборки, такие как *System.dll*, обычно не предоставляются с отдельными определениями интерфейса, поэтому вместо них приходится использовать оболочки.
+Как правило, заглушки рекомендуется использовать для вызовов в пределах решения Visual Studio, а оболочки — для вызовов других сборок, на которые указывают ссылки. Это происходит потому, что в собственном решении рекомендуется отделять компоненты, указывая интерфейсы нужным заглушкам способом. Однако внешние сборки, такие как *System.dll* , обычно не предоставляются с отдельными определениями интерфейса, поэтому вместо них приходится использовать оболочки.
 
 Вот некоторые другие причины.
 
@@ -82,11 +83,15 @@ Fakes предлагает два варианта на выбор:
 
 2. **Добавление сборки Fakes**
 
-    1. В **обозревателе решений** разверните список ссылок тестового проекта. При использовании Visual Basic нужно щелкнуть **Показать все файлы**, чтобы открыть список ссылок.
+   1. В **Обозревателе решений** выполните следующие действия: 
+       - Для более старого проекта .NET Framework (не в стиле пакета SDK) разверните узел **Ссылки** проекта модульного теста.
+       ::: moniker range=">=vs-2019"
+       - Для проекта в стиле SDK, предназначенного для .NET Framework или .NET Core, разверните узел **Зависимости** , чтобы найти сборку, которую нужно имитировать в разделе **Сборки** , **Проекты** или **Пакеты**.
+       ::: moniker-end
+       - При работе в Visual Basic на панели инструментов **Обозревателя решений** необходимо выбрать команду **Показать все файлы** , чтобы просмотреть узел **Ссылки**.
+   2. Выделите сборку, содержащую определения классов, для которых необходимо создать оболочки. Например, если требуется создать оболочку для **DateTime** , выберите **System.dll**.
 
-    2. Выберите ссылку на сборку, в которой определен интерфейс (например, IStockFeed). В контекстном меню данной ссылки щелкните **Добавить сборку имитаций**.
-
-    3. Выполните повторную сборку решения.
+   3. В контекстном меню щелкните **Добавить сборку имитаций**.
 
 3. В тестах создайте экземпляры заглушки и предоставьте код для ее методов.
 
@@ -244,6 +249,61 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 (Нет сборки System.IO.Fakes для ссылки. Пространство имен создается в процессе создания оболочки. Однако можно использовать using или Import обычным способом.)
 
 Можно также создать оболочки для отдельных экземпляров, конструкторов и свойств. Дополнительные сведения см. в статье [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
+
+## <a name="using-microsoft-fakes-in-the-ci"></a>Использование Microsoft Fakes при непрерывной интеграции
+
+### <a name="microsoft-fakes-assembly-generation"></a>Создание сборки Microsoft Fakes
+Так как для Microsoft Fakes требуется Visual Studio Enterprise, то для создания сборок Fakes необходимо создать проект с помощью [задачи сборки Visual Studio](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops).
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Альтернативный вариант — проверить сборки Fakes в процессе непрерывной интеграции и использовать [задачи MSBuild](../msbuild/msbuild-task.md?view=vs-2019). После этого необходимо убедиться, что в тестовом проекте есть ссылка на созданную сборку Fakes, как показано в следующем фрагменте кода:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <Reference Include="FakesAssemblies\System.Fakes.dll">
+    </ItemGroup>
+</Project>
+```
+
+Эта ссылку необходимо добавить вручную в конкретные проекты в стиле пакета SDK (.NET Core и .NET Framework), так как мы перешли к неявному добавлению ссылок на сборки в тестовом проекте. При использовании этого метода необходимо убедиться, что сборки Fakes обновляются при изменении родительской сборки.
+::: moniker-end
+
+### <a name="running-microsoft-fakes-tests"></a>Запуск тестов Microsoft Fakes
+Пока в настроенном каталоге `FakesAssemblies` имеются сборки Microsoft Fakes (по умолчанию `$(ProjectDir)FakesAssemblies`), можно запустить тесты с помощью [задачи vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops).
+
+::: moniker range=">=vs-2019"
+Для распределенного тестирования с помощью [задачи vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) для проектов .NET Core, использующих Microsoft Fakes, требуется Microsoft Visual Studio 2019 (обновление 9) предварительной версии `20201020-06` и более поздней.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-or-net-core-projects"></a>Переход от тестовых проектов .NET Framework, использующих Microsoft Fakes, к проектам .NET Core или .NET Framework в стиле пакета SDK
+Потребуется внести минимальные изменения в настройки .NET Framework для Microsoft Fakes, чтобы перейти на использование .NET Core. Ниже приведены требования, которые необходимо учитывать.
+- Если вы используете шаблон пользовательского проекта, убедитесь, что он в стиле пакета SDK и создан для совместимой требуемой версии .NET Framework.
+- Некоторые типы существуют в разных сборках в .NET Framework и .NET Core (например, `System.DateTime` существует в `System`/`mscorlib` в .NET Framework, а `System.Runtime` — в .NET Core). В этих сценариях необходимо изменить подделываемую сборку.
+- Если имеется ссылка на сборку Fakes и тестовый проект, может появиться предупреждение сборки об отсутствии ссылки, подобное этому:
+  ```
+  (ResolveAssemblyReferences target) ->
+  warning MSB3245: Could not resolve this reference. Could not locate the assembly "AssemblyName.Fakes". Check to make sure the assembly exists on disk.
+  If this reference is required by your code, you may get compilation errors.
+  ```
+  Это предупреждение отображается, так как необходимые изменения, внесенные при создании сборки Fakes, можно игнорировать. Этого можно избежать, удалив ссылку на сборку из файла проекта, так как теперь мы неявно добавляем их во время сборки.
+::: moniker-end
+
+## <a name="microsoft-fakes-support"></a>Поддержка Microsoft Fakes 
+### <a name="microsoft-fakes-in-older-projects-targeting-net-framework-non-sdk-style"></a>Microsoft Fakes в старых проектах, предназначенных для .NET Framework (не в стиле пакета SDK).
+- Создание сборки Microsoft Fakes поддерживается в Visual Studio Enterprise 2015 и более поздних версиях.
+- Тесты Microsoft Fakes можно выполнять со всеми доступными пакетами NuGet Microsoft.TestPlatform.
+- Объем протестированного кода поддерживается для тестовых проектов с помощью Microsoft Fakes в Visual Studio Enterprise 2015 и более поздних версиях.
+
+### <a name="microsoft-fakes-in-sdk-style-net-framework-and-net-core-projects"></a>Microsoft Fakes в проектах .NET Core и .NET Framework в стиле пакета SDK
+- Создание сборки Microsoft Fakes, представленное в Visual Studio Enterprise 2019 (обновление 6), включено по умолчанию в обновлении 8.
+- Тесты Microsoft Fakes для проектов, которые предназначены для .NET Framework, можно выполнять со всеми доступными пакетами NuGet Microsoft.TestPlatform.
+- Тесты Microsoft Fakes для проектов, которые предназначены для .NET Core, можно выполнять с пакетами NuGet Microsoft.TestPlatform с версиями [16.8.0-preview-20200921-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.8.0-preview-20200921-01) и выше.
+- Объем протестированного кода поддерживается для тестовых проектов, которые предназначены для .NET Framework, с помощью Microsoft Fakes в Visual Studio Enterprise версии 2015 и более поздних.
+- Поддержка объема протестированного кода для тестовых проектов, которые предназначены для .NET Core, с использованием Microsoft Fakes находится в разработке.
+
 
 ## <a name="in-this-section"></a>Содержание раздела
 [Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)

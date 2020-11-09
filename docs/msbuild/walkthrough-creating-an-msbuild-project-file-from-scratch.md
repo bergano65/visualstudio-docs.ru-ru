@@ -1,5 +1,6 @@
 ---
 title: Создание файла проекта MSBuild с нуля
+description: Сведения о том, как создать файл проекта MSBuild с нуля, как организован XML-код и как вы можете изменить его для управления сборкой.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b05410c1a9ac36273a43481929a3be463d8af1
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3ebe3c60e4061a66bb77f41bf165fb16e0c427c2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136697"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046059"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Пошаговое руководство. Создание файла проекта MSBuild с нуля
 
@@ -50,7 +51,7 @@ ms.locfileid: "92136697"
 
 ## <a name="extend-the-path"></a>Расширение пути
 
-Прежде чем использовать MSBuild, необходимо расширить переменную среду PATH, чтобы включить все необходимые средства. Для этого можно использовать **командную строку разработчика для Visual Studio**. В Windows 10 ее можно найти в поле поиска на панели задач Windows. Чтобы настроить среду в обычной командой строке или в среде скриптов, запустите файл *VSDevCmd.bat*, находящийся в подпапке *Common7/Tools* каталога, в котором установлено решение Visual Studio.
+Прежде чем использовать MSBuild, необходимо расширить переменную среду PATH, чтобы включить все необходимые средства. Для этого можно использовать **командную строку разработчика для Visual Studio**. В Windows 10 ее можно найти в поле поиска на панели задач Windows. Чтобы настроить среду в обычной командой строке или в среде скриптов, запустите файл *VSDevCmd.bat* , находящийся в подпапке *Common7/Tools* каталога, в котором установлено решение Visual Studio.
 
 ## <a name="create-a-minimal-application"></a>Создание минимального приложения
 
@@ -58,9 +59,9 @@ ms.locfileid: "92136697"
 
 1. В командной строке перейдите к папке, в которой необходимо создать приложение, например *\Мои документы\\* или *\Рабочий стол\\* .
 
-2. Введите **md HelloWorld**, чтобы создать подпапку *\HelloWorld\\* .
+2. Введите **md HelloWorld** , чтобы создать подпапку *\HelloWorld\\* .
 
-3. Введите **cd HelloWorld**, чтобы изменить новую папку.
+3. Введите **cd HelloWorld** , чтобы изменить новую папку.
 
 4. Запустите "Блокнот" или другой текстовый редактор и введите следующий код.
 
@@ -143,10 +144,10 @@ ms.locfileid: "92136697"
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
-    <Csc Sources="@(Compile)"/>  
+    <Csc Sources="@(Compile)"/>  
   </Target>
 </Project>
 ```
@@ -154,7 +155,7 @@ ms.locfileid: "92136697"
 Задачи в целевом объекте сборки выполняются последовательно. В этом случае задача `Csc` компилятора Visual C# является единственной. Она ожидает список исходных файлов для компилирования, который задается значением элемента `Compile`. Элемент `Compile` ссылается на единственный исходный файл *Helloworld.cs*.
 
 > [!NOTE]
-> В элементе можно использовать подстановочный знак "звездочка" (\*) для ссылки на все файлы, которые имеют расширение имени файла *.cs*, как показано ниже:
+> В элементе можно использовать подстановочный знак "звездочка" (\*) для ссылки на все файлы, которые имеют расширение имени файла *.cs* , как показано ниже:
 >
 > ```xml
 > <Compile Include="*.cs" />
@@ -225,7 +226,7 @@ ms.locfileid: "92136697"
     <OutputPath>Bin\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />
@@ -255,7 +256,7 @@ ms.locfileid: "92136697"
 
      После этого программа создаст папку *\Bin\\* , вызовет компилятор Visual C# для создания приложения *MSBuildSample* и разместит его в папку *\Bin\\* .
 
-2. Чтобы убедиться, что папка *\Bin\\* создана и содержит приложение *MSBuildSample*, введите **dir Bin**.
+2. Чтобы убедиться, что папка *\Bin\\* создана и содержит приложение *MSBuildSample* , введите **dir Bin**.
 
 3. Протестируйте приложение, указав в командной строке **Bin\MSBuildSample**.
 
@@ -301,7 +302,7 @@ ms.locfileid: "92136697"
     <OutputPath>Bin\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />
@@ -332,7 +333,7 @@ ms.locfileid: "92136697"
 
      Так как параметр **-t** для задания цели напрямую не использовался, MSBuild запускает стандартную цель "Сборка". Параметр **-p** переопределяет свойство `AssemblyName` и присваивает ему новое значение `Greetings`. В результате в папке *\Bin\\* создается новое приложение *Greetings.exe*.
 
-2. Чтобы убедиться, что в папке *\Bin\\* содержатся приложение *MSBuildSample* и новое приложение *Greetings*, введите **dir Bin**.
+2. Чтобы убедиться, что в папке *\Bin\\* содержатся приложение *MSBuildSample* и новое приложение *Greetings* , введите **dir Bin**.
 
 3. Протестируйте приложение Greetings, указав в командной строке **Bin\Greetings**.
 
@@ -350,9 +351,9 @@ ms.locfileid: "92136697"
 
 7. Введите команду **msbuild**.
 
-     Несмотря на то что файл проекта не указан, MSBuild строит файл *helloworld.csproj*, поскольку в текущей папке присутствует только один файл проекта. В результате в папке *\Bin\\* создается новое приложение *MSBuildSample*.
+     Несмотря на то что файл проекта не указан, MSBuild строит файл *helloworld.csproj* , поскольку в текущей папке присутствует только один файл проекта. В результате в папке *\Bin\\* создается новое приложение *MSBuildSample*.
 
-     Чтобы убедиться, что в папке *\Bin\\* появилось приложение *MSBuildSample*, введите **dir Bin**.
+     Чтобы убедиться, что в папке *\Bin\\* появилось приложение *MSBuildSample* , введите **dir Bin**.
 
 ## <a name="build-incrementally"></a>Инкрементная сборка
 

@@ -1,5 +1,7 @@
 ---
 title: Элемент PropertyGroup (MSBuild) | Документы Майкрософт
+description: Сведения об элементе PropertyGroup MSBuild, содержащем набор определяемых пользователем элементов свойств.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b94cf266be81b81aca9c83fe8d29b9777ee9114b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9d276cdfa997bb02cfa44037d8ebe758a4d2704e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632931"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048801"
 ---
 # <a name="propertygroup-element-msbuild"></a>Элемент PropertyGroup (MSBuild)
 
@@ -54,7 +56,7 @@ ms.locfileid: "77632931"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Property](../msbuild/property-element-msbuild.md)|Необязательный элемент.<br /><br /> Имя определяемого пользователем свойства, которое содержит значение свойства. Элемент `PropertyGroup` может содержать любое число элементов *Property*, включая нуль.|
+|[Свойство](../msbuild/property-element-msbuild.md)|Необязательный элемент.<br /><br /> Имя определяемого пользователем свойства, которое содержит значение свойства. Элемент `PropertyGroup` может содержать любое число элементов *Property* , включая нуль.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 

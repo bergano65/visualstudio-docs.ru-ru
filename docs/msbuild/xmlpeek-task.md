@@ -1,5 +1,7 @@
 ---
 title: Задача XmlPeek | Документы Майкрософт
+description: Узнайте, как MSBuild использует задачу XmlPeek для задания значений, указанных в запросе XPath, в XML-файл.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27b535af260d205c74ef87d0325680389d1dbe58
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5d9a3c03e1301bddf4cc26c76dac9e0381ec726b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286125"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047255"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek - задача
 

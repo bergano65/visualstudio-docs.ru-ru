@@ -1,5 +1,7 @@
 ---
 title: Свойства MSBuild | Документы Майкрософт
+description: Узнайте, как с помощью свойств MSBuild в виде пары "имя-значение" передавать значения задачам, проверять условия и сохранять значения.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39f1f612244fedcc707475d067e67500dc76e1d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61cff0bfa1db43b196d7f6403b5140f9af2947ba
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633295"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046135"
 ---
 # <a name="msbuild-properties"></a>свойства MSBuild
 
@@ -64,7 +66,7 @@ ms.locfileid: "77633295"
 
 ## <a name="registry-properties"></a>Свойство реестра
 
- Значения разделов системного реестра можно считывать, используя следующий синтаксис. Здесь `Hive` — это куст реестра (например, **HKEY_LOCAL_MACHINE**), `MyKey` — имя раздела, `MySubKey` — имя подраздела, `Value` — значение подраздела.
+ Значения разделов системного реестра можно считывать, используя следующий синтаксис. Здесь `Hive` — это куст реестра (например, **HKEY_LOCAL_MACHINE** ), `MyKey` — имя раздела, `MySubKey` — имя подраздела, `Value` — значение подраздела.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
@@ -88,7 +90,7 @@ $(registry:Hive\MyKey\MySubKey)
 
 ## <a name="global-properties"></a>Глобальные свойства
 
- MSBuild позволяет задавать свойства в командной строке с помощью параметра **-property** (или **-p**). Эти значения глобальных свойств переопределяют значения свойств, заданные в файле проекта. Это относится также к свойствам среды за исключением зарезервированных свойств, которые нельзя изменить.
+ MSBuild позволяет задавать свойства в командной строке с помощью параметра **-property** (или **-p** ). Эти значения глобальных свойств переопределяют значения свойств, заданные в файле проекта. Это относится также к свойствам среды за исключением зарезервированных свойств, которые нельзя изменить.
 
  В следующем примере показано, как присвоить глобальному свойству `Configuration` значение `DEBUG`.
 

@@ -1,5 +1,7 @@
 ---
 title: Задача UnregisterAssembly | Документация Майкрософт
+description: Сведения об использовании задачи UnregisterAssembly в MSBuild для отмены регистрации указанных сборок для целей COM-взаимодействия.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8cddcf9bf0632914d1a6de1cc904dbf0f173e6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 068073b2d84d95ad3d86abe582691be0dd4af895
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631501"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046914"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly - задача
 
@@ -31,7 +33,7 @@ ms.locfileid: "77631501"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `UnregisterAssembly`.
+ В следующей таблице приводятся параметры задачи `UnregisterAssembly` .
 
 |Параметр|Description|
 |---------------|-----------------|
@@ -39,7 +41,7 @@ ms.locfileid: "77631501"
 |`AssemblyListFile`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Содержит сведения о состоянии взаимодействия между задачами `RegisterAssembly` и `UnregisterAssembly`. Благодаря этому задача не пытается отменить регистрацию для сборки, которую не удалось зарегистрировать в задаче `RegisterAssembly`.<br /><br /> Если этот параметр указан, параметры `Assemblies` и `TypeLibFiles` игнорируются.|
 |`TypeLibFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Отменяет регистрацию библиотеки заданного типа в указанной сборке. **Примечание.** Этот параметр является обязательным только в том случае, если имя файла библиотеки типов отличается от имени сборки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
  Для успешного выполнения задачи не требуется, чтобы существовала указанная сборка. Если вы попытаетесь отменить регистрацию несуществующей сборки, задача завершится успешно с предупреждением. Такая логика объясняется тем, что целью этой задачи является удаление регистрации сборки из реестра. Если сборка не существует, то в реестре нет информации о ней, следовательно, задача выполнена успешно.
 
@@ -66,6 +68,6 @@ ms.locfileid: "77631501"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Задача RegisterAssembly](../msbuild/registerassembly-task.md)
+- [RegisterAssembly - задача](../msbuild/registerassembly-task.md)
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

@@ -1,5 +1,7 @@
 ---
 title: Задача RemoveDuplicates | Документы Майкрософт
+description: Сведения об использовании задачи RemoveDuplicates в MSBuild для удаления повторяющихся элементов из указанной коллекции элементов.
+ms.custom: SEO-VS-2020
 ms.date: 03/01/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90366bab14eefd1be4edac81d6b09b3f57aa3332
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 269499153c4be228503d6bd5b22e91e63dd5b5dd
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632788"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048669"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates - задача
 
@@ -31,14 +33,14 @@ ms.locfileid: "77632788"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `RemoveDuplicates`.
+ В следующей таблице приводятся параметры задачи `RemoveDuplicates` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |`Filtered`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит коллекцию элементов, из которой удалены все повторяющиеся элементы. При этом порядок входных элементов остается неизменным и сохраняется первый экземпляр каждого повторяющегося элемента.|
 |`Inputs`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Коллекция элементов, из которой нужно удалить повторяющиеся элементы.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
  Эта задача не учитывает регистр, а также не сравнивает метаданные элементов при определении повторяющихся элементов.
 
@@ -70,7 +72,7 @@ ms.locfileid: "77632788"
 </Project>
 ```
 
- В примере ниже видно, что в задаче `RemoveDuplicates` сохраняется порядок входных элементов. По завершении задачи в коллекции элементов `FilteredItems` содержатся элементы *MyFile2.cs*, *MyFile1.cs* и *MyFile3.cs* в указанном порядке.
+ В примере ниже видно, что в задаче `RemoveDuplicates` сохраняется порядок входных элементов. По завершении задачи в коллекции элементов `FilteredItems` содержатся элементы *MyFile2.cs* , *MyFile1.cs* и *MyFile3.cs* в указанном порядке.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

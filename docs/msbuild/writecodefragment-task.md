@@ -1,5 +1,7 @@
 ---
 title: Задача WriteCodeFragment | Документы Майкрософт
+description: Узнайте, как MSBuild использует задачу WriteCodeFragment для создания временного файла кода из указанного созданного фрагмента кода.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ab604b23a99ab2dd62adca6076168fe264ab1b4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fc96f804541f780da38776d19b19393eb249a4ec
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77630696"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047471"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment - задача
 
@@ -29,7 +31,7 @@ ms.locfileid: "77630696"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `WriteCodeFragment`.
+ В следующей таблице приводятся параметры задачи `WriteCodeFragment` .
 
 |Параметр|Description|
 |---------------|-----------------|

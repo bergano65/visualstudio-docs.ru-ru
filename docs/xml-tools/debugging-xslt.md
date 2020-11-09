@@ -1,5 +1,7 @@
 ---
 title: Способы отладки кода XSLT
+description: Узнайте, как выполнять отладку кода XSLT в Visual Studio с помощью отладчика XSLT для пошагового прохождения кода, установки точек останова и просмотра состояний исполнения XSLT.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: overview
 author: TerryGLee
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e3885aa895cec5ed080b7a8b4d22522d2e9edf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad9ec70e5cd0f215dbb138db521dee09d722242
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815621"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047749"
 ---
 # <a name="debugging-xslt"></a>Отладка XSLT
 
@@ -46,7 +48,7 @@ ms.locfileid: "85815621"
 
 1. При создании объекта <xref:System.Xml.Xsl.XslCompiledTransform> устанавливайте в своем коде параметр `enableDebug` в значение `true`. Это заставляет обработчик XSLT создавать отладочные данные при компиляции кода.
 
-1. Нажмите клавишу **F11**, чтобы войти в код XSLT.
+1. Нажмите клавишу **F11** , чтобы войти в код XSLT.
 
    Таблица стилей XSLT загружается в новое окно документа и запускается XSLT-отладчик.
 

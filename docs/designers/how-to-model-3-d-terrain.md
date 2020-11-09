@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Моделирование трехмерного ландшафта
+description: Сведения о том, как с помощью редактора моделей создать модель трехмерного ландшафта путем разделения плоскости для создания дополнительных поверхностей и выполнения действий с их вершинами.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f19363d9024f8e7e2deb69a8038b8854eb50e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54010c46d121fd4221500afb3038013626939a1b
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768959"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134809"
 ---
 # <a name="how-to-model-3d-terrain"></a>Практическое руководство. Моделирование трехмерного ландшафта
 

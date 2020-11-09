@@ -1,5 +1,7 @@
 ---
 title: Порядок сборки целевых объектов | Документы Майкрософт
+description: Узнайте, как указать порядок выполнения целевых объектов MSBuild, если входные данные одного целевого объекта зависят от выходных данных другого.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 955c8c496df45bbfce28bdac1571f84649621024
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585461"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048065"
 ---
 # <a name="target-build-order"></a>Порядок сборки целевого объекта
 
@@ -73,7 +75,7 @@ ms.locfileid: "75585461"
 
 ## <a name="target-dependencies"></a>Зависимости целевого объекта
 
-Целевые объекты могут описывать отношения зависимости друг от друга. Атрибут `DependsOnTargets` указывает, что целевой объект зависит от других целевых объектов. Например,
+Целевые объекты могут описывать отношения зависимости друг от друга. Атрибут `DependsOnTargets` указывает, что целевой объект зависит от других целевых объектов. Например, примененная к объекту директива
 
 ```xml
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />
@@ -85,7 +87,7 @@ ms.locfileid: "75585461"
 
 В MSBuild 4.0 можно указать порядок целевых объектов с помощью атрибутов `BeforeTargets` и `AfterTargets`.
 
-Рассмотрим следующий скрипт.
+Рассмотрим следующий сценарий.
 
 ```xml
 <Project DefaultTargets="Compile;Link" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -130,6 +132,6 @@ MSBuild определяет порядок сборки целевых объе
 
 7. После выполнения или пропуска целевого объекта выполняются все прочие целевые объекты, у которых он указан в атрибуте `AfterTargets`.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Цели](../msbuild/msbuild-targets.md)
+- [Целевые объекты](../msbuild/msbuild-targets.md)

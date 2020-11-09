@@ -1,5 +1,7 @@
 ---
 title: Стандартные и настраиваемые конфигурации наборов инструментов | Документы Майкрософт
+description: Узнайте о стандартном и настраиваемом наборе инструментов MSBuild, который содержит ссылки на задачи, целевые объекты и средства для создания проекта приложения.
+ms.custom: SEO-VS-2020
 ms.date: 01/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb75d6fc02f2841383127482503799b2c78512cf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: b82eaf6ca52b04d39e9f776feca74f5bb223a0d5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289187"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048174"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Стандартные и настраиваемые конфигурации наборов инструментов
 
