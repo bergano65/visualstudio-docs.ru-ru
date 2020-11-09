@@ -1,5 +1,7 @@
 ---
 title: Выбор стратегии развертывания ClickOnce | Документация Майкрософт
+description: Узнайте о стратегиях развертывания приложения ClickOnce и о том, как выбрать стратегию в зависимости от типа развертываемого приложения.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b4ed387d00c96c1d66fdac0bb92a0bfbae7c530
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d623c47960a3c1a44c184df52488682659d5238d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842396"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383174"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Выбор стратегии развертывания ClickOnce
 Существует три разные стратегии развертывания приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Выбираемая стратегия зависит главным образом от типа развертываемого приложения. Ниже перечисляются следующие три стратегии развертывания:

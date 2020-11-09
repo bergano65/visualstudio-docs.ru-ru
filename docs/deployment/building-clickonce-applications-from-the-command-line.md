@@ -1,5 +1,7 @@
 ---
 title: Создание приложений ClickOnce из командной строки | Документация Майкрософт
+description: Узнайте, как создавать проекты Visual Studio из командной строки, что позволяет воспроизвести сборку с помощью автоматизированного процесса.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 065eea058ffa78c84428e031832e24837eb81d08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8423c2820aaf7daf479df6c14dd2e8de9e0e6e5a
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74797198"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383200"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Построение приложений ClickOnce из командной строки
 В [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] можно создавать проекты из командной строки, даже если они создаются в интегрированной среде разработки (IDE). На самом деле можно перестроить проект, созданный с помощью, [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] на другом компьютере, на котором установлен только .NET Framework. Это позволяет воспроизводить сборку с помощью автоматизированного процесса, например, в Центральной лаборатории построения или с помощью расширенных методик создания скриптов вне области построения самого проекта.
@@ -29,7 +31,7 @@ ms.locfileid: "74797198"
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>Воспроизведение развертываний приложений ClickOnce с помощью MSBuild
  При вызове MSBuild/target: Publish из командной строки она сообщает системе MSBuild о необходимости построить проект и создать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение в папке Publish. Это эквивалентно выбору команды **опубликовать** в интегрированной среде разработки.
 
- Эта команда выполняет *msbuild.exe*, которая находится по пути в среде командной строки Visual Studio.
+ Эта команда выполняет *msbuild.exe* , которая находится по пути в среде командной строки Visual Studio.
 
  "Целевой" — это индикатор MSBuild для обработки команды. Целевыми объектами являются целевой объект "сборка" и целевой объект "Publish". Цель сборки эквивалентна выбору команды сборки (или нажатию клавиши F5) в интегрированной среде разработки. Если требуется только построить проект, можно добиться этого, введя `msbuild` . Эта команда работает, так как целевой объект сборки является целевым объектом по умолчанию для всех проектов, создаваемых [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] . Это означает, что не нужно явно указывать целевой объект сборки. Таким образом, ввод `msbuild` — это та же операция, что и при вводе `msbuild /target:build` .
 
@@ -63,9 +65,9 @@ ms.locfileid: "74797198"
 
 1. Выйдите из [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
-2. В меню **Пуск** Windows выберите **все программы**, затем **Microsoft Visual Studio**, **инструменты Visual Studio**и **командную строку Visual Studio**. Откроется командная строка в корневой папке текущего пользователя.
+2. В меню **Пуск** Windows выберите **все программы** , затем **Microsoft Visual Studio** , **инструменты Visual Studio** и **командную строку Visual Studio**. Откроется командная строка в корневой папке текущего пользователя.
 
-3. В **командной строке Visual Studio**измените текущий каталог на расположение проекта, который вы только что создали ранее. Например, введите `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
+3. В **командной строке Visual Studio** измените текущий каталог на расположение проекта, который вы только что создали ранее. Например, введите `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
 
 4. Чтобы удалить существующие файлы, созданные в "Создание и публикация проекта" [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , введите `rmdir /s publish` .
 
@@ -73,7 +75,7 @@ ms.locfileid: "74797198"
 
 5. Введите `msbuild /target:publish`.
 
-   Описанные выше действия приведут к полному [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертыванию приложения во вложенной папке проекта с именем **Publish**. *Кмдлинедемо. Application* — это [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест развертывания. Папка *CmdLineDemo_1.0.0.0* содержит файлы *CmdLineDemo.exe* и файл *CmdLineDemo.exe. manifest*, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест приложения. *Setup.exe* является загрузчиком, который по умолчанию настроен для установки .NET Framework. Папка DotNetFX содержит распространяемые компоненты для .NET Framework. Это полный набор файлов, необходимых для развертывания приложения через Интернет или через UNC или компакт-диск или DVD-диск.
+   Описанные выше действия приведут к полному [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертыванию приложения во вложенной папке проекта с именем **Publish**. *Кмдлинедемо. Application* — это [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест развертывания. Папка *CmdLineDemo_1.0.0.0* содержит файлы *CmdLineDemo.exe* и файл *CmdLineDemo.exe. manifest* , [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест приложения. *Setup.exe* является загрузчиком, который по умолчанию настроен для установки .NET Framework. Папка DotNetFX содержит распространяемые компоненты для .NET Framework. Это полный набор файлов, необходимых для развертывания приложения через Интернет или через UNC или компакт-диск или DVD-диск.
    
 > [!NOTE]
 > Система MSBuild использует параметр **PublishDir** для указания расположения выходных данных, например `msbuild /t:publish /p:PublishDir="<specific location>"` .
@@ -81,7 +83,7 @@ ms.locfileid: "74797198"
 ## <a name="publish-properties"></a>Параметры публикации
  При публикации приложения в описанных выше процедурах в файл проекта вставляются следующие свойства с помощью мастера публикации. Эти свойства непосредственно влияют на то, как создается [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение.
 
- В *кмдлинедемо. vbproj*  /  *кмдлинедемо. csproj*:
+ В *кмдлинедемо. vbproj*  /  *кмдлинедемо. csproj* :
 
 ```xml
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>
@@ -109,7 +111,7 @@ ms.locfileid: "74797198"
 msbuild /target:publish /property:BootstrapperEnabled=false
 ```
 
- Управление свойствами публикации осуществляется на [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] страницах свойств **Публикация**, **Безопасность**и **подпись** **конструктора проектов**. Ниже приведено описание свойств публикации, а также сведения о том, как они заданы на различных страницах свойств конструктора приложений.
+ Управление свойствами публикации осуществляется на [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] страницах свойств **Публикация** , **Безопасность** и **подпись** **конструктора проектов**. Ниже приведено описание свойств публикации, а также сведения о том, как они заданы на различных страницах свойств конструктора приложений.
 
 - `AssemblyOriginatorKeyFile` Определяет файл ключа, используемый для подписи [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифестов приложения. Этот же ключ можно также использовать для присвоения сборке строгого имени. Это свойство задается на странице **Подписывание** **конструктора проектов**.
 
@@ -163,11 +165,11 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 |Параметр URL-адреса|Описание|
 |----------------|-----------------|
 |`PublishURL`|Требуется при публикации приложения ClickOnce на веб-сайте.|
-|`InstallURL`|Необязательный элемент. Задайте этот параметр URL-адреса, если сайт установки отличается от `PublishURL` . Например, можно присвоить параметру `PublishURL` путь FTP и задать для него `InstallURL` URL-адрес.|
-|`SupportURL`|Необязательный элемент. Задайте этот параметр URL-адреса, если сайт поддержки отличается от `PublishURL` . Например, можно установить на `SupportURL` веб-сайт поддержки клиентов вашей компании.|
-|`UpdateURL`|Необязательный элемент. Задайте этот параметр URL-адреса, если расположение обновления отличается от `InstallURL` . Например, можно присвоить параметру `PublishURL` путь FTP и задать для него `UpdateURL` URL-адрес.|
+|`InstallURL`|Необязательный параметр. Задайте этот параметр URL-адреса, если сайт установки отличается от `PublishURL` . Например, можно присвоить параметру `PublishURL` путь FTP и задать для него `InstallURL` URL-адрес.|
+|`SupportURL`|Необязательный параметр. Задайте этот параметр URL-адреса, если сайт поддержки отличается от `PublishURL` . Например, можно установить на `SupportURL` веб-сайт поддержки клиентов вашей компании.|
+|`UpdateURL`|Необязательный параметр. Задайте этот параметр URL-адреса, если расположение обновления отличается от `InstallURL` . Например, можно присвоить параметру `PublishURL` путь FTP и задать для него `UpdateURL` URL-адрес.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - <xref:Microsoft.Build.Tasks.GenerateBootstrapper>
 - <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>
 - <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>

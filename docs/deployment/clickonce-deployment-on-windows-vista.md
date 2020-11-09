@@ -1,5 +1,7 @@
 ---
 title: Развертывание ClickOnce в Windows Vista | Документация Майкрософт
+description: Узнайте, как Visual Studio создает внешний манифест UAC для ClickOnce и Registration-Free COM-приложений, для которых требуется внешний манифест.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b76804eb8c06acbcdeac017108773056ee38338
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: c2e09225339a87c55c31d27d26b129e199385e99
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641498"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383083"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Развертывание ClickOnce в Windows Vista
 
-Создание приложений в Visual Studio для контроля учетных записей (UAC) в Windows Vista обычно создает внедренный манифест, закодированный как двоичные XML-данные в исполняемом файле приложения.  ClickOnce и COM-приложения без регистрации нуждаются в внешнем манифесте, поэтому Visual Studio создает файл для этих проектов, содержащих данные контроля учетных записей, а не внедренный манифест. Для ClickOnce и развертываний COM без регистрации в Visual Studio используются сведения из файла с именем *app. manifest* для создания сведений о внешнем манифесте UAC. Во всех остальных случаях Visual Studio внедряет данные контроля учетных записей в исполняемый файл приложения.
+Создание приложений в Visual Studio для контроля учетных записей (UAC) в Windows Vista обычно создает внедренный манифест, закодированный как двоичные XML-данные в исполняемом файле приложения.  Приложениям ClickOnce и Registration-Free COM требуется внешний манифест, поэтому Visual Studio создает файл для этих проектов, содержащих данные контроля учетных записей, а не внедренный манифест. Для развертывания ClickOnce и Registration-Free развертываний COM в Visual Studio используются сведения из файла с именем *app. manifest* для создания сведений о внешнем манифесте UAC. Во всех остальных случаях Visual Studio внедряет данные контроля учетных записей в исполняемый файл приложения.
 
 Visual Studio предоставляет следующие возможности для создания манифеста:
 
@@ -36,7 +38,7 @@ Visual Studio предоставляет следующие возможност
 
 - Используйте внешний манифест. Создание внешнего манифеста с помощью *app. manifest*.
 
-   При этом создается только внешний манифест с использованием сведений в файле *app. manifest*. При публикации приложения с помощью ClickOnce или COM без регистрации Visual Studio добавляет в проект *app. manifest* , а затем добавляет этот параметр.
+   При этом создается только внешний манифест с использованием сведений в файле *app. manifest*. При публикации приложения с помощью ClickOnce или Registration-Free COM Visual Studio добавляет в проект *app. manifest* , а затем добавляет этот параметр.
 
 - Не использовать манифест. Создайте приложение без манифеста.
 
@@ -50,7 +52,7 @@ Visual Studio предоставляет следующие возможност
 
   * Сведения о настройке проектов Visual Basic для создания манифеста см. в разделе [Страница "приложение" в конструкторе проектов (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Безопасность и развертывание ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Разрешения пользователей и Visual Studio](/previous-versions/ms165100(v=vs.100))
 - [Страница "Приложение" в конструкторе проектов (C#)](../ide/reference/application-page-project-designer-csharp.md)

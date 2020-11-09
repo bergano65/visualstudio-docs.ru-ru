@@ -1,6 +1,6 @@
 ---
 title: Типы свойств не совпадают
-description: Невозможно создать ассоциацию — типы свойств не совпадают
+description: Не удается создать тип ассоциации-свойство не соответствует. Просмотрите сведения об этом сообщении Visual Studio реляционный конструктор объектов (O/R Designer).
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76d61361677923afda6125db1ae819a460a567f4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: bce5a285f3bccdc2be8004f0eba4546bb7964a42
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743186"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382056"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Невозможно создать ассоциацию &lt;имя ассоциации&gt; — типа свойств не совпадают
 
@@ -28,7 +28,7 @@ ms.locfileid: "89743186"
 
 1. Проверьте сообщение и отметьте свойства, указанные в сообщении.
 
-2. Нажмите кнопку **OK**, чтобы закрыть диалоговое окно.
+2. Нажмите кнопку **OK** , чтобы закрыть диалоговое окно.
 
 3. Проверьте **Свойства ассоциации** и выберите свойства с одинаковым типом данных.
 

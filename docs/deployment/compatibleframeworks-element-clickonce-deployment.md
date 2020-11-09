@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;элемент compatibleFrameworks (развертывание ClickOnce) | Документация Майкрософт'
+description: Элемент compatibleFrameworks определяет версии .NET Framework, в которых можно установить и запустить это приложение.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99db3d51414197df469aaa2eabe97e0967c31b05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5da9819cd3df667be5e8fa04372684f82762c037
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66746031"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383070"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;&gt;элемент compatibleFrameworks (развертывание ClickOnce)
 Идентифицирует версии платформы .NET Framework, где можно установить и выполнять это приложение.
@@ -31,12 +33,12 @@ ms.locfileid: "66746031"
 
 ```xml
 <compatibleFrameworks
-      SupportUrl> 
+      SupportUrl> 
    <framework
       targetVersion
       profile
       supportedRuntime
-   /> 
+   /> 
 </ compatibleFrameworks>
 ```
 
@@ -47,16 +49,16 @@ ms.locfileid: "66746031"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`S` `upportUrl`|Необязательный элемент. Указывает URL-адрес, по которому может быть скачана предпочтительная совместимая версия .NET Framework.|
+|`S` `upportUrl`|Необязательный параметр. Указывает URL-адрес, по которому может быть скачана предпочтительная совместимая версия .NET Framework.|
 
 ## <a name="framework"></a>платформа
- Обязательный. В следующей таблице перечислены атрибуты, которые `framework` поддерживает элемент.
+ Обязательный элемент. В следующей таблице перечислены атрибуты, которые `framework` поддерживает элемент.
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`targetVersion`|Обязательный. Указывает номер версии целевого .NET Framework.|
-|`profile`|Обязательный. Указывает профиль целевого .NET Framework.|
-|`supportedRuntime`|Обязательный. Указывает номер версии среды выполнения, связанной с целевым .NET Framework.|
+|`targetVersion`|Обязательный элемент. Указывает номер версии целевого .NET Framework.|
+|`profile`|Обязательный элемент. Указывает профиль целевого .NET Framework.|
+|`supportedRuntime`|Обязательный элемент. Указывает номер версии среды выполнения, связанной с целевым .NET Framework.|
 
 ## <a name="remarks"></a>Remarks
 
@@ -72,5 +74,5 @@ ms.locfileid: "66746031"
 </compatibleFrameworks>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)

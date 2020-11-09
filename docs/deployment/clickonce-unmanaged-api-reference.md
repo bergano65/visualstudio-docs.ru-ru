@@ -1,5 +1,7 @@
 ---
 title: Справочник по неуправляемым API для ClickOnce | Документация Майкрософт
+description: Сведения о неуправляемых общедоступных API ClickOnce из dfshim.dll, включая Клеанонлинеаппкаче, Жетдеплойментдатафромманифест и Лаунчаппликатион.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 api_name:
 - CleanOnlineAppCache
@@ -28,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b536a17df4f54158aa6f157a0d9795cf359ddc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5ca8c18c0ed69080a14ba31d4da6d80fa9ae6d4
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900283"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382615"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Справочник по неуправляемым интерфейсам API ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] неуправляемые открытые API из dfshim.dll.
@@ -44,7 +46,7 @@ ms.locfileid: "62900283"
 ### <a name="return-value"></a>Возвращаемое значение
  В случае успеха возвращает S_OK; в противном случае возвращает значение HRESULT, представляющее сбой. При возникновении управляемого исключения возвращает 0x80020009 (DISP_E_EXCEPTION).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
  Вызов Клеанонлинеаппкаче приведет к запуску [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] службы, если она еще не запущена.
 
 ## <a name="getdeploymentdatafrommanifest"></a>жетдеплойментдатафромманифест
@@ -68,7 +70,7 @@ ms.locfileid: "62900283"
 ### <a name="return-value"></a>Возвращаемое значение
  В случае успеха возвращает S_OK; в противном случае возвращает значение HRESULT, представляющее сбой. Возвращает HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER), если буфер слишком мал.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
  Указатели не должны иметь значение null. `pcwzActivationUrl` и `pcwzPathToDeploymentManifest` не должен быть пустым.
 
  Он отвечает за очистку URL-адреса активации. Например, добавьте escape-символы, где они требуются, или удалите строку запроса.
@@ -89,5 +91,5 @@ ms.locfileid: "62900283"
 ### <a name="return-value"></a>Возвращаемое значение
  В случае успеха возвращает S_OK; в противном случае возвращает значение HRESULT, представляющее сбой. При возникновении управляемого исключения возвращает 0x80020009 (DISP_E_EXCEPTION).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

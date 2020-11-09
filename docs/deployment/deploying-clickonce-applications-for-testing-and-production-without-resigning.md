@@ -1,5 +1,7 @@
 ---
 title: Развертывание приложений ClickOnce без повторного подписывания
+description: Сведения о развертывании приложений ClickOnce из нескольких сетевых расположений без повторного подписывания или изменения манифестов ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89e1d7970b26d5ba9bd49090362a6a4e8c09f78d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5644a890a8705c68852cb5f67e4d998e12338dc
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80395326"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382940"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Развертывание приложений ClickOnce для тестирования и рабочих серверов без повторного подписывания
 В этой статье описывается функция ClickOnce, появившаяся в .NET Framework версии 3,5, которая позволяет развертывать приложения ClickOnce из нескольких сетевых расположений без повторной подписи или изменения манифестов ClickOnce.
@@ -61,6 +63,6 @@ ms.locfileid: "80395326"
 ## <a name="create-a-deployment"></a>Создание развертывания
  Пошаговые инструкции по созданию развертываний, которые могут быть развернуты из разных сетевых расположений, см. в разделе [Пошаговое руководство. Развертывание вручную приложения ClickOnce, которое не требует повторного подписания и сохраняет сведения о фирменной символике](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [*Mage.exe* (инструмент создания и изменения манифестов)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [*MageUI.exe* (инструмент создания и изменения манифестов, графический клиент)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)

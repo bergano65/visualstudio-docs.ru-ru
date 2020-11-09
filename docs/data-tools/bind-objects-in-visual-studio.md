@@ -1,5 +1,6 @@
 ---
 title: Привязка данных пользовательские объекты
+description: Привязка объектов в качестве источников данных в Visual Studio. Используйте средства времени разработки для работы с пользовательскими объектами в качестве источника данных в приложении.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a1d72ed179324b8ab7682e485fbaaf8f34b25cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea36249ecc0cfc266a650ca24d143e053f7fc0d9
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282934"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382108"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Привязка объектов в качестве источников данных в Visual Studio
 
@@ -147,6 +148,6 @@ Visual Studio создает методы DBDirect, которые могут в
 [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
 [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

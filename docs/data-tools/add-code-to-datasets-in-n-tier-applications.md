@@ -1,5 +1,6 @@
 ---
 title: Добавление кода для наборов данных в n-уровневых приложениях
+description: Добавление кода в наборы данных в n-уровневых приложениях в Visual Studio. Создайте файл разделяемого класса для набора данных и добавьте в него код (вместо DatasetName. DataSet. Designer).
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a57a05ddb8317ea31b852ded369ad7ef69d40bd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdbd6e728ebd4adea1a18d842651e9941098249c
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283090"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382199"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Добавление кода для наборов данных в n-уровневых приложениях
 
@@ -26,7 +27,7 @@ ms.locfileid: "85283090"
 
 Код, определяющий набор данных, создается каждый раз при внесении изменений в определение набора данных (в типизированном наборе данных). Этот код также создается при внесении изменений во время работы мастера, изменяющего конфигурацию набора данных. Чтобы предотвратить удаление кода во время повторного создания набора данных, добавьте код в файл разделяемого класса набора данных.
 
-По умолчанию после разделения набора данных и кода TableAdapter результатом будет отдельный файл класса в каждом проекте. Исходный проект содержит файл с именем *DataSetName. Designer. vb* (или *DataSetName.Designer.CS*), который содержит код адаптера таблицы. Проект, указанный в свойстве **проекта набора данных** , имеет файл с именем *DataSetName. DataSet. Designer. vb* (или *DataSetName.DataSet.Designer.CS*). Этот файл содержит код набора данных.
+По умолчанию после разделения набора данных и кода TableAdapter результатом будет отдельный файл класса в каждом проекте. Исходный проект содержит файл с именем *DataSetName. Designer. vb* (или *DataSetName.Designer.CS* ), который содержит код адаптера таблицы. Проект, указанный в свойстве **проекта набора данных** , имеет файл с именем *DataSetName. DataSet. Designer. vb* (или *DataSetName.DataSet.Designer.CS* ). Этот файл содержит код набора данных.
 
 > [!NOTE]
 > При разделении наборов данных и адаптеров таблиц (с помощью свойства **Project DataSet** ) существующие классы частичного набора данных в проекте не перемещаются автоматически. Существующие разделяемые классы наборов данных необходимо вручную переместить в проект набора данных.
@@ -63,10 +64,10 @@ ms.locfileid: "85283090"
     }
     ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Обзор многоуровневых приложений для данных](../data-tools/n-tier-data-applications-overview.md)
-- [Добавление кода для объектов TableAdapter в многоуровневых приложениях](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
-- [Создание и настройка адаптеров таблиц](create-and-configure-tableadapters.md)
+- [Добавление кода для объектов TableAdapter в n-уровневых приложениях](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
+- [Создание и настройка адаптеров таблиц TableAdapter](create-and-configure-tableadapters.md)
 - [Общие сведения об иерархическом обновлении](hierarchical-update.md)
 - [Инструменты набора данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

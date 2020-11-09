@@ -1,5 +1,6 @@
 ---
 title: Привязка элементов управления к данным
+description: Привязка элементов управления к данным в Visual Studio. Создание элементов управления с привязкой к данным путем перетаскивания элементов из окна Источники данных.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d812316de46caf7480146003f7ba1950ae3b9e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f92382721558d76cf9e84fa587b322d56af72247
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283038"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382173"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Привязка элементов управления к данным в Visual Studio
 
@@ -45,7 +46,7 @@ ms.locfileid: "85283038"
 
 ## <a name="data-sources-window"></a>Источники данных - окно
 
-Источники данных доступны в проекте как элементы в окне **Источники данных**. Это окно отображается, если область конструктора формы является активным окном в проекте, или ее можно открыть (если проект открыт), выбрав **Просмотреть**  >  **другие**  >  **Источники данных**Windows. Можно перетаскивать элементы из этого окна для создания элементов управления, привязанных к базовым данным, а также настраивать источники данных, щелкнув правой кнопкой мыши.
+Источники данных доступны в проекте как элементы в окне **Источники данных**. Это окно отображается, если область конструктора формы является активным окном в проекте, или ее можно открыть (если проект открыт), выбрав **Просмотреть**  >  **другие**  >  **Источники данных** Windows. Можно перетаскивать элементы из этого окна для создания элементов управления, привязанных к базовым данным, а также настраивать источники данных, щелкнув правой кнопкой мыши.
 
 ![Источники данных - окно](../data-tools/media/raddata-data-sources-window.png)
 
@@ -66,7 +67,7 @@ ms.locfileid: "85283038"
 |Фильтрация данных, отображаемых в пользовательском интерфейсе.|[Фильтрация и сортировка данных в приложении Windows Forms](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
 |Настройка субтитров для элементов управления.|[Настройка способа создания подписи для элемента управления с привязкой к данным в Visual Studio](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Привязка данных Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)

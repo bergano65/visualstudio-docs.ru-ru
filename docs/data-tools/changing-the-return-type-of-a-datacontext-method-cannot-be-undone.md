@@ -1,6 +1,6 @@
 ---
 title: Не удается отменить изменение типа возвращаемого значения
-description: Невозможно отменить замену типа данных, возвращаемых методом DataContext
+description: Операция изменения возвращаемого типа метода DataContext не может быть отменена. Просмотрите сведения об этом сообщении Visual Studio реляционный конструктор объектов (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc0c3d6c1ddeab3ee92414e1264912f8b9d24b22
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c0f3728056f2703dc1c9553a4a165f9654ce5112
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036474"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381822"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Невозможно отменить замену типа данных, возвращаемых методом DataContext
 
@@ -39,6 +39,6 @@ ms.locfileid: "90036474"
 
     Метод <xref:System.Data.Linq.DataContext> создается с первоначальным типом возвращаемого значения по умолчанию.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

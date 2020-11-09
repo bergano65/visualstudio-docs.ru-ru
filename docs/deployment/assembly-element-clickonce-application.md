@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;элемент Assembly (приложение ClickOnce) | Документация Майкрософт'
+description: Элемент Assembly является корневым элементом и необходим в приложении ClickOnce. Его первый содержащийся элемент должен быть элементом assemblyIdentity.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b629243920021adc3833f43f268f05638029dc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c3614cd2d4fc0e6a5eebfb8dc6911e6eb183c01
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900764"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383226"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;&gt;элемент Assembly (приложение ClickOnce)
 Элемент верхнего уровня для манифеста приложения.
@@ -50,7 +52,7 @@ ms.locfileid: "62900764"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`manifestVersion`|Обязательный. `manifestVersion`Атрибуту должно быть присвоено значение `1.0` .|
+|`manifestVersion`|Обязательный элемент. `manifestVersion`Атрибуту должно быть присвоено значение `1.0` .|
 
 ## <a name="example"></a>Пример
  В следующем примере кода показан `assembly` элемент в манифесте приложения для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Этот пример кода является частью большого примера, приведенного в [манифесте приложения ClickOnce](../deployment/clickonce-application-manifest.md).
@@ -69,6 +71,6 @@ ms.locfileid: "62900764"
   xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)
 - [\<assembly> дерев](../deployment/assembly-element-clickonce-deployment.md)

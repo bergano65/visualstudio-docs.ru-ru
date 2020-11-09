@@ -1,5 +1,6 @@
 ---
 title: Форумы по доступу к данным
+description: Поиск справки по устранению ошибок и предупреждений на общедоступных форумах. Просмотрите список форумов, связанных с данными.
 ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -224,12 +225,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0383de73992b96f6a458b389573e252b39d624b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8555a67bf9173767584c2bf37c1ed470548c4157
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587047"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382485"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Устранение ошибок доступа к данным на форумах
 
@@ -251,6 +252,6 @@ ms.locfileid: "75587047"
 
 Сведения об устранении неполадок подключения к SQL Server см. в разделе [Устранение неполадок при подключении к ядру субд SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

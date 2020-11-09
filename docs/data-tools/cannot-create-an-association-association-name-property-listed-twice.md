@@ -1,6 +1,6 @@
 ---
 title: Перечисление двух свойств
-description: Не удалось создать ассоциацию — одно и то же свойство перечислено дважды
+description: Невозможно создать свойство Association, указанное в списке дважды. Просмотрите сведения об этом сообщении Visual Studio реляционный конструктор объектов (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d0e3475896c937f247fc64a0750da25c2d6edac9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d4cb795a5d608e31c26ccec0b96f359a5c63cee7
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036487"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381783"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Не удалось создать ассоциацию &lt;имя ассоциации&gt; — одно и то же свойство перечислено дважды
 
@@ -30,7 +30,7 @@ ms.locfileid: "90036487"
 
 - Проверьте сообщение и отметьте свойство, указанное в сообщении.
 
-- Нажмите кнопку **ОК**, чтобы закрыть окно сообщения.
+- Нажмите кнопку **ОК** , чтобы закрыть окно сообщения.
 
 - Проверьте **Свойства ассоциации** и удалите дублированные записи.
 

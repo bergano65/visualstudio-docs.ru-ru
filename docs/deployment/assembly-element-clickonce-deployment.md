@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;элемент Assembly (развертывание ClickOnce) | Документация Майкрософт'
+description: Элемент Assembly является корневым и требуется в развертывании ClickOnce. Его первый содержащийся элемент должен быть элементом assemblyIdentity.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b639a7f95cfb59844fa37963730e22ead450482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dde3bdb5fc0e9c6ea256aaa4368623a8e8af18d6
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929078"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383239"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;&gt;элемент Assembly (развертывание ClickOnce)
 Элемент верхнего уровня для манифеста развертывания.
@@ -30,7 +32,7 @@ ms.locfileid: "62929078"
 
 ```xml
 
-      <assembly  
+      <assembly  
    manifestVersion
 />
 ```
@@ -42,7 +44,7 @@ ms.locfileid: "62929078"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`manifestVersion`|Обязательный. Для этого атрибута необходимо задать значение `1.0` .|
+|`manifestVersion`|Обязательный элемент. Для этого атрибута необходимо задать значение `1.0` .|
 
 ## <a name="example"></a>Пример
  В следующем примере кода показан `assembly` элемент в манифесте развертывания для приложения, развернутого с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Этот пример кода является частью большого примера, приведенного в разделе [манифеста развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md) .
@@ -62,6 +64,6 @@ ms.locfileid: "62929078"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [\<assembly> дерев](../deployment/assembly-element-clickonce-application.md)

@@ -1,5 +1,7 @@
 ---
 title: Управление доступом для кода для приложений ClickOnce | Документация Майкрософт
+description: Сведения об обеспечении безопасности доступа к коду для приложений ClickOnce и настройке разрешений управления доступом для кода.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fd2d9b6792cae002967c9000474a825bd3a0651
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 256a41138a3918dd61d8fd496465bb0230fb9362
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649280"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382576"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Управление доступом для кода для приложений ClickOnce
 Приложения ClickOnce основаны на платформе .NET Framework, и к ним могут применяться ограничения управления доступом для кода. Важно понимать влияние управления доступом для кода, чтобы писать приложения ClickOnce соответствующим образом.
@@ -90,7 +92,7 @@ ms.locfileid: "81649280"
 
   Флажок **Отладить это приложение с выбранным набором разрешений** в диалоговом окне **Дополнительные параметры безопасности** выбран и недоступен для изменения. Это вызвано тем, что отладку в зоне нельзя отключить для приложений, размещенных в веб-браузере.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Как включить параметры безопасности ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
 - [Как задать зону безопасности для приложения ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)

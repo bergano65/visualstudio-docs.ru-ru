@@ -1,5 +1,6 @@
 ---
 title: Доступ к локальным & удаленным данным (приложения ClickOnce)
+description: Узнайте о различных параметрах, которые ClickOnce предоставляет для чтения и записи данных как локально, так и удаленно.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e93c8479e917e74d31c3eedbb00d9d5911442b92
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: da8eaa4405a83ff349fd3d7486909a9281962126
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810475"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383265"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Доступ к локальным и удаленным данным в приложениях ClickOnce
 Большинство приложений потребляют или производят данные. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] предоставляет разнообразные методы чтения и записи данных как локально, так и удаленно.
@@ -38,7 +39,7 @@ ms.locfileid: "90810475"
 ### <a name="clickonce-data-directory"></a>Каталог данных ClickOnce
  Каждое установленное на локальном компьютере приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] имеет каталог данных, который сохранен в папке пользователя Documents and Settings. Любой файл, включенный в приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] и помеченный как файл «данных», копируется в этот каталог при установке приложения. Файлы данных могут представлять собой данные любого типа. Чаще всего используются текстовые файлы, файлы XML и файлы базы данных, например MDB-файлы Microsoft Access.
 
- Каталог данных предназначен для управляемых приложением данных, то есть данных, которые приложение явно сохраняет и обслуживает. Все статические, независимые файлы, которые не помечены как «данные» в манифесте приложения, помещаются в каталог приложения. В этом же каталоге находятся исполняемые файлы приложения (*.exe*) и сборки.
+ Каталог данных предназначен для управляемых приложением данных, то есть данных, которые приложение явно сохраняет и обслуживает. Все статические, независимые файлы, которые не помечены как «данные» в манифесте приложения, помещаются в каталог приложения. В этом же каталоге находятся исполняемые файлы приложения ( *.exe* ) и сборки.
 
 > [!NOTE]
 > Если приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] удаляется, его каталог данных также удаляется. Никогда не используйте каталог данных для хранения управляемых конечным пользователем данных, например документов.
@@ -52,7 +53,7 @@ ms.locfileid: "90810475"
 > [!NOTE]
 > Если в организации не используется развертывание надежных приложений и отключено повышение уровня разрешений, подтверждение разрешений завершится ошибкой.
 
- Получив эти разрешения, ваше приложение сможет осуществлять доступ в каталог данных, используя вызовы метода в классах типа <xref:System.IO>. Можно получить путь к каталогу данных в приложении [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] в Windows Forms, воспользовавшись свойством <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> , определенным в свойстве <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> развертывания <xref:System.Deployment.Application.ApplicationDeployment>. Это самый удобный и рекомендуемый способ доступа к данным. В следующем примере кода показано, как сделать это для текстового файла *CSV.txt*, включенного вами в развертывание в качестве файла данных.
+ Получив эти разрешения, ваше приложение сможет осуществлять доступ в каталог данных, используя вызовы метода в классах типа <xref:System.IO>. Можно получить путь к каталогу данных в приложении [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] в Windows Forms, воспользовавшись свойством <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> , определенным в свойстве <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> развертывания <xref:System.Deployment.Application.ApplicationDeployment>. Это самый удобный и рекомендуемый способ доступа к данным. В следующем примере кода показано, как сделать это для текстового файла *CSV.txt* , включенного вами в развертывание в качестве файла данных.
 
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]
@@ -61,7 +62,7 @@ ms.locfileid: "90810475"
 
  Можно также получить путь к каталогу данных, используя соответствующие переменные в классе <xref:System.Windows.Forms.Application> , например <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.
 
- Для выполнения операций с другими типами файлов могут потребоваться дополнительные разрешения. Например, если вы хотите использовать файл базы данных Access (*. mdb*), приложение должно подтвердить полное доверие, чтобы использовать соответствующие \<xref:System.Data> классы.
+ Для выполнения операций с другими типами файлов могут потребоваться дополнительные разрешения. Например, если вы хотите использовать файл базы данных Access ( *. mdb* ), приложение должно подтвердить полное доверие, чтобы использовать соответствующие \<xref:System.Data> классы.
 
 #### <a name="data-directory-and-application-versions"></a>Каталог данных и версии приложения
  Каждая версия приложения имеет свой собственный каталог данных, который изолирован от других версий. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] создает этот каталог, независимо от того, включены ли в развертывание какие-либо файлы данных, чтобы приложению было доступно местоположение для создания новых файлов данных во время выполнения. При установке новой версии приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] копирует все существующие файлы данных из каталога данных предыдущей версии в каталог данных новой версии независимо от того, были ли они включены в первоначальное развертывание или созданы приложением.
@@ -108,6 +109,6 @@ ms.locfileid: "90810475"
 
  В большинстве случаев осуществлять прямой доступ к базе данных не потребуется, поскольку доступ осуществляется через приложение веб-сервера, созданное в [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] или веб-службе XML. Такой доступ к базе данных часто является оптимальным подходом, если приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывается с веб-сервера. Доступ к серверу с частичным доверием можно осуществлять без повышения уровня разрешений вашего приложения.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Как включить файл данных в приложение ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

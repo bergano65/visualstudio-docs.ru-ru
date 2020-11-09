@@ -1,5 +1,6 @@
 ---
 title: Работа с данными в Visual Studio
+description: Работа с данными в Visual Studio. Создавайте приложения, которые подключаются к данным в других продуктах или службах баз данных через локальные компьютеры, локальные сети, общедоступные или частные облака.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d1a82cc5fc5ea34f007750a08c0e8140421a9f41
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: 846898c1cf93d0f90ce04e77ee93bd8802e22ec2
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959826"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382095"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Работа с данными в Visual Studio
 
@@ -70,13 +71,13 @@ ms.locfileid: "91959826"
 
 ::: moniker range="vs-2017"
 
-Многие поставщики баз данных и сторонние производители поддерживают интеграцию с Visual Studio с помощью пакетов NuGet. Вы можете исследовать предложения в NuGet.org или с помощью диспетчера пакетов NuGet в Visual Studio (**инструменты**  >  **Диспетчер пакетов NuGet**  >  **Управление пакетами NuGet для решения**). Другие продукты баз данных интегрируются с Visual Studio как расширение. Эти предложения можно просмотреть в [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или перейдя к **средствам**  >  **расширения и обновления** , а затем выбрав пункт в **сети** в левой области диалогового окна. Дополнительные сведения см. в разделе [совместимые системы баз данных для Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Многие поставщики баз данных и сторонние производители поддерживают интеграцию с Visual Studio с помощью пакетов NuGet. Вы можете исследовать предложения в NuGet.org или с помощью диспетчера пакетов NuGet в Visual Studio ( **инструменты**  >  **Диспетчер пакетов NuGet**  >  **Управление пакетами NuGet для решения** ). Другие продукты баз данных интегрируются с Visual Studio как расширение. Эти предложения можно просмотреть в [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или перейдя к **средствам**  >  **расширения и обновления** , а затем выбрав пункт в **сети** в левой области диалогового окна. Дополнительные сведения см. в разделе [совместимые системы баз данных для Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Многие поставщики баз данных и сторонние производители поддерживают интеграцию с Visual Studio с помощью пакетов NuGet. Вы можете исследовать предложения в NuGet.org или с помощью диспетчера пакетов NuGet в Visual Studio (**инструменты**  >  **Диспетчер пакетов NuGet**  >  **Управление пакетами NuGet для решения**). Другие продукты баз данных интегрируются с Visual Studio как расширение. Эти предложения можно просмотреть в [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или перейдя к **расширениям**  >  **Управление расширениями** , а затем выбрав "в **сети** " в левой области диалогового окна. Дополнительные сведения см. в разделе [совместимые системы баз данных для Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Многие поставщики баз данных и сторонние производители поддерживают интеграцию с Visual Studio с помощью пакетов NuGet. Вы можете исследовать предложения в NuGet.org или с помощью диспетчера пакетов NuGet в Visual Studio ( **инструменты**  >  **Диспетчер пакетов NuGet**  >  **Управление пакетами NuGet для решения** ). Другие продукты баз данных интегрируются с Visual Studio как расширение. Эти предложения можно просмотреть в [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или перейдя к **расширениям**  >  **Управление расширениями** , а затем выбрав "в **сети** " в левой области диалогового окна. Дополнительные сведения см. в разделе [совместимые системы баз данных для Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
@@ -135,7 +136,7 @@ ms.locfileid: "91959826"
 - [Django и MySQL в Azure](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
 - Работа с [большими двоичными объектами](/azure/storage/blobs/storage-quickstart-blobs-python), [файлами](/azure/storage/files/storage-python-how-to-use-file-storage), [очередями](/azure/storage/queues/storage-python-how-to-use-queue-storage)и [таблицами (Космо DB)](/azure/cosmos-db/table-storage-how-to-use-python).
 
-## <a name="related-topics"></a>Связанные темы
+## <a name="related-topics"></a>См. также
 
 Платформа искусственного [интеллекта Майкрософт](https://azure.microsoft.com/overview/ai-platform/?v=17.42w) &mdash; Содержит введение в интеллектуальное облако Майкрософт, включая Кортану Analytics Suite и поддержку "Интернет вещей".
 

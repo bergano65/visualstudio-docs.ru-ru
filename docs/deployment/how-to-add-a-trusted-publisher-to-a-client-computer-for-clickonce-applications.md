@@ -1,5 +1,6 @@
 ---
 title: Добавление доверенного издателя в клиентское поле (ClickOnce)
+description: Узнайте, как добавить сертификат на клиентский компьютер, чтобы приложения ClickOnce выполнялись на более высоком уровне доверия без запроса пользователя.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4146efe0790e2bfd4abfa9e30897811aba182916
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: cef5eb1df80c7fffcc4a938504e82cac2aa3ae46
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809811"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382706"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Практическое руководство. Добавление надежного издателя на клиентский компьютер для приложений ClickOnce
 С помощью технологии развертывания доверенных приложений можно настроить клиентские компьютеры так, чтобы ваши приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] выполнялись с более высоким уровнем доверия без вывода запроса пользователю. Следующие процедуры показывают, как использовать программу командной строки CertMgr.exe для добавления сертификата издателя в хранилище надежных издателей на клиентском компьютере.
@@ -39,7 +40,7 @@ ms.locfileid: "90809811"
 
 1. Получите цифровой сертификат в центре сертификации.
 
-2. Экспортируйте сертификат в формат Base64 X.509 (*CER*). Дополнительные сведения о форматах сертификатов см. в разделе [Экспорт сертификата](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Экспортируйте сертификат в формат Base64 X.509 ( *CER* ). Дополнительные сведения о форматах сертификатов см. в разделе [Экспорт сертификата](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. В командной строке на клиентских компьютерах выполните следующую команду:
 
@@ -49,7 +50,7 @@ ms.locfileid: "90809811"
 
 1. Получите цифровой сертификат в центре сертификации.
 
-2. Экспортируйте сертификат в формат Base64 X.509 (*CER*). Дополнительные сведения о форматах сертификатов см. [в разделе Экспорт сертификата](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Экспортируйте сертификат в формат Base64 X.509 ( *CER* ). Дополнительные сведения о форматах сертификатов см. [в разделе Экспорт сертификата](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. В командной строке на клиентских компьютерах выполните следующую команду:
 
@@ -57,7 +58,7 @@ ms.locfileid: "90809811"
 
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
