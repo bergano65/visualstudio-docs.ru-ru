@@ -1,6 +1,6 @@
 - name: Visual Studio для Mac
   href: index.yml
-- name: Приступая к работе
+- name: Начало работы
   items:
     - name: Обзор интегрированной среды разработки
       href: ide-tour.md
@@ -32,8 +32,6 @@
   items:
     - name: "Настройка интерфейса\_IDE"
       href: customizing-the-ide.md
-    - name: "Расширение Visual\_Studio для\_Mac"
-      href: extending-visual-studio-mac.md
 - name: Проекты и решения
   items:
     - name: Обзор
