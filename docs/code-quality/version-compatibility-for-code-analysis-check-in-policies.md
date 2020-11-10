@@ -1,6 +1,8 @@
 ---
 title: Совместимость версий для политик возврата анализа кода
 ms.date: 11/04/2016
+description: Узнайте, как Team System 2008 Team Foundation Server и Team Foundation Server 2010 вычисляют политики возврата Visual Studio по-разному.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - version compatibility, code analysis check-in policy
@@ -11,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4757b3a105ff02a92944d9b45e645e2c63a8b81c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3a681f510da270bc22ae4bc983103f9a5735a127
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587164"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436879"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Совместимость версий для политик возврата анализа кода
 
 Если необходимо оценить и разработать политики возврата с анализом кода с использованием различных версий [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] , необходимо ознакомиться с различиями в области определения [!INCLUDE[vstsTfsOrcasLong](../code-quality/includes/vststfsorcaslong_md.md)] [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] политик возврата и их вычисления.
 
-## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Совместимость версий для оценки политик возврата
+## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Совместимость версий для оценки политик Check-In
 
 - При вычислении политик возврата с анализом кода [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] все правила, которые существовали в, [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] но не существуют в [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] , игнорируются.
 
@@ -32,7 +34,7 @@ ms.locfileid: "75587164"
 
 - Если политика возврата с анализом кода указывает сборки правил, которые [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] не распознаются, выводится сообщение.
 
-## <a name="version-compatibility-for-authoring-check-in-policies"></a>Совместимость версий для создания политик возврата
+## <a name="version-compatibility-for-authoring-check-in-policies"></a>Совместимость версий для создания политик Check-In
 
 - Если вы создали политику возврата с анализом кода с помощью [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] версии [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] , ее нельзя изменить с помощью [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] версии [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] . Кроме того, [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] невозможно вычислить политику.
 

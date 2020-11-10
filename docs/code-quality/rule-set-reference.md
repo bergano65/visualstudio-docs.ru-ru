@@ -1,6 +1,8 @@
 ---
 title: Справочник по набору правил анализа кода
 ms.date: 04/04/2018
+description: Сведения о встроенных наборах правил в анализе устаревшего кода Visual Studio. См. раздел ресурсы в наборах правил. Узнайте, как использовать эти наборы в настраиваемых наборах правил.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets reference
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc025a3ff096e560cc2bd5a135f370e89dba2f9e
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: ce5b7f2ecdc854269288c61eaeee6d46b4a74d91
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860464"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436983"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Справочник по набору правил анализа кода
 

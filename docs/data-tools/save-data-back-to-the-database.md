@@ -1,5 +1,7 @@
 ---
 title: Сохранение данных обратно в базу данных
+description: Использование средств набора данных для сохранения данных обратно в базу данных. Набор данных — это копия данных в памяти, которую необходимо сохранить обратно в базу данных, если она была изменена.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77f6a837fcc88c7154978e8031b17febaa0fcd39
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281751"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436059"
 ---
 # <a name="save-data-back-to-the-database"></a>Сохранение данных обратно в базу данных
 
@@ -44,14 +46,14 @@ ms.locfileid: "85281751"
 |Раздел|Описание|
 |-----------|-----------------|
 |[Вставка новых записей в базу данных](../data-tools/insert-new-records-into-a-database.md)|Выполнение операций обновления и вставки с помощью адаптеров таблиц или объектов команд|
-|[Обновление данных с помощью адаптера таблицы](../data-tools/update-data-by-using-a-tableadapter.md)|Как выполнять обновления с помощью адаптеров таблиц|
+|[Обновление данных с помощью адаптера таблицы TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Как выполнять обновления с помощью адаптеров таблиц|
 |[Иерархическое обновление](../data-tools/hierarchical-update.md)|Выполнение обновлений из набора данных с двумя или более связанными таблицами|
 |[Обработка исключения параллелизма](../data-tools/handle-a-concurrency-exception.md)|Как управлять исключениями, когда два пользователя пытаются одновременно изменить одни и те же данные в базе данных|
 |[Инструкции. Сохранение данных с помощью транзакции](../data-tools/save-data-by-using-a-transaction.md)|Сохранение данных в транзакции с помощью системы. Пространство имен Transactions и объект TransactionScope|
 |[Сохранение данных в транзакции](../data-tools/save-data-in-a-transaction.md)|Пошаговое руководство по созданию Windows Forms приложения для демонстрации сохранения данных в базе данных внутри транзакции|
 |[Сохранение данных в базе данных (несколько таблиц)](../data-tools/save-data-to-a-database-multiple-tables.md)|Изменение записей и сохранение изменений в нескольких таблицах обратно в базу данных|
 |[Сохранение данных из объекта в базе данных](../data-tools/save-data-from-an-object-to-a-database.md)|Передача данных из объекта, который не находится в наборе данных, в базу данных с помощью метода DbDirect адаптера таблицы|
-|[Сохранение данных с помощью методов DBDirect адаптера таблицы](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Как использовать TableAdapter для отправки запросов SQL непосредственно в базу данных|
+|[Сохранение данных с помощью методов DBDirect адаптера таблицы TableAdapter](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Как использовать TableAdapter для отправки запросов SQL непосредственно в базу данных|
 |[Сохранение набора данных в формате XML](../data-tools/save-a-dataset-as-xml.md)|Сохранение набора данных в XML-документе|
 
 ## <a name="two-stage-updates"></a>Два этапа обновления
@@ -72,22 +74,22 @@ ms.locfileid: "85281751"
 
 |Числен|Целевой набор данных|Исходный набор данных|
 | - | - | - |
-|До преобразования|Джеймс Уилсон (|Джеймс C. Уилсон (|
-|Текущий|Джим Уилсон (|Джеймс C. Уилсон (|
+|Исходное значение|Джеймс Уилсон (|Джеймс C. Уилсон (|
+|Текущие|Джим Уилсон (|Джеймс C. Уилсон (|
 
 Вызов <xref:System.Data.DataSet.Merge%2A> метода в предыдущей таблице `preserveChanges=false targetDataset.Merge(sourceDataset)` приводит к получению следующих данных:
 
 |Числен|Целевой набор данных|Исходный набор данных|
 | - | - | - |
-|До преобразования|Джеймс C. Уилсон (|Джеймс C. Уилсон (|
-|Текущий|Джеймс C. Уилсон (|Джеймс C. Уилсон (|
+|Исходное значение|Джеймс C. Уилсон (|Джеймс C. Уилсон (|
+|Текущие|Джеймс C. Уилсон (|Джеймс C. Уилсон (|
 
 Вызов <xref:System.Data.DataSet.Merge%2A> метода с `preserveChanges = true targetDataset.Merge(sourceDataset, true)` результатом приведет к следующим данным:
 
 |Числен|Целевой набор данных|Исходный набор данных|
 | - | - | - |
-|До преобразования|Джеймс C. Уилсон (|Джеймс C. Уилсон (|
-|Текущий|Джим Уилсон (|Джеймс C. Уилсон (|
+|Исходное значение|Джеймс C. Уилсон (|Джеймс C. Уилсон (|
+|Текущие|Джим Уилсон (|Джеймс C. Уилсон (|
 
 > [!CAUTION]
 > В `preserveChanges = true` сценарии, если <xref:System.Data.DataSet.RejectChanges%2A> метод вызывается для записи в целевом наборе данных, он возвращается к исходным данным из *исходного* набора данных. Это означает, что при попытке обновить исходный источник данных с помощью целевого набора данных может оказаться невозможным найти исходную строку для обновления. Можно предотвратить нарушение параллелизма, заполняя другой набор данных обновленными записями из источника данных, а затем выполнив слияние, чтобы предотвратить нарушение параллелизма. (Нарушение параллелизма происходит, когда другой пользователь изменяет запись в источнике данных после заполнения набора данных.)
@@ -125,7 +127,7 @@ ms.locfileid: "85281751"
 
 В следующей таблице приведены возможные значения <xref:System.Data.DataRowState> перечисления.
 
-|Значение Датаровстате|Описание:|
+|Значение Датаровстате|Описание|
 | - |-----------------|
 |<xref:System.Data.DataRowState.Added>|Строка была добавлена в качестве элемента в <xref:System.Data.DataRowCollection> . (Строка в этом состоянии не имеет соответствующей исходной версии, так как она не существовала при <xref:System.Data.DataRow.AcceptChanges%2A> вызове последнего метода).|
 |<xref:System.Data.DataRowState.Deleted>|Строка была удалена с помощью <xref:System.Data.DataRow.Delete%2A> <xref:System.Data.DataRow> объекта.|
@@ -139,7 +141,7 @@ ms.locfileid: "85281751"
 
 В следующей таблице приведены возможные значения <xref:System.Data.DataRowVersion> перечисления.
 
-|Значение DataRowVersion|Описание:|
+|Значение DataRowVersion|Описание|
 | - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|Текущая версия записи содержит все изменения, выполненные с записью с момента последнего <xref:System.Data.DataRow.AcceptChanges%2A> вызова. Если строка была удалена, текущая версия отсутствует.|
 |<xref:System.Data.DataRowVersion.Default>|Значение по умолчанию для записи, определяемое схемой набора данных или источником данных.|
@@ -272,11 +274,11 @@ ms.locfileid: "85281751"
 > [!NOTE]
 > Можно также задать значения в `Parameters` коллекции самостоятельно в коде, который обычно выполняется в обработчике событий для события адаптера данных <xref:System.Data.DataTable.RowChanging> .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Инструменты набора данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Создание и настройка адаптеров таблиц](create-and-configure-tableadapters.md)
-- [Обновление данных с помощью адаптера таблицы](../data-tools/update-data-by-using-a-tableadapter.md)
+- [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Создание и настройка адаптеров таблиц TableAdapter](create-and-configure-tableadapters.md)
+- [Обновление данных с помощью адаптера таблицы TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Проверка данных](validate-data-in-datasets.md)
 - [Практическое руководство. Добавление, изменение и удаление сущностей (службы данных WCF)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

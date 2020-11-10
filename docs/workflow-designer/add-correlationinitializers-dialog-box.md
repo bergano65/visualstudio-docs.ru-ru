@@ -1,5 +1,7 @@
 ---
 title: Конструктор рабочих процессов-диалоговое окно "Добавление CorrelationInitializers"
+description: Узнайте, как можно использовать диалоговое окно Добавление инициализаторов корреляции для настройки свойств CorrelationInitializers действий Send, Receive и SendReply.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2a0b0f7c76b392d5d2d0135c3ab6e370f8678e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cab7ded4113528423b2733c9748ce5cbd22327ab
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114297"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435903"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Диалоговое окно «Добавление инициализаторов корреляции»
 
@@ -33,12 +35,12 @@ ms.locfileid: "76114297"
 |Элемент пользовательского интерфейса|Описание|
 |-|-----------------|
 |**Добавить инициализатор**|Щелкните поле **Добавить инициализацию** , чтобы добавить дополнительный инициализатор в коллекцию.|
-|**Тип корреляции**|Указывает тип инициализатора корреляции. Может быть выбран один из четырех типов.<br /><br /> 1. инициализатор корреляции обратных вызовов для указания <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer> .<br />2. инициализатор корреляции контекста для указания <xref:System.ServiceModel.Activities.CorrelationInitializer> .<br />3. инициализатор корреляции "запрос-ответ" для указания <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> .<br />4. инициализатор корреляции запроса для указания <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> .<br /><br /> Изменение **коррелатионтипе**<br /><br /> 1. Tab для конкретной строки в сетке **добавления инициализатора** .<br />2. чтобы установить фокус на **коррелатионтипекомбобокс**, нажмите клавиши **CTRL** + **Tab**.<br />3. Нажмите клавиши Alt + стрелка вниз, чтобы открыть окно **ComboBox** и изменить его.|
+|**Тип корреляции**|Указывает тип инициализатора корреляции. Может быть выбран один из четырех типов.<br /><br /> 1. инициализатор корреляции обратных вызовов для указания <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer> .<br />2. инициализатор корреляции контекста для указания <xref:System.ServiceModel.Activities.CorrelationInitializer> .<br />3. инициализатор корреляции "запрос-ответ" для указания <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> .<br />4. инициализатор корреляции запроса для указания <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> .<br /><br /> Изменение **коррелатионтипе**<br /><br /> 1. Tab для конкретной строки в сетке **добавления инициализатора** .<br />2. чтобы установить фокус на **коррелатионтипекомбобокс** , нажмите клавиши **CTRL** + **Tab**.<br />3. Нажмите клавиши Alt + стрелка вниз, чтобы открыть окно **ComboBox** и изменить его.|
 |**Запросы XPath**|Пара «ключ-значение», содержащая запросы для извлечения данных корреляции из входящих и исходящих сообщений. Данный список действителен только при использовании типов <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>.|
 
 ## <a name="to-launch-the-add-correlation-initializers-dialog-box"></a>Вызов диалогового окна «Добавление инициализаторов корреляции»
 
- Диалоговое окно **Добавление инициализаторов корреляции** используется конструкторами **отправки**, **получения**, **ReceiveAndSendReply**и **SendAndReceiveReply** . Доступ к ним аналогичен в каждом случае, и в этом случае для демонстрации процедуры используется конструктор **Receive** .
+ Диалоговое окно **Добавление инициализаторов корреляции** используется конструкторами **отправки** , **получения** , **ReceiveAndSendReply** и **SendAndReceiveReply** . Доступ к ним аналогичен в каждом случае, и в этом случае для демонстрации процедуры используется конструктор **Receive** .
 
  Конструктор операций **получения** можно перетащить из **панели элементов** в конструктор рабочих процессовную поверхность, где будут размещены действия. При удалении конструктора операции **получения** создается <xref:System.ServiceModel.Activities.Receive> действие со значением Receive, заданным по умолчанию <xref:System.Activities.Activity.DisplayName%2A> . Выберите конструктор действий **получения** и нажмите кнопку с многоточием рядом с текстом (коллекция) для свойства **CorrelationInitializers** в сетке свойств в диалоговом окне **Добавление инициализаторов корреляции** .
 

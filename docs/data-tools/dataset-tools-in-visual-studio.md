@@ -1,5 +1,7 @@
 ---
 title: Средства набора данных
+description: Ознакомьтесь с инструментами набора данных, доступными в Visual Studio. Прочтите сведения о рабочем процессе, наборах данных и N-уровневой архитектуре, наборах DataSet и XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
@@ -47,12 +49,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0ccb15d65f021099bb48c26dbdb7c03122049a7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586722"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436489"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Инструменты для работы с наборами данных в Visual Studio
 
@@ -77,7 +79,7 @@ Visual Studio предоставляет инструментарий для у�
 
   - [Заполнение наборов данных с помощью адаптеров таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-  - [Изменить данные в наборах данных](../data-tools/edit-data-in-datasets.md)
+  - [Изменение данных в наборах данных](../data-tools/edit-data-in-datasets.md)
 
   - [Проверка данных в наборах данных](../data-tools/validate-data-in-datasets.md)
 
@@ -95,6 +97,6 @@ Visual Studio предоставляет инструментарий для у�
 
 Дополнительные сведения о преобразовании наборов данных в XML-код и обратно см. в разделе [чтение XML-информации в наборе данных](../data-tools/read-xml-data-into-a-dataset.md) и [Сохранение набора данных](../data-tools/save-a-dataset-as-xml.md)в формате XML.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

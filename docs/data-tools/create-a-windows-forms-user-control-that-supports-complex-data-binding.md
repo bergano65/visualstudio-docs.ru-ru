@@ -1,5 +1,7 @@
 ---
 title: Создание Windows Forms пользовательского элемента управления с привязкой данных
+description: Узнайте, как создать Windows Forms пользовательский элемент управления, поддерживающий сложную привязку данных, путем реализации класса атрибута complexbindingpropertiesattribute.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 97d9e64a0fcabb207d4606d4819f6afcb61b1043
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 465636b2b5bbf1a47752b4f0917258e264172abd
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586852"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436788"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Создание пользовательского элемента управления Windows Forms со сложной привязкой данных
 
@@ -55,7 +57,7 @@ ms.locfileid: "75586852"
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
-1. Если у вас нет SQL Server Express LocalDB, установите его на [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)или с помощью **Visual Studio Installer**. В **Visual Studio Installer**можно установить SQL Server Express LocalDB как часть рабочей нагрузки **хранения и обработки данных** или как отдельный компонент.
+1. Если у вас нет SQL Server Express LocalDB, установите его на [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)или с помощью **Visual Studio Installer**. В **Visual Studio Installer** можно установить SQL Server Express LocalDB как часть рабочей нагрузки **хранения и обработки данных** или как отдельный компонент.
 
 1. Установите учебную базу данных Northwind, выполнив следующие действия.
 
@@ -75,7 +77,7 @@ ms.locfileid: "75586852"
 
 ## <a name="add-a-user-control-to-the-project"></a>Добавление пользовательского элемента управления в проект
 
-Поскольку в этом пошаговом руководстве создается сложный элемент управления с возможностью привязки данных из **пользовательского элемента управления**, добавьте в проект элемент **пользовательского элемента управления** :
+Поскольку в этом пошаговом руководстве создается сложный элемент управления с возможностью привязки данных из **пользовательского элемента управления** , добавьте в проект элемент **пользовательского элемента управления** :
 
 1. В меню **Проект** выберите пункт **Добавить пользовательский элемент управления**.
 
@@ -106,7 +108,7 @@ ms.locfileid: "75586852"
 
 1. Чтобы открыть окно **Источники данных** , в меню **данные** выберите команду **отобразить источники данных**.
 
-2. В окне **Источники данных** выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.
+2. В окне **Источники данных** выберите **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
 3. На странице **Выбор типа источника данных** выберите элемент **База данных** и нажмите **Далее**.
 

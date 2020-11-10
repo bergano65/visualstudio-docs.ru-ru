@@ -1,18 +1,20 @@
 ---
 title: Набор правил "Рекомендуемые правила для машинного кода"
 ms.date: 11/04/2016
+description: Дополнительные сведения о наборе правил "Рекомендуемые правила для собственных правил" Visual Studio. См. Описание правил безопасности, надежности и других критических проблем в машинном коде.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fd7ba7b742c2615dc8f161c5ea156b4fd0a7f4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 1c0515a08d987d8892dd5f252d97ece8d138eb0b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600013"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437035"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Набор правил "Рекомендуемые правила для машинного кода"
 
@@ -38,20 +40,20 @@ ms.locfileid: "89600013"
 |[C6201](/cpp/code-quality/c6201)|Индекс превышает максимальный размер буфера стека|
 |[C6214](/cpp/code-quality/c6214)|Недопустимое приведение HRESULT к BOOL|
 |[C6215](/cpp/code-quality/c6215)|Недопустимое приведение BOOL к типу HRESULT|
-|[C6216](/cpp/code-quality/c6216)|Недопустимое введенное компилятором логическое значение CAST в HRESULT|
+|[C6216](/cpp/code-quality/c6216)|Недопустимое Compiler-Inserted привести BOOL к типу HRESULT|
 |[C6217](/cpp/code-quality/c6217)|Недопустимая проверка HRESULT с NOT|
 |[C6220](/cpp/code-quality/c6220)|Недопустимое сравнение HRESULT с-1|
 |[C6226](/cpp/code-quality/c6226)|Недопустимое присваивание HRESULT значению-1|
 |[C6230](/cpp/code-quality/c6230)|Недопустимое использование HRESULT в качестве логического значения|
-|[C6235](/cpp/code-quality/c6235)|Ненулевая константа с логическим или|
-|[C6236](/cpp/code-quality/c6236)|Логическое или с ненулевой константой|
-|[C6237](/cpp/code-quality/c6237)|Ноль с логическим и теряет побочные эффекты|
+|[C6235](/cpp/code-quality/c6235)|Ненулевая константа с Logical-Or|
+|[C6236](/cpp/code-quality/c6236)|Logical-Or с ненулевой константой|
+|[C6237](/cpp/code-quality/c6237)|Ноль с Logical-And теряет побочные эффекты|
 |[C6242](/cpp/code-quality/c6242)|Локальная очистка принудительно выполнена|
 |[C6248](/cpp/code-quality/c6248)|Создание пустого списка DACL|
 |[C6250](/cpp/code-quality/c6250)|Неосвобожденные дескрипторы адресов|
 |[C6255](/cpp/code-quality/c6255)|Незащищенное использование Alloc|
 |[C6258](/cpp/code-quality/c6258)|Использование метода завершения потока|
-|[C6259](/cpp/code-quality/c6259)|Неиспользуемый код в побитовом или ограниченном параметре|
+|[C6259](/cpp/code-quality/c6259)|Неиспользуемый код в Bitwise-Or ограниченном параметре|
 |[C6260](/cpp/code-quality/c6260)|Использование арифметических операций с байтами|
 |[C6262](/cpp/code-quality/c6262)|Чрезмерное использование стека|
 |[C6263](/cpp/code-quality/c6263)|Использование оператора Alloc в цикле|
@@ -64,18 +66,18 @@ ms.locfileid: "89600013"
 |[C6274](/cpp/code-quality/c6274)|Несимвольный аргумент у функции форматирования|
 |[C6276](/cpp/code-quality/c6276)|Недопустимое приведение строки|
 |[C6277](/cpp/code-quality/c6277)|Недопустимый вызов CreateProcess|
-|[C6278](/cpp/code-quality/c6278)|Массив-новое несоответствие скалярного удаления|
-|[C6279](/cpp/code-quality/c6279)|Скалярный — новый массив — несоответствие удаления|
-|[C6280](/cpp/code-quality/c6280)|Выделение памяти — несоответствие освобождений|
+|[C6278](/cpp/code-quality/c6278)|Несоответствие Scalar-Delete Array-New|
+|[C6279](/cpp/code-quality/c6279)|Несоответствие Array-Delete Scalar-New|
+|[C6280](/cpp/code-quality/c6280)|Несоответствие Allocation-Deallocation памяти|
 |[C6281](/cpp/code-quality/c6281)|Приоритет побитовой связи|
 |[C6282](/cpp/code-quality/c6282)|Назначение заменяет тест|
-|[C6283](/cpp/code-quality/c6283)|Массив примитивов — новое несоответствие скалярного удаления|
+|[C6283](/cpp/code-quality/c6283)|Несоответствие примитивного Array-New Scalar-Delete|
 |[C6284](/cpp/code-quality/c6284)|Недопустимый объект в качестве аргумента функции форматирования|
-|[C6285](/cpp/code-quality/c6285)|Логические или константы|
-|[C6286](/cpp/code-quality/c6286)|Ненулевые логические или потерянные побочные эффекты|
+|[C6285](/cpp/code-quality/c6285)|Logical-Or констант|
+|[C6286](/cpp/code-quality/c6286)|Ненулевое Logical-Or потерю побочных эффектов|
 |[C6287](/cpp/code-quality/c6287)|Избыточный тест|
-|[C6288](/cpp/code-quality/c6288)|Взаимное включение по логическому и имеет значение false|
-|[C6289](/cpp/code-quality/c6289)|Взаимное исключение через логическое или имеет значение true|
+|[C6288](/cpp/code-quality/c6288)|Взаимное включение Logical-And имеет значение false|
+|[C6289](/cpp/code-quality/c6289)|Взаимное исключение с Logical-Or имеет значение true|
 |[C6290](/cpp/code-quality/c6290)|Приоритет логического НЕ и побитового И|
 |[C6291](/cpp/code-quality/c6291)|Приоритет логического НЕ и побитового ИЛИ|
 |[C6292](/cpp/code-quality/c6292)|Цикл идет вверх от максимального числа|
@@ -92,7 +94,7 @@ ms.locfileid: "89600013"
 |[C6308](/cpp/code-quality/c6308)|Утечка перераспределения|
 |[C6310](/cpp/code-quality/c6310)|Недопустимая константа фильтра исключений|
 |[C6312](/cpp/code-quality/c6312)|Цикл выполнения исключения|
-|[C6314](/cpp/code-quality/c6314)|Приоритет побитового или|
+|[C6314](/cpp/code-quality/c6314)|Приоритет Bitwise-Or|
 |[C6317](/cpp/code-quality/c6317)|Не дополнять|
 |[C6318](/cpp/code-quality/c6318)|Поиск продолжения исключения|
 |[C6319](/cpp/code-quality/c6319)|Игнорируется запятой|
@@ -103,7 +105,7 @@ ms.locfileid: "89600013"
 |[C6333](/cpp/code-quality/c6333)|Недопустимый размер VirtualFree|
 |[C6335](/cpp/code-quality/c6335)|Дескриптор процесса утечки|
 |[C6381](/cpp/code-quality/c6381)|Отсутствуют сведения о завершении работы|
-|[C6383](/cpp/code-quality/c6383)|Count-счетчик элементов — переполнение буфера в байтах|
+|[C6383](/cpp/code-quality/c6383)|Переполнение буфера Element-Count Byte-Count|
 |[C6384](/cpp/code-quality/c6384)|Деление размера указателя|
 |[C6385](/cpp/code-quality/c6385)|Переполнение при чтении|
 |[C6386](/cpp/code-quality/c6386)|Переполнение при записи|

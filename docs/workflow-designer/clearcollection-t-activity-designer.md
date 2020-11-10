@@ -1,5 +1,7 @@
 ---
 title: Конструктор действий конструктор рабочих процессов-ClearCollection &lt; T &gt;
+description: Узнайте, как можно использовать <T> конструктор действий ClearCollection для создания и настройки <T> действия ClearCollection.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 710e221441736ecb2415aec32c7f0bfb9a2d99ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ec1820df3a12a729d534d4c07e56bb48bb46e70
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711629"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435890"
 ---
 # <a name="clearcollectiont-activity-designer"></a>Конструктор действия ClearCollection\<T>
 
@@ -27,9 +29,9 @@ ms.locfileid: "88711629"
 
 ### <a name="using-the-clearcollectiont-activity-designer"></a>Использование \<T> конструктора действий ClearCollection
 
-Конструктор **действий \<T> ClearCollection** можно найти в категории **коллекция** **панели элементов**, щелкнув вкладку **область элементов** конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
+Конструктор **действий \<T> ClearCollection** можно найти в категории **коллекция** **панели элементов** , щелкнув вкладку **область элементов** конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
 
-Конструктор **действий \<T> ClearCollection** можно перетащить из **панели элементов** в область Конструктор рабочих процессов, где бы они ни находились, где бы ни находились действия, например внутри <xref:System.Activities.Statements.Sequence> . При удалении конструктора действий создается <xref:System.Activities.Statements.ClearCollection%601> действие со значением по умолчанию <xref:System.Activities.Activity.DisplayName%2A> ClearCollection<Int32 \> . (По умолчанию *TypeArgument* имеет значение **Int32**. TypeArgument можно изменить в сетке свойств.) <xref:System.Activities.Activity.DisplayName%2A>Значение можно изменить в заголовке конструктора действий **ClearCollection<T \> ** или в поле **DisplayName** сетки свойств. Другие свойства следует изменять в таблице свойств.
+Конструктор **действий \<T> ClearCollection** можно перетащить из **панели элементов** в область Конструктор рабочих процессов, где бы они ни находились, где бы ни находились действия, например внутри <xref:System.Activities.Statements.Sequence> . При удалении конструктора действий создается <xref:System.Activities.Statements.ClearCollection%601> действие со значением по умолчанию <xref:System.Activities.Activity.DisplayName%2A> ClearCollection<Int32 \> . (По умолчанию *TypeArgument* имеет значение **Int32**. TypeArgument можно изменить в сетке свойств.) <xref:System.Activities.Activity.DisplayName%2A>Значение можно изменить в заголовке конструктора действий **ClearCollection<T \>** или в поле **DisplayName** сетки свойств. Другие свойства следует изменять в таблице свойств.
 
 ### <a name="the-clearcollectiont-properties"></a>Свойства ClearCollection \<T>
 

@@ -1,6 +1,6 @@
 ---
 title: Неподдерживаемые типы данных
-description: Один или несколько выбранных элементов содержат тип данных, не поддерживаемый конструктором
+description: Один или несколько выбранных элементов содержат тип данных, который не поддерживается конструктором. Просмотр сведений об этом сообщении в конструкторе Visual Studio O/R.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 167146b9a7938e5498e8db023602b2e13f74379c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4f678ad9bc6bcfc36baabad8a8d4d64d7bf2f89e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034082"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436137"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Один или несколько выбранных элементов содержат тип данных, не поддерживаемый конструктором
 
-Один или несколько элементов, которые были перемещены из **Обозреватель сервера** или **Обозреватель базы данных** в **Реляционный конструктор** объектов, содержат тип данных, который не поддерживается **реляционным конструктором**объектов, например [определяемыми пользователем типами CLR](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
+Один или несколько элементов, которые были перемещены из **Обозреватель сервера** или **Обозреватель базы данных** в **Реляционный конструктор** объектов, содержат тип данных, который не поддерживается **реляционным конструктором** объектов, например [определяемыми пользователем типами CLR](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
 
 ## <a name="to-correct-this-error"></a>Исправление ошибки
 

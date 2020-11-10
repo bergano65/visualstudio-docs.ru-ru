@@ -1,5 +1,7 @@
 ---
 title: Обработка исключения параллелизма
+description: Обработка исключения параллелизма (System. Data. DBConcurrencyException), которое возникает, когда два пользователя пытаются одновременно изменить одни и те же данные в базе данных.
+ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57820a7532255c0084bafc5134cf7793b8c88ab6
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 5fcd8bb06cf9c88466b4dfa3cfaf2dfd8093bd3d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407670"
+ms.locfileid: "94436450"
 ---
 # <a name="handle-a-concurrency-exception"></a>Обработка исключения параллелизма
 
@@ -45,7 +47,7 @@ ms.locfileid: "94407670"
 
 7. Перехватить ошибку, затем отобразить различные версии записи, позволяя пользователю определить, следует ли продолжить и обновить базу данных, или отменить обновление.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
@@ -212,6 +214,6 @@ ms.locfileid: "94407670"
 
    При выборе **нет** отменяется обновление, а набор данных обновляется значениями, которые в настоящее время находятся в базе данных. При нажатии кнопки **Да** в базу данных записывается предложенное значение.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

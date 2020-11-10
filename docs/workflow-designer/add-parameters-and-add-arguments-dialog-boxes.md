@@ -1,5 +1,7 @@
 ---
 title: 'Конструктор рабочих процессов: Добавление параметров & диалоговых окон добавления аргументов'
+description: Сведения о том, как элементы пользовательского интерфейса в диалоговом окне "Добавление параметров" используются конструктором InvokeMethod.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: c8acef82c2616259793ba63ca51c789cfd1b9ba4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2038e56770a7d671a25b3982f865926c29697b13
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547359"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435694"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Диалоговые окна «Добавление параметров» и «Добавление аргументов»
 
@@ -31,7 +33,7 @@ ms.locfileid: "85547359"
 
 |Имя|Значение|
 |-|-|
-|**Имя**|Имя аргумента.|
+|**имя** ;|Имя аргумента.|
 |**Направление**|Определяет, представляет аргумент поток данных в делегат, из делегата или и тот и другой.|
 |**Тип**|Имя типа нового аргумента.|
 |**Значение**|Значение, используемое для этого экземпляра аргумента делегата.|

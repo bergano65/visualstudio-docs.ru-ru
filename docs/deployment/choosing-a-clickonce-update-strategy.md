@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5618a8996b9858f0799f2a359573d5b7b9da1ce9
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 7f231f3426821b7f3148d3e6c268234f125f88f0
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383161"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437608"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Выбор стратегии обновления ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] может предоставлять автоматические обновления приложения. Приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] периодически читает файл своего манифеста развертывания, чтобы узнать, имеются ли обновления приложения. Если обновление доступно, загружается и выполняется новая версия приложения. Для обеспечения эффективности работы загружаются только измененные файлы.
@@ -73,6 +73,8 @@ ms.locfileid: "94383161"
    </update>
 </subscription>
 ```
+> [!NOTE]
+> Для приложений .NET 3,1 и более новых версий Проверка обновлений до запуска приложения является единственной поддерживаемой возможностью обновления.
 
 ## <a name="make-updates-required"></a>Необходимо сделать обновления
  Возможны случаи, когда необходимо, чтобы пользователи запускали обновленную версию приложения в обязательном порядке. Например, может потребоваться внесение во внешний ресурс, такой как веб-служба, изменения, которое не позволит правильно работать более ранней версии приложения. В этом случае желательно пометить обновление как обязательное и тем самым предотвратить запуск пользователями более ранней версии приложения.
@@ -118,8 +120,8 @@ ms.locfileid: "94383161"
 
  Если используется технология развертывания доверенных приложений, запрос по уровням доверия не будет выводиться. Дополнительные сведения см. в разделе [Общие сведения о развертывании доверенных приложений](../deployment/trusted-application-deployment-overview.md).
 
-## <a name="see-also"></a>См. также
- \<xref:System.Deployment.Application>
+## <a name="see-also"></a>См. также раздел
+- <xref:System.Deployment.Application>
 - [Безопасность и развертывание ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)

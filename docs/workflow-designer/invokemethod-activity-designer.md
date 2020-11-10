@@ -1,5 +1,7 @@
 ---
 title: Конструктор действия конструктор рабочих процессов InvokeMethod
+description: Сведения о действии InvokeMethod и о том, как можно использовать конструктор действий InvokeMethod для создания и настройки действия InvokeMethod.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8660cd82f9d671da3b535ac228e8ce62c875dc07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55162def18d2295e0767a3999ffde75d71e1233d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593204"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437740"
 ---
 # <a name="invokemethod-activity-designer"></a>Конструктор действия InvokeMethod
 

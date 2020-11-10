@@ -1,5 +1,7 @@
 ---
 title: Наборы данных запросов
+description: Общие сведения о наборах данных запросов. Сведения о чувствительности к регистру наборов данных. Поиск определенной строки в таблице данных, поиск строк по значениям столбцов и доступ к связанным записям.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ef1c806914b0f134702e010b58229ee3fc15c7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ccf228b147301eb9fccf41da98f8cc5204971a9
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281868"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436072"
 ---
 # <a name="query-datasets"></a>Наборы данных запросов
 Для поиска конкретных записей в наборе данных используйте `FindBy` метод в объекте DataTable, напишите собственную инструкцию foreach для циклической обработки коллекции строк таблицы или используйте [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -70,7 +72,7 @@ ms.locfileid: "85281868"
 > [!NOTE]
 > Если вы работаете в Windows Forms приложении и используете функции привязки данных для вывода данных, форма, созданная конструктором, может предоставить достаточно функциональных возможностей для вашего приложения. Дополнительные сведения см. [в разделе Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). В частности, см. раздел [связи в наборах данных](relationships-in-datasets.md).
 
-В следующих примерах кода показано, как перемещаться по связям вверх и вниз в типизированных наборах данных. В примерах кода используются типизированные <xref:System.Data.DataRow> s ( `NorthwindDataSet.OrdersRow` ) и созданные методы финдби*PrimaryKey* ( `FindByCustomerID` ) для определения местоположения нужной строки и возврата связанных записей. Примеры компилируются и выполняются правильно, только если у вас есть:
+В следующих примерах кода показано, как перемещаться по связям вверх и вниз в типизированных наборах данных. В примерах кода используются типизированные <xref:System.Data.DataRow> s ( `NorthwindDataSet.OrdersRow` ) и созданные методы финдби *PrimaryKey* ( `FindByCustomerID` ) для определения местоположения нужной строки и возврата связанных записей. Примеры компилируются и выполняются правильно, только если у вас есть:
 
 - Экземпляр набора данных `NorthwindDataSet` с именем и `Customers` таблицей.
 
@@ -96,4 +98,4 @@ ms.locfileid: "85281868"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Инструменты набора данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

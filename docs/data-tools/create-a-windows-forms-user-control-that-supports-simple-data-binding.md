@@ -1,5 +1,6 @@
 ---
 title: Создание пользовательских элементов управления, поддерживающих простую привязку данных
+description: Узнайте, как создать Windows Forms пользовательский элемент управления, поддерживающий простую привязку данных, с помощью класса Дефаултбиндингпропертяттрибуте в Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5126c6f4c06bc52e98b952a7809ccae9c20e633
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4ba2010b33b1defa6ef7dcb601fde9417fa47f70
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037372"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436749"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Создание пользовательского элемента управления Windows Forms с простой привязкой данных
 
@@ -58,7 +59,7 @@ ms.locfileid: "90037372"
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
-1. Если у вас нет SQL Server Express LocalDB, установите его на [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)или с помощью **Visual Studio Installer**. В **Visual Studio Installer**можно установить SQL Server Express LocalDB как часть рабочей нагрузки **хранения и обработки данных** или как отдельный компонент.
+1. Если у вас нет SQL Server Express LocalDB, установите его на [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)или с помощью **Visual Studio Installer**. В **Visual Studio Installer** можно установить SQL Server Express LocalDB как часть рабочей нагрузки **хранения и обработки данных** или как отдельный компонент.
 
 2. Установите учебную базу данных Northwind, выполнив следующие действия.
 
@@ -74,7 +75,7 @@ ms.locfileid: "90037372"
 
 ## <a name="create-a-windows-forms-application"></a>Создание приложения Windows Forms
 
-Первым шагом является создание **приложения Windows Forms**:
+Первым шагом является создание **приложения Windows Forms** :
 
 1. В Visual Studio в меню **Файл** выберите пункты **Создать** > **Проект**.
 
@@ -82,9 +83,9 @@ ms.locfileid: "90037372"
 
 3. В средней области выберите тип проекта **приложения Windows Forms** .
 
-4. Назовите проект **симплеконтролвалксраугх**и нажмите кнопку **ОК**.
+4. Назовите проект **симплеконтролвалксраугх** и нажмите кнопку **ОК**.
 
-     Создается проект **SimpleControlWalkthrough**, который добавляется в **Обозреватель решений**.
+     Создается проект **SimpleControlWalkthrough** , который добавляется в **Обозреватель решений**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Добавление пользовательского элемента управления в проект
 
@@ -125,7 +126,7 @@ ms.locfileid: "90037372"
 
 1. Чтобы открыть окно **Источники данных** , в меню **данные** выберите команду **отобразить источники данных**.
 
-2. В окне **Источники данных** выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.
+2. В окне **Источники данных** выберите **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
 3. На странице **Выбор типа источника данных** выберите **База данных** и нажмите кнопку **Далее**.
 
@@ -169,7 +170,7 @@ ms.locfileid: "90037372"
 
 Привязанные к данным элементы управления с метками описания отображаются на форме вместе с панелью инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. В области компонентов появляется [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator>.
 
-## <a name="run-the-application"></a>Запуск приложения
+## <a name="run-the-application"></a>Выполнение приложения
 
 Нажмите клавишу **F5** для запуска приложения.
 

@@ -1,6 +1,8 @@
 ---
 title: Наборы правил анализа кода
 ms.date: 04/02/2018
+description: Сведения о встроенных и настраиваемых наборах правил в анализе кода Visual Studio. Узнайте, как задавать наборы правил в файлах и как настраивать наборы правил в проектах.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fde3f3200a4764c231b97b0b44e36c38dd0b3e23
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 49d17e8321aa6567a6ae0936291a73d5cb854b5c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860423"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436892"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Использование наборов правил для группировки правил анализа кода
 
@@ -28,7 +30,7 @@ ms.locfileid: "91860423"
 
 ## <a name="rule-set-format"></a>Формат набора правил
 
-Набор правил указывается в формате XML в *RuleSet* -файле. Правила, которые состоят из идентификатора и *действия*, группируются по идентификатору анализатора и пространству имен в файле.
+Набор правил указывается в формате XML в *RuleSet* -файле. Правила, которые состоят из идентификатора и *действия* , группируются по идентификатору анализатора и пространству имен в файле.
 
 Содержимое *RuleSet* -файла выглядит примерно так:
 
@@ -67,6 +69,6 @@ ms.locfileid: "91860423"
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по набору правил анализа кода](../code-quality/rule-set-reference.md)

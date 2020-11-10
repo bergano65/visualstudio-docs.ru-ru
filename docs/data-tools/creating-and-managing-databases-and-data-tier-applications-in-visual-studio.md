@@ -1,5 +1,7 @@
 ---
 title: Проекты баз данных и проекты DAC
+description: Ознакомьтесь с проектами баз данных и приложениями уровня данных (приложений уровня данных). Используйте проекты баз данных для создания новых баз данных, создания новых приложений уровня данных и обновления существующих баз данных и приложений уровня данных.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cc8d32ddcc332264278cf76392ac69a6188ca51c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57b889f025b06e127e8e4bb38be311f6bbe55952
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586735"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436606"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Проекты баз данных и приложения уровня данных
 
@@ -25,12 +27,12 @@ ms.locfileid: "75586735"
 
 ## <a name="common-high-level-tasks"></a>Общие задачи высокого уровня
 
-| Задача высокого уровня | Вспомогательное содержимое |
+| Задача High-Level | Вспомогательное содержимое |
 | - | - |
 | **Начните разработку приложения уровня данных:** Понятие приложения уровня данных (DAC) было представлено SQL Server 2008. DAC содержит определение для базы данных SQL Server и объектов поддерживающего экземпляра, используемых клиент-сервером или 3-уровневое приложение. DAC включает объекты базы данных, такие как таблицы и представления, а также сущности экземпляров, такие как имена входа. Visual Studio можно использовать для создания проекта DAC, создания файла пакета DAC и отправки файла пакета DAC администратору базы данных для развертывания на экземпляре компонента ядра СУБД SQL Server. | - [Приложения уровня данных](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
 | **Выполнение итеративной разработки базы данных:** Разработчики могут извлекать части проекта и обновлять их в изолированной среде разработки. С помощью этого типа среды можно тестировать изменения, не затрагивая других участников команды. После внесения изменений файлы возвращаются в систему управления версиями, где другие участники команды могут получить ваши изменения, а затем выполнить сборку и развертывание на тестовом сервере. | - [Разработка автономных баз данных на основе проектов (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Отладчик Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
 | Создание **прототипов, проверка результатов тестов и изменение скриптов и объектов базы данных:** Для выполнения одной из этих стандартных задач можно использовать редактор Transact-SQL. | - [Редакторы запросов и текста (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

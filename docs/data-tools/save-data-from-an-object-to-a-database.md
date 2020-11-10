@@ -1,5 +1,7 @@
 ---
 title: Сохранение данных из объекта в базе данных
+description: Сохранение данных из объекта в базе данных с помощью средств набора данных в Visual Studio. См. статью сохранение новых записей, обновление существующих записей и удаление существующих записей.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4afa0d376366b154501e1a0e4488af57b4448a32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ee06ef21be4076a1a0dee6319155144c468bafd
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281660"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436024"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Сохранение данных из объекта в базе данных
 
@@ -76,6 +78,6 @@ ms.locfileid: "85281660"
 
 Необходимо иметь разрешение на выполнение выбранного `INSERT` , `UPDATE` или `DELETE` для таблицы в базе данных.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)
