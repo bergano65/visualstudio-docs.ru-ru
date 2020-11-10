@@ -1,5 +1,7 @@
 ---
 title: Конструктор действий получения конструктор рабочих процессов
+description: Сведения о действии Receive и об использовании конструктора действий получения для создания и настройки действия Receive.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f49a32036fcfd5e9f75f3d8dd61499c4af0b2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6414d92cea867a1235d73a39b6415ab884651ec
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875726"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434198"
 ---
 # <a name="receive-activity-designer"></a>Конструктор действия Receive
 
@@ -46,7 +48,7 @@ ms.locfileid: "86875726"
 | <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> | Неверно | Указывает корреляции между действиями <xref:System.ServiceModel.Activities.Receive> в операциях службы рабочего процесса с объектом <xref:System.ServiceModel.MessageQuerySet>. Нажмите кнопку с многоточием рядом со <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> свойством в сетке свойства, чтобы открыть диалоговое окно **Определение CorrelatesOn** . Дополнительные сведения об использовании этого диалогового окна см. в разделе [диалогового окна «Определение содержимого](../workflow-designer/content-definition-dialog-box.md) ». |
 | <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> | Неверно | Задает метод <xref:System.ServiceModel.Activities.CorrelationHandle>, используемый для перенаправления сообщения в соответствующий экземпляр рабочего процесса.<br /><br /> Нажмите кнопку с многоточием рядом со <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> свойством в сетке свойства, чтобы открыть диалоговое окно **Редактор выражений** . Дополнительные сведения об использовании этого диалогового окна см. в разделе [инструкции. Использование редактора выражений](../workflow-designer/how-to-use-the-expression-editor.md) . |
 | <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> | Неверно | Указывает коллекцию объектов <xref:System.ServiceModel.Activities.CorrelationInitializer>, инициализирующих несколько объектов <xref:System.ServiceModel.Activities.CorrelationHandle>, которые настраивают это действие <xref:System.ServiceModel.Activities.Receive> в рамках рабочего процесса. Нажмите кнопку с многоточием рядом со <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> свойством в сетке свойства, чтобы открыть диалоговое окно **Добавление инициализаторов корреляции** . Дополнительные сведения об использовании этого поля см. в разделе « [Добавление CorrelationInitializers в диалоговом окне](../workflow-designer/add-correlationinitializers-dialog-box.md) ». |
-| <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> | Неверно | Указывает значение, которое определяет, может ли быть создан новый экземпляр рабочего процесса для обработки сообщения в случае, если сообщение не соответствует существующему экземпляру рабочего процесса. Если значение равно **true**, создается новый экземпляр рабочего процесса для обработки сообщения, если сообщение не сопоставлено с существующим экземпляром рабочего процесса. |
+| <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> | Неверно | Указывает значение, которое определяет, может ли быть создан новый экземпляр рабочего процесса для обработки сообщения в случае, если сообщение не соответствует существующему экземпляру рабочего процесса. Если значение равно **true** , создается новый экземпляр рабочего процесса для обработки сообщения, если сообщение не сопоставлено с существующим экземпляром рабочего процесса. |
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | Неверно | Указывает коллекцию известных типов для операции службы, реализуемой этим действием <xref:System.ServiceModel.Activities.Receive>. Это свойство должно использоваться вместе со свойством <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>, установленным в значение <xref:System.Runtime.Serialization.DataContractSerializer>. Не учитывается, если используется <xref:System.Xml.Serialization.XmlSerializer>.<br /><br /> Нажмите кнопку с многоточием рядом с полем **кновнтипес** в сетке свойств, чтобы открыть диалоговое окно **Редактор коллекции типов** , в котором можно добавить соответствующие типы. Дополнительные сведения об использовании этого поля см. в разделе [диалогового окна Редактор коллекции типов](../workflow-designer/type-collection-editor-dialog-box.md) . |
 | <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | Неверно | Задает <xref:System.Net.Security.ProtectionLevel> для сообщения.<br /><br /> 1.  <xref:System.Net.Security.ProtectionLevel> обозначает только проверку подлинности.<br />2.  <xref:System.Net.Security.ProtectionLevel> означает подписывание данных для обеспечения целостности передаваемых данных.<br />3.  <xref:System.Net.Security.ProtectionLevel> означает шифрование и подписывание данных для обеспечения конфиденциальности и целостности передаваемых данных. |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | Неверно | Указывает тип используемого сериализатора для операции службы, реализуемой действием <xref:System.ServiceModel.Activities.Receive>. Значение по умолчанию равно <xref:System.Runtime.Serialization.DataContractSerializer>, при котором выполняется сериализация и десериализация экземпляра типа в XML-поток или документ, который использует переданный контракт данных. <xref:System.Xml.Serialization.XmlSerializer> также может быть использован в том случае, если необходим больший контроль над XML. |

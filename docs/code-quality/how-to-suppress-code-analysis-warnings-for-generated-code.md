@@ -1,6 +1,8 @@
 ---
 title: Подавлять нарушения анализа кода для созданного кода
 ms.date: 05/13/2019
+description: Сведения о подавлении предупреждений анализа кода для созданного кода. См. статью как предотвратить отображение устаревших предупреждений анализа в Visual Studio о созданном коде.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 175df8bb4dded4f66508ef405e031178606fd531
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e462281686236f809fbd88588df5ad8fd832dbde
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371811"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435551"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Как отключить предупреждения анализа кода для созданного кода
 

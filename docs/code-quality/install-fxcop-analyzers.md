@@ -1,6 +1,8 @@
 ---
 title: Установка анализаторов FxCop
 ms.date: 08/03/2018
+description: Узнайте, как устанавливать анализаторы FxCop в Visual Studio. См. статью как установить эти анализаторы как пакет NuGet или как расширение VSIX.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - fxcop analyzers
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d789299212ec7420f40135dd655056f16b6e4f35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9950941680f9e251fe9c589a1df1d0314f149a7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893350"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435525"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Установка средств FxCop Analyzer в Visual Studio
 
@@ -28,13 +30,13 @@ ms.locfileid: "88893350"
 
 В Visual Studio 16,3 2019 и более поздних версиях пакет NuGet [Microsoft. CodeAnalysis. фкскопанализерс](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) можно установить непосредственно на странице свойств анализа кода проекта:
 
-1. Щелкните правой кнопкой мыши узел проекта в **Обозреватель решений**, выберите пункт **свойства**, а затем перейдите на вкладку **анализ кода** .
+1. Щелкните правой кнопкой мыши узел проекта в **Обозреватель решений** , выберите пункт **свойства** , а затем перейдите на вкладку **анализ кода** .
 
    ![Установка пакета FxCop Analyzer со страницы свойств в Visual Studio](media/install-fxcop-properties-page.png)
 
-2. Нажмите кнопку **Установить**.
+2. Выберите пункт **Установить**.
 
-   Visual Studio устанавливает последнюю версию пакета Microsoft. CodeAnalysis. Фкскопанализерс. Сборки отображаются в **Обозреватель решений** в разделе **References**  >  **анализаторы**ссылок.
+   Visual Studio устанавливает последнюю версию пакета Microsoft. CodeAnalysis. Фкскопанализерс. Сборки отображаются в **Обозреватель решений** в разделе **References**  >  **анализаторы** ссылок.
 
    ![Узел «Анализаторы» в обозреватель решений](media/solution-explorer-analyzers-node.png)
 
@@ -53,7 +55,7 @@ ms.locfileid: "88893350"
    >
    > ![Страница NuGet.org с командой консоли диспетчера пакетов](media/nuget-package-manager-command.png)
 
-   Сборки анализатора устанавливаются и отображаются в **Обозреватель решений** в разделе **References** > **анализаторы**ссылок.
+   Сборки анализатора устанавливаются и отображаются в **Обозреватель решений** в разделе **References** > **анализаторы** ссылок.
 
 ::: moniker-end
 
@@ -121,7 +123,7 @@ ms.locfileid: "88893350"
 
 ::: moniker-end
 
-4. Нажмите кнопку **Скачать**.
+4. Выберите **Загрузить**.
 
    Расширение скачивается.
 
@@ -139,7 +141,7 @@ ms.locfileid: "88893350"
 
    Через одну или две минуты установка завершается.
 
-7. Нажмите кнопку **Закрыть**, а затем снова откройте Visual Studio.
+7. Нажмите кнопку **Закрыть** , а затем снова откройте Visual Studio.
 
 ::: moniker range="vs-2017"
 

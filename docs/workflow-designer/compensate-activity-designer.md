@@ -1,5 +1,7 @@
 ---
 title: Конструктор действий компенсации конструктор рабочих процессов
+description: Сведения о конструкторе действий компенсации и использовании конструктора действий компенсации для создания и настройки действия компенсации.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5332b6d9ec087f4e1b127d93563dc0f2fe5fdd15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96ae76bac3f6163e8b4434878017df07f1341828
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876155"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434328"
 ---
 # <a name="compensate-activity-designer"></a>Конструктор действия Compensate
 
@@ -29,7 +31,7 @@ ms.locfileid: "86876155"
 
 ### <a name="using-the-compensate-activity-designer"></a>Использование конструктора операций Compensate
 
-Конструктор действия **компенсации** можно найти в категории " **транзакция** " **панели элементов**. Чтобы открыть **панель элементов**, выберите вкладку **область элементов** в левой части конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
+Конструктор действия **компенсации** можно найти в категории " **транзакция** " **панели элементов**. Чтобы открыть **панель элементов** , выберите вкладку **область элементов** в левой части конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
 
 Конструктор действий **компенсации** можно перетащить из **панели элементов** в конструктор рабочих процессовную область, где бы находились действия, например внутри <xref:System.Activities.Statements.Sequence> . При удалении конструктора действий создается <xref:System.Activities.Statements.Compensate> действие с параметром компенсации по умолчанию <xref:System.Activities.Activity.DisplayName%2A> . <xref:System.Activities.Activity.DisplayName%2A>Значение можно изменить в заголовке конструктора действий **компенсации** или в поле **DisplayName** сетки свойств.
 
@@ -47,5 +49,5 @@ ms.locfileid: "86876155"
 - [Транзакция](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
 - [Конструктор действия Compensate](../workflow-designer/compensate-activity-designer.md)
-- [Подтвердить](../workflow-designer/confirm-activity-designer.md)
+- [Уточнит](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

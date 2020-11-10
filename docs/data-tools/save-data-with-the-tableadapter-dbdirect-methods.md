@@ -1,5 +1,7 @@
 ---
 title: Сохранение данных с помощью методов DBDirect адаптера таблицы TableAdapter
+description: В этом пошаговом руководстве инструкции SQL выполняются непосредственно в базе данных с помощью методов DBDirect адаптера таблицы.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d79b2081e2d30d77ae3507884b44421f0f14bae
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281613"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434575"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Сохранение данных с помощью методов DBDirect адаптера таблицы TableAdapter
 
@@ -43,7 +45,7 @@ ms.locfileid: "85281613"
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
-1. Если у вас нет SQL Server Express LocalDB, установите его на [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)или с помощью **Visual Studio Installer**. В **Visual Studio Installer**можно установить SQL Server Express LocalDB как часть рабочей нагрузки **хранения и обработки данных** или как отдельный компонент.
+1. Если у вас нет SQL Server Express LocalDB, установите его на [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)или с помощью **Visual Studio Installer**. В **Visual Studio Installer** можно установить SQL Server Express LocalDB как часть рабочей нагрузки **хранения и обработки данных** или как отдельный компонент.
 
 2. Установите учебную базу данных Northwind, выполнив следующие действия.
 
@@ -67,9 +69,9 @@ ms.locfileid: "85281613"
 
 3. В средней области выберите тип проекта **приложения Windows Forms** .
 
-4. Назовите проект **таблеадаптердбдиректмесодсвалксраугх**и нажмите кнопку **ОК**.
+4. Назовите проект **таблеадаптердбдиректмесодсвалксраугх** и нажмите кнопку **ОК**.
 
-     Создается проект **TableAdapterDbDirectMethodsWalkthrough**, который добавляется в **Обозреватель решений**.
+     Создается проект **TableAdapterDbDirectMethodsWalkthrough** , который добавляется в **Обозреватель решений**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Создание источника данных из базы данных
 
@@ -77,13 +79,13 @@ ms.locfileid: "85281613"
 
 ### <a name="to-create-the-data-source"></a>Создание источника данных
 
-1. В меню **данные** выберите команду **отобразить источники данных**.
+1. В меню **Данные** выберите пункт **Показать источники данных**.
 
    Открывается окно **Источники данных**.
 
 2. В окне **Источники данных** выберите **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
-3. На экране **Выбор типа источника данных** выберите **база данных**, а затем нажмите кнопку **Далее**.
+3. На экране **Выбор типа источника данных** выберите **база данных** , а затем нажмите кнопку **Далее**.
 
 4. На экране **Выбор подключения к данным** выполните одно из следующих действий.
 
@@ -113,14 +115,14 @@ ms.locfileid: "85281613"
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Порядок добавления кнопок, вызывающих отдельные методы DbDirect адаптера таблицы
 
-1. Перетащите три элемента управления <xref:System.Windows.Forms.Button> из **области элементов** на **Form1** (под **RegionDataGridView**).
+1. Перетащите три элемента управления <xref:System.Windows.Forms.Button> из **области элементов** на **Form1** (под **RegionDataGridView** ).
 
 2. Задайте следующие свойства **Имя** и **Текст** для каждой из кнопок.
 
     |Имя|Текст|
     |----------|----------|
     |`InsertButton`|**Insert**|
-    |`UpdateButton`|**Update**|
+    |`UpdateButton`|**Обновление**|
     |`DeleteButton`|**Удаление**|
 
 ### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Добавление кода для вставки новых записей в базу данных
@@ -134,7 +136,7 @@ ms.locfileid: "85281613"
 
 ### <a name="to-add-code-to-update-records-in-the-database"></a>Добавление кода для обновления записей в базе данных
 
-1. Дважды щелкните **UpdateButton**, чтобы создать обработчик событий для события щелчка кнопкой мыши и открыть форму в редакторе кода.
+1. Дважды щелкните **UpdateButton** , чтобы создать обработчик событий для события щелчка кнопкой мыши и открыть форму в редакторе кода.
 
 2. Замените обработчик событий `UpdateButton_Click` следующим кодом:
 

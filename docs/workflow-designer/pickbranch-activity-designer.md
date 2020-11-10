@@ -1,5 +1,7 @@
 ---
 title: Конструктор действий конструктор рабочих процессов PickBranch
+description: Узнайте, как конструктор операций PickBranch предоставляет путь выполнения на основе событий в рамках действия выбора, которое может быть активировано входящим событием.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34da9091c0f96b7270678f9b36fe861e4a87418f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bce1cee7fad7ccff57a6911c99a9470a22b9a927
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876090"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434237"
 ---
 # <a name="pickbranch-activity-designer"></a>Конструктор действия PickBranch
 
@@ -31,7 +33,7 @@ ms.locfileid: "86876090"
 
 Два пустых <xref:System.Activities.Statements.PickBranch> объекта с отображаемыми именами **branch1** и **branch2** создаются по умолчанию как элементы <xref:System.Activities.Statements.Pick> действия при первоначальном удалении конструктора действия **выбора** в конструктор рабочих процессов. Эти соответствующие <xref:System.Activities.Statements.PickBranch.DisplayName%2A> значения свойств можно изменять в заголовке конструктора **PickBranch** или в окне **свойств** для каждой ветви.
 
-Существует два способа добавления <xref:System.Activities.Statements.PickBranch> объектов в коллекцию <xref:System.Activities.Statements.Pick> объекта: перетаскивание конструктора **PickBranch** из **панели элементов**или с помощью контекстного меню в области конструктора **выборки** .
+Существует два способа добавления <xref:System.Activities.Statements.PickBranch> объектов в коллекцию <xref:System.Activities.Statements.Pick> объекта: перетаскивание конструктора **PickBranch** из **панели элементов** или с помощью контекстного меню в области конструктора **выборки** .
 
 - Конструктор **PickBranch** создает объект, <xref:System.Activities.Statements.PickBranch> когда он перетаскивается из **панели элементов** и перемещается в одну из ветвей конструктора действия **выбора** на поверхности конструктор рабочих процессов. Новые объекты <xref:System.Activities.Statements.PickBranch> могут помещаться внутри конструктора <xref:System.Activities.Statements.Pick> слева или справа от любых существующих элементов <xref:System.Activities.Statements.PickBranch>, уже содержащихся в коллекции. При перетаскивании конструктора **PickBranch** в конструкторе **выбора** с помощью мыши конструктор **выборки** использует вертикальную синюю полосу серого цвета для указания места <xref:System.Activities.Statements.PickBranch> добавления для данного размещения мыши.
 

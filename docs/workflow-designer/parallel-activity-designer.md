@@ -1,5 +1,7 @@
 ---
 title: Конструктор параллельных действий конструктор рабочих процессов
+description: Сведения о параллельном действии и об использовании конструктора параллельных действий для выполнения коллекции дочерних действий одновременно.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f07dd02f682cd5c61d4d17099c1aeb76bb39bf8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8751c15e40658e7a901550eef3d86050da842cc7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593165"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435603"
 ---
 # <a name="parallel-activity-designer"></a>Конструктор действия Parallel
 
@@ -25,7 +27,7 @@ ms.locfileid: "75593165"
 
 Действие <xref:System.Activities.Statements.Parallel> хранит свои дочерние действия в коллекции <xref:System.Activities.Statements.Parallel.Branches%2A>. Используйте действие <xref:System.Activities.Statements.Parallel> вместо действия <xref:System.Activities.Statements.Sequence>, если некоторые дочерние действия могут перейти в состояние бездействия.
 
-<xref:System.Activities.Statements.Parallel>Действие имеет <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> свойство, которое содержит указанное пользователем Visual Basic выражение. Действие <xref:System.Activities.Statements.Parallel> вычисляет это свойство после завершения каждой ветви кода. Если значение равно **true**, <xref:System.Activities.Statements.Parallel> действие завершается без выполнения других ветвей. Если значение не <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> принимает **значение true**, <xref:System.Activities.Statements.Parallel> действие завершается после завершения всех его дочерних действий.
+<xref:System.Activities.Statements.Parallel>Действие имеет <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> свойство, которое содержит указанное пользователем Visual Basic выражение. Действие <xref:System.Activities.Statements.Parallel> вычисляет это свойство после завершения каждой ветви кода. Если значение равно **true** , <xref:System.Activities.Statements.Parallel> действие завершается без выполнения других ветвей. Если значение не <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> принимает **значение true** , <xref:System.Activities.Statements.Parallel> действие завершается после завершения всех его дочерних действий.
 
 ### <a name="using-the-parallel-activity-designer"></a>Использование конструктора действия Parallel
 
@@ -43,7 +45,7 @@ ms.locfileid: "75593165"
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Указывает понятное отображаемое имя действия конструктора в заголовке. Значение по умолчанию — **Parallel**. Значение можно дополнительно изменить в сетке **свойств** или непосредственно в заголовке конструктора операций.|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|Верно|Содержит коллекцию дочерних действий, которые должны быть выполнены.|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|Неверно|Вычисляется после завершения какой-либо ветви. Если значение равно **true**, то запланированные ожидающие ветви отменяются. Если это свойство не задано или имеет **значение false**, действие завершается после завершения всех его дочерних действий. Значение по умолчанию — **null**.|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|Неверно|Вычисляется после завершения какой-либо ветви. Если значение равно **true** , то запланированные ожидающие ветви отменяются. Если это свойство не задано или имеет **значение false** , действие завершается после завершения всех его дочерних действий. Значение по умолчанию — **null**.|
 
 ## <a name="see-also"></a>См. также раздел
 

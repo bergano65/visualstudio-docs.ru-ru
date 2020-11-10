@@ -1,5 +1,7 @@
 ---
 title: Создание формы Windows Forms для поиска данных
+description: Ознакомьтесь с примером создания формы Windows Forms для поиска данных. Создайте приложение Windows Form, источник данных и форму. Добавление параметризации. Тестирование приложения.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: df6f2245f06a594e35febe07d5aab2d7e83c48fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b492c7aec41d30e972df93206f9e597ea82eb3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586813"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435291"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Создание формы Windows Forms для поиска данных
 
@@ -47,7 +49,7 @@ ms.locfileid: "75586813"
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
-1. Если у вас нет SQL Server Express LocalDB, установите его на [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)или с помощью **Visual Studio Installer**. В **Visual Studio Installer**можно установить SQL Server Express LocalDB как часть рабочей нагрузки **хранения и обработки данных** или как отдельный компонент.
+1. Если у вас нет SQL Server Express LocalDB, установите его на [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)или с помощью **Visual Studio Installer**. В **Visual Studio Installer** можно установить SQL Server Express LocalDB как часть рабочей нагрузки **хранения и обработки данных** или как отдельный компонент.
 
 2. Установите учебную базу данных Northwind, выполнив следующие действия.
 
@@ -71,7 +73,7 @@ ms.locfileid: "75586813"
 
 1. Чтобы открыть окно **Источники данных** , в меню **данные** выберите команду **отобразить источники данных**.
 
-2. В окне **Источники данных** выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.
+2. В окне **Источники данных** выберите **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
 3. На странице **Выбор типа источника данных** выберите элемент **База данных** и нажмите **Далее**.
 
@@ -123,7 +125,7 @@ ms.locfileid: "75586813"
     > [!NOTE]
     > Источники данных доступа и OLE DB используют вопросительный знак ("?") для обозначения параметров, поэтому предложение WHERE будет выглядеть следующим образом: `WHERE City = ?` .
 
-4. Нажмите кнопку **ОК**, чтобы закрыть диалоговое окно **Построитель условий поиска**.
+4. Нажмите кнопку **ОК** , чтобы закрыть диалоговое окно **Построитель условий поиска**.
 
      На форму добавляется **FillByCityToolStrip**.
 

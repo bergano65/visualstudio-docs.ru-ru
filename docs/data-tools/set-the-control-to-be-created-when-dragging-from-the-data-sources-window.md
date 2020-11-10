@@ -1,5 +1,6 @@
 ---
 title: Задание элемента управления для создания при перетаскивании
+description: Узнайте, как задать создание элемента управления при перетаскивании из окна Источники данных на конструктор WPF или конструктор Windows Forms в Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a7588fc23e7d52adb6c7ea780a75e11715688e26
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8a81ecb35c37dbef6d48227c27ed877c64e6e26f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036266"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434471"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"
 
@@ -38,7 +39,7 @@ ms.locfileid: "90036266"
 2. В окне **Источники данных** выберите элемент, представляющий таблицу или объект данных, которые необходимо задать.
 
    > [!TIP]
-   > Если окно **Источники данных** не открыто, его можно открыть, выбрав **Просмотреть**  >  **другие**  >  **Источники данных**Windows.
+   > Если окно **Источники данных** не открыто, его можно открыть, выбрав **Просмотреть**  >  **другие**  >  **Источники данных** Windows.
 
 3. Щелкните раскрывающееся меню элемента, а затем выберите один из следующих элементов в меню:
 

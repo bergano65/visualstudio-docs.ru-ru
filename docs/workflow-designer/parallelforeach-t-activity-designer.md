@@ -1,5 +1,7 @@
 ---
 title: Конструктор действий конструктор рабочих процессов-ParallelForEach &lt; T &gt;
+description: Узнайте, как <T> действие ParallelForEach перечисляет элементы коллекции и выполняет внедренный оператор для каждого элемента коллекции в параллельном режиме.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2d3d33b150bd9c360896f88eddf032837fe9c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57c8414637d767a57cf9021d907bfb6e1fe467ef
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876051"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435564"
 ---
 # <a name="parallelforeach-activity-designer"></a>Конструктор действия ParallelForEach
 
 Действие <xref:System.Activities.Statements.ParallelForEach%601> перечисляет элементы коллекции и выполняет вложенную инструкцию для каждого элемента коллекции параллельно, асинхронно в том же потоке. Это действие управления потоком следует использовать вместо действия <xref:System.Activities.Statements.Sequence>, если ожидается, что вложенные действия перейдут в режим бездействия.
 
-<xref:System.Activities.Statements.ParallelForEach%601>Действие имеет <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> свойство, которое содержит указанное пользователем Visual Basic выражение. Действие <xref:System.Activities.Statements.ParallelForEach%601> вычисляет это свойство после завершения каждой ветви кода. Если значение равно **true**, <xref:System.Activities.Statements.ParallelForEach%601> действие завершается без выполнения других ветвей. Если значение не <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> принимает **значение true**, <xref:System.Activities.Statements.ParallelForEach%601> действие завершается после завершения всех его дочерних действий.
+<xref:System.Activities.Statements.ParallelForEach%601>Действие имеет <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> свойство, которое содержит указанное пользователем Visual Basic выражение. Действие <xref:System.Activities.Statements.ParallelForEach%601> вычисляет это свойство после завершения каждой ветви кода. Если значение равно **true** , <xref:System.Activities.Statements.ParallelForEach%601> действие завершается без выполнения других ветвей. Если значение не <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> принимает **значение true** , <xref:System.Activities.Statements.ParallelForEach%601> действие завершается после завершения всех его дочерних действий.
 
 ## <a name="the-parallelforeacht-activity"></a>Действие ParallelForEach<T \>
 
@@ -33,7 +35,7 @@ ms.locfileid: "86876051"
 
 ### <a name="using-the-parallelforeacht-activity-designer"></a>Использование \<T> конструктора действий ParallelForEach
 
-Доступ к конструктору действий **ParallelForEach \<T> ** в категории " **поток управления** " **панели элементов**.
+Доступ к конструктору действий **ParallelForEach \<T>** в категории " **поток управления** " **панели элементов**.
 
 Конструктор **действий \<T> ParallelForEach** можно перетащить из **панели элементов** в область Конструктор рабочих процессов, где бы они ни находились, в то время как конструкторы действий обычно размещаются, например, внутри конструктора действий **последовательности** . После его удаления в конструктор рабочих процессов создается <xref:System.Activities.Statements.ParallelForEach%601> действие, которое по умолчанию содержит <xref:System.Activities.Activity.DisplayName%2A> **ParallelForEach<Int32 \> .**
 
@@ -44,12 +46,12 @@ ms.locfileid: "86876051"
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Указывает понятное отображаемое имя действия конструктора в заголовке. Значение по умолчанию **— \<Int32> ParallelForEach**. Значение можно дополнительно изменить в сетке **свойств** или непосредственно в заголовке конструктора операций.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|Неверно|Действие, выполняемое для каждого элемента в коллекции. Чтобы добавить <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> действие, перетащите действие из области элементов в поле **текст** в конструкторе действия **ParallelForEach \<T> ** с текстом подсказки "перетащите действие сюда".|
+|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|Неверно|Действие, выполняемое для каждого элемента в коллекции. Чтобы добавить <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> действие, перетащите действие из области элементов в поле **текст** в конструкторе действия **ParallelForEach \<T>** с текстом подсказки "перетащите действие сюда".|
 |**TypeArgument**|Верно|Тип элементов в <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> коллекции, заданном универсальным параметром *T*. По умолчанию **TypeArgument** имеет значение **Int32**. Чтобы изменить тип T в конструкторе действий **ParallelForEach<\> T** , измените значение поля со списком **TypeArgument** в сетке свойств.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Верно|Коллекция элементов для итерации. Чтобы задать <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> , введите Visual Basic выражение в поле **значения** в конструкторе действий **foreach<T \> ** в поле с текстом подсказки "введите выражение VB" или в поле " **значения** " в окне " **Свойства** ".|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Верно|Коллекция элементов для итерации. Чтобы задать <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> , введите Visual Basic выражение в поле **значения** в конструкторе действий **foreach<T \>** в поле с текстом подсказки "введите выражение VB" или в поле " **значения** " в окне " **Свойства** ".|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Оценивается после каждого выполнения итерации. Если результат оценки равен true, то запланированные ожидающие итерации отменяются. Если это свойство не задано, все запланированные инструкции выполняются до завершения.|
 
-По умолчанию итератор цикла является именованным элементом. Имя переменной итератора можно изменить в поле **foreach** конструктора действий **ParallelForEach \<T> ** . Цикличный итератор можно использовать в выражениях в дочерних действиях действия <xref:System.Activities.Statements.ParallelForEach%601>.
+По умолчанию итератор цикла является именованным элементом. Имя переменной итератора можно изменить в поле **foreach** конструктора действий **ParallelForEach \<T>** . Цикличный итератор можно использовать в выражениях в дочерних действиях действия <xref:System.Activities.Statements.ParallelForEach%601>.
 
 ## <a name="see-also"></a>См. также раздел
 

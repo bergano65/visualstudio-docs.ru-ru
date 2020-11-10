@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Сохранение данных с помощью транзакции
+description: Узнайте, как сохранить данные с помощью транзакции с инструментами набора данных в Visual Studio. Данные сохраняются в транзакции с помощью пространства имен System. Transactions.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 40894adefb42d6de077a2e2812d26f90bc5f40dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1cd112a1960078c72c575542525a5ecf6571b06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281699"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434589"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Практическое руководство. Сохранение данных с помощью транзакции
 
@@ -39,7 +41,7 @@ ms.locfileid: "85281699"
 
 1. В меню **Проект** выберите пункт **Добавить ссылку**.
 
-2. На вкладке **.NET** (вкладка "**SQL Server** " для SQL Server проектов) выберите **System. Transactions**и нажмите кнопку **ОК**.
+2. На вкладке **.NET** (вкладка " **SQL Server** " для SQL Server проектов) выберите **System. Transactions** и нажмите кнопку **ОК**.
 
      Ссылка на *System.Transactions.dll* добавляется в проект.
 
@@ -50,7 +52,7 @@ ms.locfileid: "85281699"
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)
 - [Пошаговое руководство. Сохранение данных в транзакции](../data-tools/save-data-in-a-transaction.md)

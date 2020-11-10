@@ -1,5 +1,7 @@
 ---
 title: Создание таблиц подстановки в приложениях Windows Forms
+description: Узнайте, как создавать таблицы подстановок в Windows Forms приложениях. Таблица уточняющих запросов описывает элементы управления, привязанные к двум связанным таблицам данных.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9a1ae368b7d2bf8548bf78a6a9795e19206bc277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d6ec8860d2c163d16e29d229203bb77abcdf65f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282661"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435199"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Создание таблиц подстановки в приложениях Windows Forms
 
@@ -28,7 +30,7 @@ ms.locfileid: "85282661"
 
 ## <a name="to-databind-a-lookup-control"></a>Привязка элемента управления "Уточняющий запрос"
 
-1. Откройте проект, откройте окно **Источники данных** , выбрав **Просмотреть**  >  **другие**  >  **Источники данных**Windows.
+1. Откройте проект, откройте окно **Источники данных** , выбрав **Просмотреть**  >  **другие**  >  **Источники данных** Windows.
 
     > [!NOTE]
     > Для таблиц подстановки необходимо, чтобы в окне **Источники данных** были доступны две связанные таблицы или объекты. Дополнительные сведения см. [в разделе связи в наборах данных](relationships-in-datasets.md).

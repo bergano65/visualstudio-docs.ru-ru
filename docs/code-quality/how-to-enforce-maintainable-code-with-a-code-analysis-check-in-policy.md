@@ -1,6 +1,8 @@
 ---
 title: Использование политики возврата с анализом кода
 ms.date: 11/04/2016
+description: Узнайте, как использовать политику возврата с анализом кода, чтобы убедиться, что код соответствует стандартам наследования, связанности классов, обслуживаемости и сложности.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, check-in policies
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 883b5e231036c446c1cbf1fbc2fc125a01b3de62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fa97f52f67e08b2ccf0843e5b5400680ed1c020
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371863"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434822"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Пошаговое руководство. обеспечение поддержки кода с помощью политики возврата с анализом кода
 
@@ -27,7 +29,7 @@ ms.locfileid: "85371863"
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>Открытие редактора политики анализа кода
 
-1. В **Team Explorer**щелкните правой кнопкой мыши проект, выберите пункт **Параметры проекта**, а затем выберите пункт **система управления версиями**.
+1. В **Team Explorer** щелкните правой кнопкой мыши проект, выберите пункт **Параметры проекта** , а затем выберите пункт **система управления версиями**.
 
      Откроется диалоговое окно **система управления версиями** .
 
@@ -41,7 +43,7 @@ ms.locfileid: "85371863"
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>Включение правил поддержки анализа кода
 
-1. В диалоговом окне **редактор политики анализа кода** в разделе " **Параметры правила**" разверните узел **правила поддержки** .
+1. В диалоговом окне **редактор политики анализа кода** в разделе " **Параметры правила** " разверните узел **правила поддержки** .
 
 2. Установите флажки для следующих правил:
 

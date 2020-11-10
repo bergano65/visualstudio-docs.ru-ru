@@ -1,5 +1,7 @@
 ---
 title: Конструктор действий конструктор рабочих процессов CancellationScope
+description: Узнайте, как можно использовать конструктор действий CancellationScope для создания и настройки действия CancellationScope.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6d1067b529dffec5a4e6a1f21d5489c32311c07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 746ed70d0a1a8ae4de2207ea1fdf15280bd44de9
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76112503"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434445"
 ---
 # <a name="cancellationscope-activity-designer"></a>Конструктор действия CancellationScope
 
@@ -27,7 +29,7 @@ ms.locfileid: "76112503"
 
 ### <a name="using-the-cancellationscope-activity-designer"></a>Использование конструктора операций CancellationScope
 
-Конструктор действия **CancellationScope** можно найти в категории " **транзакция** " **панели элементов**. Чтобы открыть **панель элементов**, выберите вкладку **область элементов** конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
+Конструктор действия **CancellationScope** можно найти в категории " **транзакция** " **панели элементов**. Чтобы открыть **панель элементов** , выберите вкладку **область элементов** конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
 
 Конструктор действий **CancellationScope** можно перетаскивать из **панели элементов** в область Конструктор рабочих процессов, где бы они ни находились, как в <xref:System.Activities.Statements.Sequence> . При удалении конструктора действий **CancellationScope** создается <xref:System.Activities.Statements.CancellationScope> действие со значением по умолчанию <xref:System.Activities.Activity.DisplayName%2A> CancellationScope. Измените <xref:System.Activities.Activity.DisplayName%2A> значение в заголовке конструктора действий **CancellationScope** . Его также можно изменить в поле **DisplayName** сетки свойств.
 
@@ -46,5 +48,5 @@ ms.locfileid: "76112503"
 - [Транзакция](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
 - [Compensate](../workflow-designer/compensate-activity-designer.md)
-- [Подтвердить](../workflow-designer/confirm-activity-designer.md)
+- [Уточнит](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

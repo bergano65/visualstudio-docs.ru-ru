@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. Сохранение данных в транзакции
+description: В этом пошаговом руководстве показано, как сохранить данные в транзакции с помощью пространства имен System. Transactions в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/08/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bb0262139e2096cf55ae7581ef854a57c67d22a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281634"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434549"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Пошаговое руководство. Сохранение данных в транзакции
 
@@ -56,9 +58,9 @@ ms.locfileid: "85281634"
 
 3. В средней области выберите тип проекта **приложения Windows Forms** .
 
-4. Назовите проект **савингдатаинатрансактионвалксраугх**и нажмите кнопку **ОК**.
+4. Назовите проект **савингдатаинатрансактионвалксраугх** и нажмите кнопку **ОК**.
 
-     Создается проект **SavingDataInATransactionWalkthrough**, который добавляется в **Обозреватель решений**.
+     Создается проект **SavingDataInATransactionWalkthrough** , который добавляется в **Обозреватель решений**.
 
 ## <a name="create-a-database-data-source"></a>Создание источника данных базы данных
 
@@ -68,7 +70,7 @@ ms.locfileid: "85281634"
 
 2. В окне **Источники данных** выберите **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
-3. На экране **Выбор типа источника данных** выберите **база данных**, а затем нажмите кнопку **Далее**.
+3. На экране **Выбор типа источника данных** выберите **база данных** , а затем нажмите кнопку **Далее**.
 
 4. На экране **Выбор подключения к данным** выполните одно из следующих действий.
 
@@ -139,28 +141,28 @@ ms.locfileid: "85281634"
 
 ### <a name="to-delete-existing-orders"></a>Удаление существующих заказов
 
-- Добавьте следующий метод `DeleteOrders` в **Form1**:
+- Добавьте следующий метод `DeleteOrders` в **Form1** :
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>Удаление существующих клиентов
 
-- Добавьте следующий метод `DeleteCustomers` в **Form1**:
+- Добавьте следующий метод `DeleteCustomers` в **Form1** :
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>Добавление новых клиентов
 
-- Добавьте следующий метод `AddNewCustomers` в **Form1**:
+- Добавьте следующий метод `AddNewCustomers` в **Form1** :
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>Добавление новых заказов
 
-- Добавьте следующий метод `AddNewOrders` в **Form1**:
+- Добавьте следующий метод `AddNewOrders` в **Form1** :
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]

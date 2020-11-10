@@ -1,5 +1,7 @@
 ---
 title: Конструктор действий конструктор рабочих процессов CompensableActivity
+description: Узнайте, как можно использовать конструктор действий CompensableActivity для создания и настройки действия CompensableActivity.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec70c22ae195dc6dd58aa2cfa893cee35fe6ca8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e170bd47af7c84eb9ddb26a4946422c418365d2
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597104"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434341"
 ---
 # <a name="compensableactivity-activity-designer"></a>Конструктор действия CompensableActivity
 
@@ -25,7 +27,7 @@ ms.locfileid: "75597104"
  <xref:System.Activities.Statements.CompensableActivity> определяет единицу работы, которая может быть подтверждена или компенсирована после успешного завершения.
 
 ### <a name="using-the-compensableactivity-activity-designer"></a>Использование конструктора действия CompensableActivity
- Конструктор действия **CompensableActivity** можно найти в категории " **транзакция** " **панели элементов**. Чтобы открыть **панель элементов**, выберите вкладку **область элементов** в левой части конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
+ Конструктор действия **CompensableActivity** можно найти в категории " **транзакция** " **панели элементов**. Чтобы открыть **панель элементов** , выберите вкладку **область элементов** в левой части конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
 
  Конструктор действий **CompensableActivity** можно перетащить из **области элементов** в область Конструктор рабочих процессов. Конструктор действий можно удалить внутри <xref:System.Activities.Statements.Sequence> . При удалении конструктора действий создается <xref:System.Activities.Statements.CompensableActivity> действие со значением по умолчанию <xref:System.Activities.Activity.DisplayName%2A> CompensableActivity. Измените <xref:System.Activities.Activity.DisplayName%2A> значение в заголовке конструктора действий **CompensableActivity** . Его также можно изменить в поле **DisplayName** сетки свойств.
 
@@ -46,5 +48,5 @@ ms.locfileid: "75597104"
 - [Транзакция](../workflow-designer/transaction-activity-designers.md)
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)
 - [Compensate](../workflow-designer/compensate-activity-designer.md)
-- [Подтвердить](../workflow-designer/confirm-activity-designer.md)
+- [Уточнит](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

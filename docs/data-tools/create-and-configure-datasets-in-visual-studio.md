@@ -1,5 +1,7 @@
 ---
 title: Создание и настройка наборов данных
+description: Создание и Настройка наборов данных в Visual Studio. Набор данных — это набор объектов, которые хранят данные из базы данных в памяти и поддерживают операции CRUD с этими данными.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1065c5efdcf73016e61ee0f016511579d41acd88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a9a10d68b5b0617b5c4e2152cbbbb920a7c683f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282752"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435408"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Как создавать и настраивать наборы данных в Visual Studio
 
@@ -88,9 +90,9 @@ ms.locfileid: "85282752"
 
 Изолированные таблицы должны реализовывать `Fill` логику в автономных таблицах, чтобы их можно было заполнить данными. Сведения о заполнении автономных таблиц данных см. в разделе [Заполнение набора данных из DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Инструменты набора данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Отношения в наборах данных](../data-tools/relationships-in-datasets.md)
 - [Иерархическое обновление](../data-tools/hierarchical-update.md)
 - [Заполнение наборов данных с помощью адаптеров таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)

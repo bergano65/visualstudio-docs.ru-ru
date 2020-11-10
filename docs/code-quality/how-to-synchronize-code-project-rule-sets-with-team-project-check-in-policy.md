@@ -1,6 +1,8 @@
 ---
 title: Синхронизация наборов правил проекта с политикой возврата
 ms.date: 11/04/2016
+description: Узнайте, как синхронизировать набор правил проекта Visual Studio Code с политикой возврата проекта Azure DevOps.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e27987f7fa298ddcedf52a9f01a80f57d3d329f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 913860538fe7f9da1514d0e51d23bb3ea48c3b66
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371785"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434692"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Как синхронизировать наборы правил проекта кода с политикой возврата проекта Azure DevOps
 
@@ -31,7 +33,7 @@ ms.locfileid: "85371785"
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Указание набора стандартных правил Майкрософт
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши проект кода и выберите пункт **свойства**.
+1. В **Обозреватель решений** щелкните правой кнопкой мыши проект кода и выберите пункт **свойства**.
 
 2. Щелкните **Анализ кода**.
 
@@ -51,7 +53,7 @@ ms.locfileid: "85371785"
 
 1. При необходимости выполните операцию Get с файлом набора правил, который указывает политику возврата.
 
-2. В **Обозреватель решений**щелкните правой кнопкой мыши проект кода и выберите пункт **свойства**.
+2. В **Обозреватель решений** щелкните правой кнопкой мыши проект кода и выберите пункт **свойства**.
 
 3. Щелкните **Анализ кода**.
 

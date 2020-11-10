@@ -1,5 +1,7 @@
 ---
 title: Конструктор действий по сохранению конструктор рабочих процессов
+description: Сведения о действиях сохранения и использовании конструктора действий сохранения для создания и настройки постоянного действия.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75236d7955cba6b8c62b9a4504f02c66cebe4062
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3daa7cef76d2448cc7bcda66a967a3406bb2352c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114767"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435577"
 ---
 # <a name="persist-activity-designer"></a>Конструктор действия Persist
 
@@ -27,7 +29,7 @@ ms.locfileid: "76114767"
 
 ### <a name="using-the-persist-activity-designer"></a>Использование конструктора действия Persist
 
-Конструктор **хранимых** операций можно найти в категории **Среда выполнения** **панели элементов**, щелкнув вкладку **область элементов** (также можно выбрать **область элементов** в меню **вид** или CTRL + ALT + X).
+Конструктор **хранимых** операций можно найти в категории **Среда выполнения** **панели элементов** , щелкнув вкладку **область элементов** (также можно выбрать **область элементов** в меню **вид** или CTRL + ALT + X).
 
 Конструктор действий по **сохранению** можно перетащить из **панели элементов** в конструктор рабочих процессовную область, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence> . <xref:System.Activities.Statements.Persist>Будет создано действие с **отображаемым значением DisplayName** по умолчанию. <xref:System.Activities.Activity.DisplayName%2A>Можно изменить в заголовке конструктора **хранимых** операций или в поле **DisplayName** сетки свойств.
 

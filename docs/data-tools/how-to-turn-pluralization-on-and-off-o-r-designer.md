@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Включение и выключение плюрализации (реляционный конструктор объектов)
+description: Сведения о включении и отключении во множественном числе в реляционный конструктор объектов (реляционном конструкторе). Параметр по умолчанию преобразует множественные имена в единственное.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6675a136b2bbdc1ef19d90ee19ecf7497053bfe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ea872d96e59365f3dbef5dc3568641c30e51606
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282051"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434900"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Практическое руководство. Включение и выключение плюрализации (реляционный конструктор объектов)
 По умолчанию при перетаскивании объектов базы данных, имена которых оканчиваются на s или classes, из **Обозреватель сервера** или **обозреватель базы данных** в [средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), имена созданных классов сущностей изменяются из множественного числа на единственное. Это делается, чтобы более точно представить факт, что иллюстрируемый класс сущностей сопоставляется с единственной записью данных. Например, добавление `Customers` таблицы в **Реляционный конструктор** объектов приводит к возникновению класса сущности с именем `Customer` , поскольку класс будет хранить данные только для одного клиента.
@@ -30,7 +32,7 @@ ms.locfileid: "85282051"
 2. В диалоговом окне **Параметры** разверните пункт **Инструменты базы данных**.
 
     > [!NOTE]
-    > Выберите команду **Показать все настройки**, если узел **Средства базы данных** не виден.
+    > Выберите команду **Показать все настройки** , если узел **Средства базы данных** не виден.
 
 3. Щелкните **Реляционный конструктор объектов**.
 
@@ -40,6 +42,6 @@ ms.locfileid: "85282051"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
