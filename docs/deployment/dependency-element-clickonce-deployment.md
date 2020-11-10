@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e77f115eb4014f16107ae167576ed0d923bffe8
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 09e5973b39bae2fbf923cf97ac1bd9cf15e10874
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382979"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407683"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;&gt;элемент dependency (развертывание ClickOnce)
 Определяет версию устанавливаемого приложения и расположение манифеста приложения.
@@ -128,7 +128,7 @@ ms.locfileid: "94382979"
 ## <a name="remarks"></a>Комментарии
  Манифесты развертывания обычно содержат единственный `assemblyIdentity` элемент, определяющий имя и версию манифеста приложения.
 
-## <a name="example"></a>Пример
+## <a name="example-1"></a>Пример 1
  В следующем примере кода показан `dependency` элемент в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифесте развертывания.
 
 ```xml
@@ -147,7 +147,7 @@ ms.locfileid: "94382979"
 </dependency>
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-2"></a>Пример 2
  В следующем примере кода задается зависимость от сборки, уже установленной в GAC.
 
 ```xml
@@ -158,7 +158,7 @@ ms.locfileid: "94382979"
 </dependency>
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-3"></a>Пример 3
  В следующем примере кода задается зависимость от определенной версии среды CLR.
 
 ```xml
@@ -169,7 +169,7 @@ ms.locfileid: "94382979"
 </dependency>
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-4"></a>Пример 4
  В следующем примере кода задается зависимость операционной системы.
 
 ```xml
