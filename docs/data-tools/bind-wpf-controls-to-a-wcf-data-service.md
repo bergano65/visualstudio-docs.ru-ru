@@ -1,6 +1,7 @@
 ---
 title: Привязка элементов управления WPF к службе данных WCF
 description: Привязка элементов управления WPF к службе данных WCF в Visual Studio. Элементы управления привязаны к записям клиентов, инкапсулированным в WCF-службе данных.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c627a9f09d5400e321bcc8a141c36ec46cad7958
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 4368c9134539202b1bde2be7a2d8c39e5ebc3e74
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382212"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518535"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Привязка элементов управления WPF к службе данных WCF
 
@@ -296,7 +297,7 @@ ms.locfileid: "94382212"
 
 - Узнайте, как использовать окно **Источники данных** в Visual Studio для отображения связанных данных (то есть данных в отношении "родитель — потомок") в элементах управления WPF. Дополнительные сведения см. [в разделе Пошаговое руководство. Отображение связанных данных в приложении WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Привязка элементов управления WPF к набору данных](../data-tools/bind-wpf-controls-to-a-dataset.md)

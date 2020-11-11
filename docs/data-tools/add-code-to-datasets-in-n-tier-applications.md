@@ -1,6 +1,7 @@
 ---
 title: Добавление кода для наборов данных в n-уровневых приложениях
 description: Добавление кода в наборы данных в n-уровневых приложениях в Visual Studio. Создайте файл разделяемого класса для набора данных и добавьте в него код (вместо DatasetName. DataSet. Designer).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bdbd6e728ebd4adea1a18d842651e9941098249c
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: a02edd3f0e34b0315e9b583c509cda4eb0287bf1
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382199"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518691"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Добавление кода для наборов данных в n-уровневых приложениях
 
@@ -64,7 +65,7 @@ ms.locfileid: "94382199"
     }
     ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор многоуровневых приложений для данных](../data-tools/n-tier-data-applications-overview.md)
 - [Добавление кода для объектов TableAdapter в n-уровневых приложениях](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)

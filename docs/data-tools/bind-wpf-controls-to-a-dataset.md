@@ -1,6 +1,7 @@
 ---
 title: Привязка элементов управления WPF к набору данных
 description: Создание приложения WPF в Visual Studio, которое содержит элементы управления с привязкой к данным, которые привязаны к записям продуктов, инкапсулированным в наборе данных.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1922df10e331627b0695fb6ea03f4a5101ea0fd1
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: de0a155d675f85e10cdf38969dd6eb59a3762770
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382043"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518529"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Привязка элементов управления WPF к набору данных
 
@@ -259,7 +260,7 @@ ms.locfileid: "94382043"
 
 - Узнайте, как использовать окно **Источники данных** в Visual Studio для отображения связанных данных (то есть данных в отношении "родитель — потомок") в элементах управления WPF. Дополнительные сведения см. [в разделе Пошаговое руководство. Отображение связанных данных в приложении WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

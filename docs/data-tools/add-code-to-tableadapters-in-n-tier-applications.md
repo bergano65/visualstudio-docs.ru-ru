@@ -1,6 +1,7 @@
 ---
 title: Добавление кода для объектов TableAdapter в n-уровневых приложениях
 description: Добавление кода в адаптеры таблиц в многоуровневых приложениях. Создайте файл разделяемого класса для TableAdapter и добавьте в него код (вместо DatasetName. DataSet. Designer).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed0664b78408e91eeda5b65c26615e870e2171b6
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 85e89e9800f35fc6d27346b4ed3d4757f83a8dfc
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382368"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518704"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Добавление кода для объектов TableAdapter в n-уровневых приложениях
 Вы можете расширить функциональные возможности TableAdapter, создав файл разделяемого класса для TableAdapter и добавив в него код (вместо добавления кода в файл *DataSetName. DataSet. Designer* ). Разделяемые классы позволяют разделить код для определенного класса между несколькими физическими файлами. Дополнительные сведения см. в разделе [partial](/dotnet/visual-basic/language-reference/modifiers/partial) или [partial (Type)](/dotnet/csharp/language-reference/keywords/partial-type).
@@ -66,7 +67,7 @@ ms.locfileid: "94382368"
     }
     ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор многоуровневых приложений для данных](../data-tools/n-tier-data-applications-overview.md)
 - [Добавление кода для наборов данных в n-уровневых приложениях](../data-tools/add-code-to-datasets-in-n-tier-applications.md)

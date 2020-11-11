@@ -1,6 +1,7 @@
 ---
 title: Работа с данными в Visual Studio
 description: Работа с данными в Visual Studio. Создавайте приложения, которые подключаются к данным в других продуктах или службах баз данных через локальные компьютеры, локальные сети, общедоступные или частные облака.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 846898c1cf93d0f90ce04e77ee93bd8802e22ec2
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: a5458ffca549026c99c8faedc8f47d3f3285a7ca
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382095"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518743"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Работа с данными в Visual Studio
 
@@ -40,7 +41,7 @@ ms.locfileid: "94382095"
 **Microsoft Azure**
 
 - База данных SQL
-- Azure Cosmos DB
+- Azure Cosmos DB;
 - Хранилище (большие двоичные объекты, таблицы, очереди, файлы)
 - Хранилище данных SQL
 - SQL Server Stretch Database

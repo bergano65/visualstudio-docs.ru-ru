@@ -1,6 +1,7 @@
 ---
 title: Добавление проверки в n-уровневом наборе данных
 description: Добавьте проверку в n-уровневый набор данных в Visual Studio. Проверка изменений в отдельных столбцах или целых строках.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecd57066f310886f2941700173d138756f682a0e
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 4c7891df6de9f12df324c8d79eed5dda0e091d9a
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382134"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518756"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Добавление проверки в n-уровневом наборе данных
 Добавление проверки в набор данных, разделенный на n-уровневое решение, по сути является тем же самым, что и Добавление проверки в набор данных с одним файлом (набор данных в одном проекте). Рекомендуемое расположение для выполнения проверки данных — во время <xref:System.Data.DataTable.ColumnChanging> событий и (или <xref:System.Data.DataTable.RowChanging> ) таблиц данных.
@@ -167,7 +168,7 @@ End Sub
     }
     ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор многоуровневых приложений для данных](../data-tools/n-tier-data-applications-overview.md)
 - [Пошаговое руководство. Создание N-уровневого приложения для данных](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

@@ -1,6 +1,7 @@
 ---
 title: Привязка элементов управления WPF к данным — часть 1
 description: Привязка элементов управления WPF к данным. Чтобы создать эти элементы управления с привязкой к данным, перетащите элементы из окна Источники данных на конструктор WPF в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 697b5efb172a09f2dcd5512a6301febd7429411f
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: e35171a116272700de676cb03d116210753c599f
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94381926"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518613"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Привязка элементов управления WPF к данным в Visual Studio
 
@@ -107,6 +108,6 @@ Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes
 
 - Создание привязки данных для элемента управления. Если перетащить элемент на существующий элемент управления в конструкторе, язык XAML привязывает элемент управления к этому элементу. При перетаскивании элемента в контейнер XAML создает элемент управления, который был выбран для перетаскиваемого элемента, и привязывает элемент управления к элементу. Элемент управления создается внутри нового <xref:System.Windows.Controls.Grid>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
