@@ -11,24 +11,24 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 63b44bee152acbf5529acfcadaa49a19e9feb52b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5639726762359bb8ba2fb374ee8ddc5c78e2f4da
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778366"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407579"
 ---
 # <a name="profile_currentid"></a>PROFILE_CURRENTID
 Параметр PROFILE_CURRENTID возвращает псевдотокен для идентификатора потока или идентификатора процесса в вызове функций NameProfile, StartProfile, StopProfile, SuspendProfile и ResumeProfile. Этот параметр предписывает функции выполнять действия в текущем потоке или процессе, а не в специально указанном потоке или процессе.
 
-## <a name="example"></a>Пример
+## <a name="example-1"></a>Пример 1
  PROFILE_CURRENTID определяется в файле *VSPerf.h* следующим образом:
 
 ```cpp
 static const unsigned int PROFILE_CURRENTID = (unsigned int)-1;
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-2"></a>Пример 2
  В приведенном ниже примере демонстрируется использование параметра PROFILE_CURRENTID. В этом примере PROFILE_CURRENTID передается как параметр в вызове функции [StartProfile](../profiling/startprofile.md) для определения текущего потока.
 
 ```cpp

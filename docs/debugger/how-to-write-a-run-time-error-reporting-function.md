@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 073943d8b6a3dbf5ee3af653a43046c3b389fbfd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22445868cca1533cad3d7e395452a6b19e102952
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348409"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407644"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Практическое руководство. Написание функции, сообщающей об ошибке во время выполнения (C++)
 Настраиваемая функция, сообщающая об ошибках, возникающих во время выполнения, должна иметь такое же объявление, что и `_CrtDbgReportW`. Она должна возвращать отладчику значение 1.
 
 В следующем примере показано, как определяется настраиваемая функция, сообщающая об ошибках.
 
-## <a name="example"></a>Пример
+## <a name="example-1"></a>Пример 1
 
 ```cpp
 #include <stdio.h>
@@ -61,7 +61,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 }
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-2"></a>Пример 2
 В следующем примере показана более сложная настраиваемая функция, сообщающая об ошибках. В данном примере оператор переключателя обрабатывает ошибки различных типов, как определено в параметре `reportType` функции `_CrtDbgReportW`. Поскольку `_CrtDbgReportW` заменяется, использовать `_CrtSetReportMode` нельзя. Функция должна обрабатывать выходные данные. Первый аргумент-переменная в этой функции принимает номер ошибки, возникшей во время выполнения. Дополнительные сведения см. в разделе [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).
 
 ```cpp
@@ -106,7 +106,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 #pragma runtime_checks("", restore)
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-3"></a>Пример 3
 Используйте `_RTC_SetErrorFuncW`для установки настраиваемой функции вместо `_CrtDbgReportW`. Дополнительные сведения см. в разделе [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). `_RTC_SetErrorFuncW` является предшествующей функцией, сообщающей об ошибках, которую можно сохранить и, при необходимости, восстановить:
 
 ```cpp

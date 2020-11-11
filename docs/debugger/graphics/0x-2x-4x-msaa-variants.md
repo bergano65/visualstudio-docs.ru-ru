@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 707d63d3ae5fb487f6232321a1d9d3128d379e06
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e77c0d7b5cbba2faf73fcca85ffcd0db063d618e
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64816532"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407553"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Варианты 0x/2x/4x MSAA
 Переопределяет параметры многовыборочного сглаживания (MSAA) для всех целевых объектов отрисовки и цепочек буферов.
@@ -54,7 +54,7 @@ ms.locfileid: "64816532"
 
  Если при воспроизведении выявляются конфликты подобного рода, делается все возможное для того, чтобы воспроизвести требуемое поведение. Но получение точных результатов может оказаться невозможным. Хотя ситуация, когда влияние варианта на производительность отрисовки оказывается представлено неверно, маловероятна, она все же возможна, например, если контроль потока выполнения в построителе текстуры определяется точным содержимым текстуры. В этом случае реплицированная текстура может иметь отличающееся содержимое.
 
-## <a name="example"></a>Пример
+## <a name="example-1"></a>Пример 1
  Эти варианты можно воспроизвести для целевых объектов отрисовки, созданных методом `ID3D11Device::CreateTexture2D`, с помощью следующего кода:
 
 ```cpp
@@ -65,7 +65,7 @@ target_description.SampleDesc.Quality = 0;
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-2"></a>Пример 2
  Для цепочек буферов, созданных методом IDXGISwapChain::CreateSwapChain или D3D11CreateDeviceAndSwapChain, их можно воспроизвести с помощью следующего кода:
 
 ```cpp

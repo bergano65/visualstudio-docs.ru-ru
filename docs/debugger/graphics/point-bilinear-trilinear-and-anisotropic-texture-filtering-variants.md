@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 314ec61da7ed61cc8bdd573e201d98a53862a32c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 075fc9c4be3890ce9a63c1aa79762dbd8ceaeea5
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262924"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407566"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Варианты точечной, билинейной, трилинейной и анизотропной фильтрации текстур
 Переопределяет режим фильтрации для соответствующих дискретизаторов текстур.
@@ -61,7 +61,7 @@ ms.locfileid: "66262924"
 ## <a name="restrictions-and-limitations"></a>Ограничения
  В Direct3D на функциональном уровне 9.1 максимальная анизотропия равна 2x. Так как вариант **Анизотропная фильтрация текстур** пытается использовать исключительно 16-кратную анизотропию, воспроизведение завершается сбоем при запуске анализа кадров на устройстве с функциональным уровнем 9.1. К современным устройствам, на которые распространяется это ограничение, относятся планшеты Surface RT и Surface 2 с ОС Windows на основе архитектуры ARM. Ограничение также может распространяться на более старые GPU, которые, однако, выходят из употребления и встречаются все реже.
 
-## <a name="example"></a>Пример
+## <a name="example-1"></a>Пример 1
  Вариант **Точечная фильтрация текстур** можно воспроизвести с помощью следующего кода:
 
 ```cpp
@@ -75,7 +75,7 @@ d3d_device->CreateSamplerState(&sampler_desc, &sampler);
 d3d_context->PSSetSamplers(0, 1, &sampler
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-2"></a>Пример 2
  Вариант **Билинейная фильтрация текстур** можно воспроизвести с помощью следующего кода:
 
 ```cpp
@@ -89,7 +89,7 @@ d3d_device->CreateSamplerState(&sampler_desc, &sampler);
 d3d_context->PSSetSamplers(0, 1, &sampler
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-3"></a>Пример 3
  Вариант **Трилинейная фильтрация текстур** можно воспроизвести с помощью следующего кода:
 
 ```cpp
@@ -103,7 +103,7 @@ d3d_device->CreateSamplerState(&sampler_desc, &sampler);
 d3d_context->PSSetSamplers(0, 1, &sampler
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-4"></a>Пример 4
  Вариант **Анизотропная фильтрация текстур** можно воспроизвести с помощью следующего кода:
 
 ```cpp

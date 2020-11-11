@@ -12,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b200538f7d6bee55d12a79334811c8ba57515a
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: b50edfe91a9b497760c44d3fd548eb6d2a15a049
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959839"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399381"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 
@@ -44,11 +44,11 @@ ms.locfileid: "91959839"
 
 ### <a name="target-android-ios-and-windows-from-a-single-code-base"></a><a name="AndroidHTML"></a> Целевые устройства Android, iOS и Windows из единой базы кода
 
- Вы можете создавать собственные приложения для Android, iOS и Windows с помощью C# и F# (Visual Basic сейчас не поддерживается).  Для начала работы установите Visual Studio, выберите в установщике параметр **Разработка мобильных приложений на .NET** .
+ Вы можете создавать собственные приложения для Android, iOS и Windows с помощью C# и F# (Visual Basic сейчас не поддерживается).  Для начала работы установите Visual Studio, выберите в установщике параметр **Разработка мобильных приложений на .NET**.
 
  Если у вас уже установлена Visual Studio, повторно запустите **Установщик Visual Studio** и выберите ту же опцию **Разработка мобильных приложений на .NET** для Xamarin (как указано выше).
 
- После окончания установки шаблоны проектов появятся в диалоговом окне **Новый проект** . Чтобы найти шаблоны Xamarin, проще всего ввести "Xamarin" в строке поиска.
+ После окончания установки шаблоны проектов появятся в диалоговом окне **Новый проект**. Чтобы найти шаблоны Xamarin, проще всего ввести "Xamarin" в строке поиска.
 
  Xamarin предоставляет собственные функции Android, iOS и Windows в виде классов и методов .NET. Поэтому ваши приложения будут иметь полный доступ к собственным API-интерфейсам и собственным элементам управления и будут вести себя точно так же, как приложения, написанные на собственных языках платформ.
 
@@ -161,8 +161,8 @@ ms.locfileid: "91959839"
 |**Дополнительные сведения**|
 |--------------------|
 |[Дополнительные сведения о построении игр Unity с помощью Visual Studio](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
-|[Подробнее об инструментах Visual Studio для Unity](../cross-platform/visual-studio-tools-for-unity.md) |
-|[Начало работы с инструментами Visual Studio для Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
+|[Подробнее об инструментах Visual Studio для Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md) |
+|[Начало работы с инструментами Visual Studio для Unity](/gamedev/unity/get-started/getting-started-with-visual-studio-tools-for-unity.md) |
 |[Читать о последних возможностях Visual Studio Tools для предварительной версии Unity 2.0](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (блог Visual Studio)|
 |[Смотреть видео с введением в Visual Studio Tools для предварительной версии Unity 2.0](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408&preserve-view=true) (видео)|
 |[Сведения о Unity](https://unity.com/) (веб-сайт Unity)|

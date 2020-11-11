@@ -3,14 +3,14 @@ title: Программа улучшения качества программн
 description: Узнайте, как управлять параметрами конфиденциальности в Visual Studio для Mac.
 author: therealjohn
 ms.author: johmil
-ms.date: 06/18/2019
+ms.date: 11/05/2020
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: 7c2e2dc1cc0171e9e7a8ab81f820ff6be0f389c2
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.openlocfilehash: 5cf5670b18aa6840eb3b36e6148cba4834aa709e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89284269"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438208"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Программа улучшения качества программного обеспечения Visual Studio
 
@@ -37,5 +37,5 @@ ms.locfileid: "89284269"
 * [Программа улучшения качества программного обеспечения (Visual Studio в Windows)](/visualstudio/ide/visual-studio-experience-improvement-program)
 * [Созданные системой журналы, собираемые Visual Studio (в Windows)](/visualstudio/ide/diagnostic-data-collection)
 * [Как сообщить о проблеме в Visual Studio для Mac](report-a-problem.md)
-* [Сообщество разработчиков Visual Studio для Mac](https://developercommunity.visualstudio.com/spaces/41/index.html)
-* [Заявление Майкрософт о конфиденциальности](https://privacy.microsoft.com/privacystatement)
+* [Сообщество разработчиков Visual Studio для Mac](https://aka.ms/feedback/vsm-home)
+* [Заявление о конфиденциальности Майкрософт](https://privacy.microsoft.com/privacystatement)

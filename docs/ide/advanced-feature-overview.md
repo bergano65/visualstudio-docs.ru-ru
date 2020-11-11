@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f5a5545152b9bf262f652e2fce5ce04e7b71cb
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 04c725e5bcae5d72562e767a06afdee8aa84950b
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099431"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399257"
 ---
 # <a name="features-of-visual-studio"></a>Возможности Visual Studio
 
@@ -44,7 +44,7 @@ Visual Studio предлагает набор инструментов, позв
 
 ::: moniker range="vs-2017"
 
-После установки рабочей нагрузки **Разработка для Azure** следующие шаблоны **Облачных ресурсов** для C# становятся доступны в диалоговом окне **Новый проект**:
+После установки рабочей нагрузки **Разработка для Azure** следующие шаблоны **Облачных ресурсов** для C# становятся доступны в диалоговом окне **Новый проект** :
 
 ![Шаблоны проектов облачных ресурсов для Visual Studio](media/cloud-project-templates.png)
 
@@ -54,7 +54,7 @@ Visual Studio предлагает набор инструментов, позв
 
 ![Cloud Explorer в Visual Studio](media/cloud-explorer.png)
 
-Вы можете использовать службы Azure для приложений с помощью **Подключенных служб**, которые перечислены ниже.
+Вы можете использовать службы Azure для приложений с помощью **Подключенных служб** , которые перечислены ниже.
 
 - [Подключенная служба Active Directory](/azure/active-directory/develop/vs-active-directory-add-connected-service) позволяет пользователям использовать свои учетные записи из [Azure Active Directory](/azure/active-directory/active-directory-whatis) для подключения к веб-приложениям.
 - [Подключенная служба хранилища Azure](/azure/vs-azure-tools-connected-services-storage) — хранилище больших двоичных объектов, очереди и таблицы.
@@ -82,7 +82,7 @@ Visual Studio предлагает набор инструментов, позв
 
 - Используйте стандартные веб-технологии&mdash;HTML, CSS и JavaScript&mdash;, чтобы создавать мобильные приложения для устройств iOS, Android и Windows с помощью [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 
-- Создавайте игры в форматах 2D и 3D на C# с помощью [средств Visual Studio для Unity](../cross-platform/visual-studio-tools-for-unity.md).
+- Создавайте игры в форматах 2D и 3D на C# с помощью [средств Visual Studio для Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md).
 
 - Создавайте собственные приложения C++ для устройств iOS, Android и Windows. Предоставляйте доступ к общему коду в библиотеках, созданных для iOS, Android и Windows, с помощью [C++ для кроссплатформенной разработки](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development).
 
@@ -90,7 +90,7 @@ Visual Studio предлагает набор инструментов, позв
 
 ## <a name="connect-to-databases"></a>Подключение к базам данных
 
-**Обозреватель сервера** позволяет просматривать экземпляры и ресурсы SQL Server в локальной или удаленной среде, в Azure, Salesforce.com, Microsoft 365 и на веб-сайтах, а также управлять ими. Чтобы открыть **обозреватель серверов**, выберите в главном меню **Вид** > **Обозреватель серверов**. Дополнительные сведения об использовании обозревателя серверов см. в статье [Добавление новых подключений](../data-tools/add-new-connections.md).
+**Обозреватель сервера** позволяет просматривать экземпляры и ресурсы SQL Server в локальной или удаленной среде, в Azure, Salesforce.com, Microsoft 365 и на веб-сайтах, а также управлять ими. Чтобы открыть **обозреватель серверов** , выберите в главном меню **Вид** > **Обозреватель серверов**. Дополнительные сведения об использовании обозревателя серверов см. в статье [Добавление новых подключений](../data-tools/add-new-connections.md).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) — это мощная среда разработки для SQL Server, базы данных SQL Azure и хранилища данных SQL Azure. С помощью SSDT вы можете создавать и обслуживать базы данных, а также выполнять их отладку и рефакторинг. Можно работать с проектом базы данных или напрямую с подключенным экземпляром базы данных (локально или удаленно).
 
