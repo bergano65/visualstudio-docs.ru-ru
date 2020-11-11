@@ -1,5 +1,7 @@
 ---
 title: Задача Message | Документация Майкрософт
+description: Сведения о параметрах для задачи Message MSBuild, которая записывает сообщения в журнал в процессе сборки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1b7a2854220a7ee85fd680cedd8c8e0c5c3ada89
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78865366"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903845"
 ---
 # <a name="message-task"></a>Message - задача
 
@@ -38,7 +40,7 @@ ms.locfileid: "78865366"
 |`Importance`|Необязательный параметр `String`.<br /><br /> Определяет важность сообщения. Этот параметр может иметь значение `high`, `normal` или `low`. Значение по умолчанию — `normal`.|
 |`Text`|Необязательный параметр `String`.<br /><br /> Текст ошибки для записи в журнал.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
  Задача `Message` позволяет проектам MSBuild отправлять сообщения в средства ведения журнала на разных этапах процесса сборки.
 
@@ -62,7 +64,7 @@ ms.locfileid: "78865366"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
 - [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)

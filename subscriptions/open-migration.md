@@ -4,22 +4,22 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
-ms.date: 09/03/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Узнайте, как партнеры управляют подписками Visual Studio для своих клиентов.
-ms.openlocfilehash: 2442f3ac1821c81adcee5d029814ebfb79a6fb17
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: ba62a2b3d9920ca145722c137322e4471d110d9e
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006063"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903756"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Партнеры, управляющие подписками от имени клиентов
 Для управления подписками на [портале администрирования подписок](https://manage.visualstudio.com) Visual Studio партнерам необходимо выполнить несколько действий. 
 
 Процесс будет выглядеть следующим образом.
 - Партнеры размещают новый заказ от имени клиента, указав его рабочий адрес электронной почты.
-- Клиент получает уведомление с предложением назначить администраторов и получить доступ к его подпискам на [портале администрирования подписок Visual Studio](https://manage.visualstudio.com).
+- Клиент получает уведомление с предложением назначить администраторов и получить доступ к его подпискам на [портале администрирования Подписок Visual Studio](https://manage.visualstudio.com).
 - Чтобы партнеры могли управлять подписками от имени клиентов, их необходимо зарегистрировать на портале администрирования. Ниже перечислены различные варианты (по аналогии с процессом add-open).
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Новые партнеры, которые заходят на портал администрирования подписок Visual Studio напрямую

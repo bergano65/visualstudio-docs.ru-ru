@@ -1,5 +1,7 @@
 ---
 title: Элемент ImportGroup | Документация Майкрософт
+description: Узнайте, как в MSBuild используется элемент ImportGroup для хранения коллекции элементов Import, сгруппированных по необязательному условию.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76dadd1a064a64884e3ff1cd1f2431bc1b94c3c4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 865ee2b319cc3cd26f6924110fa2976f526ac4f4
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633737"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903940"
 ---
 # <a name="importgroup-element"></a>Элемент ImportGroup
 
@@ -56,7 +58,7 @@ ms.locfileid: "77633737"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Import](../msbuild/import-element-msbuild.md)|Импортирует содержимое одного файла проекта в другой файл проекта.|
+|[Импорт](../msbuild/import-element-msbuild.md)|Импортирует содержимое одного файла проекта в другой файл проекта.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 

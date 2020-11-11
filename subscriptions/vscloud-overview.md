@@ -2,20 +2,20 @@
 title: Как приобрести облачные подписки на Visual Studio
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
-ms.date: 10/21/2020
+ms.date: 10/28/2020
 ms.topic: overview
 description: Вы можете арендовать Visual Studio Professional или Visual Studio Enterprise на помесячной основе или на год, не заключая долгосрочный контракт.
-ms.openlocfilehash: 29dd6be56441fd833c56eaea89286bb3d418ec78
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fbb4204ec5b36d865a1c8b3d9c235cdf97b4019e
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353451"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92918088"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Купить облачные подписки на Visual Studio Professional и Visual Studio Enterprise
-Вы можете купить [подписки на Visual Studio Professional и Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) в [Visual Studio Marketplace](https://marketplace.visualstudio.com). Это так называемые **облачные подписки** .
+Вы можете купить [подписки на Visual Studio Professional и Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) в [Visual Studio Marketplace](https://marketplace.visualstudio.com). Это так называемые **облачные подписки**.
 
 [Сравнение преимуществ облачных подписок и цены на них](https://visualstudio.microsoft.com/vs/pricing/)
 
@@ -42,7 +42,7 @@ ms.locfileid: "92353451"
     > [!div class="mx-imgBorder"]
     > ![Укажите число подписок](_img/buy-vs-subscriptions/buy-vs-sub-users.png "Выбор числа приобретаемых подписок")
 
-    Если вы не хотите назначать подписки себе, снимите флажок **Назначить эту подписку на меня** .
+    Если вы не хотите назначать подписки себе, снимите флажок **Назначить эту подписку на меня**.
 
 5. Подтвердите и завершите покупку. Если вы назначили подписку себе, зайдите на [портал подписчиков Visual Studio](https://my.visualstudio.com), чтобы начать загрузку программного обеспечения и использовать другие преимущества для подписчиков.
 
@@ -72,7 +72,7 @@ ms.locfileid: "92353451"
 > [!div class="mx-imgBorder"]
 > ![Отображение сведений о подписках](_img/buy-vs-subscriptions/overview-button.png "Нажатие кнопки "Обзор" для отображения сведений о подписке")
 
-4. Выберите запись для подписок, которые вы хотите отменить, и нажмите **Изменить количество** .
+4. Выберите запись для подписок, которые вы хотите отменить, и нажмите **Изменить количество**.
 1. Измените количество на нуль (0). Ваши подписки будут действовать до запланированной даты выставления счетов, но не будут продлены в начале следующего расчетного периода.   
 
 > [!div class="mx-imgBorder"]

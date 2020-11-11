@@ -1,18 +1,18 @@
 ---
-title: Отображение личных электронных адресов в VLSC
+title: Личные сообщения электронной почты для подписок Visual Studio в VLSC
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 09/22/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Подписки Visual Studio — почему я вижу адреса моих подписчиков в системах Hotmail и (или) Gmail?
-ms.openlocfilehash: dc2de6c852f39f789fb07358384ad490d13f137c
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fda7dab50c2151049e0feffa50609bf4c38e38cc
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022672"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92904250"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Подписки Visual Studio — почему я вижу личные учетные записи моих подписчиков?
 Когда компания переходит из Volume Licensing Service Center (VLSC) на новый [портал администрирования подписок](https://manage.visualstudio.com) Visual Studio, администраторов удивляет наличие личных адресов электронной почты (например, Hotmail или Outlook) в поле "Адрес электронной почты для входа" у некоторых подписчиков.  

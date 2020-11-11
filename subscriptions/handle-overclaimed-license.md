@@ -1,18 +1,18 @@
 ---
-title: Работа с подписками с превышенным числом назначений | Документация Майкрософт
+title: Управление лицензий с превышением числа назначений в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 09/21/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Узнайте, как администраторы могут устранить проблему, связанную с превышением числа назначений подписок
-ms.openlocfilehash: 452363d09c6036d7edae5dab94e5d71ef87fb8b5
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: bf3c23cad87dc88b24bae3e8b31ebf8b7d9e1dfe
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022593"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904298"
 ---
 # <a name="over-allocated-subscriptions"></a>Подписки с превышением числа назначений
 Если заказ изменяется после добавления подписчиков, число назначенных подписок может превысить число лицензий, принадлежащих организации. Это называется превышением числа назначений.  

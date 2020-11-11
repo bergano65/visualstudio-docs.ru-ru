@@ -1,5 +1,7 @@
 ---
 title: Определения элементов | Документация Майкрософт
+description: Сведения об использовании ItemGroup и ItemDefinitionGroup в MSBuild для объявления метаданных элементов в файлах проекта.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75c8947243545b57e0b8c4352784869f54efe565
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633711"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904653"
 ---
 # <a name="item-definitions"></a>Определения элементов
 
@@ -74,7 +76,7 @@ MSBuild 2.0 поддерживает статическое объявлени�
 
 - переменная среды;
 
-- глобальное свойство (из командной строки *MSBuild.exe*);
+- глобальное свойство (из командной строки *MSBuild.exe* );
 
 - зарезервированное свойство;
 

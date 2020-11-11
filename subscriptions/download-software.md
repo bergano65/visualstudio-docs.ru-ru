@@ -1,18 +1,18 @@
 ---
 title: Загрузка программного обеспечения в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
-ms.date: 07/29/2020
+ms.date: 10/26/2020
 ms.topic: conceptual
 description: Сведения о том, как найти и загрузить программное обеспечение Майкрософт в подписках Visual Studio
-ms.openlocfilehash: 4a267db59f1efc4912748846e61774966f0f6abe
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: e6a5b6a1caab199ec2b67108f539c1d68d545551
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005604"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92903626"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Загрузка программного обеспечения в подписках Visual Studio
 В зависимости от вашей подписки Visual Studio вам доступно различное программное обеспечение Майкрософт.  В этой статье описывается, как найти и загрузить нужное программное обеспечение для максимально эффективного использования подписки. 
@@ -48,7 +48,7 @@ ms.locfileid: "91005604"
 > ![Ключи продуктов Visual Studio 2019](_img/subscriber-downloads/vs2019-keys.png "На вкладке "Ключи" показано количество оставшихся ключей и предоставляется возможность запрашивать доступные ключи.")
 
 ### <a name="obtaining-product-keys"></a>Получение ключей продукта
-Чтобы получить ключ продукта для скачиваемого файла, щелкните синий ключ с меткой **Получить ключ** или, если вы уже просматриваете панель сведений, нажмите **Запросить ключ** на вкладке **Ключи** .
+Чтобы получить ключ продукта для скачиваемого файла, щелкните синий ключ с меткой **Получить ключ** или, если вы уже просматриваете панель сведений, нажмите **Запросить ключ** на вкладке **Ключи**.
 > [!div class="mx-imgBorder"]
 > ![Запрос ключей продуктов Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png "Нажмите "Запросить ключи", чтобы запросить остальные ключи.")
 

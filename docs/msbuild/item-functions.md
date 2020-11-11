@@ -1,5 +1,7 @@
 ---
 title: Функции элементов | Документы Майкрософт
+description: Узнайте, как код MSBuild в задачах и целях может вызывать функции элементов для получения сведений об элементах в проекте.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3f6299a8be52aef068746ca33e48341da55f778
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 94b94ef7b17633ab78f7eb91f61dd67ea2c8021d
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586883"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904637"
 ---
 # <a name="item-functions"></a>Функции элементов
 

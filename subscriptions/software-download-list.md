@@ -1,5 +1,5 @@
 ---
-title: Какое программное обеспечение доступно для загрузки? | Документы Майкрософт
+title: Какое программное обеспечение доступно для скачивания в подписках Visual Studio? | Документы Майкрософт
 author: evanwindom
 ms.author: v-evwin
 manager: lank
@@ -7,12 +7,12 @@ ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 03/11/2020
 ms.topic: how-to
 description: Узнайте, какое программное обеспечение доступно для скачивания в вашей подписке Visual Studio.
-ms.openlocfilehash: dc1a3c607aa919bd2ad6c24a8ba6870433e9302b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 390f33591afa6dfceebddbbe5f7f08b413be5e77
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004015"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903467"
 ---
 # <a name="what-software-is-available-for-download"></a>Какое программное обеспечение доступно для загрузки?
 

@@ -1,5 +1,7 @@
 ---
 title: Элемент ItemMetadata (MSBuild) | Документация Майкрософт
+description: Сведения об элементе ItemMetadata MSBuild, содержащем определяемый пользователем ключ метаданных элемента со значением метаданных.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aba274068d8cba4f22526fdefac36d6c75f9f1e2
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633620"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903598"
 ---
 # <a name="itemmetadata-element-msbuild"></a>Элемент ItemMetadata (MSBuild)
 
 Содержит определяемый пользователем ключ метаданных элемента, содержащий значение метаданных элемента. Элемент может иметь любое число пар метаданных "ключ — значение".
 
- \<Project> \<ItemGroup> \<Item>
+ \<Project> \<ItemGroup>
  \<Item>
 
 ## <a name="syntax"></a>Синтаксис
@@ -42,17 +44,17 @@ ms.locfileid: "77633620"
 
 ### <a name="attributes"></a>Атрибуты
 
-|attribute|Description|
+|Атрибут|Описание|
 |---------------|-----------------|
 |`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
- Нет.
+ Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Description|
+|Элемент|Описание|
 |-------------|-----------------|
 |[Элемент](../msbuild/item-element-msbuild.md)|Определяемый пользователем элемент, задающий входные данные для процесса сборки.|
 
@@ -74,7 +76,7 @@ ms.locfileid: "77633620"
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
 - [Элементы](../msbuild/msbuild-items.md)

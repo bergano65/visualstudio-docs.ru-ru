@@ -1,5 +1,7 @@
 ---
 title: Задача LC | Документация Майкрософт
+description: Узнайте, как в MSBuild используется задача LC для создания программы-оболочки для LC.exe, позволяющей создать файл лицензии из LICX-файла.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,16 +20,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 865167b9182ca1f2264900a3e71ddeb4983e25ef
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.openlocfilehash: 70c996d5a8d1d4bf296a395bfb64ead6eba1bb01
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167401"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903582"
 ---
 # <a name="lc-task"></a>LC - задача
 
-Создает программу-оболочку для файл *LC.exe* для создания *LICENSE*-файла из *LICX*-файла. Дополнительные сведения о *LC.exe* см. в разделе [LC.exe (компилятор лицензий)](/dotnet/framework/tools/lc-exe-license-compiler).
+Создает программу-оболочку для файл *LC.exe* для создания *LICENSE* -файла из *LICX* -файла. Дополнительные сведения о *LC.exe* см. в разделе [LC.exe (компилятор лицензий)](/dotnet/framework/tools/lc-exe-license-compiler).
 
 ## <a name="parameters"></a>Параметры
 
@@ -35,13 +37,13 @@ ms.locfileid: "82167401"
 
 |Параметр|Описание|
 |---------------|-----------------|
-|`LicenseTarget`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Определяет исполняемый файл, для которого создаются *LICENSES*-файлы.|
+|`LicenseTarget`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Определяет исполняемый файл, для которого создаются *LICENSES* -файлы.|
 |`NoLogo`|Необязательный параметр `Boolean`.<br /><br /> Отключает отображение эмблемы Майкрософт при запуске.|
-|`OutputDirectory`|Необязательный параметр `String`.<br /><br /> Определяет каталог для размещения выходных *LICENSES*-файлов.|
-|`OutputLicense`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Определяет имя *LICENSES*-файла. Если имя не указано, используется имя *LICX*-файла, а создаваемый *LICENSES*-файл помещается в каталог, содержащий *LICX*-файл.|
-|`ReferencedAssemblies`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Определяет компоненты, на которые имеются ссылки, для загрузки при создании *LICENSES*-файла.|
+|`OutputDirectory`|Необязательный параметр `String`.<br /><br /> Определяет каталог для размещения выходных *LICENSES* -файлов.|
+|`OutputLicense`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Определяет имя *LICENSES* -файла. Если имя не указано, используется имя *LICX* -файла, а создаваемый *LICENSES* -файл помещается в каталог, содержащий *LICX* -файл.|
+|`ReferencedAssemblies`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Определяет компоненты, на которые имеются ссылки, для загрузки при создании *LICENSES* -файла.|
 |`SdkToolsPath`|Необязательный параметр `String`.<br /><br /> Указывает путь к средствам пакета SDK, например *resgen.exe*.|
-|`Sources`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Определяет элементы, содержащие лицензируемые компоненты для включения в *LICENSES*-файл. См. дополнительные сведения см. в документации по параметру `/complist` в [файле LС.exe (компиляторе лицензий)](/dotnet/framework/tools/lc-exe-license-compiler).|
+|`Sources`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Определяет элементы, содержащие лицензируемые компоненты для включения в *LICENSES* -файл. См. дополнительные сведения см. в документации по параметру `/complist` в [файле LС.exe (компиляторе лицензий)](/dotnet/framework/tools/lc-exe-license-compiler).|
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 

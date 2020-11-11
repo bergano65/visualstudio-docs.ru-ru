@@ -1,5 +1,7 @@
 ---
 title: Элемент Item (MSBuild) | Документы Майкрософт
+description: Сведения об использовании элемента Item в MSBuild для хранения определяемого пользователем элемента и его метаданных. Каждый элемент Item должен быть дочерним по отношению к элементу ItemGroup.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f235108c63eb063f0ddcd495385bd3325581332
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 51ecf68cacf0edca90893931642cd7fb6064f972
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289018"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904639"
 ---
 # <a name="item-element-msbuild"></a>Элемент Item (MSBuild)
 
@@ -114,7 +116,7 @@ ms.locfileid: "85289018"
 </ItemGroup>
 ```
 
-В следующем примере кода показано, как использовать атрибут `Update` для изменения метаданных в файле с именем *somefile.cs*, включенном с помощью glob. (Доступен только для проектов .NET Core в Visual Studio 2017 или более поздних версиях.)
+В следующем примере кода показано, как использовать атрибут `Update` для изменения метаданных в файле с именем *somefile.cs* , включенном с помощью glob. (Доступен только для проектов .NET Core в Visual Studio 2017 или более поздних версиях.)
 
 ```xml
 <ItemGroup>

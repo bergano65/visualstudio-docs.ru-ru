@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
-ms.date: 09/08/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: Узнайте, как войти в вашу подписку Visual Studio с помощью рабочей или учебной учетной записи.
-ms.openlocfilehash: 96b111c47e753b343d59c89e65f71eaa90132f6f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 3ac4e9fedae66656d4dee2155c8a8dcbe9325970
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005811"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903386"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Вход в подписки Visual Studio с рабочей или учебной учетной записью 
 
@@ -48,8 +48,8 @@ ms.locfileid: "91005811"
 
 3. Нажмите кнопку **Продолжить**.
 4. Вы перейдете на страницу принятия решения.
-    - Выберите вариант **Рабочая или учебная учетная запись**, если подписка назначена рабочей или учебной учетной записи, связанной с клиентом Azure Active Directory (AAD).
-    - Выберите вариант **Личные**, если подписка связана с корпоративным адресом электронной почты и затем перенесена в личную учетную запись Майкрософт.
+    - Выберите вариант **Рабочая или учебная учетная запись** , если подписка назначена рабочей или учебной учетной записи, связанной с клиентом Azure Active Directory (AAD).
+    - Выберите вариант **Личные** , если подписка связана с корпоративным адресом электронной почты и затем перенесена в личную учетную запись Майкрософт.
 
         > [!NOTE]
         > Этот вариант относится к большинству подписчиков, которые ранее уже использовали подписки Visual Studio (прежнее название — MSDN).

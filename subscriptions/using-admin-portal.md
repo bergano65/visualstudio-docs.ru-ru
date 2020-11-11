@@ -1,18 +1,18 @@
 ---
-title: Начало работы с порталом администрирования подписок | Visual Studio Marketplace
+title: Начало работы с порталом администрирования подписок Visual Studio | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
-ms.date: 09/03/2020
+ms.date: 10/28/2020
 ms.topic: overview
 description: Узнайте, как приступить к управлению подписками Visual Studio вашей организации с помощью портала администрирования подписок.
-ms.openlocfilehash: 8ed9a0b2ed7b9230a245493a2998fa1ca42cae53
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a9e23208bea480167452711442b52fb84b2bd8ee
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353308"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904560"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Общие сведения о портале администрирования Подписок Visual Studio
 
