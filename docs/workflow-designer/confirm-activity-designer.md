@@ -1,5 +1,7 @@
 ---
 title: Конструктор действий по подтверждению конструктор рабочих процессов
+description: Сведения о конструкторе действий Confirm и о том, как с помощью этого конструктора можно создать и настроить действие Confirm.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abd7fedd958072baf23b456f9897ab67c864991d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4928dcd7a9e1b83ba797614545315022d0f36ac3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876142"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438156"
 ---
 # <a name="confirm-activity-designer"></a>Конструктор действия Confirm
 
@@ -27,7 +29,7 @@ ms.locfileid: "86876142"
  Объект <xref:System.Activities.Statements.CompensationToken>, указанный <xref:System.Activities.Statements.Compensate.Target%2A>, предоставляет возможность для явного подтверждения или компенсации действия <xref:System.Activities.Statements.CompensableActivity>, как только <xref:System.Activities.Statements.CompensableActivity.Body%2A> действия <xref:System.Activities.Statements.CompensableActivity> будет успешно завершено.
 
 ### <a name="using-the-confirm-activity-designer"></a>Использование конструктора действия Confirm
- Конструктор действия " **подтвердить** " можно найти в категории " **транзакция** " **панели элементов**, щелкнув вкладку " **область элементов** " в левой части конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
+ Конструктор действия " **подтвердить** " можно найти в категории " **транзакция** " **панели элементов** , щелкнув вкладку " **область элементов** " в левой части конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
 
  Конструктор действия **Confirm** можно перетащить из **панели элементов** в конструктор рабочих процессовную область, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence> . Будет создано действие <xref:System.Activities.Statements.Confirm>, где значение <xref:System.Activities.Activity.DisplayName%2A> по умолчанию равно Confirm. <xref:System.Activities.Activity.DisplayName%2A>Значение можно изменить либо в заголовке конструктора действий **Confirm** , либо в поле **DisplayName** сетки свойств.
 

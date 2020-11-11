@@ -1,5 +1,7 @@
 ---
 title: Конструктор действий с задержкой конструктор рабочих процессов
+description: Сведения о действиях задержки и использовании конструктора действий задержки для создания и настройки действия задержки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abfd625a248c14f646683c7b035065e6ca096f68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6bbadcbabbe1dbd274c48f2325217c17d3933d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876116"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438091"
 ---
 # <a name="delay-activity-designer"></a>Конструктор действия Delay
 
@@ -27,7 +29,7 @@ ms.locfileid: "86876116"
 
 ### <a name="use-the-delay-activity-designer"></a>Использование конструктора действия "задержка"
 
-Конструктор действия **delay** можно найти в категории **примитивы** **панели элементов**, щелкнув вкладку **область элементов** конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
+Конструктор действия **delay** можно найти в категории **примитивы** **панели элементов** , щелкнув вкладку **область элементов** конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
 
 Конструктор действий с **задержкой** можно перетащить из **панели элементов** в конструктор рабочих процессов область, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence> . При удалении конструктора действий создается <xref:System.Activities.Statements.Delay> действие с заданной по умолчанию <xref:System.Activities.Activity.DisplayName%2A> задержкой. <xref:System.Activities.Activity.DisplayName%2A>Можно изменить в заголовке конструктора действий **delay** или в поле **DisplayName** сетки свойств.
 

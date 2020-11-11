@@ -1,5 +1,7 @@
 ---
 title: Конструктор действий назначения конструктор рабочих процессов
+description: Узнайте, как можно использовать конструктор назначения действий для создания и настройки действия Assign, а также то, как действие Assign присваивает значение переменной или аргументу.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a01c96b64dcd55adfd775efc266063efbab27d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d8601951cfaba3f246e8488ab23c9b6ccad0d01
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875947"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438195"
 ---
 # <a name="assign-activity-designer"></a>Конструктор действий Assign
 
@@ -27,7 +29,7 @@ ms.locfileid: "86875947"
 
 ### <a name="using-the-assign-activity-designer"></a>Использование конструктора действия Assign
 
-Конструктор **назначения** действий можно найти в категории **примитивы** **области элементов**, щелкнув вкладку **область элементов** (также можно выбрать **область элементов** в меню **вид** или CTRL + ALT + X).
+Конструктор **назначения** действий можно найти в категории **примитивы** **области элементов** , щелкнув вкладку **область элементов** (также можно выбрать **область элементов** в меню **вид** или CTRL + ALT + X).
 
 Конструктор **назначения** действия можно перетащить из **панели элементов** в конструктор рабочих процессовную поверхность, где постоянно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence> . При удалении конструктора **назначения** действия создается <xref:System.Activities.Statements.Assign> действие со значением **DisplayName** по умолчанию Assign. <xref:System.Activities.Activity.DisplayName%2A>Можно изменить в заголовке конструктора действий **назначения** или в поле **DisplayName** сетки свойств.
 

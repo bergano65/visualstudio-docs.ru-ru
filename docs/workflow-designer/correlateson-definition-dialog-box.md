@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно «Определение конструктор рабочих процессов-CorrelatesOn»
+description: Узнайте, как можно использовать диалоговое окно CorrelatesOn в конструктор рабочих процессов для изменения свойства CorrelatesOn действия Receive.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2db5bbfa4f34d86d3bf20cfe6bcc42b3dc00d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2be38ba9521762c38c629c2817a7c8e8ca5a709a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876129"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438130"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Диалоговое окно «Корреляция по определению»
 

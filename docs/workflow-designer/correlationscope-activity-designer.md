@@ -1,5 +1,7 @@
 ---
 title: Конструктор действий конструктор рабочих процессов CorrelationScope
+description: Узнайте, как можно использовать конструктор действий CorrelationScope для создания и настройки действия CorrelationScope.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 135acfbbaf9fdcbbf219fd50a504cf9262fe4d24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc85dbb5c774f6afa956f51852ef15d4c7ccebc0
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876103"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438117"
 ---
 # <a name="correlationscope-activity-designer"></a>Конструктор действия CorrelationScope
 
@@ -27,7 +29,7 @@ ms.locfileid: "86876103"
 
 ### <a name="use-the-correlationscope-activity-designer"></a>Использование конструктора действий CorrelationScope
 
-Конструктор действий **CorrelationScope** можно найти в категории **Обмен сообщениями** **области элементов**, щелкнув вкладку **область элементов** в левой части конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
+Конструктор действий **CorrelationScope** можно найти в категории **Обмен сообщениями** **области элементов** , щелкнув вкладку **область элементов** в левой части конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
 
 Конструктор действий **CorrelationScope** можно перетащить из **области элементов** в область Конструктор рабочих процессов. При этом создается <xref:System.ServiceModel.Activities.CorrelationScope> действие со значением **DisplayName** по умолчанию CorrelationScope. <xref:System.Activities.Activity.DisplayName%2A>Можно изменить в заголовке конструктора действий **CorrelationScope** или в поле **DisplayName** окна **Свойства** .
 
