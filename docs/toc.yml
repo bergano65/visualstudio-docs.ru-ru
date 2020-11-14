@@ -275,7 +275,7 @@
     - name: Подключиться к проекту или репозиторию
       displayName: Azure DevOps VSTS GitHub
       href: ide/connect-team-project.md
-    - name: "Новый интерфейс Git в Visual Studio\_(предварительная версия)"
+    - name: "Новый интерфейс Git в Visual\_Studio"
       href: ide/git-with-visual-studio.md
     - name: Редактор
       items:
@@ -1092,7 +1092,7 @@
               href: ide/reference/options-dialog-box-visual-studio.md
             - name: Среда
               items:
-                - name: Общее
+                - name: Общие сведения
                   href: ide/reference/general-environment-options-dialog-box.md
                 - name: Учетные записи
                   href: ide/reference/accounts-environment-options-dialog-box.md
@@ -1130,7 +1130,7 @@
                   href: ide/reference/web-browser-environment-options-dialog-box.md
             - name: Проекты и решения
               items:
-                - name: Общее
+                - name: Общие сведения
                   href: ide/reference/projects-and-solutions-options-dialog-box.md
                 - name: Сборка и запуск
                   href: ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md
@@ -1144,13 +1144,13 @@
                   href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
             - name: Текстовый редактор
               items:
-                - name: Общее
+                - name: Общие сведения
                   href: ide/reference/options-text-editor-general.md
                 - name: Расширение файла
                   href: ide/reference/options-text-editor-file-extension.md
                 - name: Все языки
                   items:
-                    - name: Общее
+                    - name: Общие сведения
                       href: ide/reference/options-text-editor-all-languages.md
                     - name: Полосы прокрутки
                       href: ide/reference/options-text-editor-all-languages-scroll-bars.md
@@ -1180,7 +1180,7 @@
                       href: ide/reference/options-text-editor-c-cpp-experimental.md
                     - name: Форматирование
                       href: ide/reference/options-text-editor-c-cpp-formatting.md
-                    - name: Представление
+                    - name: Просмотр
                       href: ide/reference/options-text-editor-c-cpp-view.md
                 - name: F#
                   items:
@@ -1232,7 +1232,7 @@
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
             - name: Конструктор Windows Forms
               items:
-                - name: Общее
+                - name: Общие сведения
                   href: ide/reference/options-windows-forms-designer.md
                 - name: Настройка пользовательского интерфейса данных
                   href: ide/reference/options-windows-forms-designer-data-ui-customization.md
@@ -1437,7 +1437,7 @@
       items:
         - name: График выпуска
           href: /visualstudio/productinfo/release-rhythm/
-        - name: "Visual Studio\_2017"
+        - name: "Visual\_Studio\_2017"
           items:
             - name: Заметки о текущем выпуске
               href: /visualstudio/releasenotes/vs2017-relnotes/
@@ -1451,7 +1451,7 @@
               href: /visualstudio/productinfo/vs2017-compatibility-vs/
             - name: Требования к системе
               href: /visualstudio/productinfo/vs2017-system-requirements-vs/
-        - name: "Visual Studio\_2019"
+        - name: Visual Studio 2019
           items:
             - name: Заметки о текущем выпуске
               href: /visualstudio/releases/2019/release-notes/

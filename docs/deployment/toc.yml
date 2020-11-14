@@ -24,7 +24,9 @@
           href: /dotnet/core/deploying/deploy-with-vs
         - name: Упаковка классического приложения для Microsoft Store
           href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: Развертывание классического приложения с помощью ClickOnce
+        - name: Развертывание приложения .NET для Windows с помощью ClickOnce
+          href: quickstart-deploy-using-clickonce-folder.md
+        - name: Развертывание классического приложения .NET Framework с помощью ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: Сборка приложений ClickOnce из командной строки
           href: building-clickonce-applications-from-the-command-line.md

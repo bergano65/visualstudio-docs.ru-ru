@@ -1,6 +1,6 @@
 - name: Visual Studio для Mac
   href: index.yml
-- name: Начало работы
+- name: Приступая к работе
   items:
     - name: Обзор интегрированной среды разработки
       href: ide-tour.md
@@ -169,7 +169,7 @@
         - name: Создание многоконтейнерного приложения с помощью Docker Compose
           href: docker-multi-container.md
     - name: Разработка игр на Unity
-      href: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity.md
+      href: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity
     - name: "Мобильные приложения с\_Xamarin"
       href: ./xamarin.md
 - name: Специальные возможности

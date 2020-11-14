@@ -80,7 +80,7 @@
           href: sample-eshoponweb.md
         - name: Репозиторий OpenCV
           href: sample-opencv.md
-        - name: Закрытая предварительная версия Codespaces
+        - name: Закрытая бета-версия Codespaces
           href: sample-private-preview.md
         - name: Приложение .NET Core
           href: sample-dotnet-core.md
