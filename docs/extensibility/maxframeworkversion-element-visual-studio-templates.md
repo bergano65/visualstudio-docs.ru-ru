@@ -1,5 +1,7 @@
 ---
 title: Элемент Максфрамеворкверсион (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе Максфрамеворкверсион и о том, как он указывает максимальную версию .NET Framework, необходимую для шаблона.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c3acf9c40499417fe180ce470224824cc89a113
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44345b712f448bd7eedf288d7c58cb4193e1b020
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702620"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672429"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>Элемент Максфрамеворкверсион (шаблоны Visual Studio)
 
@@ -55,7 +57,7 @@ ms.locfileid: "80702620"
 
  Текст должен быть самым высоким номером версии .NET Framework, разрешенным шаблоном.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Параметр `MaxFrameworkVersion` является необязательным элементом. `MaxFrameworkVersion`Элемент следует опустить, если он не является обязательным, поэтому не следует случайно ограничить поддерживаемый диапазон версий .NET Framework для шаблона. Его также следует опустить, если .NET Framework неприменимо к шаблону.
 

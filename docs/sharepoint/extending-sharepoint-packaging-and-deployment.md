@@ -1,5 +1,7 @@
 ---
 title: Расширение упаковки и развертывания SharePoint | Документация Майкрософт
+description: Расширьте упаковку и развертывание SharePoint. Создание шагов и конфигураций развертывания. Обрабатывает конфликты развертывания. Настройка правил проверки.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f0f9eb6c863a961a527fcb6fb330a2a4f88669e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967470"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672591"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Расширение упаковки и развертывания SharePoint
   Вы можете расширить процесс упаковки и развертывания для проектов SharePoint.
@@ -50,7 +52,7 @@ ms.locfileid: "62967470"
  В некоторых случаях могут возникать конфликты развертывания. Существует несколько способов разрешения конфликтов. Дополнительные сведения см. в разделе [Устранение неполадок упаковки и развертывания SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).
 
 ## <a name="customize-validation-rules"></a>Настройка правил проверки
- Перед развертыванием пакета решения (WSP-файла) можно создать настраиваемые правила проверки компонентов и пакетов для проверки допустимости компонента или пакета. Например, можно передать разработчикам сведения, предупреждения или ошибки, которые помогут им устранить проблемы проверки. Дополнительные сведения см. [в разделе инструкции. Создание пользовательских правил проверки компонентов и пакетов для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
+ Перед развертыванием пакета решения (WSP-файла) можно создать настраиваемые правила проверки компонентов и пакетов для проверки допустимости компонента или пакета. Например, можно передать разработчикам сведения, предупреждения или ошибки, которые помогут им устранить проблемы проверки. Дополнительные сведения см. в разделе [Практическое руководство. Создание пользовательских правил проверки компонентов и пакетов для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
 ## <a name="see-also"></a>См. также раздел
 - [Инструкции. выполнение кода при выполнении шагов развертывания](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)

@@ -1,5 +1,7 @@
 ---
 title: Элемент Folder (шаблоны проектов Visual Studio) | Документация Майкрософт
+description: Сведения об элементе Folder и о том, как он указывает папку, которая будет добавлена в проект.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba3f357f6c48280d12e4ddab6135245e699d0a44
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769591"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672721"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Элемент Folder (шаблоны проектов Visual Studio)
 Указывает папку, которая будет добавлена в проект.
@@ -59,7 +61,7 @@ ms.locfileid: "85769591"
 |-------------|-----------------|
 |[Project](../extensibility/project-element-visual-studio-templates.md)|Необязательный дочерний элемент [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  `Folder` является необязательным дочерним элементом `Project` .
 
  Для организации элементов проекта в папки шаблона можно использовать любой из следующих методов:

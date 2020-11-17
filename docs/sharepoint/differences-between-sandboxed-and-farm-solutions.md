@@ -1,5 +1,7 @@
 ---
 title: Различия между песочницами и решениями фермы | Документация Майкрософт
+description: Ознакомьтесь с различиями между изолированными и решениями фермы. Узнайте, как Visual Studio приближается к отладке с помощью любого из типов решений.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 073e62b473ebfcec5f71ae1907e8f9e385333411
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25c1c9047ba9e38e3e652abcbe92ce6575d7b750
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967550"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672786"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Различия между песочницами и решениями фермы
   При компиляции решения SharePoint оно развертывается на сервере SharePoint, а отладчик подключается для его отладки. Процесс, используемый для отладки решения, зависит от параметра свойства изолированного решения: изолированное решение или решение фермы.
@@ -41,4 +43,4 @@ ms.locfileid: "62967550"
 ## <a name="see-also"></a>См. также раздел
 - [Отладка решений SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
 - [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Рекомендации по изолированным решениям](../sharepoint/sandboxed-solution-considerations.md)
+- [Замечания об изолированных решениях](../sharepoint/sandboxed-solution-considerations.md)

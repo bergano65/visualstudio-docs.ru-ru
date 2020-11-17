@@ -1,5 +1,7 @@
 ---
 title: Развертывание расширений для инструментов SharePoint в Visual Studio | Документация Майкрософт
+description: Развертывание расширений для инструментов SharePoint в Visual Studio. Используйте проекты расширения Visual Studio (VSIX) для создания пакетов VSIX.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8178a660f757ae7d7c2758c76d6fd0fc4b22918f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9c8b05b5cb74a28157436f95f01992515c716e6a
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584707"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672682"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Развертывание расширений для инструментов SharePoint в Visual Studio
 
@@ -130,7 +132,7 @@ ms.locfileid: "91584707"
 
 5. В списке **проект** выберите имя проекта, а затем нажмите кнопку **ОК** .
 
-6. В **Обозреватель решений**откройте контекстное меню для шаблона проекта или проекта шаблона элемента, а затем выберите команду **Выгрузить проект**.
+6. В **Обозреватель решений** откройте контекстное меню для шаблона проекта или проекта шаблона элемента, а затем выберите команду **Выгрузить проект**.
 
 7. Снова откройте контекстное меню узла проекта и выберите **изменить**_йоуртемплатепрожектнаме_**. csproj** или **изменить**_йоуртемплатепрожектнаме_**. vbproj**.
 
@@ -152,7 +154,7 @@ ms.locfileid: "91584707"
 
 10. Сохраните файл и закройте его.
 
-11. В **Обозреватель решений**откройте контекстное меню шаблона проекта или шаблона элемента и выберите **Перезагрузить проект**.
+11. В **Обозреватель решений** откройте контекстное меню шаблона проекта или шаблона элемента и выберите **Перезагрузить проект**.
 
 #### <a name="to-include-a-template-that-you-create-manually"></a>Включение шаблона, созданного вручную
 
@@ -172,7 +174,7 @@ ms.locfileid: "91584707"
 
      Например, если имеется шаблон элемента с именем ContosoCustomAction.zip, поддерживающий английский язык (США), полный путь может быть *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*.
 
-3. В **Обозреватель решений**выберите файл шаблона (*йоуртемплатенаме*. zip).
+3. В **Обозреватель решений** выберите файл шаблона (*йоуртемплатенаме*. zip).
 
 4. В окне **Свойства** задайте для свойства **действие сборки** значение **содержимое**.
 
@@ -188,7 +190,7 @@ ms.locfileid: "91584707"
 
 8. В списке **источник** выберите **файл в файловой системе**.
 
-9. В поле **путь** введите полный путь к сборке (например, *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*или нажмите кнопку **Обзор** , чтобы найти и выбрать сборку, а затем нажмите кнопку **ОК** .
+9. В поле **путь** введите полный путь к сборке (например, *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip* или нажмите кнопку **Обзор** , чтобы найти и выбрать сборку, а затем нажмите кнопку **ОК** .
 
 #### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>Включение мастера для шаблона проекта или элемента
 
@@ -265,7 +267,7 @@ ms.locfileid: "91584707"
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Расширение узла подключений SharePoint в обозревателе сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

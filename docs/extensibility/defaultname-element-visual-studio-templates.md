@@ -1,5 +1,7 @@
 ---
 title: Элемент Дефаултнаме (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе Дефаултнаме и о том, как он указывает имя, которое будет создавать система проектов Visual Studio для проекта или элемента при его создании.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92bd29824cf1d3b91a7bdaa7220479c583ad0f23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23defc424d3e7ed5095f0e29d673c191c755f9ce
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712304"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672734"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>Элемент Дефаултнаме (шаблоны Visual Studio)
 Указывает имя, которое будет создавать система проектов Visual Studio для проекта или элемента при его создании.
@@ -54,7 +56,7 @@ ms.locfileid: "80712304"
 
  В этом тексте указывается имя проекта или элемента по умолчанию.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  Параметр `DefaultName` является необязательным элементом.
 
  Для проектов этот элемент указывает имя каталога, в котором хранится проект на диске. Для элементов указывает имя файла исходного файла.

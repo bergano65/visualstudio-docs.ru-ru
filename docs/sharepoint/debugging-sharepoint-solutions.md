@@ -1,5 +1,7 @@
 ---
 title: Отладка решений SharePoint | Документация Майкрософт
+description: Отладка решений SharePoint с помощью отладчика Visual Studio. Изучите процесс отладки и развертывания F5, рабочие процессы отладки и приемники событий функций отладки.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d83c8ffd4fe5ebb627b70fa07f010bdc713225dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0bd1996f5d42561cb2d44879ab702d6b6c4b4f7
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984495"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672864"
 ---
 # <a name="debug-sharepoint-solutions"></a>Отладка решений SharePoint
   Вы можете отлаживать решения SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчика. При запуске отладки [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] развертывает файлы проекта на сервере SharePoint, а затем открывает экземпляр сайта SharePoint в веб-браузере. В следующих разделах объясняется, как выполнять отладку приложений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -118,7 +120,7 @@ ms.locfileid: "72984495"
 ## <a name="sharepoint-project-features"></a>Функции проекта SharePoint
  Компонент — это переносимая модульная единица функциональности, упрощающая изменение сайтов с помощью определений сайтов. Он также является пакетом [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS), который может быть активирован для определенной области и помогает пользователям выполнять определенную цель или задачу. Шаблоны развертываются в виде функций.
 
- При запуске проекта в режиме отладки процесс развертывания создает папку в каталоге *Features* по адресу *%COMMONPROGRAMFILES%\Microsoft Shared\web Server extensions\14\TEMPLATE\FEATURES*. Имена функций имеют формат *имя проекта*_Feature*x*, например TestProject_Feature1.
+ При запуске проекта в режиме отладки процесс развертывания создает папку в каталоге *Features* по адресу *%COMMONPROGRAMFILES%\Microsoft Shared\web Server extensions\14\TEMPLATE\FEATURES*. Имена функций имеют формат *имя проекта* _Feature *x*, например TestProject_Feature1.
 
  Папка решения в каталоге Feature содержит файл *определения компонента* и файл *определения рабочего процесса* . Файл определения компонента (Feature.xml) описывает файлы в компоненте проекта. файл определения проекта (*Elements.xml*) описывает шаблон проекта. *Elements.xml* можно найти в **обозреватель решений**, но Feature.xml создается при создании пакета решения. Дополнительные сведения об этих файлах см. в разделе [проект SharePoint и шаблоны элементов проектов](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
@@ -140,7 +142,7 @@ ms.locfileid: "72984495"
 ## <a name="enable-enhanced-debugging-information"></a>Включить улучшенную отладочную информацию
  Из-за некоторых сложных взаимодействий между [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] процессом (devenv.exe), [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] процессом узла sharepoint (*vssphost4.exe*), SharePoint и уровнем WCF диагностика ошибок, возникающих при сборке, развертывании и т. д., может быть сложной задачей. Чтобы помочь вам устранить такие ошибки, можно включить улучшенную отладочную информацию. Для этого перейдите к следующему разделу реестра в реестре Windows:
 
- **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\11.0\SharePointTools**
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**
 
  Если значение **REG_DWORD** "енабледиагностикс" еще не существует, создайте его вручную. Задайте для параметра "Енабледиагностикс" значение "1".
 

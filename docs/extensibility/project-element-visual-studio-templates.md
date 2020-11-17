@@ -1,5 +1,7 @@
 ---
 title: Элемент Project (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе Project и о том, как он указывает файлы или каталоги, добавляемые в проект.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 335a1e4efa62f07e10bb24b9971627d24bb13273
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652d438d6a0fdf0c42648ded7d3dc9c18b0212ff
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702006"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672389"
 ---
 # <a name="project-element-visual-studio-templates"></a>Элемент Project (шаблоны Visual Studio)
 Указывает файлы или каталоги, добавляемые в проект.
@@ -64,7 +66,7 @@ ms.locfileid: "80702006"
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Обязательный элемент.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  `Project` — необязательный дочерний элемент элемента `TemplateContent`.
 
  `Project`Элемент используется для указания проекта и, следовательно, допустим только в шаблонах проектов.

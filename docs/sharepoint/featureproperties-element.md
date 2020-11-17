@@ -1,5 +1,7 @@
 ---
 title: Элемент FeatureProperties | Документация Майкрософт
+description: Просмотр справочных сведений об элементе FeatureProperties, который является элементом в схеме элемента проекта SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6860a91067daa6da1d4223ae5060385087ad3433
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ee2bddec02263a889fb1f69088a8a50b3d8b57d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967335"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672604"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties - элемент
   Коллекция значений свойств, включенных в компонент при развертывании в SharePoint. После развертывания компонента можно получить доступ к значениям свойств в коде.
@@ -48,7 +50,7 @@ ms.locfileid: "62967335"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Представляет элемент проекта SharePoint. Этот элемент является обязательным корневым элементом `.spdata` файла.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  Дополнительные сведения о свойствах компонентов см. [в разделе Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Сведения об элементе

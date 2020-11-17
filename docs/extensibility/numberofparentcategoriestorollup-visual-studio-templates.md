@@ -1,5 +1,7 @@
 ---
 title: Элемент элемент numberofparentcategoriestorollup (шаблоны)
+description: Сведения об элементе элемент numberofparentcategoriestorollup и о том, как он указывает количество родительских категорий, которые будут отображать шаблон в диалоговом окне Новый проект.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b903b9d0bdab2c17dd2e489de01badad82c15473
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58c702a70392f4a0330ea51b563570362f51df35
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702359"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672415"
 ---
 # <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>Элемент элемент numberofparentcategoriestorollup (шаблоны Visual Studio)
 Указывает число родительских категорий, которые будут отображать шаблон в диалоговом окне **Новый проект** .
@@ -55,7 +57,7 @@ ms.locfileid: "80702359"
 
  Это значение указывает количество родительских категорий, которые будут отображать шаблон в диалоговом окне **Новый проект** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  Параметр `NumberOfParentCategoriesToRollUp` является необязательным элементом.
 
 ## <a name="example"></a>Пример

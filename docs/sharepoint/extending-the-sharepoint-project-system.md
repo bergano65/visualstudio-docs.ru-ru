@@ -1,5 +1,7 @@
 ---
 title: Расширение системы проектов SharePoint | Документация Майкрософт
+description: Расширение системы проектов SharePoint. Узнайте, как расширить систему проектов SharePoint. Общие сведения о типичных задачах разработки.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c017217f66e38eed6248b90efaeabce0efaa9c70
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62557028"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672552"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Расширение системы проектов SharePoint
   Решения SharePoint можно создавать с помощью набора шаблонов проектов и шаблонов элементов в Visual Studio. Эти шаблоны соответствуют требованиям многих сценариев разработки, но в некоторых случаях они не предоставляют нужных функциональных возможностей. В таких случаях можно расширить систему проектов SharePoint.
@@ -55,5 +57,5 @@ ms.locfileid: "62557028"
 - [Расширение упаковки и развертывания SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [Сохранение данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
 - [Преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
-- [Расширение средств SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
-- [Понятия программирования и возможности расширений SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
+- [Расширение средств SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Основные понятия и функции программирования для расширений инструментов SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)

@@ -1,5 +1,7 @@
 ---
 title: Развертывание, публикация, & обновление пакетов решений SharePoint
+description: Развертывание, публикация и обновление пакетов решений SharePoint. Настройте процесс развертывания. Публикация пакетов на удаленном или локальном сервере.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 574712b870256fa7422e64a3c29ae8733f4c2251
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ab97efc82575c31c8e05b73063c2b53a09691d2d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583883"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672669"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Развертывание, публикация и обновление пакетов решений SharePoint
   После разработки решения SharePoint в Visual Studio можно либо развернуть его пакетный файл (.wsp) на локальном сервере SharePoint, либо опубликовать его на локальном или удаленном сервере SharePoint. При развертывании файлов можно настроить, как должна выполняться развертка пакетных файлов (.wsp).
@@ -64,5 +66,5 @@ ms.locfileid: "91583883"
 ### <a name="upgrade-published-packages"></a>Обновление опубликованных пакетов
  При внесении каких-либо изменений в проект SharePoint в Visual Studio после его публикации опубликованный пакет должен быть обновлен для включения изменений. Для успешного обновления пакет должен иметь уникальное имя. Если пакет с тем же именем находится на сайте SharePoint, который может возникать при обновлении существующего приложения, то ошибка предупреждает о конфликте имен файлов и позволяет переименовать пакет. После его повторной публикации новый пакет появится на сайте SharePoint и может быть обновлен. Обновленный пакет обновляет решение с помощью данных из старого пакета, а затем активирует решение в SharePoint. Дополнительные сведения см. в разделе [развертывание, публикация и обновление решений SharePoint на удаленном сервере](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

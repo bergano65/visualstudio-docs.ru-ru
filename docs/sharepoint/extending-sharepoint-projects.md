@@ -1,5 +1,7 @@
 ---
 title: Расширение проектов SharePoint | Документация Майкрософт
+description: Узнайте, как создать расширение проекта, если необходимо настроить функции уровня проекта для проектов SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6bc92d65ed179c7f2cb2f569a7d254a025887845
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae4c3c1e606fd436725ef9f54a4568b754b048af
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967485"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672643"
 ---
 # <a name="extend-sharepoint-projects"></a>Расширение проектов SharePoint
   Создайте расширение проекта, если необходимо настроить функции уровня проекта для проектов SharePoint. Например, можно добавить настраиваемые свойства проекта или реагировать на события уровня проекта, возникающие при разработке пользователем решения SharePoint в Visual Studio.

@@ -1,5 +1,7 @@
 ---
 title: Files, элемент | Документация Майкрософт
+description: Просмотр справочных сведений об элементе Files, который является элементом в схеме элемента проекта SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 42e919bbe25047da14940203ac86793430aeadde
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03473f40bb78c866f3d93dea11a20b8747afad7b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546514"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672812"
 ---
 # <a name="files-element"></a>Files - элемент
   Указывает файлы для развертывания с помощью элемента проекта SharePoint, такие как файлы элементов компонента и выходные данные зависимых проектов, не связанных с SharePoint.
@@ -55,7 +57,7 @@ ms.locfileid: "85546514"
 
 ## <a name="element-information"></a>Сведения об элементе
 
-|Свойство|Значение|
+|Свойство.|Значение|
 |-|-|
 |**Пространство имен**|http: \/ \/ Schemas.Microsoft.com/VisualStudio/<br>2010/Шарепоинттулс/Шарепоинтпрожектитеммодел|
 |**Имя схемы**|Схема элемента проекта SharePoint|

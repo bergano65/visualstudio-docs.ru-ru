@@ -1,6 +1,8 @@
 ---
 title: Расширение узла подключений SharePoint в обозреватель сервера | Документация Майкрософт
 titleSuffix: ''
+description: Расширьте узел подключения SharePoint в окне обозреватель сервера в Visual Studio. Добавление пользовательских свойств в узлы. Получение данных для встроенных узлов.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6615e02d84e1f252800597cb37666557e3c3fee6
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 56b635db6a8b0c24e2604940fe7500bb8f769a1b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584611"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672565"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Расширение узла подключений SharePoint в обозревателе сервера
   В Visual Studio можно подключаться к локальным сайтам SharePoint на компьютере разработчика с помощью узла " **подключения SharePoint** " в окне **Обозреватель сервера** . Этот узел отображает многие компоненты локальных сайтов SharePoint в иерархическом древовидном представлении. Например, можно просматривать списки, библиотеки документов и типы содержимого на локальных сайтах. Дополнительные сведения об использовании **Обозреватель сервера** для подключения к локальным сайтам SharePoint см. в разделе [Просмотр подключений sharepoint с помощью обозреватель сервера](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
@@ -57,7 +59,7 @@ ms.locfileid: "91584611"
 |---------------|----------------------|
 |Узел сайта SharePoint|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerSiteNodeInfo>|
 |Тип содержимого|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IContentTypeNodeInfo>|
-|Функция|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|
+|Компонент|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|
 |Поле|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFieldNodeInfo>|
 |Список|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListNodeInfo>|
 |Шаблон списка|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListTemplateNodeInfo>|
@@ -67,7 +69,7 @@ ms.locfileid: "91584611"
 
  Дополнительные сведения об использовании <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойства см. в разделе [Связывание пользовательских данных с помощью расширений инструментов SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Пошаговое руководство. расширение обозреватель сервера для показа веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [Руководство. расширение узла SharePoint в обозреватель сервера](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [Как добавить пользовательский узел SharePoint к обозреватель сервера](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)

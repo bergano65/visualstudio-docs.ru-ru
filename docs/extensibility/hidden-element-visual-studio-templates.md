@@ -1,5 +1,7 @@
 ---
 title: Hidden-элемент (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения о скрытом элементе и о том, как он указывает, отображается ли шаблон в диалоговых окнах Новый проект или Добавление нового элемента.
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04cb966f21bbb501545f1a203297d06f8e852793
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711110"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672705"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden-элемент (шаблоны Visual Studio)
 
@@ -61,7 +63,7 @@ ms.locfileid: "80711110"
 
 Текст должен иметь значение `true` или `false` , что указывает, будет ли шаблон отображаться в диалоговых окнах **Новый проект** или **Добавить новый элемент** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Параметр `Hidden` является необязательным элементом.
 
@@ -98,5 +100,5 @@ ms.locfileid: "80711110"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Справочник по схеме шаблона](../extensibility/visual-studio-template-schema-reference.md)
+- [Справочник по схемам шаблонов](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

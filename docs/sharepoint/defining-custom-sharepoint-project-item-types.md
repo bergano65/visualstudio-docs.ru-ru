@@ -1,5 +1,7 @@
 ---
 title: Определение пользовательских типов элементов проектов SharePoint | Документация Майкрософт
+description: Определите тип настраиваемого элемента проекта SharePoint, если нужно создать новый тип элемента проекта SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5f32abba4c4cbdeab59ed66e38019d913e704e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc2e3670dd734b368795f270fa6c1d63c8c079e8
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62580788"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672838"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>Определение пользовательских типов элементов проектов SharePoint
   Определите новый тип элемента проекта SharePoint, если нужно создать новый вид элемента проекта SharePoint. Например, Visual Studio не включает элементы проектов SharePoint для добавления полей или настраиваемых действий на сайт SharePoint. Можно определить собственные типы элементов проектов SharePoint для создания полей, настраиваемых действий или других типов компонентов SharePoint.

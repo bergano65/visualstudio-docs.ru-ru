@@ -1,6 +1,7 @@
 ---
 title: Элемент LocationFieldMRUPrefix (шаблоны Visual Studio)
 titleSuffix: ''
+description: Сведения об элементе Локатионфиелдмрупрефикс и о том, как он указывает недавно использованные пути (MRU) в диалоговом окне "Создание проекта" и "Добавление нового элемента".
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af2c295fa1a69d7815d117a99506a91f08c29aae
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: bd3eca6297430e574435f92d4b58cfbb51be805c
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034056"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672513"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Элемент Локатионфиелдмрупрефикс (шаблоны Visual Studio)
 

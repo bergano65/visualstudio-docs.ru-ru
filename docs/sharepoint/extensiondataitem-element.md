@@ -1,5 +1,7 @@
 ---
 title: Элемент Екстенсиондатаитем | Документация Майкрософт
+description: Просмотр справочных сведений об элементе Екстенсиондатаитем, который является элементом в схеме элемента проекта SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 295ee649cec01e50b237b4fad1798806d460727b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23bd231343b3e7a6c68883aa7fe3ee4e518ac883
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546553"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672617"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem - элемент
   Пользовательский элемент данных, связанный с элементом проекта SharePoint в формате "ключ — значение". Ключ и значение должны быть строками.
@@ -48,12 +50,12 @@ ms.locfileid: "85546553"
 |-------------|-----------------|
 |[ExtensionData](../sharepoint/extensiondata-element.md)|Представляет коллекцию пользовательских элементов данных, связанных с элементом проекта SharePoint.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  При связывании пользовательских данных с элементом проекта SharePoint с помощью <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> свойства <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> объекта Visual Studio сохраняет данные в новый элемент **екстенсиондатаитем** в `.spdata` файле для элемента проекта. Дополнительные сведения см. [в разделе Сохранение данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
 ## <a name="element-information"></a>Сведения об элементе
 
-|Свойство|Значение|
+|Свойство.|Значение|
 |-|-|
 |**Пространство имен**|http: \/ \/ Schemas.Microsoft.com/VisualStudio/<br>2010/Шарепоинттулс/Шарепоинтпрожектитеммодел|
 |**Имя схемы**|Схема элемента проекта SharePoint|

@@ -1,5 +1,7 @@
 ---
 title: Элемент Фуллкласснаме (расширение мастера шаблонов VS)
+description: Сведения об элементе Фуллкласснаме и о том, как это полное имя класса, реализующего интерфейс Ивизард.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed9ceb57f49d8c08b75aa140e45a0f4268f4336c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 987a97a34c846f93ef52765375c1512dd8968fb1
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769607"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672747"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Элемент Фуллкласснаме (расширение мастера шаблонов Visual Studio)
 Полное имя класса, реализующего `IWizard` интерфейс.
@@ -52,7 +54,7 @@ ms.locfileid: "85769607"
 
  Этот текст указывает класс, реализующий `IWizard` интерфейс. Указанный класс должен существовать в сборке, указанной в элементе [Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  `FullClassName` — обязательный дочерний элемент элемента `WizardExtension`.
 
 ## <a name="example"></a>Пример
