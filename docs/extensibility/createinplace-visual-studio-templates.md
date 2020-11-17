@@ -1,5 +1,7 @@
 ---
 title: Элемент CreateInPlace (шаблоны Visual Studio)
+description: Сведения об элементе CreateInPlace и о том, как он указывает, следует ли создавать проект и выполнять замену параметров в определенном или временном расположении.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51348e8304b67314ffd19d0aec15d43d904ee651
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739657"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671986"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>Элемент CreateInPlace (шаблоны Visual Studio)
 Указывает, следует ли создать проект и выполнить замену параметров в указанном расположении или выполнить замену параметров во временном расположении, а затем сохранить проект в указанном расположении.
@@ -53,8 +55,8 @@ ms.locfileid: "80739657"
 
  Этот текст должен быть либо `true`, либо `false`. Если задано `true` значение, создается проект и выполняется замена параметров в расположении, указанном в диалоговом окне **Новый проект** . Если значение `false` равно, то замена параметров выполняется во временном расположении, а затем проект копируется в указанное расположение.
 
-## <a name="remarks"></a>Remarks
- Параметр `CreateInPlace` является необязательным элементом. Значение по умолчанию — `true`.
+## <a name="remarks"></a>Комментарии
+ Параметр `CreateInPlace` является необязательным элементом. Значение по умолчанию — `true`.
 
 ## <a name="example"></a>Пример
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].

@@ -6,19 +6,19 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.topic: overview
-ms.openlocfilehash: d082cd5efbb41c6f20bc0abb8e5de9b3a25186ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1da1fc5145e5fd4a2f271b30ac42204c2aa611e5
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800194"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493352"
 ---
 # <a name="accessibility"></a>Специальные возможности
 
 Существует ряд средств и функций со специальными возможностями, встроенных в macOS, которые помогут вам использовать Visual Studio для Mac.  Кроме того, Visual Studio для Mac также имеет следующие возможности, упрощающие использование для людей с разными возможностями:
 
 * увеличение текста в редакторе;
-* увеличение текста панелей;
+* увеличение текста окна инструментов;
 * настройка цветовой темы редактора кода;
 * настройка сочетаний клавиш;
 * навигация с помощью клавиатуры;

@@ -1,5 +1,7 @@
 ---
 title: Отладка расширений для инструментов SharePoint в Visual Studio | Документация Майкрософт
+description: Расширения отладки для инструментов SharePoint в Visual Studio. Отладка расширений инструментов SharePoint в экспериментальном экземпляре или в обычном экземпляре VS.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1179779d07e7674babc51231ba629d7e25556f89
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5ad95ce8b4ab9567f22748453ae59c258f24aa86
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584637"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671224"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Отладка расширений для инструментов SharePoint в Visual Studio
   Вы можете выполнять отладку расширений инструментов SharePoint в экспериментальном экземпляре или в обычном экземпляре Visual Studio. Если необходимо устранить неполадки расширения, можно также изменить значения реестра, чтобы отобразить дополнительные сведения об ошибке и настроить выполнение команд SharePoint в Visual Studio.
@@ -51,7 +53,7 @@ ms.locfileid: "91584637"
 
 3. В диалоговом окне **установщик расширений Visual Studio** выберите выпуск Visual Studio, в который необходимо установить расширение, и нажмите кнопку **установить** .
 
-     Visual Studio устанавливает файлы расширения в%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions \\ *author name* \\ *имя расширения*имени автора \\ *version*. Последние три папки в этом пути создаются из `Author` `Name` элементов, и `Version` в файле *Extension. vsixmanifest* для расширения.
+     Visual Studio устанавливает файлы расширения в%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions \\ *author name* \\ *имя расширения* имени автора \\ *version*. Последние три папки в этом пути создаются из `Author` `Name` элементов, и `Version` в файле *Extension. vsixmanifest* для расширения.
 
 4. После установки расширения Visual Studio нажмите кнопку **Закрыть** .
 
@@ -92,7 +94,7 @@ ms.locfileid: "91584637"
 4. Нажмите кнопку **Перезагрузить сейчас** , чтобы завершить удаление.
 
 ## <a name="debug-sharepoint-commands"></a>Отладка команд SharePoint
- Если требуется выполнить отладку команды SharePoint, которая является частью расширения инструментов SharePoint, необходимо подключить отладчик к *vssphost4.exe* процессу. Это 64-разрядный ведущий процесс, выполняющий команды SharePoint. Дополнительные сведения о командах и *vssphost4.exe*SharePoint см. [в разделе Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
+ Если требуется выполнить отладку команды SharePoint, которая является частью расширения инструментов SharePoint, необходимо подключить отладчик к *vssphost4.exe* процессу. Это 64-разрядный ведущий процесс, выполняющий команды SharePoint. Дополнительные сведения о командах и *vssphost4.exe* SharePoint см. [в разделе Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
 #### <a name="to-attach-the-debugger-to-the-vssphost4exe-process"></a>Подключение отладчика к vssphost4.exe процессу
 
@@ -110,7 +112,7 @@ ms.locfileid: "91584637"
 5. В отлаживаемом экземпляре Visual Studio выполните действия, необходимые для выполнения команды.
 
 ## <a name="modify-registry-values-to-help-debug-sharepoint-tools-extensions"></a>Изменение значений реестра для справки по отладке расширений инструментов SharePoint
- При отладке расширения средств SharePoint в Visual Studio можно изменить значения в реестре, чтобы упростить устранение неполадок с расширением. Эти значения находятся в разделе **HKEY_CURRENT_USER \software\microsoft\visualstudio\11.0\sharepointtools** Key. Эти значения не существуют по умолчанию.
+ При отладке расширения средств SharePoint в Visual Studio можно изменить значения в реестре, чтобы упростить устранение неполадок с расширением. Значения существуют в ключе **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools** . Эти значения не существуют по умолчанию.
 
  Чтобы помочь в устранении неполадок с любым расширением инструментов SharePoint, можно создать и задать значение Енабледиагностикс. Это значение описывается в следующей таблице.
 
@@ -122,13 +124,13 @@ ms.locfileid: "91584637"
 
 |Значение|Описание|
 |-----------|-----------------|
-|аттачдебугжертохостпроцесс|REG_DWORD, указывающее, следует ли отображать диалоговое окно, позволяющее присоединить отладчик к *vssphost4.exe* сразу после запуска. Это полезно, если команда, которую требуется отладить, выполняется vssphost.exe сразу после запуска, и недостаточно времени для подключения отладчика вручную перед выполнением команды. Чтобы отобразить диалоговое окно, *vssphost4.exe* вызывает <xref:System.Diagnostics.Debugger.Break%2A> метод при запуске.<br /><br /> Чтобы включить такое поведение, задайте для этого параметра значение 1. Чтобы отключить это поведение, присвойте этому параметру значение 0 или удалите это значение.<br /><br /> Если установить это значение равным 1, может потребоваться увеличить значение Хостпроцессстартуптимеаут, чтобы предоставить достаточно времени для подключения отладчика, прежде чем Visual Studio * предvssphost4.exe* полагают, что он успешно запущен.|
+|аттачдебугжертохостпроцесс|REG_DWORD, указывающее, следует ли отображать диалоговое окно, позволяющее присоединить отладчик к *vssphost4.exe* сразу после запуска. Это полезно, если команда, которую требуется отладить, выполняется vssphost.exe сразу после запуска, и недостаточно времени для подключения отладчика вручную перед выполнением команды. Чтобы отобразить диалоговое окно, *vssphost4.exe* вызывает <xref:System.Diagnostics.Debugger.Break%2A> метод при запуске.<br /><br /> Чтобы включить такое поведение, задайте для этого параметра значение 1. Чтобы отключить это поведение, присвойте этому параметру значение 0 или удалите это значение.<br /><br /> Если установить это значение равным 1, может потребоваться увеличить значение Хостпроцессстартуптимеаут, чтобы предоставить достаточно времени для подключения отладчика, прежде чем Visual Studio *предvssphost4.exe* полагают, что он успешно запущен.|
 |чаннелоператионтимеаут|REG_DWORD, указывающее время в секундах, в течение которого Visual Studio ожидает выполнения команды SharePoint. Если команда не выполняется вовремя, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> создается исключение.<br /><br /> Значение по умолчанию — 120 секунд.|
 |хостпроцессстартуптимеаут|REG_DWORD, указывающее время в секундах, в течение которого Visual Studio ожидает от *vssphost4.exe* сигнал о том, что он успешно запущен. Если *vssphost4.exe* не сообщает об успешном запуске во времени, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> создается исключение.<br /><br /> Значение по умолчанию ― 60 секунд.|
 |MaxReceivedMessageSize|REG_DWORD, указывающее максимально допустимый размер (в байтах) сообщений WCF, передаваемых между Visual Studio и *vssphost4.exe*.<br /><br /> Значение по умолчанию — 1 048 576 байт (1 МБ).|
 |MaxStringContentLength|REG_DWORD, указывающее максимально допустимый размер (в байтах) строк, передаваемых между Visual Studio и *vssphost4.exe*.<br /><br /> Значение по умолчанию — 1 048 576 байт (1 МБ).|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Расширение средств SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

@@ -1,5 +1,6 @@
 ---
 title: Публикация в службу приложений Azure
+description: Сведения о публикация веб-приложения с помощью средств публикации в Visual Studio для Mac.
 ms.date: 04/02/2019
 helpviewer_keywords:
 - deployment, website
@@ -12,12 +13,12 @@ ms.custom: video
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 81ae8c8dde91655a4b9b3b8dcb4d0033af34e4d5
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 054c5e7871daca0d349064f261e949dec7f738a5
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950511"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493430"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Публикация веб-приложения в службу приложений Azure с помощью Visual Studio для Mac
 
@@ -31,7 +32,7 @@ ms.locfileid: "85950511"
 
 ## <a name="publish-to-azure-app-service"></a>Публикация в службу приложений Azure
 
- 1. На панели решений щелкните проект правой кнопкой мыши и выберите пункт **Опубликовать**.
+ 1. В окне решения щелкните проект правой кнопкой мыши и выберите пункт **Опубликовать**.
 
     ![Контекстное меню публикации](media/publish-context-menu.png)
 

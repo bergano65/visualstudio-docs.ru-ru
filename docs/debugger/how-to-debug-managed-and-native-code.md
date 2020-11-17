@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 9f3fd94f8c294dce81bc69011e7d6f5fdd505325
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 0b51a41a2b2df5ac685caebbf08606ae86b4230a
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182642"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344531"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Учебник. Отладка кода C# и C++ в рамках одного сеанса отладки
 
@@ -44,7 +44,7 @@ ms.locfileid: "84182642"
 - **Разработка классических приложений на C++**
 - **Разработка классических приложений .NET** или **Кроссплатформенная разработка .NET Core** в зависимости от того, приложение какого типа вы создаете.
 
-Если вы еще не установили среду Visual Studio, вы можете сделать это бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) .
+Если вы еще не установили среду Visual Studio, вы можете сделать это бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/).
 
 Если среда Visual Studio уже установлена без необходимых рабочих нагрузок, выберите **Открыть Visual Studio Installer** в левой области диалогового окна **Новый проект** Visual Studio. В Visual Studio Installer выберите нужную рабочую нагрузку и щелкните **Изменить**.
 
@@ -177,41 +177,11 @@ ms.locfileid: "84182642"
 
 ## <a name="configure-mixed-mode-debugging"></a>Настройка смешанного режима отладки
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>Настройка смешанного режима отладки для приложения .NET Framework
-
 1. В **обозревателе решений** выберите узел проекта **Mixed_Mode_Calling_App**, после чего щелкните значок **Свойства** или щелкните узел проекта правой кнопкой мыши и выберите пункт **Свойства**.
 
 1. В левой области выберите пункт **Отладка**, установите флажок **Включить отладку машинного кода** и закройте страницу свойств, чтобы сохранить изменения.
 
     ![Включение смешанного режима отладки](../debugger/media/mixed-mode-enable-native-code-debugging.png)
-
-### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Настройка смешанного режима отладки для приложения .NET Core
-
-В большинстве версий Visual Studio, начиная с Visual Studio 2017, для включения смешанного режима отладки машинного кода в приложении .NET Core необходимо использовать файл *launchSettings.json* вместо свойств проекта. Последние обновления пользовательского интерфейса для этой возможности см. в статье, посвященной этой [проблеме GitHub](https://github.com/dotnet/project-system/issues/1125).
-
-1. В **обозревателе решений** разверните узел **Свойства** и откройте файл *launchSettings.json*.
-
-   >[!NOTE]
-   >По умолчанию файл *launchSettings.json* находится в каталоге *C:\Users\username\source\repos\Mixed_Mode_Calling_App\Properties*. Если файл *launchSettings.json* не существует, выберите проект **Mixed_Mode_Calling_App** в **обозревателе решений**, а затем щелкните значок **Свойства** или щелкните узел проекта правой кнопкой мыши и выберите пункт **Свойства**. Внесите временные изменения на вкладке **Отладка** и выполните построение проекта. В результате этого будет создан файл *launchSettings.json*. Отмените изменения, выполненные на вкладке **Отладка**.
-
-1. В файл *launchsettings.json* добавьте следующую строку:
-
-    ```csharp
-    "nativeDebugging": true
-    ```
-
-    Готовый файл будет выглядеть следующим образом.
-
-    ```csharp
-    {
-      "profiles": {
-        "Mixed_Mode_Calling_App": {
-          "commandName": "Project",
-          "nativeDebugging": true
-        }
-      }
-    }
-    ```
 
 ## <a name="set-a-breakpoint-and-start-debugging"></a>Задание точки останова и запуск отладки
 

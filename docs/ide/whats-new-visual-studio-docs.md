@@ -1,8 +1,8 @@
 ---
-title: 'Документация по Visual Studio. Новые возможности выпуска за сентябрь 2020 г. '
+title: 'Документация по Visual Studio. Изменения в выпуске за октябрь 2020 г. '
 titleSuffix: ''
-description: Обновления документации по Visual Studio за сентябрь 2020 г.
-ms.date: 09/30/2020
+description: Обновления документации по Visual Studio за октябрь 2020 г.
+ms.date: 11/04/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,90 +15,114 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 62449bd5571ff72cdf5a1c855417611f45f5970f
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: bbc723661b0556acd6c8e020709e0055a398f22d
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659320"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414494"
 ---
-# <a name="visual-studio-docs-whats-new-for-september-2020"></a>Документация по Visual Studio. Новые возможности выпуска за сентябрь 2020 г.
+# <a name="visual-studio-docs-whats-new-for-october-2020"></a>Документация по Visual Studio. Изменения в выпуске за октябрь 2020 г.
 
-Узнайте, что изменилось в документации по Visual Studio за сентябрь 2020 г. В этой статье перечислены основные изменения, внесенные в документацию в течение этого периода. Сведения об изменениях за предыдущие месяцы см. в [сводке по изменениям](whats-new-visual-studio-docs-history.md).
+Узнайте, что изменилось в документации по Visual Studio за октябрь 2020 г. В этой статье перечислены основные изменения, внесенные в документацию в течение этого периода. Сведения об изменениях за предыдущие месяцы см. в [сводке по изменениям](whats-new-visual-studio-docs-history.md).
 
 ## <a name="code-quality"></a>Качество кода
 
-**Новые статьи**
-
-- [CA1416. Проверка совместимости платформы](/dotnet/fundamentals/code-analysis/quality-rules/ca1416) — задокументировано исправление CA1416 "Проверка совместимости платформы"
-- [CA1834. Использование StringBuilder.Append(char) для строк с одним символом](/dotnet/fundamentals/code-analysis/quality-rules/ca1834) — документация по CA1834
-
-**Обновленные возможности**
-
-- [Обзор анализа исходного кода](../code-quality/roslyn-analyzers-overview.md) — обновления анализа кода для рефакторинга .NET
-- [Настройка анализа качества кода](../code-quality/use-roslyn-analyzers.md) — обновления анализа кода для рефакторинга .NET
+**Обновленные статьи**
+- [Анализаторы кода](../code-quality/index.yml) — рефакторинг CA для .NET 5
 
 ## <a name="containers"></a>Контейнеры
 
+**Обновленные статьи**
+
+- [Краткое руководство. Использование Docker с одностраничным приложением React в Visual Studio](../containers/container-tools-react.md)
+  - Средства контейнеров: удалены ссылки на старый репозиторий образов
+  - Обновлено руководство по контейнерам React для .NET 3.1 и VS 16.7
+- [Как работает Bridge to Kubernetes](../containers/overview-bridge-to-kubernetes.md) — Bridge to Kubernetes: добавлены ограничения
+- [Отладка приложений в локальном контейнере Docker](../containers/edit-and-refresh.md) — панель элементов Docker
+
+## <a name="debugger"></a>Отладчик
+
 **Новые статьи**
 
-- [Локальный процесс с Kubernetes](../containers/bridge-to-kubernetes.md) — переименование функции "Локальный процесс с Kubernetes" в Bridge to Kubernetes
-- [Как работает Bridge to Kubernetes](../containers/overview-bridge-to-kubernetes.md) — переименование функции "Локальный процесс с Kubernetes" в Bridge to Kubernetes
-
-## <a name="deployment"></a>Развертывание
+- [Поддержка DirectX 12 в Visual Studio](../debugger/graphics/visual-studio-graphics-diagnostics-directx-12.md) — Vsdg dx12
 
 **Обновленные статьи**
 
-- [Развертывание приложения в папке, IIS, Azure или другом расположении](../deployment/deploying-applications-services-and-components-resources.md) — обновления развертывания.
-- [Развертывание приложения в папку с помощью Visual Studio](../deployment/quickstart-deploy-to-local-folder.md) — обновления, касающиеся развертывания
+- [Отладка приложений ASP.NET или ASP.NET Core в Visual Studio](../debugger/how-to-enable-debugging-for-aspnet-applications.md) — исправления содержимого отладчика для проблем GitHub
+- [Использование точек останова в отладчике Visual Studio](../debugger/using-breakpoints.md) — исправления содержимого отладчика для проблем GitHub
+- [Отладка служб Azure в Visual Studio](../debugger/debug-azure-apps.md) — обновления SEO и ссылок для отладчика моментальных снимков
+- [Отладке интерактивных приложений ASP.NET Azure с использованием Snapshot Debugger](../debugger/debug-live-azure-applications.md) — обновления SEO и ссылок для отладчика моментальных снимков
+- [Удаленная отладка](../debugger/remote-debugging.md) — обновления SEO и ссылок для отладчика моментальных снимков
+- [Обзор диагностики графики Visual Studio](../debugger/graphics/overview-of-visual-studio-graphics-diagnostics.md) — Vsdg dx12
+- [Диагностика графики Visual Studio](../debugger/graphics/visual-studio-graphics-diagnostics.md) — Vsdg dx12
+
+## <a name="get-started"></a>Начало работы
+
+**Обновленные статьи**
+
+- [Учебник. Расширение простого консольного приложения C# ](../get-started/csharp/tutorial-console-part-2.md) — дополнения отладки для расширенного учебника по C#
 
 ## <a name="ide"></a>IDE
 
 **Новые статьи**
 
-- [Новый интерфейс GIT в Visual Studio (предварительная версия)](./git-with-visual-studio.md) — добавлено содержимое о новом интерфейсе GIT (предварительная версия)
-- [Соглашения о форматировании EditorConfig на C++](./cpp-editorconfig-properties.md) — новая статья
-- [Что такое GitHub Codespaces? (предварительная версия)](./codespaces/codespaces-overview.md) — добавлено содержимое о Codespaces (предварительная версия)
-- [Настройка codespace (предварительная версия)](./codespaces/customize-codespaces.md) — добавлено содержимое о Codespaces (предварительная версия)
-- [Поддерживаемые функции Visual Studio (предварительная версия)](./codespaces/supported-features-codespaces.md) — добавлено содержимое о Codespaces (предварительная версия)
-- [Использование Visual Studio с codespace (предварительная версия)](./codespaces/use-visual-studio-with-codespaces.md) — добавлено содержимое о Codespaces (предварительная версия)
-
-**Обновленные статьи**
-
-- [Параметры соглашений о написании кода .NET в EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options) — обновление editorconfig
-- [Языковые соглашения](/dotnet/fundamentals/code-analysis/style-rules/language-rules) — отсутствовали примеры
+- [Использование поиска Visual Studio](./visual-studio-search.md) — документ по поиску VS
 
 ## <a name="install"></a>Установка
 
-**Новые статьи**
+**Обновленные статьи**
 
-- [Visual Studio на устройствах ARM](../install/visual-studio-on-arm-devices.md) — добавлен документ о Visual Studio на ARM
+- [Номера сборки и даты выпуска Visual Studio](../install/visual-studio-build-numbers-and-release-dates.md)
+  - Добавлены данные о 16.7.7 и 16.8 Preview 6
+  - Добавлены сведения о 16.8 Preview 5
+
+## <a name="msbuild"></a>MSBuild
 
 **Обновленные статьи**
 
-- [Исправление ошибок сети при установке или использовании Visual Studio](../install/troubleshooting-network-related-errors-in-visual-studio.md) — добавлено описание решения проблемы с аварийным завершением работы прокси-сервера при авторизации
+- [Пошаговое руководство: Использование MSBuild](../msbuild/walkthrough-using-msbuild.md) — пошаговое руководство по MSBuild: добавлены действия по автономной установке
 
 ## <a name="profiling"></a>Профилирование
 
 **Обновленные статьи**
 
-- [Измерение использования памяти в Visual Studio](../profiling/memory-usage.md) — обновления в обзоре возможностей профилирования
-- [PerfTips](../profiling/perftips.md) — обновления в обзоре возможностей профилирования
-- [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md) — обновления в обзоре возможностей профилирования
+- [Анализ данных об использовании памяти](../profiling/analyze-memory-usage.md)
+  - Обновления использования памяти для профилирования — ссылки и пояснения
+  - Обновления средств использования памяти
+- [Анализ использования памяти без использования отладки в Профилировщике производительности](../profiling/memory-usage-without-debugging2.md)
+  - Обновления использования памяти для профилирования — ссылки и пояснения
+  - Обновления средств использования памяти
+- [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)
+  - Обновления использования памяти для профилирования — ссылки и пояснения
+  - Обновления средств использования памяти
 - [Запуск средств профилирования с отладчиком или без него](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
-  - Обновления в обзоре возможностей профилирования
-  - Улучшения производительности
+  - Обновления использования памяти для профилирования — ссылки и пояснения
+  - Обновления средств использования памяти
+- [Анализ загрузки ЦП без использования отладки в Профилировщике производительности](../profiling/cpu-usage.md) — обновления средств использования памяти
+
+## <a name="windows"></a>Windows
+
+**Обновленные статьи**
+
+- [Документация по Visual Studio | Документация Майкрософт](../windows/index.yml) — обновления центра Windows
+
+## <a name="xaml-tools"></a>Средства XAML
+
+**Новые статьи**
+
+- [Использование данных времени разработки в Конструкторе XAML в Visual Studio](../xaml-tools/xaml-designtime-data.md)
+  - Добавлен раздел о расширяемости расширения в документы по времени разработки XAML
+  - Новая статья о времени разработки XAML
 
 ## <a name="community-contributors"></a>Участники сообщества
 
 Указанные ниже пользователи в течение этого периода внесли свой вклад в улучшение документации по Visual Studio. Спасибо! Сведения о том, как вносить изменения в документацию по Visual Studio, вы найдете в [руководстве для участников](/contribute/).
 
-- [hyoshioka0128](https://github.com/hyoshioka0128) — Хироси Йосиока (Hiroshi Yoshioka) (3)
-- [gmsantos](https://github.com/gmsantos) — Габриэль Мачадо (Gabriel Machado) (1)
-- [ite-klass](https://github.com/ite-klass) — Жан Класс (Jan Klass) (1)
-- [johnallers](https://github.com/johnallers) — Джон Аллерс (John Allers) (1)
-- [mrlacey](https://github.com/mrlacey) — Matt Lacey (1);
-- [remona-minett](https://github.com/remona-minett) — Рем (Rem) (1)
-- [sguitardude](https://github.com/sguitardude) (1)
-- [sjrct](https://github.com/sjrct) — Крис Хардинг (Chris Harding) (1)
-- [Youssef1313](https://github.com/Youssef1313) — Юссеф Виктор (Youssef Victor) (1)
+- [bmarshalsea](https://github.com/bmarshalsea) (1)
+- [DavidJohnWilliams](https://github.com/DavidJohnWilliams) — Дэвид Джон Уильямс (David John Williams) (1)
+- [JesseTG](https://github.com/JesseTG) — Джесси Талавера-Гринберг (Jesse Talavera-Greenberg) (1)
+- [matkoch](https://github.com/matkoch) — Матиас Кох (Matthias Koch) (1)
+- [philipwolfe](https://github.com/philipwolfe) — Филипп Вулф (Philip Wolfe) (1)
+- [podsvirov](https://github.com/podsvirov) — Константин Подсвиров (Konstantin Podsvirov) (1)
+- [drryder](https://github.com/drryder) (1)

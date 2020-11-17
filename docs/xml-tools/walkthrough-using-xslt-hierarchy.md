@@ -1,16 +1,18 @@
 ---
 title: Пошаговое руководство. Использование иерархии XSLT
+description: Узнайте, как с помощью средства "Иерархия XSLT" в Visual Studio выполнить отладку таблиц стилей, на которую указывает ссылка, выполнив действия, описанные в этом пошаговом руководстве.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 940185687544b22325d3f75751eb92e950deb685
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68018c625c5e406e2ba0d7fbfb138b05c53fff9c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815036"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351327"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Пошаговое руководство. Использование иерархии XSLT
 

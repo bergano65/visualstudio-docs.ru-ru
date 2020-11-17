@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f8b7dc9a388699cc9e323085769d17a00ba4fa6a
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 52eee3535590842db53cd80ac761286fb4a23fa9
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467639"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398999"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером
 
@@ -81,6 +81,7 @@ ms.locfileid: "92467639"
 | developer.apple.com | Подготовка Xamarin.iOS |
 | appstoreconnect.apple.com | Подготовка Xamarin.iOS |
 | idmsa.apple.com | Подготовка Xamarin.iOS |
+| akamized.net | Сеть доставки содержимого (Akamai Technologies) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Использование Visual Studio и служб Azure
@@ -98,7 +99,7 @@ ms.locfileid: "92467639"
 | Интеграция <br>Интеграция | az861674.vo.msecnd.net | 443<br> | Используется для настройки новых проектов и отправки данных об использовании в зарегистрированную учетную запись Application Insights |
 | Code Lens | codelensprodscus1su0.app.<br>codelens.visualstudio.com | 443 | Используется для предоставления сведений в редакторе, например времени последнего обновления файла, временной шкалы изменений, связанных с изменениями рабочими элементами, данных о авторе и т. д. |
 | Экспериментальный <br>экспериментальной функции | visualstudio-devdiv-c2s.msedge.net | 80 | Используется для активации новых экспериментальных функций или измененных функций |
-| Значок идентификатора <br>(имя пользователя и аватар)<br>and <br>перемещения | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | Используется для отображения имени пользователя и аватара в среде IDE <br><br> Используется для перемещения изменений параметров с одного компьютера на другой |
+| Значок идентификатора <br>(имя пользователя и аватар)<br>и <br>перемещения | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | Используется для отображения имени пользователя и аватара в среде IDE <br><br> Используется для перемещения изменений параметров с одного компьютера на другой |
 | Настройки удаленной системы | az700632.vo.msecnd.net | 443 | Используется для отключения расширений, которые могут вызывать проблемы в работе Visual Studio |
 | Средства Windows | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | https/443 | Применяется для сценариев использования магазина приложений Windows |
 | Поддержка <br>Обнаружение <br><br>Поддержка <br>Определение<br><br>Поддержка <br>схемы JSON для <br>ресурсов Azure | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http/80<br>https/443<br><br>http/80<br><br>https/443 | Используется для обнаружения и скачивания схем JSON, которые можно применять при изменении документов JSON <br><br>Используется для получения схемы проверки метаданных для JSON<br><br>Используется, чтобы получить текущую схему для шаблонов развертывания Azure Resource Manager |

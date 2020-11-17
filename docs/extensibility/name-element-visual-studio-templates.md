@@ -1,5 +1,7 @@
 ---
 title: Элемент Name (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе Name и о том, как оно указывает имя шаблона в том виде, в каком оно отображается в диалоговом окне Новый проект или Добавление нового элемента.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2a02dc377bac5f93f8e0365f6f3d9ccb81737a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aa14005a202b7868f61cd41ffb6ac9e2f872b68
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702459"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671185"
 ---
 # <a name="name-element-visual-studio-templates"></a>Элемент Name (шаблоны Visual Studio)
 Задает имя шаблона в том виде, в каком оно отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** .
@@ -60,7 +62,7 @@ ms.locfileid: "80702459"
 
  Текстом передается имя шаблона.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  `Name` — обязательный дочерний элемент элемента `TemplateData`.
 
 ## <a name="example"></a>Пример

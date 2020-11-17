@@ -1,16 +1,16 @@
 ---
 title: Фрагменты кода
 description: Использование фрагментов кода для эффективного программирования в Visual Studio для Mac
-author: cobey
-ms.author: cobey
-ms.date: 02/07/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/09/2020
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a8fdf70b4d966c644719047eca4249e432561ace
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68787688"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493456"
 ---
 # <a name="code-snippets"></a>Фрагменты кода
 
@@ -26,7 +26,7 @@ ms.locfileid: "68787688"
 
   ![Расширение функций клавиши TAB](media/source-editor-image13.png)
 
-- **Панель элементов**. Используйте панель элементов, чтобы отобразить список всех фрагментов кода. Перетащите любой шаблон из панели элементов в выбранное место в исходном коде:
+- **Панель элементов**. Используйте окно "Панель элементов", чтобы отобразить список всех фрагментов кода. Перетащите любой шаблон из панели элементов в выбранное место в исходном коде:
 
   [![Фрагменты кода на панели элементов](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
@@ -86,6 +86,6 @@ ms.locfileid: "68787688"
 
 Фрагмент кода `for` из предыдущего раздела иллюстрирует применение этих двух зарезервированных ключевых слов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Фрагменты кода (Visual Studio в Windows)](/visualstudio/ide/code-snippets)

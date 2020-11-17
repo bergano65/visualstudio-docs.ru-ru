@@ -3,14 +3,14 @@ title: Создание проектов и решений
 description: В этой статье описывается создание проектов и решений в Visual Studio для Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/23/2019
+ms.date: 11/06/2020
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: fa77993892c79cf29d268aa942b8c77ccb7a2139
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 7ee9b23f9ede12a353f6c6fdc0f578d7f78a772c
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183965"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493302"
 ---
 # <a name="create-a-new-project"></a>Создание нового проекта
 
@@ -45,7 +45,7 @@ ms.locfileid: "84183965"
 
 ## <a name="adding-additional-projects-to-a-solution"></a>Добавление дополнительных проектов в решение
 
-Вы можете добавить в решение дополнительные проекты, щелкнув решение правой кнопкой мыши в Панели решения и выбрав **Добавить > Добавить новый проект** или **Добавить > Добавить существующий проект**.
+Вы можете добавить в решение дополнительные проекты, щелкнув решение правой кнопкой мыши в **окне решения**, выбрав **Добавить > Добавить новый проект** или **Добавить > Добавить существующий проект**.
 
 При добавлении нового проекта вам потребуется создать его, как описано в разделе [Настройка нового проекта](#configuring-your-new-project).
 

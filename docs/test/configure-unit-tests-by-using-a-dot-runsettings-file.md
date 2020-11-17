@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8998a9e761716b28bd2815120e350b98804a6395
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 6361b6b3d85c970d74a624c82d052054ab66e44a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928675"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400106"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла *.runsettings*
 
@@ -172,6 +172,7 @@ ms.locfileid: "91928675"
     <TargetFrameworkVersion>Framework40</TargetFrameworkVersion>
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
     <TestSessionTimeout>10000</TestSessionTimeout>
+    <TreatNoTestsAsError>true</TreatNoTestsAsError>
 </RunConfiguration>
 ```
 
@@ -186,7 +187,8 @@ ms.locfileid: "91928675"
 |**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||Один или несколько путей к каталогу, где находятся адаптеры TestAdapters|
 |**TestSessionTimeout**||Дает пользователям возможность завершить сеанс тестирования, если его длительность превышает заданный промежуток времени. Задав время ожидания, вы обеспечите надлежащее использование ресурсов и ограничите выполнение сеансов тестирования определенным периодом. Этот параметр доступен в **Visual Studio 2017 версии 15.5** и более поздних версий.|
-|**DotnetHostPath**||Укажите пользовательский путь к узлу dotnet, который используется для запуска testhost. Это полезно при создании собственного узла dotnet, например при создании репозитория dotnet/runtime. При указании этого параметра поиск testhost.exe выполняться не будет, и всегда будет использоваться testhost.dll.
+|**DotnetHostPath**||Укажите пользовательский путь к узлу dotnet, который используется для запуска testhost. Это полезно при создании собственного узла dotnet, например при создании репозитория dotnet/runtime. При указании этого параметра поиск testhost.exe выполняться не будет, и всегда будет использоваться testhost.dll.|
+|**TreatNoTestsAsError**|false| true или false <br>Укажите логическое значение, определяющее код выхода, если тесты не обнаружены. Если значение равно `true` и тесты не обнаружены, возвращается ненулевой код выхода. Иначе возвращается нуль.|
 
 ## <a name="datacollectors-element-diagnostic-data-adapters"></a>Элемент DataCollectors (адаптеры диагностических данных)
 
@@ -345,6 +347,10 @@ public void HomePageTest()
     <!-- TestSessionTimeout was introduced in Visual Studio 2017 version 15.5 -->
     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
     <TestSessionTimeout>10000</TestSessionTimeout>
+
+    <!-- true or false -->
+    <!-- Value that specifies the exit code when no tests are discovered -->
+    <TreatNoTestsAsError>true</TreatNoTestsAsError>
   </RunConfiguration>
 
   <!-- Configurations for data collectors -->

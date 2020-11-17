@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c1e7a90d5d037865d9942ea1b91f33d7724706f
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7fa104ece39e20fbd00abcc2e1616a3dd52a5d4c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048818"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437127"
 ---
 # <a name="property-functions"></a>Функции свойств
 
@@ -265,7 +265,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-64-разрядная операционная система Windows ведет раздел реестра **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** , содержащий представление реестра **HKEY_LOCAL_MACHINE\SOFTWARE** для 32-разрядных приложений.
+64-разрядная операционная система Windows ведет раздел реестра **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node**, содержащий представление реестра **HKEY_LOCAL_MACHINE\SOFTWARE** для 32-разрядных приложений.
 
 По умолчанию 32-разрядное приложение, работающее на WOW64, получает доступ к 32-разрядному представлению реестра, а 64-разрядное приложение — к 64-разрядному представлению реестра.
 
@@ -283,7 +283,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-В этом примере данные **SLRuntimeInstallPath** получаются из раздела **ReferenceAssemblies** , но сначала поиск выполняется в 64-разрядном представлении реестра, а затем — в 32-разрядном.
+В этом примере данные **SLRuntimeInstallPath** получаются из раздела **ReferenceAssemblies**, но сначала поиск выполняется в 64-разрядном представлении реестра, а затем — в 32-разрядном.
 
 ## <a name="msbuild-makerelative"></a>MSBuild MakeRelative
 
@@ -340,6 +340,49 @@ Output:
   Value1 = a
   Value2 = b
 -->
+```
+
+## <a name="msbuild-targetframework-and-targetplatform-functions"></a>Функции MSBuild TargetFramework и TargetPlatform
+
+MSBuild определяет несколько функций для обработки [свойств TargetFramework и TargetPlatform](msbuild-target-framework-and-target-platform.md).
+
+|Сигнатура функции|Описание|
+|------------------------|-----------------|
+|GetTargetFrameworkIdentifier(string targetFramework)|Анализирует TargetFrameworkIdentifier из TargetFramework.|
+|GetTargetFrameworkVersion(string targetFramework)|Анализирует TargetFrameworkVersion из TargetFramework.|
+|GetTargetPlatformIdentifier(string targetFramework)|Анализирует TargetPlatformIdentifier из TargetFramework.|
+|GetTargetPlatformVersion(string targetFramework)|Анализирует TargetPlatformVersion из TargetFramework.|
+|IsTargetFrameworkCompatible(string targetFrameworkTarget, string targetFrameworkCandidate)|Возвращает значение True, если целевая платформа-кандидат совместима с этой целевой платформой, и значение False в противном случае.|
+
+В следующем примере показано, как используются эти функции. 
+
+```xml
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <Value1>$([MSBuild]::GetTargetFrameworkIdentifier('net5.0-windows7.0'))</Value1>
+        <Value2>$([MSBuild]::GetTargetFrameworkVersion('net5.0-windows7.0'))</Value2>
+        <Value3>$([MSBuild]::GetTargetPlatformIdentifier('net5.0-windows7.0'))</Value3>
+        <Value4>$([MSBuild]::GetTargetPlatformVersion('net5.0-windows7.0'))</Value4>
+        <Value5>$([MSBuild]::IsTargetFrameworkCompatible('net5.0-windows', 'net5.0'))</Value5>
+    </PropertyGroup>
+
+    <Target Name="MyTarget">
+        <Message Text="Value1 = $(Value1)" />
+        <Message Text="Value2 = $(Value2)" />
+        <Message Text="Value3 = $(Value3)" />
+        <Message Text="Value4 = $(Value4)" />
+        <Message Text="Value5 = $(Value5)" />
+    </Target>
+</Project>
+```
+
+```output
+Value1 = .NETCoreApp
+Value2 = 5.0
+Value3 = windows
+Value4 = 7.0
+Value5 = True
 ```
 
 ## <a name="msbuild-condition-functions"></a>Функции условий MSBuild

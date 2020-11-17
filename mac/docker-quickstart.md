@@ -3,14 +3,14 @@ title: Начало работы с Docker
 description: Сведения о добавлении Docker в проекты с помощью Visual Studio для Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 06/17/2019
+ms.date: 11/09/2020
 ms.topic: how-to
-ms.openlocfilehash: 5f21d55568328a9aeb9b7982e5978500f7ef715b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2bfb78369ae5da389820a318196dd7e9e13e897
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939050"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493079"
 ---
 # <a name="get-started-with-docker-in-visual-studio-for-mac"></a>Начало работы с Docker в Visual Studio для Mac
 
@@ -31,7 +31,7 @@ ms.locfileid: "85939050"
 1. В разделе **.NET Core > Приложение** выберите шаблон **Веб-приложение**: ![Создание приложения ASP.NET](media/docker-quickstart-1.png)
 1. Выберите целевую платформу. В нашем примере используется .NET Core 2.2: ![Указание целевой платформы](media/docker-quickstart-2.png)
 1. Введите сведения о проекте, например имя (_DockerDemo_ в нашем примере). Созданный проект содержит все основные сведения, которые потребуются для сборки и запуска веб-сайта ASP.NET Core.
-1. На панели решения щелкните проект DockerDemo правой кнопкой мыши и выберите **Добавить > Поддержка Docker**. ![Добавление поддержки Docker](media/docker-quickstart-3.png)
+1. В окне решения щелкните проект DockerDemo правой кнопкой мыши и выберите **Добавить > Поддержка Docker**. ![Добавление поддержки Docker](media/docker-quickstart-3.png)
 
 Visual Studio для Mac автоматически добавит в решение новый проект с именем **docker-compose**, а затем добавит в существующий проект файл **Dockerfile**.
 

@@ -1,5 +1,7 @@
 ---
 title: Редактор XML
+description: Узнайте о редакторе XML в Visual Studio, который построен на основе текстового редактора и включает дополнительную поддержку языков на базе XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 550dcb0cc3299a4a1b884d3141761c39977ce088
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 1bd1cac1c688bf2efc0a4c08797d72eabf0133e2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713546"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351444"
 ---
 # <a name="xml-editor"></a>Редактор XML
 

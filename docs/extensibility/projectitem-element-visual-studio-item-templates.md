@@ -1,5 +1,7 @@
 ---
 title: Элемент ProjectItem (шаблоны элементов Visual Studio) | Документация Майкрософт
+description: Сведения об элементе ProjectItem для шаблонов элементов и о том, как он принимает различные атрибуты в зависимости от того, предназначен ли шаблон для проекта или элемента.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 431f1d5f81827b47b57a53dbe411a2a7e8a57941
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770730"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672337"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Элемент ProjectItem (шаблоны элементов Visual Studio)
 Указывает файл, включенный в шаблон элемента.
@@ -70,7 +72,7 @@ ms.locfileid: "85770730"
 
  Значение типа `string` , представляющее имя файла в *ZIP* -файле шаблона.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  `ProjectItem` является необязательным дочерним элементом `TemplateContent` .
 
  `TargetFileName`Атрибут может использоваться для переименования файлов с параметрами. Например, если файл *MyFile. vb* существует в корневом каталоге *ZIP* -файла шаблона, но вы хотите, чтобы имя файла основывалось на имени файла, предоставленного пользователем в диалоговом окне **Добавление нового элемента** , используйте следующий код XML:

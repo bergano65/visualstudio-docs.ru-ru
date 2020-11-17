@@ -2,7 +2,7 @@
 title: 'Документация по Visual Studio. История изменений '
 titleSuffix: ''
 description: История новых возможностей в документации по Visual Studio
-ms.date: 09/30/2020
+ms.date: 10/04/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,16 +15,80 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b9aba6b9c4be882498535ab96020461f22722c10
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 2314965dad6c77e749a62946f3372993813240bb
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659307"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414507"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>История новых возможностей в документации по Visual Studio
 
-Добро пожаловать в историю изменений документации по Visual Studio. В этом разделе приведены основные изменения в документации до сентября 2020 г. (начиная с июля 2020 г.). Последние изменения см. в разделе [Документация по Visual Studio. Обновления в документации за июль 2020 г.](whats-new-visual-studio-docs.md)
+Добро пожаловать в историю изменений документации по Visual Studio. В этой статье приведены основные изменения в документации до октября 2020 г. (начиная с июля 2020 г.). Последние изменения см. в разделе [Документация по Visual Studio. Обновления в документации за июль 2020 г.](whats-new-visual-studio-docs.md)
+
+## <a name="september-2020"></a>Сентябрь 2020 г.
+### <a name="code-quality"></a>Качество кода
+
+**Новые статьи**
+
+- [CA1416. Проверка совместимости платформы](/dotnet/fundamentals/code-analysis/quality-rules/ca1416) — задокументировано исправление CA1416 "Проверка совместимости платформы"
+- [CA1834. Использование StringBuilder.Append(char) для строк с одним символом](/dotnet/fundamentals/code-analysis/quality-rules/ca1834) — документация по CA1834
+
+**Обновленные возможности**
+
+- [Обзор анализа исходного кода](../code-quality/roslyn-analyzers-overview.md) — обновления анализа кода для рефакторинга .NET
+- [Настройка анализа качества кода](../code-quality/use-roslyn-analyzers.md) — обновления анализа кода для рефакторинга .NET
+
+### <a name="containers"></a>Контейнеры
+
+**Новые статьи**
+
+- [Локальный процесс с Kubernetes](../containers/bridge-to-kubernetes.md) — переименование функции "Локальный процесс с Kubernetes" в Bridge to Kubernetes
+- [Как работает Bridge to Kubernetes](../containers/overview-bridge-to-kubernetes.md) — переименование функции "Локальный процесс с Kubernetes" в Bridge to Kubernetes
+
+### <a name="deployment"></a>Развертывание
+
+**Обновленные статьи**
+
+- [Развертывание приложения в папке, IIS, Azure или другом расположении](../deployment/deploying-applications-services-and-components-resources.md) — обновления развертывания.
+- [Развертывание приложения в папку с помощью Visual Studio](../deployment/quickstart-deploy-to-local-folder.md) — обновления, касающиеся развертывания
+
+### <a name="ide"></a>IDE
+
+**Новые статьи**
+
+- [Новый интерфейс GIT в Visual Studio (предварительная версия)](./git-with-visual-studio.md) — добавлено содержимое о новом интерфейсе GIT (предварительная версия)
+- [Соглашения о форматировании EditorConfig на C++](./cpp-editorconfig-properties.md) — новая статья
+- [Что такое GitHub Codespaces? (предварительная версия)](./codespaces/codespaces-overview.md) — добавлено содержимое о Codespaces (предварительная версия)
+- [Настройка codespace (предварительная версия)](./codespaces/customize-codespaces.md) — добавлено содержимое о Codespaces (предварительная версия)
+- [Поддерживаемые функции Visual Studio (предварительная версия)](./codespaces/supported-features-codespaces.md) — добавлено содержимое о Codespaces (предварительная версия)
+- [Использование Visual Studio с codespace (предварительная версия)](./codespaces/use-visual-studio-with-codespaces.md) — добавлено содержимое о Codespaces (предварительная версия)
+
+**Обновленные статьи**
+
+- [Параметры соглашений о написании кода .NET в EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options) — обновление editorconfig
+- [Языковые соглашения](/dotnet/fundamentals/code-analysis/style-rules/language-rules) — отсутствовали примеры
+
+### <a name="install"></a>Установка
+
+**Новые статьи**
+
+- [Visual Studio на устройствах ARM](../install/visual-studio-on-arm-devices.md) — добавлен документ о Visual Studio на ARM
+
+**Обновленные статьи**
+
+- [Исправление ошибок сети при установке или использовании Visual Studio](../install/troubleshooting-network-related-errors-in-visual-studio.md) — добавлено описание решения проблемы с аварийным завершением работы прокси-сервера при авторизации
+
+### <a name="profiling"></a>Профилирование
+
+**Обновленные статьи**
+
+- [Измерение использования памяти в Visual Studio](../profiling/memory-usage.md) — обновления в обзоре возможностей профилирования
+- [PerfTips](../profiling/perftips.md) — обновления в обзоре возможностей профилирования
+- [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md) — обновления в обзоре возможностей профилирования
+- [Запуск средств профилирования с отладчиком или без него](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
+  - Обновления в обзоре возможностей профилирования
+  - Улучшения производительности
 
 ## <a name="august-2020"></a>Август 2020 г.
 ### <a name="azure"></a>Azure
@@ -109,7 +173,7 @@ ms.locfileid: "91659307"
 
 **Обновленные статьи**
 
-- [Настройка макетов окон в Visual Studio](./customizing-window-layouts-in-visual-studio.md) — добавлены сведения о вертикальных вкладках документов с моникерами в разделе о настройке макетов окон.
+- [Настройка макетов окон в Visual Studio](./customizing-window-layouts-in-visual-studio.md) — добавлены сведения о вертикальных вкладках документов с моникерами в статье о настройке макетов окон.
 - [Как сообщить о проблеме с Visual Studio или Visual Studio Installer](./how-to-report-a-problem-with-visual-studio.md)
   - Добавлены дополнительные сведения о NMI.
   - Переработана страница со сведениями о том, как отправить сообщение о проблеме.
@@ -157,8 +221,8 @@ ms.locfileid: "91659307"
 
 **Обновленные статьи**
 
-- [Журнал изменений (инструменты Visual Studio для Unity, Windows)](../cross-platform/change-log-visual-studio-tools-for-unity.md), версия журнала изменений VSTU увеличена до 4.7.1.0
-- [Журнал изменений (инструменты Visual Studio для Unity, Mac)](../cross-platform/change-log-visual-studio-tools-for-unity-mac.md), версия журнала изменений VSTUM увеличена до 2.7.1.0
+- [Журнал изменений (инструменты Visual Studio для Unity, Windows)](/gamedev/unity/change-log-visual-studio-tools-for-unity.md), версия журнала изменений VSTU увеличена до 4.7.1.0
+- [Журнал изменений (инструменты Visual Studio для Unity, Mac)](/gamedev/unity/change-log-visual-studio-tools-for-unity-mac.md), версия журнала изменений VSTUM увеличена до 2.7.1.0
 
 ### <a name="get-started"></a>Начало работы
 

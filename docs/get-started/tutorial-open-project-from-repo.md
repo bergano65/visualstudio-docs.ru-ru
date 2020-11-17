@@ -2,7 +2,7 @@
 title: Учебник. Открытие проекта из репозитория
 description: Сведения об открытии проекта из репозитория Git или Azure DevOps с помощью Visual Studio.
 ms.custom: get-started
-ms.date: 03/30/2019
+ms.date: 11/10/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ad609e9cf6a00a1b966e5d63589592239f215b01
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 91fb06a50fe0c992d3018aee31cfc963544f8b97
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743031"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436085"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Учебник. Открытие проекта из репозитория
 
@@ -53,7 +53,7 @@ ms.locfileid: "89743031"
 
     ![Выбор действия клонирования из раздела локальных репозиториев Git](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. В поле с текстом ***Enter the URL of a Git repo to clone*** (Введите URL-адрес клонируемого репозитория Git) введите или вставьте URL-адрес нужного репозитория и нажмите клавишу **ВВОД**. (Если появится запрос на вход в GitHub, выполните его.)
+1. В поле с текстом **_Enter the URL of a Git repo to clone_ *_ (Введите URL-адрес клонируемого репозитория Git) введите или вставьте URL-адрес нужного репозитория и нажмите клавишу _* ВВОД**. (Если появится запрос на вход в GitHub, выполните его.)
 
    Завершив клонирование репозитория, Visual Studio закрывает Team Explorer и открывает обозреватель решений. Появится сообщение *Click on Solutions and Folders above to view a list of Solutions* (Щелкните выше "Решения и папки", чтобы просмотреть список решений). Щелкните **Решения и папки**.
 
@@ -75,7 +75,10 @@ ms.locfileid: "89743031"
 
 ::: moniker range="vs-2019"
 
-1. Запустите Visual Studio 2019.
+> [!NOTE]
+> Если вы хотите опробовать новый интегрированный интерфейс Git в Visual Studio 2019, обновите его до версии [**16.8**](/visualstudio/releases/2019/release-notes/). Дополнительные сведения см. на странице [Новый интерфейс GIT в Visual Studio](../ide/git-with-visual-studio.md).
+
+1. Откройте Visual Studio 2019.
 
 1. В начальном окне выберите **Клонировать или извлечь без кода**.
 
@@ -109,11 +112,11 @@ ms.locfileid: "89743031"
 
 1. Ниже описаны два способа подключиться к репозиторию Azure DevOps.
 
-      - В разделе **Hosted Service Providers** (Поставщики размещенных служб) выберите **Connect...**  (Подключиться...).
+      - В разделе **Hosted Service Providers** (Поставщики размещенных служб) выберите **Connect...** (Подключиться...).
 
         ![Раздел поставщиков размещенных служб в окне Team Explorer интегрированной среды разработки Visual Studio](./media/open-proj-repo-azure-devops.png)
 
-      - В раскрывающемся списке **Управление соединениями** выберите **Подключиться к проекту...** .
+      - В раскрывающемся списке **Управление соединениями** выберите **Подключиться к проекту...**.
 
         ![Раздел управления соединениями в окне Team Explorer интегрированной среды разработки Visual Studio](./media/open-proj-repo-azuredevops-manage-connections.png)
 
@@ -136,7 +139,7 @@ ms.locfileid: "89743031"
 
 ::: moniker range="vs-2019"
 
-1. Запустите Visual Studio 2019.
+1. Откройте Visual Studio 2019.
 
 1. В начальном окне выберите **Клонировать или извлечь без кода**.
 
@@ -173,17 +176,30 @@ ms.locfileid: "89743031"
 
 ::: moniker-end
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Если вы готовы создавать код в Visual Studio, переходите к любому из следующих учебников по конкретным языкам:
 
 - [Учебники по Visual Studio | **C#** ](./csharp/index.yml)
 - [Учебники по Visual Studio | **Visual Basic**](./visual-basic/index.yml)
-- [Учебники по Visual Studio | **C++** ](/cpp/get-started/tutorial-console-cpp)
+- [Учебники по Visual Studio | **C++**](/cpp/get-started/tutorial-console-cpp)
 - [Учебники по Visual Studio | **Python**](../python/index.yml)
 - [Учебники по Visual Studio | **JavaScript**, **TypeScript** и **Node.js**](../javascript/index.yml)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
+
+::: moniker range="vs-2017"
 
 - [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/) (Azure DevOps Services. Начало работы с Azure Repos и Visual Studio)
 - [Microsoft Learn. Начало работы с Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Новый интерфейс Git в Visual Studio 2019](../ide/git-with-visual-studio.md?view=vs-2019&preserve-view=true)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Новый интерфейс Git в Visual Studio](../ide/git-with-visual-studio.md)
+- [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/) (Azure DevOps Services. Начало работы с Azure Repos и Visual Studio)
+- [Microsoft Learn. Начало работы с Azure DevOps](/learn/modules/get-started-with-devops/)
+
+::: moniker-end

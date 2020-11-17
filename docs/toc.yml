@@ -945,7 +945,7 @@
       displayName: 'marketplace, gallery, vsix'
     - name: Управление внешними инструментами
       href: ide/managing-external-tools.md
-    - name: Учетные записи персонализации
+    - name: Управление учетными записями
       items:
         - name: Выполните вход в Visual Studio
           displayName: personalization accounts
@@ -954,6 +954,8 @@
           href: ide/work-with-multiple-user-accounts.md
         - name: 'Работа с учетными записями, которые требуют многофакторную проверку подлинности'
           href: ide/work-with-multi-factor-authentication.md
+        - name: Работа с учетными записями GitHub в Visual Studio
+          href: ide/work-with-github-accounts.md
         - name: Расширение пробной версии или обновление лицензии
           href: ide/how-to-unlock-visual-studio.md
     - name: Настройка производительности Visual Studio
@@ -966,7 +968,7 @@
           href: ide/filtered-solutions.md
         - name: Советы и рекомендации
           href: ide/visual-studio-performance-tips-and-tricks.md
-- name: Специальные возможности
+- name: Возможности доступа
   items:
     - name: Управление специальными возможностями
       href: ide/reference/accessibility-features-of-visual-studio.md
@@ -1180,7 +1182,7 @@
                       href: ide/reference/options-text-editor-c-cpp-experimental.md
                     - name: Форматирование
                       href: ide/reference/options-text-editor-c-cpp-formatting.md
-                    - name: Просмотр
+                    - name: Представление
                       href: ide/reference/options-text-editor-c-cpp-view.md
                 - name: F#
                   items:
@@ -1405,7 +1407,7 @@
                   href: help-viewer/logical-operators-search-expressions.md
         - name: Настройка окна справки
           href: help-viewer/customize.md
-        - name: Специальные возможности
+        - name: Возможности доступа
           href: help-viewer/accessibility-features.md
         - name: Сочетания клавиш
           href: help-viewer/shortcut-keys.md

@@ -1,5 +1,7 @@
 ---
 title: Элемент ProjectCollection (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе ProjectCollection и о том, как он указывает организацию и содержимое многопроектных шаблонов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12a22ca28c90ed1df69529ed3004b417b5e04276
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d9da3dbe92bdde8b0c19495e73cdbf2660ef3b4
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701978"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671237"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>Элемент ProjectCollection (шаблоны Visual Studio)
 Указывает организацию и содержимое многопроектных шаблонов.
@@ -55,7 +57,7 @@ ms.locfileid: "80701978"
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Задает содержимое шаблона.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  Многопроектные шаблоны используются в качестве контейнера для двух или нескольких проектов. `ProjectCollection`Элемент используется для указания проектов, которые должны содержаться в шаблоне. Дополнительные сведения о многопроектных шаблонах см. [в разделе как создавать Многопроектные шаблоны](../ide/how-to-create-multi-project-templates.md).
 
 ## <a name="example"></a>Пример

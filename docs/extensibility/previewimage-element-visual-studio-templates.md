@@ -1,5 +1,7 @@
 ---
 title: Элемент PreviewImage (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе PreviewImage и о том, как он указывает имя файла для предварительного просмотра изображения, которое будет отображаться в диалоговом окне Новый проект или Добавление нового элемента.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f20cfe5f3ef35b23a52972ef1e3b7d9d4adc5a39
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 326588259203224d3f70b505af8437af22930faa
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702008"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672350"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>Элемент PreviewImage (шаблоны Visual Studio)
 Указывает изображение предварительного просмотра в виде имени файла для изображения предварительного просмотра, которое будет отображаться в диалоговом окне **Создание проекта** или **Добавление нового элемента** .
@@ -51,7 +53,7 @@ ms.locfileid: "80702008"
 
  Текст должен быть строкой, представляющей имя файла.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  Параметр `PreviewImage` является необязательным элементом.
 
 ## <a name="see-also"></a>См. также

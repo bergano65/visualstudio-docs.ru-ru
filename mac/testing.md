@@ -1,18 +1,19 @@
 ---
 title: Инструменты тестирования Visual Studio для Mac
-ms.date: 08/03/2020
+description: Создание и выполнение тестов с помощью Visual Studio для Mac.
+ms.date: 11/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio for Mac]
 - unit tests [Visual Studio for Mac]
 ms.author: jomatthi
 author: jmatthiesen
-ms.openlocfilehash: 758bdcb0d854247847e4d0d56152840643402bf4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3956c3158fd4ec1ad32b76882ac3f9d4cf1ea9bf
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91580965"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493391"
 ---
 # <a name="testing-tools-in-visual-studio-for-mac"></a>Инструменты тестирования в Visual Studio для Mac
 
@@ -27,7 +28,7 @@ ms.locfileid: "91580965"
 > Дополнительные сведения о модульном тестировании приложений .NET Core и выборе платформ модульного тестирования см. в документации [Модульное тестирование в .NET Core и .NET Standard](/dotnet/core/testing/?pivots=xunit).
 
 ## <a name="running-tests"></a>Выполнение тестов
-Окно **Модульные тесты** используется для запуска модульных тестов. Чтобы его открыть, выберите в меню **Вид > Панели > Тесты**. В этом окне автоматически обнаруживаются и отображаются модульные тесты, которые существуют в вашем решении. Здесь вы можете запускать все тесты или ряд выбранных тестов.
+Окно **Модульные тесты** используется для запуска модульных тестов. Чтобы его открыть, выберите **Вид > Тесты**. В этом окне автоматически обнаруживаются и отображаются модульные тесты, которые существуют в вашем решении. Здесь вы можете запускать все тесты или ряд выбранных тестов.
 
 ![Окно тестов, в котором отображается список модульных тестов и панель инструментов для запуска или остановки тестов.](media/test-window.PNG)
 

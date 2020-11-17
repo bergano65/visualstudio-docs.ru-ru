@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 09/19/2019
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
 ms.topic: how-to
-ms.openlocfilehash: a33b590290880a7e20e7c0ec44c0b12942b1240e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de6be4b509eff8a013f7367614e0016f810b3657
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939099"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492702"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Сборка и очистка проектов и решений
 
@@ -22,7 +22,7 @@ ms.locfileid: "85939099"
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Сборка, перестроение или очистка всего решения
 
-1. На **Панели решения** выберите узел решения:
+1. В **окне решения** выберите узел решения:
 
     ![Выбор узла решения](media/compiling-and-building-image1.png)
 
@@ -38,7 +38,7 @@ ms.locfileid: "85939099"
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Сборка или перестроение одного проекта
 
-1. Выберите проект на **Панели решения**.
+1. Выберите проект в **окне решения**.
 
 2. Выберите меню **Сборка** в строке меню.
 

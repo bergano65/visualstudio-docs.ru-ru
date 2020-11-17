@@ -1,5 +1,7 @@
 ---
 title: Сортировка, фильтрация и группирование в обозревателе схемы XML
+description: Узнайте о параметрах, доступных в меню параметров сортировки, фильтрации и группирования на панели инструментов обозревателя схемы XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd288171cd8713e6b403f71a4eee6ba09d3f6ea9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 172226334622b830db79b79f7eaae2c5fe7efc79
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592520"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351496"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Сортировка, фильтрация и группирование (обозреватель схемы XML)
 

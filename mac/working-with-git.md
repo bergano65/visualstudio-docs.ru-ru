@@ -3,15 +3,15 @@ title: Работа с Git
 description: Использование Git в Visual Studio для Mac.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 148a72fb13ff34e3fa15f0c56e145a70fa16608d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70108028"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493235"
 ---
 # <a name="working-with-git"></a>Работа с Git
 
@@ -77,9 +77,9 @@ Git — это распределенная система управления
 
 Можно также задать удаленную ветвь для _отслеживающей_ ветви. Дополнительные сведения об отслеживающих ветвях см. в [документации по Git](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches).
 
-Текущая ветвь указана на панели решения рядом с именем проекта:
+Текущая ветвь указана в окне решения рядом с именем проекта:
 
- ![Текущая ветвь, отображаемая в обозревателе решений](media/version-control-gitBranchName.png)
+ ![Текущая ветвь, отображаемая в окне решения](media/version-control-gitBranchName.png)
 
 ## <a name="reviewing-and-committing"></a>Проверка и фиксация
 

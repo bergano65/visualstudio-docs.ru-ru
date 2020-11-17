@@ -1,6 +1,7 @@
 ---
 title: Элемент Assembly (расширение мастера шаблонов Visual Studio)
 titleSuffix: ''
+description: Сведения об элементе Assembly и о том, как он указывает имя или строгое имя сборки, реализующей интерфейс Ивизард.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a26584a16e290da3278c713924d2046d173eec9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4807014a99fd479a126481db910097ceefd5f806
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037423"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671725"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Элемент Assembly (расширение мастера шаблонов Visual Studio)
 Задает имя или строгое имя сборки, реализующей `IWizard` интерфейс.

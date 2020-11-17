@@ -1,18 +1,18 @@
 ---
 title: Использование данных времени разработки в Конструкторе XAML в Visual Studio
 description: Узнайте, как использовать данные времени разработки в XAML.
-ms.date: 09/29/2020
+ms.date: 11/10/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298481"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492900"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Использование данных времени разработки в Конструкторе XAML в Visual Studio
 
@@ -25,7 +25,7 @@ ms.locfileid: "92298481"
 
 Данные времени разработки — это макетированные данные, которые задаются, чтобы упростить визуализацию элементов управления в Конструкторе XAML. Чтобы приступить к работе, добавьте следующие строки кода в заголовок документа XAML, если их еще нет:
 
-```xml 
+```xml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 mc:Ignorable="d"
@@ -138,9 +138,9 @@ xmlns:models="clr-namespace:Cities.Models"
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>Использование данных времени разработки с пользовательскими типами и свойствами
 
-Эта функция по умолчанию работает только с элементами управления и свойствами платформы. В этом разделе мы рассмотрим действия, необходимые для того, чтобы использовать собственные элементы управления в качестве элементов управления времени разработки. Эта новая возможность доступна клиентам, использующим предварительную версию Visual Studio 2019 [16.8](/visualstudio/releases/2019/preview-notes) или более позднюю. Это можно сделать, если выполнены три условия.
+Эта функция по умолчанию работает только с элементами управления и свойствами платформы. В этом разделе мы рассмотрим действия, необходимые для того, чтобы использовать собственные элементы управления в качестве элементов управления времени разработки. Эта новая возможность доступна клиентам, использующим Visual Studio 2019 версии [16.8](/visualstudio/releases/2019/release-notes/) или более позднюю версию. Это можно сделать, если выполнены три условия.
 
-- Пользовательское пространство имен xmlns 
+- Пользовательское пространство имен xmlns
 
     ```xml
     xmlns:myControls="http://MyCustomControls"

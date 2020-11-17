@@ -1,6 +1,8 @@
 ---
 title: Анализ кода с помощью анализаторов Roslyn
 ms.date: 09/01/2020
+description: Познакомьтесь с анализом исходного кода в Visual Studio. Узнайте об исправлениях кода и различных типах анализаторов и уровнях серьезности.
+ms.custom: SEO-VS-2020
 ms.topic: overview
 helpviewer_keywords:
 - code analysis, managed code
@@ -12,12 +14,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 237d1188b1a90c64464a15b2df81d507abacb718
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860494"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349039"
 ---
 # <a name="overview-of-source-code-analysis"></a>Обзор анализа исходного кода
 
@@ -25,7 +27,7 @@ ms.locfileid: "91860494"
 
 Анализаторы можно разбить на следующие группы.
 
-- Анализаторы [стиля кода](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) встроены в Visual Studio. Идентификатор диагностики или код для этих анализаторов имеет формат IDExxxx, например IDE0067. Вы можете настроить параметры на [странице параметров текстового редактора](../ide/code-styles-and-code-cleanup.md) или в [файле EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options). Начиная с .NET 5.0, анализаторы стиля кода включены в пакет SDK для .NET и могут строго рассматриваться как предупреждения или ошибки сборки. Дополнительные сведения см. [здесь](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
+- Анализаторы [стиля кода](/dotnet/fundamentals/code-analysis/code-style-rule-options?preserve-view=true&view=vs-2019#convention-categories) встроены в Visual Studio. Идентификатор диагностики или код для этих анализаторов имеет формат IDExxxx, например IDE0067. Вы можете настроить параметры на [странице параметров текстового редактора](../ide/code-styles-and-code-cleanup.md) или в [файле EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options). Начиная с .NET 5.0, анализаторы стиля кода включены в пакет SDK для .NET и могут строго рассматриваться как предупреждения или ошибки сборки. Дополнительные сведения см. [здесь](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
 - Анализаторы [качества кода](/dotnet/fundamentals/code-analysis/quality-rules/index) теперь доступны в пакете SDK для .NET 5 и включены по умолчанию. Идентификатор диагностики или код для этих анализаторов имеет формат CAxxxx, например CA1822. Дополнительные сведения см. в разделе об [анализе качества кода](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 

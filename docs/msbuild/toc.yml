@@ -6,6 +6,8 @@
       href: whats-new-msbuild-16-0.md
     - name: "Новые возможности в MSBuild\_15.0"
       href: what-s-new-in-msbuild-15-0.md
+    - name: Изменение волн
+      href: change-waves.md
     - name: Основные понятия MSBuild
       items:
         - name: Обзор

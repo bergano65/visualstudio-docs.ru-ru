@@ -2,7 +2,7 @@
 title: Журнал изменений (инструменты Visual Studio для Unity, Windows) | Документы Майкрософт
 description: Просмотр журнала изменений (инструменты Visual Studio для Unity, Windows). Знакомство с изменениями в версиях с 1.0.0.0 по 4.7.0.0 и последующих.
 ms.custom: ''
-ms.date: 7/30/2020
+ms.date: 11/13/2020
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,65 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f8a1ed0520bb1a2e5d213cd9a670769f70251ebb
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: e3b4b730608234b8d25b7ff4bf6b6fcfa25bec09
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341424"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671250"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Журнал изменений (Инструменты Visual Studio для Unity, Windows)
 
 Журнал изменений в наборе средств Visual Studio для Unity
+
+## <a name="4820"></a>4.8.2.0
+Выпущено 10 ноября 2020 г.
+
+### <a name="new-features"></a>Новые функции
+
+- **Интеграция:**
+
+  - Улучшенная [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) Диагностика, применяемая ко всем, наследуемым от `Component` , а не только `MonoBehaviour` .
+
+### <a name="bug-fixes"></a>Исправления ошибок
+
+- **Интеграция:**
+
+  - Исправлено недействительность сообщения CodeLens.
+
+## <a name="4810"></a>4.8.1.0
+Выпущено 13 октября 2020 г.
+
+### <a name="new-features"></a>Новые функции
+
+- **Вычисления:**
+
+  - Добавлена поддержка неявного преобразования с вызовами. Ранее средство оценки применяет строгую проверку типов, в результате чего выдаются `Failed to find a match for method([parameters...])` предупреждающие сообщения.
+
+- **Интеграция:**
+
+  - Добавлена диагностика [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md). Не следует использовать `System.Reflection` функции в сообщениях, критических для производительности, таких как `Update` , `FixedUpdate` , `LateUpdate` или `OnGUI` .
+
+  - Улучшенные [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) и [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) подавленные методы с поддержкой всех `AssetPostprocessor` статических методов.
+
+  - Добавлен подавитель [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) для `CS8618`. `C# 8.0` вводит ссылочные типы, допускающие значения NULL, и ссылочные типы, не допускающие значения NULL Обнаружение инициализации типов, наследуемых от `UnityEngine.Object` , не поддерживается и приведет к ошибкам.
+
+  - Теперь используйте тот же механизм создания проектов Player и асмдеф для Unity 2019. x и 2020. x +.
+
+### <a name="bug-fixes"></a>Исправления ошибок
+
+- **Интеграция:**
+
+  - Исправлена непредвиденная ошибка завершения для сообщений в комментариях.
+
+## <a name="4800"></a>4.8.0.0 
+Выпущен 14 сентября 2020 г.
+
+### <a name="bug-fixes"></a>Исправления ошибок
+
+- **Интеграция:**
+
+  - Исправлено создание проекта проигрывателя с помощью Unity 2019. x.
 
 ## <a name="4710"></a>4.7.1.0
 Выпущено 5 августа 2020 г.

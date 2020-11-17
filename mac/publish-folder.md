@@ -1,6 +1,7 @@
 ---
 title: Публикация в папку
-ms.date: 04/02/2019
+description: Сведения о публикации веб-приложения в папку с помощью Visual Studio для Mac.
+ms.date: 11/09/2020
 helpviewer_keywords:
 - deployment, website, console, publish
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
@@ -9,12 +10,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: 42d1d76275afd4944791137b97e04dd499e36083
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 640cdf8b9c31bad42f8c5664f3cef44c558e2a3a
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583948"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493417"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Публикация в папке с помощью Visual Studio для Mac
 
@@ -23,13 +24,13 @@ ms.locfileid: "91583948"
 ## <a name="prerequisites"></a>Предварительные требования
 
 - Среда [Visual Studio 2019 для Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019), установленная с поддержкой .NET Core.
-- Консоль .NET Core или проект ASP.NET Core. Если у вас еще нет проекта, вы можете [создать его](./create-new-projects.md?view=vsmac-2019).
+- Консоль .NET Core или проект ASP.NET Core. Если у вас еще нет проекта, вы можете [создать его](./create-new-projects.md).
 
 ## <a name="publish-to-folder"></a>Публикация в папку
 
 С помощью Visual Studio для Mac можно публиковать проекты .NET Core в папке, используя средство публикации. После публикации в папке можно передать файлы в другую среду. Для публикации в папку выполните следующие действия.
 
- 1. На панели решений щелкните проект правой кнопкой мыши и выберите пункт **Опубликовать**.
+ 1. В окне решения щелкните проект правой кнопкой мыши и выберите пункт **Опубликовать**.
 
     ![Контекстное меню публикации](media/publish-context-menu.png)
 

@@ -1,5 +1,7 @@
 ---
 title: Функции IntelliSense редактора XML
+description: Узнайте о функциях IntelliSense редактора XML в Visual Studio и о том, как использовать их с документами на языке определения схемы XML (XSD) и документами XSLT.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: dc79d40c2cb363b79c2064bd71fb23dece04e143
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592390"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350248"
 ---
 # <a name="xml-editor-intellisense-features"></a>Функции IntelliSense редактора XML
 
@@ -91,9 +93,9 @@ ms.locfileid: "75592390"
 
 Редактор XML выполняет это действие для следующих элементов.
 
-- Согласованные открывающий и закрывающий теги.
+- Совпадающие открывающий и закрывающий теги.
 
-- любая пара угловых скобок "\<" или ">";
+- Любая пара угловых скобок "\<" or ">".
 
 - Начало и конец комментария.
 

@@ -1,5 +1,7 @@
 ---
 title: Элемент BuildProjectOnload (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе BuildProjectOnload и о том, как он создает только новые проекты при создании и добавлении их в решение.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf4256b2fb376fc063eb330d47c843c1ff8820b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739944"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671596"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Элемент BuildProjectOnload (шаблоны Visual Studio)
 Создает только новые проекты при создании и добавлении их в решение. Все решение не строится.
@@ -53,8 +55,8 @@ ms.locfileid: "80739944"
 
  Текст должен иметь значение `true` или `false` , чтобы указать, следует ли создавать новый проект только при его создании на основе шаблона.
 
-## <a name="remarks"></a>Remarks
- Параметр `BuildProjectOnLoad` является необязательным элементом. Значение по умолчанию — `false`.
+## <a name="remarks"></a>Комментарии
+ Параметр `BuildProjectOnLoad` является необязательным элементом. Значение по умолчанию — `false`.
 
 ## <a name="example"></a>Пример
  В следующем примере показаны метаданные для шаблона Visual C#.
@@ -84,7 +86,7 @@ ms.locfileid: "80739944"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Атрибут и элемент Буилдонлоад](buildonload-visual-studio-templates.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,7 @@
 ---
 title: Развертывание в локальную папку
+description: Узнайте, как вы можете использовать средство публикации для публикации приложений ASP.NET, ASP.NET Core, .NET Core и Python в папку из Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,21 +12,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 800059dc8d5a3e6ccfb72c588fbb61423a338cba
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a96ea0fe4b4bbbebfc29cde7258273ea4f4b21e2
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036396"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437693"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Развертывание приложения в папку с помощью Visual Studio
 
 Вы можете использовать средство **публикации** для публикации приложений ASP.NET, ASP.NET Core, .NET Core и Python в папку из Visual Studio. Для Node.js эти действия поддерживаются, однако отличается пользовательский интерфейс.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
-
+::: moniker range=">=vs-2017"
 > [!NOTE]
 > Если вам нужно опубликовать классическое приложение Windows в папку, см. статью о [развертывании классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# или Visual Basic). Для C + +/ CLR см. раздел [Развертывание собственного приложения с помощью ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications). Для C/C++ см. раздел [Развертывание собственного приложения с помощью проекта установки](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Если нужно опубликовать классическое приложение Windows .NET Core 3.1 или более поздней версии в папку, см. [эту статью](quickstart-deploy-using-clickonce-folder.md).
+
+::: moniker-end
 
 ## <a name="deploy-to-a-local-folder"></a>Развертывание в локальную папку
 
@@ -38,7 +48,17 @@ ms.locfileid: "90036396"
 
     ![Выбор папки в качестве целевого объекта публикации](../deployment/media/quickstart-publish-folder-new.png "Выбор папки")
 
-1. Введите путь или выберите **Обзор**, чтобы указать папку.
+::: moniker range=">=vs-2019"
+
+4. При развертывании приложения Windows .NET Core 3.1 или более поздней версии может потребоваться выбрать **папку** в окне **Указанный целевой объект**.
+
+![Выбор папки в качестве указанного целевого объекта](../deployment/media/quickstart-publish-folder-targets.png "Выбор указанного целевого объекта")
+
+5. Если вы хотите опубликовать приложение Windows .NET Core 3.1 или более поздней версии с использованием ClickOnce, см. [эту статью](quickstart-deploy-using-clickonce-folder.md).
+
+ ::: moniker-end
+
+4. Введите путь или выберите **Обзор**, чтобы указать папку.
 
     ![Указание пути к папке](../deployment/media/quickstart-publish-folder-path.png "Выбор папки")
 
@@ -71,3 +91,6 @@ ms.locfileid: "90036396"
 - [Развертывание приложения .NET Core с помощью средства публикации](/dotnet/core/deploying/deploy-with-vs)
 - [Публикация приложений .NET Core (развертывание, зависящее от платформы, и автономное развертывание)](/dotnet/core/deploying/)
 - [Развертывание .NET Framework и приложений](/dotnet/framework/deployment/)
+::: moniker range=">=vs-2019"
+- [Развертывание приложения Windows .NET помощью ClickOnce](quickstart-deploy-using-clickonce-folder.md)
+ ::: moniker-end

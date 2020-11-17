@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Подписание манифестов приложения и развертывания
+description: Узнайте о требованиях к подписанию для публикации манифестов приложения ClickOnce и развертывания. Подписание является необязательным для приложений на основе EXE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e04827dd8d8d393af8bc3448df75a7503c8eec3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a267a64a6b6d59b64ffb70596154d1e54f368410
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769794"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351275"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Практическое руководство. Подписание манифестов приложения и развертывания
 
@@ -96,7 +98,7 @@ ms.locfileid: "85769794"
 
 2. На странице **Подписывание** снимите флажок **Подписать манифесты ClickOnce**.
 
-3. Выполните сброс версии публикации, чтобы доступной была только одна версия приложения. По умолчанию Visual Studio автоматически увеличивает номер редакции для версии публикации при каждой публикации приложения. Дополнительные сведения см. в разделе [Практическое руководство. Установка версии публикации ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
+3. Выполните сброс версии публикации, чтобы доступной была только одна версия приложения. По умолчанию Visual Studio автоматически увеличивает номер редакции для версии публикации при каждой публикации приложения. Дополнительные сведения см. в статье [Практическое руководство. Установка версии публикации приложения ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
 
 4. Опубликуйте приложение.
 

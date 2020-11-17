@@ -1,5 +1,7 @@
 ---
 title: Интеграция конструктора схем XML с редактором XML
+description: Узнайте об интеграции между конструктором схем XML и редактором XML, а также о том, как изменения, внесенные в одном из них, отражаются в другом.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23a9220d84e2fb1a15545d1a880b0084952da77f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9569e33f8f9f861bc5d89030c6fe38b0ab853a6f
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592585"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400191"
 ---
 # <a name="integration-with-xml-editor"></a>Интеграция с редактором XML
 
@@ -25,11 +27,11 @@ ms.locfileid: "75592585"
 
 На следующем снимке экрана показана схема XML, открытая в **обозревателе схем XML**. **Обозреватель схем XML** отображает набор схем в виде дерева. Редактор XML отображает текстовое представление узла, который сейчас активен в **обозревателе схем XML**.
 
-![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif)
+![Снимок экрана: проект Visual Studio с узлом XML на панели редактора XML и древовидным представлением набора схем на панели обозревателя схем XML.](../xml-tools/media/xsddesignerwithxmleditor.gif)
 
 В некоторых случаях рекомендуется просматривать код в редакторе XML и графическом конструкторе параллельно. Чтобы просмотреть оба файла одновременно, щелкните правой кнопкой мыши в редакторе XML и выберите **Конструктор представлений**. В меню Visual Studio Windows выберите **Создать группу горизонтальных (или вертикальных) вкладок**.
 
-![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
+![Снимок экрана: проект Visual Studio с панелью конструктора представлений, панелью редактора XML и панелью обозревателя схем XML.](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
 
 ## <a name="see-also"></a>См. также
 

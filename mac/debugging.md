@@ -7,12 +7,12 @@ ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.topic: overview
-ms.openlocfilehash: 09a761a8269fa40c3fab49a34b3e43a7f0ec63cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04fae5874a4fefcb51bdef8b00c8cb3b7171057e
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939083"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493261"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Отладка с помощью Visual Studio для Mac
 
@@ -40,7 +40,7 @@ Visual Studio для Mac использует Mono Soft Debugger для отла
 
 ![Задание точки останова в поле](media/debugging-image0.png)
 
-Вы можете просмотреть все точки останова, заданные в коде, перейдя на **панель точек останова**:
+Вы можете просмотреть все точки останова, заданные в коде, в **окне точек останова**:
 
 ![Список точек останова](media/debugging-image0a.png)
 
@@ -67,9 +67,9 @@ Visual Studio для Mac использует Mono Soft Debugger для отла
 
  ![Контекстное меню точки останова](media/debugging-image4.png)
 
-* Чтобы добавить условие в существующую точку останова, щелкните ее правой кнопкой мыши и выберите пункт **Свойства точки останова** либо нажмите кнопку "Изменить точку останова" на **панели точек останова**, как показано ниже:
+* Чтобы добавить условие в существующую точку останова, щелкните ее правой кнопкой мыши и выберите пункт **Свойства точки останова** либо нажмите кнопку "Изменить точку останова" в **окне точек останова**, как показано ниже:
 
- ![Изменение существующей точки останова на панели точек останова](media/debugging-image5.png)
+ ![Изменение существующей точки останова в окне точек останова](media/debugging-image5.png)
 
 Затем можно ввести условие, при котором активируется эта точка останова:
 

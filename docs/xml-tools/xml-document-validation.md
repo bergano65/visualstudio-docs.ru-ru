@@ -1,5 +1,7 @@
 ---
 title: Проверка XML-документа в редакторе XML
+description: Узнайте о проверке XML-документа в редакторе XML и о том, как редактор проверяет синтаксис XML 1.0, а также выполняет проверку правильности данных по мере их ввода.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 389328e97f29d97962353e86f73c39c7c5459bfc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ec38cb416f764990252b1e58c2322bea8be94d15
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592416"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351457"
 ---
 # <a name="xml-document-validation"></a>Проверка XML-документа
 

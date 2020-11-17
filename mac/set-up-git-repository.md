@@ -1,17 +1,17 @@
 ---
 title: Настройка репозитория Git
-description: Использование Git и Subversion в Visual Studio для Mac.
+description: Подключение к репозиторию Git с помощью Visual Studio для Mac.
 author: therealjohn
 ms.author: johmil
-ms.date: 05/13/2020
+ms.date: 11/09/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: bc981530f5493ce1899de1c888e20129c7ae0f8c
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: 862f073d3c6d535d612a67f215aee740cea175bd
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214695"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493131"
 ---
 # <a name="set-up-a-git-repository"></a>Настройка репозитория Git
 
@@ -45,7 +45,7 @@ Git — это распределенная система управления
 
 Если у вас есть проект, который еще _не_ зарегистрирован в системе управления версиями, выполните указанные ниже действия. чтобы настроить его в Git.
 
-1. Выберите имя решения на панели решения в Visual Studio для Mac.
+1. Выберите имя решения в окне решения в Visual Studio для Mac.
 
 2. В строке меню выберите **Управление версиями > Опубликовать в системе управления версиями**, чтобы отобразить диалоговое окно **Клонировать репозиторий**.
 
@@ -159,7 +159,7 @@ Visual Studio для Mac теперь будет отправлять измен
 1. При наличии файла **GITIGNORE** удалите его.
 1. Нажмите клавиши **COMMAND + SHIFT +.** , чтобы скрыть файлы и папки.
 1. Откройте решение в Visual Studio для Mac.
-1. На панели решения выберите узел решения.
+1. В окне решения выберите узел решения.
 1. Перейдите в меню "Управление версиями" и выберите **Publish in Version Control** (Опубликовать в системе управления версиями).
 1. Выполните действия из приведенного выше руководства, начиная с шага 6.
 

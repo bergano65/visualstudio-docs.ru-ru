@@ -1,5 +1,7 @@
 ---
 title: Элемент Description (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе Description и о том, как оно указывает описание шаблона в том виде, в каком оно отображается в диалоговом окне Новый проект или Добавление нового элемента.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ea10b43662d2818792dbc57aeac09a056cb63ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f244fb6d681c9cc22416422be3ade098c67deea
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712256"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671289"
 ---
 # <a name="description-element-visual-studio-templates"></a>Элемент Description (шаблоны Visual Studio)
 Задает описание шаблона в том виде, в каком оно отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** .
@@ -60,7 +62,7 @@ ms.locfileid: "80712256"
 
  Текст содержит описание шаблона.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  `Description` является обязательным дочерним элементом `TemplateData` элемента.
 
 ## <a name="example"></a>Пример

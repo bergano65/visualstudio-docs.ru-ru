@@ -1,5 +1,8 @@
 ---
 title: Элемент Assembly (шаблоны Visual Studio) | Документация Майкрософт
+titleSuffix: ''
+description: Сведения об элементе Assembly и о том, как он указывает сведения о сборке, которую шаблон использует для добавления ссылки на эту сборку в проекты.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4115e999cc061be53ba437a090f207046f71ef8
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740043"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671650"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Элемент Assembly (шаблоны Visual Studio)
 Указывает сведения о сборке, которую шаблон использует для добавления ссылки на эту сборку в проекты.
@@ -55,7 +58,7 @@ ms.locfileid: "80740043"
 
  Этот текст указывает сборку, добавляемую в проект при создании экземпляра шаблона элемента. Это имя сборки должно быть указано одним из следующих способов:
 
-- Как полное имя сборки. Например:
+- Как полное имя сборки. Пример:
 
     ```
     <Assembly>

@@ -3,15 +3,15 @@ title: Управление ссылками в проекте
 description: В этой статье описывается управление ссылками в проекте в Visual Studio для Mac
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.topic: overview
-ms.openlocfilehash: 28ea53826a19a9ec97349060702cf13c68342ad2
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 41d49fe6b23818f3cb9de8dec72462d4b2029bb6
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939005"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493521"
 ---
 # <a name="managing-references-in-a-project"></a>Управление ссылками в проекте
 
@@ -40,7 +40,7 @@ Visual Studio для Mac предоставляет два средства дл
 
 NuGet — это наиболее популярный диспетчер пакетов для разработки .NET. Поддержка NuGet в Visual Studio для Mac позволяет искать пакеты, которые требуется добавить в проект.
 
-Для этого щелкните папку **Пакет** на панели решения правой кнопкой мыши и выберите пункт "Добавить пакеты".
+Для этого щелкните папку **Пакеты** в окне решения правой кнопкой мыши и выберите пункт "Добавить пакеты".
 
 Сведения об использовании пакета NuGet см. в пошаговом руководстве [Включение пакета NuGet в проект](nuget-walkthrough.md).
 

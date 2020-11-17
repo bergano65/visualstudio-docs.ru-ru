@@ -1,5 +1,7 @@
 ---
 title: Управление подписыванием сборок и манифестов
+description: Узнайте о преимуществах подписи строгим именем, предоставляющей программному компоненту глобальный уникальный идентификатор.
+ms.custom: SEO-VS-2020
 ms.date: 02/17/2017
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a17ce633515979ca7a3fd3ac5a7e1d8802996944
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdd2570f94b0f5577c7c09a696906338245f77a4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770407"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351392"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Управление подписыванием сборок и манифестов
 
@@ -38,13 +40,13 @@ ms.locfileid: "85770407"
 
 Подписывать можно манифесты приложений и сборки .NET.
 
-- исполняемые файлы ( *.exe*);
+- исполняемые файлы (*.exe*);
 
-- манифесты приложений ( *.exe.manifest*);
+- манифесты приложений (*.exe.manifest*);
 
-- манифесты развертывания ( *.application*);
+- манифесты развертывания (*.application*);
 
-- сборки общих компонентов ( *.dll*).
+- сборки общих компонентов (*.dll*).
 
 Подпишите следующие типы активов:
 
@@ -71,7 +73,7 @@ ms.locfileid: "85770407"
 
 Дополнительные сведения о подписи манифестов см. в разделе [Практическое руководство. Подписание манифестов приложения и развертывания](../ide/how-to-sign-application-and-deployment-manifests.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Сборки со строгими именами](/dotnet/framework/app-domains/strong-named-assemblies)
 - [Сборки со строгими именами (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
