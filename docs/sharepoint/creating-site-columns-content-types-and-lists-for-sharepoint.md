@@ -1,6 +1,8 @@
 ---
 title: Создание столбцов сайта, типов содержимого и списков для SharePoint | Документация Майкрософт
 titleSuffix: ''
+description: Создание столбцов сайта, типов содержимого и списков для SharePoint. Visual Studio предоставляет шаблоны элементов проектов для этих типов элементов SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 269be4aaf34e9b6c611a5d79ba38cddba04276bf
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 29d0ebc33bf3df198f3ee9b3f9d80a747087341c
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585110"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850524"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Создание столбцов сайта, типов содержимого и списков для SharePoint
   Visual Studio предоставляет шаблоны элементов проектов для множества различных фундаментальных элементов SharePoint, включая *списки* и *типы содержимого*, которые могут включать столбцы сайта (или *поля*). Конструкторы для новых типов содержимого и списков позволяют создать эти элементы проще, чем когда-либо.
@@ -49,5 +51,5 @@ ms.locfileid: "91585110"
 |-----------|-----------------|
 |[Пошаговое руководство: Создание столбца сайта, типа содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Показывает способы создания столбцов сайта, используемые в пользовательском типе содержимого. Тип содержимого затем используется в пользовательском списке.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 - [Приступая к разработке на SharePoint 2010](/sharepoint/dev/)

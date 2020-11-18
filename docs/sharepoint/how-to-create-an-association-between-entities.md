@@ -1,5 +1,7 @@
 ---
 title: Как создать ассоциацию между сущностями | Документация Майкрософт
+description: Определение связей между сущностями в модели подключения к бизнес-данным (BDC) путем создания ассоциаций в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e736e0befe8aaf9a6c090615d0c43bb3f3116dbf
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016934"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849848"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Как создать ассоциацию между сущностями
   Отношения между сущностями в модели подключения к бизнес-данным (BDC) можно определить путем создания ассоциаций. Visual Studio создает методы, предоставляющие потребителям модели сведения о каждой ассоциации. Эти методы могут использоваться веб-частями SharePoint, списками или пользовательскими приложениями для отображения отношений данных в интерфейсе пользователя (ИП).
@@ -35,7 +37,7 @@ ms.locfileid: "86016934"
 
 ### <a name="to-create-an-association-between-entities"></a>Создание связи между сущностями
 
-1. На вкладке **BusinessDataConnectivity** на **панели элементов**выберите элемент **Ассоциация** .
+1. На вкладке **BusinessDataConnectivity** на **панели элементов** выберите элемент **Ассоциация** .
 
 2. В конструкторе BDC последовательно выберите исходную и конечную сущности.
 
@@ -61,7 +63,7 @@ ms.locfileid: "86016934"
 
      Примеры методов навигатора ассоциаций см. в разделе [Создание связи между сущностями](../sharepoint/creating-an-association-between-entities.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 - [Создание связи между сущностями](../sharepoint/creating-an-association-between-entities.md)
 - [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Как добавить метод Finder](../sharepoint/how-to-add-a-finder-method.md)

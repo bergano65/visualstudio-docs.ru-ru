@@ -1,5 +1,7 @@
 ---
 title: Как создать расширение проекта SharePoint | Документация Майкрософт
+description: Узнайте, как создать расширение проекта, чтобы можно было добавлять функциональные возможности в любой проект SharePoint, Открытый в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/28/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 191f5d718064a4e094a2c28e3f584168b20fb3fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad8ee37cba6f6f85e480fc0fe3ccaef081cefae4
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017153"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850667"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>Как создать расширение проекта SharePoint
-  Создайте расширение проекта, если необходимо добавить функциональные возможности в любой проект SharePoint, Открытый в Visual Studio. Дополнительные сведения см. [в разделе расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
+  Создайте расширение проекта, если необходимо добавить функциональные возможности в любой проект SharePoint, Открытый в Visual Studio. Дополнительные сведения см. в разделе [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
 ### <a name="to-create-a-project-extension"></a>Создание расширения проекта
 
@@ -199,7 +201,7 @@ ms.locfileid: "86017153"
 ## <a name="deploy-the-extension"></a>Развертывание расширения
  Чтобы развернуть расширение, создайте [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и всех остальных файлов, которые требуется распространить с расширением. Дополнительные сведения см. [в статье Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 - [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Как добавить пункт контекстного меню в проекты SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
 - [Как добавить свойство в проекты SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)

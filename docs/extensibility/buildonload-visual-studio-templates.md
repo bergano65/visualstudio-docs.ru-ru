@@ -85,7 +85,7 @@ ms.locfileid: "94671609"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - [BuildProjectOnload, элемент](buildprojectonload-element-visual-studio-templates.md)
 - [TemplateContent, элемент](../extensibility/templatecontent-element-visual-studio-templates.md)

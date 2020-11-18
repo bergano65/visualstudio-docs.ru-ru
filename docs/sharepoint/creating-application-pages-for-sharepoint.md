@@ -1,5 +1,7 @@
 ---
 title: Создание страниц приложения для SharePoint | Документация Майкрософт
+description: Создание страниц приложения для SharePoint. Страница приложения — это веб-страница ASP.NET, предназначенная для использования на веб-сайте SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 47f403f4eec6ec66563ae88bec226e073f625716
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981099"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850446"
 ---
-# <a name="create-application-pages-for-sharepoint"></a>Создание страниц приложения для SharePoint
+# <a name="create-application-pages-for-sharepoint"></a>Создание страниц приложений для SharePoint
   *Страница приложения* — это веб-страница ASP.NET, предназначенная для использования на веб-сайте SharePoint. Страницы приложения являются специализированным типом страницы ASP.NET. Основное различие между страницей приложения и стандартной страницей ASP.NET заключается в том, что страница приложения содержит содержимое, объединенное с главной страницей SharePoint. Главная страница позволяет страницам приложений использовать тот же внешний вид и поведение, что и другие страницы на сайте.
 
  Visual Studio позволяет проектировать страницы приложения с помощью конструктора. Конструктор отображает область содержимого для каждого заполнителя содержимого, определенного на главной странице. Страницу приложения можно спроектировать, перетащив элементы управления в эти области содержимого.
@@ -60,7 +62,7 @@ ms.locfileid: "72981099"
 > [!NOTE]
 > Страницу можно спроектировать только в представлении **исходного кода** конструктора. Представление **конструктора** для страниц приложений отключено.
 
- Отладку страницы приложения можно выполнять так же, как отладка других элементов проекта SharePoint в Visual Studio. При запуске отладчика Visual Studio Visual Studio открывает сайт SharePoint.
+ Отладку страницы приложения можно выполнять так же, как отладка других элементов проекта SharePoint в Visual Studio. При запуске отладчика Visual Studio открывается сайт SharePoint.
 
  Чтобы просмотреть страницу приложения, необходимо вручную перейти к расположению страницы приложения (например: http://<em>server_name</em>/_layouts/*Project_Name*/ApplicationPage1.aspx).
 
@@ -71,7 +73,7 @@ ms.locfileid: "72981099"
 
  Можно явно изменить, какая Главная страница используется страницей приложения, задав `MasterPageFile` атрибут `Page` элемента Application. (Например: `MasterPageFile="~/_layouts/applicationv4.master"` ). На самом деле, этот атрибут необходимо установить, если на сервере SharePoint не включены динамические главные страницы. Дополнительные сведения о главных страницах в SharePoint см. в разделе [главные страницы](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 - [Подробные сведения о разработке SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [Обзор ASP.NET](/aspnet/overview)
 - [Веб-страницы ASP.NET](/aspnet/web-pages/index)

@@ -1,5 +1,7 @@
 ---
 title: Создание связи между сущностями | Документация Майкрософт
+description: Создайте ассоциацию между сущностями в модели подключения к бизнес-данным (BDC). Сведения о методах ассоциаций и типах ассоциаций.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -21,18 +23,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee767ded0687baa09653bd82785b68bee7fa0ebd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a5decf8ad803bea8b1d64c79410c319dbef0be9
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981093"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850550"
 ---
 # <a name="create-an-association-between-entities"></a>Создание связи между сущностями
   Отношения между сущностями в модели подключения к бизнес-данным (BDC) можно определить путем создания ассоциаций. Visual Studio создает методы, предоставляющие потребителям модели сведения о каждой ассоциации. Эти методы могут использоваться веб-частями SharePoint, списками или пользовательскими приложениями для отображения отношений данных в интерфейсе пользователя (ИП).
 
-## <a name="create-an-association"></a>Создание связи
- Создайте связь, выбрав элемент управления **взаимосвязь** на **панели элементов**Visual Studio, выбрав первую сущность (называемую исходной сущностью), а затем выбрав вторую сущность (называемую целевой сущностью). Сведения о сопоставлении можно определить в **редакторе взаимосвязей**. Дополнительные сведения см. [в разделе инструкции. Создание связи между сущностями](../sharepoint/how-to-create-an-association-between-entities.md).
+## <a name="create-an-association"></a>Создание ассоциации
+ Создайте связь, выбрав элемент управления **взаимосвязь** на **панели элементов** Visual Studio, выбрав первую сущность (называемую исходной сущностью), а затем выбрав вторую сущность (называемую целевой сущностью). Сведения о сопоставлении можно определить в **редакторе взаимосвязей**. Дополнительные сведения см. [в разделе инструкции. Создание связи между сущностями](../sharepoint/how-to-create-an-association-between-entities.md).
 
 ## <a name="association-methods"></a>Методы взаимосвязей
  Такие приложения, как веб-части бизнес-данных SharePoint используют ассоциации, вызывая методы в классе службы сущности. Можно добавить методы в класс службы сущности, выбрав их в **редакторе взаимосвязей**.
@@ -76,6 +78,6 @@ ms.locfileid: "72981093"
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 - [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Как создать ассоциацию между сущностями](../sharepoint/how-to-create-an-association-between-entities.md)

@@ -1,5 +1,7 @@
 ---
 title: Как добавить конкретный метод поиска | Документация Майкрософт
+description: Получите экземпляр сущности, добавив метод Finder. Служба BDC вызывает метод, когда пользователь выбирает сущность в веб-части данных или во внешнем списке.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,19 +19,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 403213b6dcd87251df0b24333c759c8de8720afd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a02e88b0168a6aa4b1a69af3ee14150a71e76037
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014815"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849732"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Как добавить конкретный метод поиска
-  Можно вернуть один экземпляр сущности, создав *конкретный метод поиска* . Служба подключения к бизнес-данным (BDC) выполняет конкретный метод поиска, когда пользователь выбирает сущность в веб-части данных или во внешнем списке. Дополнительные сведения см. [в разделе Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
+  Можно вернуть один экземпляр сущности, создав *конкретный метод поиска* . Служба подключения к бизнес-данным (BDC) выполняет конкретный метод поиска, когда пользователь выбирает сущность в веб-части данных или во внешнем списке. Дополнительные сведения см. в разделе [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-specific-finder-method"></a>Создание конкретного метода поиска
 
-1. В **конструкторе BDC**выберите сущность.
+1. В **конструкторе BDC** выберите сущность.
 
     Сведения о добавлении сущности в **конструктор BDC** в Visual Studio см. в разделе [как добавить сущность в модель](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
@@ -51,7 +53,7 @@ ms.locfileid: "86014815"
 
    - Экземпляр метода для метода.
 
-     Дополнительные сведения см. [в разделе Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
+     Дополнительные сведения см. в разделе [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 4. Откройте окно **свойств** Visual Studio.
 
@@ -65,9 +67,9 @@ ms.locfileid: "86014815"
 
 6. В окне **сведения о методе** выберите экземпляр метода метода.
 
-7. В **окне Свойства**задайте для свойства **имя возвращаемого параметра** имя возвращаемого параметра метода. Дополнительные сведения о свойствах экземпляра метода см. в разделе [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
+7. В **окне Свойства** задайте для свойства **имя возвращаемого параметра** имя возвращаемого параметра метода. Дополнительные сведения о свойствах экземпляра метода см. в разделе [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
-8. В **Обозреватель решений**откройте контекстное меню файла кода службы, созданного для сущности, и выберите пункт **Просмотреть код**.
+8. В **Обозреватель решений** откройте контекстное меню файла кода службы, созданного для сущности, и выберите пункт **Просмотреть код**.
 
     Файл кода службы сущности откроется в редакторе кода. Дополнительные сведения о файле кода службы сущности см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).
 
@@ -85,7 +87,7 @@ ms.locfileid: "86014815"
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 - [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Как добавить метод Finder](../sharepoint/how-to-add-a-finder-method.md)
 - [Как добавить метод Creator](../sharepoint/how-to-add-a-creator-method.md)

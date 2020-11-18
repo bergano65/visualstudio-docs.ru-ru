@@ -1,5 +1,7 @@
 ---
 title: Вызов объектных моделей SharePoint | Документация Майкрософт
+description: Узнайте, как вызывать две различные объектные модели, которые можно использовать в расширениях инструментов SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24634143a40f7b163c0b658bddb5596041868033
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40cd7132888d8b19d8e2a2818ec9a299b465e786
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62988400"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850056"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Вызов объектных моделей SharePoint
   При создании расширений для инструментов SharePoint в Visual Studio может потребоваться вызывать API SharePoint для выполнения определенных задач. Например, если создать настраиваемый шаг развертывания для проектов SharePoint, то, возможно, придется вызывать API SharePoint для выполнения некоторых задач по развертыванию решений.
@@ -54,7 +56,7 @@ ms.locfileid: "62988400"
 ### <a name="understand-how-sharepoint-commands-are-executed"></a>Сведения о выполнении команд SharePoint
  Сборки, определяющие команды SharePoint, загружаются в 64-разрядном размещающем процессе с именем *vssphost4.exe*. После вызова команды SharePoint в расширении инструментов SharePoint команда выполняется *vssphost4.exe* вместо 32-разрядного процесса Visual Studio (*devenv.exe*). Вы можете управлять некоторыми аспектами выполнения команд SharePoint, задавая значения в реестре. Дополнительные сведения см. в разделе [расширения отладки для инструментов SharePoint в Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 - [Как создать команду SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)
 - [Инструкции: выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)
-- [Общие сведения о модели программирования расширений инструментов SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [Обзор модели программирования расширений инструментов SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)

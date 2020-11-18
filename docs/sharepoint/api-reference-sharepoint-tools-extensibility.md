@@ -1,5 +1,7 @@
 ---
 title: Справочник по API (расширяемость средств SharePoint) | Документация Майкрософт
+description: Ознакомьтесь с справочной документацией по API для расширения инструментов SharePoint в Visual Studio. См. список связанных пространств имен, таких как Microsoft. VisualStudio. SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37639068b74b5d99864871355a8b9ef36906f6cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4599a2c305558f2ef551d19abac210bdf05269f3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62987987"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850394"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Справочник по API (расширяемость средств SharePoint)
   Этот раздел содержит справочную документацию по API для расширения инструментов SharePoint в Visual Studio.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержимое раздела
  <xref:Microsoft.VisualStudio.SharePoint>
 
  Содержит типы, используемые для расширения системы проектов SharePoint. Например, можно расширить встроенные проекты и элементы проектов SharePoint или создать собственные элементы проектов.
@@ -67,10 +69,10 @@ ms.locfileid: "62987987"
 
  Содержит типы, используемые для настройки поведения проверки компонентов и пакетов для проекта SharePoint.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 - [Справочные материалы &#40;расширяемости средств SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
-- [Общие сведения о модели программирования расширений инструментов SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [Обзор модели программирования расширений инструментов SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
 - [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
-- [Расширение узла подключений SharePoint в обозреватель сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Расширение узла подключений SharePoint в обозревателе сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Расширение упаковки и развертывания SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)

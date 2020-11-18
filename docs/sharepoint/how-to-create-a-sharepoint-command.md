@@ -1,5 +1,7 @@
 ---
 title: Как создать команду SharePoint | Документация Майкрософт
+description: Узнайте, как создать пользовательскую команду SharePoint для вызова API серверной объектной модели в расширении инструментов SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15ea7ff86e90bf7a474f9d64c30a9803e3e20bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41e4ab0fd70f4993d148cd5c67cb816bdc92e77a
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016225"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850706"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Как создать команду SharePoint
   Если вы хотите использовать объектную модель сервера в расширении инструментов SharePoint, необходимо создать пользовательскую *команду SharePoint* для вызова API. Команда SharePoint определяется в сборке, которая может напрямую вызывать серверную объектную модель.
@@ -53,7 +55,7 @@ ms.locfileid: "86016225"
 
     - Второй параметр и возвращаемое значение должны быть типом, который может быть сериализован Windows Communication Foundation (WCF). Дополнительные сведения см. в разделе [типы, поддерживаемые сериализатором контрактов данных](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) , и [использование класса XmlSerializer](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
 
-    - Метод может иметь любую видимость (**открытый**, **внутренний**или **частный**) и может быть статическим или не статическим.
+    - Метод может иметь любую видимость (**открытый**, **внутренний** или **частный**) и может быть статическим или не статическим.
 
 4. Примените <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> к методу. Этот атрибут задает уникальный идентификатор для команды. Этот идентификатор не обязательно должен совпадать с именем метода.
 
@@ -77,7 +79,7 @@ ms.locfileid: "86016225"
 ## <a name="deploying-the-command"></a>Развертывание команды
  Чтобы развернуть команду, включите сборку команды в тот же [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (*VSIX*) с сборкой расширения, которая использует команду. Кроме того, необходимо добавить запись для сборки команды в файл Extension. vsixmanifest. Дополнительные сведения см. [в статье Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 - [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Инструкции: выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [Пошаговое руководство. расширение обозреватель сервера для показа веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

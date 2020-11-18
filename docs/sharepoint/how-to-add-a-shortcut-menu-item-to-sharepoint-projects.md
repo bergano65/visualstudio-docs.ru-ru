@@ -1,6 +1,8 @@
 ---
 title: Как добавить пункт контекстного меню в проекты SharePoint | Документация Майкрософт
 titleSuffix: ''
+description: Добавление пункта контекстного меню в проект SharePoint в Visual Studio. Пункт меню появляется при щелчке правой кнопкой мыши узла проекта в обозреватель решений.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea862eb21aaee75499f3b1bac7007063227150e2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 074f5b8a3ed31587b86b172ad2da000b7b81e9c3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585853"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850069"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Как добавить пункт контекстного меню в проекты SharePoint
   Пункт контекстного меню можно добавить в любой проект SharePoint. Этот пункт меню появляется, когда пользователь щелкает правой кнопкой мыши узел проекта в **Обозреватель решений**.
@@ -51,7 +53,7 @@ ms.locfileid: "91585853"
 ## <a name="deploy-the-extension"></a>Развертывание расширения
  Чтобы развернуть расширение, создайте [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и всех остальных файлов, которые требуется распространить с расширением. Дополнительные сведения см. [в статье Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 - [Расширение проектов SharePoint](../sharepoint/extending-sharepoint-projects.md)
 - [Как создать расширение проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [Как добавить свойство в проекты SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)

@@ -1,5 +1,7 @@
 ---
 title: Как создать страницу приложения | Документация Майкрософт
+description: Создание веб-страницы ASP.NET (также известной как страница приложения) в Visual Studio для одного или нескольких сайтов SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 32e6fbb7cece4c3b7513dfc1f5de3aca22f145ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df52ca75ef99fe98158cb5f874e59fe4ee0c47b4
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016954"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849861"
 ---
-# <a name="how-to-create-an-application-page"></a>Как создать страницу приложения
+# <a name="how-to-create-an-application-page"></a>Практическое руководство. Создание страницы приложения
   Можно создать веб-страницу ASP.NET для одного или нескольких сайтов SharePoint. В SharePoint эти страницы называются страницами приложения. В отличие от страницы сайта, страница приложения содержит код, который выполняется за страницей. Дополнительные сведения см. в разделе [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
 ### <a name="to-create-an-application-page"></a>Создание страницы приложения
@@ -29,7 +31,7 @@ ms.locfileid: "86016954"
 
      Дополнительные сведения см. в разделе [проект SharePoint и шаблоны элементов проектов](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2. В области **Обозреватель решений**выберите узел проекта.
+2. В области **Обозреватель решений** выберите узел проекта.
 
 3. В строке меню выберите **проект**  >  **Добавить новый элемент**.
 
@@ -47,6 +49,6 @@ ms.locfileid: "86016954"
 
      Файл кода отображается, если развернуть узел для файла подкачки ASP.NET и имеет расширение *CS* или *VB* в зависимости от языка проекта. Полный пример создания страницы приложения см. в разделе [Пошаговое руководство. Создание страницы приложения SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).
 
-## <a name="see-also"></a>См. также раздел
-- [Создание страниц приложения для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
-- [Пошаговое руководство. Создание страницы приложения SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)
+## <a name="see-also"></a>См. также статью
+- [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [Пошаговое руководство: Создание страницы приложения SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)

@@ -1,6 +1,8 @@
 ---
 title: Как добавить свойство в расширение элемента проекта SharePoint | Документация Майкрософт
 titleSuffix: ''
+description: Используйте расширение элемента проекта SharePoint, чтобы добавить свойство в любой элемент проекта SharePoint, уже установленный в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 752a782bb4aafd977ff10a0b57dd971f7ad6bed4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ae43eb1fd2c20fde6e7b1ad503b87a5d1cb367b1
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584260"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850173"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Как добавить свойство в расширение элемента проекта SharePoint
   Расширение элемента проекта можно использовать для добавления свойства в любой элемент проекта SharePoint, уже установленный в Visual Studio. Свойство отображается в окне **Свойства** при выборе элемента проекта в **Обозреватель решений**.
@@ -69,7 +71,7 @@ ms.locfileid: "91584260"
 ## <a name="deploy-the-extension"></a>Развертывание расширения
  Чтобы развернуть расширение, создайте [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и всех остальных файлов, которые требуется распространить с расширением. Дополнительные сведения см. [в статье Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 - [Как создать расширение элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 - [Как добавить пункт контекстного меню в расширение элемента проекта SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
 - [Расширение элементов проектов SharePoint](../sharepoint/extending-sharepoint-project-items.md)

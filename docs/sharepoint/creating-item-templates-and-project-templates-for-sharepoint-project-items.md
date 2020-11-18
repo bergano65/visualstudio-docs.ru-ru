@@ -1,5 +1,7 @@
 ---
 title: Шаблоны элементов и шаблоны проектов для элементов проектов SharePoint
+description: Создание шаблонов элементов и проектов для элементов проектов SharePoint. Создание мастеров для шаблонов элементов и шаблонов проектов.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ec97eb2dfab7ab92c1e324c89fd044c1a50c2173
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 59710eb4651f363d669dc27b6190f8d224d9917f
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585619"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850641"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Создание шаблонов элементов и проектов для элементов проектов SharePoint
 
@@ -52,7 +54,7 @@ ms.locfileid: "91585619"
 | *Schema.xml* | Файл схемы для определений списка. Дополнительные сведения см. в разделе [стандартный блок: списки и библиотеки документов](/previous-versions/office/developer/sharepoint-2010/ee534985(v=office.14)) и [Schema.xml](/previous-versions/office/developer/sharepoint-2010/ms459356(v=office.14)). |
 | *. WebPart* | Файл *определения веб-части* . Этот файл содержит параметры свойств для веб-части. Дополнительные сведения см. в разделе [стандартный блок: веб-части](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)). |
 | *.ascx* | Файл UserControl ASP.NET. Этот файл определяет пользовательский интерфейс визуальной веб-части. |
-| *.aspx* | Файл подкачки ASP.NET. Этот файл содержит XML-разметку, определяющую страницу приложения. |
+| *. aspx* | Файл подкачки ASP.NET. Этот файл содержит XML-разметку, определяющую страницу приложения. |
 | файлы *CS* или *VB* | Эти файлы кода определяют поведение настроек SharePoint, имеющих модель программирования, доступ к которой можно получить из Visual C# или Visual Basicного кода, например страниц приложений, веб-частей и рабочих процессов. |
 
 ## <a name="create-project-templates"></a>Создание шаблонов проектов
@@ -75,14 +77,14 @@ ms.locfileid: "91585619"
 |-------------------|-----------------|
 |элементы проектов SharePoint|Можно включить один или несколько файлов данных. DataItem, определяющих типы элементов проектов SharePoint. Каждый файл *данных.* DataTemplate должен иметь соответствующую <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> реализацию в сборке расширения, включенной в пакет VSIX с шаблоном проекта. Дополнительные сведения см. в разделе [Создание шаблонов элементов](#create-item-templates).<br /><br /> Как правило, проекты SharePoint включают по крайней мере один элемент проекта SharePoint. Однако это не является обязательным.|
 |*\<featureName>. feature*|Этот файл определяет компонент SharePoint, который используется для группирования нескольких элементов проекта для развертывания. При использовании конструктора компонентов для настройки компонента в проекте Visual Studio сохраняет данные о компоненте в этом файле. Если необходимо сгруппировать элементы проекта в различные функции, можно включить несколько файлов *Feature* .<br /><br /> При создании пользовательского шаблона проекта SharePoint рекомендуется включать только минимальное необходимое содержимое в каждый файл *. Feature* и настраивать функции с помощью API-интерфейсов в <xref:Microsoft.VisualStudio.SharePoint.Features> пространстве имен в расширении, связанном с шаблоном проекта. В этом случае шаблон проекта будет защищен от будущих изменений в структуре файла *. Feature* . Пример, демонстрирующий создание файла *Feature* с минимальным необходимым содержимым, см. в разделе [Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Если вы хотите напрямую изменить файл *. Feature* , можно проверить содержимое с помощью схемы в *% Program Files (x86)% \ Microsoft Visual Studio 11.0 \ ксмл\счемас\феатуремоделсчема.КССД*.|
-|*\<featureName>.Template.xml*|Этот файл предоставляет базу для файла манифеста компонента (*Feature.xml*) для каждого компонента, созданного из проекта. Вы можете добавить содержимое в этот файл, если вы хотите указать некоторое поведение, которое не должно изменяться пользователями вашего типа проекта. Дополнительные сведения см. в разделе [стандартный блок: компоненты](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)) и [Feature.xml](/sharepoint/dev/schema/feature-xml-files) файлы.<br /><br /> При сборке пакета решения из проекта Visual Studio объединяет содержимое каждой пары файлов * \<featureName> . feature* и * \<featureName>.Template.xml* файлов в файл манифеста компонента. Дополнительные сведения о создании пакетов решений см. [в разделе инструкции. Создание пакета решения SharePoint с помощью задач MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
+|*\<featureName>.Template.xml*|Этот файл предоставляет базу для файла манифеста компонента (*Feature.xml*) для каждого компонента, созданного из проекта. Вы можете добавить содержимое в этот файл, если вы хотите указать некоторое поведение, которое не должно изменяться пользователями вашего типа проекта. Дополнительные сведения см. в разделе [стандартный блок: компоненты](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)) и [Feature.xml](/sharepoint/dev/schema/feature-xml-files) файлы.<br /><br /> При сборке пакета решения из проекта Visual Studio объединяет содержимое каждой пары файлов *\<featureName> . feature* и *\<featureName>.Template.xml* файлов в файл манифеста компонента. Дополнительные сведения о создании пакетов решений см. [в разделе инструкции. Создание пакета решения SharePoint с помощью задач MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
 
 ## <a name="create-wizards-for-item-templates-and-project-templates"></a>Создание мастеров для шаблонов элементов и шаблонов проектов
  После определения типа элемента проекта SharePoint и связывания его с элементом или шаблоном проекта можно также создать мастер. Мастер отображает, когда разработчик использует шаблон элемента для добавления элемента проекта SharePoint в проект или когда разработчик использует шаблон проекта для создания нового проекта, содержащего элемент проекта SharePoint. Мастер можно использовать для получения сведений от разработчиков и инициализации нового элемента проекта SharePoint.
 
  Пошаговые руководства, демонстрирующие создание мастеров для шаблонов элементов и шаблонов проектов, см [. в разделе Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md) и [Пошаговое руководство. Создание элемента проекта столбца сайта с шаблоном проекта, часть 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - [Определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)

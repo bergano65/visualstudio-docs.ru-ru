@@ -1,5 +1,7 @@
 ---
 title: Создание модели подключения к бизнес-данным | Документация Майкрософт
+description: Создание модели подключения к бизнес-данным или Настройка существующей модели BDC с помощью Visual Studio. Каждый проект SharePoint может содержать только одну модель.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9f3da13858507a3ff176aaa0a44051674fd5285f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0486ce6ac53850b1b607f9e7f859806cdc3ef8fe
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842484"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850472"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Создание модели подключения к бизнес-данным
   Вы можете создать модель подключения к бизнес-данным или настроить существующую модель BDC с помощью Visual Studio. Каждый проект SharePoint может содержать только одну модель. Дополнительные сведения см. [в статье интеграция бизнес-данных в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
