@@ -11,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870d5005cb74a3c130af3d720991a6797bb53bc5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 7873d42e075619e23c14d4e2e1babc6898825a6b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036175"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672773"
 ---
 # <a name="sign-in-to-visual-studio"></a>Выполните вход в Visual Studio
 
@@ -51,7 +51,7 @@ ms.locfileid: "90036175"
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Вход в Visual Studio
 
-При первом открытии Visual Studio появляется запрос на вход и ввод основных регистрационных сведений. 
+При первом открытии Visual Studio появляется запрос на вход и ввод основных регистрационных сведений.
 
 ![Запрос на вход](../ide/media/vs2019_signinpopup.png)
 
@@ -63,7 +63,7 @@ ms.locfileid: "90036175"
 
 ![Текущий пользователь, вошедший в систему VS2019](../ide/media/vs2019_username.png)
 
-Если вы решили не выполнять вход при первом открытии Visual Studio, это можно запросто сделать позже. Найдите ссылку **Вход** в правом верхнем углу среды Visual Studio. 
+Если вы решили не выполнять вход при первом открытии Visual Studio, это можно запросто сделать позже. Найдите ссылку **Вход** в правом верхнем углу среды Visual Studio.
 
 ![Пользователь, не выполнивший вход](../ide/media/vs2019_usernotsignedin.png)
 
@@ -84,6 +84,7 @@ ms.locfileid: "90036175"
 ## <a name="see-also"></a>См. также
 
 * [Расширение пробной версии или обновление лицензии](../ide/how-to-unlock-visual-studio.md)
+* [Работа с учетными записями GitHub в Visual Studio](../ide/work-with-github-accounts.md)
 * [Обзор интегрированной среды разработки Visual Studio](../get-started/visual-studio-ide.md)
 * [Вход в систему (Visual Studio для Mac)](/visualstudio/mac/signing-in)
 * [Активация (Visual Studio для Mac)](/visualstudio/mac/activation)
