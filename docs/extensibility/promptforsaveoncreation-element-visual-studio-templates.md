@@ -1,6 +1,8 @@
 ---
 title: Элемент PromptForSaveOnCreation (шаблоны проектов Visual Studio)
 titleSuffix: ''
+description: Сведения об элементе PromptForSaveOnCreation и о том, как он указывает, будет ли пользователю предложено указать расположение для сохранения проекта с помощью диалогового окна "Создание проекта".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +17,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: ffc610cf701bdf5be3a0b6116455ac413fbd6dcd
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: e6897eb86f531ca86d0e935836683b8a0b244645
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743136"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903797"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Элемент PromptForSaveOnCreation (шаблоны Visual Studio)
 
@@ -58,7 +60,7 @@ ms.locfileid: "89743136"
 
  Текст должен иметь значение `true` или `false` , `true` что означает, что пользователю будет предложено указать место сохранения при создании нового проекта.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
  Параметр `PromptForSaveOnCreation` является необязательным элементом. Значение по умолчанию — `false`.
 
  Временные проекты — это проекты, которые можно создавать и изменять без сохранения содержимого этого проекта на диске.

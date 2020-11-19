@@ -1,5 +1,7 @@
 ---
 title: Элемент References (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе References и о том, как он группирует ссылки на сборки, добавляемые шаблоном в проекты.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef31c5e7550ec7c6e4570d156d364afcf4ad6819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2576a56bf223fd1b3a1ba4903595cc25144011ec
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701605"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903749"
 ---
 # <a name="references-element-visual-studio-templates"></a>Элемент References (шаблоны Visual Studio)
 Группирует ссылки на сборки, которые шаблон добавляет в проекты.
@@ -55,7 +57,7 @@ ms.locfileid: "80701605"
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Задает содержимое шаблона.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  `References` — необязательный дочерний элемент элемента `TemplateContent`.
 
  `Reference`Элементы и `References` можно использовать только в *VSTEMPLATE* -файлах, имеющих `Type` значение атрибута `Item` .

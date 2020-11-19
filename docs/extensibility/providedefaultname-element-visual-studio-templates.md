@@ -1,5 +1,7 @@
 ---
 title: Элемент Провидедефаултнаме (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе Провидедефаултнаме и о том, как он указывает, будет ли Visual Studio создавать имя по умолчанию Visual Studio в диалоговом окне "Добавление нового элемента" или "Создание проекта".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 192716198f605a5f6b4f62730e84dcf83b4229cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7732c6f02ae5ec086a89bd9ade5c00ea533a68f2
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701720"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903810"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>Элемент Провидедефаултнаме (шаблоны Visual Studio)
 Указывает, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] будет ли система проекта создавать имя по умолчанию для шаблона в диалоговом окне " **Добавление нового элемента** " или " **Создание проекта** ".
@@ -52,8 +54,8 @@ ms.locfileid: "80701720"
 
  Текст должен иметь значение `true` или `false` , что указывает, следует ли создавать имя по умолчанию для шаблона в диалоговом окне **Добавление нового элемента** или **Создание проекта** .
 
-## <a name="remarks"></a>Remarks
- Параметр `ProvideDefaultName` является необязательным элементом. Значение по умолчанию — `true`.
+## <a name="remarks"></a>Комментарии
+ Параметр `ProvideDefaultName` является необязательным элементом. Значение по умолчанию — `true`.
 
  Если `ProvideDefaultName` элемент имеет `false` значение, поля **Name** диалоговых окон **Добавление нового элемента** и **Новый проект** содержат значения `<Enter_name>` .
 

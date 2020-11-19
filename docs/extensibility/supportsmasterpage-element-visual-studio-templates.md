@@ -1,5 +1,7 @@
 ---
 title: Элемент Суппортсмастерпаже (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе Суппортсмастерпаже и о том, как он указывает, включен ли флажок Выбрать главную страницу в диалоговом окне "Добавление нового элемента".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 384672303d00b72431820b98fa02d09e440a1de5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07230c3a9b76be8d78e22acaa83addd0fa21005a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699451"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903836"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>Элемент SupportsMasterPage (шаблоны Visual Studio)
 Указывает, включен ли флажок « **Выбор главной страницы** » в диалоговом окне « **Добавление нового элемента** ».
@@ -53,8 +55,8 @@ ms.locfileid: "80699451"
 
  Текст должен иметь значение `true` или `false` , что указывает, включен ли флажок **Выбрать главную страницу** в диалоговом окне **Добавление нового элемента** .
 
-## <a name="remarks"></a>Remarks
- Параметр `SupportsMasterPage` является необязательным элементом. Значение по умолчанию — `false`.
+## <a name="remarks"></a>Комментарии
+ Параметр `SupportsMasterPage` является необязательным элементом. Значение по умолчанию — `false`.
 
  `SupportsMasterPage`Элемент доступен только для шаблонов веб-элементов.
 

@@ -1,6 +1,8 @@
 ---
 title: Настройка пакета решения SharePoint с помощью целевых объектов MSBuild
 titleSuffix: ''
+description: Настройка создания файлов пакета решения SharePoint (WSP) в Visual Studio с помощью целевых объектов MSBuild в командной строке.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9845f755d184c18b6b5ade4c5504e393edae7b00
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5aa0afbe685c85d9a005dc621f58f17d396c0236
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585814"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903654"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Инструкции. Настройка пакета решения SharePoint с помощью целевых объектов MSBuild
   С помощью целевых объектов MSBuild в командной строке можно настроить, как Visual Studio будет создавать файлы пакетов SharePoint (*. wsp*). Например, можно настроить свойства MSBuild для изменения промежуточного каталога пакета и группы элементов MSBuild с перечисляемыми файлами.
@@ -44,7 +46,7 @@ ms.locfileid: "91585814"
 
 3. Откройте проект, откройте его контекстное меню и выберите команду **Выгрузить проект**.
 
-4. В **Обозреватель решений**откройте контекстное меню проекта, а затем выберите **изменить** * \<ProjectName> . vbproj* или **Edit** * \<ProjectName> . csproj*.
+4. В **Обозреватель решений** откройте контекстное меню проекта, а затем выберите **изменить** *\<ProjectName> . vbproj* или **Edit** *\<ProjectName> . csproj*.
 
 5. После строки `Import` в конце файла проекта добавьте следующую строку.
 
@@ -54,7 +56,7 @@ ms.locfileid: "91585814"
 
 6. Сохраните и закройте файл проекта.
 
-7. В **Обозреватель решений**откройте контекстное меню проекта и выберите **Перезагрузить проект**.
+7. В **Обозреватель решений** откройте контекстное меню проекта и выберите **Перезагрузить проект**.
 
    При публикации проекта сообщение выведется, прежде чем начнется упаковка.
 
@@ -80,5 +82,5 @@ ms.locfileid: "91585814"
 
    При публикации проекта сообщение BeforeLayout выведется, прежде чем начнется упаковка, а сообщение AfterLayout выведется после того, как упаковка завершится.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

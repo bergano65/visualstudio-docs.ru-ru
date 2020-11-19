@@ -1,5 +1,7 @@
 ---
 title: Как создать веб-часть SharePoint | Документация Майкрософт
+description: Создание и Настройка веб-части с помощью конструктора или Добавление элемента веб-части в любой проект SharePoint и последующее изменение файла кода для веб-части.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a8c02cce2f55374b4d62ba5663e8b3fe85b55b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13039520299d52e6f6a704567cf1cdc5ccfd66db
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016441"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903706"
 ---
-# <a name="how-to-create-a-sharepoint-web-part"></a>Как создать веб-часть SharePoint
+# <a name="how-to-create-a-sharepoint-web-part"></a>Практическое руководство. Создание веб-части SharePoint
   Вы можете создать и настроить веб-часть, добавив элемент **веб-части** в любой проект SharePoint, а затем отредактировав файл кода для веб-части или с помощью конструктора. Дополнительные сведения см. в разделе [инструкции. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
 
 ### <a name="to-create-a-sharepoint-web-part"></a>Создание веб-части SharePoint
@@ -39,7 +41,7 @@ ms.locfileid: "86016441"
 
      Веб-часть отображается в **Обозреватель решений**. Дополнительные сведения о файлах, включаемых в веб-часть, см. в разделе [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
 
-6. В **Обозреватель решений**откройте файл кода для только что созданной веб-части.
+6. В **Обозреватель решений** откройте файл кода для только что созданной веб-части.
 
      Например, если веб-часть имеет имя *WebPart1*, откройте *WebPart1. vb* (в Visual Basic) или *WebPart1.CS* (в C#).
 
@@ -49,6 +51,6 @@ ms.locfileid: "86016441"
 
 ## <a name="see-also"></a>См. также раздел
 - [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
-- [Инструкции. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)
-- [Пошаговое руководство. Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
-- [Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+- [Практическое руководство. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)
+- [Пошаговое руководство: создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
+- [Пошаговое руководство: создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

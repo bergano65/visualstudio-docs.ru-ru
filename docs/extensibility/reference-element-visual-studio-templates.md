@@ -1,5 +1,7 @@
 ---
 title: Элемент Reference (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе Reference и о том, как он указывает ссылку на сборку, добавляемую при добавлении элемента в проект.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11d893f6268a69172d27a0f7caee707767abfe89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dcb713a62ebc9a0c3e4daf5aa16f36779b1a1fdc
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701627"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903771"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Элемент Reference (шаблоны Visual Studio)
 Указывает ссылку на сборку, которую нужно добавить при добавлении элемента в проект.
@@ -46,7 +48,7 @@ ms.locfileid: "80701627"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Сборок](../extensibility/assembly-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Указывает сведения о сборке, которую шаблон использует для добавления ссылки на эту сборку в проекты. Каждый элемент должен содержать `Assembly` по одному элементу `Reference` .|
+|[Сборка](../extensibility/assembly-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Указывает сведения о сборке, которую шаблон использует для добавления ссылки на эту сборку в проекты. Каждый элемент должен содержать `Assembly` по одному элементу `Reference` .|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -54,7 +56,7 @@ ms.locfileid: "80701627"
 |-------------|-----------------|
 |[Справочные материалы](../extensibility/references-element-visual-studio-templates.md)|Группирует ссылки на сборки, которые шаблон добавляет в проекты.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  `Reference` — обязательный дочерний элемент элемента `References`.
 
  `Reference`Элементы и `References` можно использовать только в *VSTEMPLATE* -файлах, имеющих `Type` значение атрибута `Item` .

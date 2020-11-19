@@ -1,5 +1,7 @@
 ---
 title: Элемент ProjectType (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе ProjectType и о том, как он классифицирует шаблон проекта, чтобы он появился в диалоговом окне Новый проект или Добавление нового элемента.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d794bd5e81e77a892b5a3be38ff73ab805582dd7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bd457bfb639ff0def2662476e60c8736e14b3ce
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701806"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903823"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>Элемент ProjectType (шаблоны Visual Studio)
 Классификация шаблона проекта, чтобы он появился в указанной группе в диалоговом окне **Новый проект** или **Добавление нового элемента** .
@@ -61,7 +63,7 @@ ms.locfileid: "80701806"
 
 - `Web`: Указывает, что шаблон создает веб-проект или элемент. Если `ProjectType` элемент содержит это значение, язык проекта или элемента определяется в [элементе ProjectSubType (шаблоны Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  `ProjectType` — обязательный дочерний элемент элемента `TemplateData`.
 
  Значение `ProjectType` элемента указывает, где находится шаблон: в диалоговом окне **Новый проект** или **Добавление нового элемента** . Например, шаблон со `ProjectType` значением `CSharp` отображается в узле **Visual C#** диалогового окна **Новый проект** .

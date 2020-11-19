@@ -1,6 +1,8 @@
 ---
 title: Удаленное развертывание, публикация, & обновление решений SharePoint
 titleSuffix: ''
+description: Развертывание, публикация и обновление изолированных решений SharePoint на удаленном или локальном сайте SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,19 +18,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5de5128ff19472390e65aa5d9a437aee269ff897
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: db476af4a9d3be9cab2109fb3489d0767765075f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585788"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903576"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Развертывание, публикация и обновление решений SharePoint на удаленном сервере
   Помимо развертывания решений SharePoint в локальной системе, вы можете публиковать изолированные решения SharePoint на удаленные сайты или локальные сайты SharePoint. Процесс удаленной публикации копирует *wspный* файл на сервер SharePoint, устанавливает решение, а затем позволяет активировать решение. Вы также можете обновить удаленную установку решения SharePoint после внесения в нее изменений.
 
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Публикация изолированного решения SharePoint на удаленный сервер SharePoint
 
-1. В **Обозреватель решений**откройте контекстное меню для изолированного проекта SharePoint, который необходимо опубликовать, и выберите **опубликовать**.
+1. В **Обозреватель решений** откройте контекстное меню для изолированного проекта SharePoint, который необходимо опубликовать, и выберите **опубликовать**.
 
 2. В диалоговом окне **Публикация** нажмите кнопку параметр **опубликовать на сайте SharePoint** , а затем введите URL-адрес сайта веб-публикации, например: `https://mytestsite.sharepoint.microsoftonline.com` .
 
@@ -51,11 +53,11 @@ ms.locfileid: "91585788"
 
 1. Переименуйте пакет SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Для этого в **Обозреватель решений** открыть пакет. Он отображается в **обозревателе пакетов**.
 
-2. В **обозревателе пакетов**в поле **имя** измените имя пакета на уникальное имя.
+2. В **обозревателе пакетов** в поле **имя** измените имя пакета на уникальное имя.
 
 3. Сохраните проект.
 
-4. В **Обозреватель решений**откройте контекстное меню проекта и выберите пункт **опубликовать**.
+4. В **Обозреватель решений** откройте контекстное меню проекта и выберите пункт **опубликовать**.
 
 5. В диалоговом окне **Публикация** нажмите кнопку параметр **опубликовать на сайте SharePoint** , а затем, если URL-адрес удаленного сервера, на котором сохранено решение, отсутствует, введите его.
 
@@ -75,7 +77,7 @@ ms.locfileid: "91585788"
 
      Старая версия решения отключена, новая версия решения обновляется с поддерживаемыми данными из старого решения, а новое решение активируется в SharePoint.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Развертывание и публикация решения SharePoint на локальном сайте SharePoint](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
 - [Создание пакетов решений SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Как настроить пакет решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

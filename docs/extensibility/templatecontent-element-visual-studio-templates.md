@@ -1,5 +1,7 @@
 ---
 title: Элемент TemplateContent (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе TemplateContent и о том, как он указывает содержимое шаблона.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 577ce71d3900947cde1de9a1e913124ab778a1ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53cd7d4b5302652fc371f27b76d7e789a6942640
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699234"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903953"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>Элемент TemplateContent (шаблоны проектов Visual Studio)
 
@@ -53,7 +55,7 @@ ms.locfileid: "80699234"
 |Элемент|Описание|
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает организацию и содержимое многопроектных шаблонов.|
-|[Проект](../extensibility/project-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает файлы или каталоги для добавления в проект.|
+|[Project](../extensibility/project-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает файлы или каталоги для добавления в проект.|
 |[Справочные материалы](../extensibility/references-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает ссылки на сборки, необходимые для шаблона элемента.|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Необязательный элемент.<br /><br /> Указывает файл, содержащийся в шаблоне.|
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Задает любые пользовательские параметры, которые будут использоваться при создании проекта или элемента из шаблона.|
@@ -64,7 +66,7 @@ ms.locfileid: "80699234"
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Содержит все метаданные для шаблона проекта, шаблона элемента или начального набора.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  `TemplateContent` является обязательным элементом.
 
 ## <a name="example"></a>Пример

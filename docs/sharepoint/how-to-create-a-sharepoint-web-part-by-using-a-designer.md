@@ -1,6 +1,8 @@
 ---
 title: Инструкции. Создание веб-части SharePoint с помощью конструктора | Документация Майкрософт
 titleSuffix: ''
+description: Создайте веб-часть, добавив элемент визуальной веб-части в проект SharePoint, который открывает конструктор Visual Web Developer в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d19822237f61d5404f42e30078541a735eb206bc
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 09b237704a5b42f75c2239bd6d159e3d58e3025e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584117"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903719"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Инструкции. Создание веб-части SharePoint с помощью конструктора
   Веб-часть можно создать путем добавления **визуального элемента веб-части** в любой проект SharePoint. Откроется конструктор Visual Web Developer в Visual Studio, в котором можно добавить элементы управления и код в веб-часть. Визуальные веб-части работают так же, как и веб-части. Единственное отличие заключается в проектировании визуальных веб-частей в конструкторе Visual Web Developer.
@@ -31,7 +33,7 @@ ms.locfileid: "91584117"
 
      Откроется диалоговое окно **Новый проект** .
 
-2. В диалоговом окне **Новый проект** в разделе **Visual C#** или **Visual Basic**разверните узел **Office/SharePoint** , а затем выберите категорию **решения SharePoint** .
+2. В диалоговом окне **Новый проект** в разделе **Visual C#** или **Visual Basic** разверните узел **Office/SharePoint** , а затем выберите категорию **решения SharePoint** .
 
 3. В списке шаблонов проектов выберите **SharePoint 2013 — Визуальная веб-часть**, а затем нажмите кнопку **ОК** .
 
@@ -39,7 +41,7 @@ ms.locfileid: "91584117"
 
 4. На странице **Укажите сайт и уровень безопасности для отладки** укажите URL-адрес сайта SharePoint, который находится на локальном компьютере, а затем нажмите кнопку **Готово** .
 
-     В **Обозреватель решений**отображается веб-часть. После разработки веб-части в конструкторе Visual Web Developer вы протестируете его на указанном сайте.
+     В **Обозреватель решений** отображается веб-часть. После разработки веб-части в конструкторе Visual Web Developer вы протестируете его на указанном сайте.
 
 ### <a name="to-add-a-visual-web-part-to-an-existing-sharepoint-project"></a>Добавление визуальной веб-части в существующий проект SharePoint
 
@@ -49,9 +51,9 @@ ms.locfileid: "91584117"
 
 3. В списке шаблонов проектов выберите **Визуальная веб-часть**, присвойте ей имя, а затем нажмите кнопку **Добавить** .
 
-     В **Обозреватель решений**откроется веб-часть. После разработки веб-части в конструкторе Visual Web Developer вы протестируете его на указанном сайте.
+     В **Обозреватель решений** откроется веб-часть. После разработки веб-части в конструкторе Visual Web Developer вы протестируете его на указанном сайте.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Практическое руководство. Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
 - [Пошаговое руководство: создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

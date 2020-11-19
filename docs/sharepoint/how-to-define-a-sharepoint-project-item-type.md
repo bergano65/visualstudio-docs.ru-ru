@@ -1,5 +1,7 @@
 ---
 title: Как определить тип элемента проекта SharePoint | Документация Майкрософт
+description: Узнайте, как определить тип элемента проекта, если нужно создать пользовательский элемент проекта SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae709bf2d81e2b8b00dc984602c0426fdf272ebd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78b10e6878301a878de14306f92f425402e1cc17
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016859"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903615"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>Как определить тип элемента проекта SharePoint
   Определите тип элемента проекта, если требуется создать пользовательский элемент проекта SharePoint. Дополнительные сведения см. в разделе [Определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md).

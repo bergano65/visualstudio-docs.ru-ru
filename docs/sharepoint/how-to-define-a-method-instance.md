@@ -1,5 +1,7 @@
 ---
 title: Как определить экземпляр метода | Документация Майкрософт
+description: Узнайте, как определить экземпляр метода для метода в модели подключения к бизнес-данным (BDC).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 170982a5d4abe33ca8cd705a979acc0737185a9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 751683873d98e6c7aedc7228e0a91fb59117993b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016837"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903628"
 ---
 # <a name="how-to-define-a-method-instance"></a>Как определить экземпляр метода
   Необходимо определить по крайней мере один экземпляр метода для каждого метода в модели.

@@ -1,5 +1,7 @@
 ---
 title: Элемент Шовбидефаулт (шаблоны Visual Studio)
+description: Сведения об элементе Шовбидефаулт и о том, как, если задано значение false, шаблон будет отображаться только под указанным TemplateGroupID.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b17a9a29b55721695509deed6b3d33cc7554aa9
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700100"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903979"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a>Элемент Шовбидефаулт (шаблоны Visual Studio)
 Если задано `false` значение, шаблон будет отображаться только под указанным [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).
@@ -53,8 +55,8 @@ ms.locfileid: "80700100"
 
  Этот текст должен быть либо `true`, либо `false`. Значение true указывает, что шаблон будет отображаться для всех типов проектов. Значение false указывает, что шаблон будет отображаться только под указанным элементом `TemplateGroupID`.
 
-## <a name="remarks"></a>Remarks
- Параметр `ShowByDefault` является необязательным элементом. Значение по умолчанию — `true`.
+## <a name="remarks"></a>Комментарии
+ Параметр `ShowByDefault` является необязательным элементом. Значение по умолчанию — `true`.
 
 ## <a name="example"></a>Пример
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].

@@ -1,6 +1,8 @@
 ---
 title: Развертывание & публикация решения SharePoint на локальном сайте SharePoint
 titleSuffix: ''
+description: Узнайте, как развертывать или публиковать решения SharePoint на локальном сервере SharePoint на компьютере разработчика.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,27 +16,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 78a837cc7145187fbc529e6e86cc27f88dd81f51
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 65683544f345a2378fdec559f582985ffec7bc43
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585801"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903589"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Развертывание и публикация решения SharePoint на локальном сайте SharePoint
   Решения SharePoint можно развертывать или публиковать на локальном сервере SharePoint на компьютере разработчика. Процесс развертывания копирует *wspный* файл на сервер SharePoint, устанавливает решение, а затем активирует компоненты. Процесс публикации копирует только файл *WSP* на сервер SharePoint и устанавливает его. Его необходимо активировать вручную, чтобы включить его в SharePoint.
 
 ## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>Развертывание решения SharePoint на локальном сервере SharePoint
 
-1. В **Обозреватель решений**выберите проект, который требуется развернуть.
+1. В **Обозреватель решений** выберите проект, который требуется развернуть.
 
-2. В строке меню последовательно выберите **Сборка**и **Развернуть решение**.
+2. В строке меню последовательно выберите **Сборка** и **Развернуть решение**.
 
      *WSP* -файл создается и устанавливается на локальном сервере SharePoint. Кроме того, функции активируются.
 
 ## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>Публикация решения SharePoint на локальном сервере SharePoint
 
-1. В **Обозреватель решений**откройте контекстное меню проекта SharePoint, который необходимо опубликовать, и выберите **опубликовать**.
+1. В **Обозреватель решений** откройте контекстное меню проекта SharePoint, который необходимо опубликовать, и выберите **опубликовать**.
 
 2. В диалоговом окне **Публикация** выберите переключатель **опубликовать в файловой системе** .
 
@@ -42,7 +44,7 @@ ms.locfileid: "91585801"
 
      Ход публикации отображается в окне **вывод** Visual Studio. По завершении процесса на локальном сервере SharePoint устанавливается файл решения (*WSP*). Однако он по-прежнему должен быть активирован для использования в SharePoint. Если файл решения уже существует, возникает ошибка и спрашивается, нужно ли перезаписать существующий файл. Сведения об обновлении пакета см. в разделе Обновление удаленных пакетов статьи [развертывание, публикация и обновление решений SharePoint на удаленном сервере](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Развертывание, публикация и обновление решений SharePoint на удаленном сервере](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)
 - [Создание пакетов решений SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Как настроить пакет решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
