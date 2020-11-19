@@ -20,7 +20,7 @@ ms.locfileid: "92352957"
 ## <a name="sign-in"></a>Войти
 
    > [!div class="mx-imgBorder"]
-   > ![Фрагмент Azure DevOps](_img/vs-azure-devops/vs-azure-devops-tile.png "Нажмите кнопку "Начать работу", чтобы войти в Azure DevOps.")
+   > ![Фрагмент Azure DevOps](_img/vs-azure-devops/vs-azure-devops-tile.png "Нажмите кнопку 'Начать работу', чтобы войти в Azure DevOps.")
 
    
 Для входа в Azure DevOps вы можете использовать тот же идентификатор, который применялся для активации подписки Visual Studio, или [альтернативный идентификатор](vs-alternate-identity.md) — система распознает вас автоматически.  Таким образом вы можете добавить рабочую или учебную учетную запись (которую вы используете при входе в Visual Studio, Microsoft 365, сеть организации или школы), чтобы использовать Azure DevOps через личную учетную запись, а также рабочую или учебную учетную запись.

@@ -26,9 +26,9 @@ ms.locfileid: "92435734"
 Начать работу с Центром приложений Visual Studio очень просто.
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Найдите плитку Центра приложений Visual Studio и щелкните **Начало работы** .
+2. Найдите плитку Центра приложений Visual Studio и щелкните **Начало работы**.
     > [!div class="mx-imgBorder"]
-    > ![Плитка Центра приложений Visual Studio](_img/vs-app-center/vs-app-center-tile.png "На плитке Центра приложений Visual Studio щелкните "Начать работу".")
+    > ![Плитка Центра приложений Visual Studio](_img/vs-app-center/vs-app-center-tile.png "На плитке Центра приложений Visual Studio щелкните 'Начать работу'.")
 
 3. Теперь создайте учетную запись.  Вы можете использовать для входа существующие учетные записи Microsoft, Google, GitHub или Facebook либо создать новую учетную запись, указав имя пользователя, адрес электронной почты и пароль.  Щелкните **Create account** (Создать учетную запись), чтобы продолжить.
     > [!div class="mx-imgBorder"]

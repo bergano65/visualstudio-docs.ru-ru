@@ -23,11 +23,11 @@ ms.locfileid: "92353386"
 Справку через службу Concierge Chat получить очень легко.
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Найдите плитку Concierge Chat в разделе поддержки на странице преимуществ и щелкните ссылку **Чат** .
+2. Найдите плитку Concierge Chat в разделе поддержки на странице преимуществ и щелкните ссылку **Чат**.
     > [!div class="mx-imgBorder"]
-    > ![Плитка Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-tile.png "Щелкните "Chat now" (Начать чат), чтобы запустить новый сеанс чата.")
+    > ![Плитка Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-tile.png "Щелкните Chat now (Начать чат), чтобы запустить новый сеанс чата.")
 
-3. Нажмите кнопку **Продолжить** .
+3. Нажмите кнопку **Продолжить**.
 
 4. Откроется окно чата, где вы увидите счетчик текущего положения в очереди.
 

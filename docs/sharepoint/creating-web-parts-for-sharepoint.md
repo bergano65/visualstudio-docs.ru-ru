@@ -1,5 +1,7 @@
 ---
 title: Создание веб-частей для SharePoint | Документация Майкрософт
+description: Создание веб-частей для SharePoint. С помощью веб-частей можно изменять содержимое, внешний вид и реакцию на события страниц сайта SharePoint, используя браузер.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4824c358f81f2cf757f037611ed70ba9b8935130
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: bc9427d561817cb115473bddc71f2ba63475427e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740161"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672799"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Создание веб-частей для SharePoint
   С помощью веб-частей можно изменять содержимое, внешний вид и реакцию на события страниц сайта SharePoint, используя браузер. Веб-части — это элементы управления на стороне сервера, которые выполняются на странице веб-частей. Они являются стандартными блоками страниц, которые отображаются на сайте SharePoint. См. раздел [Стандартный блок. Веб-части](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
