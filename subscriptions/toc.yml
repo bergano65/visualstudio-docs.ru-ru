@@ -104,6 +104,12 @@
               href: vs-concierge-chat.md
             - name: Техническая поддержка
               href: vs-tech-support.md
+            - name: Сообщество разработчиков
+              href: vs-developer-community.md
+            - name: 'Майкрософт: вопросы и ответы'
+              href: vs-microsoft-qa.md
+            - name: Техническое сообщество Майкрософт
+              href: vs-microsoft-tech-community.md
 - name: Программное обеспечение и ключи
   items:
     - name: Загрузка программного обеспечения
