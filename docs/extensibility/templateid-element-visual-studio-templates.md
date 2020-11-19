@@ -1,5 +1,7 @@
 ---
 title: Элемент TemplateID (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе TemplateID и о том, как он задает идентификатор для шаблона элемента, отнесенного к группе шаблонов элементов с помощью элемента TemplateGroupID.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8eb5abac9c837b3022354d6da743ac8f21d5e41d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 734af9de80da5f095f9ad7f0e52023659fea6b67
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699059"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903186"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>Элемент TemplateID (шаблоны Visual Studio)
 Задает идентификатор для шаблона элемента, разбитого по категориям в группе шаблонов элементов с помощью элемента [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) .
@@ -51,13 +53,13 @@ ms.locfileid: "80699059"
 ## <a name="text-value"></a>Текстовое значение
  Объект `string` , представляющий идентификатор шаблона элемента, отнесенного к группе шаблонов элементов по `TemplateGroupID` элементу.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  Параметр `TemplateID` является необязательным элементом.
 
  Если файл VSTEMPLATE пропускает `TemplateID` элемент, то в качестве идентификатора шаблона используется элемент [Name](../extensibility/name-element-visual-studio-templates.md) .
 
- Значение `TemplateID` элемента используется вместе с регистрацией системы проекта (HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\11.0\projects \\ ) для фильтрации шаблонов, которые отображаются в диалоговом окне **Добавление нового элемента** .
+ Значение `TemplateID` элемента используется вместе с регистрацией системы проекта (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\ ) для фильтрации шаблонов, которые отображаются в диалоговом окне **Добавление нового элемента** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

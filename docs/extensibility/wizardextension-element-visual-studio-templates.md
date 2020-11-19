@@ -1,5 +1,7 @@
 ---
 title: Элемент Визардекстенсион (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе Визардекстенсион и о том, как он содержит элементы регистрации для настройки мастера шаблонов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd81b32861114d654aa794b992826589406b1df9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07d1c52e2b1dd8fe452d4c24f8dc6db6b32334a5
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740371"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903394"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>Элемент WizardExtension (шаблоны Visual Studio)
 Содержит элементы регистрации для настройки мастера шаблонов.
@@ -45,7 +47,7 @@ ms.locfileid: "80740371"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Сборок](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Обязательный элемент.<br /><br /> Указывает имя или строгое имя сборки, которая отображается в глобальном кэше сборок. Элемент должен содержать по крайней мере один `Assembly` элемент `WizardExtension` .|
+|[Сборка](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Обязательный элемент.<br /><br /> Указывает имя или строгое имя сборки, которая отображается в глобальном кэше сборок. Элемент должен содержать по крайней мере один `Assembly` элемент `WizardExtension` .|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Обязательный элемент.<br /><br /> Полное имя класса, реализующего `IWizard` интерфейс. Элемент должен содержать по крайней мере один `FullClassName` элемент `WizardExtension` .|
 
 ### <a name="parent-elements"></a>Родительские элементы
@@ -54,7 +56,7 @@ ms.locfileid: "80740371"
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Содержит все метаданные для шаблона проекта, шаблона элемента или начального набора.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  `WizardExtension` — необязательный дочерний элемент элемента `VSTemplate`.
 
 ## <a name="example"></a>Пример

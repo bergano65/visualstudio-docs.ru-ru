@@ -1,5 +1,7 @@
 ---
 title: Как импортировать главную страницу или тему | Документация Майкрософт
+description: Создайте шаблоны для главных страниц и тем в SharePoint Designer, а затем импортируйте их в Visual Studio, чтобы обеспечить единообразное оформление страниц на сайте SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7abca9e9141fdc8d4540e8a38e9579862fc540f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c17f4e7477a20ea245eaa359a6f9611a8dc4ece6
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015298"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903498"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Как импортировать главную страницу или тему
   Создание и использование эталонных страниц дает возможность обеспечения согласованного внешнего вида страниц сайта SharePoint. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] не предоставляет шаблоны для этих элементов, но их можно создать в SharePoint Designer, а затем импортировать в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Дополнительные сведения см. в разделе [стандартный блок: страницы и пользовательский интерфейс](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) на веб-сайте Майкрософт.
@@ -76,7 +78,7 @@ ms.locfileid: "86015298"
 
      Атрибут `Type="GhostableInLibrary"` указывает, что элемент добавляется в базу данных содержимого, а `Url` атрибут модуля определяет место хранения файла в базе данных содержимого SharePoint.
 
-11. Чтобы изменить область развертывания для главной страницы, в **Обозреватель решений**откройте файл компонента в конструкторе компонентов, а затем выберите новую область развертывания из списка **область** .
+11. Чтобы изменить область развертывания для главной страницы, в **Обозреватель решений** откройте файл компонента в конструкторе компонентов, а затем выберите новую область развертывания из списка **область** .
 
      Значение **Web** означает, что Главная страница относится только к веб-сайту, который в данный момент указан в проекте. Значение **site** означает, что Главная страница применяется к текущему семейству веб-сайтов, включая все дочерние сайты и корневой веб-сайт. Другие значения не применяются.
 
@@ -90,7 +92,7 @@ ms.locfileid: "86015298"
      В открывшемся списке эталонных страниц или тем содержится импортированная вами эталонная страница или тема.
 
 ## <a name="see-also"></a>См. также раздел
-- [Эталонные страницы](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
+- [Главные страницы](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
 - [Импорт элементов с существующего сайта SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Создание страниц для SharePoint](../sharepoint/creating-pages-for-sharepoint.md)
 - [Использование модулей для включения файлов в решение](../sharepoint/using-modules-to-include-files-in-the-solution.md)

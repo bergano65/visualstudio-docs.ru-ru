@@ -1,6 +1,7 @@
 ---
 title: Элемент SupportsCodeSeparation (шаблоны проектов Visual Studio)
 titleSuffix: ''
+description: Сведения об элементе Суппортскодесепаратион и о том, как он указывает, включен ли флажок Размещать код в отдельном файле в диалоговом окне "Добавление нового элемента".
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dfdf3244d09c5f3418c5403a32570c382c5365c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1847d5f0a0fa77b1dd0ddd0d74eeba84326d0205
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038469"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901860"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>Элемент SupportsCodeSeparation (шаблоны проектов Visual Studio)
 Указывает, включен ли флажок « **размещать код в отдельном файле** » в диалоговом окне « **Добавление нового элемента** ».

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 9d279de29664dcfc17ebd719fafc95d197a3352a
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1317f41c9463ab645e6dd3ba281f11b9246720a8
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398674"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901938"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>Добавление Application Insights Azure с помощью Visual Studio Подключенные службы
 
@@ -33,7 +33,7 @@ ms.locfileid: "93398674"
 
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Подключенные службы в Visual Studio для Mac](/visualstudio/mac/connected-services).
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Visual Studio с установленной рабочей нагрузкой Azure.
 - Проект одного из поддерживаемых типов
@@ -82,7 +82,7 @@ ms.locfileid: "93398674"
 
    ![Зависимости служб](./media/azure-app-insights-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Страница продукта Azure Monitor](https://azure.microsoft.com/services/monitor/)
 - [Документация по Azure App Insights](/azure/azure-monitor/app/app-insights-overview/)

@@ -1,5 +1,7 @@
 ---
 title: Как включить пользовательскую сборку в компонент BDC | Документация Майкрософт
+description: Включите пользовательские сборки в компонент подключения к бизнес-данным, чтобы проект мог ссылаться на сборки из других проектов в том же решении.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,19 +19,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79336e241b822e5fa9f84dbb771aa4187ea5eadb
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e7a2a0109faca4da5406b45b4d606ae8a5cd0685
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740075"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903472"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Как включить пользовательскую сборку в компонент BDC
   Проект может ссылаться на сборки из других проектов в том же решении. Однако эти сборки необходимо добавить в файл компонентов проекта, используя диалоговое окно **назначение упоминаемых сборок в бизнес – системам** .
 
 ### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>Включение пользовательской сборки в компонент подключения к бизнес-данным (BDC)
 
-1. В **Обозреватель решений**выберите папку, которая содержит модель BDC.
+1. В **Обозреватель решений** выберите папку, которая содержит модель BDC.
 
 2. В меню **Просмотр** выберите пункт **Окно свойств**.
 
@@ -47,7 +49,7 @@ ms.locfileid: "90740075"
     > [!NOTE]
     > Для отладки кода в пользовательской сборке необходимо добавить сборку в пакет решения. Дополнительные сведения см. [в разделе инструкции. Добавление и удаление дополнительных сборок](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Практическое руководство. Использование файла ресурсов для задания локализованных имен, свойств и разрешений](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
 - [Практическое руководство. Добавление существующего файла модели подключения к бизнес-данным в проект SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)

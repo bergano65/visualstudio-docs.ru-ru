@@ -1,5 +1,7 @@
 ---
 title: Элемент SDKReference (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе SDKReference и о том, как он указывает, что шаблон элемента использует ссылку на пакет SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f43c813e688c1e175f1d36e6f06125f92404c48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a1272a4765559fcfcde1aa60c57099b5d707f46
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700167"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901691"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference - элемент (шаблоны Visual Studio)
 Указывает, что шаблон элемента использует ссылку на пакет SDK.
@@ -47,7 +49,7 @@ ms.locfileid: "80700167"
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  Этот текст определяет ссылку на пакет SDK, которую нужно добавить в проект при создании экземпляра шаблона элемента.
 
 ```xml

@@ -1,5 +1,7 @@
 ---
 title: Элемент TemplateGroupID (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе TemplateGroupID и о том, как он указывает, в каком типе проекта будут отображаться шаблоны элементов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: affc324418e3745f85fb0b91a0ef7abda0ab28b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5f7d30036f0f25d1f81b690168675d74fc36bbd
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699077"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903225"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>Элемент TemplateGroupID (шаблоны Visual Studio)
 Указывает, в каком типе проекта будут отображаться шаблоны элементов. Этот элемент важен, если [шовбидефаулт (шаблоны Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) имеет значение `false` . Если для [шовбидефаулт (шаблоны Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) задано значение `true` , то шаблон элемента доступен во всех типах проектов.
@@ -53,10 +55,10 @@ ms.locfileid: "80699077"
 
  Этот текст задает идентификатор для категории шаблонов элементов.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  `TemplateGroupID` является элементом.
 
- Значение `TemplateGroupID` элемента используется вместе с регистрацией системы проекта (HKEY_LOCAL_MACHINE \Софтваре\микрософт\висуалстудио \\ *\<version number>* \Projects \\ ) для фильтрации шаблонов, которые отображаются в диалоговом окне **Добавление нового элемента** .
+ Значение `TemplateGroupID` элемента используется вместе с регистрацией системы проекта (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<version number>* \Projects \\ ) для фильтрации шаблонов, которые отображаются в диалоговом окне **Добавление нового элемента** .
 
 |Значение Visual C++|Значение|
 |------------------------|-------------|
@@ -70,6 +72,6 @@ ms.locfileid: "80699077"
 |WinRT-Native|Используется для проектов Магазина Windows 8.0.|
 |VC-Android|Используется для проектов Android.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

@@ -4,17 +4,16 @@ description: Узнайте, как опубликовать веб-проект
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: c487084a276be31730f1e268527f4c10a2f7b747
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 0a6657f8a6da751614d7d7da3f526aeebd817d5c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398830"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902172"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (сценарий Windows PowerShell)
 ## <a name="syntax"></a>Синтаксис
@@ -36,7 +35,7 @@ Publish-WebApplicationWebSite
 | Параметр | Значение по умолчанию |
 | --- | --- |
 | Aliases |нет |
-| Необходим? |Да |
+| Необходим? |true |
 | Положение |именованный |
 | Значение по умолчанию |нет |
 | Принимать входные данные конвейера? |false |
@@ -121,5 +120,5 @@ Publish-WebApplicationWebSite
 
 В файле конфигурации JSON можно изменить объекты, которые подлежат развертыванию. Раздел webSite является обязательным, а раздел database — необязательным.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения см. в разделе [Publish-WebApplicationVM (сценарий Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md).

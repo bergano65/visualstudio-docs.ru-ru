@@ -1,5 +1,7 @@
 ---
 title: 'Инструкции: выполнение команды SharePoint | Документация Майкрософт'
+description: Узнайте, как создать настраиваемую команду SharePoint для вызова API серверной объектной модели из расширения инструментов SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 789b77f3161b5fe566ea033060e8cab16cbaecc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2746704e30a61b0971db50a5083855b4a93560d4
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016983"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903539"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Инструкции: выполнение команды SharePoint
   Если вы хотите использовать объектную модель сервера в расширении инструментов SharePoint, необходимо создать пользовательскую *команду SharePoint* для вызова API. После определения команды и ее развертывания с помощью расширения инструментов SharePoint расширение может выполнить команду для вызова серверной объектной модели SharePoint. Чтобы выполнить команду, используйте один из методов ExecuteCommand <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> объекта.
@@ -32,7 +34,7 @@ ms.locfileid: "86016983"
 
          Дополнительные сведения о расширениях системы проектов см. [в разделе расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
-    - В расширении узла **подключения SharePoint** в **Обозреватель сервера**используйте <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> свойство. Чтобы получить <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> объект, используйте <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> свойство.
+    - В расширении узла **подключения SharePoint** в **Обозреватель сервера** используйте <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> свойство. Чтобы получить <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> объект, используйте <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> свойство.
 
          Дополнительные сведения о расширениях **Обозреватель сервера** см. [в разделе Расширение узла подключений SharePoint в обозреватель сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 

@@ -1,5 +1,7 @@
 ---
 title: Руководство. расширение узла SharePoint в обозреватель сервера | Документация Майкрософт
+description: Сведения о том, как расширить узел SharePoint в обозреватель сервера с помощью узла "подключения SharePoint".
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea556d18641b96ea6a38ef5abf6efe4c93a44cdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bad90701d19f97036ecba55bb2901739ad30b200
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015021"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903550"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Руководство. расширение узла SharePoint в обозреватель сервера
-  Вы можете расширить узлы в узле " **подключения SharePoint** " в **Обозреватель сервера**. Это полезно, если требуется добавить в существующий узел новые дочерние узлы, элементы контекстного меню или свойства. Дополнительные сведения см. [в разделе Расширение узла подключений SharePoint в обозреватель сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Вы можете расширить узлы в узле " **подключения SharePoint** " в **Обозреватель сервера**. Это полезно, если требуется добавить в существующий узел новые дочерние узлы, элементы контекстного меню или свойства. Дополнительные сведения см. в разделе [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
 ### <a name="to-extend-a-sharepoint-node-in-server-explorer"></a>Расширение узла SharePoint в обозреватель сервера
 
@@ -83,6 +85,6 @@ ms.locfileid: "86015021"
 
 ## <a name="see-also"></a>См. также раздел
 - [Как добавить пользовательский узел SharePoint к обозреватель сервера](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)
-- [Расширение узла подключений SharePoint в обозреватель сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Расширение узла подключений SharePoint в обозревателе сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Пошаговое руководство. расширение обозреватель сервера для показа веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [Связывание пользовательских данных с помощью расширений инструментов SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)

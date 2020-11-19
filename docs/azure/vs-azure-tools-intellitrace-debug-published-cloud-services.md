@@ -4,17 +4,16 @@ ms.custom: SEO-VS-2020
 description: Узнайте, как выполнять отладку облачной службы с помощью Visual Studio и IntelliTrace.
 author: mikejo5000
 manager: jillfra
-ms.assetid: 5e6662fc-b917-43ea-bf2b-4f2fc3d213dc
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: b89ed536e6483f54d4d7370a02935728dedfb517
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: abfe3de9bad150fbfb187646592218e62c1cce20
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809824"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902419"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Отладка опубликованной облачной службы Azure с помощью Visual Studio и IntelliTrace
 С помощью IntelliTrace можно записывать в журнал расширенные отладочные сведения для экземпляра роли при его запуске в Azure. Если вам необходимо найти причину проблемы, можете использовать журналы IntelliTrace для пошагового выполнения кода из Visual Studio, как если бы он запускался в Azure. Фактически IntelliTrace записывает выполнение ключевого кода и данные среды при запуске приложения Azure в качестве облачной службы в Azure и позволяет воспроизводить записанные данные в Visual Studio.

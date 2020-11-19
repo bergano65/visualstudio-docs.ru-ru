@@ -1,6 +1,7 @@
 ---
 title: Элемент SupportsLanguageDropDown (шаблоны Visual Studio)
 titleSuffix: ''
+description: Сведения об элементе Суппортслангуажедропдовн и о том, как он указывает, идентичен ли шаблон веб-элемента для нескольких языков и включен ли параметр Language.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ef6cb4f96bf1b31566fef8b714ed30c270ad754
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b02e4b88b22257e7187e334f8c1064b68c6ef49d
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036851"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901730"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>Элемент SupportsLanguageDropDown (шаблоны Visual Studio)
 

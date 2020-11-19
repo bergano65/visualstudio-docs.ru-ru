@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 7bdf07824c7a06a692a81a93eaa5a0fd0536705d
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 4a2789246a75fe7d2331156eecb106f31f21cbf5
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398375"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902926"
 ---
 # <a name="add-azure-cosmos-db-to-your-app-by-using-visual-studio-connected-services"></a>Добавление Azure Cosmos DB в приложение с помощью Visual Studio Подключенные службы
 
@@ -33,7 +33,7 @@ ms.locfileid: "93398375"
 
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Подключенные службы в Visual Studio для Mac](/visualstudio/mac/connected-services).
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Visual Studio с установленной рабочей нагрузкой Azure.
 - Проект одного из поддерживаемых типов
@@ -82,7 +82,7 @@ ms.locfileid: "93398375"
 
    ![Зависимости служб](./media/azure-cosmosdb-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Страница продукта Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/)
 - [Документация по Azure Cosmos DB](/azure/cosmos-db/)

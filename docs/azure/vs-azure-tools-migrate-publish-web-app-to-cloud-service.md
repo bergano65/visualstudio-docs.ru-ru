@@ -4,17 +4,16 @@ description: Узнайте, как перенести и опубликоват
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: eb87aff7bf4ca1e3eac359b27a4280877eaefc50
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c9d689ddca7b6f1b0c02f89c7afb82392e8a58af
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399823"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902354"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Как перенести веб-приложение в облачную службу Azure из Visual Studio и опубликовать его.
 
@@ -58,10 +57,10 @@ ms.locfileid: "93399823"
 1. Создайте необходимые учетные записи хранения и облачной службы в подписке Azure, как описано в статье [Подготовка к публикации или развертыванию приложения Azure из Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
 1. В Visual Studio щелкните проект приложения правой кнопкой мыши и выберите **Опубликовать в Microsoft Azure...** (эта команда отличается от команды "Опубликовать…".).
 1. В открывшемся окне **Публикация приложения Azure** выполните вход, используя учетную запись с подпиской Azure, и выберите **Далее >**.
-1. На вкладке **Параметры > Common Settings (Общие параметры)** выберите целевую облачную службу из раскрывающегося списка **Облачная служба** , а также среду и конфигурации.
+1. На вкладке **Параметры > Common Settings (Общие параметры)** выберите целевую облачную службу из раскрывающегося списка **Облачная служба**, а также среду и конфигурации.
 1. На вкладке **Параметры > Advanced Settings (Дополнительные параметры)** выберите учетную запись хранения, а затем нажмите **Далее >**.
 1. На вкладке **Диагностика** выберите, следует ли отправлять сведения в Application Insights.
-1. Выберите **Далее >** , чтобы просмотреть сводки, а затем **Publish** (Опубликовать), чтобы запустить развертывание.
+1. Выберите **Далее >**, чтобы просмотреть сводки, а затем **Publish** (Опубликовать), чтобы запустить развертывание.
 1. В Visual Studio откроется окно журнала действий, в котором вы можете отслеживать ход выполнения.
 
     ![VST_AzureActivityLog](./media/vs-azure-tools-migrate-publish-web-app-to-cloud-service/IC744149.png)
@@ -121,7 +120,7 @@ ms.locfileid: "93399823"
 | WCF | Приложение службы рабочего процесса WCF |
 | Рабочий процесс | Приложение службы рабочего процесса WCF |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Подготовка к публикации или развертыванию приложения Azure из Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md)
 - [Настройка именованных учетных данных для проверки подлинности](vs-azure-tools-setting-up-named-authentication-credentials.md)

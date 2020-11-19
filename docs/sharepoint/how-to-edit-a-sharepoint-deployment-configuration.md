@@ -1,5 +1,7 @@
 ---
 title: Как изменить конфигурацию развертывания SharePoint | Документация Майкрософт
+description: Узнайте, как создать конфигурацию развертывания SharePoint или изменить существующую конфигурацию развертывания.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74f6377bad0f62aa2c470e72afe64b85b3017ee6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e64f805496d03b42ca70489bab1302ecf58b33bc
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016782"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903563"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Как изменить конфигурацию развертывания SharePoint
   Можно создать конфигурацию развертывания или изменить существующую конфигурацию развертывания. Например, можно выполнить один шаг или изменить порядок шагов в процессе развертывания. Может потребоваться создать или изменить конфигурации развертывания, так как встроенные и программно добавленные конфигурации нельзя изменить.
@@ -28,7 +30,7 @@ ms.locfileid: "86016782"
 
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>Создание конфигурации развертывания SharePoint
 
-1. В **Обозреватель решений**выберите проект SharePoint, а затем в строке меню выберите **проект**, _имя_проекта_**Свойства**.
+1. В **Обозреватель решений** выберите проект SharePoint, а затем в строке меню выберите **проект**, _имя_проекта_**Свойства**.
 
 2. На вкладке **SharePoint** нажмите кнопку **создать** .
 
@@ -45,7 +47,7 @@ ms.locfileid: "86016782"
 
 #### <a name="to-change-the-active-deployment-configuration"></a>Изменение активной конфигурации развертывания
 
-1. В **Обозреватель решений**выберите проект SharePoint, а затем в строке меню выберите **Project**  >  ** \<*ProjectName*> Свойства**проекта.
+1. В **Обозреватель решений** выберите проект SharePoint, а затем в строке меню выберите **Project**  >  **\<*ProjectName*> Свойства** проекта.
 
 2. Перейдите на вкладку **SharePoint** .
 

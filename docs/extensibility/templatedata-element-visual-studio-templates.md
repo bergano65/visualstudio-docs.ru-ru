@@ -1,5 +1,7 @@
 ---
 title: Элемент TemplateData (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе TemplateData и о том, как он классифицирует шаблон и определяет, как он отображается в диалоговом окне Новый проект или Добавление нового элемента.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3ce0226286e8cc4623b66c043eb7bd376597118
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc0edf82421ba41198480e6c105dd56c02bd0f7e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699195"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903264"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>Элемент TemplateData (шаблоны Visual Studio)
 Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .
@@ -47,9 +49,9 @@ ms.locfileid: "80699195"
 
 | Элемент | Описание |
 | - | - |
-| [Имя](../extensibility/name-element-visual-studio-templates.md) | Обязательный элемент.<br /><br /> Задает имя шаблона в том виде, в каком оно отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** . |
+| [имя](../extensibility/name-element-visual-studio-templates.md); | Обязательный элемент.<br /><br /> Задает имя шаблона в том виде, в каком оно отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** . |
 | [Описание](../extensibility/description-element-visual-studio-templates.md) | Обязательный элемент.<br /><br /> Задает описание шаблона в том виде, в каком оно отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** . |
-| [Значок](../extensibility/icon-element-visual-studio-templates.md) | Обязательный элемент.<br /><br /> Задает путь и имя файла изображения, который выступает в качестве значка, который отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** для шаблона. |
+| [Значок](../extensibility/icon-element-visual-studio-templates.md): | Обязательный элемент.<br /><br /> Задает путь и имя файла изображения, который выступает в качестве значка, который отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** для шаблона. |
 | [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | Обязательный элемент.<br /><br /> Классификация шаблона проекта, чтобы он появился в указанной группе в диалоговом окне **Новый проект** . |
 | [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) | Необязательный элемент.<br /><br /> Классифицирует шаблон проекта, чтобы он появился в указанной подкатегории в диалоговом окне **Новый проект** . |
 | [TemplateID](../extensibility/templateid-element-visual-studio-templates.md) | Необязательный элемент.<br /><br /> Указывает идентификатор шаблона. |
@@ -76,7 +78,7 @@ ms.locfileid: "80699195"
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Содержит все метаданные для шаблона проекта, шаблона элемента или начального набора.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  `TemplateData` является обязательным элементом.
 
  Если не включить необязательный элемент, используется значение по умолчанию для этого элемента.
@@ -108,6 +110,6 @@ ms.locfileid: "80699195"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

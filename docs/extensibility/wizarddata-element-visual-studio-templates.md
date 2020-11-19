@@ -1,5 +1,7 @@
 ---
 title: Элемент WizardData (шаблоны Visual Studio) | Документация Майкрософт
+description: Сведения об элементе WizardData и о том, как он указывает пользовательский XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa3f9d2e971d944b964f4b194d1324ff960fbd24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0472bfeb3a988bcb39b4daf80cea92398130f59f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740394"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903407"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>Элемент WizardData (шаблоны Visual Studio)
 
@@ -63,7 +65,7 @@ ms.locfileid: "80740394"
 
 Этот текст указывает пользовательский XML-файл для передачи пользовательскому расширению мастера, указанному в элементе [визардекстенсион](../extensibility/wizardextension-element-visual-studio-templates.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 В этом элементе можно указать любой XML-код. XML будет передан в качестве параметра пользовательскому расширению мастера, позволяя расширению использовать содержимое этого элемента. Для этих данных проверка не выполняется.
 
