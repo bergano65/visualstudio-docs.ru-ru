@@ -1,5 +1,7 @@
 ---
 title: Создание окна инструментов с несколькими экземплярами | Документация Майкрософт
+description: Сведения об изменении окна инструментов для одновременного открытия нескольких экземпляров. По умолчанию окна инструментов могут открывать только один экземпляр.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bb84ed9961cac5159e15bc0c45fada5426d2f2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10de60620bcd0b56f251955f478d4d06c984d021
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904065"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973997"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Создание окна инструментов с несколькими экземплярами
 Можно программировать окно инструментов, чтобы можно было одновременно открыть несколько экземпляров. По умолчанию окна инструментов могут открывать только один экземпляр.

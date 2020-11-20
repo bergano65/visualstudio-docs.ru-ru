@@ -1,5 +1,7 @@
 ---
 title: Элемент ButtonText | Документация Майкрософт
+description: Элемент ButtonText позволяет указать текст, который отображается в различных меню. Элемент ButtonText не может быть пустым, даже если указаны другие текстовые поля.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59308feea2002a18662a7c04b95a92a920f934c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2db20bb3298a7b849e8bc4a261987c5314a29841
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739906"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974465"
 ---
 # <a name="buttontext-element"></a>ButtonText, элемент
 Это поле позволяет указать текст, отображаемый в различных меню. По умолчанию `ButtonText` элемент отображается в контроллерах меню. `ButtonText`Элемент также станет значением по умолчанию, если другие текстовые поля пусты. `ButtonText`Элемент не может быть пустым, даже если указаны другие текстовые поля.

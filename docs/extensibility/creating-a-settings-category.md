@@ -1,5 +1,7 @@
 ---
 title: Создание категории параметров | Документация Майкрософт
+description: Узнайте, как создать категорию параметров Visual Studio и использовать ее для сохранения и восстановления значений из файла параметров.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d50ca998efa034b1d4392c1fb7cecb8de8ed06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 468b1a44fb4754f86b31992e2c6d96bf6380592d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904027"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974545"
 ---
 # <a name="create-a-settings-category"></a>Создание категории параметров
 
@@ -25,8 +27,8 @@ ms.locfileid: "85904027"
 
 Чтобы начать работу с этим пошаговым руководством, сначала необходимо выполнить действия, описанные в первом разделе [страницы Создание параметров](../extensibility/creating-an-options-page.md). Сетка свойств результирующие параметры позволяет просматривать и изменять свойства в категории. После сохранения категории свойств в файле параметров вы просматриваете файл, чтобы увидеть, как хранятся значения свойств.
 
-## <a name="prerequisites"></a>Обязательные условия
- Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Предварительные требования
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-settings-category"></a>Создание категории параметров
  В этом разделе используется пользовательская точка параметров для сохранения и восстановления значений категории «параметры».
@@ -48,18 +50,18 @@ ms.locfileid: "85904027"
     > [!NOTE]
     > Из этих трех категорий в мастере **импорта и экспорта параметров** не отображается только имя категории.
 
-3. В *MyToolsOptionsPackage.CS*добавьте `float` свойство с именем `OptionFloat` в `OptionPageGrid` класс, как показано в следующем примере.
+3. В *MyToolsOptionsPackage.CS* добавьте `float` свойство с именем `OptionFloat` в `OptionPageGrid` класс, как показано в следующем примере.
 
     ```csharp
-    public class OptionPageGrid : DialogPage
+    public class OptionPageGrid : DialogPage
     {
-        private int optionInt = 256;
-        private float optionFloat = 3.14F;
+        private int optionInt = 256;
+        private float optionFloat = 3.14F;
 
         [Category("My Options")]
         [DisplayName("My Integer option")]
         [Description("My integer option")]
-        public int OptionInteger
+        public int OptionInteger
         {
             get { return optionInt; }
             set { optionInt = value; }
@@ -67,7 +69,7 @@ ms.locfileid: "85904027"
         [Category("My Options")]
         [DisplayName("My Float option")]
         [Description("My float option")]
-        public float OptionFloat
+        public float OptionFloat
         {
             get { return optionFloat; }
             set { optionFloat = value; }
@@ -92,7 +94,7 @@ ms.locfileid: "85904027"
 
 1. Запустите проект в режиме отладки, нажав клавишу **F5**. Запустится экспериментальный экземпляр.
 
-2. Откройте **Tools**  >  диалоговое окно**Параметры** инструментов.
+2. Откройте **Tools**  >  диалоговое окно **Параметры** инструментов.
 
 3. В древовидном представлении в левой области разверните раздел **Моя Категория** , а затем щелкните **мою страницу сетки**.
 
@@ -118,7 +120,7 @@ ms.locfileid: "85904027"
 
      На странице **Экспорт завершено** сообщается о том, что параметры были успешно экспортированы.
 
-10. В меню **Файл** наведите указатель мыши на пункт **Открыть**и выберите **Файл**. Выберите *MySettings. vssettings* и откройте его.
+10. В меню **Файл** наведите указатель мыши на пункт **Открыть** и выберите **Файл**. Выберите *MySettings. vssettings* и откройте его.
 
      Вы можете найти категорию свойств, экспортированную в следующем разделе файла (идентификаторы GUID будут отличаться).
 
@@ -139,7 +141,7 @@ ms.locfileid: "85904027"
 
 12. В меню **Сервис** выберите пункт **Параметры**, разверните раздел **Моя Категория**, щелкните **Моя страница сетки** , а затем измените значение **оптионфлоат** на 1,0 и **оптионинтежер** на 1. Нажмите кнопку **ОК**.
 
-13. В меню **Сервис** выберите **Импорт и экспорт параметров**, выберите пункт **импортировать выбранные параметры среды**и нажмите кнопку **Далее**.
+13. В меню **Сервис** выберите **Импорт и экспорт параметров**, выберите пункт **импортировать выбранные параметры среды** и нажмите кнопку **Далее**.
 
      Откроется страница **сохранить текущие параметры** .
 

@@ -1,5 +1,7 @@
 ---
 title: Изменение текста команды меню | Документация Майкрософт
+description: Узнайте, как изменить текстовую метку команды меню с помощью службы Именукоммандсервице, просмотрев этот пример кода.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88a20d9f29ae86f7946389cafd26d67c244caea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d22669e67becb62d5e90f58c0cdd6b572e684bcf
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183695"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974385"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>Изменение текста команды меню
 В следующих шагах показано, как изменить текстовую метку команды меню с помощью <xref:System.ComponentModel.Design.IMenuCommandService> службы.

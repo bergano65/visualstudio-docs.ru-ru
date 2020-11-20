@@ -1,5 +1,7 @@
 ---
 title: Создание пользовательских редакторов и конструкторов | Документация Майкрософт
+description: 'Сведения о различных типах редакторов, которые могут размещаться в интегрированной среде разработки Visual Studio: основном редакторе, пользовательских редакторах, внешних редакторах и конструкторах.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9177e6f431eb24a337822dd7de0a0b9586e1de0e
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 9dd2d3923776cc0666a3efd12a32fc9e4e8735a0
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414260"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973607"
 ---
 # <a name="create-custom-editors-and-designers"></a>Создание пользовательских редакторов и конструкторов
 
@@ -71,7 +73,7 @@ ms.locfileid: "93414260"
 
    Если его можно внедрить, следует создать главное окно для внешнего редактора, а затем вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> метод и установить <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> для перечисления значение `DP_External` . Если редактор не может быть внедрен, интегрированная среда разработки автоматически создаст для нее отдельное окно.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
 [Пошаговое руководство. Создание пользовательского редактора](../extensibility/walkthrough-creating-a-custom-editor.md)\
 Объясняет, как создать пользовательский редактор.

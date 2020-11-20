@@ -1,5 +1,7 @@
 ---
 title: Изменение внешнего вида команды | Документация Майкрософт
+description: Узнайте, как предоставить отзыв, изменяющий внешний вид команды, например сделать команды доступной или недоступной, скрыть/показать или установить или снять флажок.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c1574704f8848c16f4740189688cb1719f19623
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f79ac7873a1746e0b14db51ba864e94f6bbfa1e
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183721"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974421"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Изменение внешнего вида команды
 Вы можете отправить отзыв пользователю, изменив внешний вид команды. Например, может потребоваться, чтобы команда выглядела иначе, если она недоступна. Можно сделать команды доступными или недоступными, скрыть или показать их, а также установить или снять флажки в меню.

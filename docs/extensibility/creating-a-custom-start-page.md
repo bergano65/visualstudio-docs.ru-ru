@@ -1,5 +1,7 @@
 ---
 title: Создание настраиваемой начальной страницы | Документация Майкрософт
+description: Узнайте, как создать настраиваемую начальную страницу. Начните с пустой начальной страницы, добавьте элементы управления в пустой элемент UserControl, а затем протестируйте страницу.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: ed35948158866b7d0bbb2e458c8f8bc2f7b3f844
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e4c9690e573d2807eb3ad9d842921ee08417d8
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903678"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974556"
 ---
 # <a name="creating-a-custom-start-page"></a>Создание настраиваемой начальной страницы
 
@@ -69,7 +71,7 @@ ms.locfileid: "85903678"
 
 ### <a name="to-test-a-manually-created-custom-start-page"></a>Тестирование пользовательской начальной страницы, созданной вручную
 
-1. Скопируйте файл XAML и все вспомогательные текстовые файлы или файлы разметки в папку *%UserProfile%\My Documents\Visual Studio 2015 \ startpages \\ * .
+1. Скопируйте файл XAML и все вспомогательные текстовые файлы или файлы разметки в папку *%UserProfile%\My Documents\Visual Studio 2015 \ startpages \\* .
 
 2. Если начальная страница ссылается на любые элементы управления или типы в сборках, которые не установлены в Visual Studio, скопируйте эти сборки и вставьте их в *{Папка установки Visual Studio \\ } \Common7\IDE\PrivateAssemblies*.
 
@@ -85,7 +87,7 @@ ms.locfileid: "85903678"
 
 - После проверки начальной страницы и обнаружения ее стабильности используйте параметр **настроить начальную страницу** в диалоговом окне **Параметры** , чтобы выбрать его в качестве начальной страницы в основном экземпляре Visual Studio.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Пошаговое руководство. Добавление пользовательского XAML-кода на начальную страницу](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
 - [Добавление пользовательского элемента управления на начальную страницу](../extensibility/adding-user-control-to-the-start-page.md)

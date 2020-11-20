@@ -1,5 +1,7 @@
 ---
 title: Критические изменения в расширяемости Visual Studio 2017
+description: Ознакомьтесь с техническими сведениями о критических изменениях, внесенных в модель расширяемости в Visual Studio 2017, и о том, что можно сделать для их устранения.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/09/2016
 ms.topic: conceptual
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d872003b319773401ef4da72c1fac8dc177ecbdb
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 3121189b1d73543d2a01bbf0b149c6a98eab6909
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011792"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973748"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Изменения в расширяемости Visual Studio 2017
 
@@ -70,7 +72,7 @@ Visual Studio 2017 предоставляет более [Быстрый и об
   * Копия в глобальном кэше сборок была удалена из программы установки.
   * Был добавлен *pkgdef* -файл для указания записи базы кода для сборки.
 
-    Например:
+    Пример:
 
     ```
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
@@ -98,7 +100,7 @@ Visual Studio 2017 предоставляет более [Быстрый и об
 ### <a name="global-com-registration"></a>Глобальная регистрация COM
 
 * Ранее Visual Studio установила множество разделов реестра в HKEY_CLASSES_ROOT и HKEY_LOCAL_MACHINE Hive для поддержки собственной регистрации COM. Чтобы устранить это воздействие, Visual Studio теперь использует [активацию без регистрации для COM-компонентов](/previous-versions/dotnet/articles/ms973913(v=msdn.10)).
-* В результате большинство файлов TLB/OLB/DLL в папке% ProgramFiles (x86)% \ Common Files\Microsoft Шаред\мсенв больше не устанавливаются Visual Studio по умолчанию. Теперь эти файлы устанавливаются в папке [INSTALLDIR] с соответствующими манифестами COM без регистрации, используемыми ведущим процессом Visual Studio.
+* В результате большинство файлов TLB/OLB/DLL в папке% ProgramFiles (x86)% \ Common Files\Microsoft Шаред\мсенв больше не устанавливаются Visual Studio по умолчанию. Теперь эти файлы устанавливаются в папке [INSTALLDIR] с соответствующими Registration-Free манифестами COM, используемыми ведущим процессом Visual Studio.
 * В результате внешний код, который использует глобальную регистрацию COM для COM-интерфейсов Visual Studio, больше не будет находить эти регистрации. Код, выполняющийся в процессе Visual Studio, не будет видеть разницу.
 
 ### <a name="visual-studio-registry"></a>Реестр Visual Studio
@@ -115,7 +117,7 @@ Visual Studio 2017 предоставляет более [Быстрый и об
 
 ### <a name="react-to-this-breaking-change"></a>Реакция на это критическое изменение
 
-* Внешний код следует преобразовать, чтобы использовать активацию без регистрации для COM-компонентов.
+* Внешний код следует преобразовать, чтобы использовать активацию Registration-Free для COM-компонентов.
 * Внешние компоненты могут найти расположение Visual Studio [, следуя указаниям здесь](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup).
 * Рекомендуется, чтобы внешние компоненты использовали [Диспетчер внешних параметров](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) вместо чтения и записи непосредственно в разделы реестра Visual Studio.
 * Проверьте, могут ли компоненты, которые использует расширение, реализовать еще один метод регистрации. Например, расширения отладчика могут воспользоваться преимуществами новой [регистрации COM-файла msvsmon JSON](migrate-debugger-COM-registration.md).

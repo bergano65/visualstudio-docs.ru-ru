@@ -1,5 +1,7 @@
 ---
 title: Создание страницы параметров | Документация Майкрософт
+description: Узнайте, как создать простую страницу «инструменты/параметры», которая использует сетку свойств для проверки и установки свойств.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be826b73e28a73216ea88ceba8e23eb1e9ea457b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903810"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973708"
 ---
 # <a name="create-an-options-page"></a>Создание страницы параметров
 
@@ -25,9 +27,9 @@ ms.locfileid: "85903810"
 
  MPF предоставляет два класса, помогающие создавать страницы параметров инструментов, <xref:Microsoft.VisualStudio.Shell.Package> класс и <xref:Microsoft.VisualStudio.Shell.DialogPage> класс. Создайте пакет VSPackage, чтобы предоставить контейнер для этих страниц, подклассом `Package` класса. Все страницы параметров инструментов создаются путем наследования от `DialogPage` класса.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
- Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-tools-options-grid-page"></a>Создание страницы параметров инструментов в сетке
 
@@ -37,7 +39,7 @@ ms.locfileid: "85903810"
 
 1. Каждое расширение Visual Studio начинается с проекта развертывания VSIX, который будет содержать ресурсы расширения. Создайте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект VSIX с именем `MyToolsOptionsExtension` . Шаблон проекта VSIX можно найти в диалоговом окне " **Новый проект** ", выполнив поиск по слову "VSIX".
 
-2. Добавьте пакет VSPackage, добавив шаблон элемента пакета Visual Studio с именем `MyToolsOptionsPackage` . В **Обозреватель решений**щелкните правой кнопкой мыши узел проекта и выберите команду **Добавить**  >  **новый элемент**. В **диалоговом окне Добавление нового элемента**перейдите в раздел **Visual C# элементы**  >  **расширяемость** и выберите **пакет Visual Studio**. В поле **имя** в нижней части диалогового окна измените имя файла на `MyToolsOptionsPackage.cs` . Дополнительные сведения о создании пакета VSPackage см. в разделе [Создание расширения с помощью VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
+2. Добавьте пакет VSPackage, добавив шаблон элемента пакета Visual Studio с именем `MyToolsOptionsPackage` . В **Обозреватель решений** щелкните правой кнопкой мыши узел проекта и выберите команду **Добавить**  >  **новый элемент**. В **диалоговом окне Добавление нового элемента** перейдите в раздел **Visual C# элементы**  >  **расширяемость** и выберите **пакет Visual Studio**. В поле **имя** в нижней части диалогового окна измените имя файла на `MyToolsOptionsPackage.cs` . Дополнительные сведения о создании пакета VSPackage см. в разделе [Создание расширения с помощью VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
 
 ### <a name="to-create-the-tools-options-property-grid"></a>Создание сетки свойств «Сервис параметры»
 

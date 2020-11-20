@@ -1,5 +1,7 @@
 ---
 title: Выбор между общими и версиями пакетов VSPackage | Документация Майкрософт
+description: Узнайте о параллельных установках пакетов VSPackage с помощью общих или версий стратегий с несколькими версиями Visual Studio и .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96386c2d3b7d1e822fdd1dd6632d754740f86301
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 725dd8368bd4db9509426fa1a98ce56ef85bc3c0
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011935"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974398"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Выбор между общими и версиями пакетов VSPackage
 Разные версии Visual Studio могут сосуществовать на одном компьютере. Пакеты VSPackage могут поддерживать любой набор [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] версий.

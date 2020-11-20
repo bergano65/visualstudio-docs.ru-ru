@@ -1,5 +1,7 @@
 ---
 title: Перечислитель кода команды | Документация Майкрософт
+description: Перечислитель кода команды используется в параметрах SccGetCommandOptions и Сккпопулателистто для указания команды, для которой указаны параметры.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15916d26ac0120417205af0bb9117a45ec0397c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a831813bb975819e9152dfab4d4eefd6b440606
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739797"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974260"
 ---
 # <a name="command-code-enumerator"></a>Перечислитель кода команды
 Этот перечислитель используется в параметрах [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) и [сккпопулателист](../extensibility/sccpopulatelist-function.md)для указания команды, для которой указаны параметры.
@@ -62,7 +64,7 @@ SCC_COMMAND_PROPERTIES соответствует [сккпропертиес](.
 
 SCC_COMMAND_OPTIONS соответствует [скксетоптион](../extensibility/sccsetoption-function.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)
 - [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

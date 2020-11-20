@@ -1,5 +1,7 @@
 ---
 title: Константы COM в управляемом коде | Документация Майкрософт
+description: Сведения о платформе управляемых пакетов, которая делает некоторые стандартные константы COM доступными для управляемого кода.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 919d000e44b90e975543f8aa6419968a40149adf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dadf3d8965d36719282e0ae98f56e61679f97e4
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739825"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973928"
 ---
 # <a name="com-constants-in-managed-code"></a>Константы COM в управляемом коде
 Платформа управляемого пакета (MPF) делает некоторые стандартные константы COM доступными для управляемого кода. Эти константы перечислены ниже для справки.
@@ -126,5 +128,5 @@ ms.locfileid: "80739825"
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Обработка ошибок и возвращаемые значения](../extensibility/error-handling-and-return-values.md)

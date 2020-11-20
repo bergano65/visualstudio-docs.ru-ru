@@ -1,5 +1,7 @@
 ---
 title: Элемент Buttons | Документация Майкрософт
+description: Элементы Button группы элементов кнопки, представляющие отдельные команды. В этой статье содержится пример.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ac5621093f30af28ade0817906b767231e4ee1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f46942936f9d4f6b69225953d4f9aa8a974a8723
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739918"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974487"
 ---
 # <a name="buttons-element"></a>Button, элемент
 Группирует элементы [кнопки](../extensibility/button-element.md) , представляющие отдельные команды.
@@ -37,7 +39,7 @@ ms.locfileid: "80739918"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Условие|Необязательный параметр. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
@@ -56,7 +58,7 @@ ms.locfileid: "80739918"
 
 ```
 <Buttons>
-  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">
+  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">
     <Parent guid="guidMenuAndCommandsCmdSet" id="MyMenuGroup"/>
     <Icon guid="guidGenericCmdBmp" id="bmpArrow"/>
     <Strings>
@@ -66,6 +68,6 @@ ms.locfileid: "80739918"
 </Buttons>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Как пакеты VSPackage добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

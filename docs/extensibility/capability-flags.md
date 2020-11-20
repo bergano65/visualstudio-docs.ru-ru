@@ -1,5 +1,7 @@
 ---
 title: Флаги возможностей | Документация Майкрософт
+description: Сведения о флагах SCC_CAP_xxx, которые указывают возможности подключаемого модуля системы управления версиями, а также флаги SCC_EXCAP_xxx, которые указывают на расширенные возможности.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9660cbe5a18e82974858fa4d923a38fc73e773f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b80672b00bec95c740824ef7e29f1faba0e63cf4
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739867"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974441"
 ---
 # <a name="capability-flags"></a>Флаги возможностей
-Флаги SCC_CAP_*xxx* — это битовые флаги, используемые для указания возможностей подключаемого модуля системы управления версиями. Флаги SCC_EXCAP_*xxx* — это добавочные флаги, которые указывают расширенные возможности и разрешаются в целочисленные значения.
+Флаги SCC_CAP_ *xxx* — это битовые флаги, используемые для указания возможностей подключаемого модуля системы управления версиями. Флаги SCC_EXCAP_ *xxx* — это добавочные флаги, которые указывают расширенные возможности и разрешаются в целочисленные значения.
 
 |Код возможности|Значение|Описание|
 |---------------------|-----------|-----------------|
