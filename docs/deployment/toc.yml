@@ -20,45 +20,45 @@
   items:
     - name: .NET
       items:
-        - name: Развертывание приложения .NET Core с помощью средства публикации
-          href: /dotnet/core/deploying/deploy-with-vs
-        - name: Упаковка классического приложения для Microsoft Store
-          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Развертывание приложения .NET для Windows с помощью ClickOnce
           href: quickstart-deploy-using-clickonce-folder.md
         - name: Развертывание классического приложения .NET Framework с помощью ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
+        - name: Создание пакета установщика (классическое приложение Windows)
+          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+        - name: Упаковка классического приложения для Microsoft Store >>
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Сборка приложений ClickOnce из командной строки
           href: building-clickonce-applications-from-the-command-line.md
     - name: ASP.NET
       items:
-        - name: Публикация приложения ASP.NET Core в Azure
+        - name: Публикация приложения ASP.NET Core в Azure >>
           href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
         - name: Импорт параметров публикации и развертывание в IIS
           href: tutorial-import-publish-settings-iis.md
         - name: "Импорт параметров публикации и развертывание в\_Azure"
           href: tutorial-import-publish-settings-azure.md
-        - name: Непрерывное развертывание ASP.NET Core в Azure с помощью Git
+        - name: Непрерывное развертывание ASP.NET Core в Azure с помощью Git >>
           href: /aspnet/core/publishing/azure-continuous-deployment
     - name: C++
       items:
-        - name: Развертывание приложения C/C++
-          href: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-        - name: Упаковка классического приложения для Microsoft Store
+        - name: Создание пакета установщика
+          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+        - name: Упаковка классического приложения для Microsoft Store >>
           href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: Развертывание C++/CLR приложения с помощью ClickOnce...
+        - name: Развертывание приложения C++/CLR с помощью ClickOnce >>
           href: /cpp/windows/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
       items:
-        - name: Упаковка приложения UWP с помощью Visual Studio
+        - name: Упаковка приложения UWP с помощью Visual Studio >>
           href: /windows/uwp/packaging/packaging-uwp-apps
     - name: Node.js
       items:
-        - name: "Публикация в службу приложений\_Linux"
+        - name: "Публикация в Службе приложений\_Linux >>"
           href: ../javascript/publish-nodejs-app-azure.md
     - name: Python
       items:
-        - name: Публикация в службу приложений Azure
+        - name: Публикация в Службе приложений Azure >>
           href: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
 - name: Практические руководства
   items:

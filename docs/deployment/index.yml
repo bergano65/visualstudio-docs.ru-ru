@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/17/2019
-  ms.openlocfilehash: 26c3ce01f656f77c578eaa78902bddb7fd844a7d
-  ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+  ms.openlocfilehash: f3ec7ac35844d149a63a76144f9fe6ba54db12e1
+  ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/11/2020
-  ms.locfileid: "90038495"
+  ms.lasthandoff: 11/19/2020
+  ms.locfileid: "94903914"
 landingContent:
 - title: О развертывании
   linkLists:
@@ -23,10 +23,12 @@ landingContent:
     links:
     - text: Первое знакомство с развертыванием
       url: deploying-applications-services-and-components.md
+- title: Начало работы (.NET Core, Python)
+  linkLists:
+  - linkListType: overview
+    links:
     - text: Развертывание в папку, IIS или Azure
       url: deploying-applications-services-and-components-resources.md
-- title: Начало работы
-  linkLists:
   - linkListType: quickstart
     links:
     - text: Публикация в службу приложений Azure
@@ -37,18 +39,28 @@ landingContent:
       url: quickstart-deploy-to-a-web-site.md
     - text: Публикация в папку
       url: quickstart-deploy-to-local-folder.md
+    - text: Развертывание приложения .NET Core с помощью ClickOnce
+      url: quickstart-deploy-using-clickonce-folder.md
 - title: Развертывание приложений .NET
   linkLists:
   - linkListType: tutorial
     links:
     - text: Развертывание приложений .NET Core
       url: /dotnet/core/deploying/deploy-with-vs
-    - text: Развертывание классического приложения с помощью ClickOnce
+    - text: Развертывание классического приложения .NET Framework с помощью ClickOnce
       url: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
-    - text: Сборка приложений ClickOnce из командной строки
-      url: building-clickonce-applications-from-the-command-line.md
+    - text: Развертывание классического приложения с помощью пакета установщика
+      url: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
   - linkListType: how-to-guide
     links:
+    - text: Упаковка классического приложения для Microsoft Store
+      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
+- title: Развертывание приложений C++
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Развертывание с помощью пакета установщика
+      url: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
     - text: Упаковка классического приложения для Microsoft Store
       url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
 - title: Развертывание приложений ASP.NET Core
@@ -61,31 +73,15 @@ landingContent:
       url: tutorial-import-publish-settings-iis.md
     - text: Публикация с помощью GIT
       url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
-- title: Развертывание приложений C++
+- title: Дополнительные типы развертывания
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Развертывание с помощью проекта установки (C/C++)
-      url: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-    - text: Упаковка классического приложения для Microsoft Store
-      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-- title: Развертывание приложений Python
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Публикация в службу приложений Linux
+    - text: Приложения Python в Службе приложений Linux
       url: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
-- title: Развертывание приложений Node.js
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Публикация в службу приложений Linux
+    - text: Приложения Node.js в Службе приложений Linux
       url: ../javascript/publish-nodejs-app-azure.md
-- title: Развертывание пакетов .NET в NuGet.org
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Публикация на NuGet.org (.NET Standard)
-      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
-    - text: Публикация на NuGet.org (.NET Framework)
-      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework
+    - text: Развертывание контейнерных приложений
+      url: ../containers/index.yml
+    - text: Публикация пакетов NuGet
+      url: /nuget
