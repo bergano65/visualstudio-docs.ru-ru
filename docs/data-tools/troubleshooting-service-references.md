@@ -1,5 +1,7 @@
 ---
 title: Диагностика ссылок на службы
+description: Ознакомьтесь с распространенными проблемами, которые могут возникнуть при работе с Windows Communication Foundation (WCF) или ссылками WCF Data Services в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d1a1f0efc21f1f612d85725358555fcb0cb8245
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586124"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998074"
 ---
 # <a name="troubleshoot-service-references"></a>Диагностика ссылок на службы
 
@@ -33,7 +35,7 @@ ms.locfileid: "75586124"
 
 Чтобы исправить эту ошибку, сделайте следующее:
 
-1. В **Обозреватель решений**дважды щелкните файл *app.config* , чтобы открыть его.
+1. В **Обозреватель решений** дважды щелкните файл *app.config* , чтобы открыть его.
 
 2. Нахождение `MaxReceivedMessageSize` Свойства и его изменение на большее значение.
 
@@ -43,7 +45,7 @@ ms.locfileid: "75586124"
 
 Чтобы исправить эту ошибку, сделайте следующее:
 
-- В **Обозреватель решений**щелкните правой кнопкой мыши проект библиотеки служб WCF и выберите пункт **Сборка**.
+- В **Обозреватель решений** щелкните правой кнопкой мыши проект библиотеки служб WCF и выберите пункт **Сборка**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Ошибка доступа к службе через удаленный рабочий стол
 
@@ -84,7 +86,7 @@ ms.locfileid: "75586124"
 
 5. В диалоговом окне **Configuration Manager** задайте для параметра **Активная конфигурация решения** значение **Отладка**. Дополнительные сведения см. в разделе [Практическое руководство. создавать и изменять конфигурации](../ide/how-to-create-and-edit-configurations.md).
 
-6. В **Обозреватель решений**выберите проект службы WCF.
+6. В **Обозреватель решений** выберите проект службы WCF.
 
 7. В меню **Сборка** выберите команду **перестроить** , чтобы перестроить проект службы WCF.
 
@@ -102,6 +104,6 @@ ms.locfileid: "75586124"
 
 4. Нажмите кнопку **ОК** , чтобы закрыть диалоговое окно **Свойства обозревателя** .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Windows Communication Foundation служб и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

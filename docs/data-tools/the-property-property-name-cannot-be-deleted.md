@@ -1,5 +1,7 @@
 ---
 title: Невозможно удалить свойство
+description: Свойство не может быть удалено. Просмотрите сведения об этом сообщении Visual Studio реляционный конструктор объектов (O/R Designer).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 63e99bf7b247856815fd3e8de0f4932fed4881dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdca9758116c551604b5f75f141c15107c1fc890
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535295"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998364"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>Невозможно удалить свойство \<property name>
 
@@ -25,12 +27,12 @@ ms.locfileid: "85535295"
 
 ## <a name="to-correct-this-error"></a>Исправление ошибки
 
-1. В **конструкторе O/R**выберите линию наследования, соединяющую классы данных, указанные в сообщении об ошибке.
+1. В **конструкторе O/R** выберите линию наследования, соединяющую классы данных, указанные в сообщении об ошибке.
 
 2. Задайте в качестве свойства **дискриминатора** другое свойство.
 
 3. Попытайтесь снова удалить свойство.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

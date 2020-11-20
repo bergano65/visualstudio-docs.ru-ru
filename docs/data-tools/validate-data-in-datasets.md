@@ -1,5 +1,7 @@
 ---
 title: Проверка данных в наборах данных
+description: Узнайте, как проверить данные в наборах данных. Проверка данных подразумевает подтверждение того, что значения, вводимые в объекты данных, соответствуют ограничениям в схеме набора данных.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 379c5ec40a59ba044c8cce1ef7926294b763d05d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde45c4086b93713fe6e5223c1725538c0880491
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281088"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998308"
 ---
 # <a name="validate-data-in-datasets"></a>Проверка данных в наборах данных
 Проверка данных — это процесс подтверждения того, что значения, вводимые в объекты данных, соответствуют ограничениям в схеме набора данных. Процесс проверки также подтверждает, что эти значения относятся к правилам, установленным для приложения. Перед отправкой обновлений в основную базу данных рекомендуется проверять данные. Это сокращает число ошибок, а также потенциальное количество циклов обработки между приложением и базой данных.
@@ -207,8 +209,8 @@ ms.locfileid: "85281088"
      [!code-csharp[VbRaddataEditing#22](../data-tools/codesnippet/CSharp/validate-data-in-datasets_7.cs)]
      [!code-vb[VbRaddataEditing#22](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_7.vb)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Инструменты набора данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Как проверить данные в элементе управления Windows Forms DataGridView](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
 - [Как отображать значки ошибок для проверки формы с помощью компонента Windows Forms ErrorProvider](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

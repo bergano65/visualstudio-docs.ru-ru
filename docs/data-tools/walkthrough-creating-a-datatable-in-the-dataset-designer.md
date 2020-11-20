@@ -1,5 +1,6 @@
 ---
 title: Создание таблицы данных в конструктор наборов данных
+description: В этом пошаговом руководстве вы создадите таблицу данных (без TableAdapter) с помощью конструктор наборов данных. Создайте новое приложение Windows Forms и добавьте в него новый набор данных.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7dd762c6df5eebc9ebbf142a3ad7dfe430800802
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a0dad1e6878adc73a08753dca21500499e652602
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036773"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998256"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Пошаговое руководство. Создание таблицы данных в конструктор наборов данных
 
@@ -32,7 +33,7 @@ ms.locfileid: "90036773"
 
 3. В средней области выберите тип проекта **приложения Windows Forms** .
 
-4. Назовите проект **дататаблевалксраугх**и нажмите кнопку **ОК**.
+4. Назовите проект **дататаблевалксраугх** и нажмите кнопку **ОК**.
 
      Проект **дататаблевалксраугх** создается и добавляется в **Обозреватель решений**.
 
@@ -58,7 +59,7 @@ ms.locfileid: "90036773"
 
 ## <a name="add-columns-to-the-datatable"></a>Добавить столбцы в таблицу данных
 
-1. Щелкните правой кнопкой мыши таблицу **Music** . Наведите указатель мыши на пункт **Добавить**и выберите **столбец**.
+1. Щелкните правой кнопкой мыши таблицу **Music** . Наведите указатель мыши на пункт **Добавить** и выберите **столбец**.
 
 2. Присвойте столбцу имя `SongID` .
 
@@ -82,7 +83,7 @@ ms.locfileid: "90036773"
 
 Чтобы сохранить проект **дататаблевалксраугх** , в меню **файл** выберите **сохранить все**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание и настройка наборов данных в Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

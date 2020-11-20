@@ -1,5 +1,7 @@
 ---
 title: Работа с концептуальной моделью(службы данных WCF)
+description: Работа с концептуальной моделью в WCF Data Services. Запрашивать данные через объекты вместо перевода между схемами базы данных и объектными моделями.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 272f2f5e04ad8d87da45c98ed38c30751658d5c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aa79ca10729b9c36437fe30072328838de5dda4
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585916"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997879"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Работа с концептуальной моделью (WCF Data Services)
 
@@ -45,7 +47,7 @@ ms.locfileid: "75585916"
 |[Как добавлять, изменять и удалять сущности](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Показывает, как создавать, обновлять и удалять данные сущностей в службе данных.|
 |[Руководство. Определение связей сущностей](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Показывает, как создавать или изменять связи в службе данных.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Windows Communication Foundation служб и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [Выполнение запросов к службе данных](/dotnet/framework/data/wcf/querying-the-data-service-wcf-data-services)

@@ -1,6 +1,6 @@
 ---
 title: Неподдерживаемый поставщик базы данных
-description: Выбранное подключение использует неподдерживаемый поставщик базы данных
+description: Выбранное соединение использует неподдерживаемый поставщик базы данных. Просмотрите сведения об этом сообщении Visual Studio реляционный конструктор объектов (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8fa073b47927f673914156c586bf27a121e53ea
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 06e08f9a9c28698ae2ee2fecfbcec64c39666c8a
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037573"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998351"
 ---
 # <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>Выбранное подключение использует неподдерживаемый поставщик базы данных
 
@@ -23,9 +23,9 @@ ms.locfileid: "90037573"
 
 **Реляционный конструктор O/R** поддерживает только подключения к данным, которые используют поставщик .NET Framework для SQL Server. Допустимы только подключения к Microsoft SQL Server или Microsoft SQL Server Database File.
 
-Чтобы исправить эту ошибку, добавьте только элементы из подключений к данным, которые используют .NET Framework поставщик данных для SQL Server в **Реляционный конструктор**объектов.
+Чтобы исправить эту ошибку, добавьте только элементы из подключений к данным, которые используют .NET Framework поставщик данных для SQL Server в **Реляционный конструктор** объектов.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Data.SqlClient>
 - [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

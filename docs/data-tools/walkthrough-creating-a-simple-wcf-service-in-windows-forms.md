@@ -1,5 +1,6 @@
 ---
 title: Создание простой службы WCF в Windows Forms
+description: В этом пошаговом руководстве вы создадите службу Windows Communication Foundation (WCF) в Visual Studio, проверите ее, а затем получите к ней доступ из Windows Forms приложения.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b0c874509622b34d7a9703a6b31481e0d88e586
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 215ae1409c36417526bb1362f0029029ed95e801
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036799"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998139"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Пошаговое руководство. Создание простой службы WCF в Windows Forms
 
@@ -64,7 +65,7 @@ ms.locfileid: "90036799"
    > [!NOTE]
    > Будет создана работающая служба, которую можно протестировать и использовать. Следующие два действия демонстрируют, как можно изменить метод по умолчанию для использования другого типа данных. В реальном приложении необходимо также добавить к службе ее специальные функции.
 
-5. В **Обозреватель решений**дважды щелкните **IService1. vb** или **IService1.CS**.
+5. В **Обозреватель решений** дважды щелкните **IService1. vb** или **IService1.CS**.
 
    ![Файл IService1](../data-tools/media/wcf2.png)
 
@@ -80,7 +81,7 @@ ms.locfileid: "90036799"
 
    В приведенном выше коде обратите внимание на атрибуты `<OperationContract()>` или `[OperationContract]` . Эти атрибуты обязательны для любого метода, предоставляемого службой.
 
-6. В **Обозреватель решений**дважды щелкните **Service1. vb** или **Service1.CS**.
+6. В **Обозреватель решений** дважды щелкните **Service1. vb** или **Service1.CS**.
 
    ![Файл Service1](../data-tools/media/wcf3.png)
 
@@ -151,6 +152,6 @@ ms.locfileid: "90036799"
 
      ![Форма с результатом](../data-tools/media/wcf10.png)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation служб и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

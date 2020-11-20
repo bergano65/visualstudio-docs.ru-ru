@@ -1,5 +1,7 @@
 ---
 title: Создание службы данных WCF с помощью & WPF Entity Framework
+description: Создание службы данных WCF с WPF и Entity Framework, размещенной в веб-приложении ASP.NET, и доступ к нему из Windows Forms приложения.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9abdeee9a785a8bccf6cbb580c87bae4fa313036
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8c9ced0b589b28f1cd21de4a862c6f11dc6e03e
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585994"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998269"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Пошаговое руководство. Создание службы данных WCF с помощью WPF и Entity Framework
 В этом пошаговом руководстве демонстрируется создание простой службы [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] в веб-приложении [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и последующий доступ к ней из приложения Windows Forms.
@@ -43,7 +45,7 @@ ms.locfileid: "75585994"
 ## <a name="prerequisites"></a>Предварительные требования
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
-1. Если у вас нет SQL Server Express LocalDB, установите его на [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)или с помощью **Visual Studio Installer**. В **Visual Studio Installer**можно установить SQL Server Express LocalDB как часть рабочей нагрузки **хранения и обработки данных** или как отдельный компонент.
+1. Если у вас нет SQL Server Express LocalDB, установите его на [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)или с помощью **Visual Studio Installer**. В **Visual Studio Installer** можно установить SQL Server Express LocalDB как часть рабочей нагрузки **хранения и обработки данных** или как отдельный компонент.
 
 2. Установите учебную базу данных Northwind, выполнив следующие действия.
 
@@ -178,7 +180,7 @@ ms.locfileid: "75585994"
 
 ### <a name="to-enable-data-binding-to-the-service"></a>Включение привязки данных к службе
 
-1. В строке меню выберите **Просмотреть**  >  **другие**  >  **Источники данных**Windows.
+1. В строке меню выберите **Просмотреть**  >  **другие**  >  **Источники данных** Windows.
 
    Открывается окно **Источники данных**.
 
@@ -202,7 +204,7 @@ ms.locfileid: "75585994"
 
 3. Выберите элемент управления **CustomersDataGridView** и в окне **Свойства** установите для свойства **Закрепить** значение **Заполнение**.
 
-4. В **Обозреватель решений**откройте контекстное меню узла **Form1** и выберите пункт **Просмотреть код** , чтобы открыть редактор кода, и добавьте следующий `Imports` `Using` оператор или в начало файла:
+4. В **Обозреватель решений** откройте контекстное меню узла **Form1** и выберите пункт **Просмотреть код** , чтобы открыть редактор кода, и добавьте следующий `Imports` `Using` оператор или в начало файла:
 
    ```vb
    Imports NorthwindClient.ServiceReference1
@@ -286,7 +288,7 @@ ms.locfileid: "75585994"
 
 6. В текстовом поле введите **London** и нажмите кнопку. Будут отображены только клиенты из Лондона.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Windows Communication Foundation служб и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-- [Как добавить, обновить или удалить ссылку на службу данных WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Практическое руководство. Добавление, обновление или удаление ссылки на службу данных WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

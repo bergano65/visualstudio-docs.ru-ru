@@ -1,5 +1,6 @@
 ---
 title: Настройка поведения вставки, обновления и удаления
+description: В этом пошаговом руководстве описано, как настроить поведение классов сущностей с помощью LINQ (языкового запроса) к инструментам SQL в Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5323cfa41dc4931db514977238fd359b4f38ab3f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cac9f27263fc7d316d308f1f8d906751f419f104
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036747"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997931"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Пошаговое руководство. Настройка поведения вставки, обновления и удаления классов сущностей
 
@@ -50,7 +51,7 @@ ms.locfileid: "90036747"
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
-1. Если у вас нет SQL Server Express LocalDB, установите его на [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)или с помощью **Visual Studio Installer**. В **Visual Studio Installer**можно установить SQL Server Express LocalDB как часть рабочей нагрузки **хранения и обработки данных** или как отдельный компонент.
+1. Если у вас нет SQL Server Express LocalDB, установите его на [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)или с помощью **Visual Studio Installer**. В **Visual Studio Installer** можно установить SQL Server Express LocalDB как часть рабочей нагрузки **хранения и обработки данных** или как отдельный компонент.
 
 2. Установите учебную базу данных Northwind, выполнив следующие действия.
 
@@ -78,7 +79,7 @@ ms.locfileid: "90036747"
 
 3. В средней области выберите тип проекта **приложения Windows Forms** .
 
-4. Назовите проект **UpdatingWithSProcsWalkthrough**и нажмите кнопку **ОК**.
+4. Назовите проект **UpdatingWithSProcsWalkthrough** и нажмите кнопку **ОК**.
 
      Проект **UpdatingwithSProcsWalkthrough** создается и добавляется в **Обозреватель решений**.
 
@@ -96,7 +97,7 @@ ms.locfileid: "90036747"
 
 ### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Для создания класса сущностей Customer и настройки с ним источника данных
 
-1. В **Обозреватель сервера** или **Обозреватель базы данных**выберите таблицу **Customer** в SQL Server версии образца базы данных Northwind.
+1. В **Обозреватель сервера** или **Обозреватель базы данных** выберите таблицу **Customer** в SQL Server версии образца базы данных Northwind.
 
 2. Перетащите узел **Customers (клиенты** ) из **Обозреватель сервера** или **Обозреватель базы данных** в область **конструктор O/R* .
 
@@ -270,7 +271,7 @@ ms.locfileid: "90036747"
 
 - Добавьте запросы LINQ в данные фильтра Дополнительные сведения см. [в разделе Введение в запросы LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext - методы](../data-tools/datacontext-methods-o-r-designer.md)

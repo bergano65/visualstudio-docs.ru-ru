@@ -1,5 +1,7 @@
 ---
 title: Работа с наборами данных в n-уровневых приложениях
+description: Научитесь работать с наборами данных в n-уровневых приложениях. N-уровневые приложения для обработки данных — это приложения, ориентированные на данные, разделенные на несколько логических слоев (или уровней).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c7532bed6a7d43c24d698870723d2265fc2b176f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d450bb60bdb604f658f73d0b5df4b9bd739cf923
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585929"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998191"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Работа с наборами данных в n-уровневых приложениях
 
@@ -43,12 +45,12 @@ N-уровневая поддержка в типизированных набо
 
 - [Обзор многоуровневых приложений для данных](../data-tools/n-tier-data-applications-overview.md)
 - [Пошаговое руководство. Создание n-уровневого приложения для данных](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
-- [Добавление кода для объектов TableAdapter в многоуровневых приложениях](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
-- [Добавление кода для наборов данных в многоуровневых приложениях](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
-- [Добавление проверки в n-уровневый набор данных](../data-tools/add-validation-to-an-n-tier-dataset.md)
+- [Добавление кода для объектов TableAdapter в n-уровневых приложениях](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
+- [Добавление кода для наборов данных в n-уровневых приложениях](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
+- [Добавление проверки в n-уровневом наборе данных](../data-tools/add-validation-to-an-n-tier-dataset.md)
 - [Разделение наборов данных и адаптеров таблиц на разные проекты](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 - [Иерархическое обновление](../data-tools/hierarchical-update.md)
-- [Инструменты набора данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-- [Создание и настройка адаптеров таблиц](../data-tools/create-and-configure-tableadapters.md)
+- [Создание и настройка адаптеров таблиц TableAdapter](../data-tools/create-and-configure-tableadapters.md)
 - [N-уровневые и удаленные приложения с LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

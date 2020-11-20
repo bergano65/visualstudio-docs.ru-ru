@@ -1,5 +1,6 @@
 ---
 title: Создание набора данных с помощью конструктор наборов данных
+description: В этом пошаговом руководстве вы создадите набор данных с помощью конструктор наборов данных. Изучите процесс создания нового проекта и добавления в него нового элемента набора данных.
 ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: conceptual
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20cd8bdc4f7d72cd0ed3920f75a4955ee57d2a68
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1f124a459d55b945cd8dbb480d7e7c22b5de4f3e
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036786"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998035"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Пошаговое руководство. Создание набора данных с помощью конструктор наборов данных
 
@@ -51,7 +52,7 @@ ms.locfileid: "90036786"
 
 3. В средней области выберите тип проекта **приложения Windows Forms** .
 
-4. Назовите проект **датасетдесигнервалксраугх**и нажмите кнопку **ОК**.
+4. Назовите проект **датасетдесигнервалксраугх** и нажмите кнопку **ОК**.
 
      Visual Studio добавит проект в **Обозреватель решений** и отобразит новую форму в конструкторе.
 
@@ -63,7 +64,7 @@ ms.locfileid: "90036786"
 
 2. На панели слева выберите **данные**, а затем выберите **набор данных** в средней области.
 
-3. Присвойте набору данных имя **NorthwindDataSet**и нажмите кнопку **Добавить**.
+3. Присвойте набору данных имя **NorthwindDataSet** и нажмите кнопку **Добавить**.
 
      Visual Studio добавит файл с именем **NorthwindDataSet. xsd** в проект и откроет его в **Конструктор наборов данных**.
 
@@ -71,7 +72,7 @@ ms.locfileid: "90036786"
 
 1. В меню **Вид** выберите **Обозреватель сервера**.
 
-2. В **Обозреватель сервера**нажмите кнопку **подключиться к базе данных** .
+2. В **Обозреватель сервера** нажмите кнопку **подключиться к базе данных** .
 
 3. Создайте подключение к учебной базе данных Northwind.
 
@@ -91,13 +92,13 @@ ms.locfileid: "90036786"
 
 - Перетащите таблицу **Orders** из **Обозреватель сервера** на **Конструктор наборов данных**.
 
-     Таблица данных **Orders** , **OrdersTableAdapter**и связь данных между таблицами **Customers** и **Orders** добавляются в набор данных.
+     Таблица данных **Orders** , **OrdersTableAdapter** и связь данных между таблицами **Customers** и **Orders** добавляются в набор данных.
 
 ### <a name="to-create-the-orderdetails-table"></a>Создание таблицы OrderDetails
 
 - Перетащите таблицу **Order Details** из **Обозреватель сервера** на **Конструктор наборов данных**.
 
-     Таблица данных **Order Details** , **ордердетаилстаблеадаптер**и связь данных между таблицами **Orders** и **OrderDetails** добавляются в набор данных.
+     Таблица данных **Order Details** , **ордердетаилстаблеадаптер** и связь данных между таблицами **Orders** и **OrderDetails** добавляются в набор данных.
 
 ## <a name="next-steps"></a>Next Steps
 
@@ -109,7 +110,7 @@ ms.locfileid: "90036786"
 
 - Добавьте логику проверки в <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> события или таблиц данных в наборе данных. Дополнительные сведения см. [в разделе Проверка данных в DataSets](../data-tools/validate-data-in-datasets.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание и настройка наборов данных в Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
