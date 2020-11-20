@@ -1,6 +1,6 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", C#, \"Дополнительно\""
-ms.date: 08/12/2020
+ms.date: 11/13/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: acd04f80d5ade3a4afea418def69d4bbb6e20fa0
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214675"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94626201"
 ---
 # <a name="options-text-editor-c-advanced"></a>"Параметры", "Текстовый редактор", C#, "Дополнительно"
 
@@ -134,6 +134,12 @@ ms.locfileid: "88214675"
     Если этот флажок установлен, то вставляются подсказки имен параметров для литералов, приведенных литералов и создаваемых экземпляров объектов перед каждым аргументом в вызовах функций.  
     
     ![Подсказки для имен встроенных параметров для CSharp](media/inline-parameter-name-hints-csharp.png)
+
+- Подсказки по встроенным типам 
+    
+    Если этот флажок установлен, то вставляются подсказки по встроенным типам для переменных с выводимыми типами и типами лямбда-параметров.  
+    
+    ![Подсказки по встроенным типам для CSharp](media/inline-type-hints-csharp.png)
 ::: moniker-end
 - Создавать комментарии XML-документации для ///
 

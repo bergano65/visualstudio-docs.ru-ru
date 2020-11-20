@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: a4e0079fa301d751962a945a0bf8348ffd3c359d
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b5d2f8205c72f2fd661a76296392bb94d1d24469
+ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047788"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94531866"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Новые возможности в MSBuild 16.0
 
@@ -32,6 +32,10 @@ ms.locfileid: "93047788"
 - `MSBuildToolsVersion` для этой версии средств считается текущей. Версия сборки имеет такой же номер, как и Visual Studio 2017, т. е. 15.1.0.0.
 
 - `VisualStudioVersion` для этой версии средств имеет значение 16.0.
+
+## <a name="change-waves"></a>Изменение волн
+
+Начиная с MSBuild 16.8 можно указать, следует ли явно отказаться от определенных изменений MSBuild, которые могут привести к нарушению работы. См. раздел [Волны изменений](change-waves.md).
 
 ## <a name="updates"></a>Обновления
 

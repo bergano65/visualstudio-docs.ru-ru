@@ -1,5 +1,7 @@
 ---
 title: Разработка приложений для универсальной платформы Windows (UWP)
+description: Сведения о разработке приложений с помощью Visual Studio и средств разработки для универсальной платформы Windows.
+ms.custom: SEO-VS-2020
 ms.date: 10/24/2017
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 2ef09f58d22e3cb72af5b745f16b2acf8920900e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e9cff517c60a67ee9bbf929c59a1150d5ace3757
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75587151"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671423"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Разработка приложений для универсальной платформы Windows (UWP)
 
@@ -68,6 +70,6 @@ ms.locfileid: "75587151"
 
 После создания универсального приложения Windows нужно упаковать его, чтобы установить на устройстве Windows 10 или отправить в Магазин Windows. См. раздел [Упаковка приложений](/windows/uwp/packaging/index).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Кроссплатформенная разработка для мобильных устройств в Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)

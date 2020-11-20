@@ -2,7 +2,7 @@
 title: Производительность XSLT
 description: Узнайте о профилировщике XSLT в Visual Studio, который создает подробные отчеты о производительности XSLT, помогающие оптимизировать производительность кода XSLT.
 ms.custom: SEO-VS-2020
-ms.date: 03/05/2019
+ms.date: 11/11/2020
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 author: TerryGLee
@@ -10,12 +10,13 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4fd10df6a5cd91866633a46e1a512e91da2040
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+monikerRange: vs-2017
+ms.openlocfilehash: f2214ab4d66dcad1ee92eda7d7acbb94b89e8eb6
+ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351418"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94531892"
 ---
 # <a name="the-xslt-profiler"></a>Профилировщик XSLT
 
@@ -23,14 +24,14 @@ ms.locfileid: "94351418"
 
 Профилировщик XSLT является частью Visual Studio и открывается через меню **XML**.
 
-![Профилировщик XSLT](../xml-tools/media/profile-xslt-menu.png)
+![Профилировщик XSLT](../xml-tools/media/profile-xslt-menu.png "Снимок экрана: пункты меню XML в Visual Studio 2017.")
 
 > [!NOTE]
-> Профилировщик XSLT предоставляется только в выпуске Visual Studio Enterprise.
+> Профилировщик XSLT предоставляется только в выпуске Visual Studio Enterprise 2017.
 
 ## <a name="create-a-performance-report"></a>Создание отчета о производительности
 
-1. Откройте XSLT-документ в редакторе Visual Studio.
+1. Откройте XSLT-документ в редакторе Visual Studio 2017.
 
 2. В строке меню выберите **XML** > **Профиль XSLT**.
 

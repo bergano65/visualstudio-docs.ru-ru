@@ -2,20 +2,20 @@
 title: Интерфейс GIT в Visual Studio
 titleSuffix: ''
 description: Узнайте, как повысить продуктивность с помощью нового интегрированного интерфейса GIT в Visual Studio 2019.
-ms.date: 11/10/2020
+ms.date: 11/16/2020
 ms.topic: conceptual
 ms.author: tglee
-author: prnadago
+author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 33606a2b4290735d5c15788a1e6961191d6d92f9
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: 30ae69f07c89efb6d01228088596fc1bc05fac87
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493560"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704070"
 ---
-# <a name="git-productivity-in-visual-studio"></a>Возможности для повышения продуктивности с помощью GIT в Visual Studio
+# <a name="git-experience-in-visual-studio"></a>Интерфейс GIT в Visual Studio
 
 Теперь GIT является интерфейсом системы управления версиями по умолчанию в Visual Studio 2019. Начиная с версии [16.6](/visualstudio/releases/2019/release-notes-v16.6) мы работаем над созданием набора функций на основе ваших отзывов. Новый интерфейс Git по умолчанию включен для всех пользователей, имеющих выпуск [версии 16.8](/visualstudio/releases/2019/release-notes/).
 
@@ -24,11 +24,18 @@ ms.locfileid: "94493560"
 
 ## <a name="how-to-use-git-in-visual-studio"></a>Использование GIT в Visual Studio
 
-Доступно три способа начала работы с GIT в Visual Studio 2019 для повышения продуктивности.
+Мы подробно расскажем вам о том, как использовать новый интерфейс Git в Visual Studio 2019. Однако если вы хотите ознакомиться с кратким обзором, посмотрите следующее видео: <br><br>*Длительность видео: 05:27 мин.*
+
+> [!VIDEO https://www.youtube.com/embed/UHrAg3iKoe0]
+
+Существует три способа начать использование Git в Visual Studio для повышения производительности:
 
 - [Открытие существующего репозитория GIT](#open-an-existing-local-repository). Если у вас уже есть код на компьютере, его можно открыть с помощью пункта меню **Файл** > **Открыть** > **Решение/проект** (или **Папка**). Visual Studio автоматически определяет, имеется ли инициализированный репозиторий GIT.
 - [Создание нового репозитория GIT](#create-a-new-git-repository). Если ваш код не связан с GIT, можно создать новый репозиторий GIT.
 - [Клонирование существующего репозитория GIT](#clone-an-existing-git-repository). Если код, с которым вы хотите работать, не находится на вашем компьютере, можно клонировать любые существующие удаленные репозитории.
+
+> [!NOTE]
+> Начиная с версии [16.8](/visualstudio/releases/2019/release-notes/) Visual Studio 2019 включает полностью интегрированный интерфейс для работы с учетными записями GitHub. Теперь вы можете добавить в цепочку ключей учетные записи GitHub и GitHub Enterprise. Вы сможете добавлять и использовать их так же, как и учетные записи Майкрософт. Это позволит упростить доступ к ресурсам GitHub в Visual Studio. Дополнительные сведения см. на странице [Работа с учетными записями GitHub в Visual Studio](work-with-github-accounts.md).
 
 ## <a name="create-a-new-git-repository"></a>Создание репозитория GIT
 
@@ -195,8 +202,10 @@ Visual Studio также позволяет выполнить фиксацию 
 
 ## <a name="see-also"></a>См. также раздел
 
+- Запись блога [Объявление о выпуске интерфейса Git в Visual Studio](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)
 - [Запуск нового интерфейса GIT](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) на YouTube
 - Видео, посвященное [новому интерфейсу GIT](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience), на Channel 9 и [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
 - Запись блога [Новые интересные обновления для интерфейса GIT в Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)
 - Запись блога [Улучшенный интерфейс GIT в Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)
+- [Работа с учетными записями GitHub в Visual Studio](work-with-github-accounts.md)
 - [Заметки о выпуске Visual Studio 2019](/visualstudio/releases/2019/release-notes)
