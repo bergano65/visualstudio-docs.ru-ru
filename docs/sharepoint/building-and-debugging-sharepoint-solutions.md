@@ -1,5 +1,7 @@
 ---
 title: Построение и отладка решений SharePoint | Документация Майкрософт
+description: Научитесь выполнять сборку и отладку решений SharePoint и поймите отличие этих процессов от сборки и отладки других типов проектов в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b34df23c8cb612d72fed108a6c0aecbf57875c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6801f6b60d2ef522385ecdf290d0a1913bd6df2
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016365"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850231"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Сборка и отладка решений SharePoint
   Сборка и отладка решений SharePoint в принципе не отличается от сборки и отладки других типов проектов в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. В этом разделе описываются существующие различия.

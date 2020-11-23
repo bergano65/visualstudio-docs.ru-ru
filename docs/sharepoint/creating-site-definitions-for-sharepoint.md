@@ -1,5 +1,7 @@
 ---
 title: Создание определений сайтов SharePoint | Документация Майкрософт
+description: Создавайте определения сайтов SharePoint. Определения сайтов задают внешний вид и поведение сайта SharePoint, а также его содержимое и функциональные возможности по умолчанию.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f1a512218c3c1b7af179cfaba3e231a90941fe0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7585a4b80322afb37e816758fc7074806a443676
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015068"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850576"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Создание определений сайтов SharePoint
   Проект определения сайта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] позволяет создать *определение сайта*, которое будет служить основой для нового сайта SharePoint. Эти определения задают не только внешний вид и поведение сайта SharePoint, но и его содержимое и функциональные возможности по умолчанию. В определение можно поместить заранее настроенные списки, типы содержимого, приемники событий, изображения и другие элементы. В SharePoint содержатся определения некоторых сайтов, например блога. При создании сайта на основе определения BLOG сайт содержит списки, веб-части и другие элементы, необходимые для ведения блога.

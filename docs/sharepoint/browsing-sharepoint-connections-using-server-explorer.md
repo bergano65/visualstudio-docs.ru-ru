@@ -1,5 +1,7 @@
 ---
 title: Просмотр подключений SharePoint с помощью обозревателя сервера | Документация Майкрософт
+description: Просматривайте подключения SharePoint с помощью обозревателя сервера. Узнайте об узлах обозревателя сервера и командах контекстного меню узла.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: baf580ace98ab14032de1e9a3edf18af2b2cfee8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79e8d3dbc1dab865b2ab9048cea8d13c478f2a12
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016354"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849835"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Просмотр подключений SharePoint с помощью обозревателя сервера
   Теперь вы можете просматривать локальные подключения SharePoint в **обозревателе сервера**. Используя эту технику вы можете осуществлять переход по компонентам сайта SharePoint, расположенным в системе. Компоненты сайта SharePoint, такие как определения списков и типы содержимого, отображаются в узле **Подключения SharePoint** в представлении в виде дерева **обозревателя сервера**. Чтобы открыть **обозреватель сервера**, выберите в меню **Вид** > **Обозреватель сервера**. В древовидном представлении можно не только просматривать компоненты сайта SharePoint, но и использовать контекстное меню для удаления элементов, просмотра их свойств и обновления древовидного представления.
