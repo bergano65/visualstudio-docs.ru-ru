@@ -1,5 +1,7 @@
 ---
 title: Добавление атрибута в элемент проекта | Документация Майкрософт
+description: Узнайте, как добавить атрибут в элемент проекта в Visual Studio с помощью методов взаимодействия оболочки Жетитематтрибуте и Сетитематтрибуте.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 059eef0b6a215f1f02c77df63f777fbfda5dff19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79f96be0d9b2ba661c29cdc1a25d7348bcff6eb1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740190"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597916"
 ---
 # <a name="add-an-attribute-to-a-project-item"></a>Добавление атрибута в элемент проекта
 Методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> получают и задают значения атрибутов элемента проекта. Сетитематтрибуте создает атрибут, если он еще не существует, добавляя его в метаданные элемента проекта.

@@ -1,5 +1,7 @@
 ---
 title: Добавление панели инструментов | Документация Майкрософт
+description: Узнайте, как добавить панель инструментов, содержащую кнопки, привязанные к командам, в интегрированную среду разработки (IDE) Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: beb97356daf3c932470bf2598e58e1f5b40ea233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 434f7470fe5fca13f217c981cc99d6a884117a86
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904080"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597955"
 ---
 # <a name="add-a-toolbar"></a>Добавление панели инструментов
 В этом пошаговом руководстве показано, как добавить панель инструментов в интегрированную среду разработки Visual Studio.
@@ -28,14 +30,14 @@ ms.locfileid: "85904080"
  Дополнительные сведения о меню см. в разделе [команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md).
 
 ## <a name="prerequisites"></a>Предварительные требования
- Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-an-extension-with-a-toolbar"></a>Создание расширения с помощью панели инструментов
  Создайте проект VSIX с именем `IDEToolbar` . Добавьте шаблон пункта команды меню с именем **тулбартесткомманд**. Сведения о том, как это сделать, см. в разделе [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 ## <a name="create-a-toolbar-for-the-ide"></a>Создание панели инструментов для интегрированной среды разработки
 
-1. В *тулбартесткоммандпаккаже. vsct*найдите раздел Symbols. В элементе GuidSymbol с именем Гуидтулбартесткоммандпаккажекмдсет добавьте объявления для панели инструментов и группы панелей инструментов, как показано ниже.
+1. В *тулбартесткоммандпаккаже. vsct* найдите раздел Symbols. В элементе GuidSymbol с именем Гуидтулбартесткоммандпаккажекмдсет добавьте объявления для панели инструментов и группы панелей инструментов, как показано ниже.
 
     ```xml
     <IDSymbol name="Toolbar" value="0x1000" />

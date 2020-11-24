@@ -1,5 +1,7 @@
 ---
 title: Добавление подменю в меню | Документация Майкрософт
+description: Узнайте, как создать подменю, добавить его в строку меню Visual Studio и добавить в подменю новую команду.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5887dba1ed1c583653b93792174524f8dfb84609
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16b58a6ab6a01ff635b3afd58b06133abacf970e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972326"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598020"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Добавление подменю в меню
 В этом пошаговом руководстве показано, как добавить [меню в строку меню Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) , показывая, как добавить подменю в меню **тестмену** .
@@ -28,7 +30,7 @@ ms.locfileid: "86972326"
  Это пошаговое руководство создает подменю в меню в строке меню Visual Studio и помещает в подменю новую команду. В этом пошаговом руководстве также реализована новая команда.
 
 ## <a name="prerequisites"></a>Предварительные требования
- Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="add-a-submenu-to-a-menu"></a>Добавление подменю в меню
 

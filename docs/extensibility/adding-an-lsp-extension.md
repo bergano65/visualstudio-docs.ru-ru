@@ -1,5 +1,7 @@
 ---
 title: Добавление расширения протокола языкового сервера | Документация Майкрософт
+description: Узнайте, как создать расширение Visual Studio, которое интегрирует языковой сервер на основе протокола Language Server (LSP).
+ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0c43d5a50b7a2acb536dee5fe9c6ed9ec3d36d7
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860452"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598150"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Добавление расширения протокола языкового сервера
 
@@ -107,7 +109,7 @@ textDocument/переименовать | да
 
 Чтобы создать расширение языковой службы с помощью серверного языка на основе LSP, сначала убедитесь, что у вас установлена рабочая нагрузка **разработки расширения Visual Studio** для экземпляра vs.
 
-Затем создайте новый проект VSIX, перейдя к **файлу**  >  **Новый**проект  >  **Visual C#**  >  **расширяемость**Visual C# проект  >  **VSIX**:
+Затем создайте новый проект VSIX, перейдя к **файлу**  >  **Новый** проект  >  **Visual C#**  >  **расширяемость** Visual C# проект  >  **VSIX**:
 
 ![Создание проекта VSIX](media/lsp-vsix-project.png)
 
@@ -125,7 +127,7 @@ LSP не включает спецификацию того, как обеспе
 
 1. Создайте папку с именем "грамматики" в расширении (или это может быть любое имя, которое вы выбираете).
 
-2. В папке " *грамматики* " Включите любые файлы * \* тмлангуаже*, * \* plist*, * \* . тмсеме*или * \* . JSON* , которые вам нужны, чтобы обеспечить пользовательскую цветовую раскраску.
+2. В папке " *грамматики* " Включите любые файлы *\* тмлангуаже*, *\* plist*, *\* . тмсеме* или *\* . JSON* , которые вам нужны, чтобы обеспечить пользовательскую цветовую раскраску.
 
    > [!TIP]
    > *Тмсеме* -файл определяет, как области сопоставляются с классификациями Visual Studio (именованными ключами цвета). Чтобы получить рекомендации, можно сослаться на глобальный файл *тмсеме* в каталоге *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \\ \<SKU> \Common7\IDE\CommonExtensions\Microsoft\TextMate\Starterkit\Themesg* .
@@ -498,6 +500,6 @@ public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
 
 См. инструкции по Marketplace [здесь](walkthrough-publishing-a-visual-studio-extension.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Добавление поддержки редактора Visual Studio для других языков](../ide/adding-visual-studio-editor-support-for-other-languages.md)

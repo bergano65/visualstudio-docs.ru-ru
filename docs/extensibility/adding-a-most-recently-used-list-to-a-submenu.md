@@ -1,5 +1,7 @@
 ---
 title: Добавление списка недавно использовавшихся в подменю | Документация Майкрософт
+description: Узнайте, как добавить динамический список, содержащий последние использованные команды меню, в подменю в интегрированной среде разработки Visual Studio (IDE).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0de48e30ea20ab2f7df4e512312978e4faa3a46b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904202"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597931"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Добавление списка недавно использовавшихся в подменю
 Это пошаговое руководство посвящено созданию демонстраций в [меню Добавление подменю](../extensibility/adding-a-submenu-to-a-menu.md)и показано, как добавить динамический список в подменю. Динамический список образует базу для создания списка недавно использованных (MRU) списков.
@@ -30,7 +32,7 @@ ms.locfileid: "85904202"
 
 Дополнительные сведения о меню и файлах *vsct* см. в разделе [команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md).
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные требования
 Для выполнения этого пошагового руководства необходимо установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).
 
 ## <a name="create-an-extension"></a>Создание расширений
@@ -47,7 +49,7 @@ ms.locfileid: "85904202"
 
     ```xml
     <IDSymbol name="MRUListGroup" value="0x1200"/>
-    <IDSymbol name="cmdidMRUList" value="0x0200"/>
+    <IDSymbol name="cmdidMRUList" value="0x0200"/>
     ```
 
 3. В `Groups` разделе добавьте объявленную группу после существующих записей группы.
@@ -77,15 +79,15 @@ ms.locfileid: "85904202"
 
 5. Постройте проект и начните отладку, чтобы проверить отображение новой команды.
 
-    В меню **тестмену** щелкните **подменю**создать, чтобы отобразить новую команду, **заполнитель MRU**. После того как в следующей процедуре будет реализован динамический список MRU-команд, эта метка команды будет заменена этим списком при каждом открытии этого подменю.
+    В меню **тестмену** щелкните **подменю** создать, чтобы отобразить новую команду, **заполнитель MRU**. После того как в следующей процедуре будет реализован динамический список MRU-команд, эта метка команды будет заменена этим списком при каждом открытии этого подменю.
 
 ## <a name="filling-the-mru-list"></a>Заполнение списка MRU
 
-1. В *TestCommandPackageGuids.CS*добавьте следующие строки после существующих идентификаторов команд в `TestCommandPackageGuids` определении класса.
+1. В *TestCommandPackageGuids.CS* добавьте следующие строки после существующих идентификаторов команд в `TestCommandPackageGuids` определении класса.
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
-    public const uint cmdidMRUList = 0x200;
+    public const uint cmdidMRUList = 0x200;
     ```
 
 2. В *TestCommand.CS* добавьте следующий оператор using.
@@ -147,7 +149,7 @@ ms.locfileid: "85904202"
 6. После `InitMRUMenu` метода добавьте следующий `OnMRUQueryStatus` метод. Это обработчик, который задает текст для каждого MRU-элемента.
 
     ```csharp
-    private void OnMRUQueryStatus(object sender, EventArgs e)
+    private void OnMRUQueryStatus(object sender, EventArgs e)
     {
         OleMenuCommand menuCommand = sender as OleMenuCommand;
         if (null != menuCommand)
@@ -155,7 +157,7 @@ ms.locfileid: "85904202"
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)
             {
-                menuCommand.Text = this.mruList[MRUItemIndex] as string;
+                menuCommand.Text = this.mruList[MRUItemIndex] as string;
             }
         }
     }
@@ -164,7 +166,7 @@ ms.locfileid: "85904202"
 7. После `OnMRUQueryStatus` метода добавьте следующий `OnMRUExec` метод. Это обработчик для выбора элемента MRU. Этот метод перемещает выбранный элемент в верхнюю часть списка, а затем отображает выбранный элемент в окне сообщения.
 
     ```csharp
-    private void OnMRUExec(object sender, EventArgs e)
+    private void OnMRUExec(object sender, EventArgs e)
     {
         var menuCommand = sender as OleMenuCommand;
         if (null != menuCommand)
@@ -172,7 +174,7 @@ ms.locfileid: "85904202"
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)
             {
-                string selection = this.mruList[MRUItemIndex] as string;
+                string selection = this.mruList[MRUItemIndex] as string;
                 for (int i = MRUItemIndex; i > 0; i--)
                 {
                     this.mruList[i] = this.mruList[i - 1];

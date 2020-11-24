@@ -1,5 +1,7 @@
 ---
 title: Добавление контроллера меню на панель инструментов | Документация Майкрософт
+description: Узнайте, как создать контроллер меню и добавить его на панель инструментов окна инструментов в Visual Studio, а затем реализовать команды контроллера меню и протестировать его.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32cbbbc7784c112b33b5f720b306b8c93269bb82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ce14999913a3928cbe25d9f034c8288651629a3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903527"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597825"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Добавление контроллера меню на панель инструментов
 В этом пошаговом руководстве выполняется сборка в пошаговом руководстве по [добавлению панели инструментов в окно](../extensibility/adding-a-toolbar-to-a-tool-window.md) инструментов и показано, как добавить контроллер меню на панель инструментов окна инструментов. Приведенные здесь действия также можно применить к панели инструментов, созданной в пошаговом руководстве [Добавление панели инструментов](../extensibility/adding-a-toolbar.md) .
@@ -27,13 +29,13 @@ ms.locfileid: "85903527"
 Контроллеры меню могут отображаться в меню, но чаще всего используются на панелях инструментов.
 
 ## <a name="prerequisites"></a>Предварительные требования
-Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-menu-controller"></a>Создание контроллера меню
 
 1. Выполните процедуры, описанные в разделе [Добавление панели инструментов в окно инструментов](../extensibility/adding-a-toolbar-to-a-tool-window.md) , чтобы создать окно инструментов с панелью инструментов.
 
-2. В *твтесткоммандпаккаже. vsct*перейдите в раздел символы. В элементе GuidSymbol с именем **гуидтвтесткоммандпаккажекмдсет**объявите контроллер меню, группу контроллера меню и три пункта меню.
+2. В *твтесткоммандпаккаже. vsct* перейдите в раздел символы. В элементе GuidSymbol с именем **гуидтвтесткоммандпаккажекмдсет** объявите контроллер меню, группу контроллера меню и три пункта меню.
 
     ```xml
     <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />
@@ -110,18 +112,18 @@ ms.locfileid: "85903527"
 
 ## <a name="implement-the-menu-controller-commands"></a>Реализация команд контроллера меню
 
-1. В *TWTestCommandPackageGuids.CS*добавьте идентификаторы команд для трех пунктов меню после существующих идентификаторов команд.
+1. В *TWTestCommandPackageGuids.CS* добавьте идентификаторы команд для трех пунктов меню после существующих идентификаторов команд.
 
     ```csharp
-    public const int cmdidMCItem1 = 0x130;
-    public const int cmdidMCItem2 = 0x131;
-    public const int cmdidMCItem3 = 0x132;
+    public const int cmdidMCItem1 = 0x130;
+    public const int cmdidMCItem2 = 0x131;
+    public const int cmdidMCItem3 = 0x132;
     ```
 
-2. В *TWTestCommand.CS*добавьте следующий код в начало `TWTestCommand` класса.
+2. В *TWTestCommand.CS* добавьте следующий код в начало `TWTestCommand` класса.
 
     ```csharp
-    private int currentMCCommand; // The currently selected menu controller command
+    private int currentMCCommand; // The currently selected menu controller command
     ```
 
 3. В конструкторе Твтесткомманд после последнего вызова `AddCommand` метода добавьте код для маршрутизации событий для каждой команды с помощью одних и тех же обработчиков.
@@ -136,7 +138,7 @@ ms.locfileid: "85903527"
           EventHandler(OnMCItemClicked), cmdID);
         mc.BeforeQueryStatus += new EventHandler(OnMCItemQueryStatus);
         commandService.AddCommand(mc);
-        // The first item is, by default, checked. 
+        // The first item is, by default, checked. 
         if (TWTestCommandPackageGuids.cmdidMCItem1 == i)
         {
             mc.Checked = true;
@@ -148,7 +150,7 @@ ms.locfileid: "85903527"
 4. Добавьте обработчик событий в класс **твтесткомманд** , чтобы пометить выбранную команду как отмеченную.
 
     ```csharp
-    private void OnMCItemQueryStatus(object sender, EventArgs e)
+    private void OnMCItemQueryStatus(object sender, EventArgs e)
     {
         OleMenuCommand mc = sender as OleMenuCommand;
         if (null != mc)
@@ -161,7 +163,7 @@ ms.locfileid: "85903527"
 5. Добавьте обработчик событий, отображающий MessageBox, когда пользователь выбирает команду в контроллере меню:
 
     ```csharp
-    private void OnMCItemClicked(object sender, EventArgs e)
+    private void OnMCItemClicked(object sender, EventArgs e)
     {
         OleMenuCommand mc = sender as OleMenuCommand;
         if (null != mc)

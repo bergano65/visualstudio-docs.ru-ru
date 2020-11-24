@@ -1,5 +1,7 @@
 ---
-title: Добавление параметров командной строки | Документация Майкрософт
+title: Добавление параметров Command-Line | Документация Майкрософт
+description: Узнайте, как добавить параметры командной строки, применяемые к VSPackage при выполнении команды devenv.exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0eefb532380badcf917f6d512bc5b41ebb96b1d1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903483"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597734"
 ---
 # <a name="add-command-line-switches"></a>Добавление параметров командной строки
 При выполнении *devenv.exe* можно добавить параметры командной строки, которые применяются к пакету VSPackage. Используйте <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> для объявления имени переключателя и его свойств. В этом примере параметр Мисвитч добавляется для подкласса VSPackage с именем **аддкоммандсвитчпаккаже** без аргументов и при этом автоматически загружается пакетом VSPackage.
@@ -70,6 +72,6 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 ## <a name="see-also"></a>См. также раздел
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
-- [Параметры командной строки для Devenv](../ide/reference/devenv-command-line-switches.md)
+- [Параметры командной строки для devenv](../ide/reference/devenv-command-line-switches.md)
 - [Служебная программа CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)
-- [. Файлы pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [Файлы pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

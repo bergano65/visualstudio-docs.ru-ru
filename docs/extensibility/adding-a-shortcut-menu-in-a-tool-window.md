@@ -1,5 +1,7 @@
 ---
 title: Добавление контекстного меню в окне инструментов | Документация Майкрософт
+description: Узнайте, как добавить контекстное меню в окно инструментов в Visual Studio, которое появляется при щелчке правой кнопкой мыши на кнопке, текстовом поле или на фоне окна.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa8d6f5c47289e66a51653e39d31890f09e8ceb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e14d948bf5d4b637002ca1f2ec8be37b64dc22b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904198"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597877"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Добавление контекстного меню в окно инструментов
 В этом пошаговом руководстве в окне инструментов помещается контекстное меню. Контекстное меню — это меню, которое появляется, когда пользователь щелкает правой кнопкой мыши кнопку, текстовое поле или фон окна. Команды в контекстном меню ведут себя так же, как команды в других меню или на панелях инструментов. Для поддержки контекстного меню укажите его в *vsct* -файле и отобразите в ответ на щелчок правой кнопкой мыши.
@@ -30,7 +32,7 @@ ms.locfileid: "85904198"
 Кроме того, если контекстное меню не будет иметь доступ к функциональным возможностям Visual Studio, можно использовать <xref:System.Windows.FrameworkElement.ContextMenu%2A> свойство элемента XAML в пользовательском элементе управления. Дополнительные сведения см. в разделе [ContextMenu](/dotnet/framework/wpf/controls/contextmenu).
 
 ## <a name="prerequisites"></a>Предварительные требования
-Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в разделе Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в разделе Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-the-tool-window-shortcut-menu-package"></a>Создание пакета контекстного меню окна инструментов
 
@@ -39,7 +41,7 @@ ms.locfileid: "85904198"
 ## <a name="specifying-the-shortcut-menu"></a>Указание контекстного меню
 Контекстное меню, как показано в этом пошаговом руководстве, позволяет пользователю выбрать цвет из списка цветов, используемых для заполнения окна инструментов.
 
-1. В *шорткутменупаккаже. vsct*найдите в элементе GuidSymbol с именем гуидшорткутменупаккажекмдсет и объявите контекстное меню, группу контекстного меню и пункты меню. Теперь элемент GuidSymbol должен выглядеть следующим образом:
+1. В *шорткутменупаккаже. vsct* найдите в элементе GuidSymbol с именем гуидшорткутменупаккажекмдсет и объявите контекстное меню, группу контекстного меню и пункты меню. Теперь элемент GuidSymbol должен выглядеть следующим образом:
 
     ```xml
     <GuidSymbol name="guidShortcutMenuPackageCmdSet" value="{00000000-0000-0000-0000-0000}"> // your GUID here
@@ -112,14 +114,14 @@ ms.locfileid: "85904198"
     </Buttons>
     ```
 
-5. В *ShortcutMenuCommand.CS*Добавьте определения для идентификатора GUID набора команд, контекстного меню и пунктов меню.
+5. В *ShortcutMenuCommand.CS* Добавьте определения для идентификатора GUID набора команд, контекстного меню и пунктов меню.
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
-    public const int ColorMenu = 0x1000;
-    public const int cmdidRed = 0x102;
-    public const int cmdidYellow = 0x103;
-    public const int cmdidBlue = 0x104;
+    public const int ColorMenu = 0x1000;
+    public const int cmdidRed = 0x102;
+    public const int cmdidYellow = 0x103;
+    public const int cmdidBlue = 0x104;
     ```
 
     Это те же идентификаторы команд, которые определены в разделе символов файла *шорткутменупаккаже. vsct* . Контекстная группа не указана здесь, так как она необходима только в *vsct* -файле.
@@ -127,9 +129,9 @@ ms.locfileid: "85904198"
 ## <a name="implementing-the-shortcut-menu"></a>Реализация контекстного меню
  В этом разделе реализуется контекстное меню и его команды.
 
-1. В *SHORTCUTMENU.CS*окно инструментов может получить команду меню, но элемент управления, который она содержит, не может. Ниже показано, как сделать командную службу меню доступной для пользовательского элемента управления.
+1. В *SHORTCUTMENU.CS* окно инструментов может получить команду меню, но элемент управления, который она содержит, не может. Ниже показано, как сделать командную службу меню доступной для пользовательского элемента управления.
 
-2. В *SHORTCUTMENU.CS*добавьте следующие директивы using:
+2. В *SHORTCUTMENU.CS* добавьте следующие директивы using:
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -157,7 +159,7 @@ ms.locfileid: "85904198"
     }
     ```
 
-5. В *ShortcutMenuControl.XAML.CS*Добавьте закрытое поле для службы команд меню и измените конструктор элемента управления, чтобы он занимал службу команд меню. Затем с помощью службы команд меню добавьте команды контекстного меню. Конструктор Шорткутменуконтрол теперь должен выглядеть, как в следующем коде. Обработчик команд будет определен позже.
+5. В *ShortcutMenuControl.XAML.CS* Добавьте закрытое поле для службы команд меню и измените конструктор элемента управления, чтобы он занимал службу команд меню. Затем с помощью службы команд меню добавьте команды контекстного меню. Конструктор Шорткутменуконтрол теперь должен выглядеть, как в следующем коде. Обработчик команд будет определен позже.
 
     ```csharp
     public ShortcutMenuControl(OleMenuCommandService service)
@@ -183,7 +185,7 @@ ms.locfileid: "85904198"
     }
     ```
 
-6. В *шорткутменуконтрол. XAML*добавьте <xref:System.Windows.UIElement.MouseRightButtonDown> событие в элемент верхнего уровня <xref:System.Windows.Controls.UserControl> . Файл XAML теперь должен выглядеть следующим образом:
+6. В *шорткутменуконтрол. XAML* добавьте <xref:System.Windows.UIElement.MouseRightButtonDown> событие в элемент верхнего уровня <xref:System.Windows.Controls.UserControl> . Файл XAML теперь должен выглядеть следующим образом:
 
     ```vb
     <UserControl x:Class="TWShortcutMenu.ShortcutMenuControl"
@@ -205,10 +207,10 @@ ms.locfileid: "85904198"
     </UserControl>
     ```
 
-7. В *ShortcutMenuControl.XAML.CS*добавьте заглушку для обработчика событий.
+7. В *ShortcutMenuControl.XAML.CS* добавьте заглушку для обработчика событий.
 
     ```csharp
-    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
     {
     . . .
     }

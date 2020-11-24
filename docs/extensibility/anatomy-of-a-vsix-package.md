@@ -1,5 +1,7 @@
 ---
 title: Анатомия пакета VSIX | Документация Майкрософт
+description: Сведения о содержимом пакета VSIX в Visual Studio — файле, содержащем одно или несколько расширений Visual Studio и файл манифеста метаданных.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33cecb4767193010d7e7ca330d891d1835091875
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 3fc65cda5eb969e361e90771e0245fdaeaeebcd1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012338"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598163"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Анатомия пакета VSIX
 Пакет VSIX — это *VSIX* -файл, содержащий одно или несколько расширений Visual Studio вместе с метаданными, которые Visual Studio использует для классификации и установки расширений. Эти метаданные содержатся в манифесте VSIX и файле *[Content_Types]. XML* . Пакет VSIX может также содержать один или несколько файлов *Extension. всикслангпакк* для предоставления локализованного текста программы установки и может содержать дополнительные пакеты VSIX для установки зависимостей.
