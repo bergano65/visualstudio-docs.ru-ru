@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно "Выбор URL-адреса" (разработка с SharePoint)
+description: Сведения о диалоговом окне выбора URL-адресов, позволяющем пользователю выбрать файлы, расположенные в проекте или на локальном сервере, на котором работает SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 991693c3379e008a2a907efd3127290c7e804c22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 584b77ab714cb692069fadd6c6fad50e20d46f80
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66261944"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442538"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Диалоговое окно "Выбор URL-адреса" (разработка решений SharePoint в Visual Studio)
   В диалоговом окне выбора URL-адреса можно выбрать такие файлы, как файлы эталонной страницы или файлы изображений, расположенные в вашем проекте или на локальном сервере, где выполняется SharePoint.
@@ -42,7 +44,7 @@ ms.locfileid: "66261944"
 
   Разверните узел **сервера** , чтобы выбрать файлы, расположенные на локальном сервере, на котором работает SharePoint. Чтобы они отображались как выбираемые в диалоговом окне, эти файлы должны соответствовать следующим критериям.
 
-- Файл должен находиться в одной из следующих сопоставленных папок: **Images**, **Layouts**или **ControlTemplate**.
+- Файл должен находиться в одной из следующих сопоставленных папок: **Images**, **Layouts** или **ControlTemplate**.
 
 - Не удается найти файл в базе данных содержимого SharePoint.
 
@@ -52,7 +54,7 @@ ms.locfileid: "66261944"
 
   **Файлы типа** Позволяет выбрать из списка файлов, подходящих для выполняемой задачи.
 
-## <a name="see-also"></a>См. также раздел
-- [Создание страниц приложения для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
+## <a name="see-also"></a>См. также
+- [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

@@ -1,5 +1,7 @@
 ---
 title: Справочник (расширяемость средств SharePoint) | Документация Майкрософт
+description: Ссылки на справочную документацию по расширению инструментов SharePoint в Visual Studio, охватывающую Справочник по схеме элементов проекта SharePoint и Справочник по API.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,18 +14,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4ab3b60e727f7f4ce113b86fc3491bf244115551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fcc1117c88f19eaae7633698dee1698a8108fdb
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62827107"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440718"
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a>Справочник (расширяемость средств SharePoint)
 
 Этот раздел содержит справочную документацию по расширению средств SharePoint в Visual Studio.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержимое раздела
 
 [Справочник по схеме элементов проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
 
@@ -33,6 +35,6 @@ ms.locfileid: "62827107"
 
 Содержит справочную документацию по API для расширения инструментов SharePoint в Visual Studio.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Расширение средств SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Расширение средств SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)

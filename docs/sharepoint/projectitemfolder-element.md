@@ -1,5 +1,7 @@
 ---
 title: Элемент ProjectItemFolder | Документация Майкрософт
+description: Получите справочные сведения об элементе ProjectItemFolder, который представляет сопоставленную папку в справочнике по XML-схеме элемента проекта SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38f8f70cc6480554441809e33c4083735600fbbb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99a27f8e255aa17e8b9fa604b504109976c5d36a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85539819"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440796"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder - элемент
   Представляет сопоставленную папку.
@@ -51,12 +53,12 @@ ms.locfileid: "85539819"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Представляет элемент проекта SharePoint. Этот элемент является обязательным корневым элементом для файла *данных..*|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  Дополнительные сведения о сопоставленных папках см. [в разделе инструкции. Добавление и удаление сопоставленных папок](../sharepoint/how-to-add-and-remove-mapped-folders.md).
 
 ## <a name="element-information"></a>Сведения об элементе
 
-|Свойство|Значение|
+|Свойство.|Значение|
 |-|-|
 |**Пространство имен**|http: \/ \/ Schemas.Microsoft.com/VisualStudio/2010/<br>Шарепоинттулс/Шарепоинтпрожектитеммодел|
 |**Имя схемы**|Схема элемента проекта SharePoint|

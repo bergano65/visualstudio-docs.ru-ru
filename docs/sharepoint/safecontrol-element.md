@@ -1,5 +1,7 @@
 ---
 title: Элемент SafeControl | Документация Майкрософт
+description: Получите сведения об элементе SafeControl, который представляет элемент управления ASPX или веб-часть, помеченную как безопасная для доступа пользователя к странице ASPX сайта SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c9936054c5cc622e6f335d81d1568ebed16518f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36a8b0ed45fbdb8d2dfe8e93a027a47adf407587
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547931"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440627"
 ---
 # <a name="safecontrol-element"></a>SafeControl - элемент
   Представляет элемент управления ASPX или веб-часть, которая обозначена как безопасная для доступа любого пользователя к любой странице ASPX на сайте SharePoint.
@@ -40,7 +42,7 @@ ms.locfileid: "85547931"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|**Сборок**|Необязательный атрибут **xs: String** .<br /><br /> Имя сборки, в которой определен элемент управления ASPX или веб-часть. По умолчанию этот атрибут использует заменяемый параметр **$SharePoint. Project. AssemblyFullName $** для имени сборки. Дополнительные сведения см. в разделе [заменяемые параметры](../sharepoint/replaceable-parameters.md).|
+|**Сборка**|Необязательный атрибут **xs: String** .<br /><br /> Имя сборки, в которой определен элемент управления ASPX или веб-часть. По умолчанию этот атрибут использует заменяемый параметр **$SharePoint. Project. AssemblyFullName $** для имени сборки. Дополнительные сведения см. в разделе [Заменяемые параметры](../sharepoint/replaceable-parameters.md).|
 |**Сейф**|Необязательный атрибут **xs: Boolean** .<br /><br /> Указывает, является ли элемент управления ASPX или веб-часть безопасными для доступа недоверенных пользователей.|
 |**иссафеагаинстскрипт**|Необязательный атрибут **xs: Boolean** .<br /><br /> Указывает, могут ли недоверенные пользователи просматривать или изменять свойства элемента управления или веб-части ASPX.|
 |**Имя**|Необязательный атрибут **xs: String** .<br /><br /> Имя этой записи безопасного элемента управления в коллекции.|
@@ -56,12 +58,12 @@ ms.locfileid: "85547931"
 |-------------|-----------------|
 |[SafeControls](../sharepoint/safecontrols-element.md)|Представляет коллекцию элементов управления ASPX и веб-части, которые обозначены как безопасные для доступа любого пользователя к любой странице ASPX на сайте SharePoint.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  Дополнительные сведения о безнадежных элементах управления см. [в разделе Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Сведения об элементе
 
-|Свойство|Значение|
+|Свойство.|Значение|
 |-|-|
 |**Пространство имен**|http: \/ \/ Schemas.Microsoft.com/VisualStudio/<br>2010/Шарепоинттулс/Шарепоинтпрожектитеммодел|
 |**Имя схемы**|Схема элемента проекта SharePoint|

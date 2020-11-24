@@ -1,5 +1,7 @@
 ---
 title: Элемент SafeControls | Документация Майкрософт
+description: Получение сведений об элементе SafeControls, содержащем коллекцию элементов управления ASPX или веб-частей, помеченных как безопасные для доступа на странице ASPX сайта SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e840f0040cf94fea408615525358580d207f07c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3423d1b6efd106ef7f947bd8573dcd1aa548a66
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547905"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440679"
 ---
 # <a name="safecontrols-element"></a>SafeControls - элемент
   Коллекция элементов управления ASPX и веб-части, которые назначаются как безопасные любому пользователю для доступа на любой странице ASPX на сайте SharePoint.
@@ -48,12 +50,12 @@ ms.locfileid: "85547905"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Представляет элемент проекта SharePoint. Этот элемент является обязательным корневым элементом для файла *данных..*|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  Дополнительные сведения о безнадежных элементах управления см. [в разделе Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Сведения об элементе
 
-|Свойство|Значение|
+|Свойство.|Значение|
 |-|-|
 |**Пространство имен**|http: \/ \/ Schemas.Microsoft.com/VisualStudio/<br>2010/Шарепоинттулс/Шарепоинтпрожектитеммодел|
 |**Имя схемы**|Схема элемента проекта SharePoint|
