@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: cf93d619ddeb385960eae74de8b64a7f11b7be4d
-ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
+ms.openlocfilehash: 67368f8bc8e6762dedf448829aca364e06b83fd3
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87115289"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973767"
 ---
 # <a name="visual-studio-documentation"></a>Документация по Visual Studio
 
 Добро пожаловать! Этот репозиторий содержит исходные файлы для технической документации по Visual Studio. Эти разделы опубликованы на сайте [docs.microsoft.com](https://docs.microsoft.com/visualstudio).
 
-Этот репозиторий был перемещен 23 июня 2017 г. с адреса https://github.com/Microsoft/vsdocs. Трафик на старые URL-адреса перенаправляется сюда.
+Этот репозиторий был перемещен 23 июня 2017 г. с адреса https://github.com/Microsoft/vsdocs.
 
 Документация по Visual Basic и Visual C# находится в [репозитории dotnet](https://github.com/dotnet/docs/tree/master/docs), а документация по Visual C++ — в [репозитории C++](https://github.com/MicrosoftDocs/cpp-docs).
 
