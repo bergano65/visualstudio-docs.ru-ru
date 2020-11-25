@@ -1,5 +1,7 @@
 ---
 title: Рекомендации по изолированным решениям | Документация Майкрософт
+description: Изучите изолированные решения, которые являются функцией Microsoft SharePoint, позволяющей пользователям семейства веб-сайтов отправлять собственные решения для работы с кодом.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17b310a3f992f80b04ad14bb6e038e05b009a4af
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842565"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970460"
 ---
 # <a name="sandboxed-solution-considerations"></a>Замечания об изолированных решениях
   *Изолированные решения* — это функция Microsoft SharePoint 2010, позволяющая пользователям семейства веб-сайтов отправлять собственные решения для работы с кодом. Распространенным изолированным решением являются пользователи, которые отправляют свои собственные веб-части.

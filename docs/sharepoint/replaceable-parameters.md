@@ -1,5 +1,7 @@
 ---
 title: Заменяемые параметры | Документация Майкрософт
+description: Просмотрите заменяемые параметры (токены), которые задают значения в файлах проекта для элементов решения SharePoint, фактические значения которых не известны во время разработки.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cd44b3edfaeae376e5a4a9698d138bd75c03bf8
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90843132"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970260"
 ---
 # <a name="replaceable-parameters"></a>Заменяемые параметры
   Заменяемые параметры (или *токены*) могут использоваться внутри файлов проекта для предоставления значений элементам решения SharePoint, фактические значения которых не известны во время разработки. Они похожи на [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] маркеры стандартных шаблонов. Дополнительные сведения см. в разделе [Параметры шаблона](../ide/template-parameters.md).
@@ -88,7 +90,7 @@ ms.locfileid: "90843132"
 > [!NOTE]
 > Поскольку замена токенов происходит после компиляции проекта, не следует добавлять расширения файлов для компилируемых типов файлов, таких как *CS*, *VB* или *RESX*. Маркеры заменяются только в файлах, которые не компилируются.
 
- Например, чтобы добавить расширения имен файлов (*. мекстенсион* и *. йоурекстенсион*) в список расширений имени файла для замены токенов, добавьте следующий код в файл проекта (с*расширением CSPROJ*):
+ Например, чтобы добавить расширения имен файлов (*. мекстенсион* и *. йоурекстенсион*) в список расширений имени файла для замены токенов, добавьте следующий код в файл проекта (с *расширением CSPROJ*):
 
 ```xml
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

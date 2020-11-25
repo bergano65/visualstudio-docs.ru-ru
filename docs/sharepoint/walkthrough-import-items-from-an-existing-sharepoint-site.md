@@ -1,6 +1,8 @@
 ---
 title: Пошаговое руководство. Импорт элементов с существующего сайта SharePoint | Документация Майкрософт
 titleSuffix: ''
+description: В этом пошаговом руководстве вы импортируете элементы из существующего сайта SharePoint в проект Visual Studio SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c5f9fd5e3cc9b0df5feb60149e58e895996bb1f0
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7eeff880538d98f997f48f82c49d01045e834031
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298644"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970134"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Пошаговое руководство: Импорт элементов с существующего сайта SharePoint
   В этом пошаговом руководстве показано, как импортировать элементы из существующего сайта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проект SharePoint.
@@ -92,7 +94,7 @@ ms.locfileid: "92298644"
 
 5. После успешного завершения операции щелкните ссылку **Коллекция решений** , чтобы просмотреть WSP файл.
 
-     Чтобы просмотреть страницу "Коллекция решений" позже, откройте меню " **действия сайта** ", выберите " **Параметры**сайта", щелкните ссылку **"перейти к параметрам сайта верхнего уровня** " в разделе " **Администрирование семейства веб-сайтов** ", а затем щелкните ссылку " **решения** " в разделе " **галереи** ".
+     Чтобы просмотреть страницу "Коллекция решений" позже, откройте меню " **действия сайта** ", выберите " **Параметры** сайта", щелкните ссылку **"перейти к параметрам сайта верхнего уровня** " в разделе " **Администрирование семейства веб-сайтов** ", а затем щелкните ссылку " **решения** " в разделе " **галереи** ".
 
 6. В коллекции решений выберите ссылку **ексамплесите** .
 
@@ -141,7 +143,7 @@ ms.locfileid: "92298644"
 
      Обратите внимание, что в списке отображается пользовательский столбец сайта, импортированный из первого сайта SharePoint.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Импорт элементов с существующего сайта SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

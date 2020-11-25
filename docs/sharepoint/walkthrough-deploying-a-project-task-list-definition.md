@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. Развертывание определения проекта список задач | Документация Майкрософт
+description: В этом пошаговом руководстве используется Visual Studio для создания, настройки, отладки и развертывания списка SharePoint для наблюдения за задачами проекта.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0be8eed2dc41ad433c0e0514dfd34e3c6e3d7193
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015762"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970420"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Пошаговое руководство. Развертывание определения списка задач проекта
 
@@ -25,7 +27,7 @@ ms.locfileid: "86015762"
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Поддерживаемые редакции Microsoft Windows и SharePoint.
 
@@ -82,9 +84,9 @@ ms.locfileid: "86015762"
 
 При создании решения SharePoint Visual Studio автоматически создает компоненты для элементов проекта по умолчанию. Параметры списка задач проекта для сайта SharePoint можно настроить с помощью конструктора компонентов.
 
-1. В **Обозреватель решений**разверните узел **компоненты**.
+1. В **Обозреватель решений** разверните узел **компоненты**.
 
-2. Откройте контекстное меню для **Feature1**и выберите пункт **Конструктор представлений**.
+2. Откройте контекстное меню для **Feature1** и выберите пункт **Конструктор представлений**.
 
 3. В поле **название** введите **функция список задач проекта**.
 
@@ -96,7 +98,7 @@ ms.locfileid: "86015762"
 
 При создании проекта SharePoint Visual Studio автоматически добавляет в пакет компоненты, которые содержат элементы проекта по умолчанию. Параметры списка задач проекта для сайта SharePoint можно настроить с помощью конструктора пакетов.
 
-1. В **SolutionExplorer**откройте контекстное меню **пакета**и выберите пункт **Конструктор представлений**.
+1. В **SolutionExplorer** откройте контекстное меню **пакета** и выберите пункт **Конструктор представлений**.
 
 2. В поле **имя** введите **прожекттасклистпаккаже**.
 
@@ -164,13 +166,13 @@ Visual Studio перезапускает пул приложений IIS, отз
 
      Дополнительные сведения об удаленном развертывании см. в статьях [Использование решений](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) и [Добавление и развертывание решений с помощью PowerShell в SharePoint 2010](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о настройке и развертывании решений SharePoint см. в следующих разделах:
 
-- [Пошаговое руководство. Создание столбца сайта, типа содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
+- [Пошаговое руководство: Создание столбца сайта, типа содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
-- [Как создать приемник событий](../sharepoint/how-to-create-an-event-receiver.md)
+- [Практическое руководство. Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md)
 
 - [Windows PowerShell для SharePoint Server 2010](/powershell/module/sharepoint-server)
 

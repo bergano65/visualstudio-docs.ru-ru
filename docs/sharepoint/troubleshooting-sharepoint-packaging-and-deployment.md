@@ -1,5 +1,7 @@
 ---
 title: Устранение неполадок при упаковке и развертывании SharePoint | Документация Майкрософт
+description: Изучите и исправьте различные проблемы, которые могут возникнуть при упаковке и развертывании решений SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7eafac8015b7a2c51279b7a2d664f0e094d2397b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981940"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95969934"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Устранение неполадок при упаковке и развертывании SharePoint
   В разделе рассмотрены различные проблемы, которые могут возникнуть при упаковке и развертывании решений SharePoint.
@@ -40,7 +42,7 @@ ms.locfileid: "72981940"
  Выходные данные проекта можно добавлять с помощью "Конструктора пакетов". Однако при добавлении выходных данных пакета, убедитесь, что платформа проекта соответствует платформе решения SharePoint. Рекомендуется использовать целевую платформу **ЦП** для сборок, которые требуется развернуть на сервере SharePoint. Дополнительные сведения см. в разделе [Страница компиляции, конструктор проектов &#40;](../ide/reference/compile-page-project-designer-visual-basic.md) [диалоговое окно Visual Basic&#41;и дополнительные параметры компилятора &#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
 ## <a name="validation-warnings-and-errors"></a>Предупреждения и ошибки проверки
- Средства разработки SharePoint в Visual Studio выполняют проверочные шаги для проверки правильности формирования пакета решения. Также, для компонентов и пакетов, можно создать пользовательские проверочные шаги. Дополнительные сведения см. [в разделе инструкции. Создание пользовательских правил проверки компонентов и пакетов для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
+ Средства разработки SharePoint в Visual Studio выполняют проверочные шаги для проверки правильности формирования пакета решения. Также, для компонентов и пакетов, можно создать пользовательские проверочные шаги. Дополнительные сведения см. в разделе [Практическое руководство. Создание пользовательских правил проверки компонентов и пакетов для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
 ## <a name="deployment-conflict-resolution"></a>Разрешение конфликтов развертывания
  При развертывании решения SharePoint может возникнуть конфликт, когда элемент на сервере и элемент в пакете решения имеют одинаковое имя, URL-адрес или идентификатор. Свойство **разрешения конфликтов развертывания** можно изменить для разрешения, отчета или пропуска конфликтов для модулей, веб-частей, экземпляров списка и типов содержимого.
@@ -51,7 +53,7 @@ ms.locfileid: "72981940"
 |-----------|-----------------|
 |Автоматически|Обнаруживает и разрешает конфликты автоматически.|
 |prompt|Обнаруживает и выводит отчет о конфликтах для разработчика перед их разрешением.|
-|Нет|Не обнаруживает конфликты.|
+|None|Не обнаруживает конфликты.|
 
 ## <a name="differences-between-f5-deployment"></a>Различия между развертыванием F5
  При использовании [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] для развертывания проекта SharePoint на локальном сервере SharePoint с целью тестирования и отладки, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] выполняет некоторые дополнительные действия.
@@ -68,7 +70,7 @@ ms.locfileid: "72981940"
  Странице SharePoint требуется длительный промежуток времени для отображения при развертывании визуальной веб-части в папке Bin в [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] или [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. При изменении любых файлов каталога верхнего уровня [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)], например, каталога Bin, происходит рекомпилирование всего веб-приложения. Это может привести к задержке рендеринга страницы SharePoint до 25 секунд.
 
 ### <a name="error-message"></a>Сообщение об ошибке
- Нет.
+ Отсутствует.
 
 ### <a name="resolution"></a>Разрешение
  Чтобы решить эту проблему, выполните следующие действия:
@@ -110,6 +112,6 @@ ms.locfileid: "72981940"
 
  Чтобы удалить это предупреждение, постройте проект, закройте и повторно откройте конструктор или отключите параметр автоматического отзыва для проекта. Чтобы сделать это, снимите флажок **автоотзыв после отладки** на вкладке **SharePoint** диалогового окна Свойства проекта.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
