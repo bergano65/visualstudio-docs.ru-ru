@@ -1,5 +1,7 @@
 ---
 title: Приступая к работе с модульным тестированием
+description: Используйте Visual Studio, чтобы определить и запустить модульные тесты для обеспечения работоспособности кода, нужного объема протестированного кода, а также для обнаружения ошибок и сбоев, прежде чем с ними столкнутся клиенты.
+ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3daff1a7b7c2e62b4ca4a508c5c8dd31261a40dd
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82153039"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441785"
 ---
 # <a name="get-started-with-unit-testing"></a>Приступая к работе с модульным тестированием
 
 Используйте Visual Studio, чтобы определить и запустить модульные тесты для обеспечения работоспособности кода, нужного объема протестированного кода, а также для обнаружения ошибок и сбоев, прежде чем с ними столкнутся клиенты. Выполняйте модульные тесты регулярно, чтобы обеспечить правильную работу вашего кода.
 
-## <a name="create-unit-tests"></a>Создание модульных тестов
+## <a name="create-unit-tests"></a>Создание модульных тестов.
 
 В этом разделе описывается создание проекта модульного теста.
 
@@ -243,10 +245,10 @@ ms.locfileid: "82153039"
 
 6. Запустите тест в **обозревателе тестов** или щелкните правой кнопкой мыши в коде теста и выберите **Запустить тесты**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-* [Пошаговое руководство: создание и запуск модульных тестов для управляемого кода](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+* [Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Команда "Создать модульные тесты"](create-unit-tests-menu.md)
 * [Создание тестов с помощью IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Выполнение тестов с помощью обозревателя тестов](run-unit-tests-with-test-explorer.md)
-* [Использование покрытия кода для определения объема протестированного кода](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+* [Анализ покрытия кода](using-code-coverage-to-determine-how-much-code-is-being-tested.md)

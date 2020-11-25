@@ -1,5 +1,7 @@
 ---
 title: Использование модулей для включения файлов в решение | Документация Майкрософт
+description: Чтобы развернуть файлы на сервере SharePoint, независимо от типа файлов (например, главные страницы), используйте модули или контейнеры для файлов в решении SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 778bbc9cff2d7853628edbb5be6466acc55d9ab8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa0d6fe1855a1d60a0e1293e8422791f8148bd04
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015823"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442525"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Использование модулей для включения файлов в решение
   Вам может потребоваться развернуть файлы на сервере SharePoint независимо от их типа, например новые эталонные страницы. Для этого можно использовать *модули* (не путайте их с модулями кода [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]). Модули — это контейнеры для файлов в решении SharePoint. При развертывании решения файлы из модуля копируются в указанные папки на сервере SharePoint.
