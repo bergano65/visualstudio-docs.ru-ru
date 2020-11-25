@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20d566937286743a684ecce2ff54ff2cafe4b3a4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 567af541b819186bda3dc869628c2812be9888b8
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348403"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039592"
 ---
 # <a name="code-analysis-faq"></a>Анализ кода: вопросы и ответы
 
@@ -63,7 +63,13 @@ ms.locfileid: "94348403"
 
 **Вопрос**. в чем разница между устаревшим анализом и анализом кода на основе .NET Compiler Platform?
 
-Ответ **. анализ кода на основе**.NET Compiler Platform анализирует исходный код в режиме реального времени и во время компиляции, в то время как устаревший анализ анализирует двоичные файлы после завершения сборки. Дополнительные сведения см. в разделе [анализ на основе .NET Compiler Platform и анализ прежних версий](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers).
+Ответ **. анализ кода на основе**.NET Compiler Platform анализирует исходный код в режиме реального времени и во время компиляции, в то время как устаревший анализ анализирует двоичные файлы после завершения сборки. Дополнительные сведения см. в разделе [анализ на основе .NET Compiler Platform и анализ прежних версий](../code-quality/net-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-net-analyzers).
+
+## <a name="fxcop-analyzers-versus-net-analyzers"></a>Анализаторы FxCop и анализаторы .NET
+
+**Вопрос**. в чем разница между анализаторами FxCop и анализаторами .NET?
+
+Ответ. как анализаторы **FxCop, так** и анализаторы .NET относятся к реализации анализаторов FxCop .NET Compiler Platform ("Roslyn"). До Visual Studio 2019 16,8 и .NET 5,0 эти анализаторы поставляются как `Microsoft.CodeAnalysis.FxCopAnalyzers` [пакет NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers). Начиная с Visual Studio 2019 16,8 и .NET 5,0, эти анализаторы [входят в состав пакета SDK для .NET](/dotnet/fundamentals/code-analysis/overview). Они также доступны в виде `Microsoft.CodeAnalysis.NetAnalyzers` [пакета NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers). Попробуйте [выполнить миграцию с FxCop Analyzer на анализаторы .NET](migrate-from-fxcop-analyzers-to-net-analyzers.md).
 
 ## <a name="treat-warnings-as-errors"></a>Рассматривать предупреждения как ошибки
 
@@ -81,12 +87,12 @@ ms.locfileid: "94348403"
      </Project>
      ```
 
-  2. Добавьте строку в файл проекта. csproj или. vbproj, чтобы импортировать файл PROPS, созданный на предыдущем шаге. Эту строку необходимо поместить перед любыми строками, которые импортируют файлы FxCop Analyzer. props. Например, если файл. props имеет имя CODEANALYSIS. props:
+  2. Добавьте строку в файл проекта. csproj или. vbproj, чтобы импортировать файл PROPS, созданный на предыдущем шаге. Эту строку необходимо поместить перед любыми строками, которые импортируют файлы Analyzer. props. Например, если файл. props имеет имя CODEANALYSIS. props:
 
      ```xml
      ...
      <Import Project="..\..\codeanalysis.props" Condition="Exists('..\..\codeanalysis.props')" />
-     <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+     <Import Project="..\packages\Microsoft.CodeAnalysis.NetAnalyzers.5.0.0\build\Microsoft.CodeAnalysis.NetAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.NetAnalyzers.5.0.0\build\Microsoft.CodeAnalysis.NetAnalyzers.props')" />
      ...
      ```
 
@@ -96,7 +102,7 @@ ms.locfileid: "94348403"
 
 Ответ **. Страница свойств "анализ** кода" на уровне решения была удалена в пользу более надежной общей группы свойств. Для управления анализом кода на уровне проекта страница свойств анализ кода по-прежнему доступна. (Для управляемых проектов мы также рекомендуем переходить с набора правил на EditorConfig для конфигурации правила.)  Для совместного использования наборов правил в нескольких и всех проектах в решении или репозитории рекомендуется определить группу свойств с помощью свойства Кодеаналисисрулесет в общем файле PROPS/targets или Directory. props/Directory. targets. Если у вас нет таких общих свойств или целевых объектов, которые импортируются всеми проектами, рекомендуется [добавить такую группу свойств в каталог. props или каталог. targets в каталоге решения верхнего уровня, который автоматически импортируется во все файлы проекта, определенные в каталоге или его подкаталогах](../msbuild/customize-your-build.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор анализаторов](roslyn-analyzers-overview.md)
 - [Параметры соглашений о написании кода .NET в EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)

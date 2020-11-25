@@ -7,11 +7,11 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q5_8
-ms.openlocfilehash: 34094e2a89c2a9808d4f0ba921d97e434be3b66a
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: ba477ecb7e204a395cbe4b2e550beb82ec208479
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "91838362"
 ---
 ## <a name="are-there-any-other-limitations-i-should-be-aware-of"></a>Какие еще ограничения необходимо учитывать?
@@ -29,4 +29,4 @@ ms.locfileid: "91838362"
 - Продукты, продаваемые через [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
 - Продукты, которые продаются иным образом отдельно Azure (например, Azure Active Directory Premium)
 
-Для приобретения этих служб и услуг вам необходимо снять ограничение на [предельную сумму расходов](/azure/billing/billing-spending-limit) и указать кредитную карту для выставления счетов.
+Для приобретения этих служб и услуг вам необходимо снять ограничение на [предельную сумму расходов](https://docs.microsoft.com/azure/billing/billing-spending-limit) и указать кредитную карту для выставления счетов.
