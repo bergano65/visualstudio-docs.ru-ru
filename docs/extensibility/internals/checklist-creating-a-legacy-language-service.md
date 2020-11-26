@@ -1,5 +1,7 @@
 ---
 title: 'Контрольный список: создание языковой службы прежних версий | Документация Майкрософт'
+description: Ознакомьтесь с основными действиями, которые необходимо выполнить, чтобы создать устаревшую языковую службу для редактора основных редакторов Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11785dab63cbb6a95ab2d34c5edbfb4525ebf34c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 905d81d49706c3ae5348d71c03189d6e036dd3e5
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709787"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189996"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Контрольный список: создание языковой службы прежних версий
 В следующем контрольном списке перечислены основные шаги, которые необходимо выполнить, чтобы создать языковую службу для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] базового редактора. Чтобы интегрировать языковую службу в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , необходимо создать средство оценки выражений отладки. Дополнительные сведения см. в разделе [написание вычислительных выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) в [расширяемости отладчика Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).

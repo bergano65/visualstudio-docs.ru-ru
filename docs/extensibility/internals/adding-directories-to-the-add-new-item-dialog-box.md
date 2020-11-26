@@ -1,5 +1,7 @@
 ---
 title: Добавление каталогов в диалоговое окно "Добавление нового элемента" | Документация Майкрософт
+description: Сведения о добавлении каталогов в диалоговое окно Добавление нового элемента в Visual Studio с помощью сценария реестра для регистрации каталогов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d4af79f95c87271e9a10eece6c728daa9a81305
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6a8090a47c275e66272ed3ee3e5d5a1eef1926d
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710255"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189736"
 ---
 # <a name="add-directories-to-the-add-new-item-dialog-box"></a>Добавление каталогов в диалоговое окно "Добавление нового элемента"
-В следующем примере кода показано, как зарегистрировать новый набор каталогов для диалогового окна " **Добавление нового элемента** ". Каталоги для диалогового окна « **Добавление нового элемента** » для каждого проекта различаются. Поэтому каталоги регистрируются в подразделе " **проекты** ", который находится в **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp\projects**.
+В следующем примере кода показано, как зарегистрировать новый набор каталогов для диалогового окна " **Добавление нового элемента** ". Каталоги для диалогового окна « **Добавление нового элемента** » для каждого проекта различаются. Поэтому каталоги регистрируются в подразделе " **проекты** ", который находится в **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects**.
 
 ## <a name="registry-script"></a>Сценарий реестра
 
@@ -50,7 +52,7 @@ NoRemove Projects
  `SortPriority`Значение указывает приоритет сортировки.
 
 ## <a name="add-items-to-an-existing-project"></a>Добавление элементов в существующий проект
- Кроме того, можно добавлять элементы в существующий проект. Например, для [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] проекта можно добавить элементы в папку * \<root> \Program Files\Microsoft Visual студио\вк # \кшарппрожектитемс\локалпрожектитемс* . В этом случае `%GUID_Project%` — это идентификатор GUID для проекта C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).
+ Кроме того, можно добавлять элементы в существующий проект. Например, для [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] проекта можно добавить элементы в папку *\<root> \Program Files\Microsoft Visual студио\вк # \кшарппрожектитемс\локалпрожектитемс* . В этом случае `%GUID_Project%` — это идентификатор GUID для проекта C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).
 
  Можно также расширить существующий проект путем программирования подтипа проекта. С помощью подтипа проекта можно расширить проект, не написав новый тип проекта. Дополнительные сведения о подтипах проектов см. в разделе [Project подтипы](../../extensibility/internals/project-subtypes.md).
 

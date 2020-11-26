@@ -1,5 +1,7 @@
 ---
 title: Сопоставление фигурных скобок в языковой службе прежних версий | Документация Майкрософт
+description: Сведения о сопоставлении фигурных скобок в языковой службе прежних версий, помогающем отследить элементы языка, которые должны выполняться вместе, например круглые скобки и фигурные скобки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0081be3e3ab5a53f7d85f77475d4288aa5c87092
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d9f93f0081d45e986ab6845cdaee53209b84e13
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709808"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190009"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Сопоставление фигурных скобок в языковой службе прежних версий
 Сопоставление фигурных скобок помогает разработчику контролировать элементы языка, которые должны выполняться вместе, например круглые скобки и фигурные скобки. Когда разработчик вводит закрывающую фигурную скобку, выделяется открывающая фигурная скобка.
@@ -38,7 +40,7 @@ ms.locfileid: "80709808"
  Полное описание того, как ввод фигурных скобок активирует выделение фигурных скобок, см. в разделе *пример операции синтаксического анализа* статьи средство [синтаксического анализа и сканера языковой службы прежних версий](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
 
 ## <a name="enable-support-for-brace-matching"></a>Включить поддержку сопоставления фигурных скобок
- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>Атрибут может задавать записи реестра **матчбрацес**, **матчбрацесаткарет**и **шовматчингбраце** , которые задают соответствующие свойства <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Свойства предпочтений языка также могут быть заданы пользователем.
+ <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>Атрибут может задавать записи реестра **матчбрацес**, **матчбрацесаткарет** и **шовматчингбраце** , которые задают соответствующие свойства <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Свойства предпочтений языка также могут быть заданы пользователем.
 
 |Параметр реестра|Свойство|Описание|
 |--------------------|--------------|-----------------|

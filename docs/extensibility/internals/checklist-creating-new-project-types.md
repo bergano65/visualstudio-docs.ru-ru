@@ -1,5 +1,7 @@
 ---
 title: 'Контрольный список: создание новых типов проектов | Документация Майкрософт'
+description: Сведения о задачах, которые необходимо выполнить для создания и отображения нового типа проекта в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 111eb74d388682ff3cf97d5e0aa7e7e5a91cbaf3
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 20579422e8253b2c0cff7961a91395b5e44137ab
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414195"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189970"
 ---
 # <a name="checklist-create-new-project-types"></a>Контрольный список: создание новых типов проектов
 Для создания нового типа проекта необходимо выполнить несколько задач. В следующем контрольном списке приведено руководство по этим задачам.
@@ -49,15 +51,15 @@ ms.locfileid: "93414195"
 
     - Объекты, или классы, производные от `IDispatch` , доступны для автоматизации.
 
-    - Файлы таблицы команд XML ( *. vsct* ). Дополнительные сведения см. в разделе [файлы командных таблиц Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+    - Файлы таблицы команд XML (*. vsct*). Дополнительные сведения см. в разделе [файлы командных таблиц Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 6. Тестирование, отладка и запуск типа проекта.
 
 7. Откройте проект на вкладке **проект** диалогового окна **Добавление ссылки** , задав в `VARIANT_TRUE` качестве значения параметра `VSHPROPID_ShowProjInSolutionPage` . Дополнительные сведения см. в разделах <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>.
 
-8. Создайте файл установщика Microsoft ( *MSI* ) для установки пакетов VSPackage. Дополнительные сведения см. в статьях [Установка пакетов VSPackage с установщик Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [регистрация типа проекта](../../extensibility/internals/registering-a-project-type.md)и [пакетов VSPackage](../../extensibility/internals/vspackages.md).
+8. Создайте файл установщика Microsoft (*MSI*) для установки пакетов VSPackage. Дополнительные сведения см. в статьях [Установка пакетов VSPackage с установщик Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [регистрация типа проекта](../../extensibility/internals/registering-a-project-type.md)и [пакетов VSPackage](../../extensibility/internals/vspackages.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Иерархии в Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [Когда следует создавать типы проектов](../../extensibility/internals/when-to-create-project-types.md)
 - [Создание типов проектов](../../extensibility/internals/creating-project-types.md)
