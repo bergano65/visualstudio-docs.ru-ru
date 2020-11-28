@@ -1,5 +1,7 @@
 ---
 title: Элемент ProjectItem | Документация Майкрософт
+description: Получите справочные сведения об элементе ProjectItem, который представляет элемент проекта SharePoint в справочнике по XML-схеме элемента проекта SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44fc1b918960f0268d916ccfa560f118cea47144
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e211aa44b1402d6667fc3e02ca7e271a29c3ec7
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536881"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305053"
 ---
 # <a name="projectitem-element"></a>ProjectItem - элемент
   Представляет элемент проекта SharePoint. Этот элемент является обязательным корневым элементом для файла *данных..*

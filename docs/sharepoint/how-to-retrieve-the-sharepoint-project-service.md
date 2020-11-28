@@ -1,5 +1,7 @@
 ---
 title: Как получить службу проекта SharePoint | Документация Майкрософт
+description: Узнайте, как получить доступ к службе проектов SharePoint в расширениях системы проектов, обозреватель сервера расширениях или других расширениях Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f49883337c5748c0f8bcab5d0a88e02612e51b4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 553b4ae3b7ecfa9fa49065824020ebdcecf77215
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015563"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304438"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>Как получить службу проекта SharePoint
   Доступ к службе проектов SharePoint можно получить с помощью следующих типов решений:
@@ -73,7 +75,7 @@ ms.locfileid: "86015563"
      Дополнительные сведения об определении типов элементов проектов см. [в разделе инструкции. определение типа элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).
 
 ## <a name="retrieve-the-service-in-server-explorer-extensions"></a>Получение службы в расширениях обозреватель сервера
- В расширении узла **подключения SharePoint** в **Обозреватель сервера**можно получить доступ к службе проекта с помощью <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> свойства <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> объекта.
+ В расширении узла **подключения SharePoint** в **Обозреватель сервера** можно получить доступ к службе проекта с помощью <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> свойства <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> объекта.
 
 #### <a name="to-retrieve-the-service-in-a-server-explorer-extension"></a>Получение службы в обозреватель сервераном расширении
 
@@ -86,7 +88,7 @@ ms.locfileid: "86015563"
      [!code-vb[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.vb#1)]
      [!code-csharp[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.cs#1)]
 
-     Дополнительные сведения о расширении узла **подключений SharePoint** в **Обозреватель сервера**см. в разделе [как расширить узел SharePoint в обозреватель сервера](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
+     Дополнительные сведения о расширении узла **подключений SharePoint** в **Обозреватель сервера** см. в разделе [как расширить узел SharePoint в обозреватель сервера](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
 
 ## <a name="retrieve-the-service-in-other-visual-studio-extensions"></a>Получение службы в других расширениях Visual Studio
  Службу проекта можно получить в VSPackage или в любом расширении Visual Studio, имеющем доступ к <xref:EnvDTE80.DTE2> объекту в объектной модели автоматизации, например в мастере шаблонов проектов, который реализует <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс.

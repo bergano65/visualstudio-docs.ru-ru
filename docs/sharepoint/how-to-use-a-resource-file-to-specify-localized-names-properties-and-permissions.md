@@ -1,6 +1,8 @@
 ---
 title: Использование файла ресурсов в проекте SharePoint | Документация Майкрософт
 titleSuffix: ''
+description: Используйте файл ресурсов в проекте SharePoint, чтобы можно было указать локализованные имена, определить свойства и применить разрешения для объектов, определенных в модели BDC.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1693308c591e60a2df0e4d8e18ece8cc9b598fd2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ecc2bfab37e534e4edc005273ab5fc826b771228
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585749"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304364"
 ---
 # <a name="how-to-use-a-resource-file-in-a-sharepoint-project"></a>Использование файла ресурсов в проекте SharePoint
 
@@ -33,7 +35,7 @@ ms.locfileid: "91585749"
 
 ### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>Добавление файла ресурсов BDC в проект SharePoint
 
-1. В **Обозреватель решений**разверните папку для проекта SharePoint, а затем выберите папку, СОДЕРЖАЩУЮ модель BDC.
+1. В **Обозреватель решений** разверните папку для проекта SharePoint, а затем выберите папку, СОДЕРЖАЩУЮ модель BDC.
 
 2. В строке меню выберите **проект**  >  **Добавить новый элемент**.
 
@@ -49,7 +51,7 @@ ms.locfileid: "91585749"
 
      Дополнительные сведения об определении этих элементов см. в разделе [модель и файлы ресурсов](/previous-versions/office/developer/sharepoint-2010/aa674515(v=office.14)).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Практическое руководство. Добавление существующего файла модели подключения к бизнес-данным в проект SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Практическое руководство. Создание модели подключения к бизнес-данным](../sharepoint/how-to-create-a-bdc-model.md)

@@ -1,6 +1,8 @@
 ---
 title: Общие сведения о модели программирования расширений инструментов SharePoint
 titleSuffix: ''
+description: Ознакомьтесь с обзорной моделью программирования расширений инструментов SharePoint. Реализуйте интерфейсы расширяемости. Изучите объектные модели.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2f7b56b372f1f083b441a5d3e6045ffc7aff7ed
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 67e0f4ae5b06e96747a7257b2b9b444566235877
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585736"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305126"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Обзор модели программирования расширений инструментов SharePoint
   При создании расширения для инструментов SharePoint в Visual Studio сначала необходимо реализовать один или несколько интерфейсов расширения, предоставляемых инструментами SharePoint. Как правило, для реализации возможностей в расширении вы также будете использовать другие типы, предоставляемые инструментами SharePoint. В некоторых случаях можно также использовать типы в других объектных моделях, предоставляемых Visual Studio и SharePoint. Необходимо понимать назначение каждой из этих объектных моделей и уметь использовать их друг с другом для создания расширений для инструментов SharePoint.
@@ -93,7 +95,7 @@ ms.locfileid: "91585736"
 
  Объектную модель интеграции можно использовать при необходимости добавить новый компонент Visual Studio, который будет использоваться вместе со встроенными инструментами SharePoint. Например, при создании настраиваемого элемента проекта SharePoint, который представляет настраиваемое действие для сайта SharePoint, можно также создать модуль VSPackage, реализующий конструктор для настраиваемого действия. Конструктор можно связать с настраиваемым действием, добавив пункт контекстного меню к элементу проекта, который представляет настраиваемое действие в **Обозреватель решений**. Открыть конструктор можно, открыв его контекстное меню (щелкнув правой кнопкой мыши элемент проекта настраиваемого действия или выбрав его, а затем нажав клавиши **SHIFT** + **F10** ), а затем выбрав **Открыть**.
 
- Эта объектная модель определяется в наборе сборок, которые входят в состав пакета SDK Visual Studio. Некоторые из основных сборок в этой модели объектов включают *Microsoft.VisualStudio.Shell.11.0.dll*, *Microsoft.VisualStudio.Shell.Interop.dll*и *Microsoft.VisualStudio.OLE.Interop.dll*.
+ Эта объектная модель определяется в наборе сборок, которые входят в состав пакета SDK Visual Studio. Некоторые из основных сборок в этой модели объектов включают *Microsoft.VisualStudio.Shell.11.0.dll*, *Microsoft.VisualStudio.Shell.Interop.dll* и *Microsoft.VisualStudio.OLE.Interop.dll*.
 
  Дополнительные сведения об объектной модели интеграции см. в разделе [Общие сведения о модели автоматизации](../extensibility/internals/automation-model-overview.md) и [справочнике по Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).
 
@@ -104,10 +106,10 @@ ms.locfileid: "91585736"
 
 |Объектная модель|Описание|
 |------------------|-----------------|
-|Объектная модель сервера|Объектная модель сервера предоставляет доступ ко всем возможностям, предоставляемым [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] и [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] программно. Эта объектная модель предназначена для использования решениями SharePoint, которые выполняются на сервере SharePoint. Большая часть этой объектной модели определена в сборке *Microsoft.SharePoint.dll* . Дополнительные сведения об объектной модели сервера см. [в разделе Использование серверной модели объектов SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
+|Объектная модель сервера|Объектная модель сервера предоставляет доступ ко всем возможностям, предоставляемым [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] и [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] программно. Эта объектная модель предназначена для использования решениями SharePoint, которые выполняются на сервере SharePoint. Большая часть этой объектной модели определена в сборке *Microsoft.SharePoint.dll* . Дополнительные сведения о серверной объектной модели см. [в разделе Использование объектной модели Server-Side SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
 |Объектная модель клиента|Объектная модель клиента — это подмножество объектной модели сервера, которое можно использовать для взаимодействия с данными SharePoint с удаленного клиента или сервера. Она предназначена для сведения к минимуму числа циклов для выполнения типичных задач. Большая часть клиентской объектной модели определена в сборках *Microsoft.SharePoint.Client.dll* и *Microsoft.SharePoint.Client.Runtime.dll* . Дополнительные сведения о клиентской объектной модели см. в разделе [управляемая клиентская объектная модель](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Расширение средств SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md)

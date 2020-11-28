@@ -1,5 +1,7 @@
 ---
 title: Команды, которые должны быть выполнены после установки | Документация Майкрософт
+description: Сведения о командах, которые должны выполняться в процессе установки расширения, развернутого с помощью MSI-файла в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77add5afd5d44358f0077a11bb70559a796e74c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64eda9c95b9c469d8defc8ab0318031e9e43172a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709471"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305034"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Команды, которые должны быть выполнены после установки
 При развертывании расширения с помощью *MSI* -файла необходимо запустить команду **devenv/setup** в процессе установки, чтобы Visual Studio обнаружила свои расширения.
@@ -44,7 +46,7 @@ ms.locfileid: "80709471"
 |DEVENV_EXE_2005|RL_DevenvExe_2005|
 |DEVENV_EXE_2008|RL_DevenvExe_2008|
 
- Например, установщик Visual Studio записывает значение реестра **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0\setup\vs\environmentpath** как *C:\VS2008\Common7\IDE\devenv.exe*, полный путь к исполняемому файлу, который должен запустить установщик.
+ Например, установщик Visual Studio записывает значение реестра **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** как *C:\VS2008\Common7\IDE\devenv.exe*, полный путь к исполняемому файлу, который должен запустить установщик.
 
 > [!NOTE]
 > Так как столбец типа таблицы Реглокатор имеет значение 2, необязательно указывать дополнительные сведения о версии в таблице сигнатур.
@@ -74,7 +76,7 @@ ms.locfileid: "80709471"
 
 ### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>Инсталлексекутесекуенце таблица для планирования devenv.exe настраиваемых действий
 
-|Действие|Условие|Sequence|
+|Действие|Условие|Последовательность|
 |------------|---------------|--------------|
 |CA_RunDevenv2002|DEVENV_EXE_2002|6602|
 |CA_RunDevenv2003|DEVENV_EXE_2003|6603|

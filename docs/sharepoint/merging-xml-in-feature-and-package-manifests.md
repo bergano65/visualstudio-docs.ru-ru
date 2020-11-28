@@ -1,5 +1,7 @@
 ---
 title: Слияние XML в манифестах компонентов и пакетов | Документация Майкрософт
+description: Созданный конструктором слиянием и добавленный пользователем XML-код в манифестах компонентов и пакетов SharePoint. Изучите элементы манифеста компонентов и пакетов, а затем объедините исключения.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842796"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304234"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Слияние XML в манифестах компонентов и пакетов
   Компоненты и пакеты определяются [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] файлами манифеста. Эти Упакованные манифесты представляют собой сочетание данных, созданных из конструкторов, и пользовательских элементов, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] вводимых в шаблон манифеста пользователями. Во время упаковки выполняет [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Слияние пользовательских [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] инструкций с предоставленным конструктором [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] для формирования упакованного [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] файла манифеста. Аналогичные элементы, с исключениями, упомянутыми позже в исключениях слияния, объединяются во избежание [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ошибок проверки после развертывания файлов в SharePoint, а также для повышения эффективности файлов манифеста.
@@ -35,7 +37,7 @@ ms.locfileid: "90842796"
 
  Ниже приведен список исключений слияния для [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] файлов манифестов компонентов и пакетов.
 
-|Designer|XML-элемент|
+|Конструктор|XML-элемент|
 |--------------|-----------------|
 |Конструктор компонентов|активатиондепенденци|
 |Конструктор компонентов|упградеактион|
@@ -50,7 +52,7 @@ ms.locfileid: "90842796"
 |Функция (все атрибуты)|*Имя атрибута* (каждое имя атрибута элемента Feature является уникальным ключом).|
 |ElementFile|Местоположение|
 |Елементманифестс/ElementManifest|Местоположение|
-|Свойства/свойство|Ключ|
+|Свойства/свойство|Клавиши|
 |кустомупградеактион|Имя|
 |кустомупградеактионпараметер|Имя|
 
@@ -78,6 +80,6 @@ ms.locfileid: "90842796"
 ## <a name="manually-add-deployed-files"></a>Добавление развернутых файлов вручную
  Некоторые элементы манифеста, такие как Аппликатионресаурцефиле и Двпфилес, указывают расположение, содержащее имя файла. Однако добавление записи имени файла в шаблон манифеста не приводит к добавлению в пакет базового файла. Необходимо добавить файл в проект, чтобы включить его в пакет и задать соответствующее свойство для соответствующего типа развертывания.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

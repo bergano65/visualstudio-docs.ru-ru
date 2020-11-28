@@ -1,5 +1,7 @@
 ---
 title: Параметры контекста | Документация Майкрософт
+description: Сведения о параметрах контекста в интегрированной среде разработки (IDE) Visual Studio, которые определяют состояние проекта при добавлении или реализации мастера.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d1a8c83ef9794479c35cd36609d77ef94621732
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 654ebf68efebaa44766079c172e87396134805e3
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012455"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304711"
 ---
 # <a name="context-parameters"></a>Контекстные параметры
-В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среде разработки (IDE) можно добавлять мастера в диалоговые окна **Новый проект**, **Добавить новый элемент**или **Добавить подпроект** . Добавленные мастера можно найти в меню **файл** или щелкнув правой кнопкой мыши проект в **Обозреватель решений**. Интегрированная среда разработки передает параметры контекста в реализацию мастера. Параметры контекста определяют состояние проекта, когда интегрированная среда разработки вызывает мастер.
+В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среде разработки (IDE) можно добавлять мастера в диалоговые окна **Новый проект**, **Добавить новый элемент** или **Добавить подпроект** . Добавленные мастера можно найти в меню **файл** или щелкнув правой кнопкой мыши проект в **Обозреватель решений**. Интегрированная среда разработки передает параметры контекста в реализацию мастера. Параметры контекста определяют состояние проекта, когда интегрированная среда разработки вызывает мастер.
 
  Интегрированная среда разработки запускает мастера, устанавливая <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> флаг в вызове метода для проекта в интегрированной среде разработки <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> . Если этот параметр задан, проект должен вызывать `IVsExtensibility::RunWizardFile` выполнение метода с помощью зарегистрированного имени мастера или GUID и других параметров контекста, которые среда IDE передает в нее.
 
@@ -58,7 +60,7 @@ ms.locfileid: "90012455"
 | `InstallationDirectory` | Путь к каталогу [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] установки. |
 | `Silent` | Логическое значение, указывающее, должен ли мастер выполняться автоматически, как если бы было нажато кнопку **Готово** ( `TRUE` ). |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>
 - [Пользовательские параметры](../../extensibility/internals/custom-parameters.md)

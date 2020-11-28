@@ -1,5 +1,7 @@
 ---
 title: Как локализовать код | Документация Майкрософт
+description: Научитесь локализовать код в SharePoint, заменив жестко запрограммированные строки вызовами метода Жетглобалресаурцеобжект, который ссылается на локализованные ресурсы.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,21 +15,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c1963ff0b6ef317dfa1a2c8154a1628710dc562
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2cbe38c55b92514954cc3487544fed89d68cc4dc
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016684"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304590"
 ---
-# <a name="how-to-localize-code"></a>Практические руководства. Локализация кода
+# <a name="how-to-localize-code"></a>Практическое руководство. Локализация кода
   Нелокализованный код использует жестко запрограммированные строковые значения. Чтобы локализовать строки кода, замените их вызовами <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> метода, который является методом, который ссылается на локализованные ресурсы.
 
 ## <a name="localize-code"></a>Локализация кода
 
 #### <a name="to-localize-code"></a>Локализация кода
 
-1. В **Обозреватель решений**откройте контекстное меню для элемента проекта и выберите команду **Добавить**  >  **модуль**.
+1. В **Обозреватель решений** откройте контекстное меню для элемента проекта и выберите команду **Добавить**  >  **модуль**.
 
      Выберите шаблон **файл ресурсов** .
 
@@ -50,7 +52,7 @@ ms.locfileid: "86016684"
 
 7. Создайте проект, чтобы создать вспомогательные DLL ресурсов.
 
-8. В **конструкторе пакетов**перейдите на вкладку **Дополнительно** и добавьте вспомогательную сборку.
+8. В **конструкторе пакетов** перейдите на вкладку **Дополнительно** и добавьте вспомогательную сборку.
 
 9. В поле **Расположение** добавьте к пути к расположению папку с идентификатором культуры, например *de-de \\ \<Project Item Name>.resources.dll*.
 
@@ -70,6 +72,6 @@ ms.locfileid: "86016684"
 
 ## <a name="see-also"></a>См. также раздел
 - [Локализация решений SharePoint](../sharepoint/localizing-sharepoint-solutions.md)
-- [Практические руководства. Локализация компонента](../sharepoint/how-to-localize-a-feature.md)
-- [Как локализовать разметку ASPX](../sharepoint/how-to-localize-aspx-markup.md)
-- [Как добавить файл ресурсов](../sharepoint/how-to-add-a-resource-file.md)
+- [Практическое руководство. Локализация компонента](../sharepoint/how-to-localize-a-feature.md)
+- [Практическое руководство. Локализация разметки ASPX](../sharepoint/how-to-localize-aspx-markup.md)
+- [Практическое руководство. Добавление файла ресурсов](../sharepoint/how-to-add-a-resource-file.md)

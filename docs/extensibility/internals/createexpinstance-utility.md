@@ -1,5 +1,7 @@
 ---
 title: Служебная программа CreateExpInstance | Документация Майкрософт
+description: Сведения о служебной программе CreateExpInstance, которая позволяет создавать, сбрасывать и удалять экспериментальные экземпляры Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a6b302976495e6067fad14317856cda4ac4625f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c02e85a96d59645787d3018100949369d52c8980
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709245"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305383"
 ---
 # <a name="createexpinstance-utility"></a>Служебная программа CreateExpInstance
 Используйте служебную программу **CreateExpInstance** для создания, сброса или удаления экспериментального экземпляра Visual Studio. Экспериментальный экземпляр можно использовать для отладки и тестирования расширений Visual Studio без изменения базового продукта.
@@ -41,10 +43,10 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 
  **/Рутсуффикс** Суффикс, добавляемый к имени каталога экспериментального экземпляра.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
  При работе с расширением Visual Studio можно нажать клавишу F5, чтобы открыть экспериментальный экземпляр по умолчанию и установить текущее расширение. Если экспериментальный экземпляр недоступен, Visual Studio создает его с параметрами по умолчанию.
 
- Расположение экспериментального экземпляра по умолчанию зависит от номера версии Visual Studio. Например, для Visual Studio 2015 расположение — *%LocalAppData%\Microsoft\VisualStudio\14.0Exp \\ *. Все файлы в расположении каталога считаются частью этого экземпляра. Все дополнительные экспериментальные экземпляры не будут загружаться Visual Studio, если только имя каталога не будет изменено на расположение по умолчанию.
+ Расположение экспериментального экземпляра по умолчанию зависит от номера версии Visual Studio. Например, для Visual Studio 2015 расположение — *%LocalAppData%\Microsoft\VisualStudio\14.0Exp \\*. Все файлы в расположении каталога считаются частью этого экземпляра. Все дополнительные экспериментальные экземпляры не будут загружаться Visual Studio, если только имя каталога не будет изменено на расположение по умолчанию.
 
  Visual Studio не получает доступ к системному реестру при открытии экспериментального экземпляра. Это отличается от предыдущих версий Visual Studio, в которых использовалась экспериментальная версия куста реестра.
 

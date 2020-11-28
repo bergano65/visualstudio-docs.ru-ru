@@ -1,5 +1,7 @@
 ---
 title: Алгоритм маршрутизации команд | Документация Майкрософт
+description: Сведения о порядке разрешения команд в Visual Studio, так как команды обрабатываются различными компонентами и направляются из самого внутреннего контекста в самый внешний.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af8d3e53e09214ce36a80ca18856085dfb2bb746
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1694e0835add6eac75986538a8abae99adf717b1
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709538"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305233"
 ---
 # <a name="command-routing-algorithm"></a>Алгоритм маршрутизации команд
 В командах Visual Studio обрабатывается с помощью ряда различных компонентов. Команды направляются из самого внутреннего контекста, основанного на текущем выделении, к самому внешнему (также известному как глобальному) контексту. Дополнительные сведения см. в разделе [доступность команды](../../extensibility/internals/command-availability.md).
@@ -38,7 +40,7 @@ ms.locfileid: "80709538"
 
 7. Текущая иерархия: текущая иерархия может быть проектом, владеющем активным окном документа, или иерархией, выбранной в **Обозреватель решений**. Visual Studio ищет <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс, реализованный в текущей или активной иерархии. Иерархия должна поддерживать команды, которые являются допустимыми при активной иерархии, даже если окно документа элемента проекта имеет фокус. Однако команды, применяемые только в том случае, если в **Обозреватель решений** должен поддерживаться фокус, используется <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> интерфейс и его <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> методы и.
 
-     Для команд **вырезания**, **копирования**, **вставки**, **удаления**, **переименования**, **ввода**и **DoubleClick** требуется специальная обработка. Дополнительные сведения об обработке команд **Delete** и **Remove** в иерархиях см. в описании <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> интерфейса.
+     Для команд **вырезания**, **копирования**, **вставки**, **удаления**, **переименования**, **ввода** и **DoubleClick** требуется специальная обработка. Дополнительные сведения об обработке команд **Delete** и **Remove** в иерархиях см. в описании <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> интерфейса.
 
 8. Глобальный. Если команда не была обработана ранее упомянутыми контекстами, Visual Studio пытается направить его в пакет VSPackage, который владеет командой, реализующей <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс. Если пакет VSPackage еще не загружен, он не загружается, когда Visual Studio вызывает <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод. Пакет VSPackage загружается только при <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> вызове метода.
 

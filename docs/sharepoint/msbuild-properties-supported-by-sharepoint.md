@@ -1,5 +1,7 @@
 ---
 title: Свойства MSBuild, поддерживаемые SharePoint | Документация Майкрософт
+description: Ознакомьтесь со списком имен и описаний свойств MSBuild, которые поддерживаются и относятся к SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5470160c6b0af1af39238a14319ad497e1541a43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1eab3832121f1e0c926257797ddbc79695546a5
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985166"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305139"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Свойства MsBuild, поддерживаемые SharePoint
   Любое [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] свойство, определенное в файле Microsoft. VisualStudio. SharePoint. targets, файле проекта или пользовательском файле проекта, можно использовать в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проектах SharePoint. Помимо общих [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] свойств, предоставляемых проектом, SharePoint определяет дополнительные свойства, характерные для проектов SharePoint.
@@ -51,6 +53,6 @@ ms.locfileid: "72985166"
 > [!NOTE]
 > [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]Для указания свойства можно использовать либо синтаксис переменной `$(` *PropertyName* , `)` либо синтаксис переменной среды `%` *PropertyName* `%` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по MSBuild](../msbuild/msbuild-reference.md)

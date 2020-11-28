@@ -1,5 +1,6 @@
 ---
 title: Выгрузка и повторная загрузка вложенных проектов
+description: Дополнительные действия, которые необходимо выполнить при выгрузке и перезагрузке вложенных проектов в Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 154eb51014d9719b601cf87d53383f57941403a8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 62cb611e927b878b82e1b5a1025331e1a443560e
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036825"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304679"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Рекомендации по выгрузке и перезагрузке вложенных проектов
 
