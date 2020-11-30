@@ -1,5 +1,7 @@
 ---
 title: Сравнение результатов нагрузочных тестов
+description: Сведения о том, как создавать отчеты нагрузочных тестов в формате Excel, которые включают два или более результатов теста, в том числе отчеты со сравнением выполнений и отчеты о тенденциях.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 31874114-459a-45d5-9f8b-2ea503627db8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d2390b7efde62d475008dcb17aa24ed69ebf4bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 66a388b5b6d74834c58eebad04147d5067655a28
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288849"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441598"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Создание отчетов о результатах нагрузочных тестов для сравнения тестов или анализа трендов
 
@@ -44,6 +46,6 @@ ms.locfileid: "85288849"
 |**Создание отчета о производительности и нагрузке.** Отчеты о нагрузочных тестах и веб-тестах производительности можно создавать с помощью программы Microsoft Excel.|- [Практическое руководство. Создание отчетов по производительности нагрузочных тестов с помощью Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
 |**Создание отчета о производительности и нагрузке с помощью Microsoft Word вручную.** Вы можете создавать отчеты о нагрузочных тестах и веб-тестах производительности вручную путем копирования данных сводки, таблиц и диаграмм в документ Microsoft Word.|- [Практическое руководство. Создание отчета о производительности нагрузочных тестов вручную с помощью Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Анализ результатов нагрузочных тестов](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

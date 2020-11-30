@@ -1,18 +1,18 @@
 ---
 title: Использование данных времени разработки в Конструкторе XAML в Visual Studio
 description: Узнайте, как использовать данные времени разработки в XAML.
-ms.date: 11/10/2020
+ms.date: 11/17/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: bda4af3a3985ec6fc3aae1e991b7f5f622d67965
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 992c97b188535fb39548fca4fd9d02d588a45474
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704005"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850745"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Использование данных времени разработки в Конструкторе XAML в Visual Studio
 
@@ -179,11 +179,11 @@ xmlns:models="clr-namespace:Cities.Models"
 
 ### <a name="requirements"></a>Требования
 
-- Для использования данных времени разработки требуется Visual Studio 2019 версии [16.7](/visualstudio/releases/2019/release-notes) или более поздней.
+- Для использования данных времени разработки требуется Visual Studio 2019 версии [16.7](/visualstudio/releases/2019/release-notes-v16.7) или более поздней.
 
-- Поддерживаются классические проекты Windows, предназначенные для Windows Presentation Foundation (WPF) для .NET Core и UWP. Эта функция также доступна в [канале предварительной версии](/visualstudio/releases/2019/release-notes-preview) для .NET Framework. Чтобы включить ее, откройте раздел **Инструменты** > **Параметры** > **Среда** > **Предварительные версии функции**, выберите **Создать Конструктор XAML WPF для .NET Framework** и перезапустите Visual Studio.
+- Поддерживаются классические проекты Windows, предназначенные для Windows Presentation Foundation (WPF) для .NET Core и UWP. Эта функция также доступна для .NET Framework в [канале предварительной версии](/visualstudio/releases/2019/release-notes-preview). Чтобы включить ее, откройте раздел **Инструменты** > **Параметры** > **Среда** > **Предварительные версии функции**, выберите **Создать Конструктор XAML WPF для .NET Framework** и перезапустите Visual Studio.
 
-- Начиная с Visual Studio 2019 версии 16.7 эта функция работает со всеми встроенными элементами управления платформ WPF и UWP. Поддержка элементов управления сторонних разработчиков теперь доступна в предварительной версии 16.8.
+- Начиная с Visual Studio 2019 версии 16.7 эта функция работает со всеми встроенными элементами управления платформ WPF и UWP. Поддержка элементов управления сторонних разработчиков теперь доступна в [выпуске 16.8](/visualstudio/releases/2019/release-notes/).
 
 ### <a name="the-xaml-designer-stopped-working"></a>Конструктор XAML перестал работать
 

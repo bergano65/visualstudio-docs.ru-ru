@@ -1,5 +1,7 @@
 ---
 title: Управление параметрами приложения (.NET)
+description: Сведения о том, как управлять параметрами приложений (ранее назывались динамическими свойствами), которые не включены в код приложения, но вызываются во время выполнения.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d792a6147795f81211203fc442539371f3caa91
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f62e03210e83f434bd32d08c3fe0f7b2b539155e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593711"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596902"
 ---
 # <a name="manage-application-settings-net"></a>Управление параметрами приложения (.NET)
 
@@ -50,7 +52,7 @@ ms.locfileid: "75593711"
 
 ## <a name="create-application-settings-at-design-time"></a>Создание параметров приложения во время разработки
 
-В режиме разработки можно создавать параметры приложения двумя способами: с помощью страницы **Параметры** **Конструктора проектов**либо с помощью окна **Свойства** формы или элемента управления, которое позволяет привязать параметр к свойству.
+В режиме разработки можно создавать параметры приложения двумя способами: с помощью страницы **Параметры****Конструктора проектов** либо с помощью окна **Свойства** формы или элемента управления, которое позволяет привязать параметр к свойству.
 
 При создании параметра, область действия которого ограничивается приложением (например строки подключения к базе данных или ссылки на ресурсы сервера), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] сохраняет его в файл *app.config* с тегом `<applicationSettings>`. (Строки подключения сохраняются под тегом `<connectionStrings>` .)
 
@@ -102,6 +104,6 @@ Properties.Settings.Default.Save();
 
 Общие сведения о доступе к параметрам приложений с помощью класса `Settings` см. в разделе [Общие сведения о параметрах приложений (.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview). Информацию об итерации параметров см. в этой [записи форума](https://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Доступ к параметрам приложения (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

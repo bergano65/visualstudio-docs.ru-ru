@@ -1,5 +1,7 @@
 ---
 title: Запись сбоев тестов в журнал нагрузочного тестирования
+description: Сведения о том, как указать, требуется ли сохранять журнал тестирования в случае сбоя теста в нагрузочном тесте, путем изменения значения для свойства "Сохранить журнал об ошибках тестирования".
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eaef2888cecc7622a3dc589a6bab816b0c134668
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6dbde0f1a1f854bfd7dc6c2f74e3081a33b4796
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287510"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439908"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Практическое руководство. Включение и отключение записи сбоев тестов в журнал тестирования с помощью редактора тестовой нагрузки
 
@@ -46,4 +48,4 @@ ms.locfileid: "85287510"
 ## <a name="see-also"></a>См. также раздел
 
 - [Изменение сценариев тестовой нагрузки](../test/edit-load-test-scenarios.md)
-- [Пошаговое руководство: создание и запуск нагрузочного теста](../test/walkthrough-create-and-run-a-load-test.md)
+- [Пошаговое руководство. Создание и запуск нагрузочного теста](../test/walkthrough-create-and-run-a-load-test.md)

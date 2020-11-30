@@ -1,5 +1,7 @@
 ---
 title: Страница приложения в свойствах проекта Visual Basic
+description: Сведения о том, как с помощью страницы "Приложение" в конструкторе проектов Visual Basic задать параметры и свойства приложения в проекте.
+ms.custom: SEO-VS-2020
 ms.date: 10/30/2018
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe303f86b282e7e803dacc1dd8f4d3c1d6b72121
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 675c3fbaaf1a3e49648befebca4927299649b057
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595817"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871422"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Приложение" в конструкторе проектов (Visual Basic)
 

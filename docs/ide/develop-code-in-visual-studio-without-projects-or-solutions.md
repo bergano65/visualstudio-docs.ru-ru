@@ -1,5 +1,7 @@
 ---
 title: Разработка кода без использования проектов и решений
+description: Сведения о том, как напрямую вести разработку кода в Visual Studio без создания проектов или решений.
+ms.custom: SEO-VS-2020
 ms.date: 06/22/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68665acfcc3ea00f118dc19cf155cb3e6f5d1b36
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: d706ccdc07abcc91e956878e1bc180be9c542223
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769659"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006007"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Разработка кода в Visual Studio без использования проектов и решений
 

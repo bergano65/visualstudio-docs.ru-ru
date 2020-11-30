@@ -1,5 +1,7 @@
 ---
 title: Преобразование текста в верхний или нижний регистр
+description: Сведения о том, как переключать регистр выбранного текста с помощью команд меню или сочетаний клавиш.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28ed534a72c542f978fc8d4121f471cad79ea64d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4574874e14ee66bbfb0f11d7767d59516b6666f3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284637"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597292"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Практическое руководство. Изменение регистра текста в редакторе
 
@@ -27,7 +29,7 @@ ms.locfileid: "85284637"
 
 ## <a name="to-change-text-case"></a>Изменение регистра текста
 
-1. Выделите текст, который требуется преобразовать.
+1. Выберите текст, который нужно преобразовать.
 
 2. Чтобы преобразовать все буквы в прописные, выберите **Изменить** > **Расширенные** > **Все прописные** или используйте комбинацию клавиш **CTRL**+**SHIFT**+**U**.
 
@@ -36,6 +38,6 @@ ms.locfileid: "85284637"
 > [!TIP]
 > Чтобы вернуться к форматированию, предшествовавшему изменению, выберите **Отменить** в меню **Правка**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)

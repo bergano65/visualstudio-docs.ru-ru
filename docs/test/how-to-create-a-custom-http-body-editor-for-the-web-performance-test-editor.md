@@ -1,5 +1,6 @@
 ---
 title: Создание редактора текста HTTP для веб-теста производительности
+description: Сведения о том, как создать пользовательский редактор содержимого, позволяющий редактировать содержимое основного текста строки или двоичного основного текста в запросе веб-службы.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7539f9055fb64cdbfa77ebe5beee7173b8967afb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7d6da75b24a982c420b475815f665851ebf06504
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810289"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440151"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Практическое руководство. Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
 

@@ -1,5 +1,7 @@
 ---
 title: Управление свойствами проектов и решений
+description: Сведения о том, как одновременно управлять свойствами проекта и решения в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01fcdc09c9d3ee4f5a38a95ef4304bfdf537d527
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7b7b89588e778a142e7dd49e1a3051a9aa188ff1
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591311"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871396"
 ---
 # <a name="manage-project-and-solution-properties"></a>Управление свойствами проектов и решений
 

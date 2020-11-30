@@ -1,5 +1,7 @@
 ---
 title: Создание шаблонов проектов
+description: Сведения о том, как с помощью мастера экспорта шаблонов и других методов создать шаблоны проектов в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 f1_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e6f168244971a348cdb7938af463538d0fa2acaf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9030a88e67c90fab870613d71d0fe63992166222
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284390"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597188"
 ---
 # <a name="how-to-create-project-templates"></a>Практическое руководство. Создание шаблонов проектов
 
@@ -41,7 +43,7 @@ ms.locfileid: "85284390"
 
    Проект будет экспортирован в *ZIP*-файл и помещен в указанное выходное расположение, а также (если установлен соответствующий флажок) импортирован в Visual Studio.
 
-Чтобы найти шаблон в диалоговом окне **Новый проект**, разверните узел **Установленные**, а затем категорию, которая соответствует элементу `ProjectType` в *VSTEMPLATE*-файле. Например, *VSTEMPLATE*-файл, содержащий `<ProjectType>CSharp</ProjectType>`, по умолчанию отображается в разделе **Установленные** > **Visual C#** . Шаблон можно расположить во вложенном каталоге типа проекта. Для этого просто создайте папку в этом каталоге и поместите в нее *ZIP*-файл проекта. Дополнительные сведения см. в статье [Практическое руководство. Размещение и упорядочение шаблонов и элементов](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Чтобы найти шаблон в диалоговом окне **Новый проект**, разверните узел **Установленные**, а затем категорию, которая соответствует элементу `ProjectType` в *VSTEMPLATE*-файле. Например, *VSTEMPLATE*-файл, содержащий `<ProjectType>CSharp</ProjectType>`, по умолчанию отображается в разделе **Установленные** > **Visual C#**. Шаблон можно расположить во вложенном каталоге типа проекта. Для этого просто создайте папку в этом каталоге и поместите в нее *ZIP*-файл проекта. Дополнительные сведения см. в разделе [Практическое руководство. размещать и упорядочивать шаблоны](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ::: moniker-end
 
@@ -61,7 +63,7 @@ ms.locfileid: "85284390"
 
 Если у вас установлен пакет SDK для Visual Studio, можно поместить готовый шаблон в оболочку (VSIX-файл для развертывания) с помощью шаблона **Проект VSIX**. Дополнительные сведения см. в разделе [Приступая к работе с использованием шаблона проекта VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
 - [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)

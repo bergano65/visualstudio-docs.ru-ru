@@ -1,5 +1,7 @@
 ---
 title: Переключение между представлением в виде членов и представлением в виде ассоциации (конструктор классов)
+description: Сведения о том, как изменить способ представления на диаграмме классов для отношения связи между двумя типами из записи члена с записью ассоциации и наоборот.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d453dd2cd19f8a6c9c76ebcc48a762ba3142ea74
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64d26b6ca1c71fe3484544f02006a27866ff4843
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85771011"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901665"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Практическое руководство. Переключение между представлением в виде членов и представлением в виде ассоциации в конструкторе классов
 
@@ -45,6 +47,6 @@ ms.locfileid: "85771011"
 ## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Создание наследования между типами](how-to-create-inheritance-between-types.md)
-- [Практическое руководство. Просмотр наследования между типами](how-to-view-inheritance-between-types.md)
+- [Практическое руководство. Просмотр отношения наследования между типами](how-to-view-inheritance-between-types.md)
 - [Просмотр типов и отношений](designing-and-viewing-classes-and-types.md)
 - [Практическое руководство. Визуализация ассоциации коллекции](how-to-visualize-a-collection-association.md)

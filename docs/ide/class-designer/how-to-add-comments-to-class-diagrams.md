@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Добавление комментариев в схему классов (конструктор классов)
+description: Сведения о том, как с помощью фигур комментариев добавлять примечания к диаграммам классов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e7514e8ab55697bdfc01f58c5ceffe4228721c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b146efb27bb76d91b7453d574bda6d79d53a68a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85771021"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901678"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Практическое руководство. Добавление комментариев в схему классов
 

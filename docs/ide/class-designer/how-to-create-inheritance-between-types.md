@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Создание наследования между типами (конструктор классов)
+description: Сведения о том, как создать отношение наследования между двумя типами на диаграмме классов с помощью конструктора классов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ffae72a3fe171b6bd16cfbc623a777f4d4d2e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 199f220529b28d4ca0c668d30564da65f6553e0e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770209"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901470"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Практическое руководство. Создание наследования между типами в конструкторе классов
 
@@ -28,7 +30,7 @@ ms.locfileid: "85770209"
 
 1. В **обозревателе решений** выберите проект и откройте файл диаграммы классов (CD-файл).
 
-     Если диаграмма классов не существует, создайте ее. См. раздел [Практическое руководство. Добавление схем классов в проекты](how-to-add-class-diagrams-to-projects.md).
+     Если диаграмма классов не существует, создайте ее. См. практическое руководство по [ добавлению диаграмм классов в проекты](how-to-add-class-diagrams-to-projects.md).
 
 2. На **панели инструментов** в разделе **Конструктор классов** щелкните элемент **Наследование**.
 
@@ -51,5 +53,5 @@ ms.locfileid: "85770209"
 
 - [Наследование](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [Основы наследования](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
-- [Практическое руководство. Просмотр наследования между типами](how-to-view-inheritance-between-types.md)
+- [Практическое руководство. Просмотр отношения наследования между типами](how-to-view-inheritance-between-types.md)
 - [Классы Visual C++ в конструкторе классов](visual-cpp-classes.md)

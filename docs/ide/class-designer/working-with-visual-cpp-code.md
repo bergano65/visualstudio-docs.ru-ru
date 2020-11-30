@@ -1,5 +1,7 @@
 ---
 title: Работа с кодом Visual C++ (конструктор классов)
+description: Сведения о том, как использовать диаграммы классов для проектирования и визуализации кодовой точки, классов и других типов C++ в проекте.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54087a719b0079ba32ff08ff1e08ad01f5e64ed0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3509f625686f97156efe79f5e1b72aa991ce5ca
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596753"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903888"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>Работа с кодом С++ в Конструкторе классов
 
@@ -100,7 +102,7 @@ ms.locfileid: "75596753"
 
 - **Конструктор классов** не поддерживает объединения. Это особый тип класса, в котором объем выделяемой памяти равен размеру самого большого элемента данных объединения.
 
-- `int`Конструктор классов`char` не отображает базовые типы данных, такие как ** и **.
+- `int`Конструктор классов`char` не отображает базовые типы данных, такие как **и**.
 
 - **Конструктор классов** не отображает типы, которые определены за пределами текущего проекта, если только проект не содержит правильные ссылки на эти типы.
 

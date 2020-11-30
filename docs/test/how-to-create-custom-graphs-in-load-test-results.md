@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Создание пользовательских графиков в результатах нагрузочного теста
+description: Сведения о том, как создать графы для отображения определенной информации о результатах нагрузочных тестов при их выполнении или после их завершения.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1cc9c5bab7601a62bacfbbb155227bd5b632f93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c003fc5d6573dfdd88ec85ea37fbb10f80c94484
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287809"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441043"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Практическое руководство. Создание пользовательских графиков в результатах нагрузочного теста
 
@@ -38,7 +40,7 @@ ms.locfileid: "85287809"
 
      В **анализаторе тестовой нагрузки** появится новая диаграмма. Она появится в выбранной в настоящий момент области диаграммы и заменит ранее отображавшуюся диаграмму.
 
-3. Настройте новую диаграмму, добавив в нее счетчики. Дополнительные сведения см. в статье [Практическое руководство. Добавление и удаление счетчиков на графиках в результатах нагрузочного теста](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3. Настройте новую диаграмму, добавив в нее счетчики. Дополнительные сведения см. в разделе [Практическое руководство. добавлять и удалять счетчики на графах](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
 ## <a name="see-also"></a>См. также раздел
 

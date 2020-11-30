@@ -1,5 +1,7 @@
 ---
 title: Создание нового проекта
+description: Сведения о том, как создать новый проект в Visual Studio (с пошаговыми инструкциями).
+ms.custom: SEO-VS-2020
 ms.date: 03/19/2019
 ms.topic: how-to
 f1_keywords:
@@ -11,18 +13,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7cecf6a68296b3bffd07cca13fc3a3d0d5bc836
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7cba3c19ae939396132af8bb3c2ffee318b7007e
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770740"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006527"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Создание проекта в Visual Studio
 
 ::: moniker range="vs-2017"
 
-## <a name="open-the-new-project-dialog"></a>Открытие диалогового окна "Новый проект"
+## <a name="open-the-new-project-dialog"></a>Открытие диалогового окна \"Новый проект\"
 
 Создать проект в Visual Studio 2017 можно несколькими способами. На начальной странице можно ввести имя шаблона проекта в поле **Поиск шаблонов проектов** или выбрать ссылку **Создать проект**, чтобы открыть диалоговое окно **Новый проект**. Кроме начальной страницы, также можно последовательно выбрать элементы **Файл** > **Создать** > **Проект** в строке меню или нажать на панели инструментов кнопку **Создать проект**.
 
@@ -59,7 +61,7 @@ ms.locfileid: "85770740"
 
 ![Создание проекта из начального окна в Visual Studio 2019](media/vs-2019/start-window-create-new-project.png)
 
-Если среда разработки Visual Studio уже открыта, можно создать проект. Для этого щелкните **Файл** > **Создать** > **Проект** в строке меню или нажмите кнопку **Создать проект** на панели инструментов.
+Если среда разработки Visual Studio уже открыта, можно создать проект, выбрав **Файл** > **Создать** > **Проекта** в строке меню или нажать кнопку **Создать проект** на панели инструментов.
 
 ![Кнопка "Создать проект" в Visual Studio 2019](media/vs-2019/new-project-button.png)
 

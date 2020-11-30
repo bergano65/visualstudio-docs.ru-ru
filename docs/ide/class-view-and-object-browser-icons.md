@@ -1,5 +1,7 @@
 ---
 title: Значки представления классов и обозревателя объектов
+description: Сведения о значках "Представление классов" и "Обозреватель объектов", которые представляют сущности кода, например пространства имен, классы, функции и переменные.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bce70f83be2af80f93cf9888432257f6139732
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f8c0cf21d6d9055f183d15728fb63118ffb87e9c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285154"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94904005"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Значки представления классов и обозревателя объектов
 

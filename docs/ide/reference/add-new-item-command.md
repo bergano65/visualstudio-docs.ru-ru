@@ -1,5 +1,7 @@
 ---
 title: Команда Add New Item
+description: Сведения о том, как с помощью команды "Добавить новый элемент" выполнить добавление нового элемента или набора фреймов в текущее решение.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38be691ae7c49ffbd6c98c9e4beb25b6ebb021b6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac07b374ef08a963426b9bfd44f101a8863f04c8
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585695"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871292"
 ---
 # <a name="add-new-item-command"></a>Команда Add New Item
 Добавляет новый элемент решения, такой как HTM, CSS, TXT или набор фреймов, в текущее решение и открывает его.
@@ -31,11 +33,11 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 
 ## <a name="arguments"></a>Аргументы
 `filename`\
-Необязательный параметр. Путь и имя файла элемента, который необходимо добавить в решение.
+Необязательный элемент. Путь и имя файла элемента, который необходимо добавить в решение.
 
 ## <a name="switches"></a>Коммутаторы
 /t: `templatename`\
-Необязательный параметр. Указывает тип создаваемого файла. Если имя шаблона не задано, по умолчанию создается текстовый файл.
+Необязательный элемент. Указывает тип создаваемого файла. Если имя шаблона не задано, по умолчанию создается текстовый файл.
 
 В синтаксической структуре аргумента /t:`templatename` используются данные, находящиеся в диалоговом окне **Добавление нового элемента решения**. Вам необходимо ввести полную категорию, затем тип файла, отделив имя категории от типа файла обратной косой чертой (`\`) и заключив всю строку в кавычки.
 
@@ -46,7 +48,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```
 
 /e: `editorname`\
-Необязательный параметр. Имя редактора, в котором будет открыт файл. Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.
+Необязательный элемент. Имя редактора, в котором будет открыт файл. Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.
 
 В синтаксической структуре аргумента /e:`editorname` имена редакторов используются в том виде, в каком они отображаются в диалоговом окне **Открыть с помощью**, с заключением в кавычки.
 
@@ -66,6 +68,6 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Окно команд](../../ide/reference/command-window.md)
+- [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

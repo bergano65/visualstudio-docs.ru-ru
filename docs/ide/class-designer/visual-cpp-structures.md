@@ -1,5 +1,7 @@
 ---
 title: Структуры C++ в конструкторе классов
+description: Сведения о поддержке структур C++, объявленных с помощью ключевого слова struct, в конструкторе классов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2aa8014835df2b5b2bd3dc68e2aaf0b079e001e8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d22ff6be694de69f105897821aba1b587955f748
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590688"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903433"
 ---
 # <a name="c-structures-in-class-designer"></a>Структуры C++ в конструкторе классов
 

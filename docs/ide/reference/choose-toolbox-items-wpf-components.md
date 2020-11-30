@@ -1,5 +1,7 @@
 ---
 title: Выбор элементов панели элементов, компоненты WPF
+description: Сведения о том, как использовать вкладку "Компоненты WPF" для отображения элементов управления Windows Presentation Foundation, доступных для выбора на вашем локальном компьютере.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28576fab1ed4b39810b6f4cc32fb2955a7a44039
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 7b9727d335607f15101222e40be193de2315b7dc
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099353"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871331"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Выбор элементов панели элементов — компоненты WPF
 
@@ -35,7 +37,7 @@ ms.locfileid: "92099353"
 
 Столбцы на вкладке **Компоненты WPF** содержат следующие сведения:
 
-**Name**
+**Имя**
 
 Выводит список имен элементов управления WPF, для которых имеются записи в реестре вашего компьютера.
 
@@ -53,7 +55,7 @@ ms.locfileid: "92099353"
 
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
 
-### <a name="filter"></a>Фильтр
+### <a name="filter"></a>Filter
 
 Фильтрует список элементов управления WPF на основе строки, введенной в текстовом поле. Отображаются все совпадения из любого из четырех столбцов.
 
@@ -81,7 +83,7 @@ ms.locfileid: "92099353"
 
 Вы можете ссылаться на элементы управления прямо в представлении XAML, сопоставляя пространство имен и сборку для элемента управления.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Панель элементов](../../ide/reference/toolbox.md)
 - [Начало работы с WPF](../../designers/getting-started-with-wpf.md)

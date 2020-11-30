@@ -1,5 +1,7 @@
 ---
 title: Рекомендации по выполнению закодированных тестов пользовательского интерфейса
+description: Сведения о рекомендациях для разработки закодированных тестов пользовательского интерфейса. Эти рекомендации помогут вам создать гибкий закодированный тест пользовательского интерфейса.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e71029a185d1b3fea1812b2a4b1cf7bf20effff8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a4a79ca397b46d06e18c62fde2034551ff7afe0
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565166"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441811"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Рекомендации по выполнению закодированных тестов пользовательского интерфейса
 

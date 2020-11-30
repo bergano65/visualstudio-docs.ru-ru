@@ -1,5 +1,7 @@
 ---
 title: Страница "Автовосстановление", папка "Среда", диалоговое окно "Параметры"
+description: Сведения о диалоговом окне "Параметры" в разделе "Среда" на странице "Автовосстановление" и о том, как использовать его для настройки автоматического резервного копирования файлов.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2020
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f35424089b293b858c609d19f59459693373eb4d
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: b578e914c6fa099528008090646372c7d9ef26b1
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250281"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871357"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>Страница "Автовосстановление", папка "Среда", диалоговое окно "Параметры"
 
@@ -30,16 +32,16 @@ ms.locfileid: "88250281"
 
 Чтобы открыть это диалоговое окно, последовательно выберите в меню пункты **Инструменты** > **Параметры** > **Среда** > **Автовосстановление**.
 
-:::image type="content" source="media/autorecover-options.png" alt-text="Снимок экрана: раздел Автовосстановление в диалоговом окне Параметры":::
+:::image type="content" source="media/autorecover-options.png" alt-text="Снимок экрана: раздел &quot;Автовосстановление&quot; в диалоговом окне &quot;Параметры&quot;":::
 
 **Сохранять данные автовосстановления каждые [n] мин**
 
 ::: moniker range="vs-2019"
 
-Используйте этот параметр, чтобы настроить периодичность автоматического сохранения файла в редакторе. Что касается ранее сохраненных файлов, Visual Studio 2019 версии 16.2 и более поздних версий сохраняет копию файла в папке ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles\\[имя_проекта]***. Если этот файл новый и еще не был сохранен, Visual Studio автоматически сохраняет его, используя случайно созданное имя файла.
+Используйте этот параметр, чтобы настроить периодичность автоматического сохранения файла в редакторе. Что касается ранее сохраненных файлов, Visual Studio 2019 версии 16.2 и более поздних версий сохраняет копию файла в папке **_%LocalAppData%\Microsoft\VisualStudio\BackupFiles\\[имя_проекта]_* _. Если этот файл новый и еще не был сохранен, Visual Studio автоматически сохраняет его, используя случайно созданное имя файла.
 
 > [!NOTE]
-> Если вы используете Visual Studio 2019 версии 16.1 или более ранней версии, файл будет расположен в папке *%USERPROFILE%\Documents\Visual Studio [версия]\Backup Files\\[имя_проекта]* . Дополнительные сведения см. в [журнале заметок о выпуске Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/).
+> Если вы используете Visual Studio 2019 версии 16.1 или более ранней версии, файл будет расположен в папке _%USERPROFILE%\Documents\Visual Studio [версия]\Backup Files\\[имя_проекта]*. Дополнительные сведения см. в [журнале заметок о выпуске Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/).
 
 ::: moniker-end
 

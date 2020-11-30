@@ -1,5 +1,7 @@
 ---
 title: Изменение нагрузочных тестов
+description: Сведения о различиях между сценариями, наборами счетчиков и параметрами запуска, которые определяют нагрузочные тесты.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b95689871a987c018720c529743b8447f39b2bf6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81825b2a9060d75a792e73519486275fd34569a4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288706"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441473"
 ---
 # <a name="edit-load-tests"></a>Изменение нагрузочных тестов
 
@@ -48,7 +50,7 @@ ms.locfileid: "85288706"
 
 Дополнительные сведения см. в статьях [Настройка параметров запуска нагрузочных тестов](../test/configure-load-test-run-settings.md) и [Свойства параметров запуска нагрузочного теста](../test/load-test-run-settings-properties.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Анализ результатов нагрузочных тестов](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Анализ нарушений правила пороговых значений в нагрузочном тесте с помощью анализатора тестовой нагрузки](../test/analyze-threshold-rule-violations-in-load-tests.md)

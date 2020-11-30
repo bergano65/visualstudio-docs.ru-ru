@@ -1,5 +1,7 @@
 ---
 title: Добавление параметров запуска в нагрузочный тест
+description: Сведения о том, как использовать дополнительные параметры для нагрузочного теста, уровня детализации для сбора результатов и собираемых наборов счетчиков.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a2f62b3e9797e411138590fc15b0fe872920d203
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aef68ac9371833fb44b1ead026e669ad14f7b5d8
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288459"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441239"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Практическое руководство. Добавление дополнительных параметров запуска в нагрузочный тест
 
@@ -45,7 +47,7 @@ ms.locfileid: "85288459"
     > [!NOTE]
     > Полный список свойств параметров запуска и их описание см. в статье [Свойства параметров запуска нагрузочного теста](../test/load-test-run-settings-properties.md).
 
-     Теперь можно указать, что добавленный параметр должен использоваться при запуске (сделайте его активным). Дополнительные сведения см. в статье [Практическое руководство. Выбор активного параметра запуска для нагрузочного теста](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+     Теперь можно указать, что добавленный параметр должен использоваться при запуске (сделайте его активным). Дополнительные сведения см. в разделе [Практическое руководство. выбрать активный параметр запуска для нагрузочного теста](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ## <a name="see-also"></a>См. также раздел
 

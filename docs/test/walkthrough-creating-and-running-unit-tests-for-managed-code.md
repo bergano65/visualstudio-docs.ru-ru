@@ -1,5 +1,7 @@
 ---
 title: Учебник по модульному тестированию в C#
+description: Сведения о том, как создать, выполнить и настроить серию модульных тестов с помощью платформы модульных тестов Майкрософт для управляемого кода и обозревателя тестов в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 05/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
-ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
+ms.openlocfilehash: ed2e7f11a6e36c797bb6c506c19b0fff11fb5ad1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2020
-ms.locfileid: "81223675"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598553"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода
 

@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Экспорт схем классов как изображений (конструктор классов)
+description: Сведения о том, как экспортировать диаграмму классов, созданную на основе кода в проекте, путем ее сохранения в виде изображения.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdecb8834f296d24cbd53d6725b800612f9bcf57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2cb72a494cbafc9e2ab6661f056436a083b52de1
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770152"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901405"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>Практическое руководство. Экспорт схем классов как изображений
 
@@ -25,7 +27,7 @@ ms.locfileid: "85770152"
 
 ## <a name="export-a-diagram"></a>Экспорт схем
 
-1. Откройте файл со схемой классов ( *.cd*).
+1. Откройте файл со схемой классов (*.cd*).
 
 2. В меню **Схема классов** или в контекстном меню области схемы выберите пункт **Экспортировать схему как рисунок**.
 
@@ -39,5 +41,5 @@ ms.locfileid: "85770152"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Практическое руководство. Печать диаграмм классов](how-to-print-class-diagrams.md)
+- [Практическое руководство. Печать схем классов](how-to-print-class-diagrams.md)
 - [Работа с диаграммами классов](designing-and-viewing-classes-and-types.md)

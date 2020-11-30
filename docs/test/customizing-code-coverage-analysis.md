@@ -1,5 +1,7 @@
 ---
 title: Настройка анализа покрытия кода
+description: Сведения о том, как использовать атрибут ExcludeFromCodeCoverageAttribute для исключения кода теста из результатов покрытия. Вы можете включить сборки, не входящие в состав вашего решения.
+ms.custom: SEO-VS-2020
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9171afdc6fe5ca65a8ba2bcae81fe255981cdae6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99eb322e1eebe2d8845b355cd76a9e34a7516348
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86475995"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441833"
 ---
 # <a name="customize-code-coverage-analysis"></a>Настройка анализа объема протестированного кода
 
@@ -118,9 +120,9 @@ ms.locfileid: "86475995"
 
 Для включения и исключения узлов используются регулярные выражения, которые не совпадают с подстановочными знаками. Все соответствия не учитывают регистр. Ниже приведено несколько примеров.
 
-- **.\*** соответствует строке любых символов
+- * *.\** _ соответствует строке из любых знаков.
 
-- **\\.** соответствует точке (".")
+- _ *\\.* * соответствует точке (".").
 
 - **\\(   \\)** соответствует круглым скобкам "( )"
 

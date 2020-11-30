@@ -1,5 +1,7 @@
 ---
 title: Добавление ссылок в диспетчере ссылок
+description: Сведения о том, как с помощью диалогового окна "Диспетчер ссылок" добавить ссылки на разработанные компоненты и управлять ими.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f02dcc5f38bf8eb4acc702c5d8a1ee466a6a4a71
-ms.sourcegitcommit: 9179c33a78c2ac690ce908d7c73eef50b6e367f0
+ms.openlocfilehash: 4884fdc857abd524fa62bb126e7a74af48e9ca88
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87390266"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597318"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Практическое руководство. Добавление и удаление ссылок с помощью диспетчера ссылок
 

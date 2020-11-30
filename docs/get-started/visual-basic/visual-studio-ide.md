@@ -1,8 +1,11 @@
 ---
 title: Краткое описание для разработчиков Visual Basic
+description: Сведения об использовании Visual Studio для редактирования, отладки и создания кода, а также о последующей публикации приложения в качестве разработчика Visual Basic.
 ms.date: 11/15/2018
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9938d017d683fd27a3f303824f9568a3876c2c4d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 990bff2832f290987ed29fd48b69f4d7a1a05bba
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928047"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901574"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Введение в интегрированную среду разработки Visual Studio (Visual Basic)
 
@@ -36,9 +39,9 @@ ms.locfileid: "91928047"
 
 На рисунке показана среда Visual Studio с открытым проектом и несколькими окнами основных инструментов, которые вам, скорее всего, понадобятся:
 
-- [Обозреватель решений](../../ide/solutions-and-projects-in-visual-studio.md) (правый верхний угол) позволяет просматривать файлы кода, а также перемещаться по ним и управлять ими. **Обозреватель решений** позволяет упорядочить код путем объединения файлов в [решения и проекты](tutorial-projects-solutions.md).
+- [Обозреватель решений](../../ide/solutions-and-projects-in-visual-studio.md) (вверху справа) позволяет просматривать файлы кода, перемещаться по ним и управлять ими. **Обозреватель решений** позволяет упорядочить код путем объединения файлов в [решения и проекты](tutorial-projects-solutions.md).
 
-- В [окне редактора](../../ide/writing-code-in-the-code-and-text-editor.md) (центр), отображается содержимое файла и здесь, скорее всего, вы будете проводить большую часть времени. Здесь вы можете редактировать код или разрабатывать пользовательский интерфейс, например окно с кнопками или текстовые поля.
+- В [окне редактора](../../ide/writing-code-in-the-code-and-text-editor.md) (центр), где вы, скорее всего, будете проводить большую часть времени, отображается содержимое файла. Здесь вы можете редактировать код или разрабатывать пользовательский интерфейс, например окно с кнопками или текстовые поля.
 
 - В окно [вывода](../../ide/reference/output-window.md) (в центре внизу) Visual Studio отправляет уведомления, такие как сообщения об отладке и ошибках, предупреждения компилятора, сообщения о состоянии публикаций и многие другие. Каждый источник сообщений имеет собственную вкладку.
 
@@ -46,7 +49,7 @@ ms.locfileid: "91928047"
 
 ## <a name="editions"></a>Выпуски
 
-Служба Visual Studio доступна для Windows и Mac. Функции [Visual Studio для Mac](/visualstudio/mac/) аналогичны возможностям Visual Studio 2017 и оптимизированы для разработки кроссплатформенных и мобильных приложений. Эта статья посвящена версии Visual Studio 2017 для Windows.
+Среда Visual Studio доступна для Windows и Mac. Функции [Visual Studio для Mac](/visualstudio/mac/) аналогичны возможностям Visual Studio 2017 и оптимизированы для разработки кроссплатформенных и мобильных приложений. Эта статья посвящена версии Visual Studio 2017 для Windows.
 
 Есть три выпуска Visual Studio 2017: Community, Professional и Enterprise. Сведения о функциях, поддерживаемых в каждом выпуске, см. в статье [Сравнение интегрированных сред разработки Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
 
@@ -375,7 +378,7 @@ ms.locfileid: "91928047"
 
    Когда Visual Studio создаст приложение, откроется окно консоли с сообщением **Hello World!**. Теперь у вас есть выполняемое приложение.
 
-   ![Окно консоли](../media/vs-2019/overview-console-window.png)
+   ![Снимок экрана: окно консоли с сообщением Hello World.](../media/vs-2019/overview-console-window.png)
 
 1. Чтобы закрыть окно консоли, нажмите любую клавишу.
 
@@ -400,7 +403,7 @@ ms.locfileid: "91928047"
 
 1. Введите свое имя в окне консоли и нажмите клавишу **ВВОД**.
 
-   ![Окно консоли](../media/vs-2019/overview-console-input.png)
+   ![Снимок экрана: окно консоли с вопросом о вашем имени и ответом приложения.](../media/vs-2019/overview-console-input.png)
 
 1. Нажмите любую клавишу, чтобы закрыть окно консоли и остановить выполняющуюся программу.
 

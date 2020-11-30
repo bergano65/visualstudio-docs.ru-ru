@@ -1,5 +1,7 @@
 ---
 title: Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского интерфейса
+description: Сведения о журналах закодированных тестов пользовательского интерфейса, которые фильтруют и записывают важную информацию о запуске таких тестов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6bbb3e6599ef4ae26740eed0eb79047c49356374
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 3dcbb1bdfd89ae13df5174b6502dc6e89437a468
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036149"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442499"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского интерфейса
 

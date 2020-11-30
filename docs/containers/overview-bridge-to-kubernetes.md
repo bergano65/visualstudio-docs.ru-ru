@@ -1,7 +1,7 @@
 ---
 title: Как работает Bridge to Kubernetes
 ms.technology: vs-azure
-ms.date: 06/02/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 description: Описываются процессы использования функции Bridge to Kubernetes для подключения компьютера разработчика к кластеру Kubernetes.
 keywords: Bridge to Kubernetes, Docker, Kubernetes, Azure, контейнеры
@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: afeb612e1d092ebc1f5c33394a62dd9cef6b6a1c
-ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
+ms.openlocfilehash: d1a92433a90e6e6b7f71d0c7db6ced3a52c33315
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116107"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440614"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Как работает Bridge to Kubernetes
 
@@ -66,14 +66,14 @@ Bridge to Kubernetes перенаправляет трафик между под
 При работе в изоляции Bridge to Kubernetes выполняет следующие действия в дополнение к подключению к кластеру Kubernetes:
 
 * Проверяет, что в кластере Kubernetes не включена служба Azure Dev Spaces.
-* Реплицирует выбранную службу в кластер в том же пространстве имен и добавляет метку *routing.visualstudio.io/route-from=SERVICE_NAME* и аннотацию *routing.visualstudio.io/route-on-header=kubernetes-route-as: GENERATED_NAME* .
+* Реплицирует выбранную службу в кластер в том же пространстве имен и добавляет метку *routing.visualstudio.io/route-from=SERVICE_NAME* и аннотацию *routing.visualstudio.io/route-on-header=kubernetes-route-as: GENERATED_NAME*.
 * Настраивает и запускает диспетчер маршрутизации в том же пространстве имен в кластере Kubernetes. Диспетчер маршрутизации использует селектор меток для поиска метки *routing.visualstudio.io/route-from=SERVICE_NAME* и аннотации *routing.visualstudio.io/route-on-header=kubernetes-route-as: GENERATED_NAME* при настройке маршрутизации в вашем пространстве имен.
 
 Если Bridge to Kubernetes обнаруживает, что в кластере Kubernetes включена служба Azure Dev Spaces, вам будет предложено отключить Azure Dev Spaces, прежде чем можно будет использовать Bridge to Kubernetes.
 
 При запуске диспетчер маршрутизации выполняет следующие действия:
 * Дублирует весь входящий трафик, найденный в пространстве имен, используя *GENERATED_NAME* в качестве поддомена.
-* Создает модуль pod – представитель для каждой службы, связанной с повторяющимися входящим трафиком, с поддоменом *GENERATED_NAME* .
+* Создает модуль pod – представитель для каждой службы, связанной с повторяющимися входящим трафиком, с поддоменом *GENERATED_NAME*.
 * Создает дополнительный модуль pod – представитель для службы, над которой вы работаете в изоляции. Это позволяет перенаправлять запросы с поддоменом на компьютер разработчика.
 * Настраивает правила маршрутизации для каждого модуля pod – представителя, чтобы управлять маршрутизацией для служб с поддоменом.
 
@@ -85,12 +85,12 @@ Bridge to Kubernetes перенаправляет трафик между под
 
 ![Схема кластера с включенной функцией Bridge to Kubernetes](media/bridge-to-kubernetes/kubr-cluster-devcomputer.svg)
 
-При получении запроса с поддоменом *GENERATED_NAME* в кластере к запросу добавляется заголовок *kubernetes-route-as=GENERATED_NAME* . Модуль pod – представитель обрабатывает маршрутизацию, которая запрашивает соответствующую службу в кластере. Если запрос направляется в службу, которая работает в режиме изоляции, этот запрос перенаправляется удаленным агентом на компьютер разработчика.
+При получении запроса с поддоменом *GENERATED_NAME* в кластере к запросу добавляется заголовок *kubernetes-route-as=GENERATED_NAME*. Модуль pod – представитель обрабатывает маршрутизацию, которая запрашивает соответствующую службу в кластере. Если запрос направляется в службу, которая работает в режиме изоляции, этот запрос перенаправляется удаленным агентом на компьютер разработчика.
 
 При получении запроса с поддоменом *GENERATED_NAME* в кластере к запросу не добавляется заголовок. Модуль pod – представитель обрабатывает маршрутизацию, которая запрашивает соответствующую службу в кластере. Если запрос направляется в заменяемую службу, этот запрос перенаправляется в исходную службу, а не на удаленный агент.
 
 > [!IMPORTANT]
-> При выполнении дополнительных запросов каждая служба в кластере должна перенаправить заголовок *kubernetes-route-as=GENERATED_NAME* . Например, когда служба *serviceA* получает запрос, она делает запрос к службе *serviceB* , прежде чем вернуть ответ. В этом примере служба *serviceA* должна перенаправить заголовок *kubernetes-route-as=GENERATED_NAME* в своем запросе к службе *serviceB* . Некоторые языки, например [ASP.NET][asp-net-header], могут предоставлять методы для обработки распространения заголовка.
+> При выполнении дополнительных запросов каждая служба в кластере должна перенаправить заголовок *kubernetes-route-as=GENERATED_NAME*. Например, когда служба *serviceA* получает запрос, она делает запрос к службе *serviceB*, прежде чем вернуть ответ. В этом примере служба *serviceA* должна перенаправить заголовок *kubernetes-route-as=GENERATED_NAME* в своем запросе к службе *serviceB*. Некоторые языки, например [ASP.NET][asp-net-header], могут предоставлять методы для обработки распространения заголовка.
 
 При отключении от кластера по умолчанию локальный Bridge to Kubernetes удалит все модули pod — представители и дублирующую службу.
 
@@ -105,6 +105,37 @@ Bridge to Kubernetes перенаправляет трафик между под
 ## <a name="diagnostics-and-logging"></a>Диагностика и ведение журнала
 
 При использовании Bridge to Kubernetes для подключения к кластеру журналы диагностики из кластера записываются в каталог *TEMP* в папке *Bridge to Kubernetes* на компьютере разработки.
+
+## <a name="rbac-authorization"></a>Авторизация RBAC
+
+Kubernetes предоставляет управление доступом на основе ролей (RBAC) для управления разрешениями пользователей и групп. Дополнительные сведения см. в [документации Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/). Вы можете настроить разрешения для кластера с поддержкой RBAC, создав YAML-файл и используя `kubectl` для его применения на кластере. 
+
+Чтобы задать разрешения на кластере, создайте или измените YAML-файл, например приведенный ниже *permissions.yml*, используя собственное пространство имен вместо `<namespace>` и субъекты (пользователи и группы), которым требуется доступ.
+
+```yml
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: bridgetokubernetes-<namespace>
+  namespace: development
+subjects:
+  - kind: User
+    name: jane.w6wn8.k8s.ginger.eu-central-1.aws.gigantic.io
+    apiGroup: rbac.authorization.k8s.io
+  - kind: Group
+    name: dev-admin
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: admin
+  apiGroup: rbac.authorization.k8s.io
+```
+
+Примените разрешения с помощью команды:
+
+```cmd
+kubectl -n <namespace> apply -f <yaml file name>
+```
 
 ## <a name="limitations"></a>Ограничения
 

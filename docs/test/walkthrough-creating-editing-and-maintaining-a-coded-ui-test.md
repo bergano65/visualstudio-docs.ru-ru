@@ -1,5 +1,7 @@
 ---
 title: Создание закодированного теста пользовательского интерфейса
+description: Сведения о том, как использовать закодированный тест пользовательского интерфейса для приложения Windows Presentation Framework и как просматривать решения для тестов с определением времени, когда возникают проблемы, и рефакторингом элементов управления.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f36704405776a790c3ec634856f54ee51bc23dc6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592065"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598540"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Пошаговое руководство. Создание, изменение и поддержка закодированного теста пользовательского интерфейса
 

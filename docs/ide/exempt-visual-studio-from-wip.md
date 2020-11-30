@@ -1,5 +1,7 @@
 ---
 title: Исключение из Windows Information Protection
+description: Сведения об исключении Visual Studio из Windows Information Protection, но с разрешением Visual Studio использовать корпоративные данные.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b4eb454f641b5bef7273464d605fb194f650790
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 34765cc7ac303bd44c3c4ccca87ea7c00a36ccda
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588568"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598397"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Настройка Visual Studio как приложения, свободного от WIP
 

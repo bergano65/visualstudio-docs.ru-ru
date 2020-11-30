@@ -1,5 +1,7 @@
 ---
 title: Сочетания клавиш и кнопок мыши в конструкторе классов
+description: Сведения о том, как использовать клавиатуру в дополнение к мыши для навигации в конструкторе классов и окне "Сведения о классах".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30932a6c94bc6104aeea0244f06f471d0a639b21
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: c184a12474e2d7ff0b626547acaaf2a37d460c8e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533670"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901106"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Сочетания клавиш и кнопок мыши в схеме классов и окне "Сведения о классах"
 

@@ -1,5 +1,7 @@
 ---
 title: Учебник по управляемому данными закодированному тесту пользовательского интерфейса
+description: Сведения о том, как использовать управляемые данными закодированные тесты пользовательского интерфейса для тестирования различных условий путем многократного выполнения тестов с разными значениями параметров.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada1f297bbb30fbe636042c87aae42849c1b6b7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d9c4deb02bea8bf6e3dc3615ba9c5f0eddc6c877
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595362"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442681"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Создание управляемого данными закодированного теста пользовательского интерфейса
 
@@ -104,7 +106,7 @@ ms.locfileid: "75595362"
 
 2. Заполните *CSV*-файл следующими данными:
 
-    |Num1|Num2|Sum|
+    |Num1|Num2|SUM|
     |-|-|-|
     |3|4|7|
     |5|6|11|
@@ -227,13 +229,13 @@ ms.locfileid: "75595362"
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Вопрос: Почему не следует изменять файл UIMap.Designer?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>В. Почему не следует изменять файл UIMap.Designer?
 
-**Ответ.** Любые изменения кода, внесенные в файл *UIMapDesigner.cs*, будут перезаписываться каждый раз при создании кода с помощью построителя кодированных тестов пользовательского интерфейса. В этом примере и в большинстве случаев изменения кода, необходимые, чтобы тест использовал источник данных, можно делать в файле исходного кода теста (т. е. *CodedUITest1.cs*).
+**Ответ**. Любые изменения кода, внесенные в файл *UIMapDesigner.cs*, будут перезаписываться каждый раз при создании кода с помощью построителя кодированных тестов пользовательского интерфейса. В этом примере и в большинстве случаев изменения кода, необходимые, чтобы тест использовал источник данных, можно делать в файле исходного кода теста (т. е. *CodedUITest1.cs*).
 
 Если требуется изменить записанный метод, необходимо скопировать его в файл *UIMap.cs* и переименовать. Файл *UIMap.cs* можно использовать для переопределения методов и свойств в файле *UIMapDesigner.cs*. Необходимо удалить ссылку на исходный метод в файле *CodedUITest.cs* и заменить ее именем переименованного метода.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>

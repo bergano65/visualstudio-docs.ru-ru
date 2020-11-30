@@ -1,5 +1,7 @@
 ---
 title: Сбор диагностических данных с помощью параметров тестирования
+description: Сведения о том, как с помощью параметров тестирования в Visual Studio собирать дополнительные данные при запуске тестов. Узнайте об адаптерах диагностических данных.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14d98e34ef35efb1498d37071b2f53ef25bac4ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc8bbf1aea3e596af392db97ba33ebdaff5d1f56
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288862"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441611"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Сбор диагностических данных с помощью параметров тестирования
 

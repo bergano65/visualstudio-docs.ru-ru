@@ -1,5 +1,7 @@
 ---
 title: Функции фрагмента кода
+description: Сведения о функциях GenerateSwitchCases(EnumerationLiteral), ClassName() и SimpleTypeName(TypeName), которые доступны для использования с фрагментами кода C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e6529f4f82f7a8a6862ae85adbf170d2fb6f8706
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594244"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006514"
 ---
 # <a name="code-snippet-functions"></a>Функции фрагмента кода
 
@@ -27,7 +29,7 @@ ms.locfileid: "75594244"
 
 Следующая таблица описывает функции, доступные для использования с элементом `Function` во фрагментах кода.
 
-|Компонент|Description|Язык|
+|Функция|Описание|Язык|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|Формирует оператор switch и набор операторов case для членов перечисления, заданных параметром `EnumerationLiteral`. Параметр `EnumerationLiteral` должен быть ссылкой на литерал перечисления или тип перечисления.|C#|
 |`ClassName()`|Возвращает имя класса, содержащего вставленный фрагмент кода.|C#|

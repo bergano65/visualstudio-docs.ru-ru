@@ -1,5 +1,7 @@
 ---
 title: Модульные тесты, предназначенные для более ранней версии .NET Framework
+description: Сведения о том, как создать проекты модульных тестов для определенных версий .NET Framework. Целевой версией может быть версия 3.5 или более поздняя и не может быть версия клиента.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6badbb7723bf4d8ed0c9385558204c2dc4907574
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288173"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441252"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Практическое руководство. настройку модульных тестов для предыдущей версии .NET Framework
 

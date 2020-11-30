@@ -1,5 +1,7 @@
 ---
 title: Создание модульных тестов для кода с помощью IntelliTest
+description: IntelliTest изучает код .NET, чтобы создать тестовые данные и набор модульных тестов. Сведения о том, как выполнять IntelliTest для проверки тестов и устранения проблем с ними.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2015
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 65b1de58f195b957d080bd21144c22479b1aafed
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5d503d37cfcacace8250da4d3e91221364c66b5c
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589595"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442473"
 ---
 # <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Практическое руководство. Создание модульных тестов с помощью IntelliTest
 
@@ -94,11 +96,11 @@ IntelliTest изучает код .NET, чтобы создать тестовы
 
 ## <a name="q--a"></a>Вопросы и ответы
 
-### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>Вопрос: Можно ли использовать IntelliTest для неуправляемого кода?
+### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>Вопрос. Можно ли использовать IntelliTest для неуправляемого кода?
 
 **Ответ.** Нет. IntelliTest работает только с управляемым кодом.
 
-### <a name="q-when-does-a-generated-test-pass-or-fail"></a>Вопрос: Каковы условия выполнения или сбоя созданного теста?
+### <a name="q-when-does-a-generated-test-pass-or-fail"></a>Вопрос. Каковы условия выполнения или сбоя созданного теста?
 
 **Ответ.** Он, как и любой модульный тест, выполняется в случае отсутствия исключений. Сбой происходит при сбое утверждений или если код в тесте вызывает необработанное исключение.
 
@@ -112,7 +114,7 @@ IntelliTest изучает код .NET, чтобы создать тестовы
 
 - **PexAllowedExceptionFromAssemblyAttribute**
 
-### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>Вопрос: Можно ли добавить допущения в параметризованный модульный тест?
+### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>Вопрос. Можно ли добавить допущения в параметризованный модульный тест?
 
 **Ответ.** Да, используйте допущения, чтобы указать, какие данные теста не нужны для модульного теста при использовании определенного метода. Используйте класс <xref:Microsoft.Pex.Framework.PexAssume> для добавления допущений. Например, можно добавить допущение, что переменная `lengths` не является NULL в отличие от этой.
 
@@ -120,7 +122,7 @@ IntelliTest изучает код .NET, чтобы создать тестовы
 
 Если добавляется допущение и перезапускается IntelliTest, тестовые данные, которые больше не нужны, будут удалены.
 
-### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>Вопрос: Можно ли добавить утверждения в параметризованный модульный тест?
+### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>Вопрос. Можно ли добавить утверждения в параметризованный модульный тест?
 
 **Ответ.** Да, IntelliTest проверит правильность утверждения в операторе при запуске модульных тестов. Для добавления утверждений используйте класс <xref:Microsoft.Pex.Framework.PexAssert> или API утверждения, входящий в состав платформы тестирования. Например, можно добавить утверждение о равенстве двух переменных.
 
@@ -130,7 +132,7 @@ IntelliTest изучает код .NET, чтобы создать тестовы
 
 ### <a name="q-can-i-generate-parameterized-unit-tests-without-running-intellitest-first"></a><a name="NoRun"></a> Вопрос. Можно ли создавать параметризованные модульные тесты, не запуская предварительно IntelliTest?
 
-**Ответ.** Да, щелкните правой кнопкой мыши в коде класса или метода и выберите пункт **Создать IntelliTest**.
+**О** . Да, щелкните правой кнопкой мыши в коде класса или метода и выберите пункт **Создать IntelliTest**.
 
 ![Щелкните редактор правой кнопкой мыши и выберите пункт "Создать IntelliTest"](../test/media/pexcreateintellitest.png)
 
@@ -139,9 +141,9 @@ IntelliTest изучает код .NET, чтобы создать тестовы
 ![Создание IntelliTest с MSTest по умолчанию](../test/media/pexcreateintellitestmstest.png)
 
 <a name="extend-framework"></a>
-### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>Вопрос: Можно ли использовать другие платформы модульного тестирования с IntelliTest?
+### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>В. Можно ли использовать другие платформы модульного тестирования с IntelliTest?
 
-**Ответ.** Да, выполните инструкции по [поиску и установке других платформ](../test/install-third-party-unit-test-frameworks.md).
+**О** . Да, выполните инструкции по [поиску и установке других платформ](../test/install-third-party-unit-test-frameworks.md).
 Расширения платформы тестирования также доступны в Visual Studio Marketplace, например [генератор тестов NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371).
 
 Перезапустив Visual Studio и открыв решение повторно, щелкните правой кнопкой мыши в коде класса или метода и выберите пункт **Создать IntelliTest**. Выберите установленную платформу здесь:
@@ -150,6 +152,6 @@ IntelliTest изучает код .NET, чтобы создать тестовы
 
 Затем запустите IntelliTest, чтобы сформировать отдельные модульные тесты в соответствующих файлах *.g.cs*.
 
-### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Вопрос: Можно получить более подробную информацию о создании тестов?
+### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Вопрос. Можно получить более подробную информацию о создании тестов?
 
-**Ответ.** Да, общий обзор приведен в этой [записи блога](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/).
+**О** . Да, общий обзор приведен в этой [записи блога](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/).

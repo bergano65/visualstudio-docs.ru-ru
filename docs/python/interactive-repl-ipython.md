@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b1fe36a4ee74ca1b41c1db1d79a6e4683c1f2b1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e53ef96ad8fab8b26f04ccd5f7f0488d1f0d6985
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542432"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974082"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Использование IPython в интерактивном окне
 
@@ -82,6 +82,4 @@ IPython имеет множество других полезных функци
 
 ## <a name="see-also"></a>См. также
 
-- Чтобы легко пользоваться Jupyter без установки, попробуйте бесплатную [размещенную службу записных книжек Azure](https://notebooks.azure.com/), позволяющую сохранять и совместно использовать записные книжки.
-
-- [Виртуальная машина для обработки и анализа данных Azure](/azure/machine-learning/data-science-virtual-machine/overview) также предварительно настроена для выполнения записных книжек Jupyter, а также широкого спектра других средств обработки и анализа данных.
+- [Виртуальная машина для обработки и анализа данных Azure](/azure/machine-learning/data-science-virtual-machine/overview) предварительно настроена для выполнения записных книжек Jupyter, а также широкого спектра других средств обработки и анализа данных.

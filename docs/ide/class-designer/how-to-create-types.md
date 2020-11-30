@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Создание типов с помощью конструктора классов
+description: Сведения о том, как создать новые типы для проектов C# и Visual Basic путем их создания в диаграмме классов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e489a37e5d75cbc17d17c32a1fa3b53f9993f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac6e59f4dc6fa68962ac061132e3fab90ec8e955
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770214"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901444"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Практическое руководство. Создание типов с помощью конструктора классов
 
@@ -36,11 +38,11 @@ ms.locfileid: "85770214"
 
     - **Enum**
 
-    - **Interface**
+    - **Интерфейс**
 
     - **Структура** (VB) или **Struct** (C#)
 
-    - **Делегирование**
+    - **Делегат**
 
     - **Модуль** (только в Visual Basic)
 
@@ -61,7 +63,7 @@ ms.locfileid: "85770214"
     |Классы, абстрактные классы, структуры или struct|Методы, свойства, поля, события, конструкторы (метод), деструкторы (метод) и константы, определяющие тип|
     |Перечисления|Значения поля, составляющие перечисление|
     |Интерфейсы|Методы, свойства и события, составляющие интерфейс|
-    |делегат|Параметры, определяющие делегат|
+    |Делегат|Параметры, определяющие делегат|
     |Модуль|Методы, свойства, поля, события, конструкторы (метод), деструкторы (метод) и константы, определяющие модуль|
 
      См. раздел [Создание членов](creating-and-configuring-type-members.md#create-members).

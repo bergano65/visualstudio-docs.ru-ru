@@ -1,5 +1,7 @@
 ---
 title: Управление внешними инструментами
+description: Сведения о том, как добавить внешние инструменты, управлять ими и получать к ним доступ через меню "Сервис".
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2017
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c77ab079a2950d4417c2d00ef74cf86d5c206de7
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591298"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596694"
 ---
 # <a name="manage-external-tools"></a>Управление внешними инструментами
 
@@ -61,7 +63,7 @@ ms.locfileid: "75591298"
 
 Ниже приведен полный список аргументов, которые можно использовать при определении внешнего инструмента:
 
-|Имя|Аргумент|Description|
+|name|Аргумент|Описание|
 |----------|--------------|-----------------|
 |Путь элемента|$(ItemPath)|Полное имя файла текущего файла (диск + путь + имя файла).|
 |Каталог элемента|$(ItemDir)|Каталог текущего файла (диск + путь).|

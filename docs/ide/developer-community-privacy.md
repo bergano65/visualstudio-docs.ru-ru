@@ -1,5 +1,7 @@
 ---
 title: Конфиденциальные данные для отчетов о проблемах
+description: Сведения о том, как обеспечить защиту конфиденциальных данных при создании отчетов о проблемах для Сообщества разработчиков.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6055592896779640e50b4bfaf28d951aa3309433
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 82c89f2f6ec2a1a9bc6c87a600c355226b2f3da4
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739971"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95005942"
 ---
 # <a name="developer-community-data-privacy"></a>Конфиденциальность данных сообщества разработчиков
 

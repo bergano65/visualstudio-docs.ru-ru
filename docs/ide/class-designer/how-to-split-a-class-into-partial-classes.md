@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Разделение класса на разделяемые классы (конструктор классов)
+description: Сведения о том, как с помощью ключевого слова partial разделять объявления класса или структуры по нескольким объявлениям.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 623ac5269b78faee9f68580f0803576ad56c1233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac0726851aec0d86223c2d95027b92137682c8a9
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770031"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901353"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Практическое руководство. Разделение класса на разделяемые классы в конструкторе классов
 
@@ -76,9 +78,9 @@ Partial Public Class Employee
 End Class
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Разделяемые классы и методы](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
 - [разделяемый (тип) (Справочник по C#)](/dotnet/csharp/language-reference/keywords/partial-type)
 - [partial (метод) (справочник по C#)](/dotnet/csharp/language-reference/keywords/partial-method)
-- [Partial (Visual Basic)](/dotnet/visual-basic/language-reference/modifiers/partial)
+- [Partial (Visual Basic)](/dotnet/visual-basic/language-reference/modifiers/partial)

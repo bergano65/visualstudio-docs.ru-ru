@@ -1,5 +1,7 @@
 ---
 title: Создание и запуск нагрузочного теста
+description: Сведения о том, как создать нагрузочный тест, содержаний модульные тесты. Вы можете создать и выполнить нагрузочные тесты с помощью Visual Studio Enterprise.
+ms.custom: SEO-VS-2020
 ms.date: 10/01/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +12,14 @@ ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 780485a4d42cad574cddaaa5a9ae51a65a1a9b7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bdcd96e8fc87a7627689af1c67a81b69b2ecee72
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093638"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598267"
 ---
-# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Пошаговое руководство. Создание и запуск нагрузочного теста, содержащего модульные тесты
+# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Пошаговое руководство: создание и запуск нагрузочного теста, содержащего модульные тесты
 
 В этом пошаговом руководстве рассматривается создание нагрузочного теста, содержащего модульные тесты.
 
@@ -145,7 +147,7 @@ ms.locfileid: "79093638"
 
 2. Если при моделировании нагрузки будут превышены пороговые значения, в узлах дерева управления появятся соответствующие значки. Ошибки помечаются красными кружками, а предупреждения — желтыми треугольниками. Можно найти счетчик, для которого превышено пороговое значение, и получить наглядное представление данных, перетащив значок на диаграмму. Это можно сделать при выполнении теста.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Изменение тестового набора для определения тестов, которые должны быть включены в сценарий тестовой нагрузки](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
 - [Определение типов виртуальных сетей в сценарии нагрузочного теста](../test/specify-virtual-network-types-in-a-load-test-scenario.md)

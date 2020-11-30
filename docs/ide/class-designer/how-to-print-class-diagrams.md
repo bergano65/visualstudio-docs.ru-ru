@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Печать схем классов (конструктор классов)
+description: Сведения о том, как распечатать диаграмму классов с помощью функции печати в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fb7b22c523216a41cddfc5c6cf8e87a915a9e38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ecabb44f7b66c94ef7390d79bf4e379256bd464
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770069"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901366"
 ---
 # <a name="how-to-print-class-diagrams"></a>Практическое руководство. Печать схем классов
 
@@ -32,5 +34,5 @@ ms.locfileid: "85770069"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Практическое руководство. Копирование элементов диаграммы классов в документ Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
+- [Практическое руководство. Копирование элементов схемы классов в документ Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
 - [Практическое руководство. Экспорт схем классов как изображений](how-to-export-class-diagrams-as-images.md)

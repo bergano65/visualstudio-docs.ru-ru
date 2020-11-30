@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Копирование элементов схемы классов в документ Microsoft Office (конструктор классов)
+description: Сведения о том, как копировать фигуры из диаграммы классов .NET в другие документы. Вы получите копию фигуры или ее базовый код.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fa6d97b5087659b9fc8120d9480a241517ca8ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe473dfdfdf78934ad018a507c6386a1da9babb6
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85771003"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901626"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Практическое руководство. Копирование элементов схемы классов в документ Microsoft Office
 
@@ -42,5 +44,5 @@ ms.locfileid: "85771003"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Практическое руководство. Печать диаграмм классов](how-to-print-class-diagrams.md)
-- [Практическое руководство. Экспорт диаграмм классов как изображений](how-to-export-class-diagrams-as-images.md)
+- [Практическое руководство. Печать схем классов](how-to-print-class-diagrams.md)
+- [Практическое руководство. Экспорт диаграмм классов в виде изображений](how-to-export-class-diagrams-as-images.md)

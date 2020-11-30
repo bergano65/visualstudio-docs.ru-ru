@@ -1,5 +1,7 @@
 ---
 title: Configuring Warnings in Visual Basic
+description: Сведения о том, как настроить предупреждения в Visual Basic, которые помогут вам ускорить и упростить написание кода с меньшим количеством ошибок.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cd5239c4fd01aefa247fc63a66af3e872dbecbb6
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114729"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006410"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Настройка предупреждений в Visual Basic
 
@@ -36,7 +38,7 @@ ms.locfileid: "76114729"
 
 Параметр командной строки **/warnaserror** компилятора можно также использовать для указания того, считаются ли предупреждения ошибками. К этому параметру можно добавить список с разделителями-запятыми, чтобы указать, какие предупреждения следует рассматривать как ошибки или предупреждения, с помощью + или -. В следующей таблице приведены возможные параметры.
 
-|Параметр командной строки|Указывает|
+|Параметр командной строки|Что определяет|
 | - |---------------|
 |`/warnaserror+`|Обрабатывать предупреждения как ошибки.|
 |`/warnsaserror`-|Не обрабатывать предупреждения как ошибки. Это значение по умолчанию.|
@@ -50,7 +52,7 @@ ms.locfileid: "76114729"
 ## <a name="examples"></a>Примеры
 Эта таблица с примерами аргументов командной строки описывает назначение каждого аргумента.
 
-|Аргумент|Description|
+|Аргумент|Описание|
 |--------------|-----------------|
 |`vbc /warnaserror`|Указывает, что все предупреждения должны рассматриваться как ошибки.|
 |`vbc /warnaserror:42024`|Указывает, что предупреждение 42024 должно рассматриваться как ошибка.|
@@ -124,4 +126,4 @@ ms.locfileid: "76114729"
 - [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)
 - [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)
 - [Страница "Компиляция" в конструкторе проектов (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Выключенные по умолчанию предупреждения компилятора](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)
+- [Предупреждения компилятора, выключенные по умолчанию](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

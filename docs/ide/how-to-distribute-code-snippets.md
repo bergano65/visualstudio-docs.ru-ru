@@ -1,5 +1,7 @@
 ---
 title: Распространение фрагментов кода в качестве расширения
+description: Сведения о том, как с помощью диспетчера фрагментов кода выполнить распределение фрагментов между другими разработчиками.
+ms.custom: SEO-VS-2020
 ms.date: 03/21/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c283d5ca29b67e772df2a0bb2e25dee70cd63fd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17f477fe2d02a43cef77358e862cfdf80a079ba5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284377"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597175"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Практическое руководство. Распространение фрагментов кода
 
@@ -115,7 +117,7 @@ ms.locfileid: "85284377"
 
 4. Протестируйте фрагмент кода. В экспериментальном экземпляре откройте проект Visual Basic, а затем откройте один из файлов кода. Поместите курсор где-либо в коде, щелкните правой кнопкой мыши и в контекстном меню выберите пункт **Вставить фрагмент**.
 
-5. В списке папок должна быть папка *HelloWorldVB*. Дважды щелкните его. Должно появиться всплывающее окно **Вставить фрагмент: HelloWorldVB >** с раскрывающимся списком **HelloWorldVB**. Откройте раскрывающийся список **HelloWorldVB**.
+5. В списке папок должна быть папка *HelloWorldVB*. Дважды щелкните его. Должно появиться всплывающее окно **Вставить фрагмент: HelloWorldVB >** с раскрывающимся списком **HelloWorldVB**. Откройте раскрывающийся список **HelloWorldVB**.
 
    В файл кода добавляется следующая строка:
 

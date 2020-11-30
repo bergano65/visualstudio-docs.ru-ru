@@ -1,5 +1,7 @@
 ---
 title: Задание агентов тестирования для использования в сценариях тестовой нагрузки
+description: Сведения о том, как задать агенты для использования в сценарии с помощью настройки свойства "Агенты для использования" в окне "Свойства" редактора тестовой нагрузки.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d9e22200a63544b4539f7bf78c48d5711974776
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af0dac96bef5218a80e01c3ec205b58d122677c6
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287497"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440913"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Практическое руководство. Задание агентов тестирования для использования в сценариях тестовой нагрузки
 
@@ -67,6 +69,6 @@ ms.locfileid: "85287497"
 ## <a name="see-also"></a>См. также раздел
 
 - [Изменение сценариев тестовой нагрузки](../test/edit-load-test-scenarios.md)
-- [Пошаговое руководство: создание и запуск нагрузочного теста](../test/walkthrough-create-and-run-a-load-test.md)
+- [Пошаговое руководство. Создание и запуск нагрузочного теста](../test/walkthrough-create-and-run-a-load-test.md)
 - [Контроллеры и агенты тестирования](configure-test-agents-and-controllers-for-load-tests.md)
 - [Свойства сценария тестовой нагрузки](../test/load-test-scenario-properties.md)

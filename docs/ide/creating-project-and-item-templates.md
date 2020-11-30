@@ -1,5 +1,7 @@
 ---
 title: Шаблоны для проектов и файлов
+description: Сведения о том, как шаблоны проектов и элементов предоставляют повторно используемые заглушки с базовым кодом и структурой.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7ce85818e0cce4a6e78f5e2ec5901452ebd83f9
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313800"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006306"
 ---
 # <a name="project-and-item-templates"></a>Шаблоны проектов и элементов
 
@@ -69,8 +71,8 @@ ms.locfileid: "89313800"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
-- [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)
+- [Практическое руководство. создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+- [Практическое руководство. создание шаблонов элементов](../ide/how-to-create-item-templates.md)
 - [Теги шаблона](template-tags.md)
 - [Параметры шаблона](../ide/template-parameters.md)
 - [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)

@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно "Сведения о сборке"
+description: Сведения о диалоговом окне "Сведения о сборке" и о том, как оно используется для указания значений для глобальных атрибутов сборки .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,25 +14,25 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1813c4e399a125aca0185436b4a7216b72b5842
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ee8738d06c0f02adb6f5e6352d2006e0133c66ef
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809011"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871344"
 ---
-# <a name="assembly-information-dialog-box"></a>Диалоговое окно сведений о сборке
+# <a name="assembly-information-dialog-box"></a>Диалоговое окно "Сведения о сборке"
 
 Диалоговое окно "Сведения о сборке" используется для указания значений глобальных атрибутов сборки .NET Framework, хранящихся в файле AssemblyInfo, который автоматически создается в проекте. У проектов Visual Basic этот файл находится в узле **Мой проект** в обозревателе решений (чтобы увидеть его, щелкните **Показать все файлы**). У проектов C# он находится в разделе **Свойства**. Дополнительные сведения см. в разделе [Атрибуты (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index).
 
 Чтобы открыть это диалоговое окно, выберите узел проекта в **обозревателе решений**, а затем в меню **Проект** выберите пункт **Свойства**. На странице **Приложение** нажмите кнопку **Сведения о сборке**.
 
-## <a name="uielement-list"></a>Список элементов пользовательского интерфейса (UIElement)
+## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
 
 **Заголовок**\
 Указывает заголовок для манифеста сборки. Соответствует <xref:System.Reflection.AssemblyTitleAttribute>.
 
-**Description**\
+**Описание**\
 Указывает дополнительное описание для манифеста сборки. Соответствует <xref:System.Reflection.AssemblyDescriptionAttribute>.
 
 **Компания**\

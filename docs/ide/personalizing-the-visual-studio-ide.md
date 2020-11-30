@@ -1,5 +1,7 @@
 ---
 title: Настройка интегрированной среды разработки
+description: Сведения о том, как персонализировать интегрированную среду разработки Visual Studio в соответствии с вашим стилем и требованиями к разработке.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2017
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39c9edbf5e96a59912c0cf16d7b4178f6fba2a62
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4acd399aeb9de1d25cbe6abe2b8bba3f347dbc8a
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585747"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871461"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Персонализация интегрированной среды разработки Visual Studio
 

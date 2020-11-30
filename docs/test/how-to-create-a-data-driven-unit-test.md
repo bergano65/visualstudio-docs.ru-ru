@@ -1,5 +1,7 @@
 ---
 title: Создание модульного теста, управляемого данными
+description: Сведения о том, как с помощью платформы модульного тестирования Майкрософт для управляемого кода настроить метод модульного теста для получения значений из источника данных.
+ms.custom: SEO-VS-2020
 ms.date: 05/08/2019
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 936c6b2ee9e05d059c09c2aa074829b35b6ca5fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31e1fb08d77992e6fb592e286553196928b13ad4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287991"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441200"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Практическое руководство. создание модульного теста, управляемого данными
 
@@ -67,11 +69,11 @@ public int AddIntegers(int first, int second)
 
 Чтобы проверить метод `AddIntegers`, создайте источник данных, определяющий диапазон значений для параметров и ожидаемую возвращаемую сумму. В этом примере мы создадим базу данных SQL Compact с именем `MathsData` и таблицу с именем `AddIntegersData`, которая содержит следующие имена столбцов и значения:
 
-|FirstNumber|SecondNumber|Sum|
+|FirstNumber|SecondNumber|SUM|
 |-|------------------|-|
 |0|1|1|
 |1|1|2|
-|2|-3|-1|
+|2|–3|-1|
 
 ## <a name="add-a-testcontext-to-the-test-class"></a>Добавление TestContext в тестовый класс
 
@@ -89,7 +91,7 @@ public TestContext TestContext
 В методе теста получить доступ к данным можно через свойство индексатора `DataRow``TestContext`.
 
 > [!NOTE]
-> .NET Core не поддерживает атрибут [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). При попытке получить доступ к данным тестирования таким образом в проекте модульного теста для .NET Core или универсальной платформы Windows вы увидите сообщение об ошибке **"'TestContext' не содержит определение для 'DataRow', и доступный метод расширения 'DataRow', принимающий первый аргумент типа 'TestContext', не найден (возможно, отсутствует директива using или ссылка на сборку?)"** .
+> .NET Core не поддерживает атрибут [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). При попытке получить доступ к данным тестирования таким образом в проекте модульного теста для .NET Core или универсальной платформы Windows вы увидите сообщение об ошибке **"'TestContext' не содержит определение для 'DataRow', и доступный метод расширения 'DataRow', принимающий первый аргумент типа 'TestContext', не найден (возможно, отсутствует директива using или ссылка на сборку?)"**.
 
 ## <a name="write-the-test-method"></a>Написание метода теста
 
@@ -131,7 +133,7 @@ public void AddIntegers_FromDataSourceTest()
 
 Конструктор с одним параметром использует информацию о подключении, хранящуюся в файле *app.config* решения. В файле конфигурации XML-элемент с именем *dataSourceSettingsName* содержит в себе информацию о подключении.
 
-Использование файла *app.config* позволяет менять расположение источника данных и при этом не вносить изменения в сам модульный тест. Дополнительные сведения о создании и использовании файла *app.config* см. в статье [Пошаговое руководство: использование файла конфигурации для определения источника данных](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+Использование файла *app.config* позволяет менять расположение источника данных и при этом не вносить изменения в сам модульный тест. Дополнительные сведения о создании и использовании файла *app.config* см. в статье [Пошаговое руководство. Использование файла конфигурации для определения источника данных](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 ```csharp
 [DataSource(connectionString, tableName)]

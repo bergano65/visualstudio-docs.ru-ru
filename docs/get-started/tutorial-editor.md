@@ -1,8 +1,11 @@
 ---
 title: Общие сведения о редактировании в редакторе кода
+description: Сведения о том, как использовать редактор кода в Visual Studio для добавления кода в файл, а также о написании кода, перехода к нему и его рефакторингу.
 ms.date: 11/30/2017
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c8122bd08e4eb9af68a0aa70f06cfb18e51469
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39c5fd62b67c8153da0a64dcd92142300912c25f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595271"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901782"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
 

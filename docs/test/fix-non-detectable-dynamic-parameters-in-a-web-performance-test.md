@@ -1,5 +1,6 @@
 ---
 title: Исправление необнаруживаемых динамических параметров (веб-тест производительности)
+description: Сведения о том, как средство записи веб-тестов производительности и модуль воспроизведения автоматически обрабатывают самые распространенные типы динамических параметров.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cad94040997d8cead6be799bee6b2bc17aab699c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 713d711847d798c617074d2d620e09f914c1a147
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810644"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442720"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Исправление необнаруживаемых динамических параметров в веб-тесте производительности
 

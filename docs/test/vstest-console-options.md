@@ -1,5 +1,7 @@
 ---
 title: Параметры командной строки для VSTest.Console.exe
+description: Сведения об инструменте командной строки VSTest.Console.exe, который выполняет тесты. В этой статье также приведены общие параметры командной строки.
+ms.custom: SEO-VS-2020
 ms.date: 07/17/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 875af363cbd85f8667d56a33cf7646ac2a9da429
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 98d58b745b35870d287b6e81aa0a14fcdaeac921
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037020"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598527"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Параметры командной строки для VSTest.Console.exe
 

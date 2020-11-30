@@ -1,5 +1,7 @@
 ---
 title: Методы и классы Assert MSTest
+description: Сведения о том, как использовать операторы assert для тестирования правильности поведения кода в ходе модульного тестирования вашего кода приложения.
+ms.custom: SEO-VS-2020
 ms.date: 06/07/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c36916c79bd783ed2c6ce960b068e85478b9971d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c5401fb15a19d069c0bf454661d6d9283abb2585
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592052"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598202"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Использование классов Assert для модульного тестирования
 
@@ -47,6 +49,6 @@ ms.locfileid: "75592052"
 
 Чтобы проверить, действительно ли вызывается исключение, которое должно вызываться методом в коде приложения, используйте метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Модульное тестирование кода](../test/unit-test-your-code.md)

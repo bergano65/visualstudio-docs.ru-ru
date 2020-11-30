@@ -1,5 +1,7 @@
 ---
 title: Составляющие закодированного теста пользовательского интерфейса
+description: Сведения о файлах, которые добавляются в ваше решение закодированного теста пользовательского интерфейса при создании такого теста.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7100c6bb5c1dfb4c7d336ec110cf532f1f998d4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aeaa2231c62487ec366aa561ea199cf63f3c6792
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591207"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441798"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Составляющие закодированного теста пользовательского интерфейса
 

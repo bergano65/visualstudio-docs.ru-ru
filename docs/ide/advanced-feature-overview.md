@@ -1,5 +1,7 @@
 ---
 title: Дополнительные функции
+description: Сведения о расширенных функциях, которые могут оказаться более полезны опытным разработчикам или тем, кто уже знаком с Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c725e5bcae5d72562e767a06afdee8aa84950b
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 61109a315a7f331821527ee882dd7c019411fca3
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399257"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903303"
 ---
 # <a name="features-of-visual-studio"></a>Возможности Visual Studio
 
@@ -44,7 +46,7 @@ Visual Studio предлагает набор инструментов, позв
 
 ::: moniker range="vs-2017"
 
-После установки рабочей нагрузки **Разработка для Azure** следующие шаблоны **Облачных ресурсов** для C# становятся доступны в диалоговом окне **Новый проект** :
+После установки рабочей нагрузки **Разработка для Azure** следующие шаблоны **Облачных ресурсов** для C# становятся доступны в диалоговом окне **Новый проект**:
 
 ![Шаблоны проектов облачных ресурсов для Visual Studio](media/cloud-project-templates.png)
 
@@ -54,7 +56,7 @@ Visual Studio предлагает набор инструментов, позв
 
 ![Cloud Explorer в Visual Studio](media/cloud-explorer.png)
 
-Вы можете использовать службы Azure для приложений с помощью **Подключенных служб** , которые перечислены ниже.
+Вы можете использовать службы Azure для приложений с помощью **Подключенных служб**, которые перечислены ниже.
 
 - [Подключенная служба Active Directory](/azure/active-directory/develop/vs-active-directory-add-connected-service) позволяет пользователям использовать свои учетные записи из [Azure Active Directory](/azure/active-directory/active-directory-whatis) для подключения к веб-приложениям.
 - [Подключенная служба хранилища Azure](/azure/vs-azure-tools-connected-services-storage) — хранилище больших двоичных объектов, очереди и таблицы.
@@ -90,7 +92,7 @@ Visual Studio предлагает набор инструментов, позв
 
 ## <a name="connect-to-databases"></a>Подключение к базам данных
 
-**Обозреватель сервера** позволяет просматривать экземпляры и ресурсы SQL Server в локальной или удаленной среде, в Azure, Salesforce.com, Microsoft 365 и на веб-сайтах, а также управлять ими. Чтобы открыть **обозреватель серверов** , выберите в главном меню **Вид** > **Обозреватель серверов**. Дополнительные сведения об использовании обозревателя серверов см. в статье [Добавление новых подключений](../data-tools/add-new-connections.md).
+**Обозреватель сервера** позволяет просматривать экземпляры и ресурсы SQL Server в локальной или удаленной среде, в Azure, Salesforce.com, Microsoft 365 и на веб-сайтах, а также управлять ими. Чтобы открыть **обозреватель серверов**, выберите в главном меню **Вид** > **Обозреватель серверов**. Дополнительные сведения об использовании обозревателя серверов см. в статье [Добавление новых подключений](../data-tools/add-new-connections.md).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) — это мощная среда разработки для SQL Server, базы данных SQL Azure и хранилища данных SQL Azure. С помощью SSDT вы можете создавать и обслуживать базы данных, а также выполнять их отладку и рефакторинг. Можно работать с проектом базы данных или напрямую с подключенным экземпляром базы данных (локально или удаленно).
 

@@ -1,6 +1,8 @@
 ---
 title: Повышение производительности в случае медленной работы Visual Studio
 titleSuffix: ''
+description: Сведения о том, как улучшить производительность Visual Studio, если вас не устраивает скорость работы среды.
+ms.custom: SEO-VS-2020
 ms.date: 04/11/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 6495e8506e12c0c5e5f878a23c609fe53a401bde
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6e6f93b7709144e6682bc54d5686fde5ff650f56
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597000"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871474"
 ---
 # <a name="optimize-visual-studio-performance"></a>Оптимизация производительности Visual Studio
 

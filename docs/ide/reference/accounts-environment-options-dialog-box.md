@@ -1,5 +1,7 @@
 ---
 title: Справочник по параметрам учетных записей
+description: Сведения о том, как задать некоторые параметры, связанные с используемыми вами учетными записями для входа в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff457523024db49502ae982a390d9a7be6ba9dd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2cd9f08cb1358d788db661871f6d229d0579ddbd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595908"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871149"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Страница "Учетные записи", папка "Среда", диалоговое окно "Параметры"
 
@@ -41,7 +43,7 @@ ms.locfileid: "75595908"
 
 После регистрации дополнительного облака Azure вы сможете выбирать нужное облако Azure при входе в Visual Studio.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Синхронизация параметров Visual Studio на нескольких компьютерах](../synchronized-settings-in-visual-studio.md)
 - [Вход в Visual Studio](../signing-in-to-visual-studio.md)

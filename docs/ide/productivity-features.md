@@ -1,5 +1,7 @@
 ---
 title: Руководство по повышению производительности
+description: Сведения о сочетаниях клавиш и функциях повышения продуктивности в Visual Studio, которые помогут вам более эффективно выполнять написание и отладку кода и обработку ошибок.
+ms.custom: SEO-VS-2020
 ms.date: 4/29/2020
 ms.topic: conceptual
 author: ornellaalt
@@ -7,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a10b1f9b3dd6dda643a2775cf7b89221fba71d8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: bee392ddc4e7a0d185bdcc2d0e31dbd17832c733
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808146"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870876"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Руководство по повышению производительности при работе в Visual Studio
 

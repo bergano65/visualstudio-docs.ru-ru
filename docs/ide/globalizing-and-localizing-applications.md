@@ -1,5 +1,7 @@
 ---
 title: Средства локализации
+description: Сведения об инструментах локализации, которые включены в Visual Studio, и о том, как использовать их для создания локализированных приложений на нескольких языках.
+ms.custom: SEO-VS-2020
 ms.date: 02/15/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eebdccf44580442b87e3d31e33ddcd7052838306
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 65c7a82488fea8fc12e6d5db838818269add0181
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810905"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597448"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Разработка глобализованных и локализованных приложений
 
@@ -37,7 +39,7 @@ Visual Studio можно использовать для создания при
 
 ### <a name="apps-that-support-bidirectional-languages"></a>Приложения, поддерживающие языки с двунаправленным письмом
 
-- Приложения Windows
+- Приложения для Windows
 
    Вы можете создавать полностью двунаправленные приложения, включающие поддержку двунаправленного текста, порядок чтения справа налево и зеркальное отображение (отражение интерфейса Windows, меню, диалоговых окон и т. д.). За исключением зеркального отображения, эти функции доступны по умолчанию либо в виде параметров свойств. Зеркальное отображение по определению поддерживается для некоторых функций, таких как окна сообщений. В других случаях требуется реализовать его в коде. Дополнительные сведения см. в разделе [Поддержка двунаправленного письма для приложений Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
 
@@ -52,4 +54,4 @@ Visual Studio можно использовать для создания при
 
 - [Поддержка языков с двунаправленным письмом в Visual Studio](use-bidirectional-languages.md)
 - [Глобализация и локализация приложений .NET](/dotnet/standard/globalization-localization/)
-- [Ресурсы в приложениях .NET](/dotnet/framework/resources/)
+- [Ресурсы в приложениях .NET](/dotnet/framework/resources/)

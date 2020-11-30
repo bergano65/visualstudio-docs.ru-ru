@@ -1,5 +1,7 @@
 ---
 title: Настройка итераций теста для нагрузочных тестов
+description: Сведения о том, как настроить параметры итерации тестирования с указанием максимального числа итераций в сценарии и длительности задержки между тестами.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6adbdedf8a71319877c5527e00e0e7c5e73fa6b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5316b03220a094d3280aba3eb8c46f190a2874f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288784"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442564"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Настройка итераций теста в сценарии тестовой нагрузки
 
@@ -94,4 +96,4 @@ ms.locfileid: "85288784"
 - [Изменение сценариев тестовой нагрузки](../test/edit-load-test-scenarios.md)
 - [Настройка контроллеров и агентов тестирования для нагрузочного тестирования](../test/configure-test-agents-and-controllers-for-load-tests.md)
 - [Свойства сценария тестовой нагрузки](../test/load-test-scenario-properties.md)
-- [Изменение значений времени обработки для имитации задержек действий человека на веб-сайте](../test/edit-think-times-in-load-test-scenarios.md)
+- [Изменение значений времени обработки для имитации задержек действий человека на веб-сайте в сценариях нагрузочного тестирования](../test/edit-think-times-in-load-test-scenarios.md)

@@ -1,5 +1,7 @@
 ---
 title: Создание подключаемого модуля веб-теста производительности
+description: Сведения о том, как подключаемые модули веб-теста производительности позволяют повторно использовать код вне основных декларативных операторов веб-теста производительности.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c9651f4003647e18ba52e916aeb21e176274de5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5ddb46b3e83c86396dfea6fbcdb3584882591fce
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85287939"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442344"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Практическое руководство. Создание подключаемого модуля веб-теста производительности
 

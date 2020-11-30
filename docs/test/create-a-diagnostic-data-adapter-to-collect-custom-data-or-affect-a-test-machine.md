@@ -1,5 +1,7 @@
 ---
 title: Создание адаптера диагностических данных для тестирования
+description: Сведения о том, как написать код для выполнения задач в определенные моменты тестового запуска с помощью API, предоставляемых в Visual Studio Enterprise.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65d311ec522e5ba5b5c92193a8af3e53a9e9eb35
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: e73942509ca39d845c2a79f616ace311651be006
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099327"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440276"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Создание адаптера диагностических данных для сбора пользовательских данных или воздействия на тестовый компьютер
 

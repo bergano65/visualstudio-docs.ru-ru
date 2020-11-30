@@ -1,5 +1,7 @@
 ---
 title: Использование файла конфигурации для определения источника данных
+description: Сведения о том, как использовать источник данных, определенный в файле app.config, для модульного тестирования, в том числе о создании такого файла с определением источника данных.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 06e33721fa4ac1cc657c79c8aa68b35e5ceec00b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75776158"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598501"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Пошаговое руководство. Использование файла конфигурации для определения источника данных
 
@@ -32,7 +34,7 @@ ms.locfileid: "75776158"
 
 - доступ к источникам данных с помощью класса <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 Для выполнения данного пошагового руководства требуется:
 
@@ -267,7 +269,7 @@ ms.locfileid: "75776158"
 > [!IMPORTANT]
 > Разверните элементы как источники данных, чтобы они были доступны для теста в каталоге развертывания.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Модульное тестирование кода](../test/unit-test-your-code.md)
 - [Практическое руководство. Создание модульного теста, управляемого данными](../test/how-to-create-a-data-driven-unit-test.md)

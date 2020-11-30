@@ -1,5 +1,7 @@
 ---
 title: Добавление заголовка файла
+description: Сведения о том, как использовать файл EditorConfig для добавления заголовков файлов в существующие файлы, проекты и решения.
+ms.custom: SEO-VS-2020
 ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44c3b64d9fb8944a578d054b7d98d4bf39bde3bc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5f2e4715c0333b02f120ec5f92d9f742196c04f3
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810380"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870863"
 ---
 # <a name="add-file-header"></a>Добавление заголовка файла
 
@@ -36,7 +38,7 @@ ms.locfileid: "90810380"
 
 3. Задайте правилу значение, соответствующее тексту заголовка, который требуется добавить. В качестве заполнителя для имени файла можно использовать `{fileName}`.
 
-    ![Правило заголовка файла EditorConfig](media/add-file-header-rule.png)
+    ![Снимок экрана: файл EditorConfig со значением file_header_template.](media/add-file-header-rule.png)
 
     > [!NOTE]
     > В EditorConfig нельзя явным образом указать несколько строк. Для добавления отдельных строк необходимо использовать символ новой строки, применяемый в системах Unix.
@@ -47,7 +49,7 @@ ms.locfileid: "90810380"
 
 6. Выберите **Add file header** (Добавить заголовок файла). 
 
-    ![Правило заголовка файла EditorConfig](media/add-file-header.png)
+    ![Снимок экрана: вариант с добавлением заголовка файла.](media/add-file-header.png)
 
 7. Чтобы применить заголовок файла ко всем файлам проекта или решения, выберите **Project** (Проект) или **Solution** (Решение) для параметра **Fix all occurrences in** (Исправить все вхождения в).
 

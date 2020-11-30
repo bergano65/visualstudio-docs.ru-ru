@@ -1,5 +1,7 @@
 ---
 title: Настройка меню и панелей инструментов
+description: Сведения о том, как настроить меню и панели инструментов Visual Studio, а также любые команды в них.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -27,12 +29,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed85d3a3406cf7abf4bc08e728cc647d605e16ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9111631014275da92da73966ba0310971dbf27f
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284403"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597240"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Практическое руководство. Настройка меню и панелей инструментов в Visual Studio
 
@@ -117,7 +119,7 @@ Visual Studio можно настраивать не только путем д�
 
     Можно также сбросить параметры всех меню и панелей инструментов с помощью кнопки **Сбросить все**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Персонализация интегрированной среды разработки](../ide/personalizing-the-visual-studio-ide.md)
 - [Настройка редактора](../ide/how-to-change-text-case-in-the-editor.md)

@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Настройка схем классов (конструктор классов)
+description: Сведения о том, как изменить способ отображения информации в диаграммах классов и как настроить целую диаграмму или отдельные их типы в области конструктора.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8e4665790aa228bb30aac05ea4782cfe4a62f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05f0b20307ac0802c4c4350588f5dc0c47cb3b6b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770179"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901431"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Практическое руководство. Настройка схем классов
 
@@ -37,7 +39,7 @@ ms.locfileid: "85770179"
 
 2. Чтобы изменить уровень масштабирования области конструктора, нажмите кнопку **Увеличить** или **Уменьшить** на панели инструментов **конструктора классов**.
 
-     или диспетчер конфигурации служб
+     или
 
      Укажите конкретное значение масштабирования. Для этого можно воспользоваться раскрывающимся списком **Масштаб** или ввести допустимый уровень масштабирования (в диапазоне от 10 % до 400 %).
 
@@ -128,5 +130,5 @@ ms.locfileid: "85770179"
 ## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Переключение между представлением в виде членов класса и представлением в виде ассоциации](how-to-change-between-member-notation-and-association-notation.md)
-- [Практическое руководство. Просмотр существующих типов](how-to-view-existing-types.md)
+- [Практическое руководство. Просмотр существующих типов в конструкторе классов](how-to-view-existing-types.md)
 - [Просмотр типов и отношений](designing-and-viewing-classes-and-types.md)

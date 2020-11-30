@@ -1,5 +1,7 @@
 ---
 title: Рефакторинг и перемещение классов и типов в конструкторе классов
+description: Сведения о том, как переименовывать и перемещать классы и типы с помощью конструктора классов и окна "Сведения о классе".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baf0e9d9d0f4bb45ef965f64c256bd9360af112b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d51a541edb30e24405faccfec6e05264303d049
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768610"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901093"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Рефакторинг классов и типов в конструкторе классов
 

@@ -1,5 +1,7 @@
 ---
 title: Справочник по схеме фрагментов кода
+description: Сведения о схеме XML фрагментов кода IntelliSense и о том, как использовать их для повышения продуктивности.
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e31ec2be9ccce0b07b04746d2ed51ab3909cdd2c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b5030efcfe6fc774a1bb576f6056db7d9f8fd662
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183682"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006475"
 ---
 # <a name="code-snippets-schema-reference"></a>Справочник по схеме фрагментов кода
 

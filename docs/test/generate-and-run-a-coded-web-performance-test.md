@@ -1,5 +1,7 @@
 ---
 title: Закодированные веб-тесты производительности
+description: Сведения о том, как веб-тест производительности можно преобразовать в скрипт на основе кода, разрешающий редактирование и настройку.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c55c2a2d9b77662170cde24c2b98368240a4af
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589582"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442642"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Создание и запуск закодированного веб-теста производительности
 

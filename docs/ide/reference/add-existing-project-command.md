@@ -1,5 +1,7 @@
 ---
 title: Команда Add Existing Project
+description: Сведения о команде Add Existing Project и о том, как с ее помощью добавить существующий проект в текущее решение.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 008802546d87bd44137c6d13ee2aef802877e308
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2c12106621599d428e9a701de9ba5e468b5e312a
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595882"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871006"
 ---
 # <a name="add-existing-project-command"></a>Команда Add Existing Project
 Добавляет существующий проект в текущее решение.
@@ -31,13 +33,13 @@ File.AddExistingProject filename
 
 ## <a name="arguments"></a>Аргументы
 `filename`\
-Необязательный параметр. Полный путь и имя проекта с расширением для проекта, который необходимо добавить в решение.
+Необязательный элемент. Полный путь и имя проекта с расширением для проекта, который необходимо добавить в решение.
 
 Если аргумент `filename` содержит пробелы, его необходимо заключить в кавычки.
 
 Если имя файла не указано, при выполнении команды откроется диалоговое окно файла, в котором пользователь может выбрать проект.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 Функция автозавершения пытается определить правильный путь и правильное имя файла во время их ввода.
 
 ## <a name="example"></a>Пример
@@ -50,6 +52,6 @@ File.AddExistingProject filename
 ## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Окно команд](../../ide/reference/command-window.md)
+- [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
