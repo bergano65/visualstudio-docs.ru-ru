@@ -1,5 +1,7 @@
 ---
 title: Создание XML-таблицы команд (. Vsct) файлы | Документация Майкрософт
+description: Узнайте, как спроектировать файл XML-таблицы команд (. vsct), описывающий макет и внешний вид элементов команд, включая кнопки, поля со списком, меню и панели инструментов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcd29aee98139bb151c87590b256df6b8370abff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1ccab1eddf38e2f93cb00f1f5fdea6ce09f2f05
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708742"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328435"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Разработка файлов XML-таблицы команд (. vsct)
 Файл XML-таблицы команд (*. vsct*) описывает макет и внешний вид элементов команд для VSPackage. К элементам команды относятся кнопки, поля со списком, меню, панели инструментов и группы элементов команд. В этой статье описываются XML-файлы командных таблиц, их влияние на элементы команд и меню, а также способы их создания.
@@ -25,7 +27,7 @@ ms.locfileid: "80708742"
 
  Когда вы создаете новый пакет VSPackage, запустив [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] шаблон пакета, шаблон создает *vsct* -файл с необходимыми элементами для команды меню, окна инструментов или пользовательского редактора в зависимости от выбранных параметров. Этот *vsct* -файл можно изменить в соответствии с требованиями конкретного пакета VSPackage. Примеры изменения *vsct* -файла см. в разделе [Расширение меню и команд](../../extensibility/extending-menus-and-commands.md).
 
- Сведения о создании нового пустого *vsct* -файла см. в разделе [как создать файл *vsct* ](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). После создания в файл добавляются XML-элементы, атрибуты и значения, описывающие макет элемента команды. Подробную схему XML см. в [справочнике по XML-схеме VSCT](../../extensibility/vsct-xml-schema-reference.md).
+ Сведения о создании нового пустого *vsct* -файла см. в разделе [как создать файл *vsct*](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). После создания в файл добавляются XML-элементы, атрибуты и значения, описывающие макет элемента команды. Подробную схему XML см. в [справочнике по XML-схеме VSCT](../../extensibility/vsct-xml-schema-reference.md).
 
 ## <a name="differences-between-ctc-and-vsct-files"></a>Различия между файлами. CTC и. vsct
  Хотя смысл тегов XML в *vsct* -файле совпадает с тегами в устаревшем формате файла *. CTC* , их реализация немного отличается:

@@ -1,5 +1,7 @@
 ---
 title: Создание экземпляров проекта с помощью фабрик проекта | Документация Майкрософт
+description: Узнайте, как создавать экземпляры классов проектов с помощью фабрик проектов в интегрированной среде разработки Visual Studio (IDE).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31ba5dd11af18f8a723b2271544eff2bd292e2e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59ad41bda80337fd0adc65d4792adbbbb1cf38f1
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709062"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328604"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Создание экземпляров проекта с помощью фабрик проекта
 Типы проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] используют *фабрику проектов* для создания экземпляров объектов Project. Фабрика проектов аналогична фабрике класса Standard для создаваемых COM-объектов. Однако объекты проекта не могут быть созданы одновременно. их можно создать только с помощью фабрики проектов.
@@ -38,7 +40,7 @@ ms.locfileid: "80709062"
 
    Типы проектов связаны с определенным расширением имени файла. Когда пользователь пытается открыть существующий файл проекта или пытается создать новый проект путем клонирования шаблона, интегрированная среда разработки использует расширение файла для определения соответствующего идентификатора GUID проекта.
 
-   Как только интегрированная среда разработки определит, нужно ли создать новый проект или открыть существующий проект определенного типа, интегрированная среда разработки использует сведения из системного реестра в разделе **[HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0\projects]** , чтобы определить, какой пакет VSPackage реализует требуемую фабрику проектов. Интегрированная среда разработки загружает этот пакет VSPackage. В <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> методе пакет VSPackage должен зарегистрировать свою фабрику проекта в интегрированной среде разработки, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> метод.
+   Как только интегрированная среда разработки определит, нужно ли создать новый проект или открыть существующий проект определенного типа, интегрированная среда разработки использует сведения из системного реестра в разделе **[HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects]** , чтобы найти, какой пакет VSPackage реализует требуемую фабрику проектов. Интегрированная среда разработки загружает этот пакет VSPackage. В <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> методе пакет VSPackage должен зарегистрировать свою фабрику проекта в интегрированной среде разработки, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> метод.
 
    Основным методом `IVsProjectFactory` интерфейса является <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> , который должен выполнять два сценария: Открытие существующего проекта и создание нового проекта. Большинство проектов сохраняют свое состояние проекта в файле проекта. Как правило, новые проекты создаются путем создания копии файла шаблона, переданного в `CreateProject` метод, и открытия копии. Экземпляры существующих проектов создаются путем непосредственного открытия файла проекта, переданного в `CreateProject` метод. `CreateProject`При необходимости метод может отображать дополнительные пользовательские функции пользовательского интерфейса.
 

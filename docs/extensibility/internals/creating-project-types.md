@@ -1,5 +1,7 @@
 ---
 title: Создание типов проектов | Документация Майкрософт
+description: Узнайте, как расширить Visual Studio путем проектирования, создания и регистрации нового типа проекта, который поддерживает задачи программирования.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2398b63b8cd52784252cfc764bb6c6a30e1accc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4038a122c6d2ec5f6ed29df6e529b2bff2e2bb71
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709068"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329930"
 ---
 # <a name="create-project-types"></a>Создание типов проектов
 Можно расширить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , создав новый тип проекта. Чтобы создать новый тип проекта, необходимо ознакомиться с некоторыми концепциями и выполнить ряд действий. В следующих разделах приводятся общие сведения о создании типов проектов.

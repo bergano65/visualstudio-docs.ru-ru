@@ -1,5 +1,7 @@
 ---
 title: Настраиваемые цветные элементы | Документация Майкрософт
+description: Узнайте, как создавать настраиваемые цветовые элементы как часть языковой службы путем переопределения элементов в диалоговом окне Шрифты и цвета, например ключевые слова и комментарии.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: feecd9e8f8178045f66999b775e2d0792f50b288
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a8e45b5b472ccc1a37cd69e2043f0bb5b9aa3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708998"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328539"
 ---
 # <a name="custom-colorable-items"></a>Настраиваемые цветные элементы
 Можно переопределить список типов для выделения цветом, например ключевые слова и комментарии, путем реализации пользовательских цветовых элементов в рамках языковой службы.
@@ -32,7 +34,7 @@ ms.locfileid: "80708998"
 >
 > *C:\Program Files (x86) \Microsoft Visual Studio, версия: Вссдк\висуалстудиоинтегратион\тулс\бин*
 >
-> Чтобы сбросить кэш, введите **CreateExpInstance/Reset**. Дополнительные сведения о **CreateExpInstance**см. в разделе [служебная программа CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).
+> Чтобы сбросить кэш, введите **CreateExpInstance/Reset**. Дополнительные сведения о **CreateExpInstance** см. в разделе [служебная программа CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).
 
  Первый элемент в списке цветовых элементов никогда не упоминается. Первый элемент соответствует элементу с цветовым индексом, равным 0, и [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] всегда предоставляет цвета и атрибуты текста по умолчанию для этого элемента. Самый простой способ работы с этим неиспользуемым элементом — предоставить заполнитель цветовой элемент в списке в качестве первого элемента.
 

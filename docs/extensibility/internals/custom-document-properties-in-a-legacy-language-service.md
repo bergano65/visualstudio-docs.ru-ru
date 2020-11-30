@@ -1,5 +1,6 @@
 ---
 title: Пользовательские свойства документа в устаревших языковых службах
+description: Узнайте, как создавать настраиваемые свойства документов, отображаемые в окно свойств Visual Studio в рамках языковой службы прежних версий.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c38ad28456ab8b9bccf29d2249307b718a5767b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d5fa24f3d052ab9122776967607b2c197fb102bf
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036838"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329917"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Пользовательские свойства документа в языковой службе прежних версий
 Свойства документа можно отобразить в окне " [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **свойства** ". Языки программирования обычно не имеют свойств, связанных с отдельными файлами исходного кода. Однако XML поддерживает свойства документа, которые влияют на кодировку, схему и таблицу стилей.

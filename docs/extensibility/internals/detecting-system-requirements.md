@@ -1,5 +1,7 @@
 ---
 title: Определение требований к системе | Документация Майкрософт
+description: Узнайте, как настроить Microsoft установщик Windows для определения требований к системе, таких как установленный выпуск Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ab254df5d53f379704128d8860b8d7fe5655bae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4befcf3950c41beba2440e6f023983269137b1f
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708736"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329813"
 ---
 # <a name="detect-system-requirements"></a>Определение требований к системе
 Пакет VSPackage не может работать, если не установлена Visual Studio. При использовании установщик Windows Майкрософт для управления установкой пакета VSPackage можно настроить установщик, чтобы определить, установлена ли Visual Studio. Кроме того, его можно настроить для проверки системы на наличие других требований, например конкретной версии Windows или определенного объема ОЗУ.
@@ -24,7 +26,7 @@ ms.locfileid: "80708736"
 ## <a name="detect-visual-studio-editions"></a>Обнаружение выпусков Visual Studio
  Чтобы определить, установлен ли выпуск Visual Studio, убедитесь, что значение раздела реестра **Install** — *(REG_DWORD) 1* в соответствующей папке, как указано в следующей таблице. Обратите внимание, что существует иерархия выпусков Visual Studio:
 
-1. Enterprise
+1. Предприятие
 
 2. Professional
 
@@ -33,14 +35,14 @@ ms.locfileid: "80708736"
 При установке более нового выпуска добавляются разделы реестра для этого выпуска, а также для более ранних выпусков. То есть если установлен выпуск Enterprise Edition, то для ключа **установки** устанавливается значение *1* для Enterprise, а также для выпусков Professional и Community. Поэтому необходимо проверить только наличие самой последней версии.
 
 > [!NOTE]
-> В 64-разрядной версии редактора реестра 32-разрядные ключи отображаются в разделе **HKEY_LOCAL_MACHINE \software\wow6432node \\ **. Ключи Visual Studio находятся в разделе **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\devdiv\vs\servicing \\ **.
+> В 64-разрядной версии редактора реестра 32-разрядные ключи отображаются в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Ключи Visual Studio находятся в **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
 
-|Продукт|Клавиши|
+|Продукт|Ключ|
 |-------------|---------|
-|Visual Studio Enterprise|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|
-|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|
-|Visual Studio Community 2015|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|
-|Оболочка Visual Studio 2015 (интегрированная и изолированная)|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|
+|Visual Studio Enterprise|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|
+|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|
+|Visual Studio Community 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|
+|Оболочка Visual Studio 2015 (интегрированная и изолированная)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|
 
 ## <a name="detect-when-visual-studio-is-running"></a>Определить, когда работает Visual Studio
  Невозможно правильно зарегистрировать VSPackage, если Visual Studio работает при установке VSPackage. Установщик должен определить, когда работает Visual Studio, а затем отказаться от установки программы. Установщик Windows не позволяет использовать записи таблицы для включения такого обнаружения. Вместо этого необходимо создать пользовательское действие следующим образом: использовать `EnumProcesses` функцию для обнаружения *devenv.exe* процесса, а затем либо задать свойство установщика, которое используется в условии запуска, либо условно отобразить диалоговое окно, предлагающее пользователю закрыть Visual Studio.

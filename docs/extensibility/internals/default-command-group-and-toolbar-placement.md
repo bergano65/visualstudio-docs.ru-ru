@@ -1,5 +1,7 @@
 ---
 title: Размещение команды по умолчанию, группы и панели инструментов | Документация Майкрософт
+description: Сведения о командах интегрированной среды разработки, командах продукта и командах редактора, которые по умолчанию отображаются в пользовательском интерфейсе Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b432b514231e876dda1393bad8a315030272d998
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cacf8db933c7d56d44351da11b7b310bc0bdb8aa
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708892"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329891"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Размещение команды по умолчанию, группы и панели инструментов
 Для единообразия и стабильности продукта Пользовательский интерфейс отображает определенные группы команд по умолчанию и [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] предоставляет определения для команд и групп команд. Пакеты VSPackage также могут использовать стандартные команды и группы команд.

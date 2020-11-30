@@ -1,5 +1,7 @@
 ---
 title: Настраиваемые инструменты | Документация Майкрософт
+description: Узнайте, как создавать пользовательские инструменты в Visual Studio, которые связывают средство с элементом в проекте и запускают это средство при каждом сохранении файла.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e60f1d8cb8b25ed50b0b20c5ebb538286687ad72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ba8760ce53f222ebbe4626bde0d897d4d12c8a6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708957"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329969"
 ---
 # <a name="custom-tools"></a>Специальные инструменты
 *Пользовательские средства* позволяют связать средство с элементом в проекте и запускать его при каждом сохранении файла. Некоторые пользовательские средства, иногда называемые *генераторами с одним файлом*, часто используются для реализации переводчиков, создающих код на основе данных и наоборот. Например, генераторы с одним файлом создают [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] *исключают* исходный код из файлов. Settings и *. resx* . Созданный исходный код предоставляет строго типизированный доступ к данным в файлах *. Settings* и *. resx* . [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Типы проектов и поддерживают пользовательские средства; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] типы проектов — нет. Собственные типы проектов также могут поддерживать пользовательские средства.
@@ -43,7 +45,7 @@ ms.locfileid: "80708957"
 
  Показывает, как сохранить свойство элемента проекта, например автора исходного файла, в файле проекта.
 
-## <a name="reference"></a>Справочник
+## <a name="reference"></a>Ссылка
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> Предоставляет подробные сведения о компоненте <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> , который преобразует один входной файл в отдельный выходной файл, который может быть скомпилирован или добавлен в проект.
 
  <xref:EnvDTE.ProjectItem> Описывает `ProjectItem` интерфейс, который представляет элемент в проекте.

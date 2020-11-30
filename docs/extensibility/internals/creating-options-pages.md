@@ -1,5 +1,7 @@
 ---
 title: Создание страниц параметров | Документация Майкрософт
+description: Узнайте, как создать страницу параметров в меню "Сервис" в Visual Studio, реализовав класс DialogPage из управляемой платформы пакетов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 368efaa78a56723d4a72c482bea9ee739385127e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4759b3590fcde116e6f106ac326ff875e9566c43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709151"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328643"
 ---
 # <a name="create-options-pages"></a>Создание страниц параметров
 В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] платформе управляемых пакетов классы, производные от <xref:Microsoft.VisualStudio.Shell.DialogPage> расширения [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки, добавляют страницы **параметров** в меню **Сервис** .

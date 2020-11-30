@@ -1,5 +1,7 @@
 ---
 title: Отображение файлов с помощью команды "открыть файл" | Документация Майкрософт
+description: Сведения о том, как интегрированная среда разработки (IDE) Visual Studio обрабатывает команды открыть файл в меню файл для отображения файлов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc18442c55b6989c4d8668e1425fdd62a2d4b1b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a932a9b56a63069e010cb2b945de25564c2d135
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708597"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328344"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Отображение файлов с помощью команды "открыть файл"
 Следующие шаги описывают, как интегрированная среда разработки обрабатывает команду **Open File** , доступную в меню **файл** в среде [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Эти шаги также описывают, как проекты должны отвечать на вызовы, происходящие из этой команды.
@@ -51,7 +53,7 @@ ms.locfileid: "80708597"
 
 5. Затем проект имеет возможность открыть файл с помощью редактора конкретного проекта или стандартного редактора. Дополнительные сведения см. в статьях [как открывать редакторы для конкретного проекта](../../extensibility/how-to-open-project-specific-editors.md) и [как открывать стандартные редакторы](../../extensibility/how-to-open-standard-editors.md)соответственно.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Отображение файлов при помощи команды "Открыть с помощью"](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
 - [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md)
 - [Пошаговое руководство. открытие редакторов, зависящих от проекта](../../extensibility/how-to-open-project-specific-editors.md)

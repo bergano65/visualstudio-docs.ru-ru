@@ -1,5 +1,7 @@
 ---
 title: Определение того, какой редактор открывает файл в проекте | Документация Майкрософт
+description: Сведения о разделах реестра и методах пакета SDK для Visual Studio, которые используются в Visual Studio для определения того, какой редактор открывает файл в проекте.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7037a3b4bfbae1801e802256af240d017d2789
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9574a3319d3c43c17d7351e462b6956ae899d84
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708660"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328409"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>Определение того, какой редактор открывает файл в проекте
 Когда пользователь открывает файл в проекте, среда проходит процесс опроса, в конечном итоге открывая соответствующий редактор или конструктор для этого файла. Начальная процедура, применяемая средой, одинакова для стандартных и пользовательских редакторов. При опросе редактора, используемого для открытия файла, среда использует разнообразные критерии, и пакет VSPackage должен координировать среду во время этого процесса.
@@ -27,9 +29,9 @@ ms.locfileid: "80708660"
 
  Проект "Прочие файлы" заявляет все файлы, которые не затребованы другими проектами. Таким образом, пользовательские редакторы могут открывать документы до их открытия в стандартных редакторах. Если проект прочих файлов требует файл, среда вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод, чтобы открыть файл в стандартном редакторе. Среда проверяет внутренний список зарегистрированных редакторов для одного, обрабатывающего *RTF* файлы. Этот список находится в реестре в следующем разделе:
 
- **HKEY_LOCAL_MACHINE \Софтваре\микрософт\висуалстудио \\ \<version> \едиторс \\ \<editor factory guid> \екстенсионс**
+ **HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ \<version> \едиторс \\ \<editor factory guid> \екстенсионс**
 
- Среда также проверяет идентификаторы классов в **HKEY_CLASSES_ROOT ключ \клсид** для любых объектов, имеющих подраздел **DocObject**. Если расширение файла найдено, на месте в Visual Studio создается внедренная версия приложения, например Microsoft Word. Эти объекты документов должны быть составными файлами, реализующими <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> интерфейс, или объект должен реализовывать <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> интерфейс.
+ Среда также проверяет идентификаторы классов в **HKEY_CLASSES_ROOT\CLSID** ключе для любых объектов, имеющих подраздел **DocObject**. Если расширение файла найдено, на месте в Visual Studio создается внедренная версия приложения, например Microsoft Word. Эти объекты документов должны быть составными файлами, реализующими <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> интерфейс, или объект должен реализовывать <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> интерфейс.
 
  Если в реестре нет фабрики редактора для *RTF* -файлов, среда ищет ключ **HKEY_CLASSES_ROOT \\ . RTF** и открывает редактор, указанный там. Если расширение файла не найдено в **HKEY_CLASSES_ROOT**, среда использует текстовый редактор Visual Studio Core для открытия файла, если это текстовый файл.
 

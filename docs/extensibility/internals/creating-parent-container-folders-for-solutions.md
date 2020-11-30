@@ -1,5 +1,7 @@
 ---
 title: Создание папок родительского контейнера для решений | Документация Майкрософт
+description: Узнайте, как использовать интерфейс API подключаемого модуля системы управления версиями 1,2, чтобы указать одно назначение корневого каталога для всех веб-проектов в решении.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e5481e20a12fc05ccba97eef55173e5ce9b30d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e65da2b50984b0259079a1693dd31d400e1e12e3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709101"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329943"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Создание папок родительского контейнера для решений
 В интерфейсе API подключаемого модуля системы управления версиями 1,2 пользователь может указать одно назначение корневого каталога для всех веб-проектов в решении. Этот единственный корневой каталог называется Super Unified (SUR).
@@ -62,7 +64,7 @@ ms.locfileid: "80709101"
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] по умолчанию используется поведение версии 1,1, если подключаемый модуль системы управления версиями не возвращает и не имеет `SCC_CAP_CREATESUBPROJECT` `SCC_CAP_GETPARENTPROJECT` флагов возможностей. Кроме того, пользователи [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] могут вернуться к поведению версии 1,1, задав для параметра следующий раздел значение *DWORD: 00000001*:
 
- **[HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] доноткреатесолутионрутфолдеринсаурцеконтрол**  =  *DWORD: 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] доноткреатесолутионрутфолдеринсаурцеконтрол**  =  *DWORD: 00000001*
 
 ## <a name="see-also"></a>См. также раздел
 - [Новые возможности в API подключаемого модуля системы управления версиями, версия 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

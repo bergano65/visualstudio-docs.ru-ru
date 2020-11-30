@@ -1,5 +1,7 @@
 ---
 title: Отложенная загрузка документов | Документация Майкрософт
+description: Узнайте о задержке загрузки документов в Visual Studio и о том, как расширения кода, чтобы они не запрашивают элементы в документе перед его загрузкой.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f78d49013c1f0bd359d4439b73620a159a9ccc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6489c819efe0fd29cd2d120c08414cf0532ad6f
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708811"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328396"
 ---
 # <a name="delayed-document-loading"></a>Отложенная загрузка документов
 
@@ -65,4 +67,4 @@ ms.locfileid: "80708811"
 
 Отсутствует видимая подсказка, указывающая, был ли документ инициализирован, поэтому может быть трудно выяснить, что расширение является принудительной инициализацией. Можно задать раздел реестра, который упрощает проверку, поскольку в этом случае заголовок каждого документа, который не был полностью инициализирован, будет содержать текст *[заглушка]* в заголовке.
 
-В **HKEY_CURRENT_USER \software\microsoft\visualstudio\14.0\backgroundsolutionload**задайте для **стубтабтитлеформатстринг** значение * {0} [заглушка]*.
+В **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad** задайте для **стубтабтитлеформатстринг** значение *{0} [заглушка]*.
