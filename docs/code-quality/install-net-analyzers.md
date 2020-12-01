@@ -1,7 +1,7 @@
 ---
-title: Включение или установка анализаторов .NET
+title: Включить или установить сторонние анализаторы .NET
 ms.date: 08/03/2018
-description: Узнайте, как включить анализаторы .NET из пакета SDK для .NET или установить эти анализаторы как пакет NuGet.
+description: Узнайте, как включить сторонние анализаторы .NET из пакета SDK для .NET или установить эти анализаторы как пакет NuGet.
 ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a14d89caba498a07c2447f9df1109e4da9f6a466
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 60eb4828d4c8450376178c2fdccf7d4c0f63d989
+ms.sourcegitcommit: 208bd1edebfe6dec5d3bb92c63b5c1e093677e35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96112189"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96440380"
 ---
-# <a name="enable-or-install-net-analyzers"></a>Включение или установка анализаторов .NET
+# <a name="enable-or-install-first-party-net-analyzers"></a>Включить или установить сторонние анализаторы .NET
 
 ## <a name="overview"></a>Обзор
 
-Анализаторы .NET Compiler Platform (Roslyn) проверяют качество кода C# или Visual Basic и выявляют в нем проблемы. Включить или установить эти анализаторы можно одним из следующих способов.
+Анализаторы .NET Compiler Platform (Roslyn) проверяют качество кода C# или Visual Basic и выявляют в нем проблемы. Включить или установить первую версию анализаторов .NET можно одним из следующих способов.
 
 - **Включение из пакета SDK для .NET**: начиная с Visual Studio 2019 16,8 и .NET 5,0, эти анализаторы [входят в состав пакета SDK для .NET](/dotnet/fundamentals/code-analysis/overview). По умолчанию для проектов, предназначенных для .NET 5,0 или более поздней версии, включен анализ. Вы можете включить анализ кода для проектов, предназначенных для более ранних версий .NET, задав `EnableNETAnalyzers` для свойства значение `true` . Можно также отключить анализ кода для проекта, задав для значение `EnableNETAnalyzers` `false` .
 
@@ -35,5 +35,5 @@ ms.locfileid: "96112189"
 
 - [Обзор анализаторов кода в Visual Studio](roslyn-analyzers-overview.md)
 - [Использование анализаторов кода в Visual Studio](use-roslyn-analyzers.md)
-- [Миграция из устаревшего анализа в анализаторы .NET](migrate-from-legacy-analysis-to-net-analyzers.md)
-- [Миграция с FxCop Analyzer на анализаторы .NET](migrate-from-fxcop-analyzers-to-net-analyzers.md)
+- [Миграция с анализа прежних версий на анализаторы .NET](migrate-from-legacy-analysis-to-net-analyzers.md)
+- [Миграция с анализаторов FxCop на анализаторы .NET](migrate-from-fxcop-analyzers-to-net-analyzers.md)
