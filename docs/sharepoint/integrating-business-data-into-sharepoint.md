@@ -1,5 +1,7 @@
 ---
 title: Интеграция бизнес-данных в SharePoint | Документация Майкрософт
+description: Ознакомьтесь с общими сведениями о том, как интегрировать бизнес-данные в SharePoint путем создания модели для службы подключения к бизнес-данным.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4bbfb681a0dac0825bf7af4f1f27ab1c1b50053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3156adc286222282ae63f70f70838bc6b7155a8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016308"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304354"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Интеграция бизнес-данных в SharePoint
   Вы можете интегрировать бизнес-данные в SharePoint. Бизнес-данные могут поступать из серверных приложений, таких как [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel и SAP, или из веб-служб. Пользователи могут просматривать, добавлять, обновлять или удалять бизнес-данные с помощью внешних списков или веб-частей бизнес-данных в SharePoint.  Пользователи также могут получать доступ к этим данным в автономном режиме в приложении Microsoft Office, таком как Microsoft Outlook. Дополнительные сведения см. в разделе [Где можно демонстрировать внешние данные](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14)).
