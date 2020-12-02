@@ -7,11 +7,11 @@ ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
 ms.topic: how-to
 ms.openlocfilehash: 22dfa4a33005afd64be54828f3b49c45244779d2
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493508"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189879"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Создание приложений ASP.NET Core в Visual Studio для Mac
 

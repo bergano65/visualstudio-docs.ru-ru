@@ -1,5 +1,7 @@
 ---
 title: Преобразователи проектов
+description: Диалоговое окно Преобразование использовалось в предыдущих версиях Visual Studio диалоговое окно и сейчас считается нерекомендуемым.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5348bb82d54f2914a5b8ee26ada0f924f592aab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2f095d05a873eb59b0f6453ddb796fc2a183705e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595739"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040814"
 ---
 # <a name="convert-dialog-box"></a>Преобразование - диалоговое окно
 

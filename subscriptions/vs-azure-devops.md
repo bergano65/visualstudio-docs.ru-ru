@@ -8,11 +8,11 @@ ms.date: 07/22/2020
 ms.topic: conceptual
 description: Узнайте, как использовать службы Azure DevOps в качестве подписчика Visual Studio.
 ms.openlocfilehash: 536941d02b790349d126257e61164d2b0b98d794
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92352957"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970507"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Преимущества Azure DevOps для подписчиков Visual Studio
 Как действующий подписчик Visual Studio вы можете использовать целый ряд возможностей в Azure DevOps, которые включены в вашу подписку в виде преимуществ. Вы сможете использовать эти возможности в каждой организации Azure DevOps, членом которой вы являетесь, независимо от того, создали вы эту организацию или были добавлены в нее.

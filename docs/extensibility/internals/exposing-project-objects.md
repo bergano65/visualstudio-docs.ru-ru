@@ -1,5 +1,7 @@
 ---
 title: Предоставление доступа к объектам проекта | Документация Майкрософт
+description: Узнайте, как предоставлять объекты для пользовательских типов проектов в Visual Studio, предоставляя объекты автоматизации, которые разрешают доступ к проекту с помощью интерфейсов автоматизации.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81446fa582524872b03199ae707f658776787961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d93b1bf414a9e58f8311a1f1d7066a789ef8c6b6
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708474"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479515"
 ---
 # <a name="expose-project-objects"></a>Предоставление доступа к объектам проекта
 
@@ -91,6 +93,6 @@ ms.locfileid: "80708474"
 
      Пользовательский `Projects` объект коллекции является удобной точкой входа для оставшейся части модели автоматизации проекта. Объект Project также доступен из <xref:EnvDTE.Solution> коллекции проектов. После создания соответствующего кода и записей реестра, предоставляющих потребителей `Projects` объектам коллекции, ваша реализация должна предоставлять оставшиеся стандартные объекты для модели проекта. Дополнительные сведения см. в разделе [Моделирование проектов](../../extensibility/internals/project-modeling.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

@@ -1,5 +1,7 @@
 ---
 title: Расширение объектной модели базового проекта | Документация Майкрософт
+description: Узнайте, как расширить объектную модель автоматизации базового проекта в Visual Studio с помощью подтипа проекта.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33186cd477ade7f562f6191393dabe8e94f4f194
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4e3d7ad3f19aedc59288d6799e97d91499939c9
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708400"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479463"
 ---
 # <a name="extend-the-object-model-of-the-base-project"></a>Расширение объектной модели базового проекта
 
@@ -31,6 +33,6 @@ ms.locfileid: "80708400"
 
 - Configuration. Properties: Эта коллекция предоставляет зависящие от конфигурации свойства проекта для конкретной конфигурации (например, Debug). Для получения дополнительной информации см. <xref:EnvDTE.Configuration>. Подтип проекта может использовать расширители автоматизации для добавления его свойств в эту коллекцию. <xref:EnvDTE80.IInternalExtenderProvider>Интерфейс, реализованный на главном агрегаторе подтипа проекта, предлагает свой объект для CATID `VSHPROPID_CfgBrowseObjectCATID` (соответствующий `itemid` значению [вситемид. Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)). <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>Интерфейс используется для различения одного объекта обзора конфигурации из другого.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>

@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dfd1b876e58c05c668fd74087d5131bb1e9fcd40
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91135096"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189788"
 ---
 # <a name="options-dialog-box-environment--general"></a>Диалоговое окно "Параметры": Страница "Общие" \> папка "Среда"
 
@@ -74,7 +74,7 @@ ms.locfileid: "91135096"
 
 Позволяет использовать аппаратное ускорение графики вместо программного, если оно доступно.
 
-## <a name="other"></a>Другое
+## <a name="other"></a>Другие
 
 **Элементы для отображения в меню "Окно"**
 

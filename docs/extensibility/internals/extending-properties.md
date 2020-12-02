@@ -1,5 +1,7 @@
 ---
 title: Расширение свойств | Документация Майкрософт
+description: Узнайте о интерфейсах, которые необходимо реализовать, и вызовите, чтобы расширить список свойств в окно свойств Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7064128c54434b0a7bb8799e62b751e765511c48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 721f45ebe83e0edb7bf7a182ea71b2181593ad6e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708417"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479542"
 ---
 # <a name="extend-properties"></a>Расширение свойств
 Окно [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **свойства** — это обозреватель универсальных свойств для компонентов COM и com+, поддерживающий все [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] продукты. Окно **Свойства** работает со `ITypeInfo` сведениями о типе и метаданными com+ для перечисления свойств времени разработки для выбранного объекта в любом другом окне интегрированной среды разработки (IDE).
