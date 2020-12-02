@@ -1,5 +1,7 @@
 ---
 title: Как создать. Файл vsct | Документация Майкрософт
+description: Узнайте, как вручную создать файл vsct, файл конфигурации таблицы команд Visual Studio на основе XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a571098deeeca0e8262d855c24d0bf1ce66be08e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47d38e68494f29947131bcc8ce3a2a59b2e8d48b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905537"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480373"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Как создать vsct-файл
 
@@ -61,7 +63,7 @@ ms.locfileid: "85905537"
 
 1. Получите копию языка Perl.
 
-2. Получите копию *ConvertCTCToVSCT.pl*сценария Perl, которая обычно находится в папке * \<Visual Studio SDK installation path> \висуалстудиоинтегратион\тулс\бин* .
+2. Получите копию *ConvertCTCToVSCT.pl* сценария Perl, которая обычно находится в папке *\<Visual Studio SDK installation path> \висуалстудиоинтегратион\тулс\бин* .
 
 3. Получите копию исходного файла *CTC* , который необходимо преобразовать.
 
@@ -138,7 +140,7 @@ ms.locfileid: "85905537"
 
      Эта разметка должна идти внутри `ItemGroup` элемента, содержащего внедренные ресурсы.
 
-4. Откройте файл пакета, который обычно называется * \<ProjectName\> Package.CS* или * \<ProjectName\> Package. vb*, в редакторе.
+4. Откройте файл пакета, который обычно называется *\<ProjectName\> Package.CS* или *\<ProjectName\> Package. vb*, в редакторе.
 
 5. Добавьте `ProvideMenuResource` атрибут в класс Package, как показано в следующем примере.
 

@@ -1,5 +1,7 @@
 ---
 title: начало работы с пакетом VSPackage системы управления версиями | Документация Майкрософт
+description: Сведения о пакетах VSPackage в системе управления версиями в Visual Studio и о том, как они являются более расширенной альтернативой подключаемым модулям системы управления версиями.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69245d9a5c4fb8b27e66b5f1860063756cd46520
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e444b73dce312625c7f86eda2930ba683e504f2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708328"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480490"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>Приступая к работе с пакетом VSPackage в системе управления версиями
 

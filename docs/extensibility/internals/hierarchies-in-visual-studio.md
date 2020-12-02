@@ -1,5 +1,7 @@
 ---
 title: Иерархии в Visual Studio | Документация Майкрософт
+description: Сведения о иерархиях проектов в интегрированной среде разработки (IDE) Visual Studio, содержащей элементы проекта и связанные с ними свойства.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdbb8a0e58f6b1e5bc6e32f8c319d1480c4db4b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a7126f52517b1028cf878750294f1d4c7dbfe26
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708191"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480360"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Иерархии в Visual Studio
 В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среде разработки (IDE) проект отображается как *Иерархия*. В интегрированной среде разработки иерархия — это дерево узлов, в котором каждый узел имеет набор связанных свойств. *Иерархия проектов* — это контейнер, который содержит элементы проекта, связи элементов и связанные свойства и команды элементов.

@@ -1,5 +1,7 @@
 ---
 title: Обработка специализированного развертывания | Документация Майкрософт
+description: Узнайте, как управлять специализированным развертыванием проекта приложения в Visual Studio. Например, развертывание на веб-сервере или на устройстве.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 972965c3565088af8205d6f7903d7098e568c057
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 664625cd8737fb9a9a3e398716d750d6d9665529
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708212"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480438"
 ---
 # <a name="handle-specialized-deployment"></a>Обрабатывайте специализированное развертывание
 Развертывание является необязательной операцией для проектов. Веб-проект, например, поддерживает развертывание, чтобы проект мог обновить веб-сервер. Аналогично, проект **смарт-устройства** поддерживает развертывание для копирования приложения на целевое устройство. Подтипы проектов могут предоставлять специализированное поведение при развертывании путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> интерфейса. Этот интерфейс определяет полный набор операций развертывания:

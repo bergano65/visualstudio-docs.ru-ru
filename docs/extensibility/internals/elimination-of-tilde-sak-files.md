@@ -1,5 +1,7 @@
 ---
 title: Исключение файлов ~ SAK | Документация Майкрософт
+description: Сведения об отключении файлов ~ SAK из API подключаемого модуля системы управления версиями 1,2 и о том, как они были заменены флагами возможностей и новыми функциями.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0294198bb1560f8df6f17170013f88d4fe11e5cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e846354b2d48b2f7866daa14987e757f41779c8
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708501"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480516"
 ---
 # <a name="elimination-of-sak-files"></a>Исключение файлов ~ SAK
 В API подключаемого модуля системы управления версиями 1,2 файлы *~ SAK* были заменены флагами возможностей и новыми функциями, которые определяют, поддерживает ли подключаемый модуль системы управления версиями файл *мссккпрж* и общие извлечения.
@@ -45,10 +47,10 @@ Visual Studio .NET 2003 создал временные файлы с префи
 
  Если подключаемый модуль системы управления версиями поддерживает создание и использование файла *мссккпрж. SCC* , он объявляет `SCC_CAP_SCCFILE` возможность и реализует [скквиллкреатесккфиле](../../extensibility/sccwillcreatesccfile-function.md). Эта функция вызывается со списком файлов. Функция возвращает `TRUE' or 'FALSE` для каждого файла, чтобы указать, должен ли Visual Studio использовать для него файл *МССККПРЖ. SCC* . Если подключаемый модуль системы управления версиями не поддерживает эти новые возможности и функции, для отключения создания этих файлов можно использовать следующий раздел реестра:
 
- **[HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] доноткреатетемпорарифилесинсаурцеконтрол**  =  *DWORD: 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl**  =  *DWORD: 00000001*
 
 > [!NOTE]
 > Если этот раздел реестра имеет значение *типа DWORD: 00000000*, то он эквивалентен несуществующему ключу, и Visual Studio по-прежнему пытается создать временные файлы. Однако если для раздела реестра задано значение *DWORD: 00000001*, Visual Studio не пытается создать временные файлы. Вместо этого предполагается, что подключаемый модуль системы управления версиями не поддерживает файл *мссккпрж. SCC* и не поддерживает совместное извлечение.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Новые возможности в API подключаемого модуля системы управления версиями, версия 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

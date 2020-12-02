@@ -1,5 +1,7 @@
 ---
 title: Предоставление событий в пакете SDK для Visual Studio | Документация Майкрософт
+description: Сведения о методах и записях реестра Visual Studio, которые предоставляют события для проектов и элементов проектов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48f1e0ea0dcd07bbc26fc89d5c61a6a5941d4727
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5eec842f989497fda618482916154aabdcdd406
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708490"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480542"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Предоставление событий в пакете SDK для Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] позволяет выполнять исходные события с помощью автоматизации. Рекомендуется использовать исходные события для проектов и элементов проектов.
@@ -27,7 +29,7 @@ ms.locfileid: "80708490"
 
 1. Среда запустится.
 
-2. Он считывает из реестра все имена значений в ключах **Automation**, **аутоматионевентс**и **AutomationProperties** всех пакетов VSPackage и сохраняет эти имена в таблице.
+2. Он считывает из реестра все имена значений в ключах **Automation**, **аутоматионевентс** и **AutomationProperties** всех пакетов VSPackage и сохраняет эти имена в таблице.
 
 3. Потребитель автоматизации вызывает в этом примере `DTE.Events.AutomationProjectsEvents` или `DTE.Events.AutomationProjectItemsEvents` .
 
@@ -46,13 +48,13 @@ ms.locfileid: "80708490"
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Записи реестра из примера "базовый проект"
  В этом разделе показано, куда добавить в реестр значения событий автоматизации.
 
- **[HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\8.0\Packages \\<пкггуид \> \аутоматионевентс]**
+ **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<пкггуид \> \аутоматионевентс]**
 
  **Аутоматионпрожектевентс** = возвращает `AutomationProjectEvents` объект.
 
  **Аутоматионпрожектитемевентс** = возвращает `AutomationProjectItemsEvents` объект.
 
-|Имя|Type|Диапазон|Описание|
+|Название|Type|Диапазон|Описание|
 |----------|----------|-----------|-----------------|
 |По умолчанию (@)|REG_SZ|Не используется|Не используется. Для документации можно использовать поле данных.|
 |*аутоматионпрожектсевентс*|REG_SZ|Имя объекта события.|Уместно только имя ключа. Для документации можно использовать поле данных.<br /><br /> Этот пример взят из примера "базовый проект".|
@@ -62,7 +64,7 @@ ms.locfileid: "80708490"
 
  ![События проекта Visual Studio](../../extensibility/internals/media/projectevents.gif "прожектевентс") Модель автоматизации для событий
 
- Класс `CProjectEventsContainer` представляет исходный объект для *бскпрожектсевентс*и `CProjectItemsEventsContainer` представляет исходный объект для *бскпрожектитемсевентс*.
+ Класс `CProjectEventsContainer` представляет исходный объект для *бскпрожектсевентс* и `CProjectItemsEventsContainer` представляет исходный объект для *бскпрожектитемсевентс*.
 
  В большинстве случаев необходимо вернуть новый объект для каждого запроса события, так как большинство объектов событий принимает объект фильтра. При срабатывании события проверьте этот фильтр, чтобы убедиться, что обработчик событий вызывается.
 
@@ -108,5 +110,5 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 
  Объекты событий извлекаются из одного центрального расположения — `DTE.Events` объекта. Таким образом, все объекты событий группируются, так что конечному пользователю не придется просматривать всю объектную модель, чтобы найти определенное событие. Это также позволяет предоставлять конкретные объекты VSPackage, вместо того чтобы реализовывать собственный код для системных событий. Однако для конечного пользователя, который должен найти событие для вашего `ProjectItem` интерфейса, не сразу же ясно, откуда извлекается этот объект события.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

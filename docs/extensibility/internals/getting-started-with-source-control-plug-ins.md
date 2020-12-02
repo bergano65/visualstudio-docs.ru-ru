@@ -1,5 +1,7 @@
 ---
 title: начало работы с подключаемыми модулями системы управления версиями | Документация Майкрософт
+description: Сведения о создании подключаемого модуля системы управления версиями, который реализует функции, определенные в интерфейсе API подключаемого модуля системы управления версиями, для использования в системе управления версиями исходного кода.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efc21e07830614d9d3041b2d2d231fd82c652114
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1524e4c4f08b272fd17973597d558efdabec41af
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708348"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480503"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>Начало работы с подключаемыми модулями системы управления версиями
 Чтобы создать подключаемый модуль системы управления версиями, необходимо создать библиотеку DLL, которая реализует функции, определенные в интерфейсе API подключаемого модуля системы управления версиями, а затем зарегистрировать библиотеку DLL с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] целью сделать ее доступной для использования в системе управления версиями исходного кода.

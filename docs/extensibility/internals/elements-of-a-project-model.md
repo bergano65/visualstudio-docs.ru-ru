@@ -1,5 +1,7 @@
 ---
 title: Элементы модели проекта | Документация Майкрософт
+description: Сведения об элементах модели проекта и о том, как интерфейсы и реализации всех проектов в Visual Studio совместно используют базовую структуру.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cafc167eac28b7560287c6de88ee8c490196007
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: e366b2923d5903f00241db0a6b71017dc25f3dee
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011779"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480048"
 ---
 # <a name="elements-of-a-project-model"></a>Элементы модели проекта
 Интерфейсы и реализации всех проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] совместном использовании базовой структуры: модель проекта для типа проекта. В модели проекта, которая является разрабатываемым пакетом VSPackage, вы создаете объекты, которые соответствуют решениям по проектированию и совместно работают с глобальными функциями, предоставляемыми интегрированной средой разработки. Хотя вы управляете сохранением элемента проекта, например, вы не контролируете уведомление о том, что файл должен быть сохранен. Когда пользователь помещает фокус на открытый элемент проекта и выбирает команду **сохранить** в меню **файл** в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] строке меню, код типа проекта должен перехватить команду из интегрированной среды разработки, сохранить файл и отправить уведомление обратно в интегрированную среду разработки, что файл больше не изменяется.
@@ -40,7 +42,7 @@ ms.locfileid: "90011779"
 
   Проекты могут поддерживать команды и поэтому должны реализовывать <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс для участия в маршрутизации команд через идентификаторы GUID контекста команды.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Контрольный список: создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Использование классов проектов HierUtil7 для реализации типа проекта (C++)](/previous-versions/bb166212(v=vs.100))
 - [Основные компоненты модели проекта](../../extensibility/internals/project-model-core-components.md)

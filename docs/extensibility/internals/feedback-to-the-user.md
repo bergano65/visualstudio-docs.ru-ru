@@ -1,5 +1,7 @@
 ---
 title: Отзыв пользователю | Документация Майкрософт
+description: Узнайте, как предоставить пользователю визуальные Отзывы о доступных функциях в интегрированной среде разработки (IDE) Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b9190b16b9aa444384847bf209ccca50c7f768
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8f3f79a61729a641ee7c046ddd196a648469fb3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708415"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480529"
 ---
 # <a name="feedback-to-the-user"></a>Отзыв пользователю
 В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среде разработки (IDE) визуальная обратная связь о доступных функциональных возможностях зависит от текущего выбора пользователя и контекста глобального выбора. В следующей таблице перечислены функциональные возможности, доступные в разных контекстах выбора.
@@ -57,7 +59,7 @@ ms.locfileid: "80708415"
 
 - Активное окно иерархии, которое обычно **Обозреватель решений**, а его заголовок обновляется в соответствии с текущим контекстом, а команды меню контекстно-зависимого **проекта** теперь применяются к активному проекту веб-приложения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Выбор и валюта в интегрированной среде разработки](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 - [Объекты контекста выделения](../../extensibility/internals/selection-context-objects.md)
 - [Иерархии и выбор](../../extensibility/internals/hierarchies-and-selection.md)

@@ -1,5 +1,7 @@
 ---
 title: Идентификаторы GUID и идентификаторы меню Visual Studio | Документация Майкрософт
+description: Просмотрите список значений GUID и ИДЕНТИФИКАТОРов для меню и групп в строке меню Visual Studio, включенной в интегрированную среду разработки Visual Studio (IDE).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a656d5cb9a126a9dc3988d70a290fceb3e56439e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0203c8b7028fb170ae2ba4d2cc9d6f1825414f64
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708240"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480412"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Идентификаторы GUID и идентификаторы меню Visual Studio
 В этой статье перечисляются значения GUID и ID меню и групп в строке меню Visual Studio. Эти значения определены в файлах *. vsct* , которые устанавливаются в составе пакета SDK для Visual Studio. Дополнительные сведения см. в разделе [команды, меню и группы, определяемые интегрированной средой разработки](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -35,8 +37,8 @@ ms.locfileid: "80708240"
 |Группа|ID|
 |-----------|--------|
 |Файл/Правка/представление|IDG_VS_MM_FILEEDITVIEW|
-|Refactoring|IDG_VS_MM_REFACTORING:|
-|Project|IDG_VS_MM_PROJECT|
+|Рефакторинг|IDG_VS_MM_REFACTORING:|
+|Проект|IDG_VS_MM_PROJECT|
 |Сборка|IDG_VS_MM_BUILDDEBUGRUN|
 |Формат/средства|IDG_VS_MM_TOOLSADDINS|
 |Окно/Справка/сообщество|IDG_VS_MM_WINDOWHELP|
@@ -52,7 +54,7 @@ ms.locfileid: "80708240"
 |Изменить|IDM_VS_MENU_EDIT|
 |Просмотр|IDM_VS_MENU_VIEW|
 |Рефакторинг|IDM_VS_MENU_REFACTORING|
-|Project|IDM_VS_MENU_PROJECT|
+|Проект|IDM_VS_MENU_PROJECT|
 |Сборка|IDM_VS_MENU_BUILD|
 |Формат|IDM_VS_MENU_FORMAT|
 |Инструменты|IDM_VS_MENU_TOOLS|
@@ -114,7 +116,7 @@ ms.locfileid: "80708240"
 |Браузер кода|IDG_VS_VIEW_CODEBROWSENAV_WINDOWS|
 |Окна разработки|IDG_VS_VIEW_DEV_WINDOWS|
 |Панели инструментов|IDG_VS_VIEW_TOOLBARS|
-|Символы|IDG_VS_VIEW_SYMBOLNAVIGATE|
+|символы.|IDG_VS_VIEW_SYMBOLNAVIGATE|
 |Перейти.|IDG_VS_VIEW_NAVIGATE|
 |Мелкий переход|IDG_VS_VIEW_SMALLNAVIGATE|
 |Обозреватель объектов|IDG_VS_VIEW_OBJBRWSR|
@@ -139,7 +141,7 @@ ms.locfileid: "80708240"
 |Группа|ID|
 |-----------|--------|
 |Решение|IDG_VS_BUILD_SOLUTION|
-|Выбранное|IDG_VS_BUILD_SELECTION|
+|Выбор|IDG_VS_BUILD_SELECTION|
 |Оптимизация с использованием профиля|IDG_VS_PGO_SELECTION|
 |Прочее|IDG_VS_BUILD_MISC|
 |Отменить|IDG_VS_BUILD_CANCEL|
@@ -160,12 +162,12 @@ ms.locfileid: "80708240"
 
 |Группа|ID|
 |-----------|--------|
-|Оператор new|IDG_VS_WINDOW_NEW|
+|Создать|IDG_VS_WINDOW_NEW|
 |Закрепить/закрыть|IDG_VS_DOCKCLOSE|
 |Закрепить/скрыть|IDG_VS_DOCKHIDE|
 |Упорядочить|IDG_VS_WINDOW_ARRANGE|
 |Навигация|IDG_VS_WINDOW_NAVIGATION|
-|List|IDG_VS_WINDOW_LIST|
+|Список|IDG_VS_WINDOW_LIST|
 
 ### <a name="help-menu-groups"></a>Группы меню "Справка"
 
@@ -179,7 +181,7 @@ ms.locfileid: "80708240"
  В следующей иерархии отображаются подменю, связанные с меню в строке меню Visual Studio. Так как только группа может иметь меню в качестве своего родителя, каждое подменю должно быть в группе в меню, а не непосредственно из меню. Дополнительные сведения о связях между меню, группами и подменю см. в разделе Добавление подменю [в меню](../../extensibility/adding-a-submenu-to-a-menu.md).
 
 > [!NOTE]
-> Имена меню в строке меню Visual Studio не отображаются отдельно в этой иерархии, так как их можно вывести из соглашения об именовании для групп в интегрированной среде разработки следующим образом: *IDG_VS_ \<Menu Name\> _ \<Group Name\> *.
+> Имена меню в строке меню Visual Studio не отображаются отдельно в этой иерархии, так как их можно вывести из соглашения об именовании для групп в интегрированной среде разработки следующим образом: *IDG_VS_ \<Menu Name\> _ \<Group Name\>*.
 
 |Родительская группа|Служат|Дочерние группы|
 |------------------|-------------|------------------|

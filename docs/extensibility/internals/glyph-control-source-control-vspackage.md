@@ -1,5 +1,7 @@
 ---
 title: Элемент управления глифами (пакет VSPackage системы управления версиями) | Документация Майкрософт
+description: Узнайте, как отображать пользовательские глифы в пакете VSPackage системы управления версиями, чтобы можно было использовать собственные значки для указания состояния элементов в системе управления версиями.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9db1b4542eae293e39cda674fac3eb984aa77d3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaf7f40224e2f197627bb995dc6cccdf297b46e5
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708322"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480477"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>Элемент управления глифами (пакет VSPackage системы управления версиями)
 Часть глубокой интеграции, доступная для пакетов VSPackage системы управления версиями, позволяет отображать собственные глифы для указания состояния элементов в системе управления версиями.
@@ -34,7 +36,7 @@ ms.locfileid: "80708322"
 
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs.GetCustomGlyphList%2A>Метод используется [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для получения списка изображений, показывающих различные состояния системы управления версиями. Пакет VSPackage системы управления версиями возвращает в интегрированную среду разработки маркер в список изображений для своих пользовательских глифов. В этом месте интегрированная среда разработки создает копию списка изображений и использует ее позже для выбора глифов для вывода. Если новый интерфейс не поддерживается или `IVsSccGlyphs::GetCustomGlyphList` метод возвращает значение `E_NOTIMPL` , интегрированная среда разработки получает свои глифы из списка по умолчанию для глифов, предоставляемых [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>
 - <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>
