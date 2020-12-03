@@ -8,15 +8,21 @@
       items:
         - name: Обзор
           href: roslyn-analyzers-overview.md
+        - name: Установка
+          expanded: true
+          items:
+            - name: Анализаторы .NET
+              href: install-net-analyzers.md
+            - name: Сторонние анализаторы
+              href: install-roslyn-analyzers.md
         - name: Конфигурация
           expanded: true
           items:
             - name: Обзор
               href: use-roslyn-analyzers.md
             - name: Анализаторы .NET
+              expanded: true
               items:
-                - name: Установка анализаторов .NET
-                  href: install-net-analyzers.md
                 - name: Качество кода
                   items:
                     - name: Параметры качества кода
@@ -42,8 +48,6 @@
               href: automatic-feature-suspension.md
             - name: Подавление нарушений анализа кода
               href: in-source-suppression-overview.md
-        - name: Установка сторонних анализаторов
-          href: install-roslyn-analyzers.md
         - name: ВОПРОСЫ И ОТВЕТЫ
           href: analyzers-faq.md
     - name: Анализ прежних версий
