@@ -1,5 +1,7 @@
 ---
 title: Запуск программы | Документация Майкрософт
+description: Сведения о ряде событий, которые происходят при отладке программы с помощью клавиши F5 для запуска отладчика из IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf638e0c96c7df1de2650260427a972a07efce23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dce13e49eeadf4dc02fec07707bebcfe164ed9c
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738476"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606701"
 ---
 # <a name="launch-a-program"></a>Запуск программы
 Пользователи, желающие выполнить отладку программы, могут нажать клавишу **F5** , чтобы запустить отладчик из интегрированной среды разработки. Это запускает серию событий, которые в конечном итоге присоединяются к подсистеме отладки (DE), которая в свою очередь подключена или подключена к программе следующим образом:

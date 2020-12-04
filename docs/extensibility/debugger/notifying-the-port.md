@@ -1,5 +1,7 @@
 ---
 title: Уведомление порта | Документация Майкрософт
+description: Узнайте, как будет уведомлен порт после запуска программы. Эта статья содержит подробное описание.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff94c20969e77bcc70af2f5a16137e09366a0d7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9a838879e7c1eb590bb16cd12a6bf345de8031a
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738325"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606623"
 ---
 # <a name="notify-the-port"></a>Уведомление порта
 После запуска программы порт должен быть уведомлен следующим образом:
@@ -44,7 +46,7 @@ ms.locfileid: "80738325"
 
  После того, как удостоверение DE известно, модель SDM готова к присоединению к программе.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Запуск программы](../../extensibility/debugger/launching-a-program.md)
 - [Подключение после запуска](../../extensibility/debugger/attaching-after-a-launch.md)
 - [Задачи отладки](../../extensibility/debugger/debugging-tasks.md)

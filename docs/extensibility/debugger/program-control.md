@@ -1,5 +1,7 @@
 ---
 title: Управление программой | Документация Майкрософт
+description: Сведения о подпрограммах в отладке Visual Studio, происходящих на уровне программы, таких как выполнение, выполнение шагов, продолжение и приостановка и возобновление потоков.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e77e233050c5ce10aef5053f82c8d26cb984b85
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 640b09620022d17fd6b7c8758f1dec4f9a3936eb
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738227"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606532"
 ---
 # <a name="program-control"></a>Управление программой
 В отладке Visual Studio все следующие пошаговые и продолжающиеся подпрограммы выполняются на уровне программы:
@@ -46,5 +48,5 @@ ms.locfileid: "80738227"
 
  Для многопоточных программ также необходимо реализовать метод [IDebugProgram2:: EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) и все методы интерфейса [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Контроль выполнения и оценка состояния](../../extensibility/debugger/execution-control-and-state-evaluation.md)

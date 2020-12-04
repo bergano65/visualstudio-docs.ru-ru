@@ -1,5 +1,7 @@
 ---
 title: Операционные режимы | Документация Майкрософт
+description: Сведения о трех режимах, в которых может работать интегрированная среда разработки, в режиме конструктора, режиме выполнения и режиме приостановки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027152b2b2fc18b509a687220e5d963ea1b7e721
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cabf32dcbe8b4d2e925bcfd48635063ecd0a5b74
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738279"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606610"
 ---
 # <a name="operational-modes"></a>Операционные режимы
 Существует три режима работы интегрированной среды разработки, как показано ниже.
@@ -54,5 +56,5 @@ ms.locfileid: "80738279"
 
  Когда программа успешно перейдет к следующей строке кода или к функции либо выполняется в курсоре или в точку останова, параметр DE автоматически переходит в режим приостановки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Управление выполнением](../../extensibility/debugger/control-of-execution.md)

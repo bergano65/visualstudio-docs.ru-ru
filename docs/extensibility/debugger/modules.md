@@ -1,5 +1,7 @@
 ---
 title: Модули | Документация Майкрософт
+description: В этой статье описывается определение и роль модуля в архитектуре отладчика в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abdf76c7f5f031d2ef7f3bcac2bae8a2c508b783
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57202231c1bbfc7712d322b8cc7a30e3f64c87af
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738349"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606649"
 ---
 # <a name="modules"></a>Модули
 В плане архитектуры отладчика это *модуль*:
@@ -27,6 +29,6 @@ ms.locfileid: "80738349"
 
 - Представляется интерфейсом [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) , созданным модулем отладки для описания модуля.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)
