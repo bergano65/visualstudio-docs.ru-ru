@@ -1,5 +1,7 @@
 ---
 title: Вычисление выражений (пакет SDK для отладки Visual Studio) | Документация Майкрософт
+description: В режиме приостановки выполнения среда IDE вычисляет выражения, содержащие переменные программы. Узнайте, как модуль отладки анализирует и оценивает выражение.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e41179fd530818f5ac59aa54420ede1b4eafa1ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c398d9eb79a6b5fcd1a6851596ab8913faf32fa
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738710"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560893"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Вычисление выражений (пакет SDK для отладки Visual Studio)
 В режиме приостановки выполнения среда IDE должна оценивать простые выражения, включающие в себя несколько переменных программы. Чтобы выполнить оценку, модуль отладки (DE) должен проанализировать и оценить выражение, введенное в одно из окон интегрированной среды разработки.
@@ -38,5 +40,5 @@ ms.locfileid: "80738710"
 
  Синхронная и асинхронная Оценка требует реализации метода [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) . Для вычисления асинхронного выражения требуется реализация [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Контроль выполнения и оценка состояния](../../extensibility/debugger/execution-control-and-state-evaluation.md)

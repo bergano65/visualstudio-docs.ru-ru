@@ -1,5 +1,7 @@
 ---
 title: Реализация визуализаторов типов и пользовательских средств просмотра | Документация Майкрософт
+description: Сведения о реализации визуализаторов типов и пользовательских средств просмотра, позволяющих пользователю просматривать данные так, чтобы они были более осмысленными, чем дампы чисел.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ebbb5c8e27df4ae4baf2d9a9f1c3314188e2b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc3b1f2510742e2d0656727826e5b4aeae935b6f
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738505"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559905"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>Реализация визуализаторов типов и пользовательских средств просмотра
 > [!IMPORTANT]
@@ -55,7 +57,7 @@ ms.locfileid: "80738505"
 
 - [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Написание вычислителя выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Визуализация и просмотр данных](../../extensibility/debugger/visualizing-and-viewing-data.md)
 - [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)

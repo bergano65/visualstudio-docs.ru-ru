@@ -1,5 +1,7 @@
 ---
 title: Вычисление выражений в режиме приостановки выполнения | Документация Майкрософт
+description: Сведения о процессе, который происходит, когда отладчик находится в режиме приостановки выполнения и должен выполнять оценку выражений.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc09fc43bd9f0edea4f6dc32e5f37c387c045796
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e73d98e9fff713258f4797577fd8402932fe266
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738724"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559640"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>Вычисление выражений в режиме приостановки выполнения
 В следующем разделе описывается процесс, выполняемый, когда отладчик находится в режиме приостановки выполнения и должен выполняться вычисление выражения.
@@ -39,5 +41,5 @@ ms.locfileid: "80738724"
 
     - При использовании `IDebugExpression2::EvaluateAsync` данный интерфейс обратного вызова сообщает о текущем процессе вычисления. После завершения оценки Евалуатеасинк отправляет интерфейс [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) через обратный вызов. При использовании этого интерфейса событий итоговое значение выдается с помощью параметра [result](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [События отладчика Call](../../extensibility/debugger/calling-debugger-events.md)

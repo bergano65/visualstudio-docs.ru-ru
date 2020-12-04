@@ -1,5 +1,7 @@
 ---
 title: Реализация поставщика порта | Документация Майкрософт
+description: Сведения о реализации поставщика порта, который необходим при отладке на компьютере, отличном от DCOM, или при необходимости поддержки нового устройства.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8218e372ad3aece922811bc20cfd7650f33296f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72963660e4f50a72cdbc04bab4833b397d15fc27
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738557"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560672"
 ---
 # <a name="implement-a-port-supplier"></a>Реализация поставщика порта
 Поставщик порта предоставляет порты по запросу к диспетчеру отладки сеансов (SDM). Поставщик порта должен быть реализован при отладке на компьютере, отличном от DCOM, или при необходимости поддержки нового устройства. Например, чтобы обеспечить отладку на мобильном телефоне, можно настроить поставщика порта, который предоставляет порты, которые подключаются к сотовому телефону (возможно, с помощью ИНФРАКРАСного соединения или подключения к ячейке) и перечисляют процессы и программы, запущенные на телефоне.
@@ -29,7 +31,7 @@ ms.locfileid: "80738557"
  [Требуемые интерфейсы поставщика портов](../../extensibility/debugger/required-port-supplier-interfaces.md) Документирует интерфейсы, которые необходимо реализовать для получения поставщика порта.
 
 ## <a name="related-sections"></a>Связанные разделы
- [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md) Описывает основные понятия архитектуры отладки.
+ [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md). Описываются основные понятия архитектуры отладки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Расширяемость отладчика Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

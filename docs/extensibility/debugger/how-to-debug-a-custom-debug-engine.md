@@ -1,5 +1,7 @@
 ---
 title: Как выполнить отладку пользовательского модуля отладки | Документация Майкрософт
+description: Сведения о шагах, позволяющих использовать Visual Studio для отладки пользовательского модуля отладки или пользовательского типа проекта.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a65e69655c4e8699bd267f1835ec0c49603014d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79ceea58fc78922cd07bb6635ed2f399e97dd1c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903308"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560815"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Как выполнить отладку пользовательского модуля отладки
 Тип проекта запускает модуль отладки (DE) из <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> метода. Это означает, что DE запускается под управлением экземпляра, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] управляющего типом проекта. Однако этот экземпляр [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] не может выполнить отладку de. Ниже приведены шаги, позволяющие выполнить отладку пользовательского DE.
@@ -31,7 +33,7 @@ ms.locfileid: "85903308"
 
 1. Запуск *msvsmon.exe*, монитор удаленной отладки.
 
-2. В меню **Сервис** в *msvsmon.exe*выберите **Параметры** , чтобы открыть диалоговое окно **Параметры** .
+2. В меню **Сервис** в *msvsmon.exe* выберите **Параметры** , чтобы открыть диалоговое окно **Параметры** .
 
 3. Выберите параметр без проверки подлинности и нажмите кнопку **ОК**.
 
@@ -57,9 +59,9 @@ ms.locfileid: "85903308"
 
 1. Запустите [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] в нормальном кусте реестра и загрузите проект типа проекта (это источник для типа проекта, а не экземпляр типа проекта).
 
-2. Откройте свойства проекта и перейдите на страницу **Отладка** . Для **команды**введите путь к [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среде разработки (по умолчанию это *[диск]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).
+2. Откройте свойства проекта и перейдите на страницу **Отладка** . Для **команды** введите путь к [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среде разработки (по умолчанию это *[диск]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).
 
-3. В качестве **аргументов команды**введите `/rootsuffix exp` для экспериментального куста реестра (созданного при установке VSIP).
+3. В качестве **аргументов команды** введите `/rootsuffix exp` для экспериментального куста реестра (созданного при установке VSIP).
 
 4. Нажмите кнопку **ОК** , чтобы принять изменения.
 
@@ -73,5 +75,5 @@ ms.locfileid: "85903308"
 
 9. Если вы решили отладить процесс запуска DE, можно выполнить действия, описанные в процедуре "Отладка настраиваемого модуля отладки", чтобы присоединиться к папке DE после запуска. При этом будут выполняться три экземпляра [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] : один для источника типа проекта, второй для созданного типа проекта, а третий присоединяется к вашему de.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Создание пользовательского модуля отладки](../../extensibility/debugger/creating-a-custom-debug-engine.md)

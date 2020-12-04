@@ -1,5 +1,7 @@
 ---
 title: Получение порта | Документация Майкрософт
+description: Узнайте, как Visual Studio передает порт модулю отладки для регистрации узлов программы с помощью порта и для удовлетворения запросов сведений о процессах.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf4948e7cb2590136774eab76fbafec91dbfa40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd86d84ba4187df70d2aa02181249336c38dda41
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738629"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560052"
 ---
 # <a name="get-a-port"></a>Получение порта
 Порт представляет подключение к компьютеру, на котором выполняются процессы. Это может быть локальный компьютер или удаленный компьютер (который может работать под управлением операционных систем, отличных от Windows; Дополнительные сведения см. в разделе [порты](../../extensibility/debugger/ports.md) ).
@@ -96,7 +98,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Регистрация программы](../../extensibility/debugger/registering-the-program.md)
 - [Включение отладки программы](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
 - [Поставщики портов](../../extensibility/debugger/port-suppliers.md)

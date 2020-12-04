@@ -1,5 +1,7 @@
 ---
 title: Стратегия реализации средства оценки выражений | Документация Майкрософт
+description: Сведения о стратегии создания вычислительных выражений путем первой реализации кода для вывода локальных переменных в окне Локальные.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3922689c20c839b3c0c2b2440bc9fefd5d25c80a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b936b465c3a7becbdcb3ea4f36a16b839260ad74
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738668"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560152"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>Стратегия реализации средства оценки выражений
 > [!IMPORTANT]
@@ -29,6 +31,6 @@ ms.locfileid: "80738668"
 
  Метод [енумчилдрен](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) должен быть реализован далее. Модуль отладки (DE) вызывает этот метод для получения списка локальных переменных и аргументов путем передачи `IDebugProperty2::EnumChildren` `guidFilter` аргумента `guidFilterLocalsPlusArgs` . `IDebugProperty2::EnumChildren` вызывает [енумаргументс](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) и [енумлокалс](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md), объединяя результаты в одно перечисление. Дополнительные сведения см. в разделе [отображение локальных переменных](../../extensibility/debugger/displaying-locals.md) .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Реализация средства оценки выражений](../../extensibility/debugger/implementing-an-expression-evaluator.md)
 - [Отобразить локальные переменные](../../extensibility/debugger/displaying-locals.md)

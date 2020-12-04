@@ -1,5 +1,7 @@
 ---
 title: Контекст вычисления выражения | Документация Майкрософт
+description: Сведения о контексте оценки выражений, который представляет контекст для оценки выражения и существует при остановке программы в точке останова.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e939a4fa5f4673e2f701206c96599c54bc0c3b51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26705b32628a9bd9ecc79489e2552f2d7e537273
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738736"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559684"
 ---
 # <a name="expression-evaluation-context"></a>Контекст вычисления выражения
 При [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладке **контекст вычисления выражения**:
@@ -28,6 +30,6 @@ ms.locfileid: "80738736"
 
      При наличии `BSTR` интерфейса и [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) механизм отладки (de) может создать интерфейс [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) путем синтаксического анализа выражения. При наличии `IDebugExpression2` интерфейса de может получить значение посредством синхронной или асинхронной оценки выражений. Это значение вместе с именем и типом переменной или аргумента отправляется в интегрированную среду разработки для вывода.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Интерфейсы оценки выражений](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [Контексты отладчика](../../extensibility/debugger/debugger-contexts.md)
