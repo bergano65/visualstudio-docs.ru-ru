@@ -272,8 +272,8 @@
           href: ide/codespaces/customize-codespaces.md
         - name: Поддерживаемые функции Visual Studio
           href: ide/codespaces/supported-features-codespaces.md
-    - name: Подключиться к проекту или репозиторию
-      displayName: Azure DevOps VSTS GitHub
+    - name: Подключение к проектам в Team Explorer
+      displayName: Azure DevOps VSTS
       href: ide/connect-team-project.md
     - name: "Новый интерфейс Git в Visual\_Studio"
       href: ide/git-with-visual-studio.md
@@ -968,7 +968,7 @@
           href: ide/filtered-solutions.md
         - name: Советы и рекомендации
           href: ide/visual-studio-performance-tips-and-tricks.md
-- name: Возможности доступа
+- name: Специальные возможности
   items:
     - name: Управление специальными возможностями
       href: ide/reference/accessibility-features-of-visual-studio.md
@@ -1102,7 +1102,7 @@
                   href: ide/reference/autorecover-environment-options-dialog-box.md
                 - name: Документы
                   href: ide/reference/documents-environment-options-dialog-box.md
-                - name: Модули
+                - name: Расширения
                   href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
                 - name: Найти и заменить
                   href: ide/reference/find-and-replace-environment-options-dialog-box.md
@@ -1407,7 +1407,7 @@
                   href: help-viewer/logical-operators-search-expressions.md
         - name: Настройка окна справки
           href: help-viewer/customize.md
-        - name: Возможности доступа
+        - name: Специальные возможности
           href: help-viewer/accessibility-features.md
         - name: Сочетания клавиш
           href: help-viewer/shortcut-keys.md
@@ -1439,7 +1439,7 @@
       items:
         - name: График выпуска
           href: /visualstudio/productinfo/release-rhythm/
-        - name: "Visual\_Studio\_2017"
+        - name: "Visual Studio\_2017"
           items:
             - name: Заметки о текущем выпуске
               href: /visualstudio/releasenotes/vs2017-relnotes/
