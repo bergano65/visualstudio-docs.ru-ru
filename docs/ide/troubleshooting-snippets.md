@@ -1,5 +1,7 @@
 ---
 title: Устранение неполадок с фрагментами
+description: Узнайте, как устранять неполадки с фрагментами кода IntelliSense обычно вызваны поврежденным файлом фрагмента или неправильным его содержимым.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a699c6a158b5a0751824c7634ddd637467da50d2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4012298bdc4edf0c174576c739e67781bfffdade
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588698"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479216"
 ---
 # <a name="troubleshoot-snippets"></a>Устранение неполадок с фрагментами
 
@@ -35,6 +37,6 @@ ms.locfileid: "75588698"
 
 - Возможно, не определена переменная. Неопределенные переменные во фрагменте кода должны быть выделены. В противном случае об этой ошибке можно сообщить автору фрагмента.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Фрагменты кода](../ide/code-snippets.md)

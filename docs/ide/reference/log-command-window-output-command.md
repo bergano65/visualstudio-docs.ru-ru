@@ -1,5 +1,7 @@
 ---
 title: Команда Log Command Window Output
+description: Сведения о команде Log Command Window Output и копировании всех входных и выходных данных из командного окна в файл.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cab4f102832e8dfa6ce51b61abed8e3bfd672c40
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568663"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305272"
 ---
 # <a name="log-command-window-output-command"></a>Команда Log Command Window Output
 
@@ -33,7 +35,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ## <a name="arguments"></a>Аргументы
 
 `filename`\
-Необязательный параметр. Имя файла журнала. По умолчанию этот файл создается в папке профиля пользователя. Если такое имя файла уже существует, журнал добавляется в конец имеющегося файла. Если файл не указан, используется последний указанный файл. Если предыдущий файл отсутствует, создается файл журнала по умолчанию с именем cmdline.log.
+Необязательный элемент. Имя файла журнала. По умолчанию этот файл создается в папке профиля пользователя. Если такое имя файла уже существует, журнал добавляется в конец имеющегося файла. Если файл не указан, используется последний указанный файл. Если предыдущий файл отсутствует, создается файл журнала по умолчанию с именем cmdline.log.
 
 > [!TIP]
 > Чтобы изменить расположение для сохранения файла журнала, введите полный путь. Если этот путь содержит пробелы, заключите его в кавычки.
@@ -49,7 +51,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 /overwrite\
 Необязательный параметр. Если указанный в аргументе `filename` файл совпадает с существующим файлом, он перезаписывается.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Если файл не указан, создается файл по умолчанию cmdline.log. По умолчанию эта команда имеет псевдоним Log.
 
@@ -73,7 +75,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 >Tools.LogCommandWindowOutput /on
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)

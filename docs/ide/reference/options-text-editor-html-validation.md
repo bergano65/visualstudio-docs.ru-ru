@@ -1,5 +1,7 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", \"HTML (веб-формы)\", \"Проверка\""
+description: Узнайте, как использовать страницу "Правка" в разделе "HTML", чтобы настроить параметры проверки синтаксиса HTML-разметки в документе.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede4600cb1fa1df118b4635a193d8bff348d5119
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b65edc2b6c48bc76075e909d0f9bd1341a1b6dd8
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568286"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040567"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>"Параметры", "Текстовый редактор", "HTML (веб-формы)", "Проверка"
 
@@ -42,6 +44,6 @@ ms.locfileid: "75568286"
      > [!NOTE]
      > Некоторые схемы не предоставляют параметры для пометки отдельных типов ошибок. Например, при выборе **XHTML 1.1** в качестве схемы целевого объекта все флажки параметров будут сняты. В этом случае выделяются все типы ошибок.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)

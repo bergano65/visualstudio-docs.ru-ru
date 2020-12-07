@@ -1,5 +1,7 @@
 ---
 title: -DebugExe (devenv.exe)
+description: Узнайте, как использовать параметр командной строки DebugExe devenv, чтобы открыть указанный исполняемый файл для отладки.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aeae28288936b6723b53e826142a4888ad0bc8b4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6e60c3fb8a72caa44bcf70ac36850748ce240d42
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570145"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039475"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 
@@ -34,9 +36,9 @@ devenv /DebugExe ExecutableFile
 
 - *ExecutableFile*
 
-  Обязательный элемент. Путь и имя файла `.exe`. Если файл `.exe` не найден или не существует, предупреждения или ошибки не выводятся, а Visual Studio запускается обычным образом.
+  Обязательный. Путь и имя файла `.exe`. Если файл `.exe` не найден или не существует, предупреждения или ошибки не выводятся, а Visual Studio запускается обычным образом.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Строки, следующие за параметром *ExecutableFile*, передаются в этот файл в качестве аргументов.
 

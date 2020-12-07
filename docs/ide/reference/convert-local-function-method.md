@@ -1,5 +1,7 @@
 ---
 title: Преобразование локальной функции в метод
+description: Узнайте, как использовать меню "Быстрые действия и рефакторинг" для преобразования локальной функции в метод.
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -7,12 +9,12 @@ ms.author: kehavens
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3572682fe68d9b0b1bc4adee537de5cd056a8906
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64a46fc6221f00e6bb130be8010cb2544a00dcc8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71301696"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305569"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>Преобразование локальной функции в метод
 
@@ -40,7 +42,7 @@ ms.locfileid: "71301696"
 
     ![Пример результата преобразования локальной функции в метод](media/convert-local-function-to-method-result.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Рефакторинг](../refactoring-in-visual-studio.md)
 - [Советы для разработчиков .NET](../csharp-developer-productivity.md)

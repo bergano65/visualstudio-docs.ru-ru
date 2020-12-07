@@ -1,5 +1,7 @@
 ---
 title: Команда List Threads
+description: Узнайте о команде List Threads и о том, как использовать ее для отображения списка потоков в текущей программе.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b36b8f4d9970d94eb83c47b59e85d01f932589
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf7b3ed8b28a43c31efe68c6512f08883cb4187a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595492"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305261"
 ---
 # <a name="list-threads-command"></a>Команда List Threads
 Отображает список потоков в текущей программе.
@@ -33,9 +35,9 @@ Debug.ListThreads [index]
 ## <a name="arguments"></a>Аргументы
 `index`
 
-Необязательный параметр. Выбирает по индексу поток для использования в качестве текущего.
+Необязательный элемент. Выбирает по индексу поток для использования в качестве текущего.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 Если параметр указан, аргумент `index` помечает указанный поток в качестве текущего. Рядом с текущим потоком в списке отображается звездочка (*).
 
 ## <a name="example"></a>Пример
@@ -49,6 +51,6 @@ Debug.ListThreads [index]
 - [Команда "Вывести стек вызовов"](../../ide/reference/list-call-stack-command.md)
 - [Команда "Вывести дизассемблированный код"](../../ide/reference/list-disassembly-command.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Окно команд](../../ide/reference/command-window.md)
+- [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

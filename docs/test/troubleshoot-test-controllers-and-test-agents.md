@@ -1,5 +1,7 @@
 ---
 title: Управление контроллерами и агентами тестирования
+description: Узнайте о типичных проблемах, которые могут возникать при работе с контроллерами и агентами тестирования в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 51d7e15ec71eec7134dfc49b3515385970e593a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e86811739df2d59e3de7980cfa346da68cc0eb43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565959"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330151"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Стратегии устранения неполадок контроллеров и агентов тестирования в нагрузочных тестах
 
@@ -139,6 +141,6 @@ ms.locfileid: "75565959"
 
 Это применимо к контроллеру тестирования, службе агента тестирования и процессу агента тестирования. Свойство `BindTo` следует установить для каждого процесса, выполняющегося на компьютере с несколькими сетевыми адаптерами. Процедура по установке свойства `BindTo` одинакова для всех процессов (см. описание установки для контроллера тестирования). Чтобы установить уровни ведения журнала для службы агента тестирования и процесса агента тестирования, используйте файлы конфигурации, указанные в разделе [Установка уровня ведения журнала на компьютере контроллера тестирования](#set-the-logging-level-on-a-test-controller-computer).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Контроллеры и агенты тестирования](../test/configure-test-agents-and-controllers-for-load-tests.md)

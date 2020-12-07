@@ -1,5 +1,7 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", XML, \"Форматирование\""
+description: Узнайте, как использовать страницу "Форматирование" в разделе "XML" для указания способа форматирования элементов и атрибутов в документах XML.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9aac9420d084c64a4bd5d9199f6a7ca96b8c4281
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568143"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040515"
 ---
 # <a name="options-text-editor-xml-formatting"></a>"Параметры", "Текстовый редактор", XML, "Форматирование"
 
@@ -51,7 +53,7 @@ ms.locfileid: "75568143"
 
 ## <a name="mixed-content"></a>Смешанное содержимое
 
-**Форматировать смешанное содержимое по умолчанию.**
+**Форматировать смешанное содержимое по умолчанию**
 
 Произвести попытку переформатировать смешанное содержимое, за исключением тех случаев, когда содержание находится в области `xml:space="preserve"`. Это значение по умолчанию.
 

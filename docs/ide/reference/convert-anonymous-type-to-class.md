@@ -1,5 +1,7 @@
 ---
 title: Преобразование анонимного типа в класс
+description: Узнайте, как использовать меню "Быстрые действия и рефакторинг" для преобразования анонимного типа в класс в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -11,12 +13,12 @@ dev_langs:
 ms.workload:
 - dotnet
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 251a011695f6f5056e1fdf8e1a6be36b898b66f5
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a041c077a41ce6b37d74507723ec1ce0f8c9585c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809215"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040789"
 ---
 # <a name="convert-anonymous-type-to-class"></a>Преобразование анонимного типа в класс
 
@@ -32,7 +34,7 @@ ms.locfileid: "90809215"
 
 **Зачем?** Анонимные типы полезны, если вы используете их только локально. По мере роста вашего кода удобно иметь простой способ переместить их в класс.
 
-## <a name="how-to"></a>Практические советы
+## <a name="how-to"></a>Практическое руководство
 
 1. Поместите курсор в анонимном типе.
 2. Нажмите клавиши **CTRL**+ **.** чтобы открыть меню **Быстрые действия и рефакторинг**.
@@ -43,6 +45,6 @@ ms.locfileid: "90809215"
 
    ![Преобразование анонимного типа в класс принято](media/convert-anon-to-class-complete.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Рефакторинг](../refactoring-in-visual-studio.md)

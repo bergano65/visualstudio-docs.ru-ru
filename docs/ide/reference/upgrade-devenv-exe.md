@@ -1,5 +1,7 @@
 ---
 title: -Upgrade (devenv.exe)
+description: Узнайте, как использовать параметр командной строки Upgrade devenv для обновления файла решения, всех его файлов проекта или указанного файла проекта до текущих форматов Visual Studio для этих файлов.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bb2b296d8728587c9aa3c22b7a670d89612eff1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2bb0565783efb27cf4194bb25982ee0f717be776
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596428"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040957"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 
@@ -41,9 +43,9 @@ devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 
 - `/Out` *OutputFilename*
 
-  Необязательный параметр. Имя файла, в который вы хотите отправить выходные данные средства. Если файл уже существует, средство добавляет в его конец выходные данные.
+  Необязательный элемент. Имя файла, в который вы хотите отправить выходные данные средства. Если файл уже существует, средство добавляет в его конец выходные данные.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Резервные копии автоматически создаются и копируются в каталог с именем Backup, который создается в текущем каталоге.
 

@@ -1,5 +1,7 @@
 ---
 title: Диагностика неработающих ссылок
+description: Узнайте, как устранять неполадки в неработающих ссылках, которые могут быть вызваны чем-то другим, кроме невозможности приложений найти указанный компонент.
+ms.custom: SEO-VS-2020
 ms.date: 03/21/2017
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5116d2487ca9f53c460e1cae8f362f3ff1bcdf8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 627724410ac9e0829faeb23cb5b0eef01b153293
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565920"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479177"
 ---
 # <a name="troubleshoot-broken-references"></a>Диагностика неработающих ссылок
 

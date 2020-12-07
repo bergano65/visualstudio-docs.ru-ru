@@ -1,5 +1,7 @@
 ---
 title: Использование различных веб-браузеров в закодированных тестах пользовательского интерфейса
+description: Узнайте, как настроить тест и воспроизвести его в различных браузерах для веб-приложений.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 507da254d108ddc31f2b1c9fdf7f393d42934f2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6baddaeac3fdea3d27f60722e728df209bfd768d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289330"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330034"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Использование различных веб-браузеров в закодированных тестах пользовательского интерфейса
 
@@ -53,7 +55,7 @@ ms.locfileid: "85289330"
 
 ::: moniker range="vs-2017"
 
-1. В меню **Сервис** щелкните пункт **Расширения и обновления**.
+1. В меню **Сервис** щелкните **Расширения и обновления**.
 
 2. В диалоговом окне **Расширения и обновления** выполните поиск `Selenium components for Cross Browser Testing`.
 

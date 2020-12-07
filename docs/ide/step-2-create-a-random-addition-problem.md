@@ -1,5 +1,7 @@
 ---
 title: Шаг 2. Создание задачи на сложение случайных чисел
+description: Узнайте, как реализовать логику головоломки, добавив арифметические задачи на основе случайных чисел.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2febef6987cf3440f92f6a6c505840cfe3ca3448
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1c23b85dec73c6810420dc5e8ab2d3f4121fc903
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579886"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480685"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Шаг 2. Создание задачи на сложение случайных чисел
 
@@ -104,4 +106,4 @@ ms.locfileid: "77579886"
 
 - Следующий раздел руководства: **[Шаг 3. Добавление таймера с обратным отсчетом](../ide/step-3-add-a-countdown-timer.md)** .
 
-- Предыдущий раздел руководства: [Шаг 1. Создание проекта и добавление в форму элементов управления Label](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
+- Предыдущий раздел: [Шаг 1. Создание проекта и добавление в форму элементов управления Label](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

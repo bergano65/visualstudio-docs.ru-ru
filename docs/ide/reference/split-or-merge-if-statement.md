@@ -1,5 +1,7 @@
 ---
 title: Разбиение и объединение операторов If
+description: Узнайте, как использовать меню "Быстрые действия и рефакторинг" для разделения или объединения операторов If.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a3b42f83faacda6be34b282150cf4fb4c0f379f1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f72c6c2ed1cfdd1c8ea4471976d6a4980dfe422f
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093664"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479931"
 ---
 # <a name="split-or-merge-if-statements"></a>Разбиение и объединение операторов If
 
@@ -31,7 +33,7 @@ ms.locfileid: "79093664"
 
 **Зачем?** Это всего лишь вопрос предпочтений.  
 
-## <a name="how-to"></a>Практические советы
+## <a name="how-to"></a>Практическое руководство
 
 Если вы хотите разделить инструкцию `if`:
 
@@ -57,6 +59,6 @@ ms.locfileid: "79093664"
 
     ![Объединение инструкции If завершено](../media/merge-if-statement-complete.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Рефакторинг](../refactoring-in-visual-studio.md)

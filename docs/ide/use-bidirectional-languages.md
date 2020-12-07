@@ -1,5 +1,7 @@
 ---
 title: Поддержка арабского языка и иврита
+description: Узнайте, как отображать текст на арабском языке и иврите и позволяет вводить текст для значений и имен объектов на языках с двунаправленным письмом.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aa2520527259c476f84d83cdff81d9f96bc2bbd7
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592000"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478969"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Поддержка языков с двунаправленным письмом в Visual Studio
 

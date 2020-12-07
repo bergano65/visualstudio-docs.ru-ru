@@ -1,5 +1,7 @@
 ---
 title: Проверка кода с помощью Live Unit Testing
+description: Узнайте, как использовать Live Unit Testing, создав простую библиотеку классов, ориентированную на .NET Standard, а также создав проект MSTest, ориентированный на .NET Core, для тестирования.
+ms.custom: SEO-VS-2020
 ms.date: 04/03/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef0fbd5c422d16df4e361ff95f4ac8deabdd5bae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce2376f2dc3cb6abeb11b328452defb891949558
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287016"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329501"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Начало работы с Live Unit Testing
 

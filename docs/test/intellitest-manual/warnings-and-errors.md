@@ -1,5 +1,7 @@
 ---
 title: Предупреждения и ошибки | Инструмент тестирования для разработчиков Microsoft IntelliTest
+description: В этой статье содержатся предупреждения и ошибки IntelliTest, упорядоченные по категориям, с описаниями для каждого предупреждения и ошибки.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 639b68c4d999a5e491f6e52a2cf3a7960563ed17
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77275440"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329436"
 ---
 # <a name="warnings-and-errors"></a>Предупреждения и ошибки
 
 ## <a name="warnings-and-errors-by-category"></a>Предупреждения и ошибки по категориям
 
-* **Границы**
+* **границы,**
   * [Превышение значения MaxBranches](#maxbranches-exceeded)
   * [Превышение значения MaxConstraintSolverTime](#maxconstraintsolvertime-exceeded)
   * [Превышение значения MaxConditions](#maxconditions-exceeded)

@@ -1,5 +1,7 @@
 ---
 title: -Command (devenv.exe)
+description: Узнайте, как использовать команду Command devenv с параметром командной строки, чтобы выполнить указанную команду после запуска интегрированной среды разработки Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 434b2ad0f2a6ca4d84c6d82bf9a1a85876a4d975
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bcfff93ac9cb4903c534c0d4d57387a5143b6b40
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570405"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040879"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -35,7 +37,7 @@ devenv /Command CommandName
 
 Обязательный. Полное имя команды Visual Studio или ее псевдоним, заключенные в двойные кавычки. Дополнительные сведения о синтаксисе команд и псевдонимов см. в разделе [Команды Visual Studio](../../ide/reference/visual-studio-commands.md).
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 После завершения запуска интегрированная среда разработки выполняет именованную команду.
 
@@ -63,7 +65,7 @@ devenv /command "navigate https://docs.microsoft.com/"
 devenv /command "nf some_file.cs"
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

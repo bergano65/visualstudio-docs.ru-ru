@@ -1,5 +1,7 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", C/C++, \"Форматирование\""
+description: Узнайте, как использовать страницу "Форматирование" и ее вложенных страниц для задания параметров форматирования кода в редакторе кода при программировании в C и C++.
+ms.custom: SEO-VS-2020
 ms.date: 04/30/2018
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7a6029058ab0bc02a623df0e1733eb8548102d5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 264485fd8f20ee31046035dba7b208795d0d91b0
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596259"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041091"
 ---
 # <a name="options-text-editor-cc-formatting"></a>"Параметры", "Текстовый редактор", C/C++, "Форматирование"
 
@@ -56,13 +58,13 @@ ms.locfileid: "75596259"
 
 Поддержка ClangFormat включена по умолчанию. Вы можете выбрать, какие из этих общих соглашений о форматировании должны применяться ко всем вашим проектам: LLVM, Google, Chromium, Mozilla или WebKit. Можно также создать файл .clang-format или _clang-format для настраиваемого определения формата. Такой файл уже присутствует в папке проекта, Visual Studio использует его для форматирования всех файлов исходного кода в этой папке и вложенных в нее папках.
 
-По умолчанию Visual Studio выполняет clangformat.exe в фоновом режиме, применяя форматирование по мере ввода. Можно также указать, чтобы эта программа запускалась только для вызываемых вручную команд форматирования **Форматировать документ (CTRL+K, CTRL+D)** или **Форматировать выбранный фрагмент (CTRL+K, CTRL+F)** .
+По умолчанию Visual Studio выполняет clangformat.exe в фоновом режиме, применяя форматирование по мере ввода. Можно также указать, чтобы эта программа запускалась только для вызываемых вручную команд форматирования **Форматировать документ (CTRL+K, CTRL+D)** или **Форматировать выбранный фрагмент (CTRL+K, CTRL+F)**.
 
 ## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Страницы "Отступ", "Новые строки", "Spacing Wrapping" (Перенос пробелов)
 
 Эти страницы позволяют использовать различные настройки форматирования, но игнорируются, если включен ClangFormat.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)
 - [Использование технологии IntelliSense](../../ide/using-intellisense.md)

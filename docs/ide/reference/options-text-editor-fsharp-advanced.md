@@ -1,5 +1,7 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", F#, \"Дополнительно\""
+description: Узнайте, как использовать страницу "Дополнительно" в разделе "F#", чтобы изменить направляющие для структуры блоков и параметры структурирования для F#.
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 64626a0ebd8850098bbbc056d523b6a3f034bf4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9f4550ccf83f5697bca46d4a4049fe7df9b1c20
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770942"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039644"
 ---
 # <a name="options-text-editor-f-advanced"></a>"Параметры", "Текстовый редактор", F#, "Дополнительно"
 
@@ -24,11 +26,11 @@ ms.locfileid: "85770942"
 
 Если выбрать этот параметр, в редакторе отображаются вертикальные линии в соответствии со структурированными блоками кода. Это позволяет легко определять отдельные блоки кода.
 
-## <a name="outlining"></a>Структура
+## <a name="outlining"></a>Структуризация
 
 Установите этот флажок для автоматического отображения структуры файла кода с виде свертываемых блоков кода.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)
 - ["Параметры", "Текстовый редактор", "Все языки", "Вкладки"](../../ide/reference/options-text-editor-all-languages-tabs.md)

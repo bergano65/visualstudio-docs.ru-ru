@@ -1,5 +1,7 @@
 ---
 title: Использовать регулярные выражения
+description: Узнайте о некоторых символах, операторах, конструкциях и примерах для регулярных выражений, которые можно использовать в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/13/2019
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1739d6b2376a4f86edd3c0102f7fad79da5d7cd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8648eb48c68e0220b1d36a851619edec2b51ceb7
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568624"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478995"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Использование регулярных выражений в Visual Studio
 
@@ -31,7 +33,7 @@ ms.locfileid: "75568624"
 
 В таблице ниже собраны некоторые символы, операторы, конструкции и примеры для регулярных выражений. Более подробный справочник по регулярным выражениям вы найдете [здесь](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
-|Цель|Выражение|Пример|
+|Назначение|Expression|Пример|
 |-------------|----------------|-------------|
 |Соответствует любому одиночному символу, кроме разрыва строки Дополнительные сведения см. в разделе [Любой символ](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o` совпадает с "ато" в слове "каток" и "aзo" в слове "азот", но не с "арто" в слове "картон"|
 |Соответствует нулю или большему числу вхождений предыдущего выражения (совпадение с максимальным числом символов). Дополнительные сведения см. в разделе [Совпадение ноль или несколько раз: *](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-).|*|`a*r` совпадает с "в" в слове "винт" и "ав" в слове "авто".|
@@ -43,8 +45,8 @@ ms.locfileid: "75568624"
 |Привязывает сопоставляемую строку к [началу строки](/dotnet/standard/base-types/anchors-in-regular-expressions#start-of-string-or-line-).|^|`^car` совпадает с такими словами, как "продажа" и "процесс", только если они находятся в начале строки|
 |Привязывает сопоставляемую строку к [концу строки](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-).|\r?$|`car\r?$` совпадает со словом "car", только если оно находится в конце строки.|
 |Соответствует вхождению, только если оно находится в конце файла|$|`car$` совпадает со словом "car", только если оно находится в конце файла.|
-|Соответствует любому отдельному символу в наборе|[abc]|`b[abc]` совпадает с "ба", "бб" и "бв"|
-|Соответствует любому символу в диапазоне символов|[а-е]|`be[n-t]` совпадает с "bet" в слове "between", с "ben" в слове "beneath" и с "bes" в слове "beside", но в слове "below" совпадения отсутствуют.|
+|Соответствует любому отдельному символу в наборе.|[abc]|`b[abc]` совпадает с "ба", "бб" и "бв"|
+|Соответствует любому символу в диапазоне символов.|[а-е]|`be[n-t]` совпадает с "bet" в слове "between", с "ben" в слове "beneath" и с "bes" в слове "beside", но в слове "below" совпадения отсутствуют.|
 |Запись и неявная нумерация выражения в скобках|()|`([a-z])X\1` совпадает с "аХа" и "бХб", но не с "аХб". "\1" относится к первой группе выражения "[а–я]". Дополнительные сведения см. в разделе [Группы записи и шаблоны замены](#capture-groups-and-replacement-patterns). |
 |Признание соответствия недействительным|(?!абв)|`real(?!ity)` совпадает со словами "реальный" и "реальность", но не со словом "реальная". Кроме того, находит второй элемент "реальн" (но не первый "реальн") в "реальнаяреальность".|
 |Соответствует любому символу, не входящему в указанный набор. Дополнительные сведения см. в разделе [Отрицательная группа символов](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^абв]|`be[^n-t]` совпадает с "bef" в слове "before", с "beh" в слове "behind" и с "bel" в слове "below", но в слове "beneath" совпадения отсутствуют.|
@@ -99,7 +101,7 @@ ms.locfileid: "75568624"
 
 Дополнительные сведения об именованных группах захвата см. в разделе [Именованные сопоставляемые части выражения](/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#named-matched-subexpressions). Дополнительную информацию о регулярных выражениях, которые используются в шаблонах замены, вы найдете. в разделе руководства [Подстановки в регулярных выражениях](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Язык регулярных выражений](/dotnet/standard/base-types/regular-expression-language-quick-reference)
 - [Поиск и замена текста](../ide/finding-and-replacing-text.md)

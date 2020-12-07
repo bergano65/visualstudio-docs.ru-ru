@@ -1,5 +1,6 @@
 ---
 title: Запуск от имени администратора
+description: Узнайте, как запустить Visual Studio от имени администратора.
 ms.date: 01/06/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9d69d916b8b99d6f5b5b3421ae4aea073e24fa67
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75718640"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478956"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Разрешения пользователей и Visual Studio
 
@@ -32,7 +33,7 @@ ms.locfileid: "75718640"
 |----------|----------| - |
 |Установка|Установите или измените Visual Studio.|[Установка Visual Studio](../install/install-visual-studio.md), [изменение Visual Studio](../install/modify-visual-studio.md)|
 ||Установка, обновление или удаление содержимого локальной справки.|[Установка содержимого локальной справки и управление им](../help-viewer/install-manage-local-content.md)|
-|Область элементов|Добавление классических элементов управления COM в **панель элементов**.|[Панель элементов](../ide/reference/toolbox.md)|
+|Панель элементов|Добавление классических элементов управления COM в **панель элементов**.|[Панель элементов](../ide/reference/toolbox.md)|
 |Сборка|Использование выполняющихся после сборки событий, которые регистрируют компонент.|[Сведения о настраиваемых этапах сборки и событиях сборки](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||Включение этапа регистрации при сборке проектов С++.||
 |Отладка|Отладка приложений с повышенными разрешениями.|[Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)|
@@ -57,7 +58,7 @@ ms.locfileid: "75718640"
 
 1. При помощи щелчка правой кнопкой или контекстного меню **Visual Studio 2017** выберите **Дополнительно** > **Запуск от имени администратора**.
 
-   После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)** .
+   После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.
 
 ::: moniker-end
 
@@ -67,7 +68,7 @@ ms.locfileid: "75718640"
 
 1. При помощи щелчка правой кнопкой или контекстного меню **Visual Studio 2019** выберите **Дополнительно** > **Запуск от имени администратора**.
 
-   После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)** .
+   После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.
 
 ::: moniker-end
 

@@ -1,5 +1,7 @@
 ---
 title: -ResetSettings (devenv.exe)
+description: Узнайте, как использовать параметр командной строки ResetSettings devenv для восстановления параметров Visual Studio по умолчанию и автоматического запуска интегрированной среды разработки Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eebcf2c6796723e51c3aefdb12575aa89779429f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 22b3308b3bd1fed6ff1bc3d1f3a5622eb6f8284f
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593867"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040034"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
@@ -47,7 +49,7 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
   | Имя коллекции по умолчанию | Описатель коллекции |
   | --- | --- |
-  | **Общие сведения** | `General` |
+  | **Общие** | `General` |
   | **JavaScript** | `JavaScript` |
   | **Visual Basic** | `VB` |
   | **Visual C#** | `CSharp` |
@@ -55,7 +57,7 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
   | **Веб-разработка** | `Web` |
   | **Веб-разработка (только код)** | `WebCode` |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Если файл *SettingsFile* не указан, интегрированная среда разработки открывается с использованием существующих параметров.
 

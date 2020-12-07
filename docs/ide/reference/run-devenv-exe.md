@@ -1,5 +1,7 @@
 ---
 title: -Run (devenv.exe)
+description: Узнайте, как использовать параметр командной строки Run devenv для компиляции и запуска указанного проекта или решения.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7468fbd6422248f2f15bf74e70cdf9c5bee849c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e523220ca3269b6af5404ce2d6ab653f29698599
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593633"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039909"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 
@@ -44,9 +46,9 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 
 - `/Out` *OutputFilename*
 
-  Необязательный параметр. Имя файла, в который вы хотите отправить выходные данные средства. Если файл уже существует, средство добавляет в его конец выходные данные.
+  Необязательный элемент. Имя файла, в который вы хотите отправить выходные данные средства. Если файл уже существует, средство добавляет в его конец выходные данные.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Компилирует и запускает указанный проект или указанное решение согласно параметрам, заданным для активной конфигурации решения. Этот параметр запускает интегрированную среду разработки, которая остается активной после завершения выполнения проекта или решения.
 

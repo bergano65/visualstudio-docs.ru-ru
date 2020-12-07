@@ -1,5 +1,7 @@
 ---
 title: Команда Replace In Files
+description: Узнайте о команде Replace In Files и способах замены текста в файлах с помощью некоторых параметров, доступных на вкладке "Заменить в файлах" окна "Поиск и замена".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96f7d7ae0ea5eaf0de1a6fa4357e2750cdd8c22e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: da2bfe820f70925a979548abeab955865f2bbc2c
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565478"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304152"
 ---
 # <a name="replace-in-files-command"></a>Команда Replace In Files
 Заменяет текст в файлах с использованием подмножества параметров, доступных на вкладке **Заменить в файлах** окна **Поиск и замена**.
@@ -35,11 +37,11 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 ## <a name="arguments"></a>Аргументы
 `findwhat`
 
-Обязательный элемент. Текст для поиска совпадения.
+Обязательный. Текст для поиска совпадения.
 
 `replacewith`
 
-Обязательный элемент. Текст для замены совпавшего текста.
+Обязательный. Текст для замены совпавшего текста.
 
 ## <a name="switches"></a>Коммутаторы
 /all или /a
@@ -109,7 +111,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 
 - [Поиск и замена текста](../../ide/finding-and-replacing-text.md)
 - [Замена в файлах](../../ide/replace-in-files.md)
-- [Окно команд](../../ide/reference/command-window.md)
+- [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

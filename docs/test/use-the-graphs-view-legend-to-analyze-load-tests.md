@@ -1,5 +1,7 @@
 ---
 title: Использование легенды представления диаграмм для анализа нагрузочного тестирования
+description: Узнайте о представлении диаграмм анализатора тестовой нагрузки, в котором имеется панель условных обозначений со сведениями о счетчиках производительности для выбранного графа.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1455c67c3cb6d8dc99aeab91a7bfa63cce009c51
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25200b691e0bebf2e3bd1c6252efb371ed9caeb2
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590804"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330073"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Использование легенды представления графов для анализа нагрузочного тестирования
 

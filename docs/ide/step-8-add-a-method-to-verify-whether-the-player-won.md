@@ -1,5 +1,7 @@
 ---
 title: Шаг 8. Добавление метода для проверки того, выиграл ли игрок
+description: Узнайте, как добавить метод, чтобы определить, выиграл ли игрок.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881fa0d90390a059bea28cb19584381f814396d3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c53afebfd8c39e9c43f82916095d8eeef2ec8b11
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579760"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479294"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Шаг 8. Добавление метода для проверки того, выиграл ли игрок
 Вы создали интересную игру, но требуется еще один элемент, чтобы завершить ее. Игра должна заканчиваться победой игрока, поэтому необходимо добавить метод `CheckForWinner()` для проверки, выиграл ли игрок.
@@ -43,10 +45,10 @@ ms.locfileid: "77579760"
 3. Сохраните и выполните программу. Сыграйте в игру и подберите пару всем значкам. Если вы победили, программа отображает сообщение **MessageBox** с поздравлением (как показано на следующем снимке экрана) и закрывает окно.
 
      ![Игра "Подбери пару!" с MessageBox](../ide/media/express_tut4step8.png)<br/>
-***Игра "Подбери пару!"*** *с* ***MessageBox***
+**_Игра "Подбери пару!"_* _ _с* ***MessageBox**_
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
-- Следующий раздел руководства: **[Шаг 9. Изучение других возможностей](../ide/step-9-try-other-features.md)** .
+- Следующий раздел руководства: _*[Шаг 9. Изучение других возможностей](../ide/step-9-try-other-features.md)**.
 
 - Предыдущий раздел руководства: [Шаг 7. Отмена исчезновения пар значков](../ide/step-7-keep-pairs-visible.md).

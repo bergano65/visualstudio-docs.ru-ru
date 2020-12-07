@@ -1,5 +1,7 @@
 ---
 title: -SafeMode (devenv.exe)
+description: Узнайте, как использовать параметр командной строки SafeMode devenv для запуска Visual Studio в безопасном режиме, загружая только среду и службы по умолчанию.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f180a45b274ec3042b7e150a43b5e8681fafcfed
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4d8f663ca581892ba3207acbb0271586c322bad2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593594"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039880"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 
@@ -29,7 +31,7 @@ ms.locfileid: "75593594"
 devenv /SafeMode
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот параметр запрещает загрузку пакетов VSPackage сторонних производителей при запуске Visual Studio, обеспечивая стабильное выполнение.
 

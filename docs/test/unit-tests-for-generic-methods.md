@@ -1,5 +1,7 @@
 ---
 title: Модульные тесты для универсальных методов
+description: Узнайте, как создавать модульные тесты для универсальных методов, используя эти сведения и примеры создания модульных тестов для универсальных методов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 40255c4ab86d407da4e851bd84cb65e5b4a0f8c9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 88ef5d64d2513bb97bdd5589e04669629dfdf6ae
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90035681"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330047"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Модульные тесты для универсальных методов
 
@@ -109,7 +111,7 @@ public void SizeOfLinkedListTestHelper<T>()
 [TestMethod()]
 public void SizeOfLinkedListTest()
 {
-    SizeOfLinkedListTestHelper<int>();  // step 6
+    SizeOfLinkedListTestHelper<int>();  // step 6
     SizeOfLinkedListTestHelper<char>(); // step 7
 }
 ```
@@ -194,6 +196,6 @@ namespace TestProject1
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Модульное тестирование кода](../test/unit-test-your-code.md)

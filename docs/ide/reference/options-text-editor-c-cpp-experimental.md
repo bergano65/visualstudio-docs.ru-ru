@@ -1,5 +1,7 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", C/C++, \"Экспериментальный\""
+description: Узнайте, как использовать страницу "Экспериментальный"в разделе "C/C++", чтобы изменить экспериментальное поведение, связанное с IntelliSense и базой данных просмотра.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e35bdb8c6a56ef3174277836769201cd00e47dad
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278698"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040307"
 ---
 # <a name="options-text-editor-cc-experimental"></a>"Параметры", "Текстовый редактор", C/C++, "Экспериментальный"
 
@@ -61,7 +63,7 @@ ms.locfileid: "77278698"
 
 - **Справка в Интернете** — поиск справки по сообщениям об ошибках.
 
-- И многое другое!
+- И многое другое.
 
 ## <a name="see-also"></a>См. также раздел
 

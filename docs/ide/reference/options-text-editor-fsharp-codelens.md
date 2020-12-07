@@ -1,5 +1,7 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", F#, CodeLens"
+description: Узнайте, как использовать страницу CodeLens в разделе "F#", чтобы изменить параметры CodeLens текстового редактора для F#.
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad891030cb9cf54855e6bef69a8b6926d6ae17aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6bdccdc45664bd620018fa094d35add545b302d4
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568481"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039657"
 ---
 # <a name="options-text-editor-f-codelens"></a>"Параметры", "Текстовый редактор", F#, CodeLens
 
@@ -38,7 +40,7 @@ ms.locfileid: "75568481"
 
    Можно изменить префикс заметки, используемый по умолчанию.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)
 - [Поиск изменений кода и других журналов с помощью CodeLens](../../ide/find-code-changes-and-other-history-with-codelens.md)

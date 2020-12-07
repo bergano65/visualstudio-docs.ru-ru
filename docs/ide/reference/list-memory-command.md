@@ -1,5 +1,7 @@
 ---
 title: Команда List Memory
+description: Узнайте о команде List Memory и о том, как она отображает содержимое указанного диапазона памяти.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c500b1b516c2b1ab1bc66b7970fccc4ec7a85baa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 696cb36f932a1a79388d94d749b4b5d4bff7d0c2
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568715"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305324"
 ---
 # <a name="list-memory-command"></a>Команда List Memory
 Отображает содержимое указанного диапазона памяти.
@@ -34,7 +36,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="arguments"></a>Аргументы
 `expression`
 
-Необязательный параметр. Адрес памяти, с которого начинается отображение памяти.
+Необязательный элемент. Адрес памяти, с которого начинается отображение памяти.
 
 ## <a name="switches"></a>Коммутаторы
 /ANSI&#124;Unicode
@@ -53,7 +55,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
 Необязательный параметр. Указывает формат для просмотра чисел: со знаком, без знака или в шестнадцатеричном формате.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 Вместо записи полной команды **Debug.ListMemory** со всеми параметрами можно вызвать ее, используя стандартные псевдонимы, в которых отдельные параметры уже имеют определенные значения. Например, вместо ввода:
 
 ```cmd
@@ -74,7 +76,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 |**da**|Debug.ListMemory /Ansi|
 |**db**|Debug.ListMemory /Format:OneByte|
 |**dc**|Debug.ListMemory /Format:FourBytes /Ansi|
-|**дд**|Debug.ListMemory /Format:FourBytes|
+|**dd**|Debug.ListMemory /Format:FourBytes|
 |**df**|Debug.ListMemory /Format:Float|
 |**dq**|Debug.ListMemory /Format:EightBytes|
 |**du**|Debug.ListMemory /Unicode|
@@ -90,6 +92,6 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 - [Команда "Вывести стек вызовов"](../../ide/reference/list-call-stack-command.md)
 - [Команда "Вывести потоки"](../../ide/reference/list-threads-command.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Окно команд](../../ide/reference/command-window.md)
+- [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,7 @@
 ---
 title: Фрагменты кода Visual C++
+description: Узнайте, как с помощью фрагментов кода в Visual Studio можно добавлять часто используемый код в файлы кода C++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: corob-msft
@@ -9,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e5cde2be817c49344e02ff06030022f99790a7a2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77277829"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478813"
 ---
 # <a name="visual-c-code-snippets"></a>Фрагменты кода Visual C++
 
@@ -52,7 +54,7 @@ ms.locfileid: "77277829"
 
 - На клавиатуре нажмите клавиши **CTRL**+**K**+**S**
 
-Выберите **#if**. Вы увидите нечто вроде этого:
+Выберите **#if**. Отобразятся примерно следующие сведения:
 
 ```cpp
 #if 0
@@ -64,7 +66,7 @@ ms.locfileid: "77277829"
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>Где можно найти полный список фрагментов кода C++?
 
-Чтобы просмотреть полный список фрагментов кода C++, откройте **диспетчер фрагментов кода** (в меню **Сервис**) и выберите для параметра **Язык** значение **Visual C++** . В окне ниже разверните раздел **Visual C++** . Вы увидите список имен всех фрагментов кода C++ в алфавитном порядке.
+Чтобы просмотреть полный список фрагментов кода C++, откройте **диспетчер фрагментов кода** (в меню **Сервис**) и выберите для параметра **Язык** значение **Visual C++**. В окне ниже разверните раздел **Visual C++**. Вы увидите список имен всех фрагментов кода C++ в алфавитном порядке.
 
 Имена большинства фрагментов кода вполне очевидны, но некоторые могут вызвать путаницу.
 
@@ -170,6 +172,6 @@ class SomeClass {
 {
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Фрагменты кода](../ide/code-snippets.md)

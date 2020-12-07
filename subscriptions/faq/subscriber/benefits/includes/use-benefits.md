@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 10/13/2020
 ms.faqid: q3_2
-ms.openlocfilehash: 6533a68c334f52310c20a79cf1e6d93d0b967be0
-ms.sourcegitcommit: 296ab61c40bf090c577ef20e84d581939bd1855b
+ms.openlocfilehash: 3c13e82af88030a33d5bedc6b8e9d8f518b8c88e
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92526091"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560785"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>Как использовать свои преимущества?
 
@@ -22,11 +22,11 @@ ms.locfileid: "92526091"
 
 Дополнительные сведения см. в [документации](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions) (щелкните "Подписки" в левой области навигации и выберите "Преимущества").
 
-Управление подписками Visual Studio с GitHub Enterprise осуществляется в два этапа:  
+Управление подписками Visual Studio с GitHub Enterprise осуществляется в два этапа:  
 - Подписка Visual Studio (Enterprise или Professional)  
 - GitHub Enterprise  
 
-Когда ваш администратор подписки Visual Studio назначит вам подписку Visual Studio с GitHub, вы получите уведомление об этом по электронной почте. На этом этапе вы сможете просмотреть доступные преимущества подписки на странице <https://my.visualstudio.com/benefits>. Эти преимущества включают преимущество GitHub Enterprise. 
+Когда ваш администратор подписки Visual Studio назначит вам подписку Visual Studio с GitHub Enterprise, вы получите уведомление об этом по электронной почте. На этом этапе вы сможете просмотреть доступные преимущества подписки на странице <https://my.visualstudio.com/benefits>. Эти преимущества включают преимущество GitHub Enterprise. 
 
 Управление GitHub Enterprise осуществляет администратор GitHub отдельно от подписок Visual Studio. После того как ваша организация настроит учетную запись GitHub Enterprise, вы получите уведомление от GitHub о том, что ваша подписка Visual Studio связана c GitHub Enterprise, и плитка преимущества будет обновлена. Настройка этой учетной записи может занять некоторое время и зависит от того, завершила ли ваша организация процесс настройки. После получения этого сообщения вы можете обратиться к администратору соответствующей организации GitHub, чтобы запросить приглашение для этой организации и (или) репозитория. 
 

@@ -1,5 +1,7 @@
 ---
 title: C# IntelliSense
+description: Узнайте о некоторых функциях IntelliSense, которые можно использовать при написании кода проекта C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ed5d86599fa99b9c1360b414b37ef95ab59082d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e725a06a2bc90c91cff11b05ad32b20a0db8e4fc
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313436"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479788"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -98,7 +100,7 @@ IntelliSense запоминает последние элементы, выбр�
 
 ![Развернутое быстрое действие "Добавить директиву using"](../ide/media/addusing-quickaction.png)
 
-Щелкните значок лампочки с ошибкой и выберите пункт **using System.Xml;** , чтобы автоматически добавить директиву using.
+Щелкните значок лампочки с ошибкой и выберите пункт **using System.Xml;**, чтобы автоматически добавить директиву using.
 
 ### <a name="remove-and-sort-usings"></a>Удаление и сортировка директив using
 
@@ -134,7 +136,7 @@ IntelliSense предоставляет возможность автомати�
 
 - **Сформировать поле**
 
-- **Сформировать метод**
+- **Создание метода**
 
 - **Сформировать класс**
 

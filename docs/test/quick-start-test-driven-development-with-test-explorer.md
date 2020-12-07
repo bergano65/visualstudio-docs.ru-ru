@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство по разработке на основе тестирования
+description: Узнайте, как разработать проверенный метод в среде C# с помощью Microsoft Test Framework, который можно легко адаптировать для других языков или платформ тестирования, например NUnit.
+ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: a264975014fea88126bbca0589fe037e629dae10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 82cccbc47d26dd9ef74ee02931d6efb4bbfa0054
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566284"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329163"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>Пошаговое руководство. Разработка на основе тестирования с помощью обозревателя тестов
 
@@ -22,13 +24,13 @@ ms.locfileid: "75566284"
 
 ## <a name="create-a-test-and-generate-code"></a>Создание теста и создание кода
 
-1. Создайте проекта C# **Библиотека классов (.NET Standard)** . Данный проект будет содержать код, который мы хотим протестировать. Назовите проект **MyMath**.
+1. Создайте проекта C# **Библиотека классов (.NET Standard)**. Данный проект будет содержать код, который мы хотим протестировать. Назовите проект **MyMath**.
 
-2. В том же решении добавьте новый проект **Тестовый проект MSTest (.NET Core)** . Назовите тестовый проект **MathTests**.
+2. В том же решении добавьте новый проект **Тестовый проект MSTest (.NET Core)**. Назовите тестовый проект **MathTests**.
 
    ![Новые проекты кода и тестов](../test/media/test-driven-development-ide.png)
 
-3. Напишите простой метод теста, который проверяет результат, полученный для конкретных входных данных. Добавьте следующий код в класс `UnitTest1` :
+3. Напишите простой метод теста, который проверяет результат, полученный для конкретных входных данных. Добавьте в класс `UnitTest1` приведенный ниже код.
 
    ```csharp
    [TestMethod]

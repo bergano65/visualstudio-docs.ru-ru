@@ -1,5 +1,7 @@
 ---
 title: Команда List Disassembly
+description: Узнайте о команде List Disassembly и о том, как она начинает процесс отладки и позволяет указать способ обработки ошибок.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91319a8d25aaec6bdd676ed6d709dffc47100195
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15e9016551b178b0a29656e615d029ddaf0ca279
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770645"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305337"
 ---
 # <a name="list-disassembly-command"></a>Команда List Disassembly
 Начинает процесс отладки и позволяет указать способ обработки ошибок.
@@ -44,15 +46,15 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 
 /codebytes:`yes`&#124;`no` [или] /bytes:`yes`&#124;`no` [или] /b:`yes`&#124;`no`
 
-Необязательный параметр. Указывает, следует ли отображать байты кода. Значение по умолчанию: `no`.
+Необязательный параметр. Указывает, следует ли отображать байты кода. Значение по умолчанию — `no`.
 
 /source:`yes`&#124;`no` [или] /s:`yes`&#124;`no`
 
-Необязательный параметр. Указывает, следует ли отображать исходный код. Значение по умолчанию: `no`.
+Необязательный параметр. Указывает, следует ли отображать исходный код. Значение по умолчанию — `no`.
 
 /symbolnames:`yes`&#124;`no` [или] /names:`yes`&#124;`no` [или] /n:`yes`&#124;`no`
 
-Необязательный параметр. Указывает, следует ли отображать имена символов. Значение по умолчанию: `yes`.
+Необязательный параметр. Указывает, следует ли отображать имена символов. Значение по умолчанию — `yes`.
 
  [/linenumbers:`yes`&#124;`no`]
 
@@ -69,6 +71,6 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 - [Команда "Вывести стек вызовов"](../../ide/reference/list-call-stack-command.md)
 - [Команда "Вывести потоки"](../../ide/reference/list-threads-command.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Окно команд](../../ide/reference/command-window.md)
+- [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

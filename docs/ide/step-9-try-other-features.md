@@ -1,5 +1,7 @@
 ---
 title: Шаг 9. Изучение других возможностей
+description: Узнайте, как изменить значки и цвета, добавить в игру таймер или звуки и увеличить игровую доску.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ac2f1977bb0b8b391651ed7ed459b9dc560330
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 4f462d70fda9a212bf848477952ecc7132a60265
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579734"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479255"
 ---
 # <a name="step-9-try-other-features"></a>Шаг 9. Изучение других возможностей
 Для изучения других функций попробуйте изменить значки и цвета, добавить в игру таймер или звуки. Чтобы сделать игру интереснее, увеличьте игровое поле или измените настройки таймера.
@@ -48,6 +50,6 @@ ms.locfileid: "77579734"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
-- Также вы можете найти отличные бесплатные учебные видеоматериалы. Дополнительные сведения о программировании на Visual Basic см. в руководстве [Основы Visual Basic. Разработка для начинающих](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Дополнительные сведения о программировании на языке C# см. в разделе [Основы C#. Разработка для начинающих](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
+- Также вы можете найти отличные бесплатные учебные видеоматериалы. Дополнительные сведения о программировании на Visual Basic см. в руководстве по [разработке на Visual Basic для начинающих](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Дополнительные сведения о программировании на языке C# см. в разделе [Основы C#. Разработка для начинающих](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
 
-- Предыдущий раздел руководства: [Шаг 8. Добавление метода для проверки того, выиграл ли игрок](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
+- Предыдущий раздел: [Шаг 8. Добавление метода проверки выигрыша игрока](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).

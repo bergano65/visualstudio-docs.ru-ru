@@ -1,5 +1,6 @@
 ---
 title: Преобразование инструкции if в инструкцию switch или в выражение switch
+description: Узнайте, как использовать меню "Быстрые действия и рефакторинг" для преобразования инструкции if в выражение switch или выражение switch C# 8.0.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
@@ -10,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e093325ff4a4e6a9f8a2623e7e42f69bb6fa62f
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: e19314b8bf73f5859fdf2cef7d281f142c643b68
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102536"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305561"
 ---
 # <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>Преобразование оператора if в оператор switch или в выражение switch
 

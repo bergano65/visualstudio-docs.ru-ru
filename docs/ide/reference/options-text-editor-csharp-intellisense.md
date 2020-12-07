@@ -1,5 +1,7 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", C#, IntelliSense"
+description: Узнайте, как использовать страницу IntelliSense в разделе "C#" для изменения параметров, влияющих на поведение IntelliSense для C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 87a167a75f3b06522da77d562b0137df89757975
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8e727fad6d3cb15f70cf630b1077170d16d28b7f
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596220"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039748"
 ---
 # <a name="options-text-editor-c-intellisense"></a>"Параметры", "Текстовый редактор", C#, IntelliSense
 
@@ -83,7 +85,7 @@ ms.locfileid: "75596220"
 
 Выполняет автоматическое завершение имени объекта для элементов, которые вы выбирали недавно.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)
 - [Использование технологии IntelliSense](../../ide/using-intellisense.md)

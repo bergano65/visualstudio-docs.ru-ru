@@ -1,5 +1,7 @@
 ---
 title: Команда Open File
+description: Узнайте о команде Open File и о том, как она позволяет открыть существующий файл и указать редактор.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 792fe50aea43bc9711a58a895be09f85c041345b
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591519"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304125"
 ---
 # <a name="open-file-command"></a>Команда Open File
 
@@ -35,13 +37,13 @@ File.OpenFile filename [/e:editorname]
 
 `filename`
 
-Обязательный элемент. Полный или частичный путь и имя для открываемого файла. Пути, содержащие пробелы, следует заключить в кавычки.
+Обязательный. Полный или частичный путь и имя для открываемого файла. Пути, содержащие пробелы, следует заключить в кавычки.
 
 ## <a name="switches"></a>Коммутаторы
 
 /e:`editorname`
 
-Необязательный параметр. Имя редактора, в котором будет открыт файл. Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.
+Необязательный элемент. Имя редактора, в котором будет открыт файл. Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.
 
 В синтаксической структуре аргумента /e:`editorname` имена редакторов используются в том виде, в каком они отображаются в диалоговом окне "Открыть с помощью", с заключением в кавычки.
 
@@ -51,7 +53,7 @@ File.OpenFile filename [/e:editorname]
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Когда вы вводите путь, функция автозавершения пытается определить правильный путь и правильное имя файла.
 
@@ -63,10 +65,10 @@ File.OpenFile filename [/e:editorname]
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)
-- [Окно интерпретации](../../ide/reference/immediate-window.md)
+- [окно интерпретации](../../ide/reference/immediate-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
 - [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

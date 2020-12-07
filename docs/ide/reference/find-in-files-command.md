@@ -1,5 +1,7 @@
 ---
 title: Команда Find in Files
+description: Узнайте о команде Find и способах поиска файлов с помощью некоторых параметров, доступных на вкладке "Найти в файлах" окна "Поиск и замена".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d313c29be1d5fb4f1be1febe9b5b7cd32e7e11
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aa0a907332b3ce0164573b809ee9c4b2ac2addda
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569586"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305387"
 ---
 # <a name="find-in-files-command"></a>Команда Find in Files
 Поиск в файлах с использованием набора параметров, доступных на вкладке **Найти в файлах** диалогового окна **Поиск и замена**.
@@ -34,7 +36,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ## <a name="arguments"></a>Аргументы
 
 `findwhat`\
-Обязательный элемент. Текст для поиска совпадения.
+Обязательный. Текст для поиска совпадения.
 
 ## <a name="switches"></a>Коммутаторы
 /case или /c\
@@ -87,7 +89,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ## <a name="see-also"></a>См. также раздел
 
 - [Поиск в файлах](../../ide/find-in-files.md)
-- [Окно команд](../../ide/reference/command-window.md)
+- [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,7 @@
 ---
 title: Шаг 2. Добавление случайного объекта и списка значков
+description: Узнайте, как создать набор парных символов для игры.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,14 +15,14 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f4731778ebb3acbdc3bb7d9b5827c1015541d98
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1018b390f6ebbf67fab88554aa85fe6a8ecec88d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579417"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480698"
 ---
-# <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Шаг 2. Добавление случайного объекта и списка значков
+# <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Шаг 2. Добавление случайного объекта и списка значков
 
 На этом шаге будет создан набор парных символов для игры. Каждый символ добавляется в две случайные ячейки в TableLayoutPanel в форме. Для этого используются два оператора `new`, создающие два объекта. Первый является объектом <xref:System.Random>. Такой же объект использовался в игре "Математическая головоломка". Он используется в этом коде для случайного выбора ячейки в TableLayoutPanel. Второй объект, который может показаться вам новым, это объект <xref:System.Collections.Generic.List%601>, используемый для хранения случайно выбранных символов.
 
@@ -42,7 +44,7 @@ ms.locfileid: "77579417"
 
 3. При добавлении объекта List обратите внимание на открывшееся окно **IntelliSense**. Ниже приведен пример на языке C#, но аналогичный текст отобразится и при добавлении списка в Visual Basic.
 
-     ![Окно свойств, отображающее событие Click](../ide/media/express_listintellisense.png)<br/>Окно ***IntelliSense***
+     ![Окно свойств, отображающее событие Click](../ide/media/express_listintellisense.png)<br/>**_Окно_* IntelliSense*
 
     > [!NOTE]
     > Окно IntelliSense отображается только при вводе кода вручную. При копировании и вставке кода оно не отображается.

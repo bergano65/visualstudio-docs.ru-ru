@@ -1,5 +1,7 @@
 ---
 title: Команда Watch
+description: Узнайте о команде Watch и о том, как она позволяет создать и открыть указанный экземпляр окна "Контрольное значение".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d7c89761dfc12d342747567389e39daeed4a227
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 631c9cf61e6da70b3c7554a1aac0cacc8eef0294
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585656"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480152"
 ---
 # <a name="watch-command"></a>Команда Watch
 Создает и открывает указанный экземпляр окна **Контрольное значение** . Окно **Контрольные значения** можно использовать для вычисления значений переменных, выражений и регистров, чтобы изменять эти значения и сохранять результаты.
@@ -32,9 +34,9 @@ Debug.Watch[index]
 ## <a name="arguments"></a>Аргументы
 
 `index`\
-Обязательный элемент. Номер экземпляра окна контрольных значений
+Обязательный. Номер экземпляра окна контрольных значений
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Значение `index` должно быть целым числом. Допустимые значения: 1, 2, 3 и 4.
 
@@ -47,8 +49,8 @@ Debug.Watch[index]
 ## <a name="see-also"></a>См. также раздел
 
 - [Окна "Видимые" и "Локальные"](../../debugger/autos-and-locals-windows.md)
-- [Установка контрольных значений для переменных с помощью окон "Контрольное значение" и "Быстрая проверка" в Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
+- [Set a Watch on Variables using the Watch and QuickWatch Windows in Visual Studio](../../debugger/watch-and-quickwatch-windows.md) (Установка контрольных значений для переменных с помощью окон "Контрольное значение" и "Быстрая проверка")
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Окно команд](../../ide/reference/command-window.md)
+- [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

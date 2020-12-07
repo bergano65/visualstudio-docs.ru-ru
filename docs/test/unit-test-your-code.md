@@ -1,5 +1,7 @@
 ---
 title: Модульное тестирование
+description: Узнайте о средствах модульного тестирования, которые можно использовать для предоставления разработчикам и тестерам возможности быстрого поиска логических ошибок в коде.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: be0f8f7eeb116a251477ce57027a2176119c2d17
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 8f48a50b39c04df9abab7c11b3b85cc0d2670025
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099314"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330138"
 ---
 # <a name="unit-test-your-code"></a>Модульное тестирование кода
 
@@ -40,13 +42,13 @@ ms.locfileid: "92099314"
 
 Следующие разделы помогут в понимании и создании модульных тестов.
 
-|Задачи|Связанные разделы|
+|Задания|Связанные разделы|
 |-|-----------------------|
 |**Краткие и пошаговые руководства**. Здесь можно изучить модульное тестирование в Visual Studio на конкретных примерах кода.|- [Пошаговое руководство: создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [Краткое руководство. Разработка на основе тестирования с помощью обозревателя тестов](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [Практическое руководство. Добавление модульных тестов для приложений на C++](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
-|**Модульное тестирование с помощью обозревателя тестов**. Узнайте, как с помощью обозревателя тестов создавать более производительные и более эффективные модульные тесты.|- [Основные сведения о модульных тестах](../test/unit-test-basics.md)<br />- [Create a unit test project](../test/create-a-unit-test-project.md) (Создание проекта модульного теста)<br />- [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)<br />- [Install third-party unit test frameworks](../test/install-third-party-unit-test-frameworks.md) (Установка платформ модульного тестирования сторонних поставщиков)|
+|**Модульное тестирование с помощью обозревателя тестов.** Узнайте, как с помощью обозревателя тестов создавать более производительные и более эффективные модульные тесты.|- [Основные сведения о модульных тестах](../test/unit-test-basics.md)<br />- [Create a unit test project](../test/create-a-unit-test-project.md) (Создание проекта модульного теста)<br />- [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)<br />- [Install third-party unit test frameworks](../test/install-third-party-unit-test-frameworks.md) (Установка платформ модульного тестирования сторонних поставщиков)|
 |**Модульное тестирование кода C++**|- [Написание модульных тестов для C и C++](../test/writing-unit-tests-for-c-cpp.md)|
 |**Изоляция модульных тестов**|- [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**Использование покрытия кода для определения того, какая часть кода проекта тестируется**. Изучите возможности покрытия кода, которые предоставляют средства тестирования Visual Studio.|- [Использование параметра объема протестированного кода для определения объема протестированного кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**Использование покрытия кода для определения того, какая часть кода проекта тестируется.** Изучите возможности покрытия кода, которые предоставляют средства тестирования Visual Studio.|- [Использование параметра объема протестированного кода для определения объема протестированного кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**Анализ нагрузки и производительности с помощью нагрузочных тестов**. Вы можете создать нагрузочные тесты, чтобы выявить проблемы с нагрузкой и производительностью в приложении.|- [Краткое руководство. Создание проекта нагрузочного тестирования](../test/quickstart-create-a-load-test-project.md).<br />- [Нагрузочное тестирование (Azure Test Plans и TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
 |**Установка системы контроля качества**. Вы можете создать систему контроля качества, чтобы выполнять тесты перед сохранением или объединением кода.|- [Политики возврата (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts&preserve-view=true)|
 |**Задание параметров тестирования**. Сведения о настройке параметров теста, например места, где хранятся результаты теста.|[Настройка модульных тестов с помощью файла .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
@@ -56,6 +58,6 @@ ms.locfileid: "92099314"
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting> описывает пространство имен UnitTesting, предоставляющего атрибуты, исключения, утверждения и другие классы, поддерживающие модульное тестирование.
 - В <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> описано пространство имен UnitTesting.Web, расширяющее пространство имен UnitTesting за счет поддержки ASP.NET и модульных тестов веб-службы.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Улучшение качества кода](../test/improve-code-quality.md)
+- [Улучшите качество кода](../test/improve-code-quality.md)

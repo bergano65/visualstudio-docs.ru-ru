@@ -1,5 +1,7 @@
 ---
 title: Нагрузочный тест. Задание процента виртуальных пользователей, использующих данные веб-кэша
+description: Узнайте, как задать значение свойства "Доля новых пользователей" в окне "Свойства". Свойства сценария тестовой нагрузки можно указать в редакторе тестовой нагрузки.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a31ea50cdedbeb825d03de38a89200b6e8e5200
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 19568cce3fbd7abd4a74922d2a726ff7c92dd09a
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287406"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329059"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Практическое руководство. Задание процента виртуальных пользователей, которые могут использовать данные веб-кэша
 
@@ -46,10 +48,10 @@ ms.locfileid: "85287406"
 
 5. По завершении изменения свойства в меню **Файл** выберите команду **Сохранить**. После этого нагрузочный тест можно выполнять с новым значением параметра **Доля новых пользователей**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Изменение сценариев тестовой нагрузки](../test/edit-load-test-scenarios.md)
-- [Пошаговое руководство: создание и запуск нагрузочного теста](../test/walkthrough-create-and-run-a-load-test.md)
+- [Пошаговое руководство. Создание и запуск нагрузочного теста](../test/walkthrough-create-and-run-a-load-test.md)
 - [Контроллеры и агенты тестирования](configure-test-agents-and-controllers-for-load-tests.md)
 - [Свойства сценария тестовой нагрузки](../test/load-test-scenario-properties.md)
 - [Изменение шаблонов нагрузки для моделирования действий виртуальных пользователей](../test/edit-load-patterns-to-model-virtual-user-activities.md)

@@ -1,5 +1,7 @@
 ---
 title: Настройка ожидания определенных событий закодированным тестом пользовательского интерфейса
+description: Узнайте, как настроить проверку воспроизведения закодированных тестов пользовательского интерфейса на ожидание определенных событий, таких как появление окна или отображение индикатора выполнения.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -7,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0bd0135ca90f96c2275248da7d116ecfd92e01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 401888eee7fb5952c69c953824f3959c2b456a4d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286782"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329566"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Настройка закодированного теста пользовательского интерфейса таким образом, чтобы во время воспроизведения он дожидался определенных событий
 
@@ -109,7 +111,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
 - [Использование автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)
 - [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md)
-- [Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Пошаговое руководство: Создание, изменение и обслуживание закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Составляющие закодированного теста пользовательского интерфейса](../test/anatomy-of-a-coded-ui-test.md)
 - [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Практическое руководство. Вставка задержки перед действием пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)

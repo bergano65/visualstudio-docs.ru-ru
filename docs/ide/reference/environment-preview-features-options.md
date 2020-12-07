@@ -1,5 +1,7 @@
 ---
 title: Предварительные версии функций, среда, диалоговое окно "Параметры"
+description: Узнайте, как использовать страницу "Предварительные версии функций" в разделе "Среда" для включения и отключения предварительных версий функций в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5fc392e6d3d862ae81f0844d2cd28e8da44a805
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5a0eb0627c073c09f23d8690dba2fd4f9af8b482
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595687"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305460"
 ---
 # <a name="options-dialog-box-environment--preview-features"></a>Диалоговое окно "Параметры": Среда \> Предварительные версии функции
 

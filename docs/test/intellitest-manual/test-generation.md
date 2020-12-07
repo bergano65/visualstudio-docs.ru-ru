@@ -1,5 +1,7 @@
 ---
 title: Создание теста | Инструмент тестирования для разработчиков Microsoft IntelliTest
+description: Узнайте, как IntelliTest создает тестовые случаи из методов реализации, а затем создает входные данные для методов и проверяет утверждения по данным.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c251a1539b42da2b4e92c2996457075f3c3be135
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790146e3014765224f22bd247732c7ac3f062269
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315178"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329449"
 ---
 # <a name="test-generation"></a>Создание теста
 
@@ -116,7 +118,7 @@ public partial class ListTest {
 
 IntelliTest предоставляет множество атрибутов проверки для рассмотрения исключений и их разделения на ожидаемые и непредвиденные.
 
-Ожидаемые исключения создают негативные тестовые случаи с соответствующей аннотацией, например **ExpectedException(typeof(*xxx*))** , а непредвиденные исключения создают неудачные тестовые случаи.
+Ожидаемые исключения создают негативные тестовые случаи с соответствующей аннотацией, например **ExpectedException(typeof(*xxx*))**, а непредвиденные исключения создают неудачные тестовые случаи.
 
 ```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
@@ -168,7 +170,7 @@ public void Test2([PexAssumeNotNull] object o)
 ```
 
 <a name="precondition"></a>
-## <a name="precondition"></a>Предусловие
+## <a name="precondition"></a>Precondition
 
 Предусловие метода указывает условия, при которых метод выполняется успешно.
 

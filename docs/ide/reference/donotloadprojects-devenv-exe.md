@@ -1,5 +1,7 @@
 ---
 title: -DoNotLoadProjects (devenv.exe)
+description: Узнайте, как использовать параметр командной строки DoNotLoadProjects devenv, чтобы открыть указанное решение без загрузки каких-либо проектов.
+ms.custom: SEO-VS-2020
 ms.date: 04/30/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51e3341082ff354fc8bc87a89b3d7bc56e4e7887
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ef3502a2180f7ae7ed5963deb14844b46f3dbff9
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569859"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040632"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
 
@@ -34,7 +36,7 @@ devenv /DoNotLoadProjects SolutionName
 
 *SolutionName*
 
-Обязательный элемент. Полный путь и имя открываемого решения.
+Обязательный. Полный путь и имя открываемого решения.
 
 ## <a name="example"></a>Пример
 

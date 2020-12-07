@@ -1,5 +1,7 @@
 ---
 title: API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
+description: В этой статье описываются элементы CppUnitTestFramework, которые можно использовать для написания модульных тестов для C++ на основе собственной платформы модульного тестирования Майкрософт.
+ms.custom: SEO-VS-2020
 ms.date: 09/27/2019
 ms.topic: reference
 ms.author: corob
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: corob-msft
-ms.openlocfilehash: 16ea629312237dd859e9eb1aad21b9b219de7229
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b552ff667d4b7aef5f982d4fb0cda78d65c98ed6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82109433"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329189"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Справочник по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 

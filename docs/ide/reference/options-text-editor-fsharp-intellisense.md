@@ -1,5 +1,7 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", F#, \"IntelliSense\""
+description: Узнайте, как использовать страницу IntelliSense в разделе "F#", чтобы изменить параметры IntelliSense текстового редактора для F#.
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d293d2c649329f5de8444ea75fd05ddc34738ab4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 84e24f609891e67bdafaab5ff8847dc341b861ba
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72666218"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039618"
 ---
 # <a name="options-text-editor-f-intellisense"></a>"Параметры", "Текстовый редактор", F#, "IntelliSense"
 
@@ -34,7 +36,7 @@ ms.locfileid: "72666218"
 
    Если этот параметр выбран, IntelliSense автоматически отображает список завершения при начале ввода, включая элементы из пространства имен, которое вы не отрывали.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)
 - [Использование технологии IntelliSense](../../ide/using-intellisense.md)

@@ -1,5 +1,7 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", C/C++, \"Представление\""
+description: Узнайте, как использовать страницу "Представление" в разделе "C/C++" для изменения поведения по умолчанию для подчеркивания кода, неактивного кода, структуризации и других возможностей в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 68d08953ca3c493f3b3e42dd4ddd84bc19bdfd6e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278690"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041078"
 ---
 # <a name="options-text-editor-cc-view"></a>"Параметры", "Текстовый редактор", C/C++, "Представление"
 
@@ -40,13 +42,13 @@ ms.locfileid: "77278690"
 
 - **Процент прозрачности неактивного кода**. Процент прозрачности неактивных блоков кода.
 
-## <a name="miscellaneous"></a>Разное
+## <a name="miscellaneous"></a>Прочее
 
 - **Перечислить задачи комментариев**. Поиск в файлах с открытым исходным кодом токенов VS и их вывод в окне списка задач.
 
 - **Выделение совпадающих токенов**. Выделение вмещающих скобок или синтаксиса, который совпадает с фрагментом, где находится курсор.
 
-## <a name="outlining"></a>Структура
+## <a name="outlining"></a>Структуризация
 
 - **Включить структуру**. Входить в режим структуры при открытии файлов.
 

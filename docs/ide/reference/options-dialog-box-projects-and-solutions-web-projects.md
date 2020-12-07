@@ -1,5 +1,6 @@
 ---
 title: Веб-проекты в диалоговом окне "Параметры"
+description: Узнайте, как использовать параметры "Веб-проекты", чтобы задать веб-сервер, который веб-проекты будет использовать для разработки в Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.topic: reference
@@ -11,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efff521076b2d4a4b091ebf30b42f0d3ea4daa1f
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 60aadb43c40e109fef9c4b9e2aa046c3f0d51edd
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102640"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96044015"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>«Диалоговое окно параметров», «Проекты и решения», «Веб-проекты»
 
-Задает веб-сервер, который будут использовать веб-проекты для разработки в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Чтобы получить доступ к этим параметрам, выберите **Сервис > Параметры** , разверните **Проекты и решения** и выберите пункт **Веб-проекты**.
+Задает веб-сервер, который будут использовать веб-проекты для разработки в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Чтобы получить доступ к этим параметрам, выберите **Сервис > Параметры**, разверните **Проекты и решения** и выберите пункт **Веб-проекты**.
 
 По умолчанию при запуске веб-проекта в Visual Studio используется Visual Studio Development Server. Дополнительные сведения см. в разделе [Веб-серверы в Visual Studio для веб-проектов ASP.NET](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\)).
 

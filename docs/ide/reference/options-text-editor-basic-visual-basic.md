@@ -1,5 +1,7 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", Basic (VB), \"Дополнительно\""
+description: Узнайте, как использовать страницу "Дополнительно" в разделе "Основные" для изменения параметров по умолчанию для анализа, директив импорта и выделения свойств.
+ms.custom: SEO-VS-2020
 ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: 530fffdf335232a76a54e66551487a89dc50b09a
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214637"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040996"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>"Параметры", "Текстовый редактор", Basic (Visual Basic), "Дополнительно"
 Страница свойств **Только для VB** в папке **Basic** внутри папки **Текстовый редактор** диалогового окна **Параметры** (меню **Сервис**) содержит следующие свойства:

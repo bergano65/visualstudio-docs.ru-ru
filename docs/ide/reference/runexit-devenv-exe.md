@@ -1,5 +1,7 @@
 ---
 title: -RunExit (devenv.exe)
+description: Узнайте, как использовать параметр командной строки RunExit devenv для компиляции и запуска указанного проекта или решения, а затем для закрытия интегрированной среды разработки.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ca581c5a8a7f631138e8b3eacff02a031e0931
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a1e0af28e8a96860039381b958d63e161a24936
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593607"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039854"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
 
@@ -41,9 +43,9 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
 - `/Out` *OutputFilename*
 
-  Необязательный параметр. Имя файла, в который вы хотите отправить выходные данные средства. Если файл уже существует, средство добавляет в его конец выходные данные.
+  Необязательный элемент. Имя файла, в который вы хотите отправить выходные данные средства. Если файл уже существует, средство добавляет в его конец выходные данные.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Компилирует и запускает указанный проект или указанное решение согласно параметрам, заданным для активной конфигурации решения. Этот параметр свертывает интегрированную среду разработки во время выполнения проекта или решения. Он закрывает интегрированную среду разработки после выполнения проекта или решения.
 

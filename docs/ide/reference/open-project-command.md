@@ -1,5 +1,7 @@
 ---
 title: Открыть проект - команда
+description: Узнайте о команде Open Project и о том, как она позволяет открыть существующий проект или решение.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ce00713cbfe862c5788a0131c99ba4c5750bb600
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565816"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304138"
 ---
 # <a name="open-project-command"></a>Команда Open project
 
@@ -36,12 +38,12 @@ File.OpenProject filename
 
 `filename`
 
-Обязательный элемент. Полный путь и имя файла открываемого проекта или решения.
+Обязательный. Полный путь и имя файла открываемого проекта или решения.
 
 > [!NOTE]
 > В соответствии с требованиями синтаксиса для аргумента `filename` путь, содержащий пробелы, должен заключаться в кавычки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция автозавершения пытается определить правильный путь и правильное имя файла во время их ввода.
 
@@ -55,7 +57,7 @@ File.OpenProject filename
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)

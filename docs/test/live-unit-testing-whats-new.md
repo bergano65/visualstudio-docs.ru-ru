@@ -1,5 +1,7 @@
 ---
 title: Новые возможности Live Unit Testing в Visual Studio 2017
+description: В этой статье описаны новые возможности Live Unit Testing, добавленные в каждой версии Visual Studio начиная с Visual Studio 2017 версии 15.3.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 10/11/2017
 ms.topic: conceptual
@@ -11,12 +13,12 @@ ms.author: mikejo
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: cc6a7a25ebd2f7d07dcb887952b82bda34aaad35
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ae1caef04c1ccd1c51c38ddef5dc8c783bdbfaa9
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851467"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328838"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Новые возможности Live Unit Testing для Visual Studio 2017
 
@@ -26,7 +28,7 @@ ms.locfileid: "90851467"
 
 Начиная с версии 15.4 среды Visual Studio 2017 в функции Live Unit Testing реализованы улучшения в ряде областей.
 
-- **Улучшенные возможности обнаружения**. Для тех пользователей, которые не знают о существовании функции Live Unit Testing, в интегрированной среде разработки Visual Studio выводится золотистая панель с напоминанием о Live Unit Testing каждый раз, когда пользователь открывает решение, в котором есть модульные тесты, но функция Live Unit Testing в котором не включена. Представленные на ней сведения позволяют пользователю узнать больше о функции Live Unit Testing и о том, как включить ее. Если предварительные требования для использования Live Unit Testing не соблюдены, это также указывается на этой панели. К ним относятся следующие объекты.
+- **Улучшенные возможности обнаружения**. Для тех пользователей, которые не знают о существовании функции Live Unit Testing, в интегрированной среде разработки Visual Studio выводится золотистая панель с напоминанием о Live Unit Testing каждый раз, когда пользователь открывает решение, в котором есть модульные тесты, но функция Live Unit Testing в котором не включена. Представленные на ней сведения позволяют пользователю узнать больше о функции Live Unit Testing и о том, как включить ее. Если предварительные требования для использования Live Unit Testing не соблюдены, это также указывается на этой панели. Сюда входит следующее.
 
   - Отсутствуют адаптеры тестов.
   - Установлены старые версии адаптеров тестов.
@@ -64,7 +66,7 @@ ms.locfileid: "90851467"
   - Для NUnit: `[Category("SkipWhenLiveUnitTesting")]`
   - Для MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Знакомство с Live Unit Testing](live-unit-testing-intro.md)
-- [Динамическое модульное тестирование с помощью Visual Studio](live-unit-testing.md)
+- [Live Unit Testing в Visual Studio](live-unit-testing.md)

@@ -1,5 +1,7 @@
 ---
 title: Каскад параметров | Инструмент тестирования для разработчиков Microsoft IntelliTest
+description: Узнайте о каскаде параметров, который упорядочивает параметры на уровне сборки, средства и исследования.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 95a2029cee1fd13241aba727f671a164d7272543
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bdb053218b65924abfa64053a8a3c7e9e0543d49
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591584"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329514"
 ---
 # <a name="settings-waterfall"></a>Каскад параметров
 

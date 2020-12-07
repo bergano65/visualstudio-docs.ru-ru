@@ -1,5 +1,6 @@
 ---
 title: Указание числа итераций в параметрах запуска нагрузочного теста
+description: Узнайте, как определить число итераций веб-теста производительности или модульного теста во всех сценариях нагрузочного теста, запускаемого из редактора тестовой нагрузки.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbca5bcaabbfbf87108fb057280d070006ddd718
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 754a5ad7612f6abbea52ea9d4bb4cb1d159f6dac
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810605"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328305"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Практическое руководство. Указание числа повторов теста в параметрах выполнения нагрузочного теста
 

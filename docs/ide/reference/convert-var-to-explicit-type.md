@@ -1,5 +1,7 @@
 ---
 title: Рефакторинг кода для замены ключевого слова var явным типом
+description: Узнайте, как использовать быстрые действия для замены ключевого слова var в выражении локальной переменной на явно заданный тип.
+ms.custom: SEO-VS-2020
 ms.date: 05/15/2018
 ms.topic: reference
 author: TerryGLee
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ec388564e1851402f085f6bbaefba08dbea212c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a9270ca6cf7407d196eca211b6a76c6dc6a8be78
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595778"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305530"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>Рефакторинг кода для замены ключевого слова var явным типом
 
@@ -34,7 +36,7 @@ ms.locfileid: "75595778"
 
 Тем не менее ключевое слово [var](/dotnet/csharp/language-reference/keywords/var) нужно использовать, если переменная инициализируется с помощью анонимного типа и вам потребуется доступ к свойствам объекта на более позднем этапе. Дополнительные сведения см. в руководстве по программированию C# [Неявно типизированные локальные переменные](/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables).
 
-## <a name="how-to-use-it"></a>Использование
+## <a name="how-to-use-it"></a>Способ использования
 
 1. Поместите курсор на ключевое слово `var`.
 

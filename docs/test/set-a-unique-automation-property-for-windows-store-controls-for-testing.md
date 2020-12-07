@@ -1,5 +1,6 @@
 ---
 title: Назначение уникального свойства автоматизации — тестирование элементов управления UWP
+description: Узнайте, как назначить уникальное свойство автоматизации на основе типа элемента управления XAML в приложении UWP на основе XAML для выполнения закодированного теста пользовательского интерфейса.
 ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: how-to
@@ -8,12 +9,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 1790ac51f513ddcb42500eb271212b68a4aefe63
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5af4f9c70696144e0efb420ab27860a1969bddc6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810224"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328333"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Назначение уникального свойства автоматизации элементам управления универсальной платформы Windows для тестирования
 
@@ -44,7 +45,7 @@ ms.locfileid: "90810224"
 Явно присвойте параметру **AutomationProperties.AutomationId** значение **ButtonX** в XAML-коде элемента управления.
 
 ```xaml
-<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
+<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
 ```
 
 Явно присвойте параметру **AutomationProperties.Name** значение **ButtonY** в XAML-коде элемента управления.

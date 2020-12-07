@@ -1,5 +1,7 @@
 ---
 title: Периоды ожидания для контроллеров тестирования и агентов тестирования
+description: Узнайте, как изменить значения времени ожидания для контроллера тестирования и агента тестирования, изменив соответствующие XML-файлы конфигурации.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b06dc7d363cefd568a6e1432582744f486fa222
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dc661999eb12bb679aa3622f0f14adc3ffc661a
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287289"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330008"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Практическое руководство. Задание периодов ожидания для контроллеров тестирования и агентов тестирования
 
@@ -28,7 +30,7 @@ ms.locfileid: "85287289"
 
 - Контроллер тестирования: *QTController.exe.config*
 
-    |Имя ключа|Description|Значение|
+    |Имя ключа|Описание|Значение|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Период времени (в секундах), в течение которого агент прослушивает запрос, прежде чем подключение считается разорванным.|"n" секунд.|
     |AgentSyncTimeoutInSeconds|Период времени (в секундах) после начала тестового запуска синхронизации, в течение которого все агенты должны ожидать синхронизации, прежде чем прервать запуск.|"n" секунд.|
@@ -37,7 +39,7 @@ ms.locfileid: "85287289"
 
 - Агент тестирования: *QTAgentService.exe.config*
 
-    |Имя ключа|Description|Значение|
+    |Имя ключа|Описание|Значение|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Количество секунд между попытками подключения к контроллеру.|"n" секунд. Значение по умолчанию — 30 (тридцать секунд).|
     |RemotingTimeoutSeconds|Максимальная продолжительность (в секундах) вызова удаленного взаимодействия.|"n" секунд. Значение по умолчанию — 600 (десять минут).|

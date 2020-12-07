@@ -1,5 +1,7 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", XAML, \"Форматирование\""
+description: Узнайте, как использовать страницу "Форматирование" и ее вложенных страниц для задания параметров форматирования кода в редакторе кода при программировании в XAML.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -29,12 +31,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d340a3b9468ea23c4cab23aabe19a7c1390955a3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ddeb503153eacdcff993405e29bb8b3bdbe0c722
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568247"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040528"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>"Параметры", "Текстовый редактор", XAML, "Форматирование"
 
@@ -174,6 +176,6 @@ Width="75">Hello</Button>
 </Grid>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [XAML в WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)

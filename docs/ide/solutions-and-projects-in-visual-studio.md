@@ -1,5 +1,7 @@
 ---
 title: Проекты и решения
+description: Узнайте о проектах и решениях Visual Studio и о том, как создать новый проект с помощью средства "Обозреватель решений".
+ms.custom: SEO-VS-2020
 ms.date: 06/26/2020
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0ee64afa78a962271d2b702ee525287c5b2457
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 949da02ac074e9740038fef7917655ca552a12f6
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85468734"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480711"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Решения и проекты в Visual Studio
 

@@ -1,5 +1,7 @@
 ---
 title: Тестирование библиотеки DLL на C++ для приложений UWP
+description: Узнайте, как создавать модульные тесты для библиотеки DLL на C++ для приложений универсальной платформы Windows с использованием среды тестирования Майкрософт для C++.
+ms.custom: SEO-VS-2020
 ms.date: 05/01/2019
 ms.topic: how-to
 ms.author: corob
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: 7b556f085ae4e4a9c610aefa87b3f9125fb27042
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: a7ae79ff4df783d3c4541720c9fef709087e7da6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285613"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330099"
 ---
 # <a name="how-to-test-a-c-dll"></a>Тестирование Библиотеки DLL C++
 

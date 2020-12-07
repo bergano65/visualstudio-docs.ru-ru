@@ -1,5 +1,7 @@
 ---
 title: Синхронизация параметров
+description: Узнайте, как синхронизировать параметры Visual Studio на нескольких компьютерах путем входа в одну и ту же учетную запись персонализации.
+ms.custom: SEO-VS-2020
 ms.date: 06/18/2020
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3129543656c0defe09543b8531d8a10998791083
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5326264063d135582f2e9b8730ffcf16cba9e3d6
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285209"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479212"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Синхронизация параметров Visual Studio на нескольких компьютерах
 

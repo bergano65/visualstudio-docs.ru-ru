@@ -1,5 +1,7 @@
 ---
 title: Установка агентов и контроллеров тестирования
+description: Узнайте, как использовать агенты Visual Studio для оркестрации тестирования с помощью Azure Test Plans или Team Foundation Server.
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b75ae05a65ae15e82c45ec0cf43935fb0809160
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d2ffa3a1006057169d7e4f473922ff2eebbfe7bb
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928610"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328890"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Установка агентов и контроллеров тестирования
 

@@ -1,5 +1,7 @@
 ---
 title: -NoSplash (devenv.exe)
+description: Узнайте, как использовать параметр командной строки NoSplash devenv, чтобы запретить отображение экрана-заставки.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: v-dele
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e86398663ea7b6c8209d4123ab3cb12651d4491e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62950657"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96044002"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
 
@@ -39,7 +41,7 @@ devenv /NoSplash [File1[ FileN]...]
 
   Необязательный параметр. Один или несколько дополнительных файлов для открытия в существующем экземпляре Visual Studio.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Этот параметр скрывает экран-заставку. Если этот параметр не задан, экран-заставка отображается. Для отображения экрана-заставки в дальнейшем (например, для проверки логотипа продукта VSPackage) необходимо использовать параметр [/Splash](../../extensibility/devenv-command-line-switches-for-vspackage-development.md).
 

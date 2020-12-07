@@ -1,5 +1,7 @@
 ---
 title: "\"Анализ кода\", конструктор проекта"
+description: Узнайте об анализе кода, конструкторе проектов и о том, как он содержит средство анализа кода, которое можно использовать в коде.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 350c32ea0904913b20f346243de9cb464667289a
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 7a972e183047b9d8cb7adfd30638be2fd4b0de86
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659359"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041036"
 ---
 # <a name="code-analysis-project-designer"></a>"Анализ кода", конструктор проекта
 
 Содержит средство анализа кода, которое вы можете запустить для своего кода. Это средство предоставляет сведения об управляемых сборках, например о нарушении правил программирования и разработки, изложенных в руководствах по разработке Microsoft .NET.
 
-## <a name="uielement-list"></a>Список элементов пользовательского интерфейса (UIElement)
+## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
 
 Включить анализ кода\
 Включает или отключает анализ кода для проекта.

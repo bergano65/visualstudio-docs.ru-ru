@@ -1,5 +1,7 @@
 ---
 title: Visual Basic IntelliSense
+description: Узнайте, как использовать функции IntelliSense, предлагаемые редактором исходного кода Visual Basic.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 118de9ec05bcd5c56376376619bea0c5148d36ab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 70cdcf9eb6d741fc579ce555ce0bfa3cdea0d774
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594192"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478826"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense для файлов кода Visual Basic
 

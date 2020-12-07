@@ -1,5 +1,7 @@
 ---
 title: Тестирование крупного приложения с несколькими картами пользовательского интерфейса
+description: Узнайте, как использовать закодированные тесты пользовательского интерфейса при тестировании сложного приложения с помощью нескольких карт пользовательского интерфейса. Для использования этой функции требуется Visual Studio Enterprise.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99e703d10d2bc6ed8fd573f4973e73f7ad40a937
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93ae6aaa77a133a0d1805554a38b2714bff5b312
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286587"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330164"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Тестирование крупного приложения с несколькими картами пользовательского интерфейса
 
@@ -56,7 +58,7 @@ ms.locfileid: "85286587"
 
 2. Щелкните правой кнопкой мыши папку `UIMaps`, выберите **Добавить**, а затем выберите **Создать элемент**.
 
-    Откроется диалоговое окно **Добавление нового элемента** .
+    Откроется диалоговое окно **Добавление нового элемента**.
 
    > [!NOTE]
    > Чтобы добавить новую карту закодированного теста ИП, необходимо быть в проекте закодированного теста ИП.

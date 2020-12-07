@@ -1,5 +1,7 @@
 ---
 title: -Diff (devenv.exe)
+description: Узнайте, как использовать параметр командной строки Diff devenv для сравнения двух файлов.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb74501c15e961d8da8e1e29dd0d9979c79a305
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5a2ae3da5036134260f48dce8838571312d87bf2
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570093"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305493"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
 
@@ -33,11 +35,11 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
 - *SourceFile*
 
-  Обязательный элемент. Полный путь и имя первого файла, который следует сравнить.
+  Обязательный. Полный путь и имя первого файла, который следует сравнить.
 
 - *TargetFile*
 
-  Обязательный элемент. Полный путь и имя второго сравниваемого файла.
+  Обязательный. Полный путь и имя второго сравниваемого файла.
 
 - *SourceDisplayName*
 
@@ -47,7 +49,7 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
   Необязательный параметр. Отображаемое имя второго файла.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Если экземпляр интегрированной среды разработки уже открыт, сравниваемые файлы появятся на вкладке в текущей среде.
 

@@ -1,5 +1,7 @@
 ---
 title: Сведения о параметрах, список членов и краткие сведения
+description: 'Узнайте, как использовать следующие функции IntelliSense:  "Список членов", "Сведения о параметрах", "Краткие сведения" и "Завершить слово".'
+ms.custom: SEO-VS-2020
 ms.date: 05/25/2018
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbd85ece0cf7b84230e37c74c27e746df7a52439
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: c60372d7268dd76bf9bbd967678490998ffa76c3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878287"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479021"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense в Visual Studio
 

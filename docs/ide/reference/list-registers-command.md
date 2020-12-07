@@ -1,5 +1,7 @@
 ---
 title: Команда List Registers
+description: Узнайте о команде List Registers и о том, как она отображает значения выбранных регистров и позволяет изменить список отображаемых регистров.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5459ded60ea90ae00a3f943f829065a82548d160
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568689"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305305"
 ---
 # <a name="list-registers-command"></a>Команда List Registers
 Отображает значение выбранных регистров и позволяет изменить список отображаемых регистров.
@@ -39,7 +41,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
 `Debug.ListRegisters /Display eax`
 
-эквивалентно правилу
+эквивалентно
 
 `Debug.ListRegisters eax`
 
@@ -55,7 +57,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
 Удаляет одно или несколько значений `register` или `registerGroup` из списка.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 Вместо `Debug.ListRegisters` можно использовать псевдоним `r`.
 
 ## <a name="example"></a>Пример

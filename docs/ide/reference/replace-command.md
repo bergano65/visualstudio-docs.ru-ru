@@ -1,5 +1,7 @@
 ---
 title: Команда Replace
+description: Узнайте о команде Replace и способах замены текста в файлах с помощью ряда параметров, доступных на вкладке "Заменить в файлах" окна "Поиск и замена".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 620e55938a9c96393d8cd7de6f238d3f98715d29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2db7b59c1982f706cc6d2b18039870871ffa1039
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596688"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304039"
 ---
 # <a name="replace-command"></a>Команда Replace
 Заменяет текст в файлах с использованием подмножества параметров, доступных на вкладке **Заменить в файлах** окна **Поиск и замена**.
@@ -34,11 +36,11 @@ Edit.Replace findwhat replacewith [/all] [/case]
 ## <a name="arguments"></a>Аргументы
 `findwhat`
 
-Обязательный элемент. Текст для поиска совпадения.
+Обязательный. Текст для поиска совпадения.
 
 `replacewith`
 
-Обязательный элемент. Текст для замены совпавшего текста.
+Обязательный. Текст для замены совпавшего текста.
 
 ## <a name="switches"></a>Коммутаторы
 /all или /a
@@ -51,7 +53,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 
 /doc или /d
 
-Необязательный параметр. Выполняет поиск только в текущем документе. Укажите только одну из доступных областей поиска — `/doc`, `/proc`, `/open` или `/sel`.
+Необязательный параметр. Выполняет поиск только в текущем документе. Укажите только одну из доступных областей поиска — `/doc`, `/proc`, `/open` или `/sel`.
 
 /hidden или /h
 
@@ -59,7 +61,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 
 /open или /o
 
-Необязательный параметр. Выполняет поиск по всем открытым документам, как если бы они были одним документом. Укажите только одну из доступных областей поиска — `/doc`, `/proc`, `/open` или `/sel`.
+Необязательный параметр. Выполняет поиск по всем открытым документам, как если бы они были одним документом. Укажите только одну из доступных областей поиска — `/doc`, `/proc`, `/open` или `/sel`.
 
 /options или /t
 
@@ -67,7 +69,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 
 /proc или /p
 
-Необязательный параметр. Выполняет поиск только в текущей процедуре. Укажите только одну из доступных областей поиска — `/doc`, `/proc`, `/open` или `/sel`.
+Необязательный параметр. Выполняет поиск только в текущей процедуре. Укажите только одну из доступных областей поиска — `/doc`, `/proc`, `/open` или `/sel`.
 
 /regex или /r
 
@@ -79,7 +81,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 
 /sel или /s
 
-Необязательный параметр. Выполняет поиск только в текущем выделенном фрагменте. Укажите только одну из доступных областей поиска — `/doc`, `/proc`, `/open` или `/sel`.
+Необязательный параметр. Выполняет поиск только в текущем выделенном фрагменте. Укажите только одну из доступных областей поиска — `/doc`, `/proc`, `/open` или `/sel`.
 
 /up или /u
 
@@ -103,7 +105,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 ## <a name="see-also"></a>См. также раздел
 
 - [Поиск и замена текста](../../ide/finding-and-replacing-text.md)
-- [Окно команд](../../ide/reference/command-window.md)
+- [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

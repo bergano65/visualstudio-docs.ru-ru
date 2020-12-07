@@ -1,5 +1,7 @@
 ---
 title: Шаг 1. Создание проекта и добавление в форму элементов управления Label
+description: Узнайте, как создать проект, добавить в форму метки, кнопку и другие элементы управления, а также задать свойства для каждого добавляемого элемента управления.
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf904fca84fba88e81306ff91add6c2156b4544
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cd84b7b11f58b8deb62f6138255b4c8d942b5a00
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579443"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480113"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Шаг 1. Создание проекта и добавление в форму элементов управления Label
 
@@ -32,12 +34,12 @@ ms.locfileid: "77579443"
 
 1. Выберите **Visual C#** или **Visual Basic** в левой области диалогового окна **Новый проект**, а затем — **Классическое приложение Windows**.
 
-1. В списке шаблонов выберите шаблон **Приложение Windows Forms (.NET Framework)** , назовите его *MathQuiz*, а затем нажмите кнопку **ОК**.
+1. В списке шаблонов выберите шаблон **Приложение Windows Forms (.NET Framework)**, назовите его *MathQuiz*, а затем нажмите кнопку **ОК**.
 
     Появится форма с именем *Form1.cs* или *Form1.vb*, в зависимости от выбранного языка программирования.
 
    > [!NOTE]
-   > Если вы не видите шаблон **Приложение Windows Forms (.NET Framework)** , используйте Visual Studio Installer, чтобы установить рабочую нагрузку **Разработка классических приложений .NET**.<br/><br/>![Рабочая нагрузка разработки классических приложений .NET в Visual Studio Installer](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Дополнительные сведения см. в разделе [Установка Visual Studio](../install/install-visual-studio.md).
+   > Если вы не видите шаблон **Приложение Windows Forms (.NET Framework)**, используйте Visual Studio Installer, чтобы установить рабочую нагрузку **Разработка классических приложений .NET**.<br/><br/>![Рабочая нагрузка разработки классических приложений .NET в Visual Studio Installer](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Дополнительные сведения см. в разделе [Установка Visual Studio](../install/install-visual-studio.md).
 
 ::: moniker-end
 
@@ -210,4 +212,4 @@ ms.locfileid: "77579443"
 
 - Следующий раздел руководства: **[Шаг 2. Создание задачи на сложение случайных чисел](../ide/step-2-create-a-random-addition-problem.md)** .
 
-- Предыдущая статья с общими сведениями: [Руководство 2. Создание ограниченной по времени математической головоломки](../ide/tutorial-2-create-a-timed-math-quiz.md).
+- См. раздел [Руководство 2. Создание ограниченной по времени математической головоломки](../ide/tutorial-2-create-a-timed-math-quiz.md).

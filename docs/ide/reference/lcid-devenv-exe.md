@@ -1,5 +1,7 @@
 ---
 title: -LCID (devenv.exe)
+description: Узнайте, как использовать параметр командной строки LCID devenv, чтобы задать язык по умолчанию, используемый для текста, валюты и других значений в интегрированной среде разработки.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eda3a4d9242655af1b018664273ceb693c7e775c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77557932"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96043989"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -39,9 +41,9 @@ devenv {/LCID|/L} LocaleID
 
 - *LocaleID*
 
-  Обязательный элемент. Код языка (LCID) для заданного вами языка.
+  Обязательный. Код языка (LCID) для заданного вами языка.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Загружает интегрированную среду разработки и устанавливает естественный язык по умолчанию для среды. Это изменение сохраняется между сеансами. Интегрированная среда разработки показывает его в поле **Инструменты** > **Параметры** > **Среда** > **Международные параметры** > **Язык**.
 
@@ -62,7 +64,7 @@ devenv {/LCID|/L} LocaleID
 |Корейский|1042|
 |Польский|1045|
 |Португальский (Бразилия)|1046|
-|Русский|1049|
+|русском языке|1049|
 |Испанский|3082|
 |Турецкий|1055
 
