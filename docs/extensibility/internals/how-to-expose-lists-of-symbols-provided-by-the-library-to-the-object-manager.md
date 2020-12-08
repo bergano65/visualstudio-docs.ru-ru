@@ -1,5 +1,7 @@
 ---
 title: Предоставление списка символов, предоставленных диспетчеру объектов | Документация Майкрософт
+description: Узнайте, как реализовать интерфейс IVsSimpleObjectList2, чтобы предоставить доступ к спискам символов диспетчеру объектов в Visual Studio и обновить средства обзора символов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb15b7d9b29c578a0acf43fd1aa9cfdea88e23ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52bb2505e70d39e6cd861190db6eab9fa29e7aa7
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708089"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761352"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Пошаговое руководство. предоставление списка символов, предоставленных библиотекой, диспетчеру объектов
 Средства просмотра символов, **представление классов**, **обозреватель объектов**, **Обозреватель вызовов** и **Результаты поиска символов**, передают запросы новых данных [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчеру объектов. Диспетчер объектов находит соответствующие библиотеки и запрашивает новые списки символов. Библиотеки отвечают, предоставляя запрашиваемые данные [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчеру объектов через <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейс. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Диспетчер объектов вызывает методы в <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейсе для получения данных и использует их для заполнения или обновления представлений средств просмотра символов.

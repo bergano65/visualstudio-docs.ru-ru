@@ -1,5 +1,7 @@
 ---
 title: Как пакеты VSPackage добавляют элементы пользовательского интерфейса | Документация Майкрософт
+description: Узнайте, как пакеты VSPackage добавляют элементы пользовательского интерфейса, такие как меню, панели инструментов и окна инструментов, в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d9cc3184009dd98e743064db1b8eb2abe6059d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3e2fe51c365e3e6936a73aef9d4de9d52024d47
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649601"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761092"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Как пакеты VSPackage добавляют элементы пользовательского интерфейса
 Пакет VSPackage может добавлять элементы пользовательского интерфейса (например, меню, панели инструментов и окна инструментов) в Visual Studio с помощью *vsct* -файла.
@@ -187,7 +189,7 @@ ms.locfileid: "81649601"
 |-------------| - | - | - |
 |Группа|[Элемент Groups](../../extensibility/groups-element.md), интегрированная среда разработки, другие пакеты VSPackage|Меню, группа, сам элемент|Меню, группы и команды|
 |Меню|[Элемент Menus](../../extensibility/menus-element.md), интегрированная среда разработки, другие пакеты VSPackage|от 1 до *n* групп|от 0 до *n* групп|
-|Панель инструментов|[Элемент Menus](../../extensibility/menus-element.md), интегрированная среда разработки, другие пакеты VSPackage|Сам элемент|от 0 до *n* групп|
+|Toolbar|[Элемент Menus](../../extensibility/menus-element.md), интегрированная среда разработки, другие пакеты VSPackage|Сам элемент|от 0 до *n* групп|
 |Menu Item|[Элемент Buttons](../../extensibility/buttons-element.md), интегрированная среда разработки, другие пакеты VSPackage|от 1 до *n* групп, сам элемент|от-0 до *n* групп|
 |Кнопка|[Элемент Buttons](../../extensibility/buttons-element.md), интегрированная среда разработки, другие пакеты VSPackage|от 1 до *n* групп, сам элемент||
 |Комбинированная|[Элемент КомБОС](../../extensibility/combos-element.md), интегрированная среда разработки, другие пакеты VSPackage|от 1 до *n* групп, сам элемент||

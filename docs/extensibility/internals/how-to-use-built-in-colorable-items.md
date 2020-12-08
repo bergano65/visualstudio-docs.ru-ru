@@ -1,5 +1,7 @@
 ---
-title: Как использовать встроенные цветные элементы | Документация Майкрософт
+title: Как использовать Built-In цветные элементы | Документация Майкрософт
+description: Узнайте, как использовать встроенные цветные элементы в интегрированной среде разработки (IDE) Visual Studio для языковой службы.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 762d1e53f7aafa11ed345859e68fc98766eec77d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 926cb77fe9477b7dc78c35c2ab58f9b73530e4fa
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905225"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761014"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Как использовать встроенные цветные элементы
 Перед использованием встроенных цветовых элементов необходимо сначала сообщить в интегрированную среду разработки (IDE), которая не предоставляет собственные настраиваемые цветовые элементы, которые в данном случае будут <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> объектами. Это делается путем настройки записи реестра для языковой службы.
 
 ## <a name="to-use-built-in-colorable-items"></a>Использование встроенных цветовых элементов
 
-1. В разделе **HKEY_LOCAL_MACHINE \висуалстудио \\<X. Y> \лангуажес\лангуаже Services \\<имя \> языка**, где — это \<X.Y> версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , а \<Language Name> — имя вашего языка, создайте значение записи реестра DWORD с именем **рекуестстоккколорс**.
+1. В разделе **HKEY_LOCAL_MACHINE\VisualStudio\\<X. Y> \лангуажес\лангуаже Services \\<имя \> языка**, где — это \<X.Y> версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , а \<Language Name> — имя вашего языка, создайте значение записи реестра DWORD с именем **рекуестстоккколорс**.
 
 2. Задайте для записи реестра **рекуестстоккколорс** значение *1*.
 

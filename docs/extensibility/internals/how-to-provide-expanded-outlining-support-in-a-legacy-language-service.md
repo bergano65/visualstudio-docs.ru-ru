@@ -1,5 +1,7 @@
 ---
 title: Предоставление поддержки структурирования в языковой службе | Документация Майкрософт
+description: Узнайте, как обеспечить расширенную поддержку структурирования в языковой службе прежних версий, добавив области структуры, управляемые редактором, и области структуры, управляемые клиентом.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 450ef1430e86467d116cc635a27600756bc36075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9397ff17ba80368a86ba03260b3c5af3759bfe8d
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905286"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761365"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Руководство. Предоставление расширенной поддержки структурирования в языковой службе прежних версий
 Существует два варианта расширения поддержки структурирования для вашего языка, помимо поддержки команды **Свернуть в определения** . Можно добавить области структуры, управляемые редактором, и добавить области структуры, управляемые клиентом.

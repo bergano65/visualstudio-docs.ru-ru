@@ -1,5 +1,7 @@
 ---
 title: Как реализовать вложенные проекты | Документация Майкрософт
+description: Сведения о реализации вложенных проектов в Visual Studio путем вызова событий из решения и родительских проектов для построения иерархии проектов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b1ac3c147962b943499172435c3f601115d36a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85a5c14196211a638cd830ac6df39570288aa831
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905343"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761341"
 ---
 # <a name="how-to-implement-nested-projects"></a>Руководство. Реализация вложенных проектов
 

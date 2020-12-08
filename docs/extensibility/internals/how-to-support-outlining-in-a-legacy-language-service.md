@@ -1,5 +1,7 @@
 ---
 title: Практические руководства. Поддержка структурирования в языковой службе прежних версий | Документация Майкрософт
+description: Узнайте, как обеспечить поддержку структурирования, расширения или свертывания различных областей текста в языковой службе прежних версий.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28396d513c83ed83e2769e75a6020a98b10251b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9d1d7b7a74b6565c666e4d5e3293caaef3c7732
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707918"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761326"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Практические руководства. Поддержка структурирования в языковой службе прежних версий
 Структурирование используется для разворачивания или сворачивания различных областей текста. Способ структурирования можно определить по-разному на разных языках. Дополнительные сведения см. в разделе [Структура](../../ide/outlining.md).

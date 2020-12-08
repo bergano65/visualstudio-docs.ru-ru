@@ -1,5 +1,7 @@
 ---
 title: Реализация устаревшего языка Service1 | Документация Майкрософт
+description: Узнайте, как реализовать устаревшую языковую службу, поддерживающую функции расширенной языковой службы, с помощью платформы управляемых пакетов (MPF). Часть 1 из 2.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2535c527fc3d2d94609246959c5293e455b9808d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be2caf25dfef71cb267f49b6cfd732923aa0848c
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238755"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761183"
 ---
 # <a name="implementing-a-legacy-language-service-1"></a>Реализация устаревшей языковой службы 1
 Классы в среде управляемого пакета (MPF) можно использовать для реализации устаревшей языковой службы, поддерживающей широкий спектр функций, таких как выделение синтаксиса, сопоставление фигурных скобок и завершение IntelliSense.

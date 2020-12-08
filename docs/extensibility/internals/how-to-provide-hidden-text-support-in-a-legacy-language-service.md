@@ -1,5 +1,7 @@
 ---
 title: Предоставление поддержки скрытого текста в языковой службе прежних версий
+description: Узнайте, как обеспечить поддержку скрытого текста в языковой службе прежних версий, добавив управляемые редактором или скрытые текстовые области с управлением клиентами.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a9d5fe85932f87eb68b6b5a0f5868ebbf8f2b5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f51f8e0c5ca268c1171804f663e5d01bd7c2530
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707930"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761313"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Как обеспечить поддержку скрытого текста в языковой службе прежних версий
 Помимо областей структуры, можно создавать скрытые текстовые области. Скрытые текстовые области могут быть управляемыми клиентом или редактором и используются для полного скрытия области текста. Редактор отображает скрытую область в виде горизонтальных линий. Примером этого является просмотр **только скриптов** в редакторе HTML.
