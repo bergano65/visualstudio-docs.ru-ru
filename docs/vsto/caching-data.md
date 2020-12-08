@@ -1,5 +1,7 @@
 ---
 title: Кэширование данных
+description: Узнайте, как кэшировать объекты данных в настройке на уровне документа, чтобы получить доступ к данным в автономном режиме или без открытия Microsoft Office Word или Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6e0f6d7fcf9920ddb8861712b7c5f8bf04506fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db22378477daffd4562a9d60c6b30bc7b96e58e2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62939419"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847875"
 ---
 # <a name="cache-data"></a>Кэширование данных
   Вы можете кэшировать объекты данных в настройке на уровне документа, чтобы обеспечить доступ к данным в автономном режиме или без открытия Microsoft Office Word или Microsoft Office Excel. Для кэширования объекта объект должен иметь тип данных, соответствующий определенным требованиям. Многие распространенные типы данных в .NET Framework соответствуют этим требованиям, включая <xref:System.String> , <xref:System.Data.DataSet> и <xref:System.Data.DataTable> .
@@ -79,7 +81,7 @@ ms.locfileid: "62939419"
  Дополнительные сведения см. в разделе [как кэшировать данные в защищенном паролем документе](../vsto/how-to-cache-data-in-a-password-protected-document.md).
 
 ## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>Предотвращение потери данных при добавлении значений NULL в кэш данных
- При добавлении объектов в кэш данных все кэшированные объекты должны быть инициализированы значением, отличным от**null** , до сохранения и закрытия документа. Если при сохранении и закрытии документа какой-либо кэшированный объект имеет значение **null** , то [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] автоматически удалит все кэшированные объекты из кэша данных.
+ При добавлении объектов в кэш данных все кэшированные объекты должны быть инициализированы значением, отличным от **null** , до сохранения и закрытия документа. Если при сохранении и закрытии документа какой-либо кэшированный объект имеет значение **null** , то [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] автоматически удалит все кэшированные объекты из кэша данных.
 
  При добавлении объекта со значением **null** в кэш данных с помощью <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> атрибута во время разработки можно использовать <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класс для инициализации кэшированных объектов данных перед открытием документа. Это полезно, если требуется инициализировать кэшированные данные на сервере без установленного приложения Word или Excel, прежде чем документ будет открыт конечным пользователем. Дополнительные сведения см. [в разделе доступ к данным в документах на сервере](../vsto/accessing-data-in-documents-on-the-server.md).
 

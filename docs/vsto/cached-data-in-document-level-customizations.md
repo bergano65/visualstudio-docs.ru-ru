@@ -1,5 +1,7 @@
 ---
 title: Кэшированные данные в настройках уровня документа
+description: Сведения о том, как Visual Studio разделяет данные из представления в настройках уровня документа, позволяя внедрять данные в качестве кэша данных.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9985dd25ba62cc9c0735a8a8f4008a4c0abe0558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be4229c179ec6c5640ab612d28991fe476363a53
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238352"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847901"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Кэшированные данные в настройках уровня документа
   Основной целью настроек на уровне документа является отделение данных от представления в документах Office. Данные — это информация, которая хранится в документе, включая числа и текст. Представление ссылается на пользовательский интерфейс и объектную модель Microsoft Office Word и Microsoft Office Excel.

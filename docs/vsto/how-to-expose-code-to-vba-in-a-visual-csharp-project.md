@@ -1,6 +1,7 @@
 ---
 title: Руководство. предоставление кода коду VBA в проекте C#
-ms.custom: seodec18
+description: Сведения о том, как можно предоставить код в проекте Visual C# для Visual Basic для приложений кода (VBA), если требуется взаимодействие между двумя типами кода.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21d7672d3c08012e75d73ee8bf4d9816b850eb2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a830ec75e3997bee8d4bed9e275fc6229fec3405
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544837"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846601"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Руководство. предоставление кода коду VBA в проекте Visual C#
   Можно предоставить код в проекте Visual C# для Visual Basic для приложений кода (VBA), если требуется, чтобы два типа кода взаимодействовал друг с другом.
@@ -93,7 +94,7 @@ ms.locfileid: "85544837"
 10. В окне **Свойства** выберите свойство **ReferenceAssemblyFromVbaProject** и установите значение **True**.
 
     > [!NOTE]
-    > Если книга или документ еще не содержат код VBA или если код VBA в документе не является доверенным для выполнения, то при установке свойства **ReferenceAssemblyFromVbaProject** в **значение true**будет получено сообщение об ошибке. Это происходит потому, что в данной ситуации Visual Studio не может изменить проект VBA в документе.
+    > Если книга или документ еще не содержат код VBA или если код VBA в документе не является доверенным для выполнения, то при установке свойства **ReferenceAssemblyFromVbaProject** в **значение true** будет получено сообщение об ошибке. Это происходит потому, что в данной ситуации Visual Studio не может изменить проект VBA в документе.
 
 11. Появляется сообщение, в котором следует нажать кнопку **ОК** . Это сообщение напоминает, что при добавлении кода VBA в книгу или документ при запуске проекта из [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] среды код VBA будет потерян при следующей сборке проекта. Это обусловлено тем, что документ в выходной папке построения перезаписывается при каждом построении проекта.
 
@@ -101,7 +102,7 @@ ms.locfileid: "85544837"
 
 12. Выполните построение проекта.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)
 - [Объединение настроек VBA и параметров на уровне документа](../vsto/combining-vba-and-document-level-customizations.md)

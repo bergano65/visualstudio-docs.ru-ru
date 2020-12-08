@@ -1,5 +1,7 @@
 ---
 title: Отправка событий | Документация Майкрософт
+description: Узнайте, как отладчик и модуль отладки используют модель событий на основе DCOM. События отправляются в виде COM-объектов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ec0d3aa29da562147b71b8efde49baf07d8ae0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0262868ae442bfdd8b99c16f59e000f4ebfc35c5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713033"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847914"
 ---
 # <a name="send-events"></a>Отправка событий
 Механизм обмена данными между отладчиком и модулем отладки (DE) — это модель событий, основанная на DCOM. События отправляются в виде COM-объектов, а каждое событие имеет параметры, которые указывают:
@@ -30,7 +32,7 @@ ms.locfileid: "80713033"
 
   Все события отладки отправляются с помощью метода [IDebugEventCallback2:: Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
  [Источники событий](../../extensibility/debugger/event-sources-visual-studio-sdk.md) Описание двух источников событий: Подсистема отладки (DE) и диспетчер отладки сеансов (SDM).
 
  [Поддерживаемые типы событий](../../extensibility/debugger/supported-event-types.md) Обсуждаются типы событий, поддерживаемые в настоящее время: асинхронные и синхронные.

@@ -1,5 +1,7 @@
 ---
 title: Как добавить пользовательские XML-части в настройки уровня документа
+description: Сведения о хранении XML-данных в книге Microsoft Office Excel или Microsoft Office документе Word путем создания пользовательской XML-части в настройке на уровне документа.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74bceeeabdaa46e6c1a35b5ab76de6a180d16d53
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9b2f3b4e72f9255099ed7190867faba5585ced4c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298452"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847434"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Как добавить пользовательские XML-части в настройки уровня документа
   XML-данные можно сохранять в книге Microsoft Office Excel или документе Microsoft Office Word путем создания настраиваемой XML-части в настройке на уровне документа. Дополнительные сведения см. в разделе [Общие сведения о пользовательских XML-частях](../vsto/custom-xml-parts-overview.md).

@@ -1,5 +1,7 @@
 ---
 title: Элементы управления в документах Office
+description: Узнайте, как можно использовать средства разработки Office в Visual Studio для добавления Windows Forms элементов управления и элементов управления ведущего приложения в документы Word и листы Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 160897a37ff6a8b335479b42a80f4186f176cab6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 203edcf2b77cfff3fb557ce7c1c8fea7592e17ea
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254403"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847992"
 ---
 # <a name="controls-on-office-documents"></a>Элементы управления в документах Office
   Средства разработки Office в Visual Studio можно использовать для добавления элементов управления Windows Forms и *элементов управления ведущего приложения* в документы Word и книги Excel. Элементы управления ведущего приложения — это объекты, которые расширяют различные объекты пользовательского интерфейса в объектных моделях Word и Excel.
@@ -32,7 +34,7 @@ ms.locfileid: "71254403"
 
  При разработке проектов для Excel или Word на уровне документа можно добавлять элементы управления в среду выполнения программным образом или использовать конструктор Visual Studio и добавлять их на этапе разработки.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 
  Описывает функциональные возможности ведущих элементов и элементов управления ведущего приложения, включая программирование реакции на события и привязку элементов управления к данным, а также отличия элементов управления от собственных объектов.

@@ -1,5 +1,7 @@
 ---
 title: Предоставление доверия документам
+description: Узнайте, как проект уровня документа имеет те же требования к безопасности, что и проекты уровня приложения, например подписание манифестов сертификатом или щелчком запроса о доверии.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a631e8d8cffe6bfde925dfbae4a7350e6a0ef95a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9d91a86f8596e0ed7a04ae68099c7c9ab6099a40
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298616"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847745"
 ---
 # <a name="grant-trust-to-documents"></a>Предоставление доверия документам
   К проекту уровня документа предъявляются те же требования безопасности, что и к проектам уровня приложения. Это подписание манифестов сертификатом или подтверждение при запросе доверия. Кроме того, документ или книга должны быть расположены в каталоге, назначенном в качестве надежного расположения.

@@ -1,5 +1,7 @@
 ---
 title: Регистрация средства оценки выражений | Документация Майкрософт
+description: Узнайте, как средство оценки выражений должно регистрироваться как фабрика классов с помощью среды Windows COM и Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 600f7c8a2e2957cddf23ccc82b0872617e491940
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f26eddf7191ee4393dd2ca986fe7a1d2c3af9e2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713198"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847147"
 ---
 # <a name="register-an-expression-evaluator"></a>Регистрация средства оценки выражений
 > [!IMPORTANT]
@@ -120,7 +122,7 @@ namespace EEMC
     > [!NOTE]
     > `metricLanguage``GUID`Определяет язык по имени, но он является `guidLang` аргументом `SetEEMetric` , который выбирает язык. Когда компилятор создает файл отладочной информации, он должен записать соответствующее значение, `guidLang` чтобы параметр de знал, какой ee следует использовать. Обычно в параметре DE запрашивается поставщик символов для этого языка `GUID` , который хранится в файле отладочной информации.
 
-3. Регистрирует в Visual Studio, создавая ключи в разделе HKEY_LOCAL_MACHINE \Софтваре\микрософт\висуалстудио \\ *X. y*, где *X. y* — это версия Visual Studio для регистрации.
+3. Регистрирует в Visual Studio, создавая ключи в разделе HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *X. y*, где *X. y* — это версия Visual Studio для регистрации.
 
 ### <a name="example"></a>Пример
  Следующая функция показывает, как неуправляемый код (C++) EE регистрирует и отменяет регистрацию в Visual Studio.

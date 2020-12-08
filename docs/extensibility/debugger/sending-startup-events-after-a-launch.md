@@ -1,5 +1,7 @@
 ---
 title: Отправка событий запуска после запуска | Документация Майкрософт
+description: Сведения о серии событий запуска, которые модуль отладки отправляет в сеанс отладки после присоединения модуля отладки к программе.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c71db002420a2b822bffd34f2ae05e712f6a4bb9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99b094fd1019e0d7dea09e2953cb4f31e03b80dc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713017"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847888"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Отправка событий запуска после запуска
 После присоединения отладчика (DE) к программе отправляет в сеанс отладки ряд событий запуска.

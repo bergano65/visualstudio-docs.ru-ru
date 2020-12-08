@@ -1,7 +1,8 @@
 ---
 title: Общий справочник (разработка решений Office в Visual Studio)
+description: Общие справочные сведения о проектах разработки Microsoft Office в Visual Studio.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,20 +15,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c47f4360f63640f869231bc21929c43543d5c72e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551515"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847784"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Общий справочник (разработка решений Office в Visual Studio)
   В этом разделе содержатся технические сведения о проектах Microsoft Office в Visual Studio.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>В этом разделе
-- [Office - основные сборки взаимодействия](../vsto/office-primary-interop-assemblies.md)
+## <a name="in-this-section"></a>Содержание раздела
+- [Основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md)
 
  Выводит список основных сборок взаимодействия, доступных для установки с Office, и предоставляет краткое описание каждого из них.
 

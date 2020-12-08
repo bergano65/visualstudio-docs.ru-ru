@@ -1,8 +1,8 @@
 ---
 title: Доступ к VBA для создания и открытия проекта системы VSTO
 titleSuffix: ''
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-ms.custom: seodec18
+description: Сведения о том, что необходимо явно разрешить доступ к системе проектов Office VBA, прежде чем можно будет создать или открыть проект Инструменты Visual Studio для системы Office.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e30a89bdf8547eab9ed9c51b07c49e014b7302
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584863"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846133"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Предоставление доступа к VBA для создания или открытия Инструменты Visual Studio для проекта Microsoft Office системы
 
@@ -55,7 +55,7 @@ ms.locfileid: "91584863"
 
 3. Щелкните **центр управления безопасностью**, а затем — **Параметры центра управления безопасностью**.
 
-4. В **центре управления безопасностью**щелкните **Параметры макросов**.
+4. В **центре управления безопасностью** щелкните **Параметры макросов**.
 
 5. Установите или снимите флажок **Доверять доступ к объектной модели проекта VBA** , чтобы включить или отключить доступ к Visual Basic проектам.
 
@@ -79,7 +79,7 @@ ms.locfileid: "91584863"
 
 3. Щелкните **центр управления безопасностью**, а затем — **Параметры центра управления безопасностью**.
 
-4. В **центре управления безопасностью**щелкните **Параметры макросов**.
+4. В **центре управления безопасностью** щелкните **Параметры макросов**.
 
 5. В разделе **Параметры макросов** выберите нужный параметр.
 
@@ -111,7 +111,7 @@ ms.locfileid: "91584863"
 
 8. Нажмите кнопку **Продолжить**.
 
-9. Нажмите кнопку **Закрыть**.
+9. Щелкните **Закрыть**.
 
 ## <a name="to-repair-your-installation-of-office"></a>Восстановление установки Office
 
@@ -125,5 +125,5 @@ ms.locfileid: "91584863"
 
 5. Выберите **Обнаружение и исправление ошибок в установке Office**, а затем нажмите кнопку **установить**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Безопасные решения Office](../vsto/securing-office-solutions.md)

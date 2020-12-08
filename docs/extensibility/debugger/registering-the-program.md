@@ -1,5 +1,7 @@
 ---
 title: Регистрация программы | Документация Майкрософт
+description: Сведения о том, как отлаживаемая программа регистрируется через порт после того, как модуль отладки получит порт.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80c3d13cc7319e43390a7e9e6f4eb42a5a87c780
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713170"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847100"
 ---
 # <a name="register-the-program"></a>Регистрация программы
 После того как модуль отладки получит порт, представленный интерфейсом [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , следующий шаг при включении отладки программы заключается в его регистрации в порте. После регистрации программа доступна для отладки одним из следующих способов:

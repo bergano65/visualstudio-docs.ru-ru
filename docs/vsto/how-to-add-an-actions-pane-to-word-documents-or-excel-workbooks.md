@@ -1,5 +1,7 @@
 ---
 title: Добавление панели действий в документы Word или книги Excel
+description: Сведения о том, как добавить панель действий в документ Word Microsoft Office или в книгу Microsoft Excel, необходимо сначала создать Windows Forms пользовательский элемент управления.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d24ec3a17c9e0824c6b7aaffeaaac02c1c4f76e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d675209f2a3ac47e8681da8fca73c5cd86e95d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546228"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848070"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Практическое руководство. Добавление области действий в документы Word или книги Excel
   Чтобы добавить панель действий в Microsoft Office документ Word или книгу Microsoft Excel, сначала создайте пользовательский элемент управления Windows Forms. Затем добавьте пользовательский элемент управления в <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> свойство `ThisDocument.ActionsPane` поля (Word) или `ThisWorkbook.ActionsPane` FIELD (Excel) в проекте.
@@ -39,7 +41,7 @@ ms.locfileid: "85546228"
 
 2. В меню **Проект** выберите **Добавить новый элемент**.
 
-3. В диалоговом окне **Добавление нового элемента** выберите **элемент Панель действий**, назовите его **хеллоконтрол**и нажмите кнопку **Добавить**.
+3. В диалоговом окне **Добавление нового элемента** выберите **элемент Панель действий**, назовите его **хеллоконтрол** и нажмите кнопку **Добавить**.
 
     > [!NOTE]
     > Можно также добавить элемент **пользовательского элемента управления** в проект. Классы, созданные **элементом управления панели действий** и элементами **пользовательского элемента управления** , функционально эквивалентны.

@@ -1,5 +1,7 @@
 ---
 title: Объединение настроек VBA и параметров на уровне документа
+description: Узнайте, как можно использовать код Visual Basic для приложений (VBA) в документе, который является частью настройки уровня документа для Microsoft Office Word или Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3bab9c132439c6efa53842f1e13c6c5be31db00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59d0e9122bf35ac6f40799d91d3b52614d027f50
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70977602"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846406"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Объединение настроек VBA и параметров на уровне документа
   Код Visual Basic для приложений (VBA) можно использовать в документе, который является частью настройки на уровне документа для Microsoft Office Word или Microsoft Office Excel. Код VBA можно вызывать в документе из сборки настройки, или проект можно настроить таким образом, чтобы позволить коду VBA в документе вызывать код в сборке настройки.
@@ -42,7 +44,7 @@ ms.locfileid: "70977602"
  При запуске решения обработчики событий в VBA и сборке настройки получают события, возникающие в документе, и выполняются оба набора кода. Заранее невозможно определить, какой из кодов будет выполнен раньше. Это необходимо определить путем тестирования в каждом конкретном случае. Если два набора кода тщательно не скоординированы и не протестированы, можно получить неожиданные результаты.
 
 ## <a name="call-vba-code-from-the-customization-assembly"></a>Вызов кода VBA из сборки настройки
- В документах Word можно вызывать макросы, а в книгах Excel — функции и макросы. Для этого используйте один из следующих методов.
+ В документах Word можно вызывать макросы, а в книгах Excel — функции и макросы. Для этого используйте один из следующих методов:
 
 - Для Word вызовите <xref:Microsoft.Office.Interop.Word._Application.Run%2A> метод <xref:Microsoft.Office.Interop.Word.Application> класса.
 
@@ -90,7 +92,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
   - Для Word: *. docm* или *. doc*
 
-  - Для Excel: *. xlsm*, *. xltm*, *. xls*или *. xlt*
+  - Для Excel: *. xlsm*, *. xltm*, *. xls* или *. xlt*
 
 - Документ должен уже содержать проект VBA, который содержит в себе код VBA.
 
@@ -120,7 +122,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   Свойства **EnableVbaCallers** и **ReferenceAssemblyFromVbaProject** доступны в окне **Свойства** только во время разработки. Они не могут использоваться во время выполнения. Для просмотра свойств откройте конструктор для ведущего элемента в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения о конкретных задачах, выполняемых Visual Studio при задании этих свойств, см. [в разделе задачи, выполняемые свойствами ведущего элемента](#PropertyTasks).
 
 > [!NOTE]
-> Если книга или документ еще не содержит кода VBA, или код VBA в документе не является доверенным для выполнения, при установке для свойства **EnableVbaCallers** или **ReferenceAssemblyFromVbaProject** значения **True**вы получите сообщение об ошибке. Это происходит потому, что в данной ситуации Visual Studio не может изменить проект VBA в документе.
+> Если книга или документ еще не содержит кода VBA, или код VBA в документе не является доверенным для выполнения, при установке для свойства **EnableVbaCallers** или **ReferenceAssemblyFromVbaProject** значения **True** вы получите сообщение об ошибке. Это происходит потому, что в данной ситуации Visual Studio не может изменить проект VBA в документе.
 
 ## <a name="use-members-in-vba-code-to-call-into-the-customization-assembly"></a>Использование элементов в коде VBA для вызова сборки настройки
  После настройки своего проекта для обеспечения для кода VBA возможности вызывать сборку настройки Visual Studio добавляет в проект VBA в документе следующие члены:
@@ -239,7 +241,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 
 4. Удаляет внедренные библиотеки типов из сборки.
 
-## <a name="troubleshoot"></a>Диагностика
+## <a name="troubleshoot"></a>Устранение неполадок
  Ниже перечислены некоторые распространенные ошибки и предложения по их устранению.
 
 |Ошибка|Предложение|

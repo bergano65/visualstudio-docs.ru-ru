@@ -1,5 +1,7 @@
 ---
 title: Вызов кода в надстройках VSTO из других решений Office
+description: Узнайте, как предоставить объект в надстройке VSTO другим решениям, включая другие решения Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 584406098f058c17b3dd215dda9c8c4e9498cf46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fad3f107487e4736ccd0a6aa59ea5a801b5f72e5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255327"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847849"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Вызов кода в надстройках VSTO из других решений Office
   Объект в надстройке VSTO можно предоставить другим решениям, включая другие решения Microsoft Office. Это полезно, если надстройка VSTO предоставляет службу, доступ к которой нужно предоставить другим решениям. Например, если у вас есть Надстройка VSTO для Microsoft Office Excel, которая выполняет вычисления с финансовыми данными из веб-службы, другие решения могут выполнять эти вычисления, вызывая надстройку VSTO для Excel во время выполнения.
@@ -56,7 +58,7 @@ ms.locfileid: "71255327"
 2. Переопределите метод <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> в классе `ThisAddIn` . Верните экземпляр класса, который требуется предоставлять другим решениям.
 
 ### <a name="define-the-class-you-want-to-expose-to-other-solutions"></a>Определение класса, который требуется предоставить другим решениям
- Как минимум, предоставляемый класс должен быть общим, для атрибута этого класса <xref:System.Runtime.InteropServices.ComVisibleAttribute> должно быть задано значение **true**и он должен предоставлять интерфейс [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) .
+ Как минимум, предоставляемый класс должен быть общим, для атрибута этого класса <xref:System.Runtime.InteropServices.ComVisibleAttribute> должно быть задано значение **true** и он должен предоставлять интерфейс [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) .
 
  Предоставление интерфейса [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) рекомендуется выполнять следующим образом.
 
@@ -142,7 +144,7 @@ utilities.ImportData();
 
  В этом примере при попытке привести значение свойства Комаддин. Object к `AddInUtilities` классу, а не к `IAddInUtilities` интерфейсу, код выдаст исключение <xref:System.InvalidCastException> .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
 - [Пошаговое руководство. вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 - [Разработка решений Office](../vsto/developing-office-solutions.md)

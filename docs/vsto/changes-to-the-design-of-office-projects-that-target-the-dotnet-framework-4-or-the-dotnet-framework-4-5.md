@@ -1,5 +1,7 @@
 ---
 title: Проектирование изменений в проектах Office, предназначенных для .NET Framework
+description: Сведения об изменениях, появившихся в Visual Studio, для разработки проектов Office, предназначенных для .NET Framework 4 или более поздней версии.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be681bb930e22b3e4cdd4597eb4d265c27b08139
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 05f3662f1bc6379fa3401e98473971bcefc36ddd
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583831"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847862"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Изменения в проектировании проектов Office, предназначенных для .NET Framework 4 или .NET Framework 4,5
   Начиная с версии [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], в Visual Studio появился ряд изменений в структуре проектов Office, которые ориентируются на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию. Если вы знакомы с проектами Office в предыдущих версиях Visual Studio, вам следует ознакомиться с этими изменениями до разработки проектов Office, ориентированных на платформу .NET Framework версии 4.0 или более поздней. По умолчанию, все проекты, создаваемые с помощью Visual Studio 2013 или более поздней версии, ориентируются на платформу .NET Framework 4.0 или более поздней версии.
@@ -57,7 +59,7 @@ ms.locfileid: "91583831"
 |Были переименованы классы `OLEObject` и `OLEControl`.|Необходимо изменить любой код, который использует экземпляры этих классов, чтобы использовать вместо них объекты <xref:Microsoft.Office.Tools.Excel.ControlSite> или <xref:Microsoft.Office.Tools.Word.ControlSite> . Дополнительные сведения см. в [статье обновление проектов Excel и Word, переносимых на .NET Framework 4 или .NET Framework 4,5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|
 |Классы ведущих элементов, такие как `ThisWorkbook` , `Sheet` *n*, `ThisDocument` и `ThisAddIn` , больше не предоставляют `Dispose` метод, который можно переопределить.|Необходимо переместить любой код в переопределении метода `Dispose` в обработчик событий `Shutdown` в классе ведущего элемента, например, `ThisAddIn_Shutdown` и удалить переопределение метода `Dispose` из класса ведущего элемента.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Новые возможности разработки решений Office](/previous-versions/86bkz018(v=vs.110))
 - [Общие сведения о Инструменты Visual Studio для среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-overview.md)

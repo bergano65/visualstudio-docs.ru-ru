@@ -1,5 +1,7 @@
 ---
 title: Как заполнить листы данными из базы данных
+description: Узнайте, как можно использовать данные из объекта в решении и как использовать Windows Forms элементы управления для отображения данных на листе.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b594014b2564b5730c1895a007294ee66e07637
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4252eac32540ac2d0b6e763b5b6e9cf0e2ac7055
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520124"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846445"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Как заполнить листы данными из базы данных
 
@@ -67,7 +69,7 @@ ms.locfileid: "85520124"
 
 Сведения о том, как отправить обновления в типизированный набор данных и базу данных, см. в разделе [как обновить источник данных данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Добавление новых источников данных](../data-tools/add-new-data-sources.md)

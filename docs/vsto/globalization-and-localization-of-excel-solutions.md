@@ -1,5 +1,7 @@
 ---
 title: Глобализация и локализация решений Excel
+description: Ознакомьтесь с особыми соображениями для Microsoft Office решений Excel, которые будут выполняться на компьютерах, на которых установлены параметры, отличные от английского для Windows.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f37ddcbbd3145fc96cd8081d7a1df524ef7ea8ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51e4a2cc4fb74309c44b8068152253de92eed0df
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986055"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847758"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Глобализация и локализация решений Excel
   Этот раздел содержит информацию об особенностях решений Microsoft Office Excel, которые будут выполняться на компьютерах, имеющих настройки Windows, отличные от настроек в английском формате. Большинство аспектов глобализации и локализации решений Microsoft Office аналогичны аспектам, возникающим при создании других типов решений с помощью Visual Studio. Общие сведения см. в разделе [Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md).
@@ -77,7 +79,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  При использовании этого кода в решении, созданном с помощью средств разработки Office в Visual Studio, и его передаче в Excel с помощью COM-взаимодействия будут выведены те же результаты при условии, что дата отформатирована в формате "en-US".
 
- Пример:
+ Пример.
 
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]

@@ -1,5 +1,7 @@
 ---
 title: Как настроить встроенную вкладку
+description: Узнайте, как можно добавлять группы и элементы управления на встроенную вкладку. Встроенная вкладка — это вкладка, которая уже находится на ленте Microsoft Office приложении.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f73ec7a8555a5e5d569d4316ca619747550bf11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ac002b4c9ebacaf9cb522b583d6c4c9580b7bf2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547190"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846640"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Как настроить встроенную вкладку
   На встроенную вкладку можно добавлять группы и элементы управления. Встроенная вкладка — это вкладка, которая уже находится на ленте Microsoft Office приложении. Например, вкладка « **данные** » является встроенной вкладкой Excel. При создании настраиваемой группы она отображается на вкладке последней, но вы можете свободно перемещать группу на вкладке.
@@ -30,7 +32,7 @@ ms.locfileid: "85547190"
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>Добавление групп на встроенную вкладку
 
-1. Щелкните правой кнопкой мыши файл кода ленты в **Обозреватель решений**и выберите пункт **Конструктор представлений**.
+1. Щелкните правой кнопкой мыши файл кода ленты в **Обозреватель решений** и выберите пункт **Конструктор представлений**.
 
     > [!NOTE]
     > Если файл кода ленты не отображается в **Обозреватель решений**, необходимо добавить **элемент ленты** в проект. См. раздел [как приступить к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md).
@@ -66,10 +68,10 @@ ms.locfileid: "85547190"
 
      Список идентификаторов элементов управления см. в разделе [файлы справки office 2010: идентификаторы элементов управления пользовательского интерфейса Fluent Office](https://www.microsoft.com/download/details.aspx?id=6627).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Общие сведения о ленте](../vsto/ribbon-overview.md)
 - [Конструктор лент](../vsto/ribbon-designer.md)
-- [XML-ленты](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
 - [Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Пошаговое руководство. Создание настраиваемой вкладки с помощью XML-ленты](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
 - [Как приступить к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)

@@ -1,5 +1,7 @@
 ---
 title: Общие сведения об объектной модели Excel
+description: Узнайте, что вы можете взаимодействовать с объектами, предоставляемыми объектной моделью Excel, для разработки решений, использующих Microsoft Office Excel.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a823692a5cc0f154c514edff4fe9398de0efd212
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb3134b7656fc5156554e60fc88d16e6c2b58120
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649416"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847693"
 ---
 # <a name="excel-object-model-overview"></a>Общие сведения об объектной модели Excel
   Для разработки решений, использующих Microsoft Office Excel, необходимо взаимодействие с объектами, предоставляемыми объектной моделью Excel. В этом разделе представлены наиболее важные объекты:
@@ -116,7 +118,7 @@ ms.locfileid: "81649416"
 
 |Заголовок|Описание|
 |-----------|-----------------|
-|[решения Excel](../vsto/excel-solutions.md)|Инструкции по созданию настроек уровня документа и надстроек VSTO для Microsoft Office Excel.|
+|[Решения Excel](../vsto/excel-solutions.md)|Инструкции по созданию настроек уровня документа и надстроек VSTO для Microsoft Office Excel.|
 |[Работа с диапазонами](../vsto/working-with-ranges.md)|Примеры выполнения стандартных задач с диапазонами.|
 |[Работа с листами](../vsto/working-with-worksheets.md)|Примеры выполнения стандартных задач с листами.|
 |[Работа с книгами](../vsto/working-with-workbooks.md)|Примеры выполнения стандартных задач с книгами.|

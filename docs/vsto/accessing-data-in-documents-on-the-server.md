@@ -1,5 +1,7 @@
 ---
 title: Доступ к данным в документах на сервере
+description: Узнайте, как программировать данные в настройке на уровне документа без использования объектной модели Microsoft Office Word или Microsoft Office Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab033120c0913bbae33458c5a2d0b53972364581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e436c7a30708fac0cf59c2e79100cc89dade84b2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255768"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847628"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Доступ к данным в документах на сервере
   Вы можете программировать данные в настройке на уровне документа без использования объектной модели Microsoft Office Word или Microsoft Office Excel. Это означает, что вы можете получить доступ к данным, содержащимся в документе на сервере, на котором не установлен Word или Excel. Например, код на сервере (например, на [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] странице) может настраивать данные в документе и отсылать настроенный документ конечному пользователю. Когда конечный пользователь открывает документ, код привязки данных в сборке решения привязывает пользовательские данные к документу. Это возможно, поскольку данные в документе отделены от пользовательского интерфейса. Дополнительные сведения см. [в разделе кэшированные данные в настройках уровня документа](../vsto/cached-data-in-document-level-customizations.md).
@@ -77,7 +79,7 @@ ms.locfileid: "71255768"
 ## <a name="access-typed-datasets-in-the-cache"></a>Доступ к типизированным наборам данных в кэше
  Если требуется получить доступ к данным в типизированном наборе данных как из решения Office, так и из приложения, находящегося за пределами Office, например Windows Forms приложения или [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] проекта, необходимо определить типизированный набор данных в отдельной сборке, на которую есть ссылки в обоих проектах. Если добавить типизированный набор данных в каждый проект с помощью мастера **настройки источника данных** или **Конструктор наборов данных**, .NET Framework будет обрабатывать типизированные наборы данных в двух проектах как разные типы. Дополнительные сведения о создании типизированных наборов данных см. [в разделе Создание и Настройка наборов данных в Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Доступ к данным в документах на сервере](../vsto/accessing-data-in-documents-on-the-server.md)
 - [Кэшированные данные в настройках уровня документа](../vsto/cached-data-in-document-level-customizations.md)

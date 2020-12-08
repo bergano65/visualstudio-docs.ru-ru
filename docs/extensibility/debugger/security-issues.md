@@ -1,5 +1,7 @@
 ---
 title: Проблемы безопасности | Документация Майкрософт
+description: Сведения о разрешениях, необходимых для отладки программы с помощью Visual Studio, включая удаленную отладку и ситуации, в которых задействованы другие службы.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40898f5633eac374206ed40bfcac96d9c1c5b753
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 632150101b966e128e8a34636b01a369a1db5c64
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713053"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847615"
 ---
 # <a name="security-issues"></a>Проблемы с безопасностью
 Для отладки программы с помощью Visual Studio необходимы только те же разрешения, которые необходимы разработчику для запуска программы. Сюда входит удаленная отладка для большинства ситуаций. В некоторых ситуациях, в которых задействованы другие службы, например служба IIS, может потребоваться более высокий уровень разрешений.

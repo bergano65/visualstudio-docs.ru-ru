@@ -1,5 +1,7 @@
 ---
 title: Как изменить позицию вкладки на ленте
+description: Вы можете изменить порядок пользовательских вкладок на ленте и разместить пользовательские вкладки до или после встроенной вкладки на ленте с помощью редактора коллекции вкладок.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f821ea2a469fc06f80a7aaea96d07274d02a81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21fd7f17f7a990f95ce5c8b781e85807a10608c4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544863"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846770"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Как изменить позицию вкладки на ленте
   Порядок пользовательских вкладок на ленте можно изменить с помощью **редактора коллекции вкладок**. Вы можете располагать пользовательские вкладки до или после встроенной вкладки на ленте. Встроенная вкладка — это вкладка, которая уже находится на ленте Microsoft Office приложении. Например, вкладка « **данные** » является встроенной вкладкой Excel.
@@ -36,7 +38,7 @@ ms.locfileid: "85544863"
 
      Откроется **Редактор коллекции вкладок** .
 
-5. В **редакторе коллекции вкладок**в списке **члены** выберите вкладку, которую нужно переместить, и щелкните стрелки вверх или вниз, чтобы изменить порядок табуляции.
+5. В **редакторе коллекции вкладок** в списке **члены** выберите вкладку, которую нужно переместить, и щелкните стрелки вверх или вниз, чтобы изменить порядок табуляции.
 
 ### <a name="to-position-a-tab-before-or-after-a-built-in-tab-on-the-ribbon"></a>Размещение вкладки до или после встроенной вкладки ленты
 
@@ -56,9 +58,9 @@ ms.locfileid: "85544863"
 
      Список идентификаторов элементов управления см. в разделе [файлы справки office 2010: идентификаторы элементов управления пользовательского интерфейса Fluent Office](https://www.microsoft.com/download/details.aspx?id=6627).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Общие сведения о ленте](../vsto/ribbon-overview.md)
 - [Конструктор лент](../vsto/ribbon-designer.md)
-- [XML-ленты](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
 - [Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Пошаговое руководство. Создание настраиваемой вкладки с помощью XML-ленты](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

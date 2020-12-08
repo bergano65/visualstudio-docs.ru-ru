@@ -1,5 +1,7 @@
 ---
 title: Возможности, доступные по типам приложений Office и проектов
+description: Узнайте, как в Visual Studio есть несколько типов шаблонов проектов, поддерживающих различные бизнес-сценарии для Microsoft Office приложений.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba24bdeac9ad51d0173e765c8cb793be2473baf6
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 24db499602642f6ec980628d290ec8b5dd07fed3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585436"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847810"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Возможности, доступные по типам приложений Office и проектов
   В Visual Studio есть шаблоны проектов нескольких типов, которые поддерживают различные бизнес-сценарии для приложений Microsoft Office, включая следующие типы:
@@ -50,7 +52,7 @@ ms.locfileid: "91585436"
 ## <a name="features-available-in-different-project-types"></a>Функции, доступные в различных типах проектов
  В следующей таблице показано, какие функции доступны в каких типах проектов.
 
-|Функция|Типы проектов, предоставляющие возможность|Дополнительные сведения|
+|Признак|Типы проектов, предоставляющие возможность|Дополнительные материалы|
 |-------------|--------------------------------------------|---------------------|
 |Панель действий.|Проекты уровня документа.|[Обзор панели действий](../vsto/actions-pane-overview.md)|
 |Развертывание ClickOnce.|Проекты VS и уровня документа.|[Развертывание решения Office](../vsto/deploying-an-office-solution.md)|
@@ -66,7 +68,7 @@ ms.locfileid: "91585436"
 |Настройки ленты.|Проекты уровня документа.<br /><br /> Проекты надстроек VSTO для следующих приложений:<br /><br /> — Excel<br />— InfoPath (только InfoPath 2013 и InfoPath 2010)<br />— Outlook<br />— PowerPoint<br />-Проект<br />— Visio<br />-Слово|[Общие сведения о ленте](../vsto/ribbon-overview.md)|
 |Визуальный конструктор документов.|Проекты уровня документа.|[Проекты Office в среде Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Приступая к работе &#40;разработке решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Обзор панели действий](../vsto/actions-pane-overview.md)

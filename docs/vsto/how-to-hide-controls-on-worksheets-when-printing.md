@@ -1,5 +1,7 @@
 ---
 title: Как скрыть элементы управления на листах при печати
+description: Сведения о том, что можно скрыть элементы управления при печати Microsoft Office листе Excel, который содержит элементы управления Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 336723f60a2cd90dc63db24e981dd06e0388cb9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acc90986dd394e69de12893aac01e0a4f662b1a3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544811"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846497"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Как скрыть элементы управления на листах при печати
   При печати Microsoft Office документа Excel, содержащего элементы управления Windows Forms, элементы управления отображаются на распечатанном листе. Элементы управления можно скрывать при печати листа.
@@ -37,11 +39,11 @@ ms.locfileid: "85544811"
 
 1. Создайте или откройте проект Excel в Visual Studio и убедитесь, что элемент **Sheet1** виден в конструкторе. Сведения о создании проектов см. в разделе [Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. На вкладке **Общие элементы управления** **панели элементов**перетащите <xref:Microsoft.Office.Tools.Excel.Controls.Button> элемент управления в ячейку `Sheet1` .
+2. На вкладке **Общие элементы управления** **панели элементов** перетащите <xref:Microsoft.Office.Tools.Excel.Controls.Button> элемент управления в ячейку `Sheet1` .
 
 3. В окне **Свойства** присвойте <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> свойству значение **false**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)
 - [Общие сведения об элементах управления Windows Forms в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Добавление Windows Forms элементов управления в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
