@@ -1,5 +1,7 @@
 ---
 title: Как добавить элементы управления содержимым в документы Word
+description: Узнайте, что в проектах на уровне документа Word элементы управления содержимым можно добавлять в документ в проекте во время разработки или во время выполнения.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f15adeb801e33a134c681c206e3a5b38ccce70f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa1528371a1466ec2886bf652ed33561b66b7028
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538389"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845561"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Как добавить элементы управления содержимым в документы Word
   В проектах на уровне документа Word элементы управления содержимым можно добавлять в документ во время разработки или во время выполнения. В проектах надстройки VSTO для Word элементы управления содержимым можно добавлять в любой открытый документ во время выполнения.

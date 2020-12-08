@@ -1,5 +1,7 @@
 ---
 title: Интерфейсы поставщика символов | Документация Майкрософт
+description: В этой статье содержатся ссылки на описания интерфейсов обработки символов для пакета SDK для Visual Studio, которые оценивают переменные в стеке вызовов в режиме приостановки выполнения.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7929ba36c76f0db1cabab087afe3590de509efff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24baec6738382f93dee5d8b7843d624eea80890
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715840"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845795"
 ---
 # <a name="symbol-provider-interfaces"></a>Интерфейсы поставщика символов
 Ниже приведены интерфейсы обработки символов для [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] .
@@ -25,7 +27,7 @@ ms.locfileid: "80715840"
 ## <a name="discussion"></a>Разговор
  Эти интерфейсы используются для вычисления переменных в стеке вызовов в режиме приостановки выполнения. Они реализуются только для поставщиков символов общеязыковой среды выполнения (SP).
 
-|Интерфейс|Реализовано|Описание:|
+|Интерфейс|Реализовано|Описание|
 |---------------|--------------------|-----------------|
 |[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|SP|Представляет адрес элемента.|
 |[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|SP|Представляет адрес элемента, предоставляющий доступ к ИДЕНТИФИКАТОРу процесса.|
@@ -58,5 +60,5 @@ ms.locfileid: "80715840"
 |[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)|SP|Представляет коллекцию объектов [идебугкустоматтрибуте](../../../extensibility/debugger/reference/idebugcustomattribute.md) .|
 |[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)|SP|Представляет коллекцию объектов [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) .|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Справочник по интерфейсам API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

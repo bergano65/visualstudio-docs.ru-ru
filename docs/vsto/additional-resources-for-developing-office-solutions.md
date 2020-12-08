@@ -1,5 +1,7 @@
 ---
 title: Дополнительные ресурсы для разработки решений Office
+description: Дополнительные сведения о дополнительных ресурсах, которые можно использовать для разработки расширений для Microsoft Office приложений.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8bea9faa315fbd6ec41c667836dac7216f1f8f81
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 828cd2c451e531eeecda7574b5750bc3bb7023b2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986278"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844820"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Дополнительные ресурсы для разработки решений Office
   Инструменты разработчика Microsoft Office в Visual Studio представляют только один из множества способов расширения приложений Office. Приложения Office также имеют ряд встроенных функций, таких как форматы Open XML, с которыми нельзя работать с помощью Инструментов разработчика Office в Visual Studio. Также эти функции не освещены в данной документации.
@@ -32,5 +34,5 @@ ms.locfileid: "72986278"
 
 Раздел библиотеки MSDN, содержащий статьи и справочную документацию по разработке решений для нескольких версий Office (не только с помощью Visual Studio).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Дополнительная поддержка ошибок в решениях Office](../vsto/additional-support-for-errors-in-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: Обзор панели действий
+description: Сведения об настраиваемой области задач "действия документа", прикрепленной к конкретному Microsoft Office документу Word или книге Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82bf3ac9515effaa1053a011085849f0afea67f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d03ba8968b08fb07eb2cc9c17839af57cf06eca
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986311"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844833"
 ---
 # <a name="actions-pane-overview"></a>Обзор панели действий
   Панель действий — это настраиваемая область задач « **действия с документом** », прикрепленная к конкретному Microsoft Office документу Word или Microsoft Office книге Excel. Панель действий размещается внутри области задач Office вместе с другими встроенными областями задач, такими как область задач **Источник XML** в Excel или область задач **стили и форматирование** в Word. Для разработки пользовательского интерфейса панели действий можно использовать элементы управления Windows Forms или элементы управления WPF.
@@ -148,7 +150,7 @@ ms.locfileid: "72986311"
  [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)]
  [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Использование элементов управления WPF в решениях Office](../vsto/using-wpf-controls-in-office-solutions.md)
 - [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)
 - [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)

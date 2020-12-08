@@ -1,5 +1,7 @@
 ---
 title: Как кэшировать данные для использования в автономном режиме или на сервере
+description: Пометьте элемент данных для кэширования в документе, чтобы он был доступен в автономном режиме. Это делает возможным обработку данных в документе с помощью другого кода.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce295e299e4accb2d79655675f6264a1497b8d69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cefd4cd132e75f8ff622c8e0d809d317242c10f5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546189"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844326"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Как кэшировать данные для использования в автономном режиме или на сервере
   Можно пометить элемент данных для кэширования в документе, чтобы он был доступен в автономном режиме. Это также делает возможным обработку данных в документе другим кодом, когда документ хранится на сервере.
@@ -59,7 +61,7 @@ ms.locfileid: "85546189"
 
 4. В окне **Свойства** задайте для свойства **модификаторы** значение **Public** (по умолчанию это **внутренний**).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Кэширование данных](../vsto/caching-data.md)
 - [Руководство. программный кэш источника данных в документе Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [Пошаговое руководство. кэширование данных в документе, защищенном паролем](../vsto/how-to-cache-data-in-a-password-protected-document.md)

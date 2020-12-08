@@ -1,5 +1,7 @@
 ---
 title: Пошаговые руководства по данным в решениях Office
+description: Узнайте, как работать с данными в настройках уровня документа и надстройках VSTO для Microsoft Word и Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b2efa5e5def8214736d648e2b90906fe720dbe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25bf42015dcc60014012faf0254d4b6d02c30d56
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62956034"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845587"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Пошаговые руководства по данным в решениях Office
   В следующих пошаговых руководствах показано, как работать с данными в настройках уровня документа и надстройках VSTO для Microsoft Office Word и Microsoft Office Excel.

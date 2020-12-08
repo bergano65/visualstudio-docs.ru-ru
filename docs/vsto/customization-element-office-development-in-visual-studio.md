@@ -1,7 +1,8 @@
 ---
 title: '&lt;&gt;элемент настройки (разработка решений Office в Visual Studio)'
+description: Узнайте, как элемент настройки пространства имен vstov4 описывает конкретное решение Office.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1239c6749f25bf4bce7a1f5cc89a2a8430c98a4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f50b441393e9d07dcd0b409248f199484022654
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544876"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844118"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент настройки (разработка решений Office в Visual Studio)
   Элемент `customization` пространства имен `vstov4` описывает конкретное решение Office. Дочерние элементы настроек уровня документа и надстроек VSTO отличаются друг от друга.
@@ -57,11 +58,11 @@ ms.locfileid: "85544876"
 
  Элемент `customization` имеет указанный ниже атрибут.
 
-|Атрибут|Описание:|
+|attribute|Описание|
 |---------------|-----------------|
 |`id`|Требуется для многопроектного развертывания. Элемент `id` уникальным образом идентифицирует решение Office.|
 
-### <a name="document-level-customizations"></a>Настройки на уровне документа
+### <a name="document-level-customizations"></a>Настройки Document-Level
  Элемент `customization` имеет указанный ниже дочерний элемент.
 
 #### <a name="document"></a>документ
@@ -75,7 +76,7 @@ ms.locfileid: "85544876"
 
 ## <a name="example-of-a-document-level-customization"></a>Пример настройки на уровне документа
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  В приведенном ниже примере кода показан элемент `customization` для настройки на уровне документа. Этот пример кода является частью большого примера, приведенного в разделе [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код
@@ -89,7 +90,7 @@ ms.locfileid: "85544876"
 
 ## <a name="example-of-a-vsto-add-in"></a>Пример надстройки VSTO
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  В следующем примере кода показан `customization` элемент для надстройки VSTO. Это надстройка VSTO для Outlook, в которой используются области форм. Этот пример кода является частью большого примера, приведенного в разделе [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код

@@ -1,5 +1,7 @@
 ---
 title: Манифесты приложений и развертывания в решениях Office
+description: Сведения о том, как манифест приложения представляет собой XML-файл, который предоставляет сведения, используемые решением Office для нахождение и обновления сборок.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc4095ce8cd945ff35903c9d8ffc95400cc3b7ab
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9ca8cf2774b7a24ec3bef40418b6a2157bf0f992
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584442"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844716"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Манифесты приложений и развертывания в решениях Office
   Манифест приложения — это XML-файл, который содержит сведения, используемые решением Office для поиска и обновления своих сборок. Манифест приложения может использоваться с манифестом развертывания, представляющим собой XML-файл, который хранится на сервере и содержит сведения, необходимые для поиска самой последней версии манифеста приложения и сборок.
@@ -36,11 +38,11 @@ ms.locfileid: "91584442"
 ## <a name="create-application-and-deployment-manifests"></a>Создание манифестов приложения и развертывания
  Манифесты приложений создаются автоматически в процессе сборки. При каждой сборке проекта уровня документа расположение манифеста развертывания внедряется в документ в качестве пользовательского свойства документа. Для надстроек VSTO расположение манифеста развертывания хранится в реестре.
 
- Дополнительные сведения о **мастере публикации**см. в статье [развертывание решения Office с помощью ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
+ Дополнительные сведения о **мастере публикации** см. в статье [развертывание решения Office с помощью ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
  Дополнительные сведения о работе манифестов с решениями Office см. в статье [развертывание решения](../vsto/deploying-an-office-solution.md)Office.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Архитектура настроек уровня документа](../vsto/architecture-of-document-level-customizations.md)
 - [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)

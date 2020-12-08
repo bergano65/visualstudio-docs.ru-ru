@@ -1,5 +1,7 @@
 ---
 title: Привязка данных к элементам управления в решениях Office
+description: Узнайте, как привязать Windows Forms элементы управления и элементы управления ведущего приложения к Microsoft Office документу Word или листу Excel к источнику данных.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93e2d5abb9c8fda9d4a1300a9bb0958ac9266499
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9be201899f0e2ff4f685343d58a859d8a9157068
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986171"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844430"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Привязка данных к элементам управления в решениях Office
   Вы можете привязать элементы управления Windows Forms и *элементы управления ведущего приложения* в документе Microsoft Office Word или листе Microsoft Office Excel к источнику данных, чтобы эти элементы управления автоматически отображали данные. Можно привязывать данные к элементам управления в проектах уровня документа и уровня приложения.
@@ -97,11 +99,11 @@ ms.locfileid: "72986171"
 
  Дополнительные сведения см. в разделе [инструкции. Обновление источника данных с помощью данных из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Привязка данных и Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
 - [Пошаговое руководство. Создание элемента управления с простой привязкой в форме Windows Forms](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)
-- [Обновление данных с помощью адаптера таблицы](../data-tools/update-data-by-using-a-tableadapter.md)
+- [Обновление данных с помощью адаптера таблицы TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Кэширование данных](../vsto/caching-data.md)
 - [Данные в решениях Office](../vsto/data-in-office-solutions.md)

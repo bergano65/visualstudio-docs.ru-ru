@@ -1,5 +1,7 @@
 ---
 title: Программное добавление изображений и документов Word Art в документы
+description: Узнайте, как можно добавлять рисунки и графические объекты в документы во время разработки или во время выполнения.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e73473229a35bebb99eac03963fb43f880a39903
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 0662c9324aaab8f5a368bc4db300ccff1a0ece33
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585396"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844053"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Руководство. Программное добавление изображений и документов Word Art в документы
   Вы можете добавлять изображения и графические объекты в документы во время разработки или во время выполнения. WordArt позволяет добавлять декоративный текст в документы Microsoft Office Word. Эти специальные текстовые эффекты представляют собой графические объекты, которые можно настроить и вставить в документ.
@@ -100,7 +102,7 @@ ms.locfileid: "91585396"
 
 - На диске C должен существовать рисунок с именем *SamplePicture.jpg* .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Руководство. Программное открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)
 - [Инструкции. Программная вставка текста в документы Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 - [Как программным способом восстановить выделенные элементы после поиска](../vsto/how-to-programmatically-restore-selections-after-searches.md)

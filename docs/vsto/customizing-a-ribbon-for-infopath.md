@@ -1,5 +1,7 @@
 ---
 title: Настройка ленты для InfoPath
+description: Сведения о том, что при настройке ленты в Microsoft Office InfoPath необходимо учитывать, где в приложении будет отображаться пользовательская лента.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: baf5a7edbdd9452c4b7ce55e109eee9c79798b5e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255510"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844171"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Настройка ленты для InfoPath
   При настройке ленты в Microsoft Office InfoPath необходимо знать, где в приложении отображается пользовательская лента. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] может отображать ленту в окнах приложения InfoPath следующих трех типов.
@@ -61,8 +63,8 @@ ms.locfileid: "71255510"
  [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)]
  [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Общие сведения о ленте](../vsto/ribbon-overview.md)
 - [Конструктор ленты](../vsto/ribbon-designer.md)
-- [XML-ленты](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)

@@ -1,5 +1,7 @@
 ---
 title: Разработка решений Office
+description: Сведения о проектировании проекта с помощью средств разработчика Office в Visual Studio. Также Узнайте, как приступить к реализации кода и пользовательского пользовательского интерфейса.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ede09f18808eda22c747ac28e3c279fc43266bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbfe569e587c53aede6d550bc20527ad8d0fd328
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551574"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845002"
 ---
 # <a name="develop-office-solutions"></a>Разработка решений Office
   После разработки проекта с помощью Office Developer Tools в Visual Studio и настройки файлов проекта можно начать реализовывать код и пользовательский интерфейс.

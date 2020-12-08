@@ -1,5 +1,7 @@
 ---
 title: Руководство. Открытие решений Office без выполнения кода
+description: Узнайте, как можно открыть документ или книгу, содержащие расширения управляемого кода, не выполняя код сборки.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d84515c2c3159b61b96f77555b23eef0df0ae961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8339f21fbf7add4335941360b73d42700ef6e635
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543485"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844924"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Руководство. Открытие решений Office без выполнения кода
   Microsoft Office решение, созданное с помощью расширений управляемого кода, выполняется, даже если параметр безопасности в приложении Office конечного пользователя имеет значение Высокий. Это обусловлено тем, что безопасность кода сборки .NET управляется платформой Microsoft .NET, а не Microsoft Office.

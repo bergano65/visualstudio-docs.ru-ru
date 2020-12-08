@@ -1,5 +1,7 @@
 ---
 title: Руководство. Программное добавление и удаление комментариев на листе
+description: Сведения о программном добавлении и удалении комментариев в Microsoft Office листах Excel. Комментарии можно добавлять только в отдельные ячейки, а не в диапазоны с несколькими ячейками.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c87851afb70e9207f9a24fc18826a4c2b218ec08
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f845197de6664728a812e2795e51605ed962c575
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583805"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844612"
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Руководство. Программное добавление и удаление комментариев на листе
   Вы можете добавлять и удалять комментарии в листах Microsoft Office Excel программными средствами. Комментарии можно добавлять только в отдельные ячейки, а не в диапазоны из нескольких ячеек.
@@ -61,7 +63,7 @@ ms.locfileid: "91583805"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#19)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#19)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с листами](../vsto/working-with-worksheets.md)
 - [Как программно отображать комментарии на листе](../vsto/how-to-programmatically-display-worksheet-comments.md)
 - [Элемент управления NamedRange](../vsto/namedrange-control.md)

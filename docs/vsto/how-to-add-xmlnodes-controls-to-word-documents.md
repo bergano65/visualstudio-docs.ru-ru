@@ -1,5 +1,7 @@
 ---
 title: Как добавить элементы управления XMLNodes в документы Word
+description: Сведения о том, что при сопоставлении повторяющегося элемента схемы XML с Microsoft Officeным документом Word Visual Studio автоматически добавляет в документ элемент управления XMLNodes.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95fc165c1a3123d68529f6ccaea99fea963c2a67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 256c62fc69be2c057d3ffc2588577fa87910c161
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543498"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844443"
 ---
 # <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Как добавить элементы управления XMLNodes в документы Word
   **Важно!** Сведения, приведенные в этом разделе о Microsoft Word, предоставляются исключительно для использования в качестве преимуществ и применения частных лиц и организаций, которые находятся за пределами США и его территорий, а также для разработки программ, работающих на платформе Microsoft Word, которые были лицензированы корпорацией Майкрософт до января 2010, когда корпорация Майкрософт удалила реализацию определенных функций, связанных с пользовательским XML-кодом из Microsoft Word Эти сведения, касающиеся Microsoft Word, могут быть не прочитаны или использованы людьми или организациями в США или на ее территориях, которые используют или разрабатывают программные продукты Microsoft Word, лицензированные корпорацией Майкрософт после 10 января 2010 г. Эти продукты не будут работать так же, как продукты, лицензированные до этой даты или приобретенные и лицензированные для использования за пределами США.
@@ -68,7 +70,7 @@ ms.locfileid: "85543498"
      <xref:Microsoft.Office.Tools.Word.XMLNodes>Создается элемент управления, который добавляется в проект.
 
 ## <a name="see-also"></a>См. также раздел
-- [XMLNodes - элемент управления](../vsto/xmlnodes-control.md)
+- [Элемент управления XMLNodes](../vsto/xmlnodes-control.md)
 - [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 - [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

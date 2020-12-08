@@ -1,5 +1,7 @@
 ---
 title: Отладка проектов Office
+description: Узнайте, как выполнять отладку проектов Office с помощью тех же средств Microsoft Visual Studio, которые используются для других проектов Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92cc0922a36d8c57b54b69ad984d18cf4742b823
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea4874effcba4ee948f921ae9bf91f145b661f4f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189698"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845639"
 ---
 # <a name="debug-office-projects"></a>Отладка проектов Office
   Для отладки проектов Office можно использовать такие же инструменты Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , как и для других проектов [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] функции отладчика, такие как возможность вставлять точки останова и просматривать переменные в окне **локальные** , также доступны при отладке проектов Office. Дополнительные сведения о [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] средствах отладки см. [в разделе Отладка в Visual Studio](../debugger/debugger-feature-tour.md).

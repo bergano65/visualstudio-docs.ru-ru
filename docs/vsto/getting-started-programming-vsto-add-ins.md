@@ -1,5 +1,7 @@
 ---
 title: Приступая к программированию надстроек VSTO
+description: Узнайте, как можно использовать надстройки VSTO для автоматизации Microsoft Office приложений, расширения функций приложения и настройки пользовательского интерфейса приложения.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cf3e8d59a2ced26f878da979fa87fc663b5bab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be4e129de68d2a7f7690ba24acc92fb09400cfb2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253592"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845119"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Приступая к программированию надстроек VSTO
   Надстройки VSTO можно использовать для автоматизации приложений Microsoft Office, расширения функциональных возможностей приложения и настройки пользовательского интерфейса приложения. Сведения о сравнении надстроек VSTO с другими типами решений Office, которые можно создать с помощью Visual Studio, см. в статье [Общие сведения о разработке решений office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -46,7 +48,7 @@ ms.locfileid: "71253592"
 
 - [Общие сведения об объектной модели Outlook](../vsto/outlook-object-model-overview.md)
 
-- [решения InfoPath](../vsto/infopath-solutions.md)
+- [Решения InfoPath](../vsto/infopath-solutions.md)
 
 - [Решения PowerPoint](../vsto/powerpoint-solutions.md)
 
@@ -74,7 +76,7 @@ ms.locfileid: "71253592"
 
 - [Пошаговое руководство. Создание первой надстройки VSTO для Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
 
-- [Пошаговое руководство. Создание первой надстройки VSTO для Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
+- [Пошаговое руководство. Создание первого Add-In VSTO для Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
 
 - [Пошаговое руководство. Создание первой надстройки VSTO для PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 
@@ -86,7 +88,7 @@ ms.locfileid: "71253592"
 
   Список разделов, в которых описаны некоторые распространенные задачи в проектах Office, см. в разделе [Общие задачи в программировании Office](../vsto/common-tasks-in-office-programming.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Приступая к работе &#40;разработке решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)

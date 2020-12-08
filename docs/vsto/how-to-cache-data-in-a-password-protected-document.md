@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. кэширование данных в документе, защищенном паролем
+description: Сведения о том, что при добавлении данных в кэш данных в документе или книге, защищенной паролем, можно сохранить изменения в кэшированные данные путем переопределения двух методов в проекте.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12b04b985d54161343d26cdd32178b67bd6e6b91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a11b70da4bdd2500f70d2b45f025340af21ea94
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547242"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846003"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Пошаговое руководство. кэширование данных в документе, защищенном паролем
   При добавлении данных в кэш данных в документе или книге, защищенной паролем, изменения в кэшированных данных не сохраняются автоматически. Вы можете сохранить изменения в кэшированные данные, переопределив два метода в проекте.
@@ -73,7 +75,7 @@ ms.locfileid: "85547242"
 ### <a name="compile-the-code"></a>Компиляция кода
  Добавьте этот код в `ThisWorkbook` класс проекта. В этом коде предполагается, что пароль хранится в поле с именем `securelyStoredPassword` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Кэширование данных](../vsto/caching-data.md)
 - [Как кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [Руководство. программный кэш источника данных в документе Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)

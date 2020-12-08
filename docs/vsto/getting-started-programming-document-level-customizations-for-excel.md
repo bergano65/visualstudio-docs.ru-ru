@@ -1,5 +1,7 @@
 ---
 title: 'Excel: Приступая к программированию настроек уровня документа'
+description: Узнайте, что нужно знать, чтобы приступить к созданию настроек уровня документа для Microsoft Office Excel с помощью Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb3b27a4020e2b8947ca0868bb46b5945b5d89de
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1fb048fd015126e5438a007be1950cddffbac9e1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585684"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846042"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Приступая к программированию настроек уровня документа для Excel
   Если вы только приступите к созданию настроек уровня документа для Microsoft Office Excel с помощью Visual Studio, вот что нужно знать.
@@ -64,7 +66,7 @@ ms.locfileid: "91585684"
 
  Список разделов, в которых описаны некоторые распространенные задачи в проектах Excel, см. [в разделе Общие задачи в программировании Office](../vsto/common-tasks-in-office-programming.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)
 - [Решения Excel](../vsto/excel-solutions.md)

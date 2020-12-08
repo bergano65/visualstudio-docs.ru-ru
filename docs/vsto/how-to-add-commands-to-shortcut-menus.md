@@ -1,5 +1,7 @@
 ---
 title: Как добавить команды в контекстные меню
+description: Узнайте, как добавлять команды в контекстное меню в приложении Office с помощью надстройки VSTO.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95cc6a9dc773c9a0cb07eff518566af9dcc49e96
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546202"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845496"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Как добавить команды в контекстные меню
   В этом разделе показано, как добавлять команды в контекстное меню в приложении Office с помощью надстройки VSTO.
@@ -29,9 +31,9 @@ ms.locfileid: "85546202"
 
 1. Добавьте элемент **Лента (XML)** в проект уровня документа или надстройки VSTO. Дополнительные сведения см. [в разделе инструкции. Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md). В
 
-2. В**обозревателе решений**выберите файл **ThisAddIn.cs** или **ThisAddIn.vb**.
+2. В **обозревателе решений** выберите файл **ThisAddIn.cs** или **ThisAddIn.vb**.
 
-3. В строке меню выберите **Просмотреть**  >  **код**.
+3. В строке меню выберите **Вид** > **Код**.
 
      Этот файл класса **ThisAddin** откроется в редакторе кода.
 
@@ -40,9 +42,9 @@ ms.locfileid: "85546202"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. В **обозревателе решений**выберите XML-файл ленты. По умолчанию XML-файл ленты имеет имя *Ribbon1.xml*.
+5. В **обозревателе решений** выберите XML-файл ленты. По умолчанию XML-файл ленты имеет имя *Ribbon1.xml*.
 
-6. В строке меню выберите **Просмотреть**  >  **код**.
+6. В строке меню выберите **Вид** > **Код**.
 
      XML-файл ленты открывается в редакторе кода.
 
@@ -79,7 +81,7 @@ ms.locfileid: "85546202"
      [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
      [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)
 - [Пошаговое руководство. создание контекстных меню для закладок](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

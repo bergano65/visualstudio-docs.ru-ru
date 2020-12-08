@@ -1,7 +1,8 @@
 ---
 title: '&lt;элемент "настройки &gt; " (разработка решений Office в Visual Studio)'
+description: Узнайте, как элемент настроек пространства имен vstov4 содержит все сведения об установке и загрузке каждого решения Office.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 58d88f865e5f220000bf021b548e4b9c4b8745f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc1f33101346d334d08d2bd2d7795961ea33011e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64790011"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844040"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;элемент "настройки &gt; " (разработка решений Office в Visual Studio)
   Элемент `customizations` пространства имен `vstov4` содержит все сведения об установке и загрузке каждого решения Office.
@@ -64,7 +65,7 @@ ms.locfileid: "64790011"
  Элемент `customizations` имеет указанный ниже дочерний элемент.
 
 ### <a name="customization"></a>Настройка
- Обязательный. `customization`Элемент в `vstov4` пространстве имен определяется в [&#60;настройки&#62; элемента &#40;разработке решений Office в Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
+ Обязательный элемент. `customization`Элемент в `vstov4` пространстве имен определяется в [&#60;настройки&#62; элемента &#40;разработке решений Office в Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
 
 ## <a name="example-of-a-document-level-customization"></a>Пример настройки на уровне документа
 

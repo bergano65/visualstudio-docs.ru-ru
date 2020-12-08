@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;элемент аппаддин (разработка решений Office в Visual Studio)'
+description: Сведения о том, как элемент Аппаддин пространства имен vstov4 хранит сведения о настройках для надстроек VSTO.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1bf9ea990d12bd24adee3f6a24a39fa43c74fb71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a22015fe6183dfd74fff54c34bc6896e1d33d217
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531642"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844755"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент аппаддин (разработка решений Office в Visual Studio)
   Элемент **аппаддин** `vstov4` пространства имен хранит сведения о настройках для надстроек VSTO.
@@ -41,11 +43,11 @@ ms.locfileid: "85531642"
 
  Элемент **аппаддин** имеет следующие атрибуты.
 
-|Атрибут|Описание|
+|attribute|Описание|
 |---------------|-----------------|
-|**приложение**|Обязательный. Идентифицирует приложение Microsoft Office. Может иметь одно из следующих значений: Excel, InfoPath, Outlook, PowerPoint, Project, Visio или Word.|
+|**приложение**|Обязательный элемент. Идентифицирует приложение Microsoft Office. Может иметь одно из следующих значений: Excel, InfoPath, Outlook, PowerPoint, Project, Visio или Word.|
 |**loadBehavior**|Необязательный элемент. По умолчанию **LoadBehavior** включается путем присвоения этому значению значения. Для отладки надстройку VSTO можно отключить, задав значение 2. Дополнительные сведения см. в таблице значения LoadBehavior в [записях реестра для надстроек VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
-|**keyName**|Обязательный. Это значение является именем раздела реестра, который будет использоваться приложением для загрузки надстройки VSTO. Дополнительные сведения см. в разделе [записи реестра для надстроек VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
+|**keyName**|Обязательный элемент. Это значение является именем раздела реестра, который будет использоваться приложением для загрузки надстройки VSTO. Дополнительные сведения см. в разделе [записи реестра для надстроек VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
 
  Элемент **аппаддин** имеет следующие дочерние элементы.
 

@@ -1,5 +1,7 @@
 ---
 title: Как добавить область формы в проект надстройки Outlook
+description: Узнайте, как создать область формы для расширения стандартной или настраиваемой Microsoft Office формы Outlook с помощью мастера создания области формы Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a03ba05226720913d48dc1828dcb849bee72d17e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f137dbe88b8b3ecf51f17e0f19f61368359087fa
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538402"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845067"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Как добавить область формы в проект надстройки Outlook
   Создайте область формы для расширения стандартной или настраиваемой формы Microsoft Office Outlook с помощью мастера **создания области формы Outlook** . Вы можете создать новую область формы и разработать пользовательский интерфейс в Visual Studio или импортировать область формы, сконструированную в Outlook, и добавить код Visual Basic или C#.
@@ -35,7 +37,7 @@ ms.locfileid: "85538402"
 
 1. Откройте или создайте проект надстройки VSTO Outlook в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. В **обозревателе решений**выберите узел проекта надстройки VSTO Outlook.
+2. В **обозревателе решений** выберите узел проекта надстройки VSTO Outlook.
 
 3. В меню **Проект** выберите **Добавить новый элемент**.
 

@@ -1,5 +1,7 @@
 ---
 title: Как добавить средство запуска диалогового окна в группу ленты
+description: Можно добавить средство запуска диалогового окна в любую группу на ленте, которая может открывать связанные диалоговые окна или области задач, предоставляющие дополнительные параметры, связанные с группой.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29b260929d0478749296496db5b454326497d3ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85b5d6f127c6f8b2b8140e778792aa1088efe05c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541624"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844937"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Как добавить средство запуска диалогового окна в группу ленты
   Можно добавить средство запуска диалогового окна в любую группу на ленте. Средство запуска диалогового окна — это маленький значок, отображаемый в группе. Пользователи щелкают этот значок, чтобы открыть связанные диалоговые окна или области задач, предоставляющие дополнительные параметры, связанные с группой.
@@ -41,7 +43,7 @@ ms.locfileid: "85541624"
 - [Примеры и пошаговые руководства по разработке решений Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Конструктор ленты](../vsto/ribbon-designer.md)
 - [Общие сведения об объектной модели ленты](../vsto/ribbon-object-model-overview.md)
-- [XML-ленты](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
 - [Практическое руководство. Экспорт лент из конструктора лент в XML-ленты](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
 - [Как изменить позицию вкладки на ленте](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
 - [Как настроить встроенную вкладку](../vsto/how-to-customize-a-built-in-tab.md)

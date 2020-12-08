@@ -1,5 +1,7 @@
 ---
 title: Как добавлять элементы управления "Диаграмма" на листы
+description: Узнайте, как можно добавлять элементы управления диаграммы в Microsoft Office лист Excel во время разработки и во время выполнения в настройках уровня документа.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdb1f738fe6e68f7470ae65e6ce08b2f3be0ef6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e48b8cfbcf4ee1c7340aef4cd59e09698f89412
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546241"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845470"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Как добавлять элементы управления "Диаграмма" на листы
   <xref:Microsoft.Office.Tools.Excel.Chart>Элементы управления можно добавлять в Microsoft Office лист Excel во время разработки и во время выполнения в настройках уровня документа. Элементы управления также можно добавлять <xref:Microsoft.Office.Tools.Excel.Chart> во время выполнения в надстройках VSTO.

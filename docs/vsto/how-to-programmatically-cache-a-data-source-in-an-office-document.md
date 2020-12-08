@@ -1,5 +1,7 @@
 ---
 title: Кэширование источника данных в документе Office программным способом
+description: Узнайте, как программным способом добавить объект данных в кэш данных в документе путем вызова метода Старткачинг ведущего элемента.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ec3a38d109de561e3cba77951764dd8dd9479df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b739a7671f19b126b0566dfc8f4775a2c91063
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544772"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845016"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Руководство. программный кэш источника данных в документе Office
   Можно программно добавить объект данных в кэш данных в документе, вызвав `StartCaching` метод ведущего элемента, например <xref:Microsoft.Office.Tools.Word.Document> , <xref:Microsoft.Office.Tools.Excel.Workbook> или <xref:Microsoft.Office.Tools.Excel.Worksheet> . Удалите объект данных из кэша данных, вызвав `StopCaching` метод ведущего элемента.

@@ -1,5 +1,7 @@
 ---
 title: Приступая к программированию настроек уровня документа для Word
+description: Узнайте, что нужно знать, чтобы приступить к созданию настроек уровня документа для Microsoft Office Word с помощью Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4cf54dcdd08e7c44e8318973a3653dbe9c5ea1b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9420ab02b5f402dd39e5ca1713b911a10932dfb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585671"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845184"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Приступая к программированию настроек уровня документа для Word
   Если вы только приступите к созданию настроек уровня документа для Microsoft Office Word с помощью Visual Studio, вот что нужно знать.
@@ -64,7 +66,7 @@ ms.locfileid: "91585671"
 
  Список разделов, в которых описаны некоторые распространенные задачи в проектах Word, см. [в разделе Общие задачи в программировании Office](../vsto/common-tasks-in-office-programming.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)
 - [Решения Word](../vsto/word-solutions.md)

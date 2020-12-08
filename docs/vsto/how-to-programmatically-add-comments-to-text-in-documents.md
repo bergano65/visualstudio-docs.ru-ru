@@ -1,5 +1,7 @@
 ---
 title: Руководство. Программное добавление комментариев к тексту в документах
+description: Программное добавление комментариев к тексту в документах. Свойство Comments класса Document добавляет комментарий к диапазону текста в документе Microsoft Word.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 04d4ffdc747823a3df9a884b054b39ad484e09a4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2a39c02cfb7b170fd923e8e7409a0f4215d67583
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583792"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844599"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Руководство. Программное добавление комментариев к тексту в документах
   Свойство Comments класса Document добавляет комментарий к диапазону текста в Microsoft Office документе Word.
@@ -47,6 +49,6 @@ ms.locfileid: "91583792"
 ## <a name="robust-programming"></a>Отказоустойчивость
  Для изменения инициалов пользователя, добавляемых Word в комментарии, используйте свойство <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Руководство. Программное удаление всех комментариев из документов](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
 - [Ведущий элемент документа](../vsto/document-host-item.md)

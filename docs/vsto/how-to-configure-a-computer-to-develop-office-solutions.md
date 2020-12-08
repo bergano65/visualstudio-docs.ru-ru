@@ -1,5 +1,7 @@
 ---
 title: Как настроить компьютер для разработки решений Office
+description: Узнайте, как настроить компьютер разработки, чтобы можно было использовать средства Microsoft Office разработчика в Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93c8287b0b2234c45056829ba78d993658b0428d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d6504ac9682c4cd4e7691c651f1ee5c2b3818bf2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585501"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844313"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Как настроить компьютер для разработки решений Office
   Для настройки компьютера разработчика таким образом, чтобы было можно использовать Microsoft Office Developer Tools в Visual Studio, следуйте инструкциям в этой статье. Для выполнения следующих действий требуются права администратора на компьютере разработчика.
@@ -34,7 +36,7 @@ ms.locfileid: "91585501"
 
 3. Если у вас установлена английская версия Visual Studio, но используются параметры, отличные от английского, для Windows можно установить [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] языковой пакет, чтобы [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] сообщения на том же языке, что и в Windows. Неанглоязычные версии Visual Studio автоматически устанавливают языковой пакет. Языковой пакет доступен в [центре загрузки Майкрософт](https://www.microsoft.com/download/details.aspx?id=54246).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Приступая к работе &#40;разработке решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Руководство. Установка распространяемого пакета среды выполнения Office Инструменты Visual Studio](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)

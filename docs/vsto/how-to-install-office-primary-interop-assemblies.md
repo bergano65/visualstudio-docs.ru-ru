@@ -1,5 +1,7 @@
 ---
 title: Руководство. Установка основных сборок взаимодействия Office
+description: Узнайте, как установить Microsoft Office основные сборки взаимодействия (PIA) при установке Office.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6f90b568f98abe5026525a60723efb59f737235
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15a55650f2e4a434343c9128cc8f28117b54288e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544785"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845886"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Руководство. Установка основных сборок взаимодействия Office
   При установке Office установите основные сборки взаимодействия Microsoft Office.
@@ -34,8 +36,8 @@ ms.locfileid: "85544785"
     > [!WARNING]
     > По умолчанию PIA внедряются в решение при его сборке, поэтому вам не нужно распространять PIA для пользователей в качестве необходимого компонента для использования надстройки или настройки VSTO.
 
-## <a name="see-also"></a>См. также
-- [Office - основные сборки взаимодействия](../vsto/office-primary-interop-assemblies.md)
+## <a name="see-also"></a>См. также раздел
+- [Основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md)
 - [Пошаговое руководство. Назначение приложений Office через основные сборки взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Как настроить компьютер для разработки решений Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
 - [Руководство. Установка распространяемого пакета среды выполнения Office Инструменты Visual Studio](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
