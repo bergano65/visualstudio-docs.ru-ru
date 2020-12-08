@@ -1,5 +1,7 @@
 ---
 title: Bookmark - элемент управления
+description: Сведения о том, как элемент управления Bookmark представляет собой закладку с уникальным именем, предоставляет события и может быть привязан к данным.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2b8557581e93c8d2ba5a54a13c04d5de74b24f71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53f68bfd9abd26d9dfcb9e253c412a1ddf3c0e28
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255147"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848369"
 ---
 # <a name="bookmark-control"></a>Bookmark - элемент управления
   Элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> представляет собой закладку с уникальным именем, которая предоставляет события и может быть привязана к данным. Закладка может использоваться как заполнитель для пометки элемента или расположения в документе Microsoft Office Word. Элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> представляет собой комбинацию объектов <xref:Microsoft.Office.Interop.Word.Bookmark> и <xref:Microsoft.Office.Interop.Word.Range> .
@@ -109,7 +111,7 @@ ms.locfileid: "71255147"
 
 - <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)
 - [Руководство. Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

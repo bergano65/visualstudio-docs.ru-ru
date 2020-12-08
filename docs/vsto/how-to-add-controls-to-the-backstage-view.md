@@ -1,5 +1,7 @@
 ---
 title: 'Как добавить элементы управления в представление Backstage '
+description: Узнайте, как можно использовать конструктор ленты для добавления элементов управления в меню, которое открывается, если щелкнуть вкладку файл.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b4ea5cdcd869f16f987e9431359511831af9573
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f0fa33318e2407b01178971c6965b8ea035dd42
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538350"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848174"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Как добавить элементы управления в представление Backstage
   Конструктор ленты можно использовать для добавления элементов управления в меню, которое открывается, если щелкнуть вкладку **файл** . При запуске приложения элементы управления, добавляемые на вкладку « **файл** », отображаются в группе « **надстройки**».
@@ -65,6 +67,6 @@ ms.locfileid: "85538350"
 ## <a name="see-also"></a>См. также раздел
 - [Общие сведения о ленте](../vsto/ribbon-overview.md)
 - [Конструктор лент](../vsto/ribbon-designer.md)
-- [XML-ленты](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
 - [Как начать настройку ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

@@ -1,5 +1,7 @@
 ---
 title: Сборки в Инструменты Visual Studio среды выполнения Office
+description: Сведения о том, что Visual Studio автоматически добавляет ссылки на Инструменты Visual Studio для сборок среды выполнения Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2fc47aa917fa9c9d5351fd313ec46ae4aaa0664
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86c3c2b77b6bbea1e609bbea092b44bd1dee1dd4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75918784"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848304"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Сборки в Инструменты Visual Studio среды выполнения Office
   При создании проекта Office Visual Studio автоматически добавляет ссылки на сборки [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] , используемые для данного типа проектов и платформы .NET Framework, для которой предназначен этот проект. В расширениях Office для .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]и [!INCLUDE[net_v45](includes/net-v45-md.md)]используются разные сборки. Дополнительные сведения о расширениях Office см. в разделе [Общие сведения о инструменты Visual Studio для среды выполнения Office](visual-studio-tools-for-office-runtime-overview.md).
@@ -61,6 +63,6 @@ ms.locfileid: "75918784"
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|Предоставляет следующие типы:<br /><br /> — <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Класс, который можно использовать для программного присоединения сборок настройки к документам и для доступа к кэшированным данным в документах. Дополнительные сведения см. в разделе [Управление документами на сервере с помощью класса ServerDocument](managing-documents-on-a-server-by-using-the-serverdocument-class.md).<br />— Несколько классов, представляющих иерархию кэшированных данных в настройке на уровне документа. Дополнительные сведения см. [в разделе доступ к данным в документах на сервере](accessing-data-in-documents-on-the-server.md).|
 |Microsoft.VisualStudio.Tools.Office.Runtime.v10.0.dll|Предоставляет следующие типы:<br /><br /> — Классы Microsoft. VisualStudio. Tools. Office. Runtime. Security. Аддинсекуритентри и Microsoft. VisualStudio. Tools. Office. Runtime. Security. Усеринклусионлист, которые можно использовать для создания записей списка включения пользователей, чтобы предоставить доверие решениям Office, предназначенным для .NET Framework 3,5.<br />— Другие типы, которые являются частью Инструменты Visual Studio для инфраструктуры среды выполнения Office и не предназначены для использования непосредственно из кода.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Общие сведения о Инструменты Visual Studio для среды выполнения Office](visual-studio-tools-for-office-runtime-overview.md)
 - [Инструменты Visual Studio сценариев установки среды выполнения Office](visual-studio-tools-for-office-runtime-installation-scenarios.md)

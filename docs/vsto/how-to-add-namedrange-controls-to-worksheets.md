@@ -1,5 +1,7 @@
 ---
 title: Как добавить элементы управления NamedRange в листы
+description: Узнайте, как можно добавлять элементы управления NamedRange в Microsoft Office лист Excel во время разработки и во время выполнения в проектах уровня документа.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 448a44c8f4bc9380a4ef1ebfec33b264e797cac8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54487ed7f7cdcb7e7da024e4b96fcbb6d5c2cfe4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543524"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848148"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Как добавить элементы управления NamedRange в листы
   Элементы управления <xref:Microsoft.Office.Tools.Excel.NamedRange> можно добавлять в лист Microsoft Office Excel во время разработки и во время выполнения в проектах на уровне документа.
@@ -39,7 +41,7 @@ ms.locfileid: "85543524"
   Дополнительные сведения об элементах <xref:Microsoft.Office.Tools.Excel.NamedRange> управления см. в разделе [элемент управления NamedRange](../vsto/namedrange-control.md).
 
 ## <a name="add-namedrange-controls-at-design-time"></a><a name="designtime"></a> Добавление элементов управления NamedRange во время разработки
- Существует несколько способов добавления элементов управления <xref:Microsoft.Office.Tools.Excel.NamedRange> на лист в проекте уровня документа во время разработки: из Excel, из **панели элементов**Visual Studio и из окна **Источники данных** .
+ Существует несколько способов добавления элементов управления <xref:Microsoft.Office.Tools.Excel.NamedRange> на лист в проекте уровня документа во время разработки: из Excel, из **панели элементов** Visual Studio и из окна **Источники данных** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -47,7 +49,7 @@ ms.locfileid: "85543524"
 
 1. Выделите ячейки, которые необходимо включить в именованный диапазон.
 
-2. В **поле имя**введите имя диапазона и нажмите клавишу **Ввод**.
+2. В **поле имя** введите имя диапазона и нажмите клавишу **Ввод**.
 
      Поле **Имя** находится рядом со строкой формул над столбцом **A** листа.
 

@@ -1,5 +1,7 @@
 ---
 title: Руководство. Программная проверка орфографии в документах
+description: Узнайте, что для программной проверки орфографии в документе можно использовать метод Spellingcorrect.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93ba9d9907135952f7408652bfb36f440d23138d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85294b21e9fd1f52f5cc707fc6824a87530e3cda
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537856"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848317"
 ---
 # <a name="how-to-programmatically-check-spelling-in-documents"></a>Руководство. Программная проверка орфографии в документах
   Чтобы проверить правописание в документе, используйте <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> метод. Этот метод возвращает логическое значение, указывающее, правильно ли написано указанный параметр.

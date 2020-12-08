@@ -1,5 +1,7 @@
 ---
 title: Руководство. Управление макетом элементов управления на панелях действий
+description: Узнайте, как управлять разметкой элементов управления на панелях действий путем написания кода для правильной работы элементов управления пользователя.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6df90847000560299b8b1a6f259ffa6e7df0729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520151"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848252"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Руководство. Управление макетом элементов управления на панелях действий
   По умолчанию панель действий закреплена справа от документа или листа; Однако его можно прикрепить к левому, верхнему или нижнему краю. Если вы используете несколько пользовательских элементов управления, можно написать код для правильного размещения пользовательских элементов управления на панели действия. Дополнительные сведения см. в разделе [Общие сведения о панели действий](../vsto/actions-pane-overview.md).
@@ -65,7 +67,7 @@ ms.locfileid: "85520151"
 
 - Проект уровня документа Word с панелью действий, которая содержит несколько пользовательских элементов управления или вложенные элементы управления панели действий.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Обзор панели действий](../vsto/actions-pane-overview.md)
 - [Как добавить панель действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Как добавить панель действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)

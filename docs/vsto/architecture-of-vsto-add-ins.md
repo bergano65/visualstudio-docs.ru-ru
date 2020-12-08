@@ -1,5 +1,7 @@
 ---
 title: Architecture of VSTO Add-ins
+description: Надстройки VSTO, созданные в Visual Studio, имеют архитектурные функции, которые подчеркивают стабильность и безопасность, и позволяют им тесно работать с Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 401ce9b8421cd636fc72c59dcd6641ff4e05d968
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 451ae0bd466403819a5b4e53d76070876d762c38
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842921"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848356"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architecture of VSTO Add-ins
   Надстройки VSTO, созданные с помощью Office Developer Tools в Visual Studio, имеют архитектурные компоненты, предназначенные для обеспечения стабильности и безопасности и позволяющие им тесно взаимодействовать с Microsoft Office. В этой статье описываются следующие аспекты надстроек VSTO.
@@ -104,7 +106,7 @@ ms.locfileid: "90842921"
 
 11. Среда выполнения [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] вызывает метод `ThisAddIn_Startup` в надстройке VSTO. Этот метод является обработчиком событий по умолчанию для события <xref:Microsoft.Office.Tools.AddInBase.Startup> . Дополнительные сведения см. [в разделе события в проектах Office](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Архитектура настроек уровня документа](../vsto/architecture-of-document-level-customizations.md)
 - [Общие сведения о Инструменты Visual Studio для среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-overview.md)

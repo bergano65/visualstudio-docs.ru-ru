@@ -1,5 +1,7 @@
 ---
 title: Как сопоставлять столбцы ListObject с данными
+description: Узнайте, как можно сопоставлять столбцы, которые должны отображаться в ListObject при вызове метода Сетдатабиндинг.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b09c07c8b36baeed096c0049c778e431fe232458
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa24e4a0f0dab9c01de8e5a2960f28d71a9dad6e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538168"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848239"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>Как сопоставлять столбцы ListObject с данными
   При привязке элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> к <xref:System.Data.DataTable>вы можете не захотеть отображать все столбцы в списке или можете иметь некоторые столбцы, не привязанные к данным. Можно указать, какие столбцы должны отображаться в объекте <xref:Microsoft.Office.Tools.Excel.ListObject> , при вызове метода <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> .
@@ -63,4 +65,4 @@ ms.locfileid: "85538168"
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Как заполнить элементы управления ListObject данными](../vsto/how-to-fill-listobject-controls-with-data.md)
 - [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)
-- [ListObject - элемент управления](../vsto/listobject-control.md)
+- [Элемент управления ListObject](../vsto/listobject-control.md)

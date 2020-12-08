@@ -1,5 +1,7 @@
 ---
 title: Предоставление доверия решениям Office
+description: Чтобы предоставить доверие для решений Office, можно изменить политику безопасности каждого целевого компьютера, чтобы она доверяла сборке решения, манифесту развертывания и документу.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf7a68d5d3567305e4f70049d76a1c260ddecf25
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0b81c034ed0f8934da378dc214191d3be1f4506
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315243"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848330"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Предоставление доверия решениям Office
   Предоставление доверия для решений Office означает изменение политики безопасности каждого целевого компьютера на доверие к сборке решения, манифесту приложения, манифесту развертывания и документу. Решение Office может быть предоставлено вам или конечному пользователю.
@@ -45,7 +47,7 @@ ms.locfileid: "89315243"
 
  Администраторы могут отключить [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] запрос о доверии или потребовать, чтобы запрос выполнялся только для решений, подписанных с помощью сертификата Authenticode. Дополнительные сведения о том, как изменить эти параметры для зон MyComputer, LocalIntranet, Internet, Трустедситес и Унтрустедситес, см. [в разделе как настроить поведение запроса о доверии ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Безопасные решения Office](../vsto/securing-office-solutions.md)
 - [Предоставление доверия документам](../vsto/granting-trust-to-documents.md)

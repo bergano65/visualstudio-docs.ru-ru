@@ -1,5 +1,7 @@
 ---
 title: События в проектах Office
+description: Узнайте, как каждый шаблон проекта Office создает несколько обработчиков событий, и как эти обработчики событий слегка отличаются от обработчиков событий для надстроек VSTO.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -32,12 +34,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8e8aca881ba25df134c675ac504ea0794c4b051
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 381d6ffad2afadd90278577ad0e247a2f20ec375
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986121"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848187"
 ---
 # <a name="events-in-office-projects"></a>События в проектах Office
   Каждый шаблон проекта Office автоматически создает несколько обработчиков событий. Обработчики событий для настроек на уровне документа несколько отличаются от обработчиков событий для надстроек VSTO.
@@ -152,7 +154,7 @@ ms.locfileid: "72986121"
 > [!NOTE]
 > Чтобы Outlook принудительно создавал событие <xref:Microsoft.Office.Tools.AddInBase.Shutdown> при выходе, можно изменить реестр. Однако, если администратор отменяет эту настройку, любой код, добавленный в метод `ThisAddIn_Shutdown` , больше не будет выполняться при завершении работы Outlook. Дополнительные сведения см. в разделе [изменения завершения работы Outlook 2010](/previous-versions/office/developer/office-2010/ee720183(v=office.14)).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Разработка решений Office](../vsto/developing-office-solutions.md)
 - [Как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)

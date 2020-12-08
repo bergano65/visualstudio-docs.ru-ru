@@ -1,5 +1,7 @@
 ---
 title: Как добавить элементы управления ListObject на листы
+description: Узнайте, как можно добавлять элементы управления ListObject в Microsoft Office лист Excel во время разработки и во время выполнения в проектах уровня документа.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c53d820170c359e568b0a7b0ab5711a632d9eba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5dd72db2678f448158f268b790d39d4f6e44a737
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538324"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848161"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Как добавить элементы управления ListObject на листы
   Элементы управления <xref:Microsoft.Office.Tools.Excel.ListObject> можно добавлять в лист Microsoft Office Excel во время разработки и во время выполнения в проектах на уровне документа.
@@ -38,7 +40,7 @@ ms.locfileid: "85538324"
   Дополнительные сведения об элементах <xref:Microsoft.Office.Tools.Excel.ListObject> управления см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).
 
 ## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a> Добавление элементов управления ListObject во время разработки
- Существует несколько способов добавления <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления на лист в проекте уровня документа во время разработки: из Excel, из **панели элементов**Visual Studio и из окна **Источники данных** .
+ Существует несколько способов добавления <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления на лист в проекте уровня документа во время разработки: из Excel, из **панели элементов** Visual Studio и из окна **Источники данных** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -50,7 +52,7 @@ ms.locfileid: "85538324"
 
 #### <a name="to-use-the-toolbox"></a>Использование панели элементов
 
-1. Из вкладки **Элементы управления Excel** на **панели элементов**перетащите <xref:Microsoft.Office.Tools.Excel.ListObject> в лист.
+1. Из вкладки **Элементы управления Excel** на **панели элементов** перетащите <xref:Microsoft.Office.Tools.Excel.ListObject> в лист.
 
      Откроется диалоговое окно **Добавление элемента управления ListObject** .
 
@@ -89,7 +91,7 @@ ms.locfileid: "85538324"
 ## <a name="see-also"></a>См. также раздел
 - [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)
-- [ListObject - элемент управления](../vsto/listobject-control.md)
+- [Элемент управления ListObject](../vsto/listobject-control.md)
 - [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 - [Как изменить размер элементов управления ListObject](../vsto/how-to-resize-listobject-controls.md)

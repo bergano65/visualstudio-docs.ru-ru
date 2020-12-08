@@ -1,5 +1,7 @@
 ---
 title: Настройка ленты для Outlook
+description: Изучите, что при настройке ленты в Microsoft Office Outlook необходимо учесть, где в приложении будет отображаться настраиваемая лента.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2865bd89da3b59a24208e07739e8c56254959c88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25b4faa994a99bccdc2122ad6b9d124f7391e9f8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986109"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848109"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Настройка ленты для Outlook
   При настройке ленты в Microsoft Office Outlook необходимо знать, где в приложении отображается настраиваемая лента. Outlook показывает ленту в пользовательском интерфейсе основного приложения и в окнах, открывающихся при выполнении пользователем определенных задач, таких как создание сообщений электронной почты. Эти окна приложения называются инспекторами.
@@ -48,8 +50,8 @@ ms.locfileid: "72986109"
  [!code-csharp[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#1)]
  [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Общие сведения о ленте](../vsto/ribbon-overview.md)
 - [Конструктор ленты](../vsto/ribbon-designer.md)
-- [XML-ленты](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
