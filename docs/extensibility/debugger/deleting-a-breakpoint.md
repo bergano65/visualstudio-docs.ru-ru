@@ -1,5 +1,7 @@
 ---
 title: Удаление точки останова | Документация Майкрософт
+description: Узнайте, как диспетчер отладки сеансов удаляет отложенную точку останова и все привязанные точки останова, привязанные к ней при удалении ожидающей точки останова.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a77be200a11eb7b3985a4c1a47e4cddaa543f900
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 061175326a19af1866262421b381eb14267c7efd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738950"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915561"
 ---
 # <a name="deleting-a-breakpoint"></a>Удаление точки останова
 Ниже описан процесс удаления ожидающей точки останова.
@@ -27,5 +29,5 @@ ms.locfileid: "80738950"
 > [!NOTE]
 > Можно также удалить одну привязанную точку останова с помощью вызова [IDebugBoundBreakpoint2::D удалить](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [События отладчика Call](../../extensibility/debugger/calling-debugger-events.md)

@@ -1,5 +1,7 @@
 ---
 title: Как добавлять и удалять элементы в компонентах SharePoint | Документация Майкрософт
+description: Вручную добавлять и удалять элементы проектов SharePoint в компонентах SharePoint с помощью конструктора компонентов в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27c6ebfb0b0cdbff0a184859ffa2a73acab809c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dacfbf715ff37238af5332976313c3b592d21be6
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014525"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914924"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Как добавлять и удалять элементы в функциях SharePoint
   При создании решения SharePoint Visual Studio добавляет элементы проекта SharePoint по умолчанию в компонент. Перед развертыванием можно добавлять и удалять элементы проектов SharePoint для изменения компонента SharePoint.
@@ -30,7 +32,7 @@ ms.locfileid: "86014525"
 
 1. Откройте конструктор компонентов.
 
-    Дополнительные сведения см. [в разделе руководство. Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).
+    Дополнительные сведения см. в разделе [Практическое руководство. Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).
 
 2. Добавьте один или несколько элементов из списка **элементов в список решений** в **элементы в списке компонентов** , выполнив одно или несколько действий, описанных ниже.
 

@@ -1,5 +1,7 @@
 ---
 title: Вход в режим приостановки | Документация Майкрософт
+description: Сведения о процессе, который выполняется для точки останова, обнаруженной в функции, выполнении до строки исходного кода в курсоре или выполнении до точки останова.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bbcec8adf6468f70d95df5f291ce1e5540406cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e73c64d17aee48cdb67a110e93aa556f112a1014
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738875"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915236"
 ---
 # <a name="enter-break-mode"></a>Переход в режим приостановки выполнения
 Следующая информация описывает процесс, возникающий при обнаружении точки останова после пошаговой обработки в функции, выполнения до строки исходного кода, в которой находится курсор, или при выполнении в точке останова.
@@ -41,5 +43,5 @@ ms.locfileid: "80738875"
 
     - [IDebugStackFrame2:: жеткодеконтекст](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) , чтобы получить сведения о памяти
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Вызов событий отладчика](../../extensibility/debugger/calling-debugger-events.md)

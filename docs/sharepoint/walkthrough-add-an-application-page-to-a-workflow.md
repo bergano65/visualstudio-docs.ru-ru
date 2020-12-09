@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. Добавление страницы приложения в рабочий процесс | Документация Майкрософт
+description: В этом пошаговом руководстве добавьте страницу приложения в решение рабочего процесса SharePoint. Измените код рабочего процесса. Создание, код и тестирование страницы приложения.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f54914e6676e0cc2400fa04ebb089fac08f58c3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c862c1de3b0630b3a5144f821e6266c34a88a5db
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015497"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915665"
 ---
-# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Пошаговое руководство. Добавление страницы приложения в рабочий процесс
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Пошаговое руководство: Добавление страницы приложения в рабочий процесс
   В этом пошаговом руководстве показано, как добавить страницу приложения, которая отображает данные, полученные из рабочего процесса, в проект рабочего процесса. Он основан на проекте, описанном в разделе [Пошаговое руководство. Создание рабочего процесса с формами ассоциаций и инициации](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  В этом пошаговом руководстве описаны следующие задачи.
@@ -40,11 +42,11 @@ ms.locfileid: "86015497"
 
 - Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint.
 
-- Visual Studio.
+- приведенному.
 
 - Кроме того, необходимо выполнить проект, [описанный в разделе Пошаговое руководство. Создание рабочего процесса с формами ассоциаций и инициации](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
-## <a name="ammend-the-workflow-code"></a>Амменд кода рабочего процесса
+## <a name="amend-the-workflow-code"></a>Уточнение кода рабочего процесса
  Сначала добавьте строку кода в рабочий процесс, чтобы присвоить столбцу результата значение, равное сумме отчета о расходах. Это значение будет использоваться позже в вычислении сводки отчета о затратах.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Задание значения для столбца результатов в рабочем процессе
@@ -349,7 +351,7 @@ ms.locfileid: "86015497"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Пошаговое руководство. Создание рабочего процесса с формами ассоциаций и инициации](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [Как создать страницу приложения](../sharepoint/how-to-create-an-application-page.md)
-- [Создание страниц приложения для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
+- [Практическое руководство. Создание страницы приложения](../sharepoint/how-to-create-an-application-page.md)
+- [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)

@@ -1,6 +1,8 @@
 ---
 title: Как добавить существующий файл модели BDC в проект SharePoint | Документация Майкрософт
 titleSuffix: ''
+description: Добавьте существующий файл модели подключения к бизнес-данным (BDC) в проект SharePoint в Visual Studio, чтобы можно было настраивать, упаковывать и повторно развертывать модель BDC.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -18,19 +20,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbfbd4e485a359b7e760188217326d23d3b0aa47
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ce65f286c3de760ff74e5ef7239aac54d760f003
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584624"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914963"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Практическое руководство. Добавление существующего файла модели подключения к бизнес-данным в проект SharePoint
   Вы можете настраивать, упаковывать и повторно развертывать модель подключения к бизнес-данным с помощью Visual Studio, добавляя файл модели (*бдкм*) в любой проект фермы SharePoint. Дополнительные сведения см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).
 
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Добавление файла модели подключения к бизнес-данным (BDC) в проект SharePoint
 
-1. В **Обозреватель решений**выберите папку для проекта SharePoint.
+1. В **Обозреватель решений** выберите папку для проекта SharePoint.
 
 2. В строке меню выберите **проект**  >  **Добавить существующий элемент**.
 
@@ -46,7 +48,7 @@ ms.locfileid: "91584624"
 
      Элемент **модели подключения к бизнес-данным** добавляется в проект.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Практическое руководство. Создание модели подключения к бизнес-данным](../sharepoint/how-to-create-a-bdc-model.md)
 - [Практическое руководство. Использование файла ресурсов для задания локализованных имен, свойств и разрешений](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)

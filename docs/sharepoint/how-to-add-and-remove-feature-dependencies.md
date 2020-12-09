@@ -1,5 +1,7 @@
 ---
 title: Как добавлять и удалять зависимости компонентов | Документация Майкрософт
+description: Узнайте, как добавлять и удалять зависимости компонентов в решении SharePoint с помощью конструктора компонентов в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c318a7dc4672a10e993d0149ec77e7f94679d465
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5011db32123e77e9bf60c99459125302b2bf8264
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014774"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915366"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>Как добавлять и удалять зависимости компонентов
   Функция SharePoint может зависеть от других функций для функциональности или данных. В таких случаях можно пометить эти функции как зависимости для вашей функции. Таким образом, сервер SharePoint обеспечивает активацию зависимых компонентов перед активацией функции.

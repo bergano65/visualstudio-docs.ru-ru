@@ -1,6 +1,8 @@
 ---
 title: Как добавить пользовательский узел SharePoint к обозреватель сервера | Документация Майкрософт
 titleSuffix: ''
+description: Добавьте пользовательский узел SharePoint для обозреватель сервера в Visual Studio. Отображение дополнительных компонентов SharePoint, которые не отображаются в обозреватель сервера по умолчанию.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a74c9c879df57a5ff6444626870ee9f021fb4e9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bbee6d780c7f447c8b47f7b478531cb58cef94fd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584889"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915470"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Как добавить пользовательский узел SharePoint к обозреватель сервера
-  В **Обозреватель сервера**можно добавить пользовательские узлы в узле " **подключения SharePoint** ". Это полезно, если требуется отобразить дополнительные компоненты SharePoint, которые не отображаются в **Обозреватель сервера** по умолчанию. Дополнительные сведения см. в разделе [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  В **Обозреватель сервера** можно добавить пользовательские узлы в узле " **подключения SharePoint** ". Это полезно, если требуется отобразить дополнительные компоненты SharePoint, которые не отображаются в **Обозреватель сервера** по умолчанию. Дополнительные сведения см. в разделе [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
  Чтобы добавить пользовательский узел, сначала создайте класс, определяющий новый узел. Затем создайте расширение, добавляющее узел в качестве дочернего узла для существующего узла.
 
@@ -96,7 +98,7 @@ ms.locfileid: "91584889"
 ## <a name="deploy-the-extension"></a>Развертывание расширения
  Чтобы развернуть расширение **Обозреватель сервера** , создайте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и всех остальных файлов, которые требуется распространить с расширением. Дополнительные сведения см. [в статье Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Расширение узла подключений SharePoint в обозревателе сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Руководство. расширение узла SharePoint в обозреватель сервера](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [Пошаговое руководство. расширение обозреватель сервера для показа веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

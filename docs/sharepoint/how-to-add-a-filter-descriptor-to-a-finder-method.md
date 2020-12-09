@@ -1,5 +1,7 @@
 ---
 title: Как добавить дескриптор фильтра в метод Finder | Документация Майкрософт
+description: Узнайте, как добавить дескриптор фильтра в метод поиска с помощью окна сведения о методе BDC в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff312753be07867d8978dc4d5f60d5dfc0eee557
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016745"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915431"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Как добавить дескриптор фильтра в метод Finder
-  Дескрипторы фильтров позволяют потребителям модели передавать значения методам перед их выполнением. Дополнительные сведения см. [в разделе Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
+  Дескрипторы фильтров позволяют потребителям модели передавать значения методам перед их выполнением. Дополнительные сведения см. в разделе [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
 
  Один из распространенных сценариев заключается в том, что пользователи в SharePoint хотят получить экземпляры внешнего типа содержимого, соответствующие некоторым критериям. Этот сценарий можно обеспечить, добавив дескриптор фильтра в метод поиска.
 

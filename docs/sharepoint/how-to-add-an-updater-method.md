@@ -1,5 +1,7 @@
 ---
 title: Как добавить метод обновления | Документация Майкрософт
+description: Узнайте, как разрешить пользователям обновлять бизнес-данные в внешнем списке SharePoint, добавив метод обновления.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,21 +19,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c76373c710908a8ae7edc49c4e26ff7e94336a6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d06737de7df40efa2bc6259cc0ea53bdda17b8c
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014986"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915379"
 ---
 # <a name="how-to-add-an-updater-method"></a>Как добавить метод обновления
-  Вы можете разрешить пользователям обновлять бизнес-данные в внешнем списке SharePoint, создав метод *обновления* . Дополнительные сведения см. [в разделе Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
+  Вы можете разрешить пользователям обновлять бизнес-данные в внешнем списке SharePoint, создав метод *обновления* . Дополнительные сведения см. в разделе [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-an-updater-method"></a>Создание метода обновления
 
 1. В конструкторе BDC выберите сущность.
 
-2. В строке меню выберите **Просмотреть**  >  **другие**  >  **сведения о методе BDC**Windows.
+2. В строке меню выберите **Просмотреть**  >  **другие**  >  **сведения о методе BDC** Windows.
 
     Откроется окно сведения о методе BDC. Дополнительные сведения об этом окне см. в разделе Общие сведения о [средствах проектирования моделей BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -47,12 +49,12 @@ ms.locfileid: "86014986"
 
    - Экземпляр метода для метода.
 
-     Дополнительные сведения см. [в разделе Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
+     Дополнительные сведения см. в разделе [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
 
    > [!NOTE]
    > Если идентификатор типа сущности представляет поле в таблице базы данных, которое не создается автоматически, установите для свойства **поля перед обновлением** **значение true**.
 
-4. В **Обозреватель решений**откройте контекстное меню файла кода службы, созданного для сущности, и выберите пункт **Просмотреть код**.
+4. В **Обозреватель решений** откройте контекстное меню файла кода службы, созданного для сущности, и выберите пункт **Просмотреть код**.
 
     Файл кода службы сущности откроется в **редакторе кода**. Дополнительные сведения об этом файле см. [в разделе Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).
 
@@ -64,7 +66,7 @@ ms.locfileid: "86014986"
     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Как добавить метод Finder](../sharepoint/how-to-add-a-finder-method.md)
 - [Как добавить конкретный метод поиска](../sharepoint/how-to-add-a-specific-finder-method.md)
