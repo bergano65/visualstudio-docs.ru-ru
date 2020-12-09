@@ -1,5 +1,7 @@
 ---
 title: Концепции отладчика | Документация Майкрософт
+description: Сведения об архитектурных концепциях, используемых при проектировании пакета отладки Visual Studio для упрощения создания этого пакета.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ad8a450f9e79c1d44b8e098c8a00bb4b816e1af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7caecc9c3434afd90462757c9cb544f387df88d3
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738981"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914040"
 ---
 # <a name="debugger-concepts"></a>Основные понятия отладчика
 Для создания пакета отладки Visual Studio необходимо ознакомиться с концепциями архитектуры, используемыми при проектировании пакета.
@@ -44,7 +46,7 @@ ms.locfileid: "80738981"
  [Точки останова](../../extensibility/debugger/breakpoints-visual-studio-sdk.md) Определяет три типа точек останова: ожидание, привязка и ошибка — с точки зрения архитектуры отладки.
 
 ## <a name="related-sections"></a>Связанные разделы
- [Контексты отладчика](../../extensibility/debugger/debugger-contexts.md) Объясняет, как подсистема отладки (DE) работает одновременно в рамках кода, документации и контекстов оценки выражений. Описывает, для каждого из трех контекстов: расположение, положение или вычисление, относящиеся к нему.
+ [Контексты отладчика](../../extensibility/debugger/debugger-contexts.md) Объясняет, как подсистема отладки (DE) работает одновременно в рамках кода, документации и контекстов оценки выражений. Для каждого из трех контекстов описывается относящееся к нему расположение, позиция или вычисление.
 
  [Компоненты отладчика](../../extensibility/debugger/debugger-components.md) Содержит общие сведения о компонентах отладки Visual Studio, включая модуль отладки (DE), средство оценки выражений (EE) и обработчик символов (SH).
 

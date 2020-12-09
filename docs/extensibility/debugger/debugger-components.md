@@ -1,5 +1,7 @@
 ---
 title: Компоненты отладчика | Документация Майкрософт
+description: Сведения об элементах, составляющих сеанс отладки, который управляется отладчиком Visual Studio и реализуется в виде VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03c400fd03c5ee0f2629e9f436b65f53f8f2ac8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2fa0a7feb85437cc8173d52695ddb1ba0d2c06b7
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739010"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914118"
 ---
 # <a name="debugger-components"></a>Компоненты отладчика
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Отладчик реализуется как VSPackage и управляет всем сеансом отладки. Сеанс отладки состоит из следующих элементов:
@@ -56,9 +58,9 @@ ms.locfileid: "80739010"
  [Визуализатор типов и пользовательское средство просмотра](../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Описывает, что такое визуализатор типов и пользовательское средство просмотра и какая роль средство оценки выражений поддерживает оба.
 
 ## <a name="related-sections"></a>Связанные разделы
- [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md) Описывает основные понятия архитектуры отладки.
+ [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md). Описываются основные понятия архитектуры отладки.
 
- [Контексты отладчика](../../extensibility/debugger/debugger-contexts.md) Объясняется, как происходит одновременное отключение в рамках кода, документации и контекстов оценки выражений. Описывает, для каждого из трех контекстов: расположение, положение или вычисление, относящиеся к нему.
+ [Контексты отладчика](../../extensibility/debugger/debugger-contexts.md). Объясняется, как модуль отладки одновременно действует в коде, документации и контекстах оценки выражений. Для каждого из трех контекстов описывается относящееся к нему расположение, позиция или вычисление.
 
  [Задачи отладки](../../extensibility/debugger/debugging-tasks.md) Содержит ссылки на различные задачи отладки, такие как запуск программы и вычисление выражений.
 

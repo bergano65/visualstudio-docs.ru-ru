@@ -1,5 +1,7 @@
 ---
 title: Подключение после запуска | Документация Майкрософт
+description: Когда программа запускается, сеанс отладки готов к подключению модуля отладки к программе. Выберите подход к проектированию для взаимодействия с модулем отладки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a4ce0a7465891035b43bbb8f6f22f0c064d104c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e19d9090126a13b657f53c20d7ec44a793d5376
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739287"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913897"
 ---
 # <a name="attach-after-a-launch"></a>Присоединить после запуска
 После запуска программы сеанс отладки готов к присоединению модуля отладки (DE) к уже созданной программе.

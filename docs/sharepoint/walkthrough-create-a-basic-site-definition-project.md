@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. Создание базового проекта определения сайта | Документация Майкрософт
+description: В этом пошаговом руководстве по SharePoint вы узнаете, как создать базовое определение сайта, содержащее визуальную веб-часть с некоторыми элементами управления.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1c06f4df5d1efe06ad2537bd2e65f2c239f3be2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0411f027b105622d806e123bd80f38c4b05281ca
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016766"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913858"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Пошаговое руководство. Создание базового проекта определения сайта
   В этом пошаговом руководстве показано, как создать базовое определение сайта, содержащее визуальную веб-часть с некоторыми элементами управления. Для простоты в создаваемой визуальной веб-части есть только несколько элементов управления. Тем не менее можно создать более сложные определения сайтов SharePoint, которые содержат дополнительные функциональные возможности.
@@ -40,7 +42,7 @@ ms.locfileid: "86016766"
 
 - Поддерживаемые редакции Microsoft Windows и SharePoint. Дополнительные сведения см. в разделе Требования для разработки решений SharePoint.
 
-- Visual Studio.
+- приведенному.
 
 ## <a name="create-a-site-definition-solution"></a>Создание решения для определения сайта
  Сначала создайте проект определения сайта в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -69,9 +71,9 @@ ms.locfileid: "86016766"
 
     Проект отобразится в **Обозреватель решений**.
 
-8. В **Обозреватель решений**выберите узел проекта, а затем в строке меню выберите **проект**  >  **Добавить новый элемент**.
+8. В **Обозреватель решений** выберите узел проекта, а затем в строке меню выберите **проект**  >  **Добавить новый элемент**.
 
-9. В **Visual C#** или **Visual Basic**разверните узел **SharePoint** , а затем выберите узел **2010** .
+9. В **Visual C#** или **Visual Basic** разверните узел **SharePoint** , а затем выберите узел **2010** .
 
 10. В области **шаблоны** выберите шаблон **Определение сайта** , оставьте **имя** **SiteDefinition1**, а затем нажмите кнопку **Добавить** .
 
@@ -80,7 +82,7 @@ ms.locfileid: "86016766"
 
 #### <a name="to-create-a-visual-web-part"></a>Создание визуальной веб-части
 
-1. В **Обозреватель решений**нажмите кнопку " **отобразить все файлы** ".
+1. В **Обозреватель решений** нажмите кнопку " **отобразить все файлы** ".
 
 2. Выберите узел проекта **SiteDefinition1** , а затем в строке меню выберите **проект**  >  **Добавить новый элемент**.
 
@@ -92,7 +94,7 @@ ms.locfileid: "86016766"
 
      Откроется файл *VisualWebPart1. ascx* .
 
-5. В нижней части *VisualWebPart1. ascx*добавьте следующую разметку, чтобы добавить в форму три элемента управления: текстовое поле, кнопку и метку:
+5. В нижней части *VisualWebPart1. ascx* добавьте следующую разметку, чтобы добавить в форму три элемента управления: текстовое поле, кнопку и метку:
 
     ```aspx-csharp
     <table>
@@ -110,7 +112,7 @@ ms.locfileid: "86016766"
     </table>
     ```
 
-6. В разделе *VisualWebPart1. ascx*откройте файл *VisualWebPart1.ascx.CS* (для [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ) или *VisualWebPart1. ascx. vb* (для [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ), а затем добавьте следующий код:
+6. В разделе *VisualWebPart1. ascx* откройте файл *VisualWebPart1.ascx.CS* (для [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ) или *VisualWebPart1. ascx. vb* (для [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ), а затем добавьте следующий код:
 
      [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
      [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
@@ -140,7 +142,7 @@ ms.locfileid: "86016766"
 
      Этот код создает ссылку на визуальную веб-часть, созданную ранее.
 
-3. В **Обозреватель решений**откройте контекстное меню для узла **SiteDefinition1** , а затем выберите пункт **Назначить запускаемым элементом**.
+3. В **Обозреватель решений** откройте контекстное меню для узла **SiteDefinition1** , а затем выберите пункт **Назначить запускаемым элементом**.
 
 ## <a name="deploy-and-run-the-site-definition-solution"></a>Развертывание и запуск решения "определение сайта"
  Далее, разверните проект в SharePoint, а затем запустите проект.
@@ -182,5 +184,5 @@ ms.locfileid: "86016766"
      Текст отобразится на метке справа от кнопки.
 
 ## <a name="see-also"></a>См. также раздел
-- [Как создать приемник событий](../sharepoint/how-to-create-an-event-receiver.md)
+- [Практическое руководство. Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md)
 - [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)

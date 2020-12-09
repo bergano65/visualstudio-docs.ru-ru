@@ -1,5 +1,7 @@
 ---
 title: Вычисление выражений | Документация Майкрософт
+description: Сведения о вычислении выражений, создаваемых из строк, передаваемых из окна "автоматические", "контрольные значения", "Быстрая проверка" или "Интерпретация".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18e342704cbb4abd7de9667576ce331ef8fbf60a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b43fc91de129407f2fd01e12951cffee4028186f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738828"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914599"
 ---
 # <a name="evaluate-expressions"></a>Вычисление выражений
 Выражения создаются на основе строк, переданных из окна " **Автоматические**", " **Контрольные значения**", " **Быстрая проверка**" или " **Интерпретация** ". При вычислении выражения создается печатная строка, содержащая имя и тип переменной или аргумента и его значение. Эта строка отображается в соответствующем окне интегрированной среды разработки.
@@ -31,7 +33,7 @@ ms.locfileid: "80738828"
 
  Чтобы включить вычисление выражений, в DE должны быть реализованы интерфейсы [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) и [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) . Для синхронной и асинхронной вычислений требуется реализация метода [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Кадры стека](../../extensibility/debugger/stack-frames.md)
 - [Контекст вычисления выражения](../../extensibility/debugger/expression-evaluation-context.md)
 - [Задачи отладки](../../extensibility/debugger/debugging-tasks.md)

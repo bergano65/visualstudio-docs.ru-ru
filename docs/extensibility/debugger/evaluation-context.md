@@ -1,5 +1,7 @@
 ---
 title: Контекст оценки | Документация Майкрософт
+description: 'Когда модуль отладки вызывает средство оценки выражений, аргументы определяют контекст для поиска и вычисления символов: Псимболпровидер, Паддресс и Пбиндер.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e3d02bd652d6c46b5aabe00e049e425f0921c27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a021d5dfdff5058211f5bafdfd7854611f977c27
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738799"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914521"
 ---
 # <a name="evaluation-context"></a>Контекст оценки
 > [!IMPORTANT]
@@ -34,7 +36,7 @@ ms.locfileid: "80738799"
 
  `IDebugParsedExpression::EvaluateSync` Возвращает интерфейс [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , представляющий результирующее значение и его тип.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Интерфейсы средства оценки ключевых выражений](../../extensibility/debugger/key-expression-evaluator-interfaces.md)
 - [Отображение локальных переменных](../../extensibility/debugger/displaying-locals.md)
 - [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)

@@ -1,5 +1,7 @@
 ---
-title: Методы, связанные с точкой останова | Документация Майкрософт
+title: Методы Breakpoint-Related | Документация Майкрософт
+description: Отладка Visual Studio поддерживает привязанные точки останова, которые успешно привязаны к расположению в коде, и ожидающие точки останова, которые еще не привязаны.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c72ec63e500ac86a4a5bd66a2956fe0fb06c8834
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9472f1ff4105790951ddd687d7e71c3e57fa39da
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739206"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914469"
 ---
 # <a name="breakpoint-related-methods"></a>Методы, связанные с точкой останова
 Модуль отладки (DE) должен поддерживать настройку точек останова. Отладка Visual Studio поддерживает следующие типы точек останова:
@@ -25,7 +27,7 @@ ms.locfileid: "80739206"
 
      Запрашивается через пользовательский интерфейс и успешно привязан к указанному расположению кода
 
-- Ожидание
+- Ожидает
 
      Запрашивается через пользовательский интерфейс, но еще не привязан к фактическим инструкциям
 
@@ -45,7 +47,7 @@ ms.locfileid: "80739206"
 |[Разрешить](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Переключает включенное состояние ожидающей точки останова.|
 |[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Перечисляет все точки останова, привязанные к ожидающей точке останова.|
 |[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Перечисляет все точки останова, являющиеся результатом ожидающей точки останова.|
-|[Удаление](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Удаляет отложенную точку останова и все точки останова, привязанные к ней.|
+|[Удалить](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Удаляет отложенную точку останова и все точки останова, привязанные к ней.|
 
  Чтобы перечислить привязанные точки останова и точки останова с ошибками, необходимо реализовать все методы [IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) и [IEnumDebugErrorBreakpoints2](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md).
 
@@ -57,7 +59,7 @@ ms.locfileid: "80739206"
 |[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Возвращает состояние привязанной точки останова.|
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|Возвращает разрешение точки останова, описывающее точку останова.|
 |[Разрешить](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Включает или отключает точку останова.|
-|[Удаление](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Удаляет связанную точку останова.|
+|[Удалить](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Удаляет связанную точку останова.|
 
  Для разрешения и сведений о запросе требуется реализация следующих методов [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) .
 

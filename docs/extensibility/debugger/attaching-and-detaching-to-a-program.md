@@ -1,5 +1,7 @@
 ---
 title: Присоединение и отсоединение к программе | Документация Майкрософт
+description: Узнайте, как отправить правильную последовательность методов и событий с соответствующими атрибутами для подключения отладчика.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a751e6aa70c1aacd5df598e0c0e62da3b9d14b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b71a78dcee62f89dee4c54b53c1026f42895793
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903149"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913793"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Присоединение и отсоединение программы
 Для подключения отладчика необходимо отправить правильную последовательность методов и событий с соответствующими атрибутами.

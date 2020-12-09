@@ -1,5 +1,7 @@
 ---
 title: Изменение значения локального объекта | Документация Майкрософт
+description: Сведения о процессе изменения значения локального объекта при вводе нового значения в поле значение окна Локальные.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 565ae9f27b9f5a113e51520724f525599ad5eda7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08f366162f4031b9cc7aa651bf9eca7aab55a15a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904267"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914339"
 ---
 # <a name="change-the-value-of-a-local"></a>Изменение значения локального
 > [!IMPORTANT]
@@ -28,7 +30,7 @@ ms.locfileid: "85904267"
 
 1. После того, как пользователь введет новое значение, Visual Studio вызывает [сетвалуеасстринг](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) для объекта [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , связанного с локальным объектом.
 
-2. Метод `IDebugProperty2::SetValueAsString` выполняет указанные ниже задачи.
+2. `IDebugProperty2::SetValueAsString` выполняет следующие задачи:
 
    1. Вычисляет строку для получения значения.
 

@@ -1,5 +1,7 @@
 ---
 title: Вызов событий отладчика | Документация Майкрософт
+description: События в сеансах отладки выполняются в определенном порядке. В этой статье приводится порядок вызова событий, происходящих в типичном сеансе отладки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3deef418620ab17297b4ef7e824a0d95c25e439e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 832b42e62731a087048b4aa50e19b74c408343c5
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904317"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914392"
 ---
 # <a name="call-debugger-events"></a>События отладчика Call
 События в сеансах отладки выполняются в определенном порядке.
@@ -35,7 +37,7 @@ ms.locfileid: "85904317"
 
 6. [Ошибки точки останова](../../extensibility/debugger/breakpoint-errors.md)
 
-7. [Попадание в точку останова](../../extensibility/debugger/hitting-a-breakpoint.md)
+7. [Достижение точки останова](../../extensibility/debugger/hitting-a-breakpoint.md)
 
 8. [Удаление точки останова](../../extensibility/debugger/deleting-a-breakpoint.md)
 

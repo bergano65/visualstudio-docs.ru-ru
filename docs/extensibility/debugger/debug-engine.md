@@ -1,5 +1,7 @@
 ---
 title: Модуль отладки | Документация Майкрософт
+description: Узнайте, как модуль отладки работает с интерпретатором или операционной системой для предоставления таких служб, как управление выполнением, точки останова и вычисление выражений.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4cb00796f8db23a43cd81a06d80d0fac40f075e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c31d095a3e340bf7e8f7a61a8db5bcbed53f0d5f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739063"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914234"
 ---
 # <a name="debug-engine"></a>Модуль отладки
 Модуль отладки (DE) работает с интерпретатором или операционной системой для предоставления служб отладки, таких как управление выполнением, точки останова и вычисление выражений. DE отвечает за наблюдение за состоянием отлаживаемой программы. Чтобы сделать это, метод DE использует все доступные для него методы в поддерживаемой среде выполнения, будь то из ЦП или из API, предоставляемых средой выполнения.

@@ -1,6 +1,8 @@
 ---
 title: Создание веб-части Silverlight с отображением OData для SharePoint
 titleSuffix: ''
+description: Создайте веб-часть Silverlight, которая отображает OData для SharePoint. Настройка приложения Silverlight и изменение и тестирование веб-части Silverlight.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298505"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914794"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Пошаговое руководство. Создание веб-части Silverlight, которая отображает OData для SharePoint
   SharePoint 2010 предоставляет свои данные списка с помощью OData. Служба OData реализована в SharePoint службой RESTful (ListData.svc). В данном пошаговом руководстве показано, как создать веб-часть SharePoint, в которой размещается приложение Silverlight. Приложение Silverlight отображает информацию списка извещений SharePoint с помощью ListData.svc. Дополнительные сведения см. в разделе интерфейс и [Open Data Protocol](https://www.odata.org/) [SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) .
@@ -71,7 +73,7 @@ ms.locfileid: "92298505"
 
 1. Добавьте ссылку на сборку в System.Windows.Data в приложении Silverlight. Дополнительные сведения см. в разделе [как добавить или удалить ссылки с помощью диалогового окна "Добавление ссылки"](/previous-versions/wkze6zky(v=vs.140)).
 
-2. В **Обозреватель решений**откройте контекстное меню для **ссылок**и выберите **Добавление ссылки на службу**.
+2. В **Обозреватель решений** откройте контекстное меню для **ссылок** и выберите **Добавление ссылки на службу**.
 
     > [!NOTE]
     > Если вы используете Visual Basic, необходимо выбрать значок **Показать все файлы** в верхней части **Обозреватель решений** , чтобы отобразить узел **ссылки** .
@@ -84,7 +86,7 @@ ms.locfileid: "92298505"
 
 5. В строке меню последовательно выберите **Сборка** > **Собрать решение**.
 
-6. Добавьте в проект новый источник данных на основе службы SharePoint. Для этого в строке меню выберите **Просмотреть**  >  **другие**  >  **Источники данных**Windows.
+6. Добавьте в проект новый источник данных на основе службы SharePoint. Для этого в строке меню выберите **Просмотреть**  >  **другие**  >  **Источники данных** Windows.
 
      В окне **Источники данных** отображаются все доступные данные списка SharePoint, такие как задачи, объявления и календарь.
 
