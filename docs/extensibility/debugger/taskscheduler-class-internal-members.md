@@ -1,5 +1,7 @@
 ---
 title: Класс TaskScheduler — внутренние элементы | Документация Майкрософт
+description: Сведения о внутренних членах класса System. Threading. Tasks. TaskScheduler, которые помогают реализовать пользовательский отладчик.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a53abc8b24edb06445c23c19744d00d50de8735d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10528e57137f8605e7f140d4ab8d4a3399029a5f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712569"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996010"
 ---
 # <a name="taskscheduler-class---internal-members"></a>Класс TaskScheduler — внутренние элементы
 В этой статье описываются внутренние члены <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> класса, помогающие реализовать пользовательский отладчик. Общие сведения об этом классе см <xref:System.Threading.Tasks.TaskScheduler> . в справочной статье.
@@ -34,7 +36,7 @@ ms.locfileid: "80712569"
        extends System.Object
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="methods"></a>Методы
 
@@ -43,7 +45,7 @@ ms.locfileid: "80712569"
 |[жетсчедуледтасксфордебугжер](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Извлекает массив всех запланированных задач.|
 |[жеттасксчедулерсфордебугжер](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Извлекает массив всех <xref:System.Threading.Tasks.TaskScheduler> объектов, которые активны в данный момент.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 ## <a name="see-also"></a>См. также раздел
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>

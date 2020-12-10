@@ -1,5 +1,7 @@
 ---
 title: Класс Task-внутренние элементы | Документация Майкрософт
+description: Сведения о внутренних членах класса System. Threading. Tasks. Task, которые помогают реализовать пользовательский отладчик.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf278c0248b344cea4be7cf161ecc91581f5f2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f18de66a524fbc652b8153c5b34b4464cda60f5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712738"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996023"
 ---
 # <a name="task-class---internal-members"></a>Класс Task — внутренние элементы
 В этой статье описываются внутренние члены <xref:System.Threading.Tasks.Task?displayProperty=fullName> класса, помогающие реализовать пользовательский отладчик. Общие сведения об этом классе см <xref:System.Threading.Tasks.Task> . в справочной статье.
@@ -38,7 +40,7 @@ ms.locfileid: "80712738"
                   System.Threading.ICancelableOperation
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="methods"></a>Методы
 
@@ -49,7 +51,7 @@ ms.locfileid: "80712738"
 
 ### <a name="fields"></a>Поля
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[m_action](../../extensibility/debugger/m-action-field.md)|Делегат, представляющий код для выполнения в <xref:System.Threading.Tasks.Task> объекте.|
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Хранит дополнительные свойства <xref:System.Threading.Tasks.Task> объекта.|
@@ -64,7 +66,7 @@ ms.locfileid: "80712738"
 |[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|Указывает, что выполнение задачи успешно завершено.|
 |[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|Указывает, что задача завершила выполнение своего делегата и неявно ожидает завершения присоединенных дочерних задач.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  Следующие внутренние методы полезны для обработчика отладчика, так как они помечают вход на <xref:System.Threading.Tasks.Task> выполнение кода:
 
 - `Execute`

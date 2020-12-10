@@ -1,5 +1,7 @@
 ---
 title: Обработка ошибок и возвращаемые значения | Документация Майкрософт
+description: Узнайте, как пакет SDK для Visual Studio предоставляет сборки взаимодействия для записи подробных сведений об ошибках при получении уведомления об ошибке.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30b6b9bff9056360f9ea840f47b1488f05bee872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8e8385e0b270cd6e359ef03a3060d5eefb97479
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711935"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995854"
 ---
 # <a name="error-handling-and-return-values"></a>Обработка ошибок и возвращаемые значения
 Пакеты VSPackage и COM используют одну и ту же архитектуру для ошибок. `SetErrorInfo`Функции и `GetErrorInfo` являются частью прикладного программного интерфейса (API) Win32. Любой пакет VSPackage в интегрированной среде разработки (IDE) может вызывать эти глобальные API-интерфейсы Win32 для записи подробных сведений об ошибках при получении уведомления об ошибке. [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]Предоставляет сборки взаимодействия для управления сведениями об ошибках.

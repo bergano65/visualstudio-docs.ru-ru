@@ -1,5 +1,7 @@
 ---
 title: Визуализатор типов и пользовательское средство просмотра | Документация Майкрософт
+description: Сведения о компонентах визуализатора типа и пользовательских средствах просмотра, отображающих данные в определенном формате и различиях между ними.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b8def9d28279f601ff488fca457982806629c0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac759dd245da8d803cb943dd6398d9ae642aaf23
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712469"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995945"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Визуализатор типов и пользовательское средство просмотра
 Визуализатор типов — это компонент, отображающий фрагмент данных в определенном формате. Формат полностью зависит от того, кто реализует визуализатор, является ли он конечным пользователем или сторонним поставщиком визуализаторов.

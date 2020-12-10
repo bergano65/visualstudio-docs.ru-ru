@@ -1,5 +1,7 @@
 ---
 title: Управление блокировкой документов | Документация Майкрософт
+description: Сведения о том, как поместить блокировку редактирования документа в выполняемой таблице документов без просмотра открытого документа в окне документа.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9dd520f8ad5cab1f0cfee890c4bcc388c204bb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c15696d81be92f0549069bad354e65356f7b2e7c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712124"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995906"
 ---
 # <a name="document-lock-holder-management"></a>Управление заполнителями для блокировки документов
 
@@ -43,7 +45,7 @@ ms.locfileid: "80712124"
 
 Многие случаи, когда конструктор пользовательского интерфейса изменяет файлы кода программным путем, вносит изменения в более чем один файл. В таких случаях <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A> метод обрабатывает сохранение одного или нескольких документов с помощью диалогового окна **сохранить изменения в следующих элементах?** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Выполняемая таблица документов](../extensibility/internals/running-document-table.md)
 - [Сохраняемость и выполняемая таблица документов](../extensibility/internals/persistence-and-the-running-document-table.md)

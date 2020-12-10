@@ -1,5 +1,7 @@
 ---
 title: Потоки | Документация Майкрософт
+description: В этой статье описывается определение и роль потока в архитектуре отладчика в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ed5c06e0c42dac1f0539cc2c7c5886d95b23ae1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b259ffd7814b42145489ee5990cee6da891a9d10
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712476"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995958"
 ---
 # <a name="threads"></a>Потоки
 В архитектуре отладчика *поток*:
@@ -28,7 +30,7 @@ ms.locfileid: "80712476"
 - Представляется интерфейсом [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) , обычно созданным модулем отладки (de) или виртуальной машиной, как следствие выполнения программы.
 
 ## <a name="see-also"></a>См. также раздел
-- [Программы](../../extensibility/debugger/programs.md)
+- [Programs](../../extensibility/debugger/programs.md)
 - [Кадры стека](../../extensibility/debugger/stack-frames.md)
 - [Модуль отладки](../../extensibility/debugger/debug-engine.md)
 - [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md)

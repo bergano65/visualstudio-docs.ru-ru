@@ -1,6 +1,6 @@
 ---
-title: Конструктор действий конструктор рабочих процессов TransactedReceiveScope
-description: Узнайте, как можно использовать конструктор TransactedReceiveScope для создания и настройки действия TransactedReceiveScope.
+title: Конструктор действия TransactedReceiveScope
+description: В конструктор рабочих процессов Узнайте, как можно использовать конструктор TransactedReceiveScope для создания и настройки действия TransactedReceiveScope.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70117ab8b27a23dfb2836800c41ff0844fb8de1c
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9214d1ce4a873d6caea98b814e8d489f544944c5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433782"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996296"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>Конструктор действия TransactedReceiveScope
 
@@ -40,7 +40,7 @@ ms.locfileid: "94433782"
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Необязательное понятное имя действия <xref:System.ServiceModel.Activities.TransactedReceiveScope>. Значение по умолчанию - TransactedReceiveScope.<br /><br /> Для имени <xref:System.Activities.Activity.DisplayName%2A> нет жестких требований, однако лучше всего использовать отображаемое имя.|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|Верно|Удаляет <xref:System.ServiceModel.Activities.Receive> действие в блоке **запроса** на поверхности конструктора операций.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|Удаляет <xref:System.ServiceModel.Activities.Receive> действие в блоке **запроса** на поверхности конструктора операций.|
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|Неверно|Удаляет объект <xref:System.Activities.Activity> в блоке **тела** в области конструктора действий.|
 
 ## <a name="see-also"></a>См. также раздел
@@ -49,5 +49,5 @@ ms.locfileid: "94433782"
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [Получать](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Отправить](../workflow-designer/send-activity-designer.md)
+- [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

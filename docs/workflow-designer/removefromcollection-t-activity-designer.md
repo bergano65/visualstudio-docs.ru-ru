@@ -1,6 +1,6 @@
 ---
-title: Конструктор действий конструктор рабочих процессов-RemoveFromCollection &lt; T &gt;
-description: Узнайте, как использовать <T> конструктор действий RemoveFromCollection для создания и настройки <T> действия RemoveFromCollection.
+title: '&lt; &gt; Конструктор активности RemoveFromCollection T'
+description: В конструктор рабочих процессов Узнайте, как использовать <T> конструктор действий RemoveFromCollection для создания и настройки <T> действия RemoveFromCollection.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61ffa2aaec2cfcc588607bd71c6524ab7c8f39e3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 069640dccf185f2f2c738efdde6a2311352a04b6
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434133"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996101"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>Конструктор действия RemoveFromCollection\<T>
 
@@ -39,9 +39,9 @@ ms.locfileid: "94434133"
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Необязательное понятное имя действия <xref:System.Activities.Statements.RemoveFromCollection%601>. Значение по умолчанию — RemoveFromCollection<Int32 \> .<br /><br /> Несмотря на то что свойство <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|Верно|Элемент, который необходимо удалить из **коллекции \<T>**. Этот элемент имеет тип *T* , имеющий тип *TypeArgument*. Чтобы указать элемент, введите выражение Visual Basic в таблице свойств.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|Верно|Коллекция, из которой должен быть удален элемент. Эта коллекция имеет тип **ICollection<TypeArgument \> .** Чтобы указать коллекцию, введите Visual Basic выражение в сетке свойств.|
-|*TypeArgument*|Верно|Тип T элементов, содержащихся в коллекции <xref:System.Collections.Generic.ICollection%601>. По умолчанию для этого типа *TypeArgument* задано значение **Int32**. Чтобы изменить тип, измените значение *TypeArgument* в поле со списком в сетке свойств.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|Элемент, который необходимо удалить из **коллекции \<T>**. Этот элемент имеет тип *T*, имеющий тип *TypeArgument*. Чтобы указать элемент, введите выражение Visual Basic в таблице свойств.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|Коллекция, из которой должен быть удален элемент. Эта коллекция имеет тип **ICollection<TypeArgument \> .** Чтобы указать коллекцию, введите Visual Basic выражение в сетке свойств.|
+|*TypeArgument*|True|Тип T элементов, содержащихся в коллекции <xref:System.Collections.Generic.ICollection%601>. По умолчанию для этого типа *TypeArgument* задано значение **Int32**. Чтобы изменить тип, измените значение *TypeArgument* в поле со списком в сетке свойств.|
 |<xref:System.Activities.Activity%601.Result%2A>|Неверно|Значение, которое указывает, удален ли из коллекции указанный объект. Чтобы указать переменную, к которой необходимо привязать результат, введите переменную в таблицу свойств.|
 
 ## <a name="see-also"></a>См. также раздел

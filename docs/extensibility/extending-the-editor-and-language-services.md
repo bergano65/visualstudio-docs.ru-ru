@@ -1,5 +1,7 @@
 ---
 title: Расширение редактора и языковых служб | Документация Майкрософт
+description: Вы можете добавить функции языковой службы в редактор и расширить возможности редактора кода Visual Studio. Дополнительные сведения о Managed Extensibility Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321bd82eb83ef37dc3981e38cc23d1d4b5685802
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 49d4b76fe7feadb4458ef68acb351b81c6fa494c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413948"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995750"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Расширение редактора и языковых служб
 Вы можете добавить функции языковой службы (например, IntelliSense) в собственный редактор и расширить большинство функций редактора кода Visual Studio.  Полный список возможностей, которые можно расширить, см. в разделе [точки расширения языковой службы и редактора](../extensibility/language-service-and-editor-extension-points.md).
@@ -53,7 +55,7 @@ ms.locfileid: "93413948"
 |[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Содержит сведения о Managed Extensibility Framework (MEF).|
 |[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Предоставляет сведения о Windows Presentation Foundation (WPF).|
 
-## <a name="reference"></a>Справочные сведения
+## <a name="reference"></a>Справочник
  Редактор Visual Studio включает следующие пространства имен.
 
  <xref:Microsoft.VisualStudio.Language.Intellisense>

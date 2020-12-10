@@ -1,5 +1,7 @@
 ---
 title: Завершение и отсоединение | Документация Майкрософт
+description: Нормальное завершение означает, что отлаживаемая программа выполняется до завершения без точек останова, исключений, ошибок времени выполнения или бесконечного цикла.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b88255d618ce42fa55d878f192d31523ba3f83b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74ef32708374dd3fea4c181e85b9f67a239198ba
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712497"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995971"
 ---
 # <a name="termination-and-detaching"></a>Завершение и отсоединение
 В следующем разделе описывается нормальное завершение работы.

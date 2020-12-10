@@ -1,5 +1,7 @@
 ---
 title: Определение элемента | Документация Майкрософт
+description: Элемент define определяет пару "имя символа" и "значение". Этот символ может быть вычислен с помощью условных атрибутов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc09de1d822f41b25397c7a56c7cce4449a9e551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a427371afe55b6ea4ee20f658e683b9dcdb8fbe2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712273"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996244"
 ---
 # <a name="define-element"></a>Определение элемента
 Определяет пару "имя символа" и "значение". Этот символ может быть вычислен с помощью условных атрибутов. Дополнительные сведения см. в разделе [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md). См. также [элемент Symbols](../extensibility/symbols-element.md).
@@ -34,8 +36,8 @@ ms.locfileid: "80712273"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|name|Обязательный. Имя символа:<br /><br /> Name = "Mode"|
-|value|Обязательный. Значение символа:<br /><br /> value = "Standard"|
+|name|Обязательный элемент. Имя символа:<br /><br /> Name = "Mode"|
+|value|Обязательный элемент. Значение символа:<br /><br /> value = "Standard"|
 |Условие|Необязательный элемент. Дополнительные сведения см. в разделе [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
