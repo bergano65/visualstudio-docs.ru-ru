@@ -1,5 +1,7 @@
 ---
 title: Расширение окно вывода | Документация Майкрософт
+description: Узнайте, как расширить окно вывода в пакете SDK для Visual Studio, а также как создавать пользовательские панели и управлять ими.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 800b443b079111d1d09fffdd900b246a020578f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39ee69f934a9962d2beefb83b1ada08b920ce53d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711646"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994671"
 ---
 # <a name="extend-the-output-window"></a>Расширение окна вывода
 Окно **вывода** представляет собой набор панелей текста, предназначенных для чтения и записи. В Visual Studio имеются следующие встроенные панели: **Сборка**, в которой проекты обмениваются сообщениями о сборках, и **Общие**, в которых [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] сообщения взаимодействуют с интегрированной средой разработки. Проекты автоматически получают ссылку на область **сборки** через <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> методы интерфейса, а Visual Studio предоставляет прямой доступ к панели " **Общие** " через <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> службу. Помимо встроенных панелей можно создавать пользовательские панели и управлять ими.
@@ -33,14 +35,14 @@ ms.locfileid: "80711646"
 
     2. EnvDTE80
 
-3. В *TestOutput.CS*добавьте следующую инструкцию using:
+3. В *TestOutput.CS* добавьте следующую инструкцию using:
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4. В *TestOutput.CS*удалите `ShowMessageBox` метод. Добавьте следующую заглушку метода:
+4. В *TestOutput.CS* удалите `ShowMessageBox` метод. Добавьте следующую заглушку метода:
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

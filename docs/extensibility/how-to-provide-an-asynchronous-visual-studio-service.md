@@ -1,5 +1,7 @@
 ---
 title: Как предоставить асинхронную службу Visual Studio | Документация Майкрософт
+description: Узнайте, как предоставить асинхронную службу Visual Studio. Такой подход позволяет получить службу, не блокируя поток пользовательского интерфейса.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad178bf93e49c3d695c1ebd0a5d4f6b151175953
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11639e178f93a1ebfe2fc5231ee2b35df1b63196
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905737"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993644"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Как предоставить асинхронную службу Visual Studio
 Если вы хотите получить службу, не блокируя поток пользовательского интерфейса, следует создать асинхронную службу и загрузить пакет в фоновом потоке. Для этой цели можно использовать <xref:Microsoft.VisualStudio.Shell.AsyncPackage> вместо <xref:Microsoft.VisualStudio.Shell.Package> , а также добавить службу с особыми асинхронными методами асинхронного пакета.
@@ -26,7 +28,7 @@ ms.locfileid: "85905737"
 
 2. Добавьте VSPackage в проект. Выберите узел проекта в **Обозреватель решений** и щелкните **Добавить**  >  **новый элемент**  >  **Visual C# элементы**  >  **расширяемость**  >  **пакет Visual Studio**. Назовите этот файл *TestAsyncPackage.CS*.
 
-3. В *TestAsyncPackage.CS*Измените пакет, чтобы он наследовал от, `AsyncPackage` а не от `Package` :
+3. В *TestAsyncPackage.CS* Измените пакет, чтобы он наследовал от, `AsyncPackage` а не от `Package` :
 
     ```csharp
     public sealed class TestAsyncPackage : AsyncPackage
@@ -120,7 +122,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 ## <a name="add-a-service"></a>Добавление службы
 
-1. В *TestAsyncPackage.CS*удалите `Initialize()` метод и переопределите `InitializeAsync()` метод. Добавьте службу и добавьте метод обратного вызова для создания служб. Ниже приведен пример асинхронного инициализатора, который добавляет службу:
+1. В *TestAsyncPackage.CS* удалите `Initialize()` метод и переопределите `InitializeAsync()` метод. Добавьте службу и добавьте метод обратного вызова для создания служб. Ниже приведен пример асинхронного инициализатора, который добавляет службу:
 
     ```csharp
     protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
@@ -171,7 +173,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 ## <a name="use-an-asynchronous-service-in-a-command-handler"></a>Использование асинхронной службы в обработчике команд
  Ниже приведен пример использования асинхронной службы в команде меню. Приведенную здесь процедуру можно использовать для использования службы в других неасинхронных методах.
 
-1. Добавьте команду меню в проект. (В **Обозреватель решений**выберите узел проекта, щелкните его правой кнопкой мыши и выберите Добавить. **Add**  >  **Новый элемент**  >  **Расширяемость**  >  **Пользовательская команда**.) Назовите командный файл *TestAsyncCommand.CS*.
+1. Добавьте команду меню в проект. (В **Обозреватель решений** выберите узел проекта, щелкните его правой кнопкой мыши и выберите Добавить.   >  **Новый элемент**  >  **Расширяемость**  >  **Пользовательская команда**.) Назовите командный файл *TestAsyncCommand.CS*.
 
 2. Пользовательский шаблон команды повторно добавляет `Initialize()` метод в файл *TestAsyncPackage.CS* , чтобы инициализировать команду. В `Initialize()` методе скопируйте строку, которая инициализирует команду. Он должен выглядеть так:
 

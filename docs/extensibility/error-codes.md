@@ -1,5 +1,7 @@
 ---
 title: Коды ошибок | Документация Майкрософт
+description: Эта статья содержит список кодов ошибок, значений и описаний для функций API подключаемого модуля системы управления версиями.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34072f6ddbd632f83dd308c6cb63427e02bb110b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a77f869936531dbc41cc3bd1d9b510bf44c35cec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711842"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994723"
 ---
 # <a name="error-codes"></a>Коды ошибок
 Когда функция API подключаемого модуля системы управления версиями возвращает ошибку, ожидается один из следующих кодов ошибок. Все ошибки отрицательны, предупреждения или информационные коды ошибок являются положительными, а успешно — 0.
@@ -72,7 +74,7 @@ IS_SCC_SUCCESS(rtn) (((rtn) == SCC_OK) ? TRUE : FALSE)
 IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  Все функции API подключаемого модуля системы управления версиями (за исключением [сккадд](../extensibility/sccadd-function.md), [сккчеккин](../extensibility/scccheckin-function.md)и [сккдифф](../extensibility/sccdiff-function.md)) должны выполняться успешно, если локальные файлы, передаваемые в качестве аргументов, не существуют в рабочей папке. Например, интегрированная среда разработки может выдать вызов [сккчеккаут](../extensibility/scccheckout-function.md) или [сккунчеккаут](../extensibility/sccuncheckout-function.md) для файла, который не существует в рабочей папке, но существует в системе управления версиями. Этот вызов будет выполнен. Если в рабочей папке нет файла или в системе управления версиями, то ожидается сбой функции.
 
  Некоторые функции, такие как `SccAdd` и `SccCheckin` , должны возвращать, `SCC_E_FILENOTEXIST` Если файл в рабочей папке не существует. Другие функции должны выполняться, если рабочий файл не существует, если функции работают с допустимым именем файла в системе управления версиями.

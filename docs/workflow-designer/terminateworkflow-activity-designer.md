@@ -1,6 +1,6 @@
 ---
-title: Конструктор действий конструктор рабочих процессов TerminateWorkflow
-description: Узнайте, как можно использовать конструктор действий TerminateWorkflow для создания и настройки действия TerminateWorkflow.
+title: Конструктор действия TerminateWorkflow
+description: В конструктор рабочих процессов Узнайте, как можно использовать конструктор действий TerminateWorkflow для создания и настройки действия TerminateWorkflow.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5af1f8656e796d9551e1d140b07868551d563a90
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6fc52153ca71320ebe2ebc1e1a12780e37cac08e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433873"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995455"
 ---
 # <a name="terminateworkflow-activity-designer"></a>Конструктор действия TerminateWorkflow
 
@@ -29,7 +29,7 @@ ms.locfileid: "94433873"
 
 ### <a name="using-the-terminateworkflow-activity-designer"></a>Использование конструктора операций TerminateWorkflow
 
-Конструктор действий **TerminateWorkflow** можно найти в категории **Среда выполнения** **панели элементов** , щелкнув вкладку **область элементов** (также можно выбрать **область элементов** в меню **вид** или CTRL + ALT + X).
+Конструктор действий **TerminateWorkflow** можно найти в категории **Среда выполнения** **панели элементов**, щелкнув вкладку **область элементов** (также можно выбрать **область элементов** в меню **вид** или CTRL + ALT + X).
 
 Конструктор действий **TerminateWorkflow** можно перетащить из **панели элементов** в область Конструктор рабочих процессов, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence> . При этом создается <xref:System.Activities.Statements.TerminateWorkflow> действие со значением **DisplayName** по умолчанию TerminateWorkflow. <xref:System.Activities.Activity.DisplayName%2A>Можно изменить в заголовке конструктора действий **TerminateWorkflow** или в поле **DisplayName** сетки свойств.
 

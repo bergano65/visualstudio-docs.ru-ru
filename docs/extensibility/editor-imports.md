@@ -1,5 +1,7 @@
 ---
 title: Редактор импортирует | Документация Майкрософт
+description: Узнайте, как импортировать службы редактора, фабрики и брокеры, которые предоставляют расширение с различными видами доступа к основному редактору.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6af95b452166aa71950ac1e869d333d12d857b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4e3a128f0f2873ad1946788b34761aadd1e7021
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712014"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994775"
 ---
 # <a name="editor-imports"></a>Импорт в редактор
 Можно импортировать несколько служб редактора, фабрик и брокеров, которые предоставляют расширение с разными видами доступа к основному редактору. Например, можно импортировать, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> чтобы предоставить <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> для определенного типа содержимого. (Этот Навигатор позволяет выполнять различные виды поиска в текстовом буфере.)
@@ -120,5 +122,5 @@ internal SVsServiceProvider ServiceProvider = null;
 |<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>|Объект <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSession>.|
 |<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>|Объект <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSession>.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Точки расширения языковой службы и редактора](../extensibility/language-service-and-editor-extension-points.md)

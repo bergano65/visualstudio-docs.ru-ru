@@ -1,5 +1,7 @@
 ---
 title: Руководство. предоставление службы | Документация Майкрософт
+description: Пакет VSPackage может предоставлять службы, которые могут использоваться другими пакетами VSPackage. Узнайте, как пакет VSPackage регистрирует службу в Visual Studio и добавляет ее.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30bfdd49d871919503be767ea930b3d5f2f0fd95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac89984539b0870d3921918a5a96b821297c009f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905762"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993735"
 ---
 # <a name="how-to-provide-a-service"></a>Руководство. предоставление службы
 Пакет VSPackage может предоставлять службы, которые могут использоваться другими пакетами VSPackage. Для предоставления службы пакет VSPackage должен зарегистрировать службу в Visual Studio и добавить службу.
@@ -76,7 +78,7 @@ ms.locfileid: "85905762"
 
 ### <a name="register-a-service"></a>Регистрация службы
 
-1. Чтобы зарегистрировать службу, добавьте в <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> VSPackage, предоставляющий службу. Пример:
+1. Чтобы зарегистрировать службу, добавьте в <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> VSPackage, предоставляющий службу. Например:
 
     ```csharp
     [ProvideService(typeof(SMyService))]

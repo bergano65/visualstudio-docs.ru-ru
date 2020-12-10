@@ -1,5 +1,7 @@
 ---
 title: Внешний элемент | Документация Майкрософт
+description: Элемент extern ссылается на любые файлы внешних заголовков (h) для слияния с vsct-файлом во время компиляции.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e975c3f721d65b64fc7994824406b0c9af13022
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711491"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994528"
 ---
 # <a name="extern-element"></a>Внешний элемент
 Элемент extern ссылается на любые файлы внешних заголовков (*h*) для слияния с *vsct* -файлом во время компиляции. Объединяемые файлы должны находиться на пути включения, заданном компилятору VSCT или на который ссылается [элемент include](../extensibility/include-element.md). Файлы могут быть другими *vsct* или файлами заголовков C++.
@@ -40,7 +42,7 @@ ms.locfileid: "80711491"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|href|Обязательный. Путь к файлу заголовка:<br /><br /> href = "стдидкмд. h"|
+|href|Обязательный элемент. Путь к файлу заголовка:<br /><br /> href = "стдидкмд. h"|
 |Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 |язык|Необязательный элемент. Язык по умолчанию для всех [\<Strings>](../extensibility/strings-element.md) элементов в таблице команд:<br /><br /> Language = "en-US"|
 

@@ -1,5 +1,7 @@
 ---
 title: Элемент GuidSymbol | Документация Майкрософт
+description: 'Элемент GuidSymbol содержит GUID пары GUID: ID, представляющей меню, группу или команду.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59068a9ac9f952b5370681b3684ce4234354afc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98fd802021f29365b6f338610754214352a996d7
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711132"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994242"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol, элемент
 `GuidSymbol`Элемент содержит GUID пары GUID: ID, представляющей меню, группу или команду. Идентификатор берется из `IDSymbol` элемента в `GuidSymbol` элементе. `GuidSymbol`Элемент имеет `name` атрибут, предоставляющий понятное имя GUID, которое содержится в `value` атрибуте.
@@ -37,8 +39,8 @@ ms.locfileid: "80711132"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|name|Обязательный. Имя символа GUID.|
-|value|Обязательный. Идентификатор GUID символа GUID.|
+|name|Обязательный элемент. Имя символа GUID.|
+|value|Обязательный элемент. Идентификатор GUID символа GUID.|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
@@ -52,7 +54,7 @@ ms.locfileid: "80711132"
 |-------------|-----------------|
 |[Элемент Symbols](../extensibility/symbols-element.md)|Группирует `GuidSymbol` элементы в *vsct* -файл.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
  Как правило, *vsct* -файл содержит три `GuidSymbol` элемента в своем `Symbols` разделе: один для самого пакета, один для набора команд (коллекция меню, групп и команд, доступных для пакета), и один для точечных рисунков, которые предоставляют значки для кнопок и других визуальных компонентов. Каждый `IDSymbol` элемент в заданном `GuidSymbol` элементе должен иметь уникальное значение `value` . Однако `IDSymbol` в пакете могут существовать элементы, имеющие одинаковые значения, если они имеют разные родительские объекты.
 
 ## <a name="see-also"></a>См. также раздел

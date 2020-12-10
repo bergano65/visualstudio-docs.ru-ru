@@ -1,5 +1,7 @@
 ---
 title: Динамическое добавление пунктов меню | Документация Майкрософт
+description: Узнайте, как использовать флаг команды ДинамиЦитемстарт для добавления пунктов меню во время выполнения. В этой статье показано, как задать запускаемый проект в решении Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4387c1930e09e49c0ec5c36ccedc1bb83dc273f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81fd495c51eff456f66275f33876038d14e43203
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712056"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994814"
 ---
 # <a name="dynamically-add-menu-items"></a>Динамическое добавление пунктов меню
 Элементы меню можно добавлять во время выполнения, указывая `DynamicItemStart` флаг команды в определении кнопки заполнителя в файле Visual Studio Command-Table (*. vsct*), а затем определяя (в коде) количество пунктов меню для отображения и обработки команд. После загрузки VSPackage заполнитель заменяется на элементы динамического меню.
@@ -43,7 +45,7 @@ ms.locfileid: "80712056"
 
 - Две кнопки, одна из которых выступает в качестве заполнителя для пунктов меню, и другая, которая предоставляет значок и подсказку на панели инструментов.
 
-1. В *динамикменупаккаже. vsct*определите идентификаторы команд. Перейдите в раздел символов и замените элементы IDSymbol в блоке **гуиддинамикменупаккажекмдсет** GuidSymbol. Необходимо определить элементы IDSymbol для двух групп: контроллера меню, команды заполнителя и команды привязки.
+1. В *динамикменупаккаже. vsct* определите идентификаторы команд. Перейдите в раздел символов и замените элементы IDSymbol в блоке **гуиддинамикменупаккажекмдсет** GuidSymbol. Необходимо определить элементы IDSymbol для двух групп: контроллера меню, команды заполнителя и команды привязки.
 
     ```xml
     <GuidSymbol name="guidDynamicMenuPackageCmdSet" value="{ your GUID here }">
@@ -142,7 +144,7 @@ ms.locfileid: "80712056"
 ## <a name="implement-the-dynamic-menu-command"></a>Реализация динамической команды меню
  Создается класс команды динамического меню, наследующий от <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> . В этой реализации конструктор указывает предикат, который будет использоваться для сопоставления команд. Необходимо переопределить <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> метод, чтобы использовать этот предикат для задания <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> свойства, определяющего вызываемую команду.
 
-1. Создайте новый файл класса C# с именем *DynamicItemMenuCommand.CS*и добавьте класс с именем **динамиЦитемменукомманд** , который наследует от <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> :
+1. Создайте новый файл класса C# с именем *DynamicItemMenuCommand.CS* и добавьте класс с именем **динамиЦитемменукомманд** , который наследует от <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> :
 
     ```csharp
     class DynamicItemMenuCommand : OleMenuCommand
@@ -205,7 +207,7 @@ ms.locfileid: "80712056"
 ## <a name="add-the-command"></a>Добавьте команду
  Конструктор обратном позволяет настраивать команды меню, включая динамические меню и пункты меню.
 
-1. В *DynamicMenuPackage.CS*добавьте идентификатор GUID набора команд и идентификатор команды:
+1. В *DynamicMenuPackage.CS* добавьте идентификатор GUID набора команд и идентификатор команды:
 
     ```csharp
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
@@ -356,6 +358,6 @@ public sealed class DynamicMenuItemsPackage : Package
 
 4. При закрытии решения или открытии решения, имеющего только один проект, значок панели инструментов должен исчезнуть.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Как пакеты VSPackage добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

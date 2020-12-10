@@ -1,5 +1,7 @@
 ---
 title: Как создать веб-канал Atom для закрытой коллекции | Документация Майкрософт
+description: Вы можете создать канал Atom (RSS) в интрасети, который содержит расширения, и добавить веб-канал к расширениям и обновлениям в виде частной коллекции.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 269161e831fdb176dbfea844e951597efb467312
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 833d75d7dfd18e863664e6d3d17d65a4e08b4d77
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905860"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994151"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Как создать веб-канал Atom для частной коллекции
 Вы можете создать канал Atom (RSS) в интрасети, который содержит расширения, и добавить веб-канал к **расширениям и обновлениям** в виде частной коллекции. Дополнительные сведения см. в статье [Закрытые коллекции](../extensibility/private-galleries.md).
@@ -73,4 +75,4 @@ ms.locfileid: "85905860"
  Обратите внимание, что два тега ссылки ссылаются на снимки экрана в создаваемой папке изображений.
 
 ## <a name="see-also"></a>См. также раздел
-- [Частные галереи](../extensibility/private-galleries.md)
+- [Частные коллекции](../extensibility/private-galleries.md)

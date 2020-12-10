@@ -1,5 +1,7 @@
 ---
 title: Руководство. Получение службы | Документация Майкрософт
+description: Узнайте, как получить доступ к различным функциям в службах Visual Studio. Большинство служб можно получить с помощью VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a401103112096a1089b59ba3733d19480f93e891
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a8f97900f1d400f3208a24ccc45ff9bbd774aeb
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905828"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994086"
 ---
 # <a name="how-to-get-a-service"></a>Руководство. Получение службы
 
@@ -29,9 +31,9 @@ ms.locfileid: "85905828"
 
 1. Каждое расширение Visual Studio начинается с проекта развертывания VSIX, который будет содержать ресурсы расширения. Создайте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект VSIX с именем `GetServiceExtension` . Шаблон проекта VSIX можно найти в диалоговом окне " **Новый проект** ", выполнив поиск по слову "VSIX".
 
-2. Теперь добавьте пользовательский шаблон элемента команды с именем **жетсервицекомманд**. В диалоговом окне **Добавление нового элемента** перейдите в раздел расширяемость **Visual C#**  >  **Extensibility** и выберите пункт **пользовательская команда**. В поле **имя** в нижней части окна измените имя файла команд на *GetServiceCommand.CS*. Дополнительные сведения о создании настраиваемой команды см. в статье [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md) .
+2. Теперь добавьте пользовательский шаблон элемента команды с именем **жетсервицекомманд**. В диалоговом окне **Добавление нового элемента** перейдите в раздел расширяемость **Visual C#**  >   и выберите пункт **пользовательская команда**. В поле **имя** в нижней части окна измените имя файла команд на *GetServiceCommand.CS*. Дополнительные сведения о создании настраиваемой команды см. в статье [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md) .
 
-3. В *GetServiceCommand.CS*удалите текст `MenuItemCommand` метода и добавьте следующий код:
+3. В *GetServiceCommand.CS* удалите текст `MenuItemCommand` метода и добавьте следующий код:
 
    ```csharp
    IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -70,7 +72,7 @@ if (log == null) return;
 Вот как можно получить службу из объекта DTE.
 
 ```csharp
-// Start with the DTE object, for example: 
+// Start with the DTE object, for example: 
 // using EnvDTE;
 // DTE dte = (DTE)GetService(typeof(DTE));
 
@@ -85,7 +87,7 @@ if (sp != null)
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Руководство. предоставление службы](../extensibility/how-to-provide-a-service.md)
 - [Использование и предоставление служб](../extensibility/using-and-providing-services.md)

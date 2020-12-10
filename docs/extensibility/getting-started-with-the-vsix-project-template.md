@@ -1,5 +1,7 @@
 ---
 title: начало работы с помощью шаблона проекта VSIX | Документация Майкрософт
+description: Узнайте, как использовать шаблон проекта VSIX для создания расширения или упаковки существующего расширения для развертывания.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18ca9672b22120718f63638d8668812d0e42e41f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6c7c2e12f01b008be6937a8c974f2eea183d594
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905887"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994346"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>Начало работы с шаблоном проекта VSIX
 
@@ -35,15 +37,15 @@ ms.locfileid: "85905887"
 
     2. В меню **Проект** выберите команду **Экспорт шаблона**. Выполните действия, описанные в мастере.
 
-         *ZIP* -файл создается в *%UserProfile%\My Documents\Visual Studio {версия} \ мои экспортированные шаблоны \\ *.
+         *ZIP* -файл создается в *%UserProfile%\My Documents\Visual Studio {версия} \ мои экспортированные шаблоны \\*.
 
 2. Создайте пустой проект VSIX.
 
-     Выберите **Файл** > **Создать** > **Проект**. В поле поиска введите "VSIX" и выберите версию **проекта VSIX**на **C#** или **Visual Basic** .
+     Выберите **File** > **New** > **Project** ( Файл > Создать > Проект). В поле поиска введите "VSIX" и выберите версию **проекта VSIX** на **C#** или **Visual Basic** .
 
 3. Добавьте *ZIP* -файл в проект. Задайте для свойства **Копировать в выходной каталог** значение `Copy Always` .
 
-4. В **Обозреватель решений**дважды щелкните файл *source. extension. vsixmanifest* , чтобы открыть его в **конструкторе манифеста VSIX**, а затем внесите следующие изменения:
+4. В **Обозреватель решений** дважды щелкните файл *source. extension. vsixmanifest* , чтобы открыть его в **конструкторе манифеста VSIX**, а затем внесите следующие изменения:
 
     - В поле " **Название продукта** " укажите **шаблон проекта**.
 

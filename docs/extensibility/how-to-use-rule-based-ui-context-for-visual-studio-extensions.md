@@ -1,6 +1,7 @@
 ---
 title: Использовать контекст пользовательского интерфейса на основе правил для расширений Visual Studio
 titleSuffix: ''
+description: Узнайте, как использовать контексты пользовательского интерфейса на основе правил, что позволяет авторам расширений определять условия при активации контекста пользовательского интерфейса и загрузке пакетов VSPackage.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc24fe3f5b27b3c92f0629ed378c1a97c820cd0a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 41b804d3f7697890773b4b6888bcffa108b7a11b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037111"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993462"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Как использовать контекст пользовательского интерфейса на основе правил для расширений Visual Studio
 
@@ -82,7 +83,7 @@ Visual Studio позволяет загружать пакеты VSPackage, ко
    <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
-    Теперь команды контекстного меню для файлов * \* . config* будут видны, только если выбранный элемент в обозревателе решений является файлом *. config* , и пакет не будет загружен до тех пор, пока не выбрана одна из этих команд.
+    Теперь команды контекстного меню для файлов *\* . config* будут видны, только если выбранный элемент в обозревателе решений является файлом *. config* , и пакет не будет загружен до тех пор, пока не выбрана одна из этих команд.
 
    Затем используйте отладчик, чтобы убедиться, что пакет загружается только в том случае, если предполагается. Для отладки Тестпаккаже:
 

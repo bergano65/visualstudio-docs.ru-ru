@@ -1,5 +1,7 @@
 ---
 title: Предоставление свойств окну "Свойства" | Документация Майкрософт
+description: Сведения об открытых свойствах объекта. Изменения, вносимые в эти свойства, отражаются в окно свойств.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f84962628ae550676e2c2eeb10c0f3baeca1bb58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f2668f8410b6e5f18b23c82202c1d33f8c67b4d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711832"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994697"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Предоставление свойств окно свойств
 
@@ -25,7 +27,7 @@ ms.locfileid: "80711832"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="expose-properties-to-the-properties-window"></a>Предоставление свойств окно свойств
 
@@ -35,7 +37,7 @@ ms.locfileid: "80711832"
 
 1. Каждое расширение Visual Studio начинается с проекта развертывания VSIX, который будет содержать ресурсы расширения. Создайте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект VSIX с именем `MyObjectPropertiesExtension` . Шаблон проекта VSIX можно найти в диалоговом окне " **Новый проект** ", выполнив поиск по слову "VSIX".
 
-2. Добавьте окно инструментов, добавив пользовательский шаблон элемента окна инструментов с именем `MyToolWindow` . В **Обозреватель решений**щелкните правой кнопкой мыши узел проекта и выберите команду **Добавить**  >  **новый элемент**. В **диалоговом окне Добавление нового элемента**перейдите в раздел **Visual C# элементы**  >  **расширяемость** и выберите **настраиваемое окно инструментов**. В поле **имя** в нижней части диалогового окна измените имя файла на *MyToolWindow.CS*. Дополнительные сведения о создании настраиваемого окна инструментов см. в разделе [Создание расширения с помощью окна инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Добавьте окно инструментов, добавив пользовательский шаблон элемента окна инструментов с именем `MyToolWindow` . В **Обозреватель решений** щелкните правой кнопкой мыши узел проекта и выберите команду **Добавить**  >  **новый элемент**. В **диалоговом окне Добавление нового элемента** перейдите в раздел **Visual C# элементы**  >  **расширяемость** и выберите **настраиваемое окно инструментов**. В поле **имя** в нижней части диалогового окна измените имя файла на *MyToolWindow.CS*. Дополнительные сведения о создании настраиваемого окна инструментов см. в разделе [Создание расширения с помощью окна инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 3. Откройте *MyToolWindow.CS* и добавьте следующую инструкцию using:
 
@@ -110,15 +112,15 @@ ms.locfileid: "80711832"
 
 ### <a name="to-expose-tool-window-properties"></a>Предоставление свойств окна инструментов
 
-1. Откройте *MyToolWindow.CS*и добавьте открытое логическое свойство, возвращенное в `MyToolWindow` класс.
+1. Откройте *MyToolWindow.CS* и добавьте открытое логическое свойство, возвращенное в `MyToolWindow` класс.
 
     ```csharp
     [Category("My Properties")]
     [Description("MyToolWindowControl properties")]
-    public bool IsChecked
+    public bool IsChecked
     {
         get {
-            if (base.Content == null)  return false;
+            if (base.Content == null)  return false;
             return (bool)(( MyToolWindowControl) base.Content).checkBox.IsChecked;
         }
         set {
@@ -143,7 +145,7 @@ ms.locfileid: "80711832"
 
      Это дает `MyToolWindowControl` доступ к `MyToolWindow` панели.
 
-3. В *MyToolWindow.CS*измените `MyToolWindow` конструктор следующим образом:
+3. В *MyToolWindow.CS* измените `MyToolWindow` конструктор следующим образом:
 
     ```csharp
     base.Content = new MyToolWindowControl(this);
@@ -190,14 +192,14 @@ ms.locfileid: "80711832"
 1. Откройте *MyToolWindow.CS* и добавьте открытый класс с именем `Simple` .
 
     ```csharp
-    public class Simple
+    public class Simple
     {
-        private string someText = "";
+        private string someText = "";
 
         [Category("My Properties")]
         [Description("Simple Properties")]
         [DisplayName("My Text")]
-        public string SomeText
+        public string SomeText
         {
             get { return someText; }
             set { someText = value; }
@@ -240,7 +242,7 @@ ms.locfileid: "80711832"
     }
     ```
 
-3. В *MyToolWindowControl.CS*Замените обработчики флажков следующими строками кода:
+3. В *MyToolWindowControl.CS* Замените обработчики флажков следующими строками кода:
 
     ```csharp
     private void checkbox_Checked(object sender, RoutedEventArgs e)

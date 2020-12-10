@@ -1,5 +1,7 @@
 ---
 title: Расширение фильтра обозреватель решений | Документация Майкрософт
+description: Узнайте, как расширить функциональные возможности фильтра обозреватель решений, чтобы показать или скрыть различные файлы в пакете SDK для Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af0824edd4188481bec8c0703d71043354f5dbcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde3377582c3bac0c27371e25f28e5151d641db1
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711574"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994567"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Расширение фильтра обозреватель решений
 Можно расширить функциональные возможности фильтра **Обозреватель решений** , чтобы показать или скрыть разные файлы. Например, можно создать фильтр, отображающий только файлы фабрики классов C# в **Обозреватель решений**, как показано в этом пошаговом руководстве.
 
 ## <a name="prerequisites"></a>Предварительные требования
- Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ### <a name="create-a-visual-studio-package-project"></a>Создание проекта пакета Visual Studio
 
@@ -158,7 +160,7 @@ ms.locfileid: "80711574"
 
     ```
 
-4. В *FileFilter.CS*удалите размещение команд и обработку кода из конструктора FileFilter. Результат должен выглядеть следующим образом:
+4. В *FileFilter.CS* удалите размещение команд и обработку кода из конструктора FileFilter. Результат должен выглядеть следующим образом:
 
     ```csharp
     private FileFilter(Package package)
@@ -174,7 +176,7 @@ ms.locfileid: "80711574"
 
      Удалите `ShowMessageBox()` также метод.
 
-5. В *FileFilterPackage.CS*замените код в `Initialize()` методе следующим кодом:
+5. В *FileFilterPackage.CS* замените код в `Initialize()` методе следующим кодом:
 
     ```csharp
     protected override void Initialize()

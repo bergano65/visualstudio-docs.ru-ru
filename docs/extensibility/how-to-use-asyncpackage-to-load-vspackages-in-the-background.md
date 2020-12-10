@@ -1,5 +1,6 @@
 ---
 title: Использование AsyncPackage для загрузки пакетов VSPackage в фоновом режиме
+description: Узнайте, как использовать класс AsyncPackage, который позволяет загружать пакеты в фоновом потоке, что может препятствовать проблемам реагирования дискового ввода-вывода.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,18 +9,18 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fef717ba7ec135038dcb35348eff870d9eeb3e33
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e8b5917a42e7083f7357ce76762bf8b51a1b60f9
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037293"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993488"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Как использовать AsyncPackage для загрузки пакетов VSPackage в фоновом режиме
 Загрузка и инициализация пакета VS могут привести к диску ввода-вывода. Если такие операции ввода-вывода выполняются в потоке пользовательского интерфейса, это может привести к проблемам реагирования. Чтобы устранить эту эту необходимость, в Visual Studio 2015 появился  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> класс, позволяющий загружать пакеты в фоновом потоке.
 
 ## <a name="create-an-asyncpackage"></a>Создание AsyncPackage
- Вы можете начать с создания проекта VSIX (**файл**  >  **создать**  >  **проект**  >  **Visual C#**  >  **расширение**  >  **VSIX**) и добавить пакет VSPackage в проект (щелкните правой кнопкой мыши проект и **добавьте**  >  **новый элемент**  >  **C# item**  >  **Extensibility**  >  **Visual Studio**Расширяемость элемента C#). Затем можно создать службы и добавить эти службы в пакет.
+ Вы можете начать с создания проекта VSIX (**файл**  >  **создать**  >  **проект**  >  **Visual C#**  >  **расширение**  >  **VSIX**) и добавить пакет VSPackage в проект (щелкните правой кнопкой мыши проект и **добавьте**  >  **новый элемент**  >  **C# item**  >  **Extensibility**  >  **Visual Studio** Расширяемость элемента C#). Затем можно создать службы и добавить эти службы в пакет.
 
 1. Создайте производный пакет от <xref:Microsoft.VisualStudio.Shell.AsyncPackage> .
 

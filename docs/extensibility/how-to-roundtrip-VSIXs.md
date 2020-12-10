@@ -1,5 +1,7 @@
 ---
 title: Как двунаправленные расширения
+description: Узнайте, как сделать проекты расширяемости Visual Studio циклическим обменом между Visual Studio 2015 и Visual Studio 2019 или Visual Studio 2017.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2017
 ms.topic: how-to
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
@@ -8,12 +10,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3db3264bf5226b5679452659928e451e7975b001
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387282"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993618"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Как сделать расширения совместимыми с Visual Studio 2019/2017 и Visual Studio 2015
 
@@ -55,7 +57,7 @@ ms.locfileid: "86387282"
 Если в проекте содержится *project.js* файла:
 
 * Запишите ссылки в *project.json*.
-* Из **Обозреватель решений**удалите *project.js* из файла из проекта. Это приведет к удалению *project.jsв* файле и удалению его из проекта.
+* Из **Обозреватель решений** удалите *project.js* из файла из проекта. Это приведет к удалению *project.jsв* файле и удалению его из проекта.
 * Добавьте ссылки NuGet обратно в проект:
   * Щелкните **решение** правой кнопкой мыши и выберите пункт **Управление пакетами NuGet для решения**.
   * Visual Studio автоматически создает файл *packages.config* .
@@ -109,7 +111,7 @@ Visual Studio 2019 или 2017 | Microsoft. VSSDK. Буилдтул
 </Prerequisites>
 ```
 
-* Сохраните и закройте файл.
+* Сохраните файл и закройте его.
 
 > [!NOTE]
 > Вам может потребоваться изменить предварительную версию вручную, чтобы убедиться, что она совместима со всеми версиями Visual Studio 2019 или 2017. Это связано с тем, что конструктор вставит минимальную версию в качестве текущей версии Visual Studio (например, 15.0.26208.0). Однако, так как другие пользователи могут иметь более раннюю версию, вам потребуется вручную изменить это значение на 15,0.

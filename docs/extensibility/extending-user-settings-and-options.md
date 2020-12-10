@@ -1,5 +1,7 @@
 ---
 title: Расширение параметров пользователя и параметров | Документация Майкрософт
+description: Сведения о расширении параметров пользователей и параметров в Visual Studio SDK с помощью ресурсов, описанных в этой статье.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 854928c5461d60bb39b75d2895d8d1c8d0a0e8c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adcefcfc18e64f9a7e082d0398b6609ba1877d28
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711553"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994580"
 ---
 # <a name="extend-user-settings-and-options"></a>Расширение параметров пользователя и параметров
-В Visual Studio есть два основных способа сохранения пользовательских настроек. Страницы **Tools**  >  **параметров** инструментов позволяют пользователям задавать собственные значения для различных типов параметров, как общих, так и зависящих от языка. Параметры пользователя позволяют пользователям указывать общие свойства конфигурации Visual Studio. Дополнительные сведения о страницах параметров см. в разделе [Параметры и страницы](../extensibility/internals/options-and-options-pages.md)параметров. Дополнительные сведения о параметрах пользователей см. в разделе [Поддержка параметров пользователя](../extensibility/internals/support-for-user-settings.md).
+В Visual Studio есть два основных способа сохранения пользовательских настроек. Страницы   >  **параметров** инструментов позволяют пользователям задавать собственные значения для различных типов параметров, как общих, так и зависящих от языка. Параметры пользователя позволяют пользователям указывать общие свойства конфигурации Visual Studio. Дополнительные сведения о страницах параметров см. в разделе [Параметры и страницы](../extensibility/internals/options-and-options-pages.md)параметров. Дополнительные сведения о параметрах пользователей см. в разделе [Поддержка параметров пользователя](../extensibility/internals/support-for-user-settings.md).
 
 - [Создание страницы параметров](../extensibility/creating-an-options-page.md) Объясняется, как создать страницу параметров.
 

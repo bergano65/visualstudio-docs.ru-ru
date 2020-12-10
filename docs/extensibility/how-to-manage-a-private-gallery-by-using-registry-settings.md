@@ -1,5 +1,6 @@
 ---
 title: Управление частной галереей с помощью параметров реестра
+description: Узнайте, как управлять доступом к элементам управления, шаблонам и средствам в коллекции Visual Studio, коллекции примеров или частных галереях.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dcbacbe415eac6829dc51e95442905bba932d6a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d15d845f07310e3efcba6f05538a2207d9c416e4
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038547"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994017"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Руководство. Управление частной галереей с помощью параметров реестра
 Если вы являетесь администратором или разработчиком изолированного расширения оболочки, вы можете управлять доступом к элементам управления, шаблонам и средствам в коллекции Visual Studio, коллекции примеров или частных галереях. Чтобы сделать коллекцию доступной или недоступной, создайте файл *pkgdef* , описывающий измененные разделы реестра и их значения.
@@ -27,7 +28,7 @@ ms.locfileid: "90038547"
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
-@={URI}  (REG_SZ)
+@={URI}  (REG_SZ)
 Disabled=0 | 1 (DWORD)
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)
 Protocol=Atom Feed|Sharepoint (REG_SZ)

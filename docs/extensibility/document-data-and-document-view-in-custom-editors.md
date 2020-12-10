@@ -1,5 +1,7 @@
 ---
 title: Данные документа и представление документа в пользовательских редакторах | Документация Майкрософт
+description: Сведения о компонентах пользовательского редактора, представляющих собой объект данных документа и объект представления документа.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d4b14558a435d6ad9da32726508d81185961410
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 576b195663f379b1f2fd327ce6a8806ddb43deda
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414468"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994879"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Данные документа и представление документа в пользовательских редакторах
 Пользовательский редактор состоит из двух частей: объекта данных документа и объекта представления документа. Как следует из имен, объект данных документа представляет отображаемые текстовые данные. Аналогичным образом объект представления документа (или "представление") представляет одно или несколько окон, в которых отображается объект данных документа.
@@ -36,7 +38,7 @@ ms.locfileid: "93414468"
 
  Существует два варианта создания представления для пользовательского редактора. Одна из них — модель активации на месте, где представление размещается в окне с помощью элемента управления ActiveX или объекта данных документа. Второй — упрощенная модель внедрения, где представление размещается в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> реализуется для обработки команд окна. Сведения о модели активации на месте см. в разделе Встроенная [Активация](/previous-versions/visualstudio/visual-studio-2015/misc/in-place-activation?preserve-view=true&view=vs-2015). Дополнительные сведения о упрощенной модели внедрения см. в разделе [упрощенное внедрение](../extensibility/simplified-embedding.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Поддержка нескольких представлений документов](../extensibility/supporting-multiple-document-views.md)
 - [Упрощенное внедрение](../extensibility/simplified-embedding.md)

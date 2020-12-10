@@ -1,5 +1,6 @@
 ---
 title: Отключить предупреждения для подключаемых модулей системы управления версиями
+description: При использовании системы управления версиями в Visual Studio пользователь может столкнуться с несколькими предупреждениями о совместимости. Узнайте, как отключить эти предупреждения.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 406d063bd2df6dd1d831c3a8220d8d513596a79a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f5607f4a92a14b692f20d509e014991d461815bd
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037189"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993553"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Пошаговое руководство. Отключение предупреждений о совместимости для подключаемых модулей системы управления версиями
 
@@ -27,7 +28,7 @@ ms.locfileid: "90037189"
 
 - Задайте следующую запись реестра (при необходимости добавьте значение):
 
-   **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = DWORD: 00000001**
+   **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = DWORD: 00000001**
 
    Это предупреждение отображается для всех не [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] подключаемых модулей.
 
@@ -35,9 +36,9 @@ ms.locfileid: "90037189"
 
 - Задайте следующие два значения реестра (при необходимости добавьте значения):
 
-     **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = DWORD: 00000000**
+     **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = DWORD: 00000000**
 
-    **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = DWORD: 00000001**
+    **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = DWORD: 00000001**
 
      Это предупреждение отображается, если подключаемый модуль системы управления версиями не поддерживает повторное повторное вход для нескольких проектов (то есть если он может одновременно выполнять возврат только одного файла и проекта).
 
