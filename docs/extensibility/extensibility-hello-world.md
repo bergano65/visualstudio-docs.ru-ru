@@ -1,5 +1,7 @@
 ---
 title: Учебник по расширению Hello World | Документация Майкрософт
+description: Узнайте, как добавить новую команду в качестве расширения Visual Studio, которое охватывает создание проекта, добавление команды и изменение исходного кода.
+ms.custom: SEO-VS-2020
 ms.date: 03/14/2019
 ms.topic: tutorial
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 796cb53ea5124662c695cce55241794802f042c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ba4d6cbca8d55cdaceb04a1a773fde376a8670a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905929"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995724"
 ---
 # <a name="tutorial---create-your-first-extension-hello-world"></a>Учебник. Создайте свое первое расширение: Hello World
 
