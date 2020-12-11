@@ -903,7 +903,7 @@
   href: debugger/index.yml
 - name: Тестирование >>
   displayName: Unit testing
-  href: test/improve-code-quality.md
+  href: test/index.yml
 - name: Измерение производительности >>
   displayName: Profiling
   href: profiling/index.yml
@@ -1094,7 +1094,7 @@
               href: ide/reference/options-dialog-box-visual-studio.md
             - name: Среда
               items:
-                - name: Общие сведения
+                - name: Общее
                   href: ide/reference/general-environment-options-dialog-box.md
                 - name: Учетные записи
                   href: ide/reference/accounts-environment-options-dialog-box.md
@@ -1102,7 +1102,7 @@
                   href: ide/reference/autorecover-environment-options-dialog-box.md
                 - name: Документы
                   href: ide/reference/documents-environment-options-dialog-box.md
-                - name: Расширения
+                - name: Модули
                   href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
                 - name: Найти и заменить
                   href: ide/reference/find-and-replace-environment-options-dialog-box.md
@@ -1132,7 +1132,7 @@
                   href: ide/reference/web-browser-environment-options-dialog-box.md
             - name: Проекты и решения
               items:
-                - name: Общие сведения
+                - name: Общее
                   href: ide/reference/projects-and-solutions-options-dialog-box.md
                 - name: Сборка и запуск
                   href: ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md
@@ -1146,13 +1146,13 @@
                   href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
             - name: Текстовый редактор
               items:
-                - name: Общие сведения
+                - name: Общее
                   href: ide/reference/options-text-editor-general.md
                 - name: Расширение файла
                   href: ide/reference/options-text-editor-file-extension.md
                 - name: Все языки
                   items:
-                    - name: Общие сведения
+                    - name: Общее
                       href: ide/reference/options-text-editor-all-languages.md
                     - name: Полосы прокрутки
                       href: ide/reference/options-text-editor-all-languages-scroll-bars.md
@@ -1234,7 +1234,7 @@
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
             - name: Конструктор Windows Forms
               items:
-                - name: Общие сведения
+                - name: Общее
                   href: ide/reference/options-windows-forms-designer.md
                 - name: Настройка пользовательского интерфейса данных
                   href: ide/reference/options-windows-forms-designer-data-ui-customization.md
