@@ -1,5 +1,7 @@
 ---
 title: Работа с обозревателем доменного языка
+description: Сведения об обозревателе DSL, средстве, отображающем несколько видов информации в представлении в виде дерева и включающем несколько узлов для определения доменного языка.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 971114a95fa43dbbcda985587d08f03ac3c7fd72
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0bb08f7d6dc6ea41c64cfc9aeb6898eac4df0ae5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810787"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360927"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Работа с обозревателем доменного языка
-**Обозреватель DSL** отображает несколько видов информации в представлении в виде дерева. Дополнительные сведения о большинстве элементов в обозревателе DSL см. в разделе [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md).
+**Обозреватель DSL** отображает несколько видов информации в представлении в виде дерева. Дополнительные сведения о большинстве элементов в обозревателе DSL см. в разделе [Определение языка Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).
 
  Он имеет следующие узлы.
 
@@ -33,7 +35,7 @@ ms.locfileid: "90810787"
 
 - **Типы доменов**. Список встроенных и внешних типов, используемых в модели.
 
-- **Редактор**. Список вкладок **панели элементов** и содержащихся в них элементов, а также параметры проверки для модели. Дополнительные сведения о проверке см. [в разделе Проверка на предметно-](../modeling/validation-in-a-domain-specific-language.md)ориентированном языке.
+- **Редактор**. Список вкладок **панели элементов** и содержащихся в них элементов, а также параметры проверки для модели. Дополнительные сведения о проверке см. [в разделе Проверка на Domain-Specific языке](../modeling/validation-in-a-domain-specific-language.md).
 
 - **Поведение обозревателя**. Настройки, определяющие поведение обозревателя в созданном конструкторе. Дополнительные сведения о настройке обозревателя см. в разделе [Настройка обозревателя моделей](../modeling/customizing-the-model-explorer.md).
 

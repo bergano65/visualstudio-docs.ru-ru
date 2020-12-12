@@ -1,5 +1,7 @@
 ---
 title: Свойства доменных классов
+description: Сведения о различных свойствах доменных классов, таких как модификатор доступа, пользовательские атрибуты и создание производного типа Double.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,17 +11,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3ff1ece9e57239b49c5dcbef5091a14d8b0fa5
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fd36973a9c355dcaec32b6da4149e6efd88282da
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810032"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360797"
 ---
 # <a name="properties-of-domain-classes"></a>Свойства доменных классов
-Классы домена имеют свойства, приведенные в следующей таблице. Дополнительные сведения о доменных классах см. в разделе [Основные сведения о моделях, классах и связях](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. [в разделе Настройка и расширение предметно-](../modeling/customizing-and-extending-a-domain-specific-language.md)ориентированного языка.
+Классы домена имеют свойства, приведенные в следующей таблице. Дополнительные сведения о доменных классах см. в разделе [Основные сведения о моделях, классах и связях](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. [в разделе Настройка и расширение языка Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Свойство.|Описание|Значение по умолчанию|
+|Свойство|Описание|Значение по умолчанию|
 |-|-|-|
 |Модификатор доступа|Уровень доступа класса домена (`public` или `internal`).|`public`|
 |Настраиваемые атрибуты|Используется для добавления атрибутов в класс исходного кода, созданного из этого доменного класса.|\<none>|

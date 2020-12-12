@@ -1,5 +1,7 @@
 ---
 title: Свойства доменных ролей
+description: Сведения о свойствах, связанных с ролью домена, такими как тип коллекции, пользовательские атрибуты и отображаемое свойство.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,17 +9,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c1c62126d65107bb25e3c4a475a794116c47193
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dda8e7c5538b0517c181a451072c4f8a9544965
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544148"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362344"
 ---
 # <a name="properties-of-domain-roles"></a>Свойства доменных ролей
-Свойства в следующей таблице связаны с ролью домена. Сведения о ролях домена см. в разделе [Основные сведения о моделях, классах и связях](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. [в разделе Настройка и расширение предметно-](../modeling/customizing-and-extending-a-domain-specific-language.md)ориентированного языка.
+Свойства в следующей таблице связаны с ролью домена. Сведения о ролях домена см. в разделе [Основные сведения о моделях, классах и связях](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. [в разделе Настройка и расширение языка Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Свойство|Описание|По умолчанию|
+|Свойство|Описание|Значение по умолчанию|
 |-|-|-|
 |Тип коллекции|Если у этой роли есть кратность 0.. * или 1... \* это свойство настраивает универсальный тип, используемый для хранения коллекции ссылок.|`(none)` - <xref:Microsoft.VisualStudio.Modeling.LinkedElementCollection%601> используется|
 |Настраиваемые атрибуты|Указанные здесь атрибуты будут добавлены в качестве атрибутов в создаваемый класс кода.|<нет\>|
@@ -41,6 +43,6 @@ ms.locfileid: "85544148"
 > [!NOTE]
 > Значение по умолчанию для отображаемого имени основано на значении связанного свойства путем вставки пробелов перед каждым символом верхнего регистра, которому предшествует символ в нижнем регистре и за которым не следует другой символ верхнего регистра.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Свойства доменных связей](../modeling/properties-of-domain-relationships.md)

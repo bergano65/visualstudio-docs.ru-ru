@@ -1,5 +1,7 @@
 ---
 title: О доменных языках
+description: Узнайте, как доменный язык (DSL) предназначен для выражения инструкций в определенном пространстве или домене.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a1e9b1f853ad540f65101bffabea922f8fdcef1
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597273"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360894"
 ---
 # <a name="about-domain-specific-languages"></a>О доменных языках
 
@@ -54,11 +56,11 @@ ms.locfileid: "75597273"
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] позволяет создать доменный язык с собственным графическим конструктором и собственной нотацией схемы, а затем использовать этот язык для создания соответствующего исходного кода для каждого проекта.
 
-## <a name="domain-specific-development"></a>Разработка для конкретного домена
+## <a name="domain-specific-development"></a>Разработка Domain-Specific
 
 Разработка для конкретного домена — это процесс определения частей приложений, которые можно моделировать с помощью доменного языка, а затем создание языка и его развертывание разработчикам приложений. Разработчики используют доменный язык для создания моделей, характерных для их приложений, используют модели для создания исходного кода, а затем используют исходный код для разработки приложений.
 
-## <a name="aspects-of-graphical-domain-specific-development"></a>Характеристики графической разработки для конкретного домена
+## <a name="aspects-of-graphical-domain-specific-development"></a>Аспекты разработки графических Domain-Specific
 
 Графический язык, относящийся к домену, должен включать следующие функции:
 
@@ -94,7 +96,7 @@ ms.locfileid: "75597273"
 
 Вы также можете создать адаптер шины модели для конкретного доменного языка. Этот адаптер позволяет ссылаться на модель и элементы в модели и позволяет писать код, который может получать доступ к экземпляру DSL и обновлять его. Используя мощный механизм шины модели, можно создавать расширения Visual Studio, работающие с несколькими моделями. Кроме того, можно создавать автономные приложения, работающие с моделями. Дополнительные сведения см. в разделе [Интеграция моделей с помощью Visual Studio ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
-## <a name="benefits-of-domain-specific-development"></a>Преимущества разработки для конкретного домена
+## <a name="benefits-of-domain-specific-development"></a>Преимущества разработки Domain-Specific
 
 Доменный язык может предоставить следующие преимущества:
 
@@ -110,7 +112,7 @@ ms.locfileid: "75597273"
 
      Разработчики могут использовать код, создаваемый их моделью, для создания приложения-прототипа, которое они могут отображать клиентам.
 
-## <a name="the-process-of-domain-specific-development"></a>Процесс разработки для конкретного домена
+## <a name="the-process-of-domain-specific-development"></a>Процесс разработки Domain-Specific
 
 Большинство команд разработки программного обеспечения, использующих доменные языки, выполняют следующие шаги для создания и использования их моделей:
 

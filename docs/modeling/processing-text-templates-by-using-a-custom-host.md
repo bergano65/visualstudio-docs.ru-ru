@@ -1,5 +1,7 @@
 ---
 title: Обработка текстовых шаблонов с помощью пользовательского хост-класса
+description: Узнайте, что процесс преобразования текстовых шаблонов принимает текстовый файл шаблона в качестве входных данных и создает текстовый файл в качестве выходных данных.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f7ecd6508df780f570d10b3d615094fae15209d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dbaa7cf80ba281f085590802127e3ab96776aa6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591688"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360589"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Обработка текстовых шаблонов с помощью пользовательского основного приложения
 
@@ -29,7 +31,7 @@ ms.locfileid: "75591688"
 >
 > Для приложений времени выполнения рассмотрите возможность использования предварительно обработанных текстовых шаблонов: см. статью [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Если приложение использует набор шаблонов, фиксированных во время выполнения, проще использовать предварительно преобразованные текстовые шаблоны. Этот подход также можно использовать, если приложение будет выполняться на компьютере, на котором не установлен Visual Studio. Дополнительные сведения см. [в разделе Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Если приложение использует набор шаблонов, фиксированных во время выполнения, проще использовать предварительно преобразованные текстовые шаблоны. Этот подход также можно использовать, если приложение будет выполняться на компьютере, на котором не установлен Visual Studio. Дополнительные сведения см. в статье [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="execute-a-text-template-in-your-application"></a>Выполнение текстового шаблона в приложении
 
@@ -53,10 +55,10 @@ string output = engine.ProcessTemplate(templateString, host);
 ## <a name="in-this-section"></a>в этом разделе
  [Пошаговое руководство. Создание узла пользовательского текстового шаблона](../modeling/walkthrough-creating-a-custom-text-template-host.md) Показывает, как создать узел пользовательского текстового шаблона, который делает функциональность текстового шаблона доступной за пределами Visual Studio.
 
-## <a name="reference"></a>Справочник
+## <a name="reference"></a>Ссылка
  [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 
 - [Процесс преобразования текстовых шаблонов](../modeling/the-text-template-transformation-process.md) описывает, как работает преобразование текста и какие части можно настраивать.
 - [Создание пользовательских обработчиков директив текстовых шаблонов T4](../modeling/creating-custom-t4-text-template-directive-processors.md) предоставляет общие сведения о процессорах директив текстовых шаблонов.

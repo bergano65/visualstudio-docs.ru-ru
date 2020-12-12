@@ -1,5 +1,7 @@
 ---
 title: Перемещение по модели и обновление модели в коде программы
+description: Узнайте, как написать код для создания и удаления элементов модели, задать их свойства, а также создать и удалить связи между элементами.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb7c78351ccd03247d458ca403c81d379ec18d29
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566180"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362214"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Работа с моделями и изменение их в коде программы
 
@@ -84,7 +86,7 @@ ms.locfileid: "75566180"
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- Существуют также другие методы доступа к ссылкам. Например:
+ Существуют также другие методы доступа к ссылкам. Пример:
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -108,7 +110,7 @@ ms.locfileid: "75566180"
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="accessing-class-information"></a><a name="metadata"></a> Доступ к сведениям о классе
- Вы можете получить сведения о классах, связях и других аспектах определения DSL. Например:
+ Вы можете получить сведения о классах, связях и других аспектах определения DSL. Пример:
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -129,7 +131,7 @@ ms.locfileid: "75566180"
 - ElementLink — все отношения — Елементлинкс
 
 ## <a name="perform-changes-inside-a-transaction"></a><a name="transaction"></a> Выполнение изменений внутри транзакции
- Каждый раз, когда код программы изменяется в хранилище, он должен сделать это внутри транзакции. Это относится ко всем элементам модели, связям, фигурам, схемам и их свойствам. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.Modeling.Transaction>.
+ Каждый раз, когда код программы изменяется в хранилище, он должен сделать это внутри транзакции. Это относится ко всем элементам модели, связям, фигурам, схемам и их свойствам. Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.Modeling.Transaction>.
 
  Наиболее удобный способ управления транзакцией заключается в использовании оператора, `using` заключенного в `try...catch` инструкцию:
 
@@ -199,13 +201,13 @@ using (Transaction t =
 
  Существует три способа, с помощью которых можно создать экземпляр связи. Каждый из этих трех методов имеет одинаковый результат:
 
-- Задайте свойство исходного исполнителя роли. Например:
+- Задайте свойство исходного исполнителя роли. Пример:
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- Задайте свойство целевого исполнителя роли. Например:
+- Задайте свойство целевого исполнителя роли. Пример:
 
   - `edward.familyTreeModel = familyTree;`
 
@@ -215,7 +217,7 @@ using (Transaction t =
 
        Кратность этой роли — `0..*` , поэтому мы добавляем в коллекцию.
 
-- Явным образом создайте экземпляр связи. Например:
+- Явным образом создайте экземпляр связи. Пример:
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
@@ -288,7 +290,7 @@ using (Transaction t =
 ## <a name="locks"></a><a name="locks"></a> Намерен
  Изменения могут быть предотвращены блокировкой. Блокировки могут быть заданы для отдельных элементов, в секциях и в хранилище. Если какой-либо из этих уровней имеет блокировку, которая не позволяет изменить тип изменения, при попытке выполнения может возникнуть исключение. Можно определить, установлены ли блокировки с помощью элемента. NOLOCK () — это метод расширения, определенный в пространстве имен <xref:Microsoft.VisualStudio.Modeling.Immutability> .
 
- Дополнительные сведения см. [в разделе Определение политики блокировки для создания сегментов, которые доступны только для чтения](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
+ Дополнительные сведения см. [в разделе Определение политики блокировки для создания сегментов Read-Only](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
 
 ## <a name="copy-and-paste"></a><a name="copy"></a> Копирование и вставка
  Элементы или группы элементов можно скопировать в <xref:System.Windows.Forms.IDataObject> :
@@ -482,7 +484,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>Хранение секций
  При загрузке модели соответствующая схема загружается в то же время. Как правило, модель загружается в Store. Дефаултпартитион, а содержимое схемы загружается в другую секцию. Как правило, содержимое каждой секции загружается и сохраняется в отдельный файл.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [Проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md)

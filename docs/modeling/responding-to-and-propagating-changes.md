@@ -1,5 +1,7 @@
 ---
 title: Реагирование на изменения и их распространение
+description: Сведения о том, что при создании, удалении или обновлении элемента можно написать код, который распространяет изменения на другие части модели или на внешние ресурсы.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,18 +11,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c51aeea4a1637e5b1b9d2de0d8b92920334e2fc
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 9e44def032854e46b00638cff77c8bea91eb0f09
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414520"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360616"
 ---
 # <a name="respond-to-and-propagate-changes"></a>Реагирование и распространение изменений
 
 При создании, удалении или обновлении элемента можно написать код, который распространяет изменения на другие части модели или на внешние ресурсы, такие как файлы, базы данных или другие компоненты.
 
-## <a name="reference"></a>Справочные сведения
+## <a name="reference"></a>Ссылка
 
 В качестве рекомендации рассмотрите следующие методы в следующем порядке:
 
@@ -52,7 +54,7 @@ ms.locfileid: "93414520"
 
 - **Передача аргументов событий в правила и события** Событиям и правилам передается `EventArgs` параметр со сведениями о том, как изменилась модель.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [Написание кода для настройки языка Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md)

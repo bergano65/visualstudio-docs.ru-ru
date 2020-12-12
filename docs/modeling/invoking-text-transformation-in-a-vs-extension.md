@@ -1,5 +1,7 @@
 ---
 title: Вызов преобразования текста в расширении VS
+description: Узнайте, как можно использовать службу текстовых шаблонов для преобразования текстовых шаблонов. Также Узнайте, как получить службу Стексттемплатинг и привести ее к Итексттемплатинг.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ab846d1d7121d0c36c4187d937330d2ade52eb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40e781e08bba5e01b5e453e4545b5dd19e5a4d16
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594595"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360875"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Вызов преобразования текста в расширении Visual Studio
 
@@ -136,9 +138,9 @@ Sample text.
 
 Можно передавать значения из текстового шаблона, используя класс параметров, наследуемый от <xref:System.MarshalByRefObject>.
 
-## <a name="related-articles"></a>Похожие статьи
+## <a name="related-articles"></a>Связанные статьи
 
-Чтобы создать текст из предварительно обработанного текстового шаблона, вызовите `TransformText()` метод созданного класса. Дополнительные сведения см. [в разделе Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Чтобы создать текст из предварительно обработанного текстового шаблона, вызовите `TransformText()` метод созданного класса. Дополнительные сведения см. в статье [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 Создание текста вне расширения Visual Studio: определение пользовательского узла. Дополнительные сведения см. [в разделе Обработка текстовых шаблонов с помощью пользовательского узла](../modeling/processing-text-templates-by-using-a-custom-host.md).
 

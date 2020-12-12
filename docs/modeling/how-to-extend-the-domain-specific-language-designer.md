@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Расширение конструктора доменного языка
+description: Узнайте, как сделать расширения для конструктора, используемые для изменения определений доменного языка (DSL).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa5b3166606312bb74560f207e6e1d0e6065bb2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a7a48c5a314dd52893bc7f0675915f0d68297ab
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532590"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361512"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Практическое руководство. Расширение конструктора доменного языка
 
@@ -36,7 +38,7 @@ ms.locfileid: "85532590"
 
 3. Над полем содержимое щелкните **Добавить содержимое**.
 
-4. В диалоговом окне **Добавление содержимого** установите **флажок выбрать тип содержимого** в **компоненте MEF**и задайте для параметра **проект** проект библиотеки классов.
+4. В диалоговом окне **Добавление содержимого** установите **флажок выбрать тип содержимого** в **компоненте MEF** и задайте для параметра **проект** проект библиотеки классов.
 
 5. Щелкните **Выбрать выпуски** и убедитесь, что **Visual Studio Enterprise** установлен.
 

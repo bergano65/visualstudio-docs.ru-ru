@@ -1,5 +1,7 @@
 ---
 title: Создание кода из доменного языка
+description: Узнайте, как средства языка Domain-Specific предоставляют мощный способ создания кода, документов и других артефактов из данных, представленных в моделях.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b834957dfe18e3fc03a86130a95071dda0badf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58a2537f2c2cab0123bc90e8d0e32a8da89874f6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596584"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362201"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Создание кода из доменного языка
 
@@ -48,12 +50,12 @@ ms.locfileid: "75596584"
 [Команда Дслтексттрансформ](../modeling/the-dsltexttransform-command.md)\
 Описание командного файла, выполняющего исполняемый файл TextTransform в командной строке для текстовых шаблонов, которые ссылаются на языки, относящиеся к домену.
 
-## <a name="reference"></a>Справочник
+## <a name="reference"></a>Ссылка
 
 [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)\
 Предоставляет синтаксис директив и управляющих блоков текстового шаблона.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 
 [Создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)\
 Описывает процесс преобразования текстовых шаблонов.

@@ -1,5 +1,7 @@
 ---
 title: Добавление пользовательских свойств в схемы зависимостей
+description: Узнайте, как можно хранить значения с помощью любого элемента на схеме зависимостей при написании кода расширения для схем зависимостей.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3073a42faf0dcc6fbf586847382ba3a83d88ed4
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546922"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360771"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Добавление пользовательских свойств в схемы зависимостей
 
@@ -22,7 +24,7 @@ ms.locfileid: "85546922"
 
 ## <a name="non-visible-properties"></a>Свойства, не являющиеся видимыми
 
-Если требуется, чтобы код прикрепляет значения к любому элементу на схеме зависимостей, не нужно определять компонент MEF. В Илайерелемент есть словарь с `Properties` именем [ILayerElement](/previous-versions/ff644511(v=vs.140)). Просто добавьте маршалируемые значения в словарь любого элемента слоя. Они будут сохранены как часть схемы зависимостей.
+Если требуется, чтобы код прикрепляет значения к любому элементу на схеме зависимостей, не нужно определять компонент MEF. В Илайерелемент есть словарь с `Properties` именем [](/previous-versions/ff644511(v=vs.140)). Просто добавьте маршалируемые значения в словарь любого элемента слоя. Они будут сохранены как часть схемы зависимостей.
 
 ## <a name="editable-properties"></a>Редактируемые свойства
 
@@ -38,7 +40,7 @@ ms.locfileid: "85546922"
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. В разделе **инструменты Visual Studio** меню Пуск приложения Visual Studio откройте **Командная строка разработчика**. Введите:
+> 3. В разделе **инструменты Visual Studio** меню Пуск приложения Visual Studio откройте **Командная строка разработчика**. Введите следующее:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >

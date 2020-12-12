@@ -1,5 +1,7 @@
 ---
 title: Добавление команд и жестов в схемы зависимостей
+description: Узнайте, как можно определить команды контекстного меню и обработчики жестов на схемах зависимостей в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc91e2c160d2081db868daf8d8dbaeb041172297
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531395"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362227"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Добавление команд и жестов в схемы зависимостей
 
@@ -28,7 +30,7 @@ ms.locfileid: "85531395"
 
 ## <a name="requirements"></a>Требования
 
-См. раздел [Требования](../modeling/extend-layer-diagrams.md#requirements).
+См. раздел [требования](../modeling/extend-layer-diagrams.md#requirements).
 
 ## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>Определение команды или жеста в новом расширении VSIX
 
@@ -73,15 +75,15 @@ ms.locfileid: "85531395"
 
 2. Добавьте или создайте проект VSIX в решении. Проект VSIX содержит файл с именем **source. extension. vsixmanifest**.
 
-3. В **Обозреватель решений**щелкните правой кнопкой мыши проект VSIX и выберите **Назначить запускаемым проектом**.
+3. В **Обозреватель решений** щелкните правой кнопкой мыши проект VSIX и выберите **Назначить запускаемым проектом**.
 
-4. В **source.extension.vsixmanifest**в разделе **Активы**добавьте проект команды или обработчика жестов в качестве компонента MEF.
+4. В **source.extension.vsixmanifest** в разделе **Активы** добавьте проект команды или обработчика жестов в качестве компонента MEF.
 
-    1. На вкладке **Активы**выберите команду **Создать**.
+    1. На вкладке **Активы** выберите команду **Создать**.
 
-    2. В поле **Тип**выберите **Microsoft.VisualStudio.MefComponent**.
+    2. В поле **Тип** выберите **Microsoft.VisualStudio.MefComponent**.
 
-    3. В поле **Источник**выберите **Проект в текущем решении** и выберите имя проекта команды или обработчика жестов.
+    3. В поле **Источник** выберите **Проект в текущем решении** и выберите имя проекта команды или обработчика жестов.
 
     4. Сохраните файл.
 
@@ -246,7 +248,7 @@ namespace MyLayerExtensions // change to your preference
 
      **OnDragDrop** — вызывается, когда пользователь перетаскивает элемент на схему.
 
-- Первым аргументом каждого метода является `IShape`, из которого можно получить элемент слоя. Например:
+- Первым аргументом каждого метода является `IShape`, из которого можно получить элемент слоя. Пример:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -261,6 +263,6 @@ namespace MyLayerExtensions // change to your preference
 
 - Обработчики для некоторых типов перетаскиваемых элементов уже определены. Например, пользователь может перетаскивать элементы из обозреватель решений на схему зависимостей. Для этих типов элементов нельзя определить обработчик перетаскивания. В этих случаях ваши методы `DragDrop` не вызываются.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Добавление пользовательской проверки архитектуры в схемы зависимостей](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

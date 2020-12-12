@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. Создание пользовательского хост-класса для текстовых шаблонов
+description: Узнайте, как можно написать пользовательский узел, если вы хотите использовать функции преобразования текстовых шаблонов извне Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 3979f93de6040078a5b1e4315cadc4f7faa4728e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cc1681d7c761aca123217cbf28cc33b0dbb584c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532227"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361057"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Пошаговое руководство. Создание пользовательского основного приложения для текстовых шаблонов
 
@@ -773,7 +775,7 @@ ms.locfileid: "85532227"
 
     ```
 
-3. Сохраните и закройте файл.
+3. Сохраните файл и закройте его.
 
 ### <a name="to-test-the-custom-host"></a>Тестирование пользовательского основного приложения
 
@@ -801,7 +803,7 @@ ms.locfileid: "85532227"
 
      Пользовательское ведущее приложение запустится и выполнит процесс преобразования текстового шаблона.
 
-5. В **проводнике**перейдите к папке, содержащей файл TestTemplate.tt.
+5. В **проводнике** перейдите к папке, содержащей файл TestTemplate.tt.
 
      Эта папка содержит также файл TestTemplate1.txt.
 

@@ -1,5 +1,7 @@
 ---
 title: Экспорт схем в виде изображений
+description: Сведения о том, как можно сохранить схемы моделирования в форматах только для чтения, чтобы вы могли поделиться ими с людьми, которые не используют одну и ту же версию Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e433e47d04a2beb1521aba65be664f7c7efd44f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12e0036377ed5b67e092ff0cf4588acc39c23525
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547606"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361642"
 ---
 # <a name="export-diagrams-as-images"></a>Экспорт схем в виде изображений
 
@@ -38,7 +40,7 @@ ms.locfileid: "85547606"
 
 2. В списке **имя** выберите **средство записи документов XPS (Майкрософт**) и нажмите кнопку **ОК**.
 
-3. В диалоговом окне **Сохранение файла как** сохраните файл в формате XPS- ** \* документа** .
+3. В диалоговом окне **Сохранение файла как** сохраните файл в формате XPS- **\* документа** .
 
 ## <a name="see-also"></a>См. также раздел
 
