@@ -1,5 +1,7 @@
 ---
 title: Визуализация кода
+description: Узнайте, как можно использовать средства визуализации и моделирования в Visual Studio, чтобы понять существующий код и описать приложение.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9886ea905a4997d5735e4dd2cabbfc4798a5c4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b522ae21de3d0ea115bc83446f0585e1dc9ab1e7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535880"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362513"
 ---
 # <a name="visualize-code"></a>Визуализация кода
 
@@ -30,7 +32,7 @@ ms.locfileid: "85535880"
 
 Кроме того, эти средства облегчают взаимодействие с другими участниками проекта.
 
-Чтобы узнать, какие выпуски Visual Studio поддерживают каждый компонент, см. статью [Поддержка выпуска для средств архитектуры и моделирования](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport) .
+Чтобы узнать, какие выпуски Visual Studio поддерживают каждую функцию, см. раздел [Поддержка инструментов моделирования и архитектуры в различных выпусках](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="what-do-you-want-to-do"></a>Выберите действие
 

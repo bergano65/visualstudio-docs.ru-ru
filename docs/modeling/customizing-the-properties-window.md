@@ -1,5 +1,7 @@
 ---
 title: Настройка окна свойств
+description: Узнайте, как настроить внешний вид и поведение окна свойств в доменном языке (DSL) в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f7d4ac76b8b10fde0c193e3eda73cec611c1441
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548282"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362879"
 ---
 # <a name="customize-the-properties-window"></a>Настройка окно свойств
 
@@ -40,7 +42,7 @@ ms.locfileid: "85548282"
 
 Щелкните правой кнопкой мыши класс Shape в определении DSL, наведите указатель на пункт **добавить предоставленный**, а затем выберите компонент.
 
-В фигурах можно предоставить свойства **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** и **FillGradientMode** . В соединителях можно предоставить свойства **Color** `,` **TextColor**, **DashStyle**и **толщина** . На схемах можно предоставить свойства **FillColor** и **TextColor** .
+В фигурах можно предоставить свойства **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** и **FillGradientMode** . В соединителях можно предоставить свойства **Color** `,` **TextColor**, **DashStyle** и **толщина** . На схемах можно предоставить свойства **FillColor** и **TextColor** .
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Пересылка: Отображение свойств связанных элементов
 
@@ -71,11 +73,11 @@ ms.locfileid: "85548282"
 
 #### <a name="forward-a-property-from-another-element"></a>Пересылка свойства из другого элемента
 
-1. Создайте [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] решение, содержащее по крайней мере два класса, которые в этом примере называются **Book** и **Author**. Между **книгой** и **автором**должна быть связь любого вида.
+1. Создайте [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] решение, содержащее по крайней мере два класса, которые в этом примере называются **Book** и **Author**. Между **книгой** и **автором** должна быть связь любого вида.
 
     Кратность исходной роли (роль на стороне **книги** ) должна быть равна 0.. 1 или 1.. 1, чтобы каждая **Книга** соработала одного **автора**.
 
-2. В **обозревателе DSL**щелкните правой кнопкой мыши доменный класс **книги** и выберите команду **Добавить новый DomainTypeDescriptor**.
+2. В **обозревателе DSL** щелкните правой кнопкой мыши доменный класс **книги** и выберите команду **Добавить новый DomainTypeDescriptor**.
 
     В узле **дескриптора настраиваемого типа** отображается узел с именованными **путями дескрипторов настраиваемых свойств** .
 
@@ -113,13 +115,13 @@ ms.locfileid: "85548282"
 
 ### <a name="define-a-domain-property-that-has-an-external-type"></a>Определение свойства домена, имеющего внешний тип
 
-1. В **Обозреватель решений**добавьте ссылку на СБОРКУ (DLL), содержащую внешний тип, в проекте **DSL** .
+1. В **Обозреватель решений** добавьте ссылку на СБОРКУ (DLL), содержащую внешний тип, в проекте **DSL** .
 
     Сборка может быть сборкой .NET или предоставленной вам сборкой.
 
 2. Добавьте тип в список **доменные типы** , если вы еще не сделали этого.
 
-   1. Откройте DslDefinition. DSL и в **обозревателе DSL**щелкните правой кнопкой мыши корневой узел и выберите команду **Добавить новый внешний тип**.
+   1. Откройте DslDefinition. DSL и в **обозревателе DSL** щелкните правой кнопкой мыши корневой узел и выберите команду **Добавить новый внешний тип**.
 
         В узле **типы домена** появится новая запись.
 
@@ -146,7 +148,7 @@ ms.locfileid: "85548282"
 
 Атрибут можно задать для свойства с помощью записи **настраиваемого атрибута** в окно свойств.
 
-Тип `AnEditor` должен быть производным от типа, указанного во втором параметре. Второй параметр должен иметь значение <xref:System.Drawing.Design.UITypeEditor> или <xref:System.ComponentModel.ComponentEditor> . Для получения дополнительной информации см. <xref:System.ComponentModel.EditorAttribute>.
+Тип `AnEditor` должен быть производным от типа, указанного во втором параметре. Второй параметр должен иметь значение <xref:System.Drawing.Design.UITypeEditor> или <xref:System.ComponentModel.ComponentEditor> . Дополнительные сведения см. в разделе <xref:System.ComponentModel.EditorAttribute>.
 
 Можно указать собственный редактор или редактор .NET, например <xref:System.Windows.Forms.Design.FileNameEditor> или <xref:System.Drawing.Design.ImageEditor> . Например, используйте следующую процедуру, чтобы иметь свойство, в котором пользователь может ввести имя файла.
 
@@ -183,12 +185,12 @@ ms.locfileid: "85548282"
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, чтобы указать, будет ли редактор открывать диалоговое окно или предоставлять раскрывающееся меню.
 
-Можно также предоставить графическое представление значения свойства, которое будет отображаться в сетке свойств. Для этого переопределите `GetPaintValueSupported` и `PaintValue` .  Для получения дополнительной информации см. <xref:System.Drawing.Design.UITypeEditor>.
+Можно также предоставить графическое представление значения свойства, которое будет отображаться в сетке свойств. Для этого переопределите `GetPaintValueSupported` и `PaintValue` .  Дополнительные сведения см. в разделе <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Добавьте код в отдельный файл кода в проекте **DSL** .
 
-Например:
+Пример:
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -210,7 +212,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
    , typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
-Для получения дополнительной информации см. <xref:System.Drawing.Design.UITypeEditor>.
+Дополнительные сведения см. в разделе <xref:System.Drawing.Design.UITypeEditor>.
 
 ## <a name="provide-a-drop-down-list-of-values"></a>Укажите раскрывающийся список значений
 
@@ -319,6 +321,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Перемещение по модели и обновление модели в коде программы](../modeling/navigating-and-updating-a-model-in-program-code.md)

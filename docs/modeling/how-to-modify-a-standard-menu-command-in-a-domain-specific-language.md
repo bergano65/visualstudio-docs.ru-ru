@@ -1,5 +1,7 @@
 ---
 title: Изменение стандартной команды меню в DSL
+description: Узнайте, как можно изменить поведение некоторых стандартных команд, определяемых автоматически в DSL.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e04d3d2c5572c0d0b3dbaa25912b7ec59a3bc0fa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532500"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363891"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Практическое руководство. Изменение стандартной команды меню в доменном языке
 
@@ -53,9 +55,9 @@ ms.locfileid: "85532500"
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. В **DslPackage**создайте папку с именем **Пользовательский код**. В этой папке создайте новый файл класса с именем `CommandSet.cs` .
+2. В **DslPackage** создайте папку с именем **Пользовательский код**. В этой папке создайте новый файл класса с именем `CommandSet.cs` .
 
-3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Например:
+3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Пример:
 
     ```csharp
     using System;

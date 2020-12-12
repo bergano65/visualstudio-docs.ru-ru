@@ -1,5 +1,7 @@
 ---
 title: Определение политики блокировки для создания сегментов, доступных только для чтения
+description: Узнайте, как определить политику для программы, чтобы заблокировать часть или всю модель доменного языка (DSL), чтобы ее можно было читать, но не изменять.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0778df98ff5f9665da7220fe40972c9a8f8d8e1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a76ae38b686e1c77acd9561e9c48fd3444565b0a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536088"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363202"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Определение политики блокировки для создания сегментов, доступных только для чтения
 API неизменности пакета SDK визуализации и моделирования Visual Studio позволяет программе заблокировать часть или всю модель доменного языка (DSL), чтобы ее можно было читать, но не изменять. Этот параметр доступен только для чтения, например, чтобы пользователь мог попросить коллег закомментировать и проверить модель DSL, но может запретить им изменять исходное значение.

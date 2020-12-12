@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Создание решения на доменном языке
+description: Узнайте, как создать доменный язык (DSL) с помощью специализированного решения Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,17 +15,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c47b16bbb9fe5eb352171e6e1cf4c13890890265
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c913f3015c56f7872dfe5ef3471578de7075b7d0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298657"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363280"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Практическое руководство. Создание решения на доменном языке
 Доменный язык (DSL) создается с помощью специализированного решения Visual Studio.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 Перед началом этой процедуры установите следующие компоненты:
 

@@ -1,5 +1,7 @@
 ---
 title: Создание текста во время выполнения с помощью текстовых шаблонов T4
+description: Узнайте, как можно создавать текстовые строки в приложении во время выполнения с помощью текстовых шаблонов среды выполнения Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcb7048b4319d1edb46911a74e96f440540e4299
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520839"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363943"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Создание текста во время выполнения с помощью текстовых шаблонов T4
 
@@ -49,7 +51,7 @@ This report is Company Confidential.
 
 Использование шаблона в приложении упрощает просмотр окончательной формы выходных данных, чем в, например, длинной серии инструкций Write. Внесение изменений в форму выходных данных стало проще и надежнее.
 
-## <a name="creating-a-run-time-text-template-in-any-application"></a>Создание текстового шаблона времени выполнения в любом приложении
+## <a name="creating-a-run-time-text-template-in-any-application"></a>Создание Run-Time текстового шаблона в любом приложении
 
 ### <a name="to-create-a-run-time-text-template"></a>Создание текстового шаблона времени выполнения
 
@@ -62,7 +64,7 @@ This report is Company Confidential.
     > [!NOTE]
     > Имя файла шаблона будет использоваться в качестве имени класса в созданном коде. Поэтому в нем не должно быть пробелов или знаков препинания.
 
-4. Выберите **Добавить**.
+4. Нажмите кнопку **Добавить**.
 
     Будет создан новый файл с расширением **. TT**. Его свойство **Custom Tool** имеет значение **тексттемплатингфилепрепроцессор**. Он содержит следующие строки:
 
@@ -74,7 +76,7 @@ This report is Company Confidential.
     <#@ import namespace="System.Collections.Generic" #>
     ```
 
-## <a name="converting-an-existing-file-to-a-run-time-template"></a>Преобразование существующего файла в шаблон времени выполнения
+## <a name="converting-an-existing-file-to-a-run-time-template"></a>Преобразование существующего файла в шаблон Run-Time
 
 Хорошим способом создания шаблона является преобразование существующего примера выходных данных. Например, если приложение будет создавать HTML-файлы, можно начать с создания обычного HTML-файла. Убедитесь, что он работает правильно и его внешний вид правильный. Затем добавьте его в проект Visual Studio и преобразуйте в шаблон.
 
@@ -95,7 +97,7 @@ This report is Company Confidential.
 
     `<#@ template language="C#" #>`
 
-## <a name="the-content-of-the-run-time-template"></a>Содержимое шаблона времени выполнения
+## <a name="the-content-of-the-run-time-template"></a>Содержимое шаблона Run-Time
 
 ### <a name="template-directive"></a>Директива template
 
@@ -107,7 +109,7 @@ This report is Company Confidential.
 
 ### <a name="plain-content"></a>Простое содержимое
 
-Измените **TT** файл, чтобы он содержал текст, который должен быть создан приложением. Например:
+Измените **TT** файл, чтобы он содержал текст, который должен быть создан приложением. Пример:
 
 ```html
 <html><body>
@@ -119,7 +121,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>Встроенный код программы
 
-Программный код можно вставлять между `<#` и `#>` . Например:
+Программный код можно вставлять между `<#` и `#>` . Пример:
 
 ```csharp
 <table>
@@ -191,7 +193,7 @@ partial class MyWebPage
     public MyWebPage(MyData data) { this.m_data = data; }}
 ```
 
-В файле шаблона **MyWebPage.TT**можно написать:
+В файле шаблона **MyWebPage.TT** можно написать:
 
 ```html
 <h2>Sales figures</h2>
@@ -294,7 +296,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 Директиву include можно использовать в любом месте текста файла шаблона или включенного файла.
 
-### <a name="inheritance-between-run-time-text-templates"></a>Наследование текстовых шаблонов времени выполнения
+### <a name="inheritance-between-run-time-text-templates"></a>Наследование между Run-Time текстовыми шаблонами
 
 Вы можете обмениваться содержимым между шаблонами времени выполнения, записав шаблон базового класса, который может быть абстрактным. Используйте `inherits` параметр `<@#template#>` директивы для ссылки на другой класс шаблона среды выполнения.
 
@@ -427,13 +429,13 @@ End of common template.
 End material for DerivedTemplate1.
 ```
 
-## <a name="related-topics"></a>Связанные разделы
+## <a name="related-topics"></a>См. также
 
 Шаблоны времени разработки. Если вы хотите использовать шаблон для создания кода, который станет частью приложения, см. статью [Создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 Шаблоны времени выполнения можно использовать в любом приложении, где шаблоны и их содержимое определяются во время компиляции. Но если вы хотите написать расширение Visual Studio, которое создает текст из шаблонов, которые изменяются во время выполнения, см. раздел [вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md)
 - [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)

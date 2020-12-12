@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Предоставление и ограничение доступа к текущему выделению
+description: Узнайте, как можно определить, какой элемент пользователь щелкнул правой кнопкой мыши при написании команды или обработчика жестов для конкретного доменного языка.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f5aaa106e00f9b10eb88892bcc978b92a01c79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ba656793b630dd55fc2ebc7242e5d45484b0f8e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545695"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363397"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Практическое руководство. Предоставление и ограничение доступа к текущему выделению
 
@@ -30,16 +32,16 @@ ms.locfileid: "85545695"
 
 1. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>Класс определяет следующие члены, которые можно использовать для доступа к текущему выделению.
 
-    |Участник|Описание|
+    |Член|Описание|
     |-|-|
     |Метод <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A>|Возвращает `true` , если какой-либо из элементов, выбранных в конструкторе моделей, является фигурой секции; в противном случае — значение `false` .|
     |Метод <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>|Возвращает `true` , если схема выбрана в конструкторе моделей; в противном случае — значение `false` .|
     |Метод <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A>|Возвращает `true` , если в конструкторе моделей выбран ровно один элемент; в противном случае — значение `false` .|
     |Метод <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>|Возвращает `true` , если в активном окне выбран ровно один элемент; в противном случае — значение `false` .|
-    |Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>|Возвращает доступную только для чтения коллекцию элементов, выбранных в конструкторе моделей.|
-    |Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>|Возвращает доступную только для чтения коллекцию элементов, выбранных в активном окне.|
-    |Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>|Возвращает первичный элемент выбранного элемента в конструкторе моделей.|
-    |Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>|Возвращает первичный элемент выделенного фрагмента в активном окне.|
+    |Свойство<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>|Возвращает доступную только для чтения коллекцию элементов, выбранных в конструкторе моделей.|
+    |Свойство<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>|Возвращает доступную только для чтения коллекцию элементов, выбранных в активном окне.|
+    |Свойство<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>|Возвращает первичный элемент выбранного элемента в конструкторе моделей.|
+    |Свойство<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>|Возвращает первичный элемент выделенного фрагмента в активном окне.|
 
 2. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A>Свойство <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> класса предоставляет доступ к <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> объекту, который представляет окно конструктора моделей и предоставляет дополнительный доступ к выбранным элементам в конструкторе моделей.
 

@@ -1,5 +1,7 @@
 ---
 title: Практическое руководство. Обновление модели с помощью транзакций
+description: Изучите, что транзакции позволяют гарантировать, что изменения, внесенные в хранилище, обрабатывались как группа и как использовать транзакции для обновления модели.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33d6c249845c72e25b7201bed5e640ff523c5d81
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69a50ebdc7fff425224a454a491f05846105159d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594608"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363839"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Практическое руководство. Обновление модели с помощью транзакций
 Транзакции убедитесь, что изменения, внесенные в хранилище, обрабатываются как группа. Сгруппированные изменения можно зафиксировать или откатить как единое целое.

@@ -1,5 +1,7 @@
 ---
 title: Сведения о моделях, классах и отношениях
+description: Сведения о том, как доменный язык (DSL) определяется файлом определения DSL, и что большая часть программного кода в решении DSL создается из этого файла.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08981e4f63c84d19d4086c75fe33a8b19a515ccf
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d912e98d01448a378acbed79e2278f70f62436e7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809980"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362695"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Сведения о моделях, классах и отношениях
 Доменный язык (DSL) определяется файлом определения DSL, а также любым пользовательским программным кодом, который можно написать. Большая часть программного кода в решении DSL создается из этого файла.

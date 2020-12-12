@@ -1,5 +1,7 @@
 ---
 title: Директива Output T4
+description: Изучите, что в текстовых шаблонах Visual Studio директива output используется для определения расширения имени файла и кодировки преобразованного файла.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9849a326549aa534d9cd558337b825b7e0b8d1f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591818"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363644"
 ---
 # <a name="t4-output-directive"></a>Директива Output T4
 
@@ -24,7 +26,7 @@ ms.locfileid: "75591818"
 
  Затем Visual Studio создаст файл с именем **MyTemplate.CS**
 
- Директива `output` не требуется в текстовых шаблонах времени выполнения (предварительно обработанных). Вместо этого приложение получает созданную строку, вызывая `TextTransform()`. Дополнительные сведения см. [в разделе Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Директива `output` не требуется в текстовых шаблонах времени выполнения (предварительно обработанных). Вместо этого приложение получает созданную строку, вызывая `TextTransform()`. Дополнительные сведения см. в статье [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="using-the-output-directive"></a>Применение директивы output
 

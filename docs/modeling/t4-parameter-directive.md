@@ -1,5 +1,7 @@
 ---
 title: Директива Parameter T4
+description: Изучите, что в Visual Studio директива parameter объявляет свойства в коде шаблона, которые инициализируются из значений, переданных из внешнего контекста.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f833eb651efda0edb837515e1bf2b3567e1a759
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df739f10764f20b415ac74ee4b4e529433c7dc96
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591805"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363631"
 ---
 # <a name="t4-parameter-directive"></a>Директива Parameter T4
 
@@ -82,8 +84,8 @@ string result = t4.ProcessTemplate("",
 //     Test 32 test
 ```
 
-## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Передача значений в шаблон текста времени выполнения (предварительно обработанный)
- Обычно не требуется использовать `<#@parameter#>` директиву с текстовыми шаблонами времени выполнения (предварительно обработанными). Вместо этого можно определить дополнительный конструктор или устанавливаемое свойство для созданного кода, через который вы передаете значения параметров. Дополнительные сведения см. [в разделе Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Передача значений в шаблон текста Run-Time (предварительно обработанный)
+ Обычно не требуется использовать `<#@parameter#>` директиву с текстовыми шаблонами времени выполнения (предварительно обработанными). Вместо этого можно определить дополнительный конструктор или устанавливаемое свойство для созданного кода, через который вы передаете значения параметров. Дополнительные сведения см. в статье [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  Однако если вы хотите использовать `<#@parameter>` в шаблоне времени выполнения, можно передать ему значения с помощью словаря сеанса. Например, предположим, что вы создали файл как предварительно обработанный шаблон с именем `PreTextTemplate1` . Вы можете вызвать шаблон в программе, используя следующий код.
 

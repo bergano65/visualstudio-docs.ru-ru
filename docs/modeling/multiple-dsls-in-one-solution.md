@@ -1,5 +1,7 @@
 ---
 title: Несколько доменных языков в одном решении
+description: Узнайте, как можно упаковать несколько доменных языков (DSL) как часть одного решения, чтобы они были установлены вместе.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1fbadc93f6245427284ea10c1cdd7cf99c5a7f68
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542601"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363096"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Несколько доменных языков в одном решении
 
@@ -32,7 +34,7 @@ ms.locfileid: "85542601"
 
    - Измените имена проектов **DSL** и **DslPackage** , чтобы они были разными. Примеры: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
 
-   - В каждом **DslPackage \* \ Source.extension.TT**измените эту строку на правильное имя проекта DSL:
+   - В каждом **DslPackage \* \ Source.extension.TT** измените эту строку на правильное имя проекта DSL:
 
       `string dslProjectName = "Dsl2";`
 

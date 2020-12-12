@@ -1,5 +1,7 @@
 ---
 title: Директива Assembly T4
+description: Узнайте, что в текстовом шаблоне времени разработки Visual Studio директива assembly загружает сборку, чтобы код шаблона мог использовать его типы.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41abd2b5a48f6e5e126747326e9815f3c2f46787
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591896"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363709"
 ---
 # <a name="t4-assembly-directive"></a>Директива Assembly T4
 
@@ -32,7 +34,7 @@ ms.locfileid: "75591896"
 
  Имя сборки должно быть одним из следующих:
 
-- Строгое имя сборки в глобальном кэше сборок, такое как `System.Xml.dll`. Кроме того, можно использовать полную форму, такую как `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Для получения дополнительной информации см. <xref:System.Reflection.AssemblyName>.
+- Строгое имя сборки в глобальном кэше сборок, такое как `System.Xml.dll`. Кроме того, можно использовать полную форму, такую как `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Дополнительные сведения см. в разделе <xref:System.Reflection.AssemblyName>.
 
 - абсолютный путь к сборке;
 
@@ -42,7 +44,7 @@ ms.locfileid: "75591896"
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- В предварительно преобразованном текстовом шаблоне директива assembly не производит никакого эффекта. Вместо этого включите необходимые ссылки в раздел **References** проекта Visual Studio. Дополнительные сведения см. [в разделе Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ В предварительно преобразованном текстовом шаблоне директива assembly не производит никакого эффекта. Вместо этого включите необходимые ссылки в раздел **References** проекта Visual Studio. Дополнительные сведения см. в статье [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Стандартные сборки
  Следующие сборки загружаются автоматически, поэтому для них не нужно создавать директивы сборки:

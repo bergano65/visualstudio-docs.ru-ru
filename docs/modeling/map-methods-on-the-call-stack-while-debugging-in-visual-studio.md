@@ -1,5 +1,7 @@
 ---
 title: Сопоставление методов в визуализации стека вызовов при отладке
+description: Узнайте, как создать карту кода для визуальной трассировки стека вызовов во время отладки. Кроме того, вы узнаете, что вы можете делать заметки на карте, чтобы отслеживание выполняемого кода.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -28,12 +30,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b3d5c531400ddd88cea17b9172f19bf9711105d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532708"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362435"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Сопоставление методов в визуализации стека вызовов при отладке в Visual Studio
 
@@ -41,7 +43,7 @@ ms.locfileid: "85532708"
 
  ![Отладка со стеками вызовов на картах кода](../debugger/media/debuggermap_overview.png)
 
- Что вам понадобится
+ Что вам понадобится:
 
  ::: moniker range="vs-2017"
 

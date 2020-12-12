@@ -1,5 +1,7 @@
 ---
 title: Свойства доменных связей
+description: Сведения о свойствах, связанных с релатионшопом домена, например модификатором доступа, пользовательскими атрибутами и возникнет двойной производный.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,17 +11,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e432e9738009c84b6930b0363ae4048c925d0a6
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 88c5db50432947b99a2667280fe7861e7acd95ac
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810006"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362461"
 ---
 # <a name="properties-of-domain-relationships"></a>Свойства доменных связей
-Свойства в следующей таблице связаны с доменной связью. Сведения о доменных отношениях см. в разделе [Основные сведения о моделях, классах и связях](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. [в разделе Настройка и расширение предметно-](../modeling/customizing-and-extending-a-domain-specific-language.md)ориентированного языка.
+Свойства в следующей таблице связаны с доменной связью. Сведения о доменных отношениях см. в разделе [Основные сведения о моделях, классах и связях](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. [в разделе Настройка и расширение языка Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Свойство.|Описание|Значение по умолчанию|
+|Свойство|Описание|Значение по умолчанию|
 |-|-|-|
 |Модификатор доступа|Уровень доступа к доменной связи ( `public` или `internal` ).|`public`|
 |Настраиваемые атрибуты|Используется для добавления атрибутов в класс исходного кода, созданного из связи домена.|\<none>|

@@ -1,5 +1,7 @@
 ---
 title: Директива Template T4
+description: Изучите, что текстовый шаблон T4 в Visual Studio обычно начинается с директивы template, которая определяет способ обработки шаблона.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2763ca540a6b0518eed8bf757412716616d3ae3e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 75001da1829f6dafdac68359d1b0f6c7c14ed266
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808068"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363670"
 ---
 # <a name="t4-template-directive"></a>Директива Template T4
 
@@ -30,7 +32,7 @@ ms.locfileid: "90808068"
 
 ## <a name="compileroptions-attribute"></a>атрибут compilerOptions
 
-Пример:
+Пример
 
 `compilerOptions="optimize+"`
 
@@ -44,7 +46,7 @@ ms.locfileid: "90808068"
 
 ## <a name="culture-attribute"></a>атрибут culture
 
-Пример:
+Пример
 
 `culture="de-CH"`
 
@@ -52,13 +54,13 @@ ms.locfileid: "90808068"
 
 "", инвариантные язык и региональные параметры, используемые по умолчанию.
 
-Язык и региональные параметры задаются как строка в форме xx-XX. Например: en-US, ja-JP, de-CH, de-DE. Для получения дополнительной информации см. <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
+Язык и региональные параметры задаются как строка в форме xx-XX. Например: en-US, ja-JP, de-CH, de-DE. Дополнительные сведения см. в разделе <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
 Этот атрибут задает язык и региональные параметры для использования при преобразовании блока выражений в текст.
 
 ## <a name="debug-attribute"></a>атрибут debug
 
-Пример:
+Пример
 
 ```
 debug="true"
@@ -78,7 +80,7 @@ debug="true"
 
 ## <a name="hostspecific-attribute"></a>атрибут hostspecific
 
-Пример:
+Пример
 
 ```
 hostspecific="true"
@@ -122,7 +124,7 @@ Content of myFile is:
 
 ## <a name="language-attribute"></a>атрибут language
 
-Пример:
+Пример
 
 `language="VB"`
 
@@ -239,7 +241,7 @@ This is the common footer.
 
 ## <a name="linepragmas-attribute"></a>атрибут Линепрагмас
 
-Пример:
+Пример
 
 `linePragmas="false"`
 
@@ -255,7 +257,7 @@ This is the common footer.
 
 ## <a name="visibility-attribute"></a>атрибут видимости
 
-Пример:
+Пример
 
 `visibility="internal"`
 

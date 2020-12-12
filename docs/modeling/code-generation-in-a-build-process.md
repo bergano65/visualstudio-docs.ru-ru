@@ -1,5 +1,7 @@
 ---
 title: Создание кода в процессе построения
+description: Узнайте, как можно вызывать преобразование текста как часть процесса сборки решения Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af0039fb8c945062bc19fa647b477c40c44d5346
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: 3000a02621f7e2c274522a199cfe499e2335c4c2
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92298201"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363566"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Вызов преобразования текста в процессе сборки
 
@@ -57,7 +59,7 @@ ms.locfileid: "92298201"
 
 Измените файл проекта, чтобы настроить некоторые функции в MSBuild, например Импорт целевых объектов преобразования текста.
 
-В **Обозреватель решений**в контекстном меню проекта выберите пункт **выгрузить** . Это позволит изменить CSPROJ- или VBPROJ-файл в редакторе XML. Завершив редактирование, нажмите кнопку **перезагрузить**.
+В **Обозреватель решений** в контекстном меню проекта выберите пункт **выгрузить** . Это позволит изменить CSPROJ- или VBPROJ-файл в редакторе XML. Завершив редактирование, нажмите кнопку **перезагрузить**.
 
 ## <a name="import-the-text-transformation-targets"></a>Импорт целевых объектов преобразования текста
 

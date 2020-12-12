@@ -1,5 +1,7 @@
 ---
 title: Настройка преобразования текста T4
+description: Узнайте, как можно расширить процесс преобразования шаблонов по умолчанию, настроив обработчик директив текстового шаблона или узел текстового шаблона.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e35c279f397f1228c17fb6a41a18a2fe583ab88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b168e0e66b7704c3e78a241f76ee4122278c9ed
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589738"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362916"
 ---
 # <a name="customize-t4-text-transformation"></a>Настройка преобразования текста T4
 
@@ -33,6 +35,6 @@ ms.locfileid: "75589738"
 
  При написании расширения Visual Studio рассмотрите возможность использования существующей службы преобразования текста вместо написания собственного узла. Дополнительные сведения см. [в разделе вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
-## <a name="reference"></a>Справочник
+## <a name="reference"></a>Ссылка
 
 - [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md) предоставляет синтаксис директив и управляющих блоков текстового шаблона.

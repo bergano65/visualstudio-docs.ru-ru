@@ -1,5 +1,7 @@
 ---
 title: Обновление фигур и соединителей в соответствии с моделью
+description: Узнайте, что на предметно-ориентированном языке в Visual Studio внешний вид фигуры отражает состояние базовой модели.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3d16cbc35c468c0101db479799215bcccf64ef6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115022"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362604"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Изменение фигур и соединителей в соответствии с моделью
 
@@ -27,11 +29,11 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Настройка свойств карт фигур для управления видимостью декоратора
 
-Можно управлять видимостью декоратора без написания программного кода, настроив сопоставление между фигурой и классом домена в определении DSL. Дополнительные сведения см. [в разделе Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md).
+Можно управлять видимостью декоратора без написания программного кода, настроив сопоставление между фигурой и классом домена в определении DSL. Дополнительные сведения см. [в разделе Определение языка Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).
 
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Предоставить цвет и стиль фигуры как свойства
 
-В определении DSL щелкните правой кнопкой мыши класс Shape, наведите указатель на пункт **добавить предоставленный**и выберите один из таких элементов, как **Цвет заливки**.
+В определении DSL щелкните правой кнопкой мыши класс Shape, наведите указатель на пункт **добавить предоставленный** и выберите один из таких элементов, как **Цвет заливки**.
 
 Теперь фигура имеет свойство предметной области, которое можно задать в программном коде или в качестве пользователя. Например, чтобы задать его в программном коде команды или правила, можно написать:
 
@@ -84,7 +86,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Использование Ончилдконфигуред для инициализации свойств фигуры
 
-Чтобы задать свойства фигуры при ее первоначальном создании, переопределение `OnChildConfigured()` в частичном определении класса схемы. Класс схемы указан в определении DSL, а созданный код — в **Дсл\женератед коде\диаграм.КС**. Например:
+Чтобы задать свойства фигуры при ее первоначальном создании, переопределение `OnChildConfigured()` в частичном определении класса схемы. Класс схемы указан в определении DSL, а созданный код — в **Дсл\женератед коде\диаграм.КС**. Пример:
 
 ```csharp
 partial class MyLanguageDiagram

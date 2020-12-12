@@ -1,5 +1,7 @@
 ---
 title: Настройка функции копирования
+description: Узнайте, что в DSL, созданном с помощью пакета SDK визуализации и моделирования Visual Studio, можно изменить то, что происходит, когда пользователь копирует и вставит элементы.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b189d3dbd5c1872094b0c1be2a64eb2c02bf1e2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8eee81440c0dda7f193d3e37eab700ada3ff259f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547346"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363111"
 ---
 # <a name="customizing-copy-behavior"></a>Настройка функции копирования
 В доменном языке (DSL), созданном с помощью пакета SDK визуализации и моделирования Visual Studio, можно изменить то, что происходит, когда пользователь копирует и вставит элементы.
@@ -552,7 +554,7 @@ namespace Company.MyDsl
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка создания и перемещения элементов](../modeling/customizing-element-creation-and-movement.md)
 - [Практическое руководство. Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md)
