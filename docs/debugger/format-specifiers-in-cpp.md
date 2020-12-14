@@ -1,5 +1,7 @@
 ---
 title: Описатели формата в отладчике (C++) | Документация Майкрософт
+description: С помощью описателя формата можно изменить формат, в котором значение отображается в окнах "Контрольные значения", "Видимые" или "Локальные". В этой статье рассказывается о работе с ним.
+ms.custom: SEO-VS-2020
 ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 287ef3ccfd344786bd98098c5f28d0a2bd6573f6
-ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
+ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90832324"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863040"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Описатели формата для C++ в отладчике Visual Studio
 С помощью описателей формата можно изменить формат, в котором значение отображается в окнах **Контрольные значения**, **Видимые** и **Локальные**.

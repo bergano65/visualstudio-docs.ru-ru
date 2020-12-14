@@ -1,18 +1,18 @@
 ---
-title: Преимущество учетной записи разработчика Windows в подписках Visual Studio | Документация Майкрософт
+title: Преимущество учетной записи разработчика Windows в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Сведения об учетной записи разработчика Windows, входящей в вашу подписку Visual Studio.
-ms.openlocfilehash: 46cb22becd8a5ac852c7fddbd2cf8b473cef47bc
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435827"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537725"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Учетная запись разработчика Windows в подписках Visual Studio
 Учетная запись разработчика Windows, включенная в выбранные подписки Visual Studio, позволяет отправлять в Магазин Windows платные и бесплатные приложения Windows.
@@ -44,9 +44,9 @@ ms.locfileid: "92435827"
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Включено       |  Да|
-| Visual Studio Enterprise с GitHub Enterprise   | VL  | Включено       |  Да|
+| Подписка Visual Studio Enterprise с GitHub Enterprise   | VL  | Включено       |  Да|
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Включено                                                            |Да|
-| Visual Studio Professional с GitHub Enterprise | VL                                        | Включено                                                            |Да|
+| Подписка Visual Studio Professional с GitHub Enterprise | VL                                        | Включено                                                            |Да|
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Недоступно                                            |  Н/Д|
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              |  Недоступно                                            |  Н/Д|
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|

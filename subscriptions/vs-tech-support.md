@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 11/05/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Сведения о том, как активировать преимущество технической поддержки, входящее в вашу подписку Visual Studio.
-ms.openlocfilehash: 9ae88bcc066473752a600284d815378bc8870f64
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ea67dde54dd66af6d20b7f9af84d2bfe80211444
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413985"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537972"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Активация и использование преимущества технической поддержки в подписках Visual Studio
 Преимущество технической поддержки в подписках Visual Studio предназначено для решения проблем, связанных с заменой и ремонтом, в **нерабочей среде** для продуктов, которые все еще находятся на этапе основной поддержки [жизненного цикла поддержки](https://support.microsoft.com/lifecycle/search). Стандартная и годовая облачная подписки на Visual Studio Enterprise получают право на четыре обращения в службу поддержки, а стандартная и годовая облачная подписки на Visual Studio Professional — на два в течение 1 года с активации преимущества. Необходимо активировать преимущество в срок действия подписки.
@@ -108,9 +108,9 @@ ms.locfileid: "93413985"
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | 4 обращения       |  Да|
-| Visual Studio Enterprise с GitHub Enterprise | VL | 4 обращения       |  Да|
+| Подписка Visual Studio Enterprise с GitHub Enterprise | VL | 4 обращения       |  Да|
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>2</sup>                                        | 2 обращения                                                          |Да         |
-| Visual Studio Professional с GitHub Enterprise | VL                                     | 2 обращения                                                          |Да         |
+| Подписка Visual Studio Professional с GitHub Enterprise | VL                                     | 2 обращения                                                          |Да         |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | 2 обращения                                             |  Да         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | 2 обращения                                               | Да         |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|

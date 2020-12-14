@@ -1,5 +1,7 @@
 ---
 title: Методы отладки CRT | Документация Майкрософт
+description: Отладку программы, в которой используется библиотека времени выполнения языка C (CRT), можно выполнять с применением различных методов. В этой статье представлены ссылки на ресурсы, в которых они рассматриваются более подробно.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88cdc78fd739de412b4cf796d0ca7a42f9174e0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b71c91dbcc420fd4cc89a5e86fb976cca738bdcc
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564039"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560529"
 ---
 # <a name="crt-debugging-techniques"></a>Методы отладки CRT
 Эти методы могут пригодиться при отладке программы с использованием библиотеки времени выполнения языка С (CRT).

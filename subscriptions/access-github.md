@@ -1,5 +1,5 @@
 ---
-title: Пакет Visual Studio с GitHub Enterprise | Документация Майкрософт
+title: Подписки Visual Studio с GitHub Enterprise | Документация Майкрософт
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,14 +7,14 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 10/22/2020
 ms.topic: conceptual
 description: Узнайте о доступе к GitHub Enterprise в рамках подписок Visual Studio.
-ms.openlocfilehash: fc4c36e72affb94f0707389d219284cc2a652bfd
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 59b665b1da7d46732f1f4e967ae2a98ec54875ff
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467522"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537907"
 ---
-# <a name="visual-studio-with-github-enterprise-subscriptions"></a>Подписки Visual Studio с GitHub Enterprise
+# <a name="visual-studio-subscriptions-with-github-enterprise"></a>Подписки Visual Studio с GitHub Enterprise 
 
 Клиенты, заключившие с корпорацией Майкрософт соглашения Enterprise (EA), имеют право приобрести новое предложение, в котором объединены стандартные подписки Visual Studio и GitHub Enterprise. Таким образом, подписчики Visual Studio смогут снизить затраты на приобретение GitHub Enterprise. 
 
@@ -33,13 +33,13 @@ Visual Studio Enterprise, Visual Studio Professional и GitHub Enterprise �
 
 Дополнительные сведения о преимуществах и вариантах см. на странице <https://visualstudio.microsoft.com/subscriptions/visual-studio-github>. 
 
-## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Что представляет собой процесс настройки Visual Studio с GitHub Enterprise?
+## <a name="what-is-the-visual-studio-subscription-with-github-enterprise-setup-process"></a>Что представляет собой процесс настройки подписок Visual Studio с GitHub Enterprise?
 
-Управление подписками Visual Studio с GitHub Enterprise осуществляется в два этапа.
+Управление подписками Visual Studio с GitHub Enterprise осуществляется в два этапа:
 1. Подписка Visual Studio (Enterprise или Professional)
 2. GitHub Enterprise 
 
-Когда ваш администратор подписки Visual Studio назначит вам подписку Visual Studio с GitHub, вы получите уведомление об этом по электронной почте.  На этом этапе вы сможете просмотреть доступные преимущества подписки на странице <https://my.visualstudio.com/benefits>.  Эти преимущества включают преимущество GitHub Enterprise, как показано ниже.
+Когда ваш администратор подписки Visual Studio назначит вам подписку Visual Studio с GitHub Enterprise, вы получите уведомление об этом по электронной почте.  На этом этапе вы сможете просмотреть доступные преимущества подписки на странице <https://my.visualstudio.com/benefits>.  Эти преимущества включают преимущество GitHub Enterprise, как показано ниже.
 
    > [!div class="mx-imgBorder"]
    > ![GitHub Enterprise: ожидание настройки корпоративной учетной записи](_img/access-github/pending-account-setup.png "Организация должна сначала настроить учетную запись Enterprise.")  

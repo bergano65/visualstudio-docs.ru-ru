@@ -1,5 +1,7 @@
 ---
 title: Рефакторинг для удаления недоступного кода
+description: Узнайте, как использовать меню "Быстрые действия и рефакторинг" для удаления кода, который никогда не будет выполняться.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cd827870f07fb3161674d287d20f266942e61afe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3af9d0a14b600773c5025fcaad68380c7bb82b29
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093982"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616711"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Рефакторинг для удаления недоступного кода
 
@@ -31,7 +33,7 @@ ms.locfileid: "79093982"
 
 **Зачем.** Повысить удобочитаемость и удобство поддержки, удалив код, который является избыточным и никогда не будет выполняться.
 
-## <a name="how-to"></a>Практическое руководство
+## <a name="how-to"></a>Практические советы
 
 1. Поместите курсор в любом месте в области затемненного кода, который недоступен:
 
@@ -46,7 +48,7 @@ ms.locfileid: "79093982"
 
 1. Если вы довольны результатами, нажмите клавишу **ВВОД** или выберите соответствующий пункт в меню, чтобы зафиксировать изменения.
 
-Пример
+Пример.
 
 ```csharp
 // Before

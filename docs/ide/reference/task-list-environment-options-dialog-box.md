@@ -1,5 +1,7 @@
 ---
 title: Страница "Список задач", папка "Среда", диалоговое окно "Параметры"
+description: Сведения о том, как с помощью страницы "Список задач" в разделе "Среда" добавлять, удалять и изменять токены комментариев, используемые при создании напоминаний списка задач.
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e28b3b9c3fe4d6e89228dc18ba8b98aa5e0d2e76
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 4b7b29c477bf046cfd47db9e39cb57360d999dee
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233128"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616295"
 ---
 # <a name="options-dialog-box-environment--task-list"></a>Диалоговое окно "Параметры": Страница "Список задач" \> папка "Среда"
 

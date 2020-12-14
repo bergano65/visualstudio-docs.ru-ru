@@ -2,17 +2,17 @@
 title: Преимущество CloudPilot в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
-ms.date: 03/24/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Сведения о преимуществе CloudPilot, доступном в некоторых подписках Visual Studio.
-ms.openlocfilehash: 642a5b35f41676c76d9eb4e5f1319fbbf57c55df
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 505e4caad5ee6d9b70fc50769c8a008469aa1345
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005928"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538154"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Преимущество CloudPilot в подписках Visual Studio
 Перенесите приложения в Microsoft Azure, выполнив несколько простых действий. За считаные минуты определите все необходимые изменения кода вплоть до отдельных строк для успешной миграции в контейнеры, виртуальные машины, службы приложений, SQL Azure и (или) SQL MI. Затем выполните миграцию приложений в Azure с помощью мастеров, использующих ASR, DMA и DMS.
@@ -60,9 +60,9 @@ ms.locfileid: "91005928"
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия | 2 лицензии, 90 дней, неограниченное количество проверок       |  Нет.  Доступно только для новых подписчиков          |
-| Visual Studio Enterprise с GitHub Enterprise   | VL | 2 лицензии, 90 дней, неограниченное количество проверок       |  Нет.  Доступно только для новых подписчиков          |
+| Подписка Visual Studio Enterprise с GitHub Enterprise   | VL | 2 лицензии, 90 дней, неограниченное количество проверок       |  Нет.  Доступно только для новых подписчиков          |
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | 1 лицензия, 30 дней, одна проверка                                                            |  Нет.  Доступно только для новых подписчиков           |
-| Visual Studio Professional с GitHub Enterprise | VL | 1 лицензия, 30 дней, одна проверка                                                            |  Нет.  Доступно только для новых подписчиков           |
+| Подписка Visual Studio Professional с GitHub Enterprise | VL | 1 лицензия, 30 дней, одна проверка                                                            |  Нет.  Доступно только для новых подписчиков           |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Недоступно                                             |  Н/Д           |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                              |  Н/Д          |
 | Visual Studio Enterprise (ценовая категория "Стандартный")  | Не для перепродажи (NFR) <sup>1</sup> |Недоступно  | Н/Д |

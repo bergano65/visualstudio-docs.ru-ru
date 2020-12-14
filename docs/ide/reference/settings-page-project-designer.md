@@ -1,5 +1,7 @@
 ---
 title: Страница "Параметры" в конструкторе проектов
+description: Сведения о том, как использовать страницу "Параметры" в конструкторе проектов для задания параметров приложения проекта.
+ms.custom: SEO-VS-2020
 ms.date: 06/14/2018
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b5aa077043b16c01a05e8730bcd2b42719edaf0
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566778"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560321"
 ---
 # <a name="settings-page-project-designer"></a>Страница "Параметры" в конструкторе проектов
 
@@ -65,7 +67,7 @@ Properties.Settings.Default.Save();
 
 **Settings Grid** (Таблица параметров) используется для настройки параметров приложения. Она содержит следующие столбцы:
 
-**Название**
+**Имя**
 
 Введите имя параметра приложения в этом поле.
 
@@ -73,7 +75,7 @@ Properties.Settings.Default.Save();
 
 В раскрывающемся списке выберите тип параметра. В раскрывающемся списке представлены наиболее часто используемые типы, например **String**, **(строка подключения)** и **System.Drawing.Font**. Можно выбрать другой тип, щелкнув элемент **Обзор** в конце списка и выбрав тип в диалоговом окне **Выбор типа**. Выбранный тип добавляется в раскрывающийся список распространенных типов (только для текущего решения).
 
-**Область действия**
+**Область**
 
 Выберите **Приложение** или **Пользователь**.
 
@@ -81,11 +83,11 @@ Properties.Settings.Default.Save();
 
 Параметры пользователя, такие как системные шрифты, предназначены для настройки пользователем. Пользователи могут изменять их во время выполнения.
 
-**Value**
+**Значение**
 
 Данные или значение, связанные с параметром приложения. Например, если параметром является шрифт, его значение может быть **Verdana, 9.75pt, style=Bold**.
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Управление параметрами приложения](../managing-application-settings-dotnet.md)
+- [управлять параметрами приложения;](../managing-application-settings-dotnet.md)
 - [Доступ к параметрам приложения (Visual Basic)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

@@ -1,5 +1,7 @@
 ---
 title: Режим "Изменить и продолжить" (C++) | Документация Майкрософт
+description: Для проектов C++ доступен режим "Изменить и продолжить". Из этой статьи вы узнаете, какие правки поддерживаются, а также как управлять их применением.
+ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c32c161d1df70fc81eee4186aa9d1ac102afa69
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 2a8cb40850aefe83ac048c708192bc24533a8296
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599657"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863066"
 ---
 # <a name="edit-and-continue-c"></a>Изменить и продолжить (C++)
 Вы можете использовать режим "Изменить и продолжить" в проектах C++. См. сведения об ограничениях режима "Изменить и продолжить" в руководстве по [поддерживаемым изменениям кода (C++)](../debugger/supported-code-changes-cpp.md).

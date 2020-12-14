@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно "Изменить и продолжить" (C++) | Документация Майкрософт
+description: Диалоговое окно "Изменить и продолжить" может содержать сведения о невозможности применить изменения. В этой статье приводятся сведения о причинах этого и возможных действиях.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba7b133594d016d1a80efae4d18d1fb55a96398d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: dc1e7a27624cede9ca20295d3dc890f172e35889
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599550"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862988"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Диалоговое окно "Изменить и продолжить" (C++)
 Не удалось применить изменения в машинном коде с помощью операции "Изменить и продолжить". Возможно, это временное условие. Иногда операция "Изменить и продолжить" не может применить изменения в машинном коде немедленно, однако может применить их позже в течение сеанса отладки (например, после завершения текущего вызова к выполняющейся в данный момент процедуре). Дополнительные сведения см. в разделе [Изменить и продолжить](../debugger/edit-and-continue.md).

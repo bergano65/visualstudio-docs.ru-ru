@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно визуализатора набора данных | Документация Майкрософт
+description: Визуализаторы отладчика Visual Studio — это компоненты, отображающие данные. Средство визуализации наборов данных позволяет просматривать содержимое объектов DataSet, DataTable, DataView и DataViewManager.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3f57247d23a318da6bf492534c1ff060bb4116bb
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745602"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560477"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Средство визуализации наборов данных - диалоговое окно
 Средство визуализации наборов данных позволяет просматривать содержимое объектов DataSet, DataTable, DataView и DataViewManager. Доступ к этому визуализатору можно получить, щелкнув значок лупы рядом со значением одного из указанных объектов в окне переменных отладчика или в окне подсказки данных.

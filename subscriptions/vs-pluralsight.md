@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 08/04/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Сведения об учебной подписке Pluralsight, входящей в выбранные подписки Visual Studio.
-ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 02ed0d2417317116182800980206a1fcc7fbfc16
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "91005346"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537985"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Преимущества обучения Pluralsight в подписках Visual Studio
 
@@ -73,9 +73,9 @@ ms.locfileid: "91005346"
 |                          Уровень подписки                          |     Каналы      |    Преимущество    |   Возможность возобновления   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (ценовая категория "Стандартный")           | Корпоративная лицензия, Azure, розничная версия |   6 месяцев    | Да<sup>2</sup> |
-|          Visual Studio Enterprise с GitHub Enterprise          | VL  |   6 месяцев    | Да<sup>2</sup> |
+|          Подписка Visual Studio Enterprise с GitHub Enterprise          | VL  |   6 месяцев    | Да<sup>2</sup> |
 |         Visual Studio Professional (ценовая категория "Стандартный")          | Корпоративная лицензия, Azure, розничная версия |   3 месяца    | Да<sup>2</sup> |
-|         Visual Studio Professional с GitHub Enterprise          | VL  |   3 месяца    | Да<sup>2</sup> |
+|         Подписка Visual Studio Professional с GitHub Enterprise          | VL  |   3 месяца    | Да<sup>2</sup> |
 |              Visual Studio Test Professional (стандартная)              |    Корпоративная лицензия, розничная версия     |   Недоступно    | Н/Д  |
 |                      MSDN Platforms (стандартная)                       |    Корпоративная лицензия, розничная версия     |   Недоступно    | Н/Д  |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) |       Azure       | Недоступно |       Н/Д       |

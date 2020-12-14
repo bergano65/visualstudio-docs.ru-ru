@@ -1,18 +1,18 @@
 ---
-title: Преимущество Concierge Chat в подписках Visual Studio | Документация Майкрософт
+title: Преимущество Concierge Chat в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 10/21/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Сведения о преимуществе Concierge Chat, входящем в состав подписок Visual Studio.
-ms.openlocfilehash: 0aab627d7c870720c0cc0d043ffb6ce556568703
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 4f5f188ee7b6662549e5ade80a97c57f24bce64c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353386"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538102"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat в подписках Visual Studio
 Службы Concierge Chat помогают найти сведения о продуктах и техническую документацию, а также предоставляют помощь по использованию преимуществ подписки Visual Studio.
@@ -39,9 +39,9 @@ ms.locfileid: "92353386"
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Доступно       |  Да          |
-| Visual Studio Enterprise с GitHub Enterprise | VL| Доступно       |  Да          |
+| Подписка Visual Studio Enterprise с GitHub Enterprise | VL| Доступно       |  Да          |
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Доступно                                                            |  Да          |
-| Visual Studio Professional с GitHub Enterprise | VL | Доступно                                                            |  Да          |
+| Подписка Visual Studio Professional с GitHub Enterprise | VL | Доступно                                                            |  Да          |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Доступно                                             |  Да          |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Доступно                                              |  Да          |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure | Недоступно | Н/Д |

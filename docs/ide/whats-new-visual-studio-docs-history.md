@@ -2,7 +2,7 @@
 title: 'Документация по Visual Studio. История изменений '
 titleSuffix: ''
 description: История новых возможностей в документации по Visual Studio
-ms.date: 10/04/2020
+ms.date: 12/04/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,16 +15,106 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2314965dad6c77e749a62946f3372993813240bb
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ef6f6e71dc7c4c0625877444d0091c73e81455ac
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414507"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844014"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>История новых возможностей в документации по Visual Studio
 
-Добро пожаловать в историю изменений документации по Visual Studio. В этой статье приведены основные изменения в документации до октября 2020 г. (начиная с июля 2020 г.). Последние изменения см. в разделе [Документация по Visual Studio. Обновления в документации за июль 2020 г.](whats-new-visual-studio-docs.md)
+Добро пожаловать в историю изменений документации по Visual Studio. В этой статье приведены основные изменения в документации до ноября 2020 г. (начиная с июля 2020 г.). Последние изменения см. в разделе [Документация по Visual Studio. Обновления в документации за июль 2020 г.](whats-new-visual-studio-docs.md)
+
+## <a name="october-2020"></a>Октябрь 2020 г.
+### <a name="code-quality"></a>Качество кода
+
+**Обновленные статьи**
+- [Анализаторы кода](../code-quality/index.yml) — рефакторинг CA для .NET 5
+
+### <a name="containers"></a>Контейнеры
+
+**Обновленные статьи**
+
+- [Краткое руководство. Использование Docker с одностраничным приложением React в Visual Studio](../containers/container-tools-react.md)
+  - Средства контейнеров: удалены ссылки на старый репозиторий образов
+  - Обновлено руководство по контейнерам React для .NET 3.1 и VS 16.7
+- [Как работает Bridge to Kubernetes](../containers/overview-bridge-to-kubernetes.md) — Bridge to Kubernetes: добавлены ограничения
+- [Отладка приложений в локальном контейнере Docker](../containers/edit-and-refresh.md) — панель элементов Docker
+
+### <a name="debugger"></a>Отладчик
+
+**Новые статьи**
+
+- [Поддержка DirectX 12 в Visual Studio](../debugger/graphics/visual-studio-graphics-diagnostics-directx-12.md) — Vsdg dx12
+
+**Обновленные статьи**
+
+- [Отладка приложений ASP.NET или ASP.NET Core в Visual Studio](../debugger/how-to-enable-debugging-for-aspnet-applications.md) — исправления содержимого отладчика для проблем GitHub
+- [Использование точек останова в отладчике Visual Studio](../debugger/using-breakpoints.md) — исправления содержимого отладчика для проблем GitHub
+- [Отладка служб Azure в Visual Studio](../debugger/debug-azure-apps.md) — обновления SEO и ссылок для отладчика моментальных снимков
+- [Отладке интерактивных приложений ASP.NET Azure с использованием Snapshot Debugger](../debugger/debug-live-azure-applications.md) — обновления SEO и ссылок для отладчика моментальных снимков
+- [Удаленная отладка](../debugger/remote-debugging.md) — обновления SEO и ссылок для отладчика моментальных снимков
+- [Обзор диагностики графики Visual Studio](../debugger/graphics/overview-of-visual-studio-graphics-diagnostics.md) — Vsdg dx12
+- [Диагностика графики Visual Studio](../debugger/graphics/visual-studio-graphics-diagnostics.md) — Vsdg dx12
+
+### <a name="get-started"></a>Начало работы
+
+**Обновленные статьи**
+
+- [Учебник. Расширение простого консольного приложения C# ](../get-started/csharp/tutorial-console-part-2.md) — дополнения отладки для расширенного учебника по C#
+
+### <a name="ide"></a>IDE
+
+**Новые статьи**
+
+- [Использование поиска Visual Studio](./visual-studio-search.md) — документ по поиску VS
+
+### <a name="install"></a>Установка
+
+**Обновленные статьи**
+
+- [Номера сборки и даты выпуска Visual Studio](../install/visual-studio-build-numbers-and-release-dates.md)
+  - Добавлены данные о 16.7.7 и 16.8 Preview 6
+  - Добавлены сведения о 16.8 Preview 5
+
+### <a name="msbuild"></a>MSBuild
+
+**Обновленные статьи**
+
+- [Пошаговое руководство: Использование MSBuild](../msbuild/walkthrough-using-msbuild.md) — пошаговое руководство по MSBuild: добавлены действия по автономной установке
+
+### <a name="profiling"></a>Профилирование
+
+**Обновленные статьи**
+
+- [Анализ данных об использовании памяти](../profiling/analyze-memory-usage.md)
+  - Обновления использования памяти для профилирования — ссылки и пояснения
+  - Обновления средств использования памяти
+- [Анализ использования памяти без использования отладки в Профилировщике производительности](../profiling/memory-usage-without-debugging2.md)
+  - Обновления использования памяти для профилирования — ссылки и пояснения
+  - Обновления средств использования памяти
+- [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)
+  - Обновления использования памяти для профилирования — ссылки и пояснения
+  - Обновления средств использования памяти
+- [Запуск средств профилирования с отладчиком или без него](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
+  - Обновления использования памяти для профилирования — ссылки и пояснения
+  - Обновления средств использования памяти
+- [Анализ загрузки ЦП без использования отладки в Профилировщике производительности](../profiling/cpu-usage.md) — обновления средств использования памяти
+
+### <a name="windows"></a>Windows
+
+**Обновленные статьи**
+
+- [Документация по Visual Studio | Документация Майкрософт](../windows/index.yml) — обновления центра Windows
+
+### <a name="xaml-tools"></a>Средства XAML
+
+**Новые статьи**
+
+- [Использование данных времени разработки в Конструкторе XAML в Visual Studio](../xaml-tools/xaml-designtime-data.md)
+  - Добавлен раздел о расширяемости расширения в документы по времени разработки XAML
+  - Новая статья о времени разработки XAML
 
 ## <a name="september-2020"></a>Сентябрь 2020 г.
 ### <a name="code-quality"></a>Качество кода

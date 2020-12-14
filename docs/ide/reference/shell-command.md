@@ -1,5 +1,7 @@
 ---
 title: Команда Shell
+description: Сведения о команде Shell и ее использовании для запуска исполняемых программ в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a6197201ed35520ba8d362b6aa448fe625a2fe3a
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565881"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616373"
 ---
 # <a name="shell-command"></a>Команда Shell
 Запускает исполняемые программы из [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -37,24 +39,24 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ## <a name="arguments"></a>Аргументы
 `path`
 
-Обязательный элемент. Путь и имя исполняемого файла или открываемого документа. Полный путь требуется, если указанный файл не находится в одном из каталогов, заданных в переменной среды PATH.
+Обязательный. Путь и имя исполняемого файла или открываемого документа. Полный путь требуется, если указанный файл не находится в одном из каталогов, заданных в переменной среды PATH.
 
 `args`
 
-Необязательный параметр. Все аргументы, передаваемые в вызванную программу.
+Необязательный элемент. Все аргументы, передаваемые в вызванную программу.
 
 ## <a name="switches"></a>Коммутаторы
 /commandwindow [или] /command [или] /c [или] /cmd
 
-Необязательный параметр. Указывает, что выходные данные для исполняемого файла отображаются в окне **Команда**.
+Необязательный элемент. Указывает, что выходные данные для исполняемого файла отображаются в окне **Команда**.
 
 /dir:`folder` [или] /d: `folder`
 
-Необязательный параметр. Указывает рабочий каталог, задаваемый при запуске программы.
+Необязательный элемент. Указывает рабочий каталог, задаваемый при запуске программы.
 
 /outputwindow [или] /output [или] /out [или] /o
 
-Необязательный параметр. Указывает, что выходные данные для исполняемого файла отображаются в окне **Вывод**.
+Необязательный элемент. Указывает, что выходные данные для исполняемого файла отображаются в окне **Вывод**.
 
 ## <a name="remarks"></a>Remarks
 Параметры /dir /o /c должны быть указаны сразу после `Tools.Shell`. Все, что указано после имени исполняемого файла, передается в виде аргументов командной строки.
@@ -87,7 +89,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 ## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Окно команд](../../ide/reference/command-window.md)
-- [Окно вывода](../../ide/reference/output-window.md)
+- [Командное окно](../../ide/reference/command-window.md)
+- [Окно выходных данных](../../ide/reference/output-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,7 @@
 ---
 title: Нахождение утечек памяти с помощью библиотеки CRT | Документация Майкрософт
+description: Сведения о том, как с помощью отладчика C/C++ и библиотеки времени выполнения C (CRT) обнаруживать и выявлять утечки памяти. Среди прочих, в этой статье рассматриваются отчеты об утечках памяти и сравнение моментальных снимков памяти.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5deb42b2ab708bae572aebbcac15af2d077b14fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f5c906bd06fd4107166a45e93bf11be579c2270
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350489"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863079"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Нахождение утечек памяти с помощью библиотеки CRT
 

@@ -1,5 +1,7 @@
 ---
 title: Страница параметров конструктора XAML
+description: Узнайте, как использовать страницу "Общие" в разделе "Конструктор XAML" для указания способа форматирования элементов и атрибутов в документах XAML.
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2017
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 45c7a5ba87c006332b601b93143cbf8acfda16b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 0955a6644e8f1dc1d42a1b22b15399a6d1ca452d
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85547307"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560984"
 ---
 # <a name="xaml-designer-options-page"></a>Страница параметров конструктора XAML
 

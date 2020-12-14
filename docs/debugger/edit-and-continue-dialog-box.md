@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно "Изменить и продолжить" | Документация Майкрософт
+description: Диалоговое окно "Изменить и продолжить" появляется в том случае, если во время отладки в код были внесены изменения. В этой статье описывается, как настроить возможность применения изменений кода без запроса разрешения.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 824ee989f17b6a341679f541f95906056cf6f8de
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: ed625d98cc4f3fe793ba0982771b0a57ff189526
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599536"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863105"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Изменить и продолжить - диалоговое окно
 (Только для машинного кода) Данное диалоговое окно появляется, если в код были внесены изменения и операция **Изменить и продолжить** определила, что изменения кода могут быть применены. Дополнительные сведения см. в разделе [Изменить и продолжить](../debugger/edit-and-continue.md).

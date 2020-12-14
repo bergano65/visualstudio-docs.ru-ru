@@ -1,5 +1,7 @@
 ---
 title: Создание переопределения метода
+description: Сведения о немедленном создании кода для любого метода, который можно переопределить из базового класса.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c3a8f4eaf863fd8174ff70339fffc80141fc38d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5f27adacc39c53bf46b3a2ee09c71ae27b47f928
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569248"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617491"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Создание переопределения в Visual Studio
 
@@ -24,11 +26,11 @@ ms.locfileid: "75569248"
 
 **Что.** Немедленное создание кода для любого метода, который можно переопределить из базового класса.
 
-**Когда.** Необходимо переопределить метод базового класса и автоматически создать подпись.
+**Когда.** Необходимо переопределить метод базового класса и автоматически создать сигнатуру.
 
 **Зачем.** Сигнатуру метода можно написать самостоятельно, но эта функция автоматически создает сигнатуру.
 
-## <a name="how-to"></a>Практическое руководство
+## <a name="how-to"></a>Практические советы
 
 1. Введите `override` в C# или `Overrides` в Visual Basic и затем пробел, куда хотите вставить метод для переопределения.
 
@@ -56,6 +58,6 @@ ms.locfileid: "75569248"
 
        ![Результат переопределения в VB](media/override-result-vb.png)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание кода](../code-generation-in-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: Неиспользуемые значения и параметры
+description: Сведения о неиспользуемых назначениях, переменных и параметрах, а также о том, как они отображаются в редакторе кода в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/15/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce2b0f1e0c0db45c478c3917306683b314da0564
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8768992ce3ef9f40ab0adba1724d43b32e5bde5c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "65531878"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560711"
 ---
 # <a name="unused-value-assignments-variables-and-parameters"></a>Неиспользуемые назначения, переменные и параметры
 
@@ -40,7 +42,7 @@ ms.locfileid: "65531878"
   ![Неиспользуемое присвоение значения](media/unused-value-assignment.png)
   ![Неиспользуемая пустая переменная](media/unused-value-discard.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Рефакторинг](../refactoring-in-visual-studio.md)
 - [Советы для разработчиков .NET](../csharp-developer-productivity.md)

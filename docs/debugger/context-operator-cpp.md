@@ -1,5 +1,7 @@
 ---
 title: Оператор контекста в отладчике (C++) | Документация Майкрософт
+description: Для имени C++, которое находится во внешней области или перекрыто локальным именем, может потребоваться контекст. Узнайте, как предоставить его с помощью оператора контекста.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bc238cc56e1b815e79ba381a7cd4866085d3bef
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564708"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559762"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Оператор контекста в отладчике Visual Studio (C++)
 Оператор контекста в C++ можно использовать для уточнения имени переменной, выражения или расположения точки останова. С помощью оператора контекста можно указать имя из внешней области, чтобы это имя не оказалось перекрыто локальным именем.

@@ -1,5 +1,7 @@
 ---
 title: Настройка параметров языка редактора
+description: Сведения о настройке различных параметров текстового редактора, которые можно применить к определенным языкам программирования.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988e89b9019b149e89ed569cf3ff585fdd4641bc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1060abe1b16b9391eadb88be1499fa2231fb1859
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590843"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560750"
 ---
 # <a name="set-language-specific-editor-options"></a>Настройка языковых параметров редактора
 
@@ -45,7 +47,7 @@ Visual Studio предлагает различные параметры тек�
 ["Параметры", "Текстовый редактор", XAML, "Форматирование"](../../ide/reference/options-text-editor-xaml-formatting.md)\
 Описание параметров размещения элементов и атрибутов в документах XAML.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Настройка редактора](../how-to-change-text-case-in-the-editor.md)
 - [Создание переносимых настраиваемых параметров редактора с EditorConfig](../../ide/create-portable-custom-editor-options.md)

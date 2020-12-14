@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно "Поиск окна" | Документация Майкрософт
+description: Диалоговое окно "Поиск окна" используется для выбора окна и вывода его свойств или сообщений.  В этой статье рассказывается о работе с ним.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 392c0150c9bfb653a3a52c11c0d31097e04c9cc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 571cee3b1e3a391a8dc328fcc76a0ca0d06ed14f
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849989"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863027"
 ---
 # <a name="find-window-dialog-box"></a>Диалоговое окно "Поиск окна"
 Это диалоговое окно используется для выбора окна и вывода его свойств или сообщений. Чтобы открыть это диалоговое окно, в меню **Spy** выберите пункт **Найти окно**.
@@ -44,7 +46,7 @@ ms.locfileid: "62849989"
 
  [Представление окон.](../debugger/windows-view.md) Отображает представление доступных окон и элементов управления в виде дерева.
 
- [Представления Spy++.](../debugger/spy-increment-views.md) Содержит сведения о представлениях Spy++ в виде деревьев окон, сообщений, процессов и потоков.
+ [Представления Spy++](../debugger/spy-increment-views.md). Содержит сведения о представлениях Spy++ в виде деревьев окон, сообщений, процессов и потоков.
 
  [Использование Spy++.](../debugger/using-spy-increment.md) Содержит вводные сведения о средстве Spy++ и его использовании.
 

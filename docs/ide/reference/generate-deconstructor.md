@@ -1,5 +1,7 @@
 ---
 title: Быстрое действие "Создать деконструктор"
+description: Узнайте, как использовать меню "Быстрые действия и рефакторинг" для немедленного создания заглушки метода для нового деконструктора.
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a3a89d15d05b44575fede98d3043d706b24c1d9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ff2ac7682eff1c3da0597a95945a6a0b016d9213
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "65531887"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617257"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Создание деконструктора в Visual Studio
 
@@ -34,13 +36,13 @@ ms.locfileid: "65531887"
 
    ![Ошибка отсутствия деконструктора](media/deconstruct.png)
 
-2. Выполните один из следующих шагов:
+2. Выполните один из следующих шагов.
 
    - **Клавиатура**
       - Поместив курсор в объявление, нажмите клавиши CTRL+. чтобы открыть меню **Быстрые действия и рефакторинг**.
    - **Мышь**
       - Щелкните правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
-      - Выберите ![с отверткой](media/screwdriver.png) Он отображается в левом поле, если текстовый курсор уже находится в пустой строке класса.
+      - Щелкните значок :::image type="icon" source="media/screwdriver.png":::, который отображается в левом поле, если текстовый курсор уже находится в пустой строке класса.
 
       ![Исправление "Создание деконструктора"](media/deconstruct-codefix.png)
 

@@ -1,5 +1,7 @@
 ---
 title: Страница "Проекты и решения", диалоговое окно "Параметры"
+description: Сведения о том, как с помощью страницы "Общие" в разделе "Проекты и решения" определить поведение Visual Studio для проектов и решений.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 01ee7e0da5fab8ceba2e5dc0642148033e2415da
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567649"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616906"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Диалоговое окно "Параметры": Проекты и решения \> Общее
 
@@ -96,7 +98,7 @@ ms.locfileid: "75567649"
 
 ::: moniker-end
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Диалоговое окно "Параметры": Проекты и решения \> Расположения](projects-solutions-locations-options.md)
 - [Диалоговое окно "Параметры", "Проекты и решения", "Сборка и запуск"](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

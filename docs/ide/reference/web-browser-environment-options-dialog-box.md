@@ -1,5 +1,7 @@
 ---
 title: Страница "Браузер", папка "Среда", диалоговое окно "Параметры"
+description: Сведения о том, как с помощью страницы "Веб-браузер" в разделе "Среда" задать параметры для внутреннего веб-браузера и для Internet Explorer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85592076b99cf54991d21e1249cf30c609413733
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2898984896ef96f9e7767e0c56ad58c92be42f54
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808682"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560932"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>Диалоговое окно "Параметры": Страница "Веб-браузер" \> папка "Среда"
 
@@ -38,11 +40,11 @@ ms.locfileid: "90808682"
 > [!IMPORTANT]
 > При открытии определенных файлов или компонентов из Интернета на вашем компьютере может выполняться код.
 
-## <a name="home-page"></a>Домашняя страница
+## <a name="home-page"></a>Главная страница
 
 Задает страницу, отображаемую при открытии веб-браузера интегрированной среды разработки.
 
-## <a name="search-page"></a>Страница «Поиск»
+## <a name="search-page"></a>Страница "Поиск"
 
 Позволяет указать страницу поиска для внутреннего веб-браузера. Это расположение может отличаться от страницы поиска, используемый экземплярами Internet Explorer, которые запускаются за пределами интегрированной среды разработки (IDE).
 

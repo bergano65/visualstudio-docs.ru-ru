@@ -1,5 +1,7 @@
 ---
 title: Страница "Службы" в конструкторе проектов
+description: Сведения о том, как использовать страницу "Службы" конструктора проектов, чтобы включать и настраивать службы клиентских приложений для своего проекта.
+ms.custom: SEO-VS-2020
 ms.date: 01/18/2018
 ms.topic: reference
 f1_keywords:
@@ -12,16 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3c286dbd632e09a9a9c2c2b62ac2002f2e48f283
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593568"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560802"
 ---
 # <a name="services-page-project-designer"></a>Страница "Службы" в конструкторе проектов
 
-Службы клиентских приложений предоставляют упрощенный доступ к службам входа, ролей и профилей [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] из приложений Windows Forms и Windows Presentation Foundation (WPF). Вы можете использовать страницу **Службы** **конструктора проектов**, чтобы включать и настраивать службы клиентских приложений для своего проекта.
+Службы клиентских приложений предоставляют упрощенный доступ к службам входа, ролей и профилей [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] из приложений Windows Forms и Windows Presentation Foundation (WPF). Вы можете использовать страницу **Службы****конструктора проектов**, чтобы включать и настраивать службы клиентских приложений для своего проекта.
 
 Благодаря службам клиентских приложений можно использовать централизованный сервер для проверки подлинности пользователей, определения ролей, назначенных каждому из пользователей, а также хранения индивидуальных параметров приложений, которые можно совместно использовать в рамках всей сети. Дополнительные сведения см. в разделе [Службы клиентских приложений](/dotnet/framework/common-client-technologies/client-application-services).
 

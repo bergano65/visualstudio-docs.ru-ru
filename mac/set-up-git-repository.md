@@ -3,15 +3,15 @@ title: Настройка репозитория Git
 description: Подключение к репозиторию Git с помощью Visual Studio для Mac.
 author: therealjohn
 ms.author: johmil
-ms.date: 11/09/2020
+ms.date: 12/03/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 862f073d3c6d535d612a67f215aee740cea175bd
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bacd533bf5c28c6f431fe7088fad36b6bbd3d04b
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493131"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561062"
 ---
 # <a name="set-up-a-git-repository"></a>Настройка репозитория Git
 
@@ -44,6 +44,9 @@ Git — это распределенная система управления
 ## <a name="publishing-an-existing-project"></a>Публикация существующего проекта
 
 Если у вас есть проект, который еще _не_ зарегистрирован в системе управления версиями, выполните указанные ниже действия. чтобы настроить его в Git.
+
+> [!TIP]
+> В файле GITIGNORE можно указать, какие папки и файлы будут отслеживаться и публиковаться с помощью Git. Возможно, вам потребуется исключить каталоги сборки, а также двоичные или создаваемые файлы. Дополнительные сведения см. в [документации GitHub по пропуску файлов](https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files).
 
 1. Выберите имя решения в окне решения в Visual Studio для Mac.
 

@@ -1,5 +1,7 @@
 ---
 title: Перенос по словам
+description: Сведения о включении и отключении переноса по словам в редакторе кода.
+ms.custom: SEO-VS-2020
 ms.date: 11/07/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4bf76643ce1ea6e2f449c54fbc31d441418becf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20540fe7cc124c44cd1af0e031e10d5ee0b06ba1
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770331"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617426"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Практическое руководство. Управление переносом слов в редакторе
 
@@ -36,7 +38,7 @@ ms.locfileid: "85770331"
 
      Выберите **общие** параметры в подпапке языка программирования.
 
-3. В разделе **Параметры**установите или снимите флажок **Перенос по словам**.
+3. В разделе **Параметры** установите или снимите флажок **Перенос по словам**.
 
      Если установлен флажок **Перенос по словам**, включается параметр **Показывать графические метки в местах переноса слов**.
 

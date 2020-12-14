@@ -1,5 +1,7 @@
 ---
 title: Описатели формата в отладчике (C#) | Документация Майкрософт
+description: С помощью описателя формата можно изменить формат, в котором значение отображается в окне "Контрольные значения". В этой статье рассказывается о работе с ним.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31739b9c8fecc862c891173a792986b467730400
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849847"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862793"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Описатели формата для C# в отладчике Visual Studio
 С помощью описателей формата можно изменить формат, в котором значение отображается в окне **Контрольные значения**. Описатели формата можно также использовать в окне **Интерпретация**, окне **Команды**, в [точках трассировки](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints) и окнах исходного кода. Если вы приостановите выполнение на выражении в одном из этих окон, результат отобразится в [подсказках по данным](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) в указанном формате.

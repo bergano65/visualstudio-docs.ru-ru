@@ -1,16 +1,18 @@
 ---
 title: Справка по Team Explorer
+description: Сведения о различных функциях Team Explorer, позволяющих управлять работой и координировать усилия с другими членами команды при разработке проекта.
+ms.custom: SEO-VS-2020
 ms.date: 12/04/2018
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: fa73894d713ded42696f5e47d40dffb2d2405b1a
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: a7089defb41c3ba8379d1020cbf1225d6333b912
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928086"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560997"
 ---
 # <a name="team-explorer-reference"></a>Справка по Team Explorer
 
@@ -18,11 +20,11 @@ ms.locfileid: "91928086"
 
 Окно средства **Team Explorer** используется для координации усилий с другими членами команды при разработке проекта, а также для управления работой, назначенной вам, вашей команде или вашим командным проектам. **Team Explorer** обеспечивает подключение Visual Studio к репозиториям Git и GitHub, репозиториям системы управления версиями Team Foundation (TFVC), а также проектам, размещенным в [службах Azure DevOps](/azure/devops/user-guide/what-is-azure-devops-services) или на локальном [сервере Azure DevOps](/azure/devops/index-all) (прежнее название TFS). Можно управлять исходным кодом, рабочими элементами и сборками.
 
-## <a name="home-page"></a>главная страница
+## <a name="home-page"></a>Главная страница
 
 После [подключения к проекту](../connect-team-project.md) в **Team Explorer** в разделе **Проект** будут доступны следующие ссылки:
 
-- [Клонировать репозиторий](/azure/devops/repos/git/clone)
+- [Клонирование репозитория](/azure/devops/repos/git/clone)
 - [Веб-портал](/azure/devops/project/navigation/index)
 - [Доска задач](/azure/devops/boards/sprints/task-board)
 
@@ -98,11 +100,11 @@ ms.locfileid: "91928086"
 - [Установка инструментов непрерывной поставки для Visual Studio](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#install-continuous-delivery-cd-tools-for-visual-studio-2017)
 - [Настройка и выполнение непрерывной поставки для приложения](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#configure-and-execute-continuous-delivery-cd-for-your-app)
 
-## <a name="settings-page"></a>Страница «Параметры»
+## <a name="settings-page"></a>Страница "Параметры"
 
 На странице **Параметры** можно настроить административные функции для проектов или коллекции проектов. См. следующие статьи:
 
-| Проект | Коллекция проектов | Другие |
+| Project | Коллекция проектов | Другое |
 | - | - | - |
 | [Безопасность, членство в группе](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Безопасность, система управления версиями (TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Области рабочих элементов](/azure/devops/organizations/settings/set-area-paths)<br/>[Итерации рабочих элементов](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Параметры портала](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Оповещения проекта](/azure/devops/notifications/howto-manage-team-notifications) | [Безопасность, членство в группе](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Система управления версиями (TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Диспетчер шаблона процесса](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Глобальные параметры Git](/azure/devops/repos/git/git-config)<br/>[Параметры репозитория Git](/azure/devops/repos/git/git-config) |
 

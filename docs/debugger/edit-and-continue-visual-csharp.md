@@ -1,5 +1,7 @@
 ---
 title: Режим "Изменить и продолжить" (Visual C#) | Документация Майкрософт
+description: Для проектов Visual C# доступен режим "Изменить и продолжить". Из этой статьи вы узнаете, какие правки поддерживаются, а также как управлять их применением.
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62411229acd2d2f8462984789037fc832dac09b8
-ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
+ms.openlocfilehash: 55406001e4017c853895002445d9bd5d614b4b20
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91421645"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862885"
 ---
 # <a name="edit-and-continue-visual-c"></a>Режим "Изменить и продолжить" (Visual C#)
  С помощью операции "Изменить и продолжить" для С# в процессе отладки можно вносить изменения в код в режиме приостановки выполнения. Изменения могут применяться без необходимости остановки и повторного запуска сеанса отладки. В режиме выполнения редактор исходного кода доступен только для чтения.

@@ -1,5 +1,7 @@
 ---
 title: "\"Поиск и замена\", \"Среда\", диалоговое окно \"Параметры\""
+description: Сведения о том, как с помощью страницы "Поиск и замена" в разделе "Среда" управлять полями сообщений и другими аспектами операций поиска и замены.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef53be4d3894dd1d22a3afbde9dbf631b472aa2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 29f5fb6034c693c14cd04c83fe4c71f8763a0b0c
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569573"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617322"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>"Поиск и замена", "Среда", диалоговое окно "Параметры"
 

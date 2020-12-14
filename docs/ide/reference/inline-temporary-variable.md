@@ -1,5 +1,7 @@
 ---
 title: Замена временной переменной ее значением
+description: Узнайте, как использовать меню "Быстрые действия и рефакторинг" для удаления временной переменной и ее замены значением.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d24c63bdc1908ecc15c206faeda3e9de511f8f9b
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568871"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617413"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Рефакторинг для замены временной переменной
 
@@ -25,13 +27,13 @@ ms.locfileid: "75568871"
 
 - Visual Basic
 
-**Что.** Удаление временной переменной и ее замена значением.
+**Что?** Удаление временной переменной и ее замена значением.
 
 **Когда?** Использование временной переменной затрудняет понимание кода.
 
 **Зачем?** Удаление временной переменной может сделать код более удобным для чтения.
 
-## <a name="how-to"></a>Практическое руководство
+## <a name="how-to"></a>Практические советы
 
 1. Выделите временную переменную или наведите на нее курсор для замены:
 

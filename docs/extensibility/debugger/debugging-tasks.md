@@ -1,5 +1,7 @@
 ---
 title: Задачи отладки | Документация Майкрософт
+description: Сведения о задачах по отладке программ, таких как подключение к модулю отладки, создание событий запуска и достижение точек останова.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 070068853d962bdf9b209edb9410d33d46ccf853
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83d351e2b995922d1a8257f7ea9fc0cdad67ab3e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903551"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915574"
 ---
 # <a name="debug-tasks"></a>Задачи отладки
 Для отладки программы ее необходимо запустить и подключить к ней модуль отладки (DE), или же модуль отладки должен быть подключен к ранее запущенной программе. После подключения модуль отладки должен создать определенные события запуска. В ответ пакет отладки пытается привязать точки останова, заданные в интегрированной среде разработки. Когда программа достигает привязанной точки останова, она останавливается и ожидает ввода пользователя.

@@ -1,5 +1,7 @@
 ---
 title: Перемещение типа в пространство имен
+description: Узнайте, как использовать меню "Быстрые действия и рефакторинг" для перемещения пространства имен в другое пространство имен или папку.
+ms.custom: SEO-VS-2020
 ms.date: 06/17/2019
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 ms.workload:
 - dotnet
 monikerRange: vs-2019
-ms.openlocfilehash: 58d2757fa8798b67c8e597f5f82bc65a279f4a90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21e13938bcb19306b897501a4aad11d6b4bd15ea
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80375571"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616919"
 ---
 # <a name="move-type-to-namespace"></a>Перемещение типа в пространство имен
 
@@ -41,6 +43,6 @@ ms.locfileid: "80375571"
 
    ![Диалоговое окно с выбором пространства имен](media/select-target-namespace.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Рефакторинг](../refactoring-in-visual-studio.md)

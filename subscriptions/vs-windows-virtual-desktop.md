@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 09/08/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Узнайте, как можно воспользоваться преимуществом "Виртуальный рабочий стол Windows (Майкрософт)" с помощью подписки Visual Studio.
-ms.openlocfilehash: 4e619b9c1140611be5236edfff70e8b0aa560b23
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 9198f4180a2f98b89540f1eedc0dab4be59558ab
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005050"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537959"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Доступ к Виртуальному рабочему столу Windows в подписках 
 Теперь подписчики Visual Studio могут использовать индивидуальные средства на счете для разработки и тестирования в Azure для служб виртуальных рабочих столов Windows (Майкрософт).  
@@ -47,9 +47,9 @@ ms.locfileid: "91005050"
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия | Доступно|  Да          |
-| Visual Studio Enterprise с GitHub Enterprise  | VL | Доступно|  Да          |
+| Подписка Visual Studio Enterprise с GitHub Enterprise  | VL | Доступно|  Да          |
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Доступно                                                             |  Да             |
-| Visual Studio Professional с GitHub Enterprise | VL                                       | Доступно                                        |  Да           |
+| Подписка Visual Studio Professional с GitHub Enterprise | VL                                       | Доступно                                        |  Да           |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Доступно|  Да          |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Доступно                                         |  Да          |
 | Visual Studio Enterprise (ценовая категория "Стандартный")  | Не для перепродажи (NFR) <sup>1</sup> |Недоступно  | Н/Д |

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 10/28/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Узнайте, как администраторы могут устранить проблему, связанную с превышением числа назначений подписок
-ms.openlocfilehash: bf3c23cad87dc88b24bae3e8b31ebf8b7d9e1dfe
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: c2876223d2aa4f8da5f267595a193a2fecc3ace2
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904298"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537751"
 ---
 # <a name="over-allocated-subscriptions"></a>Подписки с превышением числа назначений
 Если заказ изменяется после добавления подписчиков, число назначенных подписок может превысить число лицензий, принадлежащих организации. Это называется превышением числа назначений.  
@@ -43,6 +43,6 @@ ms.locfileid: "92904298"
 - [Документация по Azure](/azure/)
 - [Документация по Microsoft 365](/microsoft-365/)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - Дополнительные сведения об управлении [подписками Visual Studio с GitHub Enterprise](assign-github.md).
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.

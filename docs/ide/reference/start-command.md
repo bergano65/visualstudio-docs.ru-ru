@@ -1,5 +1,7 @@
 ---
 title: Команда Start
+description: Сведения о команде Start и о том, как с ее помощью начать отладку запускаемого проекта.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6138c4cff33f0b2a4211439a01a058da59da811
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d6d9e1e36a2790fb63f9d39c0c83d67d889cc0a8
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590284"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616425"
 ---
 # <a name="start-command"></a>Команда Start
 Начинает отладку запускаемого проекта.
@@ -32,7 +34,7 @@ Debug.Start [address]
 ## <a name="arguments"></a>Аргументы
 `address`
 
-Необязательный параметр. Адрес, по которому программа приостанавливает выполнение, сходен с точкой останова в исходном коде. Этот аргумент применяется только в режиме отладки.
+Необязательный элемент. Адрес, по которому программа приостанавливает выполнение, сходен с точкой останова в исходном коде. Этот аргумент применяется только в режиме отладки.
 
 ## <a name="remarks"></a>Remarks
 При запуске команды **Запустить** она выполняет операцию RunToCursor по указанному адресу.
@@ -47,6 +49,6 @@ Debug.Start [address]
 ## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Окно команд](../../ide/reference/command-window.md)
+- [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

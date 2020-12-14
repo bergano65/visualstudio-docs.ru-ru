@@ -1,5 +1,7 @@
 ---
 title: Команда Set Current Thread
+description: Сведения о команде Set Current Thread и о том, как с ее помощью задать указанный поток в качестве текущего.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54c2dabeea14293fdb86120f822eb396a028757a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cedd37ece7bcc0eb79ad52cc426b07f8cb2ca57
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768683"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616568"
 ---
 # <a name="set-current-thread-command"></a>Команда Set Current Thread
 Задает указанный поток в качестве текущего.
@@ -32,7 +34,7 @@ Debug.SetCurrentThread index
 ## <a name="arguments"></a>Аргументы
 `index`
 
-Обязательный элемент. Выбирает поток по индексу.
+Обязательный. Выбирает поток по индексу.
 
 ## <a name="example"></a>Пример
 
@@ -43,6 +45,6 @@ Debug.SetCurrentThread index
 ## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Окно команд](../../ide/reference/command-window.md)
+- [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

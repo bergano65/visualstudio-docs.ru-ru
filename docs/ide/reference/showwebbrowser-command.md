@@ -1,5 +1,7 @@
 ---
 title: Команда ShowWebBrowser
+description: Сведения о команде Show Web Browser и ее использовании для отображения указанного URL-адреса в окне веб-браузера внутри или вне интегрированной среды разработки (IDE).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8266a7c70544d8a320658fcd8b9f5ad249162fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 026878bdc2158d803f191cf2d28c8eb52f0b6e09
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769570"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616321"
 ---
 # <a name="showwebbrowser-command"></a>Команда ShowWebBrowser
 
@@ -33,16 +35,16 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="arguments"></a>Аргументы
 `URL`
 
-Обязательный элемент. URL-адрес для веб-сайта.
+Обязательный. URL-адрес для веб-сайта.
 
 ## <a name="switches"></a>Коммутаторы
 /new
 
-Необязательный параметр. Указывает, что страница отображается в новом экземпляре браузера.
+Необязательный элемент. Указывает, что страница отображается в новом экземпляре браузера.
 
 /ext
 
-Необязательный параметр. Указывает, что страница отображается в браузере по умолчанию вне интегрированной среды разработки.
+Необязательный элемент. Указывает, что страница отображается в браузере по умолчанию вне интегрированной среды разработки.
 
 ## <a name="remarks"></a>Remarks
 Псевдоним для команды **ShowWebBrowser** имеет значение **navigate** или **nav**.
@@ -57,6 +59,6 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Окно команд](../../ide/reference/command-window.md)
+- [Командное окно](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

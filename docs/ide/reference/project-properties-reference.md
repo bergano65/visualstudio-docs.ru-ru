@@ -1,5 +1,7 @@
 ---
 title: Справочник по свойствам проектов
+description: Сведения о способах настройки и изменения свойств проекта.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc3ec00ed771caba7e779e708801d611ca16b8c5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f76e34f0a806a524c1305796bddabebd155e680c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567727"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560347"
 ---
 # <a name="project-properties-reference"></a>Справочник по свойствам проектов
 
@@ -24,7 +26,7 @@ ms.locfileid: "75567727"
 
 ## <a name="project-properties-pages"></a>Страницы свойств проекта
 
-| Title | Description |
+| Заголовок | Описание: |
 | - | - |
 | [Страница "Приложение" в конструкторе проектов (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | Эта страница используется для указания параметров и свойств приложения для проекта [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
 | [Страница "Приложение" в конструкторе проектов (C#)](../../ide/reference/application-page-project-designer-csharp.md) | Эта страница используется для указания параметров и свойств приложения для проекта [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. |

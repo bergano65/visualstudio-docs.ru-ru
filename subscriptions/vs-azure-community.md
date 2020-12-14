@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 11/17/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Сведения о преимуществе поддержки сообщества Azure, включенном в некоторые подписки Visual Studio.
-ms.openlocfilehash: 21f984d3c41ae4f654fea638792b5db4f3c8acb2
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 58f587d5e9c27197b28457c512e4eb94f07851ef
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903927"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538024"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Доступ к форуму поддержки сообщества Azure в рамках подписки Visual Studio
 Вы можете получить помощь напрямую от команды Azure на нескольких форумах поддержки в сообществе Azure.  Преимущество сообщества Azure предоставляет доступ к коллекции форумов, посвященных темам, связанным с Azure.
@@ -71,9 +71,9 @@ ms.locfileid: "94903927"
 |                                          Уровень подписки                                           |     Каналы      |    Преимущество    | Возможность возобновления |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (цен. категория "Стандартный"), не для перепродажи (NFR)<sup>1</sup>                            | Корпоративная лицензия, Azure, розничная версия |   Доступно    |    Да     |
-|                           Visual Studio Enterprise с GitHub Enterprise                           | Корпоративная лицензия, Azure, розничная версия |   Доступно    |    Да     |
+|                           Подписка Visual Studio Enterprise с GitHub Enterprise                           | Корпоративная лицензия, Azure, розничная версия |   Доступно    |    Да     |
 |                          Visual Studio Professional (ценовая категория "Стандартный")                          | Корпоративная лицензия, Azure, розничная версия |   Доступно    |    Да     |
-|                          Visual Studio Professional с GitHub Enterprise                          | Корпоративная лицензия, Azure, розничная версия |   Доступно    |    Да     |
+|                          Подписка Visual Studio Professional с GitHub Enterprise                          | Корпоративная лицензия, Azure, розничная версия |   Доступно    |    Да     |
 |                              Visual Studio Test Professional (стандартная)                               |    Корпоративная лицензия, розничная версия     |   Доступно    |    Да     |
 |                                       MSDN Platforms (стандартная)                                       |    Корпоративная лицензия, розничная версия     |   Доступно    |    Да     |
 | Visual Studio Enterprise (ежемесячная облачная), Visual Studio Professional (ежемесячная облачная)|        Все        | Недоступно |     Нет     |

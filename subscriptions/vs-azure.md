@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 10/28/2020
 ms.topic: how-to
 description: Сведения о том, как активировать индивидуальный кредит Azure DevTest, входящий в вашу подписку Visual Studio.
-ms.openlocfilehash: f524f0933d067d0c62c184d54c441edc7b15739d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: bfd94ef7995ed5f456462e1bce6aa0d4d045bdd0
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903649"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538011"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Использование Microsoft Azure по подпискам Visual Studio
 Подписчики Visual Studio могут использовать Microsoft Azure без дополнительной платы.  Вы получаете [ежемесячный индивидуальный кредит Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) и можете использовать Azure как персональную песочницу для разработки и тестирования.  Подготавливайте виртуальные машины, облачные службы и другие ресурсы Azure.  Размер кредита зависит от уровня подписки.
@@ -73,10 +73,10 @@ ms.locfileid: "92903649"
 |                 Уровень подписки или программа                 |           Преимущество           |                         Возможность возобновления                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise — уровень "Стандартный"               |     Ежемесячный кредит в размере 150 долл. США     |                             Да                             |
-|              Visual Studio Enterprise с GitHub Enterprise               |     Ежемесячный кредит в размере 150 долл. США     |                             Да                             |
+|              Подписка Visual Studio Enterprise с GitHub Enterprise               |     Ежемесячный кредит в размере 150 долл. США     |                             Да                             |
 |               Visual Studio Enterprise — месячная подписка               |        Недоступно        |                                                             |
 |             Visual Studio Professional — уровень "Стандартный"              |     Ежемесячный кредит в размере 50 долл. США      |                             Да
-|              Visual Studio Professional с GitHub Enterprise              |     Ежемесячный кредит в размере 150 долл. США     |                             Да                             |
+|              Подписка Visual Studio Professional с GitHub Enterprise              |     Ежемесячный кредит в размере 150 долл. США     |                             Да                             |
 |              Visual Studio Professional — месячная подписка              |        Недоступно        |                                                             |
 |                    Visual Studio Test Pro                    |     Ежемесячный кредит в размере 50 долл. США      |                             Да                             |
 |                        MSDN Platforms                        |     Ежемесячный кредит в размере 100 долл. США     |                             Да                             |

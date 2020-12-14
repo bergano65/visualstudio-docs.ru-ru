@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно "Шрифт" (Справка по Microsoft Spy++) | Документация Майкрософт
+description: В диалоговом окне "Шрифт" можно настроить шрифт символов, используемый в окне "Представления Spy++". В этой статье рассказывается о работе с ним.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1746b8419c342b5627e1c6374b2b29f08f7ee75c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c3a3d5babc0fe78098661f22dd84fca1eac9b19
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849870"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862832"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Диалоговое окно "Шрифт" (Справка по Microsoft Spy++)
 В этом диалоговом окне можно настроить шрифт символов, используемый в окне [Представления Spy++](../debugger/spy-increment-views.md). Чтобы открыть это диалоговое окно, разверните меню **Представление** и щелкните **Шрифт**.
@@ -31,8 +33,8 @@ ms.locfileid: "62849870"
  **Сохранить шрифт как по умолчанию.** Сохраняет текущие настройки шрифта в соответствии с вашими предпочтениями при открытии представлений Spy++.
 
 ## <a name="related-sections"></a>Связанные разделы
- [Представления Spy++.](../debugger/spy-increment-views.md) Содержит сведения о представлениях Spy++ в виде деревьев окон, сообщений, процессов и потоков.
+ [Представления Spy++](../debugger/spy-increment-views.md). Рассказывает о представлениях Spy++ в виде дерева окон, сообщений, процессов и потоков.
 
  [Использование Spy++.](../debugger/using-spy-increment.md) Содержит вводные сведения о средстве Spy++ и его использовании.
 
- [Справочник по Spy++](../debugger/spy-increment-reference.md) содержит разделы с описанием каждого меню и диалогового окна Spy++.
+ [Справочник по Spy++](../debugger/spy-increment-reference.md). Содержит разделы с описанием каждого меню и диалогового окна Spy++.

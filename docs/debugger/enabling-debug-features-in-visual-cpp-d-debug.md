@@ -1,5 +1,7 @@
 ---
 title: Включение функций отладки в проектах C++ (-D_DEBUG) | Документация Майкрософт
+description: В Visual C++ можно включить функции отладки, определив символ _DEBUG. В этой статье приводятся сведения о том, как сделать это, а также как выполнить компоновку программы MFC для ее отладки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19d341cba47e0a3d2259cc57d239c63420095347
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1a2ead92108d66b54342019fc19702e7a6e53575
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737955"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862937"
 ---
 # <a name="enabling-debug-features-in-c-projects-d_debug"></a>Включение функций отладки в проектах C++ (/D_DEBUG)
 В [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] такие возможности отладки, как утверждения, доступны при компиляции программы с заданным символом **_DEBUG**. **_DEBUG** можно задать одним из двух способов:

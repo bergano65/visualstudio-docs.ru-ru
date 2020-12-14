@@ -1,5 +1,7 @@
 ---
 title: Страница "Проекты и решения", диалоговое окно "Расположения"
+description: Сведения о том, как с помощью страницы "Расположения" в разделе "Проекты и решения" задать расположение по умолчанию для проектов, шаблонов проектов и шаблонов элементов.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be4f2977f34ec57198ed3e87f58bdacb4daae4a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 171635e9f08b0c427679d874dee3466d9eb5e3f6
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565725"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616828"
 ---
 # <a name="options-dialog-box-projects-and-solutions--locations"></a>Диалоговое окно "Параметры": Проекты и решения \> Расположения
 
@@ -34,7 +36,7 @@ ms.locfileid: "75565725"
 
 Задает расположение по умолчанию, используемое для поиска созданных пользователями шаблонов элементов. Дополнительные сведения см. в разделе [Практическое руководство. Размещение и упорядочение шаблонов](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Диалоговое окно "Параметры": Проекты и решения\> Общее](projects-and-solutions-options-dialog-box.md)
 - [Диалоговое окно "Параметры", "Проекты и решения", "Сборка и запуск"](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

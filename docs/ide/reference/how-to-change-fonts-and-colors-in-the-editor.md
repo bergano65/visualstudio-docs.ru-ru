@@ -1,5 +1,7 @@
 ---
 title: Изменение шрифтов и цветов в редакторе
+description: Сведения о том, как изменить стандартное начертание, размер шрифта, а также цвет переднего плана и фона для различных текстовых отображаемых элементов в редакторе кода.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa56a7ab8b3147cc3e8fbb784211d9a34536189d
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 6ad32d814b67cae9a9a0a538d6c131aecba9c0b8
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770431"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617127"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Практическое руководство. Изменение шрифтов и цветов в редакторе в Visual Studio
 

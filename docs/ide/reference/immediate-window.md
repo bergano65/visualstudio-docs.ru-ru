@@ -1,5 +1,7 @@
 ---
 title: Окно интерпретации
+description: Сведения о том, как использовать окно "Интерпретация" для отладки и вычисления выражений, выполнения операторов и печати значений переменных.
+ms.custom: SEO-VS-2020
 ms.date: 02/25/2019
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b21cdb9136abe1e960e5b74bbf09e7d1694519d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 342a2a34528134ed1174058b6701c77c9217fc63
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568962"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617023"
 ---
 # <a name="immediate-window"></a>окно интерпретации
 
@@ -129,11 +131,11 @@ Expression has been evaluated and has no value
 
 2. Щелкните правой кнопкой мыши в текстовой области окна **Вывод** и выберите пункт **Сообщения об исключениях** или отмените его выбор.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Навигация по коду с помощью отладчика](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Командное окно](../../ide/reference/command-window.md)
 - [Первое знакомство с отладчиком](../../debugger/debugger-feature-tour.md)
-- [Пошаговое руководство: Debug at design time in Visual Studio (C#, C++, Visual Basic, F#)](../../debugger/walkthrough-debugging-at-design-time.md) (Пошаговое руководство. Отладка во время разработки в Visual Studio (C#, C++, Visual Basic, F#)
+- [Пример. Отладка во время разработки](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Использование регулярных выражений в Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

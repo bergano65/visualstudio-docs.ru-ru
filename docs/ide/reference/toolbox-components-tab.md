@@ -1,5 +1,7 @@
 ---
 title: Вкладка "Компоненты", панель элементов
+description: Сведения о компонентах, которые можно найти на вкладке "Компоненты" панели элементов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 40ba84712a343a071d6213dc9cd985727fc20ebf
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597312"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560945"
 ---
 # <a name="toolbox-components-tab"></a>Панель элементов, вкладка "Компоненты"
 
@@ -26,7 +28,7 @@ ms.locfileid: "75597312"
 
 Чтобы отобразить эту вкладку, откройте конструктор Windows Forms. Выберите **Представление** > **Панель элементов**. На **панели элементов** выберите вкладку **Компоненты**.
 
-## <a name="components"></a>Components
+## <a name="components"></a>Компоненты
 
 **BackgroundWorker**
 
@@ -68,7 +70,7 @@ ms.locfileid: "75597312"
 
 Создает экземпляр компонента <xref:System.Diagnostics.PerformanceCounter>, который можно использовать для взаимодействия со счетчиками производительности Windows, включая создание новых категорий и экземпляров, чтения значений из счетчиков и выполнения вычислений на основе данных счетчиков.
 
-**Процесс**
+**Process**
 
 Создает экземпляр компонента <xref:System.Diagnostics.Process>, который можно использовать для остановки, запуска и изменения данных, связанных с процессами в системе.
 
