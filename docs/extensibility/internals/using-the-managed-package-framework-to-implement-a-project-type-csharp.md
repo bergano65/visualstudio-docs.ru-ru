@@ -1,5 +1,6 @@
 ---
 title: Использование платформы управляемых пакетов для типа проекта (C#)
+description: Сведения о платформе управляемых пакетов, которая предоставляет классы .NET, которые можно использовать или наследовать от, для реализации собственных типов проектов.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fca3f95780d548b4482c502f5b3eaa44005fd2e2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4b425962ed0f664b8255b6489ac8f0d38be7c13c
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038651"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487547"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Использование платформы управляемых пакетов для реализации типа проекта (C#)
 Платформа управляемых пакетов (MPF) предоставляет классы C#, которые можно использовать или наследовать от, чтобы реализовать собственные типы проектов. В MPF реализовано множество интерфейсов, которые Visual Studio предполагает предоставить для предоставления типа проекта, и вы можете сосредоточиться на реализации конкретных типов проектов.
@@ -84,7 +85,7 @@ ms.locfileid: "90038651"
 |`Microsoft.VisualStudio.Package.AssemblyReferenceNode`|
 |`Microsoft.VisualStudio.Package.BuildDependency`|
 
-## <a name="document-handling-classes"></a>Классы обработки документов
+## <a name="document-handling-classes"></a>Классы Document-Handling
  В следующей таблице перечислены классы в MPF, поддерживающие обработку документов. Дополнительные сведения см. в разделе [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md).
 
 |Имя класса|
@@ -103,7 +104,7 @@ ms.locfileid: "90038651"
 |`Microsoft.VisualStudio.Package.OutputGroup`|
 |`Microsoft.VisualStudio.Package.ProjectElement`|
 
-## <a name="automation-support-classes"></a>Классы поддержки службы автоматизации
+## <a name="automation-support-classes"></a>Классы Automation-Support
  В следующей таблице перечислены классы в MPF, поддерживающие автоматизацию, чтобы пользователи типа проекта могли создавать надстройки.
 
 |Имя класса|

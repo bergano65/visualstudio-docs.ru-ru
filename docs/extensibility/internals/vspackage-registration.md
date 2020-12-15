@@ -1,5 +1,7 @@
 ---
 title: Регистрация VSPackage | Документация Майкрософт
+description: Узнайте о регистрации VSPackage, где пакеты порекомендовать Visual Studio о том, что они установлены и должны быть загружены, записав сведения в реестр.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5941a0bc5d9f9f983a616dcc22cf1260d0911fa8
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 88c8294042bb61939a52f4053f5b27ae915e01df
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012130"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487989"
 ---
 # <a name="vspackage-registration"></a>Регистрация VSPackage
 Пакеты VSPackage должны [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] быть извещены о том, что они установлены и должны быть загружены. Этот процесс выполняется путем записи сведений в реестр. Это типичное задание установщика.
@@ -40,7 +42,7 @@ ms.locfileid: "90012130"
 > [!NOTE]
 > Средство RegPkg не является распространяемым и не может использоваться для регистрации VSPackage в системе пользователя.
 
-## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Почему пакеты VSPackage не должны самостоятельно регистрироваться во время установки
+## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Почему пакеты VSPackage не должны Self-Register во время установки
  Установщики VSPackage не должны полагаться на самостоятельную регистрацию. На первый взгляд, хранение значений реестра VSPackage только в пакете VSPackage кажется хорошей идеей. Учитывая, что разработчикам требуются значения реестра, доступные для их работы и тестирования, имеет смысл избегать сохранения отдельной копии данных реестра в установщике. Установщик может использовать сам пакет VSPackage для записи значений реестра.
 
  Хотя в теории, самостоятельная регистрация имеет несколько недостатков, которые делают его непригодным для установки VSPackage:
@@ -55,6 +57,6 @@ ms.locfileid: "90012130"
 
 - Коду с собственной регистрацией может быть отказано в доступе к сетевым ресурсам, например библиотекам типов, если компонент указан как Run-from-Source и перечислен в таблице Селфрег. Это может привести к сбою установки компонента во время административной установки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Установщик Windows](/windows/desktop/Msi/windows-installer-portal)
 - [Регистрация управляемого пакета](/previous-versions/bb166783(v=vs.100))

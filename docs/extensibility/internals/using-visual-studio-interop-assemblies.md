@@ -1,5 +1,7 @@
 ---
 title: Использование сборок взаимодействия Visual Studio | Документация Майкрософт
+description: Узнайте, как сборки взаимодействия Visual Studio позволяют управляемым приложениям получать доступ к COM-интерфейсам, обеспечивающим расширяемость Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5926b2cce217565c889c7ef2eeef877691101ed6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c52dd2cf8c76cdef9be5080950d5f1b9e621e70
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704136"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487664"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Использование сборок взаимодействия Visual Studio
 Сборки взаимодействия Visual Studio позволяют управляемым приложениям получать доступ к COM-интерфейсам, обеспечивающим расширяемость Visual Studio. Существуют некоторые различия между прямыми интерфейсами COM и их версиями взаимодействия. Например, значения HRESULT обычно представлены в виде значений типа int и должны обрабатываться так же, как исключения, а параметры (особенно исходящие параметры) обрабатываются по-разному.

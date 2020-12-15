@@ -1,5 +1,7 @@
 ---
 title: Пакеты VSPackage | Документация Майкрософт
+description: Сведения о пакетах VSPackage, которые представляют собой программные модули, расширяющие интегрированную среду разработки Visual Studio, предоставляя элементы пользовательского интерфейса, службы, проекты, редакторы и конструкторы.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24dec363d261b8dbfa2135dec34e28c247c47251
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 440e2517a0138ca84be87090d9636288a7a5d9af
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703815"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487950"
 ---
 # <a name="vspackages"></a>VSPackages
 Пакеты VSPackage — это программные модули, расширяющие [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированную среду разработки (IDE), предоставляя элементы пользовательского интерфейса, службы, проекты, редакторы и конструкторы.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Выбор расположения файла VSPackage к оболочке Visual Studio](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)
 
  Объясняет, как указать расположение VSPackage для оболочки Visual Studio.
@@ -33,4 +35,4 @@ ms.locfileid: "80703815"
 
  Помогает создавать более безопасные продукты путем понимания уязвимостей системы безопасности.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы

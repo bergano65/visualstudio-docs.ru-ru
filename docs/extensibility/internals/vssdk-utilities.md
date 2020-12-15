@@ -1,5 +1,7 @@
 ---
 title: Служебные программы VSSDK | Документация Майкрософт
+description: В этих статьях описываются средства, поставляемые с VSSDK, включая RegPkg, CreatePkgDef, CreateExpInstance, цвета и средства службы изображений.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3faf0dad9d935fcc62637d387e41d599b7ec874
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3da6df6aab6d64d9ca589959a0d0227026983dfe
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703745"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487911"
 ---
 # <a name="vssdk-utilities"></a>Служебные программы VSSDK
 В подразделах этого раздела описываются средства, поставляемые с VSSDK.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 
 - [Служебная программа RegPkg](../../extensibility/internals/regpkg-utility.md)
 - [Служебная программа CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md)
@@ -28,4 +30,4 @@ ms.locfileid: "80703745"
 - [Инструменты цветовой разметки тем](../../extensibility/internals/color-theming-tools.md)
 - [Средства службы образов](../../extensibility/internals/image-service-tools.md)
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы

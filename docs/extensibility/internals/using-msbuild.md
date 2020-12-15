@@ -1,5 +1,7 @@
 ---
 title: Использование MSBuild | Документация Майкрософт
+description: MSBuild предоставляет расширяемый формат XML для создания файлов проекта, которые полностью описывают элементы проекта для построения, задачи сборки и конфигурации сборки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f961249ff584f7767dc2505bb20b1fb0961b7dd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d5168d739e49ebfc78054ea695f8b73a3e06fbc
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704289"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487677"
 ---
 # <a name="using-msbuild"></a>Использование MSBuild
 MSBuild предоставляет четко определенный расширяемый XML-формат для создания файлов проекта, которые полностью описывают элементы проекта для построения, задачи сборки и конфигурации сборки.

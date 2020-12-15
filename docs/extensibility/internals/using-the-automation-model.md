@@ -1,5 +1,7 @@
 ---
 title: Использование модели автоматизации | Документация Майкрософт
+description: Узнайте, как получить свойства и методы пакета VSPackage после его подключения к модели автоматизации.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d014627161666473d3b674f72cfec339a66fdc05
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ad8c02f846a946933ac07d4aa546ad3ce3a2a82f
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012494"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488171"
 ---
 # <a name="using-the-automation-model"></a>Использование модели автоматизации
 После подключения VSPackage к службе автоматизации можно получить свойства и методы, вызвав <xref:EnvDTE.DTEClass.GetObject%2A> метод для <xref:EnvDTE._DTE> объекта, передав строку, представляющую объект, который вы хотите получить.
@@ -71,5 +73,5 @@ Next
 
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:EnvDTE.DTEClass.GetObject%2A>

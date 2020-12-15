@@ -1,5 +1,7 @@
 ---
 title: Поддержка веб-сайтов | Документация Майкрософт
+description: Сведения о системах проектов веб-сайтов, которые создаются путем добавления шаблонов и атрибутов регистрации в существующую систему проектов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22047ad1b0709cefa200656e61f8e0d39ace94c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06f8ffdd504182dd82b11d4b5ce5f57e0a7629c3
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703448"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487846"
 ---
 # <a name="web-site-support"></a>Поддержка веб-сайтов
 Система проектов веб-сайтов — это система проектов, которая создает веб-проекты. Веб-проекты, в свою очередь, создают веб-приложения. Проект веб-сайта создает один исполняемый файл для каждой веб-страницы, имеющей связанный код. Дополнительные исполняемые файлы создаются из файлов исходного кода в папке/App_Code.
@@ -25,10 +27,10 @@ ms.locfileid: "80703448"
  Компилятор языка, используемый для компиляции веб-страниц, должен быть зарегистрирован в [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] . Можно использовать [ \<compiler> элемент](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element) в файле Web.config для регистрации компилятора, как показано в следующем примере:
 
 ```
-<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
+<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
 ```
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Шаблоны поддержки веб-сайтов](../../extensibility/internals/web-site-support-templates.md)
 
  Список шаблонов, которые можно использовать для создания новых проектов веб-сайтов и связанных элементов.
@@ -37,7 +39,7 @@ ms.locfileid: "80703448"
 
  Представляет атрибуты регистрации, соединяющие проект веб-сайта с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] .
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 - [Веб-проекты](../../extensibility/internals/web-projects.md)
 
  Содержит обзор двух типов веб-проектов, проектов веб-сайтов и проектов веб-приложений.

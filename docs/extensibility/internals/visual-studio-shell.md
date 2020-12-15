@@ -1,5 +1,7 @@
 ---
 title: Оболочка Visual Studio | Документация Майкрософт
+description: Оболочка Visual Studio является основным агентом интеграции в Visual Studio и предоставляет базовые функциональные возможности и поддерживает перекрестную связь между пакетами VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb89fc3b82dc7f142714608d8a669e368216c729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 546a76d1533efaef28ddafb14b04514f64e9d4f9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704005"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488054"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Оболочка является основным агентом интеграции в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Оболочка предоставляет необходимые функции, позволяющие использовать пакеты VSPackage для совместного использования общих служб. Поскольку цель архитектуры заключается в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] том, чтобы направить в пакеты VSPackage основную функциональность, оболочка — это платформа для обеспечения базовой функциональности и поддержки перекрестной связи между компонентами пакетов VSPackage.

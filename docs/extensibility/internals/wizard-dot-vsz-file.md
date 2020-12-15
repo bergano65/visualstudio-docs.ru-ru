@@ -1,5 +1,7 @@
 ---
 title: Мастер (. VSZ)-файл | Документация Майкрософт
+description: Сведения о файлах VSZ, которые среда IDE использует для запуска мастеров. Файлы содержат сведения о том, какой мастер нужно вызвать, а также о том, что следует передать мастеру.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fedf409c0ca320c054ddf1cc16318d08d25463a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fe32028f271d02dd518509bb86906197e6acb4e
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703311"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487742"
 ---
 # <a name="wizard-vsz-file"></a>Файл мастера (VSZ-файл)
 
@@ -36,7 +38,7 @@ Param="WIZARDUI = FALSE"
 
 Ниже приведены части файла VSZ.
 
-|Часть|Описание|
+|Отделение|Описание|
 |----------|-----------------|
 |всвизард|Первый параметр в файле представляет собой номер версии формата файла шаблона. Этот номер версии должен быть 6,0, 7,0, 7,1 или 8,0. Другие числа не могут быть запущены и приводят к ошибке недопустимого формата.|
 |Мастер|Это поле содержит идентификатор ProgID в мастере, а также строковое представление идентификатора CLSID мастера, созданного интегрированной средой разработки.|

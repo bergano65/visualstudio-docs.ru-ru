@@ -1,5 +1,7 @@
 ---
 title: Область тестирования 6. Удаление | Документация Майкрософт
+description: Эта область тестирования системы управления версиями охватывает действия удаления в обозреватель решений для подключаемого модуля системы управления версиями Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9902ab9d1cb9c28ddf67b83590a4cccd5f6562f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1371472a4dec265b5e476d96a32cb725e91ce7fe
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704511"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487560"
 ---
 # <a name="test-area-6-delete"></a>Область тестирования 6. Удаление
 Эта область тестирования подключаемого модуля управления версиями охватывает действия по удалению.
@@ -29,7 +31,7 @@ ms.locfileid: "80704511"
 
 - Папки
 
-- Проект
+- Project
 
   В зависимости от типа проекта у вас может быть возможность **Удалить** проект (оставить файлы на диске) или **Удалить** проект (удаляет файлы на диске). Любое из этих действий удаляет проект или элемент из **Обозреватель решений**.
 

@@ -1,5 +1,7 @@
 ---
 title: Редактор цветов VSIX | Документация Майкрософт
+description: Сведения о редакторе цветов расширения Visual Studio, который позволяет создавать и редактировать пользовательские цвета для Visual Studio и создавать ключи ресурсов тем.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa3ed1f1a2a761a6602ac891eb78b5a5436abf92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 66cb163a1943df9deb27ab4fa691b71ee116735e
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704046"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488067"
 ---
 # <a name="vsix-color-editor"></a>Редактор цветов VSIX
 Редактор цветов расширений Visual Studio позволяет создавать и редактировать пользовательские цвета для Visual Studio. Средство также может создавать ключи ресурсов тем, чтобы цвета можно было использовать в коде. Это средство удобно использовать для создания цветов для расширения Visual Studio, которое поддерживает их. Это средство может открывать файлы. pkgdef и. XML. Темы Visual Studio (вссеме-файлы) можно использовать в редакторе цветов расширения Visual Studio, изменив расширение файла на XML. Кроме того, файлы. вссеме можно импортировать в текущий XML-файл.
@@ -65,9 +67,9 @@ ms.locfileid: "80704046"
 
    Некоторые распространенные имена состояний включают:
 
-- Активно
+- Активен
 
-- Неактивно
+- Неактивный
 
 - MouseOver
 

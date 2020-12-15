@@ -1,5 +1,7 @@
 ---
 title: Шаблоны поддержки веб-сайтов | Документация Майкрософт
+description: Дополнительные сведения о шаблонах поддержки веб-сайтов. Шаблоны проектов и элементов веб-сайта Visual Studio предоставляют возможность многократного использования и настраиваемых проектов веб-сайтов и заглушек элементов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3c139ae6f2f9ec618e6382a1551a9e35eee7ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7bb3d669dadf7c33fa81231adf26ae30e999c51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703452"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487859"
 ---
 # <a name="web-site-support-templates"></a>Шаблоны поддержки веб-сайтов
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Шаблоны проектов и элементов веб-сайта предоставляют возможность многократного использования и настраиваемых проектов веб-сайтов, а также заглушки элементов, которые ускоряют процесс разработки, избавляя от необходимости создавать новые проекты и элементы веб-сайта с нуля. Дополнительные сведения о [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] шаблонах см. в разделе [Создание шаблонов проектов и элементов](../../ide/creating-project-and-item-templates.md).

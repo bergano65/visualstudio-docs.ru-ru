@@ -1,5 +1,7 @@
 ---
 title: Основные компоненты веб-проекта | Документация Майкрософт
+description: Ознакомьтесь с внутренними сведениями о работе веб-проектов в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09e33248ca264fefa79a8d5d5fa5d0cfa3d2da1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bf16582cdc9bba6529d237d74d56ebded299fb9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703550"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487924"
 ---
 # <a name="web-project-essentials"></a>Основные компоненты веб-проекта
 Веб-проекты создают веб-приложения. Веб-проект можно использовать для создания веб-приложения с интеллектуальными веб-страницами. Интеллектуальная веб-страница содержит код на стороне сервера, который отображает веб-страницу по запросу.

@@ -1,5 +1,7 @@
 ---
 title: Атрибуты поддержки веб-сайта | Документация Майкрософт
+description: Узнайте об атрибутах поддержки веб-сайта, необходимых для расширения функциональных возможностей Visual Studio с помощью проектов веб-сайтов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef75f99480145475278357a552f3ac74c0289800
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9beee39ca6968b0922bc134fa21e0cde3d6dd3b6
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703501"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487872"
 ---
 # <a name="web-site-support-attributes"></a>Атрибуты поддержки веб-сайтов
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Проект веб-сайта можно расширить, чтобы обеспечить поддержку языков веб-программирования. Язык должен быть зарегистрирован в, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] поэтому шаблоны проектов могут отображаться в диалоговом окне **новый веб-сайт** при выборе языка.

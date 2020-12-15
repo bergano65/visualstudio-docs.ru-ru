@@ -1,5 +1,7 @@
 ---
-title: Флаги командной строки компилятора VSCT | Документация Майкрософт
+title: Флаги Command-Line компилятора VSCT | Документация Майкрософт
+description: Компилятор Командная таблица Visual Studio предоставляет параметры командной строки для обеспечения успешной компиляции vsct-файлов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4ee29710049453c3163c366eccf96e257b6028d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d60b248a4941d176ac6ba4e808a94dbc67efbe7
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703958"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488015"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Флаги командной строки компилятора VSCT
 Компилятор Командная таблица Visual Studio (VSCT) предоставляет параметры командной строки для обеспечения успешной компиляции VSCT-файлов.
 
 ## <a name="command-line-parameters"></a>Параметры командной строки
- Чтобы просмотреть базовую справку VSCT из [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **командного** окна, перейдите к папке \висуалстудиоинтегратион\тулс\бин\ *путь установки пакета SDK для Visual Studio*и введите:
+ Чтобы просмотреть базовую справку VSCT из [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **командного** окна, перейдите к папке \висуалстудиоинтегратион\тулс\бин\ *путь установки пакета SDK для Visual Studio* и введите:
 
 ```
 vsct /?

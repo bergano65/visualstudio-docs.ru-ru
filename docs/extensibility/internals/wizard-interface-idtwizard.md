@@ -1,5 +1,7 @@
 ---
 title: Интерфейс мастера (Идтвизард) | Документация Майкрософт
+description: Интегрированная среда разработки использует интерфейс Идтвизард для взаимодействия с мастерами. Мастера должны реализовать этот интерфейс для установки в интегрированной среде разработки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb1c8d728a76097321e4e1f16640cab97599d6ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e87759a979d0c680018d99a1e18a12e645f430c6
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703279"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487768"
 ---
 # <a name="wizard-interface-idtwizard"></a>Интерфейс мастера (IDTWizard)
 Интегрированная среда разработки (IDE) использует <xref:EnvDTE.IDTWizard> интерфейс для взаимодействия с мастерами. Мастера должны реализовать этот интерфейс для установки в интегрированной среде разработки.
