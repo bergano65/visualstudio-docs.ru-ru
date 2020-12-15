@@ -1,5 +1,7 @@
 ---
 title: Обзор средств доменных языков
+description: Сведения о средствах DSL, которые позволяют проектировать предметно-ориентированный язык, а затем создавать все, что нужно пользователям для разработки моделей на базе этого языка.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d9f2446aa793fcd80c3c6786bf1b2002a7ccbc0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e88a6157e5c9db7914ac6f7470d793be11dfdfc8
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808081"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362032"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Обзор средств доменных языков
 Средства предметно-ориентированных языков (средства DSL), которые размещаются в Visual Studio, позволяют проектировать предметно-ориентированный язык, а затем создавать все, что нужно, пользователям для создания моделей на базе этого языка.
