@@ -1,5 +1,7 @@
 ---
 title: Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO
+description: Узнайте, как использовать ленту, чтобы разрешить пользователям добавлять на лист кнопки, NamedRange и ListObject.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ec1d1361d7ca58d4292cbbb7bc4ea3b707a748ff
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9987e9427c0fe982cf3ddcb88ce8071caab04b0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584351"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522776"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Пошаговое руководство. Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO
   Вы можете добавить элементы управления на любой открытый лист с помощью надстройки VSTO для Excel. В этом пошаговом руководстве показано, как с помощью ленты предоставить пользователям возможность добавлять <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> и <xref:Microsoft.Office.Tools.Excel.ListObject> на лист. Дополнительные сведения см. [в разделе Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -65,7 +67,7 @@ ms.locfileid: "91584351"
 
      Файл с именем **Ribbon1.CS** или **Ribbon1. vb** откроется в конструкторе лент и отобразит вкладку и группу по умолчанию.
 
-3. Перетащите элемент управления **CheckBox** с вкладки **Элементы управления ленты Office**панели элементов в группу **group1**.
+3. Перетащите элемент управления **CheckBox** с вкладки **Элементы управления ленты Office** панели элементов в группу **group1**.
 
 4. Щелкните **CheckBox1** , чтобы выбрать его.
 
@@ -73,21 +75,21 @@ ms.locfileid: "91584351"
 
     |Свойство|Значение|
     |--------------|-----------|
-    |**Имя**|**Кнопка**|
-    |**Label**|**Кнопка**|
+    |**имя**;|**Button**|
+    |**Label**|**Button**|
 
 6. Добавьте второй флажок в **group1**, а затем измените следующие свойства.
 
     |Свойство|Значение|
     |--------------|-----------|
-    |**Имя**|**NamedRange**|
+    |**имя**;|**NamedRange**|
     |**Label**|**NamedRange**|
 
 7. Добавьте третий флажок в **group1**, а затем измените следующие свойства.
 
     |Свойство|Значение|
     |--------------|-----------|
-    |**Имя**|**ListObject**|
+    |**имя**;|**ListObject**|
     |**Label**|**ListObject**|
 
 ## <a name="add-controls-to-the-worksheet"></a>Добавление элементов управления на лист
@@ -106,7 +108,7 @@ ms.locfileid: "91584351"
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]
 
-3. В **Обозреватель решений**выберите *Ribbon1.CS* или *Ribbon1. vb*.
+3. В **Обозреватель решений** выберите *Ribbon1.CS* или *Ribbon1. vb*.
 
 4. В меню **вид** выберите **конструктор**.
 
@@ -138,7 +140,7 @@ ms.locfileid: "91584351"
 
 ### <a name="to-remove-controls-from-the-worksheet"></a>Удаление элементов управления с листа
 
-1. В **Обозреватель решений**выберите *ThisAddIn.CS* или *ThisAddIn. vb*.
+1. В **Обозреватель решений** выберите *ThisAddIn.CS* или *ThisAddIn. vb*.
 
 2. В меню **Вид** выберите пункт **Код**.
 
@@ -182,12 +184,12 @@ ms.locfileid: "91584351"
 
      Элементы управления, добавленные в Sheet1, больше не отображаются.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
  Дополнительные сведения об элементах управления в проектах надстройки VSTO для Excel см. в следующем разделе:
 
 - Дополнительные сведения о сохранении элементов управления на листе см. в разделе примеры динамических элементов управления надстройки VSTO для Excel в разделе [образцы разработки Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Решения Excel](../vsto/excel-solutions.md)
 - [Общие сведения об элементах управления Windows Forms в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)

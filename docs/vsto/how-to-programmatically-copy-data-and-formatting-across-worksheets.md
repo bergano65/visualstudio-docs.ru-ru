@@ -1,5 +1,7 @@
 ---
 title: Программное копирование данных и форматирования на листах
+description: Узнайте, как копировать данные из диапазона на одном листе во все другие листы книги с помощью метода Филлакроссшитс.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e72d7c94068e5fe9ca0bf533d9d8fe4b7f8e8e54
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: cdcae80148e54f2e1adb09d4c69b2dc3268b7428
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585266"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523186"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Руководство. программное копирование данных и форматирование на листах
   Данные из диапазона на одном листе можно скопировать на все другие листы книги с помощью <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> метода. Укажите диапазон, а также сведения о том, требуется ли копировать данные, форматирование или и то, и другое.
@@ -35,7 +37,7 @@ ms.locfileid: "91585266"
 ## <a name="compile-the-code"></a>Компиляция кода
  Для этого примера требуется диапазон с именем `rangeData` в листе.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с листами](../vsto/working-with-worksheets.md)
 - [Как программно добавлять новые листы в книги](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
 - [Руководство. Программное изменение форматирования в строках листа, содержащих выбранные ячейки](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)

@@ -1,5 +1,7 @@
 ---
 title: Руководство. Обновление источника данных с помощью данных из элемента управления ведущего приложения
+description: Узнайте, как можно привязать элемент управления ведущего приложения к источнику данных и обновить источник данных изменениями, внесенными в данные в элементе управления.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52540f0cf94a12efda891657ec4aae9452ad6f86
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2f79b8ae8716631a7adc68446b0c5fe267a30a88
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585123"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523604"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Руководство. Обновление источника данных с помощью данных из элемента управления ведущего приложения
   Вы можете привязать элемент управления ведущего приложения к источнику данных и обновлять источник данных с помощью изменений, внесенных в данные в элементе управления. Этот процесс включает два основных этапа.
@@ -113,7 +115,7 @@ ms.locfileid: "91585123"
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)
 - [Обновление данных с помощью адаптера таблицы TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)

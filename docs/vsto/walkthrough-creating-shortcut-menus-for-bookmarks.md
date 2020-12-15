@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. создание контекстных меню для закладок
+description: Узнайте, как создавать контекстные меню для элементов управления Bookmark в настройке уровня документа для Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b4b412d2e9456142c1be1af388e2803634d15c0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8b018687ec10eb725ece7d776277ea1c699dbbec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "91146910"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524215"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Пошаговое руководство. создание контекстных меню для закладок
   В этом пошаговом руководстве показано, как создать контекстное меню для <xref:Microsoft.Office.Tools.Word.Bookmark> элементов управления в настройке уровня документа для Word. Когда пользователь щелкает правой кнопкой мыши текст закладки, появляется контекстное меню с параметрами пользователя для форматирования текста.
@@ -44,7 +46,7 @@ ms.locfileid: "91146910"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] либо [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]
 
 ## <a name="create-the-project"></a><a name="BKMK_CreateProject"></a> Создание проекта
  Первым шагом является создание проекта документа Word в Visual Studio.
@@ -66,7 +68,7 @@ ms.locfileid: "91146910"
 
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Добавление элемента управления Bookmark в документ
 
-1. В **области элементов**на вкладке **элементы управления Word** перетащите <xref:Microsoft.Office.Tools.Word.Bookmark> элемент управления в документ.
+1. В **области элементов** на вкладке **элементы управления Word** перетащите <xref:Microsoft.Office.Tools.Word.Bookmark> элемент управления в документ.
 
     Откроется диалоговое окно **Добавление элемента управления Bookmark** .
 
@@ -90,9 +92,9 @@ ms.locfileid: "91146910"
 
 1. Добавьте в проект элемент **XML ленты** . Дополнительные сведения см. [в разделе инструкции. Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2. В **Обозреватель решений**выберите **ThisDocument.CS** или **ThisDocument. vb**.
+2. В **Обозреватель решений** выберите **ThisDocument.CS** или **ThisDocument. vb**.
 
-3. В строке меню выберите **Просмотреть**  >  **код**.
+3. В строке меню выберите **Вид** > **Код**.
 
      В редакторе кода откроется файл класса **ThisDocument** .
 
@@ -101,9 +103,9 @@ ms.locfileid: "91146910"
      [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
      [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
 
-5. В **обозревателе решений**выберите XML-файл ленты. По умолчанию XML-файл ленты называется Ribbon1.xml.
+5. В **обозревателе решений** выберите XML-файл ленты. По умолчанию XML-файл ленты называется Ribbon1.xml.
 
-6. В строке меню выберите **Просмотреть**  >  **код**.
+6. В строке меню выберите **Вид** > **Код**.
 
      XML-файл ленты открывается в редакторе кода.
 
@@ -125,16 +127,16 @@ ms.locfileid: "91146910"
 
      Этот код добавляет две кнопки в контекстное меню, которое появляется при щелчке правой кнопкой мыши по документу.
 
-8. В **Обозреватель решений**щелкните правой кнопкой мыши `ThisDocument` и выберите пункт **Просмотреть код**.
+8. В **Обозреватель решений** щелкните правой кнопкой мыши `ThisDocument` и выберите пункт **Просмотреть код**.
 
 9. Объявите следующие переменные и переменную закладки на уровне класса.
 
      [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]
      [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]
 
-10. В **Обозреватель решений**выберите файл кода ленты. По умолчанию файл кода ленты называется **Ribbon1.CS** или **Ribbon1. vb**.
+10. В **Обозреватель решений** выберите файл кода ленты. По умолчанию файл кода ленты называется **Ribbon1.CS** или **Ribbon1. vb**.
 
-11. В строке меню выберите **Просмотреть**  >  **код**.
+11. В строке меню выберите **Вид** > **Код**.
 
      Файл кода ленты открывается в редакторе кода.
 
@@ -152,9 +154,9 @@ ms.locfileid: "91146910"
      [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]
      [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]
 
-2. **Обозреватель решений**выберите **ThisDocument.CS** или **ThisDocument. vb**.
+2. **Обозреватель решений** выберите **ThisDocument.CS** или **ThisDocument. vb**.
 
-3. В строке меню выберите **Просмотреть**  >  **код**.
+3. В строке меню выберите **Вид** > **Код**.
 
      В редакторе кода откроется файл класса **ThisDocument** .
 
@@ -185,7 +187,7 @@ ms.locfileid: "91146910"
 
 5. Убедитесь, что весь текст в `bookmark2` задается курсивом, а только часть текста в `bookmark1` этой области пересекается `bookmark2` курсивом.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
  Ниже приводятся некоторые из возможных последующих задач.
 
 - Напишите код для реагирования на события элементов управления ведущего приложения в Excel. Дополнительные сведения см. в разделе [Пошаговое руководство. Программирование для событий элемента управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).

@@ -1,5 +1,7 @@
 ---
 title: Поддержка потоков в Office
+description: В объектной модели Microsoft Office поддерживается многопоточность. Объектная модель Office не является потокобезопасной, но может работать с несколькими потоками в решении Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3218a12add86739c76cd50f82fdda5d845e2b069
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d44c86e17b5df79c44f85cd555b3036e925ae61
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978771"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524189"
 ---
 # <a name="threading-support-in-office"></a>Поддержка потоков в Office
   В этой статье содержатся сведения о поддержке потоков в объектной модели Microsoft Office. Объектная модель Office не является потокобезопасной, но можно работать с несколькими потоками в решении Office. Приложения Office являются серверами модели COM. COM позволяет клиентам вызывать серверы COM в произвольных потоках. Для COM-серверов, которые не являются потокобезопасными, COM предоставляет механизм сериализации одновременных вызовов, чтобы только один логический поток выполнялся на сервере в любое время. Этот механизм известен как модель однопотокового подразделения (STA). Поскольку вызовы сериализуются, вызывающие объекты могут блокироваться на периоды времени, когда сервер занят или обрабатывает другие вызовы в фоновом потоке.

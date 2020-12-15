@@ -1,5 +1,7 @@
 ---
 title: Повышение производительности надстройки VSTO
+description: Узнайте, как оптимизировать надстройки VSTO, созданные для приложений Office, чтобы они быстро запускались, отключались, открывать элементы и выполнять другие задачи.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7529c69270b5f33cde32e8a7907f1b80589c43b7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 83ba2e9cc2cd55b3e3f6362250ffc1e9489b1626
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298513"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524439"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Повышение производительности надстройки VSTO
   Для повышения удобства работы пользователей можно оптимизировать надстройки VSTO, создаваемые для приложений Office, что позволит быстрее выполнять запуск, завершать работу, открывать элементы и выполнять другие задачи. Если ваша надстройка VSTO предназначена для Outlook, можно уменьшить вероятность ее отключения из-за низкой производительности. Для повышения производительности надстройки VSTO можно реализовать следующие стратегии:
@@ -41,7 +43,7 @@ ms.locfileid: "92298513"
 
 ### <a name="to-configure-a-clickonce-solution-to-load-vsto-add-ins-on-demand"></a>Настройка решения ClickOnce для загрузки надстроек VSTO по требованию
 
-1. В области **Обозреватель решений**выберите узел проекта.
+1. В области **Обозреватель решений** выберите узел проекта.
 
 2. В строке меню выберите **Вид** > **Страницы свойств**.
 
@@ -51,13 +53,13 @@ ms.locfileid: "92298513"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Настройка решения установщика Windows для загрузки надстроек VSTO по требованию
 
-1. В реестре задайте для параметра `LoadBehavior` ** _Root_ \\ \\ _ID надстройки_ \софтваре\микрософт\оффице_applicationName_\аддинс** значение **0x10**.
+1. В реестре задайте для параметра `LoadBehavior` **\\ \\ _ID надстройки_ \софтваре\микрософт\оффице _applicationName_\аддинс** значение **0x10**.
 
      Дополнительные сведения см. в разделе [записи реестра для надстроек VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>Настройка решения для загрузки надстроек VSTO по требованию при отладке решения
 
-1. Создайте скрипт, который устанавливает `LoadBehavior` для ключа ** _Root_ \\ \\ _идентификатора надстройки_ root \софтваре\микрософт\оффице_applicationName_\аддинс** значение **0x10**.
+1. Создайте скрипт, который устанавливает `LoadBehavior` для ключа **\\ \\ _идентификатора надстройки_ root \софтваре\микрософт\оффице _applicationName_\аддинс** значение **0x10**.
 
      В следующем коде показан пример такого скрипта.
 

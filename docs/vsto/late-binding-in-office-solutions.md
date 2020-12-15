@@ -1,5 +1,7 @@
 ---
 title: Позднее связывание в решениях Office
+description: Узнайте, как некоторые типы в объектных моделях в Microsoft Office приложениях предоставляют функциональные возможности, доступные с помощью функций позднего связывания.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62224006d04e0a1e7447053e868dd9946f00c97e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 201b850d8a577f8cc76aff97e2370998b6f885ed
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62583950"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523563"
 ---
 # <a name="late-binding-in-office-solutions"></a>Позднее связывание в решениях Office
   Некоторые типы в объектных моделях приложений Office предоставляют функциональные возможности, доступные с помощью функций позднего связывания. Например, некоторые методы и свойства могут возвращать различные типы объектов в зависимости от контекста приложения Office, а некоторые типы могут предоставлять различные методы или свойства в разных контекстах.

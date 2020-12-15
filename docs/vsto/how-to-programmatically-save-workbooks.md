@@ -1,5 +1,7 @@
 ---
 title: Как программно сохранять книги
+description: Программное сохранение книг Microsoft Excel без изменения пути и сохранение копии книги без изменения открытой книги в памяти.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b45449f72275ac154a433cad725a2867062cc5e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbc228a703d6c9224fda545a93132ccb45c94b0f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547086"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524618"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Как программно сохранять книги
   Сохранить книгу можно несколькими способами. Можно сохранить книгу без изменения пути к файлу. Если книга не сохранялась ранее, следует сохранить книгу, указав путь. Без явного пути Microsoft Office Excel сохраняет файл в текущей папке с именем, заданным при его создании. Можно также сохранить копию книги, не изменяя открытую книгу в памяти.

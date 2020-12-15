@@ -1,5 +1,7 @@
 ---
 title: Хранение & получение значений дат в диапазонах Excel программными средствами
+description: Узнайте, как использовать Visual Studio для программного хранения и извлечения значений дат в диапазонах Microsoft Excel.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2bd76d37a9c9b6e51de7bbe01b54d1be6c93128
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 673969e13b2f49b91416d730533be0f075813781
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583779"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523584"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Как программно сохранять и извлекать значения дат в диапазонах Excel
   Можно сохранять и извлекать значения в <xref:Microsoft.Office.Tools.Excel.NamedRange> элементе управления или в собственном объекте Excel Range.
@@ -81,7 +83,7 @@ ms.locfileid: "91583779"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с диапазонами](../vsto/working-with-ranges.md)
 - [Общие сведения об объектной модели Excel](../vsto/excel-object-model-overview.md)
 - [Элемент управления NamedRange](../vsto/namedrange-control.md)

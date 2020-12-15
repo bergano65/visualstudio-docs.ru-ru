@@ -1,5 +1,7 @@
 ---
 title: Руководство. Программная сортировка данных на листах
+description: Узнайте, как можно использовать Visual Studio для программной сортировки данных, содержащихся в диапазонах и списках на листе во время выполнения.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08fa461dc55bf42857e21a5419cab6a0ff147173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f09fed7f1caff68a485d9d0d98789555ec30889c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546982"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523680"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Руководство. Программная сортировка данных на листах
   Вы можете сортировать данные, содержащиеся в списках и диапазонах листа во время выполнения. Следующий код сортирует диапазон из нескольких столбцов с именем `Fruits` по данным в первом столбце, а затем по данным во втором столбце.
@@ -67,5 +69,5 @@ ms.locfileid: "85546982"
 - [Как программно ссылаться на диапазоны листов в коде](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
 - [Руководство. Программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [Элемент управления NamedRange](../vsto/namedrange-control.md)
-- [ListObject - элемент управления](../vsto/listobject-control.md)
+- [Элемент управления ListObject](../vsto/listobject-control.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: Работа с документами Visio
+description: Узнайте о пошаговых процедурах и примерах кода для использования объектной модели Microsoft Visio для работы с документами в проектах Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82dbf0858266fe2f07d4ae51c8171e0e8a900861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8835e3ef668e060798c515a89868d800ca737f34
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815054"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523328"
 ---
 # <a name="work-with-visio-documents"></a>Работа с документами Visio
   В подразделах этого раздела приводятся пошаговые инструкции и примеры кода по использованию объектной модели Microsoft Office Visio для работы с документами в проектах Office.

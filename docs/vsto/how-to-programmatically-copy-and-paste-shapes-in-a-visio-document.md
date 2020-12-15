@@ -1,5 +1,7 @@
 ---
 title: Копирование и вставка фигур в документ Visio программным способом
+description: Узнайте, как программно копировать фигуры на одной странице документа и вставлять их в новую страницу в одном документе.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f54f98a055ef834100c5c58274d72f92568b7c4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4643d1527d078639e2f2f09add42fff96e345091
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585279"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523207"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Руководство. программное копирование и вставка фигур в документ Visio
   Вы можете программными средствами копировать фигуры на одной странице документа и вставлять их в новую страницу того же документа. Можно вставлять их в расположение по умолчанию (центр активного окна) или в то же расположение, в котором они находились на исходной странице.
@@ -46,7 +48,7 @@ ms.locfileid: "91585279"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#15)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#15)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Решения Visio](../vsto/visio-solutions.md)
 - [Общие сведения об объектной модели Visio](../vsto/visio-object-model-overview.md)
 - [Работа с фигурами Visio](../vsto/working-with-visio-shapes.md)

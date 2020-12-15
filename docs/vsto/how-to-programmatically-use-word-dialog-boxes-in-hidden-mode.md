@@ -1,5 +1,7 @@
 ---
 title: Руководство. программное использование диалоговых окон Word в скрытом режиме
+description: Узнайте, как использовать Visual Studio для программного использования диалоговых окон Microsoft Word в скрытом режиме.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54178ecc94026499eed42da4f40f84cfe4eb831f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 263041fe15f07e8041bb771a6f3abd8b3311b0f2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583766"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523165"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Руководство. программное использование диалоговых окон Word в скрытом режиме
   Можно выполнять сложные операции с одним вызовом метода путем вызова встроенных диалоговых окон в Microsoft Office Word без отображения их пользователю. Это можно сделать с помощью <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> метода <xref:Microsoft.Office.Interop.Word.Dialog> объекта, не вызывая <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> метод.
@@ -39,7 +41,7 @@ ms.locfileid: "91583766"
 
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Руководство. программное использование встроенных диалоговых окон в Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)
 - [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md)
 - [Позднее связывание в решениях Office](../vsto/late-binding-in-office-solutions.md)

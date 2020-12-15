@@ -1,5 +1,7 @@
 ---
 title: Отображение текста в текстовом поле на листе с помощью кнопки
+description: Изучите основы использования кнопок и текстовых полей на листах Microsoft Excel. Также создавайте проекты Excel с помощью средств разработки Office в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b30eea0152b75cdd0869ececac674ee5aeee7933
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c499800efa783ce252dbf925f307bc64e814420f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328708"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522650"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Пошаговое руководство. Отображение текста в текстовом поле листа с помощью кнопки
   В этом пошаговом руководстве показаны основные сведения об использовании кнопок и текстовых полей на Microsoft Office листах Excel и о создании проектов Excel с помощью средств разработки Office в Visual Studio. Чтобы увидеть результат как завершенный пример, см. Пример элементов управления Excel в разделе [примеры разработки Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).
@@ -71,7 +73,7 @@ ms.locfileid: "67328708"
 
    |Свойство|Значение|
    |--------------|-----------|
-   |**Имя**|**insertText**|
+   |**имя**;|**insertText**|
    |**Text**|**Вставить текст**|
 
    Теперь напишите код, который будет выполняться при нажатии кнопки.
@@ -81,7 +83,7 @@ ms.locfileid: "67328708"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Запись в текстовое поле при нажатии кнопки
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши **Лист1**и выберите в контекстном меню пункт **Просмотреть код** .
+1. В **Обозреватель решений** щелкните правой кнопкой мыши **Лист1** и выберите в контекстном меню пункт **Просмотреть код** .
 
 2. Добавьте следующий код в <xref:System.Windows.Forms.Control.Click> обработчик событий кнопки:
 
@@ -103,7 +105,7 @@ ms.locfileid: "67328708"
 
 3. Убедитесь, что **Hello World!** отображается в текстовом поле.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
  В этом пошаговом руководстве показаны основные принципы использования кнопок и текстовых полей на листах Excel. Ниже приводятся некоторые из возможных последующих задач.
 
 - Развертывание проекта. Дополнительные сведения см. в разделе [развертывание решения Office](../vsto/deploying-an-office-solution.md).

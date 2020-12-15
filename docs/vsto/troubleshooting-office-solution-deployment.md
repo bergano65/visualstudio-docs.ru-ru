@@ -1,5 +1,7 @@
 ---
 title: Устранение неполадок развертывания решений Office
+description: Узнайте, как можно решать распространенные проблемы, которые могут возникнуть при развертывании решений Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c7db4a699fcc8b28e4f2f423f612738de6a6836
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b70b03e8342564de828059d1a335f6347c19b5a3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90806737"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522969"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Устранение неполадок развертывания решений Office
   В этом разделе содержатся сведения об устранении неполадок, которые могут возникнуть при развертывании решений Office.
@@ -73,7 +75,7 @@ ms.locfileid: "90806737"
 
 2. На странице **Приложения** выберите **Сведения о сборке**.
 
-3. Задайте для номера редакции (третье поле) **версии сборки**подстановочный знак ( \* ). Например, "1,0. *".  Затем нажмите кнопку **ОК** .
+3. Задайте для номера редакции (третье поле) **версии сборки** подстановочный знак ( \* ). Например, "1,0. *".  Затем нажмите кнопку **ОК** .
 
    После изменения версии сборки вы можете продолжить подписывать сборку строгим именем, и Fusion будет загружать последнюю версию настройки.
 
@@ -123,7 +125,7 @@ ms.locfileid: "90806737"
 
  Сведения о том, как определить тип MIME в IIS 7, см. в разделе [Добавление типа MIME (IIS7)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725608(v=ws.10)).
 
- Установите **.vsto** в качестве расширения и **application/x-ms-vsto**в качестве типа MIME.
+ Установите **.vsto** в качестве расширения и **application/x-ms-vsto** в качестве типа MIME.
 
 ## <a name="see-also"></a>См. также раздел
 

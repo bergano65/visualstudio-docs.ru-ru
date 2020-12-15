@@ -1,5 +1,7 @@
 ---
 title: Заполнение таблиц Word свойствами документа программным способом
+description: Узнайте, как можно использовать Visual Studio для программного заполнения таблицы свойствами документа в документе Microsoft Word.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ce4fbdb69aae55bb5b79b6af17a0516a0b8786a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 78e9968970406cd176a2f5f27305ca0346cf85bf
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585488"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523786"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Руководство. Программное заполнение таблиц Word свойствами документа
   Следующий пример создает таблицу Microsoft Office Word в верхней части документа и заполняет свойства ведущего документа.
@@ -94,7 +96,7 @@ ms.locfileid: "91585488"
    [!code-vb[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#89)]
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Руководство. Программное создание таблиц Word](../vsto/how-to-programmatically-create-word-tables.md)
 - [Руководство. Программное добавление текста и форматирования в ячейки в таблицах Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
 - [Как программно добавлять строки и столбцы в таблицы Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)

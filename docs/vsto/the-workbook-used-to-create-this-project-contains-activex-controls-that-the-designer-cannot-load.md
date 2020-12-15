@@ -1,5 +1,7 @@
 ---
 title: Книга содержит элементы ActiveX, которые невозможно загрузить
+description: Узнайте, как устранить ошибку, возникающую, если книга содержит элементы управления ActiveX, которые невозможно загрузить.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: error-reference
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 09182fb354ad3ae8937b66952a0acd376d54fe0a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7257e3940af72f344906642adc51a1dd98cb3f25
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584455"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524181"
 ---
 # <a name="the-workbook-contains-activex-controls-that-cannot-be-loaded"></a>Книга содержит элементы ActiveX, которые невозможно загрузить
 
@@ -34,6 +36,6 @@ ms.locfileid: "91584455"
 
 3. Создайте решение на уровне документа на основе документа или книги.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)

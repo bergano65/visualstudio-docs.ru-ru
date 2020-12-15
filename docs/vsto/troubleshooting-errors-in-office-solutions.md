@@ -1,5 +1,7 @@
 ---
 title: Устранение ошибок в решениях Office
+description: Сведения об устранении ошибок, которые могут возникнуть при разработке решений Microsoft Office в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd12c3dd9cd3c90564351dd1c64cebfe5df6e99d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234696"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523036"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Устранение ошибок в решениях Office
   Во время разработки решений Office в Visual Studio могут возникнуть проблемы при выполнении следующих задач:
@@ -115,7 +117,7 @@ ms.locfileid: "87234696"
 
  Эта ошибка означает, что вы пытаетесь получить доступ к событию, имя которого совпадает с именем другого свойства или метода объекта. Чтобы получить доступ к событию, необходимо привести объект к его *интерфейсу событий*.
 
- Типы основных сборок взаимодействия Office с событиями реализуют два интерфейса: основной интерфейс со свойствами и методами и интерфейс событий, содержащий события, предоставляемые объектом. Эти интерфейсы событий используют соглашение об именовании *objectname*Events*n*_Event, например <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> и <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . Если вам не удается получить доступ к событию, которое должно быть в объекте, приведите объект к типу соответствующего интерфейса событий.
+ Типы основных сборок взаимодействия Office с событиями реализуют два интерфейса: основной интерфейс со свойствами и методами и интерфейс событий, содержащий события, предоставляемые объектом. Эти интерфейсы событий используют соглашение об именовании *objectname* Events *n* _Event, например <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> и <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . Если вам не удается получить доступ к событию, которое должно быть в объекте, приведите объект к типу соответствующего интерфейса событий.
 
  Например, у объектов <xref:Microsoft.Office.Interop.Excel.Application> есть событие <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> и свойство <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A>. Для обработки события <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> приведите <xref:Microsoft.Office.Interop.Excel.Application> к интерфейсу <xref:Microsoft.Office.Interop.Excel.AppEvents_Event>. В следующем примере кода показано, как сделать это в проекте уровня документа для Excel.
 
@@ -124,7 +126,7 @@ ms.locfileid: "87234696"
  Дополнительные сведения о интерфейсах событий в основных сборках взаимодействия Office см. в разделе [Общие сведения о классах и интерфейсах в основной сборке взаимодействий Office](/previous-versions/office/office-12//ms247299(v=office.12)).
 
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Не может ссылаться на классы PIA Office в проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
- В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], по умолчанию код, ссылающийся на класс, определенный в основной сборке взаимодействия Office, не компилируется. Классы в основных сборках взаимодействия используют соглашение об именовании *objectname*Class, например <xref:Microsoft.Office.Interop.Word.DocumentClass> и <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Так, следующий код из проекта надстройки VSTO для Word не будет компилироваться.
+ В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], по умолчанию код, ссылающийся на класс, определенный в основной сборке взаимодействия Office, не компилируется. Классы в основных сборках взаимодействия используют соглашение об именовании *objectname* Class, например <xref:Microsoft.Office.Interop.Word.DocumentClass> и <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Так, следующий код из проекта надстройки VSTO для Word не будет компилироваться.
 
 ```vb
 Dim document As Word.DocumentClass = Globals.ThisAddIn.Application.ActiveDocument
@@ -170,7 +172,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Несмотря на то, что вы импортировали пространство имен Word или Excel и имеете доступ ко всем классам внутри него, необходимо полностью определить все типы с помощью Word или Excel, чтобы удалить неоднозначность пространства имен.
 
-## <a name="build-projects"></a><a name="building"></a> Построение проектов
+## <a name="build-projects"></a><a name="building"></a> Сборка проектов
  При сборке проектов Office могут возникнуть следующие ошибки.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Невозможно построить проект уровня документа, основанный на документе с ограниченными разрешениями
@@ -197,7 +199,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  При создании проекта уровня документа для Excel или Word в сетевом расположении UNC необходимо добавить расположение документа в список надежных расположений в Excel или Word. В противном случае настройки не будут загружаться при запуске или отладке проекта в Visual Studio. Дополнительные сведения о надежных расположениях см. [в статье предоставление доверия документам](../vsto/granting-trust-to-documents.md).
 
 ### <a name="threads-are-not-stopped-correctly-after-debugging"></a>Потоки после отладки неправильно останавливаются
- Проекты Office в Visual Studio следуют соглашению об именовании потоков, которое позволяет отладчику правильно закрывать программу. При создании потоков в решении необходимо присвоить каждому потоку имя с префиксом "VSTA_" для правильной обработки этих потоков при остановке отладки. Например, можно задать `Name` свойство потока, ожидающего **VSTA_NetworkListener**сетевого события.
+ Проекты Office в Visual Studio следуют соглашению об именовании потоков, которое позволяет отладчику правильно закрывать программу. При создании потоков в решении необходимо присвоить каждому потоку имя с префиксом "VSTA_" для правильной обработки этих потоков при остановке отладки. Например, можно задать `Name` свойство потока, ожидающего **VSTA_NetworkListener** сетевого события.
 
 ### <a name="cannot-run-or-debug-any-office-solution-on-the-development-computer"></a>Не удается запустить или отладить любое решение Office на компьютере разработчика
  Если вам не удается запустить или разработать проект Office на компьютере разработки, может появиться следующее сообщение об ошибке:

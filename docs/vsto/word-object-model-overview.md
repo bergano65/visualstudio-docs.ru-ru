@@ -1,5 +1,7 @@
 ---
 title: Общие сведения об объектной модели Word
+description: Объектная модель Word состоит из классов и интерфейсов, предоставляемых в основной сборке взаимодействия для Word и определяемых в пространстве имен Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d8ca92fdebb3504331ec38937dd79786fdb8b42
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985390"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523495"
 ---
 # <a name="word-object-model-overview"></a>Общие сведения об объектной модели Word
   При разработке решений Word в Visual Studio выполняется взаимодействие с объектной моделью Word. Эта объектная модель состоит из классов и интерфейсов, которые предоставляются в основной сборке взаимодействия для Word и определены в пространстве имен <xref:Microsoft.Office.Interop.Word> .
@@ -129,7 +131,7 @@ ms.locfileid: "72985390"
  Все объекты и элементы в справочнике по объектной модели VBA соответствуют типам и участникам основной сборки взаимодействия Word. Например, объект документа в справочнике по объектной модели VBA соответствует <xref:Microsoft.Office.Interop.Word.Document> объекту в сборке PIA Word. Несмотря на то что в справочнике по объектной модели VBA содержатся примеры кода для большинства свойств, методов и событий, необходимо преобразовать код VBA в этом справочнике в код Visual Basic или Visual C#, если требуется использовать их в проекте Word, создаваемом с помощью Visual Studio.
 
 ## <a name="see-also"></a>См. также раздел
-- [Office - основные сборки взаимодействия](../vsto/office-primary-interop-assemblies.md)
+- [Основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md)
 - [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)
 - [Работа с документами](../vsto/working-with-documents.md)
 - [Работа с текстом в документах](../vsto/working-with-text-in-documents.md)

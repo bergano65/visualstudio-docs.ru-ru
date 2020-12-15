@@ -1,5 +1,7 @@
 ---
 title: Запуск решений в разных версиях Microsoft Office
+description: Узнайте, как можно запускать версии Microsoft Office решений, созданных с помощью Visual Studio 2010 и более поздних версий.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59fce25bd3e167275eb8b19fac828f202c463dda
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4d70e61e318f0f6afd0a58ed35f912b6a5f2cda8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583909"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523545"
 ---
 # <a name="run-solutions-in-different-versions-of-microsoft-office"></a>Запуск решений в разных версиях Microsoft Office
 
@@ -56,7 +58,7 @@ ms.locfileid: "91583909"
 
  3. Решения Office, которым требуется среда выполнения набора средств Visual Studio 2005 для Office, второй выпуск, несовместимы с 64-разрядной версией [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] и [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]. Для запуска этих решений в 64-разрядном выпуске [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] или [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] необходимо обновить проект до [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] или до проекта Visual Studio 2008, который ориентируется на выпуск 2007 системы Microsoft Office.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)
 - [Общие сведения о Инструменты Visual Studio для среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-overview.md)
 - [Как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)

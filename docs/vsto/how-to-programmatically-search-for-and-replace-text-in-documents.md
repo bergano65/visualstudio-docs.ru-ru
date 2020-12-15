@@ -1,5 +1,7 @@
 ---
 title: Поиск и замена текста в документах программным способом
+description: Узнайте, как можно использовать Visual Studio для программного поиска и замены текста в документе Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18a50d6d4ef52a0c50be0b72b4cab5706da4e2db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad77da419f70a8e513bf152ced41cccdd0474a8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547047"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524596"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Руководство. Программный поиск и замена текста в документах
   Объект <xref:Microsoft.Office.Interop.Word.Find> является членом объектов <xref:Microsoft.Office.Interop.Word.Selection> и <xref:Microsoft.Office.Interop.Word.Range>, каждый из которых можно использовать для поиска текста в документах Microsoft Office Word. Команда замены является расширением команды поиска.
@@ -97,7 +99,7 @@ ms.locfileid: "85547047"
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#71)]
 
 ## <a name="search-for-and-replace-text-in-documents"></a>Поиск и замена текста в документах
- Следующий код выполняет поиск в текущем выделенном фрагменте и заменяет все вхождения строки **Find Me** **найденной**строкой.
+ Следующий код выполняет поиск в текущем выделенном фрагменте и заменяет все вхождения строки **Find Me** **найденной** строкой.
 
 ### <a name="to-search-for-and-replace-text-in-documents"></a>Поиск и замена текста в документах
 

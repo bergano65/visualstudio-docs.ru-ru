@@ -1,5 +1,7 @@
 ---
 title: Руководство. программное использование встроенных диалоговых окон в Word
+description: Узнайте, как использовать Visual Studio для программного использования встроенных диалоговых окон в Microsoft Word.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6edba0b1fe9f06dbf7dba8dd1a3d01c4041ba8fe
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b2c1a748d38c2b649705fa1ad2de21553b710634
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585658"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523620"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Руководство. программное использование встроенных диалоговых окон в Word
   При работе с Microsoft Office Word иногда требуется отображать диалоговые окна для ввода данных пользователем. Несмотря на то, что можно создать собственный, может потребоваться использовать встроенные диалоговые окна Word, которые представлены в <xref:Microsoft.Office.Interop.Word.Dialogs> коллекции <xref:Microsoft.Office.Interop.Word.Application> объекта. Это позволяет получить доступ к более чем 200 встроенных диалоговых окон, представленных в виде перечислений.
@@ -46,7 +48,7 @@ ms.locfileid: "91585658"
 
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Руководство. программное использование диалоговых окон Word в скрытом режиме](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)
 - [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

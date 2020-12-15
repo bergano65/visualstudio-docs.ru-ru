@@ -1,5 +1,7 @@
 ---
 title: Руководство. Программный подсчет символов в документах
+description: Узнайте, как можно определить количество символов в документе с помощью свойства Count коллекции символов.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81ee7c3d798ae2c38ed80b261a6d87190daa59a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42e80cf1a466867fbb7394181efe28bcfe3631e4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546072"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523158"
 ---
 # <a name="how-to-programmatically-count-characters-in-documents"></a>Руководство. Программный подсчет символов в документах
   Первый знак в документ находится в позиции 0, которая представляет точку вставки. Позиция последнего знака равна общему количеству знаков в документе. Число знаков в документе можно определить с помощью свойства <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> коллекции <xref:Microsoft.Office.Interop.Word.Characters> .

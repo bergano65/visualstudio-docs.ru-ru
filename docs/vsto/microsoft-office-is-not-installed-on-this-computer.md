@@ -1,5 +1,7 @@
 ---
 title: Microsoft Office не установлен на этом компьютере
+description: Узнайте, что делать, если Visual Studio не удается найти приложение Microsoft Office, соответствующее типу проекта.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: error-reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16f312f9b9d15cbdacbb1fa3e0628903254aeaea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f09c7c454836c0eb957b9ecc459b75b7fba868db
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543147"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523502"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>Microsoft Office не установлен на компьютере
   Visual Studio не удалось обнаружить приложение Microsoft Office, которое соответствует данному типу проекта. Если вы разрабатываете проект надстройки VSTO, это означает, что вы не можете выполнять отладку или запуск проекта. Если вы пытаетесь создать проект на уровне документа, это означает, что вы не можете создать проект.

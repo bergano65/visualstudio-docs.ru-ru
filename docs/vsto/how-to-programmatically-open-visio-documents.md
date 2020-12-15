@@ -1,5 +1,7 @@
 ---
 title: Руководство. Программное открытие документов Visio
+description: Узнайте, как можно использовать Visual Studio для программного открытия документа Visio с помощью методов Open или Опенекс.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb21d201c282461cbe82005f56bed023bb022209
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec46f4fd7be136d16e15e9fa366b7a4cb921b62e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519994"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523847"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>Руководство. Программное открытие документов Visio
   Существует два метода открытия существующих Microsoft Office документов Visio: Open и Опенекс. Метод Опенекс идентичен методу Open, за исключением того, что он предоставляет аргументы, в которых вызывающий объект может указать способ открытия документа.

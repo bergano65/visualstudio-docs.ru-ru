@@ -1,5 +1,7 @@
 ---
 title: Руководство. Программное открытие книг
+description: Узнайте, как можно использовать Visual Studio для программного открытия книги Microsoft Excel или работы с существующей книгой.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10a849d8545565e450cd099b32a9e3e8f7f11b56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7de4072df177bd9a7c6ae23bf59e44e50d56e32
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537908"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523888"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Руководство. Программное открытие книг
   <xref:Microsoft.Office.Interop.Excel.Workbooks>Коллекция в Microsoft Office Excel дает возможность работать со всеми открытыми книгами и открывать книги.
