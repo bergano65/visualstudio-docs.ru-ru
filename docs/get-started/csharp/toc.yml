@@ -16,9 +16,9 @@
     - name: Создание первого приложения C#
       expanded: true
       items:
-        - name: "Часть\_1. Создание консольного приложения C#"
+        - name: Создание консольного приложения C#
           href: tutorial-console.md
-        - name: "Часть\_2. Расширение консольного приложения C#"
+        - name: Расширение консольного приложения C#
           href: tutorial-console-part-2.md
     - name: Создание веб-приложения
       href: tutorial-aspnet-core.md
