@@ -1,5 +1,7 @@
 ---
 title: Использование функций Office в Visual Studio
+description: Узнайте, как документ и связанное приложение из проекта уровня документа размещаются в Visual Studio, чтобы вы могли работать непосредственно с документом.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c47ed9639a33ecdea3451c63b729d959f6855e5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c93994b233990e2362c62445909adb66a0eeeb9b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982327"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528403"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>Использование функций Office в Visual Studio
   При создании проекта на уровне документа документ и связанное с ним приложение размещаются в Visual Studio, что позволяет проектировать и работать непосредственно с документом. Если в Visual Studio открыто приложение Microsoft Office, оно обычно работает правильно. Однако некоторые функциональные возможности приложения отличаются или недоступны.

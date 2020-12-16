@@ -1,5 +1,7 @@
 ---
 title: Общие сведения об объектной модели ленты
+description: Сведения о том, как Инструменты Visual Studio для среды выполнения Office предоставляет строго типизированную объектную модель, которую можно использовать для получения и задания свойств элементов управления ленты во время выполнения.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ca22704345fefb4944bda7dd9f71942fe8dfb50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71256016"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527989"
 ---
 # <a name="ribbon-object-model-overview"></a>Общие сведения об объектной модели ленты
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Предоставляет объектную модель со строгой типизацией, которую можно использовать для получения и задания свойств элементов управления ленты во время выполнения. Например, можно динамически заполнять элементы управления меню или отображать или скрывать элементы управления в зависимости от контекста. На ленту можно также добавить вкладки, группы и элементы управления, но только перед загрузкой ленты приложением Office. Дополнительные сведения см. в разделе [Задание свойств, которые становятся доступны только для чтения](#SettingReadOnlyProperties).
@@ -37,7 +39,7 @@ ms.locfileid: "71256016"
 |Событие|Описание|
 |-----------|-----------------|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Возникает, когда приложение Office загружает настройку ленты. <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>Обработчик событий автоматически добавляется в файл кода ленты. Этот обработчик событий используется для запуска пользовательского кода при загрузке ленты.|
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Позволяет кэшировать изображения в настройке ленты при загрузке ленты. При написании кода для кэширования образов ленты в этом обработчике событий можно получить небольшое увеличение производительности. Для получения дополнительной информации см. <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Позволяет кэшировать изображения в настройке ленты при загрузке ленты. При написании кода для кэширования образов ленты в этом обработчике событий можно получить небольшое увеличение производительности. Дополнительные сведения см. в разделе <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Возникает при закрытии экземпляра ленты.|
 
 ## <a name="ribbon-controls"></a><a name="RibbonControlClasses"></a> Элементы управления ленты
@@ -48,19 +50,19 @@ ms.locfileid: "71256016"
 |Имя элемента управления|Имя класса|
 |------------------|----------------|
 |**Box**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|
-|**Кнопка**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|
+|**Button**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|
-|**DropDown**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
+|**Крывающихся**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
 |**Поле**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
-|**Галерея**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
+|**Коллекции**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**Группа**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
 |**Label**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
 |**Меню**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
-|**Двоеточи**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
+|**Separator**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
-|**Вкладка**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
+|**TAB**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 
  <xref:Microsoft.Office.Tools.Ribbon>Пространство имен использует префикс "Ribbon" для этих типов, чтобы избежать конфликта имен с именами классов элементов управления в <xref:System.Windows.Forms> пространстве имен.
@@ -139,14 +141,14 @@ ms.locfileid: "71256016"
 |**Число**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ControlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
 |**диалоглаунчер**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
-|**Динамический**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
+|**динамически;**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
 |**Глобальный**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
 |**Группы**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 |**итемсизе**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
 |**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
-|**Имя**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|
-|**Положение**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
+|**имя**;|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|
+|**Позиция**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
 |**Количества**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**шовитемимаже**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
@@ -181,7 +183,7 @@ ms.locfileid: "71256016"
 
 |Параметр|Описание|
 |---------------|-----------------|
-|*отправитель*|Объект <xref:System.Object>, представляющий элемент управления, который вызвал событие.|
+|*отправителя*|Объект <xref:System.Object>, представляющий элемент управления, который вызвал событие.|
 |*e*|Объект <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs>, содержащий свойство <xref:Microsoft.Office.Core.IRibbonControl>. Этот элемент управления используется для доступа к любому свойству, недоступному в объектной модели ленты, предоставляемой [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|
 
 ## <a name="see-also"></a>См. также раздел

@@ -1,5 +1,7 @@
 ---
 title: Руководство. Программное создание пользовательского календаря
+description: Используйте этот пример для программного создания новой папки календаря с именем Персоналкалендар, а затем создайте новый элемент встречи и добавьте его в папку календаря.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aab9e14c7fa4b4c70b2e61eca382af2ce787148c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d0a76189e96a6551408abe49b6e08a26c91ffa8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546059"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527829"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>Руководство. Программное создание пользовательского календаря
   В этом примере создается новая папка календаря с именем **персоналкалендар**, а затем создается новый элемент встречи и добавляется в папку календаря. Затем в коде отображается папка календаря.

@@ -1,5 +1,7 @@
 ---
 title: Привязка к данным из службы в проекте надстройки VSTO
+description: Узнайте, как добавлять элементы управления в документ Microsoft Word, привязывать элементы управления к данным, полученным из службы содержимого MSDN, и реагировать на события во время выполнения.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b65308cfc0ba4dee33dd6b20d3fd4028e9ea22e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72381319"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527476"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Пошаговое руководство. привязка к данным из службы в проекте надстройки VSTO
   Вы можете привязывать данные к элементам управления ведущего приложения в проектах надстроек VSTO. В этом пошаговом руководстве демонстрируется добавление элементов управления в документ Microsoft Office Word, привязка элементов управления к данным, полученным из службы содержимого MSDN, и реагирование на события во время выполнения.
@@ -43,12 +45,12 @@ ms.locfileid: "72381319"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-## <a name="create-a-new-project"></a>Создание нового проекта
+## <a name="create-a-new-project"></a>Создание проекта
  Первым шагом является создание проекта надстройки Word VSTO.
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
 
-1. Создайте проект надстройки VSTO для Word с именем **Служба содержимого MTPS**в Visual Basic или C#.
+1. Создайте проект надстройки VSTO для Word с именем **Служба содержимого MTPS** в Visual Basic или C#.
 
      Дополнительные сведения см. в разделе [как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -61,7 +63,7 @@ ms.locfileid: "72381319"
 
 1. В меню **Данные** выберите команду **Добавить новый источник данных**.
 
-2. В **мастере настройки источника данных**щелкните элемент **Служба**и нажмите кнопку **Далее**.
+2. В **мастере настройки источника данных** щелкните элемент **Служба** и нажмите кнопку **Далее**.
 
 3. В поле **Адрес** введите следующий URL-адрес:
 
@@ -69,7 +71,7 @@ ms.locfileid: "72381319"
 
 4. Нажмите кнопку **Переход**.
 
-5. В поле **Пространство имен** введите **ContentService**и нажмите кнопку **ОК**.
+5. В поле **Пространство имен** введите **ContentService** и нажмите кнопку **ОК**.
 
 6. В диалоговом окне **Мастер добавления ссылок** нажмите кнопку **Готово**.
 

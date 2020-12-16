@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. Прокрутка записей базы данных на листе
+description: Узнайте, как с помощью конструктора можно отобразить одно поле из таблицы базы данных в листе Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8127a5f61e292fb777be4854796535bbe01226aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 536a3cca0337e8879e64cbc3ffc15b8411c201b6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545799"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528171"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Пошаговое руководство. Прокрутка записей базы данных на листе
   В следующей процедуре показано, как использовать конструктор для отображения одного поля из таблицы базы данных в Microsoft Office листе Excel с элементами управления, которые позволяют конечному пользователю прокручивать все записи.
@@ -41,7 +43,7 @@ ms.locfileid: "85545799"
 
 5. Перетащите <xref:Microsoft.Office.Tools.Excel.NamedRange> элемент управления на ячейку, в которой должны отображаться данные.
 
-6. На вкладке **Windows Forms** **панели элементов**добавьте <xref:System.Windows.Forms.BindingNavigator> элемент управления на лист и настройте элементы управления, которые хотите использовать. Дополнительные сведения см. в разделе [Общие сведения об элементе управления BindingNavigator &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
+6. На вкладке **Windows Forms** **панели элементов** добавьте <xref:System.Windows.Forms.BindingNavigator> элемент управления на лист и настройте элементы управления, которые хотите использовать. Дополнительные сведения см. в разделе [Общие сведения об элементе управления BindingNavigator &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
 ## <a name="see-also"></a>См. также раздел
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)

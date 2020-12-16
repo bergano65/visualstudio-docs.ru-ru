@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. вызов кода в надстройке VSTO из VBA
+description: Узнайте, как предоставить объект в надстройке VSTO другим Microsoft Officeным решениям, включая Visual Basic для приложений (VBA) и надстройки VSTO для COM.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fdbd2cf85086bac0aa7bb56c128a7ad6fe36f94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cbf03ef234ea6cf4eab790d96082d23b7ed5199
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650785"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527287"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Пошаговое руководство. вызов кода в надстройке VSTO из VBA
   В этом пошаговом руководстве показано, как предоставить объект в надстройке VSTO другим решениям Microsoft Office, включая Visual Basic для приложений (VBA) и надстроек VSTO COM.
@@ -54,7 +56,7 @@ ms.locfileid: "72650785"
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
 
-1. Создайте проект надстройки VSTO для Excel с именем **ExcelImportData**с помощью шаблона проекта надстройки VSTO для Excel. Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте проект надстройки VSTO для Excel с именем **ExcelImportData** с помощью шаблона проекта надстройки VSTO для Excel. Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] открывает файл кода **ThisAddIn.CS** или **ThisAddIn. vb** и добавляет проект **ExcelImportData** в **Обозреватель решений**.
 
@@ -67,7 +69,7 @@ ms.locfileid: "72650785"
 
 1. В меню **Проект** выберите пункт **Добавить класс**.
 
-2. В диалоговом окне **Добавить новый элемент** измените имя нового класса на **AddInUtilities**и нажмите кнопку **Добавить**.
+2. В диалоговом окне **Добавить новый элемент** измените имя нового класса на **AddInUtilities** и нажмите кнопку **Добавить**.
 
      В редакторе кода откроется файл **AddInUtilities.cs** или **AddInUtilities.vb** .
 
@@ -88,7 +90,7 @@ ms.locfileid: "72650785"
 
 ### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>Предоставление класса AddInUtilities другим решениям Office
 
-1. В **обозревателе решений**разверните **Excel**.
+1. В **обозревателе решений** разверните **Excel**.
 
 2. Щелкните правой кнопкой мыши **ThisAddIn.cs** или **ThisAddIn.vb**, а затем выберите пункт **Просмотреть код**.
 
@@ -97,7 +99,7 @@ ms.locfileid: "72650785"
      [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
      [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
 
-4. В меню **Сборка** выберите **Построить решение**.
+4. В меню **Сборка** выберите **Собрать решение**.
 
      Убедитесь, что сборка решения выполняется без ошибок.
 
@@ -141,7 +143,7 @@ ms.locfileid: "72650785"
 
 9. Выйдите из Excel.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
  Дополнительные сведения о программировании надстроек VSTO см. в следующих статьях:
 
 - Для автоматизации ведущего приложения и выполнения других задач в проектах надстроек VSTO используйте класс `ThisAddIn` . Дополнительные сведения см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md).

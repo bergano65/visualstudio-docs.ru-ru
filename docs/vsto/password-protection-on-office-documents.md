@@ -1,5 +1,7 @@
 ---
 title: Защита паролем в документах Office
+description: Узнайте, как задать пароль для документов Microsoft Word и книг Excel, чтобы они не могли быть открыты неавторизованными пользователями.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e3c9521389ce348a482f35ec95c9766edea49f5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6beaf85000438846e5d440e48c9722b9660f9bd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62977904"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528072"
 ---
 # <a name="password-protection-on-office-documents"></a>Защита паролем в документах Office
   Можно задать пароль для Microsoft Office документов Word и Microsoft Office книги Excel, чтобы их не могли открывать пользователи, не знающие пароль. Этот параметр называется **password on Open**.
@@ -30,7 +32,7 @@ ms.locfileid: "62977904"
 
  Можно создавать проекты на уровне документа, используя существующие документы и книги с включенным **паролем при открытии** . Поведение в Visual Studio отличается для документов Word и Excel с включенным **паролем при открытии** .
 
- Сведения о включении **пароля при открытии**см. в справке Word или Excel.
+ Сведения о включении **пароля при открытии** см. в справке Word или Excel.
 
 ## <a name="behavior-of-excel-and-word"></a>Поведение Excel и Word
  При каждом открытии книги Excel в Visual Studio с включенным **паролем при открытии** программа Excel запрашивает пароль. При сборке решения вам снова будет предложено ввести пароль, так как документ будет открыт во время сборки.

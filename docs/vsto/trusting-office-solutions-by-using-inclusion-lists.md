@@ -1,5 +1,7 @@
 ---
 title: Доверять решениям Office с помощью списков включения
+description: Узнайте, как списки включения позволяют пользователям предоставлять доверие решениям Office, подписанным с помощью сертификата, идентифицирующего издателя.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a4787831be31e2f91d668d4e3e7ca91496d7595a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bb5c111b4c75298ee55bc64dfbb2d0dd4b6c8b5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985550"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527471"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>Доверять решениям Office с помощью списков включения
   С помощью списков включений пользователи могут предоставлять доверие решениям Office, подписанным сертификатом, который идентифицирует издателя. Списки включений зависят от конкретного пользователя, и они могут использоваться для настроек уровня документа и надстроек VSTO.

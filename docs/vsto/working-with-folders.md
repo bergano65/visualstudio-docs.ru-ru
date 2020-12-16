@@ -1,5 +1,7 @@
 ---
 title: Работа с папками
+description: Узнайте, что класс Мапифолдер содержит методы и свойства, используемые для доступа к папкам, их создания и настройки.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 32dca296ef286e4c892791a1e71cfc765df80f19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ca2d6c690e094884313bc128291dd7295103d54
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815501"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526979"
 ---
 # <a name="work-with-folders"></a>Работа с папками
   Класс <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> содержит методы и свойства, которые вы используете для доступа к папкам, их создания и настройки.

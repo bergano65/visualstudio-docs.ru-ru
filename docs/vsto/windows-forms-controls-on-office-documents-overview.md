@@ -1,5 +1,7 @@
 ---
 title: Общие сведения об элементах управления Windows Forms в документах Office
+description: Узнайте, как Windows Forms элементы управления — это объекты, с которыми пользователи могут взаимодействовать для ввода данных и управления ими.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -27,12 +29,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a101f22bccb3624eccff1edcea502c9350991392
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0309ea22444062b117d3684e32b56960585aa184
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254917"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527058"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Общие сведения об элементах управления Windows Forms в документах Office
   Элементы управления Windows Forms — это объекты, с которыми пользователи могут взаимодействовать для ввода данных и работы с ними. В проектах для Microsoft Office Excel или Microsoft Office Word на уровне документа можно добавлять элементы управления Windows Forms в документ или книгу в проекте во время проектирования или добавить их программными средствами в среде выполнения. Эти элементы управления можно программными средствами добавить в любой открытый документ или лист во время выполнения в надстройке VSTO для Excel или Word.

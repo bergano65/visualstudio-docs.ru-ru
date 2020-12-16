@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. вызов кода из VBA в Visual Basicном проекте
+description: Узнайте, как вызвать метод в настройке уровня документа для Microsoft Word из кода Visual Basic для приложений (VBA) в документе.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad50ed0f55a148a05c0fedc6fe0ccb0dd5b890b9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6016dbf53413f6e55c88edfe930af677472bdaf5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298262"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527377"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Пошаговое руководство. вызов кода из VBA в Visual Basicном проекте
   В этом пошаговом руководстве показано, как вызвать метод в настройке на уровне документа для Microsoft Office Word из кода Visual Basic для приложений (VBA) в документе. Данная процедура состоит из трех основных этапов: добавление метода в класс ведущего элемента `ThisDocument` , представление метода коду VBA и вызов метода из кода VBA в документе.
@@ -110,7 +112,7 @@ ms.locfileid: "92298262"
 
      Откроется **Мастер проектов набора средств Visual Studio для Office** .
 
-8. Выберите **Скопировать существующий документ**и в поле **Полный путь к существующему документу** укажите расположение документа **DocumentWithVBA** , созданного ранее. Если вы используете собственный документ с поддержкой макросов, укажите его расположение.
+8. Выберите **Скопировать существующий документ** и в поле **Полный путь к существующему документу** укажите расположение документа **DocumentWithVBA** , созданного ранее. Если вы используете собственный документ с поддержкой макросов, укажите его расположение.
 
 9. Нажмите кнопку **Готово**.
 
@@ -152,7 +154,7 @@ ms.locfileid: "92298262"
 
 ### <a name="to-add-a-method-to-the-thisdocument-class"></a>Добавление метода в класс ThisDocument
 
-1. В **обозревателе решений**щелкните правой кнопкой мыши **ThisDocument.vb**и выберите пункт **Просмотреть код**.
+1. В **обозревателе решений** щелкните правой кнопкой мыши **ThisDocument.vb** и выберите пункт **Просмотреть код**.
 
      В редакторе кода открывается файл **ThisDocument.vb** .
 
@@ -160,14 +162,14 @@ ms.locfileid: "92298262"
 
      [!code-vb[Trin_CallingVBCustomizationFromVBA#1](../vsto/codesnippet/VisualBasic/CallingCodeFromVBA/ThisDocument.vb#1)]
 
-3. Создайте проект.
+3. Выполните построение проекта.
 
 ## <a name="expose-the-method-to-vba-code"></a>Предоставление метода коду VBA
  Для предоставления метода `CreateTable` коду VBA в документе установите для свойства **EnableVbaCallers** ведущего элемента `ThisDocument` значение **True**.
 
 ### <a name="to-expose-the-method-to-vba-code"></a>Представление метода коду VBA
 
-1. В **обозревателе решений**дважды щелкните файл **ThisDocument.vb**.
+1. В **обозревателе решений** дважды щелкните файл **ThisDocument.vb**.
 
      Файл **DocumentWithVBA** откроется в конструкторе.
 
@@ -175,7 +177,7 @@ ms.locfileid: "92298262"
 
 3. Появляется сообщение, в котором следует нажать кнопку **ОК** .
 
-4. Создайте проект.
+4. Выполните построение проекта.
 
 ## <a name="call-the-method-from-vba-code"></a>Вызов метода из кода VBA
  Теперь можно вызвать метод `CreateTable` из кода VBA в документе.
@@ -209,7 +211,7 @@ ms.locfileid: "92298262"
 
 7. Выйдите из Word без сохранения изменений.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
  Дополнительные сведения о вызове кода в решениях Office из VBA см. в следующих разделах:
 
 - Вызов кода в настройке Visual Basic из VBA. Этот процесс отличается от процесса Visual Basic. Дополнительные сведения см. [в разделе Пошаговое руководство. вызов кода из VBA в проекте Visual C&#35;](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).

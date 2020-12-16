@@ -1,5 +1,7 @@
 ---
 title: Настройка пользовательского интерфейса Office
+description: Узнайте, как можно настроить пользовательский интерфейс Microsoft Office приложений с помощью средств разработчика Office в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 257f87aedf5d4337e81fb6f251cc8df07f4e577c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 289b055ab84dd9c2c440b55f3d64fe1fe39b8e1b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88041068"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527581"
 ---
 # <a name="office-ui-customization"></a>Настройка пользовательского интерфейса Office
   Для настройки пользовательского интерфейса приложений Microsoft Office можно использовать Office Developer Tools в Visual Studio. В этой статье описываются возможности пользовательского интерфейса, которые можно настраивать:
@@ -43,7 +45,7 @@ ms.locfileid: "88041068"
 ## <a name="comparison-of-ui-features"></a><a name="Comparison"></a> Сравнение функций пользовательского интерфейса
  В следующей таблице приводится сравнение основных функций пользовательского интерфейса, которые можно настраивать в проектах Microsoft Office.
 
-|Компонент|Поддерживаемые типы проектов|Поддерживаемые приложения Microsoft Office|
+|Функция|Поддерживаемые типы проектов|Поддерживаемые приложения Microsoft Office|
 |-------------|-----------------------------|---------------------------------------------|
 |Панель "Действия"|Настройки уровня документа.|Excel<br /><br /> Word|
 |Настраиваемые области задач|Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|

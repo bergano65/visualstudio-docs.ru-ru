@@ -1,5 +1,7 @@
 ---
 title: Как изменить размер элементов управления ListObject
+description: Узнайте, как можно использовать Visual Studio для программного изменения размера элементов управления ListObject в книге Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68a9841d8471189538959a311bf9349199d55f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c401f3938679c72cee3a07c4bff79a5777fcbc1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545838"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528538"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Как изменить размер элементов управления ListObject
   Размер элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> задается при добавлении его в книгу Microsoft Office Excel; однако позднее может потребоваться изменить его размер. Например, в список из двух столбцов может потребоваться добавить третий столбец.
@@ -42,7 +44,7 @@ ms.locfileid: "85545838"
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Изменение размеров списка в диалоговом окне изменения размера списка
 
-1. Щелкните в любом месте  <xref:Microsoft.Office.Tools.Excel.ListObject> таблицы. Откроется вкладка Конструктор **инструментов таблиц**  >  **Design** на ленте.
+1. Щелкните в любом месте  <xref:Microsoft.Office.Tools.Excel.ListObject> таблицы. Откроется вкладка Конструктор **инструментов таблиц**  >   на ленте.
 
 2. В разделе Свойства щелкните **изменить размер таблицы**.
 
@@ -88,7 +90,7 @@ ms.locfileid: "85545838"
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 - [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)
-- [ListObject - элемент управления](../vsto/listobject-control.md)
+- [Элемент управления ListObject](../vsto/listobject-control.md)
 - [Как добавить элементы управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 - [Как изменить размер элементов управления Bookmark](../vsto/how-to-resize-bookmark-controls.md)
 - [Как изменить размер элементов управления NamedRange](../vsto/how-to-resize-namedrange-controls.md)

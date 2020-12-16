@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. сложная привязка данных в проекте надстройки VSTO
+description: Узнайте, как добавлять элементы управления в лист Microsoft Excel и привязывать элементы управления к данным во время выполнения.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0d65bd96a3860070addc6dc05a791d71959f5ea
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 573f15001dcbd678c576512349c36ae9594e10e8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585045"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527092"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Пошаговое руководство. сложная привязка данных в проекте надстройки VSTO
   В проектах надстроек VSTO можно привязывать данные к элементам управления ведущего приложения и элементам управления Windows Forms. В этом пошаговом руководстве демонстрируется добавление элементов управления на лист Microsoft Office Excel и привязка элементов управления к данным во время выполнения.
@@ -48,12 +50,12 @@ ms.locfileid: "91585045"
 
   - Сведения о присоединении базы данных с помощью командной строки см. в разделе [как присоединить файл базы данных к SQL Server Express](/previous-versions/sql/).
 
-## <a name="create-a-new-project"></a>Создание нового проекта
+## <a name="create-a-new-project"></a>Создание проекта
  Первым шагом является создание проекта надстройки VSTO для Excel.
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
 
-1. Создайте проект надстройки VSTO для Excel с именем **Заполнение листов из базы данных**в Visual Basic или C#.
+1. Создайте проект надстройки VSTO для Excel с именем **Заполнение листов из базы данных** в Visual Basic или C#.
 
      Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -64,15 +66,15 @@ ms.locfileid: "91585045"
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Добавление типизированного набора данных в проект
 
-1. Если окно **Источники данных** не отображается, отобразите его с помощью команды **Просмотреть**  >  **другие**  >  **Источники данных**Windows в строке меню.
+1. Если окно **Источники данных** не отображается, отобразите его с помощью команды **Просмотреть**  >  **другие**  >  **Источники данных** Windows в строке меню.
 
 2. Выберите команду **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
-3. Щелкните **База данных**и нажмите кнопку **Далее**.
+3. Щелкните **База данных** и нажмите кнопку **Далее**.
 
 4. Если подключение к базе данных `AdventureWorksLT` существует, выберите его и нажмите кнопку **Далее**.
 
-    В противном случае нажмите **Создать подключение**и в диалоговом окне **Добавление подключения** создайте новое подключение. Дополнительные сведения см. в разделе [Добавление новых соединений](../data-tools/add-new-connections.md).
+    В противном случае нажмите **Создать подключение** и в диалоговом окне **Добавление подключения** создайте новое подключение. Дополнительные сведения см. в разделе [Добавление новых соединений](../data-tools/add-new-connections.md).
 
 5. На странице **Сохранение подключения в файле конфигурации приложения** нажмите кнопку **Далее**.
 
@@ -129,7 +131,7 @@ ms.locfileid: "91585045"
 
      Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с именем `addressListObject` создается на листе. Одновременно в проект добавляется объект набора данных `adventureWorksLTDataSet` и объект <xref:System.Windows.Forms.BindingSource> с именем `addressBindingSource` . Объект <xref:Microsoft.Office.Tools.Excel.ListObject> привязан к объекту <xref:System.Windows.Forms.BindingSource>, который в свою очередь привязан к объекту набора данных.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Данные в решениях Office](../vsto/data-in-office-solutions.md)
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)

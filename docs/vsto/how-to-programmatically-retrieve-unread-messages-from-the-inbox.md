@@ -1,5 +1,7 @@
 ---
 title: Программно получать непрочитанные сообщения из папки "Входящие"
+description: Узнайте, как можно использовать Visual Studio для программного получения непрочитанных сообщений из папки "Входящие" в Microsoft Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc913379546c80eef70671ea0ecbd441001e6ab5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6dae629c008c04f7ee9fb66b9dbc5f8f31e53d4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537609"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528267"
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Руководство. Программное получение непрочитанных сообщений из папки "Входящие"
   В этом примере извлекаются непрочитанные сообщения электронной почты из **папки "Входящие"** Outlook и отображается количество элементов.

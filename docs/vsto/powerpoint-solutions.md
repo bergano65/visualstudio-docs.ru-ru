@@ -1,5 +1,7 @@
 ---
 title: Решения PowerPoint
+description: Узнайте, что Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания надстроек VSTO для Microsoft PowerPoint.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c41b2942b53c97222abf7308b6706a7cdc734df1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e297b0d269d5ff0bff0deeadd6bd346de00a324
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985657"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528040"
 ---
 # <a name="powerpoint-solutions"></a>Решения PowerPoint
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания надстроек VSTO для Microsoft Office PowerPoint. Вы можете использовать надстройки VSTO для автоматизации PowerPoint, расширения и настройки пользовательского интерфейса PowerPoint.
@@ -78,6 +80,6 @@ ms.locfileid: "72985657"
 - [Как создавать проекты Office в Visual Studio](how-to-create-office-projects-in-visual-studio.md)
 - [Программирование надстроек VSTO](programming-vsto-add-ins.md)
 - [Написание кода в решениях Office](writing-code-in-office-solutions.md)
-- [Office - основные сборки взаимодействия](office-primary-interop-assemblies.md)
+- [Основные сборки взаимодействия Office](office-primary-interop-assemblies.md)
 - [Настройка пользовательского интерфейса Office](office-ui-customization.md)
 - [PowerPoint 2010 в разработке решений для Office](/previous-versions/office/developer/office-2010/ff604967(v=office.14))

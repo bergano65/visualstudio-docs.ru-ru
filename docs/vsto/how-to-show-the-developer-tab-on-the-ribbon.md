@@ -1,5 +1,7 @@
 ---
 title: Как отобразить вкладку "Разработчик" на ленте
+description: Узнайте, как можно использовать Visual Studio для программного отображения вкладки Разработчик на ленте в документе Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41070c92d0c27c1ee8fbf480f7461c22421b8fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dc38b941d27cab0653b923ddd03ba8b78eeab58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545851"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528141"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Как отобразить вкладку "Разработчик" на ленте
   Для доступа к вкладке **разработчик** на ленте приложения Office необходимо настроить для него отображение вкладки, так как она не отображается по умолчанию. Например, необходимо отобразить эту вкладку, если требуется добавить <xref:Microsoft.Office.Tools.Word.GroupContentControl> в настройку уровня документа для Word.
@@ -52,7 +54,7 @@ ms.locfileid: "85545851"
 
      ![Кнопка "Параметры" в Outlook 2013 Preview](../vsto/media/vsto-office2013-optionsbutton.png "Кнопка "Параметры" в Outlook 2013 Preview")
 
-3. В диалоговом окне**Параметры** _applicationName_нажмите кнопку **Настройка ленты** .
+3. В диалоговом окне **Параметры** _applicationName_ нажмите кнопку **Настройка ленты** .
 
      На следующем рисунке показано диалоговое окно **Параметры** и кнопка **Настройка ленты** в Excel 2010. Расположение этой кнопки аналогично и во всех остальных приложениях, перечисленных в приведенном выше подразделе "Применимо к".
 

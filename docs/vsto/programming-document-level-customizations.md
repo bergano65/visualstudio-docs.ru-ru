@@ -1,5 +1,7 @@
 ---
 title: Программы настройки на уровне документа
+description: Узнайте, как расширить Microsoft Word или Excel с помощью настройки уровня документа, чтобы можно было выполнять различные задачи.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -27,12 +29,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d1908f72bce01956bbb2eeb62bb9bbc30a64b0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58dd8e1803fc0bd06f5c2295b29e9586e1f8eb68
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254023"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527520"
 ---
 # <a name="program-document-level-customizations"></a>Программы настройки на уровне документа
   При расширении приложения Microsoft Office Word или Microsoft Office Excel с помощью настройки уровня документа вы можете выполнять следующие задачи.

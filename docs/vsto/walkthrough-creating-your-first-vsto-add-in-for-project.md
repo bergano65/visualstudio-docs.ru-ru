@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. Создание первой надстройки VSTO для Project
+description: Создайте надстройку уровня приложения для Microsoft Project. Эта функция доступна для самого приложения, независимо от того, какие проекты открыты.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a84d295a47d3391f27e7101ad815dca0c910aa6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f4774b8f5ba55d54e05e3a9ef18f8ea13fd48fc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981412"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527893"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Пошаговое руководство. Создание первой надстройки VSTO для Project
   В этом пошаговом руководстве показано, как создать надстройку VSTO для проекта Microsoft Office. Функции, создаваемые в таком решении, доступны для самого приложения независимо от того, какие проекты открыты. Дополнительные сведения см. в статье [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -116,7 +118,7 @@ ms.locfileid: "62981412"
 
 1. В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
  Теперь, когда вы создали базовую надстройку VSTO для Project, ознакомьтесь с более подробными сведениями о разработке надстроек VSTO в следующих разделах.
 
 - Общие задачи программирования, которые можно выполнять в надстройках VSTO для Project: [программирование VSTO-надстроек](../vsto/programming-vsto-add-ins.md).

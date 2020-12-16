@@ -1,5 +1,7 @@
 ---
 title: Настройка сведений о конфигурации для решения Office
+description: Узнайте, как можно использовать файлы конфигурации для настройки параметров, относящихся к Microsoft Officeным решениям.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e47ad00e3f9e90913784196894d514a755699864
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3cff5e6f559245e361eda0db6623312917891969
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91581043"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528153"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Как настроить сведения о конфигурации для решения Office
   Файлы конфигурации можно использовать для настройки параметров, относящихся к решениям Office. Можно задать такие параметры, как политика привязки сборок, объекты удаленного взаимодействия, отладка и параметры трассировки.
@@ -44,7 +46,7 @@ ms.locfileid: "91581043"
 
    Нет особых рекомендаций по использованию файлов конфигурации с проектами Office.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Схема файла конфигурации для .NET Framework](/dotnet/framework/configure-apps/file-schema/index)
 - [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)
 - [Развертывание решения Office](../vsto/deploying-an-office-solution.md)

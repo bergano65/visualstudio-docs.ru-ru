@@ -1,5 +1,7 @@
 ---
 title: Безопасное развертывание
+description: Узнайте, как необходимо предоставить свидетельство, на основе которого должно быть основано решение о доверии, подписывая решение с помощью сертификата или используя ключ запроса доверия ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c838eddea5b3118c28fb33411a8c58a19d7b4a2d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b47a18aa3e791d446abc2a57b6aad1f139924ebf
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810958"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528466"
 ---
 # <a name="secure-deployment"></a>Безопасное развертывание
   При создании решения Office компьютер разработчика обновляется автоматически, чтобы разрешить выполнение кода в проекте. Однако при развертывании решения необходимо предоставить свидетельство, на основе которого будет основано решение о доверии, подписывая решение с помощью сертификата или используя [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] ключ запроса доверия. Дополнительные сведения см. [в статье предоставление доверия для решений Office](../vsto/granting-trust-to-office-solutions.md).
@@ -32,9 +34,9 @@ ms.locfileid: "90810958"
 ## <a name="prevent-office-solutions-from-running-code"></a>Запретить выполнение кода в решениях Office
  Администраторы могут использовать реестр для предотвращения запуска всех решений Office на компьютере. При открытии решения Office с расширениями управляемого кода Инструменты Visual Studio для среды выполнения Office проверяет, существует ли запись с именем `Disabled` в одном из следующих разделов реестра на компьютере:
 
-- **HKEY_CURRENT_USER \Софтваре\микрософт\всто**
+- **HKEY_CURRENT_USER\Software\Microsoft\VSTO**
 
-- **HKEY_LOCAL_MACHINE \Софтваре\микрософт\всто**
+- **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**
 
   Чтобы предотвратить выполнение кода в решениях Office, создайте `Disabled` запись в одном или обоих разделах реестра и укажите один из следующих типов данных и значений для `Disabled` :
 

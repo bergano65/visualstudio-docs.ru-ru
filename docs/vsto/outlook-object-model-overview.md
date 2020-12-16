@@ -1,5 +1,7 @@
 ---
 title: Общие сведения об объектной модели Outlook
+description: Узнайте, как можно взаимодействовать с объектами, предоставляемыми объектной моделью Outlook, для разработки надстроек VSTO для Microsoft Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6545815a0a24a3ba8579298151194fdd81edee77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83ada85ba346e83e5bc5ebc01e91b11be0e844e1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985682"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528048"
 ---
 # <a name="outlook-object-model-overview"></a>Общие сведения об объектной модели Outlook
   Для разработки надстроек VSTO для Microsoft Office Outlook вы можете взаимодействовать с объектами, которые предоставляются объектной моделью Outlook. Объектная модель Outlook предоставляет классы и интерфейсы, которые представляют элементы пользовательского интерфейса. Например, объект <xref:Microsoft.Office.Interop.Outlook.Application> представляет все приложение, объект <xref:Microsoft.Office.Interop.Outlook.Folder> — папку, содержащую электронные сообщения или другие элементы, а объект <xref:Microsoft.Office.Interop.Outlook.MailItem> — электронное сообщение.
@@ -90,14 +92,14 @@ ms.locfileid: "72985682"
 ### <a name="folder-object"></a>Объект Folder
  Объект <xref:Microsoft.Office.Interop.Outlook.Folder> представляет папку, содержащую электронные сообщения, контакты, задачи и другие элементы. Outlook предоставляет 16 объектов <xref:Microsoft.Office.Interop.Outlook.Folder> по умолчанию.
 
- Объекты <xref:Microsoft.Office.Interop.Outlook.Folder> по умолчанию определяются значениями перечисления <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> . Например, примененная к объекту директива
+ Объекты <xref:Microsoft.Office.Interop.Outlook.Folder> по умолчанию определяются значениями перечисления <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> . Например,
 
  Microsoft. Office. Interop. Outlook. Олдефаултфолдерс. Олфолдеринбокс соответствует папке **"Входящие"** в Outlook.
 
  Пример, демонстрирующий доступ к по умолчанию <xref:Microsoft.Office.Interop.Outlook.Folder> и создание нового <xref:Microsoft.Office.Interop.Outlook.Folder> , см. [в разделе как программно создавать пользовательские элементы папки](../vsto/how-to-programmatically-create-custom-folder-items.md).
 
 ### <a name="mailitem-object"></a>Объект MailItem
- Объект <xref:Microsoft.Office.Interop.Outlook.MailItem> представляет электронное сообщение. Объекты<xref:Microsoft.Office.Interop.Outlook.MailItem> обычно находятся в папках, таких как **Входящие**, **Отправленные**и **Исходящие**. <xref:Microsoft.Office.Interop.Outlook.MailItem> предоставляет свойства и методы, которые можно использовать для создания и отправки электронных сообщений.
+ Объект <xref:Microsoft.Office.Interop.Outlook.MailItem> представляет электронное сообщение. Объекты<xref:Microsoft.Office.Interop.Outlook.MailItem> обычно находятся в папках, таких как **Входящие**, **Отправленные** и **Исходящие**. <xref:Microsoft.Office.Interop.Outlook.MailItem> предоставляет свойства и методы, которые можно использовать для создания и отправки электронных сообщений.
 
  Пример создания сообщения электронной почты см. [в разделе руководство. Программное создание элемента электронной почты](../vsto/how-to-programmatically-create-an-e-mail-item.md).
 

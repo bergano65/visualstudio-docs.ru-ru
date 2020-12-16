@@ -1,5 +1,7 @@
 ---
 title: Решения проекта
+description: Узнайте, как можно использовать надстройки VSTO для автоматизации проектов, расширения функций проекта или настройки пользовательского интерфейса проекта.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 84dfe7cf86df2139b06a320d1c6441665a08a1b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c44e1208daaef11cb7fd9bd22e3e3ae574ca610d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985641"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527503"
 ---
 # <a name="project-solutions"></a>Решения проекта
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] предоставляет шаблоны проектов, которые можно использовать для создания надстроек VSTO для Microsoft Office Project. Надстройки VSTO можно использовать для автоматизации Project, расширения функциональных возможностей этого продукта и настройки его пользовательского интерфейса.
@@ -70,6 +72,6 @@ ms.locfileid: "72985641"
 - [Как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
 - [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)
-- [Office - основные сборки взаимодействия](../vsto/office-primary-interop-assemblies.md)
+- [Основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md)
 - [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)
 - [Project 2010 и Project Server 2010 при разработке решений для Office](/previous-versions/office/developer/office-2010/ee758031(v=office.14))

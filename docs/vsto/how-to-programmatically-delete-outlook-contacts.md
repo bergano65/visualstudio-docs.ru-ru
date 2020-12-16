@@ -1,5 +1,7 @@
 ---
 title: Руководство. Программное удаление контактов Outlook
+description: Сведения о программном удалении контактов в Microsoft Outlook. В этом примере удаляется один контакт.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4412c86652d08fb1c415b4753bfb18a903a0b0d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1398a631db77704a89a06b5e66ef4cb370280e4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545942"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528297"
 ---
 # <a name="how-to-programmatically-delete-outlook-contacts"></a>Руководство. Программное удаление контактов Outlook
   В этом примере удаляется контакт. В примере предполагается, что в папке **Контакты** есть контакт с именем Armando Pinto.

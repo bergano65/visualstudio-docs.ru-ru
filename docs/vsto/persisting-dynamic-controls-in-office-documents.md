@@ -1,5 +1,7 @@
 ---
 title: Сохранение динамических элементов управления в документах Office
+description: Узнайте, как добавить в решение код для повторного создания постоянных динамических элементов управления, когда пользователь повторно открывает закрытый документ.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d48dfab18ec2165753ac19330f7fbe18c923da9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6efb00571a9f594de6045860621fb840076e8f5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71256008"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527533"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Сохранение динамических элементов управления в документах Office
 
@@ -78,7 +80,7 @@ ms.locfileid: "71256008"
 
 1. Сохранять информацию о размере, расположении и состоянии элементов управления при сохранении или закрытии документа. В настройке на уровне документа данные можно сохранить в кэше данных в документе. В надстройке VSTO данные можно сохранить в пользовательской XML-части документа.
 
-2. Повторно создавать элементы управления в событии, которое возникает при открытии документа. В проектах уровня документа это можно сделать в `Sheet` *n* `_Startup` `ThisDocument_Startup` обработчиках событий n или. В проекте надстройки VSTO это можно сделать в обработчиках событий <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> или <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
+2. Повторно создавать элементы управления в событии, которое возникает при открытии документа. В проектах уровня документа это можно сделать в `Sheet`  `_Startup` `ThisDocument_Startup` обработчиках событий n или. В проекте надстройки VSTO это можно сделать в обработчиках событий <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> или <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
 
 ### <a name="remove-activex-wrappers-in-an-add-in"></a><a name="removingActiveX"></a> Удаление оболочек ActiveX в надстройке
 

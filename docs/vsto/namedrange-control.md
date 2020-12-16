@@ -1,5 +1,7 @@
 ---
 title: NamedRange - элемент управления
+description: Сведения о том, как элемент управления NamedRange является диапазоном с уникальным именем, предоставляет события и может быть привязан к данным.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2b5b5d246e1033148bc199da6e7d2bdfb7aa9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1881afb0dd718eec3815ab9de3becbeaf070f5d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254718"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528092"
 ---
 # <a name="namedrange-control"></a>NamedRange - элемент управления
   Элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> представляет собой диапазон с уникальным именем, который предоставляет события и может быть привязан к данным. Дополнительные сведения см. в разделе [Общие сведения об объектной модели Excel](../vsto/excel-object-model-overview.md).
@@ -50,7 +52,7 @@ ms.locfileid: "71254718"
  Любое форматирование, которое можно применить к <xref:Microsoft.Office.Interop.Excel.Range> , также можно применить и к элементу управления <xref:Microsoft.Office.Tools.Excel.NamedRange> . Сюда входят границы, шрифты, форматы чисел и стили.
 
 ## <a name="rename-the-control"></a>Переименование элемента управления
- При добавлении в лист элемента управления <xref:Microsoft.Office.Tools.Excel.NamedRange> из **панели элементов**Visual Studio автоматически создает имя для этого элемента управления. Это имя можно изменить в окне **Свойства** .
+ При добавлении в лист элемента управления <xref:Microsoft.Office.Tools.Excel.NamedRange> из **панели элементов** Visual Studio автоматически создает имя для этого элемента управления. Это имя можно изменить в окне **Свойства** .
 
 ## <a name="events"></a>События
  Для элемента управления <xref:Microsoft.Office.Tools.Excel.NamedRange> доступны следующие события:

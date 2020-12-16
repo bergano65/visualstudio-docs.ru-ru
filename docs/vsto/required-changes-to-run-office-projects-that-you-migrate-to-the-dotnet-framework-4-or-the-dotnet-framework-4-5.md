@@ -1,5 +1,7 @@
 ---
 title: Изменения, необходимые для переноса проектов Office на платформу .NET 4,5
+description: Изучите изменения, которые необходимо внести в проект, если Целевая платформа изменится на .NET Framework 4 или более поздней версии из более ранних версий .NET Framework.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40db3cd629f2c3a2ced37a781dea3244a3f19957
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e92a7fc81f77244664be7285cc6fd414dc4409be
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584468"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527499"
 ---
 # <a name="changes-required-for-office-projects-migrated-to-net-45"></a>Изменения, необходимые для переноса проектов Office на платформу .NET 4,5
 
@@ -71,5 +73,5 @@ ms.locfileid: "91584468"
 ## <a name="reinstall-solutions-on-end-user-computers"></a>Переустановка решений на компьютерах конечных пользователей
  Если вы используете технологию ClickOnce для развертывания решения Office, которое ориентируется на платформу .NET Framework 3.5, а затем переориентируете проект на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, необходимо удалить решение, а затем переустановить после его повторной публикации. При повторной публикации перенацеленного решения и обновлении решения на компьютерах конечных пользователей <xref:System.Runtime.InteropServices.COMException> при запуске обновленного решения пользователи получат сообщение.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)

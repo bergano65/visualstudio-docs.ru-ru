@@ -1,5 +1,7 @@
 ---
 title: Безопасные решения Office
+description: Узнайте, как модель безопасности для решений Office включает в себя несколько технологий, включая Инструменты Visual Studio для среды выполнения Office и ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bedb49a6d5d17e3c9f79a652183c2b4cd748ff6c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978612"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528479"
 ---
 # <a name="secure-office-solutions"></a>Безопасные решения Office
   Модель безопасности для решений Office включает в себя несколько технологий: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] , центр управления безопасностью в Microsoft Office и зону ограниченных узлов Internet Explorer. Работа различных возможностей безопасности описана в следующих разделах.
@@ -62,7 +64,7 @@ ms.locfileid: "62978612"
 ### <a name="document-level-solutions"></a>Решения на уровне документа
  При разработке следующих типов проектов необходимо добавить полный путь к документу в список надежных расположений в приложении Microsoft Office.
 
-- Решения уровня документа, наявляющиеся в общей сетевой папке, например * \\ \servername\sharename*.
+- Решения уровня документа, наявляющиеся в общей сетевой папке, например *\\ \servername\sharename*.
 
 - Решения на уровне документа для Word, которые используют файлы *. doc* или *. docm* .
 
@@ -71,7 +73,7 @@ ms.locfileid: "62978612"
 ### <a name="temporary-certificates"></a>Временные сертификаты
  Если сертификат для подписи еще не существует, Visual Studio создает временный сертификат. Этот временный сертификат следует использовать только во время разработки, а для развертывания необходимо приобрести официальный сертификат.
 
- Временный сертификат создается после первой сборки проекта Office. При следующем нажатии клавиши **F5**проект будет перестроен, так как проект будет помечен как измененный при добавлении сертификата.
+ Временный сертификат создается после первой сборки проекта Office. При следующем нажатии клавиши **F5** проект будет перестроен, так как проект будет помечен как измененный при добавлении сертификата.
 
  Через некоторое время может накопиться большое количество временных сертификатов, поэтому их нужно периодически удалять.
 
@@ -110,5 +112,5 @@ ms.locfileid: "62978612"
 - [Устранение неполадок в системе безопасности решений Office](../vsto/troubleshooting-office-solution-security.md)
 - [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)
 - [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)
-- [Справочник по ClickOnce](../deployment/clickonce-reference.md)
+- [Справочные сведения ClickOnce](../deployment/clickonce-reference.md)
 - [Развертывание решения Office](../vsto/deploying-an-office-solution.md)

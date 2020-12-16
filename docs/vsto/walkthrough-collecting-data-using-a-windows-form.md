@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. получение данных с помощью формы Windows
+description: Откройте форму Windows Forms из настроек уровня документа для Microsoft Excel, собирайте сведения от пользователя и запишите их в ячейку листа.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 893418ca5eb82e9466ea13a12088b38fd496e695
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58d6f58f732d4a52aade6ff3678842900f1c29cd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842520"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527166"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Пошаговое руководство. получение данных с помощью формы Windows
   В этом пошаговом руководстве показано, как открывается форма Windows Forms из настройки уровня документа для Microsoft Office Excel, выполняется сбор сведений от пользователя и запись этих сведений в ячейку листа.
@@ -39,12 +41,12 @@ ms.locfileid: "90842520"
 > [!NOTE]
 > Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="create-a-new-project"></a>Создание нового проекта
+## <a name="create-a-new-project"></a>Создание проекта
  Первым шагом является создание проекта книги Excel.
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
 
-1. Создайте проект книги Excel с именем **WinFormInput**и выберите в мастере **Создать новый документ** . Дополнительные сведения см. в разделе [как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте проект книги Excel с именем **WinFormInput** и выберите в мастере **Создать новый документ** . Дополнительные сведения см. в разделе [как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio открывает новую книгу Excel в конструкторе и добавляет проект **WinFormInput** в **обозреватель решений**.
 
@@ -107,7 +109,7 @@ ms.locfileid: "90842520"
 
 ### <a name="to-send-information-to-the-worksheet"></a>Отправка информации в лист
 
-1. Щелкните правой кнопкой мыши В **GetInputString** в **обозревателе решений**и выберите **Конструктор представлений**.
+1. Щелкните правой кнопкой мыши В **GetInputString** в **обозревателе решений** и выберите **Конструктор представлений**.
 
 2. Дважды щелкните кнопку, чтобы открыть файл кода с добавленным обработчиком событий <xref:System.Windows.Forms.Control.Click> кнопки.
 
@@ -129,14 +131,14 @@ ms.locfileid: "90842520"
 
 4. Убедитесь, что сообщение **Hello World** появилось в ячейке **A1** листа.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
  В этом пошаговом руководстве описываются основные принципы отображения формы Windows Forms и передачи данных в лист. Вам может потребоваться выполнить другие задачи, приведенные ниже.
 
 - Использование элементов управления Windows Forms в книге Excel или документе Word. Дополнительные сведения см. [в разделе Windows Forms элементы управления в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
 - Изменение пользовательского интерфейса Microsoft Office приложения из настройки на уровне документа или надстройки VSTO. Дополнительные сведения см. в разделе [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Разработка решений Office](../vsto/developing-office-solutions.md)
 - [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)

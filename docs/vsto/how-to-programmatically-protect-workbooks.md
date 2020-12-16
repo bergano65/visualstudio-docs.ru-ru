@@ -1,5 +1,7 @@
 ---
 title: Руководство. Программная защита книг
+description: Узнайте, как защитить книгу Microsoft Excel, чтобы пользователи не могли добавлять или удалять листы, а также программно снимать защиту книги.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee7444c63c2d774e9b22ea612049f09429729c79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b35b0fc234c3015275650ddb51e8ea3011c97a6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537635"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528288"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Руководство. Программная защита книг
   Можно защитить книгу Excel Microsoft Office, чтобы пользователи не могли добавлять или удалять листы, а также программно снимать защиту книги. При необходимости можно указать пароль, указать, должна ли быть защищена структура (так что пользователи не смогут перемещать листы), и указать, должна ли быть защищена Windows книги.

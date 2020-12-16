@@ -1,5 +1,7 @@
 ---
 title: Работа с таблицами
+description: Узнайте о пошаговых процедурах и примерах кода по использованию объектной модели Microsoft Word для работы с таблицами в проектах Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1102a996f06634396f8bec3a02400fa952810e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27fdc776589879af6757967b18a7cac47f9f66df
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815356"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526855"
 ---
 # <a name="work-with-tables"></a>Работа с таблицами
   В подразделах этого раздела приведены пошаговые инструкции и примеры кода для работы с таблицами в проектах Office с помощью объектной модели Microsoft Office Word. В некоторых случаях способы выполнения этих задач в надстройках VSTO отличаются от способов, которые применяются в настройках на уровне документа.
