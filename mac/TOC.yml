@@ -158,7 +158,7 @@
           href: azure-workload.md
         - name: Введение в функции Azure
           href: azure-functions.md
-        - name: Руководство по Функции Azure
+        - name: Учебник. Проверка
           href: azure-functions-lab.md
         - name: Подключенные службы
           href: connected-services.md
@@ -202,6 +202,8 @@
       href: visual-studio-experience-improvement-program.md
     - name: Сообщение о проблеме
       href: report-a-problem.md
+    - name: 'Устранение неполадок: Как выпустить новую версию моего существующего расширения?'
+      href: migrate-extensions.md
     - name: 'Устранение неполадок: Поддерживает ли Visual Studio для Mac систему управления версиями Team Foundation?'
       href: tf-version-control.md
     - name: 'Устранение неполадок: Почему не отображаются все шаблоны?'
