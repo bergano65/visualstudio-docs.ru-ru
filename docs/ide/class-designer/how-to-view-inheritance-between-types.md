@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Просмотр отношения наследования между типами (конструктор классов)
+title: Просмотр наследования между типами
 description: Сведения о том, как найти отношение наследования между базовым типом и его производными типами на диаграмме классов в конструкторе классов.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82785f1a5cac2185925c63c4d6d224ffd5fd67de
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 0e4dff57b11d0ba16fcab7d2ddf8c175e05c2b6d
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901197"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933457"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Практическое руководство. Просмотр наследования между типами в конструкторе классов
 
