@@ -1,5 +1,7 @@
 ---
 title: Решения Visio
+description: Узнайте, как можно использовать надстройки VSTO для автоматизации Visio, расширения функций Visio или настройки пользовательского интерфейса Visio.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a79b3c9964a24daf0a12ab90f47fb5903d89cdd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5b4cbdfe6cceff279ae20518edf83b4f4ec8912
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985508"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526371"
 ---
 # <a name="visio-solutions"></a>Решения Visio
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания надстроек VSTO для Microsoft Office Visio. Надстройки VSTO можно использовать для автоматизации Visio, расширения функциональных возможностей этого продукта и настройки его пользовательского интерфейса.
@@ -71,7 +73,7 @@ ms.locfileid: "72985508"
 - [Как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
 - [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)
-- [Office - основные сборки взаимодействия](../vsto/office-primary-interop-assemblies.md)
+- [Основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md)
 - [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)
 - [Общие сведения об объектной модели Visio](../vsto/visio-object-model-overview.md)
 - [Visio 2010 в разработке решений для Office](/previous-versions/office/developer/office-2010/ff604964(v=office.14))

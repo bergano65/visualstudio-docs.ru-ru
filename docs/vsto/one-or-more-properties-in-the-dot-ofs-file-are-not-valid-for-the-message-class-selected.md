@@ -1,5 +1,7 @@
 ---
 title: Недопустимые свойства в OFS – файле для класса сообщений "
+description: Узнайте, как исправить ошибку, возникающую, когда одно или несколько свойств в файле OFS не являются допустимыми для выбранного класса сообщений.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66e8ecacffb58e945a3f80d03f47edc1329668d1
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b655a7bb6ab4b9ab971c0edd775aa8f29150dead
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584663"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525091"
 ---
 # <a name="invalid-properties-in-the-ofs-file-for-the-message-class"></a>Недопустимые свойства в OFS – файле для класса сообщений
 
@@ -33,5 +35,5 @@ ms.locfileid: "91584663"
 
 - В конструкторе форм в Outlook удалите поля, несовместимые с классами сообщений. Удалите поля, которые вы планируете выбрать на последней странице мастера **создания области формы** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Пошаговое руководство. импорт области формы, разработанной в Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)

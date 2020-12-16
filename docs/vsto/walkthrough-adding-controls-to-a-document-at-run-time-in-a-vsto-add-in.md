@@ -1,5 +1,7 @@
 ---
 title: Добавление элементов управления в документ во время выполнения в надстройке VSTO
+description: Узнайте, как использовать ленту, чтобы разрешить пользователям добавлять в документ класс Button или интерфейс RichTextContentControl.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e8cde57ece3774e94f923387e1a8f7ca71cf797
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbf6313f4788a0bd224d04639d3ab588a6469842
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254175"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526286"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Пошаговое руководство. Добавление элементов управления в документ во время выполнения в надстройке VSTO
   Вы можете добавлять элементы управления в любой документ Word, Открытый Microsoft Office, с помощью надстройки VSTO. В этом пошаговом руководстве показано, как использовать ленту, чтобы разрешить пользователям добавлять в <xref:Microsoft.Office.Tools.Word.Controls.Button> <xref:Microsoft.Office.Tools.Word.RichTextContentControl> документ или.
@@ -64,7 +66,7 @@ ms.locfileid: "71254175"
 
 2. В диалоговом окне **Добавление нового элемента** выберите элемент **Лента (визуальный конструктор)**.
 
-3. Измените имя новой ленты на **MyRibbon**и нажмите кнопку **Добавить**.
+3. Измените имя новой ленты на **MyRibbon** и нажмите кнопку **Добавить**.
 
     В конструкторе лент откроется файл **MyRibbon.cs** или **MyRibbon.vb** ; отобразятся вкладка и группа, используемые по умолчанию.
 
@@ -80,14 +82,14 @@ ms.locfileid: "71254175"
 
    | Свойство | Значение |
    |-----------|-----------------------|
-   | **Имя** | **addButtonCheckBox** |
+   | **имя**; | **addButtonCheckBox** |
    | **Label** | **Кнопка "Добавить"** |
 
 9. Добавьте второй флажок в **group1**, а затем измените следующие свойства.
 
    | Свойство | Значение |
    |-----------|---------------------------|
-   | **Имя** | **addRichTextCheckBox** |
+   | **имя**; | **addRichTextCheckBox** |
    | **Label** | **Добавление элемента управления форматированием текста** |
 
 10. В конструкторе лент дважды щелкните элемент **Добавить кнопку**.
@@ -107,7 +109,7 @@ ms.locfileid: "71254175"
 
 ### <a name="to-add-and-remove-controls-on-the-active-document"></a>Добавление и удаление элементов управления в активном документе
 
-1. В **Обозреватель решений**дважды щелкните *ThisAddIn.CS* или *ThisAddIn. vb* , чтобы открыть файл в редакторе кода.
+1. В **Обозреватель решений** дважды щелкните *ThisAddIn.CS* или *ThisAddIn. vb* , чтобы открыть файл в редакторе кода.
 
 2. Добавьте в класс `ThisAddIn` приведенный далее код. Этот код объявляет объекты <xref:Microsoft.Office.Tools.Word.Controls.Button> и <xref:Microsoft.Office.Tools.Word.RichTextContentControl> , представляющие элементы управления, которые будут добавлены в документ.
 
@@ -175,15 +177,15 @@ ms.locfileid: "71254175"
 
      Кнопка удаляется из документа.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
  Дополнительные сведения об элементах управления в надстройках VSTO см. в следующих статьях.
 
-- Пример, демонстрирующий Добавление многих других типов элементов управления в документ во время выполнения и повторное создание элементов управления при повторном открытии документа, см. в образце динамических элементов управления надстройки Word в примерах [разработки Office и пошаговых руководствах](../vsto/office-development-samples-and-walkthroughs.md).
+- Пример, демонстрирующий Добавление многих других типов элементов управления в документ во время выполнения и повторное создание элементов управления при повторном открытии документа, см. в образце Word Add-In Dynamic Controls в примерах [разработки Office и пошаговых руководствах](../vsto/office-development-samples-and-walkthroughs.md).
 
 - Пошаговое руководство, в котором показано, как добавлять элементы управления на лист с помощью надстройки VSTO для Excel, см. [в разделе Пошаговое руководство. Добавление элементов управления в лист во время выполнения в проекте надстройки VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
 
 ## <a name="see-also"></a>См. также раздел
-- [решения Word](../vsto/word-solutions.md)
+- [Решения Word](../vsto/word-solutions.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Сохранение динамических элементов управления в документах Office](../vsto/persisting-dynamic-controls-in-office-documents.md)
 - [Добавление Windows Forms элементов управления в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

@@ -1,5 +1,7 @@
 ---
 title: Как программно защитить листы
+description: Узнайте, как можно использовать функцию защиты в Microsoft Excel, чтобы запретить пользователям и коду изменять объекты на листе.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d51a6557b2204d7b6ff3d8865c82de091f5a59d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b4fe6d314763c7b0d6a8b4c1ed9e8e7198e508c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545903"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526764"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Как программно защитить листы
   Возможность защиты в Microsoft Office Excel помогает предотвратить изменение объектов на листе пользователями и кодом. По умолчанию все ячейки заблокированы после включения защиты.

@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. Программирование событий элемента управления NamedRange
+description: Узнайте, как можно добавить элемент управления NamedRange в лист Microsoft Excel и программировать его события с помощью средств разработки Office в Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e5ce12e2de8274afd2c27d4ece36529563a6386
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9e311a567d32ee083bcc13f417c248f5f3d3ee5a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584941"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526127"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Пошаговое руководство. Программирование событий элемента управления NamedRange
   В этом пошаговом руководстве показано, как добавить <xref:Microsoft.Office.Tools.Excel.NamedRange> элемент управления в Microsoft Office лист Excel и программировать его события с помощью средств разработки Office в Visual Studio.
@@ -57,7 +59,7 @@ ms.locfileid: "91584941"
      Visual Studio откроет новую книгу Excel в конструкторе и добавит проект " **Мои события именованного диапазона** " в **Обозреватель решений**.
 
 ## <a name="add-text-and-named-ranges-to-the-worksheet"></a>Добавление в лист текста и именованных диапазонов
- Так как элементы управления ведущего приложения являются расширенными объектами Office, их можно добавить в документ так же, как при добавлении собственного объекта. Например, можно добавить <xref:Microsoft.Office.Tools.Excel.NamedRange> элемент управления Excel на лист, открыв меню **Вставка** , указав **имя**и выбрав команду **определить**. Можно также добавить <xref:Microsoft.Office.Tools.Excel.NamedRange> элемент управления, перетащив его с **панели элементов** на лист.
+ Так как элементы управления ведущего приложения являются расширенными объектами Office, их можно добавить в документ так же, как при добавлении собственного объекта. Например, можно добавить <xref:Microsoft.Office.Tools.Excel.NamedRange> элемент управления Excel на лист, открыв меню **Вставка** , указав **имя** и выбрав команду **определить**. Можно также добавить <xref:Microsoft.Office.Tools.Excel.NamedRange> элемент управления, перетащив его с **панели элементов** на лист.
 
  На этом шаге вы добавите на лист два элемента управления именованным диапазоном с помощью **панели элементов**, а затем добавите текст на лист.
 
@@ -85,7 +87,7 @@ ms.locfileid: "91584941"
 
 ### <a name="to-add-text-to-your-worksheet"></a>Добавление текста на лист
 
-1. В ячейке **a1**введите следующий текст:
+1. В ячейке **a1** введите следующий текст:
 
     **Это пример элемента управления NamedRange.**
 
@@ -99,7 +101,7 @@ ms.locfileid: "91584941"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>Вставка текста в NamedRange2 на основе события Бефоредаублекликк
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши **Лист1. vb** или **Sheet1.CS** и выберите **Просмотреть код**.
+1. В **Обозреватель решений** щелкните правой кнопкой мыши **Лист1. vb** или **Sheet1.CS** и выберите **Просмотреть код**.
 
 2. Добавьте код, чтобы `namedRange1_BeforeDoubleClick` обработчик событий выглядел следующим образом:
 
@@ -151,12 +153,12 @@ ms.locfileid: "91584941"
 
 6. Щелкните вне `namedRange1` и убедитесь, что текст, относящийся к <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> событию, вставлен синим текстом в `namedRange2` .
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
  В этом пошаговом руководстве показаны основы программирования для событий <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления. Ниже приведена задача, которая может быть следующей:
 
 - Развертывание проекта. Дополнительные сведения см. в разделе [развертывание решения Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 - [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)
 - [Элемент управления NamedRange](../vsto/namedrange-control.md)

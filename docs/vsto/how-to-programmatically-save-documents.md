@@ -1,5 +1,7 @@
 ---
 title: Руководство. Программное сохранение документов
+description: Узнайте, как можно использовать Visual Studio для программного сохранения документа без изменения имени документа или с новым именем.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 464d131261ecfb0a64a3ca279007ff9332cdb2e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2221ec6576e7ac0de399613a1cda3cdcb8dcea6c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537596"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525465"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Руководство. Программное сохранение документов
 

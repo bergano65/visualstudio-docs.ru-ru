@@ -1,5 +1,7 @@
 ---
 title: Примеры разработки для Office
+description: Сведения о примерах приложений Visual Studio, демонстрирующих использование средств разработчика Microsoft Office для создания решений Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b9e20f0d14b2940fdbe8096442848f38183b1db7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d80598033c834e8567ab58368da73350b3cd9ff3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985730"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525167"
 ---
 # <a name="office-development-samples"></a>Примеры разработки для Office
   Visual Studio содержит примеры приложений, которые демонстрируют, как использовать инструменты разработчика Microsoft Office для создания решений Office. Код в этих примерах показывает синтаксис, структуру и приемы, используемые для сборки решений Office.

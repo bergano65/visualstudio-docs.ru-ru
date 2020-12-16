@@ -1,5 +1,7 @@
 ---
 title: Как ориентироваться на многоязыковой пользовательский интерфейс Office
+description: Узнайте, как можно использовать Visual Studio для программного выбора многоязыкового пользовательского интерфейса Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5217f2d6cf67eced00c0c84b9bacda94573c5a09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b6771b202515148b757e811fdfc63fc0d5052e9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537505"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526620"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>Как ориентироваться на многоязыковой пользовательский интерфейс Office
   Многоязыковой интерфейс пользователя (MUI) — это Microsoft Office функция, которая дает возможность пользователю изменять язык ПОЛЬЗОВАТЕЛЬСКОГО интерфейса. Например, конечный пользователь, работающий в пользовательском интерфейсе на английском языке, может изменить язык пользовательского интерфейса на испанский.

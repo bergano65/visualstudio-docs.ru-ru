@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. Создание первой надстройки VSTO для PowerPoint
+description: Создание надстройки уровня приложения для Microsoft PowerPoint. Эта функция доступна для самого приложения, независимо от того, какие презентации открыты.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a50a47a813891151427707c371f1ebf3f75c336f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3e02da3484ce7c2beb35e643d3d90d8e37225e11
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584312"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524853"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Пошаговое руководство. Создание первой надстройки VSTO для PowerPoint
   В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office PowerPoint. Функции, создаваемые в подобном решении, доступны для приложения независимо от того, какие презентации открыты. Дополнительные сведения см. в статье [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -76,14 +78,14 @@ ms.locfileid: "91584312"
 
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>Добавление текстового поля в каждый новый слайд
 
-1. В файл кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. Этот код определяет обработчик событий для события [Microsoft. Office. Interop. PowerPoint. EApplication_Event. пресентатионневслиде](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) объекта [приложения](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) .
+1. В файл кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. Этот код определяет обработчик событий для события [Microsoft.Office.Interop.PowerPoint.EApplication_Event. пресентатионневслиде](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) объекта [приложения](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) .
 
     Когда пользователь добавляет новый слайд в активную презентацию, этот обработчик событий добавляет текстовое поле в верхнюю часть нового слайда, а также добавляет в поле текст.
 
     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]
 
-2. Если используется C#, добавьте в обработчик событий `ThisAddIn_Startup` указанный ниже код. Этот код необходим для соединения `Application_PresentationNewSlide` обработчика событий с событием [Microsoft. Office. Interop. PowerPoint. EApplication_Event. пресентатионневслиде](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) .
+2. Если используется C#, добавьте в обработчик событий `ThisAddIn_Startup` указанный ниже код. Этот код необходим для соединения `Application_PresentationNewSlide` обработчика событий с событием [Microsoft.Office.Interop.PowerPoint.EApplication_Event. пресентатионневслиде](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) .
 
     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]
 
@@ -91,7 +93,7 @@ ms.locfileid: "91584312"
 
 - Поле `Application` класса `ThisAddIn` . `Application`Поле возвращает объект [приложения](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) , который представляет текущий экземпляр PowerPoint.
 
-- `Sld`Параметр обработчика событий для события [Microsoft. Office. Interop. PowerPoint. EApplication_Event. пресентатионневслиде](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) . `Sld`Параметр является объектом [слайда](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) , который представляет новый слайд. Дополнительные сведения см. в разделе [решения PowerPoint](../vsto/powerpoint-solutions.md).
+- `Sld`Параметр обработчика событий для события [Microsoft.Office.Interop.PowerPoint.EApplication_Event. пресентатионневслиде](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) . `Sld`Параметр является объектом [слайда](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) , который представляет новый слайд. Дополнительные сведения см. в разделе [решения PowerPoint](../vsto/powerpoint-solutions.md).
 
 ## <a name="test-the-project"></a>Тестирование проекта
  При построении и запуске проекта убедитесь, что текстовое поле отображается в новых слайдах, добавляемых в презентацию.
@@ -117,7 +119,7 @@ ms.locfileid: "91584312"
 
 1. В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
  Теперь, когда вы создали базовую надстройку VSTO для PowerPoint, изучите более подробную информацию о разработке надстроек VSTO в следующих разделах:
 
 - Общие задачи программирования, которые можно выполнять в надстройках VSTO для PowerPoint. Дополнительные сведения см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
@@ -130,7 +132,7 @@ ms.locfileid: "91584312"
 
 - Развертывание надстроек VSTO для PowerPoint. Дополнительные сведения см. в разделе [развертывание решения Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
 - [Решения PowerPoint](../vsto/powerpoint-solutions.md)
 - [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)

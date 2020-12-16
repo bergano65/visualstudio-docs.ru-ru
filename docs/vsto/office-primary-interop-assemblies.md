@@ -1,5 +1,7 @@
 ---
 title: Office - основные сборки взаимодействия
+description: Узнайте, как использовать основную сборку взаимодействия (PIA) для получения доступа к функциям Microsoft Office приложения из проекта Office.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25dad2d4601974e70e80377e634d05b60523318e
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 190c5785be9d17ee0a25d16ad6342368b658f252
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830756"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525222"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office - основные сборки взаимодействия
 
@@ -127,7 +129,7 @@ Visual Studio использует разные наборы основных с
 
 Дополнительные сведения см. [в разделе инструкции. Включение и отключение автоматического перенаправления привязок](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Пошаговое руководство. Назначение приложений Office через основные сборки взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Общие сведения об объектной модели Excel](../vsto/excel-object-model-overview.md)

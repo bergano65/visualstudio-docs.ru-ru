@@ -1,5 +1,7 @@
 ---
 title: Обновление проекта, диалоговое окно "Параметры"
+description: Используйте страницу обновление проекта, чтобы указать, что Visual Studio автоматически изменяет проекты надстроек VSTO для целевой версии Office на компьютере разработчика.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd1b3b90cf4e284e558be02608cac953dc71584b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 75bf6d5f7a3a6d45ba4313bbe70f8595f65c4632
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811010"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525052"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Обновление проекта, диалоговое окно "Параметры"
   Используйте страницу **обновления проектов** , чтобы указать, будет ли Visual Studio автоматически изменять проекты надстроек VSTO для версии Office, установленной на компьютере разработчика.

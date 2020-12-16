@@ -1,5 +1,7 @@
 ---
 title: Общие сведения о Инструменты Visual Studio для среды выполнения Office
+description: Для запуска решений, созданных с помощью Microsoft Office средств разработчика, на компьютерах конечных пользователей должна быть установлена среда выполнения средств Visual Studio 2010 Tools для Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31d2244796282aaad56011d5b9963232d3438ce9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16431a9ba2fe56b88f9f6b7f2c874c75bfad61c3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253988"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526271"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Общие сведения о Инструменты Visual Studio для среды выполнения Office
   Для запуска решений, созданных с помощью средств разработчика Microsoft Office в Visual Studio, на компьютерах конечных пользователей должна быть установлена среда выполнения средств Visual Studio 2010 для Office. Дополнительные сведения см. в разделе [руководство. Установка распространяемого пакета среды выполнения Office инструменты Visual Studio](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Среда выполнения Visual Studio 2010 Tools for Office состоит из двух основных компонентов:
@@ -106,14 +108,14 @@ ms.locfileid: "71253988"
 |------------------------|---------------------------------|--------------------------------------------------------------------|
 |32-битная|32-битная|32-разрядная версия|
 |64-разрядная версия|32-разрядная версия|64-разрядная версия|
-|64-разрядная версия|64-разрядная версия|64-разрядная версия|
+|64-разрядная система|64-разрядная система|64-разрядная система|
 
  При установке Office необходимая версия [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] устанавливается вместе с Office. Например, при установке 64-разрядного выпуска Office в 64-разрядную версию Windows также устанавливается 64-разрядная версия [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Дополнительные сведения об установке [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] с Office см. в статье [инструменты Visual Studio for Office Runtime](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
  Решения Office, созданные с использованием шаблонов проектов для выпуска 2007 системы Microsoft Office в Visual Studio 2008, также работают в 64-разрядной версии Office. Однако решения Office, созданные с использованием шаблонов проектов для Microsoft Office 2003 в Visual Studio 2008 или Visual Studio 2005, в этой версии не работают. Дополнительные сведения см. [в статье запуск решений в разных версиях Microsoft Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md).
 
 ## <a name="repair-the-visual-studio-2010-tools-for-office-runtime"></a>Восстановление среды выполнения Visual Studio 2010 Tools for Office
- При необходимости устранить ошибки в среде выполнения откройте окно **Программы и компоненты** или **Установка и удаление программ** на панели управления, выберите в списке программ **Среда выполнения средств Microsoft Visual Studio 2010 для Office** и нажмите кнопку **Удалить**. Запущенная программа установки позволяет удалить ошибки среды выполнения. При выборе команды **Изменить**пользователь не получает возможности удалить ошибки среды выполнения.
+ При необходимости устранить ошибки в среде выполнения откройте окно **Программы и компоненты** или **Установка и удаление программ** на панели управления, выберите в списке программ **Среда выполнения средств Microsoft Visual Studio 2010 для Office** и нажмите кнопку **Удалить**. Запущенная программа установки позволяет удалить ошибки среды выполнения. При выборе команды **Изменить** пользователь не получает возможности удалить ошибки среды выполнения.
 
 ## <a name="see-also"></a>См. также раздел
 - [Инструменты Visual Studio сценариев установки среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)

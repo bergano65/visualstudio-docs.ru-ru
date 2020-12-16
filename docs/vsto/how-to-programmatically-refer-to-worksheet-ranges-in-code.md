@@ -1,5 +1,7 @@
 ---
 title: Как программно ссылаться на диапазоны листов в коде
+description: Узнайте, как можно использовать Visual Studio для программного обозначения содержимого элемента управления NamedRange или собственного объекта диапазона Excel в листе Microsoft Excel.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 319be5ad6c878e08a862d1e20e826c2800c33512
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9756123038de33e8f8e69bd9a824822c26e2dc00
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584837"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526674"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Как программно ссылаться на диапазоны листов в коде
   Аналогичный процесс используется для ссылки на содержимое <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственного объекта диапазона Excel.
@@ -48,7 +50,7 @@ ms.locfileid: "91584837"
      [!code-csharp[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#47)]
      [!code-vb[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#47)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с диапазонами](../vsto/working-with-ranges.md)
 - [Руководство. Программная проверка орфографии на листах](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
 - [Руководство. Программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)

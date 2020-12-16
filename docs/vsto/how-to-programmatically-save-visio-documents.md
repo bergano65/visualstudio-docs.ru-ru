@@ -1,5 +1,7 @@
 ---
 title: Как программно сохранять документы Visio
+description: Узнайте, как можно использовать Visual Studio для программного сохранения существующих документов и новых документов Microsoft Visio, которые еще не были сохранены.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 891a5c44159d10aacbb767cbc5376ae1d62252b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29f8cbc8aa7b2ea796109a8143d348905df671f7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547060"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525393"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Как программно сохранять документы Visio
   Существует несколько способов сохранения документов Microsoft Office Visio.

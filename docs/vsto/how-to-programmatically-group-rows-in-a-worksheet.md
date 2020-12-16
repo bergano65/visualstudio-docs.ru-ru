@@ -1,5 +1,7 @@
 ---
 title: Руководство. программное группирование строк на листе
+description: Сведения о программной группировке одной или нескольких целых строк в Microsoft Excel с помощью элемента управления NamedRange или собственного объекта диапазона Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 759ba8c6e0796b25a87e8bf0b08795aed5bade05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 203ea7d17a02a224c290e5dd3c6070c06a1d26e4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537882"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525718"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Руководство. программное группирование строк на листе
   Можно сгруппировать одну или несколько строк целиком. Чтобы создать группу на листе, используйте <xref:Microsoft.Office.Tools.Excel.NamedRange> элемент управления или собственный объект диапазона Excel.

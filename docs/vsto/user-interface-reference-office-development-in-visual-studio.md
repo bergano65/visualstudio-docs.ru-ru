@@ -1,5 +1,7 @@
 ---
 title: Справочник по пользовательскому интерфейсу (разработка решений Office в Visual Studio)
+description: Сведения о разработке решений Office в Visual Studio и о том, какие элементы пользовательского интерфейса являются частью проектов Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17366c4901c6fa28036d089f74402768721e1a8d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: dc58e106a24b857f4702876085a8ab986b6c5c92
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584390"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526545"
 ---
 # <a name="user-interface-reference-office-development-in-visual-studio"></a>Справочник по пользовательскому интерфейсу (разработка решений Office в Visual Studio)
   Перечисленные ниже элементы пользовательского интерфейса являются частью проектов Office в Visual Studio.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 - [Страница публикации, конструктор проектов &#40;разработка решений Office в Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 
  Этот раздел посвящен странице свойств, которая позволяет настроить свойства для развертывания решения Office.

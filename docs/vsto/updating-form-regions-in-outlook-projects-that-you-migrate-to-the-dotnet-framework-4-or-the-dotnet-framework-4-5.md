@@ -1,5 +1,7 @@
 ---
 title: Обновление областей формы Outlook при миграции на .NET Framework 4,5
+description: Необходимо изменить код, если Целевая платформа проекта надстройки VSTO для Outlook с областями формы изменилась на .NET Framework 4 или более поздней версии.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d8978703630e99ecb930e18e7d128eddff8792f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 507132a28526e4ce008957fa0b988c23c09d686f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584403"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526589"
 ---
 # <a name="update-outlook-form-regions-when-migrated-to-net-framework-45"></a>Обновление областей формы Outlook при миграции на .NET Framework 4,5
 
@@ -198,6 +200,6 @@ ms.locfileid: "91584403"
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionInitializingEventArgs%2A>|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionManifest%2A>|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md)

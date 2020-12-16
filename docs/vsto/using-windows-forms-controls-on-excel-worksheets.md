@@ -1,5 +1,7 @@
 ---
 title: Использование элементов управления Windows Forms на листах Excel
+description: Узнайте, как добавлять элементы управления Windows Forms в книги Microsoft Excel так же, как и элементы управления для Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 032ee551ff04590ccdb8744c1274b137dec0b756
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 015fffa51358c3a7a13d98950392d0749560c089
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982319"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526515"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>Использование элементов управления Windows Forms на листах Excel
   Вы можете добавлять Windows Forms элементы управления в книги Microsoft Office Excel так же, как и элементы управления, добавляемые в Windows Forms. Общие сведения о работе с элементами управления в документах см. [в разделе Windows Forms элементы управления в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md).

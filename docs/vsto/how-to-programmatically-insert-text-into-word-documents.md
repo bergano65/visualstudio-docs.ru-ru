@@ -1,5 +1,7 @@
 ---
 title: Инструкции. Программная вставка текста в документы Word
+description: Сведения о программной вставке текста в документ Microsoft Word с помощью Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: how-to
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bbd73a60b05d48eea0252cec9881d6eefca6cdd2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9567ea197c9a181141aeb52db0cca56ad4776237
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585188"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525687"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Инструкции. Программная вставка текста в документы Word
   Существует три основных способа вставки текста в документы Microsoft Office Word:
@@ -128,7 +130,7 @@ ms.locfileid: "91585188"
    [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Руководство. Программное форматирование текста в документах](../vsto/how-to-programmatically-format-text-in-documents.md)
 - [Руководство. Программное определение и выбор диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Руководство. программное расширение диапазонов в документах](../vsto/how-to-programmatically-extend-ranges-in-documents.md)

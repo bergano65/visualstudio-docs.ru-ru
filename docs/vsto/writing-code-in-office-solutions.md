@@ -1,5 +1,7 @@
 ---
 title: Написание кода в решениях Office
+description: Узнайте, как написать код в Microsoft Office решений и узнать о способе предоставления объектной модели Office управляемому коду.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -33,12 +35,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cead0569ae067fcc503f7f2074807c609e6eed75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40ea589cb4406a383876b1f16721f18fc48ebadd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255047"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526020"
 ---
 # <a name="write-code-in-office-solutions"></a>Написание кода в решениях Office
   Написание кода в проектах Office и в проектах других типов в Visual Studio несколько отличается друг от друга. Многие из этих отличий связаны с тем, каким образом объектные модели Office предоставляются управляемому коду. Другие отличия связаны со структурой проектов Office.
@@ -105,7 +107,7 @@ ms.locfileid: "71255047"
 
 В следующей таблице показаны основные различия между Visual Basic и Visual C# при разработке решений Office.
 
-|Компонент|Описание|Поддержка Visual Basic|Поддержка Visual C#|
+|Функция|Описание|Поддержка Visual Basic|Поддержка Visual C#|
 |-------------|-----------------|--------------------------|------------------------|
 |Необязательные параметры|Многие методы Microsoft Office имеют параметры, которые не являются обязательными при вызове метода. Если для параметра никакое значение не передается, используется значение по умолчанию.|Visual Basic поддерживает необязательные параметры.|Visual C# поддерживает необязательные параметры в большинстве случаев. Дополнительные сведения см. [в разделе необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md).|
 |Передача параметров по ссылке|В большинстве основных сборок взаимодействия Microsoft Office необязательные параметры могут передаваться по значению. Однако в некоторых основных сборках взаимодействия необязательные параметры, которые принимают ссылочные типы, должны передаваться по ссылке.<br /><br /> Дополнительные сведения о параметрах типа Value и Reference см. в статьях [Передача аргументов по значению и по ссылке &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (для Visual Basic) и [Передача параметров &#40;&#35; руководство по программированию с ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)&#41;.|Для передачи параметров по ссылке дополнительные действия не требуются. При необходимости компилятор Visual Basic автоматически передает параметры по ссылке.|В большинстве случаев компилятор Visual C# автоматически передает параметры по ссылке. Дополнительные сведения см. [в разделе необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md).|
@@ -115,7 +117,7 @@ ms.locfileid: "71255047"
 ## <a name="key-differences-between-office-development-and-managed-code"></a>Основные различия между разработкой приложений Office и управляемым кодом
  В таблице ниже указаны основные различия между разработкой для Office и управляемым кодом, написанным на Visual Basic или Visual C#.
 
-|Компонент|Описание|Поддержка Visual Basic и Visual C#|
+|Функция|Описание|Поддержка Visual Basic и Visual C#|
 |-------------|-----------------|-----------------------------------------|
 |Индексы массивов|Нижняя граница массива коллекций в приложениях Microsoft Office начинается с 1. Visual Basic и Visual C# используют массивы, которые начинаются с нуля. Дополнительные сведения см. в разделе [arrays &#40;C&#35; Guide программирование&#41;](/dotnet/csharp/programming-guide/arrays/index) и [массивы в Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Для доступа к первому элементу коллекции в объектной модели приложения Microsoft Office используйте индекс 1 вместо 0.|
 

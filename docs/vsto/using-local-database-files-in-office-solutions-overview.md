@@ -1,5 +1,7 @@
 ---
 title: Общие сведения об использовании файлов локальной базы данных в решениях Office
+description: Узнайте, как можно включить файл базы данных, например файл SQL Server Express (MDF) или файл Microsoft Office Access (MDB) в решении Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea260a6286c8a923d56ab7a5088b55de57004489
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a3166a88080eaee1042187c171c4938d236058a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982238"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526560"
 ---
 # <a name="use-local-database-files-in-office-solutions-overview"></a>Общие сведения об использовании файлов локальной базы данных в решениях Office
   В решение Office можно включить файл базы данных, например файл SQL Server Express (*MDF*) или файл Microsoft Office Access (*MDB*). Это позволяет конечным пользователям поддерживать локальную базу данных в ситуациях, когда не требуется обслуживать централизованную базу данных, например в решении локального учета, которое используется только на одном компьютере.
@@ -35,7 +37,7 @@ ms.locfileid: "62982238"
  При развертывании решения на сервере и последующем распространении документа для каждого конечного пользователя необходимо также вручную распространить файл базы данных и установить его в той же папке, что и документ. Это означает, что конечный пользователь не может переместить документ в новое место на своем компьютере, если он также не перемещает файл базы данных.
 
 ## <a name="local-database-files-and-caching-the-dataset"></a>Файлы локальной базы данных и кэширование набора данных
- В решениях на уровне документа для Microsoft Office Excel и Microsoft Office Word можно кэшировать наборы данных в документе, пометив экземпляр DataSet атрибутом <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> . При добавлении файла базы данных в проект с помощью **мастера настройки источника данных**типизированный набор данных добавляется в проект автоматически. Нередко требуется применять <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> к этому набору данных, так как данные уже являются локальными на компьютере пользователя. Дополнительные сведения см. в разделе [кэширование данных](../vsto/caching-data.md).
+ В решениях на уровне документа для Microsoft Office Excel и Microsoft Office Word можно кэшировать наборы данных в документе, пометив экземпляр DataSet атрибутом <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> . При добавлении файла базы данных в проект с помощью **мастера настройки источника данных** типизированный набор данных добавляется в проект автоматически. Нередко требуется применять <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> к этому набору данных, так как данные уже являются локальными на компьютере пользователя. Дополнительные сведения см. в разделе [кэширование данных](../vsto/caching-data.md).
 
 ## <a name="see-also"></a>См. также раздел
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)

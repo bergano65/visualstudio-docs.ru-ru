@@ -1,5 +1,7 @@
 ---
 title: Клавиатура Office Excel, параметры, диалоговое окно "Параметры"
+description: Узнайте, как сделать так, чтобы Microsoft Excel получал сочетания клавиш, если документ имеет фокус, выбрав пункт Динамическая схема клавиатуры.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8b590f82d5f28c3a71e86e18dfe16b1c3e6c4c5a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b3422cb53fb454b3585e0b8ba936ce692dfc68a4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584520"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525315"
 ---
 # <a name="microsoft-office-excel-keyboard-settings-options-dialog-box"></a>Microsoft Office клавиатура Excel, параметры, диалоговое окно "Параметры"
   Microsoft Office Excel и Visual Studio работают с сочетаниями клавиш. Одна и та же комбинация клавиш может подключаться для различных команд в Excel и Visual Studio. Когда Excel открыт в проекте уровня документа в Visual Studio, только одно приложение за раз получает команды быстрого вызова. По умолчанию Visual Studio получает все сочетания клавиш, но Excel может получать их, если документ находится в фокусе, выбрав пункт **Динамическая схема клавиатуры**.
@@ -36,5 +38,5 @@ ms.locfileid: "91584520"
 
  **Динамическая схема клавиатуры** Visual Studio получает команды сочетаний клавиш только при наличии фокуса. При наличии фокуса Excel получает все команды сочетания клавиш. Например, если нажать клавишу **F5** в то время, как Excel находится в фокусе, Excel откроет диалоговое окно **"перейти** ". Если нажать клавишу **F5** , когда Visual Studio находится в фокусе, Visual Studio начнет отладку решения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Microsoft Office слово "клавиатура", Microsoft Office параметры клавиатуры, диалоговое окно "Параметры"](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)

@@ -1,5 +1,7 @@
 ---
 title: Программирование надстроек VSTO
+description: Узнайте, как можно использовать класс ThisAddIn для выполнения таких задач, как доступ к объектной модели Microsoft Office ведущего приложения.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -32,12 +34,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 240995eb744f8107503c108cbcdbbb8522748b79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c3a4b14a1935d1d276f0884234fcd121b838f39
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87115335"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525112"
 ---
 # <a name="program-vsto-add-ins"></a>Программирование надстроек VSTO
   Если приложение Microsoft Office расширяется путем создания надстройки VSTO, код создается непосредственно для класса `ThisAddIn` соответствующего проекта. Этот класс можно использовать для выполнения таких задач, как получение доступа к объектной модели ведущего приложения Microsoft Office, настройка пользовательского интерфейса приложения, а также предоставление объектов созданной надстройки VSTO другим решениям Office.
@@ -97,7 +99,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
 - [Общие сведения об объектной модели Outlook](../vsto/outlook-object-model-overview.md)
 
-- [решения InfoPath](../vsto/infopath-solutions.md)
+- [Решения InfoPath](../vsto/infopath-solutions.md)
 
 - [Решения PowerPoint](../vsto/powerpoint-solutions.md)
 
@@ -121,7 +123,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 |Выполнение кода для инициализации надстройки VSTO при ее загрузке.|Добавьте код в метод `ThisAddIn_Startup` . Этот метод является обработчиком событий по умолчанию для события <xref:Microsoft.Office.Tools.AddInBase.Startup> . Дополнительные сведения см. [в разделе события в проектах Office](../vsto/events-in-office-projects.md).|
 |Выполнение кода для очистки используемых надстройкой VSTO ресурсов перед выгрузкой надстройки VSTO.|Добавьте код в метод `ThisAddIn_Shutdown` . Этот метод является обработчиком событий по умолчанию для события <xref:Microsoft.Office.Tools.AddInBase.Shutdown> . Дополнительные сведения см. [в разделе события в проектах Office](../vsto/events-in-office-projects.md). **Примечание.**  В Outlook по умолчанию `ThisAddIn_Shutdown` обработчик событий не всегда вызывается при выгрузке надстройки VSTO. Дополнительные сведения см. [в разделе события в проектах Office](../vsto/events-in-office-projects.md).|
 |Отображение настраиваемой области задач.|Используйте поле `CustomTaskPanes` . Дополнительные сведения см. в разделе [настраиваемые области задач](../vsto/custom-task-panes.md).|
-|Предоставление доступа к объектам в надстройке VSTO другим решениям Microsoft Office.|Переопределите метод <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>. Дополнительные сведения см. [в разделе вызов кода в надстройках VSTO из других решений Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|
+|Предоставление доступа к объектам в надстройке VSTO другим решениям Microsoft Office.|Переопределите метод <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . Дополнительные сведения см. [в разделе вызов кода в надстройках VSTO из других решений Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|
 |Настройка функции в системе Microsoft Office путем реализации интерфейса расширяемости.|Переопределите метод <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> для возврата экземпляра класса, который реализует интерфейс. Дополнительные сведения см. в разделе [Настройка функций пользовательского интерфейса с помощью интерфейсов расширения](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Примечание.**  Чтобы настроить Ribbon, можно также переопределить <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> метод.|
 
 ### <a name="understand-the-design-of-the-thisaddin-class"></a>Общие сведения о проектировании класса ThisAddIn
