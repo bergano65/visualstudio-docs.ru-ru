@@ -46,17 +46,17 @@ ms.locfileid: "95006319"
 
 Подключение к проекту или репозиторию можно выполнить на странице **Подключение**.
 
-![Страница подключения в Team Explorer](media/team-explorer/connect.png "Team Explorer — страница "Подключения" в Visual Studio.")
+![Страница подключения в Team Explorer](media/team-explorer/connect.png "Team Explorer — страница Подключения в Visual Studio.")
 
 Подключение к проекту:
 
 1. Откройте страницу **Подключение**, щелкнув значок **Управление подключениями**.
 
-   ![Кнопка "Управление подключениями" в Team Explorer](media/team-explorer/manage-connections.png "Team Explorer — кнопка "Управление подключениями" в Visual Studio.")
+   ![Кнопка Управление подключениями в Team Explorer](media/team-explorer/manage-connections.png "Team Explorer — кнопка Управление подключениями в Visual Studio.")
 
 1. На странице **Подключение** выберите **Управление подключениями** > **Подключение к проекту**.
 
-   ![Подключение к проекту в Team Explorer](media/team-explorer/connect-project.png "Team Explorer — вариант "Подключение к проекту" в Visual Studio.")
+   ![Подключение к проекту в Team Explorer](media/team-explorer/connect-project.png "Team Explorer — вариант Подключение к проекту в Visual Studio.")
 
 > [!TIP]
 > Если вы хотите открыть проект из репозитория, см. статью [Открытие проекта из репозитория](../get-started/tutorial-open-project-from-repo.md). Если вы хотите создать новый проект или добавить пользователей в существующий, ознакомьтесь со статьями [Создание проекта (Azure DevOps)](/azure/devops/organizations/projects/create-project) и [Добавление пользователей в проект или команду (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project).
