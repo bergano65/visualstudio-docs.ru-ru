@@ -1,5 +1,7 @@
 ---
 title: Элемент menus | Документация Майкрософт
+description: Элемент Menus определяет все меню и панели инструментов, которые реализует VSPackage. В этой статье содержится пример.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6382abed36aba66087066bf5664ae55682e39e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abc5621784579c295393d77c792013dd0c737871
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702580"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615581"
 ---
 # <a name="menus-element"></a>Элемент menus
 Определяет все меню и панели инструментов, реализуемые пакетом VSPackage.
@@ -37,7 +39,7 @@ ms.locfileid: "80702580"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Условие|Необязательный параметр. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
 

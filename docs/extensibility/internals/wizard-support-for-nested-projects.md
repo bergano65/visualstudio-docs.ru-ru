@@ -1,5 +1,7 @@
 ---
 title: Поддержка мастера для вложенных проектов | Документация Майкрософт
+description: Узнайте о двух мастерах, которые Родительский проект может реализовать для вложенных проектов в VSPackage в пакете SDK для Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7f37700d908167ebef8c071021558822bdce173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b3c6dee712f79648eba203650cc70f76fcea657
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703193"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615620"
 ---
 # <a name="wizard-support-for-nested-projects"></a>Поддержка мастера для вложенных проектов
 В интегрированной среде разработки выполняются два мастера, которые может реализовать родительский проект для вложенных проектов: мастер **создания проекта** и мастер **добавления элемента** .

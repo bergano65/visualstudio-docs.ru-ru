@@ -1,5 +1,7 @@
 ---
 title: Завершение слов в языковой службе прежних версий | Документация Майкрософт
+description: Для устаревшей языковой службы в пакете SDK для Visual Studio может поддерживаться завершение слов. Сведения о реализации устаревших языковых служб в VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 948751cde5b6b710d911a30ca26a61e5411bba4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 489b43c825e3512e1bd33bc732833de84aed54c3
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703166"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616279"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Завершение машинных слов в языковой службе прежних версий
 При заполнении слова отсутствующие символы заполняются частично типизированным словом. Если существует только одно возможное завершение, слово завершается после ввода символа завершения. Если частичное слово совпадает с более чем одной возможностью, отображается список возможных завершений. Символом завершения может быть любой символ, который не используется для идентификаторов.

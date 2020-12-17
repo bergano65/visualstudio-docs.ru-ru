@@ -1,5 +1,7 @@
 ---
 title: Команды меню "локализация" | Документация Майкрософт
+description: Узнайте, как предоставить локализованный текст для команд меню и панели инструментов, создав локализованные файлы vsct и локализованные файлы. resx для пакета VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c1c158fd689cbcae18fec5d3306e6d6fadb169f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51f3692a4539eddbf35e24de8024eadd39031080
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904559"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615607"
 ---
 # <a name="localize-menu-commands"></a>Команды меню "локализовать"
 
@@ -32,7 +34,7 @@ ms.locfileid: "85904559"
 
 В пакетах VSPackage команды меню и кнопки панели инструментов определены в файле *. vsct* .
 
-1. В **Обозреватель решений**измените имя файла *vsct* с *filename. vsct* на *filename. en-US. vsct*.
+1. В **Обозреватель решений** измените имя файла *vsct* с *filename. vsct* на *filename. en-US. vsct*.
 
 2. Создайте копию *файла filename. en-US. vsct* для каждого локализованного языка.
 
@@ -112,7 +114,7 @@ ms.locfileid: "85904559"
 
 Необходимо изменить файл *AssemblyInfo.CS* и файл проекта, чтобы включить локализованные ресурсы.
 
-1. Из узла **Свойства** в **Обозреватель решений**откройте *AssemblyInfo.CS* или *AssemblyInfo. vb* в редакторе.
+1. Из узла **Свойства** в **Обозреватель решений** откройте *AssemblyInfo.CS* или *AssemblyInfo. vb* в редакторе.
 
 2. Добавьте следующую запись.
 
@@ -165,7 +167,7 @@ ms.locfileid: "85904559"
 
      При этом создается Главная сборка и сборки ресурсов для каждого языка. Сведения о локализации процесса развертывания см. в разделе [Локализация пакетов VSIX](../extensibility/localizing-vsix-packages.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)
 - [Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)

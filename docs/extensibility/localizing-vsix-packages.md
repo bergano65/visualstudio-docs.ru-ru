@@ -1,5 +1,7 @@
 ---
 title: Локализация пакетов VSIX | Документация Майкрософт
+description: Узнайте, как локализовать пакет VSIX, создав файл Extension. всикслангпакк для каждого целевого языка и поместив их в соответствующую папку.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d2d4222e45d56447951e86d558af9983a0d1cc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc9f7055145748e0625788e7487bb978911bae7f
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702902"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615542"
 ---
 # <a name="localizing-vsix-packages"></a>Локализация пакетов VSIX
 
@@ -51,9 +53,9 @@ ms.locfileid: "80702902"
 
 ### <a name="to-set-the-include-in-vsix-property"></a>Задание свойства include в VSIX
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши файл Extension. всикслангпакк и выберите пункт **свойства**.
+1. В **Обозреватель решений** щелкните правой кнопкой мыши файл Extension. всикслангпакк и выберите пункт **свойства**.
 
-2. В **сетке свойств**щелкните **включить в VSIX**и присвойте ему значение `true` .
+2. В **сетке свойств** щелкните **включить в VSIX** и присвойте ему значение `true` .
 
 ## <a name="example"></a>Пример
 

@@ -1,5 +1,7 @@
 ---
 title: Поиск Visual Studio | Документация Майкрософт
+description: Можно установить несколько экземпляров одной и той же версии Visual Studio. Узнайте, как использовать API-интерфейс запросов COM для поиска нужного экземпляра.
+ms.custom: SEO-VS-2020
 ms.date: 08/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93a6f39a9240002cd8008c9368799e10ab63b78d
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 8935af62b16ed6dd6d0d5d61412f347a95f32f23
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012481"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616292"
 ---
 # <a name="locate-visual-studio"></a>Расположение Visual Studio
 
@@ -25,7 +27,7 @@ ms.locfileid: "90012481"
 | Код | Пакет |
 | ---- | --- |
 | Собственный | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| Управляемые | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| управляемость. | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
 Можно выбрать один экземпляр с учетом пути или текущего процесса или перечислить все экземпляры. Ознакомьтесь с [нашими примерами](https://github.com/Microsoft/vs-setup-samples) для получения полных примеров того, как найти Visual Studio.
 
@@ -37,9 +39,9 @@ ms.locfileid: "90012481"
 | ------- | ----------- |
 | [vswhere](https://github.com/Microsoft/vswhere) | Собственный исполняемый файл с одним файлом для поиска экземпляров, таких как выпуск или предварительная версия, установка продукта и устанавливаемые рабочие нагрузки. Также поддерживает поиск Visual Studio 2010 и более новых версий, хотя для Visual Studio 2017 и более поздних версий возвращается меньше информации. Примеры см. на [вики-сайте](https://github.com/Microsoft/vswhere/wiki) . |
 | [Командлеты VSSetup](https://github.com/Microsoft/vssetup.powershell) | Командлеты PowerShell поддерживают 2,0 и более поздние версии, возвращающие подробные сведения в виде объектов, которые можно использовать для поиска экземпляров на основе тех же условий, что и _vswhere_ , а также для обнаружения еще более свойств экземпляров. Примеры см. на [вики-сайте](https://github.com/Microsoft/vssetup.powershell/wiki) . |
-| [всиксбутстраппер](https://github.com/Microsoft/vsixbootstrapper) | Автоматически находит _всиксинсталлер_ и передает командную строку, чтобы установить*VSIX* -файл. Эта функция может быть полезна в установщиках, которые не поддерживают прямую поддержку интерфейсов API запросов. Примеры см. на [вики-сайте](https://github.com/Microsoft/vsixbootstrapper/wiki) . |
+| [всиксбутстраппер](https://github.com/Microsoft/vsixbootstrapper) | Автоматически находит _всиксинсталлер_ и передает командную строку, чтобы установить *VSIX* -файл. Эта функция может быть полезна в установщиках, которые не поддерживают прямую поддержку интерфейсов API запросов. Примеры см. на [вики-сайте](https://github.com/Microsoft/vsixbootstrapper/wiki) . |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Изменения в программе установки Visual Studio 2017](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
 * [Запуск Visual Studio с помощью DTE](launch-visual-studio-dte.md)

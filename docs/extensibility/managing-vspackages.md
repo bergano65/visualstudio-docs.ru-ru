@@ -1,5 +1,7 @@
 ---
 title: Управление пакетами VSPackage | Документация Майкрософт
+description: Узнайте о том, как управлять пакетом VSPackage, чтобы вы могли просто использовать управление VSPackage по умолчанию, предоставляемое Visual Studio, и как и когда настраивать его.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60745d07679ae53b85d169473ed37ab314b67624
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a040777671a5d6a4378e9b2ad68b2ffa2fabaeb
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702655"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615744"
 ---
 # <a name="manage-vspackages"></a>Управление пакетами VSPackage
 В большинстве случаев вам не нужно беспокоиться об управлении пакетами VSPackage, так как шаблоны проектов и элементов регистрируются и загружаются автоматически. Однако в некоторых случаях для управления пакетом может потребоваться несколько дополнительных изучений.

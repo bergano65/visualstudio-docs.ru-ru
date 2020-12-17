@@ -1,5 +1,7 @@
 ---
 title: Элемент сочетания клавиш | Документация Майкрософт
+description: Элемент сочетания клавиш группирует элементы настраиваемое сочетание клавиш и другие группирования сочетания клавиш. В этой статье содержится пример.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df1720286007d8f6acf073c21f5b2dcc8486782c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 928637d8103a69eafd3bda4446a55bb7523f83a8
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703129"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616095"
 ---
 # <a name="keybindings-element"></a>Сочетания клавиш, элемент
 Элемент сочетания клавиш группирует элементы настраиваемое сочетание клавиш и другие группирования сочетания клавиш.
@@ -39,7 +41,7 @@ ms.locfileid: "80703129"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Условие|Необязательный параметр. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
 

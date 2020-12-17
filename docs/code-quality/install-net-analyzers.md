@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f7dfa1c79af832cc54d9aee72eeafbf20bbde707
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: ea13fde64f6214cf3c219de45c79458b75e1caf8
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398420"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615529"
 ---
 # <a name="enable-or-install-first-party-net-analyzers"></a>Включить или установить сторонние анализаторы .NET
 
@@ -31,7 +31,7 @@ ms.locfileid: "97398420"
 - **Установить как пакет NuGet**. Если вы не хотите переходить на пакет SDK для .NET 5 + или если предпочитаете использовать модель на основе пакетов NuGet, анализаторы также доступны в `Microsoft.CodeAnalysis.NetAnalyzers` [пакете nuget](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) в Visual Studio 2019.  Вы можете предпочесть модели на основе пакетов для обновления версий по требованию. Если вы используете Visual Studio 2017, установите последнюю `2.9.x` версию `Microsoft.CodeAnalysis.FxCopAnalyzers` [пакета NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) .
 
 > [!NOTE]
-> Рекомендуется включить анализаторы из пакета SDK для .NET, а не устанавливать `Microsoft.CodeAnalysis.NetAnalyzers` [пакет NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers), если это возможно. При включении анализаторов из пакета SDK для .NET автоматически получаются исправления ошибок анализатора и новые анализаторы, как только вы обновите пакет SDK.
+> Рекомендуется включить анализаторы из пакета SDK для .NET, а не устанавливать `Microsoft.CodeAnalysis.NetAnalyzers` [пакет NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers), если это возможно. При включении анализаторов из пакета SDK для .NET автоматически получаются исправления ошибок анализатора и новые анализаторы, как только вы обновите пакет SDK. В модели NuGet необходимо обновлять пакет NuGet каждый раз, когда необходимо устранить последние исправления ошибок. Пакет NuGet обновляется чаще.
 
 ## <a name="see-also"></a>См. также раздел
 
