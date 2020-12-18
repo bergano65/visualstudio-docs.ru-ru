@@ -9,12 +9,12 @@ metadata:
   ms.author: dominicn
   ms.date: 09/18/2019
   ms.topic: hub-page
-  ms.openlocfilehash: 3e04aa6b83fed4ae331ff101011dd88646d6a40d
-  ms.sourcegitcommit: 62f91179f2c3a51c85dd7b0e6172a3a53393fb7e
+  ms.openlocfilehash: cfd6fff8d0d1b8346494ad54cf9e767b802a84f4
+  ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/12/2020
-  ms.locfileid: "94567163"
+  ms.lasthandoff: 12/18/2020
+  ms.locfileid: "97668512"
 highlightedContent:
   items:
   - title: Установка Visual Studio для Mac
@@ -158,4 +158,4 @@ additionalContent:
     - title: Управление версиями
       summary: Совместное использование кода с помощью таких технологий управления версиями, как Git и Subversion.
       url: ~/version-control.md
-  footer: '[Блоги](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/visualstudiomac) - [Сообщение о проблемах](~/report-a-problem.md) - [Сообщество разработчиков](https://developercommunity.visualstudio.com/content/problem/post.html?space=41)'
+  footer: '[Блоги](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/visualstudiomac) - [Сообщение о проблемах](~/report-a-problem.md) - [Сообщество разработчиков](https://aka.ms/feedback/vsm-home)'
