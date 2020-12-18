@@ -1,6 +1,6 @@
 ---
-title: Практическое руководство. Разделение класса на разделяемые классы (конструктор классов)
-description: Сведения о том, как с помощью ключевого слова partial разделять объявления класса или структуры по нескольким объявлениям.
+title: Разделение класса на разделяемые классы
+description: Сведения о том, как с помощью ключевого слова Partial разделять объявления класса или структуры на несколько объявлений в конструкторе классов.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ac0726851aec0d86223c2d95027b92137682c8a9
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d6eb6e72dc409a642dcf8e1a4c7a7389529375c7
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901353"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933523"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Практическое руководство. Разделение класса на разделяемые классы в конструкторе классов
 

@@ -1,5 +1,5 @@
 ---
-title: Проверка узлов с помощью представления модели содержимого в конструкторе схем XML
+title: Изучение модели содержимого узлов
 description: Узнайте, как использовать представление модели содержимого в конструкторе XML-схем для изучения модели содержимого узлов в XML-схеме.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef330e6e189b9cee1126d5de48d55622fe8d9046
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: f3ce3d1a47125c446521ceb60a851322c37209d0
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399513"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995282"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Практическое руководство. Изучение модели содержимого узлов с помощью представления модели содержимого
+# <a name="how-to-examine-the-content-model-of-nodes-by-using-the-content-model-view"></a>Практическое руководство. Изучение модели содержимого узлов с помощью представления модели содержимого
 
-В этой статье описывается процесс изучения узлов с использованием [представления модели содержимого](../xml-tools/content-model-view.md).
+В этой статье описывается процесс просмотра данных об узлах с использованием [представления модели содержимого](../xml-tools/content-model-view.md).
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Создание нового XSD-файла и отображение корневого элемента в представлении модели содержимого
 

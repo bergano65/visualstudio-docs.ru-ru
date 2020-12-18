@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e640d19659861a03d0f97abc799344bebb14b936
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878313"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524092"
 ---
 # <a name="git-experience-in-visual-studio"></a>Интерфейс GIT в Visual Studio
 
@@ -187,9 +187,9 @@ Visual Studio также позволяет выполнить фиксацию 
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Диалоговое окно &quot;Параметры&quot; в интегрированной среде разработки Visual Studio, в котором можно выбрать параметры персонализации и настройки.":::
 
-## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>Использование устаревшего интерфейса Team Explorer в Visual Studio
+## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>Использование всех возможностей Team Explorer в Visual Studio
 
-Новый интерфейс GIT — это система контроля версий по умолчанию в Visual Studio 2019 начиная с [версии 16.8](/visualstudio/releases/2019/release-notes/). Однако при желании этот интерфейс можно отключить. Чтобы включить устаревший интерфейс Team Explorer, выберите **Сервис** > **Параметры** > **Среда** > **Функции предварительной версии** и снимите флажок **Новый пользовательский интерфейс GIT**.
+Новый интерфейс GIT — это система контроля версий по умолчанию в Visual Studio 2019 начиная с [версии 16.8](/visualstudio/releases/2019/release-notes/). Однако при желании этот интерфейс можно отключить. Чтобы вернуться в Team Explorer для Git, выберите **Средства** > **Параметры** > **Среда** > **Функции предварительной версии** и снимите флажок **Новый пользовательский интерфейс Git**.
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Раздел &quot;Функции предварительной версии&quot; диалогового окна &quot;Параметры&quot; в Visual Studio.":::
 

@@ -1,6 +1,7 @@
 ---
 title: Применение изменений в режиме приостановки выполнения с помощью функции "Изменить и продолжить" | Документация Майкрософт
-ms.custom: seodec18
+Description: Сведения о том, как с помощью функции "Изменить и продолжить" изменить код в Visual Basic в режиме приостановки выполнения. Существует несколько способов перехода в режим приостановки выполнения.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acdd5b85c77b177dfb5f6d8129594967e902337c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b8e6ef8c41fbaf5aafa6b1fc9ef4216c773e75e
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350305"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398692"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Практическое руководство. Применение изменений в режиме приостановки выполнения с помощью функции "Изменить и продолжить" (Visual Basic)
 Можно использовать "Изменить и продолжить" для изменения кода в режиме приостановки и продолжения затем работы без остановки и перезапуска приложения.

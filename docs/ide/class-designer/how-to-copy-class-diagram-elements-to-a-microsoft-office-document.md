@@ -1,6 +1,6 @@
 ---
-title: Практическое руководство. Копирование элементов схемы классов в документ Microsoft Office (конструктор классов)
-description: Сведения о том, как копировать фигуры из диаграммы классов .NET в другие документы. Вы получите копию фигуры или ее базовый код.
+title: Копирование элементов диаграммы классов в документ Office
+description: Узнайте, как использовать конструктор классов для копирования фигур из диаграммы классов .NET в другие документы. При этом вы получаете копию фигуры или ее базовый код.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe473dfdfdf78934ad018a507c6386a1da9babb6
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 35776073679e43be99260108a72a22f33017a682
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901626"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933600"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Практическое руководство. Копирование элементов схемы классов в документ Microsoft Office
 

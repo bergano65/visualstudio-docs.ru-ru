@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2956372882d4449345d026e691a12afb2988054a
+ms.sourcegitcommit: 6ef4e46c786c5bbcc52cd9c30e5ddfca12ea8b3c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211179"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97050835"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Как сообщить о проблеме с Visual Studio или Visual Studio Installer
 
@@ -65,7 +65,7 @@ ms.locfileid: "91211179"
 
 Состояние **Нужны дополнительные сведения** указывает, что нам нужны от вас важные дополнительные сведения. Мы оставим комментарий о необходимых конкретных данных, а вы получите уведомление по электронной почте. Если информация не будет получена в течение семи дней, мы отправим вам напоминание. А через 14 дней бездействия запрос будет закрыт.
 
-1. Нажмите ссылку в сообщении электронной почты, чтобы перейти к отчету о проблеме, или откройте страницу My Feedback (Мои отзывы), чтобы увидеть все отчеты в состоянии **Нужны дополнительные сведения**.
+1. Щелкните ссылку в сообщении электронной почты, чтобы перейти к отчету о проблеме, или откройте домашнюю страницу, чтобы увидеть все отчеты в состоянии **Требуется дополнительная информация**.
 
     ![Мои отзывы](../ide/media/feedback-my-feedback.png)
 

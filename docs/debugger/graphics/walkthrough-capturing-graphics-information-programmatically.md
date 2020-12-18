@@ -1,5 +1,6 @@
 ---
 title: Запись графических сведений программными средствами
+description: Сведения о том, как с помощью диагностики графики Visual Studio программно захватывать графические данные из приложения Direct3D.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701ee13beebb388a269197b60ba94aa07406a5a6
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5375ac252d097234cf81d1802be1ab681f90bbcd
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807915"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995017"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Пошаговое руководство. Запись графических сведений программными средствами
 С помощью диагностики графики [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] можно программно захватывать графические данные из приложения Direct3D.

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: de5027024956c03341ac3e2d851bf85430f48f18
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 69fb3d8b5e8af13ec8781e65e60bd060ad69d365
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878300"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362396"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Новые возможности Visual Studio 2019
 
@@ -136,9 +136,9 @@ ms.locfileid: "94878300"
 
 ### <a name="git-productivity"></a>Производительность Git
 
-**Новое в 16.8** Теперь Git является интерфейсом системы управления версиями по умолчанию в Visual Studio 2019. Мы разработали набор функций на основе ваших отзывов за два прошлых выпуска. Теперь новый интерфейс включен по умолчанию для всех пользователей. В новом меню Git можно клонировать, создавать или открывать репозитории. Используйте интегрированные окна инструментов Git для фиксации и отправки изменений в код, управления ветвями, отслеживания изменений удаленных репозиториев и разрешения конфликтов слияния.
+**Новые возможности в версии 16.8:** Теперь GIT является интерфейсом системы управления версиями по умолчанию в Visual Studio 2019. Мы разработали набор функций на основе ваших отзывов за два прошлых выпуска. Теперь новый интерфейс включен по умолчанию для всех пользователей. В новом меню Git можно клонировать, создавать или открывать репозитории. Используйте интегрированные окна инструментов Git для фиксации и отправки изменений в код, управления ветвями, отслеживания изменений удаленных репозиториев и разрешения конфликтов слияния.
 
-Дополнительные сведения см. на странице [Производительность Git в Visual Studio](git-with-visual-studio.md).
+Дополнительные сведения см. в статье [Новый интерфейс в Visual Studio](git-with-visual-studio.md).
 
 ### <a name="live-share"></a>Live Share
 
@@ -226,7 +226,7 @@ ms.locfileid: "94878300"
 
    Хотя новый интерфейс управления версиями Git теперь включен по умолчанию в Visual Studio 2019 [версии 16.8](/visualstudio/releases/2019/release-notes/), мы продолжаем добавлять новые функции для его совершенствования в последнем выпуске предварительной версии.
 
-   Дополнительные сведения см. на странице [Производительность Git в Visual Studio](git-with-visual-studio.md).
+   Дополнительные сведения см. в статье [Новый интерфейс в Visual Studio](git-with-visual-studio.md).
 
 Дополнительные сведения о предварительном выпуске&mdash; и ссылку для скачивания, если вы хотите испытать его&mdash;, можно найти на странице **[Visual Studio Preview](https://aka.ms/vspreview/)** .
 
@@ -240,6 +240,7 @@ ms.locfileid: "94878300"
 
 ## <a name="see-also"></a>См. также
 
+* [Обновления в документации по Visual Studio](whats-new-visual-studio-docs.md)
 * [Заметки о выпуске Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Заметки о выпуске Visual Studio 2019 для Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Новые возможности пакета SDK для Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)

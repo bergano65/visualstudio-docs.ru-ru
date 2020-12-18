@@ -1,5 +1,7 @@
 ---
 title: Отладка из проекта DLL | Документация Майкрософт
+Description: Отладку проекта библиотеки DLL можно запустить из самого проекта, указав вызывающее приложение в свойствах проекта. Дополнительные сведения см. в этой статье.
+ms.custom: SEO-VS-2020
 ms.date: 10/10/2018
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1102eb61f6cfda42f6e4e879f5c592c0c064ce0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 723f35142ec125c016caa3653be450b61fb05d02
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852143"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398562"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Практическое руководство. Отладка из проекта DLL в Visual Studio (C#, C++, Visual Basic, F#)
 

@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 691e6c3b994649a9f0fa2d0e92a990f317a16208
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.openlocfilehash: b28d87cc0842d5a3de8634ae50378915196366ff
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88508182"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527920"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Учебник. Создание простого консольного приложения C# в Visual Studio
 
@@ -49,13 +49,13 @@ ms.locfileid: "88508182"
 2. В верхней строке меню последовательно выберите **Файл**  > **Создать**  > **Проект**.
    (Или нажмите **CTRL**+**SHIFT**+**N**).
 
-3. В левой панели диалогового окна **Новый проект** разверните узел **C#** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)** . Назовите файл ***Calculator***.
+3. В левой панели диалогового окна **Новый проект** разверните узел **C#** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)** . Присвойте файлу имя **_Calculator_* _.
 
    ![Шаблон проекта "Консольное приложение (.NET Core)" в диалоговом окне "Новый проект" в интегрированной среде разработки Visual Studio](./media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>Добавление рабочей нагрузки (необязательно)
 
-Если шаблон проекта **Консольное приложение (.NET Core)** отсутствует, его можно получить, добавив рабочую нагрузку **Кроссплатформенная разработка .NET Core**. Ниже описывается порядок действий.
+Если шаблон проекта _ *Консольное приложение (.NET Core)* * отсутствует, его можно получить, добавив рабочую нагрузку **Кроссплатформенная разработка .NET Core**. Ниже описывается порядок действий.
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Вариант 1: использование диалогового окна "Новый проект"
 
@@ -311,7 +311,7 @@ ms.locfileid: "88508182"
 
 Теперь при делении любого числа на ноль приложение предложит ввести другое число. Даже лучше: Оно будет снова и снова повторять этот запрос, пока не получит значение, отличающееся от нуля.
 
-   ![Редактор кода Visual Studio с отображением ошибки деления на ноль](./media/csharp-console-calculator-dividebyzero.png)
+   ![Исправленная ошибка деления на ноль](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>Исправление ошибки формата
 
@@ -600,10 +600,25 @@ namespace Calculator
 
 ## <a name="next-steps"></a>Следующие шаги
 
+:::moniker range="vs-2017"
+
+Другие руководства
+
+> [!div class="nextstepaction"]
+> [Руководства по C#](/dotnet/csharp/tutorials)
+
+> [!div class="nextstepaction"]
+> [Обзор интегрированной среды разработки Visual Studio](../visual-studio-ide.md)
+
+:::moniker-end
+
+:::moniker range="vs-2019"
+
 Перейдите ко второй части этого руководства:
 
 > [!div class="nextstepaction"]
 > [Продолжение. Часть 2](tutorial-console-part-2.md)
+:::moniker-end
 
 ## <a name="see-also"></a>См. также
 

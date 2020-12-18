@@ -182,11 +182,11 @@
       href: ide/visual-studio-search.md
     - name: Проекты и решения
       items:
-        - name: Работа с решениями и проектами
+        - name: Узнайте о решениях и проектах
           href: ide/solutions-and-projects-in-visual-studio.md
-        - name: Создание нового проекта
+        - name: Создание проекта
           href: ide/create-new-project.md
-        - name: Создание решений и проектов
+        - name: Работа с решениями и проектами
           href: ide/creating-solutions-and-projects.md
         - name: Открытие проекта из репозитория
           href: get-started/tutorial-open-project-from-repo.md
@@ -1094,7 +1094,7 @@
               href: ide/reference/options-dialog-box-visual-studio.md
             - name: Среда
               items:
-                - name: Общее
+                - name: Общие сведения
                   href: ide/reference/general-environment-options-dialog-box.md
                 - name: Учетные записи
                   href: ide/reference/accounts-environment-options-dialog-box.md
@@ -1132,7 +1132,7 @@
                   href: ide/reference/web-browser-environment-options-dialog-box.md
             - name: Проекты и решения
               items:
-                - name: Общее
+                - name: Общие сведения
                   href: ide/reference/projects-and-solutions-options-dialog-box.md
                 - name: Сборка и запуск
                   href: ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md
@@ -1146,13 +1146,13 @@
                   href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
             - name: Текстовый редактор
               items:
-                - name: Общее
+                - name: Общие сведения
                   href: ide/reference/options-text-editor-general.md
                 - name: Расширение файла
                   href: ide/reference/options-text-editor-file-extension.md
                 - name: Все языки
                   items:
-                    - name: Общее
+                    - name: Общие сведения
                       href: ide/reference/options-text-editor-all-languages.md
                     - name: Полосы прокрутки
                       href: ide/reference/options-text-editor-all-languages-scroll-bars.md
@@ -1234,13 +1234,13 @@
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
             - name: Конструктор Windows Forms
               items:
-                - name: Общее
+                - name: Общие сведения
                   href: ide/reference/options-windows-forms-designer.md
                 - name: Настройка пользовательского интерфейса данных
                   href: ide/reference/options-windows-forms-designer-data-ui-customization.md
             - name: Конструктор XAML
               href: ide/reference/xaml-designer.md
-        - name: окно выходных данных
+        - name: Окно вывода
           href: ide/reference/output-window.md
         - name: Свойства проекта
           items:
@@ -1439,7 +1439,7 @@
       items:
         - name: График выпуска
           href: /visualstudio/productinfo/release-rhythm/
-        - name: "Visual Studio\_2017"
+        - name: "Visual\_Studio\_2017"
           items:
             - name: Заметки о текущем выпуске
               href: /visualstudio/releasenotes/vs2017-relnotes/

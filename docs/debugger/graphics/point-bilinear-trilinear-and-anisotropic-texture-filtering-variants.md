@@ -1,5 +1,7 @@
 ---
 title: Варианты точечной, билинейной, трилинейной и анизотропной фильтрации текстур
+description: Если потери производительности при точечной, билинейной, трилинейной и анизотропной фильтрации текстур являются значительными, оцените, насколько оправданы такие потери.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 075fc9c4be3890ce9a63c1aa79762dbd8ceaeea5
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: c38869b4c8daa4cb4433f9f6a64afcc7398c9a9c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407566"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996088"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Варианты точечной, билинейной, трилинейной и анизотропной фильтрации текстур
 Переопределяет режим фильтрации для соответствующих дискретизаторов текстур.

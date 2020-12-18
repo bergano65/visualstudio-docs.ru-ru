@@ -1,5 +1,7 @@
 ---
 title: Управление представлением сообщений | Документация Майкрософт
+Description: Можно выбрать типы окон, типы сообщений для отображения в окне представления сообщений и формат отображения для строк сообщений. Дополнительные сведения см. в этой статье.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917fc2af5ab09544201a6aa35c34611a89d7a277
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 58c99f0db1686a9f1dd8dcb13949eb6fe47f3fdc
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90850973"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398640"
 ---
 # <a name="how-to-control-messages-view"></a>Практическое руководство. Управление представлением "Сообщения"
 В Spy++ доступны различные возможности управления содержимым окна [представления сообщений](../debugger/messages-view.md). Вы можете [запустить и прекратить](../debugger/how-to-start-and-stop-the-message-log-display.md) отображение сообщений в любое время, а также определить следующее:

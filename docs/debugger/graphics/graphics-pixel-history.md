@@ -1,5 +1,7 @@
 ---
 title: Журнал пикселей графики | Документация Майкрософт
+description: Устранение неполадок с отрисовкой путем просмотра в журнале сведений о конкретном пикселе. Журнал пикселей графики содержит результаты событий Direct3D.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb1b7a869915eebc561e1baf47082dd5dbc00df
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0b12264c610d291ff49be0524663141a59082e9e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735488"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995308"
 ---
 # <a name="graphics-pixel-history"></a>Журнал пикселей графики
 Окно журнала пикселей графики в анализаторе графики Visual Studio помогает понять влияние на конкретный пиксель событий Direct3D, которые происходят в кадре вашей игры или приложения.

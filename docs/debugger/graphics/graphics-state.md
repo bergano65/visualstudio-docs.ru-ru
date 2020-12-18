@@ -1,5 +1,7 @@
 ---
 title: Состояние графики | Документация Майкрософт
+description: Устранение неполадок с визуализацией путем просмотра состояния графики для каждого вызова Draw. Данные состояния, измененные по сравнению с предыдущим вызовом, будут выделены.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a07e198c6ff4e432f708ac1751e69bbef77a22c4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: de8f3c356cfe05aade3e4f2197b3f7429967a259
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823776"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994020"
 ---
 # <a name="graphics-state"></a>Состояние графики
 Окно «Состояние» в диагностике графики Visual Studio помогает понять состояние графики, активное на момент возникновения текущего события, такого как вызов Draw.
