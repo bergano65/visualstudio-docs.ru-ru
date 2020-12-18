@@ -1,5 +1,6 @@
 ---
 title: Текст пользовательского интерфейса и Справка по Visual Studio | Документация Майкрософт
+description: Сведения о тексте и терминологии пользовательского интерфейса, используемой в справочной информации для Visual Studio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3247aeaa702b59722471c7d28e98957f04f3e07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2795d766c43d6119fa50a12c4dcd1e2c72d79186
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698300"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668603"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Текст пользовательского интерфейса и справки для Visual Studio
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> Текст и терминология пользовательского интерфейса
@@ -60,11 +61,11 @@ ms.locfileid: "80698300"
 #### <a name="supplemental-instructions"></a>Дополнительные инструкции
  Дополнительные инструкции содержат дополнительные сведения, помогающие пользователю понять элементы управления и группирования элементов управления. Это также может включать текст подсказки, необходимый для понимания того, какой формат ожидается элементом управления вводом. Используйте дополнительные инструкции с осторожностью. Зарезервируйте их в случаях, когда вполне вероятно, что пользователь не сможет полностью понять последствия выбора.
 
- ![Пояснительный текст в Visual Studio](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601 — b_SupplementalText1")
+ ![Снимок экрана, показывающий кнопку "параметры Internet Explorer" с дополнительным текстом ниже, который описывает влияние изменения настроек параметров.](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601 — b_SupplementalText1")
 
  **Пояснительный текст в Visual Studio**
 
- ![Пояснительный текст в Visual Studio](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601 — c_SupplementalText2")
+ ![Снимок экрана: диалоговое окно выбора системы управления версиями в Visual Studio, в котором отображается дополнительный текст, описывающий каждый из параметров системы управления версиями.](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601 — c_SupplementalText2")
 
  **Пояснительный текст в Visual Studio**
 
@@ -123,7 +124,7 @@ ms.locfileid: "80698300"
 
 - Никогда не компоновать только слово "здесь". Это проблематично для некоторых средств чтения с экрана, в результате чего будет выставляться только слово с гиперссылкой.
 
-     Неверно: "найдите сведения о **мобильных службах**Windows Azure"
+     Неверно: "найдите сведения о **мобильных службах** Windows Azure"
 
      Верно: "какие варианты ценообразования доступны для мобильных служб Windows Azure".
 
@@ -136,15 +137,15 @@ ms.locfileid: "80698300"
 
 - Вместо метки элемента управления:
 
-     ![Текст подсказки в Visual Studio](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601 — f_HintText1")
+     ![Снимок экрана элемента управления "раскрывающийся список" с текстом подсказки вместо метки элемента управления, считывающего "Поиск обозреватель решений (Ctrl +;)").](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601 — f_HintText1")
 
 - С помощью команды предоставляет инструкции:
 
-     ![Текст подсказки в Visual Studio](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601 — g_HintText2")
+     ![Снимок экрана текстового поля с текстом подсказки в элементе управления, считывающем "Ввод имени".](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601 — g_HintText2")
 
 - С текстом, указывающим на обязательную запись:
 
-     ![Текст подсказки в Visual Studio](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601 — h_HintText3")
+     ![Снимок экрана текстового поля с текстом подсказки в элементе управления, который считывает " \< Required \> ".](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601 — h_HintText3")
 
 #### <a name="watermark-text"></a>Текст водяного знака
  В пустой области конструктора текст должен указывать, что делать, а также указывать ссылки для открытия других связанных окон, если это уместно:
@@ -420,7 +421,7 @@ public class HelpForm : Form
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Шрифты и форматирование для Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)
 - [Макет для Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)
 - [Уведомления и ход выполнения для Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
