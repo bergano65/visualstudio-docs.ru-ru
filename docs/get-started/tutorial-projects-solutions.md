@@ -100,7 +100,7 @@ ms.locfileid: "94903940"
    > [!NOTE]
    > Если вы не видите **Visual C#** в левой области диалогового окна, нужно установить рабочую нагрузку Visual Studio **Разработка классических приложений .NET**. Visual Studio использует установку на основе рабочей нагрузки, чтобы устанавливать только те компоненты, которые необходимы для этого типа разработки. Чтобы установить рабочую нагрузку, просто нажмите на ссылку **Открыть Visual Studio Installer** в левом нижнем углу диалогового окна **Добавить новый проект**. После запуска Visual Studio Installer выберите рабочую нагрузку **Разработка классических приложений .NET** и нажмите кнопу **Изменить**.
    >
-   > ![Ссылка Открыть Visual Studio Installer](media/tutorial-projects-open-installer.png "Ссылка Открыть Visual Studio Installer в диалоговом окне "Добавить новый проект" в Visual Studio 2017.")
+   > ![Ссылка Открыть Visual Studio Installer](media/tutorial-projects-open-installer.png "Ссылка Открыть Visual Studio Installer в диалоговом окне Добавить новый проект в Visual Studio 2017.")
 
 ::: moniker-end
 
