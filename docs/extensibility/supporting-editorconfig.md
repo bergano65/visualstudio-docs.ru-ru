@@ -1,5 +1,7 @@
 ---
 title: Расширение языковой службы для поддержки EditorConfig
+description: Сведения об изменениях, внесенных в обновление языковой службы для поддержки файлов EditorConfig. Замените глобальный параметр, зависящий от языка, контекстным параметром.
+ms.custom: SEO-VS-2020
 ms.date: 11/22/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddfe0e30904d000b4fd70c85371d29a2ee486932
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c635df2301822fc1bb982df44912527d53c9ef6
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699583"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716111"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>Поддержка EditorConfig для языковой службы
 

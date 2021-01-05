@@ -1,5 +1,7 @@
 ---
 title: Выделение синтаксиса в пользовательских редакторах | Документация Майкрософт
+description: Сведения о цветовом синтаксисе в пользовательских редакторах пакета SDK для среды Visual Studio, в которых отображаются указанные цвета для данного представления документа.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72749d3a58b4adae149baefff9e9ae77f6b05f18
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 8aac72cbc26ff5e6abf96259fd161cba63b3b2af
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414182"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716072"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Цветовая маркировка синтаксиса в специализированных редакторах
 Редакторы пакетов SDK для среды Visual Studio, включая основной редактор, используют языковые службы для поиска определенных синтаксических элементов и отображают их с указанными цветами для данного представления документа.
@@ -54,7 +56,7 @@ ms.locfileid: "93414182"
 > [!NOTE]
 > Помимо использования средства выбора цветов языковой службы, VSPackage может использовать механизм цветового выделения текста пакета SDK для среды Visual Studio общего назначения. Дополнительные сведения об этом механизме см. в разделе [Использование шрифтов и цветов](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Цветовая маркировка синтаксиса в языковой службе прежних версий](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [Реализация цветовой маркировки синтаксиса](../extensibility/internals/implementing-syntax-coloring.md)

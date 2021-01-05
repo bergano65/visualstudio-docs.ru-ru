@@ -1,5 +1,7 @@
 ---
 title: Поддержка нескольких представлений документов | Документация Майкрософт
+description: Узнайте, как предоставить несколько представлений документа с помощью отдельных объектов документа и представления документа для пользовательского редактора в пакете SDK для Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a952414fa7156d80675564e519e556ccedd524a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c1d99f4beb000d4b48435b9215a01f31ef8e936
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699540"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716098"
 ---
 # <a name="supporting-multiple-document-views"></a>Поддержка представления нескольких документов
 Можно предоставить несколько представлений документа, создав отдельные данные документа и объекты представления документов для редактора. Ниже перечислены некоторые случаи, в которых можно использовать дополнительное представление документа.

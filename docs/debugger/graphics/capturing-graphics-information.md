@@ -1,5 +1,7 @@
 ---
 title: Захват графической информации | Документация Майкрософт
+description: Захватывайте информацию графики из приложений DirectX, чтобы можно было использовать анализатор графики Visual Studio для диагностики проблем отрисовки и проблем производительности.
+ms.custom: SEO-VS-2020
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38dd994eca30bfee071f00431f3b111c2ea444a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a11a5dc3a02959ff7bec4cfaac9aac2ca231b2ba
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736186"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727928"
 ---
 # <a name="capturing-graphics-information"></a>Захват графической информации
 Захватывайте информацию графики из приложений DirectX, чтобы можно было использовать анализатор графики Visual Studio для диагностики проблем отрисовки и проблем производительности.

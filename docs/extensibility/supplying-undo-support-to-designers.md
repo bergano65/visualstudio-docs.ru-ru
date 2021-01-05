@@ -1,5 +1,7 @@
 ---
 title: Предоставление поддержки отмены для конструкторов | Документация Майкрософт
+description: 'Узнайте, как обеспечить поддержку отмены в конструкторах: автоматически или с помощью функций пакета SDK для Visual Studio.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0580f974c362a71c3e400946f2ad34f565ad1232
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4108e259fb0a2e60c2719df8a7fb76f273634799
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699679"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715579"
 ---
 # <a name="supply-undo-support-to-designers"></a>Предоставление поддержки отмены в конструкторах
 
@@ -29,7 +31,7 @@ ms.locfileid: "80699679"
 
 - Предоставьте поддержку сохраняемости и CodeDOM, реализовав <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> классы и  <xref:System.ComponentModel.Design.IComponentChangeService> .
 
-Дополнительные сведения о создании конструкторов с помощью .NET Framework см. в разделе [расширение поддержки времени разработки](/previous-versions/37899azc(v=vs.140)).
+Дополнительные сведения о создании конструкторов с помощью .NET Framework см. в статье [расширение поддержки Design-Time](/previous-versions/37899azc(v=vs.140)).
 
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]Предоставляет инфраструктуру отмены по умолчанию:
 
@@ -99,8 +101,8 @@ ms.locfileid: "80699679"
 
 - Конструктор выбирает явное создание блоков отмены с помощью стандартной единицы отмены, предоставляемой реализацией <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> , или реализации, относящейся к Visual Studio <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> , которая является производной от класса, <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> а также предоставляет реализацию <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ComponentModel.Design.UndoEngine>
 - <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>
-- [Расширение поддержки времени разработки](/previous-versions/37899azc(v=vs.140))
+- [Расширение поддержки Design-Time](/previous-versions/37899azc(v=vs.140))
