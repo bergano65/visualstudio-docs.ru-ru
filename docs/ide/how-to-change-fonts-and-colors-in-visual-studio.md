@@ -3,7 +3,7 @@ title: Изменение тем, шрифтов, текста и контрас
 description: Сведения о том, как изменить цветные темы, цвета шрифтов, размер текста и включить контрастные цвета в Visual Studio для удобства использования, с помощью специальных возможностей.
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 7c52be25c007a16d7e6221663c434767c02d8d50
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801442"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683905"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Практическое руководство. Изменение шрифтов, цветов и тем в Visual Studio
 
@@ -116,7 +116,7 @@ ms.locfileid: "88801442"
 Дополнительные сведения о других доступных параметрах специальных возможностей Visual Studio см. в [этой статье](../ide/reference/accessibility-features-of-visual-studio.md).
 
 > [!TIP]
-> Если вам требуется параметр специальных возможностей для цветов или шрифтов, но в настоящее время в Visual Studio он недоступен, сообщите нам, выбрав раздел **Предложить функцию** на странице [сообщества разработчиков Visual Studio](https://developercommunity.visualstudio.com/). Дополнительные сведения об этом форуме и возможностях его использования см. в статье [Предложить функцию для Visual Studio](../ide/suggest-a-feature.md).
+> Если вам требуется параметр специальных возможностей для цветов или шрифтов, но в настоящее время в Visual Studio он недоступен, сообщите нам, выбрав раздел **Предложить функцию** на странице [сообщества разработчиков Visual Studio](https://aka.ms/feedback/suggest?space=8). Дополнительные сведения об этом форуме и возможностях его использования см. в статье [Предложить функцию для Visual Studio](../ide/suggest-a-feature.md).
 
 ## <a name="next-steps"></a>Следующие шаги
 

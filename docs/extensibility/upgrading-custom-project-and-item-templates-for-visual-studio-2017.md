@@ -1,6 +1,8 @@
 ---
 title: Обновление пользовательских шаблонов проектов и элементов для Visual Studio 2017
 titleSuffix: ''
+description: Узнайте, как обновить пользовательский проект и шаблон элемента из предыдущих версий пакета SDK для Visual Studio для использования с Visual Studio 2017 и более поздними версиями.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5f807e142b376d05e5a44600e8f6b24ddb3593be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 089baadcb60afcc8b32e287095b10ab30196ce17
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698849"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715981"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Обновление пользовательского шаблоны проектов и элементов для Visual Studio 2017
 

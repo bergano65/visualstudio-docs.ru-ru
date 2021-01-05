@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3b50ec910c6d5880ead2df48db2ef763753379bb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 11caf55a8412477ac94d290add667b9393435fb6
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807889"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668746"
 ---
 # <a name="visual-studio-feedback-options"></a>Параметры обратной связи Visual Studio
 
@@ -34,7 +34,7 @@ ms.locfileid: "90807889"
 
 ![Значок "Отправить отзыв" в интегрированной среде разработки Visual Studio 2019](./media/vs-2019/send-feedback-icon.png)
 
-После этого Visual Studio откроет в браузере страницу [Сообщество разработчиков](https://developercommunity.visualstudio.com), где можно сообщить о проблеме. Дополнительные сведения см. в статье [Как сообщить о проблеме с Visual Studio 2017](how-to-report-a-problem-with-visual-studio.md).
+После этого Visual Studio откроет в браузере страницу [Сообщество разработчиков](https://aka.ms/feedback/suggest?space=8), где можно сообщить о проблеме. Дополнительные сведения см. в статье [Как сообщить о проблеме с Visual Studio 2017](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ ms.locfileid: "90807889"
 
 ![Значок "Отправить отзыв" в интегрированной среде разработки Visual Studio 2019](./media/send-feedback-icon.png)
 
-После этого Visual Studio откроет в браузере страницу [Сообщество разработчиков](https://developercommunity.visualstudio.com), где можно сообщить о проблеме. Дополнительные сведения см. в статье [Как сообщить о проблеме с Visual Studio 2017](how-to-report-a-problem-with-visual-studio.md).
+После этого Visual Studio откроет в браузере страницу [Сообщество разработчиков](https://aka.ms/feedback/suggest?space=8), где можно сообщить о проблеме. Дополнительные сведения см. в статье [Как сообщить о проблеме с Visual Studio 2017](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ ms.locfileid: "90807889"
 
 Если у вас есть идея или предложение в отношении того, как можно улучшить Visual Studio, воспользуйтесь средством **Предложить функцию**. В Visual Studio выберите значок отзыва в правом верхнем углу или выберите в строке меню пункты **Справка** > **Отправить отзыв** > **Предложить функцию**.
 
-После этого Visual Studio откроет в браузере страницу [Сообщество разработчиков](https://developercommunity.visualstudio.com), где можно поделиться своей идеей. Дополнительные сведения см. в статье о том, [как предложить функцию для Visual Studio](suggest-a-feature.md).
+После этого Visual Studio откроет в браузере страницу [Сообщество разработчиков](https://aka.ms/feedback/suggest?space=8), где можно поделиться своей идеей. Дополнительные сведения см. в статье о том, [как предложить функцию для Visual Studio](suggest-a-feature.md).
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ ms.locfileid: "90807889"
 
 Если у вас есть идея или предложение в отношении того, как можно улучшить Visual Studio, воспользуйтесь средством **Отправить предложение**. В Visual Studio выберите значок отзыва рядом с полем поиска или выберите в строке меню пункты **Справка** > **Отправить отзыв** > **Внести предложение**.
 
-После этого Visual Studio откроет в браузере страницу [Сообщество разработчиков](https://developercommunity.visualstudio.com), где можно поделиться своей идеей. Дополнительные сведения см. в статье о том, [как предложить функцию для Visual Studio](suggest-a-feature.md).
+После этого Visual Studio откроет в браузере страницу [Сообщество разработчиков](https://aka.ms/feedback/suggest?space=8), где можно поделиться своей идеей. Дополнительные сведения см. в статье о том, [как предложить функцию для Visual Studio](suggest-a-feature.md).
 
 ::: moniker-end
 

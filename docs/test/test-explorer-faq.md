@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: ef6c6bf3cedcccd156e7ae9ae02c2e5f70805521
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: b69274058ea939251a772dfb30ddf7b42861542c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330177"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668590"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Вопросы и ответы об обозревателе тестов Visual Studio
 
@@ -97,13 +97,13 @@ ms.locfileid: "96330177"
 
 **В поле поиска обозревателя тестов исчез фильтр "Путь к файлу".**
 
-Фильтр "Путь к файлу" в поле поиска **обозревателя тестов** удален в Visual Studio 2017 версии 15.7. Эта функция используется мало. Чтобы обозреватель тестов получал методы теста быстрее, ее можно исключить. Если это изменение прерывает ваш поток разработки, сообщите нам, отправив отзыв в [сообщество разработчиков](https://developercommunity.visualstudio.com/).
+Фильтр "Путь к файлу" в поле поиска **обозревателя тестов** удален в Visual Studio 2017 версии 15.7. Эта функция используется мало. Чтобы обозреватель тестов получал методы теста быстрее, ее можно исключить. Если это изменение прерывает ваш поток разработки, сообщите нам, отправив отзыв в [сообщество разработчиков](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="remove-undocumented-interfaces"></a>Удаление недокументированных интерфейсов
 
 **Некоторые интерфейсы API, относящиеся к тесту, отсутствуют в Visual Studio 2019. Что изменилось?**
 
-В Visual Studio 2019 будут удалены некоторые API окон тестов, которые были ранее помечены как общедоступные, но никогда не были официально задокументированы. Они были помечены как "нерекомендуемые" в Visual Studio 2017, чтобы заранее предупредить группы обслуживания расширений. Насколько нам известно, с этими API-интерфейсами работала и была связана лишь незначительная часть расширений. К ним относятся `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` и `SearchFilterTokenType`. Если это изменение влияет на ваше расширение, сообщите нам, отправив сведения об ошибке в [сообщество разработчиков](https://developercommunity.visualstudio.com).
+В Visual Studio 2019 будут удалены некоторые API окон тестов, которые были ранее помечены как общедоступные, но никогда не были официально задокументированы. Они были помечены как "нерекомендуемые" в Visual Studio 2017, чтобы заранее предупредить группы обслуживания расширений. Насколько нам известно, с этими API-интерфейсами работала и была связана лишь незначительная часть расширений. К ним относятся `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` и `SearchFilterTokenType`. Если это изменение влияет на ваше расширение, сообщите нам, отправив сведения об ошибке в [сообщество разработчиков](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="test-adapter-nuget-reference"></a>Ссылка NuGet для адаптера теста
 

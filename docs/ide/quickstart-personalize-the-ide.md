@@ -3,18 +3,18 @@ title: Задание темной темы и изменение цвета т�
 description: Сведения о том, как изменить цветовую тему Visual Studio по умолчанию на темный режим, а также как изменить цвета шрифтов в редакторе кода.
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d58bf3a00d3db208abfad23a67bd115914f14a15
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d261d6c13572be6df80ca36f37e19792d53e2a32
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801403"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684040"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>Практическое руководство. Персонализация интегрированной среды разработки и редактора Visual Studio
 

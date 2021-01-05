@@ -1,5 +1,7 @@
 ---
 title: Использование и предоставление служб | Документация Майкрософт
+description: Узнайте о службах, которые интегрированная среда разработки Visual Studio предлагает пакету VSPackage для предоставления и использования. В этих статьях описывается, как получить и предоставить службы.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8741d8d66af96ad4c6abea44b238393a34c5aa95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a7c1d9f3632d8b710ac238c372ed4456183a8d1
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698736"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715942"
 ---
 # <a name="using-and-providing-services"></a>Использование и предоставление служб
 Служба — это контракт между двумя пакетами VSPackage. Один пакет VSPackage предлагает конкретный набор интерфейсов для использования другим пакетом VSPackage. Например, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] предоставляет <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> службу для любого пакета VSPackage, который она загружает. Эта служба предоставляет <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> интерфейс, который можно использовать для записи в журнал действий. Дополнительные сведения см. в разделе [инструкции. Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).
@@ -32,7 +34,7 @@ ms.locfileid: "80698736"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Предоставляет основные функциональные возможности для работы с окнами и интерфейсом пользователя в интегрированной среде разработки, например возможность создания средств и окон документов.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Предоставляет базовые функции, связанные с решениями, такие как возможность перечисления проектов, создания новых проектов и наблюдения за изменениями проекта.|
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Основные компоненты службы](../extensibility/internals/service-essentials.md) Представляет важные элементы службы Visual Studio.
 
 - [Руководство. Получение службы](../extensibility/how-to-get-a-service.md) Описывает, как запросить (использовать) службу.
@@ -43,5 +45,5 @@ ms.locfileid: "80698736"
 
 - [Руководство. Устранение неполадок служб](../extensibility/how-to-troubleshoot-services.md) Обсуждаются распространенные проблемы и предоставляются их решения.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 - [SDK для Visual Studio](../extensibility/visual-studio-sdk.md)

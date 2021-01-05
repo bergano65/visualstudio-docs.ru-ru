@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ab66089de25b7648b13e1ba05f88ab55b7868df
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: d7e2a05fe84b023a60ef75f0cb262a08fc02587a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348032"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727428"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Просмотр переменных с помощью окна контрольных значений и быстрой проверки
 
@@ -30,7 +30,8 @@ ms.locfileid: "85348032"
 
 В **окнах контрольных значений** в процессе отладки могут отображаться несколько переменных. В диалоговом окне **Быстрая проверка** отображается одна переменная за раз. Его следует закрыть до того, как можно будет продолжить отладку.
 
-Если вы не знакомы с процессом отладки кода, перед выполнением задач в этой статье рекомендуется прочесть документ об [отладке для начинающих](../debugger/debugging-absolute-beginners.md) и статью [Методы и инструменты отладки](../debugger/write-better-code-with-visual-studio.md).
+> [!NOTE]
+> Если вы не знакомы с процессом отладки кода, перед выполнением задач в этой статье рекомендуется прочесть документ об [отладке для начинающих](../debugger/debugging-absolute-beginners.md) и статью [Методы и инструменты отладки](../debugger/write-better-code-with-visual-studio.md).
 
 ## <a name="observe-variables-with-a-watch-window"></a>Наблюдение за переменными с помощью окна контрольных значений
 

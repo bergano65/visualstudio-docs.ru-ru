@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5103d9a053a1a2a8bd3a672c33037695ee3d2836
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d21784169e541e2f4353fd6d16772b5315940166
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928701"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668837"
 ---
 # <a name="advanced-example-for-containers"></a>Расширенный пример для контейнеров
 
@@ -213,7 +213,7 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 ::: moniker-end
 
-Когда завершится выполнение последней строки, откройте файл %TEMP%\vslogs.zip на своем компьютере или отправьте сообщение об ошибке на веб-сайте [сообщества разработчиков](https://developercommunity.visualstudio.com).
+Когда завершится выполнение последней строки, откройте файл %TEMP%\vslogs.zip на своем компьютере или отправьте сообщение об ошибке на веб-сайте [сообщества разработчиков](https://aka.ms/feedback/suggest?space=8).
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

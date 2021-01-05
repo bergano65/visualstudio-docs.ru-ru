@@ -1,5 +1,7 @@
 ---
 title: Синхронно автозагруженные расширения
+description: Узнайте о поведении по умолчанию, начиная с Visual Studio 2019, которое блокирует синхронно загружаемые пакеты из любого расширения.
+ms.custom: SEO-VS-2020
 ms.date: 12/11/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab62d235fd6ed4e47e765fc23868acd5c56efcb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 506c098f1f385ddf39c5d000f4571a8ee92c09fc
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699373"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715448"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Синхронно автозагруженные расширения
 
@@ -21,7 +23,7 @@ ms.locfileid: "80699373"
 
 ![предупреждение о совместимости расширения](media/extension-compatibility-warning-16-1.png.png)
 
-Можно сделать следующее:
+Вы можете:
 
 - Щелкните **Разрешить синхронное автозагрузки** , чтобы разрешить расширения автозагрузки. Чтобы изменить этот параметр в Visual Studio, щелкните Среда, щелкните расширения, а затем установите флажок Разрешить синхронное автозагрузки расширений. 
 
@@ -42,7 +44,7 @@ ms.locfileid: "80699373"
 
 Администраторы могут включить групповая политика, чтобы разрешить синхронный автозагрузки. Для этого задайте политику на основе реестра в следующем разделе:
 
-**HKEY_LOCAL_MACHINE \Софтваре\полиЦиес\микрософт\висуалстудио\синчронаусаутолоад**
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
 
 Запись = **разрешено**
 

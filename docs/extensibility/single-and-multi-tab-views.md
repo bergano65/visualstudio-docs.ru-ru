@@ -1,5 +1,7 @@
 ---
 title: Представления с одним и несколькими вкладками | Документация Майкрософт
+description: Сведения о реализации многостраничных представлений в редакторах, таких как окна редактора кода и конструктор форм.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c308b4d6c7b90456255019ef57c6b9d544aefc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94081af0bfdb85793c092f76d28758f220f4628b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699980"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715214"
 ---
 # <a name="single-and-multi-tab-views"></a>Представления с одной и несколькими вкладками
 Редактор может создавать различные типы представлений. Одним из примеров является окно редактора кода, другое — конструктор форм.

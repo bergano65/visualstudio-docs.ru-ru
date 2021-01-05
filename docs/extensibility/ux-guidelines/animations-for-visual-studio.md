@@ -1,5 +1,7 @@
 ---
 title: Анимация для Visual Studio | Документация Майкрософт
+description: Сведения о правилах, позволяющих обеспечить единообразные и удобные для пользователя стили анимации в интегрированной среде разработки Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc11eb7bab69728be5ceaa55143f56e93cd1fca4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c86b033986511100415989e76f4f1e6ef7702f10
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698606"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715955"
 ---
 # <a name="animations-for-visual-studio"></a>Анимация для Visual Studio
 ## <a name="animation-fundamentals"></a>Основы анимации
@@ -126,7 +128,7 @@ ms.locfileid: "80698606"
 
 - Ход выполнения
 
-- Ошибки
+- ошибки
 
 ##### <a name="structure"></a>structure
 
@@ -136,7 +138,7 @@ ms.locfileid: "80698606"
 
 - Свертывание, развертывание и свертывание
 
-##### <a name="sequence"></a>Sequence
+##### <a name="sequence"></a>Последовательность
 
 - Последовательность показа слайдов
 
@@ -330,7 +332,7 @@ ms.locfileid: "80698606"
 ##### <a name="example"></a>Пример
 Изменение порядка вкладок
 
-#### <a name="rotate"></a>Повернуть
+#### <a name="rotate"></a>Rotate
 При использовании этого шаблона элемент пользовательского интерфейса поворачивается.
 
 ![Анимация поворота элемента пользовательского интерфейса](../../extensibility/ux-guidelines/media/1202-g_rotate.png "1202 — g_Rotate")<br />Анимация поворота элемента пользовательского интерфейса

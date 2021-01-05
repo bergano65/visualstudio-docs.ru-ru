@@ -10,12 +10,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6aacd4639e440998a5123dae8c38a64c84ebb948
-ms.sourcegitcommit: d9dd86c421532cfca6c0c5761d160f35829419c6
+ms.openlocfilehash: 367b3681d2ff8a828ee45f59359043b5fede3d26
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90026306"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668109"
 ---
 # <a name="visual-studio-on-arm-powered-devices"></a>Visual Studio на устройствах ARM
 
@@ -42,4 +42,4 @@ Visual Studio разработана для процессоров, исполь
 Не все проекты Visual Studio настроены для локального запуска при запуске отладки (**F5**) с устройства ARM. Возможно, потребуется настроить Visual Studio для удаленной отладки, даже если приложение выполняется локально. Дополнительные сведения см. в статье [Удаленная отладка](../debugger/remote-debugging.md).
 
 ## <a name="we-need-your-help"></a>Нам нужна ваша помощь!
-Если вы хотите, чтобы Visual Studio изначально запускался на устройствах ARM, мы будем рады узнать ваше мнение о необходимых сценариях и поддержке. Вы можете связаться с нами, оставив сообщение в [сообществе разработчиков](https://developercommunity.visualstudio.com/idea/1161018/native-arm-support-for-visual-studio.html). 
+Если вы хотите, чтобы Visual Studio изначально запускался на устройствах ARM, мы будем рады узнать ваше мнение о необходимых сценариях и поддержке. Вы можете связаться с нами, оставив сообщение в [сообществе разработчиков](https://developercommunity.visualstudio.com/idea/1161018/native-arm-support-for-visual-studio.html).

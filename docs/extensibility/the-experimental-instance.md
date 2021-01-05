@@ -1,5 +1,7 @@
 ---
 title: Экспериментальный экземпляр | Документация Майкрософт
+description: Узнайте, как пакет SDK для Visual Studio предоставляет экспериментальное пространство для запуска нетестируемых приложений в режиме отладки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e2284767a0aa6be58c0f7e38c912783728914cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4786f450b108c8a6c1eaefc6f86f7adf57e9269e
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699038"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715864"
 ---
 # <a name="the-experimental-instance"></a>Экспериментальный экземпляр
 Чтобы защитить среду разработки Visual Studio от нетестируемых приложений, которые могут изменить его, VSSDK предоставляет экспериментальное пространство, которое можно использовать для эксперимента. Вы разрабатываете новые приложения с помощью Visual Studio обычным образом, но они выполняются с помощью этого экспериментального экземпляра.

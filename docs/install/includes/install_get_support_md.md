@@ -6,12 +6,12 @@ ms.date: 03/23/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: f8f4645c9b69ff0fa7aa332f0716cc07b7a46e8a
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: b00b728e24dc3051c08e9050d761d74a2ced0c69
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190214"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668405"
 ---
 ## <a name="get-support"></a>Техническая поддержка
 
@@ -22,5 +22,5 @@ ms.locfileid: "96190214"
 Ниже приведены несколько дополнительных вариантов:
 
 * Вы можете сообщить о проблемах с продуктом, используя средство [Сообщить о проблеме](../../ide/how-to-report-a-problem-with-visual-studio.md). Оно доступно как в Visual Studio Installer, так и в IDE Visual Studio.
-* Вы можете предлагать новые функции, просматривать описания проблем и искать решения в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
+* Вы можете предлагать новые функции, просматривать описания проблем и искать решения в [сообществе разработчиков Visual Studio](https://aka.ms/feedback/suggest?space=8).
 * Вы также можете связаться с нами и другими разработчиками Visual Studio, используя свою учетную запись [GitHub](https://github.com/) в [обсуждении Visual Studio в сообществе Gitter](https://gitter.im/Microsoft/VisualStudio).

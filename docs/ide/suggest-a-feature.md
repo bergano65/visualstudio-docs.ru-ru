@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: a17f196f48b053f8b834b8fd25b8c0295e42b547
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114219"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668902"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Предложить функцию для Visual Studio
 
-Мы создали новый механизм рекомендации функций, который дополнит уже существующую возможность сообщать о проблемах в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com). Это новая возможность непосредственно принять участие в процессе разработки Visual Studio.
+Мы создали новый механизм рекомендации функций, который дополнит уже существующую возможность сообщать о проблемах в [сообществе разработчиков Visual Studio](https://aka.ms/feedback/suggest?space=8). Это новая возможность непосредственно принять участие в процессе разработки Visual Studio.
 
 ![Кнопка "Предложить функцию" на странице сообщества разработчиков](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -25,7 +25,7 @@ ms.locfileid: "88114219"
 
 ![Пункт меню "Отправить предложение" в Visual Studio](media/suggest-a-feature/provide-suggestion.png)
 
-Действие **Отправить предложение** переносит вас на страницу [сообщества разработчиков](https://developercommunity.visualstudio.com), где вы сможете ввести свое предложение.
+Действие **Отправить предложение** переносит вас на страницу [сообщества разработчиков](https://aka.ms/feedback/suggest?space=8), где вы сможете ввести свое предложение.
 
 ## <a name="user-voice"></a>User Voice
 

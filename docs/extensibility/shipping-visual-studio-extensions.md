@@ -1,5 +1,7 @@
 ---
 title: Доставка расширений Visual Studio | Документация Майкрософт
+description: Узнайте, как опубликовать и поддерживать расширение пакета SDK для Visual Studio, включая работу с файлами VSIX, публикацией, локализацией и обновлением.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767bb24bb5cb47f1af1452aa04ebdc91c778e284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812fc4f4e2f8dcf54876e2764f0c091f16348496
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700111"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716007"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Доставка расширений Visual Studio
 После завершения разработки расширения вы можете установить его на других компьютерах, поделиться им с вашими друзьями и сотрудниками или опубликовать на Visual Studio Marketplace. В этом разделе описываются все вещи, необходимые для публикации и обслуживания расширения: работа с файлами VSIX, публикация, локализация и обновление.
@@ -57,6 +59,6 @@ ms.locfileid: "80700111"
 |[Практическое руководство. Добавление зависимости в пакет VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Описывает добавление ссылок в пакеты развертывания VSIX.|
 |[Подготовка расширений для развертывания с помощью установщика Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|В этой статье объясняется, как развернуть расширение с помощью установщик Windows.|
 |[Подписывание пакетов VSIX](../extensibility/signing-vsix-packages.md)|Описывает, как подписывать пакеты VSIX.|
-|[Частные коллекции](../extensibility/private-galleries.md)|Описание создания частных коллекций для расширений.|
+|[Частные галереи](../extensibility/private-galleries.md)|Описание создания частных коллекций для расширений.|
 |[Поддержка нескольких версий Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)|Показывает, как расширение поддерживает несколько версий Visual Studio.|
 |[Обнаружение Visual Studio](locating-visual-studio.md)|Описание процесса размещения экземпляров Visual Studio для пользовательского развертывания расширения.|

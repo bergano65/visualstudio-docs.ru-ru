@@ -1,5 +1,7 @@
 ---
 title: Элемент strings | Документация Майкрософт
+description: Элемент strings содержит дочерний элемент ButtonText и другие необязательные дочерние элементы. Амперсанд в текстовой строке указывает сочетание клавиш.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db44db8926b523665a21c00b710dcee55749ab89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f517d350f3383dcaeb99d651872ffb8ed09814fe
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699719"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715253"
 ---
 # <a name="strings-element"></a>Элемент Strings
 Элемент strings должен содержать по крайней мере дочерний элемент **ButtonText** . Все остальные дочерние элементы являются необязательными. Недопустимые XML-символы, такие как "&" и "<", должны быть закодированы как сущности (" &amp; " и " &lt; " и т. д.).
@@ -60,5 +62,5 @@ ms.locfileid: "80699719"
 |[Элемент Menu](../extensibility/menu-element.md)|Определяет один пункт меню.|
 |[Элемент Combo](../extensibility/combo-element.md)|Определяет команды, которые отображаются в поле со списком.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

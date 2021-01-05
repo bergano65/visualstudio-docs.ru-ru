@@ -1,5 +1,7 @@
 ---
 title: Использование хранилища параметров | Документация Майкрософт
+description: Узнайте, как считывать данные из хранилища параметров конфигурации, которые доступны только для чтения и являются параметрами пакета VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3bbc09586f883e067e32f525a0331c1a9e253f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aeb147c245f7dc09cf91db8a1b810a7c5f30b46b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698521"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715916"
 ---
 # <a name="using-the-settings-store"></a>Использование хранилища параметров
 Существует два типа хранилищ параметров.
@@ -79,7 +81,7 @@ ms.locfileid: "80698521"
 
 1. Откройте Regedit.exe.
 
-2. Перейдите в раздел HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0Exp_Config \Инсталледпродуктс \\ .
+2. Перейдите к HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\ .
 
     > [!NOTE]
     > Убедитесь, что вы просматриваете ключ, содержащий \ 14.0Exp_Config \, а не \ 14.0_Config \\ . При запуске экспериментального экземпляра Visual Studio параметры конфигурации находятся в кусте реестра "14.0Exp_Config".
