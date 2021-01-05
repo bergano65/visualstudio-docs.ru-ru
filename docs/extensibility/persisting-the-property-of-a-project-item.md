@@ -1,5 +1,7 @@
 ---
 title: Сохранение свойства элемента проекта | Документация Майкрософт
+description: Узнайте, как сохранить свойство, добавляемое в элемент проекта, путем сохранения свойства в файле проекта в расширенном типе проекта.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 224a1e4f5f5d56022ae7c1e0572ca648b9a5aa6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72de98e08581b105322b07390d85b95c06b1083c
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906200"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862702"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Сохранение свойства элемента проекта
 Может потребоваться сохранить свойство, добавляемое в элемент проекта, например автор исходного файла. Это можно сделать, сохранив свойство в файле проекта.
@@ -67,7 +69,7 @@ ms.locfileid: "85906200"
     uint itemid;
 
     // Retrieve shell interface in order to get current selection
-    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;
+    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;
     if (monitorSelection == null)
         throw new InvalidOperationException();
 

@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. Создание глифа поля | Документация Майкрософт
+description: Узнайте, как настроить внешний вид полей редактора с помощью расширений пользовательского редактора с помощью этого пошагового руководства.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b94ab61f56d74537758c189adc9c104516f67f92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a2ac481ebf76fc2b34be841cd20d15b97fcfa9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905048"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863081"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Пошаговое руководство. Создание глифа поля
 Внешний вид полей редактора можно настроить с помощью пользовательских расширений редактора. Это пошаговое руководство помещает пользовательский глиф на поле индикатора каждый раз, когда слово «TODO» появляется в комментарии к коду.
 
 ## <a name="prerequisites"></a>Предварительные требования
- Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Создание проекта MEF
 

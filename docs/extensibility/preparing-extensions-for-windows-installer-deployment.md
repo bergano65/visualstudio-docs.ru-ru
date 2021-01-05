@@ -1,5 +1,7 @@
 ---
 title: Подготовка расширений для развертывания установщик Windows | Документация Майкрософт
+description: Узнайте, как подготовить проект, выходные данные которого по умолчанию — пакет VSIX для включения в проект установки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0084cfc6c08db1c1d15013362a186fec175b4ee4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ba494af91d3d40720493b27e7381660ece3fba69
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012221"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862897"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Подготовка расширений для развертывания установщик Windows
 Нельзя использовать пакет установщик Windows (MSI) для развертывания пакета VSIX. Однако можно извлечь содержимое пакета VSIX для развертывания MSI. В этом документе показано, как подготовить проект, выходные данные которого по умолчанию — пакет VSIX для включения в проект установки.
@@ -54,6 +56,6 @@ ms.locfileid: "90012221"
 
 5. Добавьте остальные файлы в проект установки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Развертывание установщика Visual Studio](/previous-versions/2kt85ked(v=vs.120))
 - [Пошаговое руководство. Создание настраиваемого действия](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

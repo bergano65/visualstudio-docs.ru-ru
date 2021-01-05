@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. Настройка представления текста | Документация Майкрософт
+description: Узнайте, как настроить представление текста, изменив любое из нескольких свойств в сопоставлении формата редактора с помощью этого пошагового руководства.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b7a62ee2b55bf2b56ae1d8e28fc1910ed444c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 057e2a68e1d9a130f69441d8aec4b6a7fe0249e9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904931"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862973"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Пошаговое руководство. Настройка представления текста
 Можно настроить представление текста, изменив любое из следующих свойств в его сопоставлении в формате редактора:
@@ -32,8 +34,8 @@ ms.locfileid: "85904931"
 
 - Видимый пробел
 
-## <a name="prerequisites"></a>Предварительные условия
- Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Предварительные требования
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Создание проекта MEF
 

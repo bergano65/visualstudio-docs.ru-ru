@@ -1,5 +1,7 @@
 ---
 title: Регистрация команд для расширений имен файлов | Документация Майкрософт
+description: Узнайте, как зарегистрировать команду, связанную с программным идентификатором для расширения имени файла, с помощью ключа оболочки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac2854f1799075cc14d9beb557335be5228be21d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df0dfe90bd5e3bccbb6bb0f9dab400082f539fbf
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701535"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863046"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Регистрация команд для расширений имен файлов
 Сопоставление расширения имени файла с приложением обычно имеет предпочитаемое действие, которое происходит при двойном щелчке файла пользователем. Это предпочтительное действие связано с командой, например Open, которая соответствует действию.
@@ -29,7 +31,7 @@ ms.locfileid: "80701535"
 
 - Изменить
 
-- Воспроизведение
+- Play
 
 - Печать
 
