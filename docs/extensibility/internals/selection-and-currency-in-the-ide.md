@@ -1,5 +1,7 @@
 ---
 title: Выбор и валюта в интегрированной среде разработки | Документация Майкрософт
+description: Узнайте, как пакеты VSPackage принимают участие в трассировке валют. Интегрированная среда разработки Visual Studio хранит сведения о выбранных объектах с помощью контекста выбора.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f580b7c8e1651dcbcd053476ae756399a0ac3482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2d745619be8bff77503bc14a1d7a87d84cc7864
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705571"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875601"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Выбор и актуальность в интегрированной среде разработки
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Интегрированная среда разработки (IDE) хранит сведения о выбранных в данный момент объектах пользователями с помощью *контекста*выбора. С контекстом выбора пакеты VSPackage могут принять участие в трассировке валюты двумя способами:
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Интегрированная среда разработки (IDE) хранит сведения о выбранных в данный момент объектах пользователями с помощью *контекста* выбора. С контекстом выбора пакеты VSPackage могут принять участие в трассировке валюты двумя способами:
 
 - Путем распространения сведений о валюте пакетов VSPackage в интегрированную среду разработки.
 

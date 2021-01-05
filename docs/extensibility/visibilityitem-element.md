@@ -1,5 +1,7 @@
 ---
 title: Элемент Висибилититем | Документация Майкрософт
+description: Элемент Висибилититем определяет статическую видимость команд и панелей инструментов. Записи обозначают команду или меню, а также связанный контекст пользовательского интерфейса команды.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9129d64e430d661bbdd8f7682e64c93650570211
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 637fea7d203e58c59f85794eeb0f8894eb62e777
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698153"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863891"
 ---
 # <a name="visibilityitem-element"></a>Висибилититем, элемент
 `VisibilityItem`Элемент определяет статическую видимость команд и панелей инструментов. Каждая запись определяет команду или меню, а также связанный контекст пользовательского интерфейса команды. Visual Studio обнаруживает команды, меню и панели инструментов, а также их видимость, не загружая пакеты VSPackage, которые их определяют. Интегрированная среда разработки использует <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> метод, чтобы определить, активен ли контекст пользовательского интерфейса команды.
@@ -64,7 +66,7 @@ ms.locfileid: "80698153"
 
 ```xml
 <VisibilityConstraints>
-  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
     context="guidNotViewSourceMode"/>
 </VisibilityConstraints>
 ```

@@ -1,5 +1,7 @@
 ---
 title: Регистрация устаревшего языка S2 | Документация Майкрософт
+description: В этой статье перечислены записи реестра для различных вариантов языковой службы, доступных в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +14,20 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a41f3f507579cbd2649e33e81d1368fb5404799
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08b9e88440fcb7b488e479e4188279d82a526e4c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238846"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875186"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>Регистрация языковой службы версии 2
 В следующих разделах приводятся списки записей реестра для различных параметров языковой службы, доступных в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
- В следующем списке записей реестра *корневой каталог VS reg* равен HKEY_LOCAL_MACHINE \софтваре\микрософт\висуалстудио \\ *X. y*, где *X. y* — [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] номер версии.
+ В следующем списке записей реестра *корневой каталог VS reg* равен HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *X. y*, где *X. y* — [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] номер версии.
 
 ## <a name="registry-entries-for-language-service-options"></a>Записи реестра для параметров языковой службы
- Ключ имени языка *VS reg root*\лангуажес\лангуаже Services \\ *Language Name* может содержать следующие значения.
+ Ключ имени языка *VS reg root*\лангуажес\лангуаже Services \\  может содержать следующие значения.
 
 |Имя|Type|Диапазон|Описание|
 |----------|----------|-----------|-----------------|
@@ -66,7 +68,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 
 |Имя|Type|Диапазон|Описание|
 |----------|----------|-----------|-----------------|
-|(по умолчанию)|REG_SZ|текст|Значение по умолчанию можно использовать для документирования имени языка. Имя этого ключа — идентификатор GUID средства оценки выражений, имеющего соответствующую запись в *\<VS Reg Root>* \AD7Metrics\Expression оценщике.|
+|(по умолчанию)|REG_SZ|text|Значение по умолчанию можно использовать для документирования имени языка. Имя этого ключа — идентификатор GUID средства оценки выражений, имеющего соответствующую запись в *\<VS Reg Root>* \AD7Metrics\Expression оценщике.|
 
 ### <a name="example"></a>Пример
 
@@ -132,7 +134,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-editor-options"></a>Записи реестра для параметров редактора
- Корневой ключ \Едиторс в *VS reg*может содержать следующие значения:
+ Корневой ключ \Едиторс в *VS reg* может содержать следующие значения:
 
 |Имя|Type|Диапазон|Описание|
 |----------|----------|-----------|-----------------|
@@ -157,7 +159,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-logical-view-options"></a>Записи реестра для параметров логического представления
- *VS Reg Root* \\ *Графический пользовательский интерфейс редактора *\Едиторс для VS reg>\логикалвиевс Key может содержать следующие значения.
+  \\ *Графический пользовательский интерфейс редактора*\Едиторс для VS reg>\логикалвиевс Key может содержать следующие значения.
 
 |Имя|Type|Диапазон|Описание|
 |----------|----------|-----------|-----------------|
@@ -179,7 +181,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-editor-extension-options"></a>Записи реестра для параметров расширения редактора
- Ключ \Екстенсионс в редакторе *корневых \едиторс в VS reg* \\ *Editor GUID*может содержать следующие значения. Расширение имени файла не включает точку в начале.
+ Ключ \Екстенсионс в редакторе *корневых \едиторс в VS reg* \\ может содержать следующие значения. Расширение имени файла не включает точку в начале.
 
 |Имя|Type|Диапазон|Описание|
 |----------|----------|-----------|-----------------|

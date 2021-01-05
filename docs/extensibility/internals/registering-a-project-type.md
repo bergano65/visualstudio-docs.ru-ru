@@ -1,5 +1,7 @@
 ---
 title: Регистрация типа проекта | Документация Майкрософт
+description: Сведения о создании записей реестра, позволяющих Visual Studio распознать и работать с новым типом проекта.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7267060f2207b0842885dc3001c3926874be30a9
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 9a34f5c7f1ae3a214a0a72932ae80dbc44845a45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407735"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875204"
 ---
 # <a name="registering-a-project-type"></a>Регистрация типа проекта
 При создании нового типа проекта необходимо создать записи реестра, которые позволяют [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] распознать тип проекта и работать с ним. Обычно эти записи реестра создаются с помощью файла скрипта реестра (RGS).
@@ -193,7 +195,7 @@ ms.locfileid: "94407735"
 
 |Имя|Тип|Данные|Описание|
 |----------|----------|----------|-----------------|
-|`@`|REG_SZ|Нет|Значение по умолчанию, которое указывает, что для записей проектов прочих файлов используются следующие записи.|
+|`@`|REG_SZ|None|Значение по умолчанию, которое указывает, что для записей проектов прочих файлов используются следующие записи.|
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Значение идентификатора ресурса для файлов шаблонов добавления новых элементов.|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Путь по умолчанию к элементам, которые будут отображаться в диалоговом окне " **Добавление нового элемента** ".|
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|Устанавливает порядок сортировки для элементов, отображаемых в узле дерево диалогового окна **Добавление нового элемента** .|
@@ -264,7 +266,7 @@ ms.locfileid: "94407735"
 
  Это означает, что если включить в VSZ-файл запись PROJECT_TYPE = EF, среда находит VSZ-файлы в каталоге Продуктдир, указанном ранее.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Контрольный список. Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Элементы модели проекта](../../extensibility/internals/elements-of-a-project-model.md)
 - [Создание экземпляров проекта с помощью фабрик проектов](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

@@ -1,5 +1,7 @@
 ---
 title: Частные галереи | Документация Майкрософт
+description: Узнайте, как предоставить общий доступ к элементам управления, шаблонам и средствам, разрабатываемым в пакете SDK для Visual Studio, отправляя их в частную галерею.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +13,14 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ec7390acf753af20bc0edbe20194ba17c2d9d80
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444652"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863505"
 ---
-# <a name="private-galleries"></a>Частные галереи
+# <a name="private-galleries"></a>Частные коллекции
 Вы можете совместно использовать элементы управления, шаблоны и средства, которые вы разрабатываете, отправляя их в *частную коллекцию* в интрасети организации следующим образом:
 
 - Создайте канал Atom (RSS) в соответствующим образом настроенном центральном расположении (репозитории) в интрасети. Дополнительные сведения см. [в разделе инструкции. Создание веб-канала Atom для частной коллекции](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).
@@ -51,7 +53,7 @@ ms.locfileid: "81444652"
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
-@={URI}  (REG_SZ)
+@={URI}  (REG_SZ)
 Disabled=0 | 1 (DWORD)
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)
 Protocol=Atom|Sharepoint (REG_SZ)
@@ -89,6 +91,6 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 3. В области справа выберите расширение, а затем нажмите кнопку **Обновить** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Поиск и использование расширений Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)
 - [Поставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

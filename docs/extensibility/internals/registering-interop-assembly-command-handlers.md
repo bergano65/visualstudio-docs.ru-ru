@@ -1,5 +1,7 @@
 ---
 title: Регистрация обработчиков команд сборки взаимодействия | Документация Майкрософт
+description: Сведения о базовом контракте команды, используемом всеми пакетами VSPackage для реализации команд с помощью сборок взаимодействия.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfff8e4e6cc8ba3974ec70e6466b25e9ff7432e4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: b45fe06722b190569e067dccd325ba4acac4fb0f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012052"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875175"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Регистрация обработчиков команд сборки взаимодействия
 Пакет VSPackage должен быть зарегистрирован в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , чтобы интегрированная среда разработки (IDE) правильно маршрутизирует свои команды.
@@ -28,10 +30,10 @@ ms.locfileid: "90012052"
 - [Справочные ресурсы по формату командной таблицы](/previous-versions/bb164647(v=vs.100)) находятся в неуправляемых библиотеках DLL ВСПОМОГАТЕЛЬных интерфейсов.
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>Регистрация пакета VSPackage в обработчике команд
- Пакет VSPackage, выступающий в качестве обработчика для команд на основе ПОЛЬЗОВАТЕЛЬСКОГО интерфейса, требует наличия записи реестра с именем после пакета VSPackage `GUID` . Эта запись реестра указывает расположение файла ресурсов пользовательского интерфейса VSPackage и ресурс меню в этом файле. Сама запись реестра находится в папке HKEY_LOCAL_MACHINE \Софтваре\микрософт\висуалстудио \\ *\<Version>* \менус, где *\<Version>* — это версия, например [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 9,0.
+ Пакет VSPackage, выступающий в качестве обработчика для команд на основе ПОЛЬЗОВАТЕЛЬСКОГО интерфейса, требует наличия записи реестра с именем после пакета VSPackage `GUID` . Эта запись реестра указывает расположение файла ресурсов пользовательского интерфейса VSPackage и ресурс меню в этом файле. Сама запись реестра находится в разделе HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ *\<Version>* \менус, где *\<Version>* — это версия, например [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 9,0.
 
 > [!NOTE]
-> Корневой путь HKEY_LOCAL_MACHINE \Софтваре\микрософт\висуалстудио \\ *\<Version>* можно переопределить с помощью альтернативного корня при [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] инициализации оболочки. Дополнительные сведения о корневом пути см. в разделе [Установка пакетов VSPackage с помощью установщик Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
+> Корневой путь HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* можно переопределить с помощью альтернативного корня при [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] инициализации оболочки. Дополнительные сведения о корневом пути см. в разделе [Установка пакетов VSPackage с помощью установщик Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
 
 ### <a name="the-ctmenu-resource-registry-entry"></a>Запись реестра ресурсов CTMENU
  Структура записи реестра:
@@ -66,6 +68,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Команды и меню, которые используют сборки взаимодействия](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

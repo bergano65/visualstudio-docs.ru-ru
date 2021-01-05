@@ -1,5 +1,7 @@
 ---
 title: Таблица «выполнение документа» | Документация Майкрософт
+description: Сведения о том, как интегрированная среда разработки Visual Studio поддерживает таблицу выполняющегося документа, включая все открытые документы в памяти.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e6aa882921786b1592922372581beae8c4c2443
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd166626d6043da4ac94658bdd35219efc7a37c2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705558"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875652"
 ---
 # <a name="running-document-table"></a>Запуск таблицы документов
 Интегрированная среда разработки поддерживает список всех открытых документов во внутренней структуре, которая называется «выполняемая таблица документов» (РДТ). Этот список включает все открытые документы в памяти независимо от того, редактируются ли эти документы в данный момент. Документ — это любой сохраняемый элемент, включая файлы в проекте или основной файл проекта (например, VCXPROJ-файл).

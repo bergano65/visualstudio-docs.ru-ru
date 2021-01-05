@@ -1,5 +1,7 @@
 ---
 title: Условные атрибуты схемы XML VSCT | Документация Майкрософт
+description: Узнайте, как применять условные атрибуты для VSCT списков и элементов XML-схемы. Атрибуты оцениваются как true или false, контролируя результирующие выходные данные.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2b1fb3ee1b2cd396f25ec5591a585f8d87648d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5f9f51e9380585d4191c5969d96fbb3a93ea42a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697949"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863705"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Условные атрибуты схемы XML VSCT
 Условные атрибуты можно применять ко всем спискам и элементам. Логические операторы и выражения расширения символов имеют значение true или false. Если значение — true, связанный список или элемент включается в результирующие выходные данные.
@@ -36,7 +38,7 @@ ms.locfileid: "80697949"
 |!|Логическое НЕ|
 |\<, >, \<=, >=, ==, !=|Операторы отношения и равенства|
 |и|Логическое|
-|или|Логическое|
+|или диспетчер конфигурации служб|Логическое|
 
 ## <a name="examples"></a>Примеры
 
@@ -69,5 +71,5 @@ and !Defined(DEBUG)">
 </Menus>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Командная таблица Visual Studio (. Vsct) файлы](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

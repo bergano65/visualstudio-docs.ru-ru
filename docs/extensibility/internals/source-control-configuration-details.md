@@ -1,5 +1,7 @@
 ---
 title: Сведения о конфигурации системы управления версиями | Документация Майкрософт
+description: Узнайте, как реализовать систему управления версиями для типа проекта в Visual Studio, что включает в себя настройку системы проектов или редактора для запроса разрешений.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cf4a5c55e8093e5dcd6406cde1c60f642188495
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efed4592bfa0b697d66f377430cc5998d3e9e5d3
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705283"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875509"
 ---
 # <a name="source-control-configuration-details"></a>Сведения о конфигурации системы управления версиями
 Для реализации системы управления версиями необходимо правильно настроить систему проекта или редактор, чтобы сделать следующее:

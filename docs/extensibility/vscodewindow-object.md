@@ -1,5 +1,7 @@
 ---
 title: Объект Вскодевиндов | Документация Майкрософт
+description: Сведения о окнах кода, которые являются специализированными окнами документов, которые могут содержать одно или несколько текстовых представлений, обычно это объект Встекствиев.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d2cdbe12146dd5d3010b9bf8ffcdd130a0ea4bb
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: a778cde66bc85a6f3cd8a13b5f2bb6fdb41844de
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414364"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864005"
 ---
 # <a name="vscodewindow-object"></a>Объект Вскодевиндов
 Окно кода — это специализированное окно документа, которое может содержать одно или несколько текстовых представлений, обычно это <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> объект.
@@ -33,6 +35,6 @@ ms.locfileid: "93414364"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|Представляет дочерний интерфейс многодокументного интерфейса (MDI), содержащий одно или несколько представлений кода.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Заполняет рамку окна.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
 - [Изменение фигур](https://www.microsoft.com/download/details.aspx?id=55984)

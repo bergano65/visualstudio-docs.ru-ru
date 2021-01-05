@@ -1,5 +1,7 @@
 ---
 title: Рекомендации по работе с пользователем Visual Studio | Документация Майкрософт
+description: В руководстве по работе с пользователями Visual Studio содержатся общие пользовательские модели и шаблоны взаимодействия, помогающие создавать единообразные пользовательские интерфейсы для новых функций.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994d0029e7dfdc3559adae0e1c022acd38d7f5a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8200d5d0dbb18240f67214abecca4d066ce6270
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698207"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863940"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Руководство по работе пользователей Visual Studio
 При проектировании новых функций для Visual Studio следуйте рекомендациям по работе с пользователем Visual Studio. Эти рекомендации содержат сведения об общих моделях пользователей и шаблонах взаимодействия, благодаря которым разработчики новых пользовательских интерфейсов могут создавать интерфейсы пользователя, которые легко и согласованны в среде разработки.

@@ -1,5 +1,7 @@
 ---
 title: Регистрация генераторов одного файла | Документация Майкрософт
+description: Узнайте, как зарегистрировать пользовательское средство в Visual Studio, чтобы создать его экземпляр и связать его с определенным типом проекта.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 185e60daac2aef2c8aeeb4f087547984e6fcf510
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 7a0ce4afeddebdec8519467e1f4249095ce98f6b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012039"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875262"
 ---
 # <a name="registering-single-file-generators"></a>Регистрация генераторов одного файла
 Чтобы сделать пользовательский инструмент доступным в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , необходимо зарегистрировать его, чтобы он [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] мог создать экземпляр и связать его с определенным типом проекта.
@@ -40,7 +42,7 @@ ms.locfileid: "90012039"
 
    - (по умолчанию)
 
-        Необязательный параметр. Предоставляет понятное описание пользовательского инструмента. Этот параметр является необязательным, но рекомендуется.
+        Необязательный элемент. Предоставляет понятное описание пользовательского инструмента. Этот параметр является необязательным, но рекомендуется.
 
    - CLSID
 
@@ -67,7 +69,7 @@ ms.locfileid: "90012039"
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [Реализация генераторов одного файла](../../extensibility/internals/implementing-single-file-generators.md)
 - [Предоставление типов конструкторам визуальных элементов](../../extensibility/internals/exposing-types-to-visual-designers.md)

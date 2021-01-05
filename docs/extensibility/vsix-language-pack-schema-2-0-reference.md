@@ -1,5 +1,7 @@
 ---
 title: Справочник по схеме языкового пакета VSIX 2,0 | Документация Майкрософт
+description: Схема языкового пакета VSIX предоставляет локализованные сведения об установке для пакетов VSIX. Версия 2,0 поддерживает дополнительные элементы локализации.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 author: acangialosi
 ms.author: anthc
 manager: jillfra
-ms.openlocfilehash: f0eee51c0654c6e517209e23baf43c6b262d8f73
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: fc9c3c1aa7f8cf77ebf165a3e10a67ccbd5887f7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830711"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863826"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Справочник по схеме языкового пакета VSIX 2,0
 
@@ -30,7 +32,7 @@ ms.locfileid: "91830711"
 
 В `<PackageLanguagePackManifest>` элементе должен существовать следующий элемент:
 
-|Заголовок|Описание|
+|Title|Описание|
 |-----------|-----------------|
 |`<Metadata>`| Содержащий элемент для всех локализованных метаданных пакета
 
@@ -38,7 +40,7 @@ ms.locfileid: "91830711"
 
 В `<Metadata>` элементе можно использовать следующие элементы:
 
-|Заголовок|Описание|
+|Title|Описание|
 |-----------|-----------------|
 |`<DisplayName>`|Локализованное имя устанавливаемого расширения|
 |`<Description>`|Локализованное описание устанавливаемого расширения|

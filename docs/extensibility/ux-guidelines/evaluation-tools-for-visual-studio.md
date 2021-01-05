@@ -1,5 +1,7 @@
 ---
 title: Средства оценки для Visual Studio | Документация Майкрософт
+description: Используйте этот контрольный список, чтобы оценить качество взаимодействия с пользователем для визуальных элементов и сведений о взаимодействии для новых функций, разрабатываемых для Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ae5ae2d3be49a797ff1d594aab4517efab53330
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42c8ef3033d1c9f897f891310c4ddea89ab0074e
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698420"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863463"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Средства оценки для Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Контрольный список ремесленника для Visual Studio
@@ -39,7 +41,7 @@ ms.locfileid: "80698420"
 
 - Убедитесь, что все метки являются предложением или заголовком, а текст не является полностью строчным.
 
-    ||Правильно|Неправильно|
+    ||Правильно|Неверно.|
     |-|-------------|---------------|
     |**Текст команды (все)**|Регистр предложений:<br /><br /> **Имя каталога:**|Имя каталога:|
     |**Текст кнопки (клиент)**|Регистр заголовка:<br /><br /> **[По умолчанию]**|УСТАНОВИТЬ ПО УМОЛЧАНИЮ|
@@ -123,7 +125,7 @@ ms.locfileid: "80698420"
 
 ### <a name="control-standards"></a>Стандарты управления
 
-#### <a name="general"></a>Общее
+#### <a name="general"></a>Общие сведения
 
 - Убедитесь, что, по возможности, существуют хорошие значения по умолчанию для ускорения взаимодействия с пользователем и направления пользователей к надежному или общему результату.
 

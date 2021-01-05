@@ -1,5 +1,7 @@
 ---
 title: Объекты контекста выделения | Документация Майкрософт
+description: Узнайте о внутренних функциях, с помощью которых интегрированная среда разработки Visual Studio использует объект контекста глобального выделения, чтобы определить, что должно отображаться в интегрированной среде разработки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e4f33dd0168a667b8f266ea606cecf0c26d62f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf5e54f00ecbac03eaebe68c6fb4de410987b63f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705514"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875574"
 ---
 # <a name="selection-context-objects"></a>Объекты контекста выбора
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Интегрированная среда разработки (IDE) использует объект контекста глобального выделения, чтобы определить, что должно отображаться в интегрированной среде разработки. Каждое окно в интегрированной среде разработки может иметь собственный объект контекста выбора, отправленный в глобальный контекст выбора. Интегрированная среда разработки обновляет глобальный контекст выделения значениями из окна, когда это окно находится в фокусе. Дополнительные сведения см. в статье [отзыв пользователю](../../extensibility/internals/feedback-to-the-user.md).
@@ -39,7 +41,7 @@ ms.locfileid: "80705514"
 
 3. Пакет VSPackage работает с получаемыми событиями, выполняя такие действия, как обновление иерархии, повторная активация средства или выполнение других аналогичных задач.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>
 - [Иерархии в Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
