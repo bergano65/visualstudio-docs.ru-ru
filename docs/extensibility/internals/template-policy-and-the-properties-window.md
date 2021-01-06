@@ -1,5 +1,7 @@
 ---
 title: Политика шаблона и окно "Свойства" | Документация Майкрософт
+description: Сведения об использовании политики шаблонов для установки значений по умолчанию для свойств, скрытия свойств и добавления свойств в окно свойств.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08ed6f416441d06767661e63b5e32454dbe07f93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 105a90699689ff6eab6ea5bdfa3d4037e700ecb5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704666"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877719"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Шаблон политики и окно свойств
 Если проект содержится в проекте корпоративного шаблона, этот проект шаблона предприятия может применить политику. Политика шаблона превращается в ограничивающую систему, которую можно использовать для задания значений по умолчанию для свойств, скрытия свойств, добавления свойств и т. д.

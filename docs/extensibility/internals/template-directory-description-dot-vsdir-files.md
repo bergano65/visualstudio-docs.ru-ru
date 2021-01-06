@@ -1,5 +1,7 @@
 ---
 title: Описание каталога шаблонов (. VSDir) файлы | Документация Майкрософт
+description: Узнайте, как файл описания каталога шаблонов позволяет интегрированной среде разработки Visual Studio отображать папки, VSZ-файлы и шаблоны, связанные с проектом.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16ba609d5b05d565a12b38bd19e9a777851ced5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edc4b4bcfe1ac1a85524517ba467e207a792e3cd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704687"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877732"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Файлы описания каталога шаблона (VSDIR-файлы)
 Файл описания каталога шаблонов (VSDir) — это текстовый файл, который позволяет интегрированной среде разработки (IDE) отображать папки, файлы Wizard. vsz и файлы шаблонов, связанные с проектом, в диалоговых окнах. Содержимое включает одну запись для каждого файла или папки. Объединяются все файлы VSDir в указанном расположении, хотя для описания нескольких папок, мастеров или файлов шаблонов обычно предоставляется только один VSDir-файл.

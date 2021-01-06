@@ -1,5 +1,6 @@
 ---
 title: Использование команды оболочки с расширением редактора
+description: Узнайте, как добавить Оформление в текстовое представление в редакторе, вызвав команду меню. Из VSPackage можно добавлять в редактор такие компоненты, как команды меню.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33886b170a8e0138a199f5d7cb51467875c8c3c5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 38d855ebe34c54d06159ecd958a8b1d31ae0131f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037475"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877823"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Пошаговое руководство. Использование команды оболочки с расширением редактора
 Из VSPackage можно добавить в редактор такие компоненты, как команды меню. В этом пошаговом руководстве показано, как добавить Оформление в текстовое представление в редакторе, вызвав команду меню.
@@ -39,7 +40,7 @@ ms.locfileid: "90037475"
 
 ## <a name="add-a-mef-extension-to-the-command-extension"></a>Добавление расширения MEF в расширение команды
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши узел решения, выберите **Добавить**, а затем щелкните **Новый проект**. В диалоговом окне **Добавление нового проекта** щелкните **расширяемость** в разделе **Visual C#**, а затем **проект VSIX**. Присвойте проекту имя `CommentAdornmentTest`.
+1. В **Обозреватель решений** щелкните правой кнопкой мыши узел решения, выберите **Добавить**, а затем щелкните **Новый проект**. В диалоговом окне **Добавление нового проекта** щелкните **расширяемость** в разделе **Visual C#**, а затем **проект VSIX**. Задайте для проекта имя `CommentAdornmentTest`.
 
 2. Так как этот проект будет взаимодействовать со сборкой VSPackage со строгим именем, необходимо подписать сборку. Можно повторно использовать файл ключа, уже созданный для сборки VSPackage.
 
@@ -47,7 +48,7 @@ ms.locfileid: "90037475"
 
     2. Выберите **подписать сборку**.
 
-    3. В разделе **выберите файл ключа строгого имени**выберите файл *Key. snk* , созданный для сборки менукоммандтест.
+    3. В разделе **выберите файл ключа строгого имени** выберите файл *Key. snk* , созданный для сборки менукоммандтест.
 
 ## <a name="refer-to-the-mef-extension-in-the-vspackage-project"></a>См. расширение MEF в проекте VSPackage
  Поскольку в VSPackage добавляется компонент MEF, необходимо указать оба типа ресурсов в манифесте.
@@ -71,7 +72,7 @@ ms.locfileid: "90037475"
 
 7. Убедитесь, что проект Менукоммандтест содержит ссылку на проект Комментадорнменттест.
 
-8. В проекте Комментадорнменттест задайте проект, чтобы создать сборку. В **Обозреватель решений**выберите проект и найдите в окне **свойств** свойство **Копировать выходные данные сборки в OutputDirectory** и задайте для него **значение true**.
+8. В проекте Комментадорнменттест задайте проект, чтобы создать сборку. В **Обозреватель решений** выберите проект и найдите в окне **свойств** свойство **Копировать выходные данные сборки в OutputDirectory** и задайте для него **значение true**.
 
 ## <a name="define-a-comment-adornment"></a>Определение оформления комментария
  Крайний комментарий состоит из объекта <xref:Microsoft.VisualStudio.Text.ITrackingSpan> , который отслеживает выбранный текст и некоторые строки, представляющие автора и описание текста.
@@ -109,7 +110,7 @@ ms.locfileid: "90037475"
 4. Файл должен содержать класс с именем `CommentAdornment` .
 
     ```csharp
-    internal class CommentAdornment
+    internal class CommentAdornment
     ```
 
 5. Добавьте три поля в `CommentAdornment` класс для <xref:Microsoft.VisualStudio.Text.ITrackingSpan> , автора и описание.
@@ -162,9 +163,9 @@ ms.locfileid: "90037475"
     ```csharp
     private Geometry textGeometry;
     private Grid commentGrid;
-    private static Brush brush;
-    private static Pen solidPen;
-    private static Pen dashPen;
+    private static Brush brush;
+    private static Pen solidPen;
+    private static Pen dashPen;
     ```
 
 5. Добавьте конструктор, который определяет Оформление комментария и добавляет соответствующий текст.
@@ -239,7 +240,7 @@ ms.locfileid: "90037475"
 6. Также реализуйте <xref:System.Windows.Controls.Panel.OnRender%2A> обработчик событий, который рисует Оформление.
 
     ```csharp
-    protected override void OnRender(DrawingContext dc)
+    protected override void OnRender(DrawingContext dc)
     {
         base.OnRender(dc);
         if (this.textGeometry != null)
@@ -276,7 +277,7 @@ ms.locfileid: "90037475"
 4. Реализуйте <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> метод таким образом, чтобы он вызывал статическое `Create()` событие объекта `CommentAdornmentManager` .
 
     ```csharp
-    public void TextViewCreated(IWpfTextView textView)
+    public void TextViewCreated(IWpfTextView textView)
     {
         CommentAdornmentManager.Create(textView);
     }
@@ -285,16 +286,16 @@ ms.locfileid: "90037475"
 5. Добавьте метод, который можно использовать для выполнения команды.
 
     ```csharp
-    static public void Execute(IWpfTextViewHost host)
+    static public void Execute(IWpfTextViewHost host)
     {
         IWpfTextView view = host.TextView;
-        //Add a comment on the selected text. 
+        //Add a comment on the selected text. 
         if (!view.Selection.IsEmpty)
         {
             //Get the provider for the comment adornments in the property bag of the view.
             CommentAdornmentProvider provider = view.Properties.GetProperty<CommentAdornmentProvider>(typeof(CommentAdornmentProvider));
 
-            //Add some arbitrary author and comment text. 
+            //Add some arbitrary author and comment text. 
             string author = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
             string comment = "Four score....";
 
@@ -356,7 +357,7 @@ ms.locfileid: "90037475"
     private CommentAdornmentProvider(ITextBuffer buffer)
     {
         this.buffer = buffer;
-        //listen to the Changed event so we can react to deletions. 
+        //listen to the Changed event so we can react to deletions. 
         this.buffer.Changed += OnBufferChanged;
     }
 
@@ -365,9 +366,9 @@ ms.locfileid: "90037475"
 6. Добавьте метод `Create()`.
 
     ```csharp
-    public static CommentAdornmentProvider Create(IWpfTextView view)
+    public static CommentAdornmentProvider Create(IWpfTextView view)
     {
-        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentProvider>(delegate { return new CommentAdornmentProvider(view.TextBuffer); });
+        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentProvider>(delegate { return new CommentAdornmentProvider(view.TextBuffer); });
     }
 
     ```
@@ -375,11 +376,11 @@ ms.locfileid: "90037475"
 7. Добавьте метод `Detach()`.
 
     ```csharp
-    public void Detach()
+    public void Detach()
     {
         if (this.buffer != null)
         {
-            //remove the Changed listener 
+            //remove the Changed listener 
             this.buffer.Changed -= OnBufferChanged;
             this.buffer = null;
         }
@@ -394,25 +395,25 @@ ms.locfileid: "90037475"
 9. Добавьте объявление для `CommentsChanged` события.
 
     ```csharp
-    public event EventHandler<CommentsChangedEventArgs> CommentsChanged;
+    public event EventHandler<CommentsChangedEventArgs> CommentsChanged;
     ```
 
 10. Создайте `Add()` метод для добавления оформления.
 
     ```csharp
-    public void Add(SnapshotSpan span, string author, string text)
+    public void Add(SnapshotSpan span, string author, string text)
     {
         if (span.Length == 0)
-            throw new ArgumentOutOfRangeException("span");
+            throw new ArgumentOutOfRangeException("span");
         if (author == null)
-            throw new ArgumentNullException("author");
+            throw new ArgumentNullException("author");
         if (text == null)
-            throw new ArgumentNullException("text");
+            throw new ArgumentNullException("text");
 
         //Create a comment adornment given the span, author and text.
         CommentAdornment comment = new CommentAdornment(span, author, text);
 
-        //Add it to the list of comments. 
+        //Add it to the list of comments. 
         this.comments.Add(comment);
 
         //Raise the changed event.
@@ -426,19 +427,19 @@ ms.locfileid: "90037475"
 11. Добавьте `RemoveComments()` метод.
 
     ```csharp
-    public void RemoveComments(SnapshotSpan span)
+    public void RemoveComments(SnapshotSpan span)
     {
         EventHandler<CommentsChangedEventArgs> commentsChanged = this.CommentsChanged;
 
         //Get a list of all the comments that are being kept
         IList<CommentAdornment> keptComments = new List<CommentAdornment>(this.comments.Count);
 
-        foreach (CommentAdornment comment in this.comments)
+        foreach (CommentAdornment comment in this.comments)
         {
-            //find out if the given span overlaps with the comment text span. If two spans are adjacent, they do not overlap. To consider adjacent spans, use IntersectsWith. 
+            //find out if the given span overlaps with the comment text span. If two spans are adjacent, they do not overlap. To consider adjacent spans, use IntersectsWith. 
             if (comment.Span.GetSpan(span.Snapshot).OverlapsWith(span))
             {
-                //Raise the change event to delete this comment. 
+                //Raise the change event to delete this comment. 
                 if (commentsChanged != null)
                     commentsChanged(this, new CommentsChangedEventArgs(null, comment));
             }
@@ -456,24 +457,24 @@ ms.locfileid: "90037475"
     public Collection<CommentAdornment> GetComments(SnapshotSpan span)
     {
         IList<CommentAdornment> overlappingComments = new List<CommentAdornment>();
-        foreach (CommentAdornment comment in this.comments)
+        foreach (CommentAdornment comment in this.comments)
         {
             if (comment.Span.GetSpan(span.Snapshot).OverlapsWith(span))
                 overlappingComments.Add(comment);
         }
 
-        return new Collection<CommentAdornment>(overlappingComments);
+        return new Collection<CommentAdornment>(overlappingComments);
     }
     ```
 
 13. Добавьте класс с именем `CommentsChangedEventArgs` , как показано ниже.
 
     ```csharp
-    internal class CommentsChangedEventArgs : EventArgs
+    internal class CommentsChangedEventArgs : EventArgs
     {
-        public readonly CommentAdornment CommentAdded;
+        public readonly CommentAdornment CommentAdded;
 
-        public readonly CommentAdornment CommentRemoved;
+        public readonly CommentAdornment CommentRemoved;
 
         public CommentsChangedEventArgs(CommentAdornment added, CommentAdornment removed)
         {
@@ -510,9 +511,9 @@ ms.locfileid: "90037475"
 4. Добавьте некоторые закрытые поля.
 
     ```csharp
-    private readonly IWpfTextView view;
-    private readonly IAdornmentLayer layer;
-    private readonly CommentAdornmentProvider provider;
+    private readonly IWpfTextView view;
+    private readonly IAdornmentLayer layer;
+    private readonly CommentAdornmentProvider provider;
     ```
 
 5. Добавьте конструктор, который подписывает руководителя к <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> событиям и, а также к `CommentsChanged` событию. Конструктор является закрытым, так как экземпляр диспетчера создается статическим `Create()` методом.
@@ -534,22 +535,22 @@ ms.locfileid: "90037475"
 6. Добавьте `Create()` метод, который получает поставщик, или при необходимости создает его.
 
     ```csharp
-    public static CommentAdornmentManager Create(IWpfTextView view)
+    public static CommentAdornmentManager Create(IWpfTextView view)
     {
-        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentManager>(delegate { return new CommentAdornmentManager(view); });
+        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentManager>(delegate { return new CommentAdornmentManager(view); });
     }
     ```
 
 7. Добавьте `CommentsChanged` обработчик.
 
     ```csharp
-    private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)
+    private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)
     {
-        //Remove the comment (when the adornment was added, the comment adornment was used as the tag). 
+        //Remove the comment (when the adornment was added, the comment adornment was used as the tag). 
         if (e.CommentRemoved != null)
             this.layer.RemoveAdornmentsByTag(e.CommentRemoved);
 
-        //Draw the newly added comment (this will appear immediately: the view does not need to do a layout). 
+        //Draw the newly added comment (this will appear immediately: the view does not need to do a layout). 
         if (e.CommentAdded != null)
             this.DrawComment(e.CommentAdded);
     }
@@ -558,7 +559,7 @@ ms.locfileid: "90037475"
 8. Добавьте <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> обработчик.
 
     ```csharp
-    private void OnClosed(object sender, EventArgs e)
+    private void OnClosed(object sender, EventArgs e)
     {
         this.provider.Detach();
         this.view.LayoutChanged -= OnLayoutChanged;
@@ -569,19 +570,19 @@ ms.locfileid: "90037475"
 9. Добавьте <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> обработчик.
 
     ```csharp
-    private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)
+    private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)
     {
         //Get all of the comments that intersect any of the new or reformatted lines of text.
         List<CommentAdornment> newComments = new List<CommentAdornment>();
 
-        //The event args contain a list of modified lines and a NormalizedSpanCollection of the spans of the modified lines.  
-        //Use the latter to find the comments that intersect the new or reformatted lines of text. 
+        //The event args contain a list of modified lines and a NormalizedSpanCollection of the spans of the modified lines.  
+        //Use the latter to find the comments that intersect the new or reformatted lines of text. 
         foreach (Span span in e.NewOrReformattedSpans)
         {
             newComments.AddRange(this.provider.GetComments(new SnapshotSpan(this.view.TextSnapshot, span)));
         }
 
-        //It is possible to get duplicates in this list if a comment spanned 3 lines, and the first and last lines were modified but the middle line was not. 
+        //It is possible to get duplicates in this list if a comment spanned 3 lines, and the first and last lines were modified but the middle line was not. 
         //Sort the list and skip duplicates.
         newComments.Sort(delegate(CommentAdornment a, CommentAdornment b) { return a.GetHashCode().CompareTo(b.GetHashCode()); });
 

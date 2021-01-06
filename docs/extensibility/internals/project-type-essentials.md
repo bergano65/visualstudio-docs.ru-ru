@@ -1,5 +1,7 @@
 ---
 title: Основные сведения о типе проекта | Документация Майкрософт
+description: Сведения о том, когда необходимо создать тип проекта, а также при расширении существующего типа проекта с помощью подтипов проекта.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7634802899d72eb6abcb0aa837b8fb6a532b966
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: d55a4be044c44567f65e312d013ebdb61314ea00
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012065"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877810"
 ---
 # <a name="project-type-essentials"></a>Основные компоненты типа проекта
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] включает несколько типов проектов для таких языков, как [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] или [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] также позволяет создавать собственные типы проектов.
@@ -64,5 +66,5 @@ ms.locfileid: "90012065"
 
 - Типы проектов могут поддерживать несколько конфигураций, таких как отладка и выпуск. Пользователи могут изменять различные конфигурации проекта с помощью предоставленных страниц свойств. Дополнительные сведения см. в разделе [Управление параметрами конфигурации](../../extensibility/internals/managing-configuration-options.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Развертывание типов проектов](../../extensibility/internals/deploying-project-types.md)

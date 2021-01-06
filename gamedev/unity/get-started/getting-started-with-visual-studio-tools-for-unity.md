@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: ba95e15be083e0bb1274e01a986f4139d9443240
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1f8cbe1629aab6a177a46888fe25cf8e3565d91d
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341294"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903757"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Начало работы с Visual Studio и Unity
 
@@ -34,7 +34,7 @@ ms.locfileid: "94341294"
 > [!NOTE]
 > Это руководства по установке для Visual Studio. Если вы используете Visual Studio Code, ознакомьтесь [с документацией по разработке Unity с VS Code](https://code.visualstudio.com/docs/other/unity).
 
-1. [Скачайте установщик Visual Studio](/docs/install/install-visual-studio.md)или запустите его, если он уже установлен.
+1. [Скачайте установщик Visual Studio](/visualstudio/docs/install/install-visual-studio.md)или запустите его, если он уже установлен.
 2. Щелкните **Изменить** (если установлено) или **Установка** (для новой установки) для требуемой версии Visual Studio.
 3. На вкладке **рабочие нагрузки** перейдите к разделу **игры** и выберите рабочую нагрузку **Разработка игр с помощью Unity** .
 
@@ -84,8 +84,8 @@ ms.locfileid: "94341294"
 
     ![Меню настроек внешних средств в редакторе Unity в Windows](../media/vs/preferences-external-tools.png)
 
-4. Если было выбрано **Обзор...** , необходимо перейти в каталог **Common7/IDE** , находящийся в каталоге установки Visual Studio, и выбрать файл **devenv.exe**. Затем нажмите кнопку **Открыть**.
-5. После выбора Visual Studio из списка **внешнего редактора скриптов** , убедитесь, что флажок **Editor Attaching** (Присоединение редактора) установлен.
+4. Если было выбрано **Обзор...** , необходимо перейти в каталог **Common7/IDE**, находящийся в каталоге установки Visual Studio, и выбрать файл **devenv.exe**. Затем нажмите кнопку **Открыть**.
+5. После выбора Visual Studio из списка **внешнего редактора скриптов**, убедитесь, что флажок **Editor Attaching** (Присоединение редактора) установлен.
 6. Чтобы завершить процесс настройки, закройте диалоговое окно **Параметры**.
 
 :::zone-end
@@ -101,6 +101,6 @@ ms.locfileid: "94341294"
 
 :::zone-end
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
  Чтобы узнать, как работать с проектом Unity и выполнить его отладку в Visual Studio, перейдите по адресу [инструменты Visual Studio для Unity](using-visual-studio-tools-for-unity.md).

@@ -1,5 +1,7 @@
 ---
 title: Решения по проектированию типов проектов | Документация Майкрософт
+description: Сведения об элементе, сохраняемости файлов проекта и принятии решений по проектированию механику перед расширением Visual Studio путем создания нового типа проекта.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e33ac1c4168593b881f799dfdfb94005fb55fc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab29fbe79b474aa7b640faf81de812b7571de861
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706363"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877801"
 ---
 # <a name="project-type-design-decisions"></a>Проектные решения для типа проекта
 Перед созданием нового типа проекта необходимо принять несколько решений по проектированию, касающихся типа проекта. Необходимо решить, какие типы элементов будут содержаться в проектах, как будут сохраняться файлы проекта и какая модель обязательства будет использоваться.

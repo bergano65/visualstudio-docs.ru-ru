@@ -1,5 +1,7 @@
 ---
 title: Архитектура типов проектов | Документация Майкрософт
+description: В этой статье содержатся ссылки на статьи, содержащие подробные сведения об архитектуре типов проектов в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e53929b1ec2ed9c73191bf16f1cedc84a53b58f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecde348ce52bdd354df61855d9907acf85900be2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706322"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877784"
 ---
 # <a name="project-types-architecture"></a>Архитектура типов проектов
 В этом разделе содержатся подробные сведения об архитектуре типов проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Элементы модели проекта](../../extensibility/internals/elements-of-a-project-model.md)
 
  Перечисляет службы, которые может использовать тип проекта, и интерфейсы, которые он должен реализовать.
@@ -37,7 +39,7 @@ ms.locfileid: "80706322"
 
  Описывает использование [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] иерархий и контекста выбора для обеспечения единообразного и упрощенного взаимодействия с пользователем.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 - [Подтипы проектов](../../extensibility/internals/project-subtypes.md)
 
  Объясняет, как подтипы проектов позволяют настраивать поведение систем проектов [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] и [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] .

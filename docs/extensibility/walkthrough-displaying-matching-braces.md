@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. Отображение парных скобок | Документация Майкрософт
+description: Узнайте, как определять фигурные скобки в контексте языка, применяя Теги сопоставления фигурных скобок к типу содержимого text с помощью этого пошагового руководства.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65a0bc2c53d5d6e970b4aaa956170bc06c24e7c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce40f5673a8aba4ab3f7714a3aafdc3de4697cc4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904841"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877953"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Пошаговое руководство. Отображение парных скобок
 Реализуйте языковые функции, такие как Парные фигурные скобки, путем определения фигурных скобок, которые необходимо сопоставить, и добавления тега текстового маркера к парным фигурным скобкам, если курсор находится на одной из фигурных скобок. Можно определить фигурные скобки в контексте языка, определить собственное расширение имени файла и тип содержимого, применить теги только к этому типу или применить теги к существующему типу содержимого (например, "Text"). В следующем пошаговом руководстве показано, как применить теги сопоставления фигурных скобок к типу содержимого text.
 
-## <a name="prerequisites"></a>Предварительные условия
- Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Предварительные требования
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Создание проекта Managed Extensibility Framework (MEF)
 

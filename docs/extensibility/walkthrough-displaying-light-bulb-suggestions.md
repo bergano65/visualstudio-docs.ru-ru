@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. Отображение вариантов использования лампочки | Документация Майкрософт
+description: Узнайте, как создать лампочку в редакторе Visual Studio, которая отображается в текущем слове и имеет два предлагаемых действия с помощью этого пошагового руководства.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
@@ -8,17 +10,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 8d8d498c1d9a5e5142672bcd561ac0749bbf8d75
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508955"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877966"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Пошаговое руководство. Отображение предложений лампочки
 Лампочки — это значки в редакторе Visual Studio, которые расширяются для отображения набора действий, например исправления проблем, выявленных встроенными анализаторами кода или рефакторинг кода.
 
- В редакторах Visual C# и Visual Basic можно также использовать .NET Compiler Platform ("Roslyn") для написания и упаковки собственных анализаторов кода с действиями, которые автоматически отображают лампочки. Дополнительные сведения можно найти в разделе
+ В редакторах Visual C# и Visual Basic можно также использовать .NET Compiler Platform ("Roslyn") для написания и упаковки собственных анализаторов кода с действиями, которые автоматически отображают лампочки. Дополнительные сведения см. в разделе:
 
 - [Как написать диагностику и исправление кода C#](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 
@@ -36,8 +38,8 @@ ms.locfileid: "89508955"
 
   Можно использовать лампочки для предоставления собственных предлагаемых действий. Например, можно указать действия для перемещения открывающих фигурных скобок на новую строку или их перемещения в конец предыдущей строки. В следующем пошаговом руководстве показано, как создать лампочку, которая отображается в текущем слове и имеет два предлагаемых действия: **преобразовать в верхний регистр** и **преобразовать в нижний регистр**.
 
-## <a name="prerequisites"></a>Предварительные условия
- Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Предварительные требования
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Создание проекта Managed Extensibility Framework (MEF)
 
@@ -222,8 +224,8 @@ ms.locfileid: "89508955"
 2. Создайте два класса с именами `UpperCaseSuggestedAction` и `LowerCaseSuggestedAction`. В обоих классах реализован интерфейс <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.
 
     ```csharp
-    internal class UpperCaseSuggestedAction : ISuggestedAction
-    internal class LowerCaseSuggestedAction : ISuggestedAction
+    internal class UpperCaseSuggestedAction : ISuggestedAction
+    internal class LowerCaseSuggestedAction : ISuggestedAction
     ```
 
      Эти два класса похожи за тем исключением, что один из них вызывает <xref:System.String.ToUpper%2A>, а другой вызывает <xref:System.String.ToLower%2A>. В дальнейших шагах рассматривается создание класса для действия преобразования в верхний регистр, но вам необходимо реализовать оба класса. Используйте инструкции по реализации действия преобразования в верхний регистр в качестве шаблона для реализации действия преобразования в нижний регистр.
@@ -243,8 +245,8 @@ ms.locfileid: "89508955"
 
     ```csharp
     private ITrackingSpan m_span;
-    private string m_upper;
-    private string m_display;
+    private string m_upper;
+    private string m_display;
     private ITextSnapshot m_snapshot;
     ```
 
@@ -288,7 +290,7 @@ ms.locfileid: "89508955"
     {
         get { return false; }
     }
-    public string DisplayText
+    public string DisplayText
     {
         get { return m_display; }
     }
@@ -319,7 +321,7 @@ ms.locfileid: "89508955"
 9. Реализуйте метод <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A>, заменив текст в диапазоне на эквивалентный текст в верхнем регистре.
 
     ```csharp
-    public void Invoke(CancellationToken cancellationToken)
+    public void Invoke(CancellationToken cancellationToken)
     {
         m_span.TextBuffer.Replace(m_span.GetSpan(m_snapshot), m_upper);
     }

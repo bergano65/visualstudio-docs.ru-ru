@@ -1,5 +1,6 @@
 ---
 title: Связывание типа содержимого с расширением имени файла
+description: Узнайте, как связать собственный тип содержимого с расширением имени файла с помощью редактора Managed Extensibility Framework расширений в этом пошаговом руководстве.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d59ae0b5eb2411ff9e41466e8b87dbe20b835ba
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 478ecc6c2238703d1cacc8e649072d669a41c590
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034667"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877914"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Пошаговое руководство. Связывание типа содержимого с расширением имени файла
 Можно определить собственный тип содержимого и связать с ним расширение имени файла с помощью расширений Managed Extensibility Framework (MEF). В некоторых случаях расширение имени файла уже определено языковой службой. Однако, чтобы использовать его с MEF, необходимо по-прежнему связать его с типом содержимого.

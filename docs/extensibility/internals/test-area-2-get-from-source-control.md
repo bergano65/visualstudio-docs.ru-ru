@@ -1,5 +1,7 @@
 ---
 title: Область тестирования 2. получение из системы управления версиями | Документация Майкрософт
+description: Эта область тестирования охватывает тестовые случаи для получения элементов из хранилища версий с помощью Get. Эти тестовые случаи можно применять как к локальным, так и к веб-проектам.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c213e2774730596db8b8e4f2d0691472495222e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98ed765f78a9e7330e5e1d3864c8a91b63239a3f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704603"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877706"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Область тестирования 2. Получение элементов из системы управления версиями
 Эта область тестирования охватывает тестовые случаи для получения элементов из хранилища версий с помощью команды Get. Эти тестовые случаи можно применять как к локальным, так и к веб-проектам.

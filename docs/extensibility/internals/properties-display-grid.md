@@ -1,5 +1,7 @@
 ---
 title: Отображение сетки свойств | Документация Майкрософт
+description: Сведения о том, где поля имен свойств и значений свойств находятся в сетке в окно свойств и как работать с сеткой в расширении свойств.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d094c32ba8a64fc636f3fb6dfb2944dc3955628a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 418501ada340614d084e9796a59a46f8612aa743
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706186"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878031"
 ---
 # <a name="properties-display-grid"></a>Сетка "Отображение свойств"
 
