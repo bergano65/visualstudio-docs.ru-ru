@@ -1,5 +1,7 @@
 ---
 title: Конфигурация проекта для вывода | Документация Майкрософт
+description: Сведения о процессах сборки, поддерживаемых каждой конфигурацией, а также об интерфейсах и методах, с помощью которых можно сделать доступными выходные элементы.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78b95457af4c5d806fdfcc20f49ac4e82df36488
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe5cb6477808f892b8d36aa5fd616a5a0ea7969
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706670"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876328"
 ---
 # <a name="project-configuration-for-output"></a>Конфигурация проекта для вывода
 Каждая конфигурация может поддерживать набор процессов сборки, которые создают выходные элементы, такие как исполняемые или файлы ресурсов. Эти выходные элементы являются частными для пользователя и могут быть помещены в группы, связывающие связанные типы выходных данных, такие как исполняемые файлы (exe, DLL, lib) и исходные файлы (IDL-файлы).

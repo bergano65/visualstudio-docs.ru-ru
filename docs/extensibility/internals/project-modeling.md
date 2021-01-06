@@ -1,5 +1,7 @@
 ---
 title: Моделирование проекта | Документация Майкрософт
+description: Сведения о стандартных объектах проекта, необходимых для создания автоматизации для нового типа проекта, и пути, которым следует автоматизация проекта.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ac89baf5bc7582d3430532938a5e5a0c35a4c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a481e731f01230139ec4342231479606c49bd11
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706552"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877420"
 ---
 # <a name="project-modeling"></a>Моделирование проекта
 Следующим шагом в предоставлении автоматизации для проекта является реализация стандартных объектов проекта: <xref:EnvDTE.Projects> коллекций и, `ProjectItems` `Project` объектов и, <xref:EnvDTE.ProjectItem> а также оставшихся объектов, уникальных для вашей реализации. Эти стандартные объекты определены в файле Дтеинтернал. h. Реализация стандартных объектов представлена в примере Бскпрж. Эти классы можно использовать в качестве моделей для создания собственных объектов стандартных проектов, которые будут изолированы параллельно с объектами проекта из других типов проектов.

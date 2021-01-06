@@ -1,5 +1,7 @@
 ---
 title: Новые возможности пакета SDK для Visual Studio 2019 | Документация Майкрософт
+description: В Visual Studio SDK добавлены новые и обновленные функции Visual Studio 2019, включая улучшения регистрации в редакторе.
+ms.custom: SEO-VS-2020
 ms.date: 03/29/2019
 ms.topic: conceptual
 ms.assetid: 4a07607b-0c87-4866-acd8-6d68358d6a47
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 187d3df4b5bcefefc0135c010c7d98951e9b3af8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c05e6fccf3b45c8ab6fa1386c848d6ee33094e2d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740402"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877615"
 ---
 # <a name="whats-new-in-the-visual-studio-2019-sdk"></a>Новые возможности пакета SDK для Visual Studio 2019
 

@@ -1,5 +1,7 @@
 ---
 title: Обзор решений
+description: Узнайте о внутренних компонентах решения, для разработчиков расширений, которые хотят работать с решениями в расширениях Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767db749d953855cd5c6f81f356a195c830aa838
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2888f2fd0b2c9b7bfb530cc3fd46708ca13422f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705300"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876731"
 ---
 # <a name="solutions-overview"></a>Обзор решений
 
@@ -45,7 +47,7 @@ ms.locfileid: "80705300"
 > [!NOTE]
 > Если вы хотите создать новую конфигурацию решения, состоящую из двух конфигураций проектов и исключая треть из сборки, необходимо использовать пользовательский интерфейс страниц свойств или автоматизацию. Нельзя изменить конфигурации диспетчера сборки решения и их свойства напрямую, но можно управлять диспетчером сборки решения с помощью `SolutionBuild` класса из dte в модели автоматизации. Дополнительные сведения о настройке решений см. в разделе [Конфигурация решения](../../extensibility/internals/solution-configuration.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>

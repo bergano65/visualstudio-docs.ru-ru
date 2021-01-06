@@ -1,5 +1,7 @@
 ---
-title: Поддержка средств обзора символов | Документация Майкрософт
+title: Поддержка средств Symbol-Browsing | Документация Майкрософт
+description: Visual Studio предоставляет возможности обзора символов в Visual Studio. Узнайте, как расширить эти возможности с помощью библиотек для символов в компонентах.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,17 +20,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4998e47ccd6f99df2710833c18975d57e3bb92f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0adf586831e21c2448931215d4ef4a89d16a63f8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704771"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876445"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Вспомогательные средства просмотра символов
 **Обозреватель объектов**, **представление классов**, **Обозреватель вызовов** и **Поиск результатов поиска символов** предоставляют возможности просмотра символов в Visual Studio. Эти средства отображают иерархические древовидные представления символов и отображают связи между символами в дереве. Символы могут представлять пространства имен, объекты, классы, члены классов и другие элементы языка, содержащиеся в различных компонентах. Компоненты включают в себя проекты Visual Studio, внешние .NET Framework компонентов и типов (TLB) библиотеки. Дополнительные сведения см. [в разделе Просмотр структуры кода](../../ide/viewing-the-structure-of-code.md).
 
-## <a name="symbol-browsing-libraries"></a>Библиотеки обзора символов
+## <a name="symbol-browsing-libraries"></a>Библиотеки Symbol-Browsing
  Как разработчик языка можно расширять возможности просмотра символов в Visual Studio, создавая библиотеки, которые отписывают символы в компонентах и предоставляют списки символов для диспетчера объектов Visual Studio с помощью набора интерфейсов. Библиотека описывается <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> интерфейсом. Диспетчер объектов Visual Studio реагирует на запросы новых данных из средств обзора символов, получая данные из библиотек и упорядочивая их. Впоследствии он заполняет или обновляет средства с помощью запрошенных данных. Чтобы получить ссылку на диспетчер объектов Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> передайте <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> идентификатор службы в `GetService` метод.
 
  Каждая библиотека должна быть зарегистрирована в диспетчере объектов Visual Studio, которая собирает сведения обо всех библиотеках. Чтобы зарегистрировать библиотеку, вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> метод. В зависимости от того, какой инструмент инициирует запрос, диспетчер объектов Visual Studio находит соответствующую библиотеку и запрашивает данные. Данные передаются между библиотеками и [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчером объектов в списках символов, описываемых <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейсом.

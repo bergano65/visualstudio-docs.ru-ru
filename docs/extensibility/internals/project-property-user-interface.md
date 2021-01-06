@@ -1,5 +1,7 @@
 ---
 title: Пользовательский интерфейс свойства проекта | Документация Майкрософт
+description: Сведения о том, как подтипы проектов могут изменять диалоговое окно страницы свойств проекта, как указано в базовом проекте.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15895a7dab5c57d8312787b1276acac89c28796
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 2c9bba8b163b7fd21cfa829bb26e06cf37b887bd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011857"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877394"
 ---
 # <a name="project-property-user-interface"></a>Пользовательский интерфейс свойств проекта
 
@@ -57,7 +59,7 @@ ms.locfileid: "90011857"
 
 Новые страницы свойств, добавленные подтипом проекта, передаются в конфигурации проекта в качестве объекта обзора из базовой реализации проекта. Этот объект "Обзор" конфигурации проекта поддерживает расширители автоматизации. Дополнительные сведения о Аутоматионекстендерс см. в разделе [Реализация и использование расширителей автоматизации](/previous-versions/0y92k2w2(v=vs.140)). Страницы свойств, реализованные при вызове подтипа проекта <xref:EnvDTE.Project.Extender%2A> для получения собственного объекта "Обзор конфигурации подтипа проекта", который расширяет объект "Обзор конфигурации" базового проекта.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:EnvDTE.IFilterProperties>
 - [Диалоговое окно «страницы свойств»](/previous-versions/visualstudio/visual-studio-2010/as5chysf(v=vs.100))

@@ -1,5 +1,7 @@
 ---
 title: Выделение синтаксиса в языковой службе прежних версий | Документация Майкрософт
+description: Узнайте, как в Visual Studio реализована служба цветового выделения синтаксиса в устаревшей языковой службе для распознавания элементов языка и отображения их в цветах в редакторе.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d0cc0dcf40ab9231e3af6208ab2f844c69f3398
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: bbf063efe30d90c84848222ff931be43834efbad
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414559"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876393"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Цветовая маркировка синтаксиса в языковой службе прежних версий
 

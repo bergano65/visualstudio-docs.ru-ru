@@ -1,5 +1,7 @@
 ---
 title: Сведения о параметре в устаревшем языке S2 | Документация Майкрософт
+description: Узнайте, как поддерживать операцию со сведениями о параметрах IntelliSense для отображения сигнатуры метода при вводе метода в устаревшей языковой службе.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dff6e871320d0727ed2fbec4188e8f7af2e5c5fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc239d5b0d580d420683c6940ac2bbd5198335d7
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88237962"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875951"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-2"></a>Сведения о параметрах в устаревшей языковой службе 2
 Сведения о параметрах IntelliSense — это подсказка, которая отображает сигнатуру метода, когда пользователь вводит в список параметров метода начальный символ списка параметров (обычно это открывающая скобка). После ввода каждого параметра и ввода разделителя параметров (обычно это запятая) подсказка обновляется для отображения следующего параметра полужирным шрифтом.

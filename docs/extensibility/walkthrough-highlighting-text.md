@@ -1,5 +1,7 @@
 ---
 title: Пошаговое руководство. выделение текста | Документация Майкрософт
+description: Узнайте, как выделить каждое вхождение текущего слова в текстовом файле, добавив визуальные эффекты в редактор в этом пошаговом руководстве.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0331c0d240503dd88257269397e1afae80a17803
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32af7033eb29d223a5ecfafaccb0a3123ab88d06
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86418062"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877134"
 ---
 # <a name="walkthrough-highlight-text"></a>Пошаговое руководство. выделение текста
 Можно добавить различные визуальные эффекты в редактор, создав компоненты компонентов Managed Extensibility Framework (MEF). В этом пошаговом руководстве показано, как выделить каждое вхождение текущего слова в текстовом файле. Если слово встречается в текстовом файле более одного раза и курсор находится в одном месте, выделяется каждое вхождение.
 
-## <a name="prerequisites"></a>Обязательные условия
- Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Предварительные требования
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Создание проекта MEF
 
@@ -157,7 +159,7 @@ ms.locfileid: "86418062"
     NormalizedSnapshotSpanCollection WordSpans { get; set; }
     SnapshotSpan? CurrentWord { get; set; }
     SnapshotPoint RequestedPoint { get; set; }
-    object updateLock = new object();
+    object updateLock = new object();
 
     ```
 
@@ -184,7 +186,7 @@ ms.locfileid: "86418062"
     ```csharp
     void ViewLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)
     {
-        // If a new snapshot wasn't generated, then skip this layout 
+        // If a new snapshot wasn't generated, then skip this layout 
         if (e.NewSnapshot != e.OldSnapshot)
         {
             UpdateAtCaretPosition(View.Caret.Position);
@@ -212,7 +214,7 @@ ms.locfileid: "86418062"
         if (!point.HasValue)
             return;
 
-        // If the new caret position is still within the current word (and on the same snapshot), we don't need to check it 
+        // If the new caret position is still within the current word (and on the same snapshot), we don't need to check it 
         if (CurrentWord.HasValue
             && CurrentWord.Value.Snapshot == View.TextSnapshot
             && point.Value >= CurrentWord.Value.Start
@@ -232,10 +234,10 @@ ms.locfileid: "86418062"
         //Find all words in the buffer like the one the caret is on
         TextExtent word = TextStructureNavigator.GetExtentOfWord(currentRequest);
         bool foundWord = true;
-        //If we've selected something not worth highlighting, we might have missed a "word" by a little bit
+        //If we've selected something not worth highlighting, we might have missed a "word" by a little bit
         if (!WordExtentIsValid(currentRequest, word))
         {
-            //Before we retry, make sure it is worthwhile 
+            //Before we retry, make sure it is worthwhile 
             if (word.Span.Start != currentRequest
                  || currentRequest == currentRequest.GetContainingLine().Start
                  || char.IsWhiteSpace((currentRequest - 1).GetChar()))
@@ -244,11 +246,11 @@ ms.locfileid: "86418062"
             }
             else
             {
-                // Try again, one character previous.  
+                // Try again, one character previous.  
                 //If the caret is at the end of a word, pick up the word.
                 word = TextStructureNavigator.GetExtentOfWord(currentRequest - 1);
 
-                //If the word still isn't valid, we're done 
+                //If the word still isn't valid, we're done 
                 if (!WordExtentIsValid(currentRequest, word))
                     foundWord = false;
             }
@@ -262,7 +264,7 @@ ms.locfileid: "86418062"
         }
 
         SnapshotSpan currentWord = word.Span;
-        //If this is the current word, and the caret moved within a word, we're done. 
+        //If this is the current word, and the caret moved within a word, we're done. 
         if (CurrentWord.HasValue && currentWord == CurrentWord)
             return;
 
@@ -272,11 +274,11 @@ ms.locfileid: "86418062"
 
         wordSpans.AddRange(TextSearchService.FindAll(findData));
 
-        //If another change hasn't happened, do a real update 
+        //If another change hasn't happened, do a real update 
         if (currentRequest == RequestedPoint)
             SynchronousUpdate(currentRequest, new NormalizedSnapshotSpanCollection(wordSpans), currentWord);
     }
-    static bool WordExtentIsValid(SnapshotPoint currentRequest, TextExtent word)
+    static bool WordExtentIsValid(SnapshotPoint currentRequest, TextExtent word)
     {
         return word.IsSignificant
             && currentRequest.Snapshot.GetText(word.Span).Any(c => char.IsLetter(c));
@@ -314,7 +316,7 @@ ms.locfileid: "86418062"
     public IEnumerable<ITagSpan<HighlightWordTag>> GetTags(NormalizedSnapshotSpanCollection spans)
     {
         if (CurrentWord == null)
-            yield break;
+            yield break;
 
         // Hold on to a "snapshot" of the word spans and current word, so that we maintain the same
         // collection throughout
@@ -322,9 +324,9 @@ ms.locfileid: "86418062"
         NormalizedSnapshotSpanCollection wordSpans = WordSpans;
 
         if (spans.Count == 0 || wordSpans.Count == 0)
-            yield break;
+            yield break;
 
-        // If the requested snapshot isn't the same as the one our words are on, translate our spans to the expected snapshot 
+        // If the requested snapshot isn't the same as the one our words are on, translate our spans to the expected snapshot 
         if (spans[0].Snapshot != wordSpans[0].Snapshot)
         {
             wordSpans = new NormalizedSnapshotSpanCollection(
@@ -333,16 +335,16 @@ ms.locfileid: "86418062"
             currentWord = currentWord.TranslateTo(spans[0].Snapshot, SpanTrackingMode.EdgeExclusive);
         }
 
-        // First, yield back the word the cursor is under (if it overlaps) 
-        // Note that we'll yield back the same word again in the wordspans collection; 
-        // the duplication here is expected. 
+        // First, yield back the word the cursor is under (if it overlaps) 
+        // Note that we'll yield back the same word again in the wordspans collection; 
+        // the duplication here is expected. 
         if (spans.OverlapsWith(new NormalizedSnapshotSpanCollection(currentWord)))
-            yield return new TagSpan<HighlightWordTag>(currentWord, new HighlightWordTag());
+            yield return new TagSpan<HighlightWordTag>(currentWord, new HighlightWordTag());
 
-        // Second, yield all the other words in the file 
+        // Second, yield all the other words in the file 
         foreach (SnapshotSpan span in NormalizedSnapshotSpanCollection.Overlap(spans, wordSpans))
         {
-            yield return new TagSpan<HighlightWordTag>(span, new HighlightWordTag());
+            yield return new TagSpan<HighlightWordTag>(span, new HighlightWordTag());
         }
     }
     ```
@@ -381,14 +383,14 @@ ms.locfileid: "86418062"
     ```csharp
     public ITagger<T> CreateTagger<T>(ITextView textView, ITextBuffer buffer) where T : ITag
     {
-        //provide highlighting only on the top buffer 
+        //provide highlighting only on the top buffer 
         if (textView.TextBuffer != buffer)
-            return null;
+            return null;
 
         ITextStructureNavigator textStructureNavigator =
             TextStructureNavigatorSelector.GetTextStructureNavigator(buffer);
 
-        return new HighlightWordTagger(textView, buffer, TextSearchService, textStructureNavigator) as ITagger<T>;
+        return new HighlightWordTagger(textView, buffer, TextSearchService, textStructureNavigator) as ITagger<T>;
     }
     ```
 

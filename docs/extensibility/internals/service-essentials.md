@@ -1,5 +1,7 @@
 ---
 title: Основные компоненты службы | Документация Майкрософт
+description: Сведения о службах, которые являются интерфейсами для другого пакета VSPackage для использования. Службы в VSPackage могут переопределять встроенные или другие службы.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2947cb4cd6a347d8e010340f8689eb1907a28a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54d785d665122fd5c5fa1709aa9348777e3c730b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705497"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875808"
 ---
 # <a name="service-essentials"></a>Основные компоненты службы
 Служба — это контракт между двумя пакетами VSPackage. Один пакет VSPackage предоставляет конкретный набор интерфейсов для использования другим пакетом VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] является коллекцией пакетов VSPackage, которые предоставляют службы другим пакетам VSPackage.
@@ -92,7 +94,7 @@ ms.locfileid: "80705497"
 
     Этот код получает службу Свсактивитилог и приводит ее к интерфейсу Ивсактивитилог, который можно использовать для записи в журнал действий. Пример см. в разделе [как использовать журнал действий](../../extensibility/how-to-use-the-activity-log.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Список доступных служб](../../extensibility/internals/list-of-available-services.md)
 - [Использование и предоставление служб](../../extensibility/using-and-providing-services.md)

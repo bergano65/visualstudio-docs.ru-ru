@@ -1,5 +1,6 @@
 ---
 title: Использование сочетания клавиш с расширением редактора
+description: Узнайте, как добавить Оформление представления в текстовое представление с помощью сочетания клавиш. Это пошаговое руководство основано на шаблоне "редактор оформлений" окна просмотра.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78bbf84f6b11451c8b1a09e6883ba76b19cec757
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4c939328e1ef8e517821db8622e7383cab90c384
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037462"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875847"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Пошаговое руководство. Использование сочетания клавиш с расширением редактора
 Вы можете реагировать на сочетания клавиш в расширении редактора. В следующем пошаговом руководстве показано, как добавить Оформление представления в текстовое представление с помощью сочетания клавиш. Это пошаговое руководство основано на шаблоне "редактор оформлений" окна просмотра и позволяет добавлять Оформление с помощью символа +.
@@ -78,7 +79,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 3. Класс с именем Кэйбиндингкоммандфилтер должен наследовать от <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> .
 
     ```csharp
-    internal class KeyBindingCommandFilter : IOleCommandTarget
+    internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
 4. Добавьте закрытые поля для текстового представления, следующую команду в цепочке команд и флаг для представления того, был ли уже добавлен фильтр команд.
@@ -86,8 +87,8 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     ```csharp
     private IWpfTextView m_textView;
     internal IOleCommandTarget m_nextTarget;
-    internal bool m_added;
-    internal bool m_adorned;
+    internal bool m_added;
+    internal bool m_adorned;
     ```
 
 5. Добавьте конструктор, который задает текстовое представление.
@@ -198,7 +199,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
 1. Щелкните проект правой кнопкой мыши и выберите пункт **Управление пакетами NuGet**.
 
-2. В **диспетчере пакетов NuGet**перейдите на вкладку **обновления** , установите флажок **выбрать все пакеты** и нажмите кнопку **Обновить**.
+2. В **диспетчере пакетов NuGet** перейдите на вкладку **обновления** , установите флажок **выбрать все пакеты** и нажмите кнопку **Обновить**.
 
 Обработчик команд является реализацией <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601> , которая обрабатывает команду, создавая Оформление.
 

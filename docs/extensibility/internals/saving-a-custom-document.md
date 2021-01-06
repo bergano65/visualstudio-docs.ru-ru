@@ -1,5 +1,7 @@
 ---
 title: Сохранение настраиваемого документа | Документация Майкрософт
+description: Сведения о процессе, который выполняется для пользовательского документа для типа проекта, добавляемого в интегрированную среду разработки Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f04d588b4becfa778407269849032ea8ec56fb3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2d2aa249d6944e33ab9556000c483efdec78f20
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705613"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875683"
 ---
 # <a name="saving-a-custom-document"></a>Сохранение настраиваемого документа
-Среда обрабатывает команды **сохранить**, **Сохранить как**и **сохранить все** . Когда пользователь нажимает кнопку **сохранить**, **Сохранить как** **или сохранить все** в меню **файл** или закрывает решение, в результате чего происходит сохранение всего процесса.
+Среда обрабатывает команды **сохранить**, **Сохранить как** и **сохранить все** . Когда пользователь нажимает кнопку **сохранить**, **Сохранить как** **или сохранить все** в меню **файл** или закрывает решение, в результате чего происходит сохранение всего процесса.
 
  ![Сохранение в редакторе клиентов](../../extensibility/internals/media/private.gif "Личные") Сохранение, сохранение как и сохранение всей обработки команд для пользовательского редактора
 
@@ -41,6 +43,6 @@ ms.locfileid: "80705613"
     > [!NOTE]
     > Если вы реализуете собственный механизм сохраняемости, не забудьте вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> метод для экономии времени. Этот метод проверяет, является ли сохранение файла защищенным (например, если файл не доступен только для чтения).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md)

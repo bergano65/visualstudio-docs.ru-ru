@@ -1,5 +1,7 @@
 ---
 title: Поддержка свойств проекта и конфигурации | Документация Майкрософт
+description: Сведения о том, как предоставить страницу свойств для собственного типа проекта в интегрированной среде разработки Visual Studio, которая может отображать расширенные свойства проекта и конфигурации.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9d9a6e0976ab1ff336fc6754fa44d26c031378
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fd5f15f16894faf6d47700e34db4d99a1fa3cb5a
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012026"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876601"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Поддержка свойств конфигурации и проекта
 Окно **Свойства** в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среде разработки (IDE) может отображать свойства проекта и конфигурации. Можно предоставить страницу свойств для собственного типа проекта, чтобы пользователь мог задать свойства приложения.
@@ -75,7 +77,7 @@ ms.locfileid: "90012026"
 
  Пакет VSPackage, к которому присоединен атрибут, не важен. При регистрации VSPackage с помощью [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] регистрируется идентификатор класса (CLSID) любого объекта, который может быть создан, чтобы <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> можно было создать его.
 
- Путь реестра объекта, который можно создать, определяется путем объединения <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> , слова, CLSID и идентификатора GUID типа объекта. Если `MyProjectPropertyPage` класс имеет идентификатор GUID {3c693da2-5bca-49b3-bd95-ffe0a39dd723}, а усеррегистрирут — HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp, то путь реестра будет HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp\clsid \\ {3c693da2-5bca-49b3-bd95-ffe0a39dd723}.
+ Путь реестра объекта, который можно создать, определяется путем объединения <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> , слова, CLSID и идентификатора GUID типа объекта. Если `MyProjectPropertyPage` класс имеет идентификатор GUID {3c693da2-5bca-49b3-bd95-ffe0a39dd723}, а усеррегистрирут — HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp, то путь реестра будет HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\CLSID\\ {3c693da2-5bca-49b3-bd95-ffe0a39dd723}.
 
 ## <a name="project-and-configuration-property-attributes-and-layout"></a>Атрибуты и макет свойств проекта и конфигурации
  <xref:System.ComponentModel.CategoryAttribute>Атрибуты, <xref:System.ComponentModel.DisplayNameAttribute> и <xref:System.ComponentModel.DescriptionAttribute> определяют макет, метки и описание свойств проекта и конфигурации на странице универсальных свойств. Эти атрибуты определяют категорию, отображаемое имя и описание параметра соответственно.
@@ -90,7 +92,7 @@ ms.locfileid: "90012026"
 
  `MyConfigProp`Свойство конфигурации отображается на странице свойств Конфигурация как **свойство config** в категории " **Моя Категория**". Если выбран этот параметр, описание « **мое описание**» отображается на панели «Описание».
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Добавление и удаление страниц свойств](../../extensibility/adding-and-removing-property-pages.md)
 - [Проекты](../../extensibility/internals/projects.md)
 - [Файлы описания каталога шаблона (VSDIR-файлы)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

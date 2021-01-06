@@ -1,5 +1,7 @@
 ---
 title: Сравнение папки проекта с хранилищем системы управления версиями | Документация Майкрософт
+description: В интерфейсе API подключаемого модуля системы управления версиями сравнение между локальной папкой проекта и системой управления версиями осуществляется с помощью Сккдиркуеринфо и Сккдирдифф.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: facb3b656e0ac50b50fdb0291307aa2fe98b1df4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed69c6e503614cd1b2ed8e21716a5edcb4babd2b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706864"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877589"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Необязательное сравнение папки локального проекта с системой управления версиями
 В API подключаемого модуля системы управления версиями 1,2 Сравнение между локальной папкой проекта и системой управления версиями осуществляется с помощью функций [сккдиркуеринфо](../../extensibility/sccdirqueryinfo-function.md) и [сккдирдифф](../../extensibility/sccdirdiff-function.md).

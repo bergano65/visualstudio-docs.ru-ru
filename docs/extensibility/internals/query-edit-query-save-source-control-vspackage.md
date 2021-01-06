@@ -1,5 +1,7 @@
 ---
 title: Запрос на изменение запроса Save (пакет VSPackage системы управления версиями) | Документация Майкрософт
+description: Сведения о роли Query-Edit Query-Save событий и их обработке пакетом VSPackage системы управления версиями.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c09ac0cb4f51b8f2484b95d403ff6d0445631479
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed1bb5d1f805f81ba4f124f425fbd93f706eb830
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705959"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875886"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Изменение и сохранение запроса (пакет VSPackage системы управления версиями)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Редакторы могут транслировать события сохранения запроса на изменение (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Заглушка системы управления версиями реализует службу QEQS, так что она является получателем событий QEQS. Затем эти события делегируются в текущий активный пакет VSPackage системы управления версиями. В пакете VSPackage активной системы управления версиями реализован <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> метод и его методы. Методы `IVsQueryEditQuerySave2` интерфейса обычно вызываются непосредственно перед тем, как документ будет изменен в первый раз и непосредственно перед сохранением документа.

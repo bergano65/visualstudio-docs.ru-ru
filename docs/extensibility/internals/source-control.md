@@ -1,5 +1,7 @@
 ---
 title: Система управления версиями | Документация Майкрософт
+description: В этих статьях обсуждаются варианты реализации системы управления версиями в виде интегрированной функции Visual Studio с помощью подключаемого модуля или пакета VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ff7904e9abc3df8ed36f8c196ce4c1175b4d9af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33437994770ee78327d130f288d9d2e9689774fe
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704987"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876107"
 ---
 # <a name="source-control"></a>Система управления версиями
 В этом разделе обсуждаются варианты реализации системы управления версиями в качестве интегрированной функции [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] либо с помощью подключаемого модуля системы управления версиями, либо пакета VSPackage системы управления версиями.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Основное](../../extensibility/internals/source-control-integration-essentials.md)
 
  Представляет важные сведения, необходимые для начала работы с системой управления версиями.
@@ -37,7 +39,7 @@ ms.locfileid: "80704987"
 
  Описывает, как создать пакет VSPackage системы управления версиями, который не только обеспечивает функциональность управления версиями, но и может использоваться для настройки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] пользовательского интерфейса системы управления версиями.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 - [Подключаемые модули системы управления версиями](../../extensibility/source-control-plug-ins.md)
 
  Справочник по API подключаемого модуля системы управления версиями.

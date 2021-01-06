@@ -1,5 +1,7 @@
 ---
 title: Приоритет проекта | Документация Майкрософт
+description: Узнайте о схеме приоритета, которую использует интегрированная среда разработки Visual Studio, чтобы определить наилучший проект для открытия элемента, если элемент является членом нескольких проектов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a75c1c333d88e1bf5524281bee8b2a683ca6c98e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1389668bbcd1239fbb1ae0e865478bf0e0f6a7e8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706423"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877381"
 ---
 # <a name="project-priority"></a>Приоритет проекта
 Элемент проекта обычно является членом только одного проекта в решении. Таким образом, интегрированная среда разработки может легко определить, какой проект используется для открытия элемента. Однако если элемент является членом более чем одного проекта, интегрированная среда разработки использует схему приоритета для определения лучшего проекта для открытия элемента.

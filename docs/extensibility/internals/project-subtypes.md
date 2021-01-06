@@ -1,5 +1,7 @@
 ---
 title: Подтипы проектов | Документация Майкрософт
+description: Узнайте, как подтипы проектов позволяют настраивать поведение систем проектов Visual Studio. Пакеты VSPackage реализуют подтипы проектов с помощью агрегирования COM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c528486db99ddf07b2a2d1e18dcee4fc46e8713b
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 05240ee72aef85e50d07c7a39df1c819f04933a2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426980"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876303"
 ---
 # <a name="project-subtypes"></a>Подтипы проектов
 Подтипы проектов позволяют настраивать или изменять поведение систем проектов [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Настройки включают сохранение дополнительных данных в файле проекта, добавление или фильтрацию элементов в диалоговом окне **Добавление нового элемента** , управление отладкой и развертыванием сборок, а также расширение диалогового окна « **страницы свойств** проекта». Пакеты VSPackage реализуют подтипы проектов с помощью агрегирования COM.
@@ -24,7 +26,7 @@ ms.locfileid: "89426980"
 > [!NOTE]
 > Система проектов Visual C++ не поддерживает подтипы проектов. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] сам по себе использует подтипы проектов для реализации SQL Server и проектов смарт-устройств.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 
 - [Разработка подтипов проекта](../../extensibility/internals/project-subtypes-design.md)
 
@@ -66,7 +68,7 @@ ms.locfileid: "89426980"
 
   Описывает добавление и удаление страниц свойств в конструкторе проектов.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 
 - [Типы проектов](../../extensibility/internals/project-types.md)
 

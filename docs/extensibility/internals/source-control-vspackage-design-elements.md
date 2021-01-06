@@ -1,5 +1,7 @@
 ---
 title: Элементы проектирования VSPackage в системе управления версиями | Документация Майкрософт
+description: Сведения о структуре, которую должен реализовать пакет VSPackage системы управления версиями, а также интерфейсы и службы, которые может реализовать пакет VSPackage системы управления версиями.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5e94829f781c058d9b0ea56cdec6c03c71ffe0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e586470208989dce070c92963fc215f1053559a4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704999"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877654"
 ---
 # <a name="source-control-vspackage-design-elements"></a>Элементы проектирования пакета VSPackage системы управления версиями
 В подразделах этого раздела описывается структура, которую должен реализовать пакет VSPackage системы управления версиями для глубокой интеграции. В нем также перечислены интерфейсы и службы, которые может реализовать пакет VSPackage системы управления версиями, а также интерфейсы и службы, которые пакет VSPackage может использовать из других [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] компонентов для поддержки модели и функциональности системы управления версиями.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Структура VSPackage](../../extensibility/internals/vspackage-structure-source-control-vspackage.md)
 
  Определяет структуру пакета VSPackage системы управления версиями.
@@ -33,7 +35,7 @@ ms.locfileid: "80704999"
 
  Описывает службу управления версиями, предоставляемую пакетом VSPackage системы управления версиями.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 - [Создание пакета VSPackage системы управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
  Описывает, как создать пакет VSPackage системы управления версиями, который не только обеспечивает функциональность управления версиями, но и может использоваться для настройки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] пользовательского интерфейса системы управления версиями.

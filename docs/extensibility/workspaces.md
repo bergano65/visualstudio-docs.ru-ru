@@ -1,5 +1,7 @@
 ---
 title: Рабочие области в Visual Studio | Документация Майкрософт
+description: Сведения о том, как Visual Studio использует рабочую область для представления коллекции файлов в открытой папке, включая поставщиков и службы рабочей области.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ed660a5f52aba548d087b28f7caea4d1966fe45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952767"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876952"
 ---
 # <a name="workspaces"></a>Рабочие области
 
@@ -76,7 +78,7 @@ ms.locfileid: "62952767"
 }
 ```
 
-Предполагая, что эти параметры были в _VSWorkspaceSettings.js_пользователя, доступ к данным можно получить следующим образом:
+Предполагая, что эти параметры были в _VSWorkspaceSettings.js_ пользователя, доступ к данным можно получить следующим образом:
 
 ```csharp
 using System.Collections.Generic;
@@ -169,7 +171,7 @@ private static string MakeRootedUnderWorkingFolder(IWorkspace workspace, string 
 
 Загруженные пакеты могут реализовывать `IVsSolutionEvents7` и вызывать `IVsSolution.AdviseSolutionEvents` . Он включает в себя события при открытии и закрытии папки в Visual Studio.
 
-Контекст пользовательского интерфейса можно использовать для автоматической загрузки пакета. Значение равно `4646B819-1AE0-4E79-97F4-8A8176FDD664`.
+Контекст пользовательского интерфейса можно использовать для автоматической загрузки пакета. Значение — `4646B819-1AE0-4E79-97F4-8A8176FDD664`.
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 
@@ -179,13 +181,13 @@ private static string MakeRootedUnderWorkingFolder(IWorkspace workspace, string 
 
 ::: moniker range="vs-2017"
 
-Сведения об ошибке можно найти в _%localappdata%\microsoft\visualstudio\15.0_id \компонентмоделкаче\микрософт.висуалстудио.дефаулт.ЕРР_. Устраните все ошибки для типов, реализованных вашим расширением.
+Сведения об ошибке можно найти в _%локалаппдата%\микрософт\висуалстудио\ 15.0_Id \компонентмоделкаче\микрософт.висуалстудио.дефаулт.ЕРР_. Устраните все ошибки для типов, реализованных вашим расширением.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Сведения об ошибке можно найти в _%localappdata%\microsoft\visualstudio\16.0_id \компонентмоделкаче\микрософт.висуалстудио.дефаулт.ЕРР_. Устраните все ошибки для типов, реализованных вашим расширением.
+Сведения об ошибке можно найти в _%локалаппдата%\микрософт\висуалстудио\ 16.0_Id \компонентмоделкаче\микрософт.висуалстудио.дефаулт.ЕРР_. Устраните все ошибки для типов, реализованных вашим расширением.
 
 ::: moniker-end
 

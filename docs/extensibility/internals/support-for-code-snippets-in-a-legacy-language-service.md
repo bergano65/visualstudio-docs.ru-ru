@@ -1,5 +1,7 @@
 ---
 title: Поддержка фрагментов кода в языковой службе прежних версий | Документация Майкрософт
+description: Узнайте, как устаревшая языковая служба поддерживает фрагменты кода. Фрагмент кода — это фрагмент кода, который вставляется в исходный файл.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad871eb73341f6ab87229687e2a6df898ffda32d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 781633a995027ee9938a0c579af32373c06207c2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704914"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876614"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Поддержка фрагментов кода в языковой службе прежних версий
 Фрагмент кода — это фрагмент кода, который вставляется в исходный файл. Сам фрагмент кода является шаблоном на основе XML с набором полей. Эти поля выделяются после вставки фрагмента и могут иметь различные значения в зависимости от контекста, в котором вставляется фрагмент. Сразу после вставки фрагмента кода языковая служба может отформатировать фрагмент.

@@ -1,5 +1,7 @@
 ---
 title: Рабочие области и языковые службы в Visual Studio | Документация Майкрософт
+description: Узнайте, как языковые службы могут предоставлять пользователям открытых папок те же широкие возможности языка, которые используются при работе с решениями и проектами.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2893ae2bcd70ff317ba799fea6cfd2751c685731
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 815cfb9e17fed38b519719010acd997f7fdc5242
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952711"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877043"
 ---
 # <a name="workspaces-and-language-services"></a>Рабочие области и языковые службы
 

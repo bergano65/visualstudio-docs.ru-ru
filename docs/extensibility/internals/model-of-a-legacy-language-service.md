@@ -1,5 +1,7 @@
 ---
 title: Модель языковой службы прежних версий | Документация Майкрософт
+description: Используйте эту модель минимальной языковой службы для редактора основных компонентов Visual Studio в качестве руководств по созданию языковой службы.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f024a02641902843f673ce3ff8583a4bce3b135
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2928d3c09a54ea8e9548f7751381279f153643e5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707049"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876744"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Модель языковой службы прежних версий
 Языковая служба определяет элементы и функции для конкретного языка и используется для предоставления редактора со сведениями, характерными для этого языка. Например, редактору необходимо получить сведения об элементах и ключевых словах языка для поддержки цветов синтаксиса.
@@ -39,7 +41,7 @@ ms.locfileid: "80707049"
 
   В следующей таблице приведены общие сведения об объектах в модели.
 
-| Компонент | Объект | Компонент |
+| Компонент | Объект | Функция |
 |------------------| - | - |
 | Текстовый буфер | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Поток текста для чтения и записи в Юникоде. В тексте можно использовать другие кодировки. |
 | Окно кода | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | Окно документа, содержащее одно или несколько текстовых представлений. Если [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] находится в режиме многодокументного интерфейса (MDI), окно кода является дочерним ЭЛЕМЕНТОМ MDI. |

@@ -1,5 +1,7 @@
 ---
 title: Поддержка системы управления версиями | Документация Майкрософт
+description: Узнайте, как Visual Studio поддерживает извлечение, возвраты и другие операции с системой управления версиями для проекта или редактора.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84de3120783528d209b1475477aee5087edac42b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e722770ad1db4b85dbc2a5a8754d9158b6ee436
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704729"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876458"
 ---
 # <a name="supporting-source-control"></a>Поддержка системы управления версиями
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] поддерживает извлечение файлов, возвраты и другие операции системы управления версиями для проекта или редактора. Как клиент системы управления версиями, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] предназначен для взаимодействия с пакетом управления версиями, например [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] , который обеспечивает архивацию, управление версиями и средства управления для динамически определяемого набора файлов.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Модель для пакетов системы управления версиями](../../extensibility/internals/model-for-source-control-packages.md)
 
  Описывает интерфейсы, которые должен реализовать тип проекта для поддержки системы управления версиями.
@@ -41,7 +43,7 @@ ms.locfileid: "80704729"
 
  Описывает, как зарегистрировать проект при его добавлении пользователем в систему управления версиями.
 
-## <a name="reference"></a>Справочник
+## <a name="reference"></a>Справка
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> Указывает среде или пакету системы управления версиями, что файл будет изменен в памяти или сохранен.
 
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> Позволяет проектам и иерархиям регистрировать себя в системе управления версиями и получать сведения о состоянии системы управления версиями.
@@ -52,7 +54,7 @@ ms.locfileid: "80704729"
 
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> Уведомляет клиентов об изменениях, внесенных в файлы проекта или каталоги.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 - [Типы проектов](../../extensibility/internals/project-types.md)
 
  Содержит общие сведения о проектах в качестве основных стандартных блоков [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE). Имеются ссылки на дополнительные разделы, объясняющие, как проекты управляют сборкой и компиляцией кода.

@@ -1,5 +1,7 @@
 ---
 title: Общие сведения об интеграции системы управления версиями | Документация Майкрософт
+description: 'Сведения о различиях между двумя способами интеграции системы управления версиями в Visual Studio: подключаемый модуль системы управления версиями и пакет VSPackage.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d80363286f5f0cac9a5ceb2e8ac9d20345df9e6f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bbd385c7089504949d2437091b0a2ea002fafdd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705125"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876016"
 ---
 # <a name="source-control-integration-overview"></a>Общие сведения об интеграции системы управления версиями
 В этом разделе сравниваются два способа интеграции в систему управления версиями Visual Studio. Подключаемый модуль системы управления версиями и пакет VSPackage, который предоставляет решение для управления версиями и выделяет новые функции системы управления версиями. Visual Studio позволяет вручную переключаться между пакетами VSPackage системы управления версиями и подключаемыми модулями системы управления версиями, а также автоматическим переключением на основе решений.
@@ -73,7 +75,7 @@ ms.locfileid: "80705125"
 
 - Пакет VSPackage не ограничен определенной моделью системы управления версиями.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Система управления версиями](../../extensibility/internals/source-control.md)
 - [Создание подключаемого модуля системы управления версиями](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [Создание пакета VSPackage системы управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md)

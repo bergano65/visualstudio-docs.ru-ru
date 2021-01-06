@@ -1,5 +1,7 @@
 ---
 title: Сохраняемость проекта | Документация Майкрософт
+description: Узнайте о хранении в проекте проекта, включая использование IPersistFileFormat для сохранения как файловых, так и нефайловых объектов проекта.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10a9cde91c0181fbfefbaa353c7c3702f4b36819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6ffa60508eba02a4442bacb63b05abb39202ab9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706458"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877446"
 ---
 # <a name="project-persistence"></a>Сохранение проекта
 Сохраняемость — это ключевой аспект разработки проекта. В большинстве проектов используются элементы проекта, представляющие файлы. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] также поддерживает проекты, данные которых не основаны на файлах. Файлы, принадлежащие проекту и файлу проекта, должны быть сохранены. Интегрированная среда разработки предписывает проекту сохранить себя или элемент проекта.

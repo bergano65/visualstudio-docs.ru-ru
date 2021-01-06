@@ -1,5 +1,7 @@
 ---
 title: Структурирование и скрытый текст в языковой службе прежних версий | Документация Майкрософт
+description: Эта статья содержит ссылки на ресурсы для реализации структурирования и скрытого текста в языковой службе прежних версий.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1f05d42de0201a7556046d19baf55830fa62c22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bd0b48292a448d70b266e598df561fdff2e8ab4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706824"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877407"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Структурирование и скрытый текст в языковой службе прежних версий
 Структура позволяет сворачивать последовательность текстовых строк в одну строку. Например, в C++ все методы можно свернуть в одну строку, отображая только сигнатуру метода. Скрытый текст — это последовательность текстовых строк, которые могут быть отображены или скрыты.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Практическое руководство. Поддержка структурирования в языковой службе прежних версий](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)
 
  Объясняется, как реализовать

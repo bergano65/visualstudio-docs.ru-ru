@@ -1,5 +1,7 @@
 ---
 title: Типы проектов | Документация Майкрософт
+description: Visual Studio включает в себя несколько типов проектов для таких языков, как Visual C# и Visual Basic. Visual Studio также позволяет создавать собственные типы проектов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b343eeeee0912a6e9cad57ca6d35c33845e4dd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35e38649f825e0dfa554d9fbc90c57f63370b31f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706263"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877199"
 ---
 # <a name="project-types"></a>Типы проектов
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] включает несколько типов проектов для таких языков, как [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] также позволяет создавать собственные типы проектов.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Основное](../../extensibility/internals/project-type-essentials.md)
 
  Представляет важные сведения, необходимые для начала работы с типами проектов.
@@ -62,7 +64,7 @@ ms.locfileid: "80706263"
 
  Содержит подробные технические сведения о типах проектов.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 - [Иерархии и выбор](../../extensibility/internals/hierarchies-and-selection.md)
 
  Содержит общие сведения о том, как [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированная среда разработки (IDE) отображает проект в виде иерархии.

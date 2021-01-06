@@ -1,5 +1,7 @@
 ---
 title: Сохраняемость и выполняемая таблица документов | Документация Майкрософт
+description: Сведения о том, как проекты координируют открытие, сохранение и переименование документов в выполняемой таблице документов, которая отслеживает состояние документа в интегрированной среде разработки Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba698f20b83d1a7af42aeca046aa2a8c943838ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfc480c8b4a41fe29900681289ad08c54d3c1f31
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706722"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875964"
 ---
 # <a name="persistence-and-the-running-document-table"></a>Сохранение состояния и запуск таблицы документов
 В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среде разработки проекты полностью отвечают за управление сохраняемостью элементов проекта, которые они выполняют с помощью службы <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> . Документы являются базовой единицей сохраняемости в среде Visual Studio. Проекты координируют время на открытие, сохранение и переименование документов с помощью выполняемой таблицы документов (РДТ) — ресурса, который отслеживает состояние всех открытых документов.

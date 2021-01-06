@@ -1,5 +1,7 @@
 ---
 title: Пользовательские параметры решения (. Suo), файл | Документация Майкрософт
+description: Сведения о файле параметров пользователя решения (. suo), содержащем параметры решения "на пользователя" в структурированном файле хранилища, который хранится в двоичном формате.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9469663d3ac258e1c568778894d8584c68c13632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b2a5386e8329bb3ca51ca88a2449e223bb8d73d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705316"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876758"
 ---
 # <a name="solution-user-options-suo-file"></a>Файл параметров пользователя решения (SUO-файл)
 Файл параметров пользователя решения (. suo) содержит параметры решения "на пользователя". Этот файл не должен быть возвращен в систему управления исходным кодом.
@@ -36,6 +38,6 @@ ms.locfileid: "80705316"
 
  Эти два метода `SaveUserOptions` и `WriteUserOptions` вызываются рекурсивно для каждого потока данных, сохраняемых в файле SUO, передавая указатель на `IVsSolutionPersistence` . Они вызываются рекурсивно, чтобы разрешить запись нескольких потоков в файл. suo. Таким образом, сведения о пользователе сохраняются в решении и гарантированно будут в следующий раз при открытии решения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
 - [Решения](../../extensibility/internals/solutions-overview.md)

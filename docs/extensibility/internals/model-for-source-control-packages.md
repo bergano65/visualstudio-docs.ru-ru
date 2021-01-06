@@ -1,5 +1,7 @@
 ---
 title: Модель для пакетов управления версиями | Документация Майкрософт
+description: Эта модель представляет реализацию системы управления версиями. В статье показаны имена классов, облегчающие просмотр процесса управления исходным кодом.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46845be1bc22a67d6703af12933945bdfcfa7f4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ece2a7df1aeb2ec44f7b21075d2945a93d51838
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707074"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876693"
 ---
 # <a name="model-for-source-control-packages"></a>Модель для пакетов системы управления версиями
 В следующей модели представлен пример реализации системы управления версиями. В модели отображаются интерфейсы, которые необходимо реализовать, и службы среды, которые необходимо вызвать. Как и все службы, в действительности вызываются методы определенного интерфейса, получаемые посредством службы. Имена классов идентифицируются, чтобы упростить просмотр управления исходным кодом.
