@@ -33,6 +33,8 @@
       href: azure-sql-database-add-connected-service.md
     - name: Добавление учетной записи хранения Azure
       href: vs-azure-tools-connected-services-storage.md
+    - name: Добавление службы "Конфигурация приложений Azure"
+      href: vs-azure-tools-connected-services-app-configuration.md
 - name: Разработка облачных служб Azure
   expanded: false
   items:

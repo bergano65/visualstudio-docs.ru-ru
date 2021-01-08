@@ -4,17 +4,19 @@
   items:
     - name: Первое знакомство со средствами тестирования
       href: improve-code-quality.md
-- name: Модульное тестирование
-  items:
-    - name: Основные сведения о средствах модульного тестирования
+    - name: Задачи и средства модульного тестирования
       href: unit-test-your-code.md
+- name: Учебники
+  items:
     - name: Начало работы
       href: getting-started-with-unit-testing.md
+- name: Модульное тестирование
+  items:
     - name: Основные сведения о модульных тестах
       href: unit-test-basics.md
     - name: Создание проекта модульного теста
       href: create-a-unit-test-project.md
-    - name: Команда "Создать модульные тесты"
+    - name: Создание модульных тестов в окне кода
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:

@@ -6,8 +6,6 @@
       href: what-is-debugging.md
     - name: Методы и инструменты отладки
       href: write-better-code-with-visual-studio.md
-    - name: Поиск задачи отладки
-      href: find-your-debugging-task.md
 - name: Краткие руководства
   items:
     - name: Первое знакомство с отладчиком
@@ -944,5 +942,7 @@
                   href: copyright-notice-for-spy-increment-help.md
 - name: Ресурсы
   items:
+    - name: 'Часто задаваемые вопросы: поиск функции отладки'
+      href: find-your-debugging-task.md
     - name: Новые возможности отладчика в Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md

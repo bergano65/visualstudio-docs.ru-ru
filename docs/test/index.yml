@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 03/23/2020
-  ms.openlocfilehash: b2b60b7208fe06aa7e2c2e327174e7536941f204
-  ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+  ms.openlocfilehash: 8967405f3b743b2449a90817a700fec092319245
+  ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 10/08/2020
-  ms.locfileid: "91830692"
+  ms.lasthandoff: 12/23/2020
+  ms.locfileid: "97756582"
 landingContent:
 - title: Сведения о средствах тестирования
   linkLists:
@@ -23,36 +23,44 @@ landingContent:
     links:
     - text: Первое знакомство со средствами тестирования
       url: improve-code-quality.md
-    - text: Основные сведения о средствах модульного тестирования
+    - text: Задачи и средства модульного тестирования
       url: unit-test-your-code.md
-    - text: Обзор Live Unit Testing
+    - text: Обзор Live Unit Testing (.NET)
       url: live-unit-testing-intro.md
-- title: Модульное тестирование
+- title: Начало работы
   linkLists:
   - linkListType: tutorial
     links:
     - text: Приступая к работе с модульным тестированием
       url: getting-started-with-unit-testing.md
-    - text: Создание и запуск модульных тестов для управляемого кода
-      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
     - text: Выполнение модульных тестов с помощью обозревателя тестов
       url: run-unit-tests-with-test-explorer.md
+  - linkListType: how-to-guide
+    links:
+    - text: Основные сведения о модульных тестах
+      url: unit-test-basics.md
+    - text: Покрытие кода — определение объема протестированного кода
+      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+- title: Модульное тестирование .NET
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Создание и запуск модульных тестов для управляемого кода
+      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
     - text: Начало работы с Live Unit Testing
       url: live-unit-testing-start.md
     - text: Создание модульных тестов (IntelliTest)
       url: generate-unit-tests-for-your-code-with-intellitest.md
-- title: Другие средства тестирования
-  linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Покрытие кода — определение объема протестированного кода
-      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
     - text: Microsoft Fakes — изоляция тестируемого кода
       url: isolating-code-under-test-with-microsoft-fakes.md
-    - text: Закодированный пользовательский интерфейс (устаревшее)
-      url: use-ui-automation-to-test-your-code.md
-    - text: Нагрузочное тестирование (устаревшее)
-      url: quickstart-create-a-load-test-project.md
+- title: Модульное тестирование C++
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Написание модульных тестов для C/C++
+      url: writing-unit-tests-for-c-cpp.md
 - title: Связанные средства (Azure DevOps)
   linkLists:
   - linkListType: how-to-guide
@@ -63,3 +71,11 @@ landingContent:
       url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops&preserve-view=true
     - text: Непрерывное тестирование (Azure Pipelines)
       url: /azure/devops/pipelines/?view=azure-devops&preserve-view=true
+- title: Другие средства тестирования
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Закодированный пользовательский интерфейс (устаревшее)
+      url: use-ui-automation-to-test-your-code.md
+    - text: Нагрузочное тестирование (устаревшее)
+      url: quickstart-create-a-load-test-project.md
