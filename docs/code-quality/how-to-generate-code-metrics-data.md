@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c72e53266eae11fb060ac117c4a6dc0a1c37e2e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 631ce51df5d985e02e8ccabca258c0ef1c1318f4
+ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434796"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069478"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Как создавать данные метрик кода
 
@@ -39,18 +39,13 @@ ms.locfileid: "94434796"
 - [CA1505](/dotnet/fundamentals/code-analysis/quality-rules/ca1505)
 - [CA1506](/dotnet/fundamentals/code-analysis/quality-rules/ca1506)
 
-Эти правила по умолчанию отключены, но их можно включить в [**Обозреватель решений**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) или в файле [набора правил](using-rule-sets-to-group-code-analysis-rules.md) . Например, чтобы включить правило CA1502 в виде предупреждения, в RuleSet-файле будет содержаться следующая запись:
+Эти правила по умолчанию отключены, но их можно включить в [**Обозреватель решений**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) или в файле [EditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) . Например, чтобы включить правило CA1502 в виде предупреждения, файл EditorConfig будет содержать следующую запись:
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
-  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
-    <Rule Id="CA1502" Action="Warning" />
-  </Rules>
-</RuleSet>
+```cs
+dotnet_diagnostic.CA1502.severity = warning
 ```
 
-### <a name="configuration"></a>Параметр Configuration
+### <a name="configuration"></a>Конфигурация
 
 Вы можете настроить пороговые значения, при которых будут срабатывать правила метрики кода.
 
@@ -295,7 +290,7 @@ Build succeeded.
 
 #### <a name="metricsexe-usage"></a>Использование Metrics.exe
 
-Чтобы запустить *Metrics.exe* , укажите проект или решение и выходной XML-файл в качестве аргументов. Пример:
+Чтобы запустить *Metrics.exe*, укажите проект или решение и выходной XML-файл в качестве аргументов. Пример:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -336,9 +331,9 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 Эта `LinesOfCode` Метрика более точная и надежная в новом инструменте для метрик кода командной строки. Он не зависит от CodeGen различий и не изменяется при изменении набора инструментов или среды выполнения. Новое средство подсчитывает фактические строки кода, включая пустые строки и комментарии.
 ::: moniker-end
 
-Другие метрики, такие как `CyclomaticComplexity` и, `MaintainabilityIndex` используют те же формулы, что и предыдущие версии *Metrics.exe* , но новое средство подсчитывает количество `IOperations` (инструкции логического источника) вместо инструкций промежуточного языка (IL). Номера будут немного отличаться от тех, которые создаются в интегрированной среде разработки Visual Studio и предыдущих версиях *Metrics.exe*.
+Другие метрики, такие как `CyclomaticComplexity` и, `MaintainabilityIndex` используют те же формулы, что и предыдущие версии *Metrics.exe*, но новое средство подсчитывает количество `IOperations` (инструкции логического источника) вместо инструкций промежуточного языка (IL). Номера будут немного отличаться от тех, которые создаются в интегрированной среде разработки Visual Studio и предыдущих версиях *Metrics.exe*.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - [Использование окна "Результаты метрик кода"](../code-quality/working-with-code-metrics-data.md)
 - [Значения метрик кода](../code-quality/code-metrics-values.md)
