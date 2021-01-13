@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd1ff5ff0f8c7510185236c425ddd870f8b500f
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
+ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97760930"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031046"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Присоединение к выполняемым процессам с использованием отладчика Visual Studio
 
@@ -199,7 +199,7 @@ ms.locfileid: "97760930"
 |Отладка приложения C#, Visual Basic или C++ на локальном компьютере|Используйте стандартную отладку (**F5**) или функцию **Подключиться к процессу**|*\<appname>.exe*|В большинстве случаев используется стандартная отладка, а не функция **Подключиться к процессу**.|
 |Удаленная отладка классического приложения Windows|Инструменты удаленной отладки|Н/Д| См. раздел [Удаленная отладка приложения C# или Visual Basic](../debugger/remote-debugging-csharp.md) или [Удаленная отладка приложения C++](../debugger/remote-debugging-cpp.md)|
 |Отладка .NET Core в Linux|Используйте функцию **Подключиться к процессу**|*dotnet.exe* или уникальное имя процесса|Сведения об использовании см. в статье [Удаленная отладка .NET Core в Linux с помощью SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Для контейнерных приложений см. раздел [Присоединение к процессу, выполняющемуся в контейнере Docker](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container).|
-|Отладка контейнерного приложения|*dotnet.exe* или уникальное имя процесса|См. раздел [Присоединение к процессу, выполняющемуся в контейнере Docker](../debugger/attach-to-process-running-in-docker-container.md).|
+|Отладка контейнерного приложения|Используйте функцию **Подключиться к процессу**|*dotnet.exe* или уникальное имя процесса|См. раздел [Присоединение к процессу, выполняющемуся в контейнере Docker](../debugger/attach-to-process-running-in-docker-container.md).|
 |Удаленная отладка Python в Linux|Используйте функцию **Подключиться к процессу**|*debugpy*|См. раздел [Удаленное подключение с помощью инструментов Python](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools).|
 |Отладка приложения ASP.NET на локальном компьютере после запуска приложения без отладчика|Используйте функцию **Подключиться к процессу**|*iiexpress.exe*|Это может быть полезно для ускорения загрузки приложения, например при профилировании. |
 |Отладка других поддерживаемых типов приложений в серверном процессе|Если сервер удаленный, используйте инструменты удаленной отладки и функцию **Подключиться к процессу**|*Chrome.exe*, *iexplore.exe* или другие процессы|При необходимости используйте монитор ресурсов, чтобы определить процесс. См. раздел [Удаленная отладка](../debugger/remote-debugging.md).|
