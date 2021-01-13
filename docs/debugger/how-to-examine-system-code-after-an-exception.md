@@ -1,6 +1,7 @@
 ---
 title: Анализ системного кода после исключения | Документация Майкрософт
-ms.custom: seodec18
+description: Узнайте, как исследовать код в системном вызове, чтобы найти причину исключения. Процедура применяется, даже если символы для системного кода не загружены.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe2dcc283f84bbcd5cd0b5a04dd5d1c300d9e14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceb9f898b4329940408e4063dc73d81e2a604a4
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349657"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903459"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Практическое руководство. анализ системного кода после исключения
 При возникновении исключения может возникнуть необходимость проанализировать код внутри системного вызова, чтобы определить причину исключения. В следующей процедуре поясняется, как это сделать при отсутствии загруженных символов для системного кода или в режиме "Только мой код".

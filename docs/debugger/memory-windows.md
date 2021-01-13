@@ -1,6 +1,7 @@
 ---
 title: Просмотр памяти для переменных в отладчике | Документация Майкрософт
-ms.custom: ''
+description: Сведения о том, как использовать окна памяти при отладке для просмотра объема памяти, используемого приложением. Другие окна отображают переменные и место их расположения в памяти.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51070e06f684c2e873ded76ec8797ed7587745ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c39024e32c899310b88c1b0583d5b292b063937
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348325"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903131"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Использование окон памяти в отладчике Visual Studio (C#, C++, Visual Basic, F#)
 

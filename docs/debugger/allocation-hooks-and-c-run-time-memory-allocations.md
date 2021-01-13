@@ -1,5 +1,7 @@
 ---
 title: Ловушки выделения и выделения памяти CRT
+description: Общие сведения о ловушках выделения и выделении памяти для среды выполнения C (CRT) при отладке в Visual Studio. Функции-ловушки выделения должны явно игнорировать блоки _CRT_BLOCK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be75b4d3e83ed297f31e9015c7ba082c0611206d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: f2c9225281952700b118f13b20a11f7619307b8e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851623"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729175"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Ловушки выделения и выделения памяти CRT
 Для функций-ловушек выделения есть важное ограничение: они должны пропускать блоки `_CRT_BLOCK`. Это выделения памяти, создаваемые внутри библиотеки CRT ее функциями при любом вызове функций CRT, выделяющих внутреннюю память. Вы можете исключить блоки `_CRT_BLOCK` из обработки путем добавления в начало функции-ловушки выделения следующего кода:

@@ -1,6 +1,8 @@
 ---
 title: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе.
 titleSuffix: ''
+description: "\"При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Нет доступа.\" Просмотрите сведения об этой ссылке на ошибку удаленной отладки в Visual Studio."
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 093f2e46178d8734e7499c9f7a340396bbbdc9ed
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c430462a224cb4604c09984a5397e540ce752b8a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851636"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729201"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе.
 В перечисленных ниже случаях при выполнении удаленной отладки используется DCOM для обмена данными между локальным и удаленным компьютерами:

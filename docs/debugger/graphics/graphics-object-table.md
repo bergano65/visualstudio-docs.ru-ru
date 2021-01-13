@@ -1,5 +1,7 @@
 ---
 title: Таблица графических объектов | Документация Майкрософт
+description: Сведения о таблице графических объектов, которая в компоненте анализа графики Visual Studio помогает вам разобраться в работе объектов Direct3D, поддерживающих кадр игры или приложения.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea80420b2146bd8c604a95d71012009dcb940ef5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b7e746d37edaca87abfca42f315a65a470369e7e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735440"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727584"
 ---
 # <a name="graphics-object-table"></a>Таблица графических объектов
 Таблица графических объектов в компоненте анализа графики Visual Studio помогает разобраться в работе объектов Direct3D, которые поддерживают кадр вашей игры или вашего приложения.

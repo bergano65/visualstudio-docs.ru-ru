@@ -1,5 +1,7 @@
 ---
 title: Вкладка "Память", диалоговое окно "Свойства процесса" | Документация Майкрософт
+description: Используйте вкладку "Память" панели "Свойства процесса", чтобы просмотреть, как процесс использует память. На этой вкладке можно увидеть сведения об используемом пространстве, общем пространстве и используемом виртуальном пространстве.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bdfc2740094c807818922f09ca3fef0a21c9e1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10fd47127abfd9cc476ed7029edd0dbbeb5501de
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931281"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903731"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Вкладка "Память" диалогового окна "Свойства процесса"
 С помощью вкладки **Память** вы можете узнать, как процесс использует память. Чтобы открыть диалоговое окно [Свойства процесса](../debugger/process-properties-dialog-box.md), переместите фокус в окно [представления процессов](../debugger/processes-view.md). Выберите любой узел процесса в дереве, а затем в меню **Вид** выберите пункт **Свойства**.

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 4e474cc96e4b950aee2f509a8e2879b0c31f912a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 27002d9360d36330249167b2cc8b75b7cd832135
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350729"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815637"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Публикация веб-приложения ASP.NET Core в службе приложений на Linux с помощью Visual Studio
 
@@ -52,11 +52,11 @@ ms.locfileid: "94350729"
 
 1. В диалоговом окне **Создание службы приложений Azure (Linux)** необходимо заполнить поля **Имя приложения**, **Группа ресурсов** и **План службы приложений**. Вы можете сохранить эти имена или изменить их. Когда все будет готово, щелкните **Создать**.
 
-    ![Выбор службы приложений Azure](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
+    ![Снимок экрана: диалоговое окно Create Azure App Service (Linux) (Создание службы приложений Azure" (Linux)) с заполненными полями "Имя", "Подписка", "Группа ресурсов" и "План размещения".](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
 
 1. В диалоговом окне **Публикация** вновь созданный экземпляр выбирается автоматически. Когда все будет готово, нажмите кнопку **Готово**.
 
-    ![Выбор службы приложений Azure](../deployment/media/quickstart-publish-linux-select-instance.png)
+    ![Снимок экрана: диалоговое окно "Публикация" с недавно созданной службой "MyASpCoreWebAppOnAzure", выбранной в качестве службы приложений для публикации.](../deployment/media/quickstart-publish-linux-select-instance.png)
 
 1. Нажмите **Публиковать**. Visual Studio выполнит развертывание приложения в службе приложений Azure, после чего веб-приложение будет загружено в браузер. В панели **Опубликовать** для свойств проекта будут отображаться URL-адрес сайта и другие сведения.
 

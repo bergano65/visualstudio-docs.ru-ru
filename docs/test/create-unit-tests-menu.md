@@ -11,20 +11,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8afbc73e8c778829a9a1ce5a59d30df6de2f0daa
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c9bdbd545a3509927dd13a800e22b9aaaab2cb2b
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441863"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756634"
 ---
-# <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Создание заглушек для методов модульного тестирования с помощью команды "Создать модульные тесты"
+# <a name="create-unit-test-method-stubs-from-code"></a>Создание заглушек методов для модульных тестов с помощью кода
 
 Команда **Создать модульные тесты** создает заглушки метода модульных тестов. Эта функция упрощает настройку тестового проекта, тестового класса и заглушки тестового метода в нем.
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> Команда меню **Создать модульные тесты** доступна только для кода C#, предназначенного для платформы .NET Framework (но не для .NET Core).
+> Команда меню **Создать модульные тесты** доступна только для кода C#, предназначенного для платформы .NET Framework (но не для .NET Core или .NET Standard).
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
@@ -38,6 +38,8 @@ ms.locfileid: "95441863"
 Чтобы приступить к работе, выберите метод, тип или пространство имен в редакторе кода в проекте, которые нужно протестировать, щелкните правой кнопкой мыши и выберите **Создать модульные тесты**. Откроется диалоговое окно **Создать модульные тесты**, где можно настроить способ создания тестов.
 
 ![Использование команды "Создать модульные тесты"](media/createunittestcommand.png)
+
+Если вы не видите параметры платформы тестирования для NUnit или xUnit, см. раздел [Использование сторонних платформ модульного тестирования](#use-third-party-unit-test-frameworks).
 
 ## <a name="set-unit-test-traits"></a>Настройка признаков модульных тестов
 

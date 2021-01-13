@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7e7c6eec178d0ba3b2934e390cc02310044c4dfa
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579961"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833355"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
@@ -124,7 +124,7 @@ ms.locfileid: "77579961"
 
 1. В **обозревателе решений** разверните папку **Страницы** и выберите **About.cshtml**.
 
-   ![Выбор файла About.cshtml из обозревателя решений](../ide/media/csharp-aspnet-about-page-html-file.png)
+   ![Снимок экрана: Обозреватель решений Visual Studio, показывающий файлы в проекте HelloWorld. Папка "Страницы" развернута и выбран параметр About.cshtml.](../ide/media/csharp-aspnet-about-page-html-file.png)
 
    Этот файл соответствует странице с заголовком **О программе** веб-приложения, которое запускается в веб-браузере.
 
@@ -134,13 +134,13 @@ ms.locfileid: "77579961"
 
    ![Код HTML для области дополнительной информации в редакторе Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. Измените текст для чтения "дополнительная информация" на **Hello World!** .
+1. Измените текст для чтения "дополнительная информация" на **Hello World!**.
 
    ![Изменение значения по умолчанию кода HTML для области дополнительной информации в редакторе Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
 1. В **обозревателе решений** разверните **About.cshtml** и выберите **About.cshtml.cs**. (Файл также соответствует странице **О программе** в веб-браузере.)
 
-   ![Выбор файла About.cshtml из обозревателя решений](../ide/media/csharp-aspnet-about-page-code-file.png)
+   ![Снимок экрана: Обозреватель решений Visual Studio, показывающий файлы в проекте HelloWorld. Параметр About.cshtml развернут, и выбран About.cshtml.cs.](../ide/media/csharp-aspnet-about-page-code-file.png)
 
    В редакторе появится код C#, который содержит текст для области описания приложения на странице **О программе**.
 
@@ -187,7 +187,7 @@ ms.locfileid: "77579961"
 
    ![HTML-код из файла Index.cshtml для домашней страницы в редакторе Visual Studio](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
 
-1. Измените текст "Welcome" на "**Hello World!** ".
+1. Измените текст "Welcome" на "**Hello World!**".
 
    ![В редакторе Visual Studio измените сообщение "Welcome" в HTML-коде по умолчанию на сообщение "Hello World"](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
 
@@ -206,7 +206,7 @@ ms.locfileid: "77579961"
 
 ::: moniker-end
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Для получения дополнительных сведений перейдите к следующему руководству:
 

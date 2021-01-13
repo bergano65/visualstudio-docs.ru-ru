@@ -1,5 +1,6 @@
 ---
 title: Просмотр событий с помощью IntelliTrace | Документация Майкрософт
+description: Узнайте, как использовать IntelliTrace в Visual Studio Enterprise для сбора данных об определенных событиях, категориях событий и отдельных вызовах функций.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ffbe0b8365948dc5a69edca390f308cb55ba5a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fef839b5473881450581db77a885da158e67bbc
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929400"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815754"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Просмотр событий с помощью IntelliTrace в Visual Studio Enterprise (C#, Visual Basic)
 
@@ -60,17 +61,17 @@ IntelliTrace можно использовать в выпуске Visual Studio
 
 2. Выполнение прекратится в точке останова. Если вы не видите окно **Средства диагностики**, щелкните **Отладка > Windows > События IntelliTrace**.
 
-    В окне **Средства диагностики** найдите вкладку **События** (должны появиться три вкладки: **События**, **Использование памяти**и **Использование ЦП**). На вкладке **События** показан хронологический список событий, заканчивающийся последним событием перед завершением выполнения отладчика. Должно иметься событие **Доступ к WordSearchInputs.txt**.
+    В окне **Средства диагностики** найдите вкладку **События** (должны появиться три вкладки: **События**, **Использование памяти** и **Использование ЦП**). На вкладке **События** показан хронологический список событий, заканчивающийся последним событием перед завершением выполнения отладчика. Должно иметься событие **Доступ к WordSearchInputs.txt**.
 
     Приведенный ниже снимок экрана сделан в Visual Studio 2015 с обновлением 1.
 
-    ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")
+    ![Снимок экрана: окно кода Visual Studio. Выполнение остановлено в точке останова, а на вкладке "События" в окне "Средства диагностики" перечислены события.](../debugger/media/intellitrace-update1.png)
 
 3. Выберите событие и просмотрите подробности о нем.
 
     Приведенный ниже снимок экрана сделан в Visual Studio 2015 с обновлением 1.
 
-    ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1-SingleEvent")
+    ![Снимок экрана: вкладка "События" в окне "Средства диагностики" Visual Studio. Событие выбрано и развернуто для отображения сведений.](../debugger/media/intellitraceupdate1-singleevent.png)
 
     Вы можете щелкнуть ссылку пути, чтобы открыть файл. Если полный путь недоступен, откроется диалоговое окно **Открыть файл** .
 
@@ -78,7 +79,7 @@ IntelliTrace можно использовать в выпуске Visual Studio
 
     Приведенный ниже снимок экрана сделан в Visual Studio 2015 с обновлением 1.
 
-    ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")
+    ![Снимок экрана: окно кода Visual Studio. Выполнение остановлено в точке останова, выбрано событие, и выделена соответствующая строка кода.](../debugger/media/historicaldebugging-update1.png)
 
 4. Если ошибка не найдена, попробуйте изучить другие события, которые предположительно ее вызвали. Вы также можете просмотреть сведения о вызове записи IntelliTrace и выполнить вызовы функций по шагам.
 

@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31739b9c8fecc862c891173a792986b467730400
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: a832bcee3f722cabaedcb3ac0672dbe09a4e77c4
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862793"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761216"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Описатели формата для C# в отладчике Visual Studio
 С помощью описателей формата можно изменить формат, в котором значение отображается в окне **Контрольные значения**. Описатели формата можно также использовать в окне **Интерпретация**, окне **Команды**, в [точках трассировки](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints) и окнах исходного кода. Если вы приостановите выполнение на выражении в одном из этих окон, результат отобразится в [подсказках по данным](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) в указанном формате.
@@ -52,7 +52,7 @@ ms.locfileid: "96862793"
 
 Добавьте переменную `my_var1` в окно **контрольных значений** в процессе отладки, поочередно выбрав элементы **Отладка** > **Окна** > **Контрольные значения** > **Контрольное значение 1**. Щелкните переменную правой кнопкой мыши и выберите пункт **Шестнадцатеричный вывод**. Теперь в окне **Контрольные значения** отобразится значение 0x0065. Чтобы это значение отображалось в виде десятичного, а не шестнадцатеричного целого числа, добавьте описатель десятичного формата **, d** в столбец **Имя** после имени переменной. Теперь в столбце **Значение** отобразится **101**.
 
-![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+![Снимок экрана: окно контрольных значений Visual Studio с одной строкой, в котором для my_var1, d задано значение 101 и тип int.](../debugger/media/watchformatcsharp.png)
 
 ::: moniker range=">= vs-2019" 
 

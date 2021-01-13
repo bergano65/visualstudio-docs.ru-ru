@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 0eaf41dc0bf3e21dfbf4018261844181d594f0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf6287ebdb4c2df6145a0e60e22ac1197a517fde
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649604"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729370"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Написание модульных тестов для C/C++ в Visual Studio
 
@@ -85,7 +85,7 @@ ms.locfileid: "81649604"
 
 Далее в *CPP*-файле модульного теста добавьте директивы `#include` для всех файлов заголовков, в которых объявляются тестируемые типы и функции. Введите `#include "`, после чего технология IntelliSense поможет вам выбрать файл. Повторите эти действия для всех нужных заголовков.
 
-![Добавление директив include](media/cpp-add-includes-test-project.png)
+![Снимок экрана: Обозреватель решений, в окне которого показано добавление директивы #include с помощью IntelliSense. Выделен файл заголовка для включения.](media/cpp-add-includes-test-project.png)
 
 Чтобы не вводить полный путь в каждой инструкции include в исходном файле, можно добавить необходимые папки в разделе **Проект** > **Свойства** > **C/C++**  > **Общие** > **Дополнительные каталоги включаемых файлов**.
 
@@ -96,7 +96,7 @@ ms.locfileid: "81649604"
 
 В *CPP*-файле в тестовом проекте определены класс-заглушка и метод-заглушка. Они служат примером того, как следует писать код теста. В сигнатурах используются макросы TEST_CLASS и TEST_METHOD, что позволяет обнаруживать методы в окне **обозревателя тестов**.
 
-![Добавление директив include](media/cpp-write-test-methods.png)
+![Снимок экрана: окно Обозревателя тестов, в котором показан файл кода unittest1.cpp, содержащий заглушку класса и метода при использовании макросов TEST CLASS и TEST_METHOD.](media/cpp-write-test-methods.png)
 
 TEST_CLASS и TEST_METHOD являются частью [собственной платформы тестирования Microsoft](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Обозреватель тестов** обнаруживает методы теста в других поддерживаемых платформах аналогичным образом.
 

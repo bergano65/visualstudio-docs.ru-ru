@@ -1,5 +1,7 @@
 ---
 title: О программе Microsoft Spy++ | Документация Майкрософт
+description: Ознакомьтесь с диалоговым окном "О программе Microsoft Spy++" в Visual Studio, в котором отображаются сведения об авторских правах, версии, принадлежности и других данных о служебной программе Spy++ для отладки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54877dfd5164cae2c256f21fc2886d779ecf64a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d3488e3eb21cdd564c17040e7d29868473575ac
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564272"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729136"
 ---
 # <a name="about-microsoft-spy"></a>О Microsoft Spy++
 Это диалоговое окно используется для вывода сведений об авторских правах, версии, принадлежности и других данных о программе Spy++.

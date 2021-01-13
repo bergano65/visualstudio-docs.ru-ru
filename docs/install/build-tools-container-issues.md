@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a864f1ef623197a44c7d816b051efd0106e86ece
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf8473a8de1c9afa5ed73ce9dcb6b9b8462e6548
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77611124"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668406"
 ---
 # <a name="known-issues-for-containers"></a>Известные проблемы для контейнеров
 
@@ -50,7 +50,7 @@ ms.locfileid: "77611124"
 
 ## <a name="build-tools-container"></a>Контейнер Build Tools
 
-При использовании контейнера Build Tools могут возникнуть указанные ниже известные проблемы. Чтобы узнать, устранены ли эти проблемы и имеются ли другие известные проблемы, посетите сайт https://developercommunity.visualstudio.com.
+При использовании контейнера Build Tools могут возникнуть указанные ниже известные проблемы. Чтобы узнать, устранены ли эти проблемы и имеются ли другие известные проблемы, посетите сайт [сообщества разработчиков](https://aka.ms/feedback/suggest?space=8).
 
 * IntelliTrace может не работать в [некоторых сценариях](https://github.com/Microsoft/vstest/issues/940) внутри контейнера.
 * В старых версиях Docker для Windows размера образа контейнера по умолчанию составлял всего 20 ГБ и не поддерживался Build Tools. Выполните [инструкции, чтобы задать для образа размер](/virtualization/windowscontainers/manage-containers/container-storage#storage-limits) 127 ГБ или больше.

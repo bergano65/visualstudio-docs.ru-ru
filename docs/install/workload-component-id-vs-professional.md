@@ -1,7 +1,7 @@
 ---
 title: Идентификаторы рабочих нагрузок и компонентов для Visual Studio Professional
 titleSuffix: ''
-description: Идентификаторы рабочих нагрузок и компонентов позволяют устанавливать Visual Studio с помощью командной строки. Также их можно указать в качестве зависимости в манифесте VSIX.
+description: Идентификаторы рабочих нагрузок и компонентов Visual Studio Professional позволяют устанавливать Visual Studio с помощью командной строки. Также их можно указать в качестве зависимости в манифесте VSIX.
 keywords: ''
 author: ornellaalt
 ms.author: ornella
@@ -16,12 +16,12 @@ ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 6ac189de45248d277969be3f38e60daba2985ebc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6274396d35756682ad929b051d155897bcafb8e7
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184342"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846992"
 ---
 # <a name="visual-studio-professional-component-directory"></a>Каталог компонентов для Visual Studio Professional
 

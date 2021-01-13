@@ -9,35 +9,35 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7b36b7e2469aa5d4ef6e11cff2580e0fb0c8ff03
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 76224ce191354e05c2220af23aabe010403b35cb
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441408"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815767"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Включение закодированных тестов пользовательского интерфейса для элементов управления
 
 Реализуйте поддержку платформы закодированных тестов пользовательского интерфейса, чтобы повысить эффективность тестирования элементов управления. Вы можете последовательно добавлять повышение уровней поддержки. Начать можно с поддержки проверки записи, воспроизведения и свойств. После этого можно включить построитель закодированных тестов пользовательского интерфейса, чтобы распознать настраиваемые свойства элемента управления. Предоставьте настраиваемые классы для доступа к этим свойствам из сгенерированного кода. Вы также можете помочь построителю закодированных тестов пользовательского интерфейса захватывать действия способом, который в большей степени соответствует цели записываемого действия.
 
-![CUIT&#95;Full](../test/media/cuit_full.png)
+!Экран "Схема, показывающая, как классы в ChartControl расширяются с помощью класса CreateAccessabilityInstance до классов в ChartControlExtensionPackage.] (../ test / media / cuit_full.png)"
 
-[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+[!INCLUDE[coded-ui-test-deprecation](../test/includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Поддержка записи, воспроизведения и проверки свойства путем реализации специальных возможностей
 
 Построитель закодированных тестов пользовательского интерфейса собирает сведения об элементах управления, которые он обнаруживает во время записи, а затем создает код для повторения этого сеанса. Если элемент управления не поддерживает специальные возможности, построитель закодированных тестов пользовательского интерфейса захватывает действия (например, щелчки мышью) с помощью координат экрана. Созданный код выполняет действия в тех же экранных координатах при воспроизведении теста. Если во время воспроизведения теста элемент управления отображается в другом месте на экране, созданный код не сможет выполнить это действие на элементе управления. Если специальные возможности не реализованы, при воспроизведении теста в другой конфигурации, в другой среде или в пользовательском интерфейсе с измененным макетом могут возникать ошибки.
 
-![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
+![Снимок экрана: окно записи в построителе закодированных тестов пользовательского интерфейса. Кнопка "Пауза" выделена, а в подсказке отображается "Click 'ChartControl' client" (Щелкните клиент ChartControl).](../test/media/cuit_recordnosupport.png)
 
 При реализации специальных возможностей построитель закодированных тестов пользовательского интерфейса использует их для того, чтобы получить сведения об элементе управления во время записи теста. Затем, при выполнении теста, созданный код повторит эти события для элемента управления, даже если он находится где-либо еще в интерфейсе пользователя. Авторы теста могут также создавать утверждения благодаря использованию основных свойств элемента управления.
 
-![CUIT&#95;Record](../test/media/cuit_record.png)
+![Снимок экрана: окно записи в построителе закодированных тестов пользовательского интерфейса. Кнопка "Пауза" выделена, а в подсказке отображается "Click 'A' label" (Щелкните метку "А").](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Поддержка записи, воспроизведения, проверки свойств и навигации для элемента управления Windows Forms
 Реализуйте специальные возможности для элемента управления согласно описанной ниже процедуре. Подробные пояснения см. в разделе <xref:System.Windows.Forms.AccessibleObject>.
 
-![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
+![Экран "Схема классов в ChartControl, которая показывает связь между экземпляром CreateAccessabilityInstance и классом ChartControl.CurveLegend".](../test/media/cuit_accessible.png)
 
 1. Реализуйте производный от <xref:System.Windows.Forms.Control.ControlAccessibleObject> класс и переопределите свойство <xref:System.Windows.Forms.Control.AccessibilityObject%2A> для возврата объекта класса.
 
@@ -77,11 +77,11 @@ ms.locfileid: "95441408"
 
 После реализации базовой поддержки проверки записи, воспроизведения и свойств вы можете сделать пользовательские свойства элемента управления доступными закодированным тестам пользовательского интерфейса путем реализации подключаемого модуля <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. Например, в следующей процедуре создается поставщик свойства, позволяющий закодированным тестам пользовательского интерфейса получать доступ к свойству состояния дочерних элементов управления CurveLegend элемента управления диаграммы:
 
-![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
+![Снимок экрана: главное окно построителя закодированных тестов пользовательского интерфейса, частично закрытое окном "Добавить утверждения" с выбранным свойством "Состояние" элемента управления "Текст".](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>Поддержка проверки пользовательского свойства
 
-![CUIT&#95;Props](../test/media/cuit_props.png)
+![Схема классов в ChartControl и ChartControlExtension с выделенными классами ChartControlExtensionPackage и ChartControlIPropertyProvider.](../test/media/cuit_props.png)
 
 1. Переопределите свойство <xref:System.Windows.Forms.AccessibleObject.Description%2A> объекта специальных возможностей кривой условных обозначений, чтобы передавать в строке описания форматируемые значения свойств. Для разделения значений используйте точки с запятыми (;).
 
@@ -149,7 +149,7 @@ ms.locfileid: "95441408"
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Добавление специализированного класса для доступа к элементу управления
 
-![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
+![Схема классов в ChartControl и ChartControlExtension с классом CurveLegend, выделенным в ChartControlExtensionPackage.](../test/media/cuit_codegen.png)
 
 1. Реализуйте класс, производный от <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl>, и добавьте тип элемента управления к коллекции свойств поиска в конструкторе.
 
@@ -165,7 +165,7 @@ ms.locfileid: "95441408"
 
 ### <a name="to-support-intent-aware-actions"></a>Поддержка действий, учитывающих намерение
 
-![CUIT&#95;Actions](../test/media/cuit_actions.png)
+![Схема классов ChartControl и ChartControlExtensionPackage с классом ChartControlActionFilter, выделенным в ChartControlExtensionPackage.](../test/media/cuit_actions.png)
 
 1. Реализуйте класс фильтра действий, производный от [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)), переопределив свойства [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) и [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)).
 

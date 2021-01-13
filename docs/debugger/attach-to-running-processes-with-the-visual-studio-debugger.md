@@ -1,6 +1,7 @@
 ---
 title: Присоединение к выполняемым процессам с использованием отладчика
-ms.custom: seodec18
+description: Узнайте, как подключить отладчик Visual Studio к запущенному процессу на локальном или удаленном компьютере.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/12/2020
 ms.topic: conceptual
 f1_keywords:
@@ -28,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a33af839406497a2a30fba2f5103a64a1da36ed7
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 1fd1ff5ff0f8c7510185236c425ddd870f8b500f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671470"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97760930"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Присоединение к выполняемым процессам с использованием отладчика Visual Studio
 
@@ -58,7 +59,7 @@ ms.locfileid: "94671470"
 
 1. В поле **Цель подключения** укажите имя локального компьютера.
 
-   ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process")
+   ![Снимок экрана: диалоговое окно "Присоединение к процессу", в котором в качестве целевого объекта подключения задано имя локального компьютера.](../debugger/media/DBG_Basics_Attach_To_Process.png)
 
 1. В списке **Доступные процессы** найдите и выберите процессы, к которым нужно присоединиться.
 

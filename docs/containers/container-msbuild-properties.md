@@ -1,17 +1,17 @@
 ---
 title: Свойства сборки с помощью инструментов Visual Studio для работы с контейнерами
 author: ghogen
-description: Обзор процесса сборки с помощью инструментов для работы с контейнерами
+description: Узнайте, как изменить свойства сборки инструментов для контейнеров, чтобы настроить сборку и запуск контейнерного проекта в Visual Studio.
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 427a70d9bc4f6ef326ffb16e7d26df9d8fae2365
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e8675bd0ea12b30ce678ce454bcedee457ddacd
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283207"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846737"
 ---
 # <a name="container-tools-build-properties"></a>Свойства сборки с помощью инструментов для работы с контейнерами
 

@@ -7,12 +7,12 @@ monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29fa854ab00764fc0166a53d8b48989f2c74f036
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329178"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833303"
 ---
 # <a name="xaml-code-editor"></a>Редактор кода XAML
 
@@ -136,7 +136,7 @@ ms.locfileid: "85329178"
 
 При изменении кода в редакторе кода XAML некоторые функции можно вызывать из контекстного меню, которое открывается при щелчке правой кнопкой мыши. Большинство этих функций повсеместно доступно повсюду в интегрированной среде разработки Visual Studio, но некоторые можно вызывать только при использовании редактора кода вместе с окном конструктора.
 
-![Контекстное меню редактора кода XAML в Visual Studio](media/xaml-code-editor-right-click-menu.png "Снимок экрана. Контекстное меню редактора кода XAML в Visual Studio 2019")
+![Снимок экрана: контекстное меню редактора кода XAML, вызываемое правой кнопкой мыши в Visual Studio 2019.](media/xaml-code-editor-right-click-menu.png)
 
 Перечислим эти функции и покажем, для чего они используются.
 
@@ -163,7 +163,7 @@ ms.locfileid: "85329178"
 
 В полосе прокрутки редактора кода в правом верхнем углу имеется кнопка **разделения**. Нажав ее, можно открыть другую панель редактора кода. Это очень удобно, так как эти панели работают независимо друг от друга, и их можно использовать для работы в разных местах кода.
 
-![Средняя панель редактора кода XAML в Visual Studio](media/code-editor-split-window-button.png "Снимок экрана. Средняя панель редактора кода XAML в Visual Studio 2019")
+![Снимок экрана: средняя панель редактора кода XAML в Visual Studio 2019 с выделенной в правом верхнем углу панели кнопкой "Разделить".](media/code-editor-split-window-button.png)
 
 Дополнительные сведения о том, как разделить окно редактора, см. на странице [Управление окнами редактора](../ide/how-to-manage-editor-windows.md).
 

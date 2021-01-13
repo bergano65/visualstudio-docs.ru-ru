@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: ae419c67b493ef03b08f6fcf627ad0fbe42ca6d0
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: b145c4acf4047356b8996d09d746679900314f1b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099210"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726570"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Обзор хранилища для отправки данных или загрузки моделей и журналов
 
@@ -23,11 +23,11 @@ ms.locfileid: "92099210"
 
 ## <a name="to-access-all-data-on-the-remote-machine-or-file-share"></a>Доступ ко всем данным на удаленном компьютере или в общей папке
 
-1. Откройте **Обозреватель сервера** .
+1. Откройте **Обозреватель сервера**.
 2. Разверните контекст удаленного компьютера или вычислений Batch AI.
-3. Щелкните правой кнопкой мыши **Хранилище** , а затем **Обзор** .
+3. Щелкните правой кнопкой мыши **Хранилище**, а затем **Обзор**.
 
-    ![storage](media/manage-storage/browse-storage.png)
+    ![Снимок экрана: Обозреватель сервера с развернутой папкой "Удаленные компьютеры". В дереве папок выделено хранилище, а в контекстном меню — кнопка "Обзор".](media/manage-storage/browse-storage.png)
 
 ## <a name="to-access-job-specific-data-on-the-remote-machine-or-file-share"></a>Доступ к данным конкретного задания на удаленном компьютере или в общей папке
 
@@ -35,4 +35,4 @@ ms.locfileid: "92099210"
 2. Выберите задание.
 3. Щелкните **Рабочая папка** или **StdOut/Stderr** для быстрого доступа к важным файлам журнала.
 
-    ![storage](media/manage-storage/job-workingfolder.png)
+    ![Снимок экрана: окно "Браузер заданий" в Обозревателе сервера. Выбрано задание train_mnist, а в разделе "Сведения о задании" — ссылка "Рабочая папка".](media/manage-storage/job-workingfolder.png)

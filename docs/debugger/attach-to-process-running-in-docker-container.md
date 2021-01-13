@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b32b402e2bbf85cf5c028ec2dc94821ec463644
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94674794"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761268"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Присоединение к процессу, выполняющемуся в контейнере Docker 
 
@@ -34,7 +34,7 @@ ms.locfileid: "94674794"
 
 1. В Visual Studio выберите **Отладка > Подключить к процессу** (или нажмите клавиши CTRL + ALT + P), чтобы открыть диалоговое окно **Подключение к процессу**.
 
-![Меню подключения к процессу](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
+![Снимок экрана: диалоговое окно "Подключить к процессу" в Visual Studio, отображающее тип соединения для Docker (контейнера Linux).](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
 
 2. Для параметра **Тип подключения** выберите **Docker (контейнер Linux)** .
 3. Нажмите **Найти...** , чтобы задать **Целевой объект подключения** в диалоговом окне **Выбор контейнера Docker**.
@@ -63,7 +63,7 @@ ms.locfileid: "94674794"
 
 4. Выберите соответствующий процесс контейнера из списка **Доступные процессы**, а затем выберите **Присоединить**, чтобы начать отладку процесса контейнера C# в Visual Studio.
 
-    ![Меню присоединения Docker](../debugger/media/docker-attach-complete.png "Меню присоединения Docker в Linux")
+    ![Снимок экрана: диалоговое окно "Подключить к процессу" в Visual Studio. Для параметра "Тип соединения" установлено значение "Docker" (контейнер Linux), а также выбран процесс dotnet.](../debugger/media/docker-attach-complete.png "Меню присоединения Docker в Linux")
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a> Присоединение к процессу, выполняющемуся в контейнере Docker в Windows
 
@@ -76,7 +76,7 @@ ms.locfileid: "94674794"
 
 1. В Visual Studio выберите **Отладка > Подключить к процессу** (или нажмите клавиши **CTRL + ALT + P**), чтобы открыть диалоговое окно **Подключение к процессу**.
 
-   ![Меню подключения к процессу](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
+   ![Снимок экрана: диалоговое окно "Подключить к процессу" в Visual Studio, отображающее тип соединения для Docker (контейнера Windows).](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
 
 2. Для параметра **Тип подключения** выберите **Docker (контейнер Windows)** .
 3. Нажмите **Найти...** , чтобы задать **Целевой объект подключения** с помощью диалогового окна **Выбор контейнера Docker**.
@@ -93,6 +93,6 @@ ms.locfileid: "94674794"
 
 4. Выберите соответствующий процесс контейнера из списка **Доступные процессы**, а затем выберите **Присоединить**, чтобы начать отладку процесса контейнера C#.
 
-    ![Меню присоединения Docker](../debugger/media/docker-attach-complete-windows.png "Меню присоединения Docker в Windows")
+    ![Снимок экрана: диалоговое окно "Подключить к процессу" в Visual Studio. Для параметра "Тип соединения" установлено значение "Docker" (контейнер Windows), а также выбран процесс dotnet.](../debugger/media/docker-attach-complete-windows.png "Меню присоединения Docker в Windows")
 
-5.  Выберите соответствующий процесс контейнера из списка доступных процессов, а затем выберите **Присоединить**, чтобы начать отладку процесса контейнера C#.
+5. Выберите соответствующий процесс контейнера из списка доступных процессов, а затем выберите **Присоединить**, чтобы начать отладку процесса контейнера C#.

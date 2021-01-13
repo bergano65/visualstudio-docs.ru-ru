@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bcc1932bad5b34d9695257feb163654f6b99514
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6813e834af00330b4018f16d4a19be945be2be9
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371629"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726648"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Создание проекта ИИ с помощью коллекции машинного обучения Azure в Visual Studio
 
@@ -52,12 +52,12 @@ ms.locfileid: "85371629"
 
 5. Visual Studio создает файл проекта (файл `.pyproj` на диске) вместе с другими файлами, заданными в образце. В случае с шаблоном MNIST проект содержит несколько файлов.
 
-    ![mnist](media/create-project-gallery/azml-mnist.png)
+    ![Снимок экрана: Обозреватель решений Visual Studio, в котором показаны файлы для проекта TensorFlowMNIST. Код для tf_mnist.py отображается в главном окне.](media/create-project-gallery/azml-mnist.png)
 
 6. Отправьте задание в машинное обучение Azure.
 
-    ![mnist](media/create-project-gallery/submit-azml.png)
+    ![Снимок экрана: Обозреватель решений Visual Studio, в котором показано контекстное меню для проекта TensorFlowMNIST с выбранным значением "Отправить задание".](media/create-project-gallery/submit-azml.png)
 
 7. Запустите его в контейнере Docker или на своем локальном компьютере
 
-    ![mnist](media/create-project-gallery/azml-local.png)
+    ![Снимок экрана: диалоговое окно "Отправить задание", в котором для параметра "Использовать кластер" задано значение "azureml:/local", а для параметра "Скрипт запуска" — "tf_mnist.py".](media/create-project-gallery/azml-local.png)

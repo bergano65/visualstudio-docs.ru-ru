@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d049bc8b74b83028e04fe92e7ce96f45907d042
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89324857"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97762623"
 ---
 1. В **обозревателе решений** щелкните правой кнопкой мыши узел проекта и выберите пункт **Опубликовать** (или **Опубликовать веб-приложение** для ASP.NET Web Forms).
 
@@ -21,7 +21,7 @@ ms.locfileid: "89324857"
 
 1. В диалоговом окне **Публикация** выберите элемент **Папка**, щелкните элемент **Обзор** и создайте новую папку **C:\Publish**.
 
-    ![RemoteDBG_Publish_Local](../media/remotedbg_publish_local.png "RemoteDBG_Publish_Local")
+    ![Снимок экрана: диалоговое окно "Выберите целевой объект публикации" в Visual Studio, в котором в качестве целевого объекта публикации выбрана папка "bin\Release\Publish".](../media/remotedbg_publish_local.png)
 
     Для приложения ASP.NET Web Forms выберите элемент **Пользовательский** в диалоговом окне "Публикация", затем введите имя профиля и нажмите кнопку **ОК**.
 
@@ -36,7 +36,7 @@ ms.locfileid: "89324857"
 
 1. Нажмите кнопку **Опубликовать**.
 
-    ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
+    ![Снимок экрана: вкладка "Параметры" в диалоговом окне "Публикация". Для параметра "Конфигурация" задано значение "Отладка" и выбрана кнопка "Опубликовать".](../media/remotedbg_publish_debug_config.png)
 
     Приложение публикует конфигурации **отладки** для проекта в локальной папке. Сведения о ходе выполнения отображаются в окне вывода.
 

@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0fbd5ed752b28cc3f8c0dd734ed2b3ce09e80b78
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 564ba133074af3749bd909f1b0a7fe32822f5d75
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568819"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833264"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Введение локальной переменной в Visual Studio
 
@@ -47,7 +47,7 @@ ms.locfileid: "75568819"
       - Нажмите клавиши **CTRL**+ **.** чтобы открыть меню **Быстрые действия и рефакторинг**.
    - **Мышь**
       - Щелкните правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
-      - Нажмите кнопку ![с отверткой](media/screwdriver.png) , который отображается на левом поле, если текстовый курсор уже находится в строке с выделенным выражением.
+      - Нажмите кнопку ![Снимок экрана: значок отвертки, который отображается в левом поле меню "Быстрые действия и рефакторинг".](media/screwdriver.png) , который отображается на левом поле, если текстовый курсор уже находится в строке с выделенным выражением.
 
    ![Ввод локальной переменной — предварительный просмотр](media/local-preview-cs.png)
 

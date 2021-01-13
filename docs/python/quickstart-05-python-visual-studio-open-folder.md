@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d11ffcb2c43d2c519d75d43afad6383e0bfaa44a
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801676"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761281"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Краткое руководство. Открытие и выполнение кода Python в папке
 
@@ -70,11 +70,11 @@ ms.locfileid: "88801676"
 
 1. Щелкните правой кнопкой мыши файл запуска Python ( *.py*) в **обозревателе решений** и выберите **Параметры отладки и запуска**.
 
-    ![Команда "Параметры отладки и запуска" для файла Python](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
+    ![Снимок экрана: представление "Папка" Обозревателя решений с выбранным файлом contemplate_koans.py. В контекстном меню также выбран пункт "Параметры отладки и запуска".](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
 
 1. В открывшемся диалоговом окне **Запуск отладчика** выберите вариант **По умолчанию** и щелкните **Выбрать**.
 
-    ![Команда "Параметры отладки и запуска" для файла Python](media/quickstart-open-folder/10-select-debugger.png)
+    ![Снимок экрана: диалоговое окно "Выбор отладчика" с выбранным значением "По умолчанию" для отладчика и выделенной кнопкой "Выбрать".](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
     > Если вы не видите здесь вариант **По умолчанию**, убедитесь, что вы выбрали команду **Параметры отладки и запуска** именно для файла Python с расширением *.py*. В Visual Studio тип файла определяет отображаемые варианты действий в отладчике.

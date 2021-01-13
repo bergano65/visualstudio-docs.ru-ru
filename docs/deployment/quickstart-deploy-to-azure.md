@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 83446ab87af07e3ac46594beeecec781f596ecff
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cf32e0aa1f19bb4398bc5600ae7fc9fbf151c76c
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349585"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815598"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Публикация веб-приложения в службе приложений Azure с помощью Visual Studio
 
@@ -53,11 +53,11 @@ ms.locfileid: "94349585"
 
 1. В диалоговом окне **Создание службы приложений Azure (Windows)** необходимо заполнить поля **Имя приложения**, **Группа ресурсов** и **План службы приложений**. Вы можете сохранить эти имена или изменить их. Когда все будет готово, щелкните **Создать**.
 
-    ![Выбор службы приложений Azure](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
+    ![Снимок экрана: диалоговое окно Create Azure App Service (Windows) (Создание службы приложений Azure" (Windows)) с заполненными полями "Имя", "Подписка", "Группа ресурсов" и "План размещения".](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 
 1. В диалоговом окне **Публикация** вновь созданный экземпляр выбирается автоматически. По завершении нажмите кнопку **Готово**.
 
-    ![Выбор службы приложений Azure](../deployment/media/quickstart-publish-windows-select-instance.png)
+    ![Снимок экрана: окно "Публикация", доступ к которому осуществлен из Обозревателя решений Visual Studio. Azure выбран в качестве целевого объекта публикации.](../deployment/media/quickstart-publish-windows-select-instance.png)
 
 1. Нажмите **Публиковать**. Visual Studio выполнит развертывание приложения в службе приложений Azure, после чего веб-приложение будет загружено в браузер. В панели **Опубликовать** для свойств проекта будут отображаться URL-адрес сайта и другие сведения.
 

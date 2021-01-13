@@ -1,6 +1,7 @@
 ---
 title: Устранение неполадок отладки моментальных снимков | Документация Майкрософт
-ms.custom: ''
+description: Сведения об устранении неполадок и известных проблемах с отладкой моментальных снимков в Visual Studio. Загрузите ICorProfiler, не вызывая простоев на рабочем сайте.
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b5a76c1cae508acd08e5f077d466facf02e0211a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182876"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728648"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Устранение неполадок и известные проблемы отладки моментальных снимков в Visual Studio
 
-Если действия, описанные в этой статье, не помогли устранить проблему, выполните поиск проблемы в [сообществе разработчиков](https://developercommunity.visualstudio.com/spaces/8/index.html) или сообщите о новой проблеме, выбрав **Справка** > **Отправить отзыв** > **Сообщить о проблеме** в Visual Studio.
+Если действия, описанные в этой статье, не помогли устранить проблему, выполните поиск проблемы в [сообществе разработчиков](https://aka.ms/feedback/suggest?space=8) или сообщите о новой проблеме, выбрав **Справка** > **Отправить отзыв** > **Сообщить о проблеме** в Visual Studio.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Проблема. При подключении Snapshot Debugger возникает ошибка кода состояния HTTP
 

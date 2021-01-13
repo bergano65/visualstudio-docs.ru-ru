@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d801f052cb02e6a5b53189eeae342b9015d30f9b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d8a98ebd1fa1e8a9ec937cf4e0965d804a8a9387
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093882"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761229"
 ---
 # <a name="wrap-indent-and-align-refactorings"></a>Рефакторинг для реализации переноса, отступа и выравнивания
 
@@ -40,7 +40,7 @@ ms.locfileid: "79093882"
 2. Нажмите клавиши **CTRL**+ **.** чтобы открыть меню **Быстрые действия и рефакторинг**.
 3. Выберите **Свернуть цепочку вызовов** или **Свернуть и выровнять цепочку вызовов**, чтобы принять рефакторинг.
 
-   ![Сворачивание и выравнивание цепочек вызовов](media/wrap-call-chain.png)
+   ![Снимок экрана: меню Quick Actions and Refactorings (Быстрые действия и рефакторинг) в Visual Studio с выбранным параметром "Свернуть цепочку вызовов" и изменениями кода C#.](media/wrap-call-chain.png)
 
 ## <a name="wrap-indent-and-align-parameters-or-arguments"></a>Аргументы или параметры переноса, отступа и выравнивания
 
@@ -85,7 +85,7 @@ ms.locfileid: "79093882"
 2. Нажмите клавиши **CTRL**+ **.** чтобы открыть меню **Быстрые действия и рефакторинг**.
 3. Выберите **Перенос выражения**, чтобы принять рефакторинг.
 
-   ![Сворачивание и выравнивание цепочек вызовов](media/wrap-binary-expression.png)
+   ![Снимок экрана: меню Quick Actions and Refactorings (Быстрые действия и рефакторинг) в Visual Studio с выбранным параметром "Свернуть выражение" и изменениями кода C#.](media/wrap-binary-expression.png)
 
 ## <a name="see-also"></a>См. также
 

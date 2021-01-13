@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: b28d87cc0842d5a3de8634ae50378915196366ff
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 484cb82a3659e306bd4c6bd14a3133c4677160db
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527920"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833342"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Учебник. Создание простого консольного приложения C# в Visual Studio
 
@@ -282,7 +282,7 @@ ms.locfileid: "97527920"
 
 При попытке деления числа на ноль консольное приложение может перестать отвечать, а затем покажет, что именно не так в редакторе кода.
 
-   ![Редактор кода Visual Studio с отображением ошибки деления на ноль](./media/csharp-console-calculator-dividebyzero-error.png)
+   ![Снимок экрана: редактор кода Visual Studio с выделенной желтым цветом строкой и отображенной ошибкой "Исключение не обработано" и причиной Attempted to divide by zero "Попытка деления на ноль".](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
 > Иногда приложение не зависает, а отладчик не отображает ошибку деления на ноль. Вместо этого приложение может вернуть непредвиденный нечисловой результат, например символ бесконечности. Приведенное ниже исправление кода по-прежнему применимо.
@@ -311,7 +311,7 @@ ms.locfileid: "97527920"
 
 Теперь при делении любого числа на ноль приложение предложит ввести другое число. Даже лучше: Оно будет снова и снова повторять этот запрос, пока не получит значение, отличающееся от нуля.
 
-   ![Исправленная ошибка деления на ноль](./media/csharp-console-calculator-dividebyzero.png)
+   ![Снимок экрана: редактор кода Visual Studio, отображающий код оператора switch с добавленной проверкой записи ненулевого делителя.](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>Исправление ошибки формата
 

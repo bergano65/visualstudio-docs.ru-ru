@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 21052d59205c7ddc14247f180348fea3b8d5652a
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780987"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833251"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Шаг 2. Создание первого веб-приложения ASP.NET Core
 
@@ -94,7 +94,7 @@ public void OnGet()
 
 Снова запустите приложение. Вы увидите, что страницы теперь отображают текущее время, но это всегда полночь! Это неправильно.
 
-![Visual Studio 2019. Проект ASP.NET Core в браузере](media/vs-2019/vs2019-app-in-browser.png)
+![Снимок экрана: домашняя страница приложения в окне браузера. Текст содержимого страницы: "На сервере сейчас 12:00!".](media/vs-2019/vs2019-app-in-browser.png)
 
 ## <a name="debug-the-application"></a>Отладка приложения
 
@@ -102,7 +102,7 @@ public void OnGet()
 
 Выполнение останавливается на этой строке, и вы увидите, что `DateTime.Today` включает дату, но время всегда установлено на полночь, поскольку строка не включает данные о времени.
 
-![Visual Studio 2019. Проект ASP.NET Core в браузере](media/vs-2019/vs2019-breakpoint.png)
+![Снимок экрана: код для Index.cshtml.cs в Visual Studio. Точка останова установлена в строке "Time = DateTime.Today.ToShortTimeString();".](media/vs-2019/vs2019-breakpoint.png)
 
 Измените код, чтобы использовать `DateTime.Now`, и продолжите выполнение. Новый код для `OnGet`:
 
@@ -118,14 +118,14 @@ public void OnGet()
 > [!NOTE]
 > Выходные данные могут отличаться от показанных на рисунке, так как формат вывода ToShortDateTimeString зависит от текущих настроек языка и региональных параметров. См. раздел <xref:System.DateTime.ToShortTimeString>.
 
-![Visual Studio 2019. Проект ASP.NET Core в браузере](media/vs-2019/vs2019-app-fixed-in-browser.png)
+![Снимок экрана: домашняя страница приложения в окне браузера. Текст содержимого страницы: "На сервере сейчас 1:46!".](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В следующем видео вы узнаете, как добавить поддержку данных в приложение.
 
 [Учебник. Работа с данными в приложении ASP.NET Core](tutorial-aspnet-core-ef-step-03.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Учебник. Создание веб-приложения Razor Pages с помощью ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

@@ -1,5 +1,6 @@
 ---
 title: PerfTips | Документы Майкрософт
+description: Узнайте, как использовать отладчик Visual Studio PerfTips и интегрированные Средства диагностики для мониторинга и анализа производительности вашего приложения во время отладки.
 ms.date: 9/11/2020
 ms.topic: how-to
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f260307b677046be54e6d80b0d8fe122b13292e4
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 481113e9f5e2f5b66aec5f4dad29f581462165ca
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075474"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815832"
 ---
 # <a name="perftips"></a>PerfTips
 
@@ -33,7 +34,7 @@ ms.locfileid: "90075474"
 
 На рисунке ниже показано окно **Средства диагностики**.
 
-![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+![Снимок экрана: окно "Средства диагностики" в отладчике Visual Studio, на котором показаны временная шкала для пункта "События" и графики для пунктов "Использование памяти" и "Загрузка ЦП".](../profiling/media/diagnostictools-update1.png)
 
 - На временной шкале **События прерывания** отмечаются точки останова, достигнутые за сеанс отладки. Щелкните событие, чтобы выбрать его в списке сведений **отладчика** .
 

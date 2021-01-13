@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e1e6951aebac63494aada4e64c5c072eb79c6a9
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 3d259c6fa69821d1fecd26944227bff86cc82104
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074986"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815858"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Измерение использования памяти в Visual Studio
 
@@ -124,7 +124,7 @@ ms.locfileid: "90074986"
 
  Чтобы отобразить экземпляры типа, выбранного в верхней области, щелкните значок ![Значок экземпляра](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon").
 
- ![Представление экземпляров](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
+ ![Снимок экрана: представление экземпляров в средстве использования памяти Visual Studio, в котором показана панель "Экземпляры" и панель "Пути к корню" и "Объекты, на которые указывает ссылка".](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
 
  На панели **Экземпляры** , которая открывается в верхней области, отображаются экземпляры выбранного объекта текущего снимка. На панелях **Пути к корню** и **Объекты, на которые указывает ссылка** отображаются объекты, которые ссылаются на выбранный экземпляр, а также типы, на которые ссылается выбранный экземпляр. Если создать снимок после остановки отладчика и навести указатель мыши на ячейку в столбце **Значение**, во всплывающей подсказке отобразятся значения объекта.
 
@@ -139,7 +139,7 @@ ms.locfileid: "90074986"
 
      В окне **Экземпляры** отображаются все экземпляры выбранного типа. При выборе экземпляра на панели **Стек вызовов выделений** отображается стек вызовов, использованный для создания этого экземпляра.
 
-     ![Представление экземпляров](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
+     ![Снимок экрана: представление экземпляров в средстве использования памяти Visual Studio, в котором показана панель "Экземпляры" и панель "Стек вызовов выделений".](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
 - Чтобы отобразить стек вызовов для выбранного типа, в раскрывающемся меню **Режим просмотра** выберите пункт **Представление стеков** .
 

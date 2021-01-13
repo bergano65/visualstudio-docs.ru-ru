@@ -1,6 +1,7 @@
 ---
 title: 'Отладка веб-приложений: ошибки и устранение неполадок'
-ms.custom: seodec18
+description: Ссылки на справочные страницы, которые помогут отладить веб-приложения, например страницу устранения неполадок и страницы, описывающие каждую ошибку, с которой вы можете столкнуться.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -27,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4cb60f4d378daab829713cb4bbbb670ef8ed25a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f827dd2bb8081787a4883b2d67ee41d8b6d43876
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188348"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726791"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Отладка веб-приложений: ошибки и устранение неполадок
 При попытке отладки веб-приложений возможны следующие ошибки:

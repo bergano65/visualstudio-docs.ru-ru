@@ -1,6 +1,7 @@
 ---
 title: Отладка многопоточных приложений | Документация Майкрософт
-ms.custom: seodec18
+description: Отладка многопоточных приложений в Visual Studio. Ознакомьтесь со средствами для отладки и статьями об отладке многопоточных приложений.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/06/2018
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b99f7b44168a451e8e927e5e0d2ca1a7f8d0bf93
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 4fed6580219964ab71f5a5010060c1af193375df
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600330"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727142"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Отладка многопоточных приложений в Visual Studio
 Поток — это последовательность инструкций, которой операционная система предоставляет время процессора. Каждый процесс, выполняющийся в операционной системе, состоит по крайней мере из одного потока. Процессы, имеющие более одного потока, называются многопоточными.

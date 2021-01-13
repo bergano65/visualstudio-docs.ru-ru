@@ -1,6 +1,7 @@
 ---
 title: Подготовка к отладке проектов C++ | Документация Майкрософт
-ms.custom: seodec18
+description: Сведения о подготовке к отладке основных типов проектов, созданных с помощью шаблонов проектов Visual C++ в Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e399b28d3ddce07cae263550b536c21ad1db028
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916312"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728308"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Подготовка к отладке: Типы проектов C++
 В этом разделе описана отладка основных типов проектов, созданных с использованием шаблонов проектов [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].

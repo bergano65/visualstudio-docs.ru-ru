@@ -1,5 +1,7 @@
 ---
 title: Отображение и скрытие групп регистров | Документация Майкрософт
+description: Окно "Регистры", которое доступно только при включенной отладке на уровне адреса, позволяет упорядочить регистры по группам. Узнайте, как указать отображаемые группы.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a75af7d7ef279fdd3ca82ea9dced941106f0275
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c14d325d417606c6945d51d99461d34ccd9a4bc8
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852365"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903042"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Практическое руководство. Отображение и скрытие групп регистров (C#, C++, Visual Basic, F#)
 

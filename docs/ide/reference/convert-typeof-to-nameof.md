@@ -1,5 +1,6 @@
 ---
 title: Преобразование typeof в nameof
+description: Сведения об использовании меню Quick Actions and Refactorings (Быстрые действия и рефакторинг) в Visual Studio для преобразования typeof в nameof для C# и преобразования GetType в NameOf для Visual Basic.
 ms.date: 08/12/2020
 ms.topic: reference
 author: m-redding
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96bd4d67302fb09e5c1cb7837ad73b345ad88c81
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ce76b82e2ebc68634be7cf4d463f6b8216d81e06
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400328"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761203"
 ---
 # <a name="convert-typeof-to-nameof"></a>Преобразование `typeof` в `nameof`
 
@@ -39,11 +40,11 @@ ms.locfileid: "93400328"
 3. Выберите один из следующих вариантов:
 
     - C#
-      <br>Выберите **Преобразовать typeof в nameof**: ![Преобразование typeof в nameof](media/convert-type-of.PNG)
+      <br>Выберите **Преобразовать typeof в nameof**: ![Снимок экрана: меню Quick Actions and Refactorings (Быстрые действия и рефакторинг) в Visual Studio, в котором выбран параметр "Преобразовать "typeof" в "nameof" и показаны изменения кода C#.](media/convert-type-of.PNG)
 
     - Visual Basic
-      <br>Выберите **Преобразовать GetType в NameOf**: ![Преобразование typeof в nameof](media/convert-get-type.PNG)
+      <br>Выберите **Преобразовать GetType в NameOf**: ![Снимок экрана: меню Quick Actions and Refactorings (Быстрые действия и рефакторинг) в Visual Studio, в которм выбран параметр "Преобразовать 'GetType' в 'NameOf'" и показаны изменения кода Visual Basic.](media/convert-get-type.PNG)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Рефакторинг](../refactoring-in-visual-studio.md)

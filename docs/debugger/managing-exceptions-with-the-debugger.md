@@ -1,6 +1,7 @@
 ---
 title: Управление исключениями с помощью отладчика | Документация Майкрософт
-ms.custom: seodec18
+description: Сведения о том, как указать для каких исключений отладчик будет выполнять останов, в каких случаях отладчик будет выполнять прерывание, и как обрабатываются перерывы.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/09/2018
 ms.topic: how-to
 f1_keywords:
@@ -33,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff28944a36d338230a17cd533a4832452e42885b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 210f2b2fc3e037f58fed19031d7ae9762185a640
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348461"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903852"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Управление исключениями с помощью отладчика в Visual Studio
 
@@ -216,9 +217,9 @@ public class GenericException<T> : Exception
 
    ![Дополнительные условия для исключения](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Для каждой строки условия введите имя модуля и измените список операторов сравнения на **Равно** или **Не равно**. Можно указать подстановочные знаки ( **\\\*** ) в имени, чтобы выбрать более одного модуля.
+3. Для каждой строки условия введите имя модуля и измените список операторов сравнения на **Равно** или **Не равно**. Вы можете указать в имени подстановочные знаки (* *\\\** _), чтобы выбрать несколько модулей.
 
-4. Если необходимо удалить условие, выберите **X** в конце строки условия.
+4. Если необходимо удалить условие, выберите _ *X** в конце строки условия.
 
 ## <a name="see-also"></a>См. также
 

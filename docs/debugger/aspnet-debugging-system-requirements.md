@@ -1,5 +1,7 @@
 ---
 title: 'Отладка ASP.NET: Требования к системе | Документация Майкрософт'
+description: Ознакомьтесь с требованиями к программному обеспечению и безопасности для удаленной отладки и локальной отладки ASP.NET, при которой Visual Studio и веб-приложение работают на одном компьютере.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 78f947c7ab9fcc1031d457526240ecdd7e9119a3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2002d6ccbbe8f2cd3e186c49aca7a846568eedb2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745808"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729123"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Отладка ASP.NET: Требования к системе
 В этом разделе описаны требования к программному обеспечению и безопасности для сценариев локальной и удаленной отладки [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .
@@ -37,7 +39,7 @@ ms.locfileid: "72745808"
 ## <a name="security-requirements"></a>Требования безопасности
  Для удаленной отладки локальный и удаленный компьютеры должны входить в домен или рабочую группу.
 
- Чтобы выполнить отладку рабочего процесса [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (размещенного в пуле приложений), необходимо иметь разрешение на отладку этого процесса. По умолчанию приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] в IIS версии ниже 6.0 выполняются от имени учетной записи пользователя **ASPNET**. В IIS 6.0 и IIS 7.0 по умолчанию используется учетная запись **NETWORK SERVICE**. Если рабочий процесс выполняется от имени учетной записи **ASPNET**или **NETWORK SERVICE**, для его отладки необходимо иметь права администратора.
+ Чтобы выполнить отладку рабочего процесса [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (размещенного в пуле приложений), необходимо иметь разрешение на отладку этого процесса. По умолчанию приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] в IIS версии ниже 6.0 выполняются от имени учетной записи пользователя **ASPNET**. В IIS 6.0 и IIS 7.0 по умолчанию используется учетная запись **NETWORK SERVICE**. Если рабочий процесс выполняется от имени учетной записи **ASPNET** или **NETWORK SERVICE**, для его отладки необходимо иметь права администратора.
 
  > [!IMPORTANT]
  > Начиная с Windows Server 2008 R2 рекомендуется использовать [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) в качестве удостоверения для каждого пула приложений.

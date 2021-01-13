@@ -12,12 +12,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 713d711847d798c617074d2d620e09f914c1a147
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 9f670c9cf543ae209ebed63ce185fadfbbe253d0
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190241"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815728"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Исправление необнаруживаемых динамических параметров в веб-тесте производительности
 
@@ -190,13 +190,13 @@ ms.locfileid: "96190241"
 
 3. Вернитесь в средство просмотра результатов веб-тестов производительности и выберите страницу *JScriptQuery.aspx*, на которой произошла ошибка. Перейдите на вкладку запроса, убедитесь, что снят флажок отображения необработанных данных, прокрутите вниз и выберите быстрый поиск в CustomQueryString.
 
-     ![Использование быстрого поиска для локализации динамического параметра](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
+     ![Снимок экрана: вкладка "Запрос" в средстве просмотра результатов веб-тестов производительности. Выбран параметр "QueryString",а в контекстном меню выделен элемент QuickFind.](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
 4. Из редактора тестов известно, что параметру CustomQueryString запроса страницы *JScriptQuery.aspx* присвоено значение `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` и часть строки "1v0yhyiyr0raa2w4j4pwf5zl", вероятно, формируется динамически. Удалите из раскрывающегося списка "Найти" эту часть строки поиска. Строка должна выглядеть следующим образом: "CustomQueryString=jScriptQueryString___".
 
      Значения присваиваются динамическим параметрам в одном из запросов, который предшествует запросу, завершившемуся ошибкой. Установите флажок "Искать назад" и нажимайте кнопку "Найти далее" до тех пор, пока на панели "Запрос" не будет выделен предыдущий запрос страницы *Querystring.aspx*. Этот запрос должен появиться после троекратного нажатия кнопки "Найти далее".
 
-     ![Использование быстрого поиска для локализации динамического параметра](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
+     ![Снимок экрана: средство просмотра результатов веб-тестов производительности. Выбрана строка запроса, и отображается диалоговое окно "Поиск" с выбранными параметрами "SearchUp" и "Найти далее".](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
 
      Как показано на вкладке ответов и как видно в ранее реализованном коде JavaScript, параметру строки CustomQueryString присвоено значение " jScriptQueryString___", к которому также добавляется значение, возвращаемое переменной sessionId.
 

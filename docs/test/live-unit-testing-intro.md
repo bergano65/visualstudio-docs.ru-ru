@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f3a5e97153997908a0360bc123fd1b88fb5c009
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8716e980581ffe1103adddbc3c776def1166ff94
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596844"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756608"
 ---
 # <a name="live-unit-testing-overview"></a>Обзор Live Unit Testing
 
@@ -26,7 +26,7 @@ Live Unit Testing сообщает о том, достаточно ли полн
 При наличии решения, включающего в себя один или несколько проектов модульных тестов, вы можете включить Live Unit Testing, выбрав в меню Visual Studio верхнего уровня пункты **Тест** > **Live Unit Testing** > **Запуск**.
 
 > [!NOTE]
-> Функция Live Unit Testing доступна только в выпуске Visual Studio Enterprise.
+> Функция Live Unit Testing доступна только в выпуске Visual Studio Enterprise поддерживается только в .NET.
 
 Дополнительные сведения о Live Unit Testing:
 

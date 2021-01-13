@@ -1,5 +1,6 @@
 ---
 title: Использование пакета SDK визуализатора параллелизма для создания маркеров | Документация Майкрософт
+description: Сведения об использовании пакета SDK маркеров визуализатора параллелизма в Visual Studio для создания интервалов, флагов, сообщений и оповещений.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf33ad094716ee0f8f4c8cc4bb06220db1237e5
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 24659a101da59ed3a8ca6389debfde6c08a038ed
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851584"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815611"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Как выполнить: Использование пакета SDK визуализатора параллелизма для создания маркеров
 В этом разделе содержатся сведения об использовании SDK визуализатора параллелизма для создания интервалов и записи флагов, сообщений и оповещений.
@@ -70,7 +71,7 @@ ms.locfileid: "90851584"
 
 6. Запустите текущий проект, чтобы открыть визуализатор параллелизма. Две последовательности маркеров отображаются на собственных дорожках в представлении потоков. На следующем рисунке показаны два новых интервала.
 
-     ![Визуализатор параллелизма с тремя сериями пользовательских маркеров](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![Снимок экрана: представление "Потоки" в визуализаторе параллелизма, в котором показаны ряды маркеров, флагов и сообщений с диапазоном как для флагов, так и сообщений.](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>Использование Visual Basic или C\#
 
@@ -164,7 +165,7 @@ ms.locfileid: "90851584"
 
 6. Запустите текущий проект, чтобы открыть визуализатор параллелизма. Три последовательности маркеров отображаются на собственных дорожках в представлении потоков. На следующем рисунке показаны три новых интервала.
 
-     ![Визуализатор параллелизма с тремя сериями пользовательских маркеров](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
+     ![Снимок экрана: представление "Потоки" в визуализаторе параллелизма, в котором показаны ряды маркеров, флагов и сообщений с диапазоном для сообщений, предупреждений и флагов.](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
 ## <a name="see-also"></a>См. также
 - [Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)

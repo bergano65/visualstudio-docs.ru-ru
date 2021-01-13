@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaeff850c739cd81569a88ae980acf837c413c1
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184215"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761437"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Знакомство с отладчиком Visual Studio
 
@@ -64,17 +64,17 @@ ms.locfileid: "84184215"
 
 Щелкните правой кнопкой мыши свойство или поле и выберите **Шаг с заходом в конкретное расположение**, а затем выберите один из доступных параметров.
 
-![Шаг с заходом в конкретное расположение](../debugger/media/dbg-tour-step-into-specific.png "Шаг с заходом в конкретное расположение")
+![Снимок экрана: отладчик Visual Studio с выделенной строкой кода. В контекстном меню выбран вариант "Шаг с заходом в конкретное расположение" и выбран метод Path.set.](../debugger/media/dbg-tour-step-into-specific.png)
 
 В этом примере команда **Шаг с заходом в конкретное расположение** приводит нас к коду для `Path.set`.
 
-![Шаг с заходом в конкретное расположение](../debugger/media/dbg-tour-step-into-specific-2.png "Шаг с заходом в конкретное расположение")
+![Снимок экрана: отладчик Visual Studio, отображающий код для Path.set. Фигурные скобки, окружающие функцию Set, выделены желтым цветом.](../debugger/media/dbg-tour-step-into-specific-2.png)
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Быстрое выполнение до точки в коде с помощью мыши
 
-Находясь в отладчике, наведите курсор на строку кода, пока слева не появится кнопка **выполнения до щелкнутого** (Выполнение до этого места) ![Выполнение до щелкнутого](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+Находясь в отладчике, наведите курсор на строку кода, пока слева не появится кнопка **выполнения до щелкнутого** (Выполнить до этого места) ![Снимок экрана: кнопка выполнения до щелкнутого в отладчике Visual Studio. Кнопка указывает на то, что выполнение должно происходить до строки, в которой размещена кнопка.](../debugger/media/dbg-tour-run-to-click.png) отображается слева.
 
-![Выполнение до щелкнутого](../debugger/media/dbg-tour-run-to-click-2.png "Выполнение до щелкнутого")
+![Снимок экрана: отладчик Visual Studio, отображающий кнопку выполнения до щелкнутого, появляющуюся слева от вызова функции "Обновление".](../debugger/media/dbg-tour-run-to-click-2.png)
 
 > [!NOTE]
 > Кнопка **выполнения до щелкнутого** (Выполнить до этого места) доступна начиная с версии [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].

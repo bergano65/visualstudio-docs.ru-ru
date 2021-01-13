@@ -1,6 +1,6 @@
 ---
-title: Поиск задачи отладки
-description: Определение функции отладчика, которая поможет отладить приложение
+title: Часто задаваемые вопросы. Поиск функции отладки
+description: Часто задаваемые вопросы, которые помогут вам определить функцию отладчика, которая поможет отладить приложение
 ms.custom: ''
 ms.date: 10/01/2019
 ms.topic: conceptual
@@ -11,126 +11,126 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 792b5e2d40f7299bf019fd3f9c86697bf008c391
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34aa926fca081a498173cd5fcc439a6b3886ba7
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89314905"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728035"
 ---
-# <a name="find-your-debugging-task-in-visual-studio"></a>Поиск задачи отладки в Visual Studio
+# <a name="faq---find-the-debugging-feature-you-need-in-visual-studio"></a>Часто задаваемые вопросы. Поиск нужной функции отладки в Visual Studio
 
 Если вам нужна помощь по сопоставлению задачи отладки с соответствующей функцией отладчика Visual Studio, используйте ссылки из этой статьи. Приведенный здесь список задач содержит типичные задачи, такие как приостановка кода для отладки, проверка переменных и отправка сообщений в окно **вывода**. Если вам нужны общие сведения о функциях отладчика, обратитесь к разделу [Первое знакомство с отладчиком](debugger-feature-tour.md).
 
+## <a name="fix-an-exception"></a>Исправление исключения
+
+- См. раздел [Исправление исключения](write-better-code-with-visual-studio.md#fix-an-exception).
+
 ## <a name="pause-running-code"></a>Приостановка выполнения кода
 
-### <a name="pause-running-code-to-inspect-a-line-of-code-that-may-contain-a-bug"></a>Приостановка выполнения кода для проверки строки кода, которая может содержать ошибку
+- **Приостановка выполнения кода для проверки строки кода, которая может содержать ошибку**
 
-Задайте точку останова. Для получения дополнительной информации см. раздел [Использование точек останова](using-breakpoints.md).
+  Задайте точку останова. Для получения дополнительной информации см. раздел [Использование точек останова](using-breakpoints.md).
 
-### <a name="pause-and-inspect-your-app-when-it-reaches-a-specific-state"></a>Приостановка и проверка приложения при достижении определенного состояния
+- **Приостановка и проверка приложения при достижении определенного состояния**
 
-Используйте условную точку останова, чтобы управлять тем, где и когда точка останова активируется, с помощью условной логики. Дополнительные сведения см. в разделе [Условия точек останова](using-breakpoints.md#breakpoint-conditions).
+  Используйте условную точку останова, чтобы управлять тем, где и когда точка останова активируется, с помощью условной логики. Дополнительные сведения см. в разделе [Условия точек останова](using-breakpoints.md#breakpoint-conditions).
 
-### <a name="pause-code-only-when-a-specific-objects-property-or-value-changes"></a>Приостановка кода только при изменении значения или свойства конкретного объекта
+- **Приостановка кода только при изменении значения или свойства конкретного объекта**
 
-Для C++ задайте [точку останова в данных](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus). 
-::: moniker range=">= vs-2019"
-Для приложений, использующих .NET Core 3, можно также задать [точку останова в данных](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed).
-::: moniker-end
+  Для C++ задайте [точку останова в данных](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus). 
+  ::: moniker range=">= vs-2019"
+  Для приложений, использующих .NET Core 3, можно также задать [точку останова в данных](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed).
+  ::: moniker-end
 
-В противном случае, только для C# и F#, можно [отслеживать идентификатор объекта с помощью условной точки останова](using-breakpoints.md#using-object-ids-in-breakpoint-conditions-c-and-f).
+  В противном случае, только для C# и F#, можно [отслеживать идентификатор объекта с помощью условной точки останова](using-breakpoints.md#using-object-ids-in-breakpoint-conditions-c-and-f).
 
-### <a name="pause-code-inside-a-loop-at-a-certain-iteration"></a>Приостановка кода внутри цикла на определенной итерации
+- **Приостановка кода внутри цикла на определенной итерации**
 
-Задайте точку останова, используя **количество обращений** в качестве условия. Дополнительные сведения см. в разделе [Количество обращений](using-breakpoints.md#set-a-hit-count-condition).
+  Задайте точку останова, используя **количество обращений** в качестве условия. Дополнительные сведения см. в разделе [Количество обращений](using-breakpoints.md#set-a-hit-count-condition).
 
-### <a name="pause-code-at-the-start-of-a-function-when-you-know-the-function-name-but-not-its-location"></a>Приостановка кода в начале функции, когда известно имя функции, но не ее расположение
+- **Приостановка кода в начале функции, когда известно имя функции, но не ее расположение**
 
-Это можно сделать с помощью точки останова в функции. Дополнительные сведения см. в разделе [Задание точек останова в функции](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file).
+  Это можно сделать с помощью точки останова в функции. Дополнительные сведения см. в разделе [Задание точек останова в функции](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file).
 
-### <a name="pause-code-at-the-start-of-multiple-functions-with-the-same-name"></a>Приостановка кода в начале нескольких функций с одинаковым именем
+- **Приостановка кода в начале нескольких функций с одинаковым именем**
 
-При наличии нескольких функций с одинаковыми именами (перегруженные функции или функции в разных проектах) можно использовать [точку останова в функции](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file).
+  При наличии нескольких функций с одинаковыми именами (перегруженные функции или функции в разных проектах) можно использовать [точку останова в функции](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file).
 
-### <a name="manage-and-keep-track-of-your-breakpoints"></a>Управление точками останова и их отслеживание
+- **Управление точками останова и их отслеживание**
 
-Используйте окно **Точки останова**. Дополнительные сведения см. в разделе [Управление точками останова](using-breakpoints.md#BKMK_Specify_advanced_properties_of_a_breakpoint_).
+  Используйте окно **Точки останова**. Дополнительные сведения см. в разделе [Управление точками останова](using-breakpoints.md#BKMK_Specify_advanced_properties_of_a_breakpoint_).
 
-### <a name="pause-code-and-debug-when-a-specific-handled-or-unhandled-exception-is-thrown"></a>Приостановка кода и отладка при возникновении определенного обработанного или необработанного исключения
+- **Приостановка кода и отладка при возникновении определенного обработанного или необработанного исключения**
 
-Хотя помощник по исправлению ошибок показывает, где произошла ошибка, если вы хотите приостановить выполнение и отладить конкретную ошибку, можно [велеть отладчику прервать выполнение при возникновении исключения](managing-exceptions-with-the-debugger.md#tell-the-debugger-to-break-when-an-exception-is-thrown).
+  Хотя помощник по исправлению ошибок показывает, где произошла ошибка, если вы хотите приостановить выполнение и отладить конкретную ошибку, можно [велеть отладчику прервать выполнение при возникновении исключения](managing-exceptions-with-the-debugger.md#tell-the-debugger-to-break-when-an-exception-is-thrown).
 
-### <a name="set-a-breakpoint-from-the-call-stack"></a>Задание точки останова из стека вызовов
+- **Задание точки останова из стека вызовов**
 
-Если вы хотите приостановить и отладить код при проверке потока выполнения или просмотре функций в окнах **стека вызовов**, см. раздел [Задание точки останова в окне стека вызовов](using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
+  Если вы хотите приостановить и отладить код при проверке потока выполнения или просмотре функций в окнах **стека вызовов**, см. раздел [Задание точки останова в окне стека вызовов](using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
 
-### <a name="pause-code-at-a-specific-assembly-instruction"></a>Приостановка кода в указанной инструкции сборки
+- **Приостановка кода в указанной инструкции сборки**
 
-Это можно сделать, [задав точку останова в окне дизассемблирования](using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
+  Это можно сделать, [задав точку останова в окне дизассемблирования](using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
 
 ## <a name="execute-code"></a>Выполнение кода
 
-### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>Использование команд для пошагового выполнения кода во время отладки
+- **Использование команд для пошагового выполнения кода во время отладки**
 
-Дополнительные сведения см. в разделе [Навигация по коду с помощью отладчика](navigating-through-code-with-the-debugger.md).
+  Дополнительные сведения см. в разделе [Навигация по коду с помощью отладчика](navigating-through-code-with-the-debugger.md).
 
 ## <a name="inspect-data"></a>Проверка данных
 
-### <a name="check-the-value-of-variables-while-running-your-app"></a>Проверка значений переменных во время выполнения приложения
+- **Проверка значений переменных во время выполнения приложения**
 
-Наведите указатель мыши на переменные, используя [подсказки по данным](view-data-values-in-data-tips-in-the-code-editor.md), или [проверьте переменные в окне видимых и локальных переменных](autos-and-locals-windows.md).
+  Наведите указатель мыши на переменные, используя [подсказки по данным](view-data-values-in-data-tips-in-the-code-editor.md), или [проверьте переменные в окне видимых и локальных переменных](autos-and-locals-windows.md).
 
-### <a name="observe-the-changing-value-of-a-specific-variable"></a>Наблюдение за изменением значения конкретной переменной
+- **Наблюдение за изменением значения конкретной переменной**
 
-Установите контрольное значение для переменной. Дополнительные сведения см. в разделе [Установка контрольных значений для переменных](watch-and-quickwatch-windows.md).
+  Установите контрольное значение для переменной. Дополнительные сведения см. в разделе [Установка контрольных значений для переменных](watch-and-quickwatch-windows.md).
 
-### <a name="view-strings-that-are-too-long-for-the-debugger-window"></a>Просмотр слишком длинных строк для окна отладчика
+- **Просмотр слишком длинных строк для окна отладчика**
 
-Откройте встроенный [визуализатор строк](view-strings-visualizer.md) во время отладки.
+  Откройте встроенный [визуализатор строк](view-strings-visualizer.md) во время отладки.
+
+## <a name="debug-an-app-that-is-already-running"></a>Отладка уже запущенного приложения
+
+- См. раздел [Присоединение к выполняемому процессу](attach-to-running-processes-with-the-visual-studio-debugger.md).
+
+## <a name="debug-multithreaded-applications"></a>Отладка многопоточных приложений
+
+- См. раздел [Отладка многопоточных приложений](debug-multithreaded-applications-in-visual-studio.md).
 
 ## <a name="configure-debugging"></a>Настройка отладки
 
-### <a name="customize-information-shown-in-the-debugger"></a>Настройка сведений, отображаемых в отладчике
+- **Настройка параметров отладчика**
 
-Вам может потребоваться отобразить сведения, отличные от типа объекта, в качестве значения в различных окнах отладчика. Для кода C#, Visual Basic, F#, и C++/CLI используйте атрибут [DebuggerDisplay](using-the-debuggerdisplay-attribute.md). Для более сложных вариантов можно также настроить пользовательский интерфейс, создав [пользовательский визуализатор](create-custom-visualizers-of-data.md).
+  Сведения о настройке параметров отладчика и параметров проекта отладчика см. в разделе [Параметры отладчика и подготовка](debugger-settings-and-preparation.md).
 
-Для машинного кода C++ используйте [платформу NatVis](create-custom-views-of-native-objects.md).
+- **Настройка сведений, отображаемых в отладчике**
 
-### <a name="configure-debugger-settings"></a>Настройка параметров отладчика
+  Вам может потребоваться отобразить сведения, отличные от типа объекта, в качестве значения в различных окнах отладчика. Для кода C#, Visual Basic, F#, и C++/CLI используйте атрибут [DebuggerDisplay](using-the-debuggerdisplay-attribute.md). Для более сложных вариантов можно также настроить пользовательский интерфейс, создав [пользовательский визуализатор](create-custom-visualizers-of-data.md).
 
-Сведения о настройке параметров отладчика и параметров проекта отладчика см. в разделе [Параметры отладчика и подготовка](debugger-settings-and-preparation.md).
+  Для машинного кода C++ используйте [платформу NatVis](create-custom-views-of-native-objects.md).
 
 ## <a name="additional-tasks"></a>Дополнительные задачи
 
-### <a name="fix-an-exception"></a>Исправление исключения
+- **Изменение кода во время сеанса отладки**
 
-См. раздел [Исправление исключения](write-better-code-with-visual-studio.md#fix-an-exception).
+  Используйте функцию [Изменить и продолжить](edit-and-continue.md). Для XAML используйте [Горячую перезагрузку XAML](../xaml-tools/xaml-hot-reload.md).
 
-### <a name="edit-code-during-a-debugging-session"></a>Изменение кода во время сеанса отладки
+- **Отправка сообщений в окно вывода без изменения кода**
 
-Используйте функцию [Изменить и продолжить](edit-and-continue.md). Для XAML используйте [Горячую перезагрузку XAML](../xaml-tools/xaml-hot-reload.md).
+  Задайте точку трассировки. Дополнительные сведения см. в разделе [Использование точек трассировки](using-tracepoints.md).
 
-### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Отправка сообщений в окно вывода без изменения кода
+- **Просмотр порядка, в котором вызываются функции**
 
-Задайте точку трассировки. Дополнительные сведения см. в разделе [Использование точек трассировки](using-tracepoints.md).
+  См. раздел [Просмотр стека вызовов](how-to-use-the-call-stack-window.md).
 
-## <a name="view-the-order-in-which-functions-are-called"></a>Просмотр порядка, в котором вызываются функции
+- **Отладка на удаленных компьютерах**
 
-См. раздел [Просмотр стека вызовов](how-to-use-the-call-stack-window.md).
+  См. раздел [Удаленная отладка](remote-debugging.md).
 
-### <a name="debug-on-remote-machines"></a>Отладка на удаленных компьютерах
+- **Исправление проблем производительности**
 
-См. раздел [Удаленная отладка](remote-debugging.md).
-
-### <a name="debug-an-app-that-is-already-running"></a>Отладка уже запущенного приложения
-
-См. раздел [Присоединение к выполняемому процессу](attach-to-running-processes-with-the-visual-studio-debugger.md).
-
-### <a name="debug-multithreaded-applications"></a>Отладка многопоточных приложений
-
-См. раздел [Отладка многопоточных приложений](debug-multithreaded-applications-in-visual-studio.md).
-
-### <a name="fix-performance-issues"></a>Исправление проблем производительности
-
-См. раздел [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md).
+  См. раздел [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md).

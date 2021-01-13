@@ -1,5 +1,7 @@
 ---
 title: Отладка метода OnStart | Документация Майкрософт
+description: Узнайте, как выполнить отладку метода OnStart службы Windows в Visual Studio, запустив отладчик из самого метода.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d695e4d22c728eb256aeb0e1350819ba23b93385
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 488fe471552256e8fad62bb6f831448811ca343f
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852378"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903146"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Практическое руководство. отладку метода OnStart
 Службу Windows можно отлаживать, запустив ее и подключив отладчик к процессу службы. Дополнительные сведения см. в разделе [Практическое руководство. Отладка приложений служб Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Тем не менее, для отладки метода <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> службы Windows необходимо запустить отладчик внутри метода.
@@ -42,13 +44,13 @@ ms.locfileid: "90852378"
 
     Должно появиться диалоговое окно такого вида.
 
-    ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")
+    ![Снимок экрана: диалоговое окно JIT-отладчика Visual Studio, отображающее необработанное исключение .NET Framework, возникшее в WindowsService-Asis.exe.](../debugger/media/onstartdebug.png)
 
 3. Выберите **Да, запустить отладку \<service name>.**
 
 4. В окне отладчика JIT выберите версию Visual Studio, которую необходимо использовать для отладки.
 
-    ![JustInTimeDebugger](../debugger/media/justintimedebugger.png "JustInTimeDebugger")
+    ![Снимок экрана: окно JIT-отладчика Visual Studio с параметром "Новый экземпляр Microsoft Visual Studio 2015", выбранным со списка возможных отладчиков.](../debugger/media/justintimedebugger.png)
 
 5. Запустится новый экземпляр Visual Studio, а выполнение будет остановлено на методе `Debugger.Launch()` .
 

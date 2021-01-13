@@ -1,6 +1,7 @@
 ---
 title: Изменение кода и продолжение отладки | Документация Майкрософт
-ms.custom: seodec18
+description: Используйте команду "Изменить и продолжить" во время отладки в Visual Studio, чтобы внести изменения в исходный код, пока программа находится в режиме приостановки выполнения.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/31/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3da21a833764745a7b6fc7dd001eeb4995f44d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: c335ce5a394454daacd86338a96ba51d04c88c0e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599641"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726544"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Изменение кода и продолжение отладки в Visual Studio (C#, VB, C++)
 "Изменить и продолжить" это режим, позволяющий экономить время за счет внесения изменений в исходный код, в то время как программа находится в режиме приостановки выполнения. При возобновлении выполнения программы с помощью команды **Продолжить** или **Шаг** в режиме "Изменить и продолжить" происходит автоматическое применение изменений кода с некоторыми ограничениями. Это позволяет вносить изменения в код во время сеанса отладки, без необходимости остановки, перекомпиляции всего приложения и перезапуска сеанса отладки.

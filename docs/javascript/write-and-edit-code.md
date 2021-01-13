@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a033c0fe1fd80edc7959c5f49993714982ecc805
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: bd1b12be2dba1526301cd0ea9a4356fb9cc14c14
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238184"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815741"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>Узнайте, как использовать редактор кода для JavaScript
 
@@ -40,11 +40,11 @@ ms.locfileid: "88238184"
 
 Технология IntelliSense крайне полезна при написании кода. Она может отображать сведения о доступных членах типа или сведения о параметрах для различных перегрузок метода. В следующем коде, введя строку `Router()`, вы увидите доступные для передачи типы аргументов. Эта возможность называется справкой по сигнатурам.
 
-![Использование IntelliSense](../javascript/media/write-code-signature-checking.png)
+![Снимок экрана: окна кода Visual Studio с вводимым кодом JavaScript. Информация IntelliSense отображается для функции Router().](../javascript/media/write-code-signature-checking.png)
 
 Вы также можете использовать IntelliSense для завершения слова после того, как ввели достаточно знаков для однозначного его определения. Поместив курсор после строки `data` в следующем коде и введя строку `get`, вы увидите подсказку IntelliSense со всеми функциями, определенных ранее в этом коде или в сторонних библиотеках, которые вы добавили в этот проект.
 
-![Использование IntelliSense](../javascript/media/write-code-intellisense.png)
+![Снимок экрана: окно кода Visual Studio с вводимым словом "get". Информация IntelliSense отображается для всех функций, начинающихся с "get".](../javascript/media/write-code-intellisense.png)
 
 IntelliSense также может отображать сведения о типах при наведении указателя мыши на элементы программы.
 

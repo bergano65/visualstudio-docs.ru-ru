@@ -9,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 178fef548bc52346a78c7f9e4607aad7b1c56f65
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 2d145e1383e8f6c0d7c25ae72232fdbe2a8d703d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598410"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727545"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Практическое руководство. Написание модульных тестов для библиотек DLL на C++
 
@@ -328,7 +328,7 @@ ms.locfileid: "95598410"
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Если у отдельных тестов нет зависимостей, предотвращающих выполнение этих тестов в любом порядке, включите параллельное тестирование с помощью переключателя ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) на панели инструментов. Это может заметно сократить время, необходимое для выполнения всех тестов.
+> Если у отдельных тестов нет зависимостей, предотвращающих выполнение этих тестов в любом порядке, включите параллельное тестирование с помощью выключателя ![Снимок экрана: выключатель параллельного выполнения тестов на панели инструментов Обозревателя тестов. При выборе этой кнопки тесты будут выполняться параллельно.](../test/media/ute_parallelicon-small.png) на панели инструментов. Это может заметно сократить время, необходимое для выполнения всех тестов.
 
 ::: moniker-end
 

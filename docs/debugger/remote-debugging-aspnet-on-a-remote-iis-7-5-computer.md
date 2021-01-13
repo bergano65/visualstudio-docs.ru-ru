@@ -1,5 +1,6 @@
 ---
 title: Удаленная отладка ASP.NET на компьютере со службами IIS
+description: Узнайте, как установить и настроить приложение ASP.NET MVC 4.5.2 в Visual Studio, развернуть его в службах IIS и присоединить удаленный отладчик из Visual Studio.
 ms.custom:
 - remotedebugging
 - seodec18
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: cd2b787fe546b9c53332fcdc548d3da829759755
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 8a3520220da15ef771c8cecbd7962e4448727910
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173919"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815715"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на удаленном компьютере со службами IIS
 Чтобы выполнить отладку приложения ASP.NET, развернутого в службах IIS, установите и запустите средства удаленной отладки на компьютере, где развернуто приложение, а затем подключитесь к выполняющемуся приложению из Visual Studio.
@@ -91,7 +92,7 @@ ms.locfileid: "84173919"
 
 1. Используйте установщик веб-платформы для установки ASP.NET 4.5 (из узла сервера в Windows Server 2012 R2, выберите **Получить новые компоненты веб-платформы**, а затем выполните поиск ASP.NET)
 
-    ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg_iis_aspnet_45.png "RemoteDBG_IIS_AspNet_45")
+    ![Снимок экрана: установщик веб-платформы 5.0, в окне которого отображаются результаты поиска для asp.net с компонентом IIS веб-платформы: пункт ASP.NET 4.5 обведен красным кругом.](../debugger/media/remotedbg_iis_aspnet_45.png)
 
     > [!NOTE]
     > Если вы используете Windows Server 2008 R2, установите ASP.NET 4 с помощью следующей команды:

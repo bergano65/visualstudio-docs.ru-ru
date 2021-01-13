@@ -1,5 +1,7 @@
 ---
 title: Отладка приложений | Документация Майкрософт
+description: Узнайте, как использовать отладку в Visual Studio для различных типов приложений, таких как приложения UWP, управляемый код, машинный код, код GPU и веб-приложения.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1849d6918c1fd5607c97b82c17e385d3c6521fc4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfe7bb45d2979a62d07e34b2ee44076394ff936c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535165"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727012"
 ---
 # <a name="debugging-applications"></a>Отладка приложений
 В следующих разделах выполняется отладка приложений определенных типов. Для разных типов приложений и для разных языков требуются разные параметры и методы, а также в них возникают разные проблемы, которые требуют отладки.
 
 ## <a name="debugging-for-different-types-of-applications"></a>Отладка приложений разных типов
 
-|Заголовок|Описание|
+|Title|Описание|
 |-|-|
 |[Отладка приложений UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Содержит описание способов отладки приложений UWP.|
 |[Отладка управляемого кода](../debugger/debugging-managed-code.md)|Описывает способы отладки управляемого кода (Visual C#, Visual Basic, F# и C++/CLI).|

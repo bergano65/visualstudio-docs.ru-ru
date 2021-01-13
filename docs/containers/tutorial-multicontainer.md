@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0fa7d186623b69fd83c3ed7e4ab9cc12128847d2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 93f9d5ba8bd84341e1b314c1fabca07690114e39
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037215"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729292"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Учебник. Создание многоконтейнерного приложения с помощью Docker Compose
 
@@ -46,11 +46,11 @@ ms.locfileid: "90037215"
 
 ::: moniker range="vs-2019"
 
-![Снимок экрана: создание проекта веб-приложения](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![Снимок экрана: экран "Настроить новый проект" для веб-приложения ASP.NET Core, в котором для полей "Имя проекта" и "Имя решения" установлено значение "WebFrontEnd".](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
 
 Не выбирайте **Включение поддержки Docker**. Поддержка Docker будет добавлена позже.
 
-![Снимок экрана: создание проекта веб-приложения](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![Снимок экрана: экран "Создать веб-приложение ASP.NET Core" с выбранным значением "Веб-приложение". Параметр Enable Docker Support (Включение поддержки Docker) не выбран.](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
 
 ::: moniker-end
 

@@ -1,5 +1,7 @@
 ---
 title: Папка "Отладка", диалоговое окно "Параметры" | Документация Майкрософт
+description: Ссылки на статьи с описанием диалогового окна "Параметры" для общей отладки, JIT-отладки, сведений об отладке в окне вывода и отладки символов в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 407da10e5a10ea08a75618046189a87a4ad6c5f3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ae93f22249540da0121472ce07db52e3747abf85
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738150"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726908"
 ---
 # <a name="debugging-options-dialog-box"></a>Папка "Отладка", диалоговое окно "Параметры"
 Папка **Отладка** диалогового окна **Параметры** в меню **Сервис** содержит следующие страницы, которые позволяют задавать параметры средств отладки.

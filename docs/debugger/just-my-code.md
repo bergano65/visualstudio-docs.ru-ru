@@ -1,5 +1,7 @@
 ---
 title: Отладка пользовательского кода с помощью функции "Только мой код" | Документация Майкрософт
+description: Только мой код — это функция отладки, которая автоматически обходит вызовы кода, не являющегося пользовательским. Сведения о включении, отключении и использовании этой функции.
+ms.custom: SEO-VS-2020
 ms.date: 02/13/2019
 ms.topic: how-to
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c902147bd1b7761bb6fdab1bc577af6a1990bed
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536569"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903887"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Отладка пользовательского кода с помощью функции "Только мой код"
 
@@ -277,7 +279,7 @@ ms.locfileid: "85536569"
 
 **"Eval", "Function" и "ScriptBlock"**
 
-Пары "ключ-значение" **Eval**, **Function** и**ScriptBlock** определяют, как классифицируется динамически создаваемый код:
+Пары "ключ-значение" **Eval**, **Function** и **ScriptBlock** определяют, как классифицируется динамически создаваемый код:
 
 |name|Описание|
 |-|-|

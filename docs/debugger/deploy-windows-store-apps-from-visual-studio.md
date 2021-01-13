@@ -1,6 +1,7 @@
 ---
 title: Развертывание приложений UWP | Документация Майкрософт
-ms.custom: seodec18
+description: Развертывайте приложения универсальной платформы Windows (UWP) из Visual Studio. Укажите локальное или удаленное целевое устройство для развертывания. Ознакомьтесь с вариантами развертывания.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4c58dbb32ef0a476ac7e22a840e27e389c710f97
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 70b4d862b69eeb34028fb0f782cc5c8d6acbdbce
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188278"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728204"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Развертывание приложений UWP из Visual Studio
 

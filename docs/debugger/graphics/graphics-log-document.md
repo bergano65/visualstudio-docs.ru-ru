@@ -1,5 +1,7 @@
 ---
 title: Документ журнала графики | Документация Майкрософт
+description: Сведения о документе журнала графики в Visual Studio. В этом документе записываются события графики, возникшие во время выполнения приложения в сеансе диагностики графики.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d9bdfdb23d199c50b8d7ec6520964043dee8aa6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 38dc7452493ebcd39bee5ee55c59fc70e0a6493c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735523"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727662"
 ---
 # <a name="graphics-log-document"></a>Окно журнала графики
 Документ журнала графики — это запись событий графики, возникших во время выполнения приложения в сеансе диагностики графики. После регистрации данных можно просмотреть журнал в анализаторе графики Visual Studio для диагностики проблем отрисовки и производительности.

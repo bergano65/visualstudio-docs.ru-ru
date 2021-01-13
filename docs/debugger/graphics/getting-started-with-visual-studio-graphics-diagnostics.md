@@ -1,6 +1,7 @@
 ---
 title: Начало работы с диагностикой графики | Документация Майкрософт
-ms.custom: seodec18
+description: Подготовьтесь к первому использованию диагностики графики, а затем запишите кадры из приложения Direct3D и проверите их в анализаторе графики.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/08/2020
 ms.topic: how-to
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00a802c0083a9e67a145077ff8ec5842b30eb607
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 88b22364c92a17c7200ddb261d154c7896cd1696
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600101"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727868"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Начало работы с диагностикой графики Visual Studio
 В этом разделе вы подготовитесь к первому использованию диагностики графики, а затем запишите кадры из приложения Direct3D и проверите их в анализаторе графики.

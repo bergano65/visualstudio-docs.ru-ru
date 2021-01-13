@@ -1,5 +1,7 @@
 ---
 title: Стек вызовов событий графики | Документация Майкрософт
+description: Просмотрите стек вызовов событий графики в анализаторе графики Visual Studio, чтобы выявить связь между проблемными событиями графики и исходным кодом приложения.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c221a572264bf6a6aaed9edbec66fb3c0c3ff4b9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 85712f2b8971b2b5284dab89d90eecec9010e9b4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735515"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727754"
 ---
 # <a name="graphics-event-call-stack"></a>Стек вызовов событий графики
 Стек вызовов событий графики в анализаторе графики Visual Studio позволяет выявить связь между проблемными событиями графики и исходным кодом приложения.

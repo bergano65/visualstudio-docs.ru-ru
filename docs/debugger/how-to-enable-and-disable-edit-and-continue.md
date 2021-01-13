@@ -1,6 +1,7 @@
 ---
 title: Включение и выключение режима "Изменить и продолжить" | Документация Майкрософт
-ms.custom: seodec18
+description: Сведения о том, как включить и отключить режим "Изменить и продолжить" в параметрах Visual Studio во время разработки. Операция "Изменить и продолжить" работает только в отладочных сборках.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -26,12 +27,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: ce531a0f7f9d6e26db38b5cf041f06d42209261a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 02356a407acc97b60f05641359c32305323f162e
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851402"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903536"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Практическое руководство. Включение и выключение режима "Изменить и продолжить" (C#, VB, C++)
 

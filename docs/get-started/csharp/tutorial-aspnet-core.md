@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a6b089309ca7202c01028b3323ccabfd3668e909
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 15fcc5981c5711c7c3ddcf7262649a9d3473ee55
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780982"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833329"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Учебник. Начало работы с C# и ASP.NET Core в Visual Studio
 
@@ -154,7 +154,7 @@ ms.locfileid: "91780982"
 
  1. Просмотрите файл **About.cshtml** в редакторе кода.
 
-     ![Файл About.cshtml в редакторе кода Visual Studio](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
+     ![Снимок экрана: первые десять строк файла About.cshtml в редакторе кода Visual Studio.](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
 
  1. Выберите файл **About.cshtml.cs**.
 
@@ -162,7 +162,7 @@ ms.locfileid: "91780982"
 
  1. Просмотрите файл **About.cshtml.cs** в редакторе кода.
 
-     ![Файл About.cshtml в редакторе кода Visual Studio](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
+     ![Снимок экрана: первые 18 строк файла About.cshtml.cs в редакторе кода Visual Studio. ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
 
  1. Проект содержит папку **wwwroot**, которая является корневой для веб-сайта. Разверните папку, чтобы просмотреть его содержимое.
 

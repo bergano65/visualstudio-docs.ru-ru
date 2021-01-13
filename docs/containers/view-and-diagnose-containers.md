@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 626666fc912fcff85fcfcc49425d59018778d1f6
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: fd876e86cefcd0ce50aab02de8e7f4cf37d3ab51
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742782"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729227"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Сведения о просмотре и диагностике контейнеров и изображений в Visual Studio
 
@@ -27,7 +27,7 @@ ms.locfileid: "89742782"
 
 Окно **Контейнеры** открывается автоматически при запуске контейнерного проекта .NET. Чтобы в любой момент просмотреть контейнеры в Visual Studio, нажмите клавиши **CTRL**+**Q** для активации поля поиска Visual Studio, введите `Containers` и выберите первый элемент. Окно **Контейнеры** можно также открыть из главного меню. В меню выберите **Вид** > **Другие окна** > **Контейнеры**.  
 
-![Снимок экрана: вкладка "Среда" в окне "Контейнеры"](media/view-and-diagnose-containers/container-window.png)
+![Снимок экрана: окно "Контейнеры" в Visual Studio. На левой панели выбран контейнер, а на правой — вкладка "Среда".](media/view-and-diagnose-containers/container-window.png)
 
 В левой части приводится список контейнеров на локальном компьютере. Контейнеры, связанные с решением, отображаются в разделе **Контейнеры решения**. Справа имеется область с вкладками **Среда**, **Порты**, **Журналы** и **Файлы**.
 
@@ -38,7 +38,7 @@ ms.locfileid: "89742782"
 
 На вкладке **Среда** приводятся переменные среды, имеющиеся в контейнере. Для контейнера приложения эти переменные можно задать различными способами, например в Dockerfile, в ENV-файле или с помощью параметра -e при запуске контейнера с помощью команды Docker.
 
-![Снимок экрана: вкладка "Среда" в окне "Контейнеры"](media/view-and-diagnose-containers/containers-environment-vars.png)
+![Снимок экрана: окно "Контейнеры" в Visual Studio, в котором показаны переменные пункта "Среда" для контейнера WebApplication11.](media/view-and-diagnose-containers/containers-environment-vars.png)
 
 > [!NOTE]
 > Изменения, вносимые в переменные среды, не отражаются в режиме реального времени. Кроме того, на этой вкладке приводятся системные переменные среды для контейнера, но не локальные пользовательские переменные среды для приложения.

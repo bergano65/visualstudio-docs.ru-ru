@@ -1,5 +1,6 @@
 ---
 title: Диалоговое окно "Параметры сообщения" | Документация Майкрософт
+description: Укажите в окне "Параметры сообщений", какие сообщения должны быть перечислены в представлении сообщений и какие данные сообщения должны отображаться.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97704675e1135959744e60724e4e3381bccf2b30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f066dd687f4bfbb6b286667abe0bb67224a7b763
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931324"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903588"
 ---
 # <a name="message-options-dialog-box"></a>Диалоговое окно "Параметры сообщения"
 Это диалоговое окно используется для выбора сообщений, перечисленных в [представлении сообщений](../debugger/messages-view.md). Чтобы открыть это диалоговое окно, в меню **Spy** выберите пункт **Записывать сообщения**.
@@ -43,4 +44,4 @@ ms.locfileid: "62931324"
 
  [Представления Spy++](../debugger/spy-increment-views.md). Рассказывает о представлениях Spy++ в виде дерева окон, сообщений, процессов и потоков.
 
- [Использование Spy++](../debugger/using-spy-increment.md). Содержит вводные сведения о средстве Spy++ и его использовании.
+ [Использование Spy++.](../debugger/using-spy-increment.md) Содержит вводные сведения о средстве Spy++ и его использовании.

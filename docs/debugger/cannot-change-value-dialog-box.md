@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно "Не удается изменить значение" | Документация Майкрософт
+description: Ознакомьтесь с диалоговым окном "Не удается изменить значение", которое появляется в Visual Studio, при попытке изменения значения переменной на недопустимое в окне отладчика или QuickWatch.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bf4181d7ff56bd1a5cf3f195bcea5b02aa023629
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745744"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729058"
 ---
 # <a name="cannot-change-value-dialog-box"></a>Не удается изменить значение - диалоговое окно
 ## <a name="error"></a>Ошибка

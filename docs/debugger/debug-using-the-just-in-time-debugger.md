@@ -1,5 +1,7 @@
 ---
 title: Отладка с помощью JIT-отладчика | Документация Майкрософт
+description: Отладка с помощью JIT-отладчика в Visual Studio. JIT-отладка автоматически запускает Visual Studio при возникновении ошибок или сбоев в приложении.
+ms.custom: SEO-VS-2020
 ms.date: 09/24/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: a03afa64d19e3ccd0efbb170b4305049f6bfee30
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350580"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761346"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Отладка с помощью JIT-отладчика в Visual Studio
 
@@ -128,19 +130,19 @@ JIT-отладка может оставаться включенной даже
 
    Вы увидите следующее окно команд:
 
-   ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
+   ![Снимок экрана: консоль для ThrowsNullException.exe, которая вызывает необработанное исключение, связанное с пустой ссылкой (System.NullReferenceException).](../debugger/media/throwsnullexceptionconsole.png)
 
 1. Откроется диалоговое окно **Выбор JIT-отладчика**.
 
-   ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
+   ![Снимок экрана: диалоговое окно "Выберите JIT-отладчик", которое появляется сразу же после отображения исключения в окне консоли ThrowsNullException.exe.](../debugger/media/justintimedialog.png)
 
-   В разделе **Доступные отладчики**выберите параметр **Новый экземпляр \<your preferred Visual Studio version/edition>** , если он еще не выбран.
+   В разделе **Доступные отладчики** выберите параметр **Новый экземпляр \<your preferred Visual Studio version/edition>** , если он еще не выбран.
 
 1. Нажмите кнопку **ОК**.
 
    Проект ThrowsNullException открывается в новом экземпляре Visual Studio, а выполнение остановлено в строке, вызвавшей исключение:
 
-   ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
+   ![Снимок экрана: проект ThrowsNullException в Visual Studio с выделенной строкой исходного кода, которая вызвала исключение.](../debugger/media/nullreferencesecondinstance.png)
 
 Теперь можно начать отладку. При отладке реального приложения необходимо выяснить, почему код создает исключение.
 

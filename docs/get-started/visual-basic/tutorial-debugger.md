@@ -1,6 +1,6 @@
 ---
 title: Учебник. Отладка кода Visual Basic
-description: Сведения о запуске отладчика Visual Studio, пошаговой отладке кода и просмотру данных.
+description: Узнайте о возможностях отладчика Visual Studio и о том, как запустить отладчик, пошагово пройти код и проверить данные в приложении Visual Basic.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 02/03/2020
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84ed0de3542822597c64e0866c04f719ed6c2ab7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 000b46223811490695562159822f61240d0cea66
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77027242"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847015"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Руководство. Отладка кода Visual Basic с помощью Visual Studio
 

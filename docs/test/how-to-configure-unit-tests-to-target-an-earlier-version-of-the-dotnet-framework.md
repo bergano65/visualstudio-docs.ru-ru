@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 6badbb7723bf4d8ed0c9385558204c2dc4907574
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3f90a3d42eb1390adbb242242172aea152a0a54f
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441252"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833238"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Практическое руководство. настройку модульных тестов для предыдущей версии .NET Framework
 
@@ -62,7 +62,7 @@ ms.locfileid: "95441252"
 
 4. С помощью раскрывающегося списка **Заданная исполняющая среда (все конфигурации)** измените требуемую версию на **.NET Framework 3.5** или на более позднюю, как показано в выноске В на рисунке ниже. Указывать версию клиента не следует.
 
-     ![Раскрывающийся список целевых рабочих сред](../test/media/howtoconfigureunitest35frameworkstepb.png)
+     ![Снимок экрана диалогового окна "Дополнительные параметры компилятора". Раскрывающийся список "Требуемая версия .NET Framework" выделен, и для этого параметра установлено значение ".NET Frameowrk 3.5".](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="retargeting-for-c-unit-test-projects"></a>Перенацеливание для проектов модульных тестов C#
 
@@ -74,7 +74,7 @@ ms.locfileid: "95441252"
 
 3. На вкладке **Приложение** выберите **Целевая платформа**. В раскрывающемся списке выберите **.NET Framework 3.5** или более поздней версии, как показано на следующем рисунке. Указывать версию клиента не следует.
 
-   ![Раскрывающийся список целевых рабочих сред](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   ![Иллюстрация вкладки "Приложение" панели "Свойства" Обозревателя решений, на которой выделено расположение раскрывающегося списка "Требуемая версия .NET Framework".](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="retargeting-for-ccli-unit-test-projects"></a>Перенацеливание для проектов модульных тестов C++/CLI
 

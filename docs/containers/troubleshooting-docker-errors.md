@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 31b9d8649abed0f9901aa872ff3939c25e3025b8
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: 9535a7d88cb375d97867092eddf969095c327329
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235112"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729258"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Устранение неполадок при разработке с Docker в Visual Studio
 
@@ -24,22 +24,15 @@ ms.locfileid: "87235112"
 
 ## <a name="volume-sharing-is-not-enabled-enable-volume-sharing-in-the-docker-ce-for-windows-settings--linux-containers-only"></a>Совместное использование тома не включено. Включите совместное использование тома в параметрах Docker CE для Windows (только для контейнеров Linux)
 
-Для разрешения этой проблемы:
+Управление общим доступом к файлам необходимо только при использовании Hyper-V с Docker. Если используется WSL 2, приведенные ниже действия можно опустить, а параметр общего доступа к файлам не будет отображатся. Для разрешения этой проблемы:
 
 1. Щелкните правой кнопкой мыши **Docker for Windows** (Docker для Windows) в области уведомлений, а затем выберите **Параметры**.
-1. Выберите **Shared Drives** (Общие диски) и включите общий доступ для использования системного диска вместе с диском, на котором находится проект.
+1. Выберите **Ресурсы** > **Общий доступ к файлам** и предоставьте общий доступ к нужной папке. Вы также можете предоставить доступ ко всему системному диску, однако мы не рекомендуем делать это.
 
-> [!NOTE]
-> Если файлы отображаются как совместно используемые, вам все равно нужно щелкнуть ссылку Reset credentials... (Сбросить учетные данные...) в нижней части диалогового окна, чтобы снова включить общий доступ к тому. Для продолжения работы после сброса учетных данных, возможно, потребуется перезапустить Visual Studio.
-
-![общие диски](media/troubleshooting-docker-errors/shareddrives.png)
+    ![общие диски](media/troubleshooting-docker-errors/docker-settings-image.png)
 
 > [!TIP]
 > В версиях позднее Visual Studio 2017 15.6 выдается предупреждение, если **Общие диски** не настроены.
-
-### <a name="container-type"></a>Тип контейнера
-
-При добавлении в проект поддержки Docker выберите контейнер Windows или Linux. Узел Docker должен работать на контейнерах такого же типа. Чтобы изменить тип контейнера для работающего экземпляра Docker, щелкните правой кнопкой мыши значок Docker в области уведомлений и выберите **Переключение на контейнеры Windows** или **Переключение на контейнеры Linux**.
 
 ## <a name="unable-to-start-debugging"></a>Невозможно начать отладку
 
@@ -54,7 +47,7 @@ ms.locfileid: "87235112"
 
 ## <a name="mounts-denied"></a>Отказ в подключении
 
-При использовании Docker для macOS может появиться ошибка со ссылкой на папку /usr/local/share/dotnet/sdk/NuGetFallbackFolder. Добавьте папку на вкладку общего доступа к файлам в Docker
+При использовании Docker для macOS может появиться ошибка со ссылкой на папку /usr/local/share/dotnet/sdk/NuGetFallbackFolder. Добавьте папку на вкладку общего доступа к файлам в Docker.
 
 ## <a name="docker-users-group"></a>Группа пользователей Docker
 
@@ -83,15 +76,29 @@ net localgroup docker-users DOMAIN\username /add
 
 ## <a name="low-disk-space"></a>Недостаточно места на диске
 
-По умолчанию Docker хранит образы в папке *%ProgramData%/Docker/* , которая обычно находится на системном диске — *C:\ProgramData\Docker\*. Чтобы образы не занимали место на системном диске, можно изменить расположение папки образов.  С помощью значка Docker на панели задач откройте параметры Docker, выберите **Управляющая программа** и переключите режим с **Базовый** на **Расширенный**. На панели редактирования добавьте параметр свойства `graph`, указывающий требуемое расположение для образов Docker:
+По умолчанию Docker хранит образы в папке *%ProgramData%/Docker/* , которая обычно находится на системном диске — *C:\ProgramData\Docker\*. Чтобы образы не занимали место на системном диске, можно изменить расположение папки образов. Для этого сделайте следующее:
+
+ 1. Щелкните правой кнопкой мыши значок Docker на панели задач и выберите **Параметры**.
+ 1. Выберите **Docker Engine** (Обработчик Docker). 
+ 1. На панели редактирования добавьте параметр свойства `graph`, указывающий требуемое расположение для образов Docker:
 
 ```json
     "graph": "D:\\mypath\\images"
 ```
 
-![Снимок экрана: параметр расположения образов Docker](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+![Снимок экрана: общий доступ к файлам в Docker](media/troubleshooting-docker-errors/docker-daemon-settings.png)
 
-Нажмите кнопку **Применить**, чтобы перезапустить Docker. Эти действия изменяют файл конфигурации: *%ProgramData%\docker\config\daemon.json*. Ранее созданные образы не перемещаются.
+Нажмите **Применить и перезагрузить**. Эти действия изменяют файл конфигурации: *%ProgramData%\docker\config\daemon.json*. Ранее созданные образы не перемещаются.
+
+## <a name="container-type-mismatch"></a>Несоответствие типов контейнеров
+
+При добавлении в проект поддержки Docker выберите контейнер Windows или Linux. Если узел сервера Docker не настроен на запуск того же типа контейнера, что и целевой объект проекта, то, скорее всего, появится сообщение об ошибке, аналогичное приведенному ниже:
+
+![Снимок экрана: несоответствие узла Docker и проекта](media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png)
+
+Для разрешения этой проблемы:
+
+- В области уведомлений щелкните правой кнопкой мыши значок Docker для Windows и выберите **Switch to Windows containers...** (Переключиться на контейнеры Windows...) или **Switch to Linux containers...** (Переключиться на контейнеры Linux...).
 
 ## <a name="microsoftdockertools-github-repo"></a>Репозиторий GitHub Microsoft/DockerTools
 
