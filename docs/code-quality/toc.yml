@@ -453,6 +453,12 @@
           href: how-to-generate-code-metrics-data.md
         - name: Работа с данными метрик кода
           href: working-with-code-metrics-data.md
+        - name: Ресурсы
+          items:
+            - name: Диапазон для индекса удобства поддержки и его значение
+              href: code-metrics-maintainability-index-range-and-meaning.md
+            - name: Взаимозависимость классов
+              href: code-metrics-class-coupling.md
 - name: Анализ кода C++
   items:
     - name: "Анализ кода\_C и\_C++"
