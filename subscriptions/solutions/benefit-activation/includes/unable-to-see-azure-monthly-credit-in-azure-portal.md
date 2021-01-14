@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: f12da1b45520de87bfd94f5b4597d10820968a11
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 48f52f1381bb890942e6f5ed3f1772c0735b1fb8
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916110"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147369"
 ---
 ## <a name="im-unable-to-see-my-azure-monthly-credit-in-the-azure-portal"></a>На портале Azure не отображается мой доступный ежемесячный кредит Azure.
 
@@ -29,10 +29,12 @@ ms.locfileid: "96916110"
 
 Вам потребуется войти на [портал Azure](https://portal.azure.com/), указав адрес электронной почты, который использовался для настройки учетной записи. Например, если вы активировали месячный кредит с помощью альтернативной учетной записи, для входа в подписку Azure всегда следует использовать этот адрес. 
 
-## <a name="azure-directories"></a>Каталоги Azure 
+## <a name="azure-directories"></a>Каталоги Azure
+ 
 В рамках подписки Azure можно использовать несколько каталогов. Убедитесь, что вы используете каталог, в котором настроена подписка Azure. Для просмотра и переключения каталогов можно использовать значок учетной записи в правом верхнем углу на портале Azure. 
 
-## <a name="how-to-activate"></a>Способ активации
+## <a name="how-to-activate-your-azure-monthly-credit"></a>Как активировать свой ежемесячный кредит Azure
+
 1. Войдите на [портал подписок](https://my.visualstudio.com/benefits).  
 1. Найдите плитку "Персональный кредит Azure для разработки и тестирования" в разделе "Средства" на странице "Преимущества" и щелкните ссылку "Активировать" в нижней части плитки преимуществ. Если вы не можете найти плитку с месячным кредитом Azure, воспользуйтесь [страницей сравнений преимуществ](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription), чтобы убедиться, что ваша подписка включает ежемесячный кредит. 
 1. Если у вас нет подписки Azure, вам потребуется указать личные данные, необходимые для создания такой подписки.  
@@ -42,7 +44,7 @@ ms.locfileid: "96916110"
 
 На подписки Azure, создаваемые с использованием преимущества подписок Visual Studio, могут распространяться ограничения, которые не применяются к платным подпискам. В некоторых географических регионах может быть недоступно создание виртуальных машин и служб Azure. Также могут быть недоступны некоторые типы служб. Кроме того, назначаемая по умолчанию квота может быть ниже по сравнению с платными подписками. 
 
-## <a name="more-information"></a>Дополнительные сведения 
+## <a name="more-information-about-azure-monthly-credits"></a>Дополнительные сведения об ежемесячном кредите Azure
 
 [Дополнительные сведения](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure) об активации, правах на доступ и других ресурсах поддержки.  
 

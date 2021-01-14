@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, ems
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: df582df95932ae82e9be319f347f79745e1ad277
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 065527c86384e6eef46149ecc7d9606268bc1695
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916113"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147603"
 ---
 ## <a name="im-unable-to-activate-my-enterprise-mobility--security-ems-benefit"></a>Не удается активировать преимущество Enterprise Mobility + Security (EMS).
 
@@ -40,6 +40,6 @@ ms.locfileid: "96916113"
 
 После того как вы удалите подписку Office 365 E3 и создадите подписку Microsoft 365 E5, которая ее заменит, клиент Office 365 E3 будет доступен в течение 60 дней, чтобы можно было перенести данные. 
 
-## <a name="more-information"></a>Дополнительные сведения 
+## <a name="more-information-about-office-365-e3-subscriptions"></a>Дополнительные сведения о подписках Office 365 E3
 
 [Узнайте подробнее](https://docs.microsoft.com/visualstudio/subscriptions/vs-m365) о правах, способах перехода с Office 365 E3 на Microsoft 365, а также ознакомьтесь со связанными с этим вопросами и ответами.  

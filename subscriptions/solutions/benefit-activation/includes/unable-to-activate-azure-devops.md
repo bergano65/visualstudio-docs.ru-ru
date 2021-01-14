@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure-devops
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 3980e21fd1ac1f96015725c80bb4b5994e30e529
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 7bd0cf67d86062b73bfdfe2461ace98e8ef43639
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916121"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147613"
 ---
 ## <a name="im-unable-to-activate-my-azure-devops-benefit"></a>Не удается активировать преимущество Azure DevOps.
 
@@ -26,5 +26,5 @@ ms.locfileid: "96916121"
 1. Вы будете перенаправлены в Azure DevOps, где необходимо принять условия соглашения о предоставлении услуг. 
 1. Войдите в Azure DevOps, используя адрес электронной почты, который вы используете для входа в подписку Visual Studio. Если вы предпочитаете использовать для входа другой адрес электронной почты, можно [создать альтернативную учетную запись](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity), чтобы связать подписку. Это позволит вам получить доступ к Azure DevOps, используя оба адреса электронной почты. 
 
-## <a name="more-information"></a>Дополнительные сведения 
+## <a name="more-information-about-subscription-eligibility"></a>Дополнительные сведения о соответствии подписок требованиям 
 [Узнайте подробнее](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-devops) о доступности по уровням подписки.

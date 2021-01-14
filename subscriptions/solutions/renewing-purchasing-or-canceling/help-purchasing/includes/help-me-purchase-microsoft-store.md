@@ -10,12 +10,12 @@ user.type: subscriber, admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: b16123ef691036c027ac6046616699624e53b10a
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 90c56d7be8e4f3e687ff602619b5eda80807b030
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916182"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147390"
 ---
 ## <a name="purchase-subscriptions-through-microsoft-store"></a>Приобретение подписок через Microsoft Store 
 
@@ -37,7 +37,7 @@ ms.locfileid: "96916182"
 1. Нажмите "Скачать – создать" и добавьте в корзину. Примечание. Иногда в магазине по умолчанию отображается цена продления. Убедитесь, что вы приобретаете новую подписку. При покупке по цене продления в магазине не проверяется наличие текущей подписки. Вы не сможете активировать продление без текущей подходящей подписки.
 1. Извлекать для изменения. На странице подтверждения вам будет предоставлен ключ продукта для активации подписки. Инструкции приведены ниже. 
 
-## <a name="how-to-activate"></a>Способ активации  
+## <a name="how-to-activate-your-subscription"></a>Как активировать подписку 
 
 Когда вы приобрели подписку Visual Studio в Microsoft Store, вы можете начать процесс активации на странице подтверждения оплаты или через сообщение электронной почты, которое вы получили после покупки. 
 
@@ -47,7 +47,7 @@ ms.locfileid: "96916182"
 
 Теперь эта подписка появится на странице  [Подписки](https://my.visualstudio.com/subscriptions), и вы сможете воспользоваться любым из ее преимуществ. 
 
-## <a name="more-information"></a>Дополнительные сведения 
+## <a name="compare-subscription-benefits"></a>Сравнение преимуществ подписок
 
 [Сравните преимущества и цены на подписки](https://visualstudio.microsoft.com/vs/pricing/) , чтобы ознакомиться с преимуществами каждой подписки Visual Studio. 
 

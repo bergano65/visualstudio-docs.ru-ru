@@ -10,12 +10,12 @@ user.type: subscriber
 tags: billing
 subscription.type: vl, cloud, retail, partner
 sap.id: 2db8f927-5814-835b-cc9d-daab30a7a09e
-ms.openlocfilehash: a7121ac942b074b0414c00ee791ccf37bf8320bd
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: fa95610b98d8731b486392d927452b8d42576f28
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916142"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147458"
 ---
 ## <a name="how-do-i-view-my-bill"></a>Как просмотреть мой счет?
 
@@ -34,5 +34,5 @@ ms.locfileid: "96916142"
 
 Если вы удалили ограничение на расходы на подписку Azure, преобразованную в подписку с оплатой по мере использования, вы получаете преимущества расценок на разработку и тестирование уровня Enterprise, доступные только для подписчиков Visual Studio, или, если вы хотите использовать службы в других областях, помимо разработки и тестирования, охватываемые ежемесячным кредитом, за услуги ежемесячно будет выставляться соответствующий счет.  
 
-## <a name="more-information"></a>Дополнительные сведения 
+## <a name="more-information-about-billing"></a>Дополнительные сведения о выставлении счетов
 Ответы на часто задаваемые вопросы об использовании и расходах. Ознакомьтесь с [вопросами и ответами о выставлении счетов](https://docs.microsoft.com/azure/cost-management-billing/manage/getting-started). 

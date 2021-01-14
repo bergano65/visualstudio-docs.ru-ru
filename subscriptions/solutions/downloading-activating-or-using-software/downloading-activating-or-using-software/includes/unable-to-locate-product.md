@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: c862de5bc5006abc60650a26132453f260a51a89
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: e4d24412ab4e3aee22a9184d23ddbefb6ceb35fa
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916150"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147407"
 ---
 ## <a name="im-unable-to-locate-the-product-i-need-to-download"></a>Не удается найти продукт, который нужно скачать.
 
@@ -30,8 +30,8 @@ ms.locfileid: "96916150"
 1. Здесь представлен список популярных файлов для скачивания, либо можно выполнить поиск определенного продукта. Примечание. Если ваш адрес для входа связан с несколькими подписками, всегда будут отображаться доступные варианты для самого высокого уровня из ваших подписок, независимо от того, какую из них вы просматриваете.
 1. Нажмите "получить ключ", чтобы просмотреть все ключи, доступные для продукта, который вы хотите скачать. Затем щелкните "запросить ключ", чтобы запросить ключ продукта, если для загрузки требуется ключ, чтобы начать работу. 
 
-## <a name="product-keys-page"></a>Страница ключей продуктов 
+## <a name="find-available-product-keys"></a>Поиск доступных ключей продуктов
 Также можно посетить страницу [Ключи продуктов](https://my.visualstudio.com/productkeys) , где указаны все доступные ключи. Можно внести изменения в столбец "Примечания", чтобы указать, когда и зачем вы запросили ключ. 
 
-## <a name="more-information"></a>Дополнительные сведения 
+## <a name="more-information-about-product-keys"></a>Дополнительные сведения о ключах продуктов
 [Узнайте подробнее](https://docs.microsoft.com/visualstudio/subscriptions/find-keys) о поиске и запросе ключей продуктов и файлов для загрузки.  

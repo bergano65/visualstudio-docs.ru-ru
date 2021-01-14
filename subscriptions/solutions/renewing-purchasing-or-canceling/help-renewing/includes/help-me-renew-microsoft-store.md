@@ -10,12 +10,12 @@ user.type: subscriber
 tags: renewing
 subscription.type: retail
 sap.id: b324c31f-5d44-4cc2-537a-9c354bc5fbfc
-ms.openlocfilehash: c888f89c7fa6a02a18539493e2fda5afc5298712
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: f518f4458181d39a140ee5652b08ea861f2130ee
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916174"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147550"
 ---
 ## <a name="renewing-subscriptions-through-microsoft-store"></a>Продление подписок с помощью Microsoft Store 
 
@@ -23,7 +23,7 @@ ms.locfileid: "96916174"
 
 Если срок действия подписки не истек, дату окончания срока действия можно просмотреть на портале [Подписки](https://my.visualstudio.com/subscriptions). 
 
-## <a name="subscriptions-available"></a>Доступные подписки 
+## <a name="subscriptions-available-for-renewal"></a>Подписки, доступные для возобновления
 
 Розничные подписки Visual Studio, доступные для продления в Microsoft Store, включают: 
 
