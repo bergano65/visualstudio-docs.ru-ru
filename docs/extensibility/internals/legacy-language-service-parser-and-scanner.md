@@ -1,5 +1,7 @@
 ---
 title: Анализатор и сканер языковой службы прежних версий | Документация Майкрософт
+description: Сведения о средстве синтаксического анализа и сканера языковой службы прежних версий, которые выбирают сведения о отображаемом коде.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c87f447a4b8bca804d27aae4967f4adaf389c627
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707318"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204609"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Средство синтаксического анализа и сканер языковой службы прежних версий
 Средство синтаксического анализа является основой языковой службы. Для классов языка Managed Package Framework (MPF) требуется средство синтаксического анализа языка, чтобы выбрать сведения о отображаемом коде. Средство синтаксического анализа разделяет текст на лексические токены, а затем определяет эти токены по типу и функциональности.
@@ -45,10 +47,10 @@ namespace MyNamespace
 |=|оператор|
 |{ } ( ) ;|разделитель|
 |MyNamespace, MyClass, MyFunction, arg1, var1|идентификатор|
-|MyNamespace|namespace|
+|MyNamespace|пространство имен|
 |MyClass|class|
 |MyFunction|method|
-|arg1|параметр|
+|arg1|parameter|
 |var1|локальная переменная|
 
  Роль средства синтаксического анализа заключается в определении токенов. Некоторые токены могут иметь более одного типа. После того как анализатор определил маркеры, языковая служба может использовать эти сведения для предоставления полезных функций, таких как выделение синтаксиса, сопоставление фигурных скобок и операции IntelliSense.
@@ -112,7 +114,7 @@ namespace MyNamespace
 
 12. Готово.
 
-### <a name="summary"></a>Итоги
+### <a name="summary"></a>Сводка
  Парная операция скобок обычно ограничена простыми парами языковых элементов. Более сложные элементы, такие как парные триадные ("", "" и "", "", "" `if(...)` `{` `}` `else` `{` и "" `}` ), могут быть выделены в рамках операции завершения слова. Например, при завершении слова «else» соответствующий `if` оператор «» может быть выделен. Если существовал ряд `if` / `else if` инструкций, все они могут быть выделены с помощью того же механизма, что и парные скобки. <xref:Microsoft.VisualStudio.Package.Source>Базовый класс уже поддерживает это, как показано ниже. сканер должен вернуть значение триггера маркера в <xref:Microsoft.VisualStudio.Package.TokenTriggers> сочетании со значением триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> для токена, который находится перед позицией курсора.
 
  Дополнительные сведения см. [в разделе Сопоставление фигурных скобок в языковой службе прежних версий](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).
@@ -131,7 +133,7 @@ namespace MyNamespace
 
  <xref:Microsoft.VisualStudio.Package.AuthoringSink>Объект передается в средство синтаксического анализа как часть <xref:Microsoft.VisualStudio.Package.ParseRequest> объекта, а новый <xref:Microsoft.VisualStudio.Package.AuthoringSink> объект создается каждый раз при <xref:Microsoft.VisualStudio.Package.ParseRequest> создании нового объекта. Кроме того, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод должен возвращать <xref:Microsoft.VisualStudio.Package.AuthoringScope> объект, который используется для управления различными операциями IntelliSense. <xref:Microsoft.VisualStudio.Package.AuthoringScope>Объект поддерживает список для объявлений и список методов, каждый из которых заполняется в зависимости от причины синтаксического анализа. <xref:Microsoft.VisualStudio.Package.AuthoringScope>Класс должен быть реализован.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Реализация языковой службы прежних версий](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [Обзор языковой службы прежних версий](../../extensibility/internals/legacy-language-service-overview.md)
 - [Цветовая маркировка синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

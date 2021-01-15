@@ -1,5 +1,7 @@
 ---
 title: Управление параметрами конфигурации | Документация Майкрософт
+description: Узнайте, как управлять параметрами конфигурации проекта и решения в Visual Studio для управления построением, упаковкой, развертыванием и запуском проекта.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e18c308d74f8c20267c286c47d0e89bf82cd2850
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34f772b780cda825861e11e6816d1d88405f74e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707300"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204535"
 ---
 # <a name="managing-configuration-options"></a>Управление параметрами конфигурации
 При создании нового типа проекта необходимо управлять параметрами конфигурации проекта и решения, которые определяют, как будет выполняться сборка, упаковка, развертывание и запуск проекта. В следующих разделах рассматривается конфигурация проекта и решения.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Обзор](../../extensibility/internals/configuration-options-overview.md)
 
  Описывает, как проекты в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] могут поддерживать несколько конфигураций.
@@ -49,7 +51,7 @@ ms.locfileid: "80707300"
 
  Описание процессов сборки, поддерживаемых каждой конфигурацией, а также интерфейсов и методов, с помощью которых можно сделать доступными выходные элементы.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 - [Типы проектов](../../extensibility/internals/project-types.md)
 
  Содержит общие сведения о проектах в качестве основных стандартных блоков [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE). Имеются ссылки на дополнительные разделы, объясняющие, как проекты управляют сборкой и компиляцией кода.

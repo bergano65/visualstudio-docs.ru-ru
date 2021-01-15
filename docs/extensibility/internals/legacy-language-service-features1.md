@@ -1,5 +1,7 @@
 ---
 title: Устаревшая языковая служба Features1 | Документация Майкрософт
+description: Сведения о функциях Visual Studio, которые поддерживаются в языковой службе для платформы управляемых пакетов (MPF).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f2a4010529d3d9727ceb76d6a34f2cbc41b959
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e099798ff5fcc96e798742b16ba88e522a4bc0b
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238495"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205064"
 ---
 # <a name="legacy-language-service-features-1"></a>Функции языковой службы прежних версий 1
 Языковая служба управляемого пакета (MPF) может поддерживать одну или несколько [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] функций, таких как выделение синтаксиса, IntelliSense и проверка точки останова. Каждая функция может быть реализована независимо от других, но для всех требуется средство синтаксического анализа и сканер, за исключением выделения синтаксиса, для которого требуется только сканер.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Парные фигурные скобки в языковой службе прежних версий](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
 
  Описывает, что требуется для поддержки сопоставления пар языков, также известных как Парные фигурные скобки.
@@ -77,7 +79,7 @@ ms.locfileid: "88238495"
 
  Описывает, что может сделать языковая служба для поддержки проверки точек останова за пределами отладчика.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 - [Средство синтаксического анализа и сканер языковой службы прежних версий](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 
  Описывает средство синтаксического анализа и сканер, необходимые для реализации всех функций языковой службы, использующей платформу управляемых пакетов.

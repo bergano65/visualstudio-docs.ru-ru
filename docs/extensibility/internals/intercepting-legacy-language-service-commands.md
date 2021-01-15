@@ -1,5 +1,7 @@
 ---
 title: Перехват команд языковой службы прежних версий | Документация Майкрософт
+description: Узнайте, как использовать фильтры команд в Visual Studio для перехвата команд языковой службы прежних версий и добавления поведения для конкретного языка.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5206bced8b4bfae32498434765e5c3f61801b386
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b67ffab5935b0e52ee6c403f2e38e7bbafab2d06
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707450"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205194"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Перехват команд языковой службы прежних версий
 В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] можно использовать команды перехвата языковой службы, которые в противном случае будут обработаны текстовым представлением. Это полезно для поведения конкретного языка, которое не управляется представлением текста. Вы можете перехватить эти команды, добавив один или несколько фильтров команд в текстовое представление из языковой службы.

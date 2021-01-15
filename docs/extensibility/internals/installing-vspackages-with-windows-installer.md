@@ -1,5 +1,7 @@
 ---
 title: Установка пакетов VSPackage с помощью установщик Windows | Документация Майкрософт
+description: Узнайте, как использовать Microsoft установщик Windows для установки VSPackage и зависимых файлов, а также для регистрации и интеграции их в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a7ace9203cd8f21a9e9ab5dc525bf604aeff678
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ec49e5184071e0640d671ba0baaad8ac049fea25
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012208"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205239"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Установка пакетов VSPackage с помощью установщика Windows
 Интеграция пакета VSPackage в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] требует больше, чем просто копирование файлов на компьютер пользователя. Установщик VSPackage должен установить пакет VSPackage и зависимые от него файлы, а также зарегистрировать и интегрировать их в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Пакет VSPackage может использовать преимущества функций интеграции, таких как отображение значка на [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] экране-заставке и диалоговом окне о программе.
 
  Файлы Microsoft установщик Windows являются рекомендуемым способом распространения пакетов VSPackage. Простые в использовании пакеты установщик Windows могут работать в любой операционной системе Windows, поддерживаемой [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Дополнительные сведения см. в разделе [установщик Windows](/previous-versions/2kt85ked(v=vs.120)).
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Основные сведения об установщике Windows](../../extensibility/internals/windows-installer-basics.md)
 
  Содержит общие сведения о установщик Windows.

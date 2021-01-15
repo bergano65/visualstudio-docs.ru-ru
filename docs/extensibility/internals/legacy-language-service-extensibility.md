@@ -1,5 +1,7 @@
 ---
 title: Расширение устаревшей языковой службы | Документация Майкрософт
+description: Сведения о структуре, реализации и расширении устаревших языковых служб в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81b5ec3de8d7b0b9466e162c3ee193c130634cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 313d1d7bb74ccb456173474f7f0e3140814755bd
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707411"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205077"
 ---
 # <a name="legacy-language-service-extensibility"></a>Расширяемость языковой службы прежних версий
 Языковая служба предоставляет зависящую от языка поддержку редактирования исходного кода в интегрированной среде разработки.
@@ -25,7 +27,7 @@ ms.locfileid: "80707411"
 
  В этом разделе обсуждается структура и реализация устаревшей языковой службы.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Миграция языковой службы прежних версий](../../extensibility/internals/migrating-a-legacy-language-service.md)
 
  В этой статье объясняется, как обновить языковую службу с Visual Studio 2008 до последней версии.
@@ -50,7 +52,7 @@ ms.locfileid: "80707411"
 
  Описывает библиотеки и средства, позволяющие просматривать древовидные представления символов в интегрированной среде разработки.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 - [Расширения редактора и языковой службы](../../extensibility/editor-and-language-service-extensions.md)
 
  Содержит общие сведения о редакторах Visual Studio.

@@ -1,5 +1,7 @@
 ---
 title: Список доступных служб | Документация Майкрософт
+description: Просмотрите список доступных служб, поддерживаемых Visual Studio и пакетом SDK для Visual Studio, включая идентификаторы GUID службы для получения интерфейса для каждой службы.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302d4bcff647a74acc973c47e0b62e66c86e5859
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53ab3531e67be540f7c66da52b7e5152a510fa27
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707344"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204648"
 ---
 # <a name="list-of-available-services"></a>Список доступных служб
 
@@ -26,7 +28,7 @@ ms.locfileid: "80707344"
 
 ## <a name="the-services"></a>Службы
 
-| Служба | Интерфейс | Visual Studio | Visual Studio 2005 | Описание |
+| Служба | Интерфейс | Visual Studio | Visual Studio 2005 | Описание |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Да | Да | Используется пакетом VSPackage для получения <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> интерфейса из элемента управления ActiveX для упрощения асинхронной передачи данных. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | Нет | Да | Получает объект расширения времени разработки (DTE), используемый для автоматизации.<br /><br /> ИДЕНТИФИКАТОР C/C++: SID_SDTE |
@@ -140,7 +142,7 @@ ms.locfileid: "80707344"
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextSpanSet> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextSpanSet> | Да | Да | Предоставляет доступ к списку диапазонов текста в текстовом изображении или буфере. Эта служба обычно реализуется в контейнере документов и ссылается на текущий документ. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadedWaitDialog> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadedWaitDialog> | Нет | Да | Позволяет пакету VSPackage отображать диалоговое окно, которое ожидает в другом потоке (используется для ожидания фоновых задач). |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadPool> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadPool> | Нет | Да | Позволяет пакету VSPackage инициировать фоновые задачи, которые затем обслуживаются [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | Да | Да | Предоставляет доступ к **панели элементов**интегрированной среды разработки. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | Да | Да | Предоставляет доступ к **панели элементов** интегрированной среды разработки. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxActiveXDataProvider> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider> | Да | Да | Позволяет пакету VSPackage получать данные из элементов **панели элементов** . |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxDataProviderRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProviderRegistry> | Нет | Да | Позволяет пакету VSPackage зарегистрировать поставщик данных панели элементов без затрат на производительность при предварительной загрузке всего **набора инструментов**. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolsOptions> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolsOptions> | Нет | Да | Включает пакет VSPackage, чтобы определить, открыто ли диалоговое окно " **Параметры** ", и обновить видимость страницы "все параметры". |
@@ -158,6 +160,6 @@ ms.locfileid: "80707344"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Да | Да | Включает VSPackage для получения фрейма окна, в котором может находиться пакет или часть пакета. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | Да | Да | Предоставляет доступ к файлам документации в формате XML, связанным с определенным файлом метаданных. |
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Использование и предоставление служб](../../extensibility/using-and-providing-services.md)

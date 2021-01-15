@@ -1,5 +1,7 @@
 ---
 title: Основы языковой службы прежних версий | Документация Майкрософт
+description: Узнайте о функциях, доступных в предыдущих языковых службах, которые позволяют интегрировать язык программирования в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 501bccf755293e86e8a9dc23fce125a10c882376
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffa21b619ef17be3fa649732a2b6e3bcd700dda6
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707426"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205155"
 ---
 # <a name="legacy-language-service-essentials"></a>Основные компоненты языковой службы прежних версий
 Для интеграции языка программирования в Visual Studio необходимо предоставить языковую службу. В этом разделе объясняются функции, доступные в предыдущих языковых службах.
@@ -45,4 +47,4 @@ ms.locfileid: "80707426"
 | Компонент | Описание |
 |-----------------------| - |
 | Вычислители выражений | Поддерживает [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладчик, проверяя точки останова и предоставляя список выражений, отображаемых в окне " **видимые** отладки".<br /><br /> Дополнительные сведения см. в разделе [Поддержка языковой службы для отладки](../../extensibility/internals/language-service-support-for-debugging.md). |
-| Средства обзора символов | Поддерживает **Обозреватель объектов**, **представление классов**, **Обозреватель вызовов**и **Поиск результатов поиска символов**. |
+| Средства обзора символов | Поддерживает **Обозреватель объектов**, **представление классов**, **Обозреватель вызовов** и **Поиск результатов поиска символов**. |

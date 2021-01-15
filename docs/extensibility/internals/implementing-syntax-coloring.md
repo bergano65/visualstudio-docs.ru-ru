@@ -1,5 +1,7 @@
 ---
 title: Применение цветового выделения синтаксиса | Документация Майкрософт
+description: Узнайте, как реализовать цветовую раскраску синтаксиса в Visual Studio с помощью функций языковой службы платформы управляемого пакета (MPF).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb3f26f59d7cbc994da1d2537e0ab352ce12205e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 195cf7a26b1615b7c56f3f0d06cfd9e0d44a4384
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905209"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204674"
 ---
 # <a name="implementing-syntax-coloring"></a>Реализация цветовой маркировки синтаксиса
 Если языковая служба предоставляет цветовую раскраску синтаксиса, средство синтаксического анализа преобразует строку текста в массив цветных элементов и возвращает типы токенов, соответствующие этим цветовым элементам. Средство синтаксического анализа должно возвращать типы токенов, принадлежащие списку цветовых элементов. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Отображает каждый цветовой элемент в окне кода в соответствии с атрибутами, назначенными объектом тонирования, соответствующему типу токена.
@@ -62,7 +64,7 @@ ms.locfileid: "85905209"
 ## <a name="managed-package-framework-colorizer"></a>Цветовой пакет для платформы управляемых пакетов
  Платформа управляемого пакета (MPF) предоставляет все классы, необходимые для реализации выделения цветом. Класс языковой службы должен наследовать <xref:Microsoft.VisualStudio.Package.LanguageService> класс и реализовать необходимые методы. Необходимо предоставить сканер и средство синтаксического анализа, реализовав <xref:Microsoft.VisualStudio.Package.IScanner> интерфейс, и вернуть экземпляр этого интерфейса из <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> метода (один из методов, которые должны быть реализованы в <xref:Microsoft.VisualStudio.Package.LanguageService> классе). Дополнительные сведения см. [в разделе тонирование синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Практическое руководство. Использование встроенных цветных элементов](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [Настраиваемые цветные элементы](../../extensibility/internals/custom-colorable-items.md)
 - [Разработка языковой службы прежних версий](../../extensibility/internals/developing-a-legacy-language-service.md)

@@ -1,5 +1,7 @@
 ---
 title: Интерфейсы языковой службы прежних версий | Документация Майкрософт
+description: Сведения о интерфейсах, доступных в пакете SDK для Visual Studio, которые предоставляют функции устаревшей языковой службы.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89d80d6961f5eaf91721567ccb0efa73bbe31406
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb694389bbf6f913db084dca29f7787c6283d3ad
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707385"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205033"
 ---
 # <a name="legacy-language-service-interfaces"></a>Интерфейсы языковой службы прежних версий
 Для любого конкретного языка программирования в каждый момент времени может существовать только один экземпляр языковой службы. Однако одна языковая служба может обслуживать несколько редакторов.
@@ -50,6 +52,6 @@ ms.locfileid: "80707385"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|Позволяет изменять текстовое представление с помощью обработчика команд. Класс, в котором реализуется <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> интерфейс, должен также реализовать <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс. Текстовое представление получает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> объект, запрашивая <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> объект, который передается в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> метод. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>Для каждого представления должен быть один объект.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Перехватывает команды, которые пользователь вводит в окно кода. Отслеживайте выходные данные <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> реализации, чтобы предоставить пользовательские сведения о завершении и просмотреть изменения<br /><br /> Чтобы передать <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> объект в текстовое представление, вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> .|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Разработка языковой службы прежних версий](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [Контрольный список. Создание языковой службы прежних версий](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

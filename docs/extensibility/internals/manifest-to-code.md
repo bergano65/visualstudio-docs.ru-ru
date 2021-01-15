@@ -1,5 +1,7 @@
 ---
 title: Manifest to Code | Документация Майкрософт
+description: Узнайте, как использовать манифест из средства Code, который принимает файл имажеманифест для использования со службой образов Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e21f266cc0dea39cfbaba660ef3557af6023c104
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ca43ac07bbdcec98cd204cb2720ac9f2cdef1f1
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536127"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204557"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Средство Manifest to Code — это консольное приложение, которое принимает файл имажеманифест для службы изображений Visual Studio и создает файл оболочки или файлы для ссылки на значения манифеста изображения в файлах C++, C#, VB или vsct для расширений Visual Studio. Это средство создает файлы оболочек, которые можно использовать для непосредственного запроса изображений из службы изображений Visual Studio или для передачи значений манифеста через API, если код не обрабатывает какой-либо собственный пользовательский интерфейс и отрисовку.
