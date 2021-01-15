@@ -1,5 +1,7 @@
 ---
 title: Пошаговое выполнение служб WCF | Документация Майкрософт
+description: Пошаговое выполнение служб Windows Communication Foundation (WCF). Если служба WCF находится в том же решении Visual Studio, что и клиент, можно задавать точки останова внутри нее.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ca1e4d2b7e0349ea5a41c6fc66726226ecab4f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 428f5576b595797605abff2ebc5f4669e2927389
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851896"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150734"
 ---
 # <a name="how-to-step-into-wcf-services"></a>Практическое руководство. пошаговую отладку служб WCF
 В [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] можно выполнить пошаговую отладку службы WFC. Если служба WFC находится в том же решении [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], что и клиент, можно задавать точки останова внутри службы WCF.

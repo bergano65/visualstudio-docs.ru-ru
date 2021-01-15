@@ -1,5 +1,7 @@
 ---
 title: Установка и снятие отметки для потоков | Документация Майкрософт
+description: Сведения о том, как устанавливать и снимать отметки для потоков в Visual Studio. Вы можете установить или снять отметку для одного, нескольких или всех потоков. Также вы можете помечать только собственный код или код, связанный с модулем.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e381faac8a8e4ae6f45f1fde6e2e20dd9f127a97
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e9b7ce5db863987d530fe9e68d026a94474fc13c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852065"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149499"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Практическое руководство. Установка и снятие отметки для потока (C#, Visual Basic, C++)
 

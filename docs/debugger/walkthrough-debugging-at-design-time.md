@@ -1,6 +1,7 @@
 ---
 title: Отладка во время разработки | Документация Майкрософт
-ms.custom: ''
+description: Использование окна "Интерпретация" для отладки кода во время разработки без запуска приложения. Вы можете выполнить функцию и просмотреть ее состояние при достижении точки останова.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: f127c630cec0e0b64ab5602e81f2b314a3896b16
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183565"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148852"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Отладка во время разработки в Visual Studio (C#, C++/CLI, Visual Basic, F#)
 

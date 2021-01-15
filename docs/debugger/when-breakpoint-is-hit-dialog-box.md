@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно "Попадание в точку останова" | Документация Майкрософт
+description: Настройка действия, выполняемого при достижении точки останова, с помощью диалогового окна "При попадании в точку останова". Вы можете задать вывод сообщения с последующим продолжением выполнения.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b19f4dd0d4b0cb97bb33e4895f36c4dc8f670c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a528709769f599219a7b3df2b8157b0ee3a605b1
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728145"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149317"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Диалоговое окно "Попадание в точку останова"
 С помощью этого диалогового окна можно произвести настройку действия, выполняемого при достижении точки останова.

@@ -1,5 +1,7 @@
 ---
 title: Запуск Spy++ | Документация Майкрософт
+description: Сведения о том, как запустить средство Spy++ из Visual Studio или из командной строки, если требуется выполнить отладку решения.
+ms.custom: SEO-VS-2020
 ms.date: 12/16/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7743d36671e1c651b9bcfa89b315399c0696e26d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 79796ec8984f9baee1d6b3e6c760d41297d70701
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851909"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150695"
 ---
 # <a name="how-to-start-spy"></a>Практическое руководство. Запуск Spy++
 

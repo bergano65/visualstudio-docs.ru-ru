@@ -1,5 +1,7 @@
 ---
 title: Использование Microsoft Monitoring Agent | Документация Майкрософт
+description: Проверка размещенных в IIS веб-приложений ASP.NET и приложений SharePoint 2010 и 2013 на наличие ошибок, проблем производительности и других неполадок с помощью Microsoft Monitoring Agent.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f110af9aab6ae2ea01137043c834d38b29c4d1f9
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 16c0655cdd55a1825f0a872ef013392bc9e5db79
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600009"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150110"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Использование Microsoft Monitoring Agent (C#, Visual Basic)
 

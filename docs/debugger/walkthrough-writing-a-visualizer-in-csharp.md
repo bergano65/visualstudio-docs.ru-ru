@@ -1,6 +1,7 @@
 ---
 title: Создание визуализатора на C# | Документация Майкрософт
-ms.custom: seodec18
+description: Пошаговое руководство по созданию простого визуализатора на C#. Здесь приводятся шаги, выполняемые при использовании шаблона элемента визуализатора, а также без него.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b3b8a67d1b01d7f3a3ada7b391423676b9294e8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8caf1be3c10c0d89ce8780213c0914944ae87842
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286327"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149720"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Пошаговое руководство. Написание визуализатора на C\#
 
@@ -106,7 +107,7 @@ ms.locfileid: "85286327"
 
 1. В **обозревателе решений** щелкните правой кнопкой мыши пункт **Ссылки** и в контекстном меню выберите команду **Добавить ссылку**.
 
-2. В диалоговом окне **Добавление ссылки** на вкладке **Обзор** выберите **Обзор**и найдите файл System.Windows.Forms.DLL.
+2. В диалоговом окне **Добавление ссылки** на вкладке **Обзор** выберите **Обзор** и найдите файл System.Windows.Forms.DLL.
 
     Библиотеку DLL можно найти в *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 

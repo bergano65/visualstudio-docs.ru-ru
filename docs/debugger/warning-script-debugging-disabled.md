@@ -1,5 +1,7 @@
 ---
 title: 'Предупреждение: Отладка скриптов отключена | Документация Майкрософт'
+description: Предупреждение "Отладка скриптов отключена" появляется при попытке отладки скрипта при выключенной отладке скриптов в Internet Explorer. В этом разделе приводятся инструкции по включению этой функции.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15de1a1e516cb3d84c24428ef04dd87baedaed9e
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 7cc2e03a4efcf9a88675fd3c80f374ff78ba35bb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81648504"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149564"
 ---
 # <a name="warning-script-debugging-disabled"></a>Предупреждение: Отладка скриптов отключена
 Отладка скриптов в Internet Explorer в настоящий момент отключена

@@ -1,5 +1,7 @@
 ---
 title: Вкладка "Вывод" диалогового окна "Параметры сообщения" | Документация Майкрософт
+description: Настройка данных сообщений, которые отображаются в представлении сообщений, с помощью вкладки "Вывод" диалогового окна "Параметры сообщений". В этой статье описываются доступные параметры.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63268fdbc320e78a697c181112dbeaaf8ad161ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c4d965b92a30d8d8a5b998a27bea9651f8669c8f
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905079"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975086"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Вкладка "Вывод" диалогового окна "Параметры сообщения"
 На вкладке **Вывод** можно указать, какие данные из каждого сообщения следует вывести в представление [Сообщения](../debugger/messages-view.md). Чтобы открыть диалоговое окно [Параметры сообщений](../debugger/message-options-dialog-box.md), выберите пункт **Записывать сообщения** в меню **Spy**.

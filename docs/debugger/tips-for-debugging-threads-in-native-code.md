@@ -1,5 +1,7 @@
 ---
 title: Советы по отладке потоков в машинном коде | Документация Майкрософт
+description: Список советов по отладке потоков в машинном коде при отладке многопоточных приложений в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7dde94e28f378f0630a78f32ae5e58533729ce0f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9249e1527a7dd2ae720ab575b1d443c10b85376e
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728994"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150058"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>Советы по отладке потоков в машинном коде
 Ниже приведены некоторые советы по отладке потоков в машинном коде.

@@ -1,5 +1,7 @@
 ---
 title: Просмотр потоков GPU в отладчике | Документация Майкрософт
+description: С помощью окна "Потоки GPU" можно просматривать потоки, выполняющиеся в графическом процессоре (GPU), и работать с этими потоками в отлаживаемом приложении в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbb49a1017fb0bc65300f3c16050db4954e1103
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5919ac657d828e87e48b8cfb3f4f643e1187f701
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348721"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150591"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Практическое руководство. Использование окна "Потоки GPU" (C++)
 С помощью окна "Потоки GPU" можно просматривать потоки, выполняющиеся в графическом процессоре (GPU), и работать с этими потоками в отлаживаемом приложении. Дополнительные сведения о приложениях, которые выполняются в GPU, см. в статье [Общие сведения о C++ AMP](/cpp/parallel/amp/cpp-amp-overview).
@@ -52,7 +54,7 @@ ms.locfileid: "85348721"
 
 ### <a name="to-display-the-gpu-threads-window"></a>Открытие окна "Потоки GPU"
 
-1. В области **Обозреватель решений**откройте контекстное меню для проекта и выберите пункт **Свойства**.
+1. В области **Обозреватель решений** откройте контекстное меню для проекта и выберите пункт **Свойства**.
 
 2. В папке **Свойства конфигурации** диалогового окна **Страницы свойств** для проекта выберите категорию **Отладка**.
 

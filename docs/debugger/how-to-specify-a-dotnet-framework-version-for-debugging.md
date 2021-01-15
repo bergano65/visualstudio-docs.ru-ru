@@ -1,6 +1,7 @@
 ---
 title: Указание версии платформы .NET Framework для отладки | Документация Майкрософт
-ms.custom: seodec18
+description: Указание более ранней версии платформы .NET Framework для отладки. Отладчик Visual Studio поддерживает отладку как текущей версии .NET Framework, так и более ранних версий этой платформы.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ae48670fceb78ff85f395852f0a31414f37e8cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6b536cbfbd1019fc9b55a0113525f37030493f8
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349072"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149421"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>Указание более ранней версии .NET Framework для отладки (C#, Visual Basic, F#)
 

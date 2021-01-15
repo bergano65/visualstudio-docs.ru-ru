@@ -1,5 +1,7 @@
 ---
 title: Справочник по Spy++ | Документация Майкрософт
+description: Список ссылок на справочные статьи с описанием всех команд меню и диалоговых окон в средстве отладки Spy++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b28c737f0a1c17d302cc2924b5d2c3ddc9c1dbb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1738b073c8f271e599c1e14bd852b4ebc654dee
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902560"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98147978"
 ---
 # <a name="spy-reference"></a>Справочник по Spy++
 Описание каждого меню и диалогового окна Spy++ см. в перечисленных ниже разделах.
@@ -41,6 +43,6 @@ ms.locfileid: "62902560"
  В разделе [Прочие диалоговые окна](../debugger/other-dialog-boxes.md) рассказывается о том, как просмотреть сведения о программе Spy++.
 
 ## <a name="related-sections"></a>Связанные разделы
- [Использование Spy++](../debugger/using-spy-increment.md). Содержит вводные сведения об инструменте Spy++ и его использовании.
+ [Использование Spy++.](../debugger/using-spy-increment.md) Содержит вводные сведения о средстве Spy++ и его использовании.
 
  [Представления Spy++](../debugger/spy-increment-views.md). Содержит сведения о представлениях Spy++ в виде деревьев окон, сообщений, процессов и потоков.

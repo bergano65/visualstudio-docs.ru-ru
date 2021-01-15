@@ -1,5 +1,7 @@
 ---
 title: Использование режима "Изменить и продолжить" (C#) | Документация Майкрософт
+description: Использование режима "Изменить и продолжить" в Visual Studio позволяет в процессе отладки вносить и применять изменения в коде прямо в режиме приостановки выполнения, без остановки и перезапуска сеанса отладки.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18d11f552d486fd9ebd7a95323e327324de14108
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a0f8126689c0874c984a679da9b6debcb66a3075
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851857"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150656"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Практическое руководство. Изменить и продолжить (C#)
 Режим "Изменить и продолжить" в С# позволяет в процессе отладки вносить и применять изменения в коде прямо в режиме приостановки выполнения, без остановки и перезапуска сеанса отладки.

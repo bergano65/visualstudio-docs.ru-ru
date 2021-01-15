@@ -1,6 +1,7 @@
 ---
 title: Отладка формы Windows Forms | Документация Майкрософт
-ms.custom: seodec18
+description: Пошаговое руководство по созданию и отладке формы Windows Forms, одного из наиболее распространенных вариантов управляемых приложений. Можно использовать C#, Visual Basic, C++ или F#.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cec7b9bc2c56e16d1a5d59701d0953797ae00f4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 31c1bc9e65eb63877d8f8a42902d8ec47a61fd22
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599469"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148101"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Пошаговое руководство. Отладка формы Windows Form
 Форма Windows Forms — один из наиболее распространенных вариантов управляемых приложений. На основе формы Windows Forms создается стандартное приложение Windows. Можно реализовать данный примере на Visual Basic, C# или C++.

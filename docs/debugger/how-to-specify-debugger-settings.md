@@ -1,5 +1,7 @@
 ---
 title: Задание параметров отладчика | Документация Майкрософт
+description: Сведения о задании различных параметров, определяющих поведение отладчика в Visual Studio, в том числе способы отображения переменных, отображаемые предупреждения и настройки точек останова.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b831ae0329adc218ba76fc27206e1f47d0ac8f9c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a5034fe887ba221106055a928e67e11076167286
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851948"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150773"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Практическое руководство. установку параметров отладчика
 В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно задать различные параметры поведения отладчика, включая способ отображения переменных, возможность представления или непредставления некоторых предупреждающих сообщений, размещение точек останова и влияние останова на работу программы. Параметры отладчика задаются в диалоговом окне **Параметры**.

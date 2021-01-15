@@ -1,5 +1,7 @@
 ---
 title: Использование Spy++ | Документация Майкрософт
+description: Spy++ (SPYXX.EXE) — это программа, которая содержит графическое представление системных процессов, потоков, окон и сообщений окон. В этом разделе приводятся ссылки на посвященные этому средству статьи.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8751aa4bdd80b95406dcc588b469da43f7221a13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f01167f00b3428bab52b4a6f2ab88d909e7b31f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929911"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150929"
 ---
 # <a name="using-spy"></a>Использование Spy++
 Spy++ (SPYXX.EXE) — это служебная программа на основе Win32, которая содержит графическое представление системных процессов, потоков, окон и сообщений окон. Этот раздел справки по Spy++ содержит ссылки на указанные ниже справочные статьи.

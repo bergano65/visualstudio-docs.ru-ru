@@ -1,5 +1,7 @@
 ---
 title: Использование проверки кода во время выполнения без библиотеки среды выполнения C | Документация Майкрософт
+description: Вы можете осуществлять компоновку программы без библиотеки времени выполнения C с помощью /NODEFAULTLIB. В таком случае, если вы хотите использовать проверки во время выполнения, необходимо выполнять компоновку с использованием RunTmChk.lib.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 029aafa634ba0e6837cdc7d4304d0419420dd912
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bfa83533b1ae929bf443dd6c3eb7f7dc3e7db165
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728662"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150864"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Использование проверки кода во время выполнения без библиотеки среды выполнения C
 Если компоновка осуществляется без библиотеки времени выполнения языка C (с помощью **/NODEFAULTLIB**) и при этом необходимо использовать проверки времени выполнения, нужно осуществлять компоновку с RunTmChk.lib.

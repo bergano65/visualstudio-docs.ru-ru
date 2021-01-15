@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 21f6ac868268c40ea6df837596546f86fd9a3a44
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569703"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129475"
 ---
 # <a name="extract-a-method-refactoring"></a>Рефакторинг для извлечения метода
 
@@ -40,13 +40,13 @@ ms.locfileid: "75569703"
 
    - C#:
 
-       ![Выделенный код — C#](media/extractmethod-highlight-cs.png)
+       !Снимок экрана: код C# для класса Program. В функции Main этого класса выделена строка кода.] (media/extractmethod-highlight-cs.png)
 
    - Visual Basic:
 
-       ![Выделенный код — Visual Basic](media/extractmethod-highlight-vb.png)
+       ![Снимок экрана: код Visual Basic для подпрограммы Main. В этой подпрограмме выделена строка кода.](media/extractmethod-highlight-vb.png)
 
-2. Затем выполните одно из следующих действий.
+2. Затем выполните одно из следующих действий:
 
    - **Клавиатура**
       - Нажмите клавиши **CTRL+R**, а затем — **CTRL+M**. (Обратите внимание, что сочетание клавиш может отличаться в зависимости от выбранного профиля.)
@@ -63,15 +63,15 @@ ms.locfileid: "75569703"
 
    - C#:
 
-      ![Переименование метода — C#](media/extractmethod-rename-cs.png)
+      ![Снимок экрана: код C# для класса Program. Выделено имя метода и открыто всплывающее окно "Переименовать".](media/extractmethod-rename-cs.png)
 
    - Visual Basic:
 
-      ![Переименование метода — Visual Basic](media/extractmethod-rename-vb.png)
+      ![Снимок экрана: код Visual Basic для подпрограммы Main. Выделено имя метода и открыто всплывающее окно "Переименовать".](media/extractmethod-rename-vb.png)
 
 3. Если вы довольны результатами, выберите **Применить** или нажмите клавишу **ВВОД**, чтобы зафиксировать изменения.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Рефакторинг](../refactoring-in-visual-studio.md)
 - [Просмотр изменений](../../ide/preview-changes.md)

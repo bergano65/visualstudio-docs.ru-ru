@@ -1,5 +1,7 @@
 ---
 title: Просмотр потоков в отладчике | Документация Майкрософт
+description: Использование окна "Потоки" для проверки потоков и управления ими. Вы можете группировать, сортировать, помечать, замораживать, размораживать и искать потоки, выбирать столбцы, а также отображать стеки вызовов.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b02d980292eaed40c7c1598c772b52f695bf23e2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67821592"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149707"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Просмотр потоков в отладчике Visual Studio с помощью окна потоков (C#, Visual Basic, C++)
 В окне **Потоки** можно проверять потоки и работать с ними в отлаживаемом приложении. Пошаговые инструкции по использованию **окна потоков** см. в разделе [Пошаговое руководство. Отладка с помощью окна потоков](../debugger/how-to-use-the-threads-window.md).

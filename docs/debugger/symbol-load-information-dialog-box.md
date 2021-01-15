@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно "Сведения о загрузке символов" | Документация Майкрософт
+description: Описание диалогового окна "Сведения о загрузке символов", которое вызывается в отладчике Visual Studio путем щелчка правой кнопкой мыши в окне "Модули" и выбора команды "Сведения о загрузке символов".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6bc7a795d45caf712b837f7d59e3ce6a0f9c8aa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a2412aeade894b32ce3c42855ecf3f3dacf9bc16
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729014"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149148"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Диалоговое окно "Сведения о загрузке символов"
 Диалоговое окно **Сведения о загрузке символов** вызывается путем щелчка правой кнопкой мыши в окне **Модули** и выбора команды **Сведения о загрузке символов**.

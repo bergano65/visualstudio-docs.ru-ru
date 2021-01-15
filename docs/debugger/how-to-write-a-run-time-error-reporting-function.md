@@ -1,6 +1,7 @@
 ---
 title: Написание функции, сообщающей об ошибке во время выполнения (C++) | Документация Майкрософт
-ms.custom: seodec18
+description: Примеры написания пользовательской функции, сообщающей об ошибке во время выполнения, в Visual Studio. Такая функция должна иметь то же объявление, что и _CrtDbgReportW, и возвращать значение 1.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22445868cca1533cad3d7e395452a6b19e102952
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 046384e664ab4aa9c031b76a1ecd6285a9de5502
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407644"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150474"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Практическое руководство. Написание функции, сообщающей об ошибке во время выполнения (C++)
 Настраиваемая функция, сообщающая об ошибках, возникающих во время выполнения, должна иметь такое же объявление, что и `_CrtDbgReportW`. Она должна возвращать отладчику значение 1.

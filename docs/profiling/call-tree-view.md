@@ -1,5 +1,7 @@
 ---
 title: Представление "Дерево вызовов" | Документы Майкрософт
+description: Сведения о представлении "Дерево вызовов", в котором отображаются пути выполнения функции, пересеченные в профилируемом приложении.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 386f8e85c02fe73eab9801b3edf79ec0d0b178fc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74773339"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150786"
 ---
 # <a name="call-tree-view"></a>представление дерева вызовов
 В преставлении "Дерево вызовов" отображаются пути выполнения функции, пересеченные в профилируемом приложении. Корнем дерева является точка входа в приложение или компонент. В каждом узле функции перечислены все вызванные в ней функции и содержатся данные по производительности, связанные с этими вызовами функций.
@@ -49,7 +51,7 @@ ms.locfileid: "74773339"
 
 - [Представление "Дерево вызовов"](../profiling/call-tree-view-contention-data.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Представления отчетов о производительности](../profiling/performance-report-views.md)
 - [Общие сведения о значениях данных инструментирования](../profiling/understanding-instrumentation-data-values.md)
 - [Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)

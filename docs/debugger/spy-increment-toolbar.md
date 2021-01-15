@@ -1,5 +1,7 @@
 ---
 title: Панель инструментов Spy++ | Документация Майкрософт
+description: Сведения об элементах пользовательского интерфейса на панели инструментов Spy++, которая отображается в строке меню. Чтобы отобразить или скрыть панель инструментов, в меню Вид выберите Панель инструментов.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa1dfe0917fece3c814678295c5abd6013b426b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9dc2564a69c291055d53e358c084e7dd9c4d0506
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729737"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148199"
 ---
 # <a name="spy-toolbar"></a>Панель инструментов Spy++
 Панель инструментов находится под строкой меню в Spy++. Чтобы отобразить или скрыть панель инструментов, в меню **Вид** выберите **Панель инструментов**.

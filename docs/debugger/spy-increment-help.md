@@ -1,5 +1,7 @@
 ---
 title: Справка по Spy++ | Документация Майкрософт
+description: Ссылки на статьи, посвященные использованию Spy++ и представлений Spy++. В этом разделе приводятся ссылки на справочные материалы по всем доступным командам меню и диалоговым окнам Spy++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 118096d536b9a4db50568ab138cd4695e1f3dcbe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f5e9caecb6d5ae2023bce9c1ef2ea0d73c66be3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929793"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148030"
 ---
 # <a name="spy-help"></a>Справка по Spy++
 Документация по служебной программе Spy++ включает в себя две группы разделов общих сведений: об использовании Spy++ и о представлениях Spy++. За ними следует справочник по Spy++, который содержит дополнительные сведения о каждой доступной команде меню и диалоговом окне.

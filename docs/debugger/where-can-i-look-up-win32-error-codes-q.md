@@ -1,5 +1,7 @@
 ---
 title: Где можно найти коды ошибок Win32? | Документы Майкрософт
+description: 'Чтобы просмотреть код ошибки Win32, введите его в окне "Контрольные значения" или "Быстрая проверка". Пример: "0x80000004,hr". Определения кодов ошибок находятся в файле INCLUDE\WINERROR.H.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8e3dda1b728cd631efe8a84913af3d5c475138d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 44a006be3b6ecad3ef723c00154354cb35df0049
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728037"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149291"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Где можно найти коды ошибок Win32?
 WINERROR.H в папке INCLUDE стандартного дистрибутива содержит определения кодов ошибок для функций Win32 API.

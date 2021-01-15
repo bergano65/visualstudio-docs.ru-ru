@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно "Свойства потока" | Документация Майкрософт
+description: Сведения о диалоговом окне "Свойства потока" в средстве отладки Spy++. Это диалоговое окно используется для получения дополнительных сведений о конкретном потоке.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 371314bff934fdceeb301f61e976224034333559
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 377357345516d210b30dd4db278dd672a8b6b469
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929715"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149135"
 ---
 # <a name="thread-properties-dialog-box"></a>Диалоговое окно "Свойства потока"
 Используйте это диалоговое окно для получения дополнительных сведений о конкретном потоке. Чтобы отобразить это диалоговое окно, переместите фокус в окно [представления потоков](../debugger/threads-view.md) или откройте окно [представления сообщений](../debugger/messages-view.md) и разверните сообщение. Выберите любой узел потока в дереве, а затем в меню **Вид** выберите пункт **Свойства**.
@@ -37,4 +39,4 @@ ms.locfileid: "62929715"
 
  [Представления Spy++](../debugger/spy-increment-views.md). Содержит сведения о представлениях Spy++ в виде деревьев окон, сообщений, процессов и потоков.
 
- [Использование Spy++](../debugger/using-spy-increment.md). Содержит вводные сведения о средстве Spy++ и его использовании.
+ [Использование Spy++.](../debugger/using-spy-increment.md) Содержит вводные сведения о средстве Spy++ и его использовании.

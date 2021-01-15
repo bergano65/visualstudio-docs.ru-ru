@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно "Поиск процессов" | Документация Майкрософт
+description: Использование диалогового окна "Поиск процесса" для поиска узла для конкретного процесса в представлении процессов. Вы можете указать идентификатор процесса, строку модуля и направление поиска.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 190ec35d014e6b443a9f80bf79433ac14b8fb8ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903773"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975099"
 ---
 # <a name="process-search-dialog-box"></a>Диалоговое окно "Поиск процесса"
 Используйте это диалоговое окно для поиска узла для конкретного процесса в [представлении процессов](../debugger/processes-view.md). Чтобы отобразить это диалоговое окно, переместите фокус в окно представления **процессов**. В меню **Поиск** выберите **Найти процесс**.
@@ -33,7 +35,7 @@ ms.locfileid: "62903773"
 
  [Представление процессов](../debugger/processes-view.md). Отображает представление активных процессов в виде дерева.
 
- [Представления Spy++.](../debugger/spy-increment-views.md) Содержит сведения о представлениях Spy++ в виде деревьев окон, сообщений, процессов и потоков.
+ [Представления Spy++](../debugger/spy-increment-views.md). Содержит сведения о представлениях Spy++ в виде деревьев окон, сообщений, процессов и потоков.
 
  [Использование Spy++.](../debugger/using-spy-increment.md) Содержит вводные сведения о средстве Spy++ и его использовании.
 

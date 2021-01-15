@@ -1,5 +1,7 @@
 ---
 title: Вкладка "Файл подкачки" диалогового окна "Свойства процесса" | Документация Майкрософт
+description: Вкладка "Файл подкачки" диалогового окна "Свойства процесса" используется для изучения файла подкачки процесса. В этой статье описываются доступные параметры.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dc3b0aca1b58c18ae4038540c14fc4dbfe4036
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47f4a2e9215cb2e98fdfefecdf978cb4a442ad84
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62904111"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975060"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>Вкладка "Файл подкачки" диалогового окна "Свойства процесса"
 Вкладка **Файл подкачки** используется для изучения файла подкачки процесса. Чтобы открыть диалоговое окно [Свойства процесса](../debugger/process-properties-dialog-box.md), переместите фокус в окно [Представление процессов](../debugger/processes-view.md). Выберите любой узел процесса в дереве, а затем в меню **Вид** выберите пункт **Свойства**.

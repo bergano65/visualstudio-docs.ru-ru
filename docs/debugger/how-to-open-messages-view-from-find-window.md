@@ -1,5 +1,7 @@
 ---
 title: Открытие представления сообщений из окна поиска | Документация Майкрософт
+description: Использование диалогового окна "Поиск окна" в Spy++ для выбора целевого окна с последующим открытием представления сообщений для этого окна.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b6240807eb82313182278251b353894545b957d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0e66e3e1200e1e08776853f2ac8308537e4b4a17
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852274"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148914"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Практическое руководство. открытие представления сообщений из окна поиска
 Иногда бывает удобно использовать диалоговое окно **Поиск окна** для выбора целевого окна, а затем открывать представление сообщений для этого окна.

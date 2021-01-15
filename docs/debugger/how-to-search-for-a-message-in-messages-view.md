@@ -1,5 +1,7 @@
 ---
 title: Поиск сообщения в представлении сообщений | Документация Майкрософт
+description: Поиск конкретного сообщения в представлении сообщений средства Spy++ с использованием его дескриптора, типа или идентификатора в качестве условия поиска в процессе отладки в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4b597870d7a87b396b4c6e828da814c49f9bfb
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c351eacc6fc3793065bcd11eb5456eebdc1864f3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852013"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148589"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Практическое руководство. поиск сообщения в представлении сообщений
 В представлении сообщений вы можете найти конкретное сообщение по значению его дескриптора, типа или идентификатора. Допустимым критерием для поиска считается любое из этих свойств или любое их сочетание. Также вы можете указать начальное направление поиска. Поля в диалоговом окне предварительно заполняются атрибутами текущего выбранного окна.

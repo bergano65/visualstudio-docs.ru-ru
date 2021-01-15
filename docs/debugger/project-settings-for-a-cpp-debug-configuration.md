@@ -1,6 +1,7 @@
 ---
 title: Параметры проекта для конфигурации отладки C++
-ms.custom: seodec18
+description: Конфигурация отладки C и C++ на страницах свойств. В этой статье описываются параметры с указанием их категории.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/26/2018
 ms.topic: reference
 f1_keywords:
@@ -112,12 +113,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bca39b97f6363d8b8fefcfd691b69baf85c32170
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 6130b49beecb3411c275fc5d2005b7aabee262fd
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450374"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975294"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Параметры проекта для конфигурации отладки C++
 Параметры проекта для конфигурации отладки C или C++ можно изменить в диалоговом окне **Страницы свойств**, как описано в статье [Практическое руководство. Настройка конфигураций отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где в диалоговом окне **Страницы свойств** можно найти параметры, связанные с отладчиком.
@@ -175,7 +176,7 @@ ms.locfileid: "72450374"
 |**Создавать файл сопоставления** ([/MAP](/cpp/build/reference/map-generate-mapfile))|Указывает компоновщику на необходимость создания файла сопоставления во время компоновки. По умолчанию выбрано значение "Нет". Дополнительные сведения см. в разделе [Параметр /MAP (создание файла сопоставления)](/cpp/build/reference/map-generate-mapfile).|
 |**Имя файла сопоставления** ([/MAP:](/cpp/build/reference/map-generate-mapfile)*имя*)|Если выбрано создание файла сопоставления, в этом поле можно указать имя файла сопоставления. Дополнительные сведения см. в разделе [Параметр /MAP (создание файла сопоставления)](/cpp/build/reference/map-generate-mapfile).|
 |**Сопоставлять экспортируемые функции** ([/MAPINFO:EXPORTS](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Включение экспортируемых функций в файл сопоставления. По умолчанию выбрано значение "Нет". См. сведения в описании аргумента [/MAPINFO (включение сведений в файл сопоставления)](/cpp/build/reference/mapinfo-include-information-in-mapfile).|
-|**Отлаживаемая сборка** ([/ASSEMBLYDEBUG](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Задает параметры для параметра компоновщика /ASSEMBLYDEBUG. Доступны следующие значения:<br /><br /> -   **Атрибут Debuggable не порождается**.<br />-   **Отслеживание во время выполнения и отключение оптимизации (/ASSEMBLYDEBUG)** . Это значение установлено по умолчанию.<br />-   **Нет отслеживания во время выполнения и отключения оптимизации (/ASSEMBLYDEBUG:DISABLE)** .<br />-    **\<наследовать от родителя или от значений по умолчанию для проекта>** .<br />— Дополнительные сведения см. в разделе [Параметр /ASSEMBLYDEBUG (добавление атрибута DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).|
+|**Отлаживаемая сборка** ([/ASSEMBLYDEBUG](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Задает параметры для параметра компоновщика /ASSEMBLYDEBUG. Доступны следующие значения:<br /><br /> -   **Атрибут Debuggable не порождается**.<br />-   **Отслеживание во время выполнения и отключение оптимизации (/ASSEMBLYDEBUG)** . Это значение установлено по умолчанию.<br />-   **Нет отслеживания во время выполнения и отключения оптимизации (/ASSEMBLYDEBUG:DISABLE)** .<br />-   **\<inherit from parent or project defaults>**.<br />— Дополнительные сведения см. в разделе [Параметр /ASSEMBLYDEBUG (добавление атрибута DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).|
 
  Эти параметры в папке "Свойства конфигурации" (категория "Отладка") можно изменить программным путем с помощью интерфейса Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>.
 

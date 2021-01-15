@@ -1,5 +1,7 @@
 ---
 title: Поиск окна в представлении окон | Документация Майкрософт
+description: Поиск определенного окна в представлении "Окна" средства Spy++ по маркеру, заголовку, классу окна или по сочетанию заголовка и класса в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 880f6ec3ea0882d92f5376859ed629e23781f5f9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3449abf5ff1b9bdb4d4873a0cf3beb0b184734fc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851974"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148511"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Практическое руководство. Поиск окна в представлении окон
 Вы можете выполнить поиск определенного окна в представлении "Окна" по маркеру, заголовку, классу окна или по сочетанию заголовка и класса. Вы также можете указать начальное направление поиска. Поля в диалоговом окне будут содержать атрибуты окна, выбранного в дереве окон.

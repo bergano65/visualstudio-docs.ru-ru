@@ -1,6 +1,6 @@
 ---
 title: Извлечение локальной функции
-description: Чтобы преобразовать фрагмент кода в его собственный метод, выберите код и нажмите CTRL+R, CTRL+M.
+description: Чтобы преобразовать фрагмент кода в его собственную функцию, выберите код и нажмите CTRL+R, CTRL+M.
 ms.date: 02/19/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 031fbe22ec61837d489df7a6af923ef0cd2454c7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e007246b85671a0f4606bbdb3d1e9c4e0dc83541
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77519329"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129462"
 ---
 # <a name="extract-local-function-refactoring"></a>Извлечение рефакторинга локальной функции
 
@@ -37,7 +37,7 @@ ms.locfileid: "77519329"
 
 3. Выберите **Извлечь локальную функцию**.
 
-    ![Извлечение локальной функции](media/extract-local-function.png)
+    ![Снимок экрана: окно кода Visual Studio с выделенной строкой кода. Открыто меню "Быстрые действия и рефакторинг" и выбрана команда "Извлечь локальную функцию".](media/extract-local-function.png)
 
 ## <a name="see-also"></a>См. также
 

@@ -1,5 +1,7 @@
 ---
 title: Представление потоков | Документация Майкрософт
+description: Общие сведения о представлении "Потоки" в средстве отладки Spy++. Представление потоков — это плоский список всех потоков, связанных с окнами в вашей системе.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 356db0f3ad8308edae2910e060b5b08731f9aabb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929945"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150214"
 ---
 # <a name="threads-view"></a>Представление потоков
 Представление потоков — это плоский список всех потоков, связанных с окнами в вашей системе. Отображаются идентификатор потока и имя модуля для каждого потока. Процессы не отображаются, но можно легко узнать, какой процесс владеет выбранным потоком.

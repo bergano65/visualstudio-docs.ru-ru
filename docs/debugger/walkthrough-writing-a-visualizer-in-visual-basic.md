@@ -1,6 +1,7 @@
 ---
 title: Создание визуализатора на Visual Basic | Документация Майкрософт
-ms.custom: seodec18
+description: Пошаговое руководство по созданию простого визуализатора на Visual Basic. Вы также создадите тестовое окружение для тестирования визуализатора.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25720f31c721cae44ed5425631a86b3a41bf475e
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 4354a226503ef11b8e596cff609912afa7fd34f0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180549"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149642"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Пошаговое руководство. Написание визуализатора на Visual Basic
 
@@ -109,7 +110,7 @@ ms.locfileid: "84180549"
 
 1. В **обозревателе решений** щелкните правой кнопкой мыши **Ссылки** и выберите команду **Добавить ссылку** в контекстном меню.
 
-2. В диалоговом окне **Добавление ссылки** на вкладке **Обзор** выберите **Обзор**и найдите файл System.Windows.Forms.DLL.
+2. В диалоговом окне **Добавление ссылки** на вкладке **Обзор** выберите **Обзор** и найдите файл System.Windows.Forms.DLL.
 
     Библиотеку DLL можно найти в *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 

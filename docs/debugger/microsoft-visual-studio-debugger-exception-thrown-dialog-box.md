@@ -1,7 +1,8 @@
 ---
 title: Отладчик Microsoft Visual Studio (создание исключения) — диалоговое окно | Документация Майкрософт
 titleSuffix: ''
-ms.custom: seodec18
+description: Сведения о том, что делать при возникновении исключения, которое программе необходимо обработать. Можно выполнить следующие действия. 1) переключиться на отладчик; 2) продолжить выполнение; или 3) игнорировать исключение.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8376d0cd82e309c2c8db94e38b8c6a2083bd429a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1c86c765ad8ebfbe36dcaca484f7da4121b7e297
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731211"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975281"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Отладчик Microsoft Visual Studio (создание исключения) - диалоговое окно
 В программе возникло исключение. Это диалоговое окно сообщает о типе вызванного исключения. В коде должна быть предусмотрена обработка этого исключения. Для обработки исключения можно выбрать один из следующих вариантов:

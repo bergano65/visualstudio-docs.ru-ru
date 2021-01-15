@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно "Свойства процесса" | Документация Майкрософт
+description: 'Использование диалогового окна "Свойства процесса" для получения дополнительных сведений о процессе, выбранном в представлении "Процессы". В этом окне доступны четыре вкладки: "Общие", "Память", "Файл подкачки" и "Пространство".'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2448659a8725c7e284e12a99d52478144ebec1b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: abf4e8c6d1e61441459b0b48adfda4fa8728f44a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903760"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975112"
 ---
 # <a name="process-properties-dialog-box"></a>Диалоговое окно "Свойства процесса"
 Используйте это диалоговое окно для получения дополнительных сведений о конкретном процессе. Чтобы отобразить это диалоговое окно, переместите фокус в окно [представления процессов](../debugger/processes-view.md). Выберите любой узел процесса в дереве, а затем в меню **Вид** выберите пункт **Свойства**.
@@ -43,4 +45,4 @@ ms.locfileid: "62903760"
 
  [Представления Spy++](../debugger/spy-increment-views.md). Содержит сведения о представлениях Spy++ в виде деревьев окон, сообщений, процессов и потоков.
 
- [Использование Spy++](../debugger/using-spy-increment.md). Содержит вводные сведения о средстве Spy++ и его использовании.
+ [Использование Spy++.](../debugger/using-spy-increment.md) Содержит вводные сведения о средстве Spy++ и его использовании.

@@ -1,5 +1,7 @@
 ---
 title: Использование окна задач | Документация Майкрософт
+description: Задачи представляют собой асинхронные операции, которые могут выполняться параллельно. В одном потоке могут выполняться несколько задач. В окне "Задачи" вы можете просматривать сведения о задаче и объекте WinJS.Promise.
+ms.custom: SEO-VS-2020
 ms.date: 03/18/2018
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7df43a02dbda1fbcbe93decb58721032cd84d657
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901613"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150071"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>Использование окна задач (C#, Visual Basic, C++)
 

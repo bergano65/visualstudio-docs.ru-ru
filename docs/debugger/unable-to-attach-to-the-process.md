@@ -1,5 +1,7 @@
 ---
 title: Не удается присоединиться к процессу | Документация Майкрософт
+description: Сведения о значении ошибки "Не удается присоединиться к процессу", двух сценариях, в которых она может возникать, а также возможных решениях.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d798d30d09cb509f53d093ae61bb1a02b414ec
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e7a90d2e08d16ddfb7ac22baafe58cf76b4895d3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728879"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150851"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Не удается присоединиться к процессу
 Не удается присоединиться к процессу. Компонент отладчика на сервере получил отказ в доступе при подключении к этому компьютеру.

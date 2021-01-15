@@ -1,5 +1,7 @@
 ---
 title: Команды меню "Дерево" | Документация Майкрософт
+description: В меню "Дерево" средства Spy++ содержатся команды для развертывания или свертывания представлений. В этом разделе приводится список команд в меню "Дерево" с кратким описанием каждой из них.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc840ac19e48f6a0a6a597ec667a4bc799070e59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d93dec46c99c5a4385f254b797a522925d4b945f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901833"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148732"
 ---
 # <a name="tree-menu-commands"></a>Команды меню "Дерево"
 Меню **Дерево** содержит команды для развертывания или свертывания представлений.

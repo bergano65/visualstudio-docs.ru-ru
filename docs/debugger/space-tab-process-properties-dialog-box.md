@@ -1,5 +1,7 @@
 ---
 title: Вкладка "Пространство", диалоговое окно "Свойства процесса" | Документация Майкрософт
+description: Сведения о том, как открыть диалоговое окно "Свойство процесса" в Spy++ при отладке. Также здесь описываются параметры, доступные на вкладке "Пространство".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 563d54c39b4d9ce3bb2d76a9e531161c2c4ee5b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe168f34baf65b00eab59e94afb30e07dfe89b50
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929819"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149083"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Вкладка "Пространство" диалогового окна "Свойства процесса"
 Вкладка **Пространство** используется для изучения адресного пространства процесса. Чтобы открыть диалоговое окно [Свойства процесса](../debugger/process-properties-dialog-box.md), переместите фокус в окно [представления процессов](../debugger/processes-view.md). Выберите любой узел процесса в дереве, а затем в меню **Вид** выберите пункт **Свойства**.

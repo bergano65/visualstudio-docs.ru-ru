@@ -1,5 +1,7 @@
 ---
 title: Использование автономного сборщика данных IntelliTrace | Документация Майкрософт
+description: Использование автономного сборщика данных IntelliTrace для сбора данных без установки Visual Studio и без изменения среды в целевой системе.
+ms.custom: SEO-VS-2020
 ms.date: 07/30/2019
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f0e0ce657c1cc0ed79d56e3daa90480ed0c1381
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: cbdd7e948aaafff8e90aa8e67907c9a53471b05c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536497"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150084"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Использование автономного сборщика данных IntelliTrace (C#, Visual Basic)
 
@@ -28,7 +30,7 @@ ms.locfileid: "85536497"
 > [!NOTE]
 > Те же данные IntelliTrace для веб-приложений и приложений SharePoint, которые выполняются на удаленных компьютерах, также можно собирать с помощью **Microsoft Monitoring Agent** в режиме **трассировки** .
 >
-> События, связанные с производительностью, можно собирать в данных IntelliTrace путем запуска агента в режиме **монитора** . Режим**монитора** влияет на производительность в меньшей степени, чем режим **трассировки** или **Intelliтрассировки stand-alone collector**. После установки агент Microsoft Monitoring Agent изменяет среду в целевой системе. См. статью [Использование Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
+> События, связанные с производительностью, можно собирать в данных IntelliTrace путем запуска агента в режиме **монитора** . Режим **монитора** влияет на производительность в меньшей степени, чем режим **трассировки** или **Intelliтрассировки stand-alone collector**. После установки агент Microsoft Monitoring Agent изменяет среду в целевой системе. См. статью [Использование Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
 > Автономный сборщик IntelliTrace не поддерживает обработку моментальных снимков.
 
  **Требования**
@@ -84,7 +86,7 @@ ms.locfileid: "85536497"
 
    - **Центр загрузки Майкрософт** или **my.visualstudio.com**:
 
-     1. Рядом с **IntelliTraceCollector.exe**выберите **Загрузка**.
+     1. Рядом с **IntelliTraceCollector.exe** выберите **Загрузка**.
 
      2. Сохраните IntelliTraceCollector.exe в каталоге сборщика, например: **C:\IntelliTraceCollector**
 

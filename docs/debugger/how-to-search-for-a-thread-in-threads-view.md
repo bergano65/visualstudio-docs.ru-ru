@@ -1,5 +1,7 @@
 ---
 title: Поиск потока в представлении потоков | Документация Майкрософт
+description: Поиск конкретного потока в представлении потоков средства Spy++ с использованием идентификатора потока или строки модуля в качестве условия поиска в процессе отладки в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99a2b4fe491939b6cf4224c211dcd03ec609be27
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 92864c9d3c66a7547ef52a2694f6307d57a43304
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851987"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148537"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Практическое руководство. поиск потока в представлении потоков
 Вы можете найти конкретный поток в представлении потоков, используя идентификатор потока или строку модуля в качестве условия поиска. Вы также можете указать начальное направление поиска. Поля в диалоговом окне будут содержать атрибуты потока, выбранного в дереве потока.

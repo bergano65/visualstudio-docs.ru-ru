@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: f1473c731dbf9413cf695e1b2331039c3880b8d7
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 4f8c1c265f49b600880cd1278b51095fda9cfb1d
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829865"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975151"
 ---
 # <a name="container-tools-in-visual-studio"></a>Средства для контейнеров в Visual Studio
 
@@ -76,7 +76,7 @@ ms.locfileid: "91829865"
 > [!NOTE]
 > Для проектов .NET Framework (не .NET Core) доступны только контейнеры Windows.
 
-Можно добавить поддержку Docker в существующий проект, выбрав **Добавить** > **Поддержка Docker** в **обозревателе решений**. Для проектов ASP.NET Core команды **Добавить > Поддержка Docker** и **Добавить > Поддержка оркестратора контейнеров** доступны в контекстном меню, открываемом правым щелчком мыши по узлу проекта в ** обозревателе решений**, как показано на следующем снимке экрана:
+Можно добавить поддержку Docker в существующий проект, выбрав **Добавить** > **Поддержка Docker** в **обозревателе решений**. Для проектов ASP.NET Core команды **Добавить > Поддержка Docker** и **Добавить > Поддержка оркестратора контейнеров** доступны в контекстном меню, открываемом правым щелчком мыши по узлу проекта в **обозревателе решений**, как показано на следующем снимке экрана:
 
 ![Добавление поддержки Docker из меню в Visual Studio](./media/overview/add-docker-support-menu.png)
 
@@ -119,9 +119,9 @@ ms.locfileid: "91829865"
 Чтобы добавить поддержку Kubernetes, установите [Средства Visual Studio для Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 ::: moniker-end
 
-Поддержка Kubernetes позволяет подключить локальный проект к кластеру Kubernetes, работающему в [Службе Azure Kubernetes (AKS)](/azure/aks), а также изменять и отлаживать работу служб, запущенных в AKS, с помощью Visual Studio.  Эту возможность обеспечивает [Azure Dev Spaces](/azure/dev-spaces/quickstart-netcore-visualstudio). В целях разработки Azure Dev Spaces также позволяет настраивать отдельные ветви служб, именуемые *пространствами разработки*. Это дает возможность изолировать рабочие службы от разрабатываемых версий и четко разграничивать отдельные версии.
+Поддержка Kubernetes позволяет подключить локальный проект к кластеру Kubernetes, работающему в [Службе Azure Kubernetes (AKS)](/azure/aks), а также изменять и отлаживать работу запущенных служб с помощью Visual Studio.  Эта служба предоставляется в составе средства [Bridge to Kubernetes](overview-bridge-to-kubernetes.md). Bridge to Kubernetes также позволяет настраивать отдельные ветви служб Kubernetes для разработки. Это дает возможность изолировать рабочие службы от разрабатываемых версий и четко разграничивать отдельные версии.
 
-Чтобы добавить в проекты поддержку Kubernetes, при добавлении поддержки оркестрации контейнеров выберите **Kubernetes/Helm**. В проект будет добавлено несколько файлов, включая *azds.yaml*, который настраивает Azure Dev Spaces и чарты Helm с описанием структуры служб Kubernetes.
+Чтобы добавить в проекты поддержку Kubernetes, при добавлении поддержки оркестрации контейнеров выберите **Kubernetes/Helm**. В проект будет добавлено несколько файлов, включая чарт Helm, который описывает структуру служб Kubernetes. Сведения о начале работы с Bridge to Kubernetes см. в статье [Использование Bridge to Kubernetes](bridge-to-kubernetes.md).
 
 ## <a name="service-fabric-support"></a>Поддержка Service Fabric
 

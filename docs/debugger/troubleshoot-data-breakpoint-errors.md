@@ -1,5 +1,7 @@
 ---
 title: Не удалось задать точку останова в данных | Документация Майкрософт
+description: Пояснения, решения и возможные методы обхода ошибки "Не удалось задать точку останова в данных", возникающей в режиме "Прервать при изменении значения".
+ms.custom: SEO-VS-2020
 ms.date: 12/3/2019
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cded3bfdb6adc206f02ef54402964f4e7276f93
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 4e90c3d4af8e568f1bb2e6987c66c7fbc0856c57
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668785"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150461"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Устранение неполадок точек останова в данных
 На этой странице приведены пошаговые инструкции по устранению распространенных ошибок, возникающих при использовании команды "Прервать выполнение при изменении значения".

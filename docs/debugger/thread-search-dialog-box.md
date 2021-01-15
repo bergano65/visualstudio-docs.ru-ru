@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно "Поиск потока" | Документация Майкрософт
+description: Сведения о диалоговом окне "Поиск потока" в средстве отладки Spy++. Используйте это диалоговое окно для поиска узла конкретного потока в представлении потоков.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fddbb589a6978f72dc5926a78c9eb13f21b3a4b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 895241a99131c31e2fab73b9799f6203db7259e0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901866"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148758"
 ---
 # <a name="thread-search-dialog-box"></a>Диалоговое окно "Поиск потока"
 Используйте это диалоговое окно для поиска узла конкретного потока в [представлении потоков](../debugger/threads-view.md). Чтобы отобразить это диалоговое окно, переместите фокус в окно представления **потоков**. В меню **Поиск** выберите **Найти поток**.

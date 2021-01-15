@@ -1,5 +1,7 @@
 ---
 title: Поддерживаемые изменения кода (C++) | Документация Майкрософт
+description: Сведения о том, какие изменения кода поддерживаются при использовании функции "Изменить и продолжить" при отладке проекта на C++ в Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/18/2020
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af6c0d88dd230bee768641905e200f1f47749d77
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: d693753cbcc9844ff602ab4d20e90fdc6de7dae5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629590"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150500"
 ---
 # <a name="supported-code-changes-c"></a>Поддерживаемые изменения кода (C++)
 В C++ большинство типов изменений, вносимых в код, обрабатывается в режиме "Изменить и продолжить". Некоторые изменения, однако, не могут быть применены во время выполнения программы. Чтобы применить эти изменения, необходимо остановить выполнение и собрать обновленную версию кода.
@@ -116,10 +118,10 @@ ms.locfileid: "77629590"
 ### <a name="linker-options-that-disable-edit-and-continue"></a><a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Параметры компоновщика, отключающие режим «Изменить и продолжить»
  Следующие параметры компоновщика отключают режим "Изменить и продолжить".
 
-- Параметры **/OPT:REF**, **/OPT:ICF**и **/INCREMENTAL:NO** отключают режим "Изменить и продолжить" со следующим предупреждением:  
+- Параметры **/OPT:REF**, **/OPT:ICF** и **/INCREMENTAL:NO** отключают режим "Изменить и продолжить" со следующим предупреждением:  
      `LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /OPT specification`
 
-- Параметры **/ORDER**, **/RELEASE**и **/FORCE** отключают режим "Изменить и продолжить" со следующим предупреждением:  
+- Параметры **/ORDER**, **/RELEASE** и **/FORCE** отключают режим "Изменить и продолжить" со следующим предупреждением:  
      `LINK : warning LNK4075: ignoring /INCREMENTAL due to /option specification`
 
 - Установка любых параметров, предотвращающих создание файла программной базы данных (.PDB), отключает режим "Изменить и продолжить" без предупреждения.
