@@ -1,6 +1,7 @@
 ---
 title: Использование точек останова в отладчике | Документация Майкрософт
-ms.custom: ''
+description: Познакомьтесь с точками останова, одним из важнейших приемов отладки. Статья описывает действия с точками останова, а также точки трассировки, условия и многое другое.
+ms.custom: SEO-VS-2020
 ms.date: 06/30/2020
 ms.topic: how-to
 f1_keywords:
@@ -34,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c95749d5d7e2909fbff6da0a3a45bc36cd73c6
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: c8487482b1d87ba87dfc3a8b1e07be1360227a2f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729331"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150448"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Использование точек останова в отладчике Visual Studio
 
