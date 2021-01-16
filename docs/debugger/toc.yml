@@ -180,8 +180,6 @@
                   href: native-run-time-checks-customization.md
                 - name: 'Написание функции, сообщающей об ошибке во время выполнения'
                   href: how-to-write-a-run-time-error-reporting-function.md
-                - name: Использование проверки кода во время выполнения без библиотеки среды выполнения языка C
-                  href: using-run-time-checks-without-the-c-run-time-library.md
         - name: Указание файлов символов (PDB) и файлов с исходным кодом в отладчике
           href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
         - name: Отладка пользовательского кода
@@ -294,7 +292,7 @@
               href: remote-debugging-errors-and-troubleshooting.md
             - name: Монитор удаленной отладки Microsoft Visual Studio на удаленном компьютере не имеет разрешения на подключение к этому компьютеру
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-no-permission.md
-            - name: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе".
+            - name: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе.
               href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
             - name: На удаленном компьютере монитор удаленной отладки Microsoft Visual Studio выполняется в контексте другого пользователя
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md
