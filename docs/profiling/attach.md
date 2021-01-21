@@ -1,5 +1,7 @@
 ---
 title: Attach | Документы Майкрософт
+description: Использование параметра Attach программы VSPerfCmd.exe, чтобы начать профилирование с выборкой для запущенного процесса, указанного идентификатором процесса (PID).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 482b3e80bce796910860cb7eab1e5a0066854238
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c97dee50d58b49092d9b23a497192b29746e0c22
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329864"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205701"
 ---
 # <a name="attach"></a>Attach
 Параметр **Attach** программы *VSPerfCmd.exe* начинает профилирование с выборкой для запущенного процесса, указанного идентификатором процесса (PID).
@@ -49,11 +51,11 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="interval-options"></a>Параметры интервала
  В командной строке с параметром "Attach" можно задать один из указанных ниже параметров интервала выборки. Интервал выборки по умолчанию равен 10 000 000 циклам тактовой частоты процессора.
 
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`] задает числовое значение и тип интервала выборки.
+ **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[<strong>:</strong>Events]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`] задает числовое значение и тип интервала выборки.
 
 - **Timer** — осуществляет выборку через каждые `Cycles` циклов тактовой частоты процессора. Если параметр `Cycles` не задан, используется значение 10 000 000 циклов.
 
-- **PF** — осуществляет выборку через каждые `Events` ошибок страницы. Если параметр `Events` не задан, выборка осуществляется через каждые 10 ошибок страницы.
+- **PF** — осуществляет выборку через каждые `Events` ошибок страницы. Если параметр `Events` не задан, выборка осуществляется через каждые 10 ошибок страницы.
 
 - **Sys** — осуществляет выборку через каждые `Events` вызовов операционной системы. Если параметр `Events` не задан, выборка осуществляется через каждые 10 системных вызовов.
 

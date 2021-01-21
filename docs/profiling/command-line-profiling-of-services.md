@@ -1,5 +1,7 @@
 ---
 title: Профилирование служб из командной строки | Документы Майкрософт
+description: Сведения об использовании Средств профилирования из командной строки для сбора данных о производительности для служб Windows.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b20835eaf8b81bd64bd90aa75d2efb32975a7c53
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f05ca0a11060e2a9009b38b0caf7ce9172773f36
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772835"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533658"
 ---
 # <a name="command-line-profiling-of-services"></a>Профилирование служб из командной строки
 В этом разделе описываются процедуры и параметры сбора данных о производительности для служб Windows с помощью средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] из командной строки.

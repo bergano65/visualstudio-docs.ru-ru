@@ -1,5 +1,7 @@
 ---
 title: Командная строка профилировщика — сведения о времени для автономного приложения
+description: Сведения об использовании метода инструментирования из командной строки для сбора подробных данных о производительности для автономного компонента.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f088a0da0e8525189e4e2addf1464b30e1e98d06
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: d93673080acd36f4195fb9b19382c9f0152f51f5
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331835"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533840"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Сбор подробных сведений о времени для автономного приложения с помощью командной строки профилировщика
 В этом разделе описываются процедуры и параметры для сбора подробных данных о производительности клиентского (автономного) компонента с использованием метода инструментирования в командной строке.

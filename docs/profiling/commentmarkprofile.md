@@ -1,5 +1,7 @@
 ---
 title: CommentMarkProfile | Документы Майкрософт
+description: Используйте функцию CommentMarkProfile для вставки числового маркера и текстовой строки в файл *VSP*.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2972f9d470bebe3a65b7d525aa2b358d68ad5f1c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e943be08ffd586347ab5de54cb803bcedc8c24d7
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85546592"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533593"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
-Функция `CommentMarkProfile` вставляет числовую метку и текстовую строку в *VSP*-файл. Чтобы вставить метку и комментарий, необходимо включить профилирование для потока, содержащего функцию `CommentMarkProfile`.
+Функция `CommentMarkProfile` вставляет числовую метку и текстовую строку в файл *VSP*. Чтобы вставить метку и комментарий, необходимо включить профилирование для потока, содержащего функцию `CommentMarkProfile`.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -55,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="remarks"></a>Примечания
  Для потока, содержащего функцию метки профиля, должно быть включено состояние профилирования, чтобы вставить метку и комментарий с помощью команды VSInstr Mark или функций (CommentMarkAtProfile, CommentMarkProfile или MarkProfile).
 
- Метки профилирования имеют глобальную область видимости. Например, вставленную в любом потоке метку профиля можно использовать для обозначения начала или конца сегмента данных в любом потоке в *VSP*-файле.
+ Метки профилирования имеют глобальную область видимости. Например, вставленную в любом потоке метку профиля можно использовать для обозначения начала или конца сегмента данных в любом потоке в файле *VSP*.
 
 > [!IMPORTANT]
 > Метод CommentMarkProfile можно использовать только при профилировании с инструментированием.

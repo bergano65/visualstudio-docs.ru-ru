@@ -1,5 +1,6 @@
 ---
 title: 'Командная строка профилировщика: получение данных об использовании памяти службами .NET'
+description: Сведения об использовании метода выборки из командной строки для сбора данных о выделении памяти и времени существования объектов для службы .NET Framework.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,19 +11,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f07cb03979baf62d436b4bdb319620364a88ddad
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ef6ec36dc9c0fb0e6431dcb92ee292050c5d25f3
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809405"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533762"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Сбор данных об использовании памяти, полученных из служб .NET Framework, с помощью командной строки профилировщика
 В этом разделе описываются процедуры и параметры сбора данных о выделении памяти и времени существования для службы .NET Framework с использованием метода выборки в командной строке.
 
 ## <a name="common-tasks"></a>Типичные задачи
 
-|Задача|Связанное содержимое|
+|Задача|См. также|
 |----------|---------------------|
 |**Присоединение профилировщика к службе .NET**|-   [Практическое руководство. Присоединение профилировщика к службе .NET для сбора данных об использовании памяти](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|
 |**Инструментирование службы .NET и сбор данных об использовании памяти .NET**|-   [Практическое руководство. Инструментирование службы .NET Framework и сбор данных об использовании памяти](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|
@@ -32,7 +33,7 @@ ms.locfileid: "90809405"
 
 ### <a name="profile-services"></a>Профилирование служб
 
-|Задача|Связанное содержимое|
+|Задача|См. также|
 |----------|---------------------|
 |**Профилирование с помощью метода выборки**|-   [Сбор статистики приложения с помощью метода выборки](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|
 |**Профилирование с помощью метода инструментирования**|-   [Сбор подробных сведений о времени с помощью инструментирования](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
@@ -40,7 +41,7 @@ ms.locfileid: "90809405"
 
 ### <a name="profile-net-framework-memory-data"></a>Профилирование данных об использовании памяти .NET Framework
 
-|Задача|Связанное содержимое|
+|Задача|См. также|
 |----------|---------------------|
 |**Профилирование автономных (клиентских) приложений**|-   [Сбор данных об использовании памяти .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
 |**Профилирование веб-приложений ASP.NET**|-   [Сбор данных об использовании памяти](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|

@@ -1,5 +1,7 @@
 ---
 title: Профилирование автономных приложений из командной строки | Документы Майкрософт
+description: Сведения об использовании Средств профилирования из командной строки для сбора данных о производительности для клиентских (автономных) приложений.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f80f3e65969973202af08299b07ebfa420f3bd2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 876c2a72f0929cffa3613026fa56a17d82786854
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77557858"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533645"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>Профилирование автономных приложений из командной строки
 В этом разделе описываются процедуры и параметры сбора данных о производительности для автономных (клиентских) приложений с помощью средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] из командной строки.
@@ -34,7 +36,7 @@ ms.locfileid: "77557858"
 
 ## <a name="related-tasks"></a>Связанные задачи
 
-|Задача|См. также|
+|Задача|Связанное содержимое|
 |----------|---------------------|
 |**Профилирование приложений ASP.NET**|-   [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)|
 |**Профилирование служб**|-   [Профилирование служб](../profiling/command-line-profiling-of-services.md)|

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37bfd1ab57fd0e37f32a55d5bfc3787cb0c0cbd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60d817c3600eaa82eb7f67489d5dadadaba3932f
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248061"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533970"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Создание пользовательских представлений для объектов C++ в отладчике с помощью платформы Natvis
 
@@ -166,6 +166,12 @@ Natvis использует *NATVIS*-файлы для указания прав
 - Выражения Natvis не позволяют выполнять вычисление функции или реализовать побочные эффекты. Вызовы функций и операторы присваивания игнорируются. Поскольку [встроенные функции отладчика](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) не зависимы от побочных эффектов, их можно свободно вызывать из любого выражения Natvis, даже если другие вызовы функций запрещены.
 
 - Для управления отображением выражения можно использовать любой из описателей формата, описанных в статье [Описатели формата в C++](format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers). Описатели формата пропускаются, когда запись используется Natvis внутренним образом, например выражение `Size` в [расширении ArrayItems](../debugger/create-custom-views-of-native-objects.md#BKMK_ArrayItems_expansion).
+
+>[!NOTE]
+> Поскольку документ Natvis имеет формат XML, в выражениях не удастся напрямую использовать такие операторы, как знак амперсанда, знак больше, знак меньше или оператор сдвига. Эти символы должны быть экранированы как в теле элемента, так и в операторах условия. Пример:<br>
+> \<Item Name="HiByte"\>(byte)(_flags \&gt;\&gt; 24),x\</Item\><br>
+> \<Item Name="HiByteStatus" Condition="(_flags \&amp; 0xFF000000) == 0"\>"None"\</Item\><br>
+> \<Item Name="HiByteStatus" Condition="(_flags \&amp; 0xFF000000) != 0"\>"Some"\</Item\>
 
 ## <a name="natvis-views"></a>Представления Natvis
 

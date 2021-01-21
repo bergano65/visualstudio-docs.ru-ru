@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ba3db5b74a415d3736c37f54fdb708fde3436d92
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: dc82d72d7c0a333fc28146746a473ed359857490
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756595"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240287"
 ---
 # <a name="unit-test-tools-and-tasks"></a>Задачи и средства модульных тестов
 
@@ -36,7 +36,7 @@ ms.locfileid: "97756595"
 
 * **Платформа изоляции Microsoft Fakes**&mdash;Границы изоляции Microsoft Fakes могут создать постановочные классы и методы для рабочего и системного кода .NET, которые создают зависимости в тестируемом коде. Путем реализации подставных делегатов для функции можно контролировать поведение и возвращаемые значения объекта зависимости.
 
-Кроме того, можно использовать компонент [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md), чтобы изучить код .NET и создать тестовые данные и набор модульных тестов. Для каждого оператора в коде создаются входные данные теста, которые будут выполнять этот оператор. Анализ случая выполняется для каждой условной ветви в коде.
+Кроме того, в .NET можно использовать компонент [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md), чтобы изучить код и создать тестовые данные и набор модульных тестов. Для каждого оператора в коде создаются входные данные теста, которые будут выполнять этот оператор. Анализ случая выполняется для каждой условной ветви в коде.
 
 ## <a name="key-tasks"></a>Ключевые задачи
 

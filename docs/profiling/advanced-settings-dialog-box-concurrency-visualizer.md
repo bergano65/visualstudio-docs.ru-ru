@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно "Дополнительные параметры" (визуализатор параллелизма) | Документация Майкрософт
+description: Используйте дополнительные параметры в визуализаторе параллелизма для управления содержимым трассировки. Имеются вкладки для символов, "Только мой код", для буферизации и многого другого.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fc7d3464fd05b1fe99fcbfa8773e64bca4cb95e7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72911225"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205506"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Диалоговое окно "Дополнительные параметры" (визуализатор параллелизма)
 Диалоговое окно **Дополнительные параметры** в визуализаторе параллелизма позволяет управлять сбором трассировки.  В нем содержатся следующие вкладки: "Символы", "Только мой код", "Буферизация", Filtering (Фильтрация), "События CLR", "Маркеры", "Поставщики" и "Файлы".

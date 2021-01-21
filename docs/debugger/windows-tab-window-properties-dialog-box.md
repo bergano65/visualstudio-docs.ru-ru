@@ -1,5 +1,7 @@
 ---
 title: Вкладка "Окна" диалогового окна "Свойства окна" | Документация Майкрософт
+description: Используйте вкладку "Окна" в свойствах Windows, чтобы отобразить сведения об окнах, связанных с выбранным окном. В этой статье описываются параметры.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1015741b2a1e7ba1608eea7f198b726e808f7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 03cbcee265855c0e3ee26f75d5937315d64661a2
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900787"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205402"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Вкладка "Окна" диалогового окна "Свойства окна"
 Вкладка **Окна** используется для отображения сведений об окнах, связанных с выбранным окном. Чтобы открыть диалоговое окно [Свойства окна](../debugger/window-properties-dialog-box.md), переместите фокус в окно [представления окон](../debugger/windows-view.md). Выберите любой узел узла в дереве, а затем в меню **Вид** выберите пункт **Свойства**.
