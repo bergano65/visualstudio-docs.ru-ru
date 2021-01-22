@@ -1,6 +1,7 @@
 ---
 title: Анализ данных об использовании памяти
-ms.custom: seodec18
+description: Сведения о средствах, которые можно использовать для поиска утечек памяти и неэффективного использования памяти, таких как средство "Использование памяти" и инструмент выделения объектов .NET.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/12/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53d8e33555530eacf482f3f99752ea4c42f8d827
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 675636b7abca10fb2f9f1898d753155235830f86
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918101"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205727"
 ---
 # <a name="analyze-memory-usage"></a>Анализ данных об использовании памяти
 
@@ -31,7 +32,7 @@ ms.locfileid: "92918101"
 - [Анализ использования памяти с отладчиком](../profiling/memory-usage.md)
 - [Анализ использования памяти без отладчика](../profiling/memory-usage-without-debugging2.md)
 
-Можно использовать средства профилирования без отладчика с Windows 7 и более поздних версий. Для запуска средств профилирования с отладчиком (окно **Средства диагностики** ) требуется Windows 8 и более поздние версии.
+Можно использовать средства профилирования без отладчика с Windows 7 и более поздних версий. Для запуска средств профилирования с отладчиком (окно **Средства диагностики**) требуется Windows 8 и более поздние версии.
 
 ## <a name="blogs-and-videos"></a>Блоги и видео
 

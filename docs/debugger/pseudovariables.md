@@ -1,5 +1,7 @@
 ---
 title: Псевдопеременные | Документация Майкрософт
+description: Обзор псевдопеременных в отладчике Visual Studio. Псевдопеременные — термины, используемые для отображения определенных данных в окне переменных или в диалоговом окне "Быстрая проверка".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5b0369a30e69fc69782bbc4a0f5b0c4518cac07
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: c5a76bf799eabd29b778c2dec867cc7e50aa45ee
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75776086"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205532"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Псевдопеременные в отладчике Visual Studio
 Псевдопеременные — термины, используемые для отображения определенных сведений в окне переменных или в диалоговом окне **Быстрая проверка**. Псевдопеременная вводится таким же способом, что и обычная переменная. Однако псевдопеременные не являются переменными и не соответствуют именам переменных в программе.

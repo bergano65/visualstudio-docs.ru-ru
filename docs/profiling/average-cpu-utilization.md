@@ -1,5 +1,7 @@
 ---
 title: Среднее использование ЦП | Документация Майкрософт
+description: Представление "Среднее использование ЦП" — это среднее использование логических ядер системы процессом профилирования в течение всего процесса.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01557fb378f03ffd033495ca42024c1143e67187
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4028dc413bd6ae6b9e9861c339faddf1550d4530
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62777002"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205688"
 ---
 # <a name="average-cpu-utilization"></a>Среднее использование ЦП
 Показывает среднее использование логических ядер системы процессом профилирования в течение всего процесса. Этот граф не показывает, какое из ядер активно в заданный момент времени. Например, если два ядра были загружены на 50 % производительности в течение заданного периода времени, граф покажет, что использовалось одно логическое ядро.

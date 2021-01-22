@@ -1,5 +1,7 @@
 ---
 title: Анализ использования базы данных для проектов .NET Core | Документация Майкрософт
+description: Используйте инструмент "База данных" для записи запросов к базе данных приложения и их последующего анализа, чтобы найти способы повышения производительности.
+ms.custom: SEO-VS-2020
 ms.date: 5/5/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 0aeb2341d905be8f34d47c477f35861b8575dc69
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: a8518e3f43bec3a9d5f696a07613dee84829dbc2
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352320"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205467"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Анализ производительности базы данных с помощью инструмента "База данных"
 

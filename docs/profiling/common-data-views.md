@@ -1,5 +1,7 @@
 ---
 title: Представления общих данных | Документы Майкрософт
+description: В этом разделе содержатся справочные сведения, связанные с представлениями и отчетами по файлам данных профилировщика, которые являются общими для всех методов профилирования.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 39af1975dc3bcb0f5df729579ca1af38fa60160f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 69f68bec998108869676946e2995e45b2f662169
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777833"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533541"
 ---
 # <a name="common-data-views"></a>Представления общих данных
 В этом разделе содержатся справочные сведения, связанные с представлениями и отчетами по файлам данных профилировщика, которые являются общими для всех методов профилирования.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 - [Представление "Сводка"](../profiling/summary-view.md)
 
  Содержит описание представления и отчета "Сводка". Столбцы данных зависят от используемого метода профилирования.
@@ -59,7 +61,7 @@ ms.locfileid: "74777833"
 
  Содержит список трассировки событий Windows и событий выборки, вставленных в файл данных профилирования.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 - [Представления данных метода выборки](../profiling/profiler-sampling-method-data-views.md)
 
  Справочные сведения, касающиеся представлений и отчетов по файлам данных профилировщика, которые создаются с помощью метода выборки.

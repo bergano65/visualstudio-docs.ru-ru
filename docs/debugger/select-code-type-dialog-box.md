@@ -1,5 +1,7 @@
 ---
 title: Диалоговое окно "Выбор типа кода" | Документация Майкрософт
+description: Сведения о диалоговом окне "Выбор типа кода" в Visual Studio. Чтобы открыть это диалоговое окно, откройте диалоговое окно Присоединение к процессу и нажмите кнопку Выбрать.
+ms.custom: SEO-VS-2020
 ms.date: 06/12/2020
 ms.topic: reference
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6fefcea57b97ad3b31e4d10330756565c005184
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f73f2f56a4e60d0030d897d64662ad438027d41
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248768"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205519"
 ---
 # <a name="select-code-type-dialog-box"></a>Диалоговое окно "Выбор типа кода"
 

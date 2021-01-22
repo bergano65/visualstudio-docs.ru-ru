@@ -1,5 +1,7 @@
 ---
 title: Отладка JavaScript с помощью консоли | Документация Майкрософт
+description: Используйте окно консоли JavaScript для взаимодействия и отладки приложений UWP, созданных с помощью JavaScript.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 8a2b2e82e664abea1a53112776dc0ec3ec5f1259
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211080"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205012"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Отладка JavaScript с помощью консоли в Visual Studio
 
@@ -203,7 +205,7 @@ ms.locfileid: "91211080"
 
 2. На панели инструментов **Отладка** в раскрывающемся списке рядом с кнопкой **Начать отладку** выберите **Локальный компьютер** .
 
-3. Выберите **Отладка** > **Начать отладку**или нажмите клавишу F5.
+3. Выберите **Отладка** > **Начать отладку** или нажмите клавишу F5.
 
     Приложение входит в режим приостановки выполнения, когда выполнение достигает функции `updateImages()` и текущая строка выполнения программы выделяется желтым.
 

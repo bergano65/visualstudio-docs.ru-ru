@@ -1,5 +1,7 @@
 ---
 title: Параметр AutoMark | Документы Майкрософт
+description: Используйте параметр AutoMark, чтобы задать интервал времени между событиями сбора данных счетчика производительности Windows. Используйте его с параметром WinCounter.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: c4de965e-0364-4f78-9936-1f509e85df74
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aaa1e7f39a9dcaedec51eb6a40ed3a2d06bcfb0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94578571a9cfe6a170fd94019615eeec3071356a
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330610"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205766"
 ---
 # <a name="automark"></a>Параметр AutoMark
 Параметр **AutoMark** указывает интервал (в миллисекундах) между сбором событий счетчиков производительности для программного обеспечения Windows. Счетчики производительности Windows указываются в параметре **WinCounter**.

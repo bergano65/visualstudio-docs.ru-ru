@@ -1,6 +1,7 @@
 ---
 title: Назначения портов удаленного отладчика | Документация Майкрософт
-ms.custom: ''
+description: Общие сведения о назначении портов удаленного отладчика Visual Studio в 32-разрядных операционных системах, 64-разрядных операционных системах и Azure. Сведения о порте обнаружения.
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fcd0159e5bd315009c1c468dc7a19b5ba5a9c61
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 40081f276dc9649cf448bf00e80d11fc80f58f47
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713507"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204830"
 ---
 # <a name="remote-debugger-port-assignments"></a>Назначение портов удаленного отладчика
 Удаленный отладчик Visual Studio может работать как приложение или как фоновая служба. Если он работает как приложение, то использует порт, назначенный по умолчанию:
@@ -40,7 +41,7 @@ ms.locfileid: "90713507"
  TCP 4022 (в Visual Studio 2017) — это основной порт, необходимый во всех сценариях. Его можно настроить из командной строки или в окне удаленного отладчика.
 ::: moniker-end
 
- В окне удаленного отладчика щелкните **Сервис > Параметры**и задайте номер порта TCP/IP.
+ В окне удаленного отладчика щелкните **Сервис > Параметры** и задайте номер порта TCP/IP.
 
  В командной строке запустите удаленный отладчик с параметром **/port** switch: **msvsmon /port \<port number>** .
 

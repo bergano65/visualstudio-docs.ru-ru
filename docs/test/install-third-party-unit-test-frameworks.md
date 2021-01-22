@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e6433d665157c186a390e2963ef7ad1447b2f982
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 9a5fbd9f396dfe0ed92c0590712f9fddb84c27a0
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329982"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240313"
 ---
 # <a name="install-unit-test-frameworks"></a>Установка платформ модульного тестирования
 
@@ -23,7 +23,7 @@ ms.locfileid: "96329982"
 Решение Visual Studio может содержать проекты модульного тестирования, которые используют разные платформы, предназначенные для разных языков.
 
 ::: moniker range=">=vs-2019"
-Для .NET в Visual Studio предоставляются тестовые платформы [MSTest, NUnit и xUnit](getting-started-with-unit-testing.md), которые устанавливаются по умолчанию.
+Для .NET в Visual Studio предоставляются тестовые платформы [MSTest, NUnit и xUnit](getting-started-with-unit-testing.md), которые устанавливаются по умолчанию. Для C++ предоставляется другой набор платформ тестирования, например, CTest.
 ::: moniker-end
 ::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md) — это платформа тестирования, предоставляемая Visual Studio и устанавливаемая по умолчанию.
