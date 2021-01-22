@@ -1,5 +1,7 @@
 ---
 title: Отчетные функции-ловушки | Документация Майкрософт
+description: Сведения о функциях-ловушках в Visual Studio. Отчетные функции-ловушки, установленные с помощью _CrtSetReportHook, вызываются каждый раз при создании отчета отладки _CrtDbgReport.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0bb14b47fb17c4d59089aafa123115b85ab9342
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8dea558d2f125c1e64f46bb4fbf738434eda2394
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729870"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205623"
 ---
 # <a name="report-hook-functions"></a>Отчетные функции-ловушки
 Отчетные функции-ловушки, установленные с помощью [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), вызываются каждый раз при создании отчета отладки [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw). Помимо всего прочего их можно использовать для фильтрации отчетов, которые позволяют отобрать выделения конкретного типа. Отчетная функция-ловушка должна иметь следующий прототип:
