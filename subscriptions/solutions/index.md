@@ -7,12 +7,12 @@ robots: noindex, nofollow
 author: evanwindom
 ms.author: v-evwin
 ms.date: 12/07/2020
-ms.openlocfilehash: 0bd67e8ef5a96418a8bb2da3796cc8e79f6116b2
-ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
+ms.openlocfilehash: 9890bf3d763dbdc803bb8deff8baf13a7cd69021
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031070"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723193"
 ---
 # <a name="visual-studio-subscriptions-support-widget-content-includes-files"></a>Подписки Visual Studio поддерживают содержимое виджета файлов INCLUDE
 
@@ -111,7 +111,7 @@ ms.locfileid: "98031070"
 ### <a name="order-or-purchase-status"></a>Состояние заказа или покупки
 [!INCLUDE [Find the status of my renewal or purchase](renewing-purchasing-or-canceling/order-or-purchase-status/includes/find-the-status-of-renewal-or-purchase.md)]
 
-[!INCLUDE [View my bill](renewing-purchasing-or-canceling/order-or-purchase-status/includes/viewing-my-bill.md)]
+[!INCLUDE [View my invoice](renewing-purchasing-or-canceling/order-or-purchase-status/includes/viewing-my-bill.md)]
 
 ## <a name="issues-with-signing-in"></a>Проблемы со входом 
 
