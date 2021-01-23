@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 9c078f3500a5a00edadae73f04f04e60d7c199d6
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 3697ac75eb608f6990cb7f8ca976e103f0df8454
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341241"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722988"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps с приложениями Unity
 
@@ -61,8 +61,8 @@ Visual Studio (совместно с Azure DevOps Services и Team Foundation Se
 
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|--------------------------|-------------------------|
-|[Использование системы управления версиями Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) или Azure Repos|Да|Проекты Unity представляют собой наборы файлов, которые можно добавлять в системы управления версиями так же, как любые другие проекты. Однако существует ряд особенностей, которые описаны ниже.|
-|[Приступая к работе с Git в Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Да|См. примечания после таблицы.|
+|[Использование системы управления версиями Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) или Azure Repos|Да|Проекты Unity представляют собой наборы файлов, которые можно добавлять в системы управления версиями так же, как любые другие проекты. Однако существует ряд особенностей, которые описаны ниже.|
+|[Приступая к работе с Git в Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&preserve-view=true&tabs=visual-studio)|Да|См. примечания после таблицы.|
 |[Улучшение качества кода](/test/improve-code-quality.md)|Да||
 |[Поиск изменений кода и других журналов](/ide/find-code-changes-and-other-history-with-codelens.md)|Да||
 |[Использование карт кода для отладки приложений](/modeling/use-code-maps-to-debug-your-applications.md)|Да||
