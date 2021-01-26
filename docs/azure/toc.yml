@@ -40,8 +40,8 @@
   items:
     - name: Работа с проектами облачных служб
       items:
-        - name: Доступ к частным облакам Azure
-          href: vs-azure-tools-access-private-azure-clouds-with-visual-studio.md
+        - name: Использование облачных служб с расширенной поддержкой (предварительная версия)
+          href: cloud-services-extended-support.md
         - name: Создание проекта облачной службы Azure
           href: vs-azure-tools-azure-project-create.md
         - name: Управление ролями в облачных службах Azure
@@ -60,6 +60,8 @@
           href: vs-azure-tools-multiple-services-project-configurations.md
         - name: Как обновить проекты до текущей версии инструментов Azure
           href: vs-azure-tools-upgrade-projects-to-the-current-version-of-the-azure-tools.md
+        - name: Доступ к частным облакам Azure
+          href: vs-azure-tools-access-private-azure-clouds-with-visual-studio.md
     - name: Тестирование и отладка облачной службы
       items:
         - name: Отладка облачной службы или виртуальной машины Azure в Visual Studio
