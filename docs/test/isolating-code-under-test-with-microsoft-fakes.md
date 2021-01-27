@@ -12,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: aa1f0505d37059ce65da80fcf483473610cf2f6d
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: ba3baa1ff06da6497ddc663f888e7c93292d5b98
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329540"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719660"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Изоляция тестируемого кода с помощью Microsoft Fakes
 
@@ -255,11 +255,11 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 ## <a name="using-microsoft-fakes-in-the-ci"></a>Использование Microsoft Fakes при непрерывной интеграции
 
 ### <a name="microsoft-fakes-assembly-generation"></a>Создание сборки Microsoft Fakes
-Так как для Microsoft Fakes требуется Visual Studio Enterprise, то для создания сборок Fakes необходимо создать проект с помощью [задачи сборки Visual Studio](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops).
+Так как для Microsoft Fakes требуется Visual Studio Enterprise, то для создания сборок Fakes необходимо создать проект с помощью [задачи сборки Visual Studio](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops&preserve-view=true).
 
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> Альтернативный вариант — проверить сборки Fakes в процессе непрерывной интеграции и использовать [задачи MSBuild](../msbuild/msbuild-task.md?view=vs-2019). После этого необходимо убедиться, что в тестовом проекте есть ссылка на созданную сборку Fakes, как показано в следующем фрагменте кода:
+> Альтернативный вариант — проверить сборки Fakes в процессе непрерывной интеграции и использовать [задачи MSBuild](../msbuild/msbuild-task.md?view=vs-2019&preserve-view=true). После этого необходимо убедиться, что в тестовом проекте есть ссылка на созданную сборку Fakes, как показано в следующем фрагменте кода:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -273,10 +273,10 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>Запуск тестов Microsoft Fakes
-Пока в настроенном каталоге `FakesAssemblies` имеются сборки Microsoft Fakes (по умолчанию `$(ProjectDir)FakesAssemblies`), можно запустить тесты с помощью [задачи vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops).
+Пока в настроенном каталоге `FakesAssemblies` имеются сборки Microsoft Fakes (по умолчанию `$(ProjectDir)FakesAssemblies`), можно запустить тесты с помощью [задачи vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true).
 
 ::: moniker range=">=vs-2019"
-Для распределенного тестирования с помощью [задачи vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) для проектов .NET Core, использующих Microsoft Fakes, требуется Microsoft Visual Studio 2019 (обновление 9) предварительной версии `20201020-06` и более поздней.
+Для распределенного тестирования с помощью [задачи vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) для проектов .NET Core, использующих Microsoft Fakes, требуется Microsoft Visual Studio 2019 (обновление 9) предварительной версии `20201020-06` и более поздней.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
