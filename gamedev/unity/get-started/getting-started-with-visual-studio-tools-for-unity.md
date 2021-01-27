@@ -2,7 +2,7 @@
 title: Приступая к работе с инструментами Visual Studio для Unity | Документы Майкрософт
 description: Узнайте, как установить и настроить Visual Studio для разработки Unity.
 ms.custom: ''
-ms.date: 07/13/2020
+ms.date: 01/27/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: how-to
@@ -13,17 +13,17 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: 1f8cbe1629aab6a177a46888fe25cf8e3565d91d
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: e05a94ecf9cf690f46299684c82f2b3961a783c8
+ms.sourcegitcommit: 585547ea7363ab1b6bb9d41f6d008cbe478d1a3b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903757"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98912572"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Начало работы с Visual Studio и Unity
 
 > [!NOTE]
-> В этом учебнике предполагается, что Unity уже установлен с помощью программы концентратора Unity. Если вы не знакомы с Unity, мы рекомендуем сначала изучить Unity и завершить [Начало работы с помощью Unity](https://learn.unity.com/course/getting-started-with-unity) .
+> В этом учебнике предполагается, что Unity уже установлен с помощью программы концентратора Unity. Если вы не знакомы с Unity, мы рекомендуем ознакомиться с Unity и сначала заполним [путь обучения Unity Essentials](https://learn.unity.com/pathway/unity-essentials) .
 
 ## <a name="install-unity-support-for-visual-studio"></a>Установка поддержки Unity для Visual Studio
 
