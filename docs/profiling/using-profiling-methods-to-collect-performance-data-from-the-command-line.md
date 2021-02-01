@@ -1,5 +1,6 @@
 ---
 title: Использование методов профилирования из командной строки для получения данных о производительности
+description: Сведения о том, что выбор программ командной строки и параметров средств профилирования Visual Studio зависит от таких факторов, как тип профилируемого приложения.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b30aa723ea3014aec2bd05d4bd204b9427b3c218
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1796fad03d04ffb79ca1c8aeccc241ee3698f9f1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779978"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723248"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Использование методов профилирования для сбора данных о производительности из командной строки
 Выбор программ командной строки и параметров Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] зависит от таких факторов, как тип профилируемого приложения, метод профилирования, который нужно использовать, а также от того, какой код (машинный или .NET Framework) использовался для написания приложения.
@@ -74,7 +75,7 @@ ms.locfileid: "74779978"
 ## <a name="add-tier-interaction-data-to-a-profiling-run"></a>Добавление данных уровневого взаимодействия в сеанс профилирования
  Добавление данных об уровневом взаимодействии в сеанс профилирования требует определенных процедур со средствами профилирования командной строки. См. [Сбор данных взаимодействия уровней](../profiling/adding-tier-interaction-data-from-the-command-line.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Профилирование служб](../profiling/command-line-profiling-of-services.md)

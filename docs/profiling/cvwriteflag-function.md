@@ -1,5 +1,7 @@
 ---
 title: Функция CvWriteFlag | Документы Майкрософт
+description: В этой статье приводятся справочные сведения о функции CvWriteFlag из пакета SDK визуализатора параллелизма (библиотека C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 396edc736f61ae76aab7263bcd15bb0bfad13204
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b3c82a84e9a6523a0a969639f26b28d64cdfc9e
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332159"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686471"
 ---
 # <a name="cvwriteflag-function"></a>Функция CvWriteFlag
 Записывает флаг в файл трассировки визуализатора параллелизма.
@@ -69,9 +71,9 @@ HRESULT CvWriteFlagExVA(
 
  `level` Уровень важности.
 
- `pMarkerSeries` Допустимый контекст набора маркеров. Не может принимать значение NULL.
+ `pMarkerSeries` Допустимый контекст набора маркеров. Не может быть NULL.
 
- `pMessage` Строка формата сообщений. Не может принимать значение NULL.
+ `pMessage` Строка формата сообщений. Не может быть NULL.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Значение S_OK, если сообщение успешно записано. Код ошибки в том случае, если были какие-либо ошибки. Для проверки условия ошибки используйте макрос SUCCEEDED/FAILED.

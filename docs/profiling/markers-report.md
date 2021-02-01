@@ -1,5 +1,6 @@
 ---
 title: Отчет о маркерах | Документы Майкрософт
+description: Сведения о том, как в отчете по маркерам представлены маркеры в отображаемом интервале времени, а также о возможном появления или исчезновении маркеров в результате панорамирования или масштабирования.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9502d2cf0081985cfbee2283af820c06d681ad9f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7e95cf3b14f804c481ff03ec6fbf72b360efedc7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "64808271"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722117"
 ---
 # <a name="markers-report"></a>Отчет по маркерам
 В отчете о маркерах перечислены маркеры показанного периода времени.  Панорамирование, масштабирование или скрытие строк может привести к отображению или исчезновению маркеров. Отчет содержит следующие сведения о каждом маркере.

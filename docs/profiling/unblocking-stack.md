@@ -1,5 +1,6 @@
 ---
 title: Разблокировка стека | Документы Майкрософт
+description: Сведения о том, как стек вызовов для потока, который был разблокирован, отображается на вкладке после его разблокировки другим потоком в текущем процессе.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e790f37ba88498d5ac0ae03dd9ce7ae074f451
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 30b4da23ef89f8bdde61bbf1eebb63bb4d239b7b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "63004404"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722364"
 ---
 # <a name="unblock-stack"></a>Разблокировка стека
 Если выбранный в данный момент элемент потока представляет блокированный сегмент, выполнение которого началось после разблокирования другим потоком в выбранном процессе, то в этой таблице отображается стек вызовов для потока, снявшего блокировку.
 
-## <a name="see-also"></a>См. также раздел
-- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>См. также
+- [Представление потоков](../profiling/threads-view-parallel-performance.md)

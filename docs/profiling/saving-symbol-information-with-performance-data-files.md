@@ -1,5 +1,6 @@
 ---
 title: Сохранение символьной информации с файлами данных профилировщика | Документы Майкрософт
+description: Сведения о том, как настроить параметры проекта для анализа производительности для сохранения или сериализации символов в файле отчета.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 74137752900d082c545dd5e5271b7700ec81fa01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 142e73a65fa9ffd2210719d84f18a25068762acb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778301"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720219"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Сохранение символьной информации с файлами данных профилировщика
 

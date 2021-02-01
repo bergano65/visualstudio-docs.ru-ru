@@ -1,5 +1,6 @@
 ---
 title: Представления данных по состязаниям за ресурсы | Документы Майкрософт
+description: Справочные сведения о представлениях и отчетах по файлам данных профилировщика, содержащих данные профилирования состязаний потоков.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +13,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25dc334819c4b32bf74822e46dd3251919f621bf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771534"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720336"
 ---
 # <a name="resource-contention-data-views"></a>Представления данных о конфликтах ресурсов
 В этом разделе содержатся справочные сведения о представлениях и отчетах по файлам данных профилировщика, содержащих данные профилирования состязаний потоков.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Сводное представление —-данные профилировщика по состязаниям](../profiling/resource-contention-data-views.md)
 
  Отображает графическую временную шкалу данных профилирования, а также список функций и ресурсов, задействованных в большинстве событий блокировки.
@@ -51,11 +52,11 @@ ms.locfileid: "74771534"
 
  Содержит список данных по состязаниям потоков и состязаниям за ресурсы по функциям.
 
-- [Представление состязаний за ресурсы](../profiling/resource-contentions-view-contention-data.md)
+- [Представление "Состязание за ресурсы"](../profiling/resource-contentions-view-contention-data.md)
 
  Содержит список данных по состязаниям за ресурсы по заблокированным ресурсам.
 
-- [Представление строк](../profiling/lines-view-contention-data.md)
+- [Представление "Строки"](../profiling/lines-view-contention-data.md)
 
  Содержит список данных по состязаниям за ресурсы по строкам исходного кода.
 
@@ -68,6 +69,6 @@ ms.locfileid: "74771534"
  Содержит список состязаний за ресурсы по процессам и потокам.
 
 ## <a name="reference"></a>Справочник
-- [Представление "Сведения о функции"](../profiling/function-details-view.md)
+- [Представление сведений о функции](../profiling/function-details-view.md)
 
  Отображает графическую схему связей между выбранной функцией и функциями, которые вызывали выбранную функцию и вызывались ею.

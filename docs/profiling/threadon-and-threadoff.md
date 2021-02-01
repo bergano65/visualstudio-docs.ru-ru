@@ -1,5 +1,6 @@
 ---
 title: Подкоманды ThreadOn и ThreadOff | Документы Майкрософт
+description: Сведения о подкомандах ThreadOff и ThreadOn программы VSPerfCmd.exe, доступных только в сеансах профилирования из командной строки, в которых используется метод инструментирования.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 906629eb24f6be097f3e24dfca3e6a231f42357f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f8b2e51857fc799c7b60f7650b823b77c9c6a283
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778158"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718776"
 ---
 # <a name="threadon-and-threadoff"></a>Параметры ThreadOn и ThreadOff
 Подкоманды **ThreadOff** и **ThreadOn** программы *VSPerfCmd.exe* доступны только в сеансах профилирования из командной строки, в которых используется метод инструментирования. **ThreadOff** и **ThreadOn** приостанавливают и возобновляют профилирование для указанного потока. **ThreadOff** останавливает профилирование потока, а **ThreadOn** запускает его.
@@ -48,7 +49,7 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 
  **GlobalOff**&#124;**GlobalOn** начинает или останавливает профилирование для всех процессов сеанса профилирования из командной строки.
 
- {**ProcessOff** | **ProcessOn**}**:**`TID` Останавливает или запускает профилирование указанного процесса.
+ {**ProcessOff** | **ProcessOn**} **:** `TID` Останавливает или запускает профилирование указанного процесса.
 
 ## <a name="example"></a>Пример
  В этом примере подкоманда **ThreadOff** используется для остановки сбора данных профилирования, в результате чего выполняется только сбор данных по запуску приложения.

@@ -1,5 +1,6 @@
 ---
 title: WaitStart | Документация Майкрософт
+description: Сведения о параметре WaitStart, благодаря которому подкоманда Start программы VSPerfCmd.exe возвращается только после инициализации профилировщика или через указанное число секунд.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6c737177-2dfb-4150-963e-a49ac9aaa591
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b42936d9d87ad80b48b7fdc71cdf0fd3fa965af2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8218b04b0c67f2b3b2ebf7ae2fe1209d76461aa
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329890"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718763"
 ---
 # <a name="waitstart"></a>WaitStart
 Благодаря параметру WaitStart подкоманда *VSPerfCmd.exe* Start возвращается только после инициализации профилировщика или через указанное число секунд. По умолчанию команда Start возвращается немедленно. Если подкоманда Start возвращается без инициализации профилировщика, возвращается ошибка. Если не указано число секунд, команда Start ожидает неограниченное время.
@@ -35,7 +36,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName[Options] /WaitStart[:Seconds]
 
  **Выходные данные:** `filename` Задает имя выходного файла.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 ## <a name="example"></a>Пример
  В этом примере пакетного файла команда Start ожидает инициализацию профилировщика 5 секунд.

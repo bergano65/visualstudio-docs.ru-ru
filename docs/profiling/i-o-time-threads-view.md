@@ -1,5 +1,6 @@
 ---
 title: Время ввода-вывода (представление "Потоки") | Документация Майкрософт
+description: Сведения о том, как сегменты времени ввода-вывода связаны с периодами времени блокировки, занесенными в категорию ввода-вывода, что означает, что поток ожидает завершения операции ввода-вывода.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d7ba29383ddddc02160967a90b56046128d2f19
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 915ab6aef595fba7e13321d4e23c08bdd2eadaf3
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62995445"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721636"
 ---
 # <a name="io-time-threads-view"></a>время ввода-вывода (представление "Потоки")
 Эти сегменты на временной шкале связаны с периодами времени блокирования, занесенными в категорию ввода-вывода. Это означает, что поток ожидает завершения операции ввода-вывода. Поток может быть заблокирован в интерфейсе API или на время ожидания ядра, связанного с вводом-выводом, которое визуализатор параллелизма интерпретирует как ввод-вывод. Такие API-интерфейсы, как `CreateFile()`, `ReadFile()`, и `WSARecv()`, попадают в эту группу.
 
-## <a name="see-also"></a>См. также раздел
-- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>См. также
+- [Представление потоков](../profiling/threads-view-parallel-performance.md)

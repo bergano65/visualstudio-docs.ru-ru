@@ -1,5 +1,7 @@
 ---
 title: Граф активности GPU | Документы Майкрософт
+description: Общие сведения о графе активности GPU в визуализаторе параллелизма, который отображает уровень активности DirectX в системе.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5734b9eb1b4307f7c32dcb8a170f7c6c571f46ca
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bccf4869a1197306017b443b00670cc123300a48
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969570"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801330"
 ---
 # <a name="gpu-activity-graph"></a>Граф активности GPU
 Граф активности GPU в визуализаторе параллелизма отображает уровень активности DirectX в системе, измеренный по числу ядер DirectX, которые используются в динамике по времени.  Граф не показывает, какие конкретные ядра были использованы.  Ядро считается используемым, если оно выполняет какую-либо работу графического процессора.
@@ -27,5 +29,5 @@ ms.locfileid: "62969570"
 
  Белый цвет указывает на наличие неиспользуемых ядер DirectX в системе. Эти ядра доступны для процесса, если вам удастся найти дополнительные возможности для их использования. Некоторые ядра могут использоваться только для определенных видов задач.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Представление использования](../profiling/utilization-view.md)

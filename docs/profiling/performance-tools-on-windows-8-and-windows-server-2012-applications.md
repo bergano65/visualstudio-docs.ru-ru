@@ -1,5 +1,6 @@
 ---
 title: Средства оценки производительности в приложениях Windows 8 и Windows Server 2012
+description: Сведения о возможностях расширенной безопасности в Windows 8 и Windows Server 2012, требовавших значительных изменений в способе, которым средства производительности Visual Studio собирают данные на этих платформах.
 ms.custom: SEO-VS-2020
 ms.date: 06/19/2017
 ms.topic: conceptual
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc44eddc2af2e2d85f7c4bb9c876d336ccd1b546
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ce83684b77d4546915cdcf5980e68be0b6c6a125
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807837"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719595"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Средства оценки производительности в приложениях Windows 8 и Windows Server 2012
 

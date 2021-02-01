@@ -1,5 +1,7 @@
 ---
 title: Функция CvEnterSpan Function | Документы Майкрософт
+description: Справочные сведения о функции CvEnterSpan из пакета SDK визуализатора параллелизма (библиотека C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bb034d4a2501175d117256364082966a97af8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50a68d58d6a9b2564c732605075811e8bc99721f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328968"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686523"
 ---
 # <a name="cventerspan-function"></a>Функция CvEnterSpan
 Отмечает начало нового диапазона.
@@ -108,9 +110,9 @@ HRESULT CvEnterSpanExVA(
 
  `level` Уровень важности диапазона.
 
- `pMarkerSeries` Допустимый контекст набора маркеров. Не может принимать значение NULL.
+ `pMarkerSeries` Допустимый контекст набора маркеров. Не может быть NULL.
 
- `pMessage` Строка формата сообщения. Не может принимать значение NULL.
+ `pMessage` Строка формата сообщения. Не может быть NULL.
 
  `ppSpan` Адрес переменной, в которой будет храниться результирующий объект диапазона. Адрес не может принимать значение NULL, переменная может содержать любое значение.
 

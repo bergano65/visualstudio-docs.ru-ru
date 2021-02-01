@@ -1,5 +1,6 @@
 ---
 title: Время вытеснения | Документация Майкрософт
+description: Сведения о времени вытеснения и о том, как эти сегменты на временной шкале связаны с периодом времени блокирования, занесенным в категорию вытеснения.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7a02f7247e09876bc4598d44fc1c395161ebc2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a102b11fdc7608b94b97105b061e28860f41a9a1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62935897"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719517"
 ---
 # <a name="preemption-time"></a>Время вытеснения
 Эти сегменты на временной шкале связаны с периодом времени блокирования, занесенным в категорию вытеснения Эта категория означает, что поток отключается по одной из следующих причин:
@@ -30,5 +31,5 @@ ms.locfileid: "62935897"
 
   Подсказка к вытесненному сегменту содержит имя процесса или потока, который вызвал это вытеснение. Но это не подразумевает, что вытесненный процесс или поток в действительности выполняются во время периода вытеснения.
 
-## <a name="see-also"></a>См. также раздел
-- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>См. также
+- [Представление потоков](../profiling/threads-view-parallel-performance.md)

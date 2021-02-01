@@ -1,5 +1,7 @@
 ---
 title: Анализ использования памяти для объектов .NET | Документация Майкрософт
+description: С помощью средства выделения объектов .NET можно узнать, сколько памяти использует приложение и для каких путей к коду выделяется наибольший ее объем.
+ms.custom: SEO-VS-2020
 ms.date: 12/9/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 4c0d8b02f867797317ff762e7a23bec042f93318
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970225"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801495"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Анализ использования памяти с помощью средства выделения объектов .NET
 

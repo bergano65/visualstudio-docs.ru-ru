@@ -1,5 +1,6 @@
 ---
 title: SuspendProfile | Документы Майкрософт
+description: Сведения о методе SuspendProfile, который увеличивает значение счетчика приостановки и возобновления для указанного уровня профилирования.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eb0d0f41b17c4f23c3898b044ad49182d47aae0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 728aa7c858f8321e3289f2d17e612284f8739f17
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778197"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719270"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 Метод `SuspendProfile` увеличивает значение счетчика приостановки и возобновления для указанного уровня профилирования.
@@ -34,7 +35,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 
  Указывает уровень профилирования, к которому можно применить сбор данных по производительности. Для указания одного из трех уровней, к которому можно применить сбор данных по производительности, следует использовать представленные ниже перечислители **PROFILE_CONTROL_LEVEL**:
 
-|Перечислитель|Description|
+|Перечислитель|Описание|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|Установка глобального уровня оказывает влияние на все процессы и потоки при выполнении профилирования.|
 |PROFILE_PROCESSLEVEL|Установка уровня процесса оказывает влияние на все потоки, являющиеся частью указанного процесса.|
@@ -47,7 +48,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 ## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение
  Функция информирует об успехе или неудаче с помощью перечисления **PROFILE_COMMAND_STATUS**. Может возвращаться одно из следующих значений:
 
-|Перечислитель|Description|
+|Перечислитель|Описание|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|Идентификатор элемента профилирования не существует.|
 |PROFILE_ERROR_LEVEL_NOEXIST|Заданный уровень профилирования не существует.|
@@ -105,5 +106,5 @@ void ExerciseSuspendProfile()
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)

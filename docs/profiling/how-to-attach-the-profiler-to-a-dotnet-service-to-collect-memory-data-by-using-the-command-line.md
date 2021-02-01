@@ -1,5 +1,6 @@
 ---
 title: Присоединение профилировщика к службе .NET для сбора данных по использованию памяти
+description: Используйте программы командной строки для Средств профилирования Visual Studio с целью подключения профилировщика к службе .NET Framework и сбора данных по использованию памяти.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50a77d3cc8d2bb3df73542b273ec3697e0a9ccd9
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e31404c07fb7093bb2bd1114340cdb87d3c8558a
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811075"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800591"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-service-to-collect-memory-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к службе .NET Framework для сбора данных по использованию памяти с помощью командной строки
 В этой статье описывается использование программ командной строки для Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с целью подключения профилировщика к службе .NET Framework и сбора данных по использованию памяти. С помощью этих программ можно собирать сведения о количестве выделений памяти и объемах выделяемой памяти, а также сведения о времени существования объектов памяти.

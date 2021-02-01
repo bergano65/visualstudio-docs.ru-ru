@@ -1,5 +1,7 @@
 ---
 title: Выборка данных на уровне строк | Документация Майкрософт
+description: Сведения о том, как выборка на уровне строк профилировщика позволяет обнаруживать код, использующий большой объем времени процессора. Эта возможность работает как с управляемым, так и с машинным кодом.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4653cf4b8c921a0c464dcb148963d3ab33506c25
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3a760980b16fab17fed7180b0bc74e0271c61e1d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851259"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801063"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Практическое руководство. Выборка данных на уровне строк
 Выборка на уровне строк — это возможность профилировщика определить, где в коде функции, потребляющей большой объем ресурсов процессора (например, функции с высокой частотой исключающих выборок), тратится самый большой объем времени процессора.

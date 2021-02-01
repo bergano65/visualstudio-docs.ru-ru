@@ -1,5 +1,6 @@
 ---
 title: VSPerfMon | Документы Майкрософт
+description: Сведения о том, как можно использовать средство VSPerfMon для сбора данных о производительности приложения. Как правило, это средство запускается программой VSPerfCmd.exe.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee2423f552c6931b0c8b62181dc44186053c9460
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 919153699299c2f39ad0353ed484a9f9c9f46846
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329968"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719179"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 Средство VSPerfMon используется с целью сбора данных производительности для приложения. Как правило, оно запускается средством *VSPerfCmd.exe*. VSPerfMon выводит дополнительные сведения о присоединении или отсоединении процессов, недоступные при использовании средства VSPerfCmd. Для просмотра этих сведений средство VSPerfMon следует запустить в отдельном окне. Для вызова VSPerfMon используется следующий синтаксис:

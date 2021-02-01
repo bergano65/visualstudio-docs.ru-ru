@@ -1,5 +1,6 @@
 ---
 title: Просмотр предупреждений о производительности | Документация Майкрософт
+description: Сведения о том, как в предупреждении о производительности средств профилирования Visual Studio указываются проблемы профилируемого приложения, которые могут замедлить выполнение программы.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c6ce4e9c-4677-40cc-b1af-d68e9f3249f2
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: acd6fea43fcf256b91b4bdafad10f47c11523f92
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: f009c3b6c188f9785d9af33184627864f95b56e9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851324"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721740"
 ---
 # <a name="how-to-view-performance-warnings"></a>Практическое руководство. Просмотр предупреждений о производительности
 В предупреждениях о производительности Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] указываются проблемы профилируемого приложения, которые могут замедлить выполнение программы. Предупреждения также могут указывать на то, что может потребоваться изменить методы сбора для получения более полезных данных. Предупреждения о производительности создаются в сеансе профилирования автоматически и отображаются в окне **Список ошибок** при открытии файла данных профилирования в интегрированной среде разработки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

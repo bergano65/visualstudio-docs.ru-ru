@@ -1,5 +1,6 @@
 ---
 title: Параметр User (VSPerfCmd) | Документы Майкрософт
+description: Сведения о параметре User, указывающем домен и имя пользователя учетной записи, которая является владельцем профилируемого процесса.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ee1a478e-374d-4f30-ae28-d260b9d4723a
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dbb1a155e8e0ffd2690b5850299b8075a63ea3d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dbb5490ff9281a7379d74209da15a3a39595bc09
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779965"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721168"
 ---
 # <a name="user-vsperfcmd"></a>Параметр User (VSPerfCmd)
 Параметр **User** указывает домен и имя пользователя учетной записи, которая является владельцем профилируемого процесса. Этот параметр является обязательным только в том случае, если процесс выполняется в качестве пользователя, отличного от пользователя, вошедшего в систему. Владелец процесса указан в столбце "Имя пользователя" на вкладке **Процессы** диспетчера задач Windows.

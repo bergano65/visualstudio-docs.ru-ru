@@ -1,5 +1,6 @@
 ---
 title: Обзоры (средства производительности) | Документы Майкрософт
+description: В этой статье приводится концептуальное и терминологическое описание средств профилирования Visual Studio. Используйте эти данные для измерения характеристик производительности разрабатываемого приложения.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
@@ -9,17 +10,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d27f777b660b2ffc94c4b9b6f0b6ba55816d626b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772688"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722832"
 ---
 # <a name="overviews-performance-tools"></a>Обзоры (средства оценки производительности)
 В данном разделе представлены концептуальные и терминологические обзоры средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], используемых для измерения характеристик производительности разрабатываемого приложения.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 - [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)
 
  Сведения об основах профилирования с использованием средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -56,7 +57,7 @@ ms.locfileid: "74772688"
 
  Сведения о проблемах сбора данных выборки и профилирования приложений в нескольких сеансах в [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)].
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Начало работы](../profiling/getting-started-with-performance-tools.md)
 - [Обозреватель производительности](../profiling/performance-explorer.md)

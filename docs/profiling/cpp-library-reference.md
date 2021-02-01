@@ -1,5 +1,7 @@
 ---
 title: Справочник по библиотеке C++ | Документы Майкрософт
+description: В этом разделе приводятся справочные сведения о пакете SDK визуализатора параллелизма.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d15b749d0564010cf6a67527f456a76a9db885cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efe02bbd2e31792e1feb306ba331fa3bc4f736f9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329191"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723014"
 ---
 # <a name="c-library-reference"></a>Справочник по библиотеке C++
 
@@ -24,10 +26,10 @@ ms.locfileid: "85329191"
 > [!NOTE]
 > В стандарте языка C++ использование идентификаторов, начинающихся с символа подчеркивания (`_`), зарезервировано для таких реализаций, как библиотеки. Не используйте в коде имена, начинающиеся с символа подчеркивания. Поведение элементов кода, имена которых соответствуют этому соглашению, не гарантируется и может быть изменено в будущем. По этим причинам такие элементы кода исключены из этой документации.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 
 [Пространство имен Concurrency (визуализатор параллелизма)](../profiling/concurrency-namespace-concurrency-visualizer.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)

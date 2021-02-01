@@ -1,5 +1,6 @@
 ---
 title: StopProfile | Документы Майкрософт
+description: Сведения о функции StartProfile, которая устанавливает для счетчика значение 0 (отключено) для указанного уровня профилирования.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a5492d2bbd33e6b250b564532c929234d748506c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f2cfffe78264f5721bbf3f3434199a542ec1ce14
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778236"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722689"
 ---
 # <a name="stopprofile"></a>StopProfile
 Функция `StopProfile` устанавливает счетчик в значение 0 (включено) для указанного уровня профилирования.
@@ -34,7 +35,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 
  Указывает уровень профилирования, к которому можно применить сбор данных по производительности. Для указания одного из трех уровней, к которому можно применить сбор данных по производительности, следует использовать представленные ниже перечислители **PROFILE_CONTROL_LEVEL**:
 
-|Перечислитель|Description|
+|Перечислитель|Описание|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|Установка глобального уровня оказывает влияние на все процессы и потоки при выполнении профилирования.|
 |PROFILE_PROCESSLEVEL|Установка уровня процесса оказывает влияние на все потоки, являющиеся частью указанного процесса.|
@@ -47,7 +48,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 ## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение
  Функция информирует об успехе или неудаче с помощью перечисления **PROFILE_COMMAND_STATUS**. Может возвращаться одно из следующих значений:
 
-|Перечислитель|Description|
+|Перечислитель|Описание|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|Идентификатор элемента профилирования не существует.|
 |PROFILE_ERROR_LEVEL_NOEXIST|Заданный уровень профилирования не существует.|
@@ -107,5 +108,5 @@ void ExerciseStopProfile()
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)

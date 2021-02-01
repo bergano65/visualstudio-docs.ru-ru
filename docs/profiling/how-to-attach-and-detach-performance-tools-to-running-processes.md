@@ -1,6 +1,7 @@
 ---
 title: Присоединение средств производительности к выполняющемуся процессу
-ms.custom: seodec18
+description: Сведения об использовании профилировщика для подключения к выполняющемуся процессу или отключения от него, чтобы упростить выборку и сбор данных производительности.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 58bbf5fa291d71b26cd303a7d43719fde8605c0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9cccad7f47a26396612264280926b7b26e431879
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331145"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801157"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Практическое руководство. Присоединение средств оценки производительности к выполняющемуся процессу и его отсоединение из этого процесса
 Профилировщик можно использовать для подключения к или отключения от выполняющегося процесса, чтобы упростить выборку и сбор данных производительности. Этот метод можно использовать для профилирования процесса, если необходимо запретить сбор данных о времени загрузки приложения или отследить производительность процесса после достижения им определенного состояния.
@@ -61,9 +62,9 @@ ms.locfileid: "85331145"
 
 3. Щелкните **Отключить**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Управление сбором данных](../profiling/controlling-data-collection.md)
 - [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)
-- [Практическое руководство. Начало и окончания сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)
+- [Практическое руководство. Начало и окончание сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)
 - [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)

@@ -1,5 +1,7 @@
 ---
 title: Активность GPU (другие процессы) | Документы Майкрософт
+description: Сведения о сегментах "Активность GPU (другие процессы)" в представлении потоков визуализатора параллелизма.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a502590c20fce1455d9259ae681178d9cd48e33
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 71ecb1587545120aef8e18ce847d5e957f3e3cdd
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969506"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801317"
 ---
 # <a name="gpu-activity-other-processes"></a>Активность GPU (другие процессы)
 Сегменты **Активность GPU (другие процессы)** в представлении потоков визуализатора параллелизма представляют моменты времени, когда GPU выполнял обработку запросов от имени других процессов в системе. Эти запросы отправляются в GPU как пакеты прямого доступа к памяти (DMA).  Длина сегмента представляет количество времени, затраченного на обработку пакета графическим процессором.

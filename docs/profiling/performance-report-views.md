@@ -1,5 +1,6 @@
 ---
 title: Представления отчетов о производительности | Документы Майкрософт
+description: Сведения о том, как представления файлов данных профилирования отображаются в интегрированной среде разработки Visual Studio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,17 +14,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfb0d9ae2d677b1cc9dc828ffaecd5c0f71bfd5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 611c31027bd725d8a1a98e6cb2e76d544743c811
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772292"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722754"
 ---
 # <a name="performance-report-views"></a>Представления отчетов о производительности
 Этот раздел содержит справочные сведения по отчетам и представлениям средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Представления файлов данных профилирования отображаются в интегрированной среде разработки [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Отчеты создаются средством командной строки [VSPerfReport](../profiling/vsperfreport.md).
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 - [Представления общих данных](../profiling/common-data-views.md)
 
  Справочные сведения, связанные с представлениями и отчетами по файлам данных профилирования, которые являются общими для всех методов профилирования.
@@ -52,5 +53,5 @@ ms.locfileid: "74772292"
 
  Справочные сведения по представлению и отчету взаимодействия файлов данных профилирования, которые включают данные взаимодействия уровней.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Анализ данных из средств производительности](../profiling/analyzing-performance-tools-data.md)

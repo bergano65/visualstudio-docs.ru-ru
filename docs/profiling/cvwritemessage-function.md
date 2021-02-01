@@ -1,5 +1,7 @@
 ---
 title: Функция CvWriteMessage | Документы Майкрософт
+description: В этой статье приводятся справочные сведения о функции CvWriteMessage из пакета SDK визуализатора параллелизма (библиотека C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66fb584090a0b6483c18f8254eb4a96b6186d51e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92d6b3bb37937e010bc10a685f958063e7cc3358
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332130"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686432"
 ---
 # <a name="cvwritemessage-function"></a>Функция CvWriteMessage
 Записывает сообщение в файл трассировки визуализатора параллелизма.
@@ -99,9 +101,9 @@ HRESULT CvWriteMessageExVA(
 
  `level` Уровень важности диапазона.
 
- `pMarkerSeries` Допустимый контекст набора маркеров. Не может принимать значение NULL.
+ `pMarkerSeries` Допустимый контекст набора маркеров. Не может быть NULL.
 
- `pMessage` Строка формата сообщений. Не может принимать значение NULL.
+ `pMessage` Строка формата сообщений. Не может быть NULL.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Значение S_OK, если сообщение успешно записано. Код ошибки в том случае, если были какие-либо ошибки. Для проверки условия ошибки используйте макрос SUCCEEDED/FAILED.

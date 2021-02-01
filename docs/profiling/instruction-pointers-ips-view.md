@@ -1,5 +1,6 @@
 ---
 title: Представление "Указатели инструкций" | Документы Майкрософт
+description: Сведения о представлении "Указатели инструкций", которое позволяет просматривать отдельные инструкции, выполняемые во время выборочного профилирования.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c90d070a3b7125143eda5fd8666b1a4f64312b3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d00742b1832aebcfff0e008455da98e744a485f7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778639"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721571"
 ---
 # <a name="instruction-pointers-ips-view"></a>Представление указателей инструкций
 Представление "Указатели инструкций" позволяет просматривать отдельные инструкции, выполняемые во время выборочного профилирования.

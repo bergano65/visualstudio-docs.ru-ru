@@ -1,5 +1,6 @@
 ---
 title: Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd | Microsoft Docs
+description: Сведения о программе командной строки VSPerfASPNETCmd, которая позволяет без труда профилировать веб-приложения ASP.NET.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a08604b95f49f55a5fea254447046d305d8feff9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771696"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720427"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd
 
@@ -42,7 +43,7 @@ ms.locfileid: "74771696"
 
  **vsperfaspnetcmd**  *websiteUrl*
 
- Примером *websiteUrl* с размещением на локальном сервере может быть *http://localhost/MySite/default.aspx*. Пример внешнего сайта: *http://www.contoso.com*. Дополнительные сведения и примеры URL-адресов см. в разделе [Профилирование веб-сайта без открытия проекта в Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
+ Примером *websiteUrl* с размещением на локальном сервере может быть *http://localhost/MySite/default.aspx*. Пример внешнего сайта: *http://www.contoso.com* . Дополнительные сведения и примеры URL-адресов см. в разделе [Профилирование веб-сайта без открытия проекта в Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
 
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Сбор подробных данных о времени с помощью метода инструментирования
 

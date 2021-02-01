@@ -1,5 +1,7 @@
 ---
 title: Маркеры флагов | Документы Майкрософт
+description: Сведения о маркерах флагов в визуализаторе параллелизма Visual Studio. Маркер флага представляет событие, которое произошло в определенный момент времени в приложении.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc0c7aa3386e906ad13331a596953db70240701
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fc7b128915b7fc961b44aa7d70a24a813d432ddf
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969983"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801466"
 ---
 # <a name="flag-markers"></a>Маркеры флагов
 Маркер флага представляет событие, которое произошло в определенный момент времени в приложении. Флаг может представлять различные типы событий приложения. Например, флаг может представлять момент, когда был запланирован определенный рабочий элемент или возникло исключение. Среды выполнения, такие как библиотека параллельных задач, также могут создавать флаги.
@@ -30,7 +32,7 @@ ms.locfileid: "62969983"
 
  ![Пять цветов маркеров категорий](../profiling/media/cvmarkercategory.png "CVMarkerCategory") Маркеры, показывающие категории
 
-## <a name="alerts"></a>Предупреждения
+## <a name="alerts"></a>видны узлы
  Оповещение — это флаг красного цвета, представляющий критическое событие приложения, такое как исключение.  Вот пример оповещения:
 
  ![Маркер оповещения визуализатора параллелизма](../profiling/media/cvmarkeralert.png "CVMarkerAlert") Маркер оповещения

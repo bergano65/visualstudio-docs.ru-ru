@@ -1,5 +1,6 @@
 ---
 title: Присоединение профилировщика к ASP.NET для получения статистики приложения
+description: Сведения о том, как с помощью программ командной строки для средств профилирования Visual Studio подключить профилировщик к веб-приложению ASP.NET и собрать статистику производительности с помощью метода выборки.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 753213060ea3aaf1269509e65de8c70a71aec3a2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f79591c58865631b20aecb3554e9502a22f6c7b9
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807863"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801622"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора статистики приложения с помощью командной строки
 В этой статье описывается, как с помощью средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], выполняемых из командной строки, подключить профилировщик к приложению ASP.NET и собрать статистические данные по производительности с использованием метода выборки.

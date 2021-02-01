@@ -1,5 +1,6 @@
 ---
 title: Присоединение профилировщика к собственному приложению и сбор статистики приложения
+description: Сведения о том, как с помощью средств профилирования Visual Studio подключить профилировщик к собственному автономному приложению и собрать статистику производительности с помощью метода выборки.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b696a9bddeee4dc7b309945aab66c1d9c801307
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 37914559f71748865e25b5512264f6597ae4ef42
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811088"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801651"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к собственному автономному приложению и сбор статистики приложения с помощью командной строки
 В этой статье описывается, как с помощью средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], выполняемых из командной строки, присоединить профилировщик к автономному приложению в машинном коде и собрать статистические данные о производительности с использованием метода выборки.

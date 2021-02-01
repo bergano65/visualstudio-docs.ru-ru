@@ -1,5 +1,6 @@
 ---
 title: Представления данных для метода выборки профилировщика | Документы Майкрософт
+description: Сведения, касающиеся представлений и отчетов по файлам данных профилировщика, которые создаются с помощью метода выборки.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +13,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d845d84d421ca44f5b936df0a7138fefa848d8d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b88abc935ca9eaef0a22230d427817756629bcb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772167"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719439"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Представления данных метода выборки профилировщика
 В этом разделе содержатся справочные сведения, связанные с представлениями и отчетами по файлам данных профилировщика, созданным с помощью метода выборки.
 
 > [!NOTE]
-> Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. статью [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 - [Представление "Сводка"](../profiling/summary-view-sampling-data.md)
 
  Перечисляет функции, которые выполнялись чаще других во время выборки, а также функции, выполнявшие наибольший объем индивидуальной работы.
@@ -67,7 +68,7 @@ ms.locfileid: "74772167"
 
  Отображает графическую схему связей между выбранной функцией и функциями, которые вызывали выбранную функцию и вызывались ею.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 - [Представления данных метода инструментирования](../profiling/instrumentation-method-data-views.md)
 
  Справочные сведения, касающиеся представлений и отчетов по файлам данных профилировщика, которые создаются с помощью метода инструментирования.
@@ -76,5 +77,5 @@ ms.locfileid: "74772167"
 
  Справочные сведения, касающиеся представлений и отчетов по файлам данных профилировщика, которые включают данные об использовании памяти .NET.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)

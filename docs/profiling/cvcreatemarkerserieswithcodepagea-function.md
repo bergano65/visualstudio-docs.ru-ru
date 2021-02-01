@@ -1,5 +1,7 @@
 ---
 title: Функция CvCreateMarkerSeriesWithCodePageA | Документы Майкрософт
+description: В этой статье приводятся справочные сведения о функции CvCreateMarkerSeriesWithCodePageA из пакета SDK визуализатора параллелизма (библиотека C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e17083c48db1ba1aa6b7ff45ee467ac97900e101
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69f4f19df03c4c2f6bb21a5e2262a4a1495adab8
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332430"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686159"
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>Функция CvCreateMarkerSeriesWithCodePageA
 Создает набор маркеров для заданного поставщика и указывает кодовую страницу. Эту функцию можно использовать, чтобы явно указать кодовую страницу для текста ANSI, считанного с помощью функций API. Установка кодовой страницы может оказаться полезной в том случае, если трассировка сначала собирается, а затем анализируется на различных компьютерах с различными языковыми стандартами и языками. По умолчанию используется кодовая страница, возвращаемая функцией GetACP().
@@ -34,13 +36,13 @@ HRESULT CvCreateMarkerSeriesWithCodePageA(
 ```
 
 #### <a name="parameters"></a>Параметры
- `pProvider` Объект поставщика, уже инициализированный функцией CvInitProvider. Не может принимать значение NULL.
+ `pProvider` Объект поставщика, уже инициализированный функцией CvInitProvider. Не может быть NULL.
 
  `pSeriesName` Имя набора маркеров. Не может принимать значение NULL, но пустая строка разрешена.
 
  `nTextCodePage` Допустимая кодовая страница.
 
- `ppMarkerSeries` Адрес выходной переменной, в которой будет храниться контекст набора маркеров. Не может принимать значение NULL.
+ `ppMarkerSeries` Адрес выходной переменной, в которой будет храниться контекст набора маркеров. Не может быть NULL.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Значение S_OK, если набор маркеров успешно создан, или код ошибки, если были какие-либо ошибки. Для проверки условия ошибки используйте макрос SUCCEEDED/FAILED.

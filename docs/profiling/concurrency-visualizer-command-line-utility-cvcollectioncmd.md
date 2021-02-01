@@ -1,5 +1,6 @@
 ---
 title: Программа командной строки "Визуализатор параллелизма"
+description: Служебная программа командной строки CVCollectionCmd.exe используется для сбора трассировок, которые можно просмотреть в визуализаторе параллелизма. Для работы с ней не требуется установка Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 762a3563e64a3437c34b9e12e372f5d578e0c7ac
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6970c582b6f3ac254f5bbb60f0324128dac63cfe
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808907"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721051"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Служебная программа командной строки "Визуализатор параллелизма" (CVCollectionCmd)
 С помощью служебной программы командной строки "Визуализатор параллелизма" (*CVCollectionCmd.exe*) можно собирать трассировки из командной строки, чтобы просматривать их в визуализаторе параллелизма для Visual Studio. Эти средства можно использовать на компьютерах без установленной среды Visual Studio.

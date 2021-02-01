@@ -1,5 +1,6 @@
 ---
 title: Настройка параметров имени файла с данными о производительности | Документация Майкрософт
+description: Сведения о том, как изменить любые параметры именования на странице "Общие" диалогового окна свойств для сеанса производительности.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bba5677c491e77e6f1c2758e64cec1b598c9b627
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6dce666121214bef7d844bae2735a284589463ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851571"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722052"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Практическое руководство. Настройка параметров имени файла с данными о производительности
 

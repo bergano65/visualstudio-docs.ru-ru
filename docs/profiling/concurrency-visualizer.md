@@ -1,5 +1,7 @@
 ---
 title: Визуализатор параллелизма | Документы Майкрософт
+description: Используйте визуализатор параллелизма для просмотра графиков, отображающих время потока в многопоточном приложении, что помогает в решении проблем с производительностью.
+ms.custom: SEO-VS-2020
 ms.date: 07/11/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a955304e1a0939bbe7398b48a5e9ff30461d8745
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 5e6f36568568a59980316f3070f902027898e39e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037345"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720960"
 ---
 # <a name="concurrency-visualizer"></a>Визуализатор параллелизма
 
@@ -43,10 +45,10 @@ ms.locfileid: "90037345"
 
 ## <a name="related-topics"></a>См. также
 
-|Title|Description|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Представление использования](../profiling/utilization-view.md)|Содержит описание процедуры просмотра и анализа системных действий для всех процессоров.|
-|[Представление "Потоки"](../profiling/threads-view-parallel-performance.md)|Содержит описание процедуры анализа взаимодействия между потоками программы.|
+|[Представление потоков](../profiling/threads-view-parallel-performance.md)|Содержит описание процедуры анализа взаимодействия между потоками программы.|
 |[Представление "Ядра"](../profiling/cores-view.md)|Содержит описание процедуры анализа миграции потоков между ядрами.|
 |[Общие шаблоны для неправильно работающих многопоточных приложений](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Описывает несколько общих шаблонов и показывает, как они отображаются в визуализаторе параллелизма.|
 |[Блог о параллельной разработке в Visual Studio](/archive/blogs/visualizeparallel/)|Содержит советы и рекомендации для визуализатора параллелизма.|
@@ -54,7 +56,7 @@ ms.locfileid: "90037345"
 |[Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)|Описывает, как инструментировать исходный код для отображения дополнительных сведений в визуализаторе параллелизма.|
 |[Служебная программа командной строки "Визуализатор параллелизма" (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Описывает, как использовать программу командной строки визуализатора параллелизма (CVCollectionCmd.exe) для сбора и обработки трассировки на компьютерах, на которых не установлена Visual Studio.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Профилирование в Visual Studio](../profiling/index.yml)
 - [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)

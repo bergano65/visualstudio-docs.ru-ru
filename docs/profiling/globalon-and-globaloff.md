@@ -1,5 +1,7 @@
 ---
 title: Параметры GlobalOn и GlobalOff | Документация Майкрософт
+description: Сведения о параметрах GlobalOn и GlobalOff средства VSPerfCmd.exe. Эти параметры позволяют приостанавливать и возобновлять профилирование для процессов и потоков в сеансе профилирования, управляемом из командной строки.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 518f41557809cdeaaae9f9e1ac79e3797a854395
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eaeac096c6bdff77368508bd34276d66530fa739
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776970"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801334"
 ---
 # <a name="globalon-and-globaloff"></a>Параметры GlobalOn и GlobalOff
 Параметры **GlobalOff** и **GlobalOn** средства *VSPerfCmd.exe* позволяют приостанавливать и возобновлять профилирование для всех процессов и потоков в сеансе профилирования, управляемом из командной строки.
@@ -55,9 +57,9 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 
  **Attach:** `PID` Начинает профилирование указанного процесса.
 
- {**ProcessOff** | **ProcessOn**}**:**`PID` Останавливает или запускает профилирование указанного процесса.
+ {**ProcessOff** | **ProcessOn**} **:** `PID` Останавливает или запускает профилирование указанного процесса.
 
- {**ThreadOff** | **ThreadOn**}**:**`TID` Останавливает или запускает профилирование заданного процесса (только для метода инструментирования).
+ {**ThreadOff** | **ThreadOn**} **:** `TID` Останавливает или запускает профилирование заданного процесса (только для метода инструментирования).
 
 ## <a name="example"></a>Пример
  В этом примере **GlobalOff** и **GlobalOn** используются для того, чтобы не собирать данные профилирования в процессе запуска и завершения работы приложения.

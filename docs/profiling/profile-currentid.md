@@ -1,5 +1,6 @@
 ---
 title: PROFILE_CURRENTID | Документы Майкрософт
+description: Сведения о том, как параметр PROFILE_CURRENTID предписывает функции выполнять действия в текущем потоке или процессе, а не в специально указанном потоке или процессе.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5639726762359bb8ba2fb374ee8ddc5c78e2f4da
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 5171753ff8ea6722cf1d97e155352e3899fb5562
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407579"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719491"
 ---
 # <a name="profile_currentid"></a>PROFILE_CURRENTID
 Параметр PROFILE_CURRENTID возвращает псевдотокен для идентификатора потока или идентификатора процесса в вызове функций NameProfile, StartProfile, StopProfile, SuspendProfile и ResumeProfile. Этот параметр предписывает функции выполнять действия в текущем потоке или процессе, а не в специально указанном потоке или процессе.
@@ -58,7 +59,7 @@ void ExerciseProfileCurrentID()
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [NameProfile](../profiling/nameprofile.md)
 - [ResumeProfile](../profiling/resumeprofile.md)

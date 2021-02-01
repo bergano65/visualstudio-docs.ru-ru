@@ -1,5 +1,7 @@
 ---
 title: Настройка столбцов представлений отчета | Документация Майкрософт
+description: Можно добавлять, удалять столбцы и изменять их порядок в представлениях Средств производительности Visual Studio, например в представлении "Функции", представлении "Процессы", представлении "Вызывающий/вызываемый".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: edc58c74daf3cdd1e80256f9915936f4cef6d3fa
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 23b12ca396a91fad440dc057b67e258194732236
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851181"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800442"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Практическое руководство. Настройка столбцов представлений отчета
 Средства производительности в Visual Studio Team System Development Edition являются полностью встроенными в интегрированную среду разработки (IDE), что позволяет легко их использовать при каждой необходимости. Ниже перечислены представления, которые можно настраивать путем добавления, удаления и изменения порядка столбцов.
