@@ -1,5 +1,6 @@
 ---
 title: Параметр QueryCounters | Документы Майкрософт
+description: Сведения о параметре QueryCounters, который перечисляет доступные на компьютере счетчики производительности ЦП (оборудования).
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8059d4b2-af61-4a47-a6c2-8da5c0741c74
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 24379a720ccaa3405cbe5c127f3b8abaf12e49aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d33b6fe42f786218bf78825a356a25edff2b31ae
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771913"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720440"
 ---
 # <a name="querycounters"></a>Параметр QueryCounters
 Параметр **QueryCounters** перечисляет доступные на компьютере счетчики производительности ЦП (оборудования).
@@ -35,7 +36,7 @@ VSPerfCmd.exe /QueryCounters
 
  Различные процессоры предоставляют различные счетчики производительности ЦП. Профилировщик определяет набор универсальных счетчиков, которые могут использоваться в большинстве процессоров. Параметр **QueryCounters** обеспечивает перечисление как имен универсальных счетчиков, так и имен счетчиков, характерных для процессора.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

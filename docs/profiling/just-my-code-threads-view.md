@@ -1,5 +1,6 @@
 ---
 title: Только мой код (представление "Потоки") | Документы Майкрософт
+description: Сведения о применении параметра "Только мой код" для фильтрации стека вызовов, чтобы показывать только код и один уровень вызываемых функций.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607247c6853c59036d1ab386f7371964265a32b8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a3924211d5ec42660357cef45714f672b0bef063
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62995343"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721480"
 ---
 # <a name="just-my-code-threads-view"></a>Только мой код (представление "Потоки")
 При выборе этого параметра вы отфильтруете стек вызовов, чтобы показывать только код и один уровень вызываемых функций.
@@ -26,6 +27,6 @@ ms.locfileid: "62995343"
 
  В некоторых случаях выбор этого параметра может отфильтровать блокирующий вызов. Если вам нужны полные данные стека вызовов, чтобы выполнить определение, отмените выбор этого параметра.
 
-## <a name="see-also"></a>См. также раздел
-- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>См. также
+- [Представление потоков](../profiling/threads-view-parallel-performance.md)
 - [Процент снижения шума](../profiling/noise-reduction-percentage.md)

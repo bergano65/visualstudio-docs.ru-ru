@@ -1,5 +1,7 @@
 ---
 title: Правила производительности использования в .NET Framework | Документы Майкрософт
+description: Общие сведения о правилах производительности в категории "Использование .NET Framework". Определение конкретных методов, которые можно оптимизировать, а также более общих шаблонов использования.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ac78ffb3455940cf2379af44ff5c2bc5870dc684
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: cb6bb10f948e7aa9d97491949222c3cb0d15ba66
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85532006"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801300"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Правила производительности использования в .NET Framework
 Правила производительности в категории "Использование .NET Framework" определяют конкретные методы, которые можно оптимизировать, а также более общие шаблоны использования, такие как сборка мусора и конфликты блокировки, которые можно расследовать для решения проблем производительности.

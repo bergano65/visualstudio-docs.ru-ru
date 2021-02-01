@@ -1,5 +1,6 @@
 ---
 title: Общие сведения о сеансе анализа производительности | Документы Майкрософт
+description: Сведения о том, как использовать средства оценки производительности для быстрого повышения продуктивности работы и производительности кода.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b23a7cbefeace19a3deaa5c1bfc05580081d39
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1fcccf6a68afa26d8fe9ab5e5a4f40466822c689
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778470"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723274"
 ---
 # <a name="performance-session-overview"></a>Общие сведения о сеансе анализа производительности
 В данном обзоре приводится информация об основах профилирования. Разработчики, у которых нет опыта анализа производительности, узнают, как средства профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяют быстро повысить продуктивность их работы и производительность их кода. Разработчики, обладающие опытом профилирования, получат представление об особенностях функций и процессов средств профилирования.
@@ -74,6 +75,6 @@ ms.locfileid: "74778470"
 ## <a name="generate-a-report-of-the-results"></a>Создание отчета о результатах
  Строки любого отчета о производительности можно вставлять в сообщения электронной почты и электронные таблицы; кроме того, можно создавать отчеты, в которых содержатся данные из одного или нескольких представлений.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Разделы общих сведений](../profiling/overviews-performance-tools.md)
-- [Пошаговое руководство. Выявление проблем с производительностью](beginners-guide-to-cpu-sampling.md)
+- [Пошаговое руководство: Выявление проблем с производительностью](beginners-guide-to-cpu-sampling.md)

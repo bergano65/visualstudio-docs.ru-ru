@@ -1,5 +1,6 @@
 ---
 title: Представление "Строки" | Документы Майкрософт
+description: Сведения о представлении "Строки", которое доступно только для данных профилировщика, собранных с использованием метода выборки.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac0d7785071e5f2928e7eabb4a29b1655b42c5ad
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74773985"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721298"
 ---
 # <a name="lines-view"></a>Представление строк
 Представление "Строки" доступно только для данных профилировщика, собранных с использованием метода выборки. Представление недоступно для данных, собранных с использованием инструментирования.
@@ -43,7 +44,7 @@ ms.locfileid: "74773985"
 
 - знаком исходной строки, которой заканчивается оператор.
 
-## <a name="see-also"></a>См. также раздел
-- [Представление строк](../profiling/lines-view-sampling-data.md)
+## <a name="see-also"></a>См. также
+- [Представление "Строки"](../profiling/lines-view-sampling-data.md)
 - [Представление "Строки" — выборка](../profiling/lines-view-dotnet-memory-sampling-data.md)
-- [Представление строк](../profiling/lines-view-contention-data.md)
+- [Представление "Строки"](../profiling/lines-view-contention-data.md)

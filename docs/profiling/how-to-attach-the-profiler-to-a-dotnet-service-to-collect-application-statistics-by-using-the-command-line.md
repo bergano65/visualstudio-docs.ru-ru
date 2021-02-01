@@ -1,6 +1,7 @@
 ---
 title: Присоединение Profiler к службе .NET для сбора статистики приложения
-ms.custom: seodec18
+description: Сведения о том, как с помощью программ командной строки для средств профилирования Visual Studio подключить профилировщик к службе .NET Framework и собрать статистику производительности с помощью метода выборки.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a0046c47-26c8-4bec-96a0-81da05e5104a
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac59e0e08894ca143df6a68c49e5f5f8b24ebc50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c91fef6cc98ae270420354a1287c05e78b38ac3e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328711"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801116"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к службе .NET для сбора статистики приложения с помощью командной строки
 В этой статье описано, как с помощью программ командной строки для средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] подключить профилировщик к службе .NET Framework и собрать статистику производительности с помощью метода выборки.
@@ -76,7 +77,7 @@ ms.locfileid: "85328711"
 
 8. Подключите профилировщик к службе. Тип:
 
-    **VSPerfCmd**  [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md)**:**`Version`]
+    **VSPerfCmd**  [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md) **:** `Version`]
 
    - Указывает идентификатор процесса (`PID`) или имя процесса (ProcName) службы. Просмотреть идентификаторы и имена всех запущенных процессов можно в диспетчере задач Windows.
 
@@ -85,7 +86,7 @@ ms.locfileid: "85328711"
    |Событие выборки|Описание|
    |------------------|-----------------|
    |[/timer](../profiling/timer.md) **:** `Interval`|Изменяет интервал выборки на число циклов тактовой частоты без остановок, указанное в параметре `Interval`.|
-   |[/pf](../profiling/pf.md)[**:**`Interval`]|Изменяет событие выборки на "ошибки страниц". Если указано свойство `Interval`, задает количество ошибок страниц между выборками. Значение по умолчанию — 10.|
+   |[/pf](../profiling/pf.md)[ **:** `Interval`]|Изменяет событие выборки на "ошибки страниц". Если указано свойство `Interval`, задает количество ошибок страниц между выборками. Значение по умолчанию — 10.|
    |[/sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|Изменяет событие выборки на "системные вызовы" из процесса к ядру операционной системы (syscall). Если указано свойство `Interval`, задает количество вызовов между выборками. Значение по умолчанию — 10.|
    |[/counter](../profiling/counter.md) **:** `Config`|Изменяет событие выборки, интервал для счетчика производительности процессора и интервал, указанный в параметре `Config`.|
 

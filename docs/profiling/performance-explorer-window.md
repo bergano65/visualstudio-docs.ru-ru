@@ -1,5 +1,6 @@
 ---
 title: Окно "Обозреватель производительности" | Документы Майкрософт
+description: Сведения об окне "Обозреватель производительности" в интегрированной среде разработки Visual Studio, которое позволяет настраивать и запускать сеансы анализа производительности при помощи средств профилирования Visual Studio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a365892f606da90c608e43b7ccce73b902ec0e98
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 06d2b7e2ad5d5df4022dc78aa06315545d56c0ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772443"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722819"
 ---
 # <a name="performance-explorer-window"></a>Окно "Обозреватель производительности"
 
@@ -50,7 +51,7 @@ ms.locfileid: "74772443"
 
 - **Отчеты.** Отображаются имена файлов данных профилировщика, которые были созданы в ходе сеанса. Чтобы добавить существующий отчет или сравнить два файла данных профилировщика, щелкните **Отчеты** правой кнопкой мыши. Чтобы открыть, удалить или экспортировать файл данных профилировщика, щелкните имя отчета правой кнопкой мыши.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Обзоры](../profiling/overviews-performance-tools.md)
 [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)

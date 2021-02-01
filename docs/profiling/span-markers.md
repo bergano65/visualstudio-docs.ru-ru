@@ -1,5 +1,6 @@
 ---
 title: Маркеры диапазонов | Документы Майкрософт
+description: В этой статье приводятся сведения о маркере диапазона, который представляет содержательный этап приложения, а также пример, демонстрирующий диапазон в визуализаторе параллелизма.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69b48a5b1b551e2e29b9aa10e7f68ff0df0e379
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 28fb9da2e838a17f5b014c3b1af4fc9ee5ab46d7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62980985"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720115"
 ---
 # <a name="span-markers"></a>Маркеры диапазонов
 Маркер диапазона представляет содержательный этап приложения. Например, можно использовать диапазон для представления временного интервала, в течение которого обрабатывается определенный рабочий элемент. Его длина представляет длительность соответствующего этапа приложения. На этой иллюстрации показан диапазон в визуализаторе параллелизма:

@@ -1,5 +1,6 @@
 ---
 title: Представление "Строки" | Документация Майкрософт
+description: Сведения о представлении меток, в котором указываются выборки и события трассировки событий Windows, вставленные в приложение.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d7483f309a3d7edb92d25c34e9665a6212c8038
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 969bf0debfc1da9f7ca1763d8c9c001d565ce64a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037521"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718984"
 ---
 # <a name="marks-view"></a>Представление меток
 Представление меток указывает выборки и события трассировки событий Windows, вставленные в приложение.
@@ -40,7 +41,7 @@ ms.locfileid: "90037521"
 
  Данные счетчика производительности Windows. При сборе данных счетчика производительности Windows значения отображаются в столбце с именем счетчика.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Обзор отчета о производительности](../profiling/performance-report-overview.md)
 - [Практическое руководство. Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md)
 - [[NIB] Окно управления сбором данных](/previous-versions/bb385767(v=vs.110))

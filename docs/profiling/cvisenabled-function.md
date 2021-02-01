@@ -1,5 +1,7 @@
 ---
 title: Функция CvIsEnabled | Документы Майкрософт
+description: В этой статье приводятся справочные сведения о функции CvIsEnabled из пакета SDK визуализатора параллелизма (библиотека C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53de9ee136c9bd12c732339b4c1c8a223fe1a3ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57f1bb96480fe054c729b11a3fabd311407fa858
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330067"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686484"
 ---
 # <a name="cvisenabled-function"></a>Функция CvIsEnabled
 Определяет, любому ли сеансу доступен указанный поставщик ETW.
@@ -42,7 +44,7 @@ HRESULT CvIsEnabledEx(
 
  `level` Уровень важности.
 
- `pProvider` Допустимый объект поставщика. Не может принимать значение NULL.
+ `pProvider` Допустимый объект поставщика. Не может быть NULL.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Значение S_OK, если в данный момент поставщик доступен. Значение S_OK, если в данный момент поставщик недоступен. Код ошибки в том случае, если были какие-либо ошибки. Используйте макрос FAILED для проверки условия ошибки, а затем проверьте S_ОК/S_FALSE.

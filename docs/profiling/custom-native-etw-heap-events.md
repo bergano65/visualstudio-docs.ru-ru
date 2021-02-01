@@ -1,5 +1,7 @@
 ---
 title: События пользовательской собственной кучи трассировки событий Windows | Документы Майкрософт
+description: Сведения о том, как использовать пользовательскую кучу для уменьшения издержек при выделении памяти, но при этом по-прежнему предоставлять профилировщику памяти сведения о выделении памяти для анализа.
+ms.custom: SEO-VS-2020
 ms.date: 02/24/2017
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -10,12 +12,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 61005bf108d0dab16ec419e942e3da97e02cdc7f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62552963"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686328"
 ---
 # <a name="custom-native-etw-heap-events"></a>События пользовательской собственной кучи трассировки событий Windows
 
@@ -90,7 +92,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    pHeapTracker->AllocateEvent(memPtr, size);
    ```
 
-   или диспетчер конфигурации служб
+   или
 
    ```C
    VSHeapTrackerAllocateEvent(hHeapTracker, memPtr, size);
@@ -105,7 +107,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    pHeapTracker->DeallocateEvent(memPtr);
    ```
 
-   или:
+   или
 
    ```C
    VSHeapTrackerDeallocateEvent(hHeapTracker, memPtr);
@@ -117,7 +119,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    pHeapTracker->ReallocateEvent(memPtrNew, size, memPtrOld);
    ```
 
-   или:
+   или
 
    ```C
    VSHeapTrackerReallocateEvent(hHeapTracker, memPtrNew, size, memPtrOld);
@@ -129,7 +131,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    delete pHeapTracker;
    ```
 
-   или:
+   или
 
    ```C
    CloseHeapTracker(hHeapTracker);
@@ -155,6 +157,6 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 > [!TIP]
 > Visual Studio также содержит средство **Использование памяти** в наборе инструментов **Профилирование производительности**, который доступен при выборе пунктов **Отладка** > **Профилировщик производительности** или при нажатии сочетания клавиш **Alt**+**F2**.  Эта функция не поддерживает отслеживание кучи и не отображает пользовательскую кучу, как описано здесь.  Эта возможность доступна только в диалоговом окне **Средства диагностики**, которое можно открыть, последовательно выбрав **Отладка** > **Окна** > **Показать средства диагностики** либо нажав сочетание клавиш **Ctrl**+**Alt**+**F2**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)
 [Потребление памяти](../profiling/memory-usage.md)

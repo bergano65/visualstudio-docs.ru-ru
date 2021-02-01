@@ -1,5 +1,6 @@
 ---
 title: Правила производительности памяти и подкачки | Документы Майкрософт
+description: Сведения о правилах производительности в категории памяти и подкачки, указывающих на действия подкачки во время профилирования, которые могут повлиять на производительность и время отклика приложения.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f37972b2-efe4-4a1c-a5d1-a246ccd76817
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 716bc771310b73c8a0b11a97080184d9868fe91b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e1cddda12fbb67f9b604186e754146558cdd62ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535139"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720609"
 ---
 # <a name="memory-and-paging-performance-rules"></a>Правила производительности памяти и подкачки
 Правила производительности в категории памяти и подкачки указывают на действия подкачки во время профилирования, которые могут повлиять на производительность и время отклика приложения.

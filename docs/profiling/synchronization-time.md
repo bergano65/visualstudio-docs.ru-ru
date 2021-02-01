@@ -1,5 +1,6 @@
 ---
 title: Время синхронизации | Документы Майкрософт
+description: Сведения о том, как сегменты на временной шкале связаны с периодами блокирования, отнесенными к категории синхронизации.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae73f7b9a9838a006dce47bf44b0ed46aa0b84fa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b0e8c2243d01a5801b6846445995bbdfdcff78c9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62965314"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719829"
 ---
 # <a name="synchronization-time"></a>Время синхронизации
 Эти сегменты на временной шкале связаны с периодами блокирования, отнесенными к категории синхронизации. Если поток помечается как заблокированный в процессе синхронизации, подразумевается одно из следующего:
@@ -28,5 +29,5 @@ ms.locfileid: "62965314"
 
   Чтобы понять исходную причину события блокировки потока, внимательно просмотрите стеки вызовов блокировки и отчеты профилей.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)
