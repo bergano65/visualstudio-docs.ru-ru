@@ -1,5 +1,6 @@
 ---
 title: Присоединение профилировщика к собственному приложению и сбор данных о параллелизме
+description: Используйте программы командной строки средств профилирования Visual Studio для подключения профилировщика к выполняющемуся автономному приложению (C/C++) в машинном коде и сбора данных о конфликтах потоков.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a853a8ff3d8ecdc89316edafc927ec93096f720f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fd06783f50708e13c97f7bfe00a22be26739fd9c
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811062"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801639"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к собственному автономному приложению и сбор данных о параллелизме при помощи командной строки
 В этой статье описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для подключения профилировщика к выполняющемуся автономному приложению (C/C++) в машинном коде и сбора данных о конфликтах потоков.
@@ -37,7 +38,7 @@ ms.locfileid: "90811062"
 
     |Параметр|Описание|
     |------------|-----------------|
-    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`Username`|Задает необязательные домен и имя пользователя учетной записи, которой будет предоставлен доступ к профилировщику.|
+    |[/user](../profiling/user-vsperfcmd.md) **:** [`Domain\`]`Username`|Задает необязательные домен и имя пользователя учетной записи, которой будет предоставлен доступ к профилировщику.|
     |[/crosssession](../profiling/crosssession.md)|Включает профилирование процессов в других сеансах входа.|
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Задает счетчик производительности Windows, данные которого будут собираться во время профилирования.|
     |[/automark](../profiling/automark.md) **:** `Interval`|Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500.|
@@ -59,7 +60,7 @@ ms.locfileid: "90811062"
     |Параметр|Описание|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает ( **/processon**) или останавливает ( **/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
     |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** запускает сбор данных для процесса с указанным идентификатором (`PID`) или именем (*ProcName*) процесса. **/detach** останавливает сбор данных для указанного процесса или для всех процессов, если конкретный процесс не задан.|
 
 ## <a name="end-the-profiling-session"></a>Завершение сеанса профилирования

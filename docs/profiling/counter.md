@@ -1,5 +1,7 @@
 ---
 title: Counter | Документация Майкрософт
+description: Сведения о параметре Counter программы VSPerfCmd.exe. Этот параметр задает интервал выборки или представляет собой меру интервалов событий для профилирования с инструментированием.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c882514d6bcf27de36a6ca4420fbaf671c72f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85ed799cac54d630dfff1b285d3f2257e5eb99b5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331190"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720700"
 ---
 # <a name="counter"></a>Счетчик
 Параметр **Counter** собирает данные от счетчиков производительности для процессоров (оборудования).

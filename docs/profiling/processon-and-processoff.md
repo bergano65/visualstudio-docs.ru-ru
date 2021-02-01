@@ -1,5 +1,6 @@
 ---
 title: Подкоманды ProcessOn и ProcessOff | Документы Майкрософт
+description: Сведения о подкомандах ProcessOff и ProcessOn программы VSPerfCmd.exe, которые приостанавливают и возобновляют профилирование заданного процесса в сеансе профилирования из командной строки.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ae4b5e95636894ddc2d0c4799308afb057145747
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778392"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719452"
 ---
 # <a name="processon-and-processoff"></a>Подкоманды ProcessOn и ProcessOff
 Подкоманды **ProcessOff** и **ProcessOn** программы VSPerfCmd.exe приостанавливают и возобновляют профилирование заданного процесса в сеансе профилирования из командной строки. **ProcessOff** останавливает профилирование процесса, а **ProcessOn** запускает его.
@@ -42,7 +43,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  `PID` Целочисленный идентификатор запускаемого или останавливаемого процесса. Идентификаторы процессов приводятся на вкладке **Процесс** диспетчера задач Windows.
 
 ## <a name="required-subcommands"></a>Необходимые подкоманды
- Отсутствуют
+ Нет
 
 ## <a name="valid-subcommands"></a>Допустимые подкоманды
  Подкоманды **ProcessOn** и **ProcessOff** можно задать в командной строке, содержащей указанные ниже подкоманды.

@@ -1,5 +1,6 @@
 ---
 title: Представление "Указатели инструкций" — данные конфликтов | Документы Майкрософт
+description: Сведения о том, как в представлении "Указатели инструкций" данных конфликтов приводятся данные по инструкциям сборки, выполнение которых было заблокировано в ходе сеанса профилирования.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f37fb451238ec7ce6f48d8a4d3b91efa9ce04db7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d3877afb4beb48259d737112d61a36edc7a4fd4d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774316"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721597"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Представление "Указатели инструкций" — данные конфликтов
 В представлении "Указатели инструкций" данных конфликтов приводятся данные по инструкциям сборки, выполнение которых было заблокировано в ходе сеанса профилирования.
@@ -45,6 +46,6 @@ ms.locfileid: "74774316"
 
 ## <a name="see-also"></a>См. также
 - [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)
-- [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view.md)
+- [Представление указателей инструкций](../profiling/instruction-pointers-ips-view.md)
 - [Представление "Указатели инструкций" — выборка](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
-- [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view-sampling-data.md)
+- [Представление указателей инструкций](../profiling/instruction-pointers-ips-view-sampling-data.md)

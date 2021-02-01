@@ -1,5 +1,7 @@
 ---
 title: Пустой сегмент временной шкалы | Документы Майкрософт
+description: В визуализаторе параллелизма Visual Studio изучите причину, по которой часть временной шкалы может быть пустой (имеет белый фон) в зависимости от типа канала.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a96cdc7ae4edc7ea7193d5b95dfc73fa1747c1fb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 15dc4526ce101e21c00fe083b85f81db92bcd609
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62970113"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801433"
 ---
 # <a name="empty-timeline-segment"></a>Пустой сегмент временной шкалы
 В визуализаторе параллелизма причина, по которой часть временной шкалы пуста (имеет белый фон), зависит от типа канала.
@@ -30,6 +32,6 @@ ms.locfileid: "62970113"
 
 - Для канала маркеров это означает, что маркеры не создавались.
 
-## <a name="see-also"></a>См. также раздел
-- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>См. также
+- [Представление потоков](../profiling/threads-view-parallel-performance.md)
 - [Элемент управления масштабом (представление "Потоки")](../profiling/zoom-control-threads-view.md)

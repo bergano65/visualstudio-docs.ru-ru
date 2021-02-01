@@ -1,5 +1,7 @@
 ---
 title: Параметр Events (VSPerfCmd) | Документы Майкрософт
+description: Контроль ведения журнала трассировки событий Windows (ETW) с помощью параметра Events в программе командной строки VSPerfCmd.exe. Сведения о параметрах синтаксиса.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b47f9b615c824d25e931cd3d05f5d2a04257ba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 614ac24e38966c1d09df91d6771cab2b3914454d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777325"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801393"
 ---
 # <a name="events-vsperfcmd"></a>Параметр Events (VSPerfCmd)
 Параметр **Events** программы *VSPerfCmd.exe* позволяет управлять ведением журнала трассировки событий Windows. Данные трассировки событий Windows сохраняются в ETL-файле, который отличается от файла данных профилировщика. Эти данные можно просмотреть в отчете с помощью команды [VSPerfReport](../profiling/vsperfreport.md) /summary:etw.
@@ -60,7 +62,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 
  Необходимо заметить, что Kernel Provider можно только включить. До завершения работы монитора невозможно отключить этот поставщик или изменить его флаги.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 > [!NOTE]
 > При возникновении событий трассировки событий Windows среды CLR для отчета представления трассировки собираются также дополнительные сведения о запуске. Чтобы исключить события запуска из отчета, используйте следующую команду:

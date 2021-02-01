@@ -1,5 +1,7 @@
 ---
 title: Пакет SDK визуализатора параллелизма | Документы Майкрософт
+description: Сведения о том, как использовать пакет SDK визуализатора параллелизма для инструментирования кода для отображения маркеров. Маркеры — это значки, которые отображаются в визуализаторе параллелизма и используются для пометки событий.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1732d62fa20e170825cba5e133a9a44f11a59a34
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f07dbfb0ca193f7bacbf2408fc26e622ffb037e1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037358"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720986"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Пакет SDK визуализатора параллелизма
 Можно инструментировать свой исходный код с помощью пакета SDK визуализатора параллелизма для отображения дополнительных сведений в визуализаторе параллелизма. Можно связать дополнительные данные с этапами выполнения кода и событиями в коде. Эти дополнительные визуализации известны как *маркеры*.  Ознакомительное пошаговое руководство см. в разделе [Сведения о пакете SDK визуализатора параллелизма](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk).

@@ -1,5 +1,7 @@
 ---
 title: Счетчики ЦП и Windows | Документы Майкрософт
+description: Счетчики ЦП (оборудование) и Windows (программное обеспечение) предоставляют данные о производительности. Узнайте, как просматривать их и получать от них данные.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c3657f3558a688232424b868d0e93b8c056467c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779554"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719166"
 ---
 # <a name="cpu-and-windows-counters"></a>Счетчики ЦП и Windows
 
@@ -130,7 +132,7 @@ ms.locfileid: "74779554"
 
 ## <a name="see-also"></a>См. также
 
-[Обзоры](../profiling/overviews-performance-tools.md)
-[Практическое руководство. Выбор событий выборки](../profiling/how-to-choose-sampling-events.md)
-[Практическое руководство. Сбор данных счетчиков производительности ЦП](../profiling/how-to-collect-cpu-counter-data.md)
-[Практическое руководство. Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md)
+- [Разделы общих сведений](../profiling/overviews-performance-tools.md)
+- [Практическое руководство. Выбор событий выборки](../profiling/how-to-choose-sampling-events.md)
+- [Практическое руководство. Сбор данных счетчиков производительности ЦП](../profiling/how-to-collect-cpu-counter-data.md)
+- [Практическое руководство. Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md)

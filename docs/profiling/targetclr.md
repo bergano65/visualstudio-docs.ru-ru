@@ -1,5 +1,6 @@
 ---
 title: Параметр TargetCLR | Документы Майкрософт
+description: Сведения о том, как параметр TargetCLR задает версию среды CLR для профилирования, если в приложении загружено несколько версий CLR.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f9732480-287f-40f1-a4ff-b112e143b940
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fffcab1d841840c15957e8dae0ff0f87b20de28d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dff098dc5b893ce394698118d53ae6a96fc8b28a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771610"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719816"
 ---
 # <a name="targetclr"></a>TargetCLR
 Параметр **TargetCLR** задает версию среды CLR для профилирования, если в приложении загружено несколько версий CLR.

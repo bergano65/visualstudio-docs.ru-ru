@@ -1,5 +1,6 @@
 ---
 title: Элемент управления масштабом (представление "Потоки") | Документы Майкрософт
+description: Сведения об элементе управления "Масштаб", который представляет собой ползунок, помогающий увеличивать и уменьшать временную шкалу, фокусируясь на интересующих участках.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 00cf79b23de47c1ac808b9287f387a16b51e5c3e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62960164"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719127"
 ---
 # <a name="zoom-control-threads-view"></a>Элемент управления масштабом (представление "Потоки")
 Элемент управления "Масштаб" — это ползунок, помогающий увеличивать и уменьшать временную шкалу, фокусируясь на интересующих участках. Так как этот элемент управления выполняет масштабирование по центру представления временной шкалы, перед масштабированием следует расположить интересующую область в центре.
@@ -28,7 +29,7 @@ ms.locfileid: "62960164"
 ## <a name="zoom-in-and-out-by-using-the-mouse-wheel"></a>Увеличение и уменьшение с помощью колесика мыши
  Щелкните любую точку временной шкалы (чтобы перевести на нее фокус мыши), а затем нажмите клавишу **CTRL** и вращайте колесико мыши (вперед — увеличение; назад — уменьшение).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Управление каналами](../profiling/manage-channels.md)
 - [Режим измерения (вкл./выкл.)](../profiling/measure-mode-on-off.md)
 - [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)

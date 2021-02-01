@@ -1,5 +1,6 @@
 ---
 title: WinCounter | Документы Майкрософт
+description: Сведения о параметре WinCounter, в частности о том, что он задает счетчик производительности Windows или приложения, данные которого собираются через указанные интервалы в течение сеанса профилирования.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ff319ffc-f249-4c3f-9eb2-06e392e3ae80
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 672d472d4e592782f7ae06920c518b154fba6cba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 595a8003992c92871a8476743288d3072aff63c8
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329882"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723053"
 ---
 # <a name="wincounter"></a>WinCounter
 Параметр **WinCounter** задает счетчик производительности Windows или приложения, данные которого собираются через указанные интервалы в течение сеанса профилирования. Счетчики производительности Windows и приложений перечисляются в виде меток в файле данных профилирования. Можно задать несколько счетчиков производительности, данные которых необходимо собирать, воспользовавшись отдельными параметрами.

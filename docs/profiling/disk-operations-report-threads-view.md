@@ -1,5 +1,7 @@
 ---
 title: Отчет операций диска (представление "Потоки") | Документы Майкрософт
+description: В отчете операций диска показаны дисковые операции ввода-вывода в каналах диска. Сведения о том, какие сведения регистрируются для каждой операции доступа к диску.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69cbef53bcca74cceba4f9409b578fca45a58806
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 44975999c71b1c331d90aa10f709071cef466cb1
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62970074"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686536"
 ---
 # <a name="disk-operations-report-threads-view"></a>Отчет операций диска (представление потоков)
 В отчете операций диска показаны дисковые операции ввода-вывода в каналах диска.
@@ -42,5 +44,5 @@ ms.locfileid: "62970074"
 
 - задержка записи в миллисекундах.
 
-## <a name="see-also"></a>См. также раздел
-- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>См. также
+- [Представление потоков](../profiling/threads-view-parallel-performance.md)

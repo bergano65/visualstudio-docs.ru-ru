@@ -1,5 +1,6 @@
 ---
 title: Новые возможности профилирования в Visual Studio 2017 | Документация Майкрософт
+description: Сведения о том, что средства диагностики включают новые визуализации, которые помогают находить в приложении проблемы, требующие устранения.
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 0512c6e95f0a26184593f7af5ba08c31c33a3299
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 57ccf59de6ce5d18aab0a461cff91875cc74486d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71128340"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723105"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevs_dev15"></a>Новые возможности средств профилирования в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 

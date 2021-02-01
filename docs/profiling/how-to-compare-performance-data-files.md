@@ -1,5 +1,7 @@
 ---
 title: Сравнение файлов данных о производительности | Документация Майкрософт
+description: Сведения о сравнении результатов в двух разных файлах данных профилировщика (VSP или VSPS) для поиска различий, регрессии и улучшения производительности.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f42ceaa251b59eae426bfbe52c29b21ae5075077
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 40988d23dd8e9b848ea410aa75f4d4c1f45d524d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851246"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800451"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Практическое руководство. Сравнение файлов данных о производительности
 Можно сравнить результаты двух разных файлов данных профилировщика (*VSP* или *VSPS*), создав отчет или представление сравнения (Diff). Сравнение показывает различия, регрессии производительности и усовершенствования, которые происходят в разных сеансах профилирования.

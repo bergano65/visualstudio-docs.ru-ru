@@ -1,5 +1,7 @@
 ---
 title: Маркеры визуализатора параллелизма | Документы Майкрософт
+description: 'Сведения о маркерах в визуализаторе параллелизма. Маркеры — это значки, которые представляют события, создаваемые приложением. Существует три типа маркеров: флаги, сообщения и диапазоны.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fab8108e15f3cbaf81130c2ce8533d00f2a23c7e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "63001050"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720999"
 ---
 # <a name="concurrency-visualizer-markers"></a>Маркеры визуализатора параллелизма
 В визуализаторе параллелизма маркеры — это значки, представляющие события в приложении.  Как правило, приложение создает эти события для обозначения этапов или вхождений в приложении.  События могут быть созданы приложением или библиотеками и средами выполнения, используемыми приложением.
@@ -60,7 +62,7 @@ ms.locfileid: "63001050"
 ## <a name="markers-from-eventsource"></a>Маркеры из EventSource
  Визуализатор параллелизма может также отображать события EventSource.  Дополнительные сведения см. в статье [Visualizing EventSource Events as Markers](../profiling/visualizing-eventsource-events-as-markers.md) (Визуализация событий EventSource как маркеров).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Маркеры флагов](../profiling/flag-markers.md)
 - [Маркеры сообщений](../profiling/message-markers.md)
 - [Маркеры диапазонов](../profiling/span-markers.md)

@@ -1,5 +1,6 @@
 ---
 title: Профилирование и безопасность Windows Vista | Документация Майкрософт
+description: В зависимости от параметров разрешений на доступ пользователей отдельный пользователь может иметь разрешение безопасности для профилирования процесса на этом компьютере.
 ms.date: 11/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a74862d59fe402cbfd9e6bfa804d62ca4c8310b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0bfd12808a4639f44a3a5075a4b474012ab2c2fa
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778379"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719413"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Профилирование и безопасность Windows Vista
 
@@ -45,7 +46,7 @@ ms.locfileid: "74778379"
 
   Если этот параметр не выбран, в списке отображаются процессы в текущем сеансе. В противном случае в списке отображаются процессы во всех сеансах.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Разделы общих сведений](../profiling/overviews-performance-tools.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)

@@ -1,5 +1,7 @@
 ---
 title: Пространство имен diagnostic | Документы Майкрософт
+description: Пространство имен diagnostic используется для выпуска маркеров визуализатора параллелизма. Пространство имен diagnostic является членом пространства имен Concurrency.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 680d304a8e4d21365d82f654265ae2f34582b636
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20b25e2974f4b0e4a6bbf6cf02c411fde3f3de1a
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330256"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686549"
 ---
 # <a name="diagnostic-namespace"></a>Пространство имен diagnostic
 Пространство имен `diagnostics` предоставляет функциональные возможности для выпуска маркеров визуализатора параллелизма.
@@ -28,7 +30,7 @@ ms.locfileid: "85330256"
 namespace diagnostic;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="classes"></a>Классы
 
@@ -39,14 +41,14 @@ namespace diagnostic;
 
 ### <a name="enumerations"></a>Перечисления
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Перечисление marker_importance](../profiling/marker-importance-enumeration.md)|Представляет уровень важности маркера визуализатора параллелизма.|
 
 ## <a name="requirements"></a>Требования
  **Заголовок:** *cvmarkersobj.h*
 
- **Пространство имен:** параллелизм
+ **Пространство имен** : Concurrency
 
 ## <a name="see-also"></a>См. также
 - [Пространство имен Concurrency (визуализатор параллелизма)](../profiling/concurrency-namespace-concurrency-visualizer.md)

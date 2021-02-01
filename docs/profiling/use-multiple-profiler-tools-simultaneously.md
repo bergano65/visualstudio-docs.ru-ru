@@ -1,5 +1,6 @@
 ---
 title: Одновременное использование нескольких профилировщиков | Документация Майкрософт
+description: Сведения о том, что профилировщик производительности разрабатывался таким образом, чтобы в одном сеансе можно было использовать несколько инструментов для лучшего понимания проблем с производительностью.
 ms.date: 4/29/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: f72757d46496c3990c0a0d4205753d185078eac7
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 5a4c4658282f15b6b34562e51be94d9f2be195a8
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332036"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721181"
 ---
 # <a name="using-multiple-profiler-tools-simultaneously"></a>Одновременное использование нескольких профилировщиков
 

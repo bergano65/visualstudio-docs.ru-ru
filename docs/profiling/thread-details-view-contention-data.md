@@ -1,5 +1,6 @@
 ---
 title: Представление "Сведения о потоке" — сведения о состязаниях | Документы Майкрософт
+description: В этой статье описывается представление "Сведения о потоке", которое содержит временную шкалу событий блокировки в выбранном потоке сеанса профилирования.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 679fd9fd039fa903f5df5a479fa4f0e119bb7a9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d1cf1d9d7afeef8962026739116f75d4289d6283
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778171"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718802"
 ---
 # <a name="thread-details-view---contention-data"></a>Представление "Сведения о потоке" — сведения о состязаниях
 Представление "Сведения о потоке" представляет собой временную шкалу событий блокировки в выбранном потоке сеанса профилирования, обусловленных состязаниями за ресурсы. Событие блокировки возникает, когда поток вынужден приостановить выполнение, так как другой поток заблокировал доступ к ресурсу.

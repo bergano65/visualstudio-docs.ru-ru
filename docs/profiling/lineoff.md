@@ -1,5 +1,6 @@
 ---
 title: Параметр LineOff | Документы Майкрософт
+description: Сведения о параметре LineOff команды VSPerfCmd, который отключает сбор данных по номерам строк, когда команда VSPerfCmd используется для запуска приложения.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ac671c3b0ba40c462403b2afa850c3936156d6d2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 45ec3592049e00d6a492c489e8fb60254003ac6d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774130"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721415"
 ---
 # <a name="lineoff"></a>LineOff
 При использовании метода профилирования с выборкой профилировщик по умолчанию собирает сведения о количестве строк исходного кода и смещении номеров строк. Параметр **LineOff** команды VSPerfCmd отключает сбор данных по номерам строк, когда команда VSPerfCmd используется для запуска приложения. Если задан параметр **LineOff**, данные профилирования собираются до уровня функции.

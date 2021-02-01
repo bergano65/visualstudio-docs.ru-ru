@@ -1,5 +1,6 @@
 ---
 title: MarkProfile | Документация Майкрософт
+description: Метод MarkProfile вставляет метку профилирования в VSP-файл. Для добавления метки должно быть активировано профилирование для потока, содержащего функцию MarkProfile.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f53b51f9e78e2cb5d327abd3a79ebf2faa3a9204
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ecf676c58d8850834ec0c3333196dfb7144f885e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778574"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718867"
 ---
 # <a name="markprofile"></a>MarkProfile
 Метод `MarkProfile` вставляет метку профилирования в *VSP*-файл. Для добавления метки должно быть активировано профилирование для потока, содержащего функцию `MarkProfile`.
@@ -35,7 +36,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение
  Функция информирует об успехе или неудаче с помощью перечисления **PROFILE_COMMAND_STATUS**. Может возвращаться одно из следующих значений:
 
-|Перечислитель|Description|
+|Перечислитель|Описание|
 |----------------|-----------------|
 |MARK_ERROR_MARKER_RESERVED|Значение параметра меньше или равно нулю. Эти значения зарезервированы. Метка и комментарий не записываются.|
 |MARK_ERROR_MODE_NEVER|На момент вызова функции был установлен режим профилирования NEVER. Метка и комментарий не записываются.|
@@ -45,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_TEXTTOOLONG|Длина строки превышает 256 символов. Строка комментария усекается. Метка и комментарий записываются.|
 |MARK_OK|В случае успеха возвращается MARK_OK.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
  Значение метки вставляется в *VSP*-файл при каждом выполнении кода, когда выполняется профилирование потока, содержащего функцию MarkProfile. MarkProfile можно вызывать многократно.
 
  Метки профилирования имеют глобальную область видимости. Например, вставленную в любом потоке метку профиля можно использовать для обозначения начала или конца сегмента данных в любом потоке в *VSP*-файле.
@@ -98,5 +99,5 @@ void ExerciseMarkProfile()
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)

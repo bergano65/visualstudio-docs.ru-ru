@@ -1,5 +1,6 @@
 ---
 title: Состояние | Документы Майкрософт
+description: Сведения о параметре Status программы VSPerfCmd.exe, который позволяет вывести сведения о состоянии профилировщика и процессов, которые в настоящий момент профилируются.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c77c78258b5ddef486dc35ed6a620003864254cc
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778249"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722715"
 ---
 # <a name="status"></a>Состояние
 Параметр *VSPerfCmd.exe* **Status** позволяет вывести сведения о состоянии профилировщика и процессов, которые в настоящий момент профилируются.

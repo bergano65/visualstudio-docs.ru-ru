@@ -1,5 +1,6 @@
 ---
 title: 'Командная строка профилирования: создание переносимых файлов данных'
+description: Чтобы упростить общий доступ к данным профилирования, используйте программу командной строки VSPerfReport в целях внедрения символов для сеанса профилирования в VSP-файл.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d0584cd2a476a7552beec483dd72ad1e957800ec
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5df9f14fecce23eb72d08dcba87dee360269e078
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808842"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718971"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Создание переносимых файлов данных профилирования в командной строке
 Чтобы упростить общий доступ к данным профилирования, вы можете использовать программу командной строки [VSPerfReport](../profiling/vsperfreport.md) в целях внедрения символов для сеанса профилирования в *VSP*-файл.

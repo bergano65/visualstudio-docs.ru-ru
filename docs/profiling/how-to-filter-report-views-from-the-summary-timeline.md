@@ -1,5 +1,7 @@
 ---
 title: Фильтрация представлений отчетов на сводной временной шкале | Документация Майкрософт
+description: Используйте параметр "Фильтр по выделенному" в представлении "Сводка" для включения только указанного отрезка времени. Файл данных повторно анализируется только за этот период времени.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 661bae8166cb46fdf9419f4c49d922beb4d96f5c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3719153794cb0439b226b8ba6dc2796d5af0d330
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851168"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801208"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Практическое руководство. Фильтрация представлений отчетов на сводной временной шкале
 Данные, отображаемые в отчетах о производительности, можно фильтровать, задавая промежуток времени на временной шкале в представлении сводки. При фильтрации отчетов выполняется повторный анализ файла данных профилирования для включения только указанного отрезка времени.

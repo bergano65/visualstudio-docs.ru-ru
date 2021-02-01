@@ -1,5 +1,7 @@
 ---
 title: Параметр Detach | Документы Майкрософт
+description: Параметр Detach программы VSPerfCmd.exe отключает профилировщик от заданных процессов или от всех процессов, если процессы не заданы.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d9d1b52c-7f28-467d-b1e0-512afc4e46c9
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3251836959f41a4349851716f58f917943f10b09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45225e4478b0a1a3cddc7f74ae223c437bf4226e
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330249"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686601"
 ---
 # <a name="detach"></a>Detach
 Параметр **Detach** программы VSPerfCmd.exe отключает профилировщик от заданных процессов или от всех процессов, если процессы не заданы. Для инициализации профилирования нужно использовать метод выборки.

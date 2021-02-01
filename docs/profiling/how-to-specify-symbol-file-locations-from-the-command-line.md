@@ -1,5 +1,6 @@
 ---
 title: Определение расположения файлов символов с помощью командной строки
+description: Сведения о том, что для отображения сведений о символах, например имен функций и номеров строк, программе командной строки VSPerfReport необходим доступ к файлам символов (PDB).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f06bf9482bf719eb2025a8ee6c496b6b679046
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7a9a801ccf7493675e49a3cde6ef91675e5f1189
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809587"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721922"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Практическое руководство. Определение расположения файлов символов с помощью командной строки
 Для отображения сведений о символах, например имен функций и номеров строк, программе командной строки VSPerfReport необходим доступ к файлам символов (*PDB*) профилируемых компонентов и системным файлам Windows. Файлы символов создаются при компиляции компонента. Дополнительные сведения см. в разделе [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport автоматически выполняет поиск следующих расположений файлов символов:

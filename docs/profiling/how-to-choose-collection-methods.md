@@ -1,5 +1,7 @@
 ---
 title: Выбор методов сбора данных | Документация Майкрософт
+description: Средства профилирования Visual Studio собирают данные о производительности тремя способами. В этой статье описывается, как выбрать подходящий из них для приложения.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b66df2f302790f579891c337b217e76202e79ac
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3fe102c7ebd8ed551a0da4e92c66dfac8acb78ec
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851311"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801589"
 ---
 # <a name="how-to-choose-collection-methods"></a>Практическое руководство. Выбор методов сбора данных
 
@@ -84,7 +86,7 @@ ms.locfileid: "90851311"
 
 ### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>Выбор сбора данных о параллелизме с помощью свойств сеанса производительности
 
-1. В **обозревателе производительности**щелкните правой кнопкой мыши сеанс производительности, а затем выберите **Свойства**.
+1. В **обозревателе производительности** щелкните правой кнопкой мыши сеанс производительности, а затем выберите **Свойства**.
 
 2. В окне **Страницы свойств** щелкните страницу **Общие**.
 

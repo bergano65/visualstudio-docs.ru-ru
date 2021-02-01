@@ -1,5 +1,6 @@
 ---
 title: Отчет на основе видимого временного диапазона | Документы Майкрософт
+description: Сведения о том, как в представлении профиля отображаются отчеты, основанные на текущем видимом временном диапазоне и каналах.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,21 +13,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 02dc0e009702b25c2204f0a1302931fe941b5f59
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "63002346"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720375"
 ---
 # <a name="report-based-on-visible-time-range"></a>Отчет на основе видимого временного диапазона
 Представление профиля содержит отчеты, основанные на текущем видимом временном диапазоне и каналах. Для просмотра подробных сведений для разных подмножеств данных щелкните элементы в условных обозначениях.
 
  Здесь можно найти дополнительные сведения о данных в таблицах.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Нет активности потоков для отображения](../profiling/no-thread-activity-to-show-threads-view.md)
-- [Отчет "Профиль выполнения"](../profiling/execution-profile-report.md)
+- [Выполнение отчета профилирования](../profiling/execution-profile-report.md)
 - [Время синхронизации](../profiling/synchronization-time.md)
 - [Время ввода-вывода (представление "Потоки")](../profiling/i-o-time-threads-view.md)
 - [Время ожидания](../profiling/sleep-time.md)
@@ -35,4 +36,4 @@ ms.locfileid: "63002346"
 - [Время обработки пользовательского интерфейса](../profiling/ui-processing-time.md)
 - [Отчет операций диска](../profiling/disk-operations-report-threads-view.md)
 - [Сводный отчет по каждому потоку](../profiling/per-thread-summary-report.md)
-- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)
+- [Представление потоков](../profiling/threads-view-parallel-performance.md)
