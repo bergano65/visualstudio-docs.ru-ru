@@ -188,7 +188,9 @@
           href: ide/create-new-project.md
         - name: Работа с решениями и проектами
           href: ide/creating-solutions-and-projects.md
-        - name: Открытие проекта из репозитория
+        - name: "Открытие проекта из репозитория в Visual Studio\_2017"
+          href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
+        - name: "Открытие проекта из репозитория в Visual\_Studio"
           href: get-started/tutorial-open-project-from-repo.md
         - name: 'Перенос, миграция и обновление проектов'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
@@ -968,7 +970,7 @@
           href: ide/filtered-solutions.md
         - name: Советы и рекомендации
           href: ide/visual-studio-performance-tips-and-tricks.md
-- name: Специальные возможности
+- name: Возможности доступа
   items:
     - name: Управление специальными возможностями
       href: ide/reference/accessibility-features-of-visual-studio.md
@@ -1407,7 +1409,7 @@
                   href: help-viewer/logical-operators-search-expressions.md
         - name: Настройка окна справки
           href: help-viewer/customize.md
-        - name: Специальные возможности
+        - name: Возможности доступа
           href: help-viewer/accessibility-features.md
         - name: Сочетания клавиш
           href: help-viewer/shortcut-keys.md

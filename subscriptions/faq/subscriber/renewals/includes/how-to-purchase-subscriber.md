@@ -1,20 +1,21 @@
 ---
 title: Как приобрести подписки Visual Studio?
-description: Узнайте о различных способах приобретения подписок Visual Studio.
-ms.faqid: group4_1
+description: Сведения о различных способах приобретения подписок Visual Studio
+ms.faqid: q4_1
 ms.topic: include
-ms.assetid: c8dd39de-bf7f-40a2-a203-f2be21b87f5c
+ms.assetid: 5b27454c-f036-4f4d-9d67-54d1fc775f72
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/27/2021
-ms.openlocfilehash: a2dca00b1a7ebea80a883825783785c84c2352cc
+ms.date: 01/12/2021
+ms.openlocfilehash: bb436cfdff0f6783d041858430b4fd9864ceb569
 ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104446"
+ms.locfileid: "99104555"
 ---
 ## <a name="how-do-i-purchase-visual-studio-subscriptions"></a>Как приобрести подписки Visual Studio?
+
 Подписки Visual Studio доступны для приобретения по различным каналам, включая  [Корпоративное лицензирование](https://www.microsoft.com/licensing/default),  [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) и [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
 
 [Сравните преимущества и цены на подписки](https://visualstudio.microsoft.com/vs/pricing/) , чтобы ознакомиться с преимуществами каждой подписки Visual Studio. Дополнительные сведения о выборе подходящей подписки см. на [ странице преимуществ подписки](https://visualstudio.microsoft.com/vs/benefits/).   
@@ -35,4 +36,4 @@ ms.locfileid: "99104446"
 [Дополнительные сведения](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq) о выставлении счетов на ежемесячные подписки Visual Studio. 
 
 ### <a name="volume-licensing"></a>Корпоративное лицензирование 
-Когда организации требуется большое количество подписок, их можно приобрести по программам корпоративного лицензирования. [Узнайте подробнее](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) о приобретении подписок по программе корпоративного лицензирования.  
+Когда организации требуется большое количество подписок, их можно приобрести по программам корпоративного лицензирования. [Узнайте подробнее](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) о приобретении подписок по программе корпоративного лицензирования.
