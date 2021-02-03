@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69f93aca88cb8e83417a370de7113640d3ae38c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3a6f1efc85366bc74206dc8637c992f249c4eb44
+ms.sourcegitcommit: e443866e3468f838bc3655ad56a83a552013ceed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351340"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98925883"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Пошаговое руководство. Отладка таблицы стилей XSLT
 
@@ -24,7 +24,7 @@ ms.locfileid: "94351340"
 Чтобы подготовиться к изучению этого пошагового руководства, сначала скопируйте два [файла примеров](#sample-files) на локальный компьютер. Один из них — это таблица стилей, а другой — XML-файл, который будет использоваться в качестве входных данных для таблицы стилей. В этом пошаговом руководстве таблица стилей, которую мы используем, находит все книги, стоимость которых ниже средней стоимости книги.
 
 > [!NOTE]
-> Отладчик XSLT предоставляется только в выпуске Visual Studio 2017 Enterprise.
+> Отладчик XSLT доступен только в выпусках Visual Studio Professional и Enterprise.
 
 ## <a name="start-debugging"></a>Начать отладку
 
