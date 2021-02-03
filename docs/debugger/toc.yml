@@ -338,8 +338,6 @@
       items:
         - name: Присоединение к выполняемым процессам с использованием отладчика
           href: attach-to-running-processes-with-the-visual-studio-debugger.md
-        - name: Отладка .NET Core в Linux
-          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: 'Присоединение к процессу, выполняющемуся в контейнере Docker'
           href: attach-to-process-running-in-docker-container.md
     - name: Многопотоковая отладка приложений
@@ -422,6 +420,14 @@
           href: debug-live-azure-apps-troubleshooting.md
         - name: Отладка перехода по времени работающей виртуальной машины Azure
           href: debug-live-azure-virtual-machines-time-travel-debugging.md
+    - name: Отладка Linux
+      items:
+        - name: "Отладка приложений .NET Core в WSL\_2"
+          href: debug-dotnet-core-in-wsl-2.md
+        - name: "Отладка .NET\_Core в Linux с помощью SSH"
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
+        - name: Отладка с помощью инструментов для контейнеров >>
+          href: ../containers/edit-and-refresh.md
     - name: Типы приложений
       items:
         - name: Отладка конкретных типов приложений
