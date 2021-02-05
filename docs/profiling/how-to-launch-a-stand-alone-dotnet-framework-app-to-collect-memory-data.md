@@ -1,5 +1,7 @@
 ---
 title: Командная строка профилировщика — запуск клиентского приложения .NET Framework и получение данных об использовании памяти
+description: Узнайте, как использовать программы командной строки Средств профилирования Visual Studio, чтобы запускать автономные приложения .NET Framework, а также собирать данные о действиях с памятью.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6378ea021d089027c19d28e927d5772ef5f35e0f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: a0df21a4d34d3d3f889442046b594ff63f01bcb6
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327691"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883496"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Практическое руководство. Запуск автономного приложения .NET Framework с профилировщиком для сбора данных об использовании памяти с помощью командной строки
 В этом разделе описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для запуска автономного (клиентского) приложения .NET Framework и сбора данных о памяти.
@@ -43,9 +45,9 @@ ms.locfileid: "85327691"
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
-   - Параметр [/start](../profiling/start.md) **:sample** инициализирует профилировщик.
+   - Параметр [/start](../profiling/start.md)**:sample** инициализирует профилировщик.
 
-   - Параметр [/output](../profiling/output.md) **:** `OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).
+   - Параметр [/output](../profiling/output.md)**:**`OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).
 
      С параметром **/start:sample** можно использовать любой из следующих параметров.
 

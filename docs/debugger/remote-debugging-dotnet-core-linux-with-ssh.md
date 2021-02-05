@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bde5bb8722e0f95a10991019bdc9cba9c8a48ec3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 599ebe86867e78d17029b2787b9f35b6755c3040
+ms.sourcegitcommit: 586369f5aa61d4a0330802f718f0ceaa55d7e9c7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204895"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99224357"
 ---
 # <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>Отладка .NET Core в Linux с помощью SSH путем присоединения к процессу
 
-Начиная с Visual Studio 2017 можно присоединяться к процессам .NET Core, запущенным в локальном или удаленном развертывании Linux, по протоколу SSH. В этой статье описывается настройка и выполнение процесса отладки. Сценарии отладки с использованием контейнеров Docker описаны в разделе [Присоединение к процессу, выполняющемуся в контейнере Docker](../debugger/attach-to-process-running-in-docker-container.md).
+Начиная с Visual Studio 2017 можно присоединяться к процессам .NET Core, запущенным в локальном или удаленном развертывании Linux, по протоколу SSH. В этой статье описывается настройка и выполнение процесса отладки. Сценарии отладки с использованием контейнеров Docker см. в статьях [Присоединение к процессу, выполняющемуся в контейнере Docker](../debugger/attach-to-process-running-in-docker-container.md) и об [инструментах для работы с контейнерами](../containers/edit-and-refresh.md). Сведения об отладке Linux в WSL 2 из Visual Studio (без присоединения к процессу) см. в [этой статье](../debugger/debug-dotnet-core-in-wsl-2.md).
 
 ## <a name="prerequisites"></a>Предварительные требования
 

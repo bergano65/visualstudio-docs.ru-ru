@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfec7d31e6fc2c120ef42dc9de2a5a7eea4132e0
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 909e15a3acdc6725556c8d5121a363d1754a74be
+ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597097"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99104283"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Практическое руководство. Сохранение и открытие файлов с использованием определенной кодировки
 
@@ -39,6 +39,9 @@ ms.locfileid: "95597097"
      Этот параметр полезен, если предполагается обмениваться файлами с пользователями, работающими в другой операционной системе.
 
      Если вы хотите работать с файлом, имеющим определенную кодировку, можно сообщить Visual Studio использовать эту кодировку при открытии файла. Конкретный метод зависит от того, является ли файл частью проекта.
+
+> [!NOTE]
+> Чтобы сохранить файл проекта с кодировкой, необходимо выгрузить проект. Только после этого станет доступна команда **Сохранить файл как**.
 
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Открытие файла с кодировкой, являющегося частью проекта
 
