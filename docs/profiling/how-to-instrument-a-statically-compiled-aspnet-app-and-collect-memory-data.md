@@ -1,5 +1,7 @@
 ---
 title: Командная строка профилировщика — инструментирование статического приложения ASP.NET и получение данных об использовании памяти
+description: Узнайте, как использовать программы командной строки Средств профилирования Visual Studio для сбора данных об использовании памяти и времени для предварительно скомпилированного веб-компонента или веб-сайта ASP.NET.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 427ece50dc2e8add6cc05e944907a9e0e1a890ae
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 51523991ece7322eef6db38a7b5738ce07a471ea
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327924"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883502"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Практическое руководство. Инструментирование статически скомпилированного веб-приложения ASP.NET и сбор данных об использовании памяти с помощью командной строки профилировщика
 В этом разделе описывается использование программ командной строки для средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с целью инструментирования предварительно скомпилированного веб-компонента или веб-сайта [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и сбора данных по выделению памяти .NET, времени существования объектов и подробных сведений об использовании времени.
@@ -85,7 +87,7 @@ ms.locfileid: "85327924"
 
     |Параметр|Описание|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает ( **/globalon**) или останавливает ( **/globaloff**) сбор данных для всех процессов.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает ( **/processon**) или останавливает ( **/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Запускает ( **/threadon**) или останавливает ( **/threadoff**) сбор данных для потока с указанным идентификатором потока (`TID`).|
 
