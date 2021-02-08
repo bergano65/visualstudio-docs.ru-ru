@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 86b3af13-7163-48c6-986b-7beeedbc26cc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6314199fdf850c377825ee31e58cd9f315c5f672
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: e46832803008ea65d0f7ec4f2723a615ba496b94
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761027"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840084"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Команды, меню и группы, определенные в интегрированной среде разработки
 Многие меню, команды и группы команд уже определены для использования [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной средой разработки. Эти команды также доступны для использования при расширении [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -37,7 +37,7 @@ ms.locfileid: "96761027"
 
   Эти файлы находятся в *\<Visual Studio SDK installation path>* \висуалстудиоинтегратион\коммон\инк \\ . Эти файлы содержат определения и идентификаторы GUID меню и групп, которые можно использовать в файле конфигурации командной таблицы (. vsct) пакета VSPackage в качестве контейнеров для собственных меню, групп и команд.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Идентификаторы GUID и идентификаторы меню Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
 
  Предоставляет значения GUID и идентификатора меню в строке меню Visual Studio и содержащихся в них группах.

@@ -3,17 +3,17 @@ title: Обзор ресурсов хранилища и управление и
 description: Обзор ресурсов хранилища с помощью обозревателя сервера и управление ими
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ae45fafb562387720b652e0921624bc859ea5920
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 70656b71df09f5635ebfb5d4532256e8f0d3dd35
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902224"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843856"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Просмотр и администрирование ресурсов хранилища с помощью обозревателя сервера
 
@@ -261,7 +261,7 @@ BLOB-объект откроется в редакторе по умолчани
 
    ![Создание учетной записи хранения Azure](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. Выберите **Создать**.
+1. Нажмите кнопку **создания**.
 
 Новая учетная запись хранения отображается в списке **Хранилище** в обозревателе решений.
 

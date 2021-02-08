@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: df33c52e-ded2-48a0-951d-1f36c8fc922e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4d22b10085baefeb3a0286c1b4edcb5876c0dac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3080d5beb111fffa0725fba3278cc0fb93f25381
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735421"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842541"
 ---
 # <a name="idebugboundbreakpoint2"></a>IDebugBoundBreakpoint2
 Этот интерфейс представляет точку останова, привязанную к расположению кода.
@@ -32,7 +32,7 @@ IDebugBoundBreakpoint2 : IUnknown
  Модуль отладки (DE) реализует этот интерфейс в рамках поддержки точек останова.
 
 ## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
- Вызов [BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) создает этот интерфейс. Вызовы метода [GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md) [GetNext и Next](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md) могут также получить этот интерфейс.
+ Вызов [BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) создает этот интерфейс. Вызовы метода [](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md) [GetNext и Next](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md) могут также получить этот интерфейс.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugBoundBreakpoint2` .

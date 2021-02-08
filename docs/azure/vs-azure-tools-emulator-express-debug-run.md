@@ -3,17 +3,17 @@ title: Emulator Express для локального запуска и отлад
 ms.custom: SEO-VS-2020
 description: Использование Emulator Express для запуска и отладки облачной службы на локальном компьютере
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: dee97ab487f4e165fd372559e51b6f19c3501e9f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 08381be4fdc4fc23b70fb252c653b62398799a30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844220"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Использование Emulator Express для запуска и отладки облачной службы Azure на локальном компьютере
 Emulator Express позволяет протестировать и отладить облачную службу, не запуская Visual Studio от имени администратора. В зависимости от требований облачной службы параметры проекта можно задать таким образом, чтобы использовался либо Emulator Express, либо полный эмулятор. Дополнительные сведения о полном эмуляторе см. в статье [Запуск приложения Azure в эмуляторе вычислений](/azure/storage/common/storage-use-emulator).

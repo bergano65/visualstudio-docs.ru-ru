@@ -2,17 +2,17 @@
 title: Настройка ролей для облачной службы Azure
 description: Узнайте, как настроить роли для облачных служб Azure с помощью Visual Studio.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 120c693e7009dddf2efaab7ce54fd4d20c0b1681
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 8695840c48a39c6485d7b9c9b70835872f1104bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844389"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Настройка ролей для облачной службы Azure в Visual Studio
 Облачной службе Azure можно назначить одну или несколько рабочих ролей или веб-ролей. Для каждой роли нужно определить способ настройки, а также настроить способ выполнения. Дополнительные сведения о ролях в облачных службах см. в видео [Введение в облачные службы Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).

@@ -2,25 +2,25 @@
 title: Добавление службы хранилища Azure с помощью подключенных служб | Документация Майкрософт
 description: Добавление в приложение зависимости службы хранилища Azure с помощью Visual Studio Подключенные службы
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: d169940d6deffdf67bcbcb94e9f647631d0f606a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a2aa5a0453b6a05c261d3cac853ab8265fb4e453
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902640"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844350"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Добавление хранилища Azure с использованием подключенных служб Visual Studio
 
 С помощью Visual Studio вы можете подключить к службе хранилища Azure любой из следующих компонентов, используя функцию **подключенные службы** :
 
-- .NET Framework консольное приложение
-- ASP.NET MVC (.NET Framework)
+- Платформа .NET Framework консольное приложение
+- ASP.NET MVC (платформа .NET Framework)
 - ASP.NET Core
 - .NET Core (включая консольное приложение, WPF, Windows Forms, библиотеку классов)
 - Рабочая роль .NET Core

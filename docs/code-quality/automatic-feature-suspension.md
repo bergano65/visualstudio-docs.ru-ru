@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 12b15ed8aa02e53841b85245350735258e7ec11d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: efd053a846a7bf70f475db44788b14152498dc0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348545"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843726"
 ---
 # <a name="automatic-feature-suspension"></a>Автоматическая приостановка функции
 
@@ -58,7 +58,7 @@ ms.locfileid: "94348545"
 
 - Найти все ссылки
 
-- Функция "Перейти к"
+- Перейти к
 
 - Добавить с помощью
 
@@ -67,7 +67,7 @@ ms.locfileid: "94348545"
 > [!NOTE]
 > Предупреждение о приостановке автоматического приостановки признака выполняется только один раз для каждого решения, а не для каждого сеанса. Это означает, что при переключении с Visual Basic на Visual C# (или наоборот) и выполнении в другое состояние нехватки памяти можно получить еще одно предупреждение о приостановке приостановки компонента.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Как настроить область анализа активного кода для управляемого кода](./configure-live-code-analysis-scope-managed-code.md)
 - [Основные сведения о сборке мусора](/dotnet/standard/garbage-collection/fundamentals)

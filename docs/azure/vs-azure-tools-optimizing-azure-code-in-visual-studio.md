@@ -2,17 +2,17 @@
 title: Оптимизация кода Azure
 description: Узнайте, каким образом средства оптимизации кода Azure в Visual Studio помогут сделать код более надежным и производительным.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 5ae141c4ecdf5cfe1819ba2f47aac45f1763fa34
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b7a20b4ae57ee5cf1127441bc43dea021c170188
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902302"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844038"
 ---
 # <a name="optimizing-your-azure-code"></a>Оптимизация кода Azure
 Существуют определенные принципы программирования, позволяющие избежать проблем с масштабированием, поведением и производительностью приложений, использующих Microsoft Azure, в облачной среде. Майкрософт предлагает инструмент анализа кода Azure, который распознает и идентифицирует часто встречающиеся проблемы, а также помогает их решить. Его можно загрузить в Visual Studio на платформе NuGet.

@@ -2,17 +2,17 @@
 title: Как управлять конфигурациями и профилями службы | Документация Майкрософт
 description: Узнайте, как работать с файлами конфигурации службы и файлами профилей, в которых хранятся параметры для сред развертывания и параметры публикации для облачных служб.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 751214a99c7724c83f01226164202f90425ebf65
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e1c97670a91f2d90a01fef24f592e6ce2d5b05fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902085"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843817"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Управление конфигурациями и профилями службы
 ## <a name="overview"></a>Обзор
@@ -41,7 +41,7 @@ ms.locfileid: "94902085"
 
     Появится диалоговое окно **Управление конфигурациями службы**.
 2. Чтобы удалить конфигурацию службы, выберите из списка **Имя** конфигурацию, которую нужно удалить, и нажмите кнопку **Удалить**. Появится диалоговое окно, в котором следует подтвердить удаление конфигурации.
-3. Выберите команду **Удалить**.
+3. Нажмите кнопку **Удалить**.
 
      Файл конфигурации службы будет удален из проекта Azure в обозревателе решений.
 

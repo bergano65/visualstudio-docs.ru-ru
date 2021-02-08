@@ -2,17 +2,17 @@
 title: Выполнение сборки для Azure с помощью командной строки | Документация Майкрософт
 description: Создание сборки для Azure с помощью командной строки
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: 64c18ea8b572d8481b2b2d04f8a8e16f21afc44a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b60e076c50c9465f54c3c05dda0318f56fa5e9ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844272"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>Создание проектов Azure с помощью командной строки
 С помощью Microsoft Build Engine (MSBuild) можно выполнять сборку продуктов в лабораторных средах, где приложение Visual Studio не установлено. MSBuild использует для файлов проекта расширяемый формат XML, который полностью поддерживается Майкрософт. С помощью формата файлов MSBuild вы можете описать, какие именно элементы должны быть собраны для одной или нескольких платформ и конфигураций.

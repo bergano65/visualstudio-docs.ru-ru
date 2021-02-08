@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f7205ce8-0ac6-4fcd-b6ec-b720b4fcaccf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af4650b5523595350543ac549ac162247563e418
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25f1544fe13c6dc44aa90b73f69854893beae14f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386749"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844740"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 Продолжение выполнения этой программы из остановленного состояния. Все предыдущие состояния выполнения (например, шаг) очищаются, и программа начинает выполнение повторно.
@@ -52,4 +52,4 @@ int Execute();
 ## <a name="see-also"></a>См. также раздел
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [Событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
-- [Возобновить](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [Возобновить](../../../extensibility/debugger/reference/idebugthread2-resume.md);

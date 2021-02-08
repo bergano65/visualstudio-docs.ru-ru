@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7da218a9ada593731e6205e017861084e73adc
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: f870da49cdf82203e7dd435601f93a75cb16dccd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761144"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839967"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>Реализация языковой службы версии 2
 Чтобы реализовать языковую службу с помощью управляемой платформы пакетов (MPF), необходимо создать класс из <xref:Microsoft.VisualStudio.Package.LanguageService> класса и реализовать следующие абстрактные методы и свойства:
@@ -215,7 +215,7 @@ namespace TestLanguagePackage
 |Метод|Возвращаемый класс|Описание|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|Для настройки вывода списков завершения IntelliSense (этот метод обычно не переопределен).|
-|<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|Для поддержки маркеров в списке задач Список ошибок; в частности, поддержка функций перед открытием файла и переходом к строке, вызвавшей ошибку.|
+|<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|Для поддержки маркеров в списке задач список ошибок; в частности, поддержка функций перед открытием файла и переходом к строке, вызвавшей ошибку.|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateMethodData%2A>|<xref:Microsoft.VisualStudio.Package.MethodData>|Для настройки вывода всплывающих подсказок параметров IntelliSense.|
 |<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>|<xref:Microsoft.VisualStudio.Package.CommentInfo>|Для поддержки комментирования кода.|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateAuthoringSink%2A>|<xref:Microsoft.VisualStudio.Package.AuthoringSink>|Для сбора сведений во время операции синтаксического анализа.|
@@ -236,7 +236,7 @@ namespace TestLanguagePackage
 ### <a name="images-used-in-the-navigation-bar"></a>Изображения, используемые на панели навигации
  На **панели навигации** отображаются списки типов и членов, которые используются для быстрой навигации, а также для отображения значков. Эти значки получаются из <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> метода в <xref:Microsoft.VisualStudio.Package.LanguageService> классе и не могут быть переопределены специально для **панели навигации**. Индексы, используемые для каждого элемента в полях со списком, задаются, когда списки, представляющие поля со списком, заполняются в <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> методе <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> класса (см. раздел [Поддержка панели навигации в устаревшей языковой службе](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)). Эти индексы изображений получаются каким-либо образом из средства синтаксического анализа, как правило, через вашу версию <xref:Microsoft.VisualStudio.Package.Declarations> класса. Способ получения индексов полностью зависит от вас.
 
-### <a name="images-used-in-the-error-list-task-window"></a>Изображения, используемые в окне задачи Список ошибок
+### <a name="images-used-in-the-error-list-task-window"></a>Изображения, используемые в окне задачи список ошибок
  Всякий раз, когда <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> средство синтаксического анализа методов (см. сведения об [анализаторе и сканере языковой службы прежних версий](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)) обнаруживает ошибку и передает эту ошибку <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> методу в <xref:Microsoft.VisualStudio.Package.AuthoringSink> классе, в окне **Список ошибок** задачи отображается сообщение об ошибке. Значок может быть связан с каждым элементом, отображаемым в окне задачи, и этот значок поступает из того же списка изображений, который возвращается из <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> метода в <xref:Microsoft.VisualStudio.Package.LanguageService> классе. Поведение по умолчанию для классов MPF — не показывать изображение с сообщением об ошибке. Однако это поведение можно переопределить, производя класс от <xref:Microsoft.VisualStudio.Package.Source> класса и переопределив <xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A> метод. В этом методе создается новый <xref:Microsoft.VisualStudio.Package.DocumentTask> объект. Перед возвратом этого объекта можно использовать <xref:Microsoft.VisualStudio.Shell.Task.ImageIndex%2A> свойство <xref:Microsoft.VisualStudio.Package.DocumentTask> объекта для задания индекса изображения. Это будет выглядеть примерно так, как показано в следующем примере. Обратите внимание, что `TestIconImageIndex` является перечислением, в котором перечислены все значки, и оно относится только к этому примеру. У вас может быть другой способ идентификации значков в языковой службе.
 
 ```csharp

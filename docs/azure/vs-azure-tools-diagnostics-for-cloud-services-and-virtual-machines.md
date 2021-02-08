@@ -3,17 +3,17 @@ title: Диагностика — облачные службы Azure & вирт
 ms.custom: SEO-VS-2020
 description: Узнайте, как настраивать систему диагностики для отладки облачных служб и виртуальных машин Azure в Visual Studio.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: ababbbfcfa71f3083a292103f4fa4f1ba481faae
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e98d335d53edb7e8771db3314944a11c534d046b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844311"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Настройка системы диагностики для облачных служб и виртуальных машин Azure
 Чтобы устранить неполадки в облачных службах или виртуальных машинах Azure, можно использовать Visual Studio для быстрой настройки системы диагностики Azure. Система диагностики собирает системные данные и данные журналов, поступающие от виртуальных машин и их экземпляров, на которых работает ваша облачная служба. Данные диагностики переносятся в указанную вами учетную запись хранения. Дополнительные сведения о ведении журнала диагностики см. в статье [Включение ведения журнала диагностики для веб-приложений в службе приложений Azure](/azure/app-service/web-sites-enable-diagnostic-log).

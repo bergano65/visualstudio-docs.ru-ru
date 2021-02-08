@@ -3,17 +3,17 @@ title: Настройка облачной службы с нескольким�
 description: Сведения о настройка проекта облачной службы Azure путем изменения файлов ServiceDefinition.csdef, ServiceConfiguration.Local.cscfg и ServiceConfiguration.Cloud.cscfg.
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 58d7a967c3a8cf46330c169db1b73bc048a2110c
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b5b4a5bedd77855aa41c4bf5e565738fc8fb4f0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902367"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844103"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Настройка проекта Azure в Visual Studio для использования нескольких конфигураций служб
 

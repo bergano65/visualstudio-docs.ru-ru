@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be2caf25dfef71cb267f49b6cfd732923aa0848c
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 2337d1ee2ac8e698e93a0d8d3d1dc9324af4f933
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761183"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839993"
 ---
 # <a name="implementing-a-legacy-language-service-1"></a>Реализация устаревшей языковой службы 1
 Классы в среде управляемого пакета (MPF) можно использовать для реализации устаревшей языковой службы, поддерживающей широкий спектр функций, таких как выделение синтаксиса, сопоставление фигурных скобок и завершение IntelliSense.
@@ -27,7 +27,7 @@ ms.locfileid: "96761183"
 > [!NOTE]
 > Рекомендуется как можно скорее начать использовать новый API редактора. Это улучшит производительность языковой службы и позволит использовать новые функции редактора.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Обзор языковой службы прежних версий](../../extensibility/internals/legacy-language-service-overview.md)
 
  Общие сведения о функциях языковой службы, поддерживаемых в MPF.
