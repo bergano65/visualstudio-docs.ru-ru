@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed1bb5d1f805f81ba4f124f425fbd93f706eb830
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: e320d6f7b6126736719eb2a428d47a39a61730ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837278"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Изменение и сохранение запроса (пакет VSPackage системы управления версиями)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Редакторы могут транслировать события сохранения запроса на изменение (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Заглушка системы управления версиями реализует службу QEQS, так что она является получателем событий QEQS. Затем эти события делегируются в текущий активный пакет VSPackage системы управления версиями. В пакете VSPackage активной системы управления версиями реализован <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> метод и его методы. Методы `IVsQueryEditQuerySave2` интерфейса обычно вызываются непосредственно перед тем, как документ будет изменен в первый раз и непосредственно перед сохранением документа.

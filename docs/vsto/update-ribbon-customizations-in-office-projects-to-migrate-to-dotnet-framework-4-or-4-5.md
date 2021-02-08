@@ -1,6 +1,6 @@
 ---
-title: Обновление настроек ленты, перенесенных на .NET Framework 4,5
-description: Сведения о том, что необходимо внести изменения в код проекта, если Целевая платформа изменена на .NET Framework 4 или более поздней версии.
+title: Обновление настроек ленты, перенесенных на платформа .NET Framework 4,5
+description: Сведения о том, что необходимо внести изменения в код проекта, если Целевая платформа изменена на платформа .NET Framework 4 или более поздней версии.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a831bced793f13394a89d278a6be1cda959c775a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 684ec027f5e7615832a942edc93336bf91944b09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838312"
 ---
-# <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>Обновление настроек ленты, перенесенных на .NET Framework 4,5
+# <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>Обновление настроек ленты, перенесенных на платформа .NET Framework 4,5
 
   Если проект содержит настройку ленты, созданную с помощью элемента проекта **Лента (визуальный конструктор)** , необходимо внести следующие изменения в код проекта, если Целевая платформа изменена на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии.
 
@@ -188,5 +188,5 @@ this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");
 ```
 
 ## <a name="see-also"></a>См. также раздел
-- [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
+- [Перенос решений Office на платформа .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Конструктор лент](../vsto/ribbon-designer.md)

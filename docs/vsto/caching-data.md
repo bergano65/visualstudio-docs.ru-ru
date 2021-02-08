@@ -13,18 +13,18 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: db22378477daffd4562a9d60c6b30bc7b96e58e2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f31556e64ee93a73fb09c27edd095bcd2653dfdc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847875"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836167"
 ---
 # <a name="cache-data"></a>Кэширование данных
-  Вы можете кэшировать объекты данных в настройке на уровне документа, чтобы обеспечить доступ к данным в автономном режиме или без открытия Microsoft Office Word или Microsoft Office Excel. Для кэширования объекта объект должен иметь тип данных, соответствующий определенным требованиям. Многие распространенные типы данных в .NET Framework соответствуют этим требованиям, включая <xref:System.String> , <xref:System.Data.DataSet> и <xref:System.Data.DataTable> .
+  Вы можете кэшировать объекты данных в настройке на уровне документа, чтобы обеспечить доступ к данным в автономном режиме или без открытия Microsoft Office Word или Microsoft Office Excel. Для кэширования объекта объект должен иметь тип данных, соответствующий определенным требованиям. Многие распространенные типы данных в платформа .NET Framework соответствуют этим требованиям, включая <xref:System.String> , <xref:System.Data.DataSet> и <xref:System.Data.DataTable> .
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 

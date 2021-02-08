@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 712c3c5b5c0b94932abba602a841977e0601d3b3
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6a33d393cfd904bdae890f4ead9a4c25a6451460
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837298"
 ---
 # <a name="properties-window-overview"></a>Общие сведения об окне свойств
 Окно **Свойства** используется для вывода свойств объектов, выбранных в двух основных типах окон, доступных в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среде разработки (IDE). Эти два типа окон:

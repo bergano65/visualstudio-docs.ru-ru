@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ec349e38acbdb0271ecfb0c081b4f1aadadcd9
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 5226f9a3464786f85ad9d5348226e82e070cf57e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204947"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839590"
 ---
 # <a name="legacy-language-service-overview"></a>Обзор языковой службы прежних версий
 Языковая служба предоставляет поддержку редактора, которая позволяет реализовать определенные [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] функции. Классы языковой службы для управляемых пакетов Framework (MPF) обеспечивают полную поддержку часто используемых функций и частичную поддержку других функций.
@@ -91,6 +91,6 @@ ms.locfileid: "98204947"
 
 - [Проверка точек останова в языковой службе прежних версий](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Реализация языковой службы прежних версий](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [Расширяемость языковой службы прежних версий](../../extensibility/internals/legacy-language-service-extensibility.md)

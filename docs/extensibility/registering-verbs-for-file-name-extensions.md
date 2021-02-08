@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: df0dfe90bd5e3bccbb6bb0f9dab400082f539fbf
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 10e1b158ab62cfedfb6171a0a3874cfe14e89caf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863046"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837012"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Регистрация команд для расширений имен файлов
 Сопоставление расширения имени файла с приложением обычно имеет предпочитаемое действие, которое происходит при двойном щелчке файла пользователем. Это предпочтительное действие связано с командой, например Open, которая соответствует действию.
@@ -31,11 +31,11 @@ ms.locfileid: "97863046"
 
 - Изменить
 
-- Play
+- Воспроизведение
 
 - Печать
 
-- Предварительный просмотр
+- Preview (Предварительный просмотр)
 
   По возможности Зарегистрируйте стандартную команду. Наиболее распространенным выбором является команда Open. Используйте команду Edit, только если есть четкое различие между открытием файла и редактированием файла. Например, открытие *htm* -файла отображает его в браузере, а редактирование *htm* -файла запускает редактор HTML. Стандартные команды локализованы с локальными языками операционной системы.
 

@@ -2,25 +2,25 @@
 title: Добавление Application Insights Azure с помощью Подключенные службы | Документация Майкрософт
 description: Добавление Application Insights Azure в приложение с помощью Visual Studio для добавления подключенной службы
 author: AngelosP
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 1317f41c9463ab645e6dd3ba281f11b9246720a8
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5b93d5b15cbbd3ffcb1f8afb65afe6e1c2c371b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901938"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841228"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>Добавление Application Insights Azure с помощью Visual Studio Подключенные службы
 
 С помощью Visual Studio вы можете подключить к Azure Application Insights любой из следующих компонентов, используя функцию **подключенные службы** :
 
-- .NET Framework консольное приложение
-- ASP.NET MVC (.NET Framework) 
+- Платформа .NET Framework консольное приложение
+- ASP.NET MVC (платформа .NET Framework) 
 - ASP.NET Core
 - .NET Core (включая консольное приложение, WPF, Windows Forms, библиотеку классов)
 - Рабочая роль .NET Core

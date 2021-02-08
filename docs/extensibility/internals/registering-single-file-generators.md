@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a0ce4afeddebdec8519467e1f4249095ce98f6b
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6b2cb27baaca465096a14c836b0dfc7ebc43d42e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875262"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837253"
 ---
 # <a name="registering-single-file-generators"></a>Регистрация генераторов одного файла
 Чтобы сделать пользовательский инструмент доступным в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , необходимо зарегистрировать его, чтобы он [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] мог создать экземпляр и связать его с определенным типом проекта.
@@ -46,11 +46,11 @@ ms.locfileid: "97875262"
 
    - CLSID
 
-        Обязательный. Задает идентификатор библиотеки классов COM-компонента, реализующего интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .
+        Обязательный элемент. Задает идентификатор библиотеки классов COM-компонента, реализующего интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .
 
    - женератесдесигнтимесаурце
 
-        Обязательный. Указывает, доступны ли типы из файлов, созданных этим пользовательским инструментом, в визуальных конструкторах. Значение этого параметра должно быть (ноль) 0 для типов, недоступных для визуальных конструкторов или (один) 1 для типов, доступных для визуальных конструкторов.
+        Обязательный элемент. Указывает, доступны ли типы из файлов, созданных этим пользовательским инструментом, в визуальных конструкторах. Значение этого параметра должно быть (ноль) 0 для типов, недоступных для визуальных конструкторов или (один) 1 для типов, доступных для визуальных конструкторов.
 
    > [!NOTE]
    > Пользовательское средство необходимо зарегистрировать отдельно для каждого языка, для которого необходимо, чтобы пользовательский инструмент был доступен.

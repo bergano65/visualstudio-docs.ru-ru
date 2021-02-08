@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 21cb3e63-f25c-404b-bc1d-a32ad0fdd4d5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd8d0745ae971f4039ffccf3431614325236e63f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 41dca5d7a3d2a95ae9b89feb73fb7655b8923eb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875860"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837220"
 ---
 # <a name="providing-automation-for-code"></a>Предоставление автоматизации для кода
 Создание модели автоматизации для кода не является обязательным. Пакет SDK для среды не предоставляет пример для этого. Подробные сведения о моделях кода см. в разделе <xref:EnvDTE.CodeModel> объект.

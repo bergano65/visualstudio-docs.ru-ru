@@ -25,41 +25,41 @@ helpviewer_keywords:
 - runtime [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16431a9ba2fe56b88f9f6b7f2c874c75bfad61c3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e5d02d7840f1b16098509a6549816746c0a5bfbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838065"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Общие сведения о Инструменты Visual Studio для среды выполнения Office
   Для запуска решений, созданных с помощью средств разработчика Microsoft Office в Visual Studio, на компьютерах конечных пользователей должна быть установлена среда выполнения средств Visual Studio 2010 для Office. Дополнительные сведения см. в разделе [руководство. Установка распространяемого пакета среды выполнения Office инструменты Visual Studio](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Среда выполнения Visual Studio 2010 Tools for Office состоит из двух основных компонентов:
 
-- Расширения Office для платформы .NET Framework. Эти компоненты представляют собой управляемые сборки, обеспечивающие слой связи между вашим решением и приложением Microsoft Office. Дополнительные сведения см. [в разделе Знакомство с расширениями Office для .NET Framework](#officeextensions).
+- Расширения Office для платформы .NET Framework. Эти компоненты представляют собой управляемые сборки, обеспечивающие слой связи между вашим решением и приложением Microsoft Office. Дополнительные сведения см. [в разделе Знакомство с расширениями Office для платформа .NET Framework](#officeextensions).
 
 - Загрузчик решения Office. Этот компонент представляет собой набор неуправляемых библиотек DLL, которые используются приложениями Office для загрузки среды выполнения и ваших решений. Дополнительные сведения см. [в разделе Знакомство с загрузчиком решений Office](#UnmanagedLoader).
 
   Эта среда выполнения может быть установлена несколькими различными способами. В зависимости от конфигурации компьютера при установке среды выполнения устанавливаются различные ее компоненты. Дополнительные сведения см. в статье [инструменты Visual Studio для сценариев установки среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
-## <a name="understand-the-office-extensions-for-the-net-framework"></a><a name="officeextensions"></a> Общие сведения о расширениях Office для .NET Framework
- Среда выполнения Visual Studio 2010 Tools for Office включает расширения Office для .NET Framework 3,5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] и более поздних версий. Решения, нацеленные на каждую из версий .NET Framework, используют расширения, соответствующие этой версии.
+## <a name="understand-the-office-extensions-for-the-net-framework"></a><a name="officeextensions"></a> Общие сведения о расширениях Office для платформа .NET Framework
+ Среда выполнения Visual Studio 2010 Tools for Office включает расширения Office для платформа .NET Framework 3,5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] и более поздних версий. Решения, нацеленные на каждую из версий .NET Framework, используют расширения, соответствующие этой версии.
 
  Эти расширения состоят из сборок, используемых решениями для автоматизации и расширения приложений Office. При создании проекта Office Visual Studio автоматически добавляет ссылки на сборки, используемые для данного типа проектов и платформы .NET Framework, для которой предназначен этот проект. Дополнительные сведения о сборках в расширениях Office см. [в разделе сборки в инструменты Visual Studio для среды выполнения Office](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md).
 
 ### <a name="design-differences-in-the-office-extensions"></a>Различия в разработке расширений Office
  Большинство типов, используемых в расширениях Office для .NET Framework 3.5, являются классами. Это те же классы, которые входили в предыдущие версии [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Напротив, большинство типов, которые вы используете в расширениях Office для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] и более поздних версий, являются интерфейсами. Например, при ориентировании на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию типы <xref:Microsoft.Office.Tools.Excel.Worksheet> и <xref:Microsoft.Office.Tools.Word.Document> являются интерфейсами, а не классами.
 
- В большинстве случаев код, который пишется для решений Office, не зависит от того, для какой платформы он предназначен: .NET Framework 3.5 или [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Однако для некоторых функций требуется различный код, зависящий от версии платформы .NET Framework, для которой он предназначен. Дополнительные сведения см. в статье [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
+ В большинстве случаев код, который пишется для решений Office, не зависит от того, для какой платформы он предназначен: .NET Framework 3.5 или [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Однако для некоторых функций требуется различный код, зависящий от версии платформы .NET Framework, для которой он предназначен. Дополнительные сведения см. в статье [Перенос решений Office на платформа .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
 
-### <a name="interfaces-in-the-office-extensions-for-the-net-framework-4-or-later"></a>Интерфейсы в расширениях Office для .NET Framework 4 или более поздней версии
+### <a name="interfaces-in-the-office-extensions-for-the-net-framework-4-or-later"></a>Интерфейсы в расширениях Office для платформа .NET Framework 4 или более поздней версии
  Большинство интерфейсов в расширениях Office для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии не предназначены для реализации с помощью пользовательского кода. Единственными интерфейсами, которые можно реализовать напрямую, имеют имена, начинающиеся с буквы **I**, например <xref:Microsoft.Office.Tools.Excel.ISmartTagExtension>.
 
  Все интерфейсы, которые не начинаются с буквы **I** , реализуются внутри среды выполнения Visual Studio 2010 Tools for Office, и эти интерфейсы могут измениться в будущих выпусках. Чтобы создать объекты, реализующие эти интерфейсы, используйте методы, предоставленные объектом `Globals.Factory` в проекте. Например, чтобы получить объект, реализующий интерфейс <xref:Microsoft.Office.Tools.Excel.SmartTag>, используйте метод `Globals.Factory.CreateSmartTag`. Дополнительные сведения о см `Globals.Factory` . [в разделе Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).
 
-### <a name="enable-type-equivalence-and-embedded-types-in-projects-that-target-the-net-framework-4-or-later"></a>Включение эквивалентности типов и внедренных типов в проектах, предназначенных для .NET Framework 4 или более поздней версии
+### <a name="enable-type-equivalence-and-embedded-types-in-projects-that-target-the-net-framework-4-or-later"></a>Включение эквивалентности типов и внедренных типов в проектах, предназначенных для платформа .NET Framework 4 или более поздней версии
  Так как объектная модель расширений Office для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздних версий основана на интерфейсах, можно использовать функцию эквивалентности типов в Visual C# и Visual Basic в Visual Studio для внедрения сведений о типах из [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] в свое решение. Эта функция позволяет раздельно управлять версиями решений Office и [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Например, если в решении используется интерфейс <xref:Microsoft.Office.Tools.Word.Document> в виде внедренного типа и следующая версия среды выполнения добавляет участников в интерфейс <xref:Microsoft.Office.Tools.Word.Document> , решение по-прежнему будет работать со следующей версией среды выполнения. Если в решении не используется интерфейс <xref:Microsoft.Office.Tools.Word.Document> в виде внедренного типа, решение не будет работать в следующей версии среды выполнения.
 
  По умолчанию функция эквивалентности типов отключена при создании проекта Office, ориентированного на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздние версии. Если ее необходимо включить, задайте свойство **Внедрить типы взаимодействия** любой из следующих ссылок на сборки в проекте как **True**:
@@ -106,9 +106,9 @@ ms.locfileid: "97526271"
 
 |Выпуск Windows|Выпуск Microsoft Office|Необходимая версия среды выполнения Visual Studio Tools for Office|
 |------------------------|---------------------------------|--------------------------------------------------------------------|
-|32-битная|32-битная|32-разрядная версия|
-|64-разрядная версия|32-разрядная версия|64-разрядная версия|
-|64-разрядная система|64-разрядная система|64-разрядная система|
+|32-битная|32-битная|32-битная|
+|64-разрядная|32-разрядная версия|64-разрядная версия|
+|64-разрядная|64-разрядная|64-разрядная|
 
  При установке Office необходимая версия [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] устанавливается вместе с Office. Например, при установке 64-разрядного выпуска Office в 64-разрядную версию Windows также устанавливается 64-разрядная версия [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Дополнительные сведения об установке [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] с Office см. в статье [инструменты Visual Studio for Office Runtime](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 

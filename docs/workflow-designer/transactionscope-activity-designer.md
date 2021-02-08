@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 8d7ebfc6-7478-4888-b3b0-b14f296096af
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fde6dabb372bfa20f55335008ce91e8de2481a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 234e6c2d0349cf610d9ba22d53ce59e3768ad64e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838013"
 ---
 # <a name="transactionscope-activity-designer"></a>Конструктор действия TransactionScope
 
@@ -37,11 +37,11 @@ ms.locfileid: "94433587"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Необязательное понятное имя действия <xref:System.Activities.Statements.TransactionScope>. По умолчанию выбрано значение TransactionScope. Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|
-|<xref:System.Activities.Statements.TransactionScope.Body%2A>|Верно|Указывает действие, которое следует выполнить за одну транзакцию. Чтобы добавить <xref:System.Activities.Statements.TransactionScope.Body%2A> действие, перетащите действие из **области элементов** в поле **текст** в конструкторе операций **TransactionScope** с текстом подсказки "перетащите действие сюда".|
-|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|Верно|Задает <xref:System.Transactions.IsolationLevel> для объекта <xref:System.Activities.Statements.TransactionScope>.|
-|<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|Неверно|Задает интервал времени (в формате 00:00:00, что означает часы:минуты:секунды), в течение которого транзакция должна завершиться. Значение по умолчанию - 1 минута (00:01:00).|
-|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|Верно|Задает значение, которое указывает, следует ли прерывать рабочий процесс, если прервана транзакция.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Необязательное понятное имя действия <xref:System.Activities.Statements.TransactionScope>. По умолчанию выбрано значение TransactionScope. Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|
+|<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|Указывает действие, которое следует выполнить за одну транзакцию. Чтобы добавить <xref:System.Activities.Statements.TransactionScope.Body%2A> действие, перетащите действие из **области элементов** в поле **текст** в конструкторе операций **TransactionScope** с текстом подсказки "перетащите действие сюда".|
+|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|True|Задает <xref:System.Transactions.IsolationLevel> для объекта <xref:System.Activities.Statements.TransactionScope>.|
+|<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|False|Задает интервал времени (в формате 00:00:00, что означает часы:минуты:секунды), в течение которого транзакция должна завершиться. Значение по умолчанию - 1 минута (00:01:00).|
+|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|True|Задает значение, которое указывает, следует ли прерывать рабочий процесс, если прервана транзакция.|
 
 ## <a name="see-also"></a>См. также раздел
 

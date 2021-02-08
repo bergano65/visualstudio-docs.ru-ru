@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea784eae808cbab3a5991651961d3b150b641c04
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 86173253c947be5de8600e15b68a6f08504803a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839850"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Инициализация последовательности подтипов проекта
 Среда конструирует проект, вызывая базовую реализацию фабрики проектов <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> . Построение подтипа проекта начинается, когда среда определяет, что список GUID типа проекта для расширения файла проекта не является пустым. Расширение файла проекта и идентификатор GUID проекта указывают, является ли проект [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] типом проекта или. Например, расширение VBPROJ и {F184B08F-C81C-45F6-A57F-5ABD9991F28F} указывают [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] проект.
@@ -133,7 +133,7 @@ HRESULT HrCreateInnerProj
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualStudio.Shell.Flavor>
 - [Подтипы проектов](../../extensibility/internals/project-subtypes.md)

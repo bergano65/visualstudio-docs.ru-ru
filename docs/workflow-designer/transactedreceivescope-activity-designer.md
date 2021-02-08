@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 7ca93aad-4e83-4d81-90f4-998ee114d9b6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9214d1ce4a873d6caea98b814e8d489f544944c5
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: eceb0776fd1cb5e850dab2b97ab6e7e56a684ebd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996296"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838026"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>Конструктор действия TransactedReceiveScope
 
@@ -39,9 +39,9 @@ ms.locfileid: "96996296"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Необязательное понятное имя действия <xref:System.ServiceModel.Activities.TransactedReceiveScope>. Значение по умолчанию - TransactedReceiveScope.<br /><br /> Для имени <xref:System.Activities.Activity.DisplayName%2A> нет жестких требований, однако лучше всего использовать отображаемое имя.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Необязательное понятное имя действия <xref:System.ServiceModel.Activities.TransactedReceiveScope>. Значение по умолчанию - TransactedReceiveScope.<br /><br /> Для имени <xref:System.Activities.Activity.DisplayName%2A> нет жестких требований, однако лучше всего использовать отображаемое имя.|
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|Удаляет <xref:System.ServiceModel.Activities.Receive> действие в блоке **запроса** на поверхности конструктора операций.|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|Неверно|Удаляет объект <xref:System.Activities.Activity> в блоке **тела** в области конструктора действий.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|Удаляет объект <xref:System.Activities.Activity> в блоке **тела** в области конструктора действий.|
 
 ## <a name="see-also"></a>См. также раздел
 
@@ -49,5 +49,5 @@ ms.locfileid: "96996296"
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [Получать](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Send](../workflow-designer/send-activity-designer.md)
+- [Отправить](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

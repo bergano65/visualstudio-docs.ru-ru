@@ -4,17 +4,17 @@ description: Настройка сети между контейнерами и 
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 9513a3414a38aa02f6a4607a8c95bbf02c0e1cf6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c8c9fb4072da071ba06d5dc371e85db8291353a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176802"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841787"
 ---
 # <a name="multi-container-apps"></a>Создание многоконтейнерного приложения
 
@@ -95,7 +95,7 @@ ms.locfileid: "89176802"
 
 Теперь, когда вы умеете работать с MySQL, давайте использовать его! Но как? Если запущен другой контейнер в той же сети, как найти контейнер (помните, что каждый контейнер имеет свой собственный IP-адрес)?
 
-Чтобы выяснить это, воспользуемся контейнером[nicolaka/netshoot](https://github.com/nicolaka/netshoot), который входит в состав *многих* средств, полезных для устранения неполадок или отладки сетевых проблем.
+Чтобы выяснить это, воспользуемся контейнером [nicolaka/netshoot](https://github.com/nicolaka/netshoot), который входит в состав *многих* средств, полезных для устранения неполадок или отладки сетевых проблем.
 
 1. Запустите новый контейнер с помощью образа `nicolaka/netshoot`. Обязательно подключите его к той же сети.
 

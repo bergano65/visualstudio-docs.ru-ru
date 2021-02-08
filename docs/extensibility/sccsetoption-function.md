@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1adcbb47e9fce7037fe8942326e8836ade51e3eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33ef775f33194a616d93478aecfdcceec446ebe8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836700"
 ---
 # <a name="sccsetoption-function"></a>Функция SccSetOption
 Эта функция задает параметры, управляющие поведением подключаемого модуля системы управления версиями.
@@ -66,7 +66,7 @@ SCCRTN SccSetOption(
 |`SCC_OPT_HASCANCELMODE`|`SCC_OPT_HCM_NO`<br /><br /> `SCC_OPT_HCM_YES`|Указывает, поддерживает ли IDE в настоящее время отмену операции.|
 |`SCC_OPT_NAMECHANGEPFN`|Указатель на функцию обратного вызова [оптнамечанжепфн](../extensibility/optnamechangepfn.md)|Задает указатель на функцию обратного вызова изменения имени.|
 |`SCC_OPT_SCCCHECKOUTONLY`|`SCC_OPT_SCO_NO`<br /><br /> `SCC_OPT_SCO_YES`|Указывает, допускает ли интегрированная среда разработки извлечение файлов вручную (через пользовательский интерфейс системы управления версиями) или они должны извлекаться только через подключаемый модуль системы управления версиями.|
-|`SCC_OPT_SHARESUBPROJ`|Н/Д|Если подключаемый модуль системы управления версиями позволяет интегрированной среде разработки указать локальную папку проекта, подключаемый модуль возвращает `SCC_I_SHARESUBPROJOK` .|
+|`SCC_OPT_SHARESUBPROJ`|Недоступно|Если подключаемый модуль системы управления версиями позволяет интегрированной среде разработки указать локальную папку проекта, подключаемый модуль возвращает `SCC_I_SHARESUBPROJOK` .|
 
 ## <a name="scc_opt_eventqueue"></a>SCC_OPT_EVENTQUEUE
  Если `nOption` имеет значение `SCC_OPT_EVENTQUEUE` , интегрированная среда разработки отключает (или повторно включает) фоновую обработку. Например, во время компиляции в интегрированной среде разработки может быть указано, что подключаемый модуль системы управления версиями должен останавливаться на неактивной обработке любого типа. После компиляции будет повторно включен режим фоновой обработки для обновления очереди событий подключаемого модуля. В соответствии со `SCC_OPT_EVENTQUEUE` значением `nOption` , существует два возможных значения для `dwVal` , `SCC_OPT_EQ_ENABLE` а именно и `SCC_OPT_EQ_DISABLE` .

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: c4c9ee6cfec35804d7e60675342f3961dfb90c6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839564"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Средство синтаксического анализа и сканер языковой службы прежних версий
 Средство синтаксического анализа является основой языковой службы. Для классов языка Managed Package Framework (MPF) требуется средство синтаксического анализа языка, чтобы выбрать сведения о отображаемом коде. Средство синтаксического анализа разделяет текст на лексические токены, а затем определяет эти токены по типу и функциональности.
@@ -133,7 +133,7 @@ namespace MyNamespace
 
  <xref:Microsoft.VisualStudio.Package.AuthoringSink>Объект передается в средство синтаксического анализа как часть <xref:Microsoft.VisualStudio.Package.ParseRequest> объекта, а новый <xref:Microsoft.VisualStudio.Package.AuthoringSink> объект создается каждый раз при <xref:Microsoft.VisualStudio.Package.ParseRequest> создании нового объекта. Кроме того, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод должен возвращать <xref:Microsoft.VisualStudio.Package.AuthoringScope> объект, который используется для управления различными операциями IntelliSense. <xref:Microsoft.VisualStudio.Package.AuthoringScope>Объект поддерживает список для объявлений и список методов, каждый из которых заполняется в зависимости от причины синтаксического анализа. <xref:Microsoft.VisualStudio.Package.AuthoringScope>Класс должен быть реализован.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Реализация языковой службы прежних версий](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [Обзор языковой службы прежних версий](../../extensibility/internals/legacy-language-service-overview.md)
 - [Цветовая маркировка синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

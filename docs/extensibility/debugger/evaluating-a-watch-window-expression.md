@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97fb2c11b94a97a5c7a00083aa61877bb68d377b
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 34367b836e766754ce5e274698eb4f5a5d407760
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915652"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840617"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Вычисление выражения окна контрольных значений
 > [!IMPORTANT]
@@ -49,7 +49,7 @@ ms.locfileid: "96915652"
 > [!NOTE]
 > В EE нет необходимости соблюдать этот двухэтапный процесс, хотя в Visual Studio предполагается это. EE может анализироваться и оцениваться на том же этапе, когда вызывается [евалуатесинк](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (например, как работает образец мицее). Если язык может формировать сложные выражения, может потребоваться разделить шаг анализа на шаге оценки. Это может повысить производительность отладчика Visual Studio, когда отображается много контрольных выражений.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
  [Пример реализации вычисления выражений](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md) Использует пример Мицее для пошагового выполнения процесса оценки выражений.
 
  [Вычисление выражения контрольных значений](../../extensibility/debugger/evaluating-a-watch-expression.md) Объясняет, что происходит после успешного синтаксического анализа выражения.

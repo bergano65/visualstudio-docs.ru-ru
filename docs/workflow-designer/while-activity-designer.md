@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e78d4f2e6aa332c9dfd5faebf834e4f5015c454
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9447d32f17283e7123e2f99490acc49c1613360d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433704"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838000"
 ---
 # <a name="while-activity-designer"></a>Конструктор действия While
 
@@ -29,9 +29,9 @@ ms.locfileid: "94433704"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Указывает дополнительное понятное имя конструктора действия <xref:System.Activities.Statements.While> в заголовке. Значение по умолчанию - While. Значение можно изменить в окне **Свойства** или непосредственно в заголовке конструктора действий.<br /><br /> Несмотря на то что свойство <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|
-|<xref:System.Activities.Statements.While.Body%2A>|Неверно|Содержит действие, выполняемое, пока <xref:System.Activities.Statements.While.Condition%2A> выражение имеет **значение true**.|
-|<xref:System.Activities.Statements.While.Condition%2A>|Верно|Содержит выражение Visual Basic, которое вычисляется, чтобы определить, должно ли выполняться действие в <xref:System.Activities.Statements.While.Body%2A> .|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает дополнительное понятное имя конструктора действия <xref:System.Activities.Statements.While> в заголовке. Значение по умолчанию - While. Значение можно изменить в окне **Свойства** или непосредственно в заголовке конструктора действий.<br /><br /> Несмотря на то что свойство <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|
+|<xref:System.Activities.Statements.While.Body%2A>|False|Содержит действие, выполняемое, пока <xref:System.Activities.Statements.While.Condition%2A> выражение имеет **значение true**.|
+|<xref:System.Activities.Statements.While.Condition%2A>|True|Содержит выражение Visual Basic, которое вычисляется, чтобы определить, должно ли выполняться действие в <xref:System.Activities.Statements.While.Body%2A> .|
 
 ## <a name="see-also"></a>См. также раздел
 

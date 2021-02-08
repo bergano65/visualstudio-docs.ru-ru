@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 195cf7a26b1615b7c56f3f0d06cfd9e0d44a4384
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 0ee94326aca31c72ed6c07342707365d16ea57bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204674"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839876"
 ---
 # <a name="implementing-syntax-coloring"></a>Реализация цветовой маркировки синтаксиса
 Если языковая служба предоставляет цветовую раскраску синтаксиса, средство синтаксического анализа преобразует строку текста в массив цветных элементов и возвращает типы токенов, соответствующие этим цветовым элементам. Средство синтаксического анализа должно возвращать типы токенов, принадлежащие списку цветовых элементов. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Отображает каждый цветовой элемент в окне кода в соответствии с атрибутами, назначенными объектом тонирования, соответствующему типу токена.
@@ -64,7 +64,7 @@ ms.locfileid: "98204674"
 ## <a name="managed-package-framework-colorizer"></a>Цветовой пакет для платформы управляемых пакетов
  Платформа управляемого пакета (MPF) предоставляет все классы, необходимые для реализации выделения цветом. Класс языковой службы должен наследовать <xref:Microsoft.VisualStudio.Package.LanguageService> класс и реализовать необходимые методы. Необходимо предоставить сканер и средство синтаксического анализа, реализовав <xref:Microsoft.VisualStudio.Package.IScanner> интерфейс, и вернуть экземпляр этого интерфейса из <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> метода (один из методов, которые должны быть реализованы в <xref:Microsoft.VisualStudio.Package.LanguageService> классе). Дополнительные сведения см. [в разделе тонирование синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Практическое руководство. Использование встроенных цветных элементов](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [Настраиваемые цветные элементы](../../extensibility/internals/custom-colorable-items.md)
 - [Разработка языковой службы прежних версий](../../extensibility/internals/developing-a-legacy-language-service.md)

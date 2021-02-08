@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding controls at run time
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbf6313f4788a0bd224d04639d3ab588a6469842
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3cc88b5ee48241a15a66144c992936b55fb2acf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838091"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Пошаговое руководство. Добавление элементов управления в документ во время выполнения в надстройке VSTO
   Вы можете добавлять элементы управления в любой документ Word, Открытый Microsoft Office, с помощью надстройки VSTO. В этом пошаговом руководстве показано, как использовать ленту, чтобы разрешить пользователям добавлять в <xref:Microsoft.Office.Tools.Word.Controls.Button> <xref:Microsoft.Office.Tools.Word.RichTextContentControl> документ или.
@@ -82,14 +82,14 @@ ms.locfileid: "97526286"
 
    | Свойство | Значение |
    |-----------|-----------------------|
-   | **имя**; | **addButtonCheckBox** |
+   | **Имя** | **addButtonCheckBox** |
    | **Label** | **Кнопка "Добавить"** |
 
 9. Добавьте второй флажок в **group1**, а затем измените следующие свойства.
 
    | Свойство | Значение |
    |-----------|---------------------------|
-   | **имя**; | **addRichTextCheckBox** |
+   | **Имя** | **addRichTextCheckBox** |
    | **Label** | **Добавление элемента управления форматированием текста** |
 
 10. В конструкторе лент дважды щелкните элемент **Добавить кнопку**.
@@ -177,7 +177,7 @@ ms.locfileid: "97526286"
 
      Кнопка удаляется из документа.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения об элементах управления в надстройках VSTO см. в следующих статьях.
 
 - Пример, демонстрирующий Добавление многих других типов элементов управления в документ во время выполнения и повторное создание элементов управления при повторном открытии документа, см. в образце Word Add-In Dynamic Controls в примерах [разработки Office и пошаговых руководствах](../vsto/office-development-samples-and-walkthroughs.md).

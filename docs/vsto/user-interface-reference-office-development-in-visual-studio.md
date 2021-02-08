@@ -12,20 +12,20 @@ helpviewer_keywords:
 - reference [Office development in Visual Studio], user interface
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dc58e106a24b857f4702876085a8ab986b6c5c92
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 19bbf3b0a2f58cbb410c695cfbb869469a7421c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526545"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838260"
 ---
 # <a name="user-interface-reference-office-development-in-visual-studio"></a>Справочник по пользовательскому интерфейсу (разработка решений Office в Visual Studio)
   Перечисленные ниже элементы пользовательского интерфейса являются частью проектов Office в Visual Studio.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 - [Страница публикации, конструктор проектов &#40;разработка решений Office в Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 
  Этот раздел посвящен странице свойств, которая позволяет настроить свойства для развертывания решения Office.

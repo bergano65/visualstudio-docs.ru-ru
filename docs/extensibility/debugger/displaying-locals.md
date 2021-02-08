@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 62264cec-845b-4233-aed7-0b038fa79250
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddc7bc564e4e294144eeb3fa34db8bdf73971053
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 31e0ebeb4155fef551f98a81f93e02ecdf2ecb9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915548"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840773"
 ---
 # <a name="display-locals"></a>Отобразить локальные переменные
 > [!IMPORTANT]
@@ -33,7 +33,7 @@ ms.locfileid: "96915548"
 > [!NOTE]
 > Окна " **Быстрая проверка** " и " **Контрольные значения** " также отображают переменные с одинаковым форматом имени, значения и типа. Однако эти значения получаются путем вызова [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) вместо `IDebugProperty2::EnumChildren` .
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
  [Пример реализации локальных переменных](../../extensibility/debugger/sample-implementation-of-locals.md) Использует примеры для пошагового выполнения процесса реализации локальных переменных.
 
 ## <a name="related-sections"></a>Связанные разделы

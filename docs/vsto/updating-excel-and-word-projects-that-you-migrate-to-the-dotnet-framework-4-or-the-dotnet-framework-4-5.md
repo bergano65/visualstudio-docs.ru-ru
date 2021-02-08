@@ -1,6 +1,6 @@
 ---
-title: Обновление проекта Excel или Word, перенесенного на .NET Framework 4,5
-description: Необходимо изменить код, если Целевая платформа изменена на .NET Framework 4 или более поздней версии при наличии проекта Excel или Word, использующего определенные функции.
+title: Обновление проекта Excel или Word, перенесенного на платформа .NET Framework 4,5
+description: Необходимо изменить код, если Целевая платформа изменена на платформа .NET Framework 4 или более поздней версии при наличии проекта Excel или Word, использующего определенные функции.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7bc79a53b62cf9fb0ca0ba533a2ce0d542b08c72
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3a34774d537348a93308cb992ee8a7500ea242ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528433"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838273"
 ---
-# <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-45"></a>Обновление проектов Excel и Word, переносимых на .NET Framework 4,5
+# <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-45"></a>Обновление проектов Excel и Word, переносимых на платформа .NET Framework 4,5
   Если у вас есть проект Excel или Word, в котором используется любой из следующих компонентов, необходимо изменить код, если целевая версия .NET Framework меняется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю:
 
 - [Методы GetVstoObject и HasVstoObject](#GetVstoObject)
@@ -85,7 +85,7 @@ ms.locfileid: "97528433"
     ```
 
 ## <a name="update-code-that-uses-the-getvstoobject-and-hasvstoobject-methods"></a><a name="GetVstoObject"></a> Обновление кода, использующего методы GetVstoObject и HasVstoObject
- В проектах, предназначенных для .NET Framework 3.5, методы `GetVstoObject` и `HasVstoObject` доступны как методы расширения в одном из следующих собственных объектов проекта: <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Excel.Workbook>, <xref:Microsoft.Office.Interop.Excel.Worksheet> или <xref:Microsoft.Office.Interop.Excel.ListObject>. При вызове этих методов передавать параметр не требуется. В следующем примере кода показано, как использовать метод GetVstoObject в надстройке VSTO для Word, предназначенной для .NET Framework 3,5.
+ В проектах, предназначенных для .NET Framework 3.5, методы `GetVstoObject` и `HasVstoObject` доступны как методы расширения в одном из следующих собственных объектов проекта: <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Excel.Workbook>, <xref:Microsoft.Office.Interop.Excel.Worksheet> или <xref:Microsoft.Office.Interop.Excel.ListObject>. При вызове этих методов передавать параметр не требуется. В следующем примере кода показано, как использовать метод GetVstoObject в надстройке VSTO для Word, предназначенной для платформа .NET Framework 3,5.
 
 ```vb
 Dim vstoDocument as Microsoft.Office.Tools.Word.Document = _
@@ -221,19 +221,19 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
  Дополнительные сведения см. [в разделе Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ## <a name="update-code-that-uses-the-controlsitemobject-property"></a><a name="itemproperty"></a> Обновление кода, использующего свойство Controls. Item (Object)
- В проектах, предназначенных для .NET Framework 3,5, можно использовать свойство Item (Object) Microsoft.Office.Tools.Word.Docумент. Элементы управления или `Microsoft.Office.Tools.Excel.Worksheet.Controls` Коллекция для определения того, имеет ли документ или лист указанный элемент управления.
+ В проектах, предназначенных для платформа .NET Framework 3,5, можно использовать свойство Item (Object) Microsoft.Office.Tools.Word.Docумент. Элементы управления или `Microsoft.Office.Tools.Excel.Worksheet.Controls` Коллекция для определения того, имеет ли документ или лист указанный элемент управления.
 
  В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, свойство Item (Object) было удалено из этих коллекций. Чтобы определить, содержит ли документ или лист указанный элемент управления, используйте вместо этого метод Contains (System. Object) <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> коллекции или <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> .
 
  Дополнительные сведения о коллекции элементов управления для документов и листов см. в разделе [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ## <a name="update-code-that-uses-collections-that-derive-from-collectionbase"></a><a name="collections"></a> Обновление кода, использующего коллекции, производные от CollectionBase
- В проектах, предназначенных для .NET Framework 3,5, несколько типов коллекций в [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] классе являются производными от <xref:System.Collections.CollectionBase> класса, например `Microsoft.Office.Tools.SmartTagCollection` , `Microsoft.Office.Tools.Excel.ControlCollection` и `Microsoft.Office.Tools.Word.ControlCollection` .
+ В проектах, предназначенных для платформа .NET Framework 3,5, несколько типов коллекций в [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] классе являются производными от <xref:System.Collections.CollectionBase> класса, например `Microsoft.Office.Tools.SmartTagCollection` , `Microsoft.Office.Tools.Excel.ControlCollection` и `Microsoft.Office.Tools.Word.ControlCollection` .
 
  В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] и более поздней версии, эти типы коллекций теперь представляют собой интерфейсы, не являющиеся производными от <xref:System.Collections.CollectionBase>. Некоторые члены в этих типах коллекций, такие как <xref:System.Collections.CollectionBase.Capacity%2A>, <xref:System.Collections.CollectionBase.List%2A>и <xref:System.Collections.CollectionBase.InnerList%2A>, больше не доступны.
 
 ## <a name="see-also"></a>См. также раздел
-- [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
+- [Перенос решений Office на платформа .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Элементы управления содержимым](../vsto/content-controls.md)
 - [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)

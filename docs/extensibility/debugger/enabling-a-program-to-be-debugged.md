@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 61d24820-0cd9-48b6-8674-6813f7493237
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac9a43a0ec539dd978710c23c9b44f27eac81799
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 9dd31a9ff81493d0a315efc0ce0b607af0c6e422
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915262"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840669"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>Включение отладки программы
 Прежде чем модуль отладки (DE) сможет выполнить отладку программы, необходимо сначала запустить DE или присоединить его к существующей программе.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
  [Получение порта](../../extensibility/debugger/getting-a-port.md) Описывает, как получить порт в качестве первого шага, чтобы включить отладку программы.
 
  [Регистрация программы](../../extensibility/debugger/registering-the-program.md) Описание следующего шага при включении отладки программы: ее регистрация в порте. После регистрации программу можно отлаживать в процессе присоединения или JIT-отладки.
