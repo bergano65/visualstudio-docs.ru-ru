@@ -1,5 +1,5 @@
 ---
-title: Помогите мне продлить подписку в Microsoft Store.
+title: Помогите мне продлить подписку в Microsoft Store
 description: Помогите мне продлить подписки Visual Studio, приобретенные через Microsoft Store.
 ms.topic: include
 ms.assetid: 3b36270b-aa3b-4c05-b12e-4df8d6f823c1
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: renewing
 subscription.type: retail
 sap.id: b324c31f-5d44-4cc2-537a-9c354bc5fbfc
-ms.openlocfilehash: f518f4458181d39a140ee5652b08ea861f2130ee
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: e337fc3df5b930dc09f9d3b13be3f64efc7dd749
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147550"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541031"
 ---
 ## <a name="renewing-subscriptions-through-microsoft-store"></a>Продление подписок с помощью Microsoft Store 
 

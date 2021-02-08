@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: ae31e9d40dd0d399a4272eeb3ec28692d01a99b3
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: a5ec356513122752486a197fbe5bb420d6f4a6c9
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147660"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541121"
 ---
 ## <a name="how-do-i-activate-my-monthly-azure-devtest-individual-credit"></a>Как активировать ежемесячный персональный кредит Azure для разработки и тестирования? 
 
@@ -33,6 +33,6 @@ ms.locfileid: "98147660"
 На подписки Azure, создаваемые с использованием преимущества подписок Visual Studio, могут распространяться ограничения, которые не применяются к платным подпискам. В некоторых географических регионах может быть недоступно создание виртуальных машин и служб Azure. Также могут быть недоступны некоторые типы служб. Кроме того, назначаемая по умолчанию квота может быть ниже по сравнению с платными подписками.  
 
 ## <a name="more-information-about-azure-credits"></a>Дополнительные сведения о деньгах на счете в Azure
-[Дополнительные сведения](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure) об активации, правах на доступ и других ресурсах поддержки.  
+Узнайте [подробнее об активации, правах на доступ и других ресурсах поддержки](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure).  
 
-[Узнайте](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits), как использовать кредиты Azure, которые включены в подписку Visual Studio.  
+[Узнайте, как использовать кредиты Azure](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits), которые включены в подписку Visual Studio.  

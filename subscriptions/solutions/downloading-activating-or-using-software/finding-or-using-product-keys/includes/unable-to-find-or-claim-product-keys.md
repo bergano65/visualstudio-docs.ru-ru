@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate, product-key
 subscription.type: vl, cloud, retail, partner
 sap.id: 631f9455-a027-34d0-12c8-c2b37d2c42cb
-ms.openlocfilehash: 88ecaf869f7cd593876dacaa21926913e192dc14
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 8e8747f2b7f46778cc5e4a1069941ff264781f66
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147498"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541229"
 ---
 ## <a name="im-unable-to-find-or-claim-a-product-key"></a>Не удается найти или запросить ключ продукта.
 
@@ -29,4 +29,4 @@ ms.locfileid: "98147498"
 
 ## <a name="more-information-on-product-key-types"></a>Дополнительные сведения о типах ключей продуктов
 
-[Узнайте подробнее](https://docs.microsoft.com/visualstudio/subscriptions/find-keys) о типах ключей продуктов и о том, как запрашивать ключи продуктов.  
+Узнайте подробнее о [типах ключей продуктов и о том, как запрашивать ключи продуктов](https://docs.microsoft.com/visualstudio/subscriptions/find-keys).  

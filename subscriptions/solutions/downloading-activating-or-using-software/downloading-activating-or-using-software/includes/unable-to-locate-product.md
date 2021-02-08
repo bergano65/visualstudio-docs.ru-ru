@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: e4d24412ab4e3aee22a9184d23ddbefb6ceb35fa
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 03ffd1e9a80b69652040653d2cacfdfd2ebb4e2d
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147407"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541288"
 ---
 ## <a name="im-unable-to-locate-the-product-i-need-to-download"></a>Не удается найти продукт, который нужно скачать.
 
@@ -34,4 +34,4 @@ ms.locfileid: "98147407"
 Также можно посетить страницу [Ключи продуктов](https://my.visualstudio.com/productkeys) , где указаны все доступные ключи. Можно внести изменения в столбец "Примечания", чтобы указать, когда и зачем вы запросили ключ. 
 
 ## <a name="more-information-about-product-keys"></a>Дополнительные сведения о ключах продуктов
-[Узнайте подробнее](https://docs.microsoft.com/visualstudio/subscriptions/find-keys) о поиске и запросе ключей продуктов и файлов для загрузки.  
+Узнайте подробнее о [поиске и запросе ключей продуктов и файлов для загрузки](https://docs.microsoft.com/visualstudio/subscriptions/find-keys).  
