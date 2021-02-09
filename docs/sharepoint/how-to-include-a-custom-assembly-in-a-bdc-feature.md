@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], add reference
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e7a2a0109faca4da5406b45b4d606ae8a5cd0685
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 7a5bce649a0bd9411c064c463defa0946b47e81f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913616"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Как включить пользовательскую сборку в компонент BDC
   Проект может ссылаться на сборки из других проектов в том же решении. Однако эти сборки необходимо добавить в файл компонентов проекта, используя диалоговое окно **назначение упоминаемых сборок в бизнес – системам** .

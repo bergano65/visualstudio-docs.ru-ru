@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: db476af4a9d3be9cab2109fb3489d0767765075f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: ab301f11ffdae03564f05388dfbba55a90d12391
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903576"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913689"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Развертывание, публикация и обновление решений SharePoint на удаленном сервере
   Помимо развертывания решений SharePoint в локальной системе, вы можете публиковать изолированные решения SharePoint на удаленные сайты или локальные сайты SharePoint. Процесс удаленной публикации копирует *wspный* файл на сервер SharePoint, устанавливает решение, а затем позволяет активировать решение. Вы также можете обновить удаленную установку решения SharePoint после внесения в нее изменений.

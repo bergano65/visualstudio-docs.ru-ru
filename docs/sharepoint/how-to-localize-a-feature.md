@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3865c11c67fd826e0ce914b6aeb88364da3212b7
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 4a3c427f207f6aac9f6a827eb6c24b799d635b46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305200"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913594"
 ---
 # <a name="how-to-localize-a-feature"></a>Практическое руководство. Локализация компонента
   По умолчанию заголовки и описания компонентов используют жестко запрограммированные строковые значения. Чтобы локализовать заголовок и описание компонента, замените строки выражениями, которые ссылаются на локализованные ресурсы.

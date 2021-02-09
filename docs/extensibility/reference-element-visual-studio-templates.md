@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 852772ea-c324-42e9-8c8a-6d565414a109
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcb713a62ebc9a0c3e4daf5aa16f36779b1a1fdc
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5c000a8d11f958daa1c7c8717dc4f18365e0a147
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903771"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914994"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Элемент Reference (шаблоны Visual Studio)
 Указывает ссылку на сборку, которую нужно добавить при добавлении элемента в проект.
@@ -56,7 +56,7 @@ ms.locfileid: "94903771"
 |-------------|-----------------|
 |[Справочные материалы](../extensibility/references-element-visual-studio-templates.md)|Группирует ссылки на сборки, которые шаблон добавляет в проекты.|
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  `Reference` — обязательный дочерний элемент элемента `References`.
 
  `Reference`Элементы и `References` можно использовать только в *VSTEMPLATE* -файлах, имеющих `Type` значение атрибута `Item` .

@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: e6897eb86f531ca86d0e935836683b8a0b244645
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: c95f643c11919d19f3cb4fd827bca98a4f7b50b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915131"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Элемент PromptForSaveOnCreation (шаблоны Visual Studio)
 
@@ -60,8 +60,8 @@ ms.locfileid: "94903797"
 
  Текст должен иметь значение `true` или `false` , `true` что означает, что пользователю будет предложено указать место сохранения при создании нового проекта.
 
-## <a name="remarks"></a>Комментарии
- Параметр `PromptForSaveOnCreation` является необязательным элементом. Значение по умолчанию — `false`.
+## <a name="remarks"></a>Remarks
+ Параметр `PromptForSaveOnCreation` является необязательным элементом. Значение по умолчанию — `false`.
 
  Временные проекты — это проекты, которые можно создавать и изменять без сохранения содержимого этого проекта на диске.
 

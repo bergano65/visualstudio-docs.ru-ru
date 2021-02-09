@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd6ed0e495056bf2924e46bfdfcd074daf1faf87
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 5965ca211710b0710626118f016b2cb3fec116b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615594"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915141"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework в редакторе
 Редактор строится с помощью компонентов Managed Extensibility Framework (MEF). Вы можете создавать собственные компоненты MEF для расширения редактора, а код может также использовать компоненты редактора.
@@ -25,7 +25,7 @@ ms.locfileid: "97615594"
 ## <a name="overview-of-the-managed-extensibility-framework"></a>Общие сведения о Managed Extensibility Framework
  MEF — это библиотека .NET, которая позволяет добавлять и изменять компоненты приложения или компонента, которые следуют за моделью программирования MEF. Редактор Visual Studio может предоставлять и использовать компоненты MEF.
 
- MEF содержится в сборке .NET Framework версии 4 *System.ComponentModel.Composition.dll* .
+ MEF содержится в сборке платформа .NET Framework версии 4 *System.ComponentModel.Composition.dll* .
 
  Дополнительные сведения о MEF см. в разделе [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 

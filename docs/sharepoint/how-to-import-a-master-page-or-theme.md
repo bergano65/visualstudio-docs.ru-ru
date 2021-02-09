@@ -12,15 +12,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c17f4e7477a20ea245eaa359a6f9611a8dc4ece6
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 331ae3964de40e6590345aadae59776fe37f467a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913673"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Как импортировать главную страницу или тему
   Создание и использование эталонных страниц дает возможность обеспечения согласованного внешнего вида страниц сайта SharePoint. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] не предоставляет шаблоны для этих элементов, но их можно создать в SharePoint Designer, а затем импортировать в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Дополнительные сведения см. в разделе [стандартный блок: страницы и пользовательский интерфейс](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) на веб-сайте Майкрософт.
@@ -31,7 +31,7 @@ ms.locfileid: "94903498"
 
      Сведения о создании проекта SharePoint см. в разделе [проект SharePoint и шаблоны элементов проектов](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2. В строке меню выберите **проект**  >  **Добавить новый элемент**.
+2. В строке меню выберите **Проект** > **Добавить новый элемент**.
 
 3. В диалоговом окне **Добавление нового элемента** разверните узел **SharePoint** и выберите узел **2010** .
 

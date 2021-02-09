@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f3febc5a47288225d1780ba4579dad243c1ea45
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cbd0d6ee6ede29be35437125f614512ff3bbeab3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671276"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915187"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Элемент Локатионфиелд (шаблоны проектов Visual Studio)
 Указывает, будет ли текстовое поле **Расположение** в диалоговом окне **Новый проект** включено, отключено или скрыто для шаблона проекта.
@@ -61,8 +61,8 @@ ms.locfileid: "94671276"
 
 - `Hidden`, который указывает, что поле **Расположение** диалогового окна **Новый проект** скрыто.
 
-## <a name="remarks"></a>Комментарии
- Значение по умолчанию — `Enabled`.
+## <a name="remarks"></a>Remarks
+ Значение по умолчанию — `Enabled`.
 
  Текстовое поле **Расположение** в диалоговом окне **Новый проект** позволяет пользователям изменять каталог по умолчанию, в котором сохраняются новые проекты.
 

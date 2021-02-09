@@ -15,15 +15,15 @@ helpviewer_keywords:
 - host items [Office development in Visual Studio], exposing code to VBA
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 61f94ebb5ed0c5e76693ddc8c0717b6adf9222f3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 69ef8b47ac4038b466d0ebf859832bd4363403cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845990"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913492"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Руководство. предоставление кода коду VBA в Visual Basicном проекте
   Можно предоставить код в [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] проекте для Visual Basic для приложений кода (VBA), если требуется, чтобы два типа кода взаимодействовал друг с другом.
