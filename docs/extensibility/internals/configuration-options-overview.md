@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: df8931066aef5f7163018fba540dd46dcfe5dcc0
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: aa018d340e016ba5c9f424f705599a150ecdc818
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884693"
 ---
 # <a name="configuration-options-overview"></a>Общие сведения о параметрах конфигурации
 Проекты в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] могут поддерживать несколько конфигураций, которые могут быть построены, отлажены, запущены и (или) развернуты. Конфигурация — это тип сборки, который описывается именованным набором свойств, обычно параметрами компилятора и расположениями файлов. По умолчанию новые решения содержат две конфигурации: *Отладка* и *выпуск*. Эти конфигурации можно применить с помощью параметров по умолчанию или изменить в соответствии с требованиями конкретного решения или проекта. Некоторые пакеты могут быть построены двумя способами: как редактор ActiveX или как компонент на месте. Однако проекты не нуждаются в поддержке нескольких конфигураций. Если доступна только одна конфигурация, эта конфигурация сопоставляется со всеми конфигурациями решения.

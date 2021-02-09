@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c02e85a96d59645787d3018100949369d52c8980
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 7959c0047fee87c92e5359b4f8f2918a7e9f27de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305383"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884589"
 ---
 # <a name="createexpinstance-utility"></a>Служебная программа CreateExpInstance
 Используйте служебную программу **CreateExpInstance** для создания, сброса или удаления экспериментального экземпляра Visual Studio. Экспериментальный экземпляр можно использовать для отладки и тестирования расширений Visual Studio без изменения базового продукта.
@@ -43,7 +43,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 
  **/Рутсуффикс** Суффикс, добавляемый к имени каталога экспериментального экземпляра.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  При работе с расширением Visual Studio можно нажать клавишу F5, чтобы открыть экспериментальный экземпляр по умолчанию и установить текущее расширение. Если экспериментальный экземпляр недоступен, Visual Studio создает его с параметрами по умолчанию.
 
  Расположение экспериментального экземпляра по умолчанию зависит от номера версии Visual Studio. Например, для Visual Studio 2015 расположение — *%LocalAppData%\Microsoft\VisualStudio\14.0Exp \\*. Все файлы в расположении каталога считаются частью этого экземпляра. Все дополнительные экспериментальные экземпляры не будут загружаться Visual Studio, если только имя каталога не будет изменено на расположение по умолчанию.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64eda9c95b9c469d8defc8ab0318031e9e43172a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: deca5b39701fd073b3191cf7a24d83ccf1e08794
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305034"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884745"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Команды, которые должны быть выполнены после установки
 При развертывании расширения с помощью *MSI* -файла необходимо запустить команду **devenv/setup** в процессе установки, чтобы Visual Studio обнаружила свои расширения.

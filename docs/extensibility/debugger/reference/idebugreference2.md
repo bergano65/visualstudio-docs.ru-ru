@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52f655afd35ed316080a3a85ccfae047aa50d87f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f1ae87cc9d0926d7afc22d819dddf672a89afd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720263"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883809"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Этот интерфейс представляет ссылку на свойство кадра стека или другое свойство.
@@ -35,7 +35,7 @@ IDebugReference2 : IUnknown
  Метод DE реализует этот интерфейс для представления ссылки на определенный тип значения. Например, значение может быть числовым значением в результате вычисления выражения, контекста памяти, используемого для отображения памяти, или списка регистров и их значений.
 
 ## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
- Чтобы получить этот интерфейс, вызовите метод [IsReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md) . [GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md) [Жетдериведмостреференце](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md) также возвращает этот интерфейс.
+ Чтобы получить этот интерфейс, вызовите метод [IsReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md) . [](../../../extensibility/debugger/reference/idebugreference2-getparent.md) [Жетдериведмостреференце](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md) также возвращает этот интерфейс.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugReference2` .

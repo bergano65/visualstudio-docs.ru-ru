@@ -8,15 +8,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 975fa69a503f5e2acd3e90defd9fa9895c70db00
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 7c163aa10bdcb3ee28de6d6950dd15f85df876bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903511"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885616"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Как справляться с конфликтами развертывания
   Можно предоставить собственный код для управления конфликтами развертывания для элемента проекта SharePoint. Например, можно определить, существуют ли уже какие-либо файлы текущего элемента проекта в расположении развертывания, а затем удалить развернутые файлы перед развертыванием текущего элемента проекта. Дополнительные сведения о конфликтах развертывания см. в разделе [Расширение упаковки и развертывания SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).

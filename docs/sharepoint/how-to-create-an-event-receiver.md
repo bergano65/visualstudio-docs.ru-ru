@@ -16,17 +16,17 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2e94bd1594f94f43c82eed5033d6ec2660905c18
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 1943bd8a652a88d218912ab0fc0f6227bf83bc95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849887"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885707"
 ---
-# <a name="how-to-create-an-event-receiver"></a>Как создать приемник событий
+# <a name="how-to-create-an-event-receiver"></a>Практическое руководство. Создание приемника событий
   Создавая *приемники событий*, вы можете ответить, когда пользователь взаимодействует с элементами SharePoint, такими как списки или элементы списка. Например, код приемника событий может сработать, если пользователь изменит календарь или удалит имя из списка контактов. Следуя описанным в этом разделе процедурам, можно узнать, как добавить приемник событий в экземпляр списка.
 
  Для выполнения этих шагов требуется установить [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и иметь поддерживаемые версии Windows и SharePoint. Поскольку для этого примера требуется проект SharePoint, необходимо также выполнить процедуру, описанную в разделе [Пошаговое руководство. Создание столбца сайта, типа содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
@@ -40,7 +40,7 @@ ms.locfileid: "94849887"
 
 2. В **Обозреватель решений** выберите узел проекта SharePoint с именем **курс**.
 
-3. В строке меню выберите **проект**  >  **Добавить новый элемент**.
+3. В строке меню выберите **Проект** > **Добавить новый элемент**.
 
 4. В **Visual C#** или **Visual Basic** разверните узел **SharePoint** , а затем выберите элемент **2010** .
 

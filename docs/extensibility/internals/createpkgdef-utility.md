@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa0b0e3e8ea59ce1d41f9d8a6c056239f2bc0e9a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: f9822319a74d1374ef2a88d4f9231e6fd86b1e5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884537"
 ---
 # <a name="createpkgdef-utility"></a>Служебная программа CreatePkgDef
 Принимает DLL-файл для расширения Visual Studio в качестве параметра и создает *pkgdef* -файл, сопровождающий *DLL* -файл. Файл *pkgdef* содержит все данные, которые в противном случае были бы записаны в системный реестр при установке расширения.
@@ -36,7 +36,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 
 ## <a name="arguments"></a>Аргументы
 **/out = &lt; имя файла&gt;**\
-Обязательный. Задает имя файла выходных данных *. pkgdef* &lt; &gt; .
+Обязательный элемент. Задает имя файла выходных данных *. pkgdef* &lt; &gt; .
 
 **/CodeBase**\
 Необязательный элемент. Принудительная регистрация с помощью служебной программы **CodeBase** .
@@ -47,7 +47,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 **&lt;AssemblyPath&gt;**\
 Путь к *DLL* -файлу, из которого нужно создать *pkgdef*-файл.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 Развертывание расширения с помощью файлов *pkgdef* заменяет требования к реестру в более ранних версиях Visual Studio.
 
 ::: moniker range=">=vs-2019"
