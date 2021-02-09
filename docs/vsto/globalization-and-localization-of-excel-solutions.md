@@ -11,15 +11,15 @@ helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 51e4a2cc4fb74309c44b8068152253de92eed0df
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: fc61f66b2aefaf0e43b1b5af819e0e244feec114
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847758"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910306"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Глобализация и локализация решений Excel
   Этот раздел содержит информацию об особенностях решений Microsoft Office Excel, которые будут выполняться на компьютерах, имеющих настройки Windows, отличные от настроек в английском формате. Большинство аспектов глобализации и локализации решений Microsoft Office аналогичны аспектам, возникающим при создании других типов решений с помощью Visual Studio. Общие сведения см. в разделе [Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md).
@@ -59,7 +59,7 @@ ms.locfileid: "96847758"
 ## <a name="install-the-language-packs"></a>Установка языковых пакетов
  Если в Windows установлен язык, отличный от английского, вы можете установить языковой пакет [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , чтобы сообщения [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] также отображались на этом языке. Если пользователи запускают решения с локализованными параметрами для Windows, они должны иметь соответствующий языковой пакет для просмотра сообщений среды выполнения на том же языке. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Языковые пакеты доступны в [центре загрузки Майкрософт](https://www.microsoft.com/download).
 
- Кроме того, для сообщений ClickOnce необходимы распространяемые языковые пакеты платформы .NET Framework. .NET Framework языковых пакетов можно найти в [центре загрузки Майкрософт](https://www.microsoft.com/download).
+ Кроме того, для сообщений ClickOnce необходимы распространяемые языковые пакеты платформы .NET Framework. Платформа .NET Framework языковых пакетов можно найти в [центре загрузки Майкрософт](https://www.microsoft.com/download).
 
 ## <a name="regional-settings-and-excel-com-calls"></a>Региональные параметры и вызовы Excel COM
  Когда управляемый клиент вызывает метод COM-объекта и ему необходимо передать сведения, относящиеся к конкретному языку и региональным параметрам, он использует для этого объект <xref:System.Globalization.CultureInfo.CurrentCulture%2A> (языковой стандарт), соответствующий языковому стандарту текущего потока. Языковой стандарт текущего потока наследуется от пользовательских региональных параметров по умолчанию. В то же время при вызове объектной модели Excel из решения Excel, созданного с помощью средств разработки Office в Visual Studio, формат данных "Английский (США)" с кодом языка 1033 автоматически передается в объектную модель Excel. Все данные, в которых имеются элементы, зависящие от языкового стандарта (например, даты и денежные единицы), перед передачей в Microsoft Office Excel или чтением из кода проекта необходимо форматировать с помощью формата данных "Английский (США)".
@@ -79,7 +79,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  При использовании этого кода в решении, созданном с помощью средств разработки Office в Visual Studio, и его передаче в Excel с помощью COM-взаимодействия будут выведены те же результаты при условии, что дата отформатирована в формате "en-US".
 
- Пример.
+ Пример:
 
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]

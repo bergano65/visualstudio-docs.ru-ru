@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, unmanaged API reference
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9dbb64b54d9b0dd9a244d9a614fbce211d1edfc5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cac9e2d01b47e0088543aeabcaeff30853314157
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522691"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908559"
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Справочник по неуправляемым API (разработка решений Office в Visual Studio)
 
@@ -29,7 +29,7 @@ ms.locfileid: "97522691"
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 
 [Интерфейс IManagedAddin](../vsto/imanagedaddin-interface.md)
 
