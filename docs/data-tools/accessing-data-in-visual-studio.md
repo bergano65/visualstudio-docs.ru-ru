@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5458ffca549026c99c8faedc8f47d3f3285a7ca
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b5e3d8b8cf0b2c74a5b5a862539bbf3b201b4ffd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518743"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859441"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Работа с данными в Visual Studio
 
@@ -41,7 +41,7 @@ ms.locfileid: "94518743"
 **Microsoft Azure**
 
 - База данных SQL
-- Azure Cosmos DB;
+- Azure Cosmos DB
 - Хранилище (большие двоичные объекты, таблицы, очереди, файлы)
 - Хранилище данных SQL
 - SQL Server Stretch Database
@@ -72,13 +72,13 @@ ms.locfileid: "94518743"
 
 ::: moniker range="vs-2017"
 
-Многие поставщики баз данных и сторонние производители поддерживают интеграцию с Visual Studio с помощью пакетов NuGet. Вы можете исследовать предложения в NuGet.org или с помощью диспетчера пакетов NuGet в Visual Studio ( **инструменты**  >  **Диспетчер пакетов NuGet**  >  **Управление пакетами NuGet для решения** ). Другие продукты баз данных интегрируются с Visual Studio как расширение. Эти предложения можно просмотреть в [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или перейдя к **средствам**  >  **расширения и обновления** , а затем выбрав пункт в **сети** в левой области диалогового окна. Дополнительные сведения см. в разделе [совместимые системы баз данных для Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Многие поставщики баз данных и сторонние производители поддерживают интеграцию с Visual Studio с помощью пакетов NuGet. Вы можете исследовать предложения в NuGet.org или с помощью диспетчера пакетов NuGet в Visual Studio (**инструменты**  >  **Диспетчер пакетов NuGet**  >  **Управление пакетами NuGet для решения**). Другие продукты баз данных интегрируются с Visual Studio как расширение. Эти предложения можно просмотреть в [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или перейдя к **средствам**  >  **расширения и обновления** , а затем выбрав пункт в **сети** в левой области диалогового окна. Дополнительные сведения см. в разделе [совместимые системы баз данных для Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Многие поставщики баз данных и сторонние производители поддерживают интеграцию с Visual Studio с помощью пакетов NuGet. Вы можете исследовать предложения в NuGet.org или с помощью диспетчера пакетов NuGet в Visual Studio ( **инструменты**  >  **Диспетчер пакетов NuGet**  >  **Управление пакетами NuGet для решения** ). Другие продукты баз данных интегрируются с Visual Studio как расширение. Эти предложения можно просмотреть в [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или перейдя к **расширениям**  >  **Управление расширениями** , а затем выбрав "в **сети** " в левой области диалогового окна. Дополнительные сведения см. в разделе [совместимые системы баз данных для Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Многие поставщики баз данных и сторонние производители поддерживают интеграцию с Visual Studio с помощью пакетов NuGet. Вы можете исследовать предложения в NuGet.org или с помощью диспетчера пакетов NuGet в Visual Studio (**инструменты**  >  **Диспетчер пакетов NuGet**  >  **Управление пакетами NuGet для решения**). Другие продукты баз данных интегрируются с Visual Studio как расширение. Эти предложения можно просмотреть в [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или перейдя к **расширениям**  >  **Управление расширениями** , а затем выбрав "в **сети** " в левой области диалогового окна. Дополнительные сведения см. в разделе [совместимые системы баз данных для Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
@@ -137,9 +137,9 @@ ms.locfileid: "94518743"
 - [Django и MySQL в Azure](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
 - Работа с [большими двоичными объектами](/azure/storage/blobs/storage-quickstart-blobs-python), [файлами](/azure/storage/files/storage-python-how-to-use-file-storage), [очередями](/azure/storage/queues/storage-python-how-to-use-queue-storage)и [таблицами (Космо DB)](/azure/cosmos-db/table-storage-how-to-use-python).
 
-## <a name="related-topics"></a>См. также
+## <a name="related-topics"></a>Связанные разделы
 
-Платформа искусственного [интеллекта Майкрософт](https://azure.microsoft.com/overview/ai-platform/?v=17.42w) &mdash; Содержит введение в интеллектуальное облако Майкрософт, включая Кортану Analytics Suite и поддержку "Интернет вещей".
+Платформа искусственного [интеллекта Майкрософт](https://azure.microsoft.com/overview/ai-platform/?v=17.42w) &mdash; Содержит введение в интеллектуальное облако Майкрософт, включая Кортану Analytics Suite и поддержку Интернет вещей.
 
 [Служба хранилища Microsoft Azure](/azure/storage/) &mdash; Описание службы хранилища Azure и создания приложений с помощью больших двоичных объектов, таблиц, очередей и файлов Azure.
 
@@ -151,7 +151,7 @@ ms.locfileid: "94518743"
 
 [ADO.NET Entity Framework](/ef/ef6/) &mdash; Описывает создание приложений для работы с данными, которые позволяют разработчикам программировать на основе концептуальной модели, а не непосредственно в реляционной базе данных.
 
-[WCF Data Services 4,5](/dotnet/framework/data/wcf/index) &mdash; Описывает использование [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] для развертывания служб данных в Интернете или интрасети, которые реализуют [Open Data Protocol (OData)](https://www.odata.org/).
+[Службы данных WCF 4,5](/dotnet/framework/data/wcf/index) &mdash; Описывает использование [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] для развертывания служб данных в Интернете или интрасети, которые реализуют [Open Data Protocol (OData)](https://www.odata.org/).
 
 [Данные в решениях Office](../vsto/data-in-office-solutions.md) &mdash; Содержит ссылки на разделы, в которых объясняется, как работают данные в решениях Office. Сюда входят сведения о программировании на основе схемы, кэшировании данных и доступе к данным на стороне сервера.
 

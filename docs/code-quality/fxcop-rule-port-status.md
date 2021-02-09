@@ -9,15 +9,15 @@ helpviewer_keywords:
 - .NET analyzers, ported rules
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: dde5a3d8ccf5557905395ee03d108e995ecffe7e
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: de23f3529cfcd321b0a7c3f9844ac69d96fed9c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860325"
 ---
 # <a name="fxcop-rule-port-status"></a>Состояние порта правила FxCop
 
@@ -29,7 +29,7 @@ ms.locfileid: "96039579"
 
 В соответствии с датой на этой странице список правил FxCop, которые были перенесены в [анализаторы .NET](install-net-analyzers.md) , включают:
 
-Идентификатор правила | Заголовок
+Идентификатор правила | Название
 --------|---------
 [CA1000](/dotnet/fundamentals/code-analysis/quality-rules/ca1000) | Не объявляйте статические члены в универсальных типах
 [CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001) | Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми

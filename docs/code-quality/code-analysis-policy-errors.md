@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 5fdd14b394bca495b38f408be94b46a4b9a68c01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349104"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860559"
 ---
 # <a name="code-analysis-policy-errors"></a>Ошибки политики анализа кода
 
@@ -31,7 +31,7 @@ ms.locfileid: "94349104"
 
 - Анализ кода не включен в сборке для всех проектов в решении.
 
-- Для локального набора правил проекта в Visual Studio задано менее ограниченное **действие** , чем указано в правиле проекта. Например, для правила, которое имеет значение **Action** = **Ошибка** действия на сервере, задано значение " **Action** **предупреждение** " или " **нет** " в наборе правил, выполняемом в Visual Studio.
+- Для локального набора правил проекта в Visual Studio задано менее ограниченное **действие** , чем указано в правиле проекта. Например, для правила, которое имеет значение  = **Ошибка** действия на сервере, задано значение "  **предупреждение** " или " **нет** " в наборе правил, выполняемом в Visual Studio.
 
 - Набор правил, указанный в Visual Studio, не содержит все правила, указанные в наборе правил, указанном в политике возврата к анализу кода для проекта.
 
@@ -75,6 +75,6 @@ ms.locfileid: "94349104"
 
 Эта ошибка относится к неуправляемым проектам. Политика анализа кода требует анализа кода для C/C++, но она не включена в текущем проекте на клиенте.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Ошибки, возникающие при анализе кода](../code-quality/code-analysis-application-errors.md)

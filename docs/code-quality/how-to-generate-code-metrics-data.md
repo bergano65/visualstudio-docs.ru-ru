@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code metrics [Visual Studio]
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 631ce51df5d985e02e8ccabca258c0ef1c1318f4
-ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
+ms.openlocfilehash: 0387542487b2c24baa129fbb0163dee0140cb413
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98069478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860049"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Как создавать данные метрик кода
 
@@ -104,7 +104,7 @@ dotnet_diagnostic.CA1502.severity = warning
 
 ## <a name="command-line-code-metrics"></a>Метрики кода командной строки
 
-Вы можете создавать данные метрик кода из командной строки для проектов C# и Visual Basic для .NET Framework, .NET Core и .NET Standard приложений. Чтобы запустить метрики кода из командной строки, установите [пакет NuGet Microsoft. CodeAnalysis. Metrics](#microsoftcodeanalysismetrics-nuget-package) или [Metrics.exe](#metricsexe) Создайте исполняемый файл самостоятельно.
+Вы можете создавать данные метрик кода из командной строки для проектов C# и Visual Basic для платформа .NET Framework, .NET Core и .NET Standard приложений. Чтобы запустить метрики кода из командной строки, установите [пакет NuGet Microsoft. CodeAnalysis. Metrics](#microsoftcodeanalysismetrics-nuget-package) или [Metrics.exe](#metricsexe) Создайте исполняемый файл самостоятельно.
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Пакет NuGet Microsoft. CodeAnalysis. Metrics
 
@@ -310,7 +310,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 Дополнительные сведения см. [в разделе Включение создания метрик кода в устаревшем режиме](https://github.com/dotnet/roslyn-analyzers/pull/1841).
 
-### <a name="previous-versions"></a>предыдущих версий
+### <a name="previous-versions"></a>Предыдущие версии
 
 ::: moniker range=">=vs-2019"
 В Visual Studio 2015 имеется средство метрик кода командной строки, которое также называлось *Metrics.exe*. Предыдущая версия средства выполняла двоичный анализ, то есть анализ на основе сборок. Более новая версия средства *Metrics.exe* анализирует исходный код. Поскольку более новая *Metrics.exe* средство является исходным кодом, результаты метрик кода командной строки могут отличаться от результатов, создаваемых интегрированной средой разработки Visual Studio и предыдущими версиями *Metrics.exe*. Начиная с Visual Studio 2019, интегрированная среда разработки Visual Studio анализирует исходный код, подобный средству командной строки, и результаты должны быть одинаковыми.
@@ -333,7 +333,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 Другие метрики, такие как `CyclomaticComplexity` и, `MaintainabilityIndex` используют те же формулы, что и предыдущие версии *Metrics.exe*, но новое средство подсчитывает количество `IOperations` (инструкции логического источника) вместо инструкций промежуточного языка (IL). Номера будут немного отличаться от тех, которые создаются в интегрированной среде разработки Visual Studio и предыдущих версиях *Metrics.exe*.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Использование окна "Результаты метрик кода"](../code-quality/working-with-code-metrics-data.md)
 - [Значения метрик кода](../code-quality/code-metrics-values.md)

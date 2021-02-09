@@ -1,7 +1,7 @@
 ---
 title: Отключить анализ кода
 ms.date: 09/01/2020
-description: Узнайте, как отключить анализ исходного кода Visual Studio в проектах .NET Core, .NET Standard и .NET Framework.
+description: Узнайте, как отключить анализ исходного кода Visual Studio в проектах .NET Core, .NET Standard и платформа .NET Framework.
 ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,13 +9,13 @@ helpviewer_keywords:
 - disable code analysis
 author: mikadumont
 ms.author: midumont
-manager: jillfra
-ms.openlocfilehash: e808cb623fa47c9971e1cdceb15a02b5bf46e901
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+manager: jmartens
+ms.openlocfilehash: 6a1f1466caa921d46ce4701f5074b98f3d5ba051
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348558"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860390"
 ---
 # <a name="disable-source-code-analysis-for-net"></a>Отключить анализ исходного кода для .NET
 
@@ -23,9 +23,9 @@ ms.locfileid: "94348558"
 
 Эта страница поможет отключить анализ кода в Visual Studio. Существуют ограничения на то, что можно отключить, а процедура отключения анализа кода различается в зависимости от нескольких факторов.
 
-- Тип проекта (.NET Core, Standard и .NET Framework)
+- Тип проекта (.NET Core, Standard и платформа .NET Framework)
 
-  Проекты .NET Core и .NET Standard имеют параметры на странице свойств анализа кода, которые позволяют отключить анализ кода из анализаторов, установленных в качестве пакета NuGet. Дополнительные сведения см. в разделе [проекты .NET Core и .NET Standard](#net-core-and-net-standard-projects). Чтобы отключить анализ исходного кода для проектов .NET Framework, см. раздел [.NET Framework проекты](#net-framework-projects).
+  Проекты .NET Core и .NET Standard имеют параметры на странице свойств анализа кода, которые позволяют отключить анализ кода из анализаторов, установленных в качестве пакета NuGet. Дополнительные сведения см. в разделе [проекты .NET Core и .NET Standard](#net-core-and-net-standard-projects). Чтобы отключить анализ исходного кода для проектов платформа .NET Framework, см. раздел [платформа .NET Framework проекты](#net-framework-projects).
 
 - Анализ исходного кода и анализ прежних версий
 
@@ -45,7 +45,7 @@ ms.locfileid: "94348558"
 > [!NOTE]
 > Начиная с Visual Studio 2019 версии 16,5, если вы предпочитаете рабочий процесс анализа кода по запросу, можно отключить выполнение анализатора во время динамического анализа и (или) сборку и вручную запустить анализ кода в проекте или решении по запросу. Дополнительные сведения о выполнении анализа кода вручную см. [в разделе инструкции. Запуск анализа кода вручную для управляемого кода](how-to-run-code-analysis-manually-for-managed-code.md).
 
-## <a name="net-framework-projects"></a>Проекты .NET Framework
+## <a name="net-framework-projects"></a>Проекты платформа .NET Framework
 
 Чтобы отключить анализ исходного кода для анализаторов, добавьте в [файл проекта](../ide/solutions-and-projects-in-visual-studio.md#project-file)одно или несколько из следующих свойств MSBuild.
 
@@ -69,7 +69,7 @@ ms.locfileid: "94348558"
 
 ## <a name="source-analysis"></a>Анализ источника
 
-Вы не можете отключить [анализ исходного кода](roslyn-analyzers-overview.md) в Visual Studio 2017. Если вы хотите удалить ошибки анализатора из **Список ошибок** , можно отключить все текущие нарушения, выбрав **анализировать**  >  **выполнение анализа кода и подавлять активные проблемы** в строке меню. Дополнительные сведения см. в разделе [подавлять нарушения](use-roslyn-analyzers.md#suppress-violations).
+Вы не можете отключить [анализ исходного кода](roslyn-analyzers-overview.md) в Visual Studio 2017. Если вы хотите удалить ошибки анализатора из **Список ошибок**, можно отключить все текущие нарушения, выбрав **анализировать**  >  **выполнение анализа кода и подавлять активные проблемы** в строке меню. Дополнительные сведения см. в разделе [подавлять нарушения](use-roslyn-analyzers.md#suppress-violations).
 
 Начиная с Visual Studio 2019 версии 16,3, можно отключить анализ исходного кода или выполнить его по требованию. Рассмотрите возможность обновления до Visual Studio 2019.
 
@@ -79,7 +79,7 @@ ms.locfileid: "94348558"
 
 ::: moniker-end
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Подавлять нарушения](use-roslyn-analyzers.md#suppress-violations)
 - [Как включить и отключить анализ кода прежних версий](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

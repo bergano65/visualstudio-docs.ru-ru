@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: b83fd664cb2969c12d69e1e818f61190deed3804
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 7ed6d6f9d6a0e723979764313d185a41f49a08ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998243"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858154"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Пошаговое руководство. Создание LINQ to SQL классов с помощью наследования одной таблицы (реляционный конструктор R)
 [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) поддерживают наследование одной таблицы, так как обычно реализуются в реляционных системах. Это пошаговое руководство раскрывает общие шаги, приведенные в разделе [Практическое руководство. Настройка наследования с помощью конструктора O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) , и предоставляет некоторые реальные данные для демонстрации использования наследования в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
@@ -53,7 +53,7 @@ ms.locfileid: "94998243"
 
     |Имя столбца|Тип данных|Разрешить значения NULL|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**False**|
+    |**Идентификатор**|**int**|**False**|
     |**Тип**|**int**|**True**|
     |**FirstName**|**nvarchar(200)**|**False**|
     |**LastName**|**nvarchar(200)**|**False**|
@@ -72,7 +72,7 @@ ms.locfileid: "94998243"
 
 2. Скопируйте в таблицу следующие данные. (Его можно скопировать, а затем вставить в таблицу, выбрав всю строку на панели **результатов** .)
 
-    |**ID**|**Тип**|**FirstName**|**LastName**|**Менеджер**|
+    |**Идентификатор**|**Тип**|**FirstName**|**LastName**|**Менеджер**|
     |-|-|-|-|-|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
@@ -186,7 +186,7 @@ ms.locfileid: "94998243"
 
 3. Закройте форму. (В меню **Отладка** выберите команду **прерывать отладку**.)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Пошаговое руководство. Создание классов LINQ to SQL (реляционный конструктор объектов)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code analysis, migrating check-in policy
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f03cbd78944d49301362c07d01497abb22734c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3d46ed89880c41cbcaa6982c386e2ff8f115f8de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348766"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860117"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Практическое руководство. Создание или обновление стандартных политик возврата с анализом кода
 
@@ -41,7 +41,7 @@ ms.locfileid: "94348766"
 
 1. В диалоговом окне **система управления версиями** перейдите на вкладку **Политика возврата** .
 
-1. Используйте один из следующих вариантов:
+1. Выполните одно из следующих действий.
 
     - Нажмите кнопку **Добавить** , чтобы создать новую политику возврата.
 
@@ -51,7 +51,7 @@ ms.locfileid: "94348766"
 
 Установите или снимите следующие флажки:
 
-|Параметр|Description|
+|Параметр|Описание|
 |------------|-----------------|
 |**Принудительная запись после записи должна содержать только файлы, являющиеся частью текущего решения.**|Анализ кода может выполняться только для файлов, указанных в файлах конфигурации решения и проекта. Эта политика гарантирует анализ всего кода, который является частью решения.|
 |**Принудительный анализ кода C/C++ (/Analyze)**|Требует, чтобы все проекты C или C++ были построены с параметром компилятора/Analyze для выполнения анализа кода, прежде чем их можно будет вернуть.|
@@ -69,6 +69,6 @@ ms.locfileid: "94348766"
 
 Дополнительные сведения о создании и реализации пользовательского набора правил политики возврата см. в разделе [Реализация пользовательских политик возврата для управляемого кода](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Реализация настраиваемых политик возврата с анализом кода для управляемого кода](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)
