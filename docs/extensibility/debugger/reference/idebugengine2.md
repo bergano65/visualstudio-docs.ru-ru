@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1f0e9ac0-6dfb-461a-976c-888d82144cdb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e00751db052adeefee828829ec89309a3adba4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c38dc023c44e0c1743fd9d35dbe65befda405f4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730860"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919932"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 Этот интерфейс представляет модуль отладки (DE). Он используется для управления различными аспектами сеанса отладки, от создания точек останова до установки и удаления исключений.

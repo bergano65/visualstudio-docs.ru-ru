@@ -7,19 +7,19 @@ ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e82e4cd9f539dea5d0683999413a8371a442a13
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e6f7eea7563d74c3bce1b1d4951fe86585b79747
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435655"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920162"
 ---
 # <a name="messaging-activity-designers"></a>Конструкторы действий обмена сообщениями
 
-Конструкторы действий обмена сообщениями используются для создания и настройки действий обмена сообщениями, которые отправляют и получают сообщения Windows Communication Foundation (WCF) в приложении Windows Workflow Foundation (WF). В .NET Framework 4 появились пять действий обмена сообщениями. Конструктор рабочих процессов предоставляет два конструктора шаблонов, которые позволяют управлять обменом сообщениями в рабочем процессе.
+Конструкторы действий обмена сообщениями используются для создания и настройки действий обмена сообщениями, которые отправляют и получают сообщения Windows Communication Foundation (WCF) в приложении Windows Workflow Foundation (WF). В платформа .NET Framework 4 появились пять действий обмена сообщениями. Конструктор рабочих процессов предоставляет два конструктора шаблонов, которые позволяют управлять обменом сообщениями в рабочем процессе.
 
 Разделы, содержащиеся в этом разделе и перечисленные в следующей таблице, содержат рекомендации по использованию конструктор рабочих процессовных конструкторов действий и шаблонов.
 
