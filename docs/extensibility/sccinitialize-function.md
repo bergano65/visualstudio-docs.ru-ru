@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 661e0a24fa1d222079fd5ee728c5f42a5386c75b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9fb944cb672249ecb823f48048d12c1b61d9e99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700632"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846365"
 ---
 # <a name="sccinitialize-function"></a>Функция SccInitialize
 Эта функция инициализирует подключаемый модуль системы управления версиями и предоставляет возможности и ограничения интегрированной среде разработки (IDE).

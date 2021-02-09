@@ -17,15 +17,15 @@ helpviewer_keywords:
 - parameters [Office development in Visual Studio], optional
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7567f43dfa79e6a1e5d92b9ecddbf7918a6edef3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: d6824d53d552a27a68a49d63497156147283fd29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847704"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Необязательные параметры в решениях Office
   Многие методы в объектных моделях приложений Microsoft Office принимают необязательные параметры. При использовании Visual Basic для разработки решения Office в Visual Studio значение для необязательных параметров передавать не нужно, так как для каждого отсутствующего параметра автоматически используется значение по умолчанию. В большинстве случаев в проектах Visual C# также можно опускать необязательные параметры. Однако нельзя опустить необязательные параметры **ref** `ThisDocument` класса в проектах уровня документа Word.

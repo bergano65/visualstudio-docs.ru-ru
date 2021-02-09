@@ -2,17 +2,17 @@
 title: Формирование строк фильтра для конструктора таблиц | Документация Майкрософт
 description: Построение строк фильтра для конструктора таблиц
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 288e4256a472eb7bbc692758ad81df68be507676
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: cdfcacf38239e896687a236624bb167573f4bd1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846209"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Построение строк фильтра для конструктора таблиц
 ## <a name="overview"></a>Обзор
@@ -26,14 +26,14 @@ ms.locfileid: "94901925"
 | Логический оператор | Описание | Пример строки фильтра |
 | --- | --- | --- |
 | eq |Равно |City eq 'Redmond' |
-| gt |Больше |Price gt 20 |
+| gt |Больше чем |Price gt 20 |
 | ge |Больше или равно |Price ge 10 |
 | lt |Меньше чем |Price lt 20 |
-| le |Меньше чем или равно |Price le 100 |
+| le |Меньше или равно |Price le 100 |
 | ne |Не равно |City ne 'London' |
-| и |и |Price le 200 and Price gt 3.5 |
-| или |Или |Price le 3.5 or Price gt 200 |
-| not |not |not isAvailable |
+| и |And |Price le 200 and Price gt 3.5 |
+| или диспетчер конфигурации служб |либо |Price le 3.5 or Price gt 200 |
+| not |Not |not isAvailable |
 
 При создании строки фильтра соблюдайте следующие правила.
 

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a45187f01469f568a98098a8470ad62f67307a6
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: edf4658743bb719c1c23f93b2d1d3cc33afdbaba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437779"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847392"
 ---
 # <a name="interop-activity-designer"></a>Конструктор действия Interop
 
@@ -29,9 +29,9 @@ ms.locfileid: "94437779"
 
 ### <a name="use-the-interop-activity-designer"></a>Использование конструктора действий взаимодействия
 
-Конструктор действий **взаимодействия** можно найти в категории " **Миграция** " **панели элементов** , щелкнув вкладку **область элементов** . Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
+Конструктор действий **взаимодействия** можно найти в категории " **Миграция** " **панели элементов**, щелкнув вкладку **область элементов** . Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
 
-Категория [миграции](../workflow-designer/migration-activity-designers.md) , содержащая действие, <xref:System.Activities.Statements.Interop> отображается в **области элементов** только в том случае, если проект предназначен для .NET Framework 4 (полная) или более поздней версии. При необходимости можно изменить версию платформы, для которой предназначен проект.
+Категория [миграции](../workflow-designer/migration-activity-designers.md) , содержащая действие, <xref:System.Activities.Statements.Interop> отображается в **области элементов** только в том случае, если проект предназначен для платформа .NET Framework 4 (полная) или более поздней версии. При необходимости можно изменить версию платформы, для которой предназначен проект.
 
 Конструктор действий **взаимодействия** можно перетащить из **области элементов** в конструктор рабочих процессов область, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence> . При удалении конструктора действия **взаимодействия** создается <xref:System.Activities.Statements.Interop> действие со значением **DisplayName** по умолчанию для взаимодействия. Можно изменить <xref:System.Activities.Activity.DisplayName%2A> в заголовке конструктора действий **взаимодействия** или в поле **DisplayName** сетки свойств.
 
@@ -43,8 +43,8 @@ ms.locfileid: "94437779"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Понятное имя действия <xref:System.Activities.Statements.Interop>. Значение по умолчанию — **Interop**. Хотя отображаемое имя не является обязательным, рекомендуется указать его.|
-|<xref:System.Activities.Statements.Interop.ActivityType%2A>|Верно|Задает тип действия, содержащегося в действии <xref:System.Activities.Statements.Interop>. Заданный тип должен быть производным от класса <xref:System.Workflow.ComponentModel.Activity>.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.Interop>. Значение по умолчанию — **Interop**. Хотя отображаемое имя не является обязательным, рекомендуется указать его.|
+|<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Задает тип действия, содержащегося в действии <xref:System.Activities.Statements.Interop>. Заданный тип должен быть производным от класса <xref:System.Workflow.ComponentModel.Activity>.|
 
 ## <a name="see-also"></a>См. также раздел
 

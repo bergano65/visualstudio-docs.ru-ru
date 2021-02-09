@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dd2d3923776cc0666a3efd12a32fc9e4e8735a0
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: eb0c688e40df5247574e7ba87b4e04d5cfaba2ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973607"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846898"
 ---
 # <a name="create-custom-editors-and-designers"></a>Создание пользовательских редакторов и конструкторов
 
@@ -73,7 +73,7 @@ ms.locfileid: "94973607"
 
    Если его можно внедрить, следует создать главное окно для внешнего редактора, а затем вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> метод и установить <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> для перечисления значение `DP_External` . Если редактор не может быть внедрен, интегрированная среда разработки автоматически создаст для нее отдельное окно.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 
 [Пошаговое руководство. Создание пользовательского редактора](../extensibility/walkthrough-creating-a-custom-editor.md)\
 Объясняет, как создать пользовательский редактор.
@@ -104,6 +104,6 @@ ms.locfileid: "94973607"
 [Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
 Объясняет, как создавать элементы пользовательского интерфейса, соответствующие остальным элементам [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

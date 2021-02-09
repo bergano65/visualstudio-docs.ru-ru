@@ -25,15 +25,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 55ffb54e00af0291a33bd635ea81d3d865cc4c9a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 91f262fb88d95be586869b22559e171f4a01ed16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528363"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847639"
 ---
 # <a name="word-solutions"></a>решения Word
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания настроек на уровне документа и надстроек VSTO для Microsoft Office Word. Эти решения можно использовать для автоматизации Word, расширения функциональных возможностей Word и настройки пользовательского интерфейса Word. Дополнительные сведения о различиях между настройками уровня документа и надстройками VSTO см. в статье [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).

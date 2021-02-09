@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a791f94e46e16369392465e075ade92a833e2868
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: dbf996a2d44f94e4571a332fa7a86d861d820d45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915340"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847717"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Пошаговое руководство. Создание внешнего списка в SharePoint с помощью бизнес-данных
 
@@ -128,7 +128,7 @@ ms.locfileid: "96915340"
 
      Новая сущность появится в конструкторе. Visual Studio добавляет файл с именем *ентитисервице. vb* (в Visual Basic) или *EntityService.CS* (в C#) в проект.
 
-3. В строке меню выберите **вид**  >  **Properties**  >  **окно** свойств.
+3. В строке меню выберите **вид**  >    >  **окно** свойств.
 
 4. В окне **Свойства** задайте для свойства **имя** значение **Contact**.
 
@@ -184,7 +184,7 @@ ms.locfileid: "96915340"
 
 10. Повторите шаг 6, чтобы создать дескриптор типа для каждого из следующих полей.
 
-    |Название|Имя типа|
+    |Имя|Имя типа|
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|

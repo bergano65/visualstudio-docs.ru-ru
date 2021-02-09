@@ -22,15 +22,15 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], synchronizing with Ribbon button
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7453d221cf57188a2c2f589492e4df59817f2cd9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9ac8c4ef96a421ece6c0591d4340d570d71c08e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526094"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846287"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Пошаговое руководство. Синхронизация настраиваемой области задач с помощью кнопки на ленте
   В этом пошаговом руководстве показано, как создать настраиваемую область задач, которую пользователи могут скрывать или отображать, щелкая выключатель на ленте. Рекомендуется всегда создавать элемент пользовательского интерфейса, например кнопку, который пользователи могут нажать для отображения или скрытия настраиваемой области задач. Это необходимо по той причине, что приложения Microsoft Office не имеют встроенных средств для отображения и скрытия настраиваемых областей задач.
@@ -164,7 +164,7 @@ ms.locfileid: "97526094"
 
      Убедитесь в том, что выключатель не нажат.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения о создании настраиваемых областей задач см. в следующих разделах:
 
 - Создание настраиваемой области задач в надстройке VSTO для другого приложения. Дополнительные сведения о приложениях, поддерживающих настраиваемые области задач, см. в разделе [настраиваемые области задач](../vsto/custom-task-panes.md).

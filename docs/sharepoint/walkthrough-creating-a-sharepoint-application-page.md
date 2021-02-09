@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 95addb145312de85a3525c228297e7ff9636ea0d
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: def9407d309e5f673d0a7a2cdc3710fae557be50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914885"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847847"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Пошаговое руководство: Создание страницы приложения SharePoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "96914885"
 > [!NOTE]
 > Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Поддерживаемые выпуски Windows и SharePoint.
 

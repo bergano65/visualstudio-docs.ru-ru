@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, workflow initiation forms
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: cb759b155b119c29f20a39cdbf35338ec5a305b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970442"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847743"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска
   В этом пошаговом руководстве показано, как создать базовый последовательный рабочий процесс, который включает в себя использование форм связи и инициации. Это формы ASPX, которые позволяют добавлять параметры в рабочий процесс при первом его связывании с администратором SharePoint (форма ассоциации), а также при запуске рабочего процесса пользователем (форма запуска).
@@ -84,7 +84,7 @@ ms.locfileid: "95970442"
 
 6. В области **Обозреватель решений** выберите узел проекта.
 
-7. В строке меню выберите **проект**  >  **Добавить новый элемент**.
+7. В строке меню выберите **Проект** > **Добавить новый элемент**.
 
 8. В **Visual C#** или **Visual Basic** разверните узел **SharePoint** , а затем выберите узел **2010** .
 
@@ -442,11 +442,11 @@ ms.locfileid: "95970442"
 
      В этом случае вместо задачи создается запись в списке журнала. Запись отображается в разделе **Журнал рабочего процесса** на странице состояние рабочего процесса. Обратите внимание на сообщение в столбце **результат** события журнал. Он содержит текст, указанный в `logToHistoryListActivity1.MethodInvoking` событии, включающий сумму, которая была утверждена с помощью автоматического утверждения.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения о создании шаблонов рабочих процессов см. в следующих разделах:
 
 - Дополнительные сведения о рабочих процессах SharePoint см. [в статье рабочие процессы в Windows SharePoint Services](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14)).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Создание решений рабочих процессов SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Пошаговое руководство: Добавление страницы приложения в рабочий процесс](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)
