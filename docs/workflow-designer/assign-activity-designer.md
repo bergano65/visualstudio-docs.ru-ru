@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: ba3feb3c-f144-47ea-926d-cf752b804153
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8601951cfaba3f246e8488ab23c9b6ccad0d01
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: fe6f649543cee66a1050e5724a9317b7b8806534
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888645"
 ---
 # <a name="assign-activity-designer"></a>Конструктор действий Assign
 
@@ -29,7 +29,7 @@ ms.locfileid: "94438195"
 
 ### <a name="using-the-assign-activity-designer"></a>Использование конструктора действия Assign
 
-Конструктор **назначения** действий можно найти в категории **примитивы** **области элементов** , щелкнув вкладку **область элементов** (также можно выбрать **область элементов** в меню **вид** или CTRL + ALT + X).
+Конструктор **назначения** действий можно найти в категории **примитивы** **области элементов**, щелкнув вкладку **область элементов** (также можно выбрать **область элементов** в меню **вид** или CTRL + ALT + X).
 
 Конструктор **назначения** действия можно перетащить из **панели элементов** в конструктор рабочих процессовную поверхность, где постоянно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence> . При удалении конструктора **назначения** действия создается <xref:System.Activities.Statements.Assign> действие со значением **DisplayName** по умолчанию Assign. <xref:System.Activities.Activity.DisplayName%2A>Можно изменить в заголовке конструктора действий **назначения** или в поле **DisplayName** сетки свойств.
 
@@ -39,9 +39,9 @@ ms.locfileid: "94438195"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Понятное имя действия <xref:System.Activities.Statements.Assign>. Значение по умолчанию - Assign. Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|
-|<xref:System.Activities.Statements.Assign.To%2A>|Верно|Переменная или аргумент, которым присваивается <xref:System.Activities.Statements.Assign.Value%2A>. Значение должно быть допустимым идентификатором Visual Basic. Чтобы задать свойство, введите Visual Basic выражение в поле **Кому** в конструкторе действий **назначить** или в сетке свойств.|
-|<xref:System.Activities.Statements.Assign.Value%2A>|Верно|Значение, присваиваемое переменной. Чтобы задать <xref:System.Activities.Statements.Assign.Value%2A> , введите Visual Basic выражение в поле **значение** в конструкторе действий **назначить** или в сетке свойств.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.Assign>. Значение по умолчанию - Assign. Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|
+|<xref:System.Activities.Statements.Assign.To%2A>|True|Переменная или аргумент, которым присваивается <xref:System.Activities.Statements.Assign.Value%2A>. Значение должно быть допустимым идентификатором Visual Basic. Чтобы задать свойство, введите Visual Basic выражение в поле **Кому** в конструкторе действий **назначить** или в сетке свойств.|
+|<xref:System.Activities.Statements.Assign.Value%2A>|True|Значение, присваиваемое переменной. Чтобы задать <xref:System.Activities.Statements.Assign.Value%2A> , введите Visual Basic выражение в поле **значение** в конструкторе действий **назначить** или в сетке свойств.|
 
 ## <a name="see-also"></a>См. также раздел
 

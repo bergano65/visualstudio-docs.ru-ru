@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6306b13cc40d8b93de734168fe1e6df92c256d21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527989"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888697"
 ---
 # <a name="ribbon-object-model-overview"></a>Общие сведения об объектной модели ленты
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Предоставляет объектную модель со строгой типизацией, которую можно использовать для получения и задания свойств элементов управления ленты во время выполнения. Например, можно динамически заполнять элементы управления меню или отображать или скрывать элементы управления в зависимости от контекста. На ленту можно также добавить вкладки, группы и элементы управления, но только перед загрузкой ленты приложением Office. Дополнительные сведения см. в разделе [Задание свойств, которые становятся доступны только для чтения](#SettingReadOnlyProperties).
@@ -39,7 +39,7 @@ ms.locfileid: "97527989"
 |Событие|Описание|
 |-----------|-----------------|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Возникает, когда приложение Office загружает настройку ленты. <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>Обработчик событий автоматически добавляется в файл кода ленты. Этот обработчик событий используется для запуска пользовательского кода при загрузке ленты.|
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Позволяет кэшировать изображения в настройке ленты при загрузке ленты. При написании кода для кэширования образов ленты в этом обработчике событий можно получить небольшое увеличение производительности. Дополнительные сведения см. в разделе <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Позволяет кэшировать изображения в настройке ленты при загрузке ленты. При написании кода для кэширования образов ленты в этом обработчике событий можно получить небольшое увеличение производительности. Для получения дополнительной информации см. <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Возникает при закрытии экземпляра ленты.|
 
 ## <a name="ribbon-controls"></a><a name="RibbonControlClasses"></a> Элементы управления ленты
@@ -147,7 +147,7 @@ ms.locfileid: "97527989"
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 |**итемсизе**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
 |**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
-|**имя**;|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|
+|**Имя**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|
 |**Позиция**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
 |**Количества**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
@@ -172,7 +172,7 @@ ms.locfileid: "97527989"
 
 |Событие|Описание|
 |-----------|-----------------|
-|Щелкните|Происходит при щелчке элемента управления.|
+|Нажмите кнопку|Происходит при щелчке элемента управления.|
 |TextChanged|Происходит при изменении текста поля ввода или поля со списком.|
 |итемслоадинг|Происходит, когда коллекция Items элемента управления запрашивается в Office. Office кэширует коллекцию Items до тех пор, пока код не изменит свойства элемента управления или не вызовите <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> метод.|
 |ButtonClick|Происходит при нажатии кнопки в <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> или <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> .|
