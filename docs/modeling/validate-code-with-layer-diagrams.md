@@ -18,15 +18,15 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8b36768cbac4249b964b167988119b5700d5c7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e330b95d2de6da53d9d1bd0f3d553ab8319bdd04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362552"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924321"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Проверка кода по схемам зависимостей
 
@@ -44,7 +44,7 @@ ms.locfileid: "97362552"
 
    Найти код или зависимости, с которыми потребуется выполнить определенные действия даже после перемещения кода в другую архитектуру.
 
-**Требования**
+**Requirements**
 
 - Visual Studio
 
@@ -196,7 +196,7 @@ ms.locfileid: "97362552"
 
     Сюда входит схема зависимостей в процессе проверки.
 
-Сведения об управлении ошибками в окне Список ошибок см. в разделе [разрешение ошибок проверки слоев](#resolve-layer-validation-errors).
+Сведения об управлении ошибками в окне список ошибок см. в разделе [разрешение ошибок проверки слоев](#resolve-layer-validation-errors).
 
 ## <a name="troubleshoot-layer-validation-issues"></a>Устранение неполадок проверки слоев
 

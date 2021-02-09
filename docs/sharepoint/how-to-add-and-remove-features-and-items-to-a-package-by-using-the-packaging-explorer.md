@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ee9b2a12c9eaa168f0223dff29a3379a12b3d691
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: eec1468fc2e0c51d7dea7aa5f3ffa808b484ec87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915353"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923563"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Пошаговое руководство. Добавление и удаление компонентов и элементов в пакет с помощью обозревателя пакетов
   Чтобы настроить пакет для развертывания элементов и компонентов SharePoint, можно использовать обозреватель пакетов. Можно настроить элементы и компоненты проекта SharePoint в файле. wsp.
@@ -57,7 +57,7 @@ ms.locfileid: "96915353"
     > Эта процедура используется в случае, если в решении имеется несколько проектов SharePoint.
 
 ## <a name="validate-a-feature-or-package"></a>Проверка компонента или пакета
- Можно выявление потенциальных проблем в компонентах и пакетах SharePoint путем проверки файлов. Предупреждения и ошибки отображаются в окне вывода и Список ошибок окне.
+ Можно выявление потенциальных проблем в компонентах и пакетах SharePoint путем проверки файлов. Предупреждения и ошибки отображаются в окне вывода и список ошибок окне.
 
 #### <a name="to-validate-a-sharepoint-feature-or-package"></a>Проверка компонента или пакета SharePoint
 

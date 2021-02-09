@@ -5,15 +5,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1025e7d35c20dc18c87942e23cf71b598d85637a
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 0f65ece27122949fec006d73858c8c89483441f1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924377"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Использование Visual Studio ModelBus в текстовом шаблоне
 
@@ -42,7 +42,7 @@ ms.locfileid: "97361369"
 
     3. В диалоговом окне выберите **я хочу предоставить этот DSL для ModelBus**. Вы можете выбрать оба варианта, если вы хотите, чтобы этот DSL предоставлял свои модели и использовал ссылки на другой домен.
 
-    4. Нажмите кнопку **ОК**. В решение DSL будет добавлен новый проект ModelBusAdapter.
+    4. Нажмите кнопку **OK**. В решение DSL будет добавлен новый проект ModelBusAdapter.
 
     5. Щелкните **преобразовать все шаблоны**.
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 - text templates, custom directive hosts
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a98e432c7eb9508d32f52e51acc1447035b9058b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a815718f099b024708b86658e10fc0e85c087b4c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362500"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924126"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Пошаговое руководство. Подключение основного приложения к созданному обработчику директив
 
@@ -74,7 +74,7 @@ ms.locfileid: "97362500"
    > [!IMPORTANT]
    > На этом шаге создается процессор директив и добавляется ключ для него в реестр.
 
-3. В меню **Отладка** выберите команду **Начать отладку**.
+3. В меню **Отладка** щелкните **Начать отладку**.
 
     Откроется второй экземпляр Visual Studio.
 
@@ -316,11 +316,11 @@ ms.locfileid: "97362500"
 
 3. В коде замените на \<YOUR PATH> путь к примеру файла Sample. min из языка, созданного в первой процедуре.
 
-4. Сохраните файл и закройте его.
+4. Сохраните и закройте файл.
 
 ### <a name="test-the-custom-host"></a>Тестирование пользовательского узла
 
-1. Откройте окно командной строки и
+1. Откройте окно командной строки.
 
 2. Введите путь к исполняемому файлу пользовательского ведущего приложения, но пока не нажимайте клавишу ВВОД.
 

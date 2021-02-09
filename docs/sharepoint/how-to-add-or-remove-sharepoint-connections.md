@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b898dd0f9327c7589d0dac3436aec0299009221d
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 57ff132274ba7f720a845078b0424fe235d9c31e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923455"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Практическое руководство. Добавление и удаление подключений SharePoint
   Обозреватель сервера позволяет просматривать сайты SharePoint и подключения к данным. Однако прежде чем можно будет просматривать содержимое сайта SharePoint, его необходимо добавить в узел **подключения SharePoint** .
@@ -45,5 +45,5 @@ ms.locfileid: "94850719"
     > [!NOTE]
     > На этом этапе не удаляется базовый сайт. Он удаляет только подключение из **Обозреватель сервера**.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 - [Просмотр подключений SharePoint с помощью обозревателя сервера](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

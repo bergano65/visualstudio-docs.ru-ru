@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5011db32123e77e9bf60c99459125302b2bf8264
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: ebec7f6b1f6d777ce7b3b914ac5c1d5629190fcc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915366"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923578"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>Как добавлять и удалять зависимости компонентов
   Функция SharePoint может зависеть от других функций для функциональности или данных. В таких случаях можно пометить эти функции как зависимости для вашей функции. Таким образом, сервер SharePoint обеспечивает активацию зависимых компонентов перед активацией функции.

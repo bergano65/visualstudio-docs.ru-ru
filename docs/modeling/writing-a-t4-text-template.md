@@ -10,15 +10,15 @@ helpviewer_keywords:
 - text templates, functions that generate text
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 086e7ecf568d043142cdc80f020897ed1793b86c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: eb988854cb1bc049e024bf204553dd715e652a4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361226"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923988"
 ---
 # <a name="writing-a-t4-text-template"></a>Написание текстового шаблона T4
 Текстовый шаблон содержит текст, который будет создан на его основе. Например, шаблон, создающий веб-страницу, будет содержать " \<html> ..." и все остальные стандартные части HTML-страницы. В шаблон вставлены *управляющие блоки*, которые являются фрагментами программного кода. Блоки управления обеспечивают варьирующиеся значения и обеспечивают условность и повторяемость текста.
@@ -268,7 +268,7 @@ Content of MyFile.txt is:
 ## <a name="editing-templates"></a>Редактирование шаблонов
  Специализированные редакторы текстовых шаблонов можно загрузить из каталога диспетчера расширений в Интернете. В меню **Сервис** выберите пункт **Диспетчер расширений**. Щелкните **Интернет-коллекция** и воспользуйтесь средством поиска.
 
-## <a name="related-topics"></a>Связанные темы
+## <a name="related-topics"></a>Связанные разделы
 
 |Задача|Раздел|
 |-|-|
