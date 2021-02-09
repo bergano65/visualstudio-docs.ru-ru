@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e722770ad1db4b85dbc2a5a8754d9158b6ee436
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6923eb7a534a4cacf8062883d073ddddc9395e17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892558"
 ---
 # <a name="supporting-source-control"></a>Поддержка системы управления версиями
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] поддерживает извлечение файлов, возвраты и другие операции системы управления версиями для проекта или редактора. Как клиент системы управления версиями, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] предназначен для взаимодействия с пакетом управления версиями, например [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] , который обеспечивает архивацию, управление версиями и средства управления для динамически определяемого набора файлов.
@@ -43,7 +43,7 @@ ms.locfileid: "97876458"
 
  Описывает, как зарегистрировать проект при его добавлении пользователем в систему управления версиями.
 
-## <a name="reference"></a>Справка
+## <a name="reference"></a>Справочные сведения
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> Указывает среде или пакету системы управления версиями, что файл будет изменен в памяти или сохранен.
 
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> Позволяет проектам и иерархиям регистрировать себя в системе управления версиями и получать сведения о состоянии системы управления версиями.

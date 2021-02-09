@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d70da2530a1677367a22968436a17eba809fd24a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9b9e2fa8f636581572b97da58fb9ddefeafd375
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723379"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892545"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
 Этот метод информирует процесс о том, что сеанс теперь отлаживается процесс.
@@ -28,7 +28,7 @@ ms.locfileid: "80723379"
 ## <a name="syntax"></a>Синтаксис
 
 ```cpp
-HRESULT Attach( 
+HRESULT Attach( 
    IDebugSession2* pSession
 );
 ```

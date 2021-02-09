@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e6cbcc4d0bc99ce7ab495e0a24591b145c58f377
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 8482a6185f670ce1bb340ff40fe277b751a39c06
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970367"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892337"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Шаблоны проектов и элементов проектов SharePoint
   В следующих разделах описываются доступные проекты SharePoint и шаблоны элементов проекта, а также способы их использования.
@@ -104,7 +104,7 @@ ms.locfileid: "95970367"
 
   Элемент проекта приемника событий создает папку **приемника событий** с одним файлом класса, который содержит обработчики событий для всех событий, указанных при создании проекта в **мастере настройки SharePoint**. Класс приемника событий может выполнять обработку событий, происходящих на сайте SharePoint при добавлении, обновлении, удалении или удалении таких элементов, как файлы, поля, элементы, списки, вложения, веб-части и рабочие процессы. Дополнительные сведения см. [в разделе инструкции. Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md) и [стандартного блока: обработка событий](/previous-versions/office/developer/sharepoint-2010/ee535057(v=office.14)).
 
-### <a name="list"></a>Список
+### <a name="list"></a>List
  Список — это экземпляр пригодного для повторного использования базового определения списка SharePoint, такого как календарь или список задач. После добавления списка в решение конструктор списка позволяет добавлять столбцы сайтов в список и создавать пользовательские столбцы списка. Это включает столбцы сайта из типов содержимого. Можно указать *представление* списка, определяющее столбцы, которые будут отображаться в списке. Дополнительные сведения см. в разделе [Пошаговое руководство. Создание столбца сайта, типа содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) и [стандартного блока: списки и библиотеки документов](/previous-versions/office/developer/sharepoint-2010/ee534985(v=office.14)).
 
 ### <a name="module"></a>Модуль

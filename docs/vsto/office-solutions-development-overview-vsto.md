@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9bb964e90c44c4e0b41e0f09df8931665426dc70
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 03da1c8052140bbe23ce4d99c12d72baef18898f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891960"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Общие сведения о разработке решений Office (VSTO)
   Благодаря применению Microsoft Office в качестве внешнего интерфейса для решений, можно эффективно использовать привычные пользовательские интерфейсы и инструменты Microsoft Office, например, функции обработки текста в Word, функции анализа данных в Excel и функции управления электронной почтой в Outlook. В Visual Studio можно разрабатывать решения для настройки приложений Office и добавления конкретных функций, необходимых для бизнес-процессов. Например, можно включить Word в генератор контрактов, собирающий контракты на основе уже существующих частей, которые можно сделать редактируемыми или нередактируемыми. С помощью Excel можно создать лист автоматической разработки бюджета, настраиваемый для различных проектов. Пользователи также могут применять решения Office в автономном режиме, что делает сложные решения более удобными, чем решения, построенные на основе веб-архитектуры.
@@ -78,7 +78,7 @@ ms.locfileid: "97527721"
 ## <a name="run-microsoft-vsto-office-solutions-on-end-user-computers"></a>Запуск решений Microsoft VSTO для Office на компьютерах конечных пользователей
  При создании решения VSTO для Office следует учитывать, как требования к развертыванию могут повлиять на выбор метода развертывания.
 
-### <a name="deployment-options"></a>Варианты развертывания
+### <a name="deployment-options"></a>Параметры развертывания
  Для развертывания решений, созданных с помощью средств разработки решений на базе Office в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]используйте ClickOnce или установщик Windows. Развертывание с помощью ClickOnce позволяет создавать самостоятельно обновляющиеся решения, которые могут устанавливаться и работать при минимальном участии пользователя. Файлы установщик Windows (*. msi*) можно легко распространять на компьютеры конечных пользователей или распространять с помощью Systems Management Server (SMS). Дополнительные сведения о развертывании решений VSTO для Office см. в статье [развертывание решения Office](../vsto/deploying-an-office-solution.md).
 
 ### <a name="install-prerequisites"></a>Установка необходимых компонентов

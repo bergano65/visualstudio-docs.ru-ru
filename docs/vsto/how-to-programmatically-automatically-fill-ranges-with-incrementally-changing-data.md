@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workbooks, filling ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dc80b4b589eb46aefa9ef6d75384ed17bb1b7c8c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 64af8ddfa0d3d086b661483e76cb9b2bd82ae5c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847212"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892077"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Руководство. программное автоматическое заполнение диапазонов путем постепенного изменения данных
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>Метод <xref:Microsoft.Office.Interop.Excel.Range> объекта позволяет автоматически заполнять диапазон на листе значениями. Чаще всего <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> метод используется для хранения инкрементно увеличивающихся или уменьшающихся значений в диапазоне. Поведение можно указать, предоставив необязательную константу из <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> перечисления.

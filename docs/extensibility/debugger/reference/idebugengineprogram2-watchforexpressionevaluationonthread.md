@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f36431ef7a190e98d35e795ffd8213781553dfc
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ae9e10da02ab0bbef6be0fed5b9d505bf1b3e268
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036123"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892675"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 Разрешает (или запрещает) вычисление выражений в заданном потоке, даже если программа остановлена.
@@ -30,7 +30,7 @@ ms.locfileid: "90036123"
 ## <a name="syntax"></a>Синтаксис
 
 ```cpp
-HRESULT WatchForExpressionEvaluationOnThread( 
+HRESULT WatchForExpressionEvaluationOnThread( 
    IDebugProgram2*       pOriginatingProgram,
    DWORD                 dwTid,
    DWORD                 dwEvalFlags,
@@ -40,7 +40,7 @@ HRESULT WatchForExpressionEvaluationOnThread( 
 ```
 
 ```csharp
-int WatchForExpressionEvaluationOnThread( 
+int WatchForExpressionEvaluationOnThread( 
    IDebugProgram2       pOriginatingProgram,
    uint                  dwTid,
    uint                  dwEvalFlags,
@@ -68,7 +68,7 @@ int WatchForExpressionEvaluationOnThread( 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  Если диспетчер отладки сеансов (SDM) запрашивает программу, определяемую `pOriginatingProgram` параметром, для вычисления выражения уведомляет все другие присоединенные программы, вызывая этот метод.
 
  Вычисление выражений в одной программе может привести к тому, что код будет выполняться в другой из-за вычисления функции или оценки любых `IDispatch` свойств. Поэтому этот метод позволяет выполнять и завершать вычисление выражений, даже если поток может быть остановлен в этой программе.

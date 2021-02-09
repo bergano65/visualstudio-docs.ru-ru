@@ -40,15 +40,15 @@ helpviewer_keywords:
 - VST.Designer.ExcelVST.Designer.Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0e183d5aca3fa856f45f322c2b79a76524b28005
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 88abd7294a96b4fe4989630753253b16f036ab7c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525151"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892012"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Проекты Office в среде Visual Studio
   Разработка проектов Microsoft Office аналогична разработке в Visual Studio проектов других типов, таких как проекты Windows Forms. При создании или открытии проекта Office элементы проекта отображаются в **обозревателе решений**. Для проектов уровня документа документ (документ Word или книга Excel) открывается в среде Visual Studio и используется в качестве визуального конструктора.

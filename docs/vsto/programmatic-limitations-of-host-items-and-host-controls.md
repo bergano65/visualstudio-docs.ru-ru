@@ -30,15 +30,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], host controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 08205473636a04dbc742b6c09c99e9771094f61c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: fbc3258f3ea7e0b3cc93a2887dfff5a3bfefb19d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525124"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891895"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Программные ограничения ведущих элементов и элементов управления ведущего приложения
   Каждый ведущий элемент и элемент управления ведущего приложения создается, чтобы работать аналогично собственному объекту Microsoft Office Word или Microsoft Office Excel с дополнительными функциями. Но есть ряд фундаментальных различий между поведением во время выполнения ведущих элементов и элементов управления ведущего приложения с одной стороны и собственных объектов Office с другой стороны.

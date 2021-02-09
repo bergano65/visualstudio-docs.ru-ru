@@ -29,15 +29,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], project templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5e3203eb4bbd7339f5e59ecffea8436b02180b8b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: af01bf165c823ce34957e4a9eba38ef90c5344a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528084"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892038"
 ---
 # <a name="office-project-templates-overview"></a>Общие сведения о шаблонах проектов Office
   Средства разработки для Microsoft Office в Visual Studio включают в себя шаблоны проектов, предназначенные для создания указанных ниже типов решений Office.
@@ -154,7 +154,7 @@ ms.locfileid: "97528084"
 ## <a name="comparison"></a>Сравнение
  В следующей таблице приведены различия между документами и шаблонами:
 
-|документы.|Шаблоны|
+|Документы|Шаблоны|
 |---------------|---------------|
 |Пользователи могут открывать и редактировать документ, если только для него не установлен атрибут "только для чтения". Любые сохраненные изменения сохраняются в исходном документе.|Пользователи могут открывать шаблон, чтобы создать локальную копию в виде нового документа. Они не могут редактировать исходный документ, если у них нет специальных разрешений.|
 |При открытии документа возникает событие <xref:Microsoft.Office.Tools.Word.Document.Open> .|При открытии шаблона возникает событие <xref:Microsoft.Office.Tools.Word.Document.New> .|

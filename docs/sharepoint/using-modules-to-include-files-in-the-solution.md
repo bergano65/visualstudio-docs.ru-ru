@@ -13,15 +13,15 @@ helpviewer_keywords:
 - modules [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa0d6fe1855a1d60a0e1293e8422791f8148bd04
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 86aea9800d0eaad4c36d5598e52dd7a35f3a7534
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892181"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Использование модулей для включения файлов в решение
   Вам может потребоваться развернуть файлы на сервере SharePoint независимо от их типа, например новые эталонные страницы. Для этого можно использовать *модули* (не путайте их с модулями кода [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]). Модули — это контейнеры для файлов в решении SharePoint. При развертывании решения файлы из модуля копируются в указанные папки на сервере SharePoint.

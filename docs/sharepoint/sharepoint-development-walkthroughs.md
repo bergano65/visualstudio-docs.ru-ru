@@ -11,17 +11,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, walkthroughs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4d1700958d155801a436cbd00a8a88f7599292a0
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: b12aaade85964eb1c331bd96f2fbea522670bcc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892324"
 ---
-# <a name="sharepoint-development-walkthroughs"></a>Пошаговые руководства по разработке для SharePoint
+# <a name="sharepoint-development-walkthroughs"></a>Пошаговые руководства по разработке решений SharePoint
   В следующих пошаговых руководствах показано, как разрабатывать и развертывать решения SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 ## <a name="general"></a>Общие сведения
@@ -95,5 +95,5 @@ ms.locfileid: "95970318"
 |[Пошаговое руководство. расширение обозреватель сервера для показа веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|Демонстрирует добавление новых узлов для отображения веб-части на сайтах SharePoint, отображаемых в обозреватель сервера. В этом пошаговом руководстве также показано, как создать команду SharePoint для вызова серверной объектной модели SharePoint.|
 |[Пошаговое руководство. вызов клиентской объектной модели SharePoint в расширении обозреватель сервера](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Демонстрирует добавление новых узлов для отображения веб-части на сайтах SharePoint, отображаемых в обозреватель сервера. В этом пошаговом руководстве также показано, как использовать клиентскую объектную модель SharePoint.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Примеры и пошаговые руководства по разработке для SharePoint](../sharepoint/sharepoint-development-samples-and-walkthroughs.md)

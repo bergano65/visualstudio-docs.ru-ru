@@ -22,15 +22,15 @@ helpviewer_keywords:
 - ProjectItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bd425111e7e3d69e381e69e60daf914f74cd2d11
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 466bc68ca002914b64698d7cd87f98ff276bfc0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892285"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Справочник по схеме элементов проекта SharePoint
   Visual Studio использует схему элемента проекта SharePoint для проверки содержимого файлов *данных.* Файл *данных....* задает содержимое и поведение элемента проекта SharePoint. Дополнительные сведения о содержимом элементов проектов SharePoint см. в разделе [Создание шаблонов элементов и шаблонов проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
@@ -53,5 +53,5 @@ ms.locfileid: "95442551"
 |[SafeControl](../sharepoint/safecontrol-element.md)|Представляет элемент управления ASPX или веб-часть, которая обозначена как безопасная для доступа любого пользователя к любой странице ASPX на сайте SharePoint.|
 |[SafeControls](../sharepoint/safecontrols-element.md)|Представляет коллекцию элементов управления ASPX и веб-части, которые обозначены как безопасные для доступа любого пользователя к любой странице ASPX на сайте SharePoint.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Создание шаблонов элементов и проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, designer
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 584b77ab714cb692069fadd6c6fad50e20d46f80
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: d04857f0e61e5d9f293d73902cd090f718c65cd0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442538"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892220"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Диалоговое окно "Выбор URL-адреса" (разработка решений SharePoint в Visual Studio)
   В диалоговом окне выбора URL-адреса можно выбрать такие файлы, как файлы эталонной страницы или файлы изображений, расположенные в вашем проекте или на локальном сервере, где выполняется SharePoint.
@@ -54,7 +54,7 @@ ms.locfileid: "95442538"
 
   **Файлы типа** Позволяет выбрать из списка файлов, подходящих для выполняемой задачи.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
