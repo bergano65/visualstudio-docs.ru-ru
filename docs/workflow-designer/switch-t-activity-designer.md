@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 18a6c96e-49a9-4356-ab61-fbd7e3ab44bb
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6bdf05878c08b1c175b78ff2205b74c4ea5669b
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 35dcc390dcf58e02a2c7c1fa2dba62840d433785
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433938"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882314"
 ---
 # <a name="switcht-activity-designer"></a>Конструктор действия Switch\<T>
 
@@ -40,8 +40,8 @@ ms.locfileid: "94433938"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Указывает понятное имя конструктора операции <xref:System.Activities.Statements.Switch%601>. Значение по умолчанию — Switch<Int32 \> . Значение можно изменить в окне **Свойства** или непосредственно в заголовке конструктора.<br /><br /> Несмотря на то что свойство <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|
-|<xref:System.Activities.Statements.Switch%601.Expression%2A>|Верно|Указывает выражение, которое используется для сравнения ключей в коллекции вариантов для определения, какой вариант следует выполнить.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает понятное имя конструктора операции <xref:System.Activities.Statements.Switch%601>. Значение по умолчанию — Switch<Int32 \> . Значение можно изменить в окне **Свойства** или непосредственно в заголовке конструктора.<br /><br /> Несмотря на то что свойство <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|
+|<xref:System.Activities.Statements.Switch%601.Expression%2A>|True|Указывает выражение, которое используется для сравнения ключей в коллекции вариантов для определения, какой вариант следует выполнить.|
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||Указывает действие, которое следует выполнить, если совпадений не обнаружено. Нажмите кнопку **Добавить действие** в конструкторе, чтобы открыть поле **по умолчанию** , в котором можно удалить действие.|
 |<xref:System.Activities.Statements.Switch%601.Cases%2A>||Указание вариантов для оценки. Чтобы добавить вариант, нажмите кнопку **Добавить новый вариант** в нижней части конструктора **\<T> переключателей** . Кнопка меняется на TextBox (поле со списком, если универсальный тип, выбранный при добавлении параметра, \<T> — String или enum). После добавления ключа в поле **значение варианта** область вариантов расширяется, и действие можно удалить, где текст подсказки "перетащите действие здесь", чтобы определить логику выполнения для варианта.|
 

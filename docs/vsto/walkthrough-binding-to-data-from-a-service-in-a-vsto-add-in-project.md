@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], scrolling database records
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6b65308cfc0ba4dee33dd6b20d3fd4028e9ea22e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a420f89fda4afd710f652223a9be594caba32f0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527476"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882423"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Пошаговое руководство. привязка к данным из службы в проекте надстройки VSTO
   Вы можете привязывать данные к элементам управления ведущего приложения в проектах надстроек VSTO. В этом пошаговом руководстве демонстрируется добавление элементов управления в документ Microsoft Office Word, привязка элементов управления к данным, полученным из службы содержимого MSDN, и реагирование на события во время выполнения.
@@ -45,7 +45,7 @@ ms.locfileid: "97527476"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-## <a name="create-a-new-project"></a>Создание проекта
+## <a name="create-a-new-project"></a>Создание нового проекта
  Первым шагом является создание проекта надстройки Word VSTO.
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта

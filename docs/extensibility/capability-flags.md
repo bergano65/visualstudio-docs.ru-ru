@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b80672b00bec95c740824ef7e29f1faba0e63cf4
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 2d626f2390138c7e4e6e2471d285bcda940d7f30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882288"
 ---
 # <a name="capability-flags"></a>Флаги возможностей
 Флаги SCC_CAP_ *xxx* — это битовые флаги, используемые для указания возможностей подключаемого модуля системы управления версиями. Флаги SCC_EXCAP_ *xxx* — это добавочные флаги, которые указывают расширенные возможности и разрешаются в целочисленные значения.
@@ -79,5 +79,5 @@ ms.locfileid: "94974441"
 |`SCC_EXCAP_DELETE_CHECKEDOUT`|10|Может удалять извлеченные файлы.|
 |`SCC_EXCAP_RENAME_CHECKEDOUT`|11|Может переименовывать извлеченные файлы.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)

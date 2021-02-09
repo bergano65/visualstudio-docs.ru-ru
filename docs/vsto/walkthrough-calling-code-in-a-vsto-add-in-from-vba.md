@@ -17,15 +17,15 @@ helpviewer_keywords:
 - calling code from VBA
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0cbf03ef234ea6cf4eab790d96082d23b7ed5199
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 61e729113ecfa988f424e2182662d506377d33e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527287"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882392"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Пошаговое руководство. вызов кода в надстройке VSTO из VBA
   В этом пошаговом руководстве показано, как предоставить объект в надстройке VSTO другим решениям Microsoft Office, включая Visual Basic для приложений (VBA) и надстроек VSTO COM.
@@ -143,7 +143,7 @@ ms.locfileid: "97527287"
 
 9. Выйдите из Excel.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения о программировании надстроек VSTO см. в следующих статьях:
 
 - Для автоматизации ведущего приложения и выполнения других задач в проектах надстроек VSTO используйте класс `ThisAddIn` . Дополнительные сведения см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md).

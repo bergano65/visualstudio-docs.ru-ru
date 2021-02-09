@@ -17,15 +17,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], Outlook solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ded4652704a47252f0839aed151f0557ae5e6766
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 86fa849641894576f141ce9bc76eccaf72424d47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882444"
 ---
 # <a name="outlook-solutions"></a>решения Outlook
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания надстроек VSTO для Microsoft Office Outlook. Надстройки VSTO можно использовать для автоматизации Outlook, расширения его функциональных возможностей и настройки пользовательского интерфейса Outlook. Дополнительные сведения о надстройках VSTO см. в разделе [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
