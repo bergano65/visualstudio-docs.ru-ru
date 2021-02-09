@@ -21,15 +21,15 @@ helpviewer_keywords:
 - ClickOnce applications, security issues
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb13f8720bced2baa118dda1e55da3f52f1b9ee
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 55758f67c845cbf753d51ebfb94b87af6cf55cde
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349377"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877633"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Вопросы безопасности, контроля версий и манифестов в развертываниях ClickOnce
 
@@ -59,9 +59,9 @@ ms.locfileid: "94349377"
 
 Эта ошибка может возникать, только если вы редактируете [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифесты вручную; эта ошибка не возникает при создании развертывания с помощью Visual Studio.
 
-## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Указание отдельных сборок .NET Framework в манифесте
+## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Указание отдельных сборок платформа .NET Framework в манифесте
 
-Приложению не удастся загрузиться, если развертывание было вручную изменено [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] для ссылки на более старую версию .NET Framework сборки. Например, если вы добавили ссылку на сборку System.Net для версии .NET Framework до версии, указанной в манифесте, возникнет ошибка. В общем случае не следует пытаться указывать ссылки на отдельные .NET Framework сборки, так как версия .NET Framework, для которой выполняется приложение, указывается в качестве зависимости в манифесте приложения.
+Приложению не удастся загрузиться, если развертывание было вручную изменено [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] для ссылки на более старую версию платформа .NET Framework сборки. Например, если вы добавили ссылку на сборку System.Net для версии платформа .NET Framework до версии, указанной в манифесте, возникнет ошибка. В общем случае не следует пытаться указывать ссылки на отдельные платформа .NET Framework сборки, так как версия платформа .NET Framework, для которой выполняется приложение, указывается в качестве зависимости в манифесте приложения.
 
 ## <a name="manifest-parsing-issues"></a>Проблемы синтаксического анализа манифеста
 
@@ -96,7 +96,7 @@ ms.locfileid: "94349377"
 > [!NOTE]
 > Каждый раз при обновлении манифеста необходимо также подписать его снова.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Устранение неполадок при развертывании ClickOnce](../deployment/troubleshooting-clickonce-deployments.md) 
  [Безопасные приложения ClickOnce](../deployment/securing-clickonce-applications.md) 

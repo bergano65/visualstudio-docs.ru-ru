@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1069109cbda6b0385c9409a12f9f9c674ddec14c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877490"
 ---
 # <a name="create-an-options-page"></a>Создание страницы параметров
 
@@ -249,7 +249,7 @@ ms.locfileid: "94973708"
 
      Этот код вызывает метод <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> для создания или получения `OptionPageGrid` экземпляра. `OptionPageGrid` вызывает метод <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> для загрузки параметров, которые являются открытыми свойствами.
 
-2. Теперь добавьте пользовательский шаблон элемента команды с именем **митулсоптионскомманд** для вывода значения. В диалоговом окне **Добавление нового элемента** перейдите в раздел расширяемость **Visual C#**  >  **Extensibility** и выберите пункт **пользовательская команда**. В поле **имя** в нижней части окна измените имя файла команд на *MyToolsOptionsCommand.CS*.
+2. Теперь добавьте пользовательский шаблон элемента команды с именем **митулсоптионскомманд** для вывода значения. В диалоговом окне **Добавление нового элемента** перейдите в раздел расширяемость **Visual C#**  >   и выберите пункт **пользовательская команда**. В поле **имя** в нижней части окна измените имя файла команд на *MyToolsOptionsCommand.CS*.
 
 3. В файле *митулсоптионскомманд* замените текст `ShowMessageBox` метода команды следующим:
 
@@ -268,6 +268,6 @@ ms.locfileid: "94973708"
 
      В окне сообщения отображается текущее значение `OptionInteger` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Страницы параметров и параметров](../extensibility/internals/options-and-options-pages.md)

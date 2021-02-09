@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text searches, worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 01ce01e76aa56a834f4f63cd2bd0f6f16c4ab03a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3cf3894a2fb6d34678786686fe3c229d2e16a9a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877893"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Руководство. Программный поиск текста в диапазонах листа
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>Метод <xref:Microsoft.Office.Interop.Excel.Range> объекта позволяет искать текст в диапазоне. Этот текст также может быть любой строкой ошибок, которая может присутствовать в ячейке листа, например `#NULL!` или `#VALUE!` . Дополнительные сведения о строках ошибок см. в разделе [значения ошибок ячеек](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).

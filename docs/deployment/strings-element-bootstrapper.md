@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 09608f4b182d72b0b86b69df7df0b37d019ddf45
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a2c8cac705f4e6ae8d72f3a2e9bd5ec4c8ed68bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877477"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;&gt;Элемент Strings (начальный загрузчик)
 Определяет локализованные строки для названий продуктов, имен пакетов и сообщений об ошибках установки.
@@ -54,7 +54,7 @@ ms.locfileid: "94350482"
 |`Name`|Обязательный элемент. Имя строки.|
 
 ## <a name="example"></a>Пример
- В следующем примере кода задаются все строки на английском языке для установщика .NET Framework.
+ В следующем примере кода задаются все строки на английском языке для установщика платформа .NET Framework.
 
 ```xml
 <Strings>
@@ -75,5 +75,5 @@ ms.locfileid: "94350482"
 </Strings>
 ```
 
-## <a name="see-also"></a>См. также
-- [\<Package> дерев](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>См. также раздел
+- [Элемент \<Package>](../deployment/package-element-bootstrapper.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], text searches
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5ad77da419f70a8e513bf152ced41cccdd0474a8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f3ef1a32d145169db815915ee93d03893943e71f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524596"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877906"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Руководство. Программный поиск и замена текста в документах
   Объект <xref:Microsoft.Office.Interop.Word.Find> является членом объектов <xref:Microsoft.Office.Interop.Word.Selection> и <xref:Microsoft.Office.Interop.Word.Range>, каждый из которых можно использовать для поиска текста в документах Microsoft Office Word. Команда замены является расширением команды поиска.
