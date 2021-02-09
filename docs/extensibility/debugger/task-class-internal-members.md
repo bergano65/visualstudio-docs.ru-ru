@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f18de66a524fbc652b8153c5b34b4464cda60f5
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 10fbc46ad66ec6265bac0a3f2fc7c9b2994915d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996023"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883627"
 ---
 # <a name="task-class---internal-members"></a>Класс Task — внутренние элементы
 В этой статье описываются внутренние члены <xref:System.Threading.Tasks.Task?displayProperty=fullName> класса, помогающие реализовать пользовательский отладчик. Общие сведения об этом классе см <xref:System.Threading.Tasks.Task> . в справочной статье.
@@ -27,7 +27,7 @@ ms.locfileid: "96996023"
 
  **Сборка:** mscorlib (в *mscorlib.dll*)
 
- Так как вы не можете получить доступ к этим внутренним членам из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
+ Так как вы не можете получить доступ к этим внутренним членам из платформа .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -66,7 +66,7 @@ ms.locfileid: "96996023"
 |[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|Указывает, что выполнение задачи успешно завершено.|
 |[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|Указывает, что задача завершила выполнение своего делегата и неявно ожидает завершения присоединенных дочерних задач.|
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  Следующие внутренние методы полезны для обработчика отладчика, так как они помечают вход на <xref:System.Threading.Tasks.Task> выполнение кода:
 
 - `Execute`
@@ -83,4 +83,4 @@ ms.locfileid: "96996023"
 
 ## <a name="see-also"></a>См. также раздел
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
-- [Внутренние модули параллельного расширения для .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Внутренние модули параллельного расширения для платформа .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
