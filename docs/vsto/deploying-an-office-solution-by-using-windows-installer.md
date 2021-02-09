@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c001b3ce308c9e991cee747bdcab3ad646b226ab
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ef515ce323322dee667dab5690b85b29af97c07d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847121"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875423"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Развертывание решения Office с помощью установщик Windows
 
@@ -163,7 +163,7 @@ ms.locfileid: "96847121"
 
 - Среда выполнения средств Microsoft Visual Studio 2010 для Office.
 
-### <a name="add-the-net-framework-4-or-the-net-framework-45-as-a-prerequisite"></a>Добавьте .NET Framework 4 или .NET Framework 4,5 в качестве необходимого компонента.
+### <a name="add-the-net-framework-4-or-the-net-framework-45-as-a-prerequisite"></a>Добавьте платформа .NET Framework 4 или платформа .NET Framework 4,5 в качестве необходимого компонента.
 
 1. В **обозревателе решений** последовательно разверните узел проекта **OfficeAddInSetup** и узел **Specify Application Data** и выберите файл **Redistributables** , как показано на следующем рисунке.
 
@@ -311,15 +311,15 @@ ms.locfileid: "96847121"
 
 | Версия Office<br /><br /> | Путь конфигурации InstallShield<br /><br /> |
 |----------------------------| - |
-| 32-разрядная система<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64-разрядная система<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32-битная<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64-разрядная<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **Установщики для компьютера на основе версии Windows**
 
 | Версия Windows<br /><br /> | Путь конфигурации InstallShield<br /><br /> |
 |-----------------------------| - |
-| 32-разрядная система<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64-разрядная система<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32-битная<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64-разрядная<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
    > Установщик для 64-разрядной ОС Windows требует наличия двух путей реестра, поскольку пользователи могут запускать 32-и 64-разрядные версии Office на компьютере под управлением 64-bit Windows.
@@ -335,7 +335,7 @@ ms.locfileid: "96847121"
 
 7. Повторите эту процедуру, чтобы создать следующие параметры.
 
-|Тип значения<br /><br />|name<br /><br />|
+|Тип значения<br /><br />|Имя<br /><br />|
 |--------------|--------|
 |Строковый параметр<br /><br />|**FriendlyName**<br /><br />|
 |Параметр DWORD<br /><br />|**LoadBehavior**<br /><br />|
@@ -500,7 +500,7 @@ ms.locfileid: "96847121"
 
 8. В таблице **Конфигурации проектов** в столбце **Конфигурация** проекта **OfficeAddInSetup** и выберите **SingleImage**, а затем нажмите кнопку **Закрыть** .
 
-9. В строке меню выберите Сборка Сборка **Build**  >  **OfficeAddInSetup**.
+9. В строке меню выберите Сборка Сборка   >  **OfficeAddInSetup**.
 
    После завершения сборки можно указать файл *setup.exe* проекта **OfficeAddInSetup** в следующем расположении: <em>оффицеаддинсетуппрожектрут</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\**
 

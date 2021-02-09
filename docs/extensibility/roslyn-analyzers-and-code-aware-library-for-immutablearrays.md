@@ -8,21 +8,21 @@ ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04b65ae8c81f381ee996da5f20ec15588b9180de
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: c41b70cf9a4e4e5ae4b1d1ddd2d2a6f6876b9a96
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715773"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875527"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Анализаторы Roslyn и библиотека с поддержкой кода для Иммутаблеаррайс
 
 [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") помогает создавать библиотеки с поддержкой кода. Библиотека с поддержкой кода предоставляет функциональные возможности, которые можно использовать и средства (Roslyn Analyzer), которые помогут вам использовать библиотеку наиболее эффективно или избежать ошибок. В этом разделе показано, как создать реальный Roslyn анализатор для перехвата распространенных ошибок при использовании пакета [System. Collections. неизменяемый](https://www.nuget.org/packages/System.Collections.Immutable) пакет NuGet. В примере также показано, как предоставить исправление кода для проблемы с кодом, обнаруженной анализатором. Пользователи видят исправления кода в пользовательском интерфейсе лампочки Visual Studio и могут автоматически применить исправление для кода.
 
-## <a name="get-started"></a>Начало работы
+## <a name="get-started"></a>Приступая к работе
 
 Для сборки этого примера необходимо следующее:
 
