@@ -17,15 +17,15 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 17b310a3f992f80b04ad14bb6e038e05b009a4af
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 23424c1681a9967d9d50df47f9e67ec895a308a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970460"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881611"
 ---
 # <a name="sandboxed-solution-considerations"></a>Замечания об изолированных решениях
   *Изолированные решения* — это функция Microsoft SharePoint 2010, позволяющая пользователям семейства веб-сайтов отправлять собственные решения для работы с кодом. Распространенным изолированным решением являются пользователи, которые отправляют свои собственные веб-части.
@@ -139,6 +139,6 @@ ms.locfileid: "95970460"
 
 - Рабочие процессы с кодом
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Различия между песочницами и решениями фермы](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)
 - [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)

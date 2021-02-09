@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], Finder method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b7e2bb74278194878ed4496c12c918707cdc1e6e
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e4eade25f53bfd58f920a8d2a046d7d09ee98ac8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879687"
 ---
 # <a name="how-to-add-a-finder-method"></a>Как добавить метод Finder
   Чтобы служба подключения к бизнес-данным (BDC) отображала список сущностей в веб-части или списке, необходимо создать метод *поиска* . Метод поиска — это специальный метод, который возвращает коллекцию экземпляров сущности. Дополнительные сведения см. [в разделе Разработка модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).

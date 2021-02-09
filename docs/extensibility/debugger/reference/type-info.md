@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82796c1d82dc3ca77151abcec3e1dd6ce13ac59d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eeb4a306e7b357c59f8d75a91e2c21c50f1ed16b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713319"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880090"
 ---
 # <a name="type_info"></a>TYPE_INFO
 Эта структура задает различные виды информации о типе поля.
@@ -46,7 +46,7 @@ public struct TYPE_INFO {
 };
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
  `dwKind`\
  Значение из перечисления [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) , определяющее способ интерпретации объединения.
 

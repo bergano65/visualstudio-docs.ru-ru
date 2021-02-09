@@ -16,15 +16,15 @@ helpviewer_keywords:
 - keyboard shortcuts, Office development in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b3422cb53fb454b3585e0b8ba936ce692dfc68a4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 914b86e6e2b27d18e2089d44ce97810f82294c5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525315"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880350"
 ---
 # <a name="microsoft-office-excel-keyboard-settings-options-dialog-box"></a>Microsoft Office клавиатура Excel, параметры, диалоговое окно "Параметры"
   Microsoft Office Excel и Visual Studio работают с сочетаниями клавиш. Одна и та же комбинация клавиш может подключаться для различных команд в Excel и Visual Studio. Когда Excel открыт в проекте уровня документа в Visual Studio, только одно приложение за раз получает команды быстрого вызова. По умолчанию Visual Studio получает все сочетания клавиш, но Excel может получать их, если документ находится в фокусе, выбрав пункт **Динамическая схема клавиатуры**.
