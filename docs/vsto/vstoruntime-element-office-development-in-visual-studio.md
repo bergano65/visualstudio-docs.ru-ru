@@ -12,15 +12,15 @@ helpviewer_keywords:
 - vstoRuntime element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ffebff9e5cee8666d1b178fca09262ecd45c99b1
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c866db5f691db56e68f6980c9c07d21ee15c0ae5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584364"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921747"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент всторунтиме (разработка решений Office в Visual Studio)
   Элемент `vstoRuntime` пространства имен `vstav3` содержит версию среды выполнения Набора инструментов Visual Studio для Office, поддерживаемую конкретным решением Office.
@@ -39,7 +39,7 @@ ms.locfileid: "91584364"
 
  Элемент `vstoRuntime` имеет перечисленные ниже атрибуты.
 
-|attribute|Описание|
+|Атрибут|Описание|
 |---------------|-----------------|
 |`release`|Обязательный элемент. Выпускаемая версия среды выполнения Набора инструментов Visual Studio для Office.|
 |`version`|Обязательный элемент. Номер версии среды выполнения Набора инструментов Visual Studio для Office.|
@@ -57,7 +57,7 @@ ms.locfileid: "91584364"
     supportUrl="http://www.microsoft.com" />
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)
 - [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)

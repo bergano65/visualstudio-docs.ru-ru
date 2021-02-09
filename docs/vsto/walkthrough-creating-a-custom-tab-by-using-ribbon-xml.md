@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e81d20dc179df76b759223c1460ca13bfceb5706
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 569a3bea98095afebb243c521db02410879b0b59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524879"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920358"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Пошаговое руководство. Создание настраиваемой вкладки с помощью XML-ленты
   В этом пошаговом руководстве показано, как создать настраиваемую вкладку ленты с помощью элемента **Лента (XML)** .
@@ -145,7 +145,7 @@ ms.locfileid: "97524879"
 
      Таблица добавляется в документ в текущем положении курсора.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения о настройке пользовательского интерфейса Office см. в следующих разделах:
 
 - Настройка ленты для другого приложения Office. Дополнительные сведения о приложениях, поддерживающих настройку ленты, см. в разделе [Общие сведения о ленте](../vsto/ribbon-overview.md).

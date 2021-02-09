@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f854edc45724f0e1f3db5bda22cb6aa006d77e60
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: dcc1c74f7c4c787a3d6b70b6fd6c7d9d67ad37db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922669"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Практическое руководство. Открытие модели из файла в коде программы
 
@@ -24,16 +24,16 @@ ms.locfileid: "97363878"
 
 ## <a name="target-framework"></a>Целевая платформа
 
-Задайте в качестве **целевой платформы** проекта приложения .NET Framework 4 или более поздней версии.
+Задайте в качестве **целевой платформы** проекта приложения платформа .NET Framework 4 или более поздней версии.
 
 1. Откройте проект Visual Studio для приложения, в котором необходимо прочитать модель DSL.
 
 2. В **Обозреватель решений** щелкните правой кнопкой мыши проект и выберите пункт **свойства**.
 
-3. В окне Свойства проекта на вкладке **приложение** задайте для поля **целевая платформа** значение **.NET Framework 4** (или более поздней версии).
+3. В окне Свойства проекта на вкладке **приложение** задайте для поля **целевая платформа** значение **платформа .NET Framework 4** (или более поздней версии).
 
 > [!NOTE]
-> Целевая платформа не должна быть **.NET Framework 4 клиентского профиля**.
+> Целевая платформа не должна быть **платформа .NET Framework 4 клиентского профиля**.
 
 ## <a name="references"></a>Ссылки
 

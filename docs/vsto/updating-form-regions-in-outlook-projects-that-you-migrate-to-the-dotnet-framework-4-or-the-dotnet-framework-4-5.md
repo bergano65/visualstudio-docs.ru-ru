@@ -1,6 +1,6 @@
 ---
-title: Обновление областей формы Outlook при миграции на .NET Framework 4,5
-description: Необходимо изменить код, если Целевая платформа проекта надстройки VSTO для Outlook с областями формы изменилась на .NET Framework 4 или более поздней версии.
+title: Обновление областей формы Outlook при миграции на платформа .NET Framework 4,5
+description: Необходимо изменить код, если Целевая платформа проекта надстройки VSTO для Outlook с областями формы изменилась на платформа .NET Framework 4 или более поздней версии.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 507132a28526e4ce008957fa0b988c23c09d686f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 15b212a8b7dde85e66b18b78d356bdb31c62836a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526589"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921898"
 ---
-# <a name="update-outlook-form-regions-when-migrated-to-net-framework-45"></a>Обновление областей формы Outlook при миграции на .NET Framework 4,5
+# <a name="update-outlook-form-regions-when-migrated-to-net-framework-45"></a>Обновление областей формы Outlook при миграции на платформа .NET Framework 4,5
 
   Если требуемая версия .NET Framework для проекта надстройки VSTO для Outlook с областью формы изменяется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, необходимо внести некоторые изменения в создаваемый код области формы и в любой код, который создает экземпляры определенных классов области формы во время выполнения.
 
@@ -201,5 +201,5 @@ ms.locfileid: "97526589"
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionManifest%2A>|
 
 ## <a name="see-also"></a>См. также раздел
-- [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
+- [Перенос решений Office на платформа .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md)

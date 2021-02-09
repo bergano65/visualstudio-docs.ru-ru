@@ -15,15 +15,15 @@ helpviewer_keywords:
 - worksheets, adding controls at run time
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e9987e9427c0fe982cf3ddcb88ce8071caab04b0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: bc6c608d406cabe6962a47dae4c86fa7503a05a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522776"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921782"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Пошаговое руководство. Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO
   Вы можете добавить элементы управления на любой открытый лист с помощью надстройки VSTO для Excel. В этом пошаговом руководстве показано, как с помощью ленты предоставить пользователям возможность добавлять <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> и <xref:Microsoft.Office.Tools.Excel.ListObject> на лист. Дополнительные сведения см. [в разделе Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -75,21 +75,21 @@ ms.locfileid: "97522776"
 
     |Свойство|Значение|
     |--------------|-----------|
-    |**имя**;|**Button**|
+    |**Имя**|**Button**|
     |**Label**|**Button**|
 
 6. Добавьте второй флажок в **group1**, а затем измените следующие свойства.
 
     |Свойство|Значение|
     |--------------|-----------|
-    |**имя**;|**NamedRange**|
+    |**Имя**|**NamedRange**|
     |**Label**|**NamedRange**|
 
 7. Добавьте третий флажок в **group1**, а затем измените следующие свойства.
 
     |Свойство|Значение|
     |--------------|-----------|
-    |**имя**;|**ListObject**|
+    |**Имя**|**ListObject**|
     |**Label**|**ListObject**|
 
 ## <a name="add-controls-to-the-worksheet"></a>Добавление элементов управления на лист
@@ -184,7 +184,7 @@ ms.locfileid: "97522776"
 
      Элементы управления, добавленные в Sheet1, больше не отображаются.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения об элементах управления в проектах надстройки VSTO для Excel см. в следующем разделе:
 
 - Дополнительные сведения о сохранении элементов управления на листе см. в разделе примеры динамических элементов управления надстройки VSTO для Excel в разделе [образцы разработки Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).

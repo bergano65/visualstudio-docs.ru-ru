@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 21fd7f17f7a990f95ce5c8b781e85807a10608c4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: dc0b4548ffa4e5efa75734b5528a7021cf122bfa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846770"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921917"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Как изменить позицию вкладки на ленте
   Порядок пользовательских вкладок на ленте можно изменить с помощью **редактора коллекции вкладок**. Вы можете располагать пользовательские вкладки до или после встроенной вкладки на ленте. Встроенная вкладка — это вкладка, которая уже находится на ленте Microsoft Office приложении. Например, вкладка « **данные** » является встроенной вкладкой Excel.

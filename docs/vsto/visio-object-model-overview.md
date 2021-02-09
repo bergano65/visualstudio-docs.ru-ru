@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Visio object model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9278cede2dc7f105b2741d5d63b01b4cd966c790
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8d7a83b5a900defb63ceffe4f63d57e2b200c47b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528374"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921770"
 ---
 # <a name="visio-object-model-overview"></a>Общие сведения об объектной модели Visio
   Для разработки решений Office для Microsoft Office Visio вы можете взаимодействовать с объектной моделью Visio. Эта объектная модель состоит из классов и интерфейсов, которые предоставляются в основной сборке взаимодействия для Visio и определены в пространстве имен `Microsoft.Office.Interop.Visio`.

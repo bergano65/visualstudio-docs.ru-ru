@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 58aa236a-5ab8-4695-b303-89dffdbcd946
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3b0c8c16b10a4cf2268161d8a2db96c10303b1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b9826681d2d322b1b240abb4062de007b564619
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738645"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921273"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>Метод GetTaskSchedulersForDebugger
 Извлекает массив всех <xref:System.Threading.Tasks.TaskScheduler> объектов, которые активны в данный момент.
@@ -24,7 +24,7 @@ ms.locfileid: "80738645"
 
  **Сборка:** mscorlib (в *mscorlib.dll*)
 
- Так как вы не можете получить доступ к этому внутреннему элементу из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
+ Так как вы не можете получить доступ к этому внутреннему элементу из платформа .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
 
 ## <a name="syntax"></a>Синтаксис
 

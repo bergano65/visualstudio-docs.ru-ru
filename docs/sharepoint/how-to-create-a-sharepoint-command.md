@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 41e4ab0fd70f4993d148cd5c67cb816bdc92e77a
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 51b80124f7cf550843ad346e9d1e1c0b21ccd0f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850706"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923354"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Как создать команду SharePoint
   Если вы хотите использовать объектную модель сервера в расширении инструментов SharePoint, необходимо создать пользовательскую *команду SharePoint* для вызова API. Команда SharePoint определяется в сборке, которая может напрямую вызывать серверную объектную модель.
@@ -30,12 +30,12 @@ ms.locfileid: "94850706"
 
 1. Создайте проект библиотеки классов со следующей конфигурацией:
 
-    - Предназначен для .NET Framework 3,5. Дополнительные сведения о выборе требуемой версии .NET Framework см. в разделе [как выбрать целевую версию .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
+    - Предназначен для платформа .NET Framework 3,5. Дополнительные сведения о выборе требуемой версии .NET Framework см. в разделе [как выбрать целевую версию платформа .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
     - Нацелен на платформу AnyCPU или x64. По умолчанию целевой платформой для проектов библиотек классов является AnyCPU. Дополнительные сведения о выборе целевой платформы см. в разделе [руководство. Настройка проектов для целевых платформ](../ide/how-to-configure-projects-to-target-platforms.md).
 
     > [!NOTE]
-    > Нельзя реализовать команду SharePoint в том же проекте, который определяет расширение "инструменты SharePoint", так как команды SharePoint предназначены для расширений .NET Framework 3,5 и инструментов SharePoint, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . Необходимо определить все команды SharePoint, используемые вашим расширением в отдельном проекте. Дополнительные сведения см. [в статье Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+    > Нельзя реализовать команду SharePoint в том же проекте, который определяет расширение "инструменты SharePoint", так как команды SharePoint предназначены для расширений платформа .NET Framework 3,5 и инструментов SharePoint, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . Необходимо определить все команды SharePoint, используемые вашим расширением в отдельном проекте. Дополнительные сведения см. [в статье Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 2. Добавьте ссылки на следующие сборки:
 
@@ -79,7 +79,7 @@ ms.locfileid: "94850706"
 ## <a name="deploying-the-command"></a>Развертывание команды
  Чтобы развернуть команду, включите сборку команды в тот же [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (*VSIX*) с сборкой расширения, которая использует команду. Кроме того, необходимо добавить запись для сборки команды в файл Extension. vsixmanifest. Дополнительные сведения см. [в статье Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 - [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Инструкции: выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [Пошаговое руководство. расширение обозреватель сервера для показа веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

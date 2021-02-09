@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IManagedAddin interface
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89e705296c6051b8bdec823e523f0a386ff7ff76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541132"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920433"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin - интерфейс
   Реализуйте интерфейс IManagedAddin для создания компонента, который загружает управляемые надстройки VSTO. Этот интерфейс был добавлен в систему Microsoft Office 2007.
@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. Приложение обнаруживает надстройки VSTO путем поиска записей в следующем разделе реестра:
 
-    **HKEY_CURRENT_USER \Софтваре\микрософт\оффице \\ *\<application name>* \аддинс\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<application name>* \аддинс\\**
 
     Каждая запись в этом разделе реестра представляет собой уникальный идентификатор надстройки VSTO. Как правило, это имя сборки надстройки VSTO.
 
 2. Приложение ищет запись `Manifest` под записью для каждой надстройки VSTO.
 
-    Управляемые надстройки VSTO могут хранить полный путь манифеста в `Manifest` записи в разделе **HKEY_CURRENT_USER \софтваре\микрософт\оффице \\ _\<application name>_ \\ _\<add-in ID>_ \аддинс**. Манифест представляет собой файл (как правило, XML-файл), предоставляющий сведения, используемые для загрузки надстройки VSTO.
+    Управляемые надстройки VSTO могут хранить полный путь манифеста в `Manifest` записи в разделе **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \аддинс \\ _\<add-in ID>_**. Манифест представляет собой файл (как правило, XML-файл), предоставляющий сведения, используемые для загрузки надстройки VSTO.
 
 3. Если приложение находит запись `Manifest` , приложение пытается загрузить компонент загрузчика управляемой надстройки VSTO. Приложение делает это, пытаясь создать COM-объект, реализующий интерфейс IManagedAddin.
 

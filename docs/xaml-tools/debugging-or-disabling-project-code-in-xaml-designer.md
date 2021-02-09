@@ -7,13 +7,13 @@ ms.topic: how-to
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 8a5db556bfc9106bb18a6ef9d4d5e3e1aa893cc3
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: e03c33de81727c333db8f662232e669e37e78f59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796749"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921763"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Отладка или отключение кода проекта в конструкторе XAML
 
@@ -55,7 +55,7 @@ ms.locfileid: "92796749"
 
 5. Установите точку останова в коде проекта.
 
-6. В новом экземпляре Visual Studio в строке меню выберите **Отладка**  >  **присоединить к процессу** .
+6. В новом экземпляре Visual Studio в строке меню выберите **Отладка**  >  **присоединить к процессу**.
 
 7. В диалоговом окне **Присоединение к процессу** выберите процесс **XDesProc.exe** в списке **Доступные процессы** и нажмите кнопку **Присоединиться** .
 
@@ -63,7 +63,7 @@ ms.locfileid: "92796749"
 
      Это процесс для конструктора XAML в первом экземпляре Visual Studio.
 
-8. В первом экземпляре Visual Studio в строке меню выберите **Отладка**  >  **начать отладку** .
+8. В первом экземпляре Visual Studio в строке меню выберите **Отладка**  >  **начать отладку**.
 
      Теперь можно выполнить пошаговую отладку кода, работающего в конструкторе.
 
@@ -98,6 +98,6 @@ ms.locfileid: "92796749"
 
 Если выбрать настройку **Only Display Platform Controls** (Отображать только элементы управления платформы), то набор элементов управления из пакетов SDK, пользовательских и других элементов управления будет отображаться не полностью. Вместо этого они будут заменены резервными элементами управления для демонстрации размера и положения соответствующих элементов.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Проектирование XAML в Visual Studio и Blend для Visual Studio](designing-xaml-in-visual-studio.md)

@@ -8,15 +8,15 @@ dev_langs:
 helpviewer_keywords: ''
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1307d720e005855770ee68659374dbbfae247d65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 605c1dc7a7b0d24ba082767930fd53148cccbd95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920328"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   Вызывается при загрузке управляемой надстройки VSTO.
@@ -41,10 +41,10 @@ HRESULT Load([in] BSTR bstrManifestURL,
 ## <a name="remarks"></a>Remarks
  Манифест представляет собой файл (как правило, XML-файл), предоставляющий сведения, используемые для загрузки надстройки VSTO. Например, манифест может указывать расположение сборки надстройки VSTO и класс точки входа для создания экземпляра при загрузке надстройки VSTO.
 
- Параметр *бстрманифестурл* содержит значение `Manifest` записи в разделе реестра **HKEY_CURRENT_USER \софтваре\микрософт\оффице \\ _\<application name>_ \\ _\<add-in ID>_ \аддинс** для надстройки VSTO. Дополнительные сведения см. в разделе [интерфейс IManagedAddin](../vsto/imanagedaddin-interface.md).
+ Параметр *бстрманифестурл* содержит значение `Manifest` записи в разделе реестра **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \аддинс \\ _\<add-in ID>_** для надстройки VSTO. Дополнительные сведения см. в разделе [интерфейс IManagedAddin](../vsto/imanagedaddin-interface.md).
 
  Реализуйте метод [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) для выполнения таких задач, как настройка политики безопасности и домена приложения для загружаемой надстройки VSTO.
 
 ## <a name="see-also"></a>См. также раздел
-- [Интерфейс IManagedAddin](../vsto/imanagedaddin-interface.md)
+- [IManagedAddin - интерфейс](../vsto/imanagedaddin-interface.md)
 - [IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)

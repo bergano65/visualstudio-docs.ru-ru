@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e73d98e9fff713258f4797577fd8402932fe266
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 041e499f4c670b5b31530c7fc0ecb74358a8087f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559640"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921497"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>Вычисление выражений в режиме приостановки выполнения
 В следующем разделе описывается процесс, выполняемый, когда отладчик находится в режиме приостановки выполнения и должен выполняться вычисление выражения.
@@ -41,5 +41,5 @@ ms.locfileid: "96559640"
 
     - При использовании `IDebugExpression2::EvaluateAsync` данный интерфейс обратного вызова сообщает о текущем процессе вычисления. После завершения оценки Евалуатеасинк отправляет интерфейс [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) через обратный вызов. При использовании этого интерфейса событий итоговое значение выдается с помощью параметра [result](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [События отладчика Call](../../extensibility/debugger/calling-debugger-events.md)

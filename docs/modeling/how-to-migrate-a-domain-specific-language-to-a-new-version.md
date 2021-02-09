@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: dacb13ef14768f4f59a414f6159bbea8d24c4de8
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: bbefb1cd5ae546c5454660b6782f9c76f35a63f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "92298415"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922693"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Практическое руководство. Перенос доменного языка в новую версию
 Проекты, которые определяют и используют доменный язык, можно перенести [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] из версии [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , которая была распространена с помощью [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] .
@@ -23,7 +23,7 @@ ms.locfileid: "92298415"
 
  Средство миграции необходимо запускать явным образом: оно не запускается автоматически при открытии решения в Visual Studio. Этот инструмент и подробные рекомендации можно найти по следующим адресам:
 
- **% Program Files%\Microsoft SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exeVisual Studio 2010 **
+ **% Program Files%\Microsoft SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exeVisual Studio 2010**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>Перед миграцией проектов DSL
  Средство миграции изменяет файлы проекта Visual Studio (**. csproj**) и файлы решения (**SLN**).

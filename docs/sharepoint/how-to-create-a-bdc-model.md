@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], creating a model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8f95533a5ad3955ee00829194bc4da1498baace0
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 77ffd8b6cd913b79249862a875b6267848a131af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850680"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923358"
 ---
 # <a name="how-to-create-a-bdc-model"></a>Практическое руководство. Создание модели подключения к бизнес-данным
   Вы можете создать модель подключения к бизнес-данным, используя шаблон для этого типа элементов, а затем добавив модель в любой проект SharePoint. Дополнительные сведения см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md). Дополнительные сведения о проектировании модели см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -49,7 +49,7 @@ ms.locfileid: "94850680"
 
      Создается пустой проект SharePoint.
 
-5. В строке меню выберите **проект**  >  **Добавить новый элемент**.
+5. В строке меню выберите **Проект** > **Добавить новый элемент**.
 
 6. В диалоговом окне **Добавление нового элемента** выберите узел **Office/SharePoint** .
 
@@ -59,7 +59,7 @@ ms.locfileid: "94850680"
 
      В проект добавляется элемент **модели подключения к бизнес-данным** . По умолчанию модель отображается в конструкторе BDC. Дополнительные сведения см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 - [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Практическое руководство. Добавление существующего файла модели подключения к бизнес-данным в проект SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [Практическое руководство. Использование файла ресурсов для задания локализованных имен, свойств и разрешений](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
