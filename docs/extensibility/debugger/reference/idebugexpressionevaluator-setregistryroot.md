@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 790886d8-1975-4d3c-9a75-cd86c1faf4ca
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 11e7cd69ed3f1e1b23cc0f2f03f3fd2cf912d308
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5151d337618409970b61e515cd4428467a7fe25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729413"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930347"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
 Этот метод задает корень реестра. Используется для параллельной отладки.
@@ -28,7 +28,7 @@ ms.locfileid: "80729413"
 ## <a name="syntax"></a>Синтаксис
 
 ```cpp
-HRESULT SetRegistryRoot ( 
+HRESULT SetRegistryRoot ( 
    LPCOLESTR ustrRegistryRoot
 );
 ```
@@ -47,7 +47,7 @@ int SetRegistryRoot(
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Remarks
- Указанный корень реестра обычно задается при первом создании экземпляра средства оценки выражений и указывает на раздел реестра для конкретной версии Visual Studio (HKEY_LOCAL_MACHINE \Софтваре\микрософт\висуалстудио \\ *X. y*, где *X. y* — номер версии).
+ Указанный корень реестра обычно задается при первом создании экземпляра средства оценки выражений и указывает на раздел реестра для конкретной версии Visual Studio (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *X. y*, где *X. y* — номер версии).
 
 ## <a name="see-also"></a>См. также раздел
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)
