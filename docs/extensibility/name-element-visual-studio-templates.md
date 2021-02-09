@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2aa14005a202b7868f61cd41ffb6ac9e2f872b68
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 109832586483bacb753f96b9a27c0f756ab7a6d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671185"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886643"
 ---
 # <a name="name-element-visual-studio-templates"></a>Элемент Name (шаблоны Visual Studio)
 Задает имя шаблона в том виде, в каком оно отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** .
@@ -62,7 +62,7 @@ ms.locfileid: "94671185"
 
  Текстом передается имя шаблона.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  `Name` — обязательный дочерний элемент элемента `TemplateData`.
 
 ## <a name="example"></a>Пример

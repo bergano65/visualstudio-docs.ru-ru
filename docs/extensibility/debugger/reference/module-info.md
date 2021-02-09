@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a0fba00357fcb328000b904d3977bf03e5bc3885
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714315"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888177"
 ---
 # <a name="module_info"></a>MODULE_INFO
 Описывает конкретный модуль (DLL, EXE или сборку).
@@ -28,7 +28,7 @@ ms.locfileid: "80714315"
 ## <a name="syntax"></a>Синтаксис
 
 ```cpp
-typedef struct tagMODULE_INFO { 
+typedef struct tagMODULE_INFO { 
    MODULE_INFO_FIELDS dwValidFields;
    BSTR               m_bstrName;
    BSTR               m_bstrUrl;
@@ -45,7 +45,7 @@ typedef struct tagMODULE_INFO { 
 ```
 
 ```csharp
-public struct MODULE_INFO { 
+public struct MODULE_INFO { 
    public uint     dwValidFields;
    public string   m_bstrName;
    public string   m_bstrUrl;
@@ -61,7 +61,7 @@ public struct MODULE_INFO { 
 };
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
  `dwValidFields`\
  Сочетание флагов из перечисления [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) , которое указывает, какие поля заполняются.
 

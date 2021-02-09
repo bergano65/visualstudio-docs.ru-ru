@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59afdda5a9af3a779b65063c3c764ef4f284a265
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 90670188e3ce1aa621e53c69bad6f795ff30fd8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974506"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887436"
 ---
 # <a name="commands-element"></a>Элемент Commands
 Представляет коллекцию команд на панели инструментов VSPackage. Коллекция может содержать до пяти подразделов следующим образом: меню, группы, кнопки, КомБОС и точечные рисунки.
@@ -46,7 +46,7 @@ ms.locfileid: "94974506"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|пакет|GUID, определяющий пакет VSPackage, предоставляющий команды.<br /><br /> Например, Package = "guidVsPackage1Pkg".|
+|Пакет|GUID, определяющий пакет VSPackage, предоставляющий команды.<br /><br /> Например, Package = "guidVsPackage1Pkg".|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
@@ -90,6 +90,6 @@ ms.locfileid: "94974506"
 <Commands>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Как пакеты VSPackage добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f32f5857-7ef8-45fd-8b5a-7f644eb98b11
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f79ee4c717774ef61fc0aa07fe7ecf2c5c216c04
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 604f86311e2689d4301fec8a186e2a102d633062
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888437"
 ---
 # <a name="asynctaskmethodbuilder-structure---internal-members"></a>Структура AsyncTaskMethodBuilder — внутренние элементы
 В этом разделе описываются внутренние члены <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> класса. Общие сведения об этом классе см <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> . в разделе справки.
@@ -27,7 +27,7 @@ ms.locfileid: "90036890"
 
  **Сборка:** mscorlib (в mscorlib.dll)
 
- Так как вы не можете получить доступ к этим внутренним членам из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
+ Так как вы не можете получить доступ к этим внутренним членам из платформа .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,4 +46,4 @@ ms.locfileid: "90036890"
 
 ## <a name="see-also"></a>См. также раздел
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>
-- [Внутренние модули параллельного расширения для .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Внутренние модули параллельного расширения для платформа .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

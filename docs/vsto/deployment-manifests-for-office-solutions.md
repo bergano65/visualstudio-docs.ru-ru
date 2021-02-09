@@ -14,22 +14,22 @@ helpviewer_keywords:
 - Office development in Visual Studio, deployment manifests
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 31909d2a6765c357635cd0a8c039132f14b5967d
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0a6c8cf672c4799a53c9df947f15bca38cb02589
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845509"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887605"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Манифесты развертывания для решений Office
   Манифест развертывания — это XML-файл, описывающий параметры развертывания решения Office и определяющий текущую версию приложения.
 
  Разработка решений Office в Visual Studio использует [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] схему манифеста развертывания, определенную в справочнике по [манифесту развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md) .
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  Файл манифеста развертывания для решений Office определяет текущую версию и другие параметры развертывания. Он ссылается на манифест приложения и описывает текущую версию решения и все файлы в решении.
 
 ## <a name="file-name-syntax"></a>Синтаксис имени файла

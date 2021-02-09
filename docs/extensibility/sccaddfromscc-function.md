@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd32e31330cdce958e463a40a4d92f88b09afb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e35ae460d6ceb505bc7ad64a0e522bf2841260f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701249"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886617"
 ---
 # <a name="sccaddfromscc-function"></a>Функция Сккаддфромскк
 Эта функция позволяет пользователю просматривать файлы, уже находящиеся в системе управления версиями, и затем делать эти файлы частью текущего проекта. Например, эта функция может получить общий файл заголовка в текущем проекте без копирования файла. Возвращаемый массив файлов `lplpFileNames` содержит список файлов, которые пользователь хочет добавить в проект интегрированной среды разработки.

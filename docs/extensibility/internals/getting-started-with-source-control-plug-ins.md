@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: 46ac1f9f-4ecc-4a72-88d3-4c7e1647e1cb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1524e4c4f08b272fd17973597d558efdabec41af
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: eefd2b20afe94a19b21f9b8361123c193f3ec59f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886942"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>Начало работы с подключаемыми модулями системы управления версиями
 Чтобы создать подключаемый модуль системы управления версиями, необходимо создать библиотеку DLL, которая реализует функции, определенные в интерфейсе API подключаемого модуля системы управления версиями, а затем зарегистрировать библиотеку DLL с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] целью сделать ее доступной для использования в системе управления версиями исходного кода.
 
  Для подключаемых модулей системы управления версиями доступны три версии API подключаемого модуля системы управления версиями (версии 1,1, 1,2 и 1,3). API подключаемого модуля системы управления версиями, описанный здесь, — версия 1,3. Он был разработан для полной совместимости с подключаемыми модулями системы управления версиями, поддерживающими версии 1,1 и 1,2. В разделе новые возможности [API подключаемого модуля системы управления версиями 1,3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) описаны новые функции, поддерживаемые в последней версии API подключаемого модуля системы управления версиями.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 - [Как установить подключаемый модуль системы управления версиями](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 
  Описывает, как создать записи реестра, необходимые для подключения к библиотеке DLL системы управления версиями.

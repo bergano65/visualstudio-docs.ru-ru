@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 721f45ebe83e0edb7bf7a182ea71b2181593ad6e
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b9a777bf11f388873978f450184f1455236e9ff9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479542"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887088"
 ---
 # <a name="extend-properties"></a>Расширение свойств
 Окно [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **свойства** — это обозреватель универсальных свойств для компонентов COM и com+, поддерживающий все [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] продукты. Окно **Свойства** работает со `ITypeInfo` сведениями о типе и метаданными com+ для перечисления свойств времени разработки для выбранного объекта в любом другом окне интегрированной среды разработки (IDE).
@@ -28,7 +28,7 @@ ms.locfileid: "96479542"
 
  В этом разделе содержатся подробные сведения, относящиеся к отдельным областям окна **свойств** и интерфейсам, которые необходимо реализовать, и вызвать для заполнения окна.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 - [Обзор окно свойств](../../extensibility/internals/properties-window-overview.md)
 
  Описывает назначение окна « **Свойства** » относительно окна инструментов и окна документа.
