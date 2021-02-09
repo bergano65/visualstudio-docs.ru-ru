@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8c9c5ea1-2031-472e-bc8f-30e22e754566
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 083973c82a5f8b3c24480e0964f67faca1977a71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4ba80eee5ec0d6537243e39892a66b2197ae69a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718715"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893845"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
 Возвращает программу, в которой выполняется поток.
@@ -28,13 +28,13 @@ ms.locfileid: "80718715"
 ## <a name="syntax"></a>Синтаксис
 
 ```cpp
-HRESULT GetProgram ( 
+HRESULT GetProgram ( 
    IDebugProgram2** ppProgram
 );
 ```
 
 ```csharp
-int GetProgram ( 
+int GetProgram ( 
    out IDebugProgram2 ppProgram
 );
 ```

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 85e73b73-29dc-464f-8734-ed308742c435
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d04b8329d425df53c5414f593393e86a3be73c47
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 80a944c077d520d6d9ecac9557179311ecf20281
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974635"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893078"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Рекомендации по реализации подключаемого модуля системы управления версиями
 Следующие технические сведения помогут надежно реализовать подключаемый модуль системы управления версиями в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -59,6 +59,6 @@ ms.locfileid: "94974635"
 
  Большинство параметров, настраиваемых пользователем, не определяются таким образом, так как они сильно отличаются от подключаемых модулей системы управления версиями. Поэтому рекомендуемый механизм является **дополнительной** кнопкой. Например, в диалоговом окне **Get** в интегрированной среде разработки отображаются только сведения, которые он понимает, но также отображается кнопка **Дополнительно** , если у подключаемого модуля есть параметры для этой команды. Когда пользователь нажимает кнопку " **Дополнительно** ", интегрированная среда разработки вызывает [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) , чтобы включить подключаемый модуль системы управления версиями для запроса сведений о пользователе, таких как битфлагс или Дата и время. Подключаемый модуль возвращает эти сведения в структуре, которая передается обратно во время выполнения `SccGet` команды.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)
 - [Создание подключаемого модуля системы управления версиями](../extensibility/internals/creating-a-source-control-plug-in.md)

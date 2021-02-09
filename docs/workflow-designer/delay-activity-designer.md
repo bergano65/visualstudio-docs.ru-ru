@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e6bbadcbabbe1dbd274c48f2325217c17d3933d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 1b661dddf6c07bca34e5ea044fd1338da68f4e19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438091"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894313"
 ---
 # <a name="delay-activity-designer"></a>Конструктор действия Delay
 
@@ -29,7 +29,7 @@ ms.locfileid: "94438091"
 
 ### <a name="use-the-delay-activity-designer"></a>Использование конструктора действия "задержка"
 
-Конструктор действия **delay** можно найти в категории **примитивы** **панели элементов** , щелкнув вкладку **область элементов** конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
+Конструктор действия **delay** можно найти в категории **примитивы** **панели элементов**, щелкнув вкладку **область элементов** конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
 
 Конструктор действий с **задержкой** можно перетащить из **панели элементов** в конструктор рабочих процессов область, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence> . При удалении конструктора действий создается <xref:System.Activities.Statements.Delay> действие с заданной по умолчанию <xref:System.Activities.Activity.DisplayName%2A> задержкой. <xref:System.Activities.Activity.DisplayName%2A>Можно изменить в заголовке конструктора действий **delay** или в поле **DisplayName** сетки свойств.
 
@@ -39,8 +39,8 @@ ms.locfileid: "94438091"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Понятное имя действия <xref:System.Activities.Statements.Delay>. Значение по умолчанию - Delay. Хотя это <xref:System.Activities.Activity.DisplayName%2A> значение не является обязательным, рекомендуется использовать его.|
-|<xref:System.Activities.Statements.Delay.Duration%2A>|Верно|Период времени, на который задерживается выполнение рабочего процесса. Это свойство задается в таблице свойств. Введите литерал <xref:System.TimeSpan> в формате 00:00:00 или выражение Visual Basic для указания периода времени.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.Delay>. Значение по умолчанию - Delay. Хотя это <xref:System.Activities.Activity.DisplayName%2A> значение не является обязательным, рекомендуется использовать его.|
+|<xref:System.Activities.Statements.Delay.Duration%2A>|True|Период времени, на который задерживается выполнение рабочего процесса. Это свойство задается в таблице свойств. Введите литерал <xref:System.TimeSpan> в формате 00:00:00 или выражение Visual Basic для указания периода времени.|
 
 ## <a name="see-also"></a>См. также раздел
 

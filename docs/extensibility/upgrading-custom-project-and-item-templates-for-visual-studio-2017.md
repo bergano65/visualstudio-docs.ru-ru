@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 089baadcb60afcc8b32e287095b10ab30196ce17
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 84e9b08350cf5977269bfbcf28ca5335e17f024d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715981"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893409"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Обновление пользовательского шаблоны проектов и элементов для Visual Studio 2017
 
@@ -35,7 +35,7 @@ ms.locfileid: "97715981"
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Обновление расширения VSIX с помощью шаблонов проектов или элементов
 
-1. Откройте решение в Visual Studio 2017. Вам будет предложено обновить код. Нажмите кнопку **ОК**.
+1. Откройте решение в Visual Studio 2017. Вам будет предложено обновить код. Нажмите кнопку **OK**.
 
 2. После завершения обновления может потребоваться изменить версию целевого объекта установки. В проекте VSIX откройте файл Source. extension. vsixmanifest и выберите вкладку **установки конечных объектов** . Если поле **диапазона версий** имеет значение **[14,0]**, щелкните **изменить** и измените его, включив Visual Studio 2017. Например, можно задать для него значение **[с диагональю 15,0]** , чтобы установить расширение для visual Studio 2015 или visual Studio 2017 либо до **[15,0]** , чтобы установить его только в Visual Studio 2017.
 
