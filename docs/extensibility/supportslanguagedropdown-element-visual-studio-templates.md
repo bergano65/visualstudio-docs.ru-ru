@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 641197d5-f724-4c06-bc47-2e22dad3fbfb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b02e4b88b22257e7187e334f8c1064b68c6ef49d
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 79141361253df4e1ccaf29ff15332d534ceade84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898093"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>Элемент SupportsLanguageDropDown (шаблоны Visual Studio)
 
@@ -61,9 +61,9 @@ ms.locfileid: "94901730"
 
  Текст должен иметь значение `true` или `false` , что указывает, доступен ли параметр **язык** в диалоговом окне **Добавление нового элемента** .
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
- Параметр `SupportsLanguageDropDown` является необязательным элементом. Значение по умолчанию — `false`.
+ Параметр `SupportsLanguageDropDown` является необязательным элементом. Значение по умолчанию — `false`.
 
  `SupportsLanguageDropDown`Элемент доступен только для шаблонов веб-элементов.
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a481e731f01230139ec4342231479606c49bd11
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: e167a974dde1b98d43f7515581658f1ea549df9d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877420"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896829"
 ---
 # <a name="project-modeling"></a>Моделирование проекта
 Следующим шагом в предоставлении автоматизации для проекта является реализация стандартных объектов проекта: <xref:EnvDTE.Projects> коллекций и, `ProjectItems` `Project` объектов и, <xref:EnvDTE.ProjectItem> а также оставшихся объектов, уникальных для вашей реализации. Эти стандартные объекты определены в файле Дтеинтернал. h. Реализация стандартных объектов представлена в примере Бскпрж. Эти классы можно использовать в качестве моделей для создания собственных объектов стандартных проектов, которые будут изолированы параллельно с объектами проекта из других типов проектов.

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7c78351ccd03247d458ca403c81d379ec18d29
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a7e3d7ba31778c5d5a94f77b52f13bfe8fff8473
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897855"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Работа с моделями и изменение их в коде программы
 
@@ -131,7 +131,7 @@ ms.locfileid: "97362214"
 - ElementLink — все отношения — Елементлинкс
 
 ## <a name="perform-changes-inside-a-transaction"></a><a name="transaction"></a> Выполнение изменений внутри транзакции
- Каждый раз, когда код программы изменяется в хранилище, он должен сделать это внутри транзакции. Это относится ко всем элементам модели, связям, фигурам, схемам и их свойствам. Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.Modeling.Transaction>.
+ Каждый раз, когда код программы изменяется в хранилище, он должен сделать это внутри транзакции. Это относится ко всем элементам модели, связям, фигурам, схемам и их свойствам. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.Modeling.Transaction>.
 
  Наиболее удобный способ управления транзакцией заключается в использовании оператора, `using` заключенного в `try...catch` инструкцию:
 
@@ -329,7 +329,7 @@ using (Transaction t = targetDiagram.Store.
 |-|-|
 |Доменный класс|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|
 |Доменная связь|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|
-|Фигурная|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
+|Фигура|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
 |Соединитель|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|
 |Схема|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|
 

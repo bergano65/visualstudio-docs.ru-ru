@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c51885e593fabffab80d11c930100f3cc719dff8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 14fc4a44a85171d209ec227f20e47775b34be22d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877758"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898260"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Цветовая маркировка синтаксиса в языковой службе прежних версий
 Раскраска синтаксиса — это функция, которая заставляет различные элементы языка программирования отображаться в исходном файле в различных цветах и стилях. Для поддержки этой функции необходимо предоставить средство синтаксического анализа или сканер, который может обозначать типы лексических элементов или маркеров в файле. Многие языки различают ключевые слова, разделители (например, круглые или фигурные скобки) и комментарии, размечая их различными способами.

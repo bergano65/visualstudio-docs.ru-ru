@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cabf5c9452cf0a6809673d488f9cf01252d7b0ef
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: db0c417c40a2f2d02adef9c7a9e7274f95592015
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480451"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898274"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Идентификаторы GUID и идентификаторы команд Visual Studio
 Идентификаторы GUID и ИДЕНТИФИКАТОРы команд, включенных в интегрированную среду разработки (IDE) Visual Studio, определяются в vsct-файлах, которые устанавливаются в составе пакета SDK для Visual Studio. Дополнительные сведения см. в разделе [команды, меню и группы, определяемые интегрированной средой разработки](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).

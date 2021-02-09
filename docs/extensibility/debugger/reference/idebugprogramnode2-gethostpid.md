@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e65b4b15-46d8-4ca7-9456-2b4c078f7cf9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1257bda23bcdfaceb58d1d087ae2848be8f969b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5dc11dbbe8845bac125942bc3825ecdf5dacdb00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898604"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 Возвращает идентификатор системного процесса для процесса, в котором размещена программа.
@@ -28,13 +28,13 @@ ms.locfileid: "80722032"
 ## <a name="syntax"></a>Синтаксис
 
 ```cpp
-HRESULT GetHostPid ( 
+HRESULT GetHostPid ( 
    AD_PROCESS_ID * pdwHostPid
 );
 ```
 
 ```csharp
-int GetHostPid ( 
+int GetHostPid ( 
    out AD_PROCESS_ID pdwHostPid
 );
 ```
