@@ -1,5 +1,5 @@
 ---
-title: Поле AsyncTaskMethodBuilder. m_builder | Документация Майкрософт
+title: AsyncTaskMethodBuilder.m_builder поле | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,24 +7,24 @@ helpviewer_keywords:
 ms.assetid: bfaf25a2-0f08-413f-b474-9ce0d97c0eeb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dd8bd1215700b8387f420e3aaec7e2ce73d9fec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 911b094c991e041a3f6a1a466d587294c6a09b4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739402"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862192"
 ---
-# <a name="asynctaskmethodbuilderm_builder-field"></a>Поле AsyncTaskMethodBuilder. m_builder
+# <a name="asynctaskmethodbuilderm_builder-field"></a>AsyncTaskMethodBuilder.m_builder поле
 Представляет объект универсального конструктора, для которого этот неуниверсальный экземпляр не является делегатом.
 
  **Пространство имен:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
  **Сборка:** mscorlib (в mscorlib.dll)
 
- Так как вы не можете получить доступ к этому внутреннему элементу из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
+ Так как вы не можете получить доступ к этому внутреннему элементу из платформа .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,4 +36,4 @@ ms.locfileid: "80739402"
 
 ## <a name="see-also"></a>См. также раздел
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>
-- [Внутренние модули параллельного расширения для .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Внутренние модули параллельного расширения для платформа .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

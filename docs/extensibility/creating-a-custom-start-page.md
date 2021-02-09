@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: b7e4c9690e573d2807eb3ad9d842921ee08417d8
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 65415c22da2815650278ac1190e7d19f54b96063
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853089"
 ---
 # <a name="creating-a-custom-start-page"></a>Создание настраиваемой начальной страницы
 
@@ -77,7 +77,7 @@ ms.locfileid: "94974556"
 
 3. В командной строке Visual Studio введите команду **devenv/Рутсуффикс exp** , чтобы открыть экспериментальный экземпляр Visual Studio.
 
-4. В экспериментальном экземпляре перейдите на страницу **Сервис**  >  **Параметры**  >  **Среда**  >  **Startup** и выберите файл XAML в раскрывающемся списке **настроить начальную страницу** .
+4. В экспериментальном экземпляре перейдите на страницу **Сервис**  >  **Параметры**  >  **Среда**  >   и выберите файл XAML в раскрывающемся списке **настроить начальную страницу** .
 
 5. В меню **Вид** выберите пункт **Начальная страница**.
 
@@ -87,7 +87,7 @@ ms.locfileid: "94974556"
 
 - После проверки начальной страницы и обнаружения ее стабильности используйте параметр **настроить начальную страницу** в диалоговом окне **Параметры** , чтобы выбрать его в качестве начальной страницы в основном экземпляре Visual Studio.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Пошаговое руководство. Добавление пользовательского XAML-кода на начальную страницу](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
 - [Добавление пользовательского элемента управления на начальную страницу](../extensibility/adding-user-control-to-the-start-page.md)

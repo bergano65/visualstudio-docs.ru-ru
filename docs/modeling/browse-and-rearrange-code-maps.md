@@ -21,15 +21,15 @@ helpviewer_keywords:
 - dependency graphs, browsing
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ace2095e98bc7d7425f518249a754fcbed07a02
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e579f62c24795ad99939fe10f68c42acaaa89b60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861938"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Просмотр и реорганизация карт кода
 
@@ -37,7 +37,7 @@ ms.locfileid: "97363618"
 
 Карты кода можно настраивать, не затрагивая базовый код решения. Это полезно, когда нужно сосредоточить внимание на ключевых элементах кода или сообщить сведения о нем. Например, чтобы выделить требуемые области, можно выбрать элементы кода на карте и отфильтровать их, изменить стиль элементов кода и связей, скрыть или удалить элементы кода, а также упорядочить элементы кода по свойствам, категориям или группам.
 
- **Требования**
+ **Requirements**
 
 - Для создания карт кода требуется Visual Studio Enterprise.
 
@@ -310,7 +310,7 @@ ms.locfileid: "97363618"
     |**Чтобы**|**Choose**|
     |-|-|
     |Отключение элемента кода|**Отключено**|
-    |Удаление элемента кода|**Удалить**|
+    |Удаление элемента кода|**Удаление**|
     |Перемещение стиля вверх|**Вверх**|
     |Перемещение элемента кода вниз|**Вниз**|
 

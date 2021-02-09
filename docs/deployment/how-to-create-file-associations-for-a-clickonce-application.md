@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 835230c8-3177-440f-85e3-e40f1d8b4f9d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 21f6923185dbfa79fbe18b7b5c6a5d824a5a2cfe
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4b74e20d21ad2c67eed36add90051119c7b8b56e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861170"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Практическое руководство. Создание ассоциаций файлов для приложения ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения могут быть связаны с одним или несколькими расширениями имен файлов, чтобы приложение автоматически запускалось, когда пользователь открывает файл этих типов. Добавление в приложение поддержки расширений имен файлов [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] осуществляется просто.
@@ -55,7 +55,7 @@ ms.locfileid: "94350040"
 
     Дополнительные сведения см. в разделе [Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
-## <a name="see-also"></a>См. также
-- [\<fileAssociation> дерев](../deployment/fileassociation-element-clickonce-application.md)
+## <a name="see-also"></a>См. также раздел
+- [Элемент \<fileAssociation>](../deployment/fileassociation-element-clickonce-application.md)
 - [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)
 - [Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

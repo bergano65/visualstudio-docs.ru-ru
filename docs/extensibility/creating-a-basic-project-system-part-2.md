@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 564d975a60c54a074d830742eb0ab6133fdbfe4e
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: ceef95f90d2f54ad7b527ccc8c00322c77491fb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974617"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853156"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Создание базовой системы проектов, часть 2
 В первом пошаговом руководстве в этой серии [создается базовая система проектов, часть 1](../extensibility/creating-a-basic-project-system-part-1.md), в которой показано, как создать базовую систему проектов. Это пошаговое руководство строится на базовой системе проектов путем добавления шаблона Visual Studio, страницы свойств и других функций. Прежде чем начать это, необходимо выполнить первое пошаговое руководство.
@@ -154,11 +154,11 @@ ms.locfileid: "94974617"
 ## <a name="examine-the-visual-studio-template-build-steps"></a>Изучите шаги сборки шаблона Visual Studio
  Система сборки проекта VSPackage обычно выполняет Visual Studio в режиме установки при изменении *VSTEMPLATE* -файла или при перестроении проекта, содержащего *VSTEMPLATE* -файл. Вы можете следовать инструкциям, установив уровень детализации для MSBuild в значение "нормальный" или выше.
 
-1. В меню **Сервис** выберите команду **Параметры**.
+1. В меню **Сервис** выберите пункт **Параметры**.
 
 2. Разверните узел **проекты и решения** , а затем выберите **Сборка и запуск**.
 
-3. Задайте для параметра **уровень детализации для выходных данных сборки проекта MSBuild** значение **Обычная**. Нажмите кнопку **ОК**.
+3. Задайте для параметра **уровень детализации для выходных данных сборки проекта MSBuild** значение **Обычная**. Нажмите кнопку **OK**.
 
 4. Перестройте проект Симплепрожект.
 

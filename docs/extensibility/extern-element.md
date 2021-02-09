@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e975c3f721d65b64fc7994824406b0c9af13022
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 8892de377d2383e5aed3ec7824616d626bc5164f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994528"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862100"
 ---
 # <a name="extern-element"></a>Внешний элемент
 Элемент extern ссылается на любые файлы внешних заголовков (*h*) для слияния с *vsct* -файлом во время компиляции. Объединяемые файлы должны находиться на пути включения, заданном компилятору VSCT или на который ссылается [элемент include](../extensibility/include-element.md). Файлы могут быть другими *vsct* или файлами заголовков C++.

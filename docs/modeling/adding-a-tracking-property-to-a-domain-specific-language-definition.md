@@ -10,15 +10,15 @@ helpviewer_keywords:
 - walkthroughs [Domain-Specific Language Tools]
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6709ede3de16a78e0042d035a87a715b9ce4c80c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c58e01fa5da5608b183827e366c115c214aa483d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361213"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862015"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Добавление свойства отслеживания в определение предметно-ориентированного языка
 
@@ -720,7 +720,7 @@ ms.locfileid: "97361213"
 
 1. В меню **Построить** выберите пункт **Перестроить решение**.
 
-2. В меню **Отладка** выберите команду **Начать отладку**.
+2. В меню **Отладка** щелкните **Начать отладку**.
 
     Экспериментальная сборка [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] открывает решение для **отладки** , которое содержит пустой тестовый файл.
 
