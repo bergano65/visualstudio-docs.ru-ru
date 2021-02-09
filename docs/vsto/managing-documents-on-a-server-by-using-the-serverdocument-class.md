@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ServerDocument class, managing documents on server
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 585ec1842daeb4e4c4c59047383e5d53b3599bcf
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 17a25ca382cfbbc762731afacaa628de616cfe1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879479"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Управление документами на сервере с помощью класса ServerDocument
   Класс в можно использовать `ServerDocument` [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] для управления несколькими аспектами настроек на уровне документа, даже если Microsoft Office Word и Microsoft Office Excel не установлены. Можно выполнять следующие задачи.
@@ -38,7 +38,7 @@ ms.locfileid: "97528498"
 
  `ServerDocument`Класс можно использовать для выполнения настроек на уровне документа, созданных с помощью [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] .
 
- Дополнительные сведения о среде выполнения Visual Studio 2010 Tools for Office и расширениях Office для .NET Framework см. в разделе [Общие сведения о инструменты Visual Studio для среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+ Дополнительные сведения о среде выполнения Visual Studio 2010 Tools for Office и расширениях Office для платформа .NET Framework см. в разделе [Общие сведения о инструменты Visual Studio для среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
 > [!NOTE]
 > Если у вас есть устаревшее приложение, использующее `ServerDocument` класс в `Visual Studio Tools for Office` системе (версия 3,0 runtime), `Visual Studio Tools for Office` система (среда выполнения версии 3,0) должна быть установлена на компьютерах, на которых выполняется приложение. `Visual Studio 2010 Tools for Office runtime`Не удается запустить эти приложения.
