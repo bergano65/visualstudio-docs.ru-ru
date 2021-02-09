@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d79b2081e2d30d77ae3507884b44421f0f14bae
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 00f508163dc039d5c29013538a78fa7dab6091fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858453"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Сохранение данных с помощью методов DBDirect адаптера таблицы TableAdapter
 
@@ -71,7 +71,7 @@ ms.locfileid: "94434575"
 
 4. Назовите проект **таблеадаптердбдиректмесодсвалксраугх** и нажмите кнопку **ОК**.
 
-     Создается проект **TableAdapterDbDirectMethodsWalkthrough** , который добавляется в **Обозреватель решений**.
+     Создается проект **TableAdapterDbDirectMethodsWalkthrough**, который добавляется в **Обозреватель решений**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Создание источника данных из базы данных
 
@@ -85,7 +85,7 @@ ms.locfileid: "94434575"
 
 2. В окне **Источники данных** выберите **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
-3. На экране **Выбор типа источника данных** выберите **база данных** , а затем нажмите кнопку **Далее**.
+3. На экране **Выбор типа источника данных** выберите **база данных**, а затем нажмите кнопку **Далее**.
 
 4. На экране **Выбор подключения к данным** выполните одно из следующих действий.
 
@@ -111,11 +111,11 @@ ms.locfileid: "94434575"
 
 Чтобы создать элементы управления с привязкой к данным в форме Windows Forms, перетащите узел основной **области** из окна **Источники данных** на форму.
 
-На форме появляется элемент <xref:System.Windows.Forms.DataGridView> и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md) `RegionTableAdapter` <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> В области компонентов появятся NorthwindDataSet,, и.
+На форме появляется элемент <xref:System.Windows.Forms.DataGridView> и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. [](../data-tools/dataset-tools-in-visual-studio.md) `RegionTableAdapter` <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> В области компонентов появятся NorthwindDataSet,, и.
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Порядок добавления кнопок, вызывающих отдельные методы DbDirect адаптера таблицы
 
-1. Перетащите три элемента управления <xref:System.Windows.Forms.Button> из **области элементов** на **Form1** (под **RegionDataGridView** ).
+1. Перетащите три элемента управления <xref:System.Windows.Forms.Button> из **области элементов** на **Form1** (под **RegionDataGridView**).
 
 2. Задайте следующие свойства **Имя** и **Текст** для каждой из кнопок.
 
@@ -136,7 +136,7 @@ ms.locfileid: "94434575"
 
 ### <a name="to-add-code-to-update-records-in-the-database"></a>Добавление кода для обновления записей в базе данных
 
-1. Дважды щелкните **UpdateButton** , чтобы создать обработчик событий для события щелчка кнопкой мыши и открыть форму в редакторе кода.
+1. Дважды щелкните **UpdateButton**, чтобы создать обработчик событий для события щелчка кнопкой мыши и открыть форму в редакторе кода.
 
 2. Замените обработчик событий `UpdateButton_Click` следующим кодом:
 

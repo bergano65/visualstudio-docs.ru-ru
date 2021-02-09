@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8c9ced0b589b28f1cd21de4a862c6f11dc6e03e
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 54699947588e29da7312c0574833a13bbc3c8cfd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998269"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858193"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Пошаговое руководство. Создание службы данных WCF с помощью WPF и Entity Framework
 В этом пошаговом руководстве демонстрируется создание простой службы [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] в веб-приложении [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и последующий доступ к ней из приложения Windows Forms.
@@ -80,7 +80,7 @@ ms.locfileid: "94998269"
 
 ### <a name="to-create-the-entity-data-model"></a>Создание модели EDM
 
-1. В строке меню выберите **проект**  >  **Добавить новый элемент**.
+1. В строке меню выберите **Проект** > **Добавить новый элемент**.
 
 2. В диалоговом окне **Добавление нового элемента** выберите узел **Данные** и выберите элемент **Модель EDM ADO.NET**.
 
@@ -106,7 +106,7 @@ ms.locfileid: "94998269"
 7. На странице **Выберите версию** выберите переключатель **Entity Framework 5.0** и нажмите кнопку **Далее**.
 
     > [!NOTE]
-    > Чтобы использовать последнюю версию Entity Framework 6 со службами WCF, нужно установить пакет NuGet WCF Data Services Entity Framework Provider. См. статью [использование WCF Data Services 5.6.0 с Entity Framework 6 +](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/).
+    > Чтобы использовать последнюю версию Entity Framework 6 со службами WCF, нужно установить пакет NuGet WCF Data Services Entity Framework Provider. См. статью [использование службы данных WCF 5.6.0 с Entity Framework 6 +](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8. На странице **Выбор объектов базы данных** разверните узел **Таблицы**, установите флажок **Customers** и нажмите кнопку **Готово**.
 
@@ -116,7 +116,7 @@ ms.locfileid: "94998269"
 
 ### <a name="to-create-the-data-service"></a>Создание службы данных
 
-1. В строке меню выберите **проект**  >  **Добавить новый элемент**.
+1. В строке меню выберите **Проект** > **Добавить новый элемент**.
 
 2. В диалоговом окне **Добавление нового элемента** выберите узел **Веб** и элемент **Служба данных WCF 5.6**.
 
@@ -288,7 +288,7 @@ ms.locfileid: "94998269"
 
 6. В текстовом поле введите **London** и нажмите кнопку. Будут отображены только клиенты из Лондона.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Windows Communication Foundation служб и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [Практическое руководство. Добавление, обновление или удаление ссылки на службу данных WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

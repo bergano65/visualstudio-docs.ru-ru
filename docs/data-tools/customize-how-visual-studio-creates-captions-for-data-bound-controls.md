@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65c0f1146549dfbee6f84fab06be12053b174aeb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: be9a6840c3b41b442e5019e08c4d2f4d2fa5c3dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436632"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858999"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Настройка способа создания подписи для элемента управления с привязкой к данным в Visual Studio
 
@@ -28,13 +28,13 @@ ms.locfileid: "94436632"
 
 ::: moniker range="vs-2017"
 
-Можно настроить способ создания этих меток, задав значения **смарткаптионекспрессион** , **смарткаптионреплацемент** и **смарткаптионсуффикс** в разделе реестра **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** .
+Можно настроить способ создания этих меток, задав значения **смарткаптионекспрессион**, **смарткаптионреплацемент** и **смарткаптионсуффикс** в разделе реестра **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Можно настроить способ создания этих меток, задав значения **смарткаптионекспрессион** , **смарткаптионреплацемент** и **смарткаптионсуффикс** в разделе реестра **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** .
+Можно настроить способ создания этих меток, задав значения **смарткаптионекспрессион**, **смарткаптионреплацемент** и **смарткаптионсуффикс** в разделе реестра **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** .
 
 ::: moniker-end
 
@@ -53,7 +53,7 @@ ms.locfileid: "94436632"
 
 В следующей таблице перечислены внутренние параметры по умолчанию для этих значений реестра.
 
-|Элемент реестра|Значение по умолчанию|Пояснение|
+|Элемент реестра|Значение по умолчанию|Объяснение|
 |-------------------|-------------------|-----------------|
 |**смарткаптионекспрессион**|**( \\ \п{ЛЛ}) ( \\ \п{лу}) &#124;_ +**|Соответствует символу нижнего регистра, за которым следует символ верхнего регистра или знак подчеркивания.|
 |**SmartCaptionReplacement**|**$1 $2**|**$1** представляет все символы, совпадающие в первых скобках выражения, а **$2** — все символы, совпадающие во второй скобке. Замена представляет собой первое совпадение, пробел, а затем второе совпадение.|

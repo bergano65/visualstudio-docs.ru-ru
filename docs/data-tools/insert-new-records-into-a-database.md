@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3586cf45e152cd8a0149140556916b11544a00bb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8b5228d463bebf7ed57c68cbcf16a1d767d94917
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436280"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858674"
 ---
 # <a name="insert-new-records-into-a-database"></a>Вставка новых записей в базу данных
 
@@ -36,7 +36,7 @@ ms.locfileid: "94436280"
 
 Если приложение использует объекты для хранения данных или требуется более точный контроль над созданием новых записей в базе данных, используйте `TableAdapter.Insert` метод.
 
-Если в TableAdapter нет `Insert` метода, это означает, что адаптер таблицы настроен для использования хранимых процедур или его `GenerateDBDirectMethods` свойство имеет значение `false` . Попробуйте задать `GenerateDBDirectMethods` для свойства TableAdapter значение `true` from в **Конструктор наборов данных** , а затем сохраните набор данных. Это приведет к повторному формированию TableAdapter. Если TableAdapter по-прежнему не имеет `Insert` метода, таблица, вероятно, не предоставляет достаточно сведений о схеме для различения отдельных строк (например, в таблице может отсутствовать первичный ключ).
+Если в TableAdapter нет `Insert` метода, это означает, что адаптер таблицы настроен для использования хранимых процедур или его `GenerateDBDirectMethods` свойство имеет значение `false` . Попробуйте задать `GenerateDBDirectMethods` для свойства TableAdapter значение `true` from в **Конструктор наборов данных**, а затем сохраните набор данных. Это приведет к повторному формированию TableAdapter. Если TableAdapter по-прежнему не имеет `Insert` метода, таблица, вероятно, не предоставляет достаточно сведений о схеме для различения отдельных строк (например, в таблице может отсутствовать первичный ключ).
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>Вставка новых записей с помощью адаптеров таблиц
 

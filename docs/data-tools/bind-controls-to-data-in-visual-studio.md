@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b48c2e8b557a47c1ed795b6f9d3c3ced6247a43
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: a237d07af14cd6f31af300eff050c8952fd9840e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518626"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859350"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Привязка элементов управления к данным в Visual Studio
 
@@ -34,7 +34,7 @@ ms.locfileid: "94518626"
 
 | Источник данных | Поддержка перетаскивания в **конструкторе Windows Forms** | Поддержка перетаскивания в **конструкторе WPF** | Поддержка перетаскивания в **конструкторе Silverlight** |
 | - | - | - | - |
-| Dataset | Да | Да | Нет |
+| Набор данных | Да | Да | Нет |
 | EDM (модель данных с использованием сущностей) | Да<sup>1</sup> | Да | Да |
 | Классы LINQ-SQL | Нет<sup>2</sup> | Нет<sup>2</sup> | Нет<sup>2</sup> |
 | Службы (включая [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], службы WCF и веб-службы) | Да | Да | Да |

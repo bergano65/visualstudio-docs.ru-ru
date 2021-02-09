@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bb0262139e2096cf55ae7581ef854a57c67d22a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 62175e33949b2c6311fba8e9255b237cd8b43e01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434549"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858479"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Пошаговое руководство. Сохранение данных в транзакции
 
@@ -60,7 +60,7 @@ ms.locfileid: "94434549"
 
 4. Назовите проект **савингдатаинатрансактионвалксраугх** и нажмите кнопку **ОК**.
 
-     Создается проект **SavingDataInATransactionWalkthrough** , который добавляется в **Обозреватель решений**.
+     Создается проект **SavingDataInATransactionWalkthrough**, который добавляется в **Обозреватель решений**.
 
 ## <a name="create-a-database-data-source"></a>Создание источника данных базы данных
 
@@ -70,7 +70,7 @@ ms.locfileid: "94434549"
 
 2. В окне **Источники данных** выберите **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
-3. На экране **Выбор типа источника данных** выберите **база данных** , а затем нажмите кнопку **Далее**.
+3. На экране **Выбор типа источника данных** выберите **база данных**, а затем нажмите кнопку **Далее**.
 
 4. На экране **Выбор подключения к данным** выполните одно из следующих действий.
 
@@ -98,7 +98,7 @@ ms.locfileid: "94434549"
 
 2. Перетащите главный узел **Customers** из окна **Источники данных** на форму **Form1**.
 
-   На форме появляется элемент <xref:System.Windows.Forms.DataGridView> и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md) `CustomersTableAdapter` <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> В области компонентов появятся NorthwindDataSet,, и.
+   На форме появляется элемент <xref:System.Windows.Forms.DataGridView> и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. [](../data-tools/dataset-tools-in-visual-studio.md) `CustomersTableAdapter` <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> В области компонентов появятся NorthwindDataSet,, и.
 
 3. Перетащите связанный узел **Orders** (не главный узел **заказы** , а связанный узел дочерней таблицы ниже столбца **факса** ) в форму под элементом **кустомерсдатагридвиев**.
 
@@ -141,28 +141,28 @@ ms.locfileid: "94434549"
 
 ### <a name="to-delete-existing-orders"></a>Удаление существующих заказов
 
-- Добавьте следующий метод `DeleteOrders` в **Form1** :
+- Добавьте следующий метод `DeleteOrders` в **Form1**:
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>Удаление существующих клиентов
 
-- Добавьте следующий метод `DeleteCustomers` в **Form1** :
+- Добавьте следующий метод `DeleteCustomers` в **Form1**:
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>Добавление новых клиентов
 
-- Добавьте следующий метод `AddNewCustomers` в **Form1** :
+- Добавьте следующий метод `AddNewCustomers` в **Form1**:
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>Добавление новых заказов
 
-- Добавьте следующий метод `AddNewOrders` в **Form1** :
+- Добавьте следующий метод `AddNewOrders` в **Form1**:
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]
