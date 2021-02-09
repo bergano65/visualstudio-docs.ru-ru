@@ -10,23 +10,23 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bb9505ab475da7919a39eb03e7c84b92857db4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902195"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Создание Windows Forms элемента управления панели элементов
 
 Шаблон элемента элемента управления панели элементов Windows Forms, включенный в средства расширения Visual Studio (пакет VS SDK), позволяет создать элемент управления **панели элементов** , который автоматически добавляется при установке расширения. В этом пошаговом руководстве показано, как использовать шаблон для создания простого элемента управления счетчика, который можно распространить другим пользователям.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные требования
 
-Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-the-toolbox-control"></a>Создание элемента управления панели элементов
 
@@ -36,7 +36,7 @@ ms.locfileid: "88801871"
 
 1. Создайте проект VSIX с именем `MyWinFormsControl` . Шаблон проекта VSIX можно найти в диалоговом окне " **Новый проект** ", выполнив поиск по слову "VSIX".
 
-2. После открытия проекта добавьте Windows Forms шаблон элемента **элемента управления панели элементов** с именем `Counter` . В **Обозреватель решений**щелкните правой кнопкой мыши узел проекта и выберите команду **Добавить**  >  **новый элемент**. В диалоговом окне **Добавление нового элемента** перейдите в раздел расширяемость **Visual C#**  >  **Extensibility** и выберите **Windows Forms элемент управления панели элементов** .
+2. После открытия проекта добавьте Windows Forms шаблон элемента **элемента управления панели элементов** с именем `Counter` . В **Обозреватель решений** щелкните правой кнопкой мыши узел проекта и выберите команду **Добавить**  >  **новый элемент**. В диалоговом окне **Добавление нового элемента** перейдите в раздел расширяемость **Visual C#**  >   и выберите **Windows Forms элемент управления панели элементов** .
 
 3. При этом добавляется пользовательский элемент управления, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> для размещения элемента управления в **панели элементов**, а также запись ресурса **Microsoft. VisualStudio. тулбоксконтрол** в манифесте VSIX для развертывания.
 
@@ -46,7 +46,7 @@ ms.locfileid: "88801871"
 
 #### <a name="to-build-the-user-interface"></a>Создание пользовательского интерфейса
 
-1. В **Обозреватель решений**дважды щелкните *Counter.CS* , чтобы открыть его в конструкторе.
+1. В **Обозреватель решений** дважды щелкните *Counter.CS* , чтобы открыть его в конструкторе.
 
 2. Удалите **щелчком мыши.** , которая включается по умолчанию при добавлении шаблона элемента элемента управления панели элементов Windows Forms.
 
@@ -80,16 +80,16 @@ ms.locfileid: "88801871"
 3. Создайте следующие открытые объявления свойств.
 
     ```csharp
-    public int Value {
+    public int Value {
         get { return currentValue; }
     }
 
-    public string Message {
+    public string Message {
         get { return displayText; }
         set { displayText = value; }
     }
 
-    public bool ShowReset {
+    public bool ShowReset {
         get { return btnReset.Visible; }
         set { btnReset.Visible = value; }
     }
@@ -101,7 +101,7 @@ ms.locfileid: "88801871"
 4. Добавьте следующий код в `Load` событие для элемента управления.
 
     ```csharp
-    private void Counter_Load(object sender, EventArgs e)
+    private void Counter_Load(object sender, EventArgs e)
     {
         currentValue = 0;
         label1.Text = Message + Value;
@@ -114,7 +114,7 @@ ms.locfileid: "88801871"
 5. Создайте следующий открытый метод для увеличения счетчика.
 
     ```csharp
-    public void Increment()
+    public void Increment()
     {
         currentValue++;
         label1.Text = displayText + Value;
@@ -126,7 +126,7 @@ ms.locfileid: "88801871"
 6. Добавьте объявление `Incremented` события в класс Control.
 
     ```csharp
-    public event EventHandler Incremented;
+    public event EventHandler Incremented;
     ```
 
     Вызывающие объекты могут добавлять обработчики в это событие для реагирования на изменения значения счетчика.
@@ -134,7 +134,7 @@ ms.locfileid: "88801871"
 7. Вернитесь в режим конструктора и дважды щелкните кнопку **Сброс** , чтобы создать `btnReset_Click` обработчик событий. Затем заполните его, как показано в следующем примере.
 
     ```csharp
-    private void btnReset_Click(object sender, EventArgs e)
+    private void btnReset_Click(object sender, EventArgs e)
     {
         currentValue = 0;
         label1.Text = displayText + Value;
@@ -148,7 +148,7 @@ ms.locfileid: "88801871"
 
     ```csharp
     [ProvideToolboxControl("General", false)]
-    public partial class Counter : UserControl
+    public partial class Counter : UserControl
     ```
 
 ### <a name="test-the-control"></a>Тестирование элемента управления
@@ -163,7 +163,7 @@ ms.locfileid: "88801871"
 
 2. В экспериментальном экземпляре Visual Studio создайте проект **приложения Windows Forms** .
 
-3. В **Обозреватель решений**дважды щелкните *Form1.CS* , чтобы открыть его в конструкторе, если он еще не открыт.
+3. В **Обозреватель решений** дважды щелкните *Form1.CS* , чтобы открыть его в конструкторе, если он еще не открыт.
 
 4. На **панели элементов** `Counter` элемент управления должен отображаться в разделе **Общие** .
 
@@ -214,7 +214,7 @@ ms.locfileid: "88801871"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-При создании элемента управления **панели элементов** Visual Studio создает файл с именем *ProjectName. VSIX* в папке \bin\debug\ проекта. Элемент управления можно развернуть, загружая *VSIX* -файл в сеть или на сайт. Когда пользователь открывает *VSIX* -файл, этот элемент управления устанавливается и добавляется на **панель элементов** Visual Studio на компьютере пользователя. Кроме того, можно передать *VSIX* файл в [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , чтобы пользователи могли его найти, просмотрев в **Tools**  >  диалоговом окне "**расширения и обновления** " инструментов.
+При создании элемента управления **панели элементов** Visual Studio создает файл с именем *ProjectName. VSIX* в папке \bin\debug\ проекта. Элемент управления можно развернуть, загружая *VSIX* -файл в сеть или на сайт. Когда пользователь открывает *VSIX* -файл, этот элемент управления устанавливается и добавляется на **панель элементов** Visual Studio на компьютере пользователя. Кроме того, можно передать *VSIX* файл в [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , чтобы пользователи могли его найти, просмотрев в   >  диалоговом окне "**расширения и обновления** " инструментов.
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4038a122c6d2ec5f6ed29df6e529b2bff2e2bb71
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 26e616ac9862f6a077115c23bef426a94ab3ecbf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903041"
 ---
 # <a name="create-project-types"></a>Создание типов проектов
 Можно расширить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , создав новый тип проекта. Чтобы создать новый тип проекта, необходимо ознакомиться с некоторыми концепциями и выполнить ряд действий. В следующих разделах приводятся общие сведения о создании типов проектов.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 - [Решения по проектированию типов проектов](../../extensibility/internals/project-type-design-decisions.md)
 
  Обсуждаются элементы, сохраняемость файлов проекта и обязательства по проектированию механику, которые необходимо выполнить перед созданием нового типа проекта.

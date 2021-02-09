@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5fa24f3d052ab9122776967607b2c197fb102bf
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 7a9bd5b41d1c04e52d16ecb2fc327e648d9f81aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329917"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902998"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Пользовательские свойства документа в языковой службе прежних версий
 Свойства документа можно отобразить в окне " [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **свойства** ". Языки программирования обычно не имеют свойств, связанных с отдельными файлами исходного кода. Однако XML поддерживает свойства документа, которые влияют на кодировку, схему и таблицу стилей.

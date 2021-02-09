@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2fd2ba746f10094a79f1b37e57ba4ca90ff117b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 1b4927e63bec93fbe7b6730e131a0893372aa70d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328448"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902970"
 ---
 # <a name="custom-parameters"></a>Пользовательские параметры
 Пользовательские параметры управляют работой мастера после запуска мастера. Связанный *VSZ* -файл предоставляет массив определяемых пользователем параметров, которые упаковываются интегрированной средой разработки (IDE) и передаются мастеру как массив строк при запуске мастера. Затем мастер анализирует массив строк и использует эти сведения для управления фактической работой мастера. Таким образом, мастер может настроить функциональные возможности в зависимости от содержимого файла *VSZ* .
@@ -45,6 +45,6 @@ Param="PROJECT_TYPE = CSPROJ"
 
 ## <a name="see-also"></a>См. также раздел
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
-- [Параметры контекста](../../extensibility/internals/context-parameters.md)
+- [Контекстные параметры](../../extensibility/internals/context-parameters.md)
 - [Мастера](../../extensibility/internals/wizards.md)
 - [Файл мастера (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)

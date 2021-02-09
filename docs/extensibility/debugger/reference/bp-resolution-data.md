@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9e0b9000-6a84-47b9-b07a-367a75764389
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93a78f84c10af047e596459b68211b885d3c3085
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25756c00ba493dba866ab70693e69971333ae9ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737837"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901925"
 ---
 # <a name="bp_resolution_data"></a>BP_RESOLUTION_DATA
 Описывает результат привязки точки останова в данных.
@@ -45,7 +45,7 @@ public struct BP_RESOLUTION_DATA {
 };
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 `bstrDataExpr`\
 Привязанное выражение данных.
 

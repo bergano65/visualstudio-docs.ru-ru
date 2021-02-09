@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3a793e3d7233eb1b6d0aaaa74fbe16d52cf6f43
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 74e31cb8fddb00e8a6771a6ad3065bce57cc8bc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902241"
 ---
 # <a name="create-a-software-development-kit"></a>Создание пакета средств разработки программного обеспечения
 
@@ -169,7 +169,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 3. FrameworkIdentity: определяет зависимость от одной или нескольких библиотек компонентов Windows. Значение этого атрибута помещается в манифест приложения для использования. Этот атрибут применим только к библиотекам компонентов Windows.
 
-4. TargetFramework: указывает пакеты SDK, доступные в диспетчере ссылок и на панели элементов. Это разделенный точками с запятой список моникеров целевой платформы, например ".NET Framework, Version = v 2.0; .NET Framework, Version = v 4.5.1". Если указаны несколько версий одной и той же целевой платформы, Диспетчер ссылок использует самую раннюю версию для фильтрации. Например, если задано значение ".NET Framework, Version = v 2.0; .NET Framework, версия = v 4.5.1", то Диспетчер ссылок будет использовать ".NET Framework, Version = v 2.0". Если указан определенный профиль целевой платформы, Диспетчер ссылок будет использовать только этот профиль для целей фильтрации. Например, если задано значение "Silverlight, Version = v 4.0, профиль = WindowsPhone", Диспетчер ссылок будет фильтровать только профиль Windows Phone; проект, предназначенный для полной платформы Silverlight 4,0, не увидит пакет SDK в диспетчере ссылок.
+4. TargetFramework: указывает пакеты SDK, доступные в диспетчере ссылок и на панели элементов. Это разделенный точками с запятой список моникеров целевой платформы, например "платформа .NET Framework, Version = v 2.0; платформа .NET Framework, Version = v 4.5.1". Если указаны несколько версий одной и той же целевой платформы, Диспетчер ссылок использует самую раннюю версию для фильтрации. Например, если задано значение "платформа .NET Framework, Version = v 2.0; платформа .NET Framework, версия = v 4.5.1", то Диспетчер ссылок будет использовать "платформа .NET Framework, Version = v 2.0". Если указан определенный профиль целевой платформы, Диспетчер ссылок будет использовать только этот профиль для целей фильтрации. Например, если задано значение "Silverlight, Version = v 4.0, профиль = WindowsPhone", Диспетчер ссылок будет фильтровать только профиль Windows Phone; проект, предназначенный для полной платформы Silverlight 4,0, не увидит пакет SDK в диспетчере ссылок.
 
 5. MinVSVersion: Минимальная версия Visual Studio.
 
@@ -269,7 +269,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Пошаговое руководство. Создание пакета SDK с помощью C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [Пошаговое руководство. Создание пакета SDK на C# или Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)

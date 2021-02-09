@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7b3452af-9a96-4c4c-9946-4339b72d3d7b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f560a3dabefb0a8dede6520dcd8fd47f609a7780
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fca0b999f4c5878debbdee556431d56b7977c719
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901853"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 Этот интерфейс предоставляет несколько методов для доступа к серверу и средствам уведомления на порту.

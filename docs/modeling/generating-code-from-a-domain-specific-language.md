@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a2537f2c2cab0123bc90e8d0e32a8da89874f6
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 0f74a08f5bc4e2a5baded0ac4830b60406289661
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362201"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902729"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Создание кода из доменного языка
 
@@ -36,7 +36,7 @@ ms.locfileid: "97362201"
 
 В этом разделе обсуждаются некоторые способы создания, изменения и отладки текстовых шаблонов, используемых в [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] .
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 
 [Доступ к моделям из текстовых шаблонов](../modeling/accessing-models-from-text-templates.md)\
 Содержит основные сведения о ссылках на доменный язык в текстовых шаблонах.
@@ -50,7 +50,7 @@ ms.locfileid: "97362201"
 [Команда Дслтексттрансформ](../modeling/the-dsltexttransform-command.md)\
 Описание командного файла, выполняющего исполняемый файл TextTransform в командной строке для текстовых шаблонов, которые ссылаются на языки, относящиеся к домену.
 
-## <a name="reference"></a>Ссылка
+## <a name="reference"></a>Справочные сведения
 
 [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)\
 Предоставляет синтаксис директив и управляющих блоков текстового шаблона.
