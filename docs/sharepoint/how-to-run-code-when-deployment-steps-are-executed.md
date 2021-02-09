@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 00b921d8500c95ebbb771b5c0b5817db87b7c6ca
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 0b3037c0ec983b9f496947feba41938111fafc38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304453"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851586"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Инструкции. выполнение кода при выполнении шагов развертывания
   Если требуется выполнить дополнительные задачи для шага развертывания в проекте SharePoint, можно обработать события, вызываемые элементами проекта SharePoint до и после того, как Visual Studio выполнит каждый шаг развертывания. Дополнительные сведения см. в разделе [Расширение упаковки и развертывания SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).

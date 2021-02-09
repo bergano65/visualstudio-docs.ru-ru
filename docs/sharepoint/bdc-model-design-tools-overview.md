@@ -22,15 +22,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designer
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6e78b6809d3136c0db1f558d175706dc0ecd75b
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: b398d9c00caf3a4fa2ca58bafa3273673a305859
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850317"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851690"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Обзор средств проектирования моделей BDC
   Модель подключения к бизнес-данным можно спроектировать с помощью конструктора BDC, окна " **сведения о методе BDC** " и **обозревателя BDC**.
@@ -75,7 +75,7 @@ ms.locfileid: "94850317"
 
  Дополнительные сведения см. [в разделе инструкции. определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 - [Практическое руководство. Создание модели подключения к бизнес-данным](../sharepoint/how-to-create-a-bdc-model.md)
 - [Как добавить сущность в модель](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Как добавить метод Finder](../sharepoint/how-to-add-a-finder-method.md)

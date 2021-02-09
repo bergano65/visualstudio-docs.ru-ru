@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dbe9ed00223fa549420537579d39a4c88cf37cb
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 9b401baf1605a869772ba41ce83ad906061f8144
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973970"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851443"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Создание элемента управления панели элементов WPF
 
@@ -33,7 +33,7 @@ ms.locfileid: "94973970"
 
 1. Создайте проект VSIX с именем `MyToolboxControl` . Шаблон проекта VSIX можно найти в диалоговом окне " **Новый проект** ", выполнив поиск по слову "VSIX".
 
-2. При открытии проекта добавьте шаблон элемента **элемента управления панели элементов WPF** с именем `MyToolboxControl` . В **Обозреватель решений** щелкните правой кнопкой мыши узел проекта и выберите команду **Добавить**  >  **новый элемент**. В диалоговом окне **Добавление нового элемента** перейдите в раздел расширяемость **Visual C#**  >  **Extensibility** и выберите **элемент управления панель элементов WPF**. В поле **имя** в нижней части окна измените имя файла команд на *MyToolboxControl.CS*.
+2. При открытии проекта добавьте шаблон элемента **элемента управления панели элементов WPF** с именем `MyToolboxControl` . В **Обозреватель решений** щелкните правой кнопкой мыши узел проекта и выберите команду **Добавить**  >  **новый элемент**. В диалоговом окне **Добавление нового элемента** перейдите в раздел расширяемость **Visual C#**  >   и выберите **элемент управления панель элементов WPF**. В поле **имя** в нижней части окна измените имя файла команд на *MyToolboxControl.CS*.
 
     Решение теперь содержит пользовательский элемент управления, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> который добавляет элемент управления в **панель элементов** и запись ресурса **Microsoft. VisualStudio. тулбоксконтрол** в манифесте VSIX для развертывания.
 
@@ -102,4 +102,4 @@ ms.locfileid: "94973970"
 
 3. Отправьте файл *VSIX* в сеть или на веб-сайт.
 
-    Если файл отправляется на веб-сайт [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , другие пользователи могут использовать **Tools**  >  **расширения и обновления** средств в Visual Studio, чтобы найти элемент управления в сети и установить его.
+    Если файл отправляется на веб-сайт [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , другие пользователи могут использовать   >  **расширения и обновления** средств в Visual Studio, чтобы найти элемент управления в сети и установить его.

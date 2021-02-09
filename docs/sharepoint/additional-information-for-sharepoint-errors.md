@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 240913e93dc1945846613ac1ecc8d0141368f7b3
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 5ce41bdf53ee55bfcbcec0cc2a2271ba9914aed8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850433"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851742"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Дополнительные сведения об ошибках SharePoint
   Справку по устранению неполадок [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и предупреждений в средствах SharePoint см. в разделах об устранении неполадок и на общедоступных форумах.
@@ -48,5 +48,5 @@ ms.locfileid: "94850433"
 
  Если вы по-прежнему не можете найти нужные вам ответы, вы можете получить доступ к вариантам поддержки через Интернет, например обратиться в службу технической поддержки Майкрософт или найти статьи в базе знаний. Дополнительные сведения см. на странице [справки и поддержки Майкрософт](https://support.microsoft.com/) .
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 - [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

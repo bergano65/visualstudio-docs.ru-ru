@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: ef5024c4-cda1-4970-bc75-32a2a10c92c3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fed8c137b5bce225d8a231bb5a263b87c2bf361
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c0d9c3d49dde0bdef41e89ee71139fb1ab621297
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350170"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851469"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Практическое руководство. Изменение языка публикации для приложения ClickOnce
 
@@ -36,7 +36,7 @@ ms.locfileid: "94350170"
 
 ## <a name="to-change-the-publish-language"></a>Изменение языка публикации
 
-1. Выберите проект в **обозревателе решений** , а затем в меню **Проект** щелкните **Свойства**.
+1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.
 
 2. Перейдите на вкладку **Публикация**.
 
@@ -46,7 +46,7 @@ ms.locfileid: "94350170"
 
 5. В диалоговом окне **Параметры публикации** выберите язык и региональные параметры из раскрывающегося списка **язык публикации** , а затем нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Инструкции. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

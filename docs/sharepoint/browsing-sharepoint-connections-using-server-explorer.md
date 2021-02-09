@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 79e8d3dbc1dab865b2ab9048cea8d13c478f2a12
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: b188d95e6478e488fc896b0622fb8d145ef2a741
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849835"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851612"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Просмотр подключений SharePoint с помощью обозревателя сервера
   Теперь вы можете просматривать локальные подключения SharePoint в **обозревателе сервера**. Используя эту технику вы можете осуществлять переход по компонентам сайта SharePoint, расположенным в системе. Компоненты сайта SharePoint, такие как определения списков и типы содержимого, отображаются в узле **Подключения SharePoint** в представлении в виде дерева **обозревателя сервера**. Чтобы открыть **обозреватель сервера**, выберите в меню **Вид** > **Обозреватель сервера**. В древовидном представлении можно не только просматривать компоненты сайта SharePoint, но и использовать контекстное меню для удаления элементов, просмотра их свойств и обновления древовидного представления.
