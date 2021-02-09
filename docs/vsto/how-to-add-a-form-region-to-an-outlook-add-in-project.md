@@ -16,15 +16,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], adding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f137dbe88b8b3ecf51f17e0f19f61368359087fa
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 9f50475f52ca2ec08894a3c1c0375e78d2b5620b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917540"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Как добавить область формы в проект надстройки Outlook
   Создайте область формы для расширения стандартной или настраиваемой формы Microsoft Office Outlook с помощью мастера **создания области формы Outlook** . Вы можете создать новую область формы и разработать пользовательский интерфейс в Visual Studio или импортировать область формы, сконструированную в Outlook, и добавить код Visual Basic или C#.

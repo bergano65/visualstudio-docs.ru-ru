@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Domain-Specific Language, domain class
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd36973a9c355dcaec32b6da4149e6efd88282da
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: cc86f04841a819423bc45c9220d6de80a5340b2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915996"
 ---
 # <a name="properties-of-domain-classes"></a>Свойства доменных классов
 Классы домена имеют свойства, приведенные в следующей таблице. Дополнительные сведения о доменных классах см. в разделе [Основные сведения о моделях, классах и связях](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. [в разделе Настройка и расширение языка Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Свойство|Описание|Значение по умолчанию|
+|Свойство|Описание|По умолчанию|
 |-|-|-|
 |Модификатор доступа|Уровень доступа класса домена (`public` или `internal`).|`public`|
 |Настраиваемые атрибуты|Используется для добавления атрибутов в класс исходного кода, созданного из этого доменного класса.|\<none>|

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb74d7fd5ad388b9b3dc217bae8782b24517c13b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a87bcd8b51bc393921d21d838943d5e1fe8f02a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917345"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Пошаговое руководство. Загрузка сборок по запросу с помощью API развертывания ClickOnce
 По умолчанию все сборки, включенные в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение, загружаются при первом запуске приложения. Однако у вас могут быть части приложения, которые используются небольшим набором пользователей. В этом случае рекомендуется скачивать сборку только при создании одного из ее типов. В следующем примере показано, как пометить определенные сборки в приложении как "необязательные" и скачивать их с помощью классов в пространстве имен <xref:System.Deployment.Application>, когда среда CLR нуждается в них.
@@ -128,5 +128,5 @@ ms.locfileid: "94349270"
 
 3. Когда появится основная форма, нажмите <xref:System.Windows.Forms.Button>. В окне сообщения вы должны видеть строку "Hello, World!".
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:System.Deployment.Application.ApplicationDeployment>

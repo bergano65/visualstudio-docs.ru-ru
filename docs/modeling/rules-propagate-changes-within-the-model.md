@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, rules
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c4ff2273c8c71582c3ef634eeb398b12e29401d0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7062feddf00194e4633435655b5e11f5fefd38ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363956"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916948"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Правила распространяют изменения в пределах модели
 Вы можете создать правило хранения, чтобы распространить изменения с одного элемента на другой в пакете SDK визуализации и моделирования (VMSDK). Когда происходит изменение в любом элементе хранилища, запланировано выполнение правил, обычно при фиксации самой внешней транзакции. Существуют различные типы правил для различных типов событий, например добавление элемента или его удаление. Правила можно присоединять к конкретным типам элементов, фигур или диаграмм. Многие встроенные функции определяются правилами. Например, правила обеспечивают обновление схемы при изменении модели. Вы можете настроить доменный язык, добавив собственные правила.

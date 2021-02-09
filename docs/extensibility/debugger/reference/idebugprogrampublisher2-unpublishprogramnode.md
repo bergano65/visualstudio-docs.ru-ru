@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 57c7e6e1-b84e-4e14-ad83-cbbb64e2f526
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae2c3d9f3c9f6c500b10f580035312b2d045689a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69afe6dba5db73b2b2af80031612ada5b18ae0a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916179"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 Удаляет указанный узел программы из уровня доступности в модули отладки (DEs) и диспетчер отладки сеансов (SDM).
@@ -28,13 +28,13 @@ ms.locfileid: "80721579"
 ## <a name="syntax"></a>Синтаксис
 
 ```cpp
-HRESULT UnpublishProgramNode(
-   IDebugProgramNode2* pProgramNode
+HRESULT UnpublishProgramNode(
+   IDebugProgramNode2* pProgramNode
 );
 ```
 
 ```csharp
-int UnpublishProgramNode(
+int UnpublishProgramNode(
    IDebugProgramNode2 pProgramNode
 );
 ```

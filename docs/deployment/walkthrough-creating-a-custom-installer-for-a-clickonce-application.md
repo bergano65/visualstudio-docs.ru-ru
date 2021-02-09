@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 08b4adbaa7e7e25041f90628695de729aaff0d0d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 748d9f5932f93261bc991f0d8af43728b8e5ce02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917293"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Пошаговое руководство. Создание пользовательского установщика для приложения ClickOnce
 Любое приложение ClickOnce, основанное на *exe* -файле, может устанавливаться автоматически и обновляться с помощью пользовательского установщика. Пользовательский установщик может реализовать пользовательский интерфейс во время установки, включая пользовательские диалоговые окна для операций безопасности и обслуживания. Для выполнения операций установки пользовательский установщик использует <xref:System.Deployment.Application.InPlaceHostingManager> класс. В этом пошаговом руководстве показано, как создать пользовательский установщик, который автоматически устанавливает приложение ClickOnce.
@@ -74,9 +74,9 @@ ms.locfileid: "94349208"
     MessageBox.Show("Installer object created.");
     ```
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Приложение ClickOnce может также добавлять пользовательскую логику обновления, включая пользовательский интерфейс, отображаемый во время процесса обновления. Для получения дополнительной информации см. <xref:System.Deployment.Application.UpdateCheckInfo>. Приложение ClickOnce также может подавлять стандартную запись меню "Пуск", ярлык, а также запись "Установка и удаление программ" с помощью `<customUX>` элемента. Дополнительные сведения см. в разделе [ \<entryPoint> element](../deployment/entrypoint-element-clickonce-application.md) и <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A> .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)
-- [\<entryPoint> дерев](../deployment/entrypoint-element-clickonce-application.md)
+- [Элемент \<entryPoint>](../deployment/entrypoint-element-clickonce-application.md)

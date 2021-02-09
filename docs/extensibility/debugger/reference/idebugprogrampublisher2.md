@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc6f0643066aaca4ba12d9818d449785f6edb752
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 430cd05c66311971ad3cdbf60e170478810899ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011870"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916194"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 Этот интерфейс позволяет подсистеме отладки (DE) или поставщикам пользовательских портов регистрировать программы для отладки.
@@ -45,7 +45,7 @@ Visual Studio реализует этот интерфейс для регист
 |[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|Удаляет программу, чтобы она больше не была доступна.|
 |[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|Задает флаг, указывающий на наличие отладчика.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 Этот интерфейс делает доступными программы и узлы программ (то есть «публикует их») для использования алгоритмом DEs и диспетчером отладки сеансов (SDM). Для доступа к опубликованным программам и узлам программ используйте интерфейс [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) . Это единственный способ, которым Visual Studio может распознать, что программа отлаживается.
 
 ## <a name="requirements"></a>Требования
@@ -89,6 +89,6 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
