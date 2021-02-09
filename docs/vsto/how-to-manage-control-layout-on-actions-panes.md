@@ -13,15 +13,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], control layout
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 49739b6011fcf977db84a3350929a56514040975
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848252"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918594"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Руководство. Управление макетом элементов управления на панелях действий
   По умолчанию панель действий закреплена справа от документа или листа; Однако его можно прикрепить к левому, верхнему или нижнему краю. Если вы используете несколько пользовательских элементов управления, можно написать код для правильного размещения пользовательских элементов управления на панели действия. Дополнительные сведения см. в разделе [Общие сведения о панели действий](../vsto/actions-pane-overview.md).

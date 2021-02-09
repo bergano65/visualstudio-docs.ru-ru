@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 98e0c21fa4e3f119b32e19dd1be6e7d9148a17f4
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 0f2d14bfd069fcf5064c9d8643393e28e52570be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918634"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Пошаговое руководство: создание веб-части для SharePoint
 
@@ -44,7 +44,7 @@ ms.locfileid: "96914664"
     > [!NOTE]
     > Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Поддерживаемые редакции Microsoft Windows и SharePoint.
 

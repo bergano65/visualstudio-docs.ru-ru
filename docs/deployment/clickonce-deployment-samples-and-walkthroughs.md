@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3973276b-7b11-4692-a0a2-32bebf0b9c2a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 419fa9f917358ae19a073b5f864ee76d92c33e75
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 5b8b3a1482a01f0fcef6a8a64fcb3ec0a0023850
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383044"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918324"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Примеры и пошаговые руководства по развертыванию ClickOnce
 В этом разделе содержатся примеры приложений, примеры кода и пошаговые пошаговые руководства, иллюстрирующие синтаксис, структуру и приемы, используемые для развертывания Windows Forms, WPF и консольных приложений.
@@ -39,6 +39,6 @@ ms.locfileid: "94383044"
 |[Загрузка сборок по запросу с помощью API развертывания ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Демонстрирует, как пометить определенные сборки в приложении как "необязательные" и как скачать их с помощью классов в <xref:System.Deployment.Application> пространстве имен.|
 |[Загрузка сборок по запросу с помощью API развертывания ClickOnce в конструкторе](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Содержит сведения о загрузке сборок приложения только при их первом использовании приложением.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Пошаговые руководства по Visual Studio](/previous-versions/szatc41e(v=vs.110))

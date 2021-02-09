@@ -8,16 +8,16 @@ helpviewer_keywords:
 - dependency diagrams, adding custom validation
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: ea168744427469d1d08dd78bc1a23d79d577604f
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: bd5f17e7e8c12da1d4e01738c26650a3df4760fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919321"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Добавление пользовательской проверки архитектуры в схемы зависимостей
 
@@ -33,9 +33,9 @@ ms.locfileid: "90100530"
 > [!WARNING]
 > Создав проект проверки, скопируйте в него [пример кода](#example) , приведенный в конце этого раздела, и внесите в него изменения с учетом своих задач.
 
-## <a name="requirements"></a>Requirements (Требования)
+## <a name="requirements"></a>Требования
 
-См. раздел [Требования](../modeling/extend-layer-diagrams.md#requirements).
+См. раздел [требования](../modeling/extend-layer-diagrams.md#requirements).
 
 ## <a name="defining-a-layer-validator-in-a-new-vsix"></a>Определение проверяющего элемента слоя в новом файле VSIX
 
@@ -82,9 +82,9 @@ ms.locfileid: "90100530"
 
 2. Найдите или создайте **проект VSIX** в решении. Проект VSIX содержит файл с именем **source.extension.vsixmanifest**.
 
-3. В **Обозреватель решений**в контекстном меню проекта VSIX выберите пункт **Назначить запускаемым проектом**.
+3. В **Обозреватель решений** в контекстном меню проекта VSIX выберите пункт **Назначить запускаемым проектом**.
 
-4. В **source.extension.vsixmanifest**на вкладке **Активы**добавьте проект проверки слоев в качестве компонента MEF:
+4. В **source.extension.vsixmanifest** на вкладке **Активы** добавьте проект проверки слоев в качестве компонента MEF:
 
     1. Выберите **Создать**.
 

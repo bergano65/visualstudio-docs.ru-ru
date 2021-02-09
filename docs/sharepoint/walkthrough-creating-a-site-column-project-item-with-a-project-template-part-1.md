@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 32f56f282dc5755b8162c4f19a9c036dc2e9cc5f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: b9ccf478a084b8dedabc6f470a333e3fe4b54eb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915223"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918734"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1
   Проекты SharePoint — это контейнеры для одного или нескольких элементов проектов SharePoint. Вы можете расширить систему проектов SharePoint в Visual Studio, создав собственные типы элементов проектов SharePoint и связав их с шаблоном проекта. В этом пошаговом руководстве будет определен тип элемента проекта для создания столбца сайта, а затем будет создан шаблон проекта, который можно использовать для создания нового проекта, содержащего элемент проекта столбца сайта.
@@ -43,7 +43,7 @@ ms.locfileid: "96915223"
 > [!NOTE]
 > Ряд примеров рабочих процессов см. в разделе [примеры рабочих процессов SharePoint](/sharepoint/dev/general-development/sharepoint-workflow-samples).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
  Для выполнения этого пошагового руководства на компьютере разработчика потребуются следующие компоненты:
 
 - Поддерживаемые выпуски Microsoft Windows, SharePoint и [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -73,7 +73,7 @@ ms.locfileid: "96915223"
 
 2. В строке меню выберите **Файл** > **Создать** > **Проект**.
 
-3. В верхней части диалогового окна **Новый проект** убедитесь, что **.NET Framework 4,5** выбран в списке версий .NET Framework.
+3. В верхней части диалогового окна **Новый проект** убедитесь, что **платформа .NET Framework 4,5** выбран в списке версий платформа .NET Framework.
 
 4. Разверните узлы **Visual Basic** или **Visual C#** , а затем выберите узел **расширяемость** .
 
@@ -90,7 +90,7 @@ ms.locfileid: "96915223"
 
 1. В **Обозреватель решений** откройте контекстное меню узла решения, выберите **Добавить**, а затем выберите **Новый проект**.
 
-2. В верхней части диалогового окна **Новый проект** убедитесь, что **.NET Framework 4,5** выбран в списке версий .NET Framework.
+2. В верхней части диалогового окна **Новый проект** убедитесь, что **платформа .NET Framework 4,5** выбран в списке версий платформа .NET Framework.
 
 3. Разверните узел **Visual C#** или **Visual Basic** , а затем выберите узел **расширяемость** .
 
@@ -120,7 +120,7 @@ ms.locfileid: "96915223"
 
 1. В **Обозреватель решений** откройте контекстное меню узла решения, выберите **Добавить**, а затем выберите **Новый проект**.
 
-2. В верхней части диалогового окна **Новый проект** убедитесь, что **.NET Framework 4,5** выбран в списке версий .NET Framework.
+2. В верхней части диалогового окна **Новый проект** убедитесь, что **платформа .NET Framework 4,5** выбран в списке версий платформа .NET Framework.
 
 3. Разверните узлы **Visual C#** или **Visual Basic** , выберите узел **Windows** , а затем шаблон **Библиотека классов** .
 
@@ -218,7 +218,7 @@ ms.locfileid: "96915223"
 
      `OutputSubPath`Элемент задает дополнительные папки в пути, по которому создается шаблон проекта при построении проекта. Указанные здесь папки гарантируют, что шаблон проекта будет доступен только тогда, когда клиенты открывают диалоговое окно **Новый проект** , разверните узел **SharePoint** , а затем выберите узел **2010** .
 
-5. Сохраните файл и закройте его.
+5. Сохраните и закройте файл.
 
 6. В **Обозреватель решений** откройте контекстное меню проекта **ситеколумнпрожекттемплате** и выберите **Перезагрузить проект**.
 
@@ -255,7 +255,7 @@ ms.locfileid: "96915223"
 
      Если свойство **"изолированное решение"** проекта SharePoint имеет значение **true**, Visual Studio добавляет в <xref:System.Security.AllowPartiallyTrustedCallersAttribute> файл кода AssemblyInfo. Однако файл кода AssemblyInfo в шаблоне проекта не импортирует <xref:System.Security> пространство имен по умолчанию. Чтобы избежать ошибок компиляции, необходимо добавить инструкцию **using** или **Imports** .
 
-2. Сохраните файл и закройте его.
+2. Сохраните и закройте файл.
 
 #### <a name="to-edit-the-elementsxml-file"></a>Изменение файла Elements.xml
 
@@ -275,7 +275,7 @@ ms.locfileid: "96915223"
 
      Новый XML-файл добавляет `Field` элемент, определяющий имя столбца сайта, его базовый тип и группу, в которой будет перечисляться столбец сайта в коллекции. Дополнительные сведения о содержимом этого файла см. в разделе [схема определения поля](/previous-versions/office/developer/sharepoint-2010/ms196289(v=office.14)).
 
-2. Сохраните файл и закройте его.
+2. Сохраните и закройте файл.
 
 #### <a name="to-edit-the-sharepointprojectitemspdata-file"></a>Изменение файла Шарепоинтпрожектитем. данных
 
@@ -299,7 +299,7 @@ ms.locfileid: "96915223"
 
      Дополнительные сведения о содержимом файлов *данных с данными* см. в разделе [Справочник по схеме элементов проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md).
 
-2. Сохраните файл и закройте его.
+2. Сохраните и закройте файл.
 
 #### <a name="to-edit-the-feature1feature-file"></a>Изменение файла Feature1. feature
 
@@ -325,7 +325,7 @@ ms.locfileid: "96915223"
 
      Дополнительные сведения о файлах *Feature* см. в разделе [Создание шаблонов элементов и шаблонов проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
 
-2. Сохраните файл и закройте его.
+2. Сохраните и закройте файл.
 
 #### <a name="to-edit-the-packagepackage-file"></a>Изменение файла пакета. Package
 
@@ -350,7 +350,7 @@ ms.locfileid: "96915223"
 
      Дополнительные сведения о *пакетных* файлах см. в разделе [Создание шаблонов элементов и шаблонов проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
 
-2. Сохраните файл и закройте его.
+2. Сохраните и закройте файл.
 
 #### <a name="to-edit-the-sitecolumnprojecttemplatevstemplate-file"></a>Изменение файла ситеколумнпрожекттемплате. vstemplate
 
@@ -438,7 +438,7 @@ ms.locfileid: "96915223"
 
      Дополнительные сведения о содержимом *VSTEMPLATE* файлов см. в разделе [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
-2. Сохраните файл и закройте его.
+2. Сохраните и закройте файл.
 
 #### <a name="to-edit-the-projecttemplatecsproj-or-projecttemplatevbproj-file"></a>Изменение файла projecttemplate. csproj или projecttemplate. vbproj
 
@@ -625,7 +625,7 @@ ms.locfileid: "96915223"
 
      Новый XML вносит в файл следующие изменения:
 
-    - Использует `TargetFrameworkVersion` элемент для указания .NET Framework 3,5, а не 4,5.
+    - Использует `TargetFrameworkVersion` элемент для указания платформа .NET Framework 3,5, а не 4,5.
 
     - Добавляет `SignAssembly` `AssemblyOriginatorKeyFile` элементы и для подписания выходных данных проекта.
 
@@ -633,7 +633,7 @@ ms.locfileid: "96915223"
 
     - Добавляет элементы для каждого файла по умолчанию в проекте, например *Elements.xml* и *шарепоинтпрожектитем. данных*.
 
-2. Сохраните файл и закройте его.
+2. Сохраните и закройте файл.
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-template"></a>Создание пакета VSIX для развертывания шаблона проекта
  Чтобы развернуть расширение, используйте проект VSIX в решении **ситеколумнпрожектитем** для создания пакета VSIX. Сначала настройте пакет VSIX, изменив файл Source. extension. vsixmanifest, который включен в проект VSIX. Затем создайте пакет VSIX, создав решение.

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b815f8ea4656cc5a144f8cf12396391e55123ece
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 378e839ea5f4223873fbbeec8d7b401ae0b16fc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914872"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918757"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Пошаговое руководство. Создание расширения проекта SharePoint
   В этом пошаговом руководстве показано, как создать расширение для проектов SharePoint. Расширение проекта можно использовать для реагирования на события уровня проекта, например при добавлении, удалении или переименовании проекта. Можно также добавить пользовательские свойства или ответить при изменении значения свойства. В отличие от расширений элементов проекта, расширения проектов не могут быть связаны с определенным типом проекта SharePoint. При создании расширения проекта это расширение загружается при открытии любого типа проекта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -42,7 +42,7 @@ ms.locfileid: "96914872"
 
 - Отладка и тестирование свойства проекта.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
  Для выполнения этого пошагового руководства на компьютере разработчика потребуются следующие компоненты:
 
 - Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] , SharePoint и [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -69,7 +69,7 @@ ms.locfileid: "96914872"
     > [!NOTE]
     > Этот узел доступен только при установке пакета SDK для Visual Studio. Дополнительные сведения см. в разделе Предварительные требования ранее в этом разделе.
 
-4. В верхней части диалогового окна выберите **.NET Framework 4,5** в списке версий .NET Framework, а затем выберите шаблон **проекта VSIX** .
+4. В верхней части диалогового окна выберите **платформа .NET Framework 4,5** в списке версий платформа .NET Framework, а затем выберите шаблон **проекта VSIX** .
 
 5. В поле **имя** введите **прожектекстенсионпаккаже**, а затем нажмите кнопку **ОК** .
 
@@ -81,7 +81,7 @@ ms.locfileid: "96914872"
 
 2. В диалоговом окне **Новый проект** разверните узлы **Visual C#** или **Visual Basic** , а затем выберите **Windows**.
 
-3. В верхней части диалогового окна выберите **.NET Framework 4,5** в списке версий .NET Framework, а затем выберите шаблон проекта **Библиотека классов** .
+3. В верхней части диалогового окна выберите **платформа .NET Framework 4,5** в списке версий платформа .NET Framework, а затем выберите шаблон проекта **Библиотека классов** .
 
 4. В поле **имя** введите **ProjectExtension**, а затем нажмите кнопку **ОК** .
 
@@ -116,7 +116,7 @@ ms.locfileid: "96914872"
      [!code-vb[SPExt_ProjectExtension#1](../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb#1)]
      [!code-csharp[SPExt_ProjectExtension#1](../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs#1)]
 
-## <a name="build-the-solution"></a>Построение решения
+## <a name="build-the-solution"></a>Выполните сборку решения.
  Затем постройте решение, чтобы убедиться, что оно компилируется без ошибок.
 
 #### <a name="to-build-the-solution"></a>Построение решения
@@ -180,7 +180,7 @@ ms.locfileid: "96914872"
 
     1. В строке меню выберите **Файл** > **Создать** > **Проект**.
 
-    2. В верхней части диалогового окна **Новый проект** выберите **.NET Framework 3,5** в списке версий .NET Framework.
+    2. В верхней части диалогового окна **Новый проект** выберите **платформа .NET Framework 3,5** в списке версий платформа .NET Framework.
 
          Для расширений инструментов SharePoint требуются функции в этой версии [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] .
 

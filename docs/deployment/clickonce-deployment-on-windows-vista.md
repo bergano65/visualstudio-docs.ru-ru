@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: b21a0ebc-0ff6-4f49-8993-7d1ad3f8cac2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c2e09225339a87c55c31d27d26b129e199385e99
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ccac1cd234a0f83810ff2596e1763209d95a8325
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383083"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918444"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Развертывание ClickOnce в Windows Vista
 
@@ -52,8 +52,8 @@ Visual Studio предоставляет следующие возможност
 
   * Сведения о настройке проектов Visual Basic для создания манифеста см. в разделе [Страница "приложение" в конструкторе проектов (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
 
-## <a name="see-also"></a>См. также
-- [Безопасность и развертывание ClickOnce](../deployment/clickonce-security-and-deployment.md)
+## <a name="see-also"></a>См. также раздел
+- [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Разрешения пользователей и Visual Studio](/previous-versions/ms165100(v=vs.100))
 - [Страница "Приложение" в конструкторе проектов (C#)](../ide/reference/application-page-project-designer-csharp.md)
 - [Страница "Приложение" в конструкторе проектов (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
