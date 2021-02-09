@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51348e8304b67314ffd19d0aec15d43d904ee651
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: fa138923f8d23c59613ce1bbc51460fd3c8c9acb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671986"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870341"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>Элемент CreateInPlace (шаблоны Visual Studio)
 Указывает, следует ли создать проект и выполнить замену параметров в указанном расположении или выполнить замену параметров во временном расположении, а затем сохранить проект в указанном расположении.
@@ -55,8 +55,8 @@ ms.locfileid: "94671986"
 
  Этот текст должен быть либо `true`, либо `false`. Если задано `true` значение, создается проект и выполняется замена параметров в расположении, указанном в диалоговом окне **Новый проект** . Если значение `false` равно, то замена параметров выполняется во временном расположении, а затем проект копируется в указанное расположение.
 
-## <a name="remarks"></a>Комментарии
- Параметр `CreateInPlace` является необязательным элементом. Значение по умолчанию — `true`.
+## <a name="remarks"></a>Remarks
+ Параметр `CreateInPlace` является необязательным элементом. Значение по умолчанию — `true`.
 
 ## <a name="example"></a>Пример
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
