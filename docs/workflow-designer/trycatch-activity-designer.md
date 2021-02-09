@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1396a60cda1e4e1ad372a73b9c2130d450d746
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 23d9f1b0037600c6612a413cce7b089f6adbc7aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889308"
 ---
 # <a name="trycatch-activity-designer"></a>Конструктор действия «TryCatch»
 
@@ -33,7 +33,7 @@ ms.locfileid: "94433574"
 
 Конструктор действий **TryCatch** можно перетащить из **панели элементов** в область Конструктор рабочих процессов, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence> . Будет создано действие <xref:System.Activities.Statements.TryCatch> со значением по умолчанию <xref:System.Activities.Activity.DisplayName%2A> для TryCatch. <xref:System.Activities.Activity.DisplayName%2A>Значение можно изменить в заголовке конструктора действий **TryCatch** или в поле **DisplayName** сетки свойств. Другие свойства должны быть изменены на поверхности конструктора действий **TryCatch** .
 
-Нажмите кнопку развернуть в правом верхнем углу конструктора **TryCatch** , чтобы увидеть поля **try** , **catch** и **finally** в развернутом представлении. Чтобы добавить catch, нажмите кнопку **Добавить новую кнопку catch** в конструкторе **TryCatch** . Кнопка преобразуется в поле со списком, в котором можно вводить текст. Выберите тип исключения и нажмите ВВОД, чтобы добавить критерий перехвата. После добавления **блока** catch область catch разворачивается, а действие можно перетащить в блок catch, чтобы определить логику выполнения для catch. Обратите внимание на текстовое поле с правой стороны of развернутой области критериев. При помощи этого текстового поля можно назвать переменную исключения. Переменная исключения может использоваться только для действий в одном и том же **перехвате**.
+Нажмите кнопку развернуть в правом верхнем углу конструктора **TryCatch** , чтобы увидеть поля **try**, **catch** и **finally** в развернутом представлении. Чтобы добавить catch, нажмите кнопку **Добавить новую кнопку catch** в конструкторе **TryCatch** . Кнопка преобразуется в поле со списком, в котором можно вводить текст. Выберите тип исключения и нажмите ВВОД, чтобы добавить критерий перехвата. После добавления **блока** catch область catch разворачивается, а действие можно перетащить в блок catch, чтобы определить логику выполнения для catch. Обратите внимание на текстовое поле с правой стороны of развернутой области критериев. При помощи этого текстового поля можно назвать переменную исключения. Переменная исключения может использоваться только для действий в одном и том же **перехвате**.
 
 Конструктор **TryCatch** не поддерживает редактирование **catch**. Если необходимо изменить тип исключения, необходимо удалить **перехват** и добавить новый. Чтобы удалить **catch** , выберите его и удалите или выбрав пункт **Удалить** в контекстном меню, доступном щелчке правой кнопкой мыши.
 
@@ -43,10 +43,10 @@ ms.locfileid: "94433574"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Указывает необязательное понятное имя действия <xref:System.Activities.Statements.TryCatch>. Значение по умолчанию: TryCatch.|
-|<xref:System.Activities.Statements.TryCatch.Try%2A>|Неверно|Действие, выполняемое первым при выполнении действия <xref:System.Activities.Statements.TryCatch>.|
-|<xref:System.Activities.Statements.TryCatch.Catches%2A>|Неверно|Коллекция элементов **catch** , проверяемых, когда <xref:System.Activities.Statements.TryCatch.Try%2A> действие создает исключение.<br /><br /> Требуется добавить по крайней мере одно действие в блок <xref:System.Activities.Statements.TryCatch.Catches%2A> или в блок <xref:System.Activities.Statements.TryCatch.Finally%2A>.|
-|<xref:System.Activities.Statements.TryCatch.Finally%2A>|Неверно|Действие, которое необходимо выполнить, когда завершится выполнение <xref:System.Activities.Statements.TryCatch.Try%2A> и любых необходимых действий в коллекции <xref:System.Activities.Statements.TryCatch.Catches%2A>.<br /><br /> Требуется добавить по крайней мере одно действие в блок <xref:System.Activities.Statements.TryCatch.Catches%2A> или в блок <xref:System.Activities.Statements.TryCatch.Finally%2A>.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает необязательное понятное имя действия <xref:System.Activities.Statements.TryCatch>. Значение по умолчанию: TryCatch.|
+|<xref:System.Activities.Statements.TryCatch.Try%2A>|False|Действие, выполняемое первым при выполнении действия <xref:System.Activities.Statements.TryCatch>.|
+|<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|Коллекция элементов **catch** , проверяемых, когда <xref:System.Activities.Statements.TryCatch.Try%2A> действие создает исключение.<br /><br /> Требуется добавить по крайней мере одно действие в блок <xref:System.Activities.Statements.TryCatch.Catches%2A> или в блок <xref:System.Activities.Statements.TryCatch.Finally%2A>.|
+|<xref:System.Activities.Statements.TryCatch.Finally%2A>|False|Действие, которое необходимо выполнить, когда завершится выполнение <xref:System.Activities.Statements.TryCatch.Try%2A> и любых необходимых действий в коллекции <xref:System.Activities.Statements.TryCatch.Catches%2A>.<br /><br /> Требуется добавить по крайней мере одно действие в блок <xref:System.Activities.Statements.TryCatch.Catches%2A> или в блок <xref:System.Activities.Statements.TryCatch.Finally%2A>.|
 
 ## <a name="see-also"></a>См. также раздел
 

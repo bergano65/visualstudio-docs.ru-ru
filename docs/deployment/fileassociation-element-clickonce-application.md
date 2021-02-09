@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1908b4f63edcf90643c28523c0c6ed0d0e11a97
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 7435a4e4973ee0a000555e9508328a76f7aa59a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382732"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889152"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;&gt;элемент филеассоЦиатион (приложение ClickOnce)
 Определяет расширение файла, связываемое с приложением.
@@ -49,7 +49,7 @@ ms.locfileid: "94382732"
 |`progid`|Обязательный элемент. Имя, уникально идентифицирующее тип файла.|
 |`defaultIcon`|Обязательный элемент. Указывает значок, используемый для файлов с этим расширением. Файл значка необходимо указать с помощью [ \<file> элемента](../deployment/file-element-clickonce-application.md) в [ \<assembly> элементе](../deployment/assembly-element-clickonce-application.md) , который содержит этот элемент.|
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  Этот элемент должен включать ссылку на пространство имен XML в "urn: schemas-microsoft-com: ClickOnce. v1". Если `<fileAssociation>` элемент используется, он должен находиться после `<application>` элемента в его родительском [ \<assembly> элементе](../deployment/assembly-element-clickonce-application.md).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] не будет перезаписывать существующие сопоставления файлов. Однако приложение ClickOnce может переопределить расширение файла только для текущего пользователя. После удаления этого приложения ClickOnce служба ClickOnce удаляет сопоставление файлов для пользователя, а связь для каждого компьютера снова становится активной.
@@ -80,5 +80,5 @@ ms.locfileid: "94382732"
 <fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)

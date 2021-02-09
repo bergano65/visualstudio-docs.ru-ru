@@ -20,15 +20,15 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], Toolbox
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 63459f4daf1f9fe717946491a997ba47510fbab8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cc507d31f791a3f3d7addbcffc0b9b87963d443f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524451"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888723"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Ограничения элементов управления Windows Forms в документах Office
 
@@ -73,7 +73,7 @@ ms.locfileid: "97524451"
 
 Windows Forms элементы управления обычно имеют такое же поведение в документе Office, как и в Windows Forms, но некоторые различия существуют. В следующей таблице описаны различия, которые существуют для Windows Forms элементов управления в документах Office.
 
-|функциональное назначение;|Различие|
+|Функциональность|Разность|
 |-------------------|----------------|
 |Последовательность табуляции элементов управления|Нельзя перемещаться по элементам управления, размещенным на листе Excel или в документе Word.|
 |Группирование элементов управления|Нельзя использовать <xref:System.Windows.Forms.GroupBox> элемент управления для размещения других элементов управления в документе Office. При добавлении нескольких переключателей непосредственно в документ переключатели не являются взаимоисключающими. Можно написать код, чтобы сделать переключатели взаимоисключающими. Однако предпочтительным подходом является добавление переключателей в пользовательский элемент управления, а затем Добавление пользовательского элемента управления в документ. Дополнительные сведения см. в разделе примеры элементов управления Word или примеры элементов управления Excel в примерах [разработки Office и пошаговых руководствах](../vsto/office-development-samples-and-walkthroughs.md).|

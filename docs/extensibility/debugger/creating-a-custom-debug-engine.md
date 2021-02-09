@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 673b08bf5680e04c90376c9eb3d63f6f03df9723
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 7c0aa8550bc402520052003b59cf4ab1deaad7b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914196"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888970"
 ---
 # <a name="create-a-custom-debug-engine"></a>Создание пользовательского модуля отладки
 Модуль отладки (DE) — это компонент, позволяющий выполнять отладку определенных архитектур времени выполнения. Как правило, для среды выполнения обычно используется только одна дереализация.
@@ -41,7 +41,7 @@ ms.locfileid: "96914196"
 
 5. Настройка завершения и отсоединения
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
  [Регистрация пользовательского модуля отладки](../../extensibility/debugger/registering-a-custom-debug-engine.md) Описание действий, необходимых для регистрации модуля отладки в Visual Studio, чтобы его можно было использовать.
 
  [Включение отладки программы](../../extensibility/debugger/enabling-a-program-to-be-debugged.md) В этой статье объясняется, что перед началом отладки программы необходимо сначала запустить DE или присоединить ее к существующей программе.
