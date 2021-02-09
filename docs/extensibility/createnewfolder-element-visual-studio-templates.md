@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: acef2016-4140-45d6-ace8-b8160eabd676
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15633c2f701c813ca24c5484fd4108a86c57b05b
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 9169d90eb10c0595b7dc7fe940463f57354dfffa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870315"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>Элемент Креатеневфолдер (шаблоны Visual Studio)
 Определяет, следует проверять, существует ли целевой каталог, в котором создается проект. Если каталог существует, для проекта можно создать новый каталог. Этот параметр обычно переопределяется флагом реестра `NewProjectRequiresNewFolder(VsTemplate)` (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`), который используют все распространенные типы проектов, чтобы определить, нужно ли создать проект в новом каталоге.
@@ -59,8 +59,8 @@ ms.locfileid: "94671583"
 
  В качестве текста следует использовать `true` или `false`, указав, будет ли создана новая папка при создании проекта на основе шаблона.
 
-## <a name="remarks"></a>Комментарии
- Параметр `CreateNewFolder` является необязательным элементом. Значение по умолчанию — `true`.
+## <a name="remarks"></a>Remarks
+ Параметр `CreateNewFolder` является необязательным элементом. Значение по умолчанию — `true`.
 
  Значение, указанное в элементе `CreateNewFolder`, учитывается [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], только если базовая система поддерживает его.
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c7a25246f42d288020481330fe60e312849862d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67a5bfe92547738a672cb6881234ae80f76aeda8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869769"
 ---
 # <a name="idebugfield"></a>IDebugField
 Этот интерфейс представляет поле, то есть описание символа или типа.

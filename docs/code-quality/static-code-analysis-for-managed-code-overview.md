@@ -9,15 +9,15 @@ helpviewer_keywords:
 - managed code, code analysis
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6f1f12fa7fca964c857e534c1ffae50efe70b27
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: e8d9ddf88086772e0cd21bde856184954bc7143b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867689"
 ---
 # <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Общие сведения об устаревшем анализе управляемого кода в Visual Studio
 
@@ -88,7 +88,7 @@ Public class MyClass
 
 Существует возможность использования интегрированных возможностей системы построения для запуска средства анализа в рамках процесса построения. Дополнительные сведения см. в описании [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор анализаторов на основе .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md)
 - [Использование наборов правил для группировки правил анализа кода](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)

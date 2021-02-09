@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 458ca77ebcd8017b9834a8925edec255ca04cc13
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 161be2b157c079312cdbbee0b6913c92c3c61578
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869522"
 ---
 # <a name="when-to-create-project-types"></a>Когда следует создавать типы проектов
 Создание нового типа проекта предоставляет базу для настройки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для пользователей. Однако создание нового типа проекта не является обязательным для всех [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] настроек. Следующие рекомендации помогут определить, требуется ли для вашего сценария новый тип проекта.

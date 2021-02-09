@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14193c0806c4b45f721ee97b101969de8437448d
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: c0d9d20000781980535259c0a739e03a47ae53e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487534"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869548"
 ---
 # <a name="inside-the-editor"></a>Внутри редактора
 
@@ -61,7 +61,7 @@ ms.locfileid: "97487534"
 
 Подсистема текстовых моделей свободна от основных понятий пользовательского интерфейса. Например, он не несет ответственности за форматирование текста или макет текста и не имеет сведений о визуальных элементах оформления, которые могут быть связаны с текстом.
 
-Открытые типы подсистемы текстовых моделей содержатся в *Microsoft.VisualStudio.Text.Data.dll* и *Microsoft.VisualStudio.CoreUtility.dll*, которые зависят только от .NET Framework библиотеки базовых классов и Managed Extensibility Framework (MEF).
+Открытые типы подсистемы текстовых моделей содержатся в *Microsoft.VisualStudio.Text.Data.dll* и *Microsoft.VisualStudio.CoreUtility.dll*, которые зависят только от платформа .NET Framework библиотеки базовых классов и Managed Extensibility Framework (MEF).
 
 ### <a name="text-view-subsystem"></a>Подсистема представления текста
 
@@ -87,7 +87,7 @@ ms.locfileid: "97487534"
 
 #### <a name="text-buffers-and-text-snapshots"></a>Текстовые буферы и моментальные снимки текста
 
-<xref:Microsoft.VisualStudio.Text.ITextBuffer>Интерфейс представляет последовательность символов Юникода, закодированных с помощью UTF-16, который является кодировкой, используемой `String` типом в .NET Framework. Текстовый буфер можно сохранить как документ файловой системы, но это необязательно.
+<xref:Microsoft.VisualStudio.Text.ITextBuffer>Интерфейс представляет последовательность символов Юникода, закодированных с помощью UTF-16, который является кодировкой, используемой `String` типом в платформа .NET Framework. Текстовый буфер можно сохранить как документ файловой системы, но это необязательно.
 
 <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>Используется для создания пустого текстового буфера или текстового буфера, который инициализируется из строки или из <xref:System.IO.TextReader> . Текстовый буфер можно сохранить в файловой системе как <xref:Microsoft.VisualStudio.Text.ITextDocument> .
 

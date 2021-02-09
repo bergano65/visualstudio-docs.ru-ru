@@ -1,5 +1,5 @@
 ---
-title: Включить или установить сторонние анализаторы .NET
+title: Включение или установка сторонних анализаторов .NET
 ms.date: 08/03/2018
 description: Узнайте, как включить сторонние анализаторы .NET из пакета SDK для .NET или установить эти анализаторы как пакет NuGet.
 ms.custom: SEO-VS-2020
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - .NET analyzers
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: ea13fde64f6214cf3c219de45c79458b75e1caf8
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: b41615e1826987cb42076ab3195fe7bfad235e7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615529"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867897"
 ---
-# <a name="enable-or-install-first-party-net-analyzers"></a>Включить или установить сторонние анализаторы .NET
+# <a name="enable-or-install-first-party-net-analyzers"></a>Включение или установка сторонних анализаторов .NET
 
 ## <a name="overview"></a>Обзор
 

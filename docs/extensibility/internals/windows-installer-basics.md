@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f4ca1908fbd54c0e8d12212bed19fc77e1dff51
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 4081c79b7492e369e19187a099bf975275cb371c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869496"
 ---
 # <a name="windows-installer-basics"></a>Основные сведения об установщике Windows
 Установщик Windows устанавливает и удаляет приложения или программные продукты на компьютере пользователя, выполняя эти задачи в единицах, которые называются установщик Windows компонентами (иногда называются Викс или просто компонентами). Идентификатор GUID определяет каждый компонент WIC, который является базовой единицей установки и подсчета ссылок для установок с помощью установщик Windows.
