@@ -7,15 +7,15 @@ ms.date: 04/26/2019
 ms.topic: conceptual
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c84d44b3f775f384ed15a0ede1ef9c68ad2fd5a6
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: b2c3703cf0e95b83492f1cb50548d9a90336e34a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848147"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Запуск Visual Studio с помощью DTE
 
@@ -27,7 +27,7 @@ ms.locfileid: "97615881"
 
 Чтобы увидеть запуск кода в действии, создайте проект, выполнив следующие действия.
 
-1. Создайте новый проект **консольного приложения** для .NET Framework.
+1. Создайте новый проект **консольного приложения** для платформа .NET Framework.
 
 2. Установите [Microsoft.VisualStudio.Setup.Configфигурации. Взаимодействие](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) пакета NuGet и Добавление ссылки на сборку.
 

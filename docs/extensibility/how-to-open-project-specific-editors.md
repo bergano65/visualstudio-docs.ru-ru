@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cbba1f4d6cf0a2a5a45dd2999afa5bbf3443fca
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 719460b36f926df19e76db1aab4e90b4d959fdc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850498"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Пошаговое руководство. открытие редакторов, зависящих от проекта
 Если файл элемента, открываемый проектом, внутренне привязан к конкретному редактору для этого проекта, проект должен открыть файл с помощью редактора, зависящего от проекта. Не удается делегировать файл механизму IDE для выбора редактора. Например, вместо стандартного редактора точечных рисунков можно использовать этот параметр редактора для конкретного проекта, чтобы указать конкретный редактор растровых изображений, который распознает сведения в файле, который уникален для вашего проекта.

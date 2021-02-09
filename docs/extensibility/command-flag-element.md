@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15dbf960aebc543b71ff282e525476583bdeba3d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: f328f2112073c082e276683d32d6ca06276b9829
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974200"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848199"
 ---
 # <a name="command-flag-eelement"></a>Флаг команды Илемент
 Изменяет свой родительский элемент.
@@ -76,5 +76,5 @@ ms.locfileid: "94974200"
 |[Button, элемент](../extensibility/buttons-element.md)|Предоставляет группу элементов [элемента Button](../extensibility/button-element.md) .|
 |[Элемент menus](../extensibility/menus-element.md)|Определяет все меню, которые реализует VSPackage.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Командная таблица Visual Studio (. Vsct) файлы](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

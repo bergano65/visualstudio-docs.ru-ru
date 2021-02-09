@@ -14,15 +14,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customizations> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cc1f33101346d334d08d2bd2d7795961ea33011e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 27b20a13d96b8fc23fcde2dbb8f14d1f1f27ceea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849935"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;элемент "настройки &gt; " (разработка решений Office в Visual Studio)
   Элемент `customizations` пространства имен `vstov4` содержит все сведения об установке и загрузке каждого решения Office.
