@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 418de18c-bee9-4f24-9cd9-0252d175070d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fbda4558622c2e244071a218d3d5e42196460113
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0377bdc5fa38c814bb5cd6ff02d12dcec117266d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900785"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Практическое руководство. Настройка используемой по умолчанию веб-страницы для приложения ClickOnce
 При публикации приложения ClickOnce в Интернете автоматически создается и публикуется веб-страница вместе с приложением. Страница по умолчанию содержит имя приложения и ссылки для установки приложения, установки необходимых компонентов или доступа к справке на сайте MSDN.
@@ -47,10 +47,10 @@ ms.locfileid: "94351210"
 
 3. Настройте страницу по желанию и сохраните ее.
 
-4. Необязательный параметр. Чтобы запретить Visual Studio перезапись настроенной веб-страницы публикации, снимите флажок **автоматически создавать веб-страницу развертывания после каждой публикации** в диалоговом окне **Параметры публикации** .
+4. Необязательный элемент. Чтобы запретить Visual Studio перезапись настроенной веб-страницы публикации, снимите флажок **автоматически создавать веб-страницу развертывания после каждой публикации** в диалоговом окне **Параметры публикации** .
 
-## <a name="see-also"></a>См. также
-- [Безопасность и развертывание ClickOnce](../deployment/clickonce-security-and-deployment.md)
+## <a name="see-also"></a>См. также раздел
+- [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Как установить необходимые компоненты с помощью приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
-- [Практическое руководство. Указание страницы публикации для приложения ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
+- [Как указать страницу публикации для приложения ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)

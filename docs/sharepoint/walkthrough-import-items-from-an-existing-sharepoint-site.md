@@ -13,15 +13,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7eeff880538d98f997f48f82c49d01045e834031
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 861b6ff20f9ceb73c279e54fa89ee513389b6b91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970134"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900952"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Пошаговое руководство: Импорт элементов с существующего сайта SharePoint
   В этом пошаговом руководстве показано, как импортировать элементы из существующего сайта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проект SharePoint.
@@ -143,7 +143,7 @@ ms.locfileid: "95970134"
 
      Обратите внимание, что в списке отображается пользовательский столбец сайта, импортированный из первого сайта SharePoint.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Импорт элементов с существующего сайта SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

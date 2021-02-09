@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6dc136b1c58f9c627787045b1259d07e27a6b8ad
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 43104ad8b26045056ca8d8d653fcb9625734f7eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527876"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899433"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Пошаговое руководство. Создание первой надстройки VSTO для Word
   В этом вводном пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office Word. Функции, создаваемые в таком решении, доступны для самого приложения независимо от того, какие документы открыты.
@@ -64,7 +64,7 @@ ms.locfileid: "97527876"
 
 6. В поле **имя** введите **фирствордаддин**.
 
-7. Нажмите кнопку **ОК**.
+7. Нажмите кнопку **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создает проект **фирствордаддин** и открывает файл кода ThisAddIn в редакторе.
 
@@ -120,7 +120,7 @@ ms.locfileid: "97527876"
 
 1. В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Теперь, когда вы создали базовую надстройку VSTO для Word, ознакомьтесь с более подробными сведениями о разработке надстроек VSTO в следующих разделах.
 
 - Общие задачи программирования, которые можно выполнять в надстройках VSTO: [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md).

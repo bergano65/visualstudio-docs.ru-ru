@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a337a582-e67c-409a-b52e-607cd1a8fc57
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c243b0e0565c082e05fd15a1e02aa0507120e16b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 520f9aea1dbd3d3f742293a95b4dd7bdbac62a3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900764"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Практическое руководство. Отключение активации приложений ClickOnce по URL-адресу с помощью конструктора
 Как правило, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение запустится автоматически сразу после установки с веб-сервера. По соображениям безопасности вы можете отключить это поведение и сообщить пользователям о необходимости запуска приложения из меню " **Пуск** ". Следующая процедура описывает процесс отключения активации через URL.
@@ -48,5 +48,5 @@ ms.locfileid: "94350014"
 
 6. Разверните приложение.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)

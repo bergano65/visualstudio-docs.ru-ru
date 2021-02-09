@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a17902451c931bd37a92158a3b5c3838ed91ed4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0b4e4efee02ca1571f40ae33f9d69d8fbec0a1d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351132"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900434"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Практическое руководство. Повторное подписание манифестов приложения и развертывания
 После внесения изменений в свойства развертывания в манифесте приложения для Windows Forms приложений, Windows Presentation Foundation приложений (XBAP) или решений Office необходимо повторно подписать манифесты приложения и развертывания с помощью сертификата. Этот процесс позволяет проверить, не установлены ли на компьютер конечного пользователя измененные злоумышленниками файлы.
@@ -33,7 +33,7 @@ ms.locfileid: "94351132"
  Другой сценарий, в котором вы можете повторно подписать манифесты, — когда ваши клиенты хотят подписать манифесты приложения и развертывания с помощью собственного сертификата.
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Повторное подписывание манифестов приложения и развертывания
- В этой процедуре предполагается, что вы уже внесли изменения в файл манифеста приложения ( *manifest* ). Дополнительные сведения см. [в разделе инструкции. изменение свойств развертывания](/previous-versions/cc442869(v=vs.110)).
+ В этой процедуре предполагается, что вы уже внесли изменения в файл манифеста приложения (*manifest*). Дополнительные сведения см. [в разделе инструкции. изменение свойств развертывания](/previous-versions/cc442869(v=vs.110)).
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Повторное подписание манифестов приложения и развертывания с помощью Mage.exe
 
@@ -69,10 +69,10 @@ ms.locfileid: "94351132"
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. При необходимости скопируйте главный манифест развертывания ( *Publish \\ \<appname> . Application* ) в каталог развертывания версии ( *публиш\аппликатион Files \\ \<appname> _ \<version>* ).
+5. При необходимости скопируйте главный манифест развертывания (*Publish \\ \<appname> . Application*) в каталог развертывания версии (*публиш\аппликатион Files \\ \<appname> _ \<version>*).
 
 ## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>Обновление и повторное подписание манифестов приложения и развертывания
- В этой процедуре предполагается, что вы уже внесли изменения в файл манифеста приложения ( *manifest* ), но есть и другие файлы, которые были обновлены. При обновлении файлов также необходимо обновить хэш, представляющий файл.
+ В этой процедуре предполагается, что вы уже внесли изменения в файл манифеста приложения (*manifest*), но есть и другие файлы, которые были обновлены. При обновлении файлов также необходимо обновить хэш, представляющий файл.
 
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Обновление и повторное подписание манифестов приложения и развертывания с помощью Mage.exe
 
@@ -112,9 +112,9 @@ ms.locfileid: "94351132"
 
 6. Добавьте расширение *. deploy* обратно в файлы, кроме файлов манифеста приложения и развертывания.
 
-7. При необходимости скопируйте главный манифест развертывания ( *Publish \\ \<appname> . Application* ) в каталог развертывания версии ( *публиш\аппликатион Files \\ \<appname> _ \<version>* ).
+7. При необходимости скопируйте главный манифест развертывания (*Publish \\ \<appname> . Application*) в каталог развертывания версии (*публиш\аппликатион Files \\ \<appname> _ \<version>*).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce и технология Authenticode](../deployment/clickonce-and-authenticode.md)

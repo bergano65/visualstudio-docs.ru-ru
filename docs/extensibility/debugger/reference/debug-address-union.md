@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad531ee10914e404459632c98aae4a9bbda8e437
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76fc15389242de1011851492e3a68dc001534582
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899138"
 ---
 # <a name="debug_address_union"></a>DEBUG_ADDRESS_UNION
 Описывает различные виды адресов.
@@ -52,7 +52,7 @@ public struct DEBUG_ADDRESS_UNION {
 }
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 `dwKind`\
 Значение из перечисления [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) , определяющее способ интерпретации объединения.
 
@@ -93,7 +93,7 @@ public struct DEBUG_ADDRESS_UNION {
 [Только C#] Это значение должно быть упаковано в соответствующий тип структуры, основанный на `dwKind` . См. раздел Примечания для связи между `dwKind` и интерпретация объединения.
 
 ## <a name="remarks"></a>Remarks
-Эта структура является частью структуры [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) и представляет один из нескольких различных типов адресов ( `DEBUG_ADDRESS` Структура заполняется вызовом метода методу method). [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)
+Эта структура является частью структуры [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) и представляет один из нескольких различных типов адресов ( `DEBUG_ADDRESS` Структура заполняется вызовом метода методу method). [](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)
 
  [Только C#] В следующей таблице показано, как интерпретировать `unionmember` элемент для каждого типа адреса. В примере показано, как это делается для одного вида адреса.
 
@@ -141,7 +141,7 @@ namespace MyPackage
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

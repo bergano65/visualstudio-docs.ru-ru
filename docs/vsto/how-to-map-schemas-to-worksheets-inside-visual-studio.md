@@ -15,15 +15,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], XML schemas
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7a7e1a06e644536ce9ce881d9b9f1dc23aae03f1
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0e6d868655e3f697a7f659064026929568f2e400
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848213"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900856"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Как сопоставлять схемы с листами в Visual Studio
   Схему XML можно сопоставлять с листом, когда лист открыт в Visual Studio. Вы используете те же средства Microsoft Office Excel, которые используются, когда книга открыта вне Visual Studio. Проект Office создает те же объекты независимо от того, сопоставляется ли схема с листом до или после создания решения Excel.
@@ -56,7 +56,7 @@ ms.locfileid: "96848213"
 
 7. Перейдите к файлу схемы, выберите его и нажмите кнопку **Открыть**.
 
-8. Нажмите кнопку **ОК**.
+8. Нажмите кнопку **OK**.
 
      Схема представлена в окне « **Источник XML** ». В проекте на основе схемы создается типизированный объект, <xref:System.Data.DataSet> а <xref:System.Windows.Forms.BindingSource> создается.
 

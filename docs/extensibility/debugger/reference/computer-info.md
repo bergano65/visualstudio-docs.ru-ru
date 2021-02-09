@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 943085b2-f165-462d-9a4e-2086f0cdfff4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27794dff51646b72dbbfda81ead02e5206ade78b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 548306e1c9ef488025fd88132a27bb841194375a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737655"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900275"
 ---
 # <a name="computer_info"></a>COMPUTER_INFO
 Описывает компьютер, на котором работает отладчик.
@@ -43,7 +43,7 @@ public struct COMPUTER_INFO
 }
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 `wProcessorArchitecture`\
 Определяет архитектуру микропроцессора.
 

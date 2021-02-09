@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 1dbde9c270e0b83a5d85ef3b95c8fb438e43e1b1
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+manager: jmartens
+ms.openlocfilehash: d42a7509ceef03d2e74f470d7d4ab0efb5913e13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995529"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900837"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Упорядочивание объектов в макеты-контейнеры в конструкторе XAML
 
@@ -45,7 +45,7 @@ ms.locfileid: "96995529"
 
 ![Панель макета UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
-### <a name="canvas"></a>Холст
+### <a name="canvas"></a>Элемент Canvas
 
 Упорядочивание объектов любым образом При запуске приложения пользователями эти элементы будут иметь фиксированные позиции на экране.
 
@@ -81,7 +81,7 @@ ms.locfileid: "96995529"
 
 Перечисленные ниже элементы управления макета используются наиболее часто, но существуют и другие. Их можно найти на **панели элементов** в Visual Studio или на панели **Ресурсы** в Blend для Visual Studio.
 
-### <a name="border"></a>Граница
+### <a name="border"></a>Рамка
 
 Создайте границу, фон или одновременно границу и фон вокруг объекта. Для **границы** можно добавить только один объект. Если вы хотите применить границу или фон для нескольких объектов, добавьте панель макета для **границы**. Затем добавьте объекты для панели или элемента управления.
 

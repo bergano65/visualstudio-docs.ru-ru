@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e372d3163dcef84d76d77e54c66cf9f7c788e213
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f090729cdd0d08d39cf97cab9c3899f0b77c80eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349858"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900476"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Практическое руководство. Публикация приложения WPF с включенными визуальными стилями
 
@@ -51,7 +51,7 @@ ms.locfileid: "94349858"
 
     **Открытие файла манифеста в проекте Visual Basic**
 
-    1. В строке меню выберите **проект** , **Свойства** *имяПроекта* , где *имя_проекта* — это имя проекта WPF.
+    1. В строке меню выберите **проект**, **Свойства** *имяПроекта* , где *имя_проекта* — это имя проекта WPF.
 
          Отобразятся страницы свойств проекта WPF.
 
@@ -61,7 +61,7 @@ ms.locfileid: "94349858"
 
     **Открытие файла манифеста в проекте C#**
 
-    1. В строке меню выберите **проект** , **Свойства** *имяПроекта* , где *имя_проекта* — это имя проекта WPF.
+    1. В строке меню выберите **проект**, **Свойства** *имяПроекта* , где *имя_проекта* — это имя проекта WPF.
 
          Отобразятся страницы свойств проекта WPF.
 
@@ -112,7 +112,7 @@ ms.locfileid: "94349858"
 
 1. Откройте **командную строку Visual Studio**.
 
-    Дополнительные сведения о том, как открыть **командную строку Visual Studio** , см. в разделе [Командные запросы](/dotnet/framework/tools/developer-command-prompt-for-vs).
+    Дополнительные сведения о том, как открыть **командную строку Visual Studio**, см. в разделе [Командные запросы](/dotnet/framework/tools/developer-command-prompt-for-vs).
 
    > [!NOTE]
    > Оставшиеся шаги позволяют принять следующие предположения о решении:
@@ -177,7 +177,7 @@ ms.locfileid: "94349858"
 
    После выполнения этих действий можно переместить опубликованные файлы в расположение, из которого конечные пользователи должны установить приложение. Если планируется частое обновление решения, эти команды можно переместить в сценарий и запустить скрипт при каждой публикации новой версии.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 -[Устранение конкретных ошибок в развертываниях ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Общие сведения о визуальных стилях](/windows/desktop/Controls/visual-styles-overview)

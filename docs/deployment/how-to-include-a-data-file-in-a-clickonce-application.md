@@ -15,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9e346022871a3aa25363aa717f1bf15a3d42a6
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4f4b5e8fe9d17a6de9abac2681074dcfc162e9b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900601"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Практическое руководство. Включение файла данных в приложение ClickOnce
-Каждому [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] устанавливаемому приложению назначается каталог данных на локальном диске конечного компьютера, где приложение может управлять собственными данными. Файлы данных могут включать файлы любого типа: текстовые файлы, XML-файлы или даже файлы базы данных Microsoft Access ( *MDB* ). В следующих процедурах показано, как добавить в приложение файл данных любого типа [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
+Каждому [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] устанавливаемому приложению назначается каталог данных на локальном диске конечного компьютера, где приложение может управлять собственными данными. Файлы данных могут включать файлы любого типа: текстовые файлы, XML-файлы или даже файлы базы данных Microsoft Access (*MDB*). В следующих процедурах показано, как добавить в приложение файл данных любого типа [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Включение файла данных с помощью Mage.exe
 
@@ -84,5 +84,5 @@ ms.locfileid: "94349949"
 
      Необходимо повторно подписать манифест развертывания, так как его хэш манифеста приложения изменился.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Доступ к локальным и удаленным данным в приложениях ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

@@ -17,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: 0aee5fc1-e966-4bda-9b8f-d9997aeaa779
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5236d73bb965d4f25634ad9e61a52608c9030146
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 918cb7e60f4e3fed2beee024d51b94499b14b632
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350937"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900421"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Практическое руководство. Выбор режима установки ClickOnce: автономного или через Интернет
-`Install Mode`Для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения определяет, будет ли приложение доступно в автономном или сетевом режиме. Если выбрано **приложение доступно только через Интернет** , пользователь должен иметь доступ к [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] расположению публикации (веб-странице или общей папке) для запуска приложения. При выборе **приложения в автономном режиме** приложение добавляет записи в меню « **Пуск** » и диалоговое окно « **Установка и удаление программ** ». пользователь может запустить приложение, если оно не подключено.
+`Install Mode`Для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения определяет, будет ли приложение доступно в автономном или сетевом режиме. Если выбрано **приложение доступно только через Интернет**, пользователь должен иметь доступ к [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] расположению публикации (веб-странице или общей папке) для запуска приложения. При выборе **приложения в автономном режиме** приложение добавляет записи в меню « **Пуск** » и диалоговое окно « **Установка и удаление программ** ». пользователь может запустить приложение, если оно не подключено.
 
 `Install Mode`Можно задать на странице **Публикация** **конструктора проектов**.
 
@@ -37,7 +37,7 @@ ms.locfileid: "94350937"
 
 ### <a name="to-make-a-clickonce-application-available-online-only"></a>Как сделать приложение ClickOnce доступным только в сети
 
-1. Выберите проект в **обозревателе решений** , а затем в меню **Проект** щелкните **Свойства**.
+1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.
 
 2. Перейдите на вкладку **Публикация**.
 
@@ -45,7 +45,7 @@ ms.locfileid: "94350937"
 
 ### <a name="to-make-a-clickonce-application-available-online-or-offline"></a>Обеспечение доступности приложения ClickOnce в интерактивном или автономном режиме
 
-1. Выберите проект в **обозревателе решений** , а затем в меню **Проект** щелкните **Свойства**.
+1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.
 
 2. Перейдите на вкладку **Публикация**.
 
@@ -53,7 +53,7 @@ ms.locfileid: "94350937"
 
      При установке приложение добавляет записи в меню « **Пуск** », а также для **установки и удаления программ** на панели управления.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Инструкции. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

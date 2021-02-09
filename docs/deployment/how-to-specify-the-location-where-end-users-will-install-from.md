@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 04a804bf-ed55-4a7a-a1e6-f63ed99c0276
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3518a2eef331414e5c73c0cebb36681ad2b72d61
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 61c81ab15a3f4f6ec89d1b37a2c96d963bbdf67b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349624"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900405"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Практическое руководство. Указание расположения, из которого будет производиться установка пользователями
 
@@ -39,13 +39,13 @@ ms.locfileid: "94349624"
 
 ### <a name="to-specify-an-installation-url"></a>Указание URL-адреса установки
 
-1. Выберите проект в **обозревателе решений** , а затем в меню **Проект** щелкните **Свойства**.
+1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.
 
 2. Перейдите на вкладку **Публикация**.
 
 3. В поле URL-адрес установки введите путь установки с помощью полного URL-адреса в формате `https://www.contoso.com/ApplicationName` или UNC, используя формат `\Server\ApplicationName` .
 
-## <a name="see-also"></a>См. также
-- [Практическое руководство. Указание расположения, в которое среда Visual Studio копирует файлы](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
+## <a name="see-also"></a>См. также раздел
+- [Как указать, где Visual Studio копирует файлы](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Инструкции. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -7,21 +7,21 @@ ms.topic: how-to
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9199bb720cb94bc949a04bd59d5d3b6527108ed
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: e7791308de670b209433708e69ec473780342858
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900629"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Практическое руководство. Включение необходимых компонентов в дистрибутив приложения ClickOnce
 Перед распространением программного обеспечения необходимых компонентов с приложением [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] следует загрузить на компьютер разработчика пакеты установщиков этих необходимых компонентов. Если в папке **Packages** пакеты установщиков отсутствуют, при публикации приложения и выборе команды **Загрузить необходимые компоненты с местоположения моего приложения** произойдет ошибка.
 
 > [!NOTE]
-> Чтобы добавить пакет установщика для .NET Framework, ознакомьтесь с [руководством по развертыванию .NET Framework для разработчиков](/dotnet/framework/deployment/deployment-guide-for-developers).
+> Чтобы добавить пакет установщика для платформа .NET Framework, ознакомьтесь с [руководством по развертыванию платформа .NET Framework для разработчиков](/dotnet/framework/deployment/deployment-guide-for-developers).
 
 ## <a name="to-add-an-installer-package-by-using-packagexml"></a><a name="Package"></a> Добавление пакета установщика с помощью файла Package.xml
 
@@ -39,7 +39,7 @@ ms.locfileid: "94351197"
    > Если элемент **Name** не содержит `http://go.microsoft.com/fwlink` , откройте файл **Product.xml** в корневой папке для необходимого компонента и перейдите к строке **fwlink** .
 
    > [!IMPORTANT]
-   > Некоторые необходимые компоненты имеют несколько пакетов установщиков (например, для 32-разрядных или 64-разрядных систем). Если строка **fwlink** содержится в нескольких элементах **Имя** , оставшиеся действия следует выполнить для каждого из них.
+   > Некоторые необходимые компоненты имеют несколько пакетов установщиков (например, для 32-разрядных или 64-разрядных систем). Если строка **fwlink** содержится в нескольких элементах **Имя**, оставшиеся действия следует выполнить для каждого из них.
 
 5. Вставьте URL-адрес в адресную строку браузера, а затем, при получении запроса на выполнение или сохранение, нажмите кнопку **Сохранить**.
 
@@ -51,5 +51,5 @@ ms.locfileid: "94351197"
 
     Теперь можно распространить пакет установщика с приложением.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Как установить необходимые компоненты с помощью приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
