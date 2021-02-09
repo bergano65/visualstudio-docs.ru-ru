@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], security
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b47a18aa3e791d446abc2a57b6aad1f139924ebf
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c778ed98a3f5d17007acccd2f16208ece3237037
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528466"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906741"
 ---
 # <a name="secure-deployment"></a>Безопасное развертывание
   При создании решения Office компьютер разработчика обновляется автоматически, чтобы разрешить выполнение кода в проекте. Однако при развертывании решения необходимо предоставить свидетельство, на основе которого будет основано решение о доверии, подписывая решение с помощью сертификата или используя [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] ключ запроса доверия. Дополнительные сведения см. [в статье предоставление доверия для решений Office](../vsto/granting-trust-to-office-solutions.md).

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6016dbf53413f6e55c88edfe930af677472bdaf5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: bcb13ec0e26b1668a397d56982d049bf9ebcceb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527377"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906550"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Пошаговое руководство. вызов кода из VBA в Visual Basicном проекте
   В этом пошаговом руководстве показано, как вызвать метод в настройке на уровне документа для Microsoft Office Word из кода Visual Basic для приложений (VBA) в документе. Данная процедура состоит из трех основных этапов: добавление метода в класс ведущего элемента `ThisDocument` , представление метода коду VBA и вызов метода из кода VBA в документе.
@@ -108,7 +108,7 @@ ms.locfileid: "97527377"
 
 6. В поле **Имя** введите **CallingCodeFromVBA**.
 
-7. Нажмите кнопку **ОК**.
+7. Нажмите кнопку **OK**.
 
      Откроется **Мастер проектов набора средств Visual Studio для Office** .
 
@@ -211,7 +211,7 @@ ms.locfileid: "97527377"
 
 7. Выйдите из Word без сохранения изменений.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения о вызове кода в решениях Office из VBA см. в следующих разделах:
 
 - Вызов кода в настройке Visual Basic из VBA. Этот процесс отличается от процесса Visual Basic. Дополнительные сведения см. [в разделе Пошаговое руководство. вызов кода из VBA в проекте Visual C&#35;](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).

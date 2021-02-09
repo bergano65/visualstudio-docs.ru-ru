@@ -17,15 +17,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], data binding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6c53f4c1dfe9838fe4522dcc71b675a7f6b868d4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 75df7a3a9ddfa6009b0002bfe83b57f2d91e6e0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524978"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906566"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Пошаговое руководство. Привязка данных к элементам управления в области действий Excel
   В этом пошаговом руководстве демонстрируется привязка данных к элементам управления на панели действий в Microsoft Office Excel. Элементы управления показывают отношение «Основной/подробности» между таблицами в базе данных SQL Server.
@@ -77,7 +77,7 @@ ms.locfileid: "97524978"
 
 4. Выберите подключение данных к образцу базы данных Northwind SQL Server или добавьте новое соединение с помощью кнопки **создать подключение** .
 
-5. Щелкните **Далее**.
+5. Нажмите кнопку **Далее**.
 
 6. Снимите флажок сохранить подключение, если оно выбрано, и нажмите кнопку **Далее**.
 
@@ -179,7 +179,7 @@ ms.locfileid: "97524978"
 
 4. Выберите различные компании, чтобы убедиться, что название компании и сведения о продукте изменяются соответствующим образом.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Следующие шаги
  Ниже приводятся некоторые из возможных последующих задач.
 
 - Привязка данных к элементам управления в Word. Дополнительные сведения см. в разделе [Пошаговое руководство. Привязка данных к элементам управления на панели действий Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).

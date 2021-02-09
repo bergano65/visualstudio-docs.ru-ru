@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], text boxes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c499800efa783ce252dbf925f307bc64e814420f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 270754005704d91569f014ed2e0be382bc2dd707
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906470"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Пошаговое руководство. Отображение текста в текстовом поле листа с помощью кнопки
   В этом пошаговом руководстве показаны основные сведения об использовании кнопок и текстовых полей на Microsoft Office листах Excel и о создании проектов Excel с помощью средств разработки Office в Visual Studio. Чтобы увидеть результат как завершенный пример, см. Пример элементов управления Excel в разделе [примеры разработки Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).
@@ -73,7 +73,7 @@ ms.locfileid: "97522650"
 
    |Свойство|Значение|
    |--------------|-----------|
-   |**имя**;|**insertText**|
+   |**Имя**|**insertText**|
    |**Text**|**Вставить текст**|
 
    Теперь напишите код, который будет выполняться при нажатии кнопки.
@@ -105,7 +105,7 @@ ms.locfileid: "97522650"
 
 3. Убедитесь, что **Hello World!** отображается в текстовом поле.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  В этом пошаговом руководстве показаны основные принципы использования кнопок и текстовых полей на листах Excel. Ниже приводятся некоторые из возможных последующих задач.
 
 - Развертывание проекта. Дополнительные сведения см. в разделе [развертывание решения Office](../vsto/deploying-an-office-solution.md).

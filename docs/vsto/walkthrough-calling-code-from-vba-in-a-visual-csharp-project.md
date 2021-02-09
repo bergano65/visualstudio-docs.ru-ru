@@ -18,15 +18,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: daf25a1e2e80d2c5918d0d11c4b31c75a2e40c87
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a026732f9b49107b8c113796251e1a2b916cf9a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527296"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906480"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Пошаговое руководство. вызов кода из VBA в проекте Visual C#
   В этом пошаговом руководстве показано, как вызвать метод в настройке на уровне документа для Microsoft Office Excel из кода Visual Basic для приложений (VBA) в книге. Данная процедура состоит из трех основных этапов: добавление метода в класс ведущего элемента `Sheet1` , представление метода коду VBA в книге и вызов метода из кода VBA в книге.
@@ -109,7 +109,7 @@ ms.locfileid: "97527296"
 
 6. В поле **Имя** введите **CallingCodeFromVBA**.
 
-7. Нажмите кнопку **ОК**.
+7. Нажмите кнопку **OK**.
 
      Откроется **Мастер проектов набора средств Visual Studio для Office** .
 
@@ -182,7 +182,7 @@ ms.locfileid: "97527296"
 
 3. В диалоговом окне **Извлечение интерфейса** в поле **Выбрать открытые методы для создания интерфейса** выберите значение для метода `CreateVstoNamedRange` .
 
-4. Нажмите кнопку **ОК**.
+4. Нажмите кнопку **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создает новый интерфейс с именем `ISheet1`и изменяет определение класса `Sheet1` , чтобы он реализовал интерфейс `ISheet1` . [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] также открывает файл **ISheet1.CS** в редакторе кода.
 
@@ -241,7 +241,7 @@ ms.locfileid: "97527296"
 
 7. Выйдите из Excel без сохранения изменений.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения о вызове кода в решениях Office из VBA см. в следующих разделах:
 
 - Вызов кода в ведущем элементе в настройке Visual Basic из VBA. Этот процесс отличается от процесса Visual C#. Дополнительные сведения см. [в разделе Пошаговое руководство. вызов кода из VBA в Visual Basic проекте](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).

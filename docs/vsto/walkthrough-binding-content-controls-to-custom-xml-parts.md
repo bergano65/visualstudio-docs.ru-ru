@@ -16,15 +16,15 @@ helpviewer_keywords:
 - DatePickerContentControl, binding to a custom XML part
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a82a8fd98bbf1a735661f3e1cf01e2452eb7ee58
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8e5e3d58ac858afe905aae38c84e6403b43fb789
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527964"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906624"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Пошаговое руководство. Привязка элементов управления содержимым к пользовательским XML-частям
   В этом пошаговом руководстве показано, как привязать элементы управления содержимым в настройке на уровне документа для Word к XML-данным, хранящимся в документе.
@@ -309,7 +309,7 @@ ms.locfileid: "97527964"
 
 14. Закройте файл **item2.xml** .
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения об использовании элементов управления содержимым см. в следующих разделах.
 
 - Использование всех доступных элементов управления содержимым для создания шаблона. Дополнительные сведения см. в разделе [Пошаговое руководство. Создание шаблона с помощью элементов управления содержимым](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).
