@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d54313c2-cf0c-420d-b151-99953a95f0bb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e0177f199f0178e9fe0221a4cb6daa58d36a6f87
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: cdef39a0ab07d4cb9c9f42cf897bd7728934b88d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382672"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915743"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Выполнение обновлений приложения службой ClickOnce
 Технология ClickOnce использует сведения о версии файла, указанные в манифесте развертывания приложения, чтобы решить, следует ли обновлять файлы приложения. После начала обновления технология ClickOnce использует методику, называемую *исправлением файлов* , чтобы избежать избыточной загрузки файлов приложения.
@@ -37,6 +37,6 @@ ms.locfileid: "94382672"
 
  Исправление файлов не работает для файлов, которые помечены как данные и хранятся в каталоге данных. Они всегда загружаются независимо от хэш-подписи файла. Дополнительные сведения о каталоге данных см. в разделе [доступ к локальным и удаленным данным в приложениях ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Выбор стратегии обновления ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

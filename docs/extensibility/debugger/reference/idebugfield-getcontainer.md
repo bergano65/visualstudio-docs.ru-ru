@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6d6c8213-6181-4adf-9584-3e4cac163dd8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f1217a6f3a62f331fa09d9ed276640ef62cca8d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9d14a5666db03c9ebd701d5e1145c3f14465e37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728905"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915405"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 Этот метод возвращает контейнер поля.
@@ -28,7 +28,7 @@ ms.locfileid: "80728905"
 ## <a name="syntax"></a>Синтаксис
 
 ```cpp
-HRESULT GetContainer( 
+HRESULT GetContainer( 
    IDebugContainerField** ppContainerField
 );
 ```

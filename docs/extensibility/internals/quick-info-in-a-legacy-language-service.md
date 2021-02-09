@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 255022c2722104d3790d1c417eee644730ddc1e8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6a2798f54bc89b9dddea3e3727084bae0086fab0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915250"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Краткие сведения в языковой службе прежних версий
 Краткие сведения IntelliSense отображает сведения об идентификаторе в источнике, когда пользователь либо помещает курсор в идентификатор, либо выбирает **краткие сведения** из меню **IntelliSense** или удерживает курсор мыши над идентификатором. В результате появится всплывающая подсказка со сведениями об идентификаторе. Эти сведения обычно состоят из типа идентификатора. Если активен модуль отладки, эти сведения могут включать текущее значение. Модуль отладки предоставляет значения выражений, тогда как языковая служба обрабатывает только идентификаторы.
