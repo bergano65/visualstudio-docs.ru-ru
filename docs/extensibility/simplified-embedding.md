@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99aaf5070646bbbb95c6be98eb8ac2f7a5948ff2
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: f62e3a4f33193f36e76b1286ae3d35d26706b3ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715279"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928098"
 ---
 # <a name="simplified-embedding"></a>Упрощенное внедрение
 Упрощенное внедрение в редакторе включается, если его объект представления документа является родительским для (то есть дочерним элементом) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , а <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> интерфейс реализуется для обработки его команд окна. Упрощенные редакторы внедрений не могут размещать активные элементы управления. На следующем рисунке показаны объекты, используемые для создания редактора с упрощенным внедрением.

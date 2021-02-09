@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 40cd7132888d8b19d8e2a2818ec9a299b465e786
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 14358b5cc84f63227fd5001731c261002a324492
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850056"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928943"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Вызов объектных моделей SharePoint
   При создании расширений для инструментов SharePoint в Visual Studio может потребоваться вызывать API SharePoint для выполнения определенных задач. Например, если создать настраиваемый шаг развертывания для проектов SharePoint, то, возможно, придется вызывать API SharePoint для выполнения некоторых задач по развертыванию решений.
@@ -45,7 +45,7 @@ ms.locfileid: "94850056"
 ## <a name="use-the-server-object-model-in-extension-projects"></a>Использование серверной объектной модели в проектах расширений
  Объектная модель сервера является надмножеством клиентской объектной модели. При использовании серверной объектной модели можно использовать все функции, [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] предоставляемые программно.
 
- Расширения инструментов SharePoint могут использовать интерфейсы API в серверной модели объектов, но они не могут вызывать API напрямую. Объектную модель сервера можно вызывать только из 64-разрядного процесса, предназначенного для .NET Framework 3,5. Однако для расширений инструментов SharePoint требуются [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] и, и они выполняются в 32-разрядном процессе Visual Studio. Это предотвращает прямую ссылку на сборки в объектной модели сервера SharePoint с помощью расширений инструментов SharePoint.
+ Расширения инструментов SharePoint могут использовать интерфейсы API в серверной модели объектов, но они не могут вызывать API напрямую. Объектную модель сервера можно вызывать только из 64-разрядного процесса, предназначенного для платформа .NET Framework 3,5. Однако для расширений инструментов SharePoint требуются [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] и, и они выполняются в 32-разрядном процессе Visual Studio. Это предотвращает прямую ссылку на сборки в объектной модели сервера SharePoint с помощью расширений инструментов SharePoint.
 
  Если вы хотите использовать объектную модель сервера в расширении инструментов SharePoint, необходимо создать пользовательскую *команду SharePoint* для вызова API. Команда SharePoint определяется во вторичной сборке, которая может напрямую вызывать серверную объектную модель. В проекте расширения команда SharePoint вызывается опосредованно с помощью метода ExecuteCommand <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> объекта.
 
@@ -56,7 +56,7 @@ ms.locfileid: "94850056"
 ### <a name="understand-how-sharepoint-commands-are-executed"></a>Сведения о выполнении команд SharePoint
  Сборки, определяющие команды SharePoint, загружаются в 64-разрядном размещающем процессе с именем *vssphost4.exe*. После вызова команды SharePoint в расширении инструментов SharePoint команда выполняется *vssphost4.exe* вместо 32-разрядного процесса Visual Studio (*devenv.exe*). Вы можете управлять некоторыми аспектами выполнения команд SharePoint, задавая значения в реестре. Дополнительные сведения см. в разделе [расширения отладки для инструментов SharePoint в Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 - [Как создать команду SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)
 - [Инструкции: выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [Обзор модели программирования расширений инструментов SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)

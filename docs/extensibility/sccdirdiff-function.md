@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bb592a1174a91480ed76ef818733c288c5273c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b7f045669a0d4b7e4e206c6ad8e85db55edc4ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701016"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929216"
 ---
 # <a name="sccdirdiff-function"></a>Функция Сккдирдифф
 Эта функция отображает различия между текущим локальным каталогом на клиентском диске и соответствующим проектом в системе управления версиями.

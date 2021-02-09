@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 114862bb3358cc2a5400d6f40031deb030e4e4df
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 8df7a4be9c8a270feebd7e27d25c006eb4dc5817
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927942"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Функции API подключаемого модуля системы управления версиями
 Интерфейс API подключаемого модуля системы управления версиями предоставляет следующие функции, которые должны быть реализованы с помощью подключаемого модуля системы управления версиями в соответствии с этим API. Сигнатуры каждой функции и семантики, связанные с битовыми флагами и другими параметрами, подробно описаны в этом справочнике.
 
 ## <a name="initialization-and-housekeeping-functions"></a>Функции инициализации и обслуживания
 
-|Функция|Описание|
+|Компонент|Описание|
 |--------------|-----------------|
 |[SccCloseProject](../extensibility/scccloseproject-function.md)|Закрывает проект.|
 |[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|Запрашивает у пользователя дополнительные параметры для данной команды.|
@@ -36,7 +36,7 @@ ms.locfileid: "97715994"
 
 ## <a name="core-source-control-functions"></a>Основные функции системы управления версиями
 
-|Функция|Описание|
+|Компонент|Описание|
 |--------------|-----------------|
 |[SccAdd](../extensibility/sccadd-function.md)|Добавляет в систему управления версиями массив файлов, заданный полными именами путей.|
 |[SccAddFilesFromSCC](../extensibility/sccaddfromscc-function.md)|Позволяет пользователю просматривать файлы, уже находящиеся в системе управления версиями, а затем делать эти файлы частью текущего проекта.|
@@ -58,7 +58,7 @@ ms.locfileid: "97715994"
 ## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>Функции, поддерживающие дополнительные возможности (версия 1,2 интерфейса API подключаемого модуля системы управления версиями)
  Эта группа функций определяет дополнительные функциональные возможности, реализованные в версии 1,2 API подключаемого модуля системы управления версиями. Они предоставляют доступ к более сложным функциям и возможностям системы управления версиями.
 
-|Функция|Описание|
+|Компонент|Описание|
 |--------------|-----------------|
 |[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|Запускает пакетную операцию.|
 |[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|Создает подпроект с заданным именем в существующем родительском проекте.|
@@ -72,7 +72,7 @@ ms.locfileid: "97715994"
 ## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>Функции, поддерживающие расширенную возможность (версия 1,3 интерфейса API подключаемого модуля системы управления версиями)
  Эта группа функций определяет дополнительные функциональные возможности, реализованные в версии 1,3 API подключаемого модуля системы управления версиями. Они предоставляют доступ к более сложным функциям и возможностям системы управления версиями.
 
-|Функция|Описание|
+|Компонент|Описание|
 |--------------|-----------------|
 |[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|Добавляет список файлов из системы управления версиями в текущий проект.|
 |[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|Извлекает список файлов из системы управления версиями без пользовательского интерфейса.|

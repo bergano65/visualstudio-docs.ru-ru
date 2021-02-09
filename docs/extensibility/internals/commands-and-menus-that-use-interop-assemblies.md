@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4bf3c1843db67fdadcf0fe177aa17e0f17a627e
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 6ea48c77212927c14b4ad49c91ce2f4d988e36f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304802"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928228"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Команды и меню, использующие сборки взаимодействия
 Пакет VSPackage, который реализует команды меню и панели инструментов с помощью сборок взаимодействия, должен:
@@ -33,7 +33,7 @@ ms.locfileid: "96304802"
 
   В следующем разделе описывается выполнение этих задач.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 - [Определение состояния команды с помощью сборок взаимодействия](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)
 
  Описывает, как VSPackage уведомляет интегрированную среду разработки о том, какие команды она поддерживает, и включены ли они в данный момент.
