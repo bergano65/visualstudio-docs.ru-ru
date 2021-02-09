@@ -14,15 +14,15 @@ helpviewer_keywords:
 - user controls [Office development in Visual Studio], actions panes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d03ba8968b08fb07eb2cc9c17839af57cf06eca
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 9579de6712b742dde1f9b399ca8a1e4598783679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896773"
 ---
 # <a name="actions-pane-overview"></a>Обзор панели действий
   Панель действий — это настраиваемая область задач « **действия с документом** », прикрепленная к конкретному Microsoft Office документу Word или Microsoft Office книге Excel. Панель действий размещается внутри области задач Office вместе с другими встроенными областями задач, такими как область задач **Источник XML** в Excel или область задач **стили и форматирование** в Word. Для разработки пользовательского интерфейса панели действий можно использовать элементы управления Windows Forms или элементы управления WPF.
@@ -114,7 +114,7 @@ ms.locfileid: "96844833"
 |фромлефт|Размещение от левой части панели действий.|
 |фромригхт|Размещение от правой части панели действий.|
 |фромтоп|Размещение от верхней части панели действий.|
-|Нет|Порядок расположения не определен, он определяется разработчиком.|
+|Отсутствуют|Порядок расположения не определен, он определяется разработчиком.|
 
  Следующий код задает свойство <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> так, чтобы располагать пользовательские элементы управления в верхней части панели действий.
 

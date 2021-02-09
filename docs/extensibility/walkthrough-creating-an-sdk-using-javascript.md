@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd138638a1f8bb4c0fe8dc73504059f0c9dd4023
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: db722d945ceb4b3d2cab92b9a11b1e689cd7a9bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862919"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895197"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Пошаговое руководство. Создание пакета SDK с помощью JavaScript
 В этом пошаговом руководстве описывается использование JavaScript для создания простого математического пакета SDK в качестве расширения Visual Studio (VSIX).  Пошаговое руководство делится на следующие части:

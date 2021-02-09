@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced200ff24b17f312e63642c8083f038a6fc6a4d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 7a0e20c77a1c8a81a29691079ace1e4751135560
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877836"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895691"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Миграция языковой службы прежних версий
 Вы можете перенести устаревшую языковую службу в более позднюю версию Visual Studio, обновив проект и добавив файл Source. extension. vsixmanifest в проект. Сама языковая служба будет работать, как и раньше, поскольку редактор Visual Studio адаптирует его.
@@ -53,7 +53,7 @@ ms.locfileid: "97877836"
 
 4. Откройте решение Режекслангсерв. sln.
 
-5. Откроется окно **одностороннего обновления** . Нажмите кнопку **ОК**.
+5. Откроется окно **одностороннего обновления** . Нажмите кнопку **OK**.
 
 6. Обновите свойства проекта. Откройте окно **свойств проекта** , выбрав узел проекта в **Обозреватель решений**, щелкните правой кнопкой мыши и выберите пункт **Свойства**.
 
@@ -103,7 +103,7 @@ ms.locfileid: "97877836"
 
     - В **разделе активы** щелкните **создать**, выберите **Тип** в **Microsoft. VisualStudio. VSPackage**, задайте в качестве **источника** **проект в текущем решении**, а затем задайте для **проекта** значение **режекслангсерв**.
 
-    - Сохраните файл и закройте его.
+    - Сохраните и закройте файл.
 
 11. Создайте решение. Созданные файлы развертываются в **%UserProfile%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ режекслангсерв \\**.
 

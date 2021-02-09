@@ -12,15 +12,15 @@ helpviewer_keywords:
 - <addin> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cf922799301aef67ee70c480dd9e0823382cbd47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71fa31122432f4894bfca59929ee5eb127b7cad2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543771"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896732"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент ADDIN (разработка решений Office в Visual Studio)
   Элемент **ADDIN** `vstav3` пространства имен содержит сведения, относящиеся к Microsoft Office надстройкам VSTO и настройкам на уровне документа, разработанным с помощью Visual Studio.
@@ -57,16 +57,16 @@ ms.locfileid: "85543771"
  Элемент `addin` имеет указанные ниже дочерние элементы.
 
 ### <a name="entrypoints"></a>entryPoints
- Обязательный. Элемент **EntryPoint** описан в разделе [&#60;entrypoint&#62; элемента &#40;разработке решений Office в Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+ Обязательный элемент. Элемент **EntryPoint** описан в разделе [&#60;entrypoint&#62; элемента &#40;разработке решений Office в Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ### <a name="update"></a>обновить
- Обязательный. Элемент **Update** описан в разделе [&#60;обновление&#62; элемента &#40;разработке решений Office в&#41;Visual Studio ](../vsto/update-element-office-development-in-visual-studio.md).
+ Обязательный элемент. Элемент **Update** описан в разделе [&#60;обновление&#62; элемента &#40;разработке решений Office в&#41;Visual Studio](../vsto/update-element-office-development-in-visual-studio.md).
 
 ### <a name="postactions"></a>postActions
  Необязательный элемент. Элемент « **действия** » описан в разделе [&#60;действия&#62; элемента &#40;разработке решений Office в Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).
 
 ### <a name="application"></a>application
- Обязательный. Элемент **Application** описывается в [&#60;&#62; приложений &#40;разработки Office в Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).
+ Обязательный элемент. Элемент **Application** описывается в [&#60;&#62; приложений &#40;разработки Office в Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа
 

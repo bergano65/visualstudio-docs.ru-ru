@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc0edf82421ba41198480e6c105dd56c02bd0f7e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 423bcc7b3d902488f268b2d0706cb5126125f37d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903264"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895392"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>Элемент TemplateData (шаблоны Visual Studio)
 Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .
@@ -49,7 +49,7 @@ ms.locfileid: "94903264"
 
 | Элемент | Описание |
 | - | - |
-| [имя](../extensibility/name-element-visual-studio-templates.md); | Обязательный элемент.<br /><br /> Задает имя шаблона в том виде, в каком оно отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** . |
+| [Имя](../extensibility/name-element-visual-studio-templates.md) | Обязательный элемент.<br /><br /> Задает имя шаблона в том виде, в каком оно отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** . |
 | [Описание](../extensibility/description-element-visual-studio-templates.md) | Обязательный элемент.<br /><br /> Задает описание шаблона в том виде, в каком оно отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** . |
 | [Значок](../extensibility/icon-element-visual-studio-templates.md): | Обязательный элемент.<br /><br /> Задает путь и имя файла изображения, который выступает в качестве значка, который отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** для шаблона. |
 | [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | Обязательный элемент.<br /><br /> Классификация шаблона проекта, чтобы он появился в указанной группе в диалоговом окне **Новый проект** . |
@@ -66,7 +66,7 @@ ms.locfileid: "94903264"
 | [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | Необязательный элемент.<br /><br /> Указывает число родительских категорий, которые будут отображать шаблон в диалоговом окне **Новый проект** . |
 | [LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md) | Необязательный элемент. |
 | [LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md) | Необязательный элемент.<br /><br /> Указывает, будет ли текстовое поле **Расположение** в диалоговом окне **Новый проект** быть включено, отключено или скрыто для шаблона проекта. |
-| [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) | Необязательный элемент.<br /><br /> Используйте этот элемент, если шаблон поддерживает только определенную минимальную версию, а более поздние версии .NET Framework. |
+| [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) | Необязательный элемент.<br /><br /> Используйте этот элемент, если шаблон поддерживает только определенную минимальную версию, а более поздние версии платформа .NET Framework. |
 | [SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md) | Необязательный элемент.<br /><br /> Указывает, поддерживает ли шаблон главную страницу для веб-проектов. |
 | [SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md) | Необязательный элемент.<br /><br /> Указывает, поддерживает ли шаблон разделение кода или модель страницы кода программной части для веб-проектов. |
 | [SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md) | Необязательный элемент.<br /><br /> Указывает, идентичен ли шаблон для нескольких языков и доступен ли параметр **язык** в диалоговом окне **Новый проект** . |
@@ -78,7 +78,7 @@ ms.locfileid: "94903264"
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Содержит все метаданные для шаблона проекта, шаблона элемента или начального набора.|
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  `TemplateData` является обязательным элементом.
 
  Если не включить необязательный элемент, используется значение по умолчанию для этого элемента.

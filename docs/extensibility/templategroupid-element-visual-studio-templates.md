@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5f7d30036f0f25d1f81b690168675d74fc36bbd
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d9db0d2744648901a9389bd2d2805d8c6a4073ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903225"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895366"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>Элемент TemplateGroupID (шаблоны Visual Studio)
 Указывает, в каком типе проекта будут отображаться шаблоны элементов. Этот элемент важен, если [шовбидефаулт (шаблоны Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) имеет значение `false` . Если для [шовбидефаулт (шаблоны Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) задано значение `true` , то шаблон элемента доступен во всех типах проектов.
@@ -55,7 +55,7 @@ ms.locfileid: "94903225"
 
  Этот текст задает идентификатор для категории шаблонов элементов.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  `TemplateGroupID` является элементом.
 
  Значение `TemplateGroupID` элемента используется вместе с регистрацией системы проекта (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<version number>* \Projects \\ ) для фильтрации шаблонов, которые отображаются в диалоговом окне **Добавление нового элемента** .

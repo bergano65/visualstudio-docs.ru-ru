@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec16895e71788f160e0ce6025f35b4dff02d7d2f
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 98a305e4e3188131b2ee3c6e2ecb82dc8d4537b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895782"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Создание проекта: как это работает, часть 1
 Когда-нибудь задумывались о том, как создать собственный тип проекта? Интересно, что происходит при создании нового проекта? Давайте посмотрим на себя и посмотрим, что происходит на самом деле.
@@ -54,7 +54,7 @@ ms.locfileid: "97668889"
 devenv /setup
 ```
 
- или
+ или диспетчер конфигурации служб
 
 ```
 devenv /installvstemplates
@@ -213,5 +213,5 @@ devenv /installvstemplates
 
     **Мипрожектноде** отображается как дочерний узел Visual C# непосредственно под узлом Windows.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Создание проекта: как это работает, часть 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

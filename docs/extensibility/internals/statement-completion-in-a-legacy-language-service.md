@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1534c6ba029cf47cb637e958422efeecb970f35
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 815b47a700e87852596d7a65e341953f65b66cf9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877771"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894833"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Завершение операторов в языковой службе прежних версий
 Завершение операторов — это процесс, с помощью которого служба языка помогает пользователям завершить ключевое слово языка или элемент, которые они начали вводить в основном редакторе. В этом разделе описывается, как работает завершение операторов и как его реализовать в языковой службе.

@@ -15,25 +15,25 @@ helpviewer_keywords:
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b719f9609dfb2feb432f4692b31e820d806ff92
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 13b057f0a688c3a1ae855215ac226a4d31993ea1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437727"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895158"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Построение приложений ClickOnce из командной строки
 
-В [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] можно создавать проекты из командной строки, даже если они создаются в интегрированной среде разработки (IDE). На самом деле можно перестроить проект, созданный с помощью, [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] на другом компьютере, на котором установлен только .NET Framework. Это позволяет воспроизводить сборку с помощью автоматизированного процесса, например, в Центральной лаборатории построения или с помощью расширенных методик создания скриптов вне области построения самого проекта.
+В [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] можно создавать проекты из командной строки, даже если они создаются в интегрированной среде разработки (IDE). На самом деле можно перестроить проект, созданный с помощью, [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] на другом компьютере, на котором установлен только платформа .NET Framework. Это позволяет воспроизводить сборку с помощью автоматизированного процесса, например, в Центральной лаборатории построения или с помощью расширенных методик создания скриптов вне области построения самого проекта.
 
-## <a name="use-msbuild-to-reproduce-net-framework-clickonce-application-deployments"></a>Воспроизведение .NET Framework развертываний приложений ClickOnce с помощью MSBuild
+## <a name="use-msbuild-to-reproduce-net-framework-clickonce-application-deployments"></a>Воспроизведение платформа .NET Framework развертываний приложений ClickOnce с помощью MSBuild
 
  При вызове MSBuild/target: Publish из командной строки она сообщает системе MSBuild о необходимости построить проект и создать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение в папке Publish. Это эквивалентно выбору команды **опубликовать** в интегрированной среде разработки.
 
- Эта команда выполняет *msbuild.exe* , которая находится по пути в среде командной строки Visual Studio.
+ Эта команда выполняет *msbuild.exe*, которая находится по пути в среде командной строки Visual Studio.
 
  "Целевой" — это индикатор MSBuild для обработки команды. Целевыми объектами являются целевой объект "сборка" и целевой объект "Publish". Цель сборки эквивалентна выбору команды сборки (или нажатию клавиши F5) в интегрированной среде разработки. Если требуется только построить проект, можно добиться этого, введя `msbuild` . Эта команда работает, так как целевой объект сборки является целевым объектом по умолчанию для всех проектов, создаваемых [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] . Это означает, что не нужно явно указывать целевой объект сборки. Таким образом, ввод `msbuild` — это та же операция, что и при вводе `msbuild /target:build` .
 
@@ -67,7 +67,7 @@ ms.locfileid: "94437727"
 
 1. Выйдите из [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
-2. В меню **Пуск** Windows выберите **все программы** , затем **Microsoft Visual Studio** , **инструменты Visual Studio** и **командную строку Visual Studio**. Откроется командная строка в корневой папке текущего пользователя.
+2. В меню **Пуск** Windows выберите **все программы**, затем **Microsoft Visual Studio**, **инструменты Visual Studio** и **командную строку Visual Studio**. Откроется командная строка в корневой папке текущего пользователя.
 
 3. В **командной строке Visual Studio** измените текущий каталог на расположение проекта, который вы только что создали ранее. Например, введите `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
 
@@ -77,7 +77,7 @@ ms.locfileid: "94437727"
 
 5. Введите `msbuild /target:publish`.
 
-   Описанные выше действия приведут к полному [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертыванию приложения во вложенной папке проекта с именем **Publish**. *Кмдлинедемо. Application* — это [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест развертывания. Папка *CmdLineDemo_1.0.0.0* содержит файлы *CmdLineDemo.exe* и файл *CmdLineDemo.exe. manifest* , [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест приложения. *Setup.exe* является загрузчиком, который по умолчанию настроен для установки .NET Framework. Папка DotNetFX содержит распространяемые компоненты для .NET Framework. Это полный набор файлов, необходимых для развертывания приложения через Интернет или через UNC или компакт-диск или DVD-диск.
+   Описанные выше действия приведут к полному [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертыванию приложения во вложенной папке проекта с именем **Publish**. *Кмдлинедемо. Application* — это [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест развертывания. Папка *CmdLineDemo_1.0.0.0* содержит файлы *CmdLineDemo.exe* и файл *CmdLineDemo.exe. manifest*, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест приложения. *Setup.exe* является загрузчиком, который по умолчанию настроен для установки платформа .NET Framework. Папка DotNetFX содержит распространяемые компоненты для платформа .NET Framework. Это полный набор файлов, необходимых для развертывания приложения через Интернет или через UNC или компакт-диск или DVD-диск.
 
 > [!NOTE]
 > Система MSBuild использует параметр **PublishDir** для указания расположения выходных данных, например `msbuild /t:publish /p:PublishDir="<specific location>"` .
@@ -99,7 +99,7 @@ ms.locfileid: "94437727"
 
  При публикации приложения в описанных выше процедурах в файл проекта вставляются следующие свойства: Мастер публикации или файл профиля публикации для проектов .NET Core 3,1 или более поздней версии. Эти свойства непосредственно влияют на то, как создается [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение.
 
- В *кмдлинедемо. vbproj*  /  *кмдлинедемо. csproj* :
+ В *кмдлинедемо. vbproj*  /  *кмдлинедемо. csproj*:
 
 ```xml
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>
@@ -121,7 +121,7 @@ ms.locfileid: "94437727"
 <BootstrapperEnabled>true</BootstrapperEnabled>
 ```
 
- Для проектов .NET Framework можно переопределить любое из этих свойств в командной строке, не изменяя сам файл проекта. Например, ниже будет построено [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывание приложения без загрузчика:
+ Для проектов платформа .NET Framework можно переопределить любое из этих свойств в командной строке, не изменяя сам файл проекта. Например, ниже будет построено [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывание приложения без загрузчика:
 
 ```cmd
 msbuild /target:publish /property:BootstrapperEnabled=false
@@ -130,7 +130,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 ::: moniker range=">=vs-2019"
 Для .NET Core 3,1 или более поздних версий эти параметры предоставляются в файле pubxml.
 
- Управление свойствами публикации осуществляется на [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] страницах свойств **Публикация** , **Безопасность** и **подпись** **конструктора проектов**. Ниже приведено описание свойств публикации, а также сведения о том, как они заданы на различных страницах свойств конструктора приложений.
+ Управление свойствами публикации осуществляется на [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] страницах свойств **Публикация**, **Безопасность** и **подпись** **конструктора проектов**. Ниже приведено описание свойств публикации, а также сведения о том, как они заданы на различных страницах свойств конструктора приложений.
 
 > [!NOTE]
 > Для проектов Windows для настольных компьютеров эти параметры теперь находятся в мастере публикации.
@@ -205,14 +205,14 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 |Параметр URL-адреса|Описание|
 |----------------|-----------------|
 |`PublishURL`|Требуется при публикации приложения ClickOnce на веб-сайте.|
-|`InstallURL`|Необязательный параметр. Задайте этот параметр URL-адреса, если сайт установки отличается от `PublishURL` . Например, можно присвоить параметру `PublishURL` путь FTP и задать для него `InstallURL` URL-адрес.|
-|`SupportURL`|Необязательный параметр. Задайте этот параметр URL-адреса, если сайт поддержки отличается от `PublishURL` . Например, можно установить на `SupportURL` веб-сайт поддержки клиентов вашей компании.|
-|`UpdateURL`|Необязательный параметр. Задайте этот параметр URL-адреса, если расположение обновления отличается от `InstallURL` . Например, можно присвоить параметру `PublishURL` путь FTP и задать для него `UpdateURL` URL-адрес.|
+|`InstallURL`|Необязательный элемент. Задайте этот параметр URL-адреса, если сайт установки отличается от `PublishURL` . Например, можно присвоить параметру `PublishURL` путь FTP и задать для него `InstallURL` URL-адрес.|
+|`SupportURL`|Необязательный элемент. Задайте этот параметр URL-адреса, если сайт поддержки отличается от `PublishURL` . Например, можно установить на `SupportURL` веб-сайт поддержки клиентов вашей компании.|
+|`UpdateURL`|Необязательный элемент. Задайте этот параметр URL-адреса, если расположение обновления отличается от `InstallURL` . Например, можно присвоить параметру `PublishURL` путь FTP и задать для него `UpdateURL` URL-адрес.|
 
 ## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.Build.Tasks.GenerateBootstrapper>
 - <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>
 - <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>
-- [Безопасность и развертывание ClickOnce](../deployment/clickonce-security-and-deployment.md)
+- [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

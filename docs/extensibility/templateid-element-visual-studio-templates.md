@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6ca24b4e-0325-4a9e-855e-0cbbe7361d8f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 734af9de80da5f095f9ad7f0e52023659fea6b67
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 26a0b3ef90eab7cef51e5ca65032f2f4f68acd42
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903186"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895327"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>Элемент TemplateID (шаблоны Visual Studio)
 Задает идентификатор для шаблона элемента, разбитого по категориям в группе шаблонов элементов с помощью элемента [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) .
@@ -53,7 +53,7 @@ ms.locfileid: "94903186"
 ## <a name="text-value"></a>Текстовое значение
  Объект `string` , представляющий идентификатор шаблона элемента, отнесенного к группе шаблонов элементов по `TemplateGroupID` элементу.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  Параметр `TemplateID` является необязательным элементом.
 
  Если файл VSTEMPLATE пропускает `TemplateID` элемент, то в качестве идентификатора шаблона используется элемент [Name](../extensibility/name-element-visual-studio-templates.md) .

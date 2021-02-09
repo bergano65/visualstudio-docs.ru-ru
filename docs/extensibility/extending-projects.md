@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181acea9a5188ba28a4ef109b5bec0e7c040b5da
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 997f4e32007af641b24ba933d2c891e447382786
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994619"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895834"
 ---
 # <a name="extend-projects"></a>Расширение проектов
 Проекты и решения — это способы, с помощью которых Visual Studio организует файлы кода и ресурсов в единицах компиляции и развертывания. Дополнительные сведения о проектах в [проектах (пакет SDK для Visual Studio)](../extensibility/extending-projects.md)см. здесь.
@@ -27,7 +27,7 @@ ms.locfileid: "96994619"
 
  В подразделах этого раздела описывается создание пользовательских проектов и управление различными типами решений Visual Studio.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 - [Создание базовой системы проектов, часть 1](../extensibility/creating-a-basic-project-system-part-1.md) Описывает создание пользовательской системы проектов.
 
 - [Создание базовой системы проектов, часть 2](../extensibility/creating-a-basic-project-system-part-2.md) Описывает создание пользовательской системы проектов.

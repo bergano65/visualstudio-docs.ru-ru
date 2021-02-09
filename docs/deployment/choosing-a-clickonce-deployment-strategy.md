@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 98bcab65-ab8b-4ed1-9adc-fdacf92b8106
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d623c47960a3c1a44c184df52488682659d5238d
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: f4c20689c79529edf4a34edca857dedf1420b03f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383174"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895119"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Выбор стратегии развертывания ClickOnce
 Существует три разные стратегии развертывания приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Выбираемая стратегия зависит главным образом от типа развертываемого приложения. Ниже перечисляются следующие три стратегии развертывания:
@@ -73,8 +73,8 @@ ms.locfileid: "94383174"
 
  Для приложений, предназначенных для платформы .NET Framework 2.0, требуется Internet Explorer.
 
-## <a name="see-also"></a>См. также
-- [Безопасность и развертывание ClickOnce](../deployment/clickonce-security-and-deployment.md)
+## <a name="see-also"></a>См. также раздел
+- [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Выбор стратегии обновления ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Как опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)
