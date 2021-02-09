@@ -14,15 +14,15 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], user interface errors
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e74d60fe6386575417114fe1ad4823704cf09d46
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 29e07e49d901b44b534d9d274e5535be663e97ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528128"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927682"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Пошаговое руководство. Отображение ошибок пользовательского интерфейса надстройки
   По умолчанию, если надстройка VSTO пытается управлять пользовательским интерфейсом Microsoft Office и завершается ошибкой, сообщение об ошибке не отображается. Однако можно настроить приложения Microsoft Office для отображения сообщений об ошибках, связанных с пользовательским интерфейсом. Эти сообщения можно использовать для определения причины, по которой пользовательская лента не отображается, или для отображения ленты, но не для отображения элементов управления.

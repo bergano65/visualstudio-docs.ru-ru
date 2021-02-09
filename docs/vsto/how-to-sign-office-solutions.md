@@ -13,15 +13,15 @@ helpviewer_keywords:
 - signing manifests [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7451630570e6d557dc5d2b635d149ebc07cfb388
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3135962c8476fdb6970fc137e689c638299f8f81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528115"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927643"
 ---
 # <a name="how-to-sign-office-solutions"></a>Практические руководства. Подписывание решений Office
   При подписании решения можно предоставить доверие для решения, используя сертификат в качестве свидетельства. Один и тот же сертификат можно использовать для нескольких решений, и все решения будут доверенными без дополнительных обновлений политики безопасности.

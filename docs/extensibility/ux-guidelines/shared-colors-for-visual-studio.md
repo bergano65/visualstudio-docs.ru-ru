@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 939a327100b1fcf0908c56a4fc67540e646eac7e
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 856f071cbab3156daa6afd0a5282a69636f2fe8f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668915"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927227"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Общие цвета для Visual Studio
 При проектировании пользовательского интерфейса, использующего общие элементы оболочки Visual Studio, или необходимости соответствия элемента интерфейса аналогичным функциям, используйте существующие имена токенов в файлах определения пакета для выбора и назначения цветов. Таким образом можно обеспечить согласованность пользовательского интерфейса со всей средой Visual Studio и его автоматическое обновление при добавлении или обновлении тем.
@@ -112,7 +112,7 @@ ms.locfileid: "97668915"
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `CommonControls.CheckBoxBackground` |
-| Граница | `CommonControls.CheckBoxBorder` |
+| Рамка | `CommonControls.CheckBoxBorder` |
 | Текст | `CommonControls.CheckBoxText` |
 | Глиф | `CommonControls.CheckBoxGlyph` |
 
@@ -123,7 +123,7 @@ ms.locfileid: "97668915"
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `CommonControls.CheckBoxBackgroundDisabled` |
-| Граница | `CommonControls.CheckBoxBorderDisabled` |
+| Рамка | `CommonControls.CheckBoxBorderDisabled` |
 | Текст | `CommonControls.CheckBoxTextDisabled` |
 | Глиф | `CommonControls.CheckBoxGlyphDisabled` |
 
@@ -134,7 +134,7 @@ ms.locfileid: "97668915"
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `CommonControls.CheckBoxBackgroundHover` |
-| Граница | `CommonControls.CheckBoxBorderHover` |
+| Рамка | `CommonControls.CheckBoxBorderHover` |
 | Текст | `CommonControls.CheckBoxTextHover` |
 | Глиф | `CommonControls.CheckBoxGlyphHover` |
 
@@ -145,7 +145,7 @@ ms.locfileid: "97668915"
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `CommonControls.CheckBoxBackgroundPressed` |
-| Граница | `CommonControls.CheckBoxBorderPressed` |
+| Рамка | `CommonControls.CheckBoxBorderPressed` |
 | Текст | `CommonControls.CheckBoxTextPressed` |
 | Глиф | `CommonControls.CheckBoxGlyphPressed` |
 
@@ -156,7 +156,7 @@ ms.locfileid: "97668915"
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `CommonControls.CheckBoxBackgroundFocused` |
-| Граница | `CommonControls.CheckBoxBorderFocused` |
+| Рамка | `CommonControls.CheckBoxBorderFocused` |
 | Текст | `CommonControls.CheckBoxTextFocused` |
 | Глиф | `CommonControls.CheckBoxGlyphFocused` |
 
@@ -175,7 +175,7 @@ ms.locfileid: "97668915"
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `CommonControls.ComboBoxBackground` |
-| Граница | `CommonControls.ComboBoxBorder` |
+| Рамка | `CommonControls.ComboBoxBorder` |
 | Текст | `CommonControls.ComboBoxText` |
 | Separator | `CommonControls.ComboBoxSeparator` |
 | Глиф | `CommonControls.ComboBoxGlyph` |
@@ -188,7 +188,7 @@ ms.locfileid: "97668915"
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `CommonControls.ComboBoxBackgroundDisabled` |
-| Граница | `CommonControls.ComboBoxBorderDisabled` |
+| Рамка | `CommonControls.ComboBoxBorderDisabled` |
 | Текст | `CommonControls.ComboBoxTextDisabled` |
 | Separator | `CommonControls.ComboBoxSeparatorDisabled` |
 | Глиф | `CommonControls.ComboBoxGlyphDisabled` |
@@ -201,7 +201,7 @@ ms.locfileid: "97668915"
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `CommonControls.ComboBoxBackgroundHover` |
-| Граница | `CommonControls.ComboBoxBorderHover` |
+| Рамка | `CommonControls.ComboBoxBorderHover` |
 | Текст | `CommonControls.ComboBoxTextHover` |
 | Separator | `CommonControls.ComboBoxSeparatorHover` |
 | Глиф | `CommonControls.ComboBoxGlyphHover` |
@@ -214,7 +214,7 @@ ms.locfileid: "97668915"
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `CommonControls.ComboBoxBackgroundPressed` |
-| Граница | `CommonControls.ComboBoxBorderPressed` |
+| Рамка | `CommonControls.ComboBoxBorderPressed` |
 | Текст | `CommonControls.ComboBoxTextPressed` |
 | Separator | `CommonControls.ComboBoxSeparatorPressed` |
 | Глиф | `CommonControls.ComboBoxGlyphPressed` |
@@ -227,7 +227,7 @@ ms.locfileid: "97668915"
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `CommonControls.ComboBoxListBackground`<br />`CommonControls.ComboBoxListBackgroundHover`<br />`CommonControls.ComboBoxListItemBackgroundPressed`<br />`CommonControls.ComboBoxListItemBackgroundFocused` |
-| Граница | `CommonControls.ComboBoxListBorder`<br />`CommonControls.ComboBoxListBorderHover`<br />`CommonControls.ComboBoxListBorderPressed`<br />`CommonControls.ComboBoxListBorderFocused` |
+| Рамка | `CommonControls.ComboBoxListBorder`<br />`CommonControls.ComboBoxListBorderHover`<br />`CommonControls.ComboBoxListBorderPressed`<br />`CommonControls.ComboBoxListBorderFocused` |
 | Текст элемента | `CommonControls.ComboBoxListItemText`<br /> `CommonControls.ComboBoxListItemTextHover`<br />`CommonControls.ComboBoxListItemTextPressed`<br />`CommonControls.ComboBoxListItemTextFocused` |
 | Фон с тенью | `CommonControls.ComboBoxListBackgroundShadow` |
 
@@ -238,7 +238,7 @@ ms.locfileid: "97668915"
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `CommonControls.ComboBoxBackgroundFocused` |
-| Граница | `CommonControls.ComboBoxBorderFocused` |
+| Рамка | `CommonControls.ComboBoxBorderFocused` |
 | Текст | `CommonControls.ComboBoxTextFocused` |
 | Separator | `CommonControls.ComboBoxSeparatorFocused` |
 | Глиф | `CommonControls.ComboBoxGlyphFocused` |
@@ -271,7 +271,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `Header.Default` |
 | Передний план (текст) | `Environment.CommandBarTextActive` |
 | Передний план (глиф) | `Header.Glyph` |
-| Граница | `Header.SeparatorLine` |
+| Рамка | `Header.SeparatorLine` |
 
 **Заголовок столбца: состояние наведения**
 
@@ -280,7 +280,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `Header.MouseOver` |
 | Передний план (текст) | `Environment.CommandBarTextHover` |
 | Передний план (глиф) | `Header.MouseOverGlyph` |
-| Граница | `Header.SeparatorLine` |
+| Рамка | `Header.SeparatorLine` |
 
 **Заголовок столбца: состояние "нажато"**
 
@@ -289,7 +289,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `CommonControls.CheckBoxBackgroundPressed` |
 | Передний план (текст) | `CommonControls.CheckBoxBorderPressed` |
 | Передний план (глиф) | `CommonControls.CheckBoxTextPressed` |
-| Граница | `CommonControls.CheckBoxGlyphPressed` |
+| Рамка | `CommonControls.CheckBoxGlyphPressed` |
 
 #### <a name="list-view-items"></a>Элементы представления списка
  Элементы представления списка состоят из фона и содержимого. Содержимым может быть текст, значок или и то и другое.
@@ -300,7 +300,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | Прозрачный |
 | Передний план (текст) | `Environment.CommandBarTextActive` |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 
 **Элементы представления списка: активное состояние**
 
@@ -308,7 +308,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `TreeView.SelectedItemActive` |
 | Передний план (текст) | `TreeView.SelectedItemActiveText` |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 
 **Элементы представления списка: неактивное состояние**
 
@@ -316,7 +316,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `TreeView.SelectedItemInactive` |
 | Передний план (текст) | `TreeView.SelectedItemInactiveText` |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 
 ### <a name="ui-text"></a>Текст пользовательского интерфейса
 
@@ -426,7 +426,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `InfoBar.InfoBarBackground` |
 | Передний план (текст) | `InfoBar.InfoBar` |
-| Граница | `InfoBar.InfoBarBorder` |
+| Рамка | `InfoBar.InfoBarBorder` |
 
 **&times;Кнопка "Закрыть" (): состояние по умолчанию**
 
@@ -435,7 +435,7 @@ ms.locfileid: "97668915"
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `InfoBar.CloseButton` |
-| Граница | `InfoBar.CloseButtonBorder` |
+| Рамка | `InfoBar.CloseButtonBorder` |
 | Глиф | `InfoBar.CloseButtonGlyph` |
 
 **Кнопка панели по закрытию ( &times; ): состояние наведения**
@@ -445,7 +445,7 @@ ms.locfileid: "97668915"
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `InfoBar.CloseButtonHover` |
-| Граница | `InfoBar.CloseButtonHoverBorder` |
+| Рамка | `InfoBar.CloseButtonHoverBorder` |
 | Глиф | `InfoBar.CloseButtonHoverGlyph` |
 
 **Кнопка "Закрыть" () в панели сведений &times; : нажатое состояние**
@@ -455,7 +455,7 @@ ms.locfileid: "97668915"
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `InfoBar.CloseButtonDown` |
-| Граница | `InfoBar.CloseButtonDownBorder` |
+| Рамка | `InfoBar.CloseButtonDownBorder` |
 | Глиф | `InfoBar.CloseButtonDownGlyph` |
 
 **Кнопка гиперссылки на информационной панели: состояние по умолчанию**
@@ -514,7 +514,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `InfoBar.Button` |
 | Передний план (текст) | `InfoBar.Button` |
-| Граница | `InfoBar.ButtonBorder` |
+| Рамка | `InfoBar.ButtonBorder` |
 
 **Кнопка информационной панели: состояние наведения**
 
@@ -524,7 +524,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `InfoBar.ButtonMouseOver` |
 | Передний план (текст) | `InfoBar.ButtonMouseOver` |
-| Граница | `InfoBar.ButtonMouseOverBorder` |
+| Рамка | `InfoBar.ButtonMouseOverBorder` |
 
 **Кнопка панели со стрелкой: нажатое состояние**
 
@@ -534,7 +534,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `InfoBar.ButtonMouseDown` |
 | Передний план (текст) | `InfoBar.ButtonMouseDown` |
-| Граница | `InfoBar.ButtonMouseDownBorder` |
+| Рамка | `InfoBar.ButtonMouseDownBorder` |
 
 **Кнопка информационной панели: отключенное состояние**
 
@@ -544,7 +544,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `InfoBar.ButtonDisabled` |
 | Передний план (текст) | `InfoBar.ButtonDisabled` |
-| Граница | `InfoBar.ButtonDisabledBorder` |
+| Рамка | `InfoBar.ButtonDisabledBorder` |
 
 **Кнопка информационной панели: состояние "в состоянии"**
 
@@ -554,7 +554,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `InfoBar.ButtonFocus` |
 | Передний план (текст) | `InfoBar.ButtonFocus` |
-| Граница | `InfoBar.ButtonFocusBorder` |
+| Рамка | `InfoBar.ButtonFocusBorder` |
 
 ### <a name="scroll-bars"></a>Полосы прокрутки
 Полосы прокрутки имеют стиль среды Visual Studio и не должны быть включены в тему. Однако вы можете решить, что вы хотите использовать цвета, используемые в полосах прокрутки, чтобы пользовательский интерфейс всегда соответствовал этой части среды Visual Studio.
@@ -647,7 +647,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `SearchControl.FocusedBackground` |
 | Передний план (текст) | `SearchControl.FocusedBackground` |
-| Граница | `SearchControl.FocusedBorder` |
+| Рамка | `SearchControl.FocusedBorder` |
 | Separator | `SearchControl.FocusedDropDownSeparator` |
 
 **Нефокусическое поле ввода активного поиска**
@@ -658,7 +658,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `SearchControl.SearchActiveBackground` |
 | Передний план (текст) | `SearchControl.SearchActiveBackground` |
-| Граница | `SearchControl.UnfocusedBorder` |
+| Рамка | `SearchControl.UnfocusedBorder` |
 | Separator | `SearchControl.DropDownSeparator` |
 
 **Нефокусное поле ввода неактивного поиска**
@@ -669,7 +669,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `SearchControl.Unfocused` |
 | Передний план (текст) | `SearchControl.Unfocused` |
-| Граница | `SearchControl.UnfocusedBorder` |
+| Рамка | `SearchControl.UnfocusedBorder` |
 | Separator | `SearchControl.DropDownSeparator` |
 
 **Выделенное поле ввода для поиска (только текст)**
@@ -680,7 +680,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `SearchControl.Selection` |
 | Передний план (текст) | `SearchControl.FocusedBackground` |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 | Separator | `SearchControl.FocusedDropDownSeparator` |
 
 **Отключенное поле ввода для поиска**
@@ -691,7 +691,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `SearchControl.Disabled` |
 | Передний план (текст) | `SearchControl.Disabled` |
-| Граница | `SearchControl.DisabledBorder` |
+| Рамка | `SearchControl.DisabledBorder` |
 | Separator | `SearchControl.DropDownSeparator` |
 
 **Кнопка действия поиска с сортировкой**
@@ -700,11 +700,11 @@ ms.locfileid: "97668915"
 
 | Элемент | Имя токена: Category.color |
 | --- | --- |
-| Историческая справка | Нет |
+| Историческая справка | Отсутствуют |
 | Передний план (глиф поиска) | `SearchControl.SearchGlyph` |
 | Передний план (глиф остановки) | `SearchControl.StopGlyph` |
 | Передний план (глиф очистки) | `SearchControl.ClearGlyph` |
-| Граница | Недоступно |
+| Рамка | Недоступно |
 
 **Кнопка "действие поиска нефокуса"**
 
@@ -716,7 +716,7 @@ ms.locfileid: "97668915"
 | Передний план (глиф поиска) | `SearchControl.SearchGlyph` |
 | Передний план (глиф остановки) | `SearchControl.StopGlyph` |
 | Передний план (глиф очистки) | `SearchControl.ClearGlyph` |
-| Граница | Недоступно |
+| Рамка | Недоступно |
 
 **Кнопка "действие поиска" нажата**
 
@@ -726,7 +726,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `SearchControl.ActionButtonMouseDown` |
 | Передний план (глиф) | `SearchControl.ActionButtonMouseDownGlyph` |
-| Граница | `SearchControl.ActionButtonMouseDownBorder` |
+| Рамка | `SearchControl.ActionButtonMouseDownBorder` |
 
 **Кнопка действия "отключено" для поиска**
 
@@ -734,9 +734,9 @@ ms.locfileid: "97668915"
 
 | Элемент | Имя токена: Category.color |
 | --- | --- |
-| Историческая справка | Нет |
+| Историческая справка | Отсутствуют |
 | Передний план (глиф) | `SearchControl.ActionButtonDisabledGlyph` |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 
 **Кнопка раскрывающегося списка поиска с сортировкой**
 
@@ -746,7 +746,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `SearchControl.FocusedDropDownButton` |
 | Передний план (глиф) | `SearchControl.FocusedDropDownButtonGlyph` |
-| Граница | `SearchControl.FocusedDropDownButtonBorder` |
+| Рамка | `SearchControl.FocusedDropDownButtonBorder` |
 
 **Кнопка раскрывающегося списка нефокусного поиска**
 
@@ -756,7 +756,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `SearchControl.UnfocusedDropDownButton` |
 | Передний план (глиф) | `SearchControl.UnfocusedDropDownButtonGlyph` |
-| Граница | `SearchControl.UnfocusedDropDownButtonBorder` |
+| Рамка | `SearchControl.UnfocusedDropDownButtonBorder` |
 
 **Кнопка раскрывающегося списка нажатия кнопки поиска**
 
@@ -766,7 +766,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `SearchControl.MouseDownDropDownButton` |
 | Передний план (глиф) | `SearchControl.MouseDownDropDownButtonGlyph` |
-| Граница | `SearchControl.MouseDownDropDownButtonBorder` |
+| Рамка | `SearchControl.MouseDownDropDownButtonBorder` |
 
 **Кнопка раскрывающегося списка отключенных результатов поиска**
 
@@ -774,9 +774,9 @@ ms.locfileid: "97668915"
 
 | Элемент | Имя токена: Category.color |
 | --- | --- |
-| Историческая справка | Нет |
+| Историческая справка | Отсутствуют |
 | Передний план (глиф) | `SearchControl.DisabledDownButtonGlyph` |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 
 #### <a name="search-drop-down-lists"></a>Раскрывающиеся списки поиска
 Раскрывающееся меню поля поиска может быть несколько более сложным, чем другие раскрывающиеся меню в Visual Studio. Разделы "предлагаемые поиски" и "Параметры поиска" могут содержаться в меню отдельно или вместе, и каждый из них окрашен раздельно. Если имеются оба этих раздела, они разделяются линией, а все раскрывающееся меню окружено границей.
@@ -792,7 +792,7 @@ ms.locfileid: "97668915"
 
 | Элемент | Имя токена: Category.color |
 | --- | --- |
-| Граница | `SearchControl.PopupBorder` |
+| Рамка | `SearchControl.PopupBorder` |
 | Separator | `SearchControl.PopupSectionHeaderSeparator` |
 | Shadow | `Environment.DropShadowBackground` |
 
@@ -813,7 +813,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `SearchControl.PopupMouseOverItemText` |
-| Граница | `SearchControl.PopupControlMouseOverBorder` |
+| Рамка | `SearchControl.PopupControlMouseOverBorder` |
 
 **Параметры поиска: состояние по умолчанию**
 
@@ -840,7 +840,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст флажка) | `SearchControl.PopupCheckboxMouseDownText` |
 | Передний план (текст ссылки) | `SearchControl.PopupButtonMouseDownText` |
-| Граница | `SearchControl.PopupControlMouseOverBorder` |
+| Рамка | `SearchControl.PopupControlMouseOverBorder` |
 
 **Параметры поиска: нажатое состояние**
 
@@ -874,7 +874,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `TreeView.Background` |
 | Передний план (текст) | `TreeView.Background` |
 | Передний план (глиф) | `TreeView.Glyph` |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 
 **Элемент представления в виде дерева: состояние наведения**
 
@@ -885,7 +885,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `TreeView.Background` |
 | Передний план (текст) | `TreeView.Background` |
 | Передний план (глиф) | `TreeView.GlyphMouseOver` |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 
 **Элемент представления в виде дерева: перетаскивать по состоянию**
 
@@ -896,7 +896,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `TreeView.DragOverItem` |
 | Передний план (текст) | `TreeView.DragOverItem` |
 | Передний план (глиф) | `TreeView.DragOverItemGlyph` |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 
 **Элемент представления в виде дерева: выбрано, состояние с сортировкой**
 
@@ -907,7 +907,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `TreeView.SelectedItemActive` |
 | Передний план (текст) | `TreeView.SelectedItemActive` |
 | Передний план (глиф) | `TreeView.SelectedItemActiveGlyph` |
-| Граница | `TreeView.FocusVisualBorder` |
+| Рамка | `TreeView.FocusVisualBorder` |
 
 **Элемент представления в виде дерева: выбрано, нефокусное состояние**
 
@@ -918,7 +918,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `TreeView.SelectedItemInactive` |
 | Передний план (текст) | `TreeView.SelectedItemInactive` |
 | Передний план (глиф) | `TreeView.SelectedItemInactiveGlyph` |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 
 **Элемент представления в виде дерева: с наведением, выбрано и с состоянием "упор"**
 
@@ -929,7 +929,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `TreeView.SelectedItemActive` |
 | Передний план (текст) | `TreeView.SelectedItemActive` |
 | Передний план (глиф) | `TreeView.SelectedItemActiveGlyphMouseOver` |
-| Граница | `TreeView.FocusVisualBorder` |
+| Рамка | `TreeView.FocusVisualBorder` |
 
 **Элемент представления в виде дерева: с наведением, с выделением и без фокуса**
 
@@ -940,7 +940,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `TreeView.SelectedItemInactive` |
 | Передний план (текст) | `TreeView.SelectedItemInactive` |
 | Передний план (глиф) | `TreeView.SelectedItemActiveGlyphMouseOver` |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 
 ## <a name="shell-appearance"></a>Внешний вид оболочки
 
@@ -1009,7 +1009,7 @@ ms.locfileid: "97668915"
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `ManifestDesigner.TabActive` |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 
 **Выбранная панель описания конструктора манифестов: состояние по умолчанию**
 
@@ -1066,10 +1066,10 @@ ms.locfileid: "97668915"
 
 | Элемент | Имя токена: Category.color |
 | --- | --- |
-| Историческая справка | Нет |
+| Историческая справка | Отсутствуют |
 | Передний план (текст) | `Environment.CommandBarTextActive` |
 | Передний план (глиф) | `Environment.CommandBarMenuGlyph` |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 
 **Заголовок меню: состояние наведения**
 
@@ -1082,7 +1082,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.CommandBarTextHover` |
 | Передний план (глиф) | `Environment.CommandBarMenuMouseOverGlyph` |
-| Граница | `Environment.CommandBarBorder` |
+| Рамка | `Environment.CommandBarBorder` |
 
 **Заголовок меню: нажатое состояние**
 
@@ -1095,7 +1095,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `Environment.CommandBarMenuBackgroundGradientBegin`<br/>(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.CommandBarTextActive` |
 | Передний план (глиф) | `Environment.CommandBarMenuMouseDownGlyph` |
-| Граница | `Environment.CommandBarMenuBorder`<br />(Только левые, верхняя и правая стороны.) |
+| Рамка | `Environment.CommandBarMenuBorder`<br />(Только левые, верхняя и правая стороны.) |
 
 **Заголовок меню: отключенное состояние**
 
@@ -1103,10 +1103,10 @@ ms.locfileid: "97668915"
 
 | Элемент | Имя токена: Category.color |
 | --- | --- |
-| Историческая справка | Нет |
+| Историческая справка | Отсутствуют |
 | Передний план (текст) | `Environment.CommandBarTextInactive` |
 | Передний план (глиф) | `Environment.CommandBarTextInactive` |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 
 #### <a name="menu-items"></a>Пункты меню
 Отдельный пункт меню состоит из текста и необязательных значка, флажка или глифа подменю. Его цвета фона и текста меняются при наведении указателя. Этот токен цвета представляет собой пару, состоящую из цвета фона и цвета переднего плана.
@@ -1127,7 +1127,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `Environment.CommandBarMenuBackgroundGradientBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.CommandBarTextActive` |
 | Передний план (глиф подменю) | `Environment.CommandBarMenuSubmenuGlyph` |
-| Граница | `Environment.CommandBarMenuBorder` |
+| Рамка | `Environment.CommandBarMenuBorder` |
 | Фон канала значка | `Environment.CommandBarMenuIconBackground` |
 | Separator | `Environment.CommandBarMenuSeparator` |
 | Shadow | `Environment.DropShadowBackground` |
@@ -1205,7 +1205,7 @@ ms.locfileid: "97668915"
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `Environment.CommandBarGradientBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
-| Граница | `Environment.CommandBarToolBarBorder` |
+| Рамка | `Environment.CommandBarToolBarBorder` |
 | Маркер перетаскивания | `Environment.CommandBarDragHandle` |
 | Separator | `Environment.CommandBarToolBarSeparator`<br />`Environment.CommandBarToolBarSeparatorHighlight` |
 
@@ -1227,7 +1227,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | Н/Д (наследуется от фона панели команд) |
 | Передний план (текст) | `Environment.CommandBarTextActive` |
-| Граница | Недоступно |
+| Рамка | Недоступно |
 
 **Значок команды: состояние по умолчанию, выбрано**
 
@@ -1237,7 +1237,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.CommandBarSelected` |
 | Передний план (текст) | `Environment.CommandBarTextSelected` |
-| Граница | `Environment.CommandBarSelectedBorder` |
+| Рамка | `Environment.CommandBarSelectedBorder` |
 
 **Значок команды: состояния наведения или разфокусирования**
 
@@ -1247,7 +1247,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.CommandBarTextHover` |
-| Граница | `Environment.CommandBarBorder` |
+| Рамка | `Environment.CommandBarBorder` |
 
 **Значок команды: состояния наведения или фокусировки, выбранные**
 
@@ -1257,7 +1257,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.CommandBarHoverOverSelected` |
 | Передний план (текст) | `Environment.CommandBarTextHoverOverSelected` |
-| Граница | `Environment.CommandBarHoverOverSelectedIconBorder` |
+| Рамка | `Environment.CommandBarHoverOverSelectedIconBorder` |
 
  **Значок команды: состояние "нажато"**
 
@@ -1267,7 +1267,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.CommandBarTextMouseDown` |
-| Граница | `Environment.CommandBarBorder` |
+| Рамка | `Environment.CommandBarBorder` |
 
 **Значок команды: отключенное состояние**
 
@@ -1277,7 +1277,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | Н/Д (наследуется от фона панели команд) |
 | Передний план (текст) | `Environment.CommandBarTextInactive` |
-| Граница | Недоступно |
+| Рамка | Недоступно |
 
 #### <a name="command-bar-combo-boxes"></a><a name="BKMK_CommandComboBox"></a> Поля со списком для панели команд
 
@@ -1299,7 +1299,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.ComboBoxBackground` |
 | Передний план (текст) | `Environment.ComboBoxText` |
-| Граница | `Environment.ComboBoxBorder` |
+| Рамка | `Environment.ComboBoxBorder` |
 | Separator | Без разделителя |
 
 **Кнопка раскрывающегося списка на панели команд: состояние по умолчанию**
@@ -1319,7 +1319,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.ComboBoxPopupBackgroundBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.ComboBoxItemText` |
-| Граница | `Environment.ComboBoxPopupBorder` |
+| Рамка | `Environment.ComboBoxPopupBorder` |
 
 **Поле ввода поля со списком для панели команд: состояние наведения**
 
@@ -1329,7 +1329,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.ComboBoxMouseOverBackgroundBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.ComboBoxMouseOverText` |
-| Граница | `Environment.ComboBoxMouseOverBorder` |
+| Рамка | `Environment.ComboBoxMouseOverBorder` |
 | Separator | `Environment.ComboBoxMouseOverSeparator` |
 
  **Раскрывающийся список Командная строка: состояние наведения**
@@ -1359,7 +1359,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.ComboBoxFocusedBackground` |
 | Передний план (текст) | `Environment.ComboBoxFocusedText` |
-| Граница | `Environment.ComboBoxFocusedBorder` |
+| Рамка | `Environment.ComboBoxFocusedBorder` |
 | Separator | `Environment.ComboBoxFocusedButtonSeparator` |
 
 **Кнопка раскрывающегося списка на панели команд: состояние "направлено"**
@@ -1379,7 +1379,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.ComboBoxMouseDownBackground` |
 | Передний план (текст) | `Environment.ComboBoxMouseDownText` |
-| Граница | `Environment.ComboBoxMouseDownBorder` |
+| Рамка | `Environment.ComboBoxMouseDownBorder` |
 | Separator | `Environment.ComboBoxMouseDownSeparator` |
 
 **Раскрывающийся список панели команд: состояние "нажато"**
@@ -1399,7 +1399,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.ComboBoxDisabledBackground` |
 | Передний план (текст) | `Environment.ComboBoxDisabledText` |
-| Граница | `Environment.ComboBoxDisabledBorder` |
+| Рамка | `Environment.ComboBoxDisabledBorder` |
 | Separator | Без разделителя |
 
 **Раскрывающийся список панели команд: отключенное состояние**
@@ -1408,7 +1408,7 @@ ms.locfileid: "97668915"
 
 | Элемент | Имя токена: Category.color |
 | --- | --- |
-| Историческая справка | Нет |
+| Историческая справка | Отсутствуют |
 | Передний план (глиф) | `Environment.ComboBoxDisabledGlyph` |
 
 #### <a name="command-bar-drop-downs"></a><a name="BKMK_CommandDropDown"></a> Раскрывающиеся панели команд
@@ -1431,7 +1431,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.DropDownBackground` |
 | Передний план (текст) | `DropDownText` |
-| Граница | `DropDownBorder` |
+| Рамка | `DropDownBorder` |
 | Separator | Без разделителя |
 
 **Кнопка раскрывающегося списка на панели команд: состояние по умолчанию**
@@ -1440,7 +1440,7 @@ ms.locfileid: "97668915"
 
 | Элемент | Имя токена: Category.color |
 | --- | --- |
-| Историческая справка | Нет |
+| Историческая справка | Отсутствуют |
 | Передний план (глиф) | `Environment.DropDownGlyph` |
 
 **Раскрывающийся список панели команд: состояние по умолчанию**
@@ -1451,7 +1451,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.DropDownPopupBackgroundBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.ComboBoxItemText` |
-| Граница | `Environment.DropDownPopupBorder` |
+| Рамка | `Environment.DropDownPopupBorder` |
 | Shadow | `Environment.DropShadowBackground` |
 
 **Раскрывающееся поле выбора панели команд: состояние наведения**
@@ -1462,7 +1462,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.DropDownMouseOverBackgroundBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.DropDownMouseOverText` |
-| Граница | `Environment.DropDownMouseOverBorder` |
+| Рамка | `Environment.DropDownMouseOverBorder` |
 | Separator | `Environment.DropDownButtonMouseOverSeparator` |
 
 **Раскрывающийся список Командная строка: состояние наведения**
@@ -1492,7 +1492,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.DropDownMouseDownBackground` |
 | Передний план (текст) | `Environment.DropDownMouseDownText` |
-| Граница | `Environment.DropDownMouseDownBorder` |
+| Рамка | `Environment.DropDownMouseDownBorder` |
 | Separator | `Environment.DropDownButtonMouseDownSeparator` |
 
 **Раскрывающийся список панели команд: состояние "нажато"**
@@ -1512,7 +1512,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.DropDownDisabledBackground` |
 | Передний план (текст) | `Environment.DropDownDisabledText` |
-| Граница | `Environment.DropDownDisabledBorder` |
+| Рамка | `Environment.DropDownDisabledBorder` |
 | Separator | Без разделителя |
 
 **Раскрывающийся список панели команд: отключенное состояние**
@@ -1540,10 +1540,10 @@ ms.locfileid: "97668915"
 
 | Элемент | Имя токена: Category.color |
 | --- | --- |
-| Историческая справка | Нет |
+| Историческая справка | Отсутствуют |
 | Передний план (текст) | `Environment.CommandBarTextActive` |
 | Передний план (глиф) | `Environment.CommandBarSplitButtonGlyph` |
-| Граница | Недоступно |
+| Рамка | Недоступно |
 | Separator | Недоступно |
 
 **Кнопка разделения панели команд: состояние наведения**
@@ -1555,7 +1555,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.CommandBarTextHover` |
 | Передний план (глиф) | `Environment.CommandBarSplitButtonMouseOverGlyph` |
-| Граница | `Environment.CommandBarBorder` |
+| Рамка | `Environment.CommandBarBorder` |
 | Separator | `Environment.CommandBarSplitButtonSeparator` |
 
 **Кнопка разделения панели команд: состояние "нажато"**
@@ -1567,7 +1567,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.CommandBarTextMouseDown` |
 | Передний план (глиф) | `Environment.CommandBarSplitButtonMouseDownGlyph` |
-| Граница | `Environment.CommandBarBorder` |
+| Рамка | `Environment.CommandBarBorder` |
 | Separator | Недоступно |
 
 **Кнопка разделения панели команд: отключенное состояние**
@@ -1579,7 +1579,7 @@ ms.locfileid: "97668915"
 | Историческая справка | Недоступно |
 | Передний план (текст) | `Environment.ComboBoxItemTextInactive` |
 | Передний план (глиф) | `Environment.CommandBarTextInactive` |
-| Граница | Недоступно |
+| Рамка | Недоступно |
 | Separator | Недоступно |
 
 #### <a name="command-bar-more-options-and-overflow-buttons"></a>Кнопки "Дополнительные параметры" и "переполнение" в командной строке
@@ -1646,7 +1646,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | Зависит от типа документа |
 | Передний план (текст) | Зависит от типа документа |
-| Граница | `Environment.ToolWindowBorder` |
+| Рамка | `Environment.ToolWindowBorder` |
 
 **Закрепленная рамка окна документа с плавающей точкой: состояние по умолчанию**
 
@@ -1657,7 +1657,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `Environment.ToolWindowFloatingFrame` |
 | Передний план (текст) | `Environment.ToolWindowFloatingFrame` |
 | Передний план (глиф) | `Environment.RaftedWindowButtonActiveGlyph` |
-| Граница | `Environment.MainWindowActiveDefaultBorder` |
+| Рамка | `Environment.MainWindowActiveDefaultBorder` |
 | Граница (глиф) | `Environment.RaftedWindowButtonActiveBorder`<br />(Значение прозрачно) |
 
 **Нефокусическая рамка окна документа с плавающей точкой: состояние по умолчанию**
@@ -1669,7 +1669,7 @@ ms.locfileid: "97668915"
 | Историческая справка | `Environment.ToolWindowFloatingFrameInactive` |
 | Передний план (текст) | `Environment.ToolWindowFloatingFrameInactive` |
 | Передний план (глиф) | `Environment.RaftedWindowButtonInactiveGlyph` |
-| Граница | `Environment.MainWindowInactiveBorder` |
+| Рамка | `Environment.MainWindowInactiveBorder` |
 | Граница (глиф) | `Environment.RaftedWindowButtonInactiveBorder`<br />(Значение прозрачно) |
 
 **Закрепленная рамка окна документа с плавающей точкой: состояние наведения**
@@ -1733,7 +1733,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.FileTabSelectedGradientTop`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.FileTabSelectedText` |
-| Граница | `Environment.FileTabSelectedBorder`<br />(Задайте тот же цвет, что и фон.) |
+| Рамка | `Environment.FileTabSelectedBorder`<br />(Задайте тот же цвет, что и фон.) |
 | Граница документа | `Environment.FileTabDocumentBorderBackground` |
 
 **Выбранная, нефокусная вкладка документа**
@@ -1744,7 +1744,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.FileTabInactiveGradientTop`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.FileTabInactiveText` |
-| Граница | `Environment.FileTabInactiveBorder`<br />(Задайте тот же цвет, что и фон.) |
+| Рамка | `Environment.FileTabInactiveBorder`<br />(Задайте тот же цвет, что и фон.) |
 | Граница документа | `Environment.FileTabInactiveDocumentBorderBackground` |
 
 **Вкладка "фоновый документ": состояние по умолчанию**
@@ -1755,7 +1755,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.FileTabBackground` |
 | Передний план (текст) | `Environment.FileTabText` |
-| Граница | `Environment.FileTabBorder`<br />(Задайте тот же цвет, что и фон.) |
+| Рамка | `Environment.FileTabBorder`<br />(Задайте тот же цвет, что и фон.) |
 
 **Вкладка "фоновый документ": состояние наведения**
 
@@ -1765,7 +1765,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.FileTabHotGradientTop`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.FileTabHotText` |
-| Граница | `Environment.FileTabHotBorder`<br />(Задайте тот же цвет, что и фон.) |
+| Рамка | `Environment.FileTabHotBorder`<br />(Задайте тот же цвет, что и фон.) |
 
 #### <a name="preview-tab"></a>Вкладка предварительного просмотра
 Также называется "подготовительной" вкладкой. Вкладка Предварительный просмотр отображается в правой части канала вкладки документа, когда пользователь щелкает элемент в окне инструментов обозреватель решений. Она служит для предварительного просмотра документа и дает пользователю возможность сохранять документ открытым в левой части канала вкладок документов. Одновременно может быть открыта только одна вкладка предварительного просмотра. Так же как открытые вкладки, вкладки предварительного просмотра имеют как фоновое, так и выбранное состояния и в активном состоянии могут получать фокус ввода и терять его.
@@ -1785,7 +1785,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.FileTabProvisionalSelectedActive` |
 | Передний план (текст) | `Environment.FileTabProvisionalSelectedActiveForeground` |
-| Граница | `Environment.FileTabProvisionalSelectedActiveBorder`<br />(Задайте тот же цвет, что и фон.) |
+| Рамка | `Environment.FileTabProvisionalSelectedActiveBorder`<br />(Задайте тот же цвет, что и фон.) |
 | Граница документа | `Environment.FileTabProvisionalSelectedActiveBorder` |
 
 **Не фокус, выбранная вкладка предварительного просмотра**
@@ -1796,7 +1796,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.FileTabProvisionalSelectedInactive` |
 | Передний план (текст) | `Environment.FileTabProvisionalSelectedInactiveForeground` |
-| Граница | `Environment.FileTabProvisionalSelectedInactiveBorder` |
+| Рамка | `Environment.FileTabProvisionalSelectedInactiveBorder` |
 | Граница документа | `Environment.FileTabProvisionalSelectedInactiveBorder` |
 
 **Вкладка "предварительный просмотр фона": состояние по умолчанию**
@@ -1807,7 +1807,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.FileTabProvisionalInactive` |
 | Передний план (текст) | `Environment.FileTabProvisionalInactiveForeground` |
-| Граница | `Environment.FileTabProvisionalInactiveBorder`<br />(Задайте тот же цвет, что и фон.) |
+| Рамка | `Environment.FileTabProvisionalInactiveBorder`<br />(Задайте тот же цвет, что и фон.) |
 
 **Вкладка "предварительный просмотр фона": состояние наведения**
 
@@ -1817,7 +1817,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.FileTabProvisionalHover` |
 | Передний план (текст) | `Environment.FileTabProvisionalHoverForeground` |
-| Граница | `Environment.FileTabProvisionalHoverBorder`<br />(Задайте тот же цвет, что и фон.) |
+| Рамка | `Environment.FileTabProvisionalHoverBorder`<br />(Задайте тот же цвет, что и фон.) |
 
 #### <a name="document-overflow-button"></a>Кнопка переполнения документа
 Кнопка переполнения документа присутствует, если открыт один или несколько документов, вне зависимости от того, имеется ли в текущей конфигурации пространство по вертикали для размещения всех вкладок документов. В раскрывающемся меню Переполнение документа, которое управляется цветами [меню панели команд](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus) , отображается список всех открытых документов, как видимых, так и скрытых, а глиф переполнения изменяется в зависимости от того, отображаются ли все открытые документы в канале табуляции.
@@ -1837,7 +1837,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.DocWellOverflowButtonBackground` |
 | Передний план (глиф) | `Environment.DocWellOverflowButtonGlyph` |
-| Граница | Недоступно |
+| Рамка | Недоступно |
 
 **Кнопка переполнения документа: состояние наведения**
 
@@ -1847,7 +1847,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.DocWellOverflowButtonMouseOverBackground` |
 | Передний план (глиф) | `Environment.DocWellOverflowButtonMouseOverGlyph` |
-| Граница | `Environment.DocWellOverflowButtonMouseOverBorder` |
+| Рамка | `Environment.DocWellOverflowButtonMouseOverBorder` |
 
 **Кнопка переполнения документа: состояние "нажато"**
 
@@ -1857,7 +1857,7 @@ ms.locfileid: "97668915"
 | --- | --- |
 | Историческая справка | `Environment.DocWellOverflowButtonMouseDownBackground` |
 | Передний план (глиф) | `Environment.DocWellOverflowButtonMouseDownGlyph` |
-| Граница | `Environment.DocWellOverflowButtonMouseDownBorder` |
+| Рамка | `Environment.DocWellOverflowButtonMouseDownBorder` |
 
 ### <a name="tagging"></a>Добавление тегов
 Visual Studio поддерживает добавление тегов, что позволяет пользователю объявлять доступные для поиска ключевые слова в целях отслеживания. Например, руководители проектов и разработчики могут использовать Team Foundation Server (TFS) для добавления тегов к рабочим элементам. В приведенных ниже таблицах представлены имена цветов как для самого тега, так и для глифа (значка закрытия), который появляется при наведении указателя и в некоторых состояниях.
@@ -1925,7 +1925,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Tag.TagHoverGlyphHoverBackground` |
 | Передний план (глиф) | `Tag.TagHoverGlyphHover` |
-| Граница | `Tag.TagHoverGlyphHoverBorder` |
+| Рамка | `Tag.TagHoverGlyphHoverBorder` |
 
 **Close ( &times; ) глиф тега: нажатое состояние**
 
@@ -1935,7 +1935,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Tag.TagHoverGlyphPressedBackground` |
 | Передний план (глиф) | `Tag.TagHoverGlyphPressed` |
-| Граница | `Tag.TagHoverGlyphPressedBorder` |
+| Рамка | `Tag.TagHoverGlyphPressedBorder` |
 
 **Выбранный тег с закрывающим ( &times; ) глифом: состояние по умолчанию**
 
@@ -1954,7 +1954,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Tag.TagSelectedGlyphHoverBackground` |
 | Передний план (глиф) | `Tag.TagSelectedGlyphHover` |
-| Граница | `Tag.TagSelectedGlyphHoverBorder` |
+| Рамка | `Tag.TagSelectedGlyphHoverBorder` |
 
 **Выбранный тег с закрывающим ( &times; ) глифом: состояние "нажато"**
 
@@ -1964,7 +1964,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Tag.TagSelectedGlyphPressedBackground` |
 | Передний план (глиф) | `Tag.TagSelectedGlyphPressed` |
-| Граница | `Tag.TagSelectedGlyphPressedBorder` |
+| Рамка | `Tag.TagSelectedGlyphPressedBorder` |
 
 ## <a name="tool-windows"></a>Окна инструментов
 Нет необходимости в репликации окон инструментов, так как они предоставляются средой Visual Studio. Однако может потребоваться использовать цвета, применяемые в окнах инструментов, чтобы ваш пользовательский интерфейс был согласован с этой частью среды Visual Studio.
@@ -1991,7 +1991,7 @@ Visual Studio поддерживает добавление тегов, что �
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `Environment.ToolWindowBackground` |
-| Граница | `Environment.ToolWindowBorder` |
+| Рамка | `Environment.ToolWindowBorder` |
 
 **Перемещаемое окно инструментов с плавающей точкой**
 
@@ -2000,7 +2000,7 @@ Visual Studio поддерживает добавление тегов, что �
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `Environment.ToolWindowBackground` |
-| Граница | `Environment.MainWindowActiveDefaultBorder` |
+| Рамка | `Environment.MainWindowActiveDefaultBorder` |
 
 **Плавающее окно инструментов без фокуса**
 
@@ -2009,7 +2009,7 @@ Visual Studio поддерживает добавление тегов, что �
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `Environment.ToolWindowBackground` |
-| Граница | `Environment.MainWindowInactiveBorder` |
+| Рамка | `Environment.MainWindowInactiveBorder` |
 
 ### <a name="toolbox-like-windows"></a>Панель элементов, как и окна
 Область элементов — одно из наиболее часто используемых окон инструментов в Visual Studio. По сути, это элемент управления "дерево" с особой темой и применением стилей.
@@ -2030,7 +2030,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Environment.ToolboxContent`<br />Заголовки |
 | Историческая справка | `Environment.ToolWindowBackground`<br />(Отдельные элементы или все окно, если нет доступных элементов управления) |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 | Передний план (глиф) | `Environment.ToolboxContent` |
 | Передний план (текст) | `Environment.ToolboxContent` |
 
@@ -2041,7 +2041,7 @@ Visual Studio поддерживает добавление тегов, что �
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `Environment.ToolboxContentMouseOver`<br />(Только для отдельных элементов) |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 | Передний план (текст) | `Environment.ToolboxContentMouseOver`<br />(Только для отдельных элементов) |
 
 **Выбранные узлы панели элементов: состояние с сортировкой**
@@ -2053,7 +2053,7 @@ Visual Studio поддерживает добавление тегов, что �
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `TreeView.SelectedItemActive`<br />Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
-| Граница | `TreeView.FocusVisualBorder`<br />Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
+| Рамка | `TreeView.FocusVisualBorder`<br />Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 | Передний план (глиф) | `TreeView.SelectedItemActive`<br />Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 | Передний план (текст) | `TreeView.SelectedItemActive`<br />Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 
@@ -2066,7 +2066,7 @@ Visual Studio поддерживает добавление тегов, что �
 | Элемент | Имя токена: Category.color |
 | --- | --- |
 | Историческая справка | `TreeView.SelectedItemInactive`<br />Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
-| Граница | Нет |
+| Рамка | Отсутствуют |
 | Передний план (глиф) | `TreeView.SelectedItemInactive`<br />Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 | Передний план (текст) | `TreeView.SelectedItemInactive`<br />Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 
@@ -2087,7 +2087,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Environment.TitleBarActiveGradientBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.TitleBarActiveText` |
-| Граница | `Environment.TitleBarActiveBorder`<br />(Задайте тот же цвет, что и фон.) |
+| Рамка | `Environment.TitleBarActiveBorder`<br />(Задайте тот же цвет, что и фон.) |
 | Маркер перетаскивания | `Environment.TitleBarDragHandleActive` |
 
 **Заголовок окна без фокуса ввода**
@@ -2098,7 +2098,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Environment.TitleBarInactiveGradientBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.TitleBarInactiveText` |
-| Граница | Недоступно |
+| Рамка | Недоступно |
 | Маркер перетаскивания | `Environment.TitleBarDragHandle` |
 
 #### <a name="tool-window-title-bar-buttons"></a>Кнопки в заголовке окна инструментов
@@ -2117,7 +2117,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | Недоступно |
 | Передний план (глиф) | `Environment.ToolWindowButtonActiveGlyph` |
-| Граница | Недоступно |
+| Рамка | Недоступно |
 
 **Кнопки в строке заголовка без фокуса: состояние по умолчанию**
 
@@ -2127,7 +2127,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | Недоступно |
 | Передний план (глиф) | `Environment.ToolWindowButtonInactiveGlyph` |
-| Граница | Недоступно |
+| Рамка | Недоступно |
 
 **Кнопки в строке заголовка с упором: состояние наведения**
 
@@ -2137,7 +2137,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Environment.ToolWindowButtonHoverActive` |
 | Передний план (глиф) | `Environment.ToolWindowButtonHoverActiveGlyph` |
-| Граница | `Environment.ToolWindowButtonHoverActiveBorder` |
+| Рамка | `Environment.ToolWindowButtonHoverActiveBorder` |
 
 **Кнопки в строке заголовка без фокуса: состояние наведения**
 
@@ -2147,7 +2147,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Environment.ToolWindowButtonHoverInactive` |
 | Передний план (глиф) | `Environment.ToolWindowButtonHoverInactiveGlyph` |
-| Граница | `Environment.ToolWindowButtonHoverInactiveBorder` |
+| Рамка | `Environment.ToolWindowButtonHoverInactiveBorder` |
 
 **Кнопки строки заголовка с упором: нажатое состояние**
 
@@ -2157,7 +2157,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Environment.ToolWindowButtonDown` |
 | Передний план (глиф) | `Environment.ToolWindowButtonDownActiveGlyph` |
-| Граница | `Environment.ToolWindowButtonDownBorder` |
+| Рамка | `Environment.ToolWindowButtonDownBorder` |
 
 **Кнопки в заголовке окна без фокуса: нажатое состояние**
 
@@ -2167,7 +2167,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Environment.ToolWindowButtonDown` |
 | Передний план (глиф) | `Environment.ToolWindowButtonDownInactiveGlyph` |
-| Граница | `Environment.ToolWindowButtonDownBorder` |
+| Рамка | `Environment.ToolWindowButtonDownBorder` |
 
 ### <a name="tool-window-tabs"></a>Вкладки окна инструментов
 ![Вкладка "окно инструментов" (красная линия)](../../extensibility/ux-guidelines/media/0303-102_toolwindowtabredline.png "0303 — 102_ToolWindowTabRedline")<br />Вкладка "окно инструментов" (красная линия)
@@ -2184,7 +2184,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Environment.ToolWindowTabSelectedTab` |
 | Передний план (текст) | `Environment.ToolWindowTabSelectedActiveText` |
-| Граница | `Environment.ToolWindowTabSelectedBorder`<br />(Задайте тот же цвет, что и фон.) |
+| Рамка | `Environment.ToolWindowTabSelectedBorder`<br />(Задайте тот же цвет, что и фон.) |
 
 **Выбранная вкладка окна инструментов без фокуса ввода**
 
@@ -2194,7 +2194,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Environment.ToolWindowTabSelectedTab` |
 | Передний план (текст) | `Environment.ToolWindowTabSelectedText` |
-| Граница | `Environment.ToolWindowTabSelectedBorder`<br />(Задайте тот же цвет, что и фон.) |
+| Рамка | `Environment.ToolWindowTabSelectedBorder`<br />(Задайте тот же цвет, что и фон.) |
 
 **Вкладка "окно фонового инструмента": состояние по умолчанию**
 
@@ -2204,7 +2204,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Environment.ToolWindowTabGradientBegin`<br />`Environment.ToolWindowTabGradientEnd`<br />(Для ограничителей градиента задано то же значение цвета, что и в Visual Studio 2013.) |
 | Передний план (текст) | `Environment.ToolWindowTabText` |
-| Граница | `Environment.ToolWindowTabBorder` |
+| Рамка | `Environment.ToolWindowTabBorder` |
 
 **Вкладка "окно фонового инструмента": состояние наведения**
 
@@ -2214,7 +2214,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Environment.ToolWindowTabMouseOverBackgroundBegin`<br />`Environment.ToolWindowTabMouseOverBackgroundEnd`<br />(Для ограничителей градиента задано то же значение цвета, что и в Visual Studio 2013.) |
 | Передний план (текст) | `Environment.ToolWindowTabMouseOverText` |
-| Граница | `Environment.ToolWindowTabMouseOverBorder`<br />(Задайте тот же цвет, что и фон.) |
+| Рамка | `Environment.ToolWindowTabMouseOverBorder`<br />(Задайте тот же цвет, что и фон.) |
 
 ### <a name="auto-hide-tabs"></a>Автоматически скрываемые вкладки
 
@@ -2232,7 +2232,7 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Environment.AutoHideTabBackgroundBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.AutoHideTabText` |
-| Граница | `Environment.AutoHideTabBorder` |
+| Рамка | `Environment.AutoHideTabBorder` |
 
 **Автоматически скрывать вкладки: состояние наведения**
 
@@ -2242,4 +2242,4 @@ Visual Studio поддерживает добавление тегов, что �
 | --- | --- |
 | Историческая справка | `Environment.AutoHideTabMouseOverBackgroundBegin`<br />(Ограничения градиента для этого маркера не используются в пользовательском интерфейсе с темой.) |
 | Передний план (текст) | `Environment.AutoHideTabMouseOverText` |
-| Граница | `Environment.AutoHideTabMouseOverBorder` |
+| Рамка | `Environment.AutoHideTabMouseOverBorder` |

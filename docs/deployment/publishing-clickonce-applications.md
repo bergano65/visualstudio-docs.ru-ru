@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: eb6dfe79-f54c-4331-8e36-073688e70973
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 737e1092d88c48227183a32072502cb833ebcd37
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: fa9e94bf124888d05b6393a4821b5db61181871c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927578"
 ---
 # <a name="publish-clickonce-applications"></a>Публикация приложений ClickOnce
 При первой публикации приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] установка свойств публикации выполняется с помощью мастера публикации. В мастере доступно только несколько свойств. Для всех остальных свойств устанавливаются значения по умолчанию.
@@ -50,13 +50,13 @@ ms.locfileid: "94349494"
 ## <a name="publish-page"></a>Страница "Публикация"
  Страница **Публикация****конструктора проектов** используется для настройки свойств развертывания ClickOnce. В следующей таблице приводится список разделов.
 
-|Название|Description|
+|Название|Описание|
 |-----------|-----------------|
-|[Практическое руководство. Указание расположения, в которое среда Visual Studio копирует файлы](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Содержит сведения о выборе расположения, в котором Visual Studio размещает файлы приложения и манифесты.|
-|[Практическое руководство. Указание расположения, из которого будет производиться установка пользователями](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Содержит сведения о выборе расположения для загрузки и установки приложения пользователями.|
-|[Практическое руководство. Выбор режима установки ClickOnce: автономного или через Интернет](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|Содержит сведения о настройке режима доступности приложения — оперативного или автономного.|
+|[Как указать, где Visual Studio копирует файлы](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Содержит сведения о выборе расположения, в котором Visual Studio размещает файлы приложения и манифесты.|
+|[Как указать расположение, из которого будут устанавливаться конечные пользователи.](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Содержит сведения о выборе расположения для загрузки и установки приложения пользователями.|
+|[Как указать режим установки ClickOnce: автономный или оперативный](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|Содержит сведения о настройке режима доступности приложения — оперативного или автономного.|
 |[Как задать версию публикации ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md)|Содержит сведения об установке свойства **Версия публикации** для ClickOnce, которое определяет, будет ли публикуемое приложение рассматриваться как обновление.|
-|[Практическое руководство. Автоматическое увеличение номера версии публикации ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|Содержит сведения об автоматическом увеличении номера редакции свойства **PublishVersion** при каждой публикации приложения.|
+|[Как автоматически увеличивать версию публикации ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|Содержит сведения об автоматическом увеличении номера редакции свойства **PublishVersion** при каждой публикации приложения.|
 
  Дополнительные сведения см. в разделе [Публикация страницы в конструкторе проектов](../ide/reference/publish-page-project-designer.md) .
 
@@ -74,19 +74,19 @@ ms.locfileid: "94349494"
 ### <a name="publish-options-dialog-box"></a>Диалоговое окно "Параметры публикации"
  В диалоговом окне "Параметры публикации" задаются параметры развертывания приложения.
 
-|Название|Description|
+|Название|Описание|
 |-|-|
-|[Практическое руководство. Изменение языка публикации для приложения ClickOnce](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Содержит сведения об указании языка и региональных параметров, соответствующих локализованной версии.|
-|[Практическое руководство. Указание названия приложения ClickOnce в меню "Пуск"](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|Содержит сведения об изменении отображаемого имени для приложения ClickOnce.|
-|[Как указать ссылку на службу технической поддержки](../deployment/how-to-specify-a-link-for-technical-support.md)|Содержит сведения о задании свойства **URL-адрес службы поддержки** , которое определяет веб-страницу или общий ресурс, где пользователи могут получить сведения о приложении.|
+|[Как изменить язык публикации для приложения ClickOnce](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Содержит сведения об указании языка и региональных параметров, соответствующих локализованной версии.|
+|[Как указать имя меню "Пуск" для приложения ClickOnce](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|Содержит сведения об изменении отображаемого имени для приложения ClickOnce.|
+|[Как указать ссылку на службу технической поддержки](../deployment/how-to-specify-a-link-for-technical-support.md)|Содержит сведения о задании свойства **URL-адрес службы поддержки**, которое определяет веб-страницу или общий ресурс, где пользователи могут получить сведения о приложении.|
 |[Как указать URL-адрес поддержки для отдельных необходимых компонентов в развертывании ClickOnce](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|Демонстрирует процесс изменения манифеста приложения вручную для включения отдельных URL-адресов службы поддержки для каждого необходимого предварительного условия.|
-|[Практическое руководство. Указание страницы публикации для приложения ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|Содержит сведения о создании и публикации веб-страницы по умолчанию (publish.htm) вместе с приложением.|
+|[Как указать страницу публикации для приложения ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|Содержит сведения о создании и публикации веб-страницы по умолчанию (publish.htm) вместе с приложением.|
 |[Практическое руководство. Настройка используемой по умолчанию веб-страницы для ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Содержит сведения о настройке веб-страницы, которая автоматически создается и публикуется вместе с приложением.|
 |[Как включить автозапуск для установок компакт-дисков](../deployment/how-to-enable-autostart-for-cd-installations.md)|Содержит сведения о включении функции автозапуска для автоматического запуска приложения ClickOnce при вставке носителя.|
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Description|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Как создать ассоциации файлов для приложения ClickOnce](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|Содержит сведения о добавлении поддержки расширения имени файла в приложение ClickOnce.|
 |[Практическое руководство. Извлечение сведений строки запроса в интернет-приложении ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|Демонстрирует извлечение параметров, передаваемых в URL-адрес, используемый для запуска приложения ClickOnce.|
@@ -98,10 +98,10 @@ ms.locfileid: "94349494"
 |[Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|Содержит сведения об использовании служебных программ .NET Framework для развертывания приложения ClickOnce.|
 |[Пошаговое руководство. Развертывание вручную приложения ClickOnce, которое не требует повторного подписания и сохраняет сведения о фирменной символике](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)|Содержит сведения об использовании служебных программ .NET Framework для развертывания приложения ClickOnce без повторной подписи манифестов.|
 |[Практическое руководство. настройку целевых платформ в проектах](../ide/how-to-configure-projects-to-target-platforms.md)|Содержит сведения о процессе публикации 64-разрядного процессора путем изменения свойства **Целевой ЦП** или **Целевая платформа** в проекте.|
-|[Пошаговое руководство. Включение запуска приложения ClickOnce на нескольких .NET Framework версиях](/previous-versions/dd996998(v=vs.100))|Содержит сведения об установке и запуске приложения ClickOnce на нескольких версиях платформы .NET Framework.|
+|[Пошаговое руководство. Включение запуска приложения ClickOnce на нескольких платформа .NET Framework версиях](/previous-versions/dd996998(v=vs.100))|Содержит сведения об установке и запуске приложения ClickOnce на нескольких версиях платформы .NET Framework.|
 |[Пошаговое руководство. Создание пользовательского установщика для приложения ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Содержит сведения о создании настраиваемого установщика для установки приложения ClickOnce.|
 |[Практическое руководство. Публикация приложения WPF с включенными визуальными стилями](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Содержит пошаговые инструкции для устранения ошибки, которая появляется при попытке публикации приложения WPF с включенными визуальными стилями.|
 
-## <a name="see-also"></a>См. также
-- [Безопасность и развертывание ClickOnce](../deployment/clickonce-security-and-deployment.md)
-- [Справочник по ClickOnce](../deployment/clickonce-reference.md)
+## <a name="see-also"></a>См. также раздел
+- [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)
+- [Справочные сведения ClickOnce](../deployment/clickonce-reference.md)

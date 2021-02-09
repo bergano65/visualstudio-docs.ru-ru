@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43790914be67ddaf2e82f1bb411180d5643ebcbe
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cef6cd23a1e5ff1e00e2d4d93313ee1e9355ece2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350053"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927565"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Практическое руководство. Создание манифеста пакета
 Чтобы развернуть необходимые компоненты для приложения, можно использовать пакет начального загрузчика. Пакет загрузчика содержит один файл манифеста продукта, но манифест пакета для каждого языкового стандарта. Общие функции в разных локализованных версиях должны поступать в манифест продукта.
@@ -100,5 +100,5 @@ installing this package.</String>
 </Package>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Справочник по схеме продуктов и пакетов](../deployment/product-and-package-schema-reference.md)

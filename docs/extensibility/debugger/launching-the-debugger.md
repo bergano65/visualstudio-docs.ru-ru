@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f24da1a1-f923-48b4-989f-18a22b581d1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40b91ae695a5e78745c01c5ac974411ac924f8f0
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: b9f8bc85672fc89205ab25fa9954e1c28e10f859
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926386"
 ---
 # <a name="launch-the-debugger"></a>Запуск отладчика
 Для запуска отладчика необходимо отправить правильную последовательность методов и событий с соответствующими атрибутами.
@@ -53,6 +53,6 @@ ms.locfileid: "96606662"
 
 8. Параметр DE отправляет [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) в SDM с `EVENT_SYNC` атрибутом.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Вызов событий отладчика](../../extensibility/debugger/calling-debugger-events.md)
 - [Запуск программы](../../extensibility/debugger/launching-a-program.md)

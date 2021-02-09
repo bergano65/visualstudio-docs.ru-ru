@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37df139f890a7717287db675a3a4b7e4b250dbf3
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 5fe0fa745ef611395abe6244c0e207271b182cb4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927331"
 ---
 # <a name="buildonload-attribute-and-element"></a>Атрибут и элемент Буилдонлоад
 
@@ -52,9 +52,9 @@ ms.locfileid: "94671609"
 
 Для элемента **буилдонлоад** требуется текстовое значение. Текст должен иметь значение `true` или `false` , что указывает, следует ли выполнять сборку проекта сразу после его создания.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
-**Буилдонлоад** является необязательным атрибутом. Значение по умолчанию — `false`.
+**Буилдонлоад** является необязательным атрибутом. Значение по умолчанию — `false`.
 
 ## <a name="example"></a>Пример
 
@@ -85,7 +85,7 @@ ms.locfileid: "94671609"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [BuildProjectOnload, элемент](buildprojectonload-element-visual-studio-templates.md)
 - [TemplateContent, элемент](../extensibility/templatecontent-element-visual-studio-templates.md)

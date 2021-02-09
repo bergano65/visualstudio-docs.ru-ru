@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Developer tab [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4dc38b941d27cab0653b923ddd03ba8b78eeab58
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 081d6740aa31a31173b12e467b1b8e32a074604a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528141"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927721"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Как отобразить вкладку "Разработчик" на ленте
   Для доступа к вкладке **разработчик** на ленте приложения Office необходимо настроить для него отображение вкладки, так как она не отображается по умолчанию. Например, необходимо отобразить эту вкладку, если требуется добавить <xref:Microsoft.Office.Tools.Word.GroupContentControl> в настройку уровня документа для Word.

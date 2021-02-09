@@ -13,15 +13,15 @@ helpviewer_keywords:
 - ranges, resizing in Excel
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 043def019d30ee629e672a081cd5aea73bca4304
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 1e3ba042f5adda5b41e434e37e0cc7ea25725fa6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528180"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927695"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Как изменить размер элементов управления NamedRange
   Вы можете задать размер элемента управления <xref:Microsoft.Office.Tools.Excel.NamedRange> при его добавлении в документ Microsoft Office Excel и при желании изменить его размер позже.
@@ -55,7 +55,7 @@ ms.locfileid: "97528180"
 
 5. Выберите ячейки, которые нужно использовать для определения размера именованного диапазона.
 
-6. Нажмите кнопку **ОК**.
+6. Нажмите кнопку **OK**.
 
 ## <a name="resize-namedrange-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Изменение размера элементов управления NamedRange во время выполнения в проекте уровня документа
  Изменить размер именованного диапазона можно программным способом, используя свойство <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> .

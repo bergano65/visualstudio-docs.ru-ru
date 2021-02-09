@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], multiple columns
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2dc5708da09074c7d973336958c9e89c16bf9da6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927669"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Пошаговое руководство. сложная привязка данных в проекте уровня документа
   В этом пошаговом руководстве демонстрируются основы сложной привязки данных в проекте уровня документа. Можно привязать несколько ячеек в Microsoft Office листе Excel к полям базы данных SQL Server Northwind.
@@ -51,7 +51,7 @@ ms.locfileid: "97527122"
 
 - Разрешения на чтение и запись в базу данных SQL Server.
 
-## <a name="create-a-new-project"></a>Создание проекта
+## <a name="create-a-new-project"></a>Создание нового проекта
  Первым шагом является создание проекта книги Excel.
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
@@ -177,17 +177,17 @@ ms.locfileid: "97527122"
 
 1. Выберите ячейку внутри объекта списка.
 
-    В нижней части списка появится новая строка со звездочкой (* *\** _) в первой ячейке новой строки.
+    В нижней части списка появится новая строка со звездочкой ( **\*** ) в первой ячейке новой строки.
 
 2. Добавьте следующие сведения в пустую строку.
 
-   |EmployeeID|LastName|FirstName|Заголовок|
+   |EmployeeID|LastName|FirstName|Название|
    |----------------|--------------|---------------|-----------|
    |10|Ito|Shu|Sales Manager|
 
 ### <a name="to-delete-rows"></a>Удаление строк
 
-- Щелкните правой кнопкой мыши номер 16 (строка 16) в дальней левой части листа, а затем выберите команду _ * удалить * *.
+- Щелкните правой кнопкой мыши число 16 (строка 16) в дальней левой части листа и выберите команду **Удалить**.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Сортировка строк в списке
 
@@ -217,7 +217,7 @@ ms.locfileid: "97527122"
 
      Фильтрация будет удалена, и отобразятся все строки.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  В этом пошаговом руководстве показаны основные принципы привязки таблицы в базе данных к объекту списка. Ниже приводятся некоторые из возможных последующих задач.
 
 - Кэшировать данные, чтобы их можно было использовать в автономном режиме. Дополнительные сведения см. в разделе [как кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b24a1702-8fbe-45b1-87a0-9618a0708f1d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 96dfb98b468782f771d866b33b94b2c18de6276f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 76f8aec5cec1d06b3c6162524e02ae1bb2faefc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350508"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927409"
 ---
 # <a name="trusted-application-deployment-overview"></a>Общие сведения о развертывании доверенных приложений
 Этот раздел содержит общие сведения о том, как развертывать приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с повышенными правами с помощью технологии развертывания доверенных приложений.
@@ -36,7 +36,7 @@ ms.locfileid: "94350508"
 ## <a name="trusted-application-deployment-basics"></a>Основные принципы развертывания надежных приложений
  В следующей таблице показаны объекты и роли, используемые в развертывании надежных приложений.
 
-|Объект или роль|Description|
+|Объект или роль|Описание|
 |--------------------|-----------------|
 |administrator|Лицо организации, отвечающее за обновление и обслуживание клиентских компьютеров.|
 |Диспетчер доверия|Подсистема в среде CLR, ответственная за обеспечение безопасности клиентского приложения.|
@@ -79,10 +79,10 @@ ms.locfileid: "94350508"
 
 - Пространство имен <xref:System.Security.Cryptography?displayProperty=fullName> .
 
-- Компонент Internet Explorer *CertMgr.exe* , который существует во всех версиях Windows начиная с Windows 98. Дополнительные сведения см. в разделе [Certmgr.exe (средство диспетчера сертификатов)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- Компонент Internet Explorer *CertMgr.exe*, который существует во всех версиях Windows начиная с Windows 98. Дополнительные сведения см. в разделе [Certmgr.exe (средство диспетчера сертификатов)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Создание приложения ClickOnce
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Приложение — это .NET Framework клиентское приложение, объединенное с файлами манифестов, описывающее приложение и предоставляя параметры установки. Можно включить свою программу в приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , воспользовавшись командой **Опубликовать** в . [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Кроме того, можно создать все файлы, необходимые для развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , с помощью средств в составе [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Подробные инструкции по [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания, см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Приложение — это платформа .NET Framework клиентское приложение, объединенное с файлами манифестов, описывающее приложение и предоставляя параметры установки. Можно включить свою программу в приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , воспользовавшись командой **Опубликовать** в . [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Кроме того, можно создать все файлы, необходимые для развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , с помощью средств в составе [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Подробные инструкции по [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания, см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
  Развертывание надежных приложений относится к [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]и может использоваться только с приложениями [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
@@ -103,6 +103,6 @@ ms.locfileid: "94350508"
 ## <a name="limitations-of-trusted-application-deployment"></a>Ограничения на развертывание надежных приложений
  Развертывание надежных приложений можно использовать для предоставления доверия более высокого уровня приложениям [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , развернутым через Интернет или общую папку организации. Не нужно использовать развертывание надежных приложений для приложений [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , распространяемых на компакт-диске, потому что по умолчанию этим приложениям предоставлено полное доверие.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

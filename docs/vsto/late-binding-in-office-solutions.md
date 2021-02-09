@@ -14,15 +14,15 @@ helpviewer_keywords:
 - casting, object to specific type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 201b850d8a577f8cc76aff97e2370998b6f885ed
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 455816b2e23a25ad5ef83c726b2a78e4245ed99a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523563"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927656"
 ---
 # <a name="late-binding-in-office-solutions"></a>Позднее связывание в решениях Office
   Некоторые типы в объектных моделях приложений Office предоставляют функциональные возможности, доступные с помощью функций позднего связывания. Например, некоторые методы и свойства могут возвращать различные типы объектов в зависимости от контекста приложения Office, а некоторые типы могут предоставлять различные методы или свойства в разных контекстах.

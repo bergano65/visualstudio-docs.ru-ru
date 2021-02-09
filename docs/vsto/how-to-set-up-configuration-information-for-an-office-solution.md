@@ -13,15 +13,15 @@ helpviewer_keywords:
 - configuration files [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3cff5e6f559245e361eda0db6623312917891969
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: da3a08ad9b3f6c78a10891e7d8ef2093ab46305d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528153"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927708"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Как настроить сведения о конфигурации для решения Office
   Файлы конфигурации можно использовать для настройки параметров, относящихся к решениям Office. Можно задать такие параметры, как политика привязки сборок, объекты удаленного взаимодействия, отладка и параметры трассировки.
@@ -42,11 +42,11 @@ ms.locfileid: "97528153"
 
 5. Нажмите кнопку **Добавить**.
 
-6. Создайте файл конфигурации в соответствии со схемой файла конфигурации приложения. Дополнительные сведения см. [в разделе Схема файла конфигурации для .NET Framework](/dotnet/framework/configure-apps/file-schema/index).
+6. Создайте файл конфигурации в соответствии со схемой файла конфигурации приложения. Дополнительные сведения см. [в разделе Схема файла конфигурации для платформа .NET Framework](/dotnet/framework/configure-apps/file-schema/index).
 
    Нет особых рекомендаций по использованию файлов конфигурации с проектами Office.
 
 ## <a name="see-also"></a>См. также раздел
-- [Схема файла конфигурации для .NET Framework](/dotnet/framework/configure-apps/file-schema/index)
+- [Схема файла конфигурации для платформа .NET Framework](/dotnet/framework/configure-apps/file-schema/index)
 - [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)
 - [Развертывание решения Office](../vsto/deploying-an-office-solution.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5bce26a00a525ed93e27b531b36aca1fc04dce4
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: d5639c45fd6dff6702ebc197d46c2eafe482e1d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559931"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926371"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>Реализация и регистрация поставщика портов
 Роль поставщика порта заключается в отслеживании и предоставлении портов, которые, в свою очередь, управляют процессами. Когда необходимо создать порт, создается экземпляр поставщика порта с помощью команды Create с идентификатором GUID поставщика порта (диспетчер отладки сеанса [SDM] будет использовать поставщика порта, выбранного пользователем, или поставщика порта, указанного в системе проекта). Затем SDM вызывает [канаддпорт](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) , чтобы узнать, можно ли добавить какие либо порты. Если порт можно добавить, запрашивается новый порт путем вызова [аддпорт](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) и передачи ему [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) , описывающего порт. `AddPort` Возвращает новый порт, представленный интерфейсом [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) .
@@ -61,7 +61,7 @@ RemoveMetric(metrictypePortSupplier,
 
  Поставщик порта может предоставить свое имя и идентификатор GUID с помощью методов [жетпортсупплиернаме](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) и [жетпортсупплиерид](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)соответственно.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Реализация поставщика порта](../../extensibility/debugger/implementing-a-port-supplier.md)
 - [Вспомогательные методы SDK для отладки](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
 - [Поставщики портов](../../extensibility/debugger/port-suppliers.md)
