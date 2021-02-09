@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6a10eb996acbdbf5411688860ce2ec8b00da1f6
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8037b8d19bad19485e9ed8f7926e6a3e45b8fef1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866909"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Заполнение наборов данных с помощью адаптеров таблицы
 
@@ -54,7 +54,7 @@ ms.locfileid: "94436463"
 
 ![Поток данных в клиентском приложении](../data-tools/media/clientdatadiagram.gif)
 
-Хотя адаптеры таблиц разработаны с **Конструктор наборов данных** , классы TableAdapter не создаются как вложенные классы  <xref:System.Data.DataSet> . Они находятся в отдельных пространствах имен, относящихся к каждому набору данных. Например, если имеется набор данных с именем `NorthwindDataSet` , адаптеры таблиц TableAdapter, связанные с  <xref:System.Data.DataTable> s в, `NorthwindDataSet` будут находиться в `NorthwindDataSetTableAdapters` пространстве имен. Чтобы получить доступ к определенному адаптеру TableAdapter программным путем, необходимо объявить новый экземпляр TableAdapter. Пример:
+Хотя адаптеры таблиц разработаны с **Конструктор наборов данных**, классы TableAdapter не создаются как вложенные классы  <xref:System.Data.DataSet> . Они находятся в отдельных пространствах имен, относящихся к каждому набору данных. Например, если имеется набор данных с именем `NorthwindDataSet` , адаптеры таблиц TableAdapter, связанные с  <xref:System.Data.DataTable> s в, `NorthwindDataSet` будут находиться в `NorthwindDataSetTableAdapters` пространстве имен. Чтобы получить доступ к определенному адаптеру TableAdapter программным путем, необходимо объявить новый экземпляр TableAdapter. Пример:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]

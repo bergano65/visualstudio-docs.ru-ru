@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f66a3940-6227-46af-a930-9177f425f4fd
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: f039dc445acd9032a5fe6862e78e5c28ec67bf5d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9463fe0371ee3184fd78684e7fe0565820ab3bf0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436007"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866545"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Разделение наборов данных и TableAdapter на разные проекты
 Типизированные наборы данных были улучшены, чтобы классы [TableAdapter](create-and-configure-tableadapters.md) и наборы данных могли быть созданы в отдельных проектах. Это позволяет быстро разделять уровни приложений и создавать n-уровневые приложения для данных.
@@ -32,7 +32,7 @@ ms.locfileid: "94436007"
 
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>Отделение набора данных от другого проекта
 
-1. Откройте решение, содержащее набор данных ( *XSD* -файл).
+1. Откройте решение, содержащее набор данных (*XSD* -файл).
 
     > [!NOTE]
     > Если решение не содержит проект, в котором нужно разделить код набора данных, создайте проект или добавьте существующий проект в решение.
@@ -54,14 +54,14 @@ ms.locfileid: "94436007"
 
      Код набора данных создается в выбранном проекте в свойстве **проекта набора данных** , а код **TableAdapter** создается в текущем проекте.
 
-По умолчанию после разделения набора данных и кода TableAdapter результатом будет отдельный файл класса в каждом проекте. Исходный проект содержит файл с именем *DataSetName. Designer. vb* (или *DataSetName.Designer.CS* ), который содержит код адаптера таблицы. Проект, указанный в свойстве **проекта набора данных** , имеет файл с именем *DataSetName. DataSet. Designer. vb* (или *DataSetName.DataSet.Designer.CS* ), содержащий код набора данных.
+По умолчанию после разделения набора данных и кода TableAdapter результатом будет отдельный файл класса в каждом проекте. Исходный проект содержит файл с именем *DataSetName. Designer. vb* (или *DataSetName.Designer.CS*), который содержит код адаптера таблицы. Проект, указанный в свойстве **проекта набора данных** , имеет файл с именем *DataSetName. DataSet. Designer. vb* (или *DataSetName.DataSet.Designer.CS*), содержащий код набора данных.
 
 > [!NOTE]
 > Чтобы просмотреть созданный файл класса, выберите набор данных или проект TableAdapter. Затем в **Обозреватель решений** выберите пункт **Показывать все файлы**.
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Обзор многоуровневых приложений для данных](../data-tools/n-tier-data-applications-overview.md)
+- [Общие сведения об n-уровневых приложениях](../data-tools/n-tier-data-applications-overview.md)
 - [Пошаговое руководство. Создание N-уровневого приложения для данных](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Иерархическое обновление](../data-tools/hierarchical-update.md)
 - [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

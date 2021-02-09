@@ -1,6 +1,6 @@
 ---
 title: Диагностика ссылок на службы
-description: Ознакомьтесь с распространенными проблемами, которые могут возникнуть при работе с Windows Communication Foundation (WCF) или ссылками WCF Data Services в Visual Studio.
+description: Ознакомьтесь с распространенными проблемами, которые могут возникнуть при работе с Windows Communication Foundation (WCF) или ссылками службы данных WCF в Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7d1a1f0efc21f1f612d85725358555fcb0cb8245
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 909291e3f9762593a58df93a9ccc7fe2e82b7952
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998074"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866363"
 ---
 # <a name="troubleshoot-service-references"></a>Диагностика ссылок на службы
 
-В этом разделе перечислены распространенные проблемы, которые могут возникнуть при работе с Windows Communication Foundation (WCF) или ссылками WCF Data Services в Visual Studio.
+В этом разделе перечислены распространенные проблемы, которые могут возникнуть при работе с Windows Communication Foundation (WCF) или ссылками службы данных WCF в Visual Studio.
 
 ## <a name="error-returning-data-from-a-service"></a>Ошибка при возврате данных из службы
 
@@ -76,7 +76,7 @@ ms.locfileid: "94998074"
 
 Чтобы устранить эту ошибку, необходимо вручную перестроить проект службы:
 
-1. В меню **Сервис** выберите команду **Параметры**.
+1. В меню **Сервис** выберите пункт **Параметры**.
 
 2. В диалоговом окне **Параметры** разверните узел **проекты и решения**, а затем выберите пункт **Общие**.
 
@@ -90,7 +90,7 @@ ms.locfileid: "94998074"
 
 7. В меню **Сборка** выберите команду **перестроить** , чтобы перестроить проект службы WCF.
 
-## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services не отображаются в браузере
+## <a name="wcf-data-services-do-not-display-in-the-browser"></a>службы данных WCF не отображаются в браузере
 
 При попытке просмотра XML-представления данных в [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] обозреватель Internet Explorer может ошибочно интерпретировать данные как RSS-канал. Убедитесь, что параметр отображение RSS-каналов отключен.
 
@@ -104,6 +104,6 @@ ms.locfileid: "94998074"
 
 4. Нажмите кнопку **ОК** , чтобы закрыть диалоговое окно **Свойства обозревателя** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Windows Communication Foundation служб и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 821de34b-eaa9-40af-b9aa-b8305de16899
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 598d48d560db58a40b04e9d7684e98df22291a6a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 41cf31c6cae310eb151969df0776788d6ea5b1e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434859"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866701"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Совместимые системы баз данных для Visual Studio
 
@@ -41,15 +41,15 @@ SQL Server является предложением базы данных Micro
 
 ## <a name="mysql"></a>MySQL
 
-MySQL — это популярная система баз данных с открытым кодом, широко используемая на предприятиях и веб-сайтах. Загружаемые файлы для MySQL, MySQL для Visual Studio и связанных продуктов находятся в [MySQL в Windows](https://www.mysql.com/why-mysql/windows/). Сторонние лица предлагают различные расширения Visual Studio и автономные приложения управления для MySQL. Вы можете просмотреть предложения в диспетчере пакетов NuGet ( **инструменты**  >  **Диспетчер пакетов NuGet**  >  **Управление пакетами NuGet для решения** ).
+MySQL — это популярная система баз данных с открытым кодом, широко используемая на предприятиях и веб-сайтах. Загружаемые файлы для MySQL, MySQL для Visual Studio и связанных продуктов находятся в [MySQL в Windows](https://www.mysql.com/why-mysql/windows/). Сторонние лица предлагают различные расширения Visual Studio и автономные приложения управления для MySQL. Вы можете просмотреть предложения в диспетчере пакетов NuGet (**инструменты**  >  **Диспетчер пакетов NuGet**  >  **Управление пакетами NuGet для решения**).
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL — это бесплатная система реляционной базы данных с открытым исходным кодом. Чтобы установить его в Windows, можно скачать его со [страницы загрузки PostgreSQL](https://www.postgresql.org/download/windows/). Можно также создать PostgreSQL из исходного кода. Система PostgreSQL Core включает в себя интерфейс языка C. Многие сторонние лица предоставляют пакеты NuGet для использования PostgreSQL из приложений .NET. Вы можете просмотреть предложения в диспетчере пакетов NuGet ( **инструменты**  >  **Диспетчер пакетов NuGet**  >  **Управление пакетами NuGet для решения** ). Возможно, самый популярный пакет предоставляется [npgsql.org](http://www.npgsql.org).
+PostgreSQL — это бесплатная система реляционной базы данных с открытым исходным кодом. Чтобы установить его в Windows, можно скачать его со [страницы загрузки PostgreSQL](https://www.postgresql.org/download/windows/). Можно также создать PostgreSQL из исходного кода. Система PostgreSQL Core включает в себя интерфейс языка C. Многие сторонние лица предоставляют пакеты NuGet для использования PostgreSQL из приложений .NET. Вы можете просмотреть предложения в диспетчере пакетов NuGet (**инструменты**  >  **Диспетчер пакетов NuGet**  >  **Управление пакетами NuGet для решения**). Возможно, самый популярный пакет предоставляется [npgsql.org](http://www.npgsql.org).
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite — это встроенное ядро СУБД SQL, которое работает в собственном процессе приложения. Его можно скачать на [странице загрузки SQLite](https://www.sqlite.org/download.html). Также доступны многие сторонние пакеты NuGet для SQLite. Вы можете просмотреть предложения в диспетчере пакетов NuGet ( **инструменты**  >  **Диспетчер пакетов NuGet**  >  **Управление пакетами NuGet для решения** ).
+SQLite — это встроенное ядро СУБД SQL, которое работает в собственном процессе приложения. Его можно скачать на [странице загрузки SQLite](https://www.sqlite.org/download.html). Также доступны многие сторонние пакеты NuGet для SQLite. Вы можете просмотреть предложения в диспетчере пакетов NuGet (**инструменты**  >  **Диспетчер пакетов NuGet**  >  **Управление пакетами NuGet для решения**).
 
 ## <a name="firebird"></a>Firebird
 

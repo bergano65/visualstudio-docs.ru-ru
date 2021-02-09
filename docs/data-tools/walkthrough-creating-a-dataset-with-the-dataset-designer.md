@@ -12,15 +12,15 @@ helpviewer_keywords:
 - datasets [Visual Basic], creating
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1f124a459d55b945cd8dbb480d7e7c22b5de4f3e
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: b1fe1d75673dc47f423cf398118230cd1530def0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998035"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866233"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Пошаговое руководство. Создание набора данных с помощью конструктор наборов данных
 
@@ -100,7 +100,7 @@ ms.locfileid: "94998035"
 
      Таблица данных **Order Details** , **ордердетаилстаблеадаптер** и связь данных между таблицами **Orders** и **OrderDetails** добавляются в набор данных.
 
-## <a name="next-steps"></a>Next Steps
+## <a name="next-steps"></a>Следующие шаги
 
 - Сохраните набор данных.
 
@@ -110,7 +110,7 @@ ms.locfileid: "94998035"
 
 - Добавьте логику проверки в <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> события или таблиц данных в наборе данных. Дополнительные сведения см. [в разделе Проверка данных в DataSets](../data-tools/validate-data-in-datasets.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание и настройка наборов данных в Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

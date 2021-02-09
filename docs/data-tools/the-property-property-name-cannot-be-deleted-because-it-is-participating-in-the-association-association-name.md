@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: 389873cc-92dd-48da-bfca-0f6c8e0ae3c2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a0d39fa3d7740996be3fc9da75224739f1e55539
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 99115a3c04aec71e7d000dfa4e707eacb0e28cf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998377"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866402"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>Нельзя удалить свойство &lt;имя свойства&gt;, поскольку оно участвует в ассоциации &lt;имя ассоциации&gt;
 
@@ -33,6 +33,6 @@ ms.locfileid: "94998377"
 
 4. Попытайтесь снова удалить свойство.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

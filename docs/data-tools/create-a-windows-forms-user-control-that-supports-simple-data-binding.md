@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ba2010b33b1defa6ef7dcb601fde9417fa47f70
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 30f6d338b4e27677c14dfa4e5ff8793e67f4c6ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436749"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867117"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Создание пользовательского элемента управления Windows Forms с простой привязкой данных
 
@@ -75,7 +75,7 @@ ms.locfileid: "94436749"
 
 ## <a name="create-a-windows-forms-application"></a>Создание приложения Windows Forms
 
-Первым шагом является создание **приложения Windows Forms** :
+Первым шагом является создание **приложения Windows Forms**:
 
 1. В Visual Studio в меню **Файл** выберите пункты **Создать** > **Проект**.
 
@@ -85,7 +85,7 @@ ms.locfileid: "94436749"
 
 4. Назовите проект **симплеконтролвалксраугх** и нажмите кнопку **ОК**.
 
-     Создается проект **SimpleControlWalkthrough** , который добавляется в **Обозреватель решений**.
+     Создается проект **SimpleControlWalkthrough**, который добавляется в **Обозреватель решений**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Добавление пользовательского элемента управления в проект
 
@@ -126,7 +126,7 @@ ms.locfileid: "94436749"
 
 1. Чтобы открыть окно **Источники данных** , в меню **данные** выберите команду **отобразить источники данных**.
 
-2. В окне **Источники данных** выберите **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
+2. В окне **Источники данных** выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.
 
 3. На странице **Выбор типа источника данных** выберите **База данных** и нажмите кнопку **Далее**.
 

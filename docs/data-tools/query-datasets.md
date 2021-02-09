@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8ccf228b147301eb9fccf41da98f8cc5204971a9
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4342af681f8e2cc38855bec6041e8b4cd83dcf5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436072"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866623"
 ---
 # <a name="query-datasets"></a>Наборы данных запросов
 Для поиска конкретных записей в наборе данных используйте `FindBy` метод в объекте DataTable, напишите собственную инструкцию foreach для циклической обработки коллекции строк таблицы или используйте [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).

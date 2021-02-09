@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2f6401fedc3158e2743f08775da93faf2ddfee73
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 75800c5a2b5ff62addec3c914905ae67ac171b95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436046"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866584"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Сохранение данных в базе данных (несколько таблиц)
 
@@ -75,7 +75,7 @@ ms.locfileid: "94436046"
 
 2. В окне **Источники данных** выберите **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
-3. На экране **Выбор типа источника данных** выберите **база данных** , а затем нажмите кнопку **Далее**.
+3. На экране **Выбор типа источника данных** выберите **база данных**, а затем нажмите кнопку **Далее**.
 
 4. На экране **Выбор подключения к данным** выполните одно из следующих действий.
 
@@ -111,7 +111,7 @@ ms.locfileid: "94436046"
 
 1. Перетащите главный узел **Customers** из окна **Источники данных** на форму **Form1**.
 
-     Привязанные к данным элементы управления с метками описания отображаются на форме вместе с панелью инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md) `CustomersTableAdapter` <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> В области компонентов появятся NorthwindDataSet,, и.
+     Привязанные к данным элементы управления с метками описания отображаются на форме вместе с панелью инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. [](../data-tools/dataset-tools-in-visual-studio.md) `CustomersTableAdapter` <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> В области компонентов появятся NorthwindDataSet,, и.
 
 2. Перетащите связанный узел **Заказы** из окна **Источники данных** на **Form1**.
 

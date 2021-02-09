@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a07ca2d30e27cdcbc06e8f90a810982d4410931
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 92e1a03a9a72b550c77aa734c4a9ff2d0b184839
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866610"
 ---
 # <a name="create-relationships-between-datasets"></a>Создание связей между наборами данных
 Набор данных, содержащий связанные таблицы данных, использует <xref:System.Data.DataRelation> объекты для представления связи «родители-потомки» между таблицами и для возвращения связанных записей друг от друга. При добавлении связанных таблиц в наборы данных с помощью **мастера настройки источника** или **Конструктор наборов данных** создает и настраивает <xref:System.Data.DataRelation> объект.

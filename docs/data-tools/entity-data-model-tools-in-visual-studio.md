@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1cc1aa43945ceee19b70a037b1c865c67539fb61
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: ee4bb5e56c5ae9ffb5f5266c8ef80804c8e96597
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436645"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866987"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools в Visual Studio
 
@@ -32,7 +32,7 @@ Entity Framework Tools предназначены для помощи в соз�
 
 Ниже приведены специальные средства, которые составляют средства Entity Framework в Visual Studio.
 
-- [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Конструктор** ( **Entity Designer** ) можно использовать для визуального создания и изменения сущностей, ассоциаций, сопоставлений и отношений наследования. **Entity Designer** также создает [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] код уровня объектов или.
+- [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Конструктор** (**Entity Designer**) можно использовать для визуального создания и изменения сущностей, ассоциаций, сопоставлений и отношений наследования. **Entity Designer** также создает [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] код уровня объектов или.
 
 - С помощью **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] мастера** можно создать концептуальную модель на основе существующей базы данных и добавить в приложение сведения о подключении к базе данных.
 

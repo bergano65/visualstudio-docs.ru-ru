@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: cac9f27263fc7d316d308f1f8d906751f419f104
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 1aba3b1f00ce65b90f61077673a0b88a3bab0f5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997931"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866142"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Пошаговое руководство. Настройка поведения вставки, обновления и удаления классов сущностей
 
@@ -231,7 +231,7 @@ ms.locfileid: "94997931"
 
 18. Сопоставьте аргумент метода **Original_CustomerID** свойству класса **CustomerID (Original)**.
 
-19. Нажмите кнопку **ОК**.
+19. Нажмите кнопку **OK**.
 
 > [!NOTE]
 > Хотя это и не является проблемой в этом конкретном пошаговом руководстве, стоит отметить, что LINQ to SQL обрабатывает значения, сформированные базой данных, автоматически для идентификации (автоприращения), ROWGUIDCOL (идентификатор GUID, сформированный базой данных) и столбцов отметок времени во время операций вставки и обновления. Генерируемые базой данных значения в других типах столбцов будут неожиданно давать нулевое значение. Чтобы получить значения, сформированные базой данных, необходимо вручную задать <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> в параметре `true` и <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> одно из следующих значений [: Автосинхронизация. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [Автосинхронизация. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)или [Автосинхронизация. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
@@ -271,7 +271,7 @@ ms.locfileid: "94997931"
 
 - Добавьте запросы LINQ в данные фильтра Дополнительные сведения см. [в разделе Введение в запросы LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext - методы](../data-tools/datacontext-methods-o-r-designer.md)
