@@ -22,15 +22,15 @@ helpviewer_keywords:
 - customizing the Ribbon, displaying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 69ca0269859db9e1a69904c2211b8f4d1ad45710
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528411"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879297"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   Элемент Лента (XML) позволяет настраивать ленту с помощью XML. Используйте элемент Лента (XML), если требуется настроить ленту способом, который не поддерживается элементом Лента (визуальный конструктор). Сравнение того, что можно делать с каждым элементом, см. в разделе [лента Обзор ленты](../vsto/Ribbon-overview.md).
@@ -125,7 +125,7 @@ ms.locfileid: "97528411"
 
  Эти элементы имеют атрибуты, определяющие внешний вид и поведение настраиваемой ленты. В следующей таблице указаны атрибуты по умолчанию в XML-файле ленты.
 
-|attribute|Родительский элемент|Описание|
+|Атрибут|Родительский элемент|Описание|
 |---------------|--------------------|-----------------|
 |**onLoad**|**customUI**|Определяет метод, который вызывается, когда приложение загружает ленту.|
 |**idMso**|**вкладке**|Определяет встроенную вкладку, отображаемую на ленте.|
