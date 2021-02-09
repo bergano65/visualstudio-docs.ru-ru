@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 03443691-9eb5-46f4-9169-cc2552a04bcb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd3eca6297430e574435f92d4b58cfbb51be805c
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 674773d25e4842aec649fc57daa4972530832f71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672513"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924974"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Элемент Локатионфиелдмрупрефикс (шаблоны Visual Studio)
 
@@ -52,7 +52,7 @@ ms.locfileid: "94672513"
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
  Этот элемент следует использовать только для шаблонов, созданных с помощью [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)] .
 

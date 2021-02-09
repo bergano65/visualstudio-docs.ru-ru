@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 49e8cb36-db39-440b-acda-a325651f1165
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c216a99042a3b9b67eaa0dc13555c27a1e8bfad9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbdd6f69dd9c4c4fb270473065ba836071c85856
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738412"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925270"
 ---
 # <a name="m_contingentproperties-field"></a>m_contingentProperties поле
 Хранит дополнительные свойства <xref:System.Threading.Tasks.Task> объекта.
@@ -24,7 +24,7 @@ ms.locfileid: "80738412"
 
  **Сборка:** mscorlib (в *mscorlib.dll*)
 
- Так как вы не можете получить доступ к этому внутреннему элементу из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
+ Так как вы не можете получить доступ к этому внутреннему элементу из платформа .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
 
 ## <a name="syntax"></a>Синтаксис
 

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - user controls [SharePoint development in Visual Studio], adding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cbaeaff14d365f41bff73c29e678a08130b03dc0
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 43386f3ba450058d6aaf8ab180e331d2f303a235
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903680"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925586"
 ---
-# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Практическое руководство. Создание пользовательского элемента управления для страницы приложения или веб-части SharePoint
+# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Как создать пользовательский элемент управления для страницы приложения SharePoint или веб-части
   Можно создавать пользовательские элементы управления, которые предоставляют пользовательские функции для решения SharePoint, и эти функции можно повторно использовать в проекте. Можно включить пользовательские элементы управления в веб-часть или страницу приложения, добавить другие элементы управления ASP.NET и SharePoint и определить свойства и методы для элемента управления. Дополнительные сведения о пользовательских элементах управления см. в разделе [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) , а также [пользовательских элементов управления и серверных элементов управления в SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
 
 ### <a name="to-create-a-user-control-for-sharepoint"></a>Создание пользовательского элемента управления для SharePoint
@@ -34,7 +34,7 @@ ms.locfileid: "94903680"
 
 2. В области **Обозреватель решений** выберите узел проекта.
 
-3. В строке меню выберите **проект**  >  **Добавить новый элемент**.
+3. В строке меню выберите **Проект** > **Добавить новый элемент**.
 
      Откроется диалоговое окно **Добавление нового элемента**.
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: df52ca75ef99fe98158cb5f874e59fe4ee0c47b4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 74e7aab4cbc012afbf045672dbf4af248ada4c61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849861"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925623"
 ---
 # <a name="how-to-create-an-application-page"></a>Практическое руководство. Создание страницы приложения
   Можно создать веб-страницу ASP.NET для одного или нескольких сайтов SharePoint. В SharePoint эти страницы называются страницами приложения. В отличие от страницы сайта, страница приложения содержит код, который выполняется за страницей. Дополнительные сведения см. в разделе [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
@@ -33,7 +33,7 @@ ms.locfileid: "94849861"
 
 2. В области **Обозреватель решений** выберите узел проекта.
 
-3. В строке меню выберите **проект**  >  **Добавить новый элемент**.
+3. В строке меню выберите **Проект** > **Добавить новый элемент**.
 
 4. В диалоговом окне **Добавление нового элемента** разверните узел **SharePoint** и выберите элемент **2010** .
 
@@ -49,6 +49,6 @@ ms.locfileid: "94849861"
 
      Файл кода отображается, если развернуть узел для файла подкачки ASP.NET и имеет расширение *CS* или *VB* в зависимости от языка проекта. Полный пример создания страницы приложения см. в разделе [Пошаговое руководство. Создание страницы приложения SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 - [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Пошаговое руководство: Создание страницы приложения SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)

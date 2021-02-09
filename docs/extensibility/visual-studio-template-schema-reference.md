@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9402efcc6c08343f1661945ae1701f7be7909bab
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 458f3245517dd874a086932c65806978b5a1cf85
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903420"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925874"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Справочник по схеме шаблонов Visual Studio
 В этом разделе содержатся сведения об элементах XML в *VSTEMPLATE* -файлах, которые хранят метаданные для шаблонов проектов, шаблонов элементов и начальных наборов.
@@ -29,7 +29,7 @@ ms.locfileid: "94903420"
 
 |Элемент|Дочерние элементы|Атрибуты|
 |-------------|--------------------|----------------|
-|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|Нет|Нет|
+|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|Отсутствуют|Отсутствуют|
 |[Assembly (шаблон)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
 |[Assembly (расширение мастера)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|
@@ -50,7 +50,7 @@ ms.locfileid: "94903420"
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|
 |[MaxFrameworkVersion](../extensibility/maxframeworkversion-element-visual-studio-templates.md)|--|--|
-|[Название](../extensibility/name-element-visual-studio-templates.md)|--|Пакет<br /><br /> ID|
+|[Имя](../extensibility/name-element-visual-studio-templates.md)|--|Пакет<br /><br /> ID|
 |[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|
 |[Project](../extensibility/project-element-visual-studio-templates.md)|Папка<br /><br /> ProjectItem|Файл<br /><br /> TargetFileName<br /><br /> ReplaceParameters|
@@ -63,7 +63,7 @@ ms.locfileid: "94903420"
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|--|--|
 |[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|--|--|
 |[Ссылки](../extensibility/reference-element-visual-studio-templates.md)|Сборка|--|
-|[Справочные материалы](../extensibility/references-element-visual-studio-templates.md)|Справочник|--|
+|[Справочные материалы](../extensibility/references-element-visual-studio-templates.md)|Справочные сведения|--|
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|Версия|
 |[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|Пакет|

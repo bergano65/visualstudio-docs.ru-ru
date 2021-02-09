@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 68c54b22-3e1c-4031-b9c7-b972c519d8a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fed70f2eda19ad96454a83217c20c046809f3034
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbf16af65ab59147614ce5609de9b56ff833862a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925133"
 ---
 # <a name="m_stateobject-field"></a>m_stateObject поле
 Объект, представляющий данные, которые будет использовать действие.
@@ -24,7 +24,7 @@ ms.locfileid: "80738369"
 
  **Сборка:** mscorlib (в *mscorlib.dll*)
 
- Так как вы не можете получить доступ к этому внутреннему элементу из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
+ Так как вы не можете получить доступ к этому внутреннему элементу из платформа .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
 
 ## <a name="syntax"></a>Синтаксис
 

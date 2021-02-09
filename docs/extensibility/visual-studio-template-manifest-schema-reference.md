@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d712f2cb95b2df9680c4476805e9dfb6809cf038
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 5f251b4511e2bff5bc20172e4018560205a378e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863836"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925828"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Справочник по схеме манифеста шаблона Visual Studio
 Эта схема описывает формат файлов манифеста шаблона Visual Studio (*. встман*), которые создаются для шаблонов проектов и элементов Visual Studio. Схема также описывает расположение и другие релевантные сведения о шаблоне.
@@ -30,7 +30,7 @@ ms.locfileid: "97863836"
 
 ### <a name="attributes"></a>Атрибуты
 
-- **Версия**: строка, представляющая версию манифеста шаблона. Обязательный.
+- **Версия**: строка, представляющая версию манифеста шаблона. Обязательный элемент.
 
 - **Языковой стандарт**: строка, представляющая языковой стандарт или языковые стандарты манифеста шаблона. Значение языкового стандарта применяется ко всем шаблонам. Для каждого языкового стандарта необходимо использовать отдельный манифест. Необязательный элемент.
 
@@ -41,7 +41,7 @@ ms.locfileid: "97863836"
 - **Встемплатедир** Используемых.
 
 ### <a name="parent-element"></a>Родительский элемент
- Нет.
+ Отсутствует.
 
 ## <a name="vstemplatecontainer"></a>встемплатеконтаинер
  Контейнер элементов манифеста шаблона. Манифест содержит один контейнер шаблона для каждого определяемого им шаблона.

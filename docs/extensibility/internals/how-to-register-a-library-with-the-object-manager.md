@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8036a0f4fe073473891805766ea8e3bb941951f8
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: a5f4e9805eec8fd5d0089f1b8348253523d9056f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761391"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925010"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Как зарегистрировать библиотеку с помощью диспетчера объектов
 Средства просмотра символов, такие как **представление классов**, **обозреватель объектов**, **Обозреватель вызовов** и **Поиск результатов поиска** символов, позволяют просматривать символы в проекте или во внешних компонентах. К символам относятся пространства имен, классы, интерфейсы, методы и другие языковые элементы. Библиотеки отписывают эти символы и предоставляют их [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчеру объектов, который заполняет средства данными.

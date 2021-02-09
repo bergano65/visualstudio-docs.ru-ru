@@ -12,15 +12,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], Master/Detail Relation
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: de7bf3ba34a2a7dd3e7db9ff549e4a839800d524
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 843718ea49ae7df7d34775283ce8120f077b0a0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524866"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925511"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Пошаговое руководство. Создание связи "основной/подробности" с помощью кэшированного набора данных
   В этом пошаговом руководстве демонстрируется создание связи "основной/подробности" на листе и кэширование данных, чтобы решение можно было использовать в автономном режиме.
@@ -51,7 +51,7 @@ ms.locfileid: "97524866"
 
 - Разрешения на чтение и запись в базу данных SQL Server.
 
-## <a name="create-a-new-project"></a>Создание проекта
+## <a name="create-a-new-project"></a>Создание нового проекта
  На этом шаге вы создадите проект книги Excel.
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
@@ -185,7 +185,7 @@ ms.locfileid: "97524866"
 
 8. Повторно подключитесь к базе данных. Снова подключите компьютер к сети, если база данных находится на сервере, или запустите службу SQL Server, если база данных находится на компьютере разработчика.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  В этом пошаговом руководстве показаны основные сведения о создании связи данных "основной/подробности" на листе и кэшировании набора данных. Ниже приводятся некоторые из возможных последующих задач.
 
 - Разверните решение. Дополнительные сведения см. в статье [развертывание решения Office](../vsto/deploying-an-office-solution.md) .

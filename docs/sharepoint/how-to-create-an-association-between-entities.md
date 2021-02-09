@@ -20,15 +20,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], associate external content types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e736e0befe8aaf9a6c090615d0c43bb3f3116dbf
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: e726e8b5702a656b340401c9a2db26e40be1a37d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849848"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925569"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Как создать ассоциацию между сущностями
   Отношения между сущностями в модели подключения к бизнес-данным (BDC) можно определить путем создания ассоциаций. Visual Studio создает методы, предоставляющие потребителям модели сведения о каждой ассоциации. Эти методы могут использоваться веб-частями SharePoint, списками или пользовательскими приложениями для отображения отношений данных в интерфейсе пользователя (ИП).
@@ -63,7 +63,7 @@ ms.locfileid: "94849848"
 
      Примеры методов навигатора ассоциаций см. в разделе [Создание связи между сущностями](../sharepoint/creating-an-association-between-entities.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 - [Создание связи между сущностями](../sharepoint/creating-an-association-between-entities.md)
 - [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Как добавить метод Finder](../sharepoint/how-to-add-a-finder-method.md)

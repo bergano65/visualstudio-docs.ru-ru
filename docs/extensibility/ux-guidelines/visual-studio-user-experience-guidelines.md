@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8200d5d0dbb18240f67214abecca4d066ce6270
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 5afe5df8808ee8b0c8ad13c494e58aea903fff89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926053"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Руководство по работе пользователей Visual Studio
 При проектировании новых функций для Visual Studio следуйте рекомендациям по работе с пользователем Visual Studio. Эти рекомендации содержат сведения об общих моделях пользователей и шаблонах взаимодействия, благодаря которым разработчики новых пользовательских интерфейсов могут создавать интерфейсы пользователя, которые легко и согласованны в среде разработки.

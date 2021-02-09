@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 13039520299d52e6f6a704567cf1cdc5ccfd66db
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f15cd788d19540bdea416b36ab0f8e8d8aa95e3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903706"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925594"
 ---
-# <a name="how-to-create-a-sharepoint-web-part"></a>Практическое руководство. Создание веб-части SharePoint
+# <a name="how-to-create-a-sharepoint-web-part"></a>Как создать веб-часть SharePoint
   Вы можете создать и настроить веб-часть, добавив элемент **веб-части** в любой проект SharePoint, а затем отредактировав файл кода для веб-части или с помощью конструктора. Дополнительные сведения см. в разделе [инструкции. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
 
 ### <a name="to-create-a-sharepoint-web-part"></a>Создание веб-части SharePoint

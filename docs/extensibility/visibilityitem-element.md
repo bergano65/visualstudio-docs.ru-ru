@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 637fea7d203e58c59f85794eeb0f8894eb62e777
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 16615dfdbfd7e9762046e37899ecf23619837ae2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863891"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926018"
 ---
 # <a name="visibilityitem-element"></a>Висибилититем, элемент
 `VisibilityItem`Элемент определяет статическую видимость команд и панелей инструментов. Каждая запись определяет команду или меню, а также связанный контекст пользовательского интерфейса команды. Visual Studio обнаруживает команды, меню и панели инструментов, а также их видимость, не загружая пакеты VSPackage, которые их определяют. Интегрированная среда разработки использует <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> метод, чтобы определить, активен ли контекст пользовательского интерфейса команды.
@@ -45,9 +45,9 @@ ms.locfileid: "97863891"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|guid|Обязательный. Идентификатор GUID идентификатора команды GUID/ID.|
-|идентификатор|Обязательный. Идентификатор идентификатора команды GUID/ID.|
-|контекст|Обязательный. Контекст пользовательского интерфейса, в котором отображается команда.|
+|guid|Обязательный элемент. Идентификатор GUID идентификатора команды GUID/ID.|
+|идентификатор|Обязательный элемент. Идентификатор идентификатора команды GUID/ID.|
+|контекст|Обязательный элемент. Контекст пользовательского интерфейса, в котором отображается команда.|
 |Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы

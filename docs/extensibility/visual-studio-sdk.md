@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be4b07e322b5be148593c70136eb44ec7fcfdf7
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 050e873a26996221af2106714106cd37300ba4c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863850"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925881"
 ---
 # <a name="visual-studio-sdk"></a>SDK для Visual Studio
 Пакет SDK для Visual Studio помогает расширить возможности Visual Studio или интегрировать новые функции в Visual Studio. Вы можете распространять расширения для других пользователей, а также для Visual Studio Marketplace. Ниже перечислены некоторые из способов расширения Visual Studio:

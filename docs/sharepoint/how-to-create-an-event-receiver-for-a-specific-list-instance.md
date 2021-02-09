@@ -13,15 +13,15 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8bd76f2aafc5d0b3058dcaba68b6f3099f01ff8d
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 664a7ac4e763b2378cf30603c417aacde27c2e47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925493"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Как создать приемник событий для определенного экземпляра списка
   Приемник событий экземпляра списка реагирует на события, происходящие в любом экземпляре определения списка. Хотя шаблон приемника событий не включает нацеливание определенного экземпляра списка, можно изменить приемник событий, область действия которого определяется определением списка, чтобы реагировать на события в определенном экземпляре списка.
@@ -88,6 +88,6 @@ ms.locfileid: "94849900"
 
      Обратите внимание, что приемник событий не активируется в новом объявлении, так как получатель настроен на реагирование только на события в экземпляре пользовательского списка объявлений **тестаннаунцементс**.
 
-## <a name="see-also"></a>См. также статью
-- [Как создать приемник событий](../sharepoint/how-to-create-an-event-receiver.md)
+## <a name="see-also"></a>См. также раздел
+- [Практическое руководство. Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md)
 - [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)

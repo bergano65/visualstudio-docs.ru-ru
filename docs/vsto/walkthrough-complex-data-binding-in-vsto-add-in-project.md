@@ -14,15 +14,15 @@ helpviewer_keywords:
 - complex data [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 573f15001dcbd678c576512349c36ae9594e10e8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b15343c69c3c656d42300e15aab4946860de8926
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527092"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925521"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Пошаговое руководство. сложная привязка данных в проекте надстройки VSTO
   В проектах надстроек VSTO можно привязывать данные к элементам управления ведущего приложения и элементам управления Windows Forms. В этом пошаговом руководстве демонстрируется добавление элементов управления на лист Microsoft Office Excel и привязка элементов управления к данным во время выполнения.
@@ -50,7 +50,7 @@ ms.locfileid: "97527092"
 
   - Сведения о присоединении базы данных с помощью командной строки см. в разделе [как присоединить файл базы данных к SQL Server Express](/previous-versions/sql/).
 
-## <a name="create-a-new-project"></a>Создание проекта
+## <a name="create-a-new-project"></a>Создание нового проекта
  Первым шагом является создание проекта надстройки VSTO для Excel.
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта

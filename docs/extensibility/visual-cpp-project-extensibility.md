@@ -7,15 +7,15 @@ dev_langs:
 - C++
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ba78ff7d38d993394072aa9dd18a7a8fa8cbb9d
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 1c699c835c6a53ec346dadb8bbbbf787aacc9206
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926021"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Расширяемость системы проектов Visual Studio C++ и интеграция набора инструментов
 
@@ -556,7 +556,7 @@ CPS поддерживает другие значения для типа ко�
 
 Чтобы указать модули отладки и другие свойства для сеанса отладки, необходимо реализовать компонент MEF средства [отладки](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDebugLaunchProvider.md) и добавить `debugger` правило. Пример см `$(VCTargetsPath)` \\ \\ \_ . в файле localwindows.xml отладчика 1033 \_ .
 
-### <a name="deploy"></a>Развертывание
+### <a name="deploy"></a>Развернуть
 
 в проектах. vcxproj для [развертывания поставщиков](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDeployProvider.md)используется расширяемость системы проектов Visual Studio.
 
