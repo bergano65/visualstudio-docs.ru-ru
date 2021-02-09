@@ -14,15 +14,15 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aab3d3b73fac086c4ff5aee8b5319a76e9aaea15
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: a8fbf218f032c9d580c490f91f6169681dc93cef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876710"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>Указания по импорту рабочих процессов с возможностью повторного использования
   Для импорта рабочих процессов с возможностью повторного использования, созданных в SharePoint Designer, воспользуйтесь шаблоном "Импорт рабочего процесса SharePoint 2010 для повторного использования" в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Этот шаблон импортирует *декларативный* *Рабочий процесс* ( [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] только) и преобразует его в *Рабочий процесс кода*, который можно усовершенствовать с помощью [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] или [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] кода. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Пошаговое руководство. Импорт рабочего процесса с возможностью повторного использования SharePoint Designer в Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).

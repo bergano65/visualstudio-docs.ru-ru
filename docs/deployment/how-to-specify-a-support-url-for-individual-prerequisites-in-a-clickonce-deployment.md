@@ -14,18 +14,18 @@ helpviewer_keywords:
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 585ea1a558b91ac733670ad94a9a3e0be33f1348
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350950"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876320"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Практическое руководство. Указание URL-адреса службы поддержки для определенных компонентов, необходимых для развертывания ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Развертывание может проверить наличие ряда предварительных требований, которые должны быть доступны на клиентском компьютере для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] запуска приложения. Эти зависимости включают требуемую минимальную версию .NET Framework, версию операционной системы и все сборки, которые должны быть предварительно установлены в глобальный кэш сборок (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], однако, не может установить ни один из этих компонентов. Если необходимый компонент не найден, он просто останавливает установку и отображает диалоговое окно, объясняющее причину сбоя установки.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Развертывание может проверить наличие ряда предварительных требований, которые должны быть доступны на клиентском компьютере для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] запуска приложения. Эти зависимости включают требуемую минимальную версию платформа .NET Framework, версию операционной системы и все сборки, которые должны быть предварительно установлены в глобальный кэш сборок (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], однако, не может установить ни один из этих компонентов. Если необходимый компонент не найден, он просто останавливает установку и отображает диалоговое окно, объясняющее причину сбоя установки.
 
  Существует два способа установки необходимых компонентов. Их можно установить с помощью приложения начального загрузчика. Кроме того, можно указать URL-адрес поддержки для отдельных необходимых компонентов, которые отображаются для пользователей в диалоговом окне, если необходимый компонент не найден. Страница, на которую ссылается этот URL-адрес, может содержать ссылки на инструкции по установке необходимого компонента. Если приложение не указывает URL-адрес поддержки для отдельного необходимого компонента, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] отображает URL-адрес поддержки, указанный в манифесте развертывания для приложения в целом, если он определен.
 
@@ -67,9 +67,9 @@ ms.locfileid: "94350950"
      </dependency>
    ```
 
-5. Необязательный параметр. Для приложений, предназначенных для .NET Framework 4, откройте манифест развертывания (файл *. Application* ) для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения в текстовом редакторе.
+5. Необязательный элемент. Для приложений, предназначенных для платформа .NET Framework 4, откройте манифест развертывания (файл *. Application* ) для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения в текстовом редакторе.
 
-6. Для .NET Framework 4 необходимых компонентов добавьте `supportUrl` атрибут к `compatibleFrameworks` элементу:
+6. Для платформа .NET Framework 4 необходимых компонентов добавьте `supportUrl` атрибут к `compatibleFrameworks` элементу:
 
    ```xml
    <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">
@@ -83,9 +83,9 @@ ms.locfileid: "94350950"
 ## <a name="net-framework-security"></a>безопасность платформы .NET Framework
  URL-адрес поддержки не отображается в диалоговом окне, если приложение помечено для выполнения в режиме частичного доверия.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [\<compatibleFrameworks> дерев](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [Элемент \<compatibleFrameworks>](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [ClickOnce и технология Authenticode](../deployment/clickonce-and-authenticode.md)
 - [Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md)

@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af462178cf18d57afa6b51aedaba0004615ebb6f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4697aa4869535d63c522ae25c978dd89bfe51697
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876177"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Устранение неполадок, приводящих к определенным ошибкам в развертываниях ClickOnce
 В этой статье перечислены распространенные ошибки, которые могут возникнуть при развертывании [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, а также действия по устранению каждой проблемы.
@@ -38,7 +38,7 @@ ms.locfileid: "94349273"
 
  Во-первых, убедитесь, что сервер настроен для связи расширения *приложения* с типом содержимого application/x-MS-Application.
 
- Если сервер настроен правильно, убедитесь, что на компьютере установлен .NET Framework 2,0. Если .NET Framework 2,0 установлен и вы по-прежнему видите эту проблему, попробуйте удалить и переустановить .NET Framework 2,0, чтобы повторно зарегистрировать тип содержимого на клиенте.
+ Если сервер настроен правильно, убедитесь, что на компьютере установлен платформа .NET Framework 2,0. Если платформа .NET Framework 2,0 установлен и вы по-прежнему видите эту проблему, попробуйте удалить и переустановить платформа .NET Framework 2,0, чтобы повторно зарегистрировать тип содержимого на клиенте.
 
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Сообщение об ошибке "не удалось получить приложение. Файлы, отсутствующие в развертывании "или" скачивание приложения прерваны, проверьте наличие ошибок сети и повторите попытку позже ".
  Это сообщение означает, что не удается скачать один или несколько файлов, на которые ссылаются [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифесты. Самый простой способ отладить эту ошибку — попытаться загрузить URL-адрес, который говорит, что [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] он не может быть загружен. Ниже приведены некоторые возможные причины.
@@ -104,7 +104,7 @@ ms.locfileid: "94349273"
  При публикации с помощью URL-адреса убедитесь, что на целевом компьютере включены серверные расширения FrontPage.
 
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Сообщение об ошибке: не удалось создать веб-сайт " \<site> ". Компоненты для взаимодействия с серверными расширениями FrontPage не установлены.
- Убедитесь, что на компьютере, на котором выполняется публикация, установлен компонент Microsoft Visual Studio Web Authoring. Для пользователей Express этот компонент не устанавливается по умолчанию. Дополнительные сведения см. в разделе [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/help/945358).
+ Убедитесь, что на компьютере, на котором выполняется публикация, установлен компонент Microsoft Visual Studio Web Authoring. Для пользователей Express этот компонент не устанавливается по умолчанию. Дополнительные сведения см. на веб-сайте [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/help/945358).
 
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Сообщение об ошибке: не удалось найти файл "Microsoft. Windows. Common-Controls, Version = 6.0.0.0, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture = \* , Type = Win32"
  Это сообщение об ошибке появляется при попытке публикации приложения WPF с включенными стилями оформления. Чтобы устранить эту проблему, см. раздел [как опубликовать приложение WPF с включенными визуальными стилями](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).
@@ -124,7 +124,7 @@ ms.locfileid: "94349273"
 ## <a name="additional-errors"></a>Дополнительные ошибки
  В следующей таблице показаны некоторые распространенные сообщения об ошибках, которые пользователь клиентского компьютера может получить при установке [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения пользователем. Каждое сообщение об ошибке отображается рядом с описанием наиболее вероятной причины ошибки.
 
-| Сообщение об ошибке | Description |
+| Сообщение об ошибке | Описание |
 | - | - |
 | Не удается запустить приложение. Обратитесь к издателю приложения.<br /><br /> Не удается запустить приложение. Обратитесь за помощью к поставщику приложения. | Это общие сообщения об ошибках, которые возникают, когда не удается запустить приложение и не удается найти другие конкретные причины. Часто это означает, что приложение каким-либо образом повреждено или что [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] хранилище повреждено. |
 | Не удается продолжить. Приложение имеет неправильный формат. Обратитесь за помощью к издателю приложения.<br /><br /> Проверка приложения не выполнена. Продолжение невозможно.<br /><br /> Не удалось получить файлы приложения. Файлы повреждены при развертывании. | Один из файлов манифеста в развертывании синтаксически недействителен или содержит хэш, который не может быть согласован с соответствующим файлом. Эта ошибка может также означать, что манифест, внедренный в сборку, поврежден. Повторное создание развертывания и повторная компиляция приложения, а также поиск и исправление ошибок в манифестах вручную. |
@@ -138,7 +138,7 @@ ms.locfileid: "94349273"
 | Ярлыки нельзя активировать по сети. | Ярлыки [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения могут быть запущены только на локальном жестком диске. Они не могут быть запущены путем открытия URL-адреса, указывающего на файл ярлыка на удаленном сервере. |
 | Приложение слишком велико для работы в режиме частичного доверия. Обратитесь за помощью к поставщику приложения или к системному администратору. | Приложение, выполняющееся в режиме частичного доверия, не может быть больше половины размера квоты онлайн-приложения, значение по умолчанию — 250 МБ. |
 
-## <a name="see-also"></a>См. также
-- [Безопасность и развертывание ClickOnce](../deployment/clickonce-security-and-deployment.md)
+## <a name="see-also"></a>См. также раздел
+- [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Устранение неполадок развертываний ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
 - [Устранение неполадок в Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

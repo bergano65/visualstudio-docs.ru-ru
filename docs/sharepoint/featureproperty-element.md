@@ -11,15 +11,15 @@ helpviewer_keywords:
 - FeatureProperty element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8e6010ac45d0b760325c73c4bd754fbb0b422a77
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 070866b9dd14d974eb976b22bf7a79907e2c5d9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672760"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876671"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty - элемент
   Представляет пользовательское свойство, которое входит в состав компонента при его развертывании в SharePoint. После развертывания компонента можно получить доступ к свойству в коде.
@@ -38,7 +38,7 @@ ms.locfileid: "94672760"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|**Key**|Обязательный атрибут **xs: String** .<br /><br /> Ключ, используемый для хранения и извлечения значения свойства. У каждого свойства должен быть ключ, уникальный в пределах функции.|
+|**Ключ**|Обязательный атрибут **xs: String** .<br /><br /> Ключ, используемый для хранения и извлечения значения свойства. У каждого свойства должен быть ключ, уникальный в пределах функции.|
 |**Значение**|Обязательный атрибут **xs: String** .<br /><br /> Значение свойства.|
 
 ### <a name="child-elements"></a>Дочерние элементы
@@ -50,12 +50,12 @@ ms.locfileid: "94672760"
 |-------------|-----------------|
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|Представляет коллекцию значений свойств, включенных в компонент при развертывании в SharePoint.|
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  Дополнительные сведения о свойствах компонентов см. [в разделе Предоставление сведений о пакете и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Сведения об элементе
 
-|Свойство.|Значение|
+|Свойство|Значение|
 |-|-|
 |**Пространство имен**|http: \/ \/ Schemas.Microsoft.com/VisualStudio/<br>2010/Шарепоинттулс/Шарепоинтпрожектитеммодел|
 |**Имя схемы**|Схема элемента проекта SharePoint|

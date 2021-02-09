@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2828a32ea837e95be438aafa6ec4b31293a43a7
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 77c7ae72f9c4c776dd8535e54112dc43833705cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974069"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876112"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement, элемент
 Элемент CommandPlacement позволяет включать кнопки, группы и меню в более чем одну группу или меню. С помощью элемента CommandPlacement не нужно полностью переопределять эти элементы, чтобы изменить внешний вид пользовательского интерфейса.
@@ -40,16 +40,16 @@ ms.locfileid: "94974069"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|guid|Обязательный. Идентификатор GUID набора команд, как определено в [элементе Symbols](../extensibility/symbols-element.md).|
-|идентификатор|Обязательный. Идентификатор меню, группы или команды, которые необходимо разместить, как определено в `Symbols Element` .|
-|priority|Обязательный. Определяет визуальную позицию элемента в его родительском элементе.|
-|Условие|Необязательный параметр. См. раздел [Conditional ааттрибутес](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Обязательный элемент. Идентификатор GUID набора команд, как определено в [элементе Symbols](../extensibility/symbols-element.md).|
+|идентификатор|Обязательный элемент. Идентификатор меню, группы или команды, которые необходимо разместить, как определено в `Symbols Element` .|
+|priority|Обязательный элемент. Определяет визуальную позицию элемента в его родительском элементе.|
+|Условие|Необязательный элемент. См. раздел [Conditional ааттрибутес](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|Родительский|Обязательный. Меню или группу, в которой размещен элемент, который необходимо разместить.|
+|Parent|Обязательный элемент. Меню или группу, в которой размещен элемент, который необходимо разместить.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -68,6 +68,6 @@ ms.locfileid: "94974069"
 </CommandPlacements>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [CommandPlacements, элемент](../extensibility/commandplacements-element.md)
 - [Файлы таблицы команд Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

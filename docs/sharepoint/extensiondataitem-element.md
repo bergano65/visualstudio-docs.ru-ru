@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ExtensionDataItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 23bd231343b3e7a6c68883aa7fe3ee4e518ac883
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: add1a119283635f9cfd9bebddfe18228f1976703
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672617"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876827"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem - элемент
   Пользовательский элемент данных, связанный с элементом проекта SharePoint в формате "ключ — значение". Ключ и значение должны быть строками.
@@ -38,7 +38,7 @@ ms.locfileid: "94672617"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|**Key**|Обязательный атрибут **xs: String** .<br /><br /> Ключ, используемый для хранения и извлечения элемента данных.|
+|**Ключ**|Обязательный атрибут **xs: String** .<br /><br /> Ключ, используемый для хранения и извлечения элемента данных.|
 |**Значение**|Обязательный атрибут **xs: String** .<br /><br /> Значение элемента данных.|
 
 ### <a name="child-elements"></a>Дочерние элементы
@@ -50,12 +50,12 @@ ms.locfileid: "94672617"
 |-------------|-----------------|
 |[ExtensionData](../sharepoint/extensiondata-element.md)|Представляет коллекцию пользовательских элементов данных, связанных с элементом проекта SharePoint.|
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  При связывании пользовательских данных с элементом проекта SharePoint с помощью <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> свойства <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> объекта Visual Studio сохраняет данные в новый элемент **екстенсиондатаитем** в `.spdata` файле для элемента проекта. Дополнительные сведения см. [в разделе Сохранение данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
 ## <a name="element-information"></a>Сведения об элементе
 
-|Свойство.|Значение|
+|Свойство|Значение|
 |-|-|
 |**Пространство имен**|http: \/ \/ Schemas.Microsoft.com/VisualStudio/<br>2010/Шарепоинттулс/Шарепоинтпрожектитеммодел|
 |**Имя схемы**|Схема элемента проекта SharePoint|

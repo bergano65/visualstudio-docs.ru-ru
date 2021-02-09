@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 67097b3a-fcf5-4a72-beb1-2c7784151a86
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fd81377ca24dfbeaf4a25f2af00fb69f4821d73
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d4c594e613d1160794e8310695d61bcc97902caa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876463"
 ---
 # <a name="foreachlttgt-activity-designer"></a>&lt; &gt; Конструктор действий foreach T
 
@@ -29,9 +29,9 @@ ms.locfileid: "94437987"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Понятное имя действия <xref:System.Activities.Statements.ForEach%601>. Значение по умолчанию — ForEach<Int32 \> . Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|
-|<xref:System.Activities.Statements.ForEach%601.Values%2A>|Верно|Коллекция элементов для итерации. Чтобы задать <xref:System.Activities.Statements.ForEach%601.Values%2A> , введите Visual Basic выражение в поле **значения** в конструкторе действий **foreach<T \>** или в сетке свойств.|
-|*TypeArgument*|Верно|Тип элементов в <xref:System.Activities.Statements.ForEach%601.Values%2A> коллекции, заданном универсальным параметром *T*. По умолчанию *TypeArgument* имеет значение **Int32**. Чтобы изменить тип, измените значение поля со списком *TypeArgument* в сетке свойств.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.ForEach%601>. Значение по умолчанию — ForEach<Int32 \> . Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|
+|<xref:System.Activities.Statements.ForEach%601.Values%2A>|True|Коллекция элементов для итерации. Чтобы задать <xref:System.Activities.Statements.ForEach%601.Values%2A> , введите Visual Basic выражение в поле **значения** в конструкторе действий **foreach<T \>** или в сетке свойств.|
+|*TypeArgument*|True|Тип элементов в <xref:System.Activities.Statements.ForEach%601.Values%2A> коллекции, заданном универсальным параметром *T*. По умолчанию *TypeArgument* имеет значение **Int32**. Чтобы изменить тип, измените значение поля со списком *TypeArgument* в сетке свойств.|
 
 По умолчанию итератор цикла называется **Item**. Можно изменить имя переменной итератора в конструкторе операций <xref:System.Activities.Statements.ForEach%601>. Цикличный итератор можно использовать в выражениях в дочерних действиях действия <xref:System.Activities.Statements.ForEach%601>.
 

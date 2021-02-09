@@ -12,15 +12,15 @@ f1_keywords:
 ms.assetid: 5b9c5afe-7499-4ee8-8c33-28aff14bde07
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eff69f1da5d2bc8c5f397b0cc6d21492a0a8d20
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6f61dd3f14ba527e9f5be0e009825902e683fb1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876567"
 ---
 # <a name="flowswitcht-activity-designer"></a>Конструктор действия FlowSwitch\<T>
 
@@ -32,7 +32,7 @@ ms.locfileid: "94435799"
 
 ### <a name="using-the-flowswitcht-activity-designer"></a>Использование \<T> конструктора действий FlowSwitch
 
-Конструктор **действий \<T> FlowSwitch** можно найти в категории блок- **схемы** **области элементов** , щелкнув вкладку **область элементов** в левой части конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
+Конструктор **действий \<T> FlowSwitch** можно найти в категории блок- **схемы** **области элементов**, щелкнув вкладку **область элементов** в левой части конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
 
 Конструктор **действий \<T> FlowSwitch** можно перетащить из **области элементов** в область Конструктор рабочих процессов в конструкторе действия **блок-схемы** . Используйте окно **Выбор типов** , в котором отображается, чтобы указать тип (связанный в коде с помощью <xref:System.Activities.Statements.FlowSwitch%601> его универсального параметра), полученный при вычислении <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> . Эта процедура создает <xref:System.Activities.Statements.FlowSwitch%601> действие с меткой **switch** в рамках <xref:System.Activities.Statements.Flowchart> действия. <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>Можно ввести в поле **выражение** окна **Свойства** , щелкнув там, где текст подсказки — «введите выражение VB».
 
@@ -44,9 +44,9 @@ ms.locfileid: "94435799"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|Верно|Указывает выражение, вычисляемое для определения того, на какой из вариантов <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> следует переключиться в пути выполнения.|
-|<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|Неверно|Задает уникальное сопоставление возможных результатов, полученных при вычислении <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>, набору объектов <xref:System.Activities.Statements.FlowNode>.|
-|<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|Верно|Задает сопоставление, когда вычисление <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> не совпадает ни с одним значением, содержащимся в объекте <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|True|Указывает выражение, вычисляемое для определения того, на какой из вариантов <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> следует переключиться в пути выполнения.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|False|Задает уникальное сопоставление возможных результатов, полученных при вычислении <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>, набору объектов <xref:System.Activities.Statements.FlowNode>.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|True|Задает сопоставление, когда вычисление <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> не совпадает ни с одним значением, содержащимся в объекте <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>.|
 
 ## <a name="see-also"></a>См. также раздел
 
