@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffe5cb6477808f892b8d36aa5fd616a5a0ea7969
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6817dbd534d272924e5020b1c4c48753dcd70a54
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876328"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890673"
 ---
 # <a name="project-configuration-for-output"></a>Конфигурация проекта для вывода
 Каждая конфигурация может поддерживать набор процессов сборки, которые создают выходные элементы, такие как исполняемые или файлы ресурсов. Эти выходные элементы являются частными для пользователя и могут быть помещены в группы, связывающие связанные типы выходных данных, такие как исполняемые файлы (exe, DLL, lib) и исходные файлы (IDL-файлы).

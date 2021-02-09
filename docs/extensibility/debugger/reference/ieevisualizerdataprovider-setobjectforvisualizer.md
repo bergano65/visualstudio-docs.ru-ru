@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 40dad2be-57ff-4f74-9d82-c48039c125c4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab63f1e74e0cd3ac64a4d7e7687a9136075b41a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50d68b5cdb7399dc391ef90150f0b6a156783301
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718077"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890842"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Этот метод изменяет объект, который представляет визуализатор.
@@ -28,18 +28,18 @@ ms.locfileid: "80718077"
 ## <a name="syntax"></a>Синтаксис
 
 ```cpp
-HRESULT SetObjectForVisualizer(
-   IDebugObject*  pNewObject,
-   BSTR*          error,
-   IDebugObject** pException
+HRESULT SetObjectForVisualizer(
+   IDebugObject*  pNewObject,
+   BSTR*          error,
+   IDebugObject** pException
 );
 ```
 
 ```csharp
-int SetObjectForVisualizer(
-   IDebugObject     pNewObject,
-   out string       error,
-   out IDebugObject pException
+int SetObjectForVisualizer(
+   IDebugObject     pNewObject,
+   out string       error,
+   out IDebugObject pException
 );
 ```
 

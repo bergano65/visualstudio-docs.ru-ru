@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c6c48dbad986d8bc4be58f1ebd9c5bd1fffbd57
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 6e018631e24cf7e678072b6b54183fd3c619dc4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974594"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890335"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Битфлагс, используемые конкретными командами
 Поведение ряда функций в API подключаемого модуля системы управления версиями можно изменить, задав один или несколько битов в одном значении. Эти значения называются битфлагс. Различные битфлагс, используемые API подключаемого модуля системы управления версиями, подробно описаны в разделе, сгруппированном по функции, которая их использует.
@@ -107,5 +107,5 @@ ms.locfileid: "94974594"
 |`SCC_OPT_SCO_NO`|0L|Параметры ОК, чтобы извлечь из пользовательского интерфейса подключаемого модуля; задан рабочий каталог.|`SCC_OPT_SCCCHECKOUTONLY`|
 |`SCC_OPT_SCO_YES`|1L|Не удается извлечь пользовательский интерфейс подключаемого модуля, Рабочий каталог отсутствует.|`SCC_OPT_SCCCHECKOUTONLY`|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)

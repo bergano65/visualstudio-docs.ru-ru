@@ -23,15 +23,15 @@ helpviewer_keywords:
 - safe controls [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f73d8727fb960cf519d368d928aa20cae38ae1a9
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f05e2035338ea4c2d0e45bb9d135d618b938e4ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970481"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889542"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Предоставление сведений об упаковке и развертывании в элементах проекта
   Все элементы проектов SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] имеют свойства, которые можно использовать для предоставления дополнительных данных при развертывании проекта в SharePoint. Список содержит следующие свойства.
@@ -107,7 +107,7 @@ ms.locfileid: "95970481"
 </Assemblies>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [Использование модулей для включения файлов в решение](../sharepoint/using-modules-to-include-files-in-the-solution.md)
 - [Расширение упаковки и развертывания SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

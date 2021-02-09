@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 8be6adfedeabaea236e4dcb2cd969e6023a7f3ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304234"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889568"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Слияние XML в манифестах компонентов и пакетов
   Компоненты и пакеты определяются [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] файлами манифеста. Эти Упакованные манифесты представляют собой сочетание данных, созданных из конструкторов, и пользовательских элементов, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] вводимых в шаблон манифеста пользователями. Во время упаковки выполняет [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Слияние пользовательских [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] инструкций с предоставленным конструктором [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] для формирования упакованного [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] файла манифеста. Аналогичные элементы, с исключениями, упомянутыми позже в исключениях слияния, объединяются во избежание [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ошибок проверки после развертывания файлов в SharePoint, а также для повышения эффективности файлов манифеста.
@@ -37,7 +37,7 @@ ms.locfileid: "96304234"
 
  Ниже приведен список исключений слияния для [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] файлов манифестов компонентов и пакетов.
 
-|Конструктор|XML-элемент|
+|Designer|XML-элемент|
 |--------------|-----------------|
 |Конструктор компонентов|активатиондепенденци|
 |Конструктор компонентов|упградеактион|
@@ -50,9 +50,9 @@ ms.locfileid: "96304234"
 |Имя элемента|Уникальный ключ|
 |------------------|----------------|
 |Функция (все атрибуты)|*Имя атрибута* (каждое имя атрибута элемента Feature является уникальным ключом).|
-|ElementFile|Местоположение|
-|Елементманифестс/ElementManifest|Местоположение|
-|Свойства/свойство|Клавиши|
+|ElementFile|Расположение|
+|Елементманифестс/ElementManifest|Расположение|
+|Свойства/свойство|Ключ|
 |кустомупградеактион|Имя|
 |кустомупградеактионпараметер|Имя|
 
@@ -65,16 +65,16 @@ ms.locfileid: "96304234"
 |Имя элемента|Уникальный ключ|
 |------------------|----------------|
 |Решение (все атрибуты)|*Имя атрибута* (каждое имя атрибута элемента Solution является уникальным ключом).|
-|Аппликатионресаурцефилес/Аппликатионресаурцефиле|Местоположение|
-|Сборки и сборки|Местоположение|
-|Классресаурцес/ClassResource|Местоположение|
-|Двпфилес/DwpFile|Местоположение|
-|Феатуреманифестс/Феатуреманифест|Местоположение|
-|Ресурсы/ресурс|Местоположение|
-|RootFiles/RootFile|Местоположение|
-|Ситедефинитионманифестс/Ситедефинитионманифест|Местоположение|
-|вебтемпфиле|Местоположение|
-|TemplateFiles/TemplateFile|Местоположение|
+|Аппликатионресаурцефилес/Аппликатионресаурцефиле|Расположение|
+|Сборки и сборки|Расположение|
+|Классресаурцес/ClassResource|Расположение|
+|Двпфилес/DwpFile|Расположение|
+|Феатуреманифестс/Феатуреманифест|Расположение|
+|Ресурсы/ресурс|Расположение|
+|RootFiles/RootFile|Расположение|
+|Ситедефинитионманифестс/Ситедефинитионманифест|Расположение|
+|вебтемпфиле|Расположение|
+|TemplateFiles/TemplateFile|Расположение|
 |солутиондепенденци|SolutionID|
 
 ## <a name="manually-add-deployed-files"></a>Добавление развернутых файлов вручную

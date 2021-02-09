@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: df759e89-8193-418c-8038-6626304d387b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9397ff17ba80368a86ba03260b3c5af3759bfe8d
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 3db7c4f886a071b4b759072a1b141690f4e4b097
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761365"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890725"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Руководство. Предоставление расширенной поддержки структурирования в языковой службе прежних версий
 Существует два варианта расширения поддержки структурирования для вашего языка, помимо поддержки команды **Свернуть в определения** . Можно добавить области структуры, управляемые редактором, и добавить области структуры, управляемые клиентом.

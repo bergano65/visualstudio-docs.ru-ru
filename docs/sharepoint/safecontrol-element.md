@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SafeControl element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 36a8b0ed45fbdb8d2dfe8e93a027a47adf407587
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f08046666ff00d4a0e5489bc78c0c70967774f08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889477"
 ---
 # <a name="safecontrol-element"></a>SafeControl - элемент
   Представляет элемент управления ASPX или веб-часть, которая обозначена как безопасная для доступа любого пользователя к любой странице ASPX на сайте SharePoint.
@@ -58,12 +58,12 @@ ms.locfileid: "95440627"
 |-------------|-----------------|
 |[SafeControls](../sharepoint/safecontrols-element.md)|Представляет коллекцию элементов управления ASPX и веб-части, которые обозначены как безопасные для доступа любого пользователя к любой странице ASPX на сайте SharePoint.|
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  Дополнительные сведения о безнадежных элементах управления см. [в разделе Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Сведения об элементе
 
-|Свойство.|Значение|
+|Свойство|Значение|
 |-|-|
 |**Пространство имен**|http: \/ \/ Schemas.Microsoft.com/VisualStudio/<br>2010/Шарепоинттулс/Шарепоинтпрожектитеммодел|
 |**Имя схемы**|Схема элемента проекта SharePoint|

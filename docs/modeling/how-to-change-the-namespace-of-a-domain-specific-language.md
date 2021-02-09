@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, namespace
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: a7b0de26fdc1a7982347a12c283a6aa73e9aad12
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 29835e993d287c981ad1c4014af3dc276891af5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809444"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890504"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Как изменить пространство имен для предметно-ориентированного языка
 
@@ -25,7 +25,7 @@ ms.locfileid: "90809444"
 
 ## <a name="to-change-the-namespace-of-a-domain-specific-language"></a>Изменение пространства имен для предметно-ориентированного языка
 
-1. В **обозревателе DSL**выберите узел **DSL** .
+1. В **обозревателе DSL** выберите узел **DSL** .
 
 2. В окне **Свойства** измените свойство **Namespace** .
 
@@ -49,9 +49,9 @@ ms.locfileid: "90809444"
 
 10. Сброс экспериментального экземпляра Visual Studio.
 
-    1. Удалите **\Users \\ **_{ваше имя}_**\аппдата\локал\микрософт\висуалстудио \\ \* exp**.
+    1. Удалите **\Users \\**_{ваше имя}_**\аппдата\локал\микрософт\висуалстудио \\ \* exp**.
 
-    2. В меню **Пуск** Windows выберите **все программы**  >  **Microsoft Visual Studio средства пакета SDK 2010**  >  **Tools**  >  **, которые сбрасывают экспериментальный экземпляр**.
+    2. В меню **Пуск** Windows выберите **все программы**  >  **Microsoft Visual Studio средства пакета SDK 2010**  >    >  **, которые сбрасывают экспериментальный экземпляр**.
 
 11. В меню **Сборка** выберите пункт **Перестроить решение**.
 
