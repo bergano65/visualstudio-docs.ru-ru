@@ -16,15 +16,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ef68ffccd7a048cd0591ee0bf1aa511fe0489c92
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846133"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910518"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Предоставление доступа к VBA для создания или открытия Инструменты Visual Studio для проекта Microsoft Office системы
 
@@ -59,7 +59,7 @@ ms.locfileid: "96846133"
 
 5. Установите или снимите флажок **Доверять доступ к объектной модели проекта VBA** , чтобы включить или отключить доступ к Visual Basic проектам.
 
-6. Нажмите кнопку **ОК**.
+6. Нажмите кнопку **OK**.
 
 ### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>Включение и отключение доступа к Visual Basic проектам с помощью системы Microsoft Office 2007
 
@@ -69,7 +69,7 @@ ms.locfileid: "96846133"
 
 3. Выберите для включения или снимите флажок, чтобы отключить, **Доверять доступ к Visual Basic проекту**.
 
-4. Нажмите кнопку **ОК**.
+4. Нажмите кнопку **OK**.
 
 ## <a name="to-set-your-office-macro-security-level"></a>Настройка уровня безопасности макросов в Office
 
@@ -83,7 +83,7 @@ ms.locfileid: "96846133"
 
 5. В разделе **Параметры макросов** выберите нужный параметр.
 
-6. Нажмите кнопку **ОК**.
+6. Нажмите кнопку **OK**.
 
 ### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>Настройка уровня безопасности макросов Office с помощью системы 2007 Microsoft Office
 
@@ -109,9 +109,9 @@ ms.locfileid: "96846133"
 
 7. Откройте раскрывающееся меню рядом с **Visual Basic для приложений**, а затем выберите **выполнить из мой компьютер**.
 
-8. Нажмите кнопку **Продолжить**.
+8. Нажмите кнопку **Continue**(Продолжить).
 
-9. Щелкните **Закрыть**.
+9. Нажмите кнопку **Закрыть**.
 
 ## <a name="to-repair-your-installation-of-office"></a>Восстановление установки Office
 

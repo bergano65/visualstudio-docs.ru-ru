@@ -13,15 +13,15 @@ helpviewer_keywords:
 - entryPointsCollection element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ffa3c76f0f1afa0c9c445cfaf6f5f92484a73ba7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e7c7d7c32c538345adb246369b791cd6b2b41b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543563"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910425"
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент ентрипоинтсколлектион (разработка решений Office в Visual Studio)
   Элемент `entryPointsCollection` пространства имен `vstav3` содержит все элементы `entryPoints` , связанные с решениями Office.
@@ -49,7 +49,7 @@ ms.locfileid: "85543563"
  У элемента`entryPointsCollection` имеются перечисленные ниже элементы.
 
 ### <a name="entrypoints"></a>entryPoints
- Обязательный. Роль `entryPoints` элемента в `vstav3` пространстве имен определяется в [&#60;entrypoint&#62; элемент &#40;разработке решений Office в&#41;Visual Studio ](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+ Обязательный элемент. Роль `entryPoints` элемента в `vstav3` пространстве имен определяется в [&#60;entrypoint&#62; элемент &#40;разработке решений Office в&#41;Visual Studio ](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа
 

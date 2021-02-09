@@ -1,6 +1,6 @@
 ---
 title: Настройка компьютера для разработки решений Office
-description: Узнайте, как можно установить поддерживаемую версию Visual Studio, .NET Framework и Microsoft Office, чтобы можно было создавать надстройки и настройки VSTO для Microsoft Office.
+description: Узнайте, как можно установить поддерживаемую версию Visual Studio, платформа .NET Framework и Microsoft Office, чтобы можно было создавать надстройки и настройки VSTO для Microsoft Office.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, installing tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3658f655c50c9d1a0775a8cc69dd65baf32d1408
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ee8f840aa81d3decfdb96dd2658b758704443347
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847265"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910572"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Настройка компьютера для разработки решений Office
 
@@ -27,15 +27,15 @@ ms.locfileid: "96847265"
 
 |Программное обеспечение|Поддерживаемые версии|
 |--------------|------------------------|
-|Visual Studio 2017| Любой выпуск с рабочей нагрузкой для **разработки Office или SharePoint** .|
-|.NET Framework|— .NET Framework 4 или более поздней версии.|
+|Visual Studio 2017| Любой выпуск с рабочей нагрузкой для **разработки Office или SharePoint** .|
+|.NET Framework|— Платформа .NET Framework 4 или более поздней версии.|
 |Microsoft Office|<ul><li>Любой выпуск пакета Office, включая Microsoft 365 приложения для предприятия.</li><li>Любое из следующих автономных приложений.<br /><br /> <ul><li>Excel</li><li>InfoPath (только в Office 2013 и Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>Project</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic для приложений (VBA) должен быть установлен как часть Office. **Важно.** Не поддерживаются версии приложений Office 2010, выполняемые по щелчку мыши.|
 
 Подробные инструкции по установке см. в разделе [руководство. Настройка компьютера для разработки решений Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 
 ## <a name="if-project-templates-dont-appear-or-they-dont-work-in-visual-studio"></a>Если шаблоны проектов не отображаются или не работают в Visual Studio
 
-Если вы установили поддерживаемую версию Visual Studio, .NET Framework и Microsoft Office, но шаблоны Office Project не отображаются в диалоговом окне **Новый проект** Visual Studio или при попытке его использования появляется сообщение об ошибке, проверьте следующее:
+Если вы установили поддерживаемую версию Visual Studio, платформа .NET Framework и Microsoft Office, но шаблоны Office Project не отображаются в диалоговом окне **Новый проект** Visual Studio или при попытке его использования появляется сообщение об ошибке, проверьте следующее:
 
 - Проверьте, установлены ли на компьютер инструменты разработчика Microsoft Office.
 

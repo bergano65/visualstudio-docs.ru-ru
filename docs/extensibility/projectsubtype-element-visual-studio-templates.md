@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ceecbf1bfb750244a13c641906f7a8712d01d69
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 2ee2e267461d37456c9a2e64c43ae104d19ee615
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672324"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911761"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>Элемент ProjectSubType (шаблоны Visual Studio)
 Классифицирует шаблон в подкатегорию значения, указанного в `ProjectType` элементе.
@@ -55,7 +55,7 @@ ms.locfileid: "94672324"
 
  Это значение указывает подкатегорию шаблона.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  `ProjectSubType` — необязательный дочерний элемент элемента `TemplateData`.
 
  `ProjectSubType`Элемент предоставляет подкатегорию для элемента [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) . Это значение может включать:
