@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a77f869936531dbc41cc3bd1d9b510bf44c35cec
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c9706f7c9cd5b25a3644af2f324fda01f448fa17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883406"
 ---
 # <a name="error-codes"></a>Коды ошибок
 Когда функция API подключаемого модуля системы управления версиями возвращает ошибку, ожидается один из следующих кодов ошибок. Все ошибки отрицательны, предупреждения или информационные коды ошибок являются положительными, а успешно — 0.
@@ -74,7 +74,7 @@ IS_SCC_SUCCESS(rtn) (((rtn) == SCC_OK) ? TRUE : FALSE)
 IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)
 ```
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  Все функции API подключаемого модуля системы управления версиями (за исключением [сккадд](../extensibility/sccadd-function.md), [сккчеккин](../extensibility/scccheckin-function.md)и [сккдифф](../extensibility/sccdiff-function.md)) должны выполняться успешно, если локальные файлы, передаваемые в качестве аргументов, не существуют в рабочей папке. Например, интегрированная среда разработки может выдать вызов [сккчеккаут](../extensibility/scccheckout-function.md) или [сккунчеккаут](../extensibility/sccuncheckout-function.md) для файла, который не существует в рабочей папке, но существует в системе управления версиями. Этот вызов будет выполнен. Если в рабочей папке нет файла или в системе управления версиями, то ожидается сбой функции.
 
  Некоторые функции, такие как `SccAdd` и `SccCheckin` , должны возвращать, `SCC_E_FILENOTEXIST` Если файл в рабочей папке не существует. Другие функции должны выполняться, если рабочий файл не существует, если функции работают с допустимым именем файла в системе управления версиями.

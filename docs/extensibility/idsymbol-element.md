@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4feb477f8507bc3fe57e6db355538ab98ceeeaa
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 830324e708ff83fbcbbbdb98d261130e92c7ba00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995542"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883198"
 ---
 # <a name="idsymbol-element"></a>IDSymbol, элемент
 `IDSymbol`Элемент содержит идентификатор пары GUID: ID, представляющей меню, группу или команду. Идентификатор GUID поступает из родительского `GuidSymbol` элемента. `IDSymbol`Элемент имеет `name` атрибут, который предоставляет понятное имя для идентификатора, содержащегося в `value` атрибуте.
@@ -37,7 +37,7 @@ ms.locfileid: "96995542"
 |Атрибут|Описание|
 |---------------|-----------------|
 |name|Обязательный элемент. Имя символа идентификатора.|
-|value|Обязательный элемент. Числовое значение идентификатора символа идентификатора.|
+|значение|Обязательный элемент. Числовое значение идентификатора символа идентификатора.|
 
 ### <a name="child-elements"></a>Дочерние элементы
  Отсутствует.
@@ -48,7 +48,7 @@ ms.locfileid: "96995542"
 |-------------|-----------------|
 |[GuidSymbol, элемент](../extensibility/guidsymbol-element.md)|Содержит идентификатор GUID пары GUID: ID, представляющей меню, группу или команду. Группирует элементы `IDSymbol`.|
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  Каждый `IDSymbol` элемент в заданном `GuidSymbol` элементе должен иметь уникальное значение `value` . Однако `IDSymbol` в пакете могут существовать элементы, имеющие одинаковые значения, если они имеют разные родительские объекты.
 
 ## <a name="see-also"></a>См. также раздел

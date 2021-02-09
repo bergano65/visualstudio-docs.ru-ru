@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66a79a24225fe2abbb27611e041295711e6e3b38
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 76aa9f7d922e206225080b8f8793239f77764133
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993475"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883224"
 ---
 # <a name="ide-guids"></a>Идентификаторы GUID среды IDE
 
@@ -26,7 +26,7 @@ ms.locfileid: "96993475"
 
 ## <a name="core-systems"></a>Основные системы
 
-|Константа|Код GUID|
+|Константа|Идентификатор GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.HtmDocData_guid>|62C81794-A9EC-11D0-8198-00A0C91BBEE3|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.HtmlEditorPackage_guid>|1B437D20-F8FE-11D2-A6AE-00104BCC7269|
@@ -39,7 +39,7 @@ ms.locfileid: "96993475"
 
 ## <a name="broadly-visible-components"></a>Широкие видимые компоненты
 
-|Константа|Код GUID|
+|Константа|Идентификатор GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsUIHierarchyWindow_guid>|7D960B07-7AF8-11D0-8E5E-00A0C911005A|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.ExternalEditor_guid>|8137C9E8-35FE-4AF2-87B0-DE3C45F395FD|
@@ -48,7 +48,7 @@ ms.locfileid: "96993475"
 
 ## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Файлы, виртуальные и физические папки и подпроекты
 
-|Константа|Код GUID|
+|Константа|Идентификатор GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.PhysicalFile_guid>|6bb5f8ee-4483-11d3-8bcf-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.PhysicalFolder_guid>|6bb5f8ef-4483-11d3-8bcf-00c04f8ec28c|
@@ -57,7 +57,7 @@ ms.locfileid: "96993475"
 
 ## <a name="ui-contexts"></a>Контексты пользовательского интерфейса
 
-|Константа|Код GUID|
+|Константа|Идентификатор GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>|8fe2df1d-e0da-4ebe-9d5c-415d40e487b5|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>|adfc4e61-0397-11d1-9f4e-00a0c911004f|
@@ -73,7 +73,7 @@ ms.locfileid: "96993475"
 
 ## <a name="output-pane"></a>Панель вывода
 
-|Константа|Код GUID|
+|Константа|Идентификатор GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.BuildOutputPane_guid>|1BD8A850-02D1-11D1-BEE7-00A0C913D1F8|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.DebugPane_guid>|FC076020-078A-11D1-A7DF-00A0C9110051|
@@ -84,20 +84,20 @@ ms.locfileid: "96993475"
 
 ## <a name="command-sets-and-properties"></a>Наборы команд и свойства
 
-|Константа|Код GUID|
+|Константа|Идентификатор GUID|
 |--------------|----------|
 |Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97|5EFC7975-14BC-11CF-9B2B-00AA00573819|
 |Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds>|60481700-078b-11d1-aaf8-00a0c9055a90|
 
 ## <a name="iunknown"></a>IUnknown
 
-|Константа|Код GUID|
+|Константа|Идентификатор GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
 
 ## <a name="task-list-guids"></a>Идентификаторы GUID списка задач
 
-|Константа|Код GUID|
+|Константа|Идентификатор GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.All>|1880202e-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CheckedTasks>|18802036-fc20-11d2-8bb1-00c04f8ec28c|
@@ -113,7 +113,7 @@ ms.locfileid: "96993475"
 
 ## <a name="component-selector-page-guids"></a>Идентификаторы GUID для страниц выбора компонентов
 
-|Константы|Код GUID|
+|Константы|Идентификатор GUID|
 |---------------|----------|
 |Microsoft.VisualStudio.VSConstants.GUID_COMClassicPage|9A341D96-5A64-11d3-BFF9-00C04F990235|
 |Microsoft.VisualStudio.VSConstants.GUID_COMPlusPage|9A341D95-5A64-11d3-BFF9-00C04F990235|
@@ -121,7 +121,7 @@ ms.locfileid: "96993475"
 
 ## <a name="miscellaneous-shell-guids"></a>Другие идентификаторы GUID оболочки
 
-|Константы|Код GUID|
+|Константы|Идентификатор GUID|
 |---------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsCfgProviderEventsHelper_guid>|99913f1f-1ee3-11d1-8a6e-00c04f682e21|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11d0-b63f-00a0c922e851|

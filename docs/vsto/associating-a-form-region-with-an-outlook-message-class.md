@@ -14,15 +14,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], message classes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 213b167bf7fe10c83b028fce2d97c67cd837d272
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0bbbd381ff84714b780bbb817ccfea64ac05e949
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847004"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882548"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Связывание области формы с классом сообщений Outlook
   Можно указать, какие Microsoft Office элементы Outlook отображают область формы, связав область формы с классом сообщений каждого элемента. Например, если необходимо добавить область формы в нижнюю часть почтового элемента, можно связать область формы с `IPM.Note` классом Message.
@@ -41,7 +41,7 @@ ms.locfileid: "96847004"
 |дистлиститем|`IPM.DistList`|
 |жаурналитем|`IPM.Activity`|
 |MailItem|`IPM.Note`|
-|PostItem|`IPM.Post` или `IPM.Post.RSS`|
+|PostItem|`IPM.Post` либо `IPM.Post.RSS`|
 |TaskItem|`IPM.Task`|
 
  Можно также указать имена пользовательских классов сообщений. Пользовательские классы сообщений определяют пользовательские формы, определяемые в Outlook.

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, transformation process
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f0caadfe9abf38b2d83995da7efa32d618b4bfe0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 4bf2d8e7d8fc45a45dcb271d867f8f6a39564bab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362656"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882951"
 ---
 # <a name="the-text-template-transformation-process"></a>Процесс преобразования текстового шаблона
 Процесс преобразования текстовых шаблонов принимает текстовый файл шаблона в качестве входных данных и создает новый текстовый файл в качестве выходных данных. Например, можно использовать текстовые шаблоны для создания Visual Basic или кода C#, а также для создания HTML-отчета.
