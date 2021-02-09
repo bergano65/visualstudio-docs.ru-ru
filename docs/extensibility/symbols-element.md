@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e86406c4c10c2f65e8e43d8f3cb67f413ed3c63
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 173da18ca3b38dd64b8a2594c03abd83987f58f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839326"
 ---
 # <a name="symbols-element"></a>Элемент Symbols
 Определяет идентификаторы GUID и идентификаторы, используемые другими элементами VSCT. Для неуправляемого кода эти сведения обычно поступают из файлов заголовков, которые задаются с помощью [внешнего элемента](../extensibility/extern-element.md). Для определения этих сведений управляемый код использует дочерние элементы элемента Symbols.
@@ -43,7 +43,7 @@ ms.locfileid: "97715565"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|None||
+|Отсутствуют||
 
 ### <a name="child-elements"></a>Дочерние элементы
 
