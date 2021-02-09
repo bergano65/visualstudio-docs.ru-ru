@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d0403a16-5d07-4fe5-b474-19ae3d9fd3ab
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0472bfeb3a988bcb39b4daf80cea92398130f59f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 6839a4ac8e53ec70fc88d23525985e8d1b7cccd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903407"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904519"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>Элемент WizardData (шаблоны Visual Studio)
 
@@ -65,7 +65,7 @@ ms.locfileid: "94903407"
 
 Этот текст указывает пользовательский XML-файл для передачи пользовательскому расширению мастера, указанному в элементе [визардекстенсион](../extensibility/wizardextension-element-visual-studio-templates.md) .
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 В этом элементе можно указать любой XML-код. XML будет передан в качестве параметра пользовательскому расширению мастера, позволяя расширению использовать содержимое этого элемента. Для этих данных проверка не выполняется.
 

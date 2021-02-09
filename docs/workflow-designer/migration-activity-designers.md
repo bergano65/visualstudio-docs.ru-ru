@@ -1,25 +1,25 @@
 ---
 title: Конструкторы действий миграции конструктор рабочих процессов
-description: Узнайте, как использовать конструкторы действий миграции для вызова действий Workflow 3.0/3.5 из рабочего процесса, предназначенного для .NET Framework 4 или более поздней версии.
+description: Узнайте, как использовать конструкторы действий миграции для вызова действий Workflow 3.0/3.5 из рабочего процесса, предназначенного для платформа .NET Framework 4 или более поздней версии.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ed5640495c7de8550db63d2fa48d3fab1e67de9a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d808603dde5853aa7d7f0edc6052d7e34cb9c73a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905207"
 ---
 # <a name="migration-activity-designers"></a>Конструкторы действий миграции
 
-Конструкторы действий миграции используются для вызова действий Workflow 3.0/3.5 из рабочего процесса, предназначенного для .NET Framework 4 или более поздней версии.
+Конструкторы действий миграции используются для вызова действий Workflow 3.0/3.5 из рабочего процесса, предназначенного для платформа .NET Framework 4 или более поздней версии.
 
 Разделы, содержащиеся в этом разделе, содержат рекомендации по использованию конструкторов действий конструктор рабочих процессов.
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d9f93f0081d45e986ab6845cdaee53209b84e13
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 2bfcb9fdd7eff132d02c7d14be729cd871c8dd8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905929"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Сопоставление фигурных скобок в языковой службе прежних версий
 Сопоставление фигурных скобок помогает разработчику контролировать элементы языка, которые должны выполняться вместе, например круглые скобки и фигурные скобки. Когда разработчик вводит закрывающую фигурную скобку, выделяется открывающая фигурная скобка.
@@ -42,7 +42,7 @@ ms.locfileid: "96190009"
 ## <a name="enable-support-for-brace-matching"></a>Включить поддержку сопоставления фигурных скобок
  <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>Атрибут может задавать записи реестра **матчбрацес**, **матчбрацесаткарет** и **шовматчингбраце** , которые задают соответствующие свойства <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Свойства предпочтений языка также могут быть заданы пользователем.
 
-|Параметр реестра|Свойство|Описание|
+|Запись реестра|Свойство|Описание|
 |--------------------|--------------|-----------------|
 |матчбрацес|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Включает сопоставление фигурных скобок.|
 |матчбрацесаткарет|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Включает сопоставление скобок при перемещении курсора.|

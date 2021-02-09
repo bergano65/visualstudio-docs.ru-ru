@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8751c15e40658e7a901550eef3d86050da842cc7
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3997b72105c22f10500559370d8a23faaa2f24eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905176"
 ---
 # <a name="parallel-activity-designer"></a>Конструктор действия Parallel
 
@@ -27,7 +27,7 @@ ms.locfileid: "94435603"
 
 Действие <xref:System.Activities.Statements.Parallel> хранит свои дочерние действия в коллекции <xref:System.Activities.Statements.Parallel.Branches%2A>. Используйте действие <xref:System.Activities.Statements.Parallel> вместо действия <xref:System.Activities.Statements.Sequence>, если некоторые дочерние действия могут перейти в состояние бездействия.
 
-<xref:System.Activities.Statements.Parallel>Действие имеет <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> свойство, которое содержит указанное пользователем Visual Basic выражение. Действие <xref:System.Activities.Statements.Parallel> вычисляет это свойство после завершения каждой ветви кода. Если значение равно **true** , <xref:System.Activities.Statements.Parallel> действие завершается без выполнения других ветвей. Если значение не <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> принимает **значение true** , <xref:System.Activities.Statements.Parallel> действие завершается после завершения всех его дочерних действий.
+<xref:System.Activities.Statements.Parallel>Действие имеет <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> свойство, которое содержит указанное пользователем Visual Basic выражение. Действие <xref:System.Activities.Statements.Parallel> вычисляет это свойство после завершения каждой ветви кода. Если значение равно **true**, <xref:System.Activities.Statements.Parallel> действие завершается без выполнения других ветвей. Если значение не <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> принимает **значение true**, <xref:System.Activities.Statements.Parallel> действие завершается после завершения всех его дочерних действий.
 
 ### <a name="using-the-parallel-activity-designer"></a>Использование конструктора действия Parallel
 
@@ -43,9 +43,9 @@ ms.locfileid: "94435603"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Указывает понятное отображаемое имя действия конструктора в заголовке. Значение по умолчанию — **Parallel**. Значение можно дополнительно изменить в сетке **свойств** или непосредственно в заголовке конструктора операций.|
-|<xref:System.Activities.Statements.Parallel.Branches%2A>|Верно|Содержит коллекцию дочерних действий, которые должны быть выполнены.|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|Неверно|Вычисляется после завершения какой-либо ветви. Если значение равно **true** , то запланированные ожидающие ветви отменяются. Если это свойство не задано или имеет **значение false** , действие завершается после завершения всех его дочерних действий. Значение по умолчанию — **null**.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает понятное отображаемое имя действия конструктора в заголовке. Значение по умолчанию — **Parallel**. Значение можно дополнительно изменить в сетке **свойств** или непосредственно в заголовке конструктора операций.|
+|<xref:System.Activities.Statements.Parallel.Branches%2A>|True|Содержит коллекцию дочерних действий, которые должны быть выполнены.|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Вычисляется после завершения какой-либо ветви. Если значение равно **true**, то запланированные ожидающие ветви отменяются. Если это свойство не задано или имеет **значение false**, действие завершается после завершения всех его дочерних действий. Значение по умолчанию — **null**.|
 
 ## <a name="see-also"></a>См. также раздел
 

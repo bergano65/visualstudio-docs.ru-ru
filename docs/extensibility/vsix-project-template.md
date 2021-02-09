@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76e4301843cc318b60940948fee4b618860e7bae
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d346826c97bfa0ed885579d4816c452dbed9a2d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863883"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905711"
 ---
 # <a name="vsix-project-template"></a>Шаблон проекта VSIX
 
@@ -34,7 +34,7 @@ ms.locfileid: "97863883"
 Шаблон проекта VSIX доступен в диалоговом окне **Новый проект** путем поиска "VSIX".  Существует и версия C#, и Visual Basic.
 
 > [!TIP]
-> Убедитесь, что в раскрывающемся списке в верхней части диалогового окна " **Новый проект** " указан .NET Framework 4,5 или более поздней версии.
+> Убедитесь, что в раскрывающемся списке в верхней части диалогового окна " **Новый проект** " указан платформа .NET Framework 4,5 или более поздней версии.
 
 ## <a name="uses-of-the-vsix-project-template"></a>Использование шаблона проекта VSIX
 

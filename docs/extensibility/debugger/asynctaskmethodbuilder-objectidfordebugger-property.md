@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 78338537-b451-4655-9f04-a21f6fe197a3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7776fb53c4e1290f4b8dbef89a1e195462168b0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e3e34d0811d2111dfff6c19b1605b78286bcc3c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904817"
 ---
 # <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>AsyncTaskMethodBuilder. ObjectIdForDebugger, свойство
 Возвращает объект, который может использоваться для уникальной идентификации этого построителя в отладчике.
@@ -24,7 +24,7 @@ ms.locfileid: "80739392"
 
  **Сборка:** mscorlib (в mscorlib.dll)
 
- Так как вы не можете получить доступ к этому внутреннему элементу из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
+ Так как вы не можете получить доступ к этому внутреннему элементу из платформа .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,4 +34,4 @@ private object ObjectIdForDebugger
 
 ## <a name="see-also"></a>См. также раздел
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
-- [Внутренние модули параллельного расширения для .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Внутренние модули параллельного расширения для платформа .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
