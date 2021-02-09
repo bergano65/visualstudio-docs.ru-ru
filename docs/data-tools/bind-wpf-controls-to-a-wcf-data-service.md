@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4368c9134539202b1bde2be7a2d8c39e5ebc3e74
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 9f3c4cc273d89b5d1fc74596f1f5565177319da7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867364"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Привязка элементов управления WPF к службе данных WCF
 
@@ -52,7 +52,7 @@ ms.locfileid: "94518535"
 
 Перед изучением приведенных ниже концепций будет полезно, хотя и не обязательно, ознакомиться со следующим пошаговым руководством.
 
-- [WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- [Службы данных WCF](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
 - Модели данных в [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
@@ -86,7 +86,7 @@ ms.locfileid: "94518535"
 
     - Щелкните **Создать подключение** и создайте подключение к базе данных AdventureWorksLT.
 
-6. На странице **Выбор подключения базы данных** убедитесь, что выбран параметр **Сохранить параметры соединения сущности в App.Config как** , а затем нажмите кнопку **Далее**.
+6. На странице **Выбор подключения базы данных** убедитесь, что выбран параметр **Сохранить параметры соединения сущности в App.Config как**, а затем нажмите кнопку **Далее**.
 
 7. На странице **Выбор объектов базы данных** разверните узел **Таблицы** и выберите таблицу **SalesOrderHeader**.
 
@@ -123,7 +123,7 @@ ms.locfileid: "94518535"
 
 1. В **обозревателе решений** щелкните правой кнопкой мыши узел решения, выберите команду **Добавить** и пункт **Новый проект**.
 
-2. В диалоговом окне **Новый проект** разверните узел **Visual C#** или **Visual Basic** , а затем выберите **Windows**.
+2. В диалоговом окне **Новый проект** разверните узел **Visual C#** или **Visual Basic**, а затем выберите **Windows**.
 
 3. Выберите шаблон проекта **Приложение WPF**.
 
@@ -185,7 +185,7 @@ ms.locfileid: "94518535"
 
 2. Разверните узел **SalesOrderHeaders**.
 
-3. Для этого примера некоторые поля не отображаются, поэтому щелкните раскрывающееся меню рядом со следующими узлами и выберите **Нет** :
+3. Для этого примера некоторые поля не отображаются, поэтому щелкните раскрывающееся меню рядом со следующими узлами и выберите **Нет**:
 
     - **CreditCardApprovalCode**
 
@@ -250,7 +250,7 @@ ms.locfileid: "94518535"
 
 ## <a name="save-changes-to-sales-records"></a>Сохранить изменения в записях о продажах
 
-Добавьте код, позволяющий пользователям просматривать и сохранять изменения в торговых записях с помощью кнопки **Сохранить изменения** :
+Добавьте код, позволяющий пользователям просматривать и сохранять изменения в торговых записях с помощью кнопки **Сохранить изменения**:
 
 1. В конструкторе дважды щелкните кнопку **Сохранить изменения**.
 
@@ -301,6 +301,6 @@ ms.locfileid: "94518535"
 
 - [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Привязка элементов управления WPF к набору данных](../data-tools/bind-wpf-controls-to-a-dataset.md)
-- [Общие сведения об WCF (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
-- [Обзор Entity Framework (.NET Framework)](/dotnet/framework/data/adonet/ef/overview)
-- [Общие сведения о привязке данных (.NET Framework)](/dotnet/desktop-wpf/data/data-binding-overview)
+- [Общие сведения об WCF (платформа .NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
+- [Обзор Entity Framework (платформа .NET Framework)](/dotnet/framework/data/adonet/ef/overview)
+- [Общие сведения о привязке данных (платформа .NET Framework)](/dotnet/desktop-wpf/data/data-binding-overview)

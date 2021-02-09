@@ -17,21 +17,21 @@ helpviewer_keywords:
 ms.assetid: 61af4798-eef7-468c-b229-5e1497febb2f
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: cd50ad6c0e81f337ad922f6fa994f0d900edb8b6
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 98f75769a8002fd960da74dc5f9bd9a6b046a604
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382394"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867247"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Фиксация внутрипроцессных изменений в элементах управления с привязкой к данным до сохранения данных
 
 При изменении значений в элементах управления с привязкой к данным пользователи должны переходить от текущей записи для фиксации обновленного значения в базовом источнике данных, к которому привязан элемент управления. При перетаскивании элементов из [окна «Источники данных](add-new-data-sources.md) » на форму первый элемент, который удаляется, создает код для события нажатия кнопки « **сохранить** » <xref:System.Windows.Forms.BindingNavigator> . Этот код вызывает <xref:System.Windows.Forms.BindingSource.EndEdit%2A> метод класса <xref:System.Windows.Forms.BindingSource> . Поэтому вызов <xref:System.Windows.Forms.BindingSource.EndEdit%2A> метода создается только для первого <xref:System.Windows.Forms.BindingSource> , добавленного в форму.
 
-Вызов <xref:System.Windows.Forms.BindingSource.EndEdit%2A> фиксирует все актуальные изменения для всех редактируемых в настоящее время элементов управления с привязкой к данным. Таким образом, если элемент управления с привязкой к данным все еще находится в фокусе и вы нажимаете кнопку **Сохранить** , все ожидающие правки в этом элементе управления фиксируются до фактического сохранения (метод `TableAdapterManager.UpdateAll`).
+Вызов <xref:System.Windows.Forms.BindingSource.EndEdit%2A> фиксирует все актуальные изменения для всех редактируемых в настоящее время элементов управления с привязкой к данным. Таким образом, если элемент управления с привязкой к данным все еще находится в фокусе и вы нажимаете кнопку **Сохранить**, все ожидающие правки в этом элементе управления фиксируются до фактического сохранения (метод `TableAdapterManager.UpdateAll`).
 
 Можно настроить приложение на автоматическую фиксацию изменений, даже если пользователь пытается сохранить данные без фиксации изменений в ходе процесса сохранения.
 
@@ -52,7 +52,7 @@ ms.locfileid: "94382394"
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Иерархическое обновление](../data-tools/hierarchical-update.md)
