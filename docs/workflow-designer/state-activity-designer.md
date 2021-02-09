@@ -8,16 +8,16 @@ f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: d5dbe0a14b007ad8e916aa9b2d8d765402dbe66b
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: abf4e81ecd258668c93b674410f029e6be0f5bf1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433990"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873519"
 ---
 # <a name="state-activity-designer"></a>Конструктор State Activity
 
@@ -33,10 +33,10 @@ ms.locfileid: "94433990"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Statements.State.DisplayName%2A>|Неверно|Указывает дополнительное понятное имя конструктора действия <xref:System.Activities.Statements.State> в заголовке. Значение по умолчанию — **State**. Значение можно дополнительно изменить в таблице свойств или напрямую в заголовке конструктора операций. <xref:System.Activities.Statements.State.DisplayName%2A> используется в строке навигатора, которая отображается в верхней части конструктора рабочих процессов.<br /><br /> Несмотря на то что свойство <xref:System.Activities.Statements.State.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|
-|<xref:System.Activities.Statements.State.Entry%2A>|Неверно|Указывает действие, которое выполняется при переходе в это состояние. При <xref:System.Activities.Statements.State> развертывании действия это значение можно задать, перетащив действие из **панели элементов** в раздел **записи** состояния.|
-|<xref:System.Activities.Statements.State.Exit%2A>|Неверно|Указывает действие, которое выполняется при переходе из этого состояния. Если <xref:System.Activities.Statements.State> действие развернуто, это значение можно задать, перетащив действие из **панели элементов** и выполнив его в раздел **Exit** состояния.|
-|<xref:System.Activities.Statements.State.Transitions%2A>|Неверно|Перечисляет возможные переходы, исходящие из <xref:System.Activities.Statements.State>. Каждый элемент в списке имеет соединение со связанным <xref:System.Activities.Statements.Transition> и назначение <xref:System.Activities.Statements.State>. При щелчке по ссылке конструктор переключится в расширенное представление для <xref:System.Activities.Statements.Transition> или <xref:System.Activities.Statements.State>.|
+|<xref:System.Activities.Statements.State.DisplayName%2A>|False|Указывает дополнительное понятное имя конструктора действия <xref:System.Activities.Statements.State> в заголовке. Значение по умолчанию — **State**. Значение можно дополнительно изменить в таблице свойств или напрямую в заголовке конструктора операций. <xref:System.Activities.Statements.State.DisplayName%2A> используется в строке навигатора, которая отображается в верхней части конструктора рабочих процессов.<br /><br /> Несмотря на то что свойство <xref:System.Activities.Statements.State.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|
+|<xref:System.Activities.Statements.State.Entry%2A>|False|Указывает действие, которое выполняется при переходе в это состояние. При <xref:System.Activities.Statements.State> развертывании действия это значение можно задать, перетащив действие из **панели элементов** в раздел **записи** состояния.|
+|<xref:System.Activities.Statements.State.Exit%2A>|False|Указывает действие, которое выполняется при переходе из этого состояния. Если <xref:System.Activities.Statements.State> действие развернуто, это значение можно задать, перетащив действие из **панели элементов** и выполнив его в раздел **Exit** состояния.|
+|<xref:System.Activities.Statements.State.Transitions%2A>|False|Перечисляет возможные переходы, исходящие из <xref:System.Activities.Statements.State>. Каждый элемент в списке имеет соединение со связанным <xref:System.Activities.Statements.Transition> и назначение <xref:System.Activities.Statements.State>. При щелчке по ссылке конструктор переключится в расширенное представление для <xref:System.Activities.Statements.Transition> или <xref:System.Activities.Statements.State>.|
 
 ## <a name="see-also"></a>См. также раздел
 

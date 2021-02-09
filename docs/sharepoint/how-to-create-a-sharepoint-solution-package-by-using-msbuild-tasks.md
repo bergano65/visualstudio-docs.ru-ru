@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f2979073414434d2b8f5be9d070b6b505c09ee14
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f4c1d2e986b6a810cc568efd9577be87a38fdefb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903732"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873545"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Инструкции. Создание пакета решения SharePoint с помощью задач MSBuild
   Вы можете выполнять сборку, очистку и проверку пакета SharePoint (*WSP*) с помощью задач MSBuild командной строки на компьютере разработки. Эти команды также можно использовать для автоматизации процесса сборки с помощью Team Foundation Server на компьютере построения.
@@ -28,7 +28,7 @@ ms.locfileid: "94903732"
 
 #### <a name="to-build-a-sharepoint-package"></a>Построение пакета SharePoint
 
-1. В меню **Пуск** Windows выберите пункт **все программы**—  >  **Accessories**  >  **Командная строка**.
+1. В меню **Пуск** Windows выберите пункт **все программы**—  >    >  **Командная строка**.
 
 2. Перейдите в каталог, где находится проект SharePoint.
 

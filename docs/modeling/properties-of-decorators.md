@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, decorators
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ef863d0d3dab394c2ca427a27d039c19e5921a51
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e29dcda43fdbb7b60567ff0aa0627b41ca3ca299
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360837"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873792"
 ---
 # <a name="properties-of-decorators"></a>Свойства декораторов
 Декораторы — это значки, текст или шевроны развертывания и свертывания, которые могут отображаться на фигурах или соединителях на схеме. В следующих таблицах показаны свойства для трех видов декораторов. Некоторые свойства отображаются только для декораторов фигур или только для декораторов соединителя.
@@ -25,7 +25,7 @@ ms.locfileid: "97360837"
 
 ## <a name="expandcollapse-decorator"></a>Развернуть или свернуть декоратор
 
-|Свойство|Описание|Значение по умолчанию|
+|Свойство|Описание|По умолчанию|
 |-|-|-|
 |DisplayName|Имя декоратора, которое будет отображаться в созданном конструкторе.|Развернуть свернуть декоратор|
 |Имя|Имя декоратора.|ExpandCollapseDecorator|
@@ -38,7 +38,7 @@ ms.locfileid: "97360837"
 
 ## <a name="icon-decorator"></a>Декоратор значка
 
-|Свойство|Описание|Значение по умолчанию|
+|Свойство|Описание|По умолчанию|
 |-|-|-|
 |дефаултикон|Путь к отображаемому значку или файлу изображения.|\<none>|
 |DisplayName|Имя декоратора, отображаемого в созданном конструкторе.|Декоратор значка|
@@ -52,7 +52,7 @@ ms.locfileid: "97360837"
 
 ## <a name="textdecorator"></a>TextDecorator
 
-|Свойство|Описание|Значение по умолчанию|
+|Свойство|Описание|По умолчанию|
 |-|-|-|
 |DefaultText|Отображаемый текст по умолчанию.|Метка|
 |DisplayName|Имя декоратора, отображаемого в созданном конструкторе.|Метка|
