@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d642d1168cbd2a8bd7abadbcdbd7c1e2851b00e
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 4f9a7766d4462ffbd74073448f49457215eb79a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616134"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943287"
 ---
 # <a name="language-server-protocol"></a>Протокол языкового сервера
 
@@ -110,7 +110,7 @@ ms.locfileid: "97616134"
 
 ![Java и Sasser](media/lsp-java-and-sass.png)
 
-### <a name="capabilities"></a>Возможности
+### <a name="capabilities"></a>Характеристики
 
 Не каждый языковой сервер может поддерживать все функции, определенные Протоколом. Таким образом, клиент и сервер объявляют поддерживаемый набор функций с помощью возможностей. Например, сервер объявляет о том, что он может обслужить запрос "textDocument/Definition", но он может не работать с запросом "Рабочая область или символ". Аналогичным образом клиенты могут сообщать о возможности предоставления уведомлений о сохранении перед сохранением документа, чтобы сервер мог вычислять текстовые изменения для автоматического форматирования измененного документа.
 

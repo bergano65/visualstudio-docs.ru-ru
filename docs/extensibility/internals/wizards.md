@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f367723a3c819635f2d7cf20ed812a36cda12830
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 828a08cfe2841595e0ed3a9f1e3d79973a6e6756
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487755"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943385"
 ---
 # <a name="wizards"></a>Мастера
 После создания мастера обычно требуется добавить его в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированную среду разработки (IDE), чтобы другие пользователи могли его использовать. Добавленный мастер отобразится в диалоговых окнах **Добавление нового проекта** или **Добавление нового элемента** . Чтобы открыть диалоговое окно **Добавление нового проекта** или **Добавление нового элемента** , щелкните правой кнопкой мыши открытое решение в **Обозреватель решений**, выберите команду **Добавить**, а затем — **Новый проект** или **новый элемент**.

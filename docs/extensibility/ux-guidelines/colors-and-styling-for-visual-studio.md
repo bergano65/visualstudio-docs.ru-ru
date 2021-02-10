@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e33ae67e0fd18ecd9a1a40a8b8075cd22d4bf7
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: bf32f4cd32ad6e53c1db33f75f68559e84414436
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715669"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942910"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Цвета и стили для Visual Studio
 
@@ -362,8 +362,8 @@ Windows использует несколько высококонтрастны
 
 | Имя | Тип | Данные | Описание |
 | --- | --- | --- | --- |
-| Категория | REG_SZ | Код GUID | Идентификатор GUID, созданный для задания категории |
-| Пакет | REG_SZ | Код GUID | Идентификатор GUID службы VSPackage, которая поддерживает категорию |
+| Категория | REG_SZ | Идентификатор GUID | Идентификатор GUID, созданный для задания категории |
+| Пакет | REG_SZ | Идентификатор GUID | Идентификатор GUID службы VSPackage, которая поддерживает категорию |
 
  Служба, указанная в реестре, должна предоставлять реализацию [ивсфонтандколордефаултс](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) для соответствующей категории.
 
@@ -375,8 +375,8 @@ Windows использует несколько высококонтрастны
 
 | Имя | Тип | Данные | Описание |
 |--- | --- | --- | --- |
-| Категория | REG_SZ | Код GUID | Идентификатор GUID, созданный для задания категории |
-| Пакет | REG_SZ | Код GUID | Идентификатор GUID службы VSPackage, которая поддерживает категорию |
+| Категория | REG_SZ | Идентификатор GUID | Идентификатор GUID, созданный для задания категории |
+| Пакет | REG_SZ | Идентификатор GUID | Идентификатор GUID службы VSPackage, которая поддерживает категорию |
 
 Служба, указанная в реестре, должна обеспечивать реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> для соответствующей группы.
 

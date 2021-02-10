@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 151932c1-f08a-4f78-a8d0-bd2f32211a9c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f07c3b62d1412564fd74c420b31b2a9fed41d1fa
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 2a086f2ae678541ce28e9ede874c4198e349f438
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903758"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942923"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>Элемент SortOrder (шаблоны Visual Studio)
 Задает значение, используемое для упорядочения шаблона (помимо других шаблонов в той же категории), которое отображается в диалоговом окне **Создание проекта** или **Добавление нового элемента** .
@@ -55,7 +55,7 @@ ms.locfileid: "94903758"
 
  Объект `integer` , представляющий значение порядка сортировки.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  Параметр `SortOrder` является необязательным элементом. Значение по умолчанию — 100, а все значения должны быть кратными 10.
 
  `SortOrder`Элемент не учитывается для шаблонов, созданных пользователем. Все созданные пользователем шаблоны сортируются в алфавитном порядке.

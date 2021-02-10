@@ -14,15 +14,15 @@ helpviewer_keywords:
 - collaborative development [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d30f28b3e97469bc9e0bf921438960206b4f89c0
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 028530014afdc78ab6c9c0483c3d443195383793
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942312"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Совместная разработка решений Office
   Несколько разработчиков могут работать над проектом Office так же, как они совместно работают над другими проектами Visual Studio. Visual Studio правильно обнаруживает Microsoft Office установки на каждом компьютере, даже если Office установлен в разных расположениях. Однако следует учитывать некоторые важные моменты.

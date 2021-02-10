@@ -10,19 +10,19 @@ helpviewer_keywords:
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bfa869bed2bc4462c050ac77e08665958f60598
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 37e2652d04df154a45ae5f87fd62c8f8dc2e0b3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878934"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944086"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Логические и расширенные операторы в выражениях поиска
 
-Для уточнения поиска содержимого справки в **окне справки**можно использовать логические операторы и операторы расширенного поиска.
+Для уточнения поиска содержимого справки в **окне справки** можно использовать логические операторы и операторы расширенного поиска.
 
 ## <a name="logical-operators"></a>Логические операторы
 
@@ -31,7 +31,7 @@ ms.locfileid: "91878934"
 |Условие, которое требуется найти|Использование|Пример|Результат|
 |-------------------|---------|-------------|------------|
 |Оба условия в одной статье|AND|dib AND palette|Разделы, содержащие "dib" и "palette".|
-|Любое из условий в статье|OR|raster OR vector|Разделы, содержащие либо "raster", либо "vector".|
+|Любое из условий в статье|ИЛИ|raster OR vector|Разделы, содержащие либо "raster", либо "vector".|
 |Первое условие без второго условия в одной статье|NOT|"operating system" NOT DOS|Разделы, содержащие "operating system", но не "DOS".|
 |Оба условия, находящиеся близко друг к другу в статье|NEAR|user NEAR kernel|Разделы, содержащие "user" недалеко от "kernel".|
 
@@ -68,7 +68,7 @@ ms.locfileid: "91878934"
 > [!NOTE]
 > Оператор `code:` находит только то содержимое, которое имеет метку языка программирования, а не просто помечено как код.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Поиск разделов](../help-viewer/find-topics.md)
 - [Окно справки (Майкрософт)](../help-viewer/overview.md)

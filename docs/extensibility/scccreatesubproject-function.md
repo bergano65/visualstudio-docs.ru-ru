@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74354e05b16830f599dd706fbe48aadd75b11a18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ed763635d5629400c70c53497c7a798e0ac38f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701039"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943131"
 ---
 # <a name="scccreatesubproject-function"></a>Функция Скккреатесубпрожект
 Эта функция создает подпроект с заданным именем в существующем родительском проекте, заданном `lpParentProjPath` аргументом.
@@ -92,7 +92,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Технические примечания для Скккреатесубпрожект и Сккжетпарентпрожектпас
  Добавление решений и проектов в систему управления версиями было упрощено в Visual Studio, чтобы максимально сокращать число запросов на выбор расположений в системе управления версиями. Эти изменения активируются Visual Studio, если подключаемый модуль системы управления версиями поддерживает обе новые функции `SccCreateSubProject` и `SccGetParentProjectPath` . Однако можно использовать следующую запись реестра для отключения этих изменений и возврата к предыдущей версии Visual Studio (API подключаемого модуля системы управления версиями 1,1):
 
- **[HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl] "Доноткреатесолутионрутфолдеринсаурцеконтрол" = DWORD: 00000001**
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "Доноткреатесолутионрутфолдеринсаурцеконтрол" = DWORD: 00000001**
 
  Если эта запись реестра не существует или имеет значение "DWORD": 00000000, Visual Studio пытается использовать новые функции `SccCreateSubProject` и `SccGetParentProjectPath` .
 

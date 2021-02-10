@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf97cc10543f066665506d3e238386dc39f0d4f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 23df6dc45d1d96997a18942e7878a84a5d9f60a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942806"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Управление видимостью значка или декоратора
 *Декоратор* — это значок или строка текста, отображаемая на фигуре в доменном языке (DSL). Вы можете сделать декоратор отображаемым и исчезать в зависимости от состояния свойств в модели. Например, для фигуры, представляющей человека, могут отображаться различные значки в зависимости от пола, числа детей и т. д.

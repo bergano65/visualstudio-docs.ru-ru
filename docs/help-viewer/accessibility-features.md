@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 94a3225c-d2cb-4565-8453-855d1cdc1acf
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 359a1c4c87a139c35bf38d36edc6a53b2147dd98
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 7ada860eb82b6c391e04e7431d6625c876174654
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879077"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944359"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Специальные возможности в окне справки
 Корпорация Майкрософт стремится стремится сделать использование своих продуктов и услуг простым для всех пользователей. В этот раздел входит информация о возможностях, продуктах и службах, помогающих предоставить окно справки (Майкрософт) для людей с разными физическими возможностями.
@@ -34,7 +34,7 @@ ms.locfileid: "91879077"
 ## <a name="help-viewer-position"></a>Положение окна справки
 Вы можете изменить положение окна справки, перетащив заголовок окна в другое место.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Окно справки (Майкрософт)](../help-viewer/overview.md)
 - [Сочетания клавиш (окно справки)](../help-viewer/shortcut-keys.md)

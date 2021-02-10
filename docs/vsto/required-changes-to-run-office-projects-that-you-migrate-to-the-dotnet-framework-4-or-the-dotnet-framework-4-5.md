@@ -1,6 +1,6 @@
 ---
 title: Изменения, необходимые для переноса проектов Office на платформу .NET 4,5
-description: Изучите изменения, которые необходимо внести в проект, если Целевая платформа изменится на .NET Framework 4 или более поздней версии из более ранних версий .NET Framework.
+description: Изучите изменения, которые необходимо внести в проект, если Целевая платформа изменится на платформа .NET Framework 4 или более поздней версии из более ранних версий платформа .NET Framework.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e92a7fc81f77244664be7285cc6fd414dc4409be
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4fbe3c311e734cc076ab898544470c3e27e91795
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527499"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943722"
 ---
 # <a name="changes-required-for-office-projects-migrated-to-net-45"></a>Изменения, необходимые для переноса проектов Office на платформу .NET 4,5
 
-  Если целевая платформа проекта Office изменена на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздняя из более ранней версии .NET Framework, необходимо выполнить следующие задачи, чтобы обеспечить возможность запуска решения на компьютере разработчика и на компьютерах конечных пользователей.
+  Если целевая платформа проекта Office изменена на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздняя из более ранней версии платформа .NET Framework, необходимо выполнить следующие задачи, чтобы обеспечить возможность запуска решения на компьютере разработчика и на компьютерах конечных пользователей.
 
 - Удалите <xref:System.Security.SecurityTransparentAttribute> из проекта, если он был обновлен с версии Visual Studio 2008.
 
@@ -66,7 +66,7 @@ ms.locfileid: "97527499"
  Дополнительные сведения о команде **Clean** см. в разделе [Построение решений Office](../vsto/building-office-solutions.md).
 
 ## <a name="update-the-prerequisites-for-deployment"></a>Обновление необходимых компонентов для развертывания
- При изменении целевой платформы для проекта Office на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии необходимо также обновить соответствующий обязательный .NET Framework в диалоговом окне " **необходимые компоненты** ". В противном случае процесс развертывания с помощью ClickOnce или проект InstallShield Limited Edition проверяет наличие предыдущей версии платформы .NET Framework и устанавливает ее.
+ При изменении целевой платформы для проекта Office на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии необходимо также обновить соответствующий обязательный платформа .NET Framework в диалоговом окне " **необходимые компоненты** ". В противном случае процесс развертывания с помощью ClickOnce или проект InstallShield Limited Edition проверяет наличие предыдущей версии платформы .NET Framework и устанавливает ее.
 
  Дополнительные сведения об обновлении необходимых компонентов для развертывания на компьютерах конечных пользователей см. в разделе [инструкции. Установка необходимых компонентов на компьютерах конечных пользователей для запуска решений Office](/previous-versions/bb608608(v=vs.110)).
 
@@ -74,4 +74,4 @@ ms.locfileid: "97527499"
  Если вы используете технологию ClickOnce для развертывания решения Office, которое ориентируется на платформу .NET Framework 3.5, а затем переориентируете проект на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, необходимо удалить решение, а затем переустановить после его повторной публикации. При повторной публикации перенацеленного решения и обновлении решения на компьютерах конечных пользователей <xref:System.Runtime.InteropServices.COMException> при запуске обновленного решения пользователи получат сообщение.
 
 ## <a name="see-also"></a>См. также раздел
-- [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
+- [Перенос решений Office на платформа .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)

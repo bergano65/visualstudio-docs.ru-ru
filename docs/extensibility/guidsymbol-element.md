@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 11fb3545-8974-4776-9a54-6b6e7739ae31
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98fd802021f29365b6f338610754214352a996d7
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 8f739135a9a4bed969163ce26911e5304a66822b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994242"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943398"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol, элемент
 `GuidSymbol`Элемент содержит GUID пары GUID: ID, представляющей меню, группу или команду. Идентификатор берется из `IDSymbol` элемента в `GuidSymbol` элементе. `GuidSymbol`Элемент имеет `name` атрибут, предоставляющий понятное имя GUID, которое содержится в `value` атрибуте.
@@ -40,7 +40,7 @@ ms.locfileid: "96994242"
 |Атрибут|Описание|
 |---------------|-----------------|
 |name|Обязательный элемент. Имя символа GUID.|
-|value|Обязательный элемент. Идентификатор GUID символа GUID.|
+|значение|Обязательный элемент. Идентификатор GUID символа GUID.|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
@@ -54,7 +54,7 @@ ms.locfileid: "96994242"
 |-------------|-----------------|
 |[Элемент Symbols](../extensibility/symbols-element.md)|Группирует `GuidSymbol` элементы в *vsct* -файл.|
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  Как правило, *vsct* -файл содержит три `GuidSymbol` элемента в своем `Symbols` разделе: один для самого пакета, один для набора команд (коллекция меню, групп и команд, доступных для пакета), и один для точечных рисунков, которые предоставляют значки для кнопок и других визуальных компонентов. Каждый `IDSymbol` элемент в заданном `GuidSymbol` элементе должен иметь уникальное значение `value` . Однако `IDSymbol` в пакете могут существовать элементы, имеющие одинаковые значения, если они имеют разные родительские объекты.
 
 ## <a name="see-also"></a>См. также раздел

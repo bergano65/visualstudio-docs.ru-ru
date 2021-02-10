@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e0ec4755584a7021d4f5489500aa53b9bad87e
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 339d424dd0b09404fc135a119606d47cf7570be3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878973"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944099"
 ---
 # <a name="microsoft-help-viewer"></a>Окно справки (Майкрософт)
 
@@ -54,7 +54,7 @@ ms.locfileid: "91878973"
 
 ### <a name="navigation-tabs"></a>Вкладки навигации
 
-|Вкладка|Description|
+|Вкладка|Описание|
 |---|-----------|
 |Содержимое|Отображает установленное содержимое в виде иерархии (оглавление). Вы можете указать условия для фильтрации отображаемых заголовков.|
 |Индекс|Отображает список индексированных терминов в алфавитном порядке. Вы можете выполнить поиск по индексу, указать критерии для фильтрации записей и потребовать, чтобы записи индекса содержали указанный текст или начинались с него.|
@@ -92,7 +92,7 @@ ms.locfileid: "91878973"
 
 - Маленький треугольник на правой стороне открывает список вкладок, включая вкладки разделов и вкладку **Управление содержимым** . Чтобы сделать вкладку активной, можно выбрать ее имя.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Установка окно справки (Майкрософт)](../help-viewer/installation.md)
 - [Справка по средству просмотра справки для администраторов](../help-viewer/administrator-guide.md)

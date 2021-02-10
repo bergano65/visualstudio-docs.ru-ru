@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dialog box launcher
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 85b5d6f127c6f8b2b8140e778792aa1088efe05c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d8e04b7549d1b6a458f0993804946502f55f0165
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844937"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942286"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Как добавить средство запуска диалогового окна в группу ленты
   Можно добавить средство запуска диалогового окна в любую группу на ленте. Средство запуска диалогового окна — это маленький значок, отображаемый в группе. Пользователи щелкают этот значок, чтобы открыть связанные диалоговые окна или области задач, предоставляющие дополнительные параметры, связанные с группой.

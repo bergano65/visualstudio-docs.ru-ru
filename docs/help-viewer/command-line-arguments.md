@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 24011c50cf6f8d2204abdaa8b6119f7873470bcf
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 905284d69d23971771eecd9da6cef5c5051f36ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944281"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Аргументы командной строки для диспетчера содержимого справки
 
@@ -47,7 +47,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 
 В следующей таблице определены параметры и аргументы, которые можно использовать для средства командной строки для диспетчера содержимого справки:
 
-|Переключатель|Необходим?|Аргументы|
+|Коммутатор|Необходим?|Аргументы|
 |------------|---------------|---------------|
 |/operation|Да|-   **Установить**. Добавляет книги из определенного источника установки в хранилище локального содержимого.<br />     Этот ключ требует аргумента /booklist, аргумента /sourceURI или и того, и другого. Если не указан аргумент /sourceURI, то URI Visual Studio по умолчанию используется в качестве источника установки. Если не указан аргумент /booklist, устанавливаются все книги из /sourceUri.<br />-   **Удалить**. Удаляет указанные книги из локального хранилища содержимого.<br />     Этот ключ требует аргумента /booklist или /sourceURI.  Если указан аргумент /sourceURI, удаляются все книги, а аргумент /booklist игнорируется.<br />-   **Переместить**. Перемещает локальное хранилище в указанный путь. В качестве локального пути хранения по умолчанию задается каталог в *%ProgramData%*<br />     Этот параметр требует аргументов /locationPath и /catalogName. Сообщения об ошибке будут записаны в журнал событий при указании пути, который недопустим, или если на диске недостаточно свободного пространства для хранения содержимого.<br />-   **Обновить**. Обновляет разделы, которые были изменены с момента установки или последнего обновления.<br />     Этот параметр требует аргумента /sourceURI.|
 |/catalogName|Да|Указывает имя каталога содержимого. Для Visual Studio 2017 и Visual Studio 2019 это VisualStudio15.|
@@ -91,7 +91,7 @@ OnlineHelpPreferenceDisabled = 1201
 UpdateAlreadyRunning = 1300 - (Signals that the update didn't run because another was in progress.)
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справка по средству просмотра справки для администраторов](../help-viewer/administrator-guide.md)
 - [Переопределение диспетчера содержимого справки](../help-viewer/behavior-overrides.md)
