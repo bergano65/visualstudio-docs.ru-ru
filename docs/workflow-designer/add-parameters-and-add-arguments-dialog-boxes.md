@@ -8,16 +8,16 @@ f1_keywords:
 - AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: f29ee2aeedc971fc25654b6681c87b5dab71e386
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: f0a5bba22ea9255fcc6c65ea5fa6a59990548dc9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937144"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Диалоговые окна «Добавление параметров» и «Добавление аргументов»
 
@@ -33,7 +33,7 @@ ms.locfileid: "96995516"
 
 |Имя|Значение|
 |-|-|
-|**имя**;|Имя аргумента.|
+|**Имя**|Имя аргумента.|
 |**Направление**|Определяет, представляет аргумент поток данных в делегат, из делегата или и тот и другой.|
 |**Тип**|Имя типа нового аргумента.|
 |**Значение**|Значение, используемое для этого экземпляра аргумента делегата.|

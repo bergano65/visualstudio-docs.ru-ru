@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b1670dfa3c7202e8ebbdb28396f161daeffac491
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d205203797d8bd50c7b3132df86fbff9dbad1771
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937697"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Пошаговое руководство: Создание столбца сайта, типа содержимого и списка для SharePoint
   В следующих процедурах показано, как создать настраиваемые столбцы сайта SharePoint (или *поля*), а также тип содержимого, использующего столбцы сайта. Ниже также показан способ создания списка, использующего новый тип содержимого.

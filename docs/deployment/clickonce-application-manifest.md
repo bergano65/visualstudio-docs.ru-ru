@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 29570cec-4e53-4660-a850-abc4fa150243
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b84a256bfc9d13f8c17b92385df2106dc0a47d
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ccd8389859de3ffce7b04e2da648b2ac2e807a79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936188"
 ---
 # <a name="clickonce-application-manifest"></a>Манифест приложения ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Манифест приложения — это XML-файл, описывающий приложение, которое развертывается с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
@@ -33,13 +33,13 @@ ms.locfileid: "94383122"
 | - | - | - |
 | [\<assembly> Элемент](../deployment/assembly-element-clickonce-application.md) | Обязательный элемент. Это элемент верхнего уровня. | `manifestVersion` |
 | [\<assemblyIdentity> Элемент](../deployment/assemblyidentity-element-clickonce-application.md) | Обязательный элемент. Определяет основную сборку [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
-| [\<trustInfo> Элемент](../deployment/trustinfo-element-clickonce-application.md) | Определяет требования к безопасности приложения. | None |
+| [\<trustInfo> Элемент](../deployment/trustinfo-element-clickonce-application.md) | Определяет требования к безопасности приложения. | Отсутствуют |
 | [\<entryPoint> Элемент](../deployment/entrypoint-element-clickonce-application.md) | Обязательный элемент. Определяет точку входа кода приложения. | `name` |
-| [\<dependency> Элемент](../deployment/dependency-element-clickonce-application.md) | Обязательный элемент. Определяет все зависимости, необходимые для выполнения приложения. При необходимости определяет сборки, которые требуется установить предварительно. | None |
-| [\<file> Элемент](../deployment/file-element-clickonce-application.md) | Необязательный параметр. Определяет каждый несборочный файл, используемый приложением. Может включать данные изоляции модели COM, связанные с этим файлом. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
-| [\<fileAssociation> Элемент](../deployment/fileassociation-element-clickonce-application.md) | Необязательный параметр. Определяет расширение файла, связываемое с приложением. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
+| [\<dependency> Элемент](../deployment/dependency-element-clickonce-application.md) | Обязательный элемент. Определяет все зависимости, необходимые для выполнения приложения. При необходимости определяет сборки, которые требуется установить предварительно. | Отсутствуют |
+| [\<file> Элемент](../deployment/file-element-clickonce-application.md) | Необязательный элемент. Определяет каждый несборочный файл, используемый приложением. Может включать данные изоляции модели COM, связанные с этим файлом. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
+| [\<fileAssociation> Элемент](../deployment/fileassociation-element-clickonce-application.md) | Необязательный элемент. Определяет расширение файла, связываемое с приложением. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Файл манифеста приложения определяет приложение, развернутое с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Дополнительные сведения о [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] см. в разделе [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md).
 
 ## <a name="file-location"></a>Размещение файла
@@ -116,5 +116,5 @@ ms.locfileid: "94383122"
 </Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)

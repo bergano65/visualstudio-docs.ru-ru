@@ -23,15 +23,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 59d0e9122bf35ac6f40799d91d3b52614d027f50
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1c5f66042dad7051c856aa6158ea0a666a81e9b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846406"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938529"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Объединение настроек VBA и параметров на уровне документа
   Код Visual Basic для приложений (VBA) можно использовать в документе, который является частью настройки на уровне документа для Microsoft Office Word или Microsoft Office Excel. Код VBA можно вызывать в документе из сборки настройки, или проект можно настроить таким образом, чтобы позволить коду VBA в документе вызывать код в сборке настройки.
@@ -241,7 +241,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 
 4. Удаляет внедренные библиотеки типов из сборки.
 
-## <a name="troubleshoot"></a>Устранение неполадок
+## <a name="troubleshoot"></a>Диагностика
  Ниже перечислены некоторые распространенные ошибки и предложения по их устранению.
 
 |Ошибка|Предложение|

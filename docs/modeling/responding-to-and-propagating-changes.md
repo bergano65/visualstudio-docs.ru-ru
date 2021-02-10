@@ -8,21 +8,21 @@ helpviewer_keywords:
 - Domain-Specific Language, events
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e44def032854e46b00638cff77c8bea91eb0f09
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3a6066a40ea09698bec6caba38d5d55aa8b269e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937944"
 ---
 # <a name="respond-to-and-propagate-changes"></a>Реагирование и распространение изменений
 
 При создании, удалении или обновлении элемента можно написать код, который распространяет изменения на другие части модели или на внешние ресурсы, такие как файлы, базы данных или другие компоненты.
 
-## <a name="reference"></a>Ссылка
+## <a name="reference"></a>Справочные сведения
 
 В качестве рекомендации рассмотрите следующие методы в следующем порядке:
 

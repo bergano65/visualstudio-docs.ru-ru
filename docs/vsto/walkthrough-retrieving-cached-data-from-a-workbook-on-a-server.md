@@ -16,15 +16,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], server-side data access
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f32ad4ffe44eb725953bc664acf4c4c38da4b11e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 818c7c9aa5edeae32859d0b5af6449b513df1c85
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524847"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937450"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Пошаговое руководство. Извлечение кэшированных данных из книги на сервере
   В этом пошаговом руководстве показано, как извлечь данные из набора данных, кэшированного в Microsoft Office книгу Excel, не запуская Excel с помощью <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса.
@@ -80,7 +80,7 @@ ms.locfileid: "97524847"
 
 7. Убедитесь, что в диалоговом окне **Новый проект** не установлен флажок **создать каталог для решения** .
 
-8. Нажмите кнопку **ОК**.
+8. Нажмите кнопку **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **AdventureWorksDataset** в **Обозреватель решений** и открывает файл кода *Class1.CS* или *Class1. vb* .
 
@@ -138,7 +138,7 @@ ms.locfileid: "97524847"
 
 5. В поле **имя** введите **адвентуреворксрепорт**. Не изменяйте расположение.
 
-6. Нажмите кнопку **ОК**.
+6. Нажмите кнопку **OK**.
 
      Откроется **Мастер проектов набора средств Visual Studio для Office** .
 
@@ -227,7 +227,7 @@ ms.locfileid: "97524847"
 
 4. В поле **имя** введите **DataReader**. Не изменяйте расположение.
 
-5. Нажмите кнопку **ОК**.
+5. Нажмите кнопку **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **DataReader** в **Обозреватель решений** и открывает файл кода *Program.CS* или *Module1. vb* .
 
@@ -240,7 +240,7 @@ ms.locfileid: "97524847"
 
 2. На вкладке **.NET** выберите **Microsoft. VisualStudio. Tools. Applications. ServerDocument**.
 
-3. Нажмите кнопку **ОК**.
+3. Нажмите кнопку **OK**.
 
 4. В **Обозреватель решений** щелкните правой кнопкой мыши проект **DataReader** и выберите команду **Добавить ссылку**.
 
@@ -291,7 +291,7 @@ ms.locfileid: "97524847"
 
 2. Нажмите клавишу **Enter** , чтобы закрыть это приложение.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения о работе с кэшированными данными см. в следующих разделах:
 
 - Изменение данных в кэшированном наборе данных без запуска Excel. Дополнительные сведения см. [в разделе Пошаговое руководство. изменение кэшированных данных в книге на сервере](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - menus, creating in Office applications
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8b018687ec10eb725ece7d776277ea1c699dbbec
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: aabc7dec0a9965a055bce07cafeca25ac0165037
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937424"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Пошаговое руководство. создание контекстных меню для закладок
   В этом пошаговом руководстве показано, как создать контекстное меню для <xref:Microsoft.Office.Tools.Word.Bookmark> элементов управления в настройке уровня документа для Word. Когда пользователь щелкает правой кнопкой мыши текст закладки, появляется контекстное меню с параметрами пользователя для форматирования текста.
@@ -46,7 +46,7 @@ ms.locfileid: "97524215"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] либо [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]
 
 ## <a name="create-the-project"></a><a name="BKMK_CreateProject"></a> Создание проекта
  Первым шагом является создание проекта документа Word в Visual Studio.
@@ -187,7 +187,7 @@ ms.locfileid: "97524215"
 
 5. Убедитесь, что весь текст в `bookmark2` задается курсивом, а только часть текста в `bookmark1` этой области пересекается `bookmark2` курсивом.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Ниже приводятся некоторые из возможных последующих задач.
 
 - Напишите код для реагирования на события элементов управления ведущего приложения в Excel. Дополнительные сведения см. в разделе [Пошаговое руководство. Программирование для событий элемента управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).

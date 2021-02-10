@@ -16,15 +16,15 @@ helpviewer_keywords:
 - worksheets, automating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9e311a567d32ee083bcc13f417c248f5f3d3ee5a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b3305fdc8f4fbadb3dcdd9775c3a6fe3dac3a1fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526127"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937398"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Пошаговое руководство. Программирование событий элемента управления NamedRange
   В этом пошаговом руководстве показано, как добавить <xref:Microsoft.Office.Tools.Excel.NamedRange> элемент управления в Microsoft Office лист Excel и программировать его события с помощью средств разработки Office в Visual Studio.
@@ -73,7 +73,7 @@ ms.locfileid: "97526127"
 
 3. Убедитесь, что в редактируемом текстовом поле отображается **$A $1** и выбрана ячейка **a1** . Если это не так, щелкните ячейку **a1** , чтобы выбрать ее.
 
-4. Нажмите кнопку **ОК**.
+4. Нажмите кнопку **OK**.
 
      Ячейка **a1** преобразуется в диапазон с именем `namedRange1` . На листе нет видимых индикаторов, но оно `namedRange1` отображается в поле **имя** (расположено прямо над листом слева), если выбрана ячейка **a1** .
 
@@ -81,7 +81,7 @@ ms.locfileid: "97526127"
 
 6. Убедитесь, что в редактируемом текстовом поле отображается **$B $3** и выбрана ячейка **B3** . Если это не так, щелкните ячейку **B3** , чтобы выбрать ее.
 
-7. Нажмите кнопку **ОК**.
+7. Нажмите кнопку **OK**.
 
      Ячейка **B3** преобразуется в диапазон с именем `namedRange2` .
 
@@ -153,7 +153,7 @@ ms.locfileid: "97526127"
 
 6. Щелкните вне `namedRange1` и убедитесь, что текст, относящийся к <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> событию, вставлен синим текстом в `namedRange2` .
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  В этом пошаговом руководстве показаны основы программирования для событий <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления. Ниже приведена задача, которая может быть следующей:
 
 - Развертывание проекта. Дополнительные сведения см. в разделе [развертывание решения Office](../vsto/deploying-an-office-solution.md).

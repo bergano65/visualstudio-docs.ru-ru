@@ -26,15 +26,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], Windows Forms
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0309ea22444062b117d3684e32b56960585aa184
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b2d221cdc3e66205ef9bf3d816b6f226be69ff51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527058"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937177"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Общие сведения об элементах управления Windows Forms в документах Office
   Элементы управления Windows Forms — это объекты, с которыми пользователи могут взаимодействовать для ввода данных и работы с ними. В проектах для Microsoft Office Excel или Microsoft Office Word на уровне документа можно добавлять элементы управления Windows Forms в документ или книгу в проекте во время проектирования или добавить их программными средствами в среде выполнения. Эти элементы управления можно программными средствами добавить в любой открытый документ или лист во время выполнения в надстройке VSTO для Excel или Word.

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 7b98914d4e7fc2d63fd6cc9f79789c389e19b784
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606545"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936006"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Вспомогательные пакеты SDK для отладки
 Эти функции и объявления являются глобальными вспомогательными функциями для реализации модулей отладки, средств оценки выражений и поставщиков символов в C++.
@@ -123,7 +123,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="expression-evaluator-functions"></a>Функции оценки выражений
 
-|Функция|Описание|
+|Компонент|Описание|
 |--------------|-----------------|
 |жетиметрик|Извлекает значение метрики из реестра.|
 |сетиметрик|Задает указанное значение метрики в реестре.|
@@ -132,7 +132,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="exception-functions"></a>Функции исключения
 
-|Функция|Описание|
+|Компонент|Описание|
 |--------------|-----------------|
 |жетексцептионметрик|Извлекает значение метрики из реестра.|
 |сетексцептионметрик|Задает указанное значение метрики в реестре.|
@@ -141,7 +141,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="symbol-provider-functions"></a>Функции поставщика символов
 
-|Функция|Описание|
+|Компонент|Описание|
 |--------------|-----------------|
 |жетспметрик|Извлекает значение метрики из реестра.|
 |сетспметрик|Задает указанное значение метрики в реестре.|
@@ -149,7 +149,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="enumeration-functions"></a>Функции перечисления
 
-|Функция|Описание|
+|Компонент|Описание|
 |--------------|-----------------|
 |енумметриксектионс|Перечисляет все метрики для указанного типа метрики.|
 |енумдебуженгине|Перечисляет зарегистрированные модули отладки.|
@@ -426,5 +426,5 @@ HRESULT EnumMetricSections(
 
  Библиотека: libs\ad2de.lib, либс\дбгметрик.либ
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Справочник по интерфейсам API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

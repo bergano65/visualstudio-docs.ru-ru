@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, site workflows
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 86302a0b8eef4344a909ae3b8fb2c513c86c4ad6
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f2b722ccef084286287b9825c43fa9069f64dcc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913960"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937723"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Пошаговое руководство: Создание пользовательского действия рабочего процесса сайта
   В этом пошаговом руководстве показано, как создать настраиваемое действие для рабочего процесса уровня сайта с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . (Рабочие процессы на уровне сайта применяются ко всему сайту, а не только к списку на сайте.) Настраиваемое действие создает список объявлений резервной копии, а затем копирует в него содержимое списка объявлений.

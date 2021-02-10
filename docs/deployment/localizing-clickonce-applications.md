@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c4fe8d72cc8e2216ee8f5057d032c071974bf3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8a8e1dea5fb3716d593ca9b28f52ca0cd59a054f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938503"
 ---
 # <a name="localize-clickonce-applications"></a>Локализация приложений ClickOnce
 Локализация — это процедура адаптации вашего приложения к конкретному языку и региональным параметрам. Эта процедура включает перевод текста пользовательского интерфейса на определенный язык, использование подходящего формата дат и валюты, изменение размера элементов управления в формах и зеркальное отражение элементов управления справа налево, если необходимо.
@@ -80,7 +80,7 @@ ms.locfileid: "94350833"
 
 - Можно задать свойство <xref:System.Threading.Thread.CurrentUICulture%2A> в своем приложении программным образом. (Это свойство нужно задать до вызова метода <xref:System.Windows.Forms.Application.Run%2A>).
 
-## <a name="see-also"></a>См. также
-- [\<assemblyIdentity> дерев](../deployment/assemblyidentity-element-clickonce-deployment.md)
+## <a name="see-also"></a>См. также раздел
+- [Элемент \<assemblyIdentity>](../deployment/assemblyidentity-element-clickonce-deployment.md)
 - [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Глобализация Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)

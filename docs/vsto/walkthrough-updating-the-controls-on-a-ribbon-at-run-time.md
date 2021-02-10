@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], updating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2246dcdca1e754c885dd610f98986306a256228c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 181fafeb55720b5a97a635a4c2322cf7343643d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526054"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937190"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Пошаговое руководство. Обновление элементов управления на ленте во время выполнения
 
@@ -288,7 +288,7 @@ ms.locfileid: "97526054"
 
      Имя продукта добавляется в тело сообщения электронной почты.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о настройке пользовательского интерфейса Office см. в следующих разделах:
 

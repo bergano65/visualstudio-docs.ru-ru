@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0411f027b105622d806e123bd80f38c4b05281ca
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: def1ae862a7b9ba4def62cb590260c5a18758929
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913858"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937710"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Пошаговое руководство. Создание базового проекта определения сайта
   В этом пошаговом руководстве показано, как создать базовое определение сайта, содержащее визуальную веб-часть с некоторыми элементами управления. Для простоты в создаваемой визуальной веб-части есть только несколько элементов управления. Тем не менее можно создать более сложные определения сайтов SharePoint, которые содержат дополнительные функциональные возможности.
@@ -51,7 +51,7 @@ ms.locfileid: "96913858"
 
 1. В строке меню выберите **Файл** > **Создать** > **Проект**. Если в интегрированной среде разработки настроено использование параметров Visual Basic разработки, в строке меню выберите **файл**  >  **создать проект**.
 
-    Откроется диалоговое окно **Новый проект** .
+    Откроется диалоговое окно **Создание проекта** .
 
 2. Разверните узел **Visual C#** или узел **Visual Basic** , разверните узел **SharePoint** , а затем выберите узел **2010** .
 

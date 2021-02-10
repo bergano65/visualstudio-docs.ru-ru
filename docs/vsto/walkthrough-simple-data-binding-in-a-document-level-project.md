@@ -16,15 +16,15 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 31084703a581999a1f25bfc82db6c36d9e2cbf6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524107"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937415"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Пошаговое руководство. Простая привязка данных в проекте уровня документа
   В этом пошаговом руководстве демонстрируются основы привязки данных в проекте уровня документа. Одно поле данных в SQL Server базе данных привязано к именованному диапазону в Microsoft Office Excel. В этом пошаговом руководстве также показано, как добавлять элементы управления, позволяющие прокручивать все записи в таблице.
@@ -52,7 +52,7 @@ ms.locfileid: "97524107"
 
 - Разрешения на чтение и запись в базу данных SQL Server.
 
-## <a name="create-a-new-project"></a>Создание проекта
+## <a name="create-a-new-project"></a>Создание нового проекта
  На этом шаге вы создадите проект книги Excel.
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
@@ -185,7 +185,7 @@ ms.locfileid: "97524107"
 
 4. Нажмите другие кнопки прокрутки, чтобы убедиться, что запись изменилась ожидаемым образом.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  В этом пошаговом руководстве показаны основные принципы привязки именованного диапазона к полю в базе данных. Ниже приводятся некоторые из возможных последующих задач.
 
 - Кэшировать данные, чтобы их можно было использовать в автономном режиме. Дополнительные сведения см. в разделе [как кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e5acfd19-ac17-47f3-a31a-b2aa8baca36d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe22f18d4574ffde48cea975bff8d8f5801ca465
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e81cf833ea6e03a79d359144fa3e7e9a7024b74e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735069"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936123"
 ---
 # <a name="idebugbreakpointerrorevent2geterrorbreakpoint"></a>IDebugBreakpointErrorEvent2::GetErrorBreakpoint
 Возвращает объект [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) , описывающий причину, по которой точка останова не была привязана.
@@ -28,13 +28,13 @@ ms.locfileid: "80735069"
 ## <a name="syntax"></a>Синтаксис
 
 ```cpp
-HRESULT GetErrorBreakpoint( 
+HRESULT GetErrorBreakpoint( 
     IDebugErrorBreakpoint2** ppErrorBP
 );
 ```
 
 ```csharp
-int GetErrorBreakpoint( 
+int GetErrorBreakpoint( 
     out IDebugErrorBreakpoint2 ppErrorBP
 );
 ```

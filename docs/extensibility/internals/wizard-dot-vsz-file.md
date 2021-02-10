@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fe32028f271d02dd518509bb86906197e6acb4e
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5fa9b9e06ccb20e6a2859770c0637fc85422fd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487742"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935864"
 ---
 # <a name="wizard-vsz-file"></a>Файл мастера (VSZ-файл)
 
@@ -38,7 +38,7 @@ Param="WIZARDUI = FALSE"
 
 Ниже приведены части файла VSZ.
 
-|Отделение|Описание|
+|Часть|Описание|
 |----------|-----------------|
 |всвизард|Первый параметр в файле представляет собой номер версии формата файла шаблона. Этот номер версии должен быть 6,0, 7,0, 7,1 или 8,0. Другие числа не могут быть запущены и приводят к ошибке недопустимого формата.|
 |Мастер|Это поле содержит идентификатор ProgID в мастере, а также строковое представление идентификатора CLSID мастера, созданного интегрированной средой разработки.|

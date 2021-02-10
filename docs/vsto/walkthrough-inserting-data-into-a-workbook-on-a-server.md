@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workbooks [Office development in Visual Studio], inserting data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 23acfc79514d034faa6fce5c2c27a8edcaa4c58d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2456f92e6bd0b6e1a6b8bf6389718ec6a41342dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526216"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937443"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Пошаговое руководство. Вставка данных в книгу на сервере
   В этом пошаговом руководстве показано, как вставить данные в набор данных, кэшированный в Microsoft Office книгу Excel, не запуская Excel с помощью <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса.
@@ -79,7 +79,7 @@ ms.locfileid: "97526216"
 
 7. Убедитесь, что в диалоговом окне **Новый проект** не установлен флажок **создать каталог для решения** .
 
-8. Нажмите кнопку **ОК**.
+8. Нажмите кнопку **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **AdventureWorksDataset** в **Обозреватель решений** и открывает файл кода **Class1.CS** или **Class1. vb** .
 
@@ -137,7 +137,7 @@ ms.locfileid: "97526216"
 
 5. В поле **имя** введите **адвентуреворксрепорт**. Не изменяйте расположение.
 
-6. Нажмите кнопку **ОК**.
+6. Нажмите кнопку **OK**.
 
      Откроется **Мастер проектов набора средств Visual Studio для Office** .
 
@@ -218,7 +218,7 @@ ms.locfileid: "97526216"
 
 4. В поле **имя** введите объект **записи**. Не изменяйте расположение.
 
-5. Нажмите кнопку **ОК**.
+5. Нажмите кнопку **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **записи** в **Обозреватель решений** и открывает файл кода **Program.CS** или **Module1. vb** .
 
@@ -231,7 +231,7 @@ ms.locfileid: "97526216"
 
 2. На вкладке **.NET** выберите **Microsoft. VisualStudio. Tools. Applications. ServerDocument**.
 
-3. Нажмите кнопку **ОК**.
+3. Нажмите кнопку **OK**.
 
 4. В **Обозреватель решений** щелкните правой кнопкой мыши проект **записи** и выберите команду **Добавить ссылку**.
 
@@ -288,7 +288,7 @@ ms.locfileid: "97526216"
 
 3. Убедитесь, что <xref:Microsoft.Office.Tools.Excel.ListObject> заполнены данными после открытия книги.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о работе с кэшированными данными см. в следующих разделах:
 

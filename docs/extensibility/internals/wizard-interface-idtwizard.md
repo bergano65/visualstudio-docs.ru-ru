@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 09618d9d-d115-45b6-bccc-de328994b39c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e87759a979d0c680018d99a1e18a12e645f430c6
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: dc33d2fb37db7e021ce1752c642492a80956b61f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487768"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935941"
 ---
 # <a name="wizard-interface-idtwizard"></a>Интерфейс мастера (IDTWizard)
 Интегрированная среда разработки (IDE) использует <xref:EnvDTE.IDTWizard> интерфейс для взаимодействия с мастерами. Мастера должны реализовать этот интерфейс для установки в интегрированной среде разработки.

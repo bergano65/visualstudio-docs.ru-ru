@@ -14,21 +14,21 @@ helpviewer_keywords:
 ms.assetid: 2a7d5704-5e8c-452c-9ef3-5e8ec5e952fe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f852182baec22915f412a3753755b129053e0ad
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 6f71f042df1ef683ed48e2389e2c781dfb22bff1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383031"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939257"
 ---
 # <a name="clickonce-reference"></a>Справочные сведения ClickOnce
 На следующих страницах описывается структура XML-файлов, используемых для представления приложений ClickOnce.
 
 ## <a name="in-this-section"></a>Содержание раздела
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+ [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)
 
  Перечисляет и описывает элементы и атрибуты, составляющие манифест приложения.
 
@@ -44,7 +44,7 @@ ms.locfileid: "94383031"
 
  Перечисление неуправляемых общедоступных интерфейсов API из dfshim.dll.
 
-## <a name="reference"></a>Справочник
+## <a name="reference"></a>Справочные сведения
 
 ## <a name="related-sections"></a>Связанные разделы
  [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)

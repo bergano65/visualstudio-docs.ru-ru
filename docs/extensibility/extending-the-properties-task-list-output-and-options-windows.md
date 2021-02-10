@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b78197be71dca9fbabbfded90c4e07660a74db
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2586618b16afa8f8bfd6b7aa529486adf1d9ce41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995802"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938139"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Расширение свойств, список задач, вывода и параметров
 Вы можете получить доступ к любому окну инструментов в Visual Studio. В этом пошаговом руководстве показано, как интегрировать сведения о вашем окне инструментов в новую страницу **параметров** и новый параметр на странице **свойств** , а также как выполнять запись в окна **список задач** и **вывода** .

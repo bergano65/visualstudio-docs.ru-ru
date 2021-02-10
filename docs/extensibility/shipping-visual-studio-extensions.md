@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 812fc4f4e2f8dcf54876e2764f0c091f16348496
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 5c1b5787eaecd6b3787d77c7ecab70acae689df8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716007"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938100"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Доставка расширений Visual Studio
 После завершения разработки расширения вы можете установить его на других компьютерах, поделиться им с вашими друзьями и сотрудниками или опубликовать на Visual Studio Marketplace. В этом разделе описываются все вещи, необходимые для публикации и обслуживания расширения: работа с файлами VSIX, публикация, локализация и обновление.

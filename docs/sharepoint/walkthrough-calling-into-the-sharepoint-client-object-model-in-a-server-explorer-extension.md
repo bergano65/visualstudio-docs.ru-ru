@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c323f05d341af810eecafae43e8d04d3cba29054
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: a095e9d1e8fc48500bceac06732150a3067e2dd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937684"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Пошаговое руководство. вызов клиентской объектной модели SharePoint в расширении обозреватель сервера
   В этом пошаговом руководстве показано, как вызвать клиентскую объектную модель SharePoint из расширения для узла **подключений SharePoint** в **Обозреватель сервера**. Дополнительные сведения об использовании объектной модели клиента SharePoint см. в разделе [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -41,7 +41,7 @@ ms.locfileid: "96913949"
 > [!NOTE]
 > Расширение, создаваемое в этом пошаговом руководстве, напоминает расширение, созданное в [разделе Пошаговое руководство. расширение обозреватель сервера для показа веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). В этом пошаговом руководстве используется объектная модель сервера SharePoint, но в этом пошаговом руководстве выполняются те же задачи с помощью клиентской объектной модели.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
  Для выполнения этого пошагового руководства на компьютере разработчика потребуются следующие компоненты:
 
 - Поддерживаемые выпуски Windows, SharePoint и Visual Studio.
@@ -74,9 +74,9 @@ ms.locfileid: "96913949"
     > [!NOTE]
     > Узел **расширяемости** доступен только при установке пакета SDK для Visual Studio. Дополнительные сведения см. в разделе Предварительные требования ранее в этом разделе.
 
-4. В верхней части диалогового окна выберите **.NET Framework 4,5** в списке версий .NET Framework.
+4. В верхней части диалогового окна выберите **платформа .NET Framework 4,5** в списке версий платформа .NET Framework.
 
-     Для расширений инструментов SharePoint требуются функции в этой версии .NET Framework.
+     Для расширений инструментов SharePoint требуются функции в этой версии платформа .NET Framework.
 
 5. Выберите шаблон **проекта VSIX** .
 
@@ -90,7 +90,7 @@ ms.locfileid: "96913949"
 
 2. В диалоговом окне  **Новый проект** разверните узлы **Visual C#** или **Visual Basic** , а затем выберите **Windows**.
 
-3. В верхней части диалогового окна выберите **.NET Framework 4,5** в списке версий .NET Framework.
+3. В верхней части диалогового окна выберите **платформа .NET Framework 4,5** в списке версий платформа .NET Framework.
 
 4. В списке шаблонов проектов выберите **Библиотека классов**.
 

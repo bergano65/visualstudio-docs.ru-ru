@@ -13,15 +13,15 @@ helpviewer_keywords:
 - content controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2dd7e75048a84a4e235390b99d17d48dfad039ec
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4bd636070a8375b6761cb2d3ab62d08be4302db4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524985"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937502"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Пошаговое руководство. Создание шаблона с помощью элементов управления содержимым
   В этом пошаговом руководстве показано, как создать настройку на уровне документа, использующую элементы управления содержимым, для создания структурированного и повторно используемого содержимого в шаблоне Microsoft Office Word.
@@ -231,7 +231,7 @@ ms.locfileid: "97524985"
 
 7. Закройте шаблон.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения об использовании элементов управления содержимым см. в следующем разделе:
 
 - Привязка элементов управления содержимым к фрагментам XML-кода, которые также называют пользовательскими XML-частями, внедренным в документ. Дополнительные сведения см. [в разделе Пошаговое руководство. Привязка элементов управления содержимым к пользовательским XML-частям](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
