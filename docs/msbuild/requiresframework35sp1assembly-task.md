@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 755c018a-8a8b-4c94-8aee-3f171fc419e5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1819f72cc0eef389a3ef46148d4462fbd610e1a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 04b435df9b028689ea6c0d1f2c61e7e8df8bb8bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931764"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly - задача
 
@@ -44,7 +44,7 @@ ms.locfileid: "93048692"
 |`ReferencedAssemblies`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает сборки, на которые в проекте есть ссылки.|
 |`RequiresMinimumFramework35SP1`|Необязательный выходной параметр `Boolean`.<br /><br /> Если задано значение `true`, для приложения требуется платформа .NET Framework 3.5 с пакетом обновления 1 (SP1).|
 |`SigningManifests`|Необязательный выходной параметр `Boolean`.<br /><br /> Если задано значение `true`, манифесты ClickOnce подписаны.|
-|`SuiteName`|Необязательный параметр `String`.<br /><br /> Задает имя папки в меню **Пуск** , куда будет установлено приложение.|
+|`SuiteName`|Необязательный параметр `String`.<br /><br /> Задает имя папки в меню **Пуск**, куда будет установлено приложение.|
 |`TargetFrameworkVersion`|Необязательный параметр `String`.<br /><br /> Задает версию платформы .NET Framework, для которой предназначено приложение.|
 
 ## <a name="remarks"></a>Remarks

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1c10cd4c-2fdd-48c9-b562-a334b3b2df6c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f5e743210cebfc904c88c8f45e772db9beeda40
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 531ff082197ca1f7e63008aeda1c27e083b569de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722858"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922431"
 ---
 # <a name="noise-reduction-percentage"></a>Процент снижения шума
 По умолчанию процентное значение снижения шума равно 2. В дереве вызовов отображаются только те записи, процент инклюзивного времени которых больше или равен значению этого параметра. Изменяя это значение, можно управлять числом записей, отображаемых в дереве вызовов. Например, при изменении значения на 10 в дереве вызовов будут отображаться только те записи, инклюзивное время которых больше или равно 10 %. Увеличив значение этого параметра, можно сосредоточиться на записях, которые наиболее ощутимо влияют на производительность процесса.

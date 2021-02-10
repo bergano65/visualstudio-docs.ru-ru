@@ -7,19 +7,19 @@ ms.topic: how-to
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da09feffc4d2f804660f02dbda6055bf59099500
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 7f4abcdf5648031be9b76ba3f25e0a8f33d4efba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134306"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930971"
 ---
 # <a name="how-to-export-a-shader"></a>Практическое руководство. Экспорт шейдера
 
-В этом документе показано, как использовать **конструктор шейдеров** , чтобы экспортировать шейдер DGSL для использования в приложении.
+В этом документе показано, как использовать **конструктор шейдеров**, чтобы экспортировать шейдер DGSL для использования в приложении.
 
 ## <a name="export-a-shader"></a>Экспорт шейдера
 
@@ -27,7 +27,7 @@ ms.locfileid: "93134306"
 
 1. В Visual Studio откройте файл **Visual Shader Graph (.dgsl)**.
 
-     Если у вас нет файла **Визуальный граф шейдера (DGSL)** , создайте его, как описано в разделе [Практическое руководство. Создание простейшего шейдера цвета](../designers/how-to-create-a-basic-color-shader.md).
+     Если у вас нет файла **Визуальный граф шейдера (DGSL)**, создайте его, как описано в разделе [Практическое руководство. Создание простейшего шейдера цвета](../designers/how-to-create-a-basic-color-shader.md).
 
 2. На панели инструментов **Конструктор шейдеров** выберите **Дополнительно** > **Экспорт** > **Экспортировать как**. Откроется диалоговое окно **Экспортировать шейдер**.
 

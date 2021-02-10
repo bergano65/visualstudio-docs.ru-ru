@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f63c7232b52ebe849722147e007ab70527c311
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 558a54f6ddcf4945da4937f75b8aa133949349a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931088"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT-отладка и оптимизация
 Проще всего выполнять отладку кода, когда он **НЕ** оптимизирован. Когда код оптимизирован, компилятор и среда выполнения вносят изменения в выпущенный код ЦП, поэтому он выполняется быстрее, но имеет не такое прямое сопоставление с начальным исходным кодом. Если сопоставление менее прямое, отладчикам часто не удается определить значения локальных переменных и пошаговое выполнение кода и точки останова могут не работать должным образом.

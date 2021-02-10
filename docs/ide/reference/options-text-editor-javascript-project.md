@@ -12,19 +12,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 86ee8f59a91cc772d6a86a9e29268b4465b2c639
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0b30aaec3087cece63e392cf7170ac85f6be0ad7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947704"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932336"
 ---
 # <a name="options-text-editor-javascript-project"></a>"Параметры", "Текстовый редактор", JavaScript, "Проект"
 
-В диалоговом окне **Параметры** перейдите на страницу **Проект** , чтобы определить параметры проекта JavaScript и TypeScript в редакторе кода. Чтобы открыть эту страницу, выберите в строке меню **Сервис** > **Параметры** , затем разверните **Текстовый редактор** > **JavaScript/TypeScript** > **Проект** .
+В диалоговом окне **Параметры** перейдите на страницу **Проект**, чтобы определить параметры проекта JavaScript и TypeScript в редакторе кода. Чтобы открыть эту страницу, выберите в строке меню **Сервис** > **Параметры**, затем разверните **Текстовый редактор** > **JavaScript/TypeScript** > **Проект**.
 
 ## <a name="project-analysis-options"></a>Параметры анализа проекта
 
@@ -42,7 +42,7 @@ ms.locfileid: "91947704"
 
 ## <a name="compile-on-save"></a>Компилирование при сохранении
 
-Эти параметры позволяют определить, будут ли файлы TypeScript, которые не являются частью проекта, компилироваться автоматически. Visual Studio выполняет сборку с использованием последней версии TypeScript, которая находится в папке *C:\Program Files (x86)\Microsoft SDKs\TypeScript* .
+Эти параметры позволяют определить, будут ли файлы TypeScript, которые не являются частью проекта, компилироваться автоматически. Visual Studio выполняет сборку с использованием последней версии TypeScript, которая находится в папке *C:\Program Files (x86)\Microsoft SDKs\TypeScript*.
 
 Установите флажок и выберите используемый тип создания кода.
 
@@ -56,7 +56,7 @@ ms.locfileid: "91947704"
 
 ## <a name="ecmascript-version-for-files-that-are-not-part-of-a-project"></a>Версия ECMAScript для файлов, которые не являются частью проекта
 
-Эти параметры позволяют выбрать версию ECMAScript для файлов, которые не являются частью проекта. Вы можете выбрать следующие версии: **ECMAScript 3** , **ECMAScript 5** или **ECMAScript 6** .
+Эти параметры позволяют выбрать версию ECMAScript для файлов, которые не являются частью проекта. Вы можете выбрать следующие версии: **ECMAScript 3**, **ECMAScript 5** или **ECMAScript 6**.
 
 ## <a name="jsx-emit-for-tsx-files-that-are-not-part-of-a-project"></a>Вывод JSX для TSX-файлов, которые не являются частью проекта
 
@@ -66,8 +66,8 @@ ms.locfileid: "91947704"
 
 |Параметр|Описание|
 |------------|-----------------|
-|**Платформа React**|Если выбран этот параметр, текстовый редактор добавляет файлу расширение *.js* .|
-|**Preserve**|Если выбран этот параметр, текстовый редактор сохраняет JSX как часть выходных данных и добавляет файлу расширение *.jsx* .|
+|**Платформа React**|Если выбран этот параметр, текстовый редактор добавляет файлу расширение *.js*.|
+|**Preserve**|Если выбран этот параметр, текстовый редактор сохраняет JSX как часть выходных данных и добавляет файлу расширение *.jsx*.|
 
 ## <a name="see-also"></a>См. также
 

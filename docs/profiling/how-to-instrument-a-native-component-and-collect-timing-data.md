@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 36883074-9be8-4e90-a66f-7e87f21fcd30
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f9deae5372b6fdc22728fbf7df0c678ffb39c45
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 7d63ec7bded9cc19e31ee0d6f8ce7346990bf7aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929138"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Практическое руководство. Инструментирование собственного автономного компонента и сбор данных о времени с помощью профилировщика из командной строки
 В этом разделе описывается использование [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] программ командной строки для средств профилирования с целью инструментирования таких собственных компонентов, как *EXE-* или *DLL-* файлы C++, а также для сбора подробных данных по использованию времени.
