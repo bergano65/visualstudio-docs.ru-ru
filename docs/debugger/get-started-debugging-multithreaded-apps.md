@@ -14,15 +14,15 @@ helpviewer_keywords:
 - tutorials, multithreaded debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 30fd29357ab8b42ea6a8baa6412f9ccf7eafed28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28f9ab13cca4f1d31973f9526063eaa56574dcf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350515"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870523"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Начало отладки многопоточных приложений (C#, Visual Basic, C++)
 
@@ -242,7 +242,7 @@ Visual Studio предоставляет несколько средств и э
 
 3. В редакторе исходного кода найдите строку, содержащую точку останова.
 
-### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>Обнаружение маркера потока  
+### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>Обнаружение маркера потока  
 
 1. На панели инструментов отладки нажмите кнопку **Показать потоки в исходном коде** ![Показать потоки в исходном коде](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 

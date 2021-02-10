@@ -12,15 +12,15 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 86f2d9397248806a4c996fabfcd20d325afbf533
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3a0fccfd97024a7e37cea772a820033786e662ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852528"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871082"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Ошибка: Не удалось подключиться к SQL Server на удаленном компьютере
 Не удалось подключиться к SQL Server на удаленном компьютере *имя*. Доступ запрещен. Проверьте, что на удаленном компьютере установлен удаленный отладчик. Если удаленный компьютер не входит в домен, или если Visual Studio выполняется с локальной учетной записью, удаленный компьютер должен иметь учетную запись с тем же именем и паролем, что и локальная учетная запись.

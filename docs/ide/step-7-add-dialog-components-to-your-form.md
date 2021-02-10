@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 37cbd2ca1f0207eaf2a41f6a08248bcedcfbe5bb
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: a485433ef73ef853a186a5b441396f6d5a57f679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479476"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868859"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Шаг 7. Добавление компонентов диалогового окна в форму
 
@@ -34,7 +34,7 @@ ms.locfileid: "96479476"
 
 1. Чтобы добавить в форму компонент с именем **openFileDialog1**, дважды щелкните элемент **OpenFileDialog**. Чтобы добавить в форму компонент с именем **colorDialog1**, дважды щелкните на **панели элементов** элемент **ColorDialog**. (такой компонент используется в следующем шаге руководства). В нижней части **конструктора Windows Forms** должно быть поле (под формой **программы просмотра изображений**), которое содержит значок для каждого из двух добавленных компонентов диалоговых окон, как показано на рисунке ниже.
 
-     ![Компоненты диалоговых окон](../ide/media/express_dialogsadded.png)<br>**_Компоненты_* _ _диалоговых окон*
+     ![Компоненты диалоговых окон](../ide/media/express_dialogsadded.png)<br>***Компоненты** _ _диалоговых окон*
 
 1. Выберите значок **openFileDialog1** в области в нижней части **конструктора Windows Forms**. Установите значения двух свойств.
 

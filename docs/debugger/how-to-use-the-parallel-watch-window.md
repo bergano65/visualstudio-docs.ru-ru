@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 28004d9b-420c-48f7-b80e-ab1519802558
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28aeffb629a44c296fb9a349e165c7ce88f70b0c
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: cea9fb1733e479f413368f0f4c5c9fccfc523f6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840955"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Установка контрольных значений для переменных в параллельных потоках в Visual Studio (C#, Visual Basic, C++)
 В окне "Контроль параллельных данных" могут одновременно отображаться все значения одного выражения, которые оно содержит в разных потоках. Каждая строка представляет поток, который выполняется в приложении, при этом один поток может быть представлен несколькими строками. Если точнее, то каждая строка представляет вызов функции, сигнатура которой соответствует функции в текущем кадре стека. Элементы, содержащиеся в столбцах, можно сортировать, переупорядочивать, удалять и группировать. Можно помечать потоки и снимать с них пометки, можно замораживать (приостанавливать) и размораживать (возобновлять) потоки. Окно **Контроль параллельных данных** содержит следующие столбцы:

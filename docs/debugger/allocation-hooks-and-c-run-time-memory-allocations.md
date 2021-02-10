@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: cc34ee96-3d91-41bd-a019-aa3759139e7e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f2c9225281952700b118f13b20a11f7619307b8e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 49739a0c07426329dc20f7fd459febcc70866ec9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866064"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Ловушки выделения и выделения памяти CRT
 Для функций-ловушек выделения есть важное ограничение: они должны пропускать блоки `_CRT_BLOCK`. Это выделения памяти, создаваемые внутри библиотеки CRT ее функциями при любом вызове функций CRT, выделяющих внутреннюю память. Вы можете исключить блоки `_CRT_BLOCK` из обработки путем добавления в начало функции-ловушки выделения следующего кода:

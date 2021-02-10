@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97751ae2cbc44429bc1c0fb363366faa830beb68
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 07891e5bcbcab35a4ec5652676a014b87dd32d43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852736"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871641"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Ошибка: Целевой процесс завершил работу с кодом code при вычислении значения функции function
 
@@ -28,7 +28,7 @@ ms.locfileid: "90852736"
 
 Для этой проблемы есть два возможных решения.
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Решение 1. Запрет вызова метода получения свойств или метода ToString в отладчике 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Решение 1. Запрет вызова метода получения свойств или метода ToString в отладчике 
 
 В сообщении об ошибке будет указано имя функции, которую отладчик пытался вызвать. Используя это имя функции, попробуйте повторно вычислить ее значение в окне **Интерпретация**, чтобы отладить вычисление. При вычислении в окне **Интерпретация** отладка не завершается, так как отладчик в этом случае прерывает работу по необработанным исключениям, в отличие от неявных вычислений в окнах **Видимые, Локальные, Контрольные значения**.
 

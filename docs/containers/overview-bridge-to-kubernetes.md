@@ -6,15 +6,15 @@ ms.topic: conceptual
 description: Описываются процессы использования функции Bridge to Kubernetes для подключения компьютера разработчика к кластеру Kubernetes.
 keywords: Bridge to Kubernetes, Docker, Kubernetes, Azure, контейнеры
 monikerRange: '>=vs-2019'
-manager: jillfra
+manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: c6a85faf2d1451dcab9bc822fcdf228513b90dca
-ms.sourcegitcommit: ab60fd7b4a8219e378d100df1386e1b038ecdafc
+ms.openlocfilehash: 253b50ff4778458b28375b06b7fb7f24f4d85054
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96595270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867572"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Как работает Bridge to Kubernetes
 

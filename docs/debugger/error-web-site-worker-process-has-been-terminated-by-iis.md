@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f5991bf0b14cf4952303dba599ad47e4c8fd27a9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: cf7832d71ab86c6dab973a07dbc46217274cb83b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852417"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870900"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Ошибка: Рабочий процесс веб-узла был завершен службами IIS
 Отладчик остановил выполнение кода на веб–узле. Службы ISS при этом полагают, что рабочий процесс перестал отвечать. Поэтому службы IIS прекратили выполнение рабочего процесса.

@@ -6,15 +6,15 @@ ms.date: 01/23/2018
 ms.topic: troubleshooting
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a07f92eccd7884ea3cc3871d04285a82cb5cb62e
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: bb7d2d15e9cb04b541fba3d68607fb250054b707
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148056"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870432"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Устранение неполадок с точками останова в отладчике Visual Studio
 
