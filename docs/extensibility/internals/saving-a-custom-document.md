@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2d2aa249d6944e33ab9556000c483efdec78f20
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: a3be218565feb26d66f623a281fc9277b7fa8fb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958522"
 ---
 # <a name="saving-a-custom-document"></a>Сохранение настраиваемого документа
 Среда обрабатывает команды **сохранить**, **Сохранить как** и **сохранить все** . Когда пользователь нажимает кнопку **сохранить**, **Сохранить как** **или сохранить все** в меню **файл** или закрывает решение, в результате чего происходит сохранение всего процесса.
 
- ![Сохранение в редакторе клиентов](../../extensibility/internals/media/private.gif "Личные") Сохранение, сохранение как и сохранение всей обработки команд для пользовательского редактора
+ ![Сохранение в редакторе клиентов](../../extensibility/internals/media/private.gif "Частные") Сохранение, сохранение как и сохранение всей обработки команд для пользовательского редактора
 
  Этот процесс описан в следующих шагах.
 

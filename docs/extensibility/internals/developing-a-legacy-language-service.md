@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7876b590cb5b09cf5db571ba1145f6bf747e5e5
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5f61337b6dbdef158c7fb7ebe42d0af9f79822fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959536"
 ---
 # <a name="develop-a-legacy-language-service"></a>Разработка языковой службы прежних версий
 В этом разделе содержатся ссылки на разделы, которые помогут создать устаревшую языковую службу.
@@ -33,7 +33,7 @@ ms.locfileid: "96329748"
 > [!NOTE]
 > Рекомендуется как можно скорее начать использовать новый API редактора. Это улучшит производительность языковой службы и позволит использовать новые функции редактора.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 - [Модель языковой службы прежних версий](../../extensibility/internals/model-of-a-legacy-language-service.md)
 
  Предоставляет модель службы минимального языка для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] базового редактора. Эту модель можно использовать в качестве руководств по созданию собственной языковой службы.

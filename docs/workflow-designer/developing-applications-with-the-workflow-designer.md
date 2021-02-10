@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88825e5328fc11702a503311b227fde155c79d73
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: ee870e3c3794fc0f87b9e29e2bff8b20b79d84fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438078"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959822"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Разработка приложений с конструктором рабочих процессов
 
@@ -41,10 +41,10 @@ ms.locfileid: "94438078"
 
    ![Компонент Windows Workflow Foundation для Visual Studio](media/windows-workflow-foundation-component.png)
 
-1. Выберите **Изменить**.
+1. Нажмите кнопку **Изменить**.
 
    Visual Studio устанавливает компонент **Windows Workflow Foundation** .
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Windows Workflow Foundation (.NET Framework)](/dotnet/framework/windows-workflow-foundation/index)
+- [Windows Workflow Foundation (платформа .NET Framework)](/dotnet/framework/windows-workflow-foundation/index)

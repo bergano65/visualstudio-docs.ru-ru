@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: a0046c47-26c8-4bec-96a0-81da05e5104a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: c91fef6cc98ae270420354a1287c05e78b38ac3e
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 3808f004d9813e846a10c2b672b6406f9cc54cde
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801116"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958886"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к службе .NET для сбора статистики приложения с помощью командной строки
 В этой статье описано, как с помощью программ командной строки для средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] подключить профилировщик к службе .NET Framework и собрать статистику производительности с помощью метода выборки.

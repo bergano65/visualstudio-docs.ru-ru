@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55e17693bee1ced0354b21ee5cc736961a994c6f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: f022023ec03ddb280424f3c47944c91e8fa696de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958392"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Запись в хранилище параметров пользователя
 Параметры пользователя — это доступные для записи параметры, такие как шаблоны в диалоговом окне **Сервис/параметры** , окна свойств и некоторые другие диалоговые окна. Расширения Visual Studio могут использовать их для хранения небольших объемов данных. В этом пошаговом руководстве показано, как добавить приложение "Блокнот" в Visual Studio как внешнее средство, читая данные из хранилища пользовательских параметров и записывая в него.
