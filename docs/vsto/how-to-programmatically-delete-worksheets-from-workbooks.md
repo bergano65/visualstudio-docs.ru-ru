@@ -13,15 +13,15 @@ helpviewer_keywords:
 - worksheets, deleting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e9d1330c454e0b9b9f5ad4624c18e4ed1055343d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2289309932dcd1d946fc775de60a0e07892be222
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527785"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963903"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Руководство. Программное удаление листов из книг
   В книге можно удалить любой лист. Для удаления листа используйте ведущий элемент листа или получите доступ к листу с помощью коллекции листов книги.

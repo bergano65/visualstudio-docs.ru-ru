@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1ccab1eddf38e2f93cb00f1f5fdea6ce09f2f05
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 13722aa9968e21d4208ad5aa99fefe4c985ffb79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328435"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963501"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Разработка файлов XML-таблицы команд (. vsct)
 Файл XML-таблицы команд (*. vsct*) описывает макет и внешний вид элементов команд для VSPackage. К элементам команды относятся кнопки, поля со списком, меню, панели инструментов и группы элементов команд. В этой статье описываются XML-файлы командных таблиц, их влияние на элементы команд и меню, а также способы их создания.

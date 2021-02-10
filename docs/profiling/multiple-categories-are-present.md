@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f5c7ec07-8052-4df7-a0ca-7ec8bb3eee18
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b120d4433bafb5f248a268b140d940b3c6e2da
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 440a7e48414e2eddcbb0911ba3e8a6605deea22d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964788"
 ---
 # <a name="multiple-categories-are-present"></a>Наличие нескольких категорий
 Выбран раздел, который содержит более одного вида операций за указанный диапазон времени. Обратите внимание на то, что два цвета отображаются вертикально друг над другом. Эти цвета обозначают две наиболее частые операции за указанный диапазон времени. Частота этих двух операций отображается относительно друг друга в виде третей или половин вертикального столбца. Чтобы просмотреть дополнительные сведения, попробуйте увеличить масштаб этого раздела представления потоков.

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - appointments [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 56bd9876fa24610412d66e71800a24b413dac576
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0520014edc97f7517338652fa89e4c8269ba552c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963930"
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>Руководство. Программное удаление встреч
   В этом примере выполняется удаление одного экземпляра повторяющейся встречи. В примере предполагается, что экземпляр повторяющейся встречи происходит 28 июня 2006 г. в 08:00.

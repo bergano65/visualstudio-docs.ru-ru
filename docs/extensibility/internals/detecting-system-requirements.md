@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4befcf3950c41beba2440e6f023983269137b1f
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 20287ba123c5736c9eb7077622623f4a739bde5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329813"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963475"
 ---
 # <a name="detect-system-requirements"></a>Определение требований к системе
 Пакет VSPackage не может работать, если не установлена Visual Studio. При использовании установщик Windows Майкрософт для управления установкой пакета VSPackage можно настроить установщик, чтобы определить, установлена ли Visual Studio. Кроме того, его можно настроить для проверки системы на наличие других требований, например конкретной версии Windows или определенного объема ОЗУ.
@@ -26,7 +26,7 @@ ms.locfileid: "96329813"
 ## <a name="detect-visual-studio-editions"></a>Обнаружение выпусков Visual Studio
  Чтобы определить, установлен ли выпуск Visual Studio, убедитесь, что значение раздела реестра **Install** — *(REG_DWORD) 1* в соответствующей папке, как указано в следующей таблице. Обратите внимание, что существует иерархия выпусков Visual Studio:
 
-1. Предприятие
+1. Корпорация
 
 2. Professional
 
