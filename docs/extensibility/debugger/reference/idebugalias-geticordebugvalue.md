@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b9eb39ee-84af-4ace-9cfe-236b3d48aff5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fd01785fee7ce65296bac940fb19819415139d53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ba5456ba3beabb1d5418d739be2aa74838daa41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947181"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 Извлекает интерфейс управляемого кода, представляющий значение, связанное с этим псевдонимом.
@@ -28,14 +28,14 @@ ms.locfileid: "80736478"
 ## <a name="syntax"></a>Синтаксис
 
 ```cpp
-HRESULT GetICorDebugValue(
-   IUnknown** ppUnk
+HRESULT GetICorDebugValue(
+   IUnknown** ppUnk
 );
 ```
 
 ```csharp
 int GetICorDebugValue(
-   out object ppUnk
+   out object ppUnk
 );
 ```
 
@@ -47,7 +47,7 @@ int GetICorDebugValue(
  В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Remarks
- Этот метод применяется только к управляемым значениям ( `ICorDebugValue` интерфейс доступен в .NET Framework и определен в .NET Framework SDK в файле CorDebug. IDL).
+ Этот метод применяется только к управляемым значениям ( `ICorDebugValue` интерфейс доступен в платформа .NET Framework и определен в платформа .NET Framework SDK в файле CorDebug. IDL).
 
 ## <a name="see-also"></a>См. также раздел
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

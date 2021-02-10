@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72963660e4f50a72cdbc04bab4833b397d15fc27
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 8bec31bb49433b7058ca7021091582f89933f0b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560672"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947688"
 ---
 # <a name="implement-a-port-supplier"></a>Реализация поставщика порта
 Поставщик порта предоставляет порты по запросу к диспетчеру отладки сеансов (SDM). Поставщик порта должен быть реализован при отладке на компьютере, отличном от DCOM, или при необходимости поддержки нового устройства. Например, чтобы обеспечить отладку на мобильном телефоне, можно настроить поставщика порта, который предоставляет порты, которые подключаются к сотовому телефону (возможно, с помощью ИНФРАКРАСного соединения или подключения к ячейке) и перечисляют процессы и программы, запущенные на телефоне.
 
  Для отладки программ на компьютерах под управлением Windows (включая удаленную отладку) Visual Studio предоставляет поставщики портов для процессов машинного кода и среды CLR, поэтому в таких случаях нет необходимости настраивать собственный поставщик порта.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
  [Реализация и регистрация поставщика портов](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md) Описывает взаимодействие SDM с поставщиком порта и его портами.
 
  [Требуемые интерфейсы поставщика портов](../../extensibility/debugger/required-port-supplier-interfaces.md) Документирует интерфейсы, которые необходимо реализовать для получения поставщика порта.
@@ -33,5 +33,5 @@ ms.locfileid: "96560672"
 ## <a name="related-sections"></a>Связанные разделы
  [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md). Описываются основные понятия архитектуры отладки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Расширяемость отладчика Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
