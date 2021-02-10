@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f3694eff6cd48cc01c0e244d3a068f3bb13fda
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 65a97a32baab159ad2c0bd1ac189dedbf09fe98e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948443"
 ---
 # <a name="program-nodes"></a>Узлы программы
 В архитектуре отладчика — *узел программы*:
@@ -35,7 +35,7 @@ ms.locfileid: "96606493"
 
   Перед присоединением программы к среде IDE требуется только упрощенное описание программы. Эти сведения можно получить из узла программы. После того как программа подключена к, в интегрированной среде разработки отображаются более подробные сведения, например список всех потоков, выполняющихся в программе. Эти сведения получаются из самой программы.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Programs](../../extensibility/debugger/programs.md)
 - [Процессы](../../extensibility/debugger/processes.md)
 - [Модуль отладки](../../extensibility/debugger/debug-engine.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: c215630e522adabdbd285e00d4bcd87cae22a931
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a438e3e30d541b641b0f9ae74160ee4e22b131b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738035"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948404"
 ---
 # <a name="bp_location_code_address"></a>BP_LOCATION_CODE_ADDRESS
 Описывает расположение точки останова по адресу в коде.
@@ -35,7 +35,7 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 } BP_LOCATION_CODE_ADDRESS;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 `bstrContext`\
 Контекст точки останова, обычно имя метода или функции, как показано в стеке вызовов.
 

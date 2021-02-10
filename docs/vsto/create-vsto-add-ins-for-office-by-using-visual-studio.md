@@ -1,6 +1,6 @@
 ---
 title: Создание надстроек VSTO для Office с помощью Visual Studio
-description: Узнайте, как можно использовать средства разработчика Microsoft Office в Visual Studio для создания .NET Framework приложений, расширяющих Office.
+description: Узнайте, как можно использовать средства разработчика Microsoft Office в Visual Studio для создания платформа .NET Framework приложений, расширяющих Office.
 titleSuffix: ''
 ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
@@ -10,15 +10,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 50337b728647b5e15a877216713cd6fc9823742a
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 611feb69dc4c5ebdd340a61c49e76e0d7c33e713
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947962"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Создание надстроек VSTO для Office с помощью Visual Studio
   Вы можете использовать инструменты разработчика Microsoft Office в Visual Studio для создания приложений платформы .NET Framework, которые расширяют возможности Office. Эти приложения также называются *решениями Office*.
@@ -104,7 +104,7 @@ ms.locfileid: "96847979"
 
 - [Управляемый Справочник &#40;разработке решений Office в Visual Studio&#41;](managed-reference-office-development-in-visual-studio.md)
 
- Ссылки на сведения о пространствах имен API и типах, используемые в проектах Office, который предназначены для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Справочную документацию по API о пространствах имен и типах, используемых в проектах Office, предназначенных для .NET Framework 3,5, см. в следующем разделе справочника по Visual Studio 2008: [2007 Справочник по управляемым системам](managed-reference-office-development-in-visual-studio.md).
+ Ссылки на сведения о пространствах имен API и типах, используемые в проектах Office, который предназначены для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Справочную документацию по API о пространствах имен и типах, используемых в проектах Office, предназначенных для платформа .NET Framework 3,5, см. в следующем разделе справочника по Visual Studio 2008: [2007 Справочник по управляемым системам](managed-reference-office-development-in-visual-studio.md).
 
 - [Справочник по неуправляемым API &#40;разработке решений Office в Visual Studio&#41;](unmanaged-api-reference-office-development-in-visual-studio.md)
 
@@ -119,4 +119,4 @@ ms.locfileid: "96847979"
 
 - [Разработка приложений в Visual Studio](/previous-versions/h8w79z10(v=vs.140)) Содержит ссылки на разделы, в которых объясняется, как можно использовать Visual Studio для проектирования, разработки, отладки и развертывания веб-приложений, веб-служб XML и традиционных клиентских приложений.
 
-- [.NET Framework программировании в Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Обсуждается разработка приложений с помощью .NET Framework в Visual Basic и Visual C#.
+- [Платформа .NET Framework программировании в Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Обсуждается разработка приложений с помощью платформа .NET Framework в Visual Basic и Visual C#.

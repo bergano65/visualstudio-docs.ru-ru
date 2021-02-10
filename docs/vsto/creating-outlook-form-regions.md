@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], form regions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3273c02416cac54dfd244ba4f163fb5d726413c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ba2c4412b344a37e1b1db74cdddea8c5b60b69d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847966"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947897"
 ---
 # <a name="create-outlook-form-regions"></a>Создание областей формы Outlook
   Для настройки форм Microsoft Office Outlook можно использовать области формы. Visual Studio предоставляет расширенные средства, которые упрощают процесс проектирования, разработки и отладки областей формы.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 640b09620022d17fd6b7c8758f1dec4f9a3936eb
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: f9378dd2aa1ed52408e3aa4d0e9027a34d833dab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606532"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948456"
 ---
 # <a name="program-control"></a>Управление программой
 В отладке Visual Studio все следующие пошаговые и продолжающиеся подпрограммы выполняются на уровне программы:
@@ -48,5 +48,5 @@ ms.locfileid: "96606532"
 
  Для многопоточных программ также необходимо реализовать метод [IDebugProgram2:: EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) и все методы интерфейса [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Контроль выполнения и оценка состояния](../../extensibility/debugger/execution-control-and-state-evaluation.md)

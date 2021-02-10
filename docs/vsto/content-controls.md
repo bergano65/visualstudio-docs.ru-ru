@@ -37,15 +37,15 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a34211c7fb1fa001719219b7d08baab65340bde5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ce692bf10c5473c648fd6587b6b6568d369ed496
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848044"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948001"
 ---
 # <a name="content-controls"></a>Элементы управления содержимым
   Элементы управления содержимым позволяют разрабатывать документы и шаблоны, которые имеют следующие возможности и функции.
@@ -87,7 +87,7 @@ ms.locfileid: "96848044"
 
  В отличие от других типов элементов управления содержимым, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] не предоставляет специальный тип, представляющий элемент управления содержимым "флажок". Другими словами, тип `CheckBoxContentControl` не существует. Тем не менее для создания элемента управления содержимым "флажок" в документ можно программным образом добавить универсальный элемент <xref:Microsoft.Office.Tools.Word.ContentControl>. Дополнительные сведения см. [в разделе элементы управления содержимым "флажок" в проектах Word](#checkbox).
 
-### <a name="combo-box"></a>Поле со списком
+### <a name="combo-box"></a>поле со списком;
  Поле со списком отображает список элементов, которые можно выбрать. В отличие от раскрывающегося списка, поле со списком позволяет пользователям добавлять собственные элементы. Дополнительные сведения см. в типе <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>.
 
 ### <a name="date-picker"></a>Управляющий элемент выбора даты
@@ -96,7 +96,7 @@ ms.locfileid: "96848044"
 ### <a name="drop-down-list"></a>Раскрывающийся список
  Раскрывающийся список отображает список элементов, которые можно выбрать. В отличие от поля со списком, раскрывающийся список не позволяет пользователям добавлять или изменять элементы. Дополнительные сведения см. в типе <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>.
 
-### <a name="group"></a>Группа
+### <a name="group"></a>Group
  Элемент управления "группа" определяет защищенную область документа, которую нельзя изменять или удалять. Элемент управления "группа" может содержать любые элементы документа, например текст, таблицы, графику и другие элементы управления содержимым. Дополнительные сведения см. в типе <xref:Microsoft.Office.Tools.Word.GroupContentControl>.
 
 ### <a name="picture"></a>Picture
@@ -165,7 +165,7 @@ ms.locfileid: "96848044"
 |---------------|-----------------------------|----------------------------------------------------------------|
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
-|<xref:System.Drawing.Image><br /><br /> Массив <xref:System.Byte>|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Нет|
+|<xref:System.Drawing.Image><br /><br /> Массив <xref:System.Byte>|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Отсутствуют|
 
  В проектах на уровне документа и проектах надстроек VSTO для привязки элемента управления содержимым к источнику данных программным образом можно использовать метод <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> свойства <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> элемента управления. В этом случае передайте **текст** строки в параметр *PropertyName* <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> метода. Свойство **Text** является свойством привязки данных по умолчанию для элементов управления содержимым.
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0d3adb174e9b13cb09f9506927217326890c32
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 5205dba6cddf104d0cb05f01acbc43f6927acaaf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606519"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948430"
 ---
 # <a name="programs"></a>Programs
 В архитектуре отладчика *Программа*:
@@ -33,7 +33,7 @@ ms.locfileid: "96606519"
 
 - Представляется интерфейсом [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , созданным перед присоединением программы или в рамках процесса присоединения в зависимости от реализации. Когда порт перечисляет программы процесса, каждая программа создается в соответствии с соответствующим интерфейсом [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) , переданным в качестве аргумента в [аддпрограмноде](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Хотя модули отладки также создают `IDebugProgram2` интерфейсы для представления программ, эти программы не создаются в соответствии с узлом программы. `IDebugProgramNode2`Интерфейсы, созданные методом de, используются для фактической отладки, а созданные портом используются только для обнаружения выполняющихся в процессе программ.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Процессы](../../extensibility/debugger/processes.md)
 - [Узлы программы](../../extensibility/debugger/program-nodes.md)
 - [Модули](../../extensibility/debugger/modules.md)

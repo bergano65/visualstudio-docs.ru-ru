@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ae4c3c1e606fd436725ef9f54a4568b754b048af
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8efeb704bb247e653af0ee062efcc71ad390c5ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672643"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948665"
 ---
 # <a name="extend-sharepoint-projects"></a>Расширение проектов SharePoint
   Создайте расширение проекта, если необходимо настроить функции уровня проекта для проектов SharePoint. Например, можно добавить настраиваемые свойства проекта или реагировать на события уровня проекта, возникающие при разработке пользователем решения SharePoint в Visual Studio.

@@ -5,14 +5,14 @@ ms.date: 10/13/2020
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: f8affd426593754f77760e4f924cd401167078e5
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: d1ddefb07d95901baa70553fdc2a322aa36f6e87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947975"
 ---
 # <a name="visual-studio-2015-documentation"></a>Документация по Visual Studio 2015
 
@@ -30,7 +30,7 @@ ms.locfileid: "93414156"
 
 При частом использовании документации по Visual Studio 2015 может потребоваться изучить возможность использования окна справки и загрузки автономных книг справки для этой версии. См. раздел [окно справки (Майкрософт](./help-viewer/overview.md)).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Документация по более старым версиям Visual Studio](/previous-versions/visualstudio/)
 - [Выпуски Visual Studio 2015](/visualstudio/releasenotes/vs2015-version-history)

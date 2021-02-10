@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 22ba5acb995466e695c0e25b5b7540f3677b1264
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: e8486120b0f08077bc30c2a5177a8aba915c37f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948678"
 ---
 # <a name="extend-sharepoint-project-items"></a>Расширение элементов проектов SharePoint
   Расширение элемента проекта создается, если требуется добавить функциональные возможности в тип элемента проекта SharePoint, уже установленный в Visual Studio. Например, можно создать расширение для встроенных элементов проекта " **приемник событий** " или " **Определение списка** " в Visual Studio или создать расширение для пользовательского типа элемента проекта. Также можно создать расширение для всех типов элементов проектов SharePoint.
