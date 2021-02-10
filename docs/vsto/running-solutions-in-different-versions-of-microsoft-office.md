@@ -16,39 +16,39 @@ helpviewer_keywords:
 - multiple Office versions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4d70e61e318f0f6afd0a58ed35f912b6a5f2cda8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f9083a92482a99d7ec7ecce144ece2806e9889e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523545"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961395"
 ---
 # <a name="run-solutions-in-different-versions-of-microsoft-office"></a>Запуск решений в разных версиях Microsoft Office
 
 ## <a name="run-office-solutions-created-by-using-visual-studio-2010-and-above"></a>Запуск решений Office, созданных с помощью Visual Studio 2010 и более поздних версий
 
-|Версия Office, используемая шаблоном проекта|Целевой .NET Framework проекта<sup>1</sup>|Версии Office, где можно запускать решение|Требуемая среда выполнения на компьютере конечного пользователя|
+|Версия Office, используемая шаблоном проекта|Целевой платформа .NET Framework проекта<sup>1</sup>|Версии Office, где можно запускать решение|Требуемая среда выполнения на компьютере конечного пользователя|
 |--------------------------------------------------------|------------------------------------------------------|--------------------------------------------------|-------------------------------------------|
 |Office 2016 и [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> 2007 Microsoft Office система<sup>2</sup>|Среда выполнения Visual Studio 2010 Tools для Office|
 |[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> 2007 Microsoft Office система<sup>2</sup>|Среда выполнения Visual Studio 2010 Tools для Office|
 |[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|.NET Framework 3,5|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Среда выполнения Visual Studio 2010 Tools для Office|
-|Система Microsoft Office 2007|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии<br /><br /> или<br /><br /> .NET Framework 3,5|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> Система Microsoft Office 2007|Среда выполнения Visual Studio 2010 Tools для Office|
+|Система Microsoft Office 2007|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии<br /><br /> или диспетчер конфигурации служб<br /><br /> .NET Framework 3,5|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> Система Microsoft Office 2007|Среда выполнения Visual Studio 2010 Tools для Office|
 
- 1. Для запуска решения на компьютерах конечных пользователей требуется версия .NET Framework, для которой предназначен проект. Например, если проект предназначен для .NET Framework 3,5, на компьютерах конечных пользователей требуется .NET Framework 3,5. В этом примере решение не будет выполняться, если [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] на компьютерах конечных пользователей установлено только приложение.
+ 1. Для запуска решения на компьютерах конечных пользователей требуется версия платформа .NET Framework, для которой предназначен проект. Например, если проект предназначен для платформа .NET Framework 3,5, на компьютерах конечных пользователей требуется платформа .NET Framework 3,5. В этом примере решение не будет выполняться, если [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] на компьютерах конечных пользователей установлено только приложение.
 
  2. В этом сценарии решение будет работать без ошибок в выпуске 2007 системы Microsoft Office только в том случае, если оно не использует возможности, которые были добавлены в [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
 
 ## <a name="run-office-solutions-created-by-using-versions-of-visual-studio-prior-to-visual-studio-2010"></a>Запуск решений Office, созданных с помощью версий Visual Studio до Visual Studio 2010
  Приложения Microsoft Office могут запускать решения, созданные с помощью версий Visual Studio до Visual Studio 2010. В некоторых случаях для этих решений требуются различные версии [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Разные версии служб [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] можно установить параллельно на одном компьютере.
 
- В следующей таблице показано, какие версии Microsoft Office могут выполнять решения, созданные с помощью предыдущих версий Visual Studio, и какие версии [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] и .NET Framework необходимы для каждого решения.
+ В следующей таблице показано, какие версии Microsoft Office могут выполнять решения, созданные с помощью предыдущих версий Visual Studio, и какие версии [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] и платформа .NET Framework необходимы для каждого решения.
 
-|Выпуск Visual Studio, используемый для создания решения|Версия Office, используемая шаблоном проекта|Версии Office, где можно запускать решение|Требуемая среда выполнения на компьютере конечного пользователя|Требуемая версия .NET Framework на компьютере конечного пользователя|
+|Выпуск Visual Studio, используемый для создания решения|Версия Office, используемая шаблоном проекта|Версии Office, где можно запускать решение|Требуемая среда выполнения на компьютере конечного пользователя|Требуемая версия платформа .NET Framework на компьютере конечного пользователя|
 |----------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------|-------------------------------------------|----------------------------------------------------------|
-|Visual Studio 2008 Professional<br /><br /> или<br /><br /> Visual Studio Team System 2008|Система Microsoft Office 2007|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] и [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<sup>1</sup><br /><br /> Система Microsoft Office 2007|Visual Studio 2010 Tools для Office Runtime<sup>1</sup><br /><br /> или<br /><br /> Набор средств Visual Studio для системы Microsoft Office (версия среды выполнения: 3.0)|.NET Framework 3,5|
+|Visual Studio 2008 Professional<br /><br /> или диспетчер конфигурации служб<br /><br /> Visual Studio Team System 2008|Система Microsoft Office 2007|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] и [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<sup>1</sup><br /><br /> Система Microsoft Office 2007|Visual Studio 2010 Tools для Office Runtime<sup>1</sup><br /><br /> или диспетчер конфигурации служб<br /><br /> Набор средств Visual Studio для системы Microsoft Office (версия среды выполнения: 3.0)|.NET Framework 3,5|
 |Один из следующих выпусков Visual Studio 2005 с VSTO 2005 SE<sup>2</sup> установлен:<br /><br /> — Visual Studio 2005 Tools for Office<br />— Visual Studio Team System 2005<br />— Visual Studio 2005 Professional|Система Microsoft Office 2007|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] и [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (32-разрядное только<sup>3</sup>)<br /><br /> Система Microsoft Office 2007|Среда выполнения набора средств Visual Studio 2005 для Office, второй выпуск|.NET Framework 2.0, .NET Framework 3.0 или .NET Framework 3.5|
 |Любой из следующих выпусков Visual Studio:<br /><br /> — Visual Studio 2008 Professional<br />— Visual Studio Team System 2008<br />— Visual Studio 2005 Tools для Office (с установленным или без VSTO 2005 SE<sup>2</sup> )<br />— Visual Studio Team System 2005 (с установленным или без VSTO 2005 SE<sup>2</sup> )<br />— Visual Studio 2005 Professional с VSTO 2005 SE<sup>2</sup> установлено|Microsoft Office 2003|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] и [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (32-разрядное только<sup>3</sup>)<br /><br /> Система Microsoft Office 2007<br /><br /> Microsoft Office 2003|Среда выполнения набора средств Visual Studio 2005 для Office, второй выпуск|.NET Framework 2.0, .NET Framework 3.0 или .NET Framework 3.5|
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 0ff056c8-b9d2-4747-9308-92adf1811491
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23defc424d3e7ed5095f0e29d673c191c755f9ce
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 0a34fa9fd362f7a344dc13f1c557f8362e9e10b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672734"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968467"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>Элемент Дефаултнаме (шаблоны Visual Studio)
 Указывает имя, которое будет создавать система проектов Visual Studio для проекта или элемента при его создании.
@@ -56,7 +56,7 @@ ms.locfileid: "94672734"
 
  В этом тексте указывается имя проекта или элемента по умолчанию.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  Параметр `DefaultName` является необязательным элементом.
 
  Для проектов этот элемент указывает имя каталога, в котором хранится проект на диске. Для элементов указывает имя файла исходного файла.

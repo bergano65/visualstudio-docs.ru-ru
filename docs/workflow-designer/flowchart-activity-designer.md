@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c7957d79d51cab93e45adf8f74899ecc59b76d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c9c46ae3dcc0063c7a2664e032fba14ce320af18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961304"
 ---
 # <a name="flowchart-activity-designer"></a>Конструктор действия блок-схемы
 
@@ -31,7 +31,7 @@ ms.locfileid: "94438013"
 
 ### <a name="using-the-flowchart-activity-designer"></a>Использование конструктора действия Flowchart
 
-Конструктор операций с **блок-схемой** можно найти в категории " **схема** " **панели элементов** , щелкнув вкладку **область элементов** на конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
+Конструктор операций с **блок-схемой** можно найти в категории " **схема** " **панели элементов**, щелкнув вкладку **область элементов** на конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
 
 Конструктор действий **блок-схемы** можно перетащить из **панели элементов** в конструктор рабочих процессовную поверхность, где обычно размещаются конструкторы действий: как корневое действие или как дочерний элемент другой операции потока управления. Если конструктор действий **блок-схемы** перемещается на пустую конструктор рабочих процессов поверхность, он создает <xref:System.Activities.Statements.Flowchart> действие, которое по умолчанию представляет собой в развернутом представлении, в котором начальный узел, инициирующий выполнение, представляется зеленым шариком. Если конструктор действий **блок-схемы** перемещается в другую операцию потока управления, он представляется в режиме сворачивания, который можно расширить, дважды щелкнув конструктор действий **блок-схемы** . Любое действие на **панели элементов** можно перетащить непосредственно в конструктор действий **блок-схемы** , включая другие действия потока управления.
 
@@ -43,10 +43,10 @@ ms.locfileid: "94438013"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Указывает отображаемое имя конструктора действия в заголовке. По умолчанию используется Flowchart. Значение можно изменить в окне **Свойства** или непосредственно в заголовке конструктора действий.<br /><br /> Несмотря на то что свойство <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|
-|<xref:System.Activities.Statements.Flowchart.Variables%2A>|Неверно|Коллекция переменных, доступных в этом <xref:System.Activities.Statements.Flowchart> для общего доступа к состоянию для вложенных действий.|
-|<xref:System.Activities.Statements.Flowchart.StartNode%2A>|Неверно|<xref:System.Activities.Statements.FlowNode>, который выполняется при запуске <xref:System.Activities.Statements.Flowchart>.|
-|<xref:System.Activities.Statements.Flowchart.Nodes%2A>|Неверно|Содержит коллекцию объектов <xref:System.Activities.Statements.FlowNode> в <xref:System.Activities.Statements.Flowchart>.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает отображаемое имя конструктора действия в заголовке. По умолчанию используется Flowchart. Значение можно изменить в окне **Свойства** или непосредственно в заголовке конструктора действий.<br /><br /> Несмотря на то что свойство <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|
+|<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|Коллекция переменных, доступных в этом <xref:System.Activities.Statements.Flowchart> для общего доступа к состоянию для вложенных действий.|
+|<xref:System.Activities.Statements.Flowchart.StartNode%2A>|False|<xref:System.Activities.Statements.FlowNode>, который выполняется при запуске <xref:System.Activities.Statements.Flowchart>.|
+|<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|Содержит коллекцию объектов <xref:System.Activities.Statements.FlowNode> в <xref:System.Activities.Statements.Flowchart>.|
 
 ## <a name="see-also"></a>См. также раздел
 

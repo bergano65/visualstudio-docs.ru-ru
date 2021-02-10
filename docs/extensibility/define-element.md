@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a427371afe55b6ea4ee20f658e683b9dcdb8fbe2
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2a2686abd8e8c703d8fb85009b3ba56070f166f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996244"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968454"
 ---
 # <a name="define-element"></a>Определение элемента
 Определяет пару "имя символа" и "значение". Этот символ может быть вычислен с помощью условных атрибутов. Дополнительные сведения см. в разделе [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md). См. также [элемент Symbols](../extensibility/symbols-element.md).
@@ -37,7 +37,7 @@ ms.locfileid: "96996244"
 |Атрибут|Описание|
 |---------------|-----------------|
 |name|Обязательный элемент. Имя символа:<br /><br /> Name = "Mode"|
-|value|Обязательный элемент. Значение символа:<br /><br /> value = "Standard"|
+|значение|Обязательный элемент. Значение символа:<br /><br /> value = "Standard"|
 |Условие|Необязательный элемент. Дополнительные сведения см. в разделе [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы

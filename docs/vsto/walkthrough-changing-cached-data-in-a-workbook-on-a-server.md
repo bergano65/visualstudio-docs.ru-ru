@@ -16,15 +16,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], server-side data access
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 01ae4894d76e22f619bf498b4ac6a53f1232b5d5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 57c33dc89bdec39b62dbec6a74a152ba816dda88
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527278"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961356"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Пошаговое руководство. изменение кэшированных данных в книге на сервере
   В этом пошаговом руководстве показано, как изменить набор данных, кэшированный в Microsoft Office книгу Excel, не запуская Excel с помощью <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса.
@@ -82,7 +82,7 @@ ms.locfileid: "97527278"
 
 7. Убедитесь, что в диалоговом окне **Новый проект** не установлен флажок **создать каталог для решения** .
 
-8. Нажмите кнопку **ОК**.
+8. Нажмите кнопку **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **AdventureWorksDataset** в **Обозреватель решений** и открывает файл кода **Class1.CS** или **Class1. vb** .
 
@@ -140,7 +140,7 @@ ms.locfileid: "97527278"
 
 5. В поле **имя** введите **адвентуреворксрепорт**. Не изменяйте расположение.
 
-6. Нажмите кнопку **ОК**.
+6. Нажмите кнопку **OK**.
 
      Откроется **Мастер проектов набора средств Visual Studio для Office** .
 
@@ -239,7 +239,7 @@ ms.locfileid: "97527278"
 
 4. В поле **имя** введите объект **записи**. Не изменяйте расположение.
 
-5. Нажмите кнопку **ОК**.
+5. Нажмите кнопку **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **записи** в **Обозреватель решений** и открывает файл кода **Program.CS** или **Module1. vb** .
 
@@ -252,7 +252,7 @@ ms.locfileid: "97527278"
 
 2. На вкладке **.NET** выберите **Microsoft. VisualStudio. Tools. Applications**.
 
-3. Нажмите кнопку **ОК**.
+3. Нажмите кнопку **OK**.
 
 4. В **Обозреватель решений** щелкните правой кнопкой мыши проект **записи** и выберите команду **Добавить ссылку**.
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bd79d57f-8e0a-4e14-a417-0b1de28fa1b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1674ae8345873ede5d1b4afb04774d6ed0469b4c
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: a7d7e4ab292793da5c4abe04233b027981ba3fff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996322"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968493"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Написание вычислителя выражений среды CLR
 > [!IMPORTANT]
@@ -29,7 +29,7 @@ ms.locfileid: "96996322"
 
  Некоторые аспекты пакета отладки Visual Studio должны интерпретировать код в контексте языка программирования. Например, при остановке выполнения в точке останова все выражения, вводимые пользователем в окно **контрольных значений** , должны оцениваться и отображаться. Пользователь может изменить значение локальной переменной, введя выражение в окно **контрольных значений** или в окно **Immediate** .
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
  [Среда CLR и вычисление выражений](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md) Объясняется, что при интеграции собственного языка программирования в интегрированную среду разработки Visual Studio написание EE с поддержкой оценки выражений в контексте собственного языка позволяет компилироваться на языке MSIL без написания модуля отладки.
 
  [Архитектура средства оценки выражений](../../extensibility/debugger/expression-evaluator-architecture.md) Описывает, как реализовать требуемые интерфейсы EE и вызывать интерфейсы поставщика символов среды CLR (SP) и связывателя.

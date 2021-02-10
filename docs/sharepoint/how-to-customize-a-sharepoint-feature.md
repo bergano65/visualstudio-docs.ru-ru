@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b4846d79af7a031970e8870626f88450e8a3e647
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 0604b6497920e1e6df0a792ce758519f425ac155
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959952"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Руководство. Настройка компонента SharePoint
   Вы можете создавать и настраивать функции SharePoint с помощью конструктора компонентов в Visual Studio. Например, можно задать область компонента и добавить другие компоненты в качестве зависимостей. По умолчанию конструктор компонентов открывается при добавлении новой функции в обозреватель решений или обозревателе пакетов SharePoint.
@@ -51,7 +51,7 @@ ms.locfileid: "94903667"
 2. Разверните компоненты, разверните FeatureName, разверните FeatureName. feature, а затем откройте файл *\<FeatureName>.Template.xml* .
 
     > [!NOTE]
-    > При открытии XML-файла манифеста шаблона компонента файлы проверяются автоматически, и предупреждения, отображаемые в окне Список ошибок, могут быть пропущены.
+    > При открытии XML-файла манифеста шаблона компонента файлы проверяются автоматически, и предупреждения, отображаемые в окне список ошибок, могут быть пропущены.
 
 ## <a name="change-the-manifest-template"></a>Изменение шаблона манифеста
  Вы можете изменить XML-код для файла манифеста компонента в редакторе XML Visual Studio или в области шаблона манифеста. Любые изменения в XML-коде объединяются в упакованный файл манифеста для функции. Например, может потребоваться изменить шаблон манифеста, чтобы настроить свойство компонента.
