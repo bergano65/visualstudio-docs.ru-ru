@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 57245708-f539-42dc-8963-2754a48f0189
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d655bfb3e6f2206156cd3a6d091ea04f18afe91a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 9ed9435f4f0618ee0c0f4bc47cdb21e2cbf92f77
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304914"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940132"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Контракты команд в сборках взаимодействия
 Базовый контракт для обработки команд через <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс заключается в том, что среда вызывает <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод, чтобы определить, поддерживается ли команда, и, если она поддерживается, для определения ее состояния и текста. Затем среда вызывает <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> метод для выполнения команды.

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7645731cf5b955601541a122f2fdb3fa3d794cc3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 2ddb1feb3e5234b26e2ebceb9f899554d55b3015
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350742"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940349"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;&gt;Элемент Package (начальный загрузчик)
 `Package`Элемент является ЭЛЕМЕНТОМ XML верхнего уровня в файле пакета.
@@ -149,10 +149,10 @@ ms.locfileid: "94350742"
 |--------------------| - |
 | `Culture` | Обязательный элемент. Определяет язык и региональные параметры для этого пакета, определяющие используемый. Этот атрибут является ключом к `Strings` элементу, который перечисляет строки, зависящие от языка и региональных параметров, для названий продуктов и сообщений об ошибках во время установки. |
 | `Name` | Обязательный элемент. Имя пакета, отображаемого для разработчика в средстве, например [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Этот атрибут является ключом к `Strings` элементу, который должен содержать `String` элемент со `Name` свойствами и, `Culture` установленными в соответствии со `Name` свойствами и `Culture` `Package` . |
-| `LicenseAgreement` | Необязательный параметр. Указывает имя файла в пакете распространения, который содержит End-User лицензионное соглашение (EULA).  Этот файл может иметь обычный текст ( *txt* ) или форматированный текст. ( *. RTF* ) |
+| `LicenseAgreement` | Необязательный элемент. Указывает имя файла в пакете распространения, который содержит End-User лицензионное соглашение (EULA).  Этот файл может иметь обычный текст (*txt*) или форматированный текст. (*. RTF*) |
 
 ## <a name="example"></a>Пример
- В следующем примере кода показан полный файл пакета для распространения .NET Framework 2,0.
+ В следующем примере кода показан полный файл пакета для распространения платформа .NET Framework 2,0.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -189,5 +189,5 @@ ms.locfileid: "94350742"
 </Package>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Справочник по схеме продуктов и пакетов](../deployment/product-and-package-schema-reference.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - security [Office development in Visual Studio], troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0da77067931d35ee63a9ccc9b0de85752157772b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 57b330884ef6638e5c853cfb5670e3552aca46cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940830"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Конкретные вопросы безопасности для решений Office
   Средства безопасности, предоставляемые Microsoft .NET Framework и Microsoft Office, помогают защитить решения Office от различных угроз безопасности. В этом разделе описываются некоторые из этих угроз и даются рекомендации по защите от них. Здесь также приводятся сведения о влиянии параметров безопасности Microsoft Office на решения Office.

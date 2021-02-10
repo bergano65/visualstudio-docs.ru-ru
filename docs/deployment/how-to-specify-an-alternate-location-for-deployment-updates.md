@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 7faacd35-2638-492d-80f6-6b57e5f820de
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 698ca2c97bcc4699d2c836eff9fefa371481c9cc
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f0832105ccc203dd046461e40d27f8d50efc3009
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940375"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Практическое руководство. Задание альтернативного местоположения для обновлений развертывания
 Приложение можно установить [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] изначально с компакт-диска или из общей папки, но приложение должно проверять наличие периодических обновлений в Интернете. Можно указать альтернативное расположение для обновлений в манифесте развертывания, чтобы приложение можно было обновлять из Интернета после первоначальной установки.
@@ -32,7 +32,7 @@ ms.locfileid: "94349650"
 
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Укажите альтернативное расположение для обновлений с помощью MageUI.exe (служебная программа на основе Windows Forms).
 
-1. Откройте командную строку .NET Framework и введите:
+1. Откройте командную строку платформа .NET Framework и введите:
 
      **mageui.exe**
 
@@ -57,12 +57,12 @@ ms.locfileid: "94349650"
    > [!NOTE]
    > Теперь необходимо повторно подписать файл с помощью *Mage.exe*. Дополнительные сведения см. [в разделе Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
-## <a name="net-framework-security"></a>Безопасность платформы .NET Framework
+## <a name="net-framework-security"></a>Безопасность .NET Framework
  Если приложение устанавливается с автономного носителя, такого как компакт-диск, и компьютер находится в сети, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] сначала проверяет URL-адрес, указанный `<deploymentProvider>` тегом в манифесте развертывания, чтобы определить, содержит ли расположение обновления более новую версию приложения. Если это так, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] устанавливает приложение непосредственно из каталога начальной установки, а среда CLR определяет уровень доверия приложения с помощью `<deploymentProvider>` . Если компьютер находится в автономном режиме или `<deploymentProvider>` недоступен, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] устанавливается с компакт-диска, а среда CLR предоставляет доверие на основе точки установки; для установки с компакт-диска это означает, что приложение получает полное доверие. Все последующие обновления наследуют этот уровень доверия.
 
  Все [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, использующие, `<deploymentProvider>` должны явно объявлять разрешения, необходимые им в манифесте приложения, чтобы приложение не получало разные уровни доверия на разных компьютерах.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)

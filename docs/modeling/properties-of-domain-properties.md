@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97bfbcf73a950692d5736b7a6e0b529cfe658caa
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f9cca8468e99d41d879bee02dded8538e5fa9c5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941363"
 ---
 # <a name="properties-of-domain-properties"></a>Свойства доменных свойств
 *Свойство предметной области* — это функция элемента модели, которая может содержать значение. Например, класс домена `Person` может иметь свойства `Name` и `BirthDate`. В определении доменного языка свойства домена перечислены в поле класса домена на схеме и в разделе класса домена в Обозревателе доменного языка. Дополнительные сведения см. [в разделе Определение языка Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).

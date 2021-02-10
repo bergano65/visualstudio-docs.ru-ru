@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Domain-Specific Language, domain relationships
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c5db50432947b99a2667280fe7861e7acd95ac
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 6fb50018dccbe03512c8ab6e5f07c17dbcee307d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362461"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941337"
 ---
 # <a name="properties-of-domain-relationships"></a>Свойства доменных связей
 Свойства в следующей таблице связаны с доменной связью. Сведения о доменных отношениях см. в разделе [Основные сведения о моделях, классах и связях](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. [в разделе Настройка и расширение языка Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Свойство|Описание|Значение по умолчанию|
+|Свойство|Описание|По умолчанию|
 |-|-|-|
 |Модификатор доступа|Уровень доступа к доменной связи ( `public` или `internal` ).|`public`|
 |Настраиваемые атрибуты|Используется для добавления атрибутов в класс исходного кода, созданного из связи домена.|\<none>|

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d86f57abdc96e4fc4f2abbb781e9437c74854a7c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598150"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939296"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Добавление расширения протокола языкового сервера
 
@@ -88,7 +88,7 @@ textDocument/Документлинк |
 Документлинк/разрешить |
 textDocument/переименовать | да
 
-## <a name="get-started"></a>Начало работы
+## <a name="get-started"></a>Приступая к работе
 
 > [!NOTE]
 > Начиная с Visual Studio 2017 версии 15,8, поддержка протокола общего языка сервера встроена в Visual Studio. Если вы создали расширения LSP с помощью [клиентской версии VSIX на языке](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) , они перестанут работать после обновления до версии 15,8 или более поздней. Для повторной работы расширений LSP необходимо выполнить следующие действия.
@@ -109,7 +109,7 @@ textDocument/переименовать | да
 
 Чтобы создать расширение языковой службы с помощью серверного языка на основе LSP, сначала убедитесь, что у вас установлена рабочая нагрузка **разработки расширения Visual Studio** для экземпляра vs.
 
-Затем создайте новый проект VSIX, перейдя к **файлу**  >  **Новый** проект  >  **Visual C#**  >  **расширяемость** Visual C# проект  >  **VSIX**:
+Затем создайте новый проект VSIX, перейдя к **файлу**  >  **Новый** проект  >    >  **расширяемость** Visual C# проект  >  **VSIX**:
 
 ![Создание проекта VSIX](media/lsp-vsix-project.png)
 
@@ -482,7 +482,7 @@ public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
 
 Исходный код примера расширения с помощью клиентского API LSP в Visual Studio см. в разделе VSSDK-Extensibility-Samples [LSP Sample](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/LanguageServerProtocol).
 
-## <a name="faq"></a>Вопросы и ответы
+## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
 
 **Я хотел бы создать пользовательскую систему проектов, чтобы дополнить мой языковой сервер для обеспечения расширенной поддержки функций в Visual Studio, как это сделать?**
 

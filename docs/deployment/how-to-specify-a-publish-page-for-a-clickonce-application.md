@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9d70eebb-bdee-4b42-8e7e-7a07e199bdf7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf70f5ffdd81688943892c06fdf98aae73d6c57
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f58b7d8d4244f7c429c3866bf76c514bf24164ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940453"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Практическое руководство. Указание страницы публикации для приложения ClickOnce
 При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения создается и публикуется веб-страница по умолчанию (publish.htm) вместе с приложением. На этой странице содержится имя приложения, ссылка для установки приложения и (или) необходимых компонентов, а также ссылка на раздел справки, описывающий [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Свойство **страницы Публикация** для проекта позволяет указать имя для веб-страницы [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.
@@ -35,7 +35,7 @@ ms.locfileid: "94350963"
 
 ### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>Указание настраиваемой веб-страницы для приложения ClickOnce
 
-1. Выбрав проект в **Обозреватель решений** , в меню **проект** выберите пункт **Свойства**.
+1. Выбрав проект в **Обозреватель решений**, в меню **проект** выберите пункт **Свойства**.
 
 2. Выберите панель **Публикация** .
 
@@ -49,7 +49,7 @@ ms.locfileid: "94350963"
 
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Запрет запуска страницы публикации при каждой публикации
 
-1. Выбрав проект в **Обозреватель решений** , в меню **проект** выберите пункт **Свойства**.
+1. Выбрав проект в **Обозреватель решений**, в меню **проект** выберите пункт **Свойства**.
 
 2. Выберите панель **Публикация** .
 
@@ -59,7 +59,7 @@ ms.locfileid: "94350963"
 
 5. В диалоговом окне **Параметры публикации** снимите флажок **Открыть веб-страницу развертывания после публикации** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Инструкции. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Практическое руководство. Настройка используемой по умолчанию веб-страницы для ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)

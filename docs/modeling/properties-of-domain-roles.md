@@ -6,20 +6,20 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dda8e7c5538b0517c181a451072c4f8a9544965
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9edee5f8128933b2ecb36434a64d39c40d3d799f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362344"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941311"
 ---
 # <a name="properties-of-domain-roles"></a>Свойства доменных ролей
 Свойства в следующей таблице связаны с ролью домена. Сведения о ролях домена см. в разделе [Основные сведения о моделях, классах и связях](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. [в разделе Настройка и расширение языка Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Свойство|Описание|Значение по умолчанию|
+|Свойство|Описание|По умолчанию|
 |-|-|-|
 |Тип коллекции|Если у этой роли есть кратность 0.. * или 1... \* это свойство настраивает универсальный тип, используемый для хранения коллекции ссылок.|`(none)` - <xref:Microsoft.VisualStudio.Modeling.LinkedElementCollection%601> используется|
 |Настраиваемые атрибуты|Указанные здесь атрибуты будут добавлены в качестве атрибутов в создаваемый класс кода.|<нет\>|

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 337fd73dbe46a97b6f154dfba1714ede834f1e69
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c9e6960cdd84e518b2d58eb77c25278bd52475d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363332"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941441"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Практическое руководство. Добавление обработчика перетаскивания
 
@@ -162,7 +162,7 @@ MEF (Managed Extensibility Framework) позволяет определять к
 
 Сделайте исходный DSL доступным для шины модели Visual Studio:
 
-1. Откройте файл определения исходного доменного языка в Конструкторе DSL. Щелкните правой кнопкой мыши область конструктора и выберите команду **включить ModelBus**. В диалоговом окне выберите один или оба указанных параметра.  Нажмите кнопку **ОК**. В решение DSL будет добавлен новый проект ModelBus.
+1. Откройте файл определения исходного доменного языка в Конструкторе DSL. Щелкните правой кнопкой мыши область конструктора и выберите команду **включить ModelBus**. В диалоговом окне выберите один или оба указанных параметра.  Нажмите кнопку **OK**. В решение DSL будет добавлен новый проект ModelBus.
 
 2. Щелкните **преобразовать все шаблоны** и перестроить решение.
 
@@ -407,7 +407,7 @@ namespace Company.CompartmentDrag  // EDIT.
 
  /// <summary>
  /// Override some methods of the compartment shape.
- /// **_ GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. _***
+ /// *** GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. ****
  /// </summary>
  public partial class ClassShape
  {

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - custom Ribbon, multiple Ribbons
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ca7f7757cddf89b97f7a374385ea834728f0e975
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2eff346425dca31cb88342e69701a229de2b80ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527970"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940869"
 ---
 # <a name="ribbon-overview"></a>Общие сведения о ленте
   Лента — это способ организации связанных команд, чтобы их было проще найти. Команды отображаются в виде элементов управления на ленте. Элементы управления организованы в *группы* вдоль горизонтальной полосы в верхнем углу окна приложения. Связанные группы расположены на вкладках.

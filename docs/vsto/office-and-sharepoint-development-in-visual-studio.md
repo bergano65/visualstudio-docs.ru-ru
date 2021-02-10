@@ -20,20 +20,20 @@ helpviewer_keywords:
 - Office, development with Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: abd9d3aac289df702554790673cb6561a6e2488d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cebcb16708e42f8102e2dc235b52a81e16c588c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525339"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940908"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Разработка приложений для Office и SharePoint в Visual Studio
   Вы можете расширить возможности Microsoft Office и SharePoint, создав облегченное приложение или надстройку, которые пользователи загружают из [Магазина Office](https://store.office.com/) или каталога организации, либо создав решение на основе .NET Framework, которое пользователи устанавливают на компьютерах.
 
- В этом разделе:
+ В этом разделе.
 
 - [Создание надстроек для Office и SharePoint](#Apps)
 
@@ -59,7 +59,7 @@ ms.locfileid: "97525339"
 
  ![Приложения содержимого для Office](../vsto/media/appforoffice.png "Приложения содержимого для Office")
 
- **Подробнее**
+ **Дополнительные сведения**
 
 |Кому|См.|
 |--------|---------|
@@ -75,7 +75,7 @@ ms.locfileid: "97525339"
 
  ![Приложение Диспетчера контактов для SharePoint](../vsto/media/appforsharepoint.png "Приложение Диспетчера контактов для SharePoint")
 
- **Подробнее**
+ **Дополнительные сведения**
 
 |Кому|См.|
 |--------|---------|
@@ -90,7 +90,7 @@ ms.locfileid: "97525339"
 
  ![Решение надстройки PowerPoint](../vsto/media/powerpointaddin.png "Надстройка PowerPoint")
 
- **Подробнее**
+ **Дополнительные сведения**
 
 |Кому|Чтение|
 |--------|----------|
@@ -102,7 +102,7 @@ ms.locfileid: "97525339"
 
  Для решений SharePoint требуется локальная ферма серверов SharePoint. Администраторы должны устанавливать их, а так как решения выполняются в SharePoint, они могут повлиять на производительность сервера. Однако решения обеспечивают более широкий доступ к объектам SharePoint. Кроме того, при создании решения SharePoint вы можете использовать платформу .NET Framework и языки программирования C# и Visual Basic для взаимодействия с объектами SharePoint.
 
- **Подробнее**
+ **Дополнительные сведения**
 
 |Кому|См.|
 |--------|---------|
