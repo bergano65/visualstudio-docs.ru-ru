@@ -5,17 +5,17 @@ description: Идентификаторы рабочих нагрузок и к�
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: dd5930911c44ac0f0ffa15d164a5d7a90b15a5fa
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0af20eab0c2124cb25e935598d8b3f16cd64121e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437398"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881906"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-community-2019"></a>Основной редактор Visual Studio (входит в состав Visual Studio Community 2019)
 
@@ -733,7 +733,7 @@ Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.8.30509.167 | Необязательный
 Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Необязательный
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Необязательный
-Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Необязательно
+Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Необязательный
 Microsoft.NetCore.Component.Runtime.5.0 | Среда выполнения .NET 5.0 | 16.8.30703.189 | Необязательный
 Microsoft.NetCore.Component.SDK | Пакет SDK для .NET | 16.8.30703.189 | Необязательный
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Средства разработки для Azure | 16.0.28625.61 | Необязательный

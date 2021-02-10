@@ -5,17 +5,17 @@ description: Идентификаторы рабочих нагрузок и к�
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: eb817e15ebffbe75f9b003abe1fe0560a5236293
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: cecadf43e7f54f5ad0954acfc725f5e48a2a69cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881854"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Основной редактор Visual Studio (включен в Visual Studio Enterprise 2019)
 
@@ -52,7 +52,7 @@ Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pac
 Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Обязательное значение
 Microsoft.NetCore.Component.DevelopmentTools | Средства разработки .NET Core | 16.8.30607.99 | Обязательное значение
-Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Обязательное значение
+Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Обязательно
 Microsoft.NetCore.Component.Runtime.5.0 | Среда выполнения .NET 5.0 | 16.8.30703.189 | Обязательное значение
 Microsoft.NetCore.Component.SDK | Пакет SDK для .NET | 16.8.30703.189 | Обязательное значение
 Microsoft.NetCore.Component.Web | Средства разработки .NET Core | 16.5.29721.120 | Обязательное значение
@@ -142,7 +142,7 @@ Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0.28517.75 | Рекомендованное
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Рекомендованное
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Средства разработки для .NET Framework 4–4.6 | 16.0.28516.191 | Рекомендованное
-Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Рекомендованное
+Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Рекомендуется
 Microsoft.NetCore.Component.Runtime.5.0 | Среда выполнения .NET 5.0 | 16.8.30703.189 | Рекомендованное
 Microsoft.NetCore.Component.SDK | Пакет SDK для .NET | 16.8.30703.189 | Рекомендованное
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Средства разработки для Azure | 16.0.28625.61 | Рекомендованное
@@ -195,7 +195,7 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | Поддержка языка�
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 16.8.30509.167 | Рекомендованное
 Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 16.1.28829.92 | Рекомендованное
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Рекомендованное
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 16.8.30509.167 | Рекомендованное
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 16.8.30509.167 | Рекомендуется
 Microsoft.VisualStudio.Component.TypeScript.4.0 | Пакет SDK для TypeScript 4.0 | 16.0.30509.167 | Рекомендованное
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | Рекомендованное
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 16.8.30509.167 | Рекомендованное
@@ -221,7 +221,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | Обязательно�
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.8.30509.167 | Обязательное значение
 Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Обязательное значение
-Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Обязательное значение
+Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Обязательно
 Microsoft.NetCore.Component.Runtime.5.0 | Среда выполнения .NET 5.0 | 16.8.30703.189 | Обязательное значение
 Microsoft.NetCore.Component.SDK | Пакет SDK для .NET | 16.8.30703.189 | Обязательное значение
 Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0,3 | Обязательное значение
@@ -472,7 +472,7 @@ Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pac
 Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Обязательное значение
 Microsoft.NetCore.Component.DevelopmentTools | Средства разработки .NET Core | 16.8.30607.99 | Обязательное значение
-Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Обязательное значение
+Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Обязательно
 Microsoft.NetCore.Component.Runtime.5.0 | Среда выполнения .NET 5.0 | 16.8.30703.189 | Обязательное значение
 Microsoft.NetCore.Component.SDK | Пакет SDK для .NET | 16.8.30703.189 | Обязательное значение
 Microsoft.NetCore.Component.Web | Средства разработки .NET Core | 16.5.29721.120 | Обязательное значение
@@ -542,7 +542,7 @@ Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pac
 Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Обязательное значение
 Microsoft.NetCore.Component.DevelopmentTools | Средства разработки .NET Core | 16.8.30607.99 | Обязательное значение
-Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Обязательное значение
+Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Обязательно
 Microsoft.NetCore.Component.Runtime.5.0 | Среда выполнения .NET 5.0 | 16.8.30703.189 | Обязательное значение
 Microsoft.NetCore.Component.SDK | Пакет SDK для .NET | 16.8.30703.189 | Обязательное значение
 Microsoft.VisualStudio.Component.FSharp | Поддержка языка F# | 16.0.28315.86 | Обязательное значение
@@ -576,7 +576,7 @@ Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pac
 Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Обязательное значение
 Microsoft.NetCore.Component.DevelopmentTools | Средства разработки .NET Core | 16.8.30607.99 | Обязательное значение
-Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Обязательное значение
+Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Обязательно
 Microsoft.NetCore.Component.Runtime.5.0 | Среда выполнения .NET 5.0 | 16.8.30703.189 | Обязательное значение
 Microsoft.NetCore.Component.SDK | Пакет SDK для .NET | 16.8.30703.189 | Обязательное значение
 Microsoft.NetCore.Component.Web | Средства разработки .NET Core | 16.5.29721.120 | Обязательное значение
@@ -691,7 +691,7 @@ Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pac
 Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0.28517.75 | Обязательное значение
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Обязательное значение
-Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Обязательное значение
+Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Обязательно
 Microsoft.NetCore.Component.Runtime.5.0 | Среда выполнения .NET 5.0 | 16.8.30703.189 | Обязательное значение
 Microsoft.NetCore.Component.SDK | Пакет SDK для .NET | 16.8.30703.189 | Обязательное значение
 Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 16.5.29515.121 | Обязательное значение
@@ -813,7 +813,7 @@ Microsoft.VisualStudio.ComponentGroup.Web | Предварительные тр�
 Microsoft.Component.NetFX.Native | .NET Native | 16.5.29515.121 | Обязательное значение
 Microsoft.ComponentGroup.Blend | Blend для Visual Studio | 16.0.28315.86 | Обязательное значение
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 16.0.28517.75 | Обязательное значение
-Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Обязательное значение
+Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения .NET Core 3.1 (LTS) | 16.8.30703.189 | Обязательно
 Microsoft.NetCore.Component.Runtime.5.0 | Среда выполнения .NET 5.0 | 16.8.30703.189 | Обязательное значение
 Microsoft.NetCore.Component.SDK | Пакет SDK для .NET | 16.8.30703.189 | Обязательное значение
 Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 16.5.29515.121 | Обязательное значение

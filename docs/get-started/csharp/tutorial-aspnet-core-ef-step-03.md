@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9d01d991daf5c24c02b8cd4976663a9399b251cc
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: aa3df844d5fad5dc968a9bab5d02e9a3e8e06719
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780965"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879973"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Шаг 3. Работа с данными с использованием Entity Framework
 
@@ -70,7 +70,7 @@ public class Game
 
 ![Visual Studio 2019. ASP.NET Core. Шаблонные страницы](media/vs-2019/vs2019-scaffolded-pages.png)
 
-Наряду с добавлением страниц в папку *Games*, операция формирования шаблонов добавит код в класс*Startup.cs*. Просмотрев в этом классе метод `ConfigureServices`, вы увидите, что был добавлен следующий код.
+Наряду с добавлением страниц в папку *Games*, операция формирования шаблонов добавит код в класс *Startup.cs*. Просмотрев в этом классе метод `ConfigureServices`, вы увидите, что был добавлен следующий код.
 
 ```csharp
 services.AddDbContext<AppDbContext>(options =>

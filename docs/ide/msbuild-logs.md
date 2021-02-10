@@ -9,7 +9,7 @@ helpviewer_keywords:
 - msbuild logs"
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: c6b08b243a5b4eec3119ceedbaf2177670aa3e83
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: d9308bff68a5a5377c025bba5861ac344dcb0326
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136580"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880493"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Устранение неполадок и создание журналов по проблемам MSBuild
 
@@ -118,8 +118,8 @@ ms.locfileid: "92136580"
 
 ## <a name="create-a-detailed-log"></a>Создание подробного журнала
 
-1. В главном меню Visual Studio последовательно выберите пункты **Средства** > **Параметры** > **Проекты и решения** >**Сборка и запуск** .
-1. В обоих полях со списком для **уровня детализации при сборке проекта MSBuild** выберите **Подробные** . Первый параметр позволяет управлять уровнем детализации сборки в **окне вывода** , а второй — уровнем детализации сборки в файле журнала \<projectname\>.log, который создается в промежуточном каталоге каждого проекта во время сборки.
+1. В главном меню Visual Studio последовательно выберите пункты **Средства** > **Параметры** > **Проекты и решения** >**Сборка и запуск**.
+1. В обоих полях со списком для **уровня детализации при сборке проекта MSBuild** выберите **Подробные**. Первый параметр позволяет управлять уровнем детализации сборки в **окне вывода**, а второй — уровнем детализации сборки в файле журнала \<projectname\>.log, который создается в промежуточном каталоге каждого проекта во время сборки.
 2. В командной строке разработчика Visual Studio введите одну из этих команд, указав фактические значения для пути и конфигурации:
 
     ```cmd
