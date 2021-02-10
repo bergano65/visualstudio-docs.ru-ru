@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 692902b2d2b612c71c2d1dc0f936c7550f430847
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: e20d3f83d6e68211d1b48f63747bea80ee6b25d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903407"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876333"
 ---
 # <a name="messages-view"></a>Представление сообщений
 С каждым окном связан отдельный поток сообщений. Этот поток сообщений отображается в окне представления сообщений. Здесь вы увидите дескриптор окна, код сообщения и текст сообщения. Можно также создать представление сообщений для потока или процесса. Это позволяет просматривать сообщения, отправленные во все окна определенного процесса или потока, что особенно полезно для захвата сообщений при инициализации окна.

@@ -16,15 +16,15 @@ ms.assetid: 3870a8fd-4afa-4f1e-a811-9fdf41a9e82d
 monikerRange: vs-2019
 author: profexorgeek
 ms.author: jusjohns
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9f8182646af4facb0f2f86c74f95dff091d55d1
-ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+ms.openlocfilehash: 101875b3a600a71c832498d05073187d2cf0b774
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92199712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873909"
 ---
 # <a name="use-visual-studio-search"></a>Поиск в Visual Studio
 
@@ -43,28 +43,28 @@ ms.locfileid: "92199712"
 
 Поле поиска Visual Studio можно использовать для поиска настроек, параметров и других элементов конфигурации. Например, поиск по фразе *изменить тему* позволяет быстро найти и открыть диалоговое окно, в котором можно изменить цветовую тему Visual Studio, как показано на следующем снимке экрана.
 
-:::image type="content" source="media/visual-studio-search-options.png" alt-text="Поле поиска в Visual Studio":::
+:::image type="content" source="media/visual-studio-search-options.png" alt-text="Поиск настроек и параметров Visual Studio":::
 
 > [!TIP]
 > В большинстве случаев функция поиска в Visual Studio также будет предлагать сведения о меню, сочетаниях клавиш и расположении каждого элемента, представленного в результатах.
 
-В поле поиска Visual Studio также можно искать команды и пункты меню. Например, чтобы быстро найти и выполнить команду "Очистить решение", введите в поле поиска *очистить реш* . В результатах поиска также приводятся сведения о том, где можно найти эту команду в меню, как показано на следующем снимке экрана.
+В поле поиска Visual Studio также можно искать команды и пункты меню. Например, чтобы быстро найти и выполнить команду "Очистить решение", введите в поле поиска *очистить реш*. В результатах поиска также приводятся сведения о том, где можно найти эту команду в меню, как показано на следующем снимке экрана.
 
-:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Поле поиска в Visual Studio":::
+:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Поиск команд и пунктов меню в Visual Studio":::
 
-Наконец, вы можете выполнить поиск окон или панелей, которые могли быть случайно закрыты. Например, чтобы найти и открыть окно обозревателя тестов, введите в поле поиска слово *тест* .
+Наконец, вы можете выполнить поиск окон или панелей, которые могли быть случайно закрыты. Например, чтобы найти и открыть окно обозревателя тестов, введите в поле поиска слово *тест*.
 
-:::image type="content" source="media/visual-studio-search-window.png" alt-text="Поле поиска в Visual Studio":::
+:::image type="content" source="media/visual-studio-search-window.png" alt-text="Поиск окон и панелей Visual Studio":::
 
 ## <a name="search-files-and-code"></a>Поиск файлов и кода
 
 Функция поиска в Visual Studio также позволяет находить элементы решения по имени файла, коду, методу и другим совпадениям. На следующем снимке экрана в результате поиска по слову *markdown* были найдены файл MarkdownMetaExtractor.cs, класс `MarkdownMetaExtractor` и два метода в решении.
 
-:::image type="content" source="media/visual-studio-search-files.png" alt-text="Поле поиска в Visual Studio":::
+:::image type="content" source="media/visual-studio-search-files.png" alt-text="Поиск файлов в Visual Studio":::
 
-Можно также выполнить поиск с использованием верблюжьего стиля. На следующем снимке экрана показаны результаты поиска по запросу *FSS* , которые включают файл, класс и метод **F** older **S** ize **S** canner.
+Можно также выполнить поиск с использованием верблюжьего стиля. На следующем снимке экрана показаны результаты поиска по запросу *FSS*, которые включают файл, класс и метод **F** older **S** ize **S** canner.
 
-:::image type="content" source="media/visual-studio-search-camel.png" alt-text="Поле поиска в Visual Studio":::
+:::image type="content" source="media/visual-studio-search-camel.png" alt-text="Поиск в Visual Studio в верблюжьем стиле":::
 
 ## <a name="see-also"></a>См. также
 

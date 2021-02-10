@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b5e791b5-c68f-4978-ad8a-9247d03bb6c0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 047fe5ef6edc57681b8382a9f2a1069991e0f513
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d9ca2249e6119e27574791a2cbd9e8b09a9bde63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049008"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878188"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Общеизвестные метаданные элементов MSBuild
 
@@ -45,7 +45,7 @@ ms.locfileid: "93049008"
 |%(Extension)|Содержит расширение имени файла элемента. Пример:<br /><br /> *.cs*|
 |%(RelativeDir)|Содержит путь, указанный в атрибуте `Include`, до последней обратной косой черты (\\). Пример:<br /><br /> *Source\\*<br /><br /> Если атрибут `Include` представляет полный путь, `%(RelativeDir)` начинается с корневого каталога `%(RootDir)`.  Пример: <br /><br /> *C:\MyProject\Source\\*|
 |%(Directory)|Содержит каталог элемента без корневого каталога. Пример:<br /><br /> *MyProject\\Source\\*|
-|%(RecursiveDir)|Если атрибут `Include` содержит подстановочный знак \*\*, эти метаданные определяют путь, который используется вместо подстановочного знака. Дополнительные сведения о подстановочных знаках см. в статье [Практическое руководство. Выбор файлов для сборки](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Если папка *C:\MySolution\MyProject\Source\\* содержит файл *Program.cs* , а файл проекта содержит такой элемент:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> то параметр `%(MyItem.RecursiveDir)` принимает значение *MySolution\MyProject\Source\\* .|
+|%(RecursiveDir)|Если атрибут `Include` содержит подстановочный знак \*\*, эти метаданные определяют путь, который используется вместо подстановочного знака. Дополнительные сведения о подстановочных знаках см. в статье [Практическое руководство. Выбор файлов для сборки](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Если папка *C:\MySolution\MyProject\Source\\* содержит файл *Program.cs*, а файл проекта содержит такой элемент:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> то параметр `%(MyItem.RecursiveDir)` принимает значение *MySolution\MyProject\Source\\* .|
 |%(Identity)|Элемент, заданный в атрибуте `Include`. Пример:<br /><br /> *Source\Program.cs*|
 |%(ModifiedTime)|Содержит метку времени, соответствующую времени последнего изменения элемента. Пример:<br /><br /> `2004-07-01 00:21:31.5073316`|
 |%(CreatedTime)|Содержит метку времени, соответствующую времени создания элемента. Пример:<br /><br /> `2004-06-25 09:26:45.8237425`|

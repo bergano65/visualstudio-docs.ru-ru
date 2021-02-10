@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e0b27a1914d85f5fde8ef6c5c467d73197c084ce
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b146913365583d49f1d70ebd5ca316f54ca89049
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049023"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878231"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Набор инструментов MSBuild (ToolsVersion)
 
-В платформе MSBuild используется набор задач, целей и инструментов для построения приложения. Обычно в набор инструментов MSBuild входит файл *microsoft.common.tasks* , файл *microsoft.common.targets* и такие компиляторы, как *csc.exe* и *vbc.exe*. Большинство наборов инструментов позволяют компилировать приложения сразу для нескольких версий платформы .NET Framework и различных системных платформ. При этом набор инструментов MSBuild 2.0 можно использовать только для платформы .NET Framework 2.0.
+В платформе MSBuild используется набор задач, целей и инструментов для построения приложения. Обычно в набор инструментов MSBuild входит файл *microsoft.common.tasks*, файл *microsoft.common.targets* и такие компиляторы, как *csc.exe* и *vbc.exe*. Большинство наборов инструментов позволяют компилировать приложения сразу для нескольких версий платформы .NET Framework и различных системных платформ. При этом набор инструментов MSBuild 2.0 можно использовать только для платформы .NET Framework 2.0.
 
 ## <a name="toolsversion-attribute"></a>Атрибут ToolsVersion
 
@@ -65,7 +65,7 @@ ms.locfileid: "93049023"
 
  Значение `MSBuildToolsPath` можно изменить, определив пользовательский набор инструментов. Дополнительные сведения см. в статье [Стандартные и настраиваемые конфигурации наборов инструментов](../msbuild/standard-and-custom-toolset-configurations.md).
 
- Если вы компилируете решение из командной строки и указываете значение атрибута `ToolsVersion` для *msbuild.exe* , все проекты и зависимости между проектами компилируются в соответствии с этим значением `ToolsVersion`, даже если в каждом проекте в решении указано собственное значение `ToolsVersion`. Сведения об определении значения `ToolsVersion` для каждого проекта см. в статье [Переопределение параметров ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
+ Если вы компилируете решение из командной строки и указываете значение атрибута `ToolsVersion` для *msbuild.exe*, все проекты и зависимости между проектами компилируются в соответствии с этим значением `ToolsVersion`, даже если в каждом проекте в решении указано собственное значение `ToolsVersion`. Сведения об определении значения `ToolsVersion` для каждого проекта см. в статье [Переопределение параметров ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
 
  Атрибут `ToolsVersion` также используется для миграции проектов. Например, если открыть проект Visual Studio 2008 в Visual Studio 2010, то файл проекта обновится и получит значение ToolsVersion = "4.0". Если после этого вы попытаетесь открыть этот проект в Visual Studio 2008, он не распознает обновленное значение атрибута `ToolsVersion` и построит проект таким образом, как если бы этот атрибут по-прежнему имел значение 3.5.
 

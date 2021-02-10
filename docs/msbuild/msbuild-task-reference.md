@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e247dc242fcacd7ea94f9f078af05dd56299e0
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f26c3c1b8256597c795fa8bcd815fd605f895fa5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049073"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878387"
 ---
 # <a name="msbuild-task-reference"></a>Справочник по задачам MSBuild
 
@@ -55,7 +55,7 @@ ms.locfileid: "93049073"
 
 - [AspNetCompiler - задача](../msbuild/aspnetcompiler-task.md)
 
- Создает оболочку для программы *aspnet_compiler.exe* , которая выполняет предварительную компиляцию приложений ASP.NET.
+ Создает оболочку для программы *aspnet_compiler.exe*, которая выполняет предварительную компиляцию приложений ASP.NET.
 
 - [AssignCulture - задача](../msbuild/assignculture-task.md)
 
@@ -87,7 +87,7 @@ ms.locfileid: "93049073"
 
 - [CreateCSharpManifestResourceName - задача](../msbuild/createcsharpmanifestresourcename-task.md)
 
- Создает имя манифеста в стиле C# на основе заданного имени *RESX* -файла или другого ресурса.
+ Создает имя манифеста в стиле C# на основе заданного имени *RESX*-файла или другого ресурса.
 
 - [CreateItem - задача](../msbuild/createitem-task.md)
 
@@ -99,7 +99,7 @@ ms.locfileid: "93049073"
 
 - [CreateVisualBasicManifestResourceName - задача](../msbuild/createvisualbasicmanifestresourcename-task.md)
 
- Создает имя манифеста в стиле Visual Basic на основе заданного имени *RESX* -файла или другого ресурса.
+ Создает имя манифеста в стиле Visual Basic на основе заданного имени *RESX*-файла или другого ресурса.
 
 - [Задача Csc](../msbuild/csc-task.md)
 

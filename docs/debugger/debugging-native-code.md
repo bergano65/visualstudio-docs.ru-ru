@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: d94eee90-7e0d-4cac-88c1-9831030daa5e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4fee3044e4eaa1e7dd3549923082f9b843951b28
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 8f65cb1a373bdff95e068f78137edf5237ec2905
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728321"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872551"
 ---
 # <a name="debugging-native-code"></a>Отладка машинного кода
 В этом разделе освещаются основные проблемы и технологии отладки для приложений, написанных в машинных кодах. В данном разделе описаны методы высшего уровня. Механизм использования отладчика Visual Studio можно найти в [этой вводной статье](../debugger/debugger-feature-tour.md).

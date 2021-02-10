@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 95284ac5-3492-4f7b-a79f-7d2840a07679
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bdf1fcffad90155baba8f92d11e31d1b316710b
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 4467d2a885f4076461110fe288b4e80169158ede
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801184"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877100"
 ---
 # <a name="gpu-activity-paging"></a>Активность GPU (подкачка)
 Сегменты **Активность GPU (подкачка)** на вкладке **Потоки** представляют время, когда GPU выполнял обработку запросов подкачки.  Длина сегмента представляет время, в течение которого GPU выполнял обработку пакета подкачки прямого доступа к памяти (DMA). Как правило, пакеты подкачки связаны с передачей памяти между ЦП и графическим процессором.
