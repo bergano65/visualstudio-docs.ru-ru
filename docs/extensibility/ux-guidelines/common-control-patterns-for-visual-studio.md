@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c1caccebf1dc14146bef214a4d33e1216243780
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: ab8f04ff885f4b57d24cb3bc0eb449859fca6271
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952191"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Шаблоны распространенных элементов управления для Visual Studio
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Стандартные элементы управления
@@ -301,7 +301,7 @@ ms.locfileid: "97715890"
 > [!NOTE]
 > Пользователям необходимо перейти к этим кнопкам (нет ключей доступа), поэтому размещайте их в порядке разумности. Сопоставьте `name` свойство кнопки с действием, которое оно принимает, чтобы средства чтения с экрана правильно интерпретировали действие кнопки.
 
-| Функция | Кнопка |
+| Компонент | Кнопка |
 | --- | --- |
 | Добавить | ![Графическая кнопка "Добавить"](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703 — 08_ButtonAdd") |
 | Удалить | ![Графическая кнопка "Переместить"](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703 — 09_ButtonRemove") |
@@ -365,7 +365,7 @@ ms.locfileid: "97715890"
 
 ![Элемент, который создает контекстное меню, получает фокус на уведомление пользователя о том, какой элемент был выбран.](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 — 5_ContextMenu")<br />Элемент, который создает контекстное меню, получает фокус на уведомление пользователя о том, какой элемент был выбран.
 
-#### <a name="keyboard"></a>Клавиатура
+#### <a name="keyboard"></a>Keyboard (Клавиатура)
 Представление в виде дерева позволяет выбирать элементы и разворачивать и сворачивать узлы с помощью клавиатуры. Это гарантирует, что Навигация соответствует нашим требованиям специальных возможностей.
 
 ##### <a name="tree-view-control"></a>Элемент управления представлением в виде дерева

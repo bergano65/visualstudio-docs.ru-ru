@@ -14,15 +14,15 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 66e19f7744a56d147fb0760c6f20254ea4308603
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 796c41ae50a33f00f72e0286d5e9680f9016cf58
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970094"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952568"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Пошаговое руководство. Профилирование приложения SharePoint
   В этом пошаговом руководстве рассказывается, как использовать средства профилирования в Visual Studio, чтобы оптимизировать производительность приложений SharePoint. Примером приложения служит приемник событий компонентов SharePoint, который содержит цикл простоя, что ведет к снижению производительности приемника событий компонентов. Профилировщик Visual Studio позволяет нахождение и устранение наиболее дорогостоящей (самой медленной) части проекта, также известной как *горячий путь*.
@@ -274,7 +274,7 @@ ms.locfileid: "95970094"
 
      Теперь, когда вызов цикла простоя устранен, компонент должен активироваться гораздо быстрее. Отчет о профилировании выборки должен отражать это.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Обзор сеанса анализа производительности](../profiling/performance-session-overview.md)
 - [Обзор профилирования производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)
 - [Поиск ограничений приложений с профилировщиком Visual Studio](/archive/msdn-magazine/2008/march/find-application-bottlenecks-with-visual-studio-profiler)

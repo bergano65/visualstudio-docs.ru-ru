@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fa0a7feb85437cc8173d52695ddb1ba0d2c06b7
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: de941be8c5535a2cef5995e3be9954ee32dcdc71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914118"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952451"
 ---
 # <a name="debugger-components"></a>Компоненты отладчика
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Отладчик реализуется как VSPackage и управляет всем сеансом отладки. Сеанс отладки состоит из следующих элементов:
@@ -40,7 +40,7 @@ ms.locfileid: "96914118"
 
   ![Обзор компонентов отладки](../../extensibility/debugger/media/dbugcompovrview.gif "дбугкомповрвиев")
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
  [Пакет отладки](../../extensibility/debugger/debug-package.md) Обсуждается пакет отладки, который выполняется в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] оболочке и обрабатывает весь пользовательский интерфейс.
 
  [Диспетчер отладки процессов](../../extensibility/debugger/process-debug-manager.md) Содержит общие сведения о функциях PDM, которые являются руководителем процессов, которые могут быть отлажены.

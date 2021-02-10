@@ -12,15 +12,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7ceb69608a2d1770f082991f3d927d4e4639ae56
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 503ffc733a408787e7ecf188d893039759819c6d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970167"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952581"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Пошаговое руководство. Импорт настраиваемой главной страницы и страницы сайта с помощью изображения
   В этом пошаговом руководстве показано, как импортировать настраиваемую главную страницу SharePoint и страницу сайта с изображением в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проект SharePoint.
@@ -178,7 +178,7 @@ ms.locfileid: "95970167"
 
    Альтернативный способ импорта [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и развертывания файлов в SharePoint — Добавление файлов в модули в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Как импортировать главную страницу или тему](../sharepoint/how-to-import-a-master-page-or-theme.md) и [использовать модули для включения файлов в решение](../sharepoint/using-modules-to-include-files-in-the-solution.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Импорт элементов с существующего сайта SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

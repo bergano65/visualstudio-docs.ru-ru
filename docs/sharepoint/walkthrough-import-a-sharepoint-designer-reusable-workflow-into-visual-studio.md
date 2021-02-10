@@ -15,15 +15,15 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1421b061c50277177b5a30f0357725e9a042f3bd
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d4c12626550e36acc1a135258750f2d96ac5e81d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970176"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952594"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Пошаговое руководство. Импорт рабочего процесса для повторного использования в SharePoint Designer
 
@@ -190,7 +190,7 @@ ms.locfileid: "95970176"
 
      Этот список отображается сразу же при отладке проекта.
 
-11. Поскольку шаблон " **Импорт повторно используемого рабочего процесса SharePoint 2010** " не импортирует значения свойств взаимосвязей для импортированного рабочего процесса, необходимо ввести их. Выполните указанные ниже действия.
+11. Поскольку шаблон " **Импорт повторно используемого рабочего процесса SharePoint 2010** " не импортирует значения свойств взаимосвязей для импортированного рабочего процесса, необходимо ввести их. Для этого выполните следующие действия.
 
     1. В **Обозреватель решений** выберите узел **SPD_Workflow_TestFT** .
 
@@ -198,7 +198,7 @@ ms.locfileid: "95970176"
 
     3. Заполните поля отсутствующие значения в мастере настройки SharePoint, а затем нажмите кнопку **Готово** .
 
-12. Выберите XOML-файл, а затем в строке меню выберите **View**  >  **конструктор** представлений, чтобы просмотреть импортированный рабочий процесс в конструкторе рабочих процессов.
+12. Выберите XOML-файл, а затем в строке меню выберите   >  **конструктор** представлений, чтобы просмотреть импортированный рабочий процесс в конструкторе рабочих процессов.
 
 13. В узле **Windows Workflow v 3.0** **панели элементов** выполните одно из следующих действий.
 
@@ -264,7 +264,7 @@ ms.locfileid: "95970176"
 
      Обратите внимание, что рабочий процесс выполняет два действия: Ваше имя отображается в **Кому назначено** столбце задачи, а объявление отображается в списке **Announcements** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Импорт элементов с существующего сайта SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

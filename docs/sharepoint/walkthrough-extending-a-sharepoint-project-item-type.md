@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3a360b6a336f64920c0144f742e98a64282eeeec
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 74d57ae4beca074fbf7711ea3d732d903d8faa4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970416"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952685"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Пошаговое руководство. расширение типа элемента проекта SharePoint
   Элемент проекта **модели подключения к бизнес-данным** можно использовать для создания модели для службы подключения к бизнес-данным (BDC) в SharePoint. По умолчанию при создании модели с помощью этого элемента проекта данные в модели не отображаются для пользователей. Кроме того, необходимо создать внешний список в SharePoint, чтобы позволить пользователям просматривать данные.
@@ -71,9 +71,9 @@ ms.locfileid: "95970416"
     > [!NOTE]
     > Узел **расширяемости** доступен только при установке пакета SDK для Visual Studio. Дополнительные сведения см. в разделе Предварительные требования ранее в этом разделе.
 
-4. В списке в верхней части диалогового окна **Новый проект** выберите **.NET Framework 4,5**.
+4. В списке в верхней части диалогового окна **Новый проект** выберите **платформа .NET Framework 4,5**.
 
-     Для расширений инструментов SharePoint требуются функции в этой версии .NET Framework.
+     Для расширений инструментов SharePoint требуются функции в этой версии платформа .NET Framework.
 
 5. Выберите шаблон **проекта VSIX** .
 
@@ -91,7 +91,7 @@ ms.locfileid: "95970416"
 
 2. В диалоговом окне **Добавление нового проекта** разверните узлы **Visual C#** или **Visual Basic** , а затем выберите узел **Windows** .
 
-3. В списке в верхней части диалогового окна выберите **.NET Framework 4,5**.
+3. В списке в верхней части диалогового окна выберите **платформа .NET Framework 4,5**.
 
 4. В списке шаблонов проектов выберите **Библиотека классов**.
 
@@ -213,7 +213,7 @@ ms.locfileid: "95970416"
 
 2. В диалоговом окне **Новый проект** разверните узел **шаблоны** , разверните узел **Visual C#** , разверните узел **SharePoint** и выберите **2010**.
 
-3. В списке в верхней части диалогового окна установите флажок **.NET Framework 3,5** . Для проектов [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] требуется эта версия .NET Framework.
+3. В списке в верхней части диалогового окна установите флажок **платформа .NET Framework 3,5** . Для проектов [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] требуется эта версия платформа .NET Framework.
 
 4. В списке шаблонов проектов выберите **проект SharePoint 2010**.
 
@@ -294,7 +294,7 @@ ms.locfileid: "95970416"
 
 5. Закройте оба экземпляра Visual Studio (экспериментальный экземпляр и экземпляр, в котором открыто решение Женератикстерналдаталистс).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)

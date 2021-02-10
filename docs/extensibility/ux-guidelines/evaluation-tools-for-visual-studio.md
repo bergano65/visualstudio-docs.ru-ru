@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42c8ef3033d1c9f897f891310c4ddea89ab0074e
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: f6f20074b3609bce8e661baed5fded1d0d367c53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952022"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Средства оценки для Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Контрольный список ремесленника для Visual Studio
@@ -41,7 +41,7 @@ ms.locfileid: "97863463"
 
 - Убедитесь, что все метки являются предложением или заголовком, а текст не является полностью строчным.
 
-    ||Правильно|Неверно.|
+    ||Верно|Неверно|
     |-|-------------|---------------|
     |**Текст команды (все)**|Регистр предложений:<br /><br /> **Имя каталога:**|Имя каталога:|
     |**Текст кнопки (клиент)**|Регистр заголовка:<br /><br /> **[По умолчанию]**|УСТАНОВИТЬ ПО УМОЛЧАНИЮ|
