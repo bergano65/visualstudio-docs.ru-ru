@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 325789c3b7210c87d5c1b0414434af27c266c31c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d33b8452f727037226a50abe6a9493ce132e9564
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876549"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932583"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Поддержка панели навигации в языковой службе прежних версий
 В панели навигации в верхней части представления редактора отображаются типы и элементы в файле. Типы отображаются в левом раскрывающемся списке, и элементы отображаются в правом раскрывающемся списке. Когда пользователь выбирает тип, курсор помещается в первую строку типа. Когда пользователь выбирает элемент, курсор помещается в определение элемента. Раскрывающиеся списки обновляются в соответствии с текущим положением курсора.

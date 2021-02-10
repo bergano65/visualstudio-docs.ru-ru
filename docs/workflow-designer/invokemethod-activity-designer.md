@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55162def18d2295e0767a3999ffde75d71e1233d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2ba7234ee0c5a4ab8096c020cb44345f17830540
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437740"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931218"
 ---
 # <a name="invokemethod-activity-designer"></a>Конструктор действия InvokeMethod
 
@@ -37,13 +37,13 @@ ms.locfileid: "94437740"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Понятное имя действия <xref:System.Activities.Statements.InvokeMethod>. Значение по умолчанию - InvokeMethod.<br /><br /> Хотя <xref:System.Activities.Activity.DisplayName%2A> использование не является строго обязательным, лучше использовать его.|
-|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|Верно|Имя метода, вызываемого, когда выполняется действие. Вызываемый метод должен быть объявлен как **открытый**. Это свойство может быть изменено на поверхности конструктора и является обязательным.|
-|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|Неверно|Коллекция параметров вызванного метода. Параметры должны добавляться в коллекцию в том же порядке, в котором они представлены в сигнатуре метода. Чтобы отобразить диалоговое окно **Параметры** , в котором можно задать это свойство, нажмите кнопку с многоточием в поле **Параметры** сетки свойств. Нажмите кнопку **Создать аргумент** , чтобы добавить параметры.|
-|<xref:System.Activities.Statements.InvokeMethod.Result%2A>|Неверно|Возвращаемое значение вызова метода.|
-|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|Верно|Указывает, вызывается ли метод асинхронно. Значение по умолчанию равно **False**.|
-|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|Неверно|Объект, в котором содержится метод для вызова. Это свойство можно изменить в области конструктора.<br /><br /> Необходимо указать либо <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>, либо <xref:System.Activities.Statements.InvokeMethod.TargetType%2A>.|
-|<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|Неверно|Тип параметра <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>. Это свойство можно изменить в области конструктора. Это свойство необходимо устанавливать, только если вызванный метод является статическим.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.InvokeMethod>. Значение по умолчанию - InvokeMethod.<br /><br /> Хотя <xref:System.Activities.Activity.DisplayName%2A> использование не является строго обязательным, лучше использовать его.|
+|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|Имя метода, вызываемого, когда выполняется действие. Вызываемый метод должен быть объявлен как **открытый**. Это свойство может быть изменено на поверхности конструктора и является обязательным.|
+|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|Коллекция параметров вызванного метода. Параметры должны добавляться в коллекцию в том же порядке, в котором они представлены в сигнатуре метода. Чтобы отобразить диалоговое окно **Параметры** , в котором можно задать это свойство, нажмите кнопку с многоточием в поле **Параметры** сетки свойств. Нажмите кнопку **Создать аргумент** , чтобы добавить параметры.|
+|<xref:System.Activities.Statements.InvokeMethod.Result%2A>|False|Возвращаемое значение вызова метода.|
+|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|True|Указывает, вызывается ли метод асинхронно. Значение по умолчанию равно **False**.|
+|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|False|Объект, в котором содержится метод для вызова. Это свойство можно изменить в области конструктора.<br /><br /> Необходимо указать либо <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>, либо <xref:System.Activities.Statements.InvokeMethod.TargetType%2A>.|
+|<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|False|Тип параметра <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>. Это свойство можно изменить в области конструктора. Это свойство необходимо устанавливать, только если вызванный метод является статическим.|
 
 Для передачи параметров в качестве параметра **out** C# (например, `Method1(out myParam))` Используйте **Аргумент** of вместо **инаутаргумент**
 

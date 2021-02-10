@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], Excel
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e6ca4cfd45c1147d10ffaf8d3308b9adb09c689e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 3833ff549b2cceb3f783afc43a4f71dacc00ecb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931283"
 ---
 # <a name="excel-solutions"></a>решения Excel
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания настроек на уровне документа и надстроек VSTO для Microsoft Office Excel. Эти решения можно использовать для автоматизации Excel, расширения функциональных возможностей Excel и настройки пользовательского интерфейса Excel. Дополнительные сведения о различиях между настройками уровня документа и надстройками VSTO см. в статье [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).

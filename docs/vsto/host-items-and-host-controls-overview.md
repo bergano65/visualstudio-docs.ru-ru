@@ -35,15 +35,15 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], deleting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: edc8939f2a9e5f41f81c8176d5268528c273a7ce
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: c58ad4dee128f7b2d0dcd91edb7b19c7f8f5a474
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933626"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Общие сведения о ведущих элементах и элементах управления ведущего приложения
   Ведущие элементы и элементы управления ведущего приложения — это типы элементов, помогающие предоставить модель программирования для решений Office, созданных с помощью средств разработки Office в Visual Studio. Ведущие элементы и элементы управления осуществляют взаимодействие с объектными моделями Microsoft Office Word и Microsoft Office Excel, основанными на модели COM, больше похожее на взаимодействие с управляемыми объектами, такими как элементы управления Windows Forms.

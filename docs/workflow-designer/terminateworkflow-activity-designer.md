@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 08e632ed-0724-4fb4-9df1-f8d443eaf0ac
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fc52153ca71320ebe2ebc1e1a12780e37cac08e
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 3f37c862768dd0d72ba66d435478faed9bee8ef3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931491"
 ---
 # <a name="terminateworkflow-activity-designer"></a>Конструктор действия TerminateWorkflow
 
@@ -39,9 +39,9 @@ ms.locfileid: "96995455"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Понятное имя действия <xref:System.Activities.Statements.TerminateWorkflow>. Значение по умолчанию - TerminateWorkflow. Несмотря на то что использовать отображаемое имя необязательно, его все же рекомендуется задавать.|
-|<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|Неверно|Исключение, которое будет создано при прерывании рабочего процесса. Задайте это свойство в таблице свойств.|
-|<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|Неверно|Причина, которая объясняет причину прерывания рабочего процесса. Задайте это свойство в таблице свойств.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.TerminateWorkflow>. Значение по умолчанию - TerminateWorkflow. Несмотря на то что использовать отображаемое имя необязательно, его все же рекомендуется задавать.|
+|<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|False|Исключение, которое будет создано при прерывании рабочего процесса. Задайте это свойство в таблице свойств.|
+|<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|False|Причина, которая объясняет причину прерывания рабочего процесса. Задайте это свойство в таблице свойств.|
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08f366162f4031b9cc7aa651bf9eca7aab55a15a
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f11be641cb77b6b27b735b7a4f66d45e11d7a193
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914339"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930685"
 ---
 # <a name="change-the-value-of-a-local"></a>Изменение значения локального
 > [!IMPORTANT]
@@ -44,7 +44,7 @@ ms.locfileid: "96914339"
 
    Эта процедура также используется для изменения значения переменной в окне **контрольных** значений, за исключением того, что это `IDebugProperty2` объект, связанный со значением локального объекта, который используется вместо `IDebugProperty2` объекта, связанного с локальным.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
  [Пример реализации изменяемых значений](../../extensibility/debugger/sample-implementation-of-changing-values.md) Использует пример Мицее для пошагового выполнения процесса изменения значений.
 
 ## <a name="see-also"></a>См. также раздел

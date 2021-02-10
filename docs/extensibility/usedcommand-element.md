@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d1dcef25413bddbb1eb5c35a47a9dc0d30f4a8f
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 3c3f4a5f39e7cb999d9b3a86aa791464fca25645
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715968"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934107"
 ---
 # <a name="usedcommand-element"></a>Элемент UsedCommand
 Включает пакет VSPackage для доступа к команде, определенной в другом vsct-файле. Например, если пакет VSPackage использует стандартную команду **Copy** , определяемую [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] оболочкой, можно добавить команду в меню или на панель инструментов без повторной реализации.
@@ -36,15 +36,15 @@ ms.locfileid: "97715968"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|guid|Обязательный. Идентификатор GUID пары ИДЕНТИФИКАТОРов GUID, определяющей команду.|
-|идентификатор|Обязательный. Идентификатор пары ИДЕНТИФИКАТОРов GUID, определяющей команду.|
+|guid|Обязательный элемент. Идентификатор GUID пары ИДЕНТИФИКАТОРов GUID, определяющей команду.|
+|идентификатор|Обязательный элемент. Идентификатор пары ИДЕНТИФИКАТОРов GUID, определяющей команду.|
 |Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|None||
+|Отсутствуют||
 
 ### <a name="parent-elements"></a>Родительские элементы
 

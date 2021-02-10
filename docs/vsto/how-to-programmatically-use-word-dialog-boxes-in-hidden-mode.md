@@ -14,15 +14,15 @@ helpviewer_keywords:
 - dialog boxes, hidden mode in Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 263041fe15f07e8041bb771a6f3abd8b3311b0f2
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0977e7241920ad23a6248bb2349ddaeb10a5e931
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523165"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931257"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Руководство. программное использование диалоговых окон Word в скрытом режиме
   Можно выполнять сложные операции с одним вызовом метода путем вызова встроенных диалоговых окон в Microsoft Office Word без отображения их пользователю. Это можно сделать с помощью <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> метода <xref:Microsoft.Office.Interop.Word.Dialog> объекта, не вызывая <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> метод.

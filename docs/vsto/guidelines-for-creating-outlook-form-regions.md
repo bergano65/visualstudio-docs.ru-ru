@@ -12,15 +12,15 @@ helpviewer_keywords:
 - icons [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aaf6b96548a9856833fcd1768764ed914da30a07
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a3a2fab671d6302583f1207f5756118c548bd8a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848096"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933613"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Рекомендации по созданию областей формы Outlook
   Следующие сведения помогут вам оптимизировать области формы и предотвращать потенциальные проблемы.

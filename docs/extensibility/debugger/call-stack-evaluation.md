@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 373d6b49-0459-4cce-816e-05745a44fe49
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc637ff3ce2fe596eed48684523da7114fe0a03a
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 223b1fff75c8fefdfed5bce5765d82fc5309738d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930737"
 ---
 # <a name="call-stack-evaluation"></a>Оценка стека вызовов
 Чтобы просмотреть кадры стека стека вызовов в режиме приостановки выполнения, необходимо реализовать метод [енумфрамеинфо](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
