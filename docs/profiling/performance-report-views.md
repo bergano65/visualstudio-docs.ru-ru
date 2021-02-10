@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 3e84e513-dc64-40bb-b385-03281f28b519
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 611c31027bd725d8a1a98e6cb2e76d544743c811
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: d40ce1ff5f66b2d04425d116d84dc7aa40571b08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722754"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922235"
 ---
 # <a name="performance-report-views"></a>Представления отчетов о производительности
 Этот раздел содержит справочные сведения по отчетам и представлениям средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Представления файлов данных профилирования отображаются в интегрированной среде разработки [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Отчеты создаются средством командной строки [VSPerfReport](../profiling/vsperfreport.md).

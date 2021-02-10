@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c85d0968-9f22-4d69-87f4-acca2ae777b8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a713b6db074586898ff72cd8595c4cc0d20d99cf
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 024926123e8a9967947d11635558eb6ea06077cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921672"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Практическое руководство. Установка имени потока в машинном коде
 Именование потоков можно выполнить в любом выпуске Visual Studio. Именование потоков позволяет находить необходимые потоки в окне **Потоки** при отладке выполняемого процесса. Кроме того, понятные имена потоков удобны при выполнении проверки аварийного дампа и анализа данных по производительности с применением различных инструментов.

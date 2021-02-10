@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 79fb4b7cf7a5df4b2077a2145172d24acdbf86cb
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: da6501602c9ffd12750643e50d230ef15c0f922c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922269"
 ---
 # <a name="performance-report-view-filter"></a>Фильтр представления отчетов о производительности
 Окно **фильтра представления отчета профилировщика** расположено в верхней части окна **отчета о производительности**. Если оно не отображается, нажмите кнопку **Показать фильтр**.
