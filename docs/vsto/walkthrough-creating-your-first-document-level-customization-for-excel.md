@@ -14,15 +14,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4183e84a930957b7cf87a6cc1e6fabcb21420785
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ae0f4982ca325970b8b7965c956a7d2dea4bf60f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527952"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966673"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Пошаговое руководство. Создание первой настройки уровня документа для Excel
 
@@ -68,7 +68,7 @@ ms.locfileid: "97527952"
 
 6. В поле **имя** введите **фирстворкбуккустомизатион**.
 
-7. Нажмите кнопку **ОК**.
+7. Нажмите кнопку **OK**.
 
 8. Выберите **создать новый документ** в **мастере инструменты Visual Studio для проектов Office** и нажмите кнопку **ОК**.
 ::: moniker-end
@@ -77,7 +77,7 @@ ms.locfileid: "97527952"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. Щелкните **Далее**.
+4. Нажмите кнопку **Далее**.
 
 5. Введите **фирстворкбуккустомизатион** в поле **имя** в диалоговом окне **Настройка нового проекта** и нажмите кнопку **создать**.
 
@@ -167,7 +167,7 @@ ms.locfileid: "97527952"
 
 1. В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
  Теперь после создания базовой настройки на уровне документа для Excel в следующих разделах можно ознакомиться с процессом разработки настроек:
 

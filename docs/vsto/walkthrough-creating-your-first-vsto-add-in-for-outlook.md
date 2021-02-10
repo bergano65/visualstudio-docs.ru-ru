@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7950858d3205cf910eb09e5b0a99b5f67c71c4bd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 16f735e2902527307ac812922495a2a0cb3b377e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524231"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966595"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Пошаговое руководство. Создание первой надстройки VSTO для Outlook
   В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office Outlook. Функции, создаваемые в подобном решении, доступны для приложения независимо от того, какой элемент Outlook открыт. Дополнительные сведения см. в статье [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -66,7 +66,7 @@ ms.locfileid: "97524231"
 
 6. В поле **Имя** введите **FirstOutlookAddIn**.
 
-7. Нажмите кнопку **ОК**.
+7. Нажмите кнопку **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создает проект **FirstOutlookAddIn** и открывает файл кода **ThisAddIn** в редакторе.
 
@@ -126,7 +126,7 @@ ms.locfileid: "97524231"
 
 1. В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Теперь, когда вы создали базовую надстройку VSTO для Outlook, изучите более подробную информацию о разработке надстроек VSTO в следующих разделах.
 
 - Общие задачи программирования, которые можно выполнять с помощью надстроек VSTO для Outlook. Дополнительные сведения см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md).

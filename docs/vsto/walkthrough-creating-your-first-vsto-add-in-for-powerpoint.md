@@ -15,15 +15,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3e02da3484ce7c2beb35e643d3d90d8e37225e11
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c73c5ab61c51ca4be749e9bf14700c7bea64023e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524853"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966543"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Пошаговое руководство. Создание первой надстройки VSTO для PowerPoint
   В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office PowerPoint. Функции, создаваемые в подобном решении, доступны для приложения независимо от того, какие презентации открыты. Дополнительные сведения см. в статье [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -65,7 +65,7 @@ ms.locfileid: "97524853"
 
 6. В поле **имя** введите **фирстповерпоинтаддин**.
 
-7. Нажмите кнопку **ОК**.
+7. Нажмите кнопку **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создает проект **фирстповерпоинтаддин** и открывает файл кода **ThisAddIn** в редакторе.
 
@@ -119,7 +119,7 @@ ms.locfileid: "97524853"
 
 1. В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Теперь, когда вы создали базовую надстройку VSTO для PowerPoint, изучите более подробную информацию о разработке надстроек VSTO в следующих разделах:
 
 - Общие задачи программирования, которые можно выполнять в надстройках VSTO для PowerPoint. Дополнительные сведения см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md).

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e732c6d9d791d789471c49a319ab9945fdd5dc06
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 4b35bcb6fcd1dc2ac3826d5dccb17ff764979321
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996179"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968753"
 ---
 # <a name="parallelforeach-activity-designer"></a>Конструктор действия ParallelForEach
 
@@ -45,8 +45,8 @@ ms.locfileid: "96996179"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Указывает понятное отображаемое имя действия конструктора в заголовке. Значение по умолчанию **— \<Int32> ParallelForEach**. Значение можно дополнительно изменить в сетке **свойств** или непосредственно в заголовке конструктора операций.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|Неверно|Действие, выполняемое для каждого элемента в коллекции. Чтобы добавить <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> действие, перетащите действие из области элементов в поле **текст** в конструкторе действия **ParallelForEach \<T>** с текстом подсказки "перетащите действие сюда".|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает понятное отображаемое имя действия конструктора в заголовке. Значение по умолчанию **— \<Int32> ParallelForEach**. Значение можно дополнительно изменить в сетке **свойств** или непосредственно в заголовке конструктора операций.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|Действие, выполняемое для каждого элемента в коллекции. Чтобы добавить <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> действие, перетащите действие из области элементов в поле **текст** в конструкторе действия **ParallelForEach \<T>** с текстом подсказки "перетащите действие сюда".|
 |**TypeArgument**|True|Тип элементов в <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> коллекции, заданном универсальным параметром *T*. По умолчанию **TypeArgument** имеет значение **Int32**. Чтобы изменить тип T в конструкторе действий **ParallelForEach<\> T** , измените значение поля со списком **TypeArgument** в сетке свойств.|
 |<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|Коллекция элементов для итерации. Чтобы задать <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> , введите Visual Basic выражение в поле **значения** в конструкторе действий **foreach<T \>** в поле с текстом подсказки "введите выражение VB" или в поле " **значения** " в окне " **Свойства** ".|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Оценивается после каждого выполнения итерации. Если результат оценки равен true, то запланированные ожидающие итерации отменяются. Если это свойство не задано, все запланированные инструкции выполняются до завершения.|

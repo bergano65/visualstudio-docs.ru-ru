@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <update> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5712be9e12ede3338856955e00a34a7565d733ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537388"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968766"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент Update (разработка решений Office в Visual Studio)
   `update`Элемент указывает интервал, в течение которого решение будет проверять наличие обновлений.
@@ -43,7 +43,7 @@ ms.locfileid: "85537388"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`enabled`|Обязательный. Задайте для параметра включено одно из следующих значений:<br /><br /> -   **значение true** для проверки наличия обновлений.<br />-   **значение false** , чтобы запретить проверку наличия обновлений.|
+|`enabled`|Обязательный элемент. Задайте для параметра включено одно из следующих значений:<br /><br /> -   **значение true** для проверки наличия обновлений.<br />-   **значение false** , чтобы запретить проверку наличия обновлений.|
 
  Элемент `update` имеет указанные ниже дочерние элементы.
 
@@ -54,8 +54,8 @@ ms.locfileid: "85537388"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`maximumAge`| Обязательный. Задайте значение, равное целому числу.|
-|`unit`|Обязательный. Задайте `unit` одно из следующих значений:<br /><br /> -   **суток**<br />-   **недели**<br />-   **неделю**|
+|`maximumAge`| Обязательный элемент. Задайте значение, равное целому числу.|
+|`unit`|Обязательный элемент. Задайте `unit` одно из следующих значений:<br /><br /> -   **суток**<br />-   **недели**<br />-   **неделю**|
 
 ## <a name="example-of-always-checking-for-updates"></a>Пример всегда проверять наличие обновлений
 

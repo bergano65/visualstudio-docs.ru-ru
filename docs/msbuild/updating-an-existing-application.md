@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bde46ef959e0d005c9ab90ef8d2807ed240571
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: bd7f47466074536c9088840e726f768f62f9346b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965932"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Обновление существующего приложения для использования MSBuild 15
 
@@ -24,7 +24,7 @@ ms.locfileid: "93047653"
 
 ## <a name="use-msbuild-from-visual-studio"></a>Использование MSBuild из Visual Studio
 
-Чтобы обеспечить соответствие сборок, выполняемых программными средствами из приложения, сборкам, выполняемым в Visual Studio или *MSBuild.exe* , следует загружать сборки MSBuild из Visual Studio и использовать пакеты SDK, доступные в Visual Studio. Пакет NuGet Microsoft.Build.Locator упрощает этот процесс.
+Чтобы обеспечить соответствие сборок, выполняемых программными средствами из приложения, сборкам, выполняемым в Visual Studio или *MSBuild.exe*, следует загружать сборки MSBuild из Visual Studio и использовать пакеты SDK, доступные в Visual Studio. Пакет NuGet Microsoft.Build.Locator упрощает этот процесс.
 
 ## <a name="use-microsoftbuildlocator"></a>Использование пакета Microsoft.Build.Locator
 
@@ -71,7 +71,7 @@ ms.locfileid: "93047653"
 
 ### <a name="ensure-output-is-clean"></a>Очистка выходных данных
 
-Выполните сборку проекта и проверьте выходной каталог, чтобы убедиться в том, что в нем нет сборок *Microsoft.Build.\*.dll* , кроме сборки *Microsoft.Build.Locator.dll* , которая будет добавлена в следующем шаге.
+Выполните сборку проекта и проверьте выходной каталог, чтобы убедиться в том, что в нем нет сборок *Microsoft.Build.\*.dll*, кроме сборки *Microsoft.Build.Locator.dll*, которая будет добавлена в следующем шаге.
 
 ### <a name="add-package-reference-for-microsoftbuildlocator"></a>Добавление ссылки на пакет Microsoft.Build.Locator
 

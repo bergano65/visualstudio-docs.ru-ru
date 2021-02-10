@@ -11,22 +11,22 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc1da67206e5e5c9fde1b5c595424239d1685ac7
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 72938f316be22cd9b2eab2d7dab893c9370fb0ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304381"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965854"
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>Как задать команды развертывания SharePoint
   Процесс развертывания можно настроить, задав команды, выполняемые перед развертыванием и после него. Эти команды выполняются до и после других действий по развертыванию при отладке решений SharePoint из Visual Studio.
 
 ### <a name="to-add-a-pre-deployment-command"></a>Добавление команды перед развертыванием
 
-1. В строке меню выберите **Project**  >  **\<*ProjectName*> Свойства** проекта.
+1. В строке меню выберите   >  **\<*ProjectName*> Свойства** проекта.
 
 2. Перейдите на вкладку **SharePoint** .
 
@@ -36,7 +36,7 @@ ms.locfileid: "96304381"
 
 ### <a name="to-add-a-post-deployment-command"></a>Добавление команды после развертывания
 
-1. В строке меню выберите **Project**  >  **\<*ProjectName*> Свойства** проекта.
+1. В строке меню выберите   >  **\<*ProjectName*> Свойства** проекта.
 
 2. Перейдите на вкладку **SharePoint** .
 

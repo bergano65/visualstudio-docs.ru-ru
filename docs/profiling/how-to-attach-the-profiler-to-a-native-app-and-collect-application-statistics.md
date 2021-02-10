@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: df44fe42-281b-4398-b3fc-277b62ae41f1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37914559f71748865e25b5512264f6597ae4ef42
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: bbf5ab15353865af3c241fef0be5e791d8937a4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801651"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965880"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к собственному автономному приложению и сбор статистики приложения с помощью командной строки
 В этой статье описывается, как с помощью средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], выполняемых из командной строки, присоединить профилировщик к автономному приложению в машинном коде и собрать статистические данные о производительности с использованием метода выборки.

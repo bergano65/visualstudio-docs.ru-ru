@@ -13,15 +13,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c1f827346c30720cefd781dade3039416504b9c0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 56777213c4cac0e2356fa33235d2527abdbb5172
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527081"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966647"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Пошаговое руководство. Создание первой настройки уровня документа для Word
 
@@ -67,7 +67,7 @@ ms.locfileid: "97527081"
 
 6. В поле **имя** введите **фирстдокументкустомизатион**.
 
-7. Нажмите кнопку **ОК**.
+7. Нажмите кнопку **OK**.
 
 8. Выберите **создать новый документ** в **мастере инструменты Visual Studio для проектов Office** и нажмите кнопку **ОК**.
 ::: moniker-end
@@ -76,7 +76,7 @@ ms.locfileid: "97527081"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. Щелкните **Далее**.
+4. Нажмите кнопку **Далее**.
 
 5. Введите **фирстворкбуккустомизатион** в поле **имя** в диалоговом окне **Настройка нового проекта** и нажмите кнопку **создать**.
 
@@ -154,7 +154,7 @@ ms.locfileid: "97527081"
 
 1. В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
  Теперь после создания базовой настройки на уровне документа для Word в следующих разделах можно ознакомиться с процессом разработки настроек:
 

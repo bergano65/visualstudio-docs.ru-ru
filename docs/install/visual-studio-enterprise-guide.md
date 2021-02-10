@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 56a6142d7217d6afa7d48ea708c642a32d8cb3c8
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: e653d7ae5f2408fd8438cbdf69a28648c6bcc446
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713442"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967115"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Руководство по Visual Studio Enterprise
 Начните с этой статьи, если вы хотите сэкономить время, настраивая Visual Studio в корпоративной среде. Это корпоративное руководство содержит советы, которые помогут вам установить и обновить Visual Studio в общих корпоративных сценариях, а также устранить возникающие проблемы. Кроме того, вы узнаете, как сообщить о проблеме, если вам нужна помощь. 
