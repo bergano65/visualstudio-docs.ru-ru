@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ef4f6259-a110-43b6-a325-364154e1ba00
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 02dc0e009702b25c2204f0a1302931fe941b5f59
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 31ad1fbdf44283a0dc7f5f6374299aab27303db1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720375"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960264"
 ---
 # <a name="report-based-on-visible-time-range"></a>Отчет на основе видимого временного диапазона
 Представление профиля содержит отчеты, основанные на текущем видимом временном диапазоне и каналах. Для просмотра подробных сведений для разных подмножеств данных щелкните элементы в условных обозначениях.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d89498f1-4234-46d9-b4e2-abbcbca5068a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0a6746ed0df400efc7feb3fb541c57c88f78cc2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0ca5fd553d94fdf866424b4cd0dc2b2a5fdb094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962110"
 ---
 # <a name="jmc_code_spec"></a>JMC_CODE_SPEC
 Эта структура используется для задания сведений Жустмикоде для модуля.
@@ -41,7 +41,7 @@ public struct JMC_CODE_SPEC {
 };
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 `fIsUserCode`\
 Ненулевое значение ( `TRUE` ), если модуль должен считаться пользовательским кодом; в противном случае — нуль ( `FALSE` ), если модуль должен обрабатываться как внешний код, а не для отладки.
 

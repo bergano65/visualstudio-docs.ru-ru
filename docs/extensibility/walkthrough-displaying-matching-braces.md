@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce40f5673a8aba4ab3f7714a3aafdc3de4697cc4
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: f89c6303dc8ca9e48fb212a3ae889251b34ece91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877953"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961733"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Пошаговое руководство. Отображение парных скобок
 Реализуйте языковые функции, такие как Парные фигурные скобки, путем определения фигурных скобок, которые необходимо сопоставить, и добавления тега текстового маркера к парным фигурным скобкам, если курсор находится на одной из фигурных скобок. Можно определить фигурные скобки в контексте языка, определить собственное расширение имени файла и тип содержимого, применить теги только к этому типу или применить теги к существующему типу содержимого (например, "Text"). В следующем пошаговом руководстве показано, как применить теги сопоставления фигурных скобок к типу содержимого text.

@@ -17,26 +17,26 @@ helpviewer_keywords:
 ms.assetid: 653339f7-654b-4d64-a26a-5c9f27036895
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43e8fc7b9b09af51ea3be73409e2dcde9a718cee
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9e71e11988d4dd853b0f97c745b6d720a45adcdc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046821"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961551"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>Задача UpdateManifestForBrowserApplication
 
-Задача <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> выполняется для добавления элемента **\<hostInBrowser />** в манифест приложения ( *\<projectname>.exe.manifest* ) при сборке проекта Приложение обозревателя XAML (XBAP).
+Задача <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> выполняется для добавления элемента **\<hostInBrowser />** в манифест приложения ( *\<projectname>.exe.manifest*) при сборке проекта Приложение обозревателя XAML (XBAP).
 
 ## <a name="task-parameters"></a>Параметры задачи
 
 |Параметр|Описание|
 |---------------|-----------------|
 |`ApplicationManifest`|Обязательный параметр **ITaskItem[]** .<br /><br /> Задает путь и имя файла манифеста приложения, в который необходимо добавить элемент `<hostInBrowser />`.|
-|`HostInBrowser`|Обязательный параметр **Boolean**.<br /><br /> Указывает, следует ли изменить манифест приложения для включения элемента **\<hostInBrowser />** . Если значение **true** , новый элемент **\<hostInBrowser />** включается в элемент **\<entryPoint />** . Включение элемента является накопительным: если элемент **\<hostInBrowser />** уже существует, он не удаляется и не перезаписывается. Вместо этого создается дополнительный элемент **\<hostInBrowser />** . Если задано значение **false** , манифест приложения не изменяется.|
+|`HostInBrowser`|Обязательный параметр **Boolean**.<br /><br /> Указывает, следует ли изменить манифест приложения для включения элемента **\<hostInBrowser />** . Если значение **true**, новый элемент **\<hostInBrowser />** включается в элемент **\<entryPoint />** . Включение элемента является накопительным: если элемент **\<hostInBrowser />** уже существует, он не удаляется и не перезаписывается. Вместо этого создается дополнительный элемент **\<hostInBrowser />** . Если задано значение **false**, манифест приложения не изменяется.|
 
 ## <a name="remarks"></a>Примечания
 

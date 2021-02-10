@@ -9,15 +9,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6a818973bdc2f62194d6ed0026c0798806fe5f2a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9fc319429414c8976d748a30ecdd1e164ce22b63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525326"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962266"
 ---
 # <a name="iwefdebuggingsupport-interface"></a>Интерфейс IWefDebuggingSupport
   Реализуется средой отладки, например Visual Studio, для упрощения отладки приложений для Office. Приложение Office, например Word или Excel, получает этот интерфейс из Visual Studio, а затем вызывает методы интерфейса в определенных точках во время сеанса отладки.

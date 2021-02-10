@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39ee69f934a9962d2beefb83b1ada08b920ce53d
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 91c59737d269af4eb91df402f38346cf41e3146e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994671"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961772"
 ---
 # <a name="extend-the-output-window"></a>Расширение окна вывода
 Окно **вывода** представляет собой набор панелей текста, предназначенных для чтения и записи. В Visual Studio имеются следующие встроенные панели: **Сборка**, в которой проекты обмениваются сообщениями о сборках, и **Общие**, в которых [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] сообщения взаимодействуют с интегрированной средой разработки. Проекты автоматически получают ссылку на область **сборки** через <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> методы интерфейса, а Visual Studio предоставляет прямой доступ к панели " **Общие** " через <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> службу. Помимо встроенных панелей можно создавать пользовательские панели и управлять ими.

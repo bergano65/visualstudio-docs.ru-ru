@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], automating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 81c2852a92124a7cf9fb6078b196982d22100be7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 11a0db0e23cf5512a6568ba5b66e0c18e563bd12
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528099"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962383"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Пошаговое руководство. Назначение приложений Office через основные сборки взаимодействия
   При создании нового проекта Office Visual Studio автоматически добавляет ссылки на основные сборки взаимодействия (PIA) Microsoft Office, необходимые для построения проекта. Ссылки на другие основные сборки взаимодействия необходимо добавлять в следующих случаях.
@@ -49,7 +49,7 @@ ms.locfileid: "97528099"
     > [!NOTE]
     > В проектах Office всегда добавляйте ссылки на основные сборки взаимодействия Office, используя вкладку **.NET** диалогового окна **Добавление ссылки** , а не на вкладку **com** . Дополнительные сведения см. в разделе [основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md).
 
-4. Нажмите кнопку **ОК**.
+4. Нажмите кнопку **OK**.
 
      Имя сборки отображается в папке **references** **Обозреватель решений**.
 

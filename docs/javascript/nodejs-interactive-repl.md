@@ -6,21 +6,21 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8b2bbbdf478f27f936d4897f2ff773baa4cca1d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f13128bc552ffdb31b3f4a9315a3f9aa3543b0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285008"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962695"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>Взаимодействие с интерактивным окном Node.js
 
-Инструменты node.js для Visual Studio предоставляют интерактивное окно для установленной среды выполнения Node.js. В этом окне вы можете ввести код JavaScript и сразу увидеть результаты его выполнения, а также взаимодействовать с текущим проектом с помощью команд npm. Это интерактивное окно называют средством REPL (**R**ead/**E**valuate/**P**rint **L**oop — Цикл "Чтение — оценка — печать").
+Инструменты node.js для Visual Studio предоставляют интерактивное окно для установленной среды выполнения Node.js. В этом окне вы можете ввести код JavaScript и сразу увидеть результаты его выполнения, а также взаимодействовать с текущим проектом с помощью команд npm. Это интерактивное окно называют средством REPL (**R** ead/**E** valuate/**P** rint **L** oop — Цикл "Чтение — оценка — печать").
 
 ## <a name="open-the-interactive-window"></a>Открытие интерактивного окна
 

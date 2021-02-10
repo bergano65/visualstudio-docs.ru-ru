@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4132d878ff1ec7689be890446a1849577fafd30
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 98c73da67e607346138d7d6fae124a86b7a34618
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877927"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961850"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Пошаговое руководство. публикация расширения Visual Studio с помощью командной строки
 
@@ -94,7 +94,7 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 |---------|---------|
 |Персоналакцесстокен (обязательно | Личный маркер доступа, используемый для проверки подлинности издателя. |
 |publisherName (обязательно) | Имя издателя (например, идентификатор). |
-|overwrite | Указывает, что любой существующий издатель должен быть перезаписан с новым личным маркером доступа. |
+|перезапись | Указывает, что любой существующий издатель должен быть перезаписан с новым личным маркером доступа. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
