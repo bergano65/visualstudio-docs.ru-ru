@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d49b9f84-52a2-4242-9269-b741a7a7e9f7
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b4afc20b7845f3af71de1fbbb89f074801e08d1d
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 45ad1cc57412161e2510f93cacb5a043be59802e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967557"
 ---
 # <a name="findinlist-task"></a>FindInList - задача
 
@@ -46,7 +46,7 @@ ms.locfileid: "92435692"
 
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

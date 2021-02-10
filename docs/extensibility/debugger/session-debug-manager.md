@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2c51b1fd345789cabbb9735621626ab7c2db993
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d67716f78249bda5d316ffde175b80f4ef1c1e45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845288"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960784"
 ---
 # <a name="session-debug-manager"></a>Диспетчер отладки сеансов
 Диспетчер отладки сеансов (SDM) управляет любым количеством модулей отладки (DE), которые отлаживать любое количество программ в нескольких процессах на любом количестве компьютеров. В дополнение к мультиплексору модуля отладки, модель SDM предоставляет унифицированное представление сеанса отладки в интегрированной среде разработки.

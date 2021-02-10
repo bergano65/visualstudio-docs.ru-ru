@@ -19,22 +19,22 @@ helpviewer_keywords:
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aef78460197796767ec1429179e5598d0f12dbc
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7227fff5dd4c58e1bce81ef8cad5c32f854abf55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960329"
 ---
 # <a name="xsd-task"></a>XSD - задача
 
-Создает оболочку для инструмента определения схемы XML ( *xsd.exe* ), который создает файлы схемы или класса из источника.
+Создает оболочку для инструмента определения схемы XML (*xsd.exe*), который создает файлы схемы или класса из источника.
 
 > [!NOTE]
-> Начиная с версии Visual Studio 2017 поддержка проектов C++ для *xsd.exe* отмечена как нерекомендуемая. Вы можете продолжать использовать API **Microsoft.VisualC.CppCodeProvider** , вручную добавив *CppCodeProvider.dll* в глобальный кэш сборок.
+> Начиная с версии Visual Studio 2017 поддержка проектов C++ для *xsd.exe* отмечена как нерекомендуемая. Вы можете продолжать использовать API **Microsoft.VisualC.CppCodeProvider**, вручную добавив *CppCodeProvider.dll* в глобальный кэш сборок.
 
 ## <a name="parameters"></a>Параметры
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f244fb6d681c9cc22416422be3ade098c67deea
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: a88535f4d41772c8d3b6ebc8a62e5c8aaea866ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671289"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968337"
 ---
 # <a name="description-element-visual-studio-templates"></a>Элемент Description (шаблоны Visual Studio)
 Задает описание шаблона в том виде, в каком оно отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** .
@@ -62,7 +62,7 @@ ms.locfileid: "94671289"
 
  Текст содержит описание шаблона.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  `Description` является обязательным дочерним элементом `TemplateData` элемента.
 
 ## <a name="example"></a>Пример

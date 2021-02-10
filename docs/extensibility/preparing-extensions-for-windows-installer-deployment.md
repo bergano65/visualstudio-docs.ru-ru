@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba494af91d3d40720493b27e7381660ece3fba69
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: ba25698cd1efc6aebf030638e191f139a14f99a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967297"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Подготовка расширений для развертывания установщик Windows
 Нельзя использовать пакет установщик Windows (MSI) для развертывания пакета VSIX. Однако можно извлечь содержимое пакета VSIX для развертывания MSI. В этом документе показано, как подготовить проект, выходные данные которого по умолчанию — пакет VSIX для включения в проект установки.
