@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d046957a-b97d-420b-b46b-c67cbaef709e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a305d34123d02b1fdbd545a438db4461643ed185
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f6ecbd791297f4c186d22d9ed14c627cf7be43f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737028"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941857"
 ---
 # <a name="exception_info"></a>EXCEPTION_INFO
 Описывает исключение или ошибку времени выполнения, вызванную отлаживаемой программой.
@@ -49,7 +49,7 @@ public struct EXCEPTION_INFO {
 };
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 `pProgram`\
 Объект [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , представляющий программу, в которой возникло исключение.
 
@@ -78,7 +78,7 @@ public struct EXCEPTION_INFO {
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

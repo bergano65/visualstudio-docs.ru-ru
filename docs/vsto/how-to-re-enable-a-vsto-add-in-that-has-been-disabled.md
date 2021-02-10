@@ -15,15 +15,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], enabling
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d03a03494b149a761910ddbdaa1d41592704f969
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: de3e251c15699ce29b7986e4f0cc19a3f5c5798d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524484"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942194"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Пошаговое руководство. Повторное включение надстройки VSTO, которая была отключена
   Приложения Microsoft Office могут отключать надстройки VSTO, которые ведут себя непредсказуемым образом. Если приложение не загружает надстройку VSTO при попытке выполнить отладку, возможно, вы жестко или мягко отключили надстройку VSTO.
@@ -49,7 +49,7 @@ ms.locfileid: "97524484"
 
 6. Выберите надстройку VSTO и нажмите кнопку **Включить**.
 
-7. Щелкните **Закрыть**.
+7. Нажмите кнопку **Закрыть**.
 
 ## <a name="soft-disabled-vsto-add-ins"></a>Обратимо Отключенные надстройки VSTO
  Мягкое отключение применяется, если вызванная надстройкой VSTO ошибка не приводит к неожиданному завершению работы приложения. Надстройка VSTO отключается мягким способом, например, если выдает необработанное исключение во время выполнения обработчика событий <xref:Microsoft.Office.Tools.AddIn.Startup> .

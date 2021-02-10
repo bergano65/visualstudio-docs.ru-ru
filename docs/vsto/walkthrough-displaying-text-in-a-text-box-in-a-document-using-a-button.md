@@ -11,15 +11,15 @@ helpviewer_keywords:
 - text boxes, displaying text in documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1cda1fe3e7430ff30dcc3b3921eb2bcd4d31b699
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0efea386da2bec0136a8a5399a04b9ce8cabf5c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942104"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Пошаговое руководство. Отображение текста в текстовом поле документа с помощью кнопки
   В этом пошаговом руководстве демонстрируется использование кнопок и текстовых полей в настройке уровня документа для Microsoft Office Word.
@@ -72,7 +72,7 @@ ms.locfileid: "97522744"
 
    |Свойство|Значение|
    |--------------|-----------|
-   |**имя**;|**insertText**|
+   |**Имя**|**insertText**|
    |**Text**|**Вставить текст**|
 
    Теперь можно написать код, который будет выполняться при нажатии кнопки.
@@ -104,7 +104,7 @@ ms.locfileid: "97522744"
 
 3. Убедитесь, что **Hello World!** отображается в текстовом поле.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  В этом пошаговом руководстве описываются основные принципы использования кнопок и текстовых полей в документах Word. Ниже приводятся некоторые из возможных последующих задач.
 
 - Использование поля со списком для изменения форматирования. Дополнительные сведения см. в разделе [Пошаговое руководство. изменение форматирования документа с помощью элементов управления CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], document properties
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 60ee5ccebc9c6c38369ed707c9d2043ffc1995c9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 864906e678cb3976e99dd8d9aeb9147e303f2517
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528204"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942188"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Руководство. чтение и запись в свойства документа
   Свойства документа можно сохранять вместе с документом. Приложения Office содержат различные встроенные свойства, например автора, название и тему. В этом разделе показано, как задать свойства документа в Microsoft Office Excel и Microsoft Office Word.

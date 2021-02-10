@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7dc9030-fc98-4cf1-b943-37a4003300b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 061035933e57ea4ca8e7857f68ac3d6311bae32c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95f79062c4ca2452d6ed271660841fccb8adfca3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941818"
 ---
 # <a name="idebugmethodfield"></a>IDebugMethodField
 Этот интерфейс описывает метод.
@@ -25,7 +25,7 @@ ms.locfileid: "80727061"
 ## <a name="syntax"></a>Синтаксис
 
 ```
-IDebugMethodField : IDebugContainerField
+IDebugMethodField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков
