@@ -110,15 +110,15 @@ helpviewer_keywords:
 ms.assetid: 860c7f13-a108-4fe5-8fca-d235cd3ca1cb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6130b49beecb3411c275fc5d2005b7aabee262fd
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 168dac192972c2ee670d733a07503ffe2776910e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975294"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842725"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Параметры проекта для конфигурации отладки C++
 Параметры проекта для конфигурации отладки C или C++ можно изменить в диалоговом окне **Страницы свойств**, как описано в статье [Практическое руководство. Настройка конфигураций отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где в диалоговом окне **Страницы свойств** можно найти параметры, связанные с отладчиком.

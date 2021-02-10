@@ -4,18 +4,18 @@ description: Описание установки средств искусств
 keywords: искусственный интеллект, visual studio
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ffa8c7634c0d97dd24ff69814ae73ad5ff12928b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdbabcc9288a2f878b4c8cd86dbba97922f471c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800207"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841449"
 ---
 # <a name="installation"></a>Установка
 
@@ -34,7 +34,7 @@ ms.locfileid: "88800207"
 2. В диалоговом окне **Расширения и обновления** выберите **Online** (Онлайн) с левой стороны.
 3. В поле поиска в правом верхнем углу введите "tools for ai" (средства ИИ).
 4. В результатах выберите **Visual Studio Tools for AI** (Средства Visual Studio для ИИ).
-5. Нажмите кнопку **Скачать**.
+5. Выберите **Загрузить**.
 
 ## <a name="prepare-your-local-machine"></a>Подготовка локального компьютера
 Перед обучением моделей глубокого обучения на локальном компьютере убедитесь в том, что установлены требуемые компоненты. В их число входят последние версии драйверов и библиотек для GPU NVIDIA (если применимо). Убедитесь также в том, что установлены среда и библиотеки Python, такие как NumPy и SciPy, и соответствующие платформы глубокого обучения, такие как Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch и Chainer, которые планируется использовать в проекте.

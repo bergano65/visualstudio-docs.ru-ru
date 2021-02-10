@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a70785f2-5997-40ec-a90f-80a52449768b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 10fd47127abfd9cc476ed7029edd0dbbeb5501de
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 4a1bf0409dacdd6cb2f7de65462f637124a5cecd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99845026"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Вкладка "Память" диалогового окна "Свойства процесса"
 С помощью вкладки **Память** вы можете узнать, как процесс использует память. Чтобы открыть диалоговое окно [Свойства процесса](../debugger/process-properties-dialog-box.md), переместите фокус в окно [представления процессов](../debugger/processes-view.md). Выберите любой узел процесса в дереве, а затем в меню **Вид** выберите пункт **Свойства**.

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7cb97b37-4a95-4f1b-9eee-4910aa9c115b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f6c51276bea76fe77455d13e011aa85efa8f6fd
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 85b2c2bab29316846620c7dbec935b41eec1d9df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148563"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99845078"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Практическое руководство. поиск процесса в представлении процессов
 Вы можете найти конкретный процесс в представлении процессов, используя идентификатор процесса или строку модуля в качестве условия поиска. Вы также можете указать начальное направление поиска. Поля в диалоговом окне будут содержать атрибуты процесса, выбранного в дереве процессов.

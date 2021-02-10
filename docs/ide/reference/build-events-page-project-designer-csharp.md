@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f70557338a48931a3d109f345714d219f428f50
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 51b430a18a3d0934c16de19cbde82177a5f21f12
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136853"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836466"
 ---
 # <a name="build-events-page-project-designer-c"></a>Страница "Событий построения" в конструкторе проектов (C#)
 
@@ -41,7 +41,7 @@ ms.locfileid: "92136853"
 
 **Командная строка события перед построением**
 
-Определяет команды, выполняемые перед началом сборки. Для ввода длинных команд нажмите кнопку **Изменить событие "Перед сборкой"** , чтобы открыть диалоговое окно ["Командная строка события перед сборкой" или "Командная строка события после сборки"](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
+Определяет команды, выполняемые перед началом сборки. Для ввода длинных команд нажмите кнопку **Изменить событие "Перед сборкой"**, чтобы открыть диалоговое окно ["Командная строка события перед сборкой" или "Командная строка события после сборки"](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
 > [!NOTE]
 > События перед сборкой не выполняются, если проект актуален и сборка не запускается.
@@ -79,7 +79,7 @@ ms.locfileid: "92136853"
 </PropertyGroup>
 ```
 
-Для проектов .NET Core система Visual Studio 2019 (и Visual Studio 2017 в более последних обновлениях) добавляет целевой объект MSBuild с именем `PreBuild` или `PostBuild` для параметров **PreBuildEvent** и **PostBuildEvent** . Эти целевые объекты используют атрибуты **BeforeTargets** и **AfterTargets** , распознаваемые MSBuild. Например, для предыдущего примера Visual Studio теперь создаст следующий код:
+Для проектов .NET Core система Visual Studio 2019 (и Visual Studio 2017 в более последних обновлениях) добавляет целевой объект MSBuild с именем `PreBuild` или `PostBuild` для параметров **PreBuildEvent** и **PostBuildEvent**. Эти целевые объекты используют атрибуты **BeforeTargets** и **AfterTargets**, распознаваемые MSBuild. Например, для предыдущего примера Visual Studio теперь создаст следующий код:
 
 ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent">

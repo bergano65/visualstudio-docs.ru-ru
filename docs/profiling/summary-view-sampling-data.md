@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 79056873-2985-40be-9112-cdbc26a65156
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e5d75574e29118beacb6312d2dd013a19894a176
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 681e86a8483790a91a6a7e75eef95b5033042e5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718958"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861547"
 ---
 # <a name="summary-view---sampling-data"></a>Представление "Сводка" — данные выборки
 В представлении "Сводка" приводится информация о создающих наибольшую нагрузку функциях в ходе сеанса профилирования. Дополнительные сведения, включая описание ссылок на уведомления и списков отчетов, см. в разделе [Представление "Сводка"](../profiling/summary-view.md).

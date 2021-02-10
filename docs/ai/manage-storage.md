@@ -4,18 +4,18 @@ description: Сведения о том, как использовать фун�
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: b145c4acf4047356b8996d09d746679900314f1b
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: c32fc5f4ceeb090c8c602b01078fd446249f33eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841423"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Обзор хранилища для отправки данных или загрузки моделей и журналов
 

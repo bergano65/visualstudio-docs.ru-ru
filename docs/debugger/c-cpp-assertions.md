@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 2d7b0121-71aa-414b-bbb6-ede1093d0bfc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b585ce001692ab5b4451acc8d2938741bfacd78
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: bc58d125f82a33f982578f9a186d579d280e89e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729071"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865960"
 ---
 # <a name="cc-assertions"></a>Утверждения C/C++
 Оператор утверждения задает условие, которое должно выполняться на определенном этапе работы программы. Если это условие не выполняется, утверждение признается ложным, выполнение программы прерывается и появляется [диалоговое окно "Сбой утверждения"](../debugger/assertion-failed-dialog-box.md).

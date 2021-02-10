@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 397e5e44-4bbe-4289-94d1-642b466c9111
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b578e914c6fa099528008090646372c7d9ef26b1
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: e9a90198ce4cf3dc54eedbf80bbf4ffbad634cbc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871357"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836492"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>Страница "Автовосстановление", папка "Среда", диалоговое окно "Параметры"
 
@@ -38,10 +38,10 @@ ms.locfileid: "95871357"
 
 ::: moniker range="vs-2019"
 
-Используйте этот параметр, чтобы настроить периодичность автоматического сохранения файла в редакторе. Что касается ранее сохраненных файлов, Visual Studio 2019 версии 16.2 и более поздних версий сохраняет копию файла в папке **_%LocalAppData%\Microsoft\VisualStudio\BackupFiles\\[имя_проекта]_* _. Если этот файл новый и еще не был сохранен, Visual Studio автоматически сохраняет его, используя случайно созданное имя файла.
+Используйте этот параметр, чтобы настроить периодичность автоматического сохранения файла в редакторе. Что касается ранее сохраненных файлов, Visual Studio 2019 версии 16.2 и более поздних версий сохраняет копию файла в папке ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles\\[имя_проекта]***. Если этот файл новый и еще не был сохранен, Visual Studio автоматически сохраняет его, используя случайно созданное имя файла.
 
 > [!NOTE]
-> Если вы используете Visual Studio 2019 версии 16.1 или более ранней версии, файл будет расположен в папке _%USERPROFILE%\Documents\Visual Studio [версия]\Backup Files\\[имя_проекта]*. Дополнительные сведения см. в [журнале заметок о выпуске Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/).
+> Если вы используете Visual Studio 2019 версии 16.1 или более ранней версии, файл будет расположен в папке *%USERPROFILE%\Documents\Visual Studio [версия]\Backup Files\\[имя_проекта]* . Дополнительные сведения см. в [журнале заметок о выпуске Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/).
 
 ::: moniker-end
 

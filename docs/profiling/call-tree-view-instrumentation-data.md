@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 306bd176-0ce9-4a10-89ca-20b043d37d4e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c846910da4dec636c073446ae63cffb7cb2a682
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 815c6c0fc3eec3678f878e081d76c95cb7e8fc78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860845"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Представление "Дерево вызовов" — данные инструментирования
 Значения функций в представлении "Дерево вызовов" указывают время для экземпляров функций, вызванных родительской функцией в дереве вызовов. Процентные значения вычисляются путем сравнения значения экземпляров функции с общим затраченным инклюзивным временем всех функций в сеансе профилирования.

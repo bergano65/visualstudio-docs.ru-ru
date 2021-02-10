@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: aa02e647-d9f5-4905-a651-52a8df595795
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 631c9cf61e6da70b3c7554a1aac0cacc8eef0294
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: e7c0530cf91467ec6c9bb2e6937b38510059041b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480152"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836180"
 ---
 # <a name="watch-command"></a>Команда Watch
 Создает и открывает указанный экземпляр окна **Контрольное значение** . Окно **Контрольные значения** можно использовать для вычисления значений переменных, выражений и регистров, чтобы изменять эти значения и сохранять результаты.

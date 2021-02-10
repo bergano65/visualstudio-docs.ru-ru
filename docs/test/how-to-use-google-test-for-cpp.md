@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bf4db1c01fc79d32f7e498c265b74dec34f67e48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cf29d16432b677c6e83ba4cbaedb39f0a8d1ed2
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287250"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572997"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Использование Google Test для C++ в Visual Studio
 
@@ -65,7 +65,7 @@ ms.locfileid: "85287250"
 
 ## <a name="write-and-run-tests"></a>Написание и запуск тестов
 
-Все готово к написанию и выполнению тестов Google Test. Сведения о макросах тестов см. в [учебнике по началу работы с Google Test](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Сведения об обнаружении, выполнении и группировании тестов с помощью **обозревателя тестов** см. в статье [Выполнение модульных тестов с помощью обозревателя тестов](run-unit-tests-with-test-explorer.md).
+Все готово к написанию и выполнению тестов Google Test. Сведения о макросах тестов см. в [учебнике по началу работы с Google Test](https://github.com/google/googletest/blob/master/docs/primer.md). Сведения об обнаружении, выполнении и группировании тестов с помощью **обозревателя тестов** см. в статье [Выполнение модульных тестов с помощью обозревателя тестов](run-unit-tests-with-test-explorer.md).
 
 ## <a name="see-also"></a>См. также раздел
 

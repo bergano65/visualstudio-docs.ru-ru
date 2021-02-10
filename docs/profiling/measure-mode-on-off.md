@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: fbd99736-9ea8-47d2-af51-7e3a4e9c29c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe8ea27f16dc8b120380989c15b1838ea9260d0
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 3b6aa7fd52845ca59c237350bdf264108015a0bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851950"
 ---
 # <a name="measure-mode-onoff"></a>Режим измерения (вкл./выкл.)
 Используя этот инструмент, можно точно измерять длительность времени на временной шкале. Чтобы включить режим измерения, нажмите кнопку измерения (со значком линейки), а затем перетащите указатель по временной шкале. По мере перетаскивания обратите внимание на то, что область под указателем выделяется желтым цветом, а измеренное время отображается на панели инструментов справа от кнопки. Это значение вычисляется динамически по мере перетаскивания, так что можно сразу увидеть продолжительность того или иного события. Если отпустить кнопку мыши, значение времени останется видимым.
