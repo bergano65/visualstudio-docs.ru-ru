@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 438c1079-0747-4995-ae7a-32aa399c96f5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 325f1f5e6d276dff1b7b5ec3e34a4dc0a21fd1b9
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 4d4cb524a40e97a5873d080cdeb996fdadb7aaf7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945764"
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Идентификаторы GUID и константы в пакете SDK для Visual Studio
 <xref:Microsoft.VisualStudio.VSConstants>Класс предоставляет доступ к выбору идентификаторов GUID и констант среды.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 - [Идентификаторы GUID IDE](../extensibility/ide-guids.md) Список идентификаторов GUID, предоставленных <xref:Microsoft.VisualStudio.VSConstants> .
 
 - [Константы IDE](../extensibility/ide-constants.md) Перечисляет константы пакета SDK, предоставляемые <xref:Microsoft.VisualStudio.VSConstants> .

@@ -27,15 +27,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], visualizing the call stack
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b3d5c531400ddd88cea17b9172f19bf9711105d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7196cf06e7d6bcde33bc1e4a6c5d0ebfac486576
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362435"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946492"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Сопоставление методов в визуализации стека вызовов при отладке в Visual Studio
 
@@ -43,7 +43,7 @@ ms.locfileid: "97362435"
 
  ![Отладка со стеками вызовов на картах кода](../debugger/media/debuggermap_overview.png)
 
- Что вам понадобится:
+ Что вам понадобится
 
  ::: moniker range="vs-2017"
 
@@ -59,7 +59,7 @@ ms.locfileid: "97362435"
 
 - Код, который можно отладить, например Visual C#, Visual Basic, C++, JavaScript или X + +.
 
-  См.
+  Пример
 
 - [Видео. Отладка с помощью отладчика карт кода (канал 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
@@ -79,7 +79,7 @@ ms.locfileid: "97362435"
 
 ## <a name="map-the-call-stack"></a><a name="MapStack"></a> Сопоставление стека вызова
 
-1. Запустите отладку. (Клавиатура: **F5**)
+1. Приступите к отладке. (Клавиатура: **F5**)
 
 2. После того как приложение переходит в режим приостановки выполнения или вы выполняете шаг с заходом в функцию, выберите **карту кода**. (Клавиатура: **CTRL**  +  **SHIFT**  +  **`** )
 
@@ -190,7 +190,7 @@ ms.locfileid: "97362435"
 
    ![Расшифровка значков на карте кода со стеком вызовов](../debugger/media/debuggermap_showlegend.png)
 
-  См.
+  Пример
 
 - [Сопоставьте стек вызовов](#MapStack)
 

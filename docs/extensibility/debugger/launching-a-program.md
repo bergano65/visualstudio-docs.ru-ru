@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dce13e49eeadf4dc02fec07707bebcfe164ed9c
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: de29b012914ac9997a78674fd3215f2c15d43c6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606701"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945920"
 ---
 # <a name="launch-a-program"></a>Запуск программы
 Пользователи, желающие выполнить отладку программы, могут нажать клавишу **F5** , чтобы запустить отладчик из интегрированной среды разработки. Это запускает серию событий, которые в конечном итоге присоединяются к подсистеме отладки (DE), которая в свою очередь подключена или подключена к программе следующим образом:
@@ -51,7 +51,7 @@ ms.locfileid: "96606701"
 
    Если `GUID_NULL` передается значение, порт запускает программу. После запуска программы среда выполнения создает `IDebugProgramNode2` интерфейс для описания программы и передает его в `IDebugPortNotify2::AddProgramNode` . Уведомляет Порт о том, что программа запущена. Затем модель SDM присоединяет модуль отладки к выполняющейся программе.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
  [Уведомление порта](../../extensibility/debugger/notifying-the-port.md) Объясняет, что происходит после запуска программы и получения уведомления о порте.
 
  [Подключение после запуска](../../extensibility/debugger/attaching-after-a-launch.md) Документы, когда сеанс отладки готов к присоединению к программе.

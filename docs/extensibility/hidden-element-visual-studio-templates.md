@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04cb966f21bbb501545f1a203297d06f8e852793
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 476e187a0e4c3cefde7f09124fbbd21374e2175c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945699"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden-элемент (шаблоны Visual Studio)
 
@@ -63,7 +63,7 @@ ms.locfileid: "94672705"
 
 Текст должен иметь значение `true` или `false` , что указывает, будет ли шаблон отображаться в диалоговых окнах **Новый проект** или **Добавить новый элемент** .
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Параметр `Hidden` является необязательным элементом.
 

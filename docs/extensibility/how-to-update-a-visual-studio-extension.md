@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be22ca13fd5af8df88501835c8a030cc6469e179
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: a79944fbb558e3e7a5debcfc6a64fe4b75aeb0c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946843"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Руководство. обновление расширения Visual Studio
 Вы можете обновить расширение Visual Studio в системе с помощью **расширений и обновлений** , чтобы установить обновленную версию. Если вы создаете обновленную версию расширения, вы можете обозначить ее как обновленную, увеличив номер версии в манифесте VSIX.

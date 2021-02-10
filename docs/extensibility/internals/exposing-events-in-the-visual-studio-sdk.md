@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5eec842f989497fda618482916154aabdcdd406
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 00dd13898204fe322ec0ddd33db10e7ca19db167
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480542"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946648"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Предоставление событий в пакете SDK для Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] позволяет выполнять исходные события с помощью автоматизации. Рекомендуется использовать исходные события для проектов и элементов проектов.
@@ -54,7 +54,7 @@ ms.locfileid: "96480542"
 
  **Аутоматионпрожектитемевентс** = возвращает `AutomationProjectItemsEvents` объект.
 
-|Название|Type|Диапазон|Описание|
+|Имя|Type|Диапазон|Описание|
 |----------|----------|-----------|-----------------|
 |По умолчанию (@)|REG_SZ|Не используется|Не используется. Для документации можно использовать поле данных.|
 |*аутоматионпрожектсевентс*|REG_SZ|Имя объекта события.|Уместно только имя ключа. Для документации можно использовать поле данных.<br /><br /> Этот пример взят из примера "базовый проект".|
@@ -70,7 +70,7 @@ ms.locfileid: "96480542"
 
  *Аутоматионевентс. h* и *аутоматионевентс. cpp* содержат объявления и реализации классов, приведенных в следующей таблице.
 
-|Класс|Описание|
+|Class|Описание|
 |-----------|-----------------|
 |`CAutomationEvents`|Реализует корневой объект события, полученный из `DTE.Events` объекта.|
 |`CProjectsEventsContainer` и `CProjectItemsEventsContainer`|Реализуйте объекты источника событий, которые инициируют соответствующие события.|

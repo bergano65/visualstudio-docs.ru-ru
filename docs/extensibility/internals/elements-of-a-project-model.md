@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e366b2923d5903f00241db0a6b71017dc25f3dee
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: f786ae8e0725c7c1b6f0683a779a65f015ac2a75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480048"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946765"
 ---
 # <a name="elements-of-a-project-model"></a>Элементы модели проекта
 Интерфейсы и реализации всех проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] совместном использовании базовой структуры: модель проекта для типа проекта. В модели проекта, которая является разрабатываемым пакетом VSPackage, вы создаете объекты, которые соответствуют решениям по проектированию и совместно работают с глобальными функциями, предоставляемыми интегрированной средой разработки. Хотя вы управляете сохранением элемента проекта, например, вы не контролируете уведомление о том, что файл должен быть сохранен. Когда пользователь помещает фокус на открытый элемент проекта и выбирает команду **сохранить** в меню **файл** в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] строке меню, код типа проекта должен перехватить команду из интегрированной среды разработки, сохранить файл и отправить уведомление обратно в интегрированную среду разработки, что файл больше не изменяется.
