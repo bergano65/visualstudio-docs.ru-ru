@@ -16,15 +16,15 @@ helpviewer_keywords:
 - worksheets, populating with data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8ce2ef20b56a1803af5356137b798d83a5f1457f
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: cabaf58f9e13033edee320277abcc14b55b81a13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953972"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Как заполнить элементы управления ListObject данными
   Вы можете использовать привязку данных как способ быстрого добавления данных в документ. После привязки данных к объекту-списку можно отключить этот объект-список, чтобы он отображал данные, но не был привязан к источнику данных.

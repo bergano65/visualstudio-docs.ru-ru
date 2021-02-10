@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML, modeling architecture
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c284532a1e7f6407ebea987873665edb4e940019
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e78e88884801b7aa7fcbcfe1147afd6fad653fd8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361031"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954375"
 ---
 # <a name="model-your-app39s-architecture"></a>Моделирование архитектуры приложения&#39;s
 Чтобы обеспечить соответствие программной системы или приложения потребностям пользователей, в Visual Studio можно создавать модели в рамках описания общей структуры и поведения программной системы или приложения. С помощью моделей также можно описывать шаблоны, используемые при разработке. Такие модели помогают понять существующую архитектуру, обсуждать изменения и четко формулировать свои намерения.

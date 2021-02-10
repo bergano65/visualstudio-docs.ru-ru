@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managed code extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1929daaa82dbfec6f58513bf94eefe01f9520601
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 063b66af781ee412e7f7d2ab8014e009bc93bad9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954115"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Как присоединить расширения управляемого кода к документам
   Сборку настройки можно прикрепить к существующему Microsoft Office документу Word или Microsoft Office книге Excel. Документ или книга могут иметь любой формат файла, поддерживаемый Microsoft Office проектами и инструментами разработки в Visual Studio. Дополнительные сведения см. в разделе [Архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md).

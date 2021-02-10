@@ -12,15 +12,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ddbc74c00c1e1f74ce078586d624e2da4dbd8163
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954024"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Как настроить безопасность списка включений
   При наличии разрешений администратора можно настроить [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] запрос о доверии, чтобы указать, будут ли конечные пользователи иметь возможность установки решений Office путем сохранения решения о доверии в списке включения. Дополнительные сведения о списках включения см. в разделе [Trusted Office Solutions with using Lists](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
@@ -58,9 +58,9 @@ ms.locfileid: "96846731"
     |-------------------------|-----------|
     |**Интернет**;|**аусентикодерекуиред**|
     |**унтрустедситес**|**Отключено**|
-    |**Мой**|**Включено**|
-    |**Разрешений**|**Включено**|
-    |**трустедситес**|**Включено**|
+    |**Мой**|**Enabled**|
+    |**Разрешений**|**Enabled**|
+    |**трустедситес**|**Enabled**|
 
      По умолчанию в **Интернете** используется значение **Аусентикодерекуиред** , а **унтрустедситес** — значение **Disabled (отключено**).
 
@@ -207,7 +207,7 @@ ms.locfileid: "96846731"
 
     ```
 
-3. Создайте и запустите приложение.
+3. Выполните сборку и запустите приложение.
 
 ## <a name="see-also"></a>См. также раздел
 - [Доверять решениям Office с помощью списков включения](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)

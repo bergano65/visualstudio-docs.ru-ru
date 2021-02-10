@@ -16,15 +16,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], offline use
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cefd4cd132e75f8ff622c8e0d809d317242c10f5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ab53676d6c00fdda3bb7f4554321f0c0550e5748
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844326"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954050"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Как кэшировать данные для использования в автономном режиме или на сервере
   Можно пометить элемент данных для кэширования в документе, чтобы он был доступен в автономном режиме. Это также делает возможным обработку данных в документе другим кодом, когда документ хранится на сервере.

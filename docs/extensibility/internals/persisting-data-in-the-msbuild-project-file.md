@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20c6d79e6ea59b4993b4d6bfc5e165bdd952a3f9
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d2011cd8686f3210ee534fdaefaa26d2f3b4ad5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878083"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954453"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Сохранение данных в файле проекта MSBuild
 Подтипу проекта может потребоваться сохранить данные подтипа в файле проекта для последующего использования. Подтип проекта использует сохранение файлов проекта для удовлетворения следующих требований:

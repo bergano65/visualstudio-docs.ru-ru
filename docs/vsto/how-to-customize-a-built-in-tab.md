@@ -12,15 +12,15 @@ helpviewer_keywords:
 - built-in tabs [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7ac002b4c9ebacaf9cb522b583d6c4c9580b7bf2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 94cf4d256cafa03ee4604138f7233ff9fd3cf6c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846640"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953998"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Как настроить встроенную вкладку
   На встроенную вкладку можно добавлять группы и элементы управления. Встроенная вкладка — это вкладка, которая уже находится на ленте Microsoft Office приложении. Например, вкладка « **данные** » является встроенной вкладкой Excel. При создании настраиваемой группы она отображается на вкладке последней, но вы можете свободно перемещать группу на вкладке.

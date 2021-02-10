@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a8f073a72db1a18574dff6ab060b1ea069475fbb
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 8d2f8d54e791acd7d027350caa3ce88c8eea9959
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954154"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Добавление Windows Forms элементов управления в документы Office
   Вы можете добавить элементы управления Windows Forms в документы Microsoft Office Word и Microsoft Office Excel во время разработки в проектах уровня документа. Во время выполнения можно добавлять элементы управления в настройки уровня документа и в надстройки VSTO. Например, можно добавить <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> элемент управления на лист, чтобы пользователи могли выбирать из списка параметров.

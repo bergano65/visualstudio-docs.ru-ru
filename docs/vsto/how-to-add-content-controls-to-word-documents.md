@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa1528371a1466ec2886bf652ed33561b66b7028
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ed33208d58e380b688ce2553b71033de0b7d07d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845561"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954297"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Как добавить элементы управления содержимым в документы Word
   В проектах на уровне документа Word элементы управления содержимым можно добавлять в документ во время разработки или во время выполнения. В проектах надстройки VSTO для Word элементы управления содержимым можно добавлять в любой открытый документ во время выполнения.
@@ -71,11 +71,11 @@ ms.locfileid: "96845561"
 
     - Дважды щелкните элемент управления содержимым в **панели элементов**.
 
-         или
+         или диспетчер конфигурации служб
 
     - Щелкните элемент управления содержимым на **панели элементов** и нажмите клавишу **Ввод** .
 
-         или
+         или диспетчер конфигурации служб
 
     - Перетащите элемент управления содержимым из **панели элементов** в документ. Элемент управления содержимым добавляется в текущее выделение в документе, а не в позиции указателя мыши.
 

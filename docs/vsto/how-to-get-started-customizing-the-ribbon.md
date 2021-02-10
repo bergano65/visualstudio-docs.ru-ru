@@ -14,15 +14,15 @@ helpviewer_keywords:
 - customizing the Ribbon, adding Ribbon to project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3974fe85a97226a920959b41256fa7e29923c9d1
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d82d059166b9efbb80ed6ce4cffcbb973235b01b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845951"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953920"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Как приступить к настройке ленты
   Чтобы настроить ленту Microsoft Office приложения, добавьте элемент **Лента (визуальный конструктор)** или **Лента (XML)** в проект Office.
@@ -67,7 +67,7 @@ ms.locfileid: "96845951"
 
    - Имена, зарезервированные для Windows или DOS, такие как ("NUL", "AUX", "Con", "COM1", "LPT1" и т. д.)
 
-4. Нажмите кнопку **ОК**.
+4. Нажмите кнопку **OK**.
 
    Элемент Лента появится в **Обозреватель решений**. Дополнительные сведения о дальнейших действиях см. в разделе [Лента Overview](../vsto/ribbon-overview.md).
 

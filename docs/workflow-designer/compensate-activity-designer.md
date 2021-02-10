@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ae76bac3f6163e8b4434878017df07f1341828
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 36ab20854adb952d098f71904cdd3cb092e27ac9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434328"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955688"
 ---
 # <a name="compensate-activity-designer"></a>Конструктор действия Compensate
 
@@ -31,7 +31,7 @@ ms.locfileid: "94434328"
 
 ### <a name="using-the-compensate-activity-designer"></a>Использование конструктора операций Compensate
 
-Конструктор действия **компенсации** можно найти в категории " **транзакция** " **панели элементов**. Чтобы открыть **панель элементов** , выберите вкладку **область элементов** в левой части конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
+Конструктор действия **компенсации** можно найти в категории " **транзакция** " **панели элементов**. Чтобы открыть **панель элементов**, выберите вкладку **область элементов** в левой части конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
 
 Конструктор действий **компенсации** можно перетащить из **панели элементов** в конструктор рабочих процессовную область, где бы находились действия, например внутри <xref:System.Activities.Statements.Sequence> . При удалении конструктора действий создается <xref:System.Activities.Statements.Compensate> действие с параметром компенсации по умолчанию <xref:System.Activities.Activity.DisplayName%2A> . <xref:System.Activities.Activity.DisplayName%2A>Значение можно изменить в заголовке конструктора действий **компенсации** или в поле **DisplayName** сетки свойств.
 
@@ -41,8 +41,8 @@ ms.locfileid: "94434328"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Указывает необязательное понятное имя действия <xref:System.Activities.Statements.Compensate>. Значение по умолчанию - Compensate.|
-|<xref:System.Activities.Statements.Compensate.Target%2A>|Верно|Указывает <xref:System.Activities.InArgument%601>, в котором содержится <xref:System.Activities.Statements.CompensationToken> для данного действия <xref:System.Activities.Statements.Compensate>.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает необязательное понятное имя действия <xref:System.Activities.Statements.Compensate>. Значение по умолчанию - Compensate.|
+|<xref:System.Activities.Statements.Compensate.Target%2A>|True|Указывает <xref:System.Activities.InArgument%601>, в котором содержится <xref:System.Activities.Statements.CompensationToken> для данного действия <xref:System.Activities.Statements.Compensate>.|
 
 ## <a name="see-also"></a>См. также раздел
 

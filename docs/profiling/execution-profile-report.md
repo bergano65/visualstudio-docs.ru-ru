@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c8128472-a8ed-46f4-b1c8-a25358d6f2c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 98361f9abad40e447d7198265d21ef193bb9ddf5
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: e7a61e3a9ba159977d4a835126b2a584be1597c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801383"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955259"
 ---
 # <a name="execution-profile-report"></a>Выполнение отчета профилирования
 Отчет о профиле выполнения — это традиционный профиль выборки. Выборка выполняется приблизительно каждую миллисекунду в те периоды, когда поток выполняется на логическом ядре, и визуализатор параллелизма строит типичное дерево вызовов, разбирая накопленный набор стеков выборок. На данные в этой таблице может влиять текущий диапазон времени, скрытые потоки и следующие фильтры, которые могли быть применены:

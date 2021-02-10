@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2928d3c09a54ea8e9548f7751381279f153643e5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 26b27bd6bef40a38e32e5b0d6d26e3d147659286
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954648"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Модель языковой службы прежних версий
 Языковая служба определяет элементы и функции для конкретного языка и используется для предоставления редактора со сведениями, характерными для этого языка. Например, редактору необходимо получить сведения об элементах и ключевых словах языка для поддержки цветов синтаксиса.
@@ -41,7 +41,7 @@ ms.locfileid: "97876744"
 
   В следующей таблице приведены общие сведения об объектах в модели.
 
-| Компонент | Объект | Функция |
+| Компонент | Объект | Компонент |
 |------------------| - | - |
 | Текстовый буфер | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Поток текста для чтения и записи в Юникоде. В тексте можно использовать другие кодировки. |
 | Окно кода | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | Окно документа, содержащее одно или несколько текстовых представлений. Если [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] находится в режиме многодокументного интерфейса (MDI), окно кода является дочерним ЭЛЕМЕНТОМ MDI. |

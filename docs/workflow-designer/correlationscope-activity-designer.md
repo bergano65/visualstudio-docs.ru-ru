@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cc85dbb5c774f6afa956f51852ef15d4c7ccebc0
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e9edd755465cf812c1572c62f1c6335fc5295281
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438117"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955529"
 ---
 # <a name="correlationscope-activity-designer"></a>Конструктор действия CorrelationScope
 
@@ -29,7 +29,7 @@ ms.locfileid: "94438117"
 
 ### <a name="use-the-correlationscope-activity-designer"></a>Использование конструктора действий CorrelationScope
 
-Конструктор действий **CorrelationScope** можно найти в категории **Обмен сообщениями** **области элементов** , щелкнув вкладку **область элементов** в левой части конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
+Конструктор действий **CorrelationScope** можно найти в категории **Обмен сообщениями** **области элементов**, щелкнув вкладку **область элементов** в левой части конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
 
 Конструктор действий **CorrelationScope** можно перетащить из **области элементов** в область Конструктор рабочих процессов. При этом создается <xref:System.ServiceModel.Activities.CorrelationScope> действие со значением **DisplayName** по умолчанию CorrelationScope. <xref:System.Activities.Activity.DisplayName%2A>Можно изменить в заголовке конструктора действий **CorrelationScope** или в поле **DisplayName** окна **Свойства** .
 
@@ -43,9 +43,9 @@ ms.locfileid: "94438117"
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Необязательное понятное имя действия <xref:System.ServiceModel.Activities.InitializeCorrelation>.|
-|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|Неверно|Задает объект <xref:System.ServiceModel.Activities.CorrelationHandle>, используемый для управления дочерними действиями обмена сообщений. Если это свойство не задано, то действие <xref:System.ServiceModel.Activities.CorrelationScope> создает неявный объект <xref:System.ServiceModel.Activities.CorrelationHandle> автоматически.|
-|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|Неверно|Указывает действия в области корреляции.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Необязательное понятное имя действия <xref:System.ServiceModel.Activities.InitializeCorrelation>.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|Задает объект <xref:System.ServiceModel.Activities.CorrelationHandle>, используемый для управления дочерними действиями обмена сообщений. Если это свойство не задано, то действие <xref:System.ServiceModel.Activities.CorrelationScope> создает неявный объект <xref:System.ServiceModel.Activities.CorrelationHandle> автоматически.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|False|Указывает действия в области корреляции.|
 
 ## <a name="see-also"></a>См. также раздел
 
