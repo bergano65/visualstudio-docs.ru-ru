@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7f132f67-8589-464c-90dc-0d57ae02aa8f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1b015f29b6521482013a77bbcf7c44d8a79afa6
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: e717064318372b31e13d97381ee03d5986a9de2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329884"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965321"
 ---
 # <a name="deploy-project-types"></a>Развертывание типов проектов
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] устанавливает новый агрегатор типа проекта (*ProjectAggregator2.dll*), а также пакет установщик Windows для распространения (*ProjectAggregator2.msi*). Для типов проектов с управляемым кодом необходимо использовать новый агрегатор. ProjectAggregator2 работает с ограничениями в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] агрегаторе проекта, что предотвращает неправильную работу типов проектов управляемого кода. Следующие шаги описывают, как изменить пакет VSPackage для использования новой агрегаторы.

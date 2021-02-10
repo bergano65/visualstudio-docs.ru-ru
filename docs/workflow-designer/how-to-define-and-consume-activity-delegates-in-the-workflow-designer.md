@@ -1,25 +1,25 @@
 ---
 title: Определение и использование делегатов действий
-description: В конструктор рабочих процессов Узнайте, как .NET Framework 4,5 включает готовый конструктор для действия Инвокеделегате, который можно использовать для определения и использования делегатов действий.
+description: В конструктор рабочих процессов Узнайте, как платформа .NET Framework 4,5 включает готовый конструктор для действия Инвокеделегате, который можно использовать для определения и использования делегатов действий.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 48cab69de11ce006792e0fda72245048c6897acf
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 0ce9e59eec2cc9229a5f1104d79337b26115c92a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993280"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971626"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Как определить и использовать делегатов действий в конструкторе рабочих процессов
 
-.NET Framework 4,5 включает готовый конструктор для <xref:System.Activities.Statements.InvokeDelegate> действия. Данный конструктор можно использовать в целях назначения делегатов для действия, производного от <xref:System.Activities.ActivityDelegate>, такого как <xref:System.Activities.ActivityAction> или <xref:System.Activities.ActivityFunc%601>.
+Платформа .NET Framework 4,5 включает готовый конструктор для <xref:System.Activities.Statements.InvokeDelegate> действия. Данный конструктор можно использовать в целях назначения делегатов для действия, производного от <xref:System.Activities.ActivityDelegate>, такого как <xref:System.Activities.ActivityAction> или <xref:System.Activities.ActivityFunc%601>.
 
 ## <a name="define-an-activity-delegate"></a>Укажите делегат действия
 
@@ -64,7 +64,7 @@ ms.locfileid: "96993280"
 
 19. В столбце **значение** аргумента именованный **аргумент** введите **элементы [index]**. Нажмите кнопку **ОК** , чтобы закрыть диалоговое окно **DelegateArguments** .
 
-20. Перетащите действие <xref:System.Activities.Statements.Assign> на горизонтальную линию под действием <xref:System.Activities.Statements.InvokeDelegate>. <xref:System.Activities.Statements.Assign>Действие создается, и <xref:System.Activities.Statements.Sequence> действие создается автоматически, чтобы содержать два действия в разделе **Body** действия **MyForEach** . Последовательность необходима, поскольку раздел **Body** может содержать только одно действие. Автоматическое создание нового <xref:System.Activities.Statements.Sequence> действия — это новая функция .NET Framework 4,5.
+20. Перетащите действие <xref:System.Activities.Statements.Assign> на горизонтальную линию под действием <xref:System.Activities.Statements.InvokeDelegate>. <xref:System.Activities.Statements.Assign>Действие создается, и <xref:System.Activities.Statements.Sequence> действие создается автоматически, чтобы содержать два действия в разделе **Body** действия **MyForEach** . Последовательность необходима, поскольку раздел **Body** может содержать только одно действие. Автоматическое создание нового <xref:System.Activities.Statements.Sequence> действия — это новая функция платформа .NET Framework 4,5.
 
 21. Присвойте свойству **to** <xref:System.Activities.Statements.Assign> действия значение **index**. Установите свойство **value** действия **Assign** в значение **index + 1**.
 

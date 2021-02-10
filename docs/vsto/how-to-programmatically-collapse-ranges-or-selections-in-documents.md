@@ -16,15 +16,15 @@ helpviewer_keywords:
 - collapsing ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cba19d8cb6c26defcbb7cf39f461a45bf217b5a5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 9b063244c8ac611d3a864b9cc3753b5cd8460474
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847654"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964294"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Руководство. программное сворачивание диапазонов или выделений в документах
   Если вы работаете с объектом <xref:Microsoft.Office.Interop.Word.Range> или <xref:Microsoft.Office.Interop.Word.Selection> , может потребоваться изменить выделение на точку вставки перед вставкой текста, чтобы избежать перезаписи существующего текста. Оба <xref:Microsoft.Office.Interop.Word.Range> объекта и <xref:Microsoft.Office.Interop.Word.Selection> имеют метод сворачивания, который использует <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> значения перечисления:

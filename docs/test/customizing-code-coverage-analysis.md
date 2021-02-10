@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 99eb322e1eebe2d8845b355cd76a9e34a7516348
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 65044baf78e6f49e35f011a4853111063e82a192
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964411"
 ---
 # <a name="customize-code-coverage-analysis"></a>Настройка анализа объема протестированного кода
 
@@ -120,9 +120,9 @@ ms.locfileid: "95441833"
 
 Для включения и исключения узлов используются регулярные выражения, которые не совпадают с подстановочными знаками. Все соответствия не учитывают регистр. Ниже приведено несколько примеров.
 
-- * *.\** _ соответствует строке из любых знаков.
+- **.\*** соответствует строке любых символов
 
-- _ *\\.* * соответствует точке (".").
+- **\\.** соответствует точке (".")
 
 - **\\(   \\)** соответствует круглым скобкам "( )"
 

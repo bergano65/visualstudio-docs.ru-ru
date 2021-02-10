@@ -11,24 +11,24 @@ helpviewer_keywords:
 ms.assetid: fa34810d-185a-4d22-92bd-9852915e5f1d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c56de103fa116cbf77ec16dc0116a2897e6ccdce
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 75c06082a34f5dd3248024f1707cb188107863c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353204"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964892"
 ---
 # <a name="build-loggers"></a>Средства ведения журнала сборки
 
-Средства ведения журнала позволяют настраивать выходные данные сборки и отображать сообщения, ошибки или предупреждения в ответ на определенные события сборки. Каждое средство ведения журнала существует в виде класса .NET, который реализует интерфейс <xref:Microsoft.Build.Framework.ILogger>, определенный в сборке *Microsoft.Build.Framework.dll* .
+Средства ведения журнала позволяют настраивать выходные данные сборки и отображать сообщения, ошибки или предупреждения в ответ на определенные события сборки. Каждое средство ведения журнала существует в виде класса .NET, который реализует интерфейс <xref:Microsoft.Build.Framework.ILogger>, определенный в сборке *Microsoft.Build.Framework.dll*.
 
 Для средства ведения журнала можно использовать два подхода к реализации:
 
 - Прямая реализация интерфейса <xref:Microsoft.Build.Framework.ILogger>.
-- Произведите класс от вспомогательного класса <xref:Microsoft.Build.Utilities.Logger>, который определен в сборке *Microsoft.Build.Utilities.dll* . <xref:Microsoft.Build.Utilities.Logger> реализует <xref:Microsoft.Build.Framework.ILogger> и предоставляет реализацию по умолчанию некоторых элементов <xref:Microsoft.Build.Framework.ILogger>.
+- Произведите класс от вспомогательного класса <xref:Microsoft.Build.Utilities.Logger>, который определен в сборке *Microsoft.Build.Utilities.dll*. <xref:Microsoft.Build.Utilities.Logger> реализует <xref:Microsoft.Build.Framework.ILogger> и предоставляет реализацию по умолчанию некоторых элементов <xref:Microsoft.Build.Framework.ILogger>.
 
   В этой статье мы расскажем, как создать простое средство ведения журнала, унаследованное от <xref:Microsoft.Build.Utilities.Logger>, которое отображает в консоли сообщения в ответ на определенные события сборки.
 
@@ -46,15 +46,15 @@ ms.locfileid: "92353204"
 
 ## <a name="respond-to-logger-verbosity-values"></a>Реагирование на значения детализации для средства ведения журнала
 
-В некоторых случаях информацию о событии нужно записывать, только если параметр **-verbosity** для MSBuild.exe содержит определенное значение. В этом примере обработчик событий <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> записывает сообщение, только если свойство <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A>, которое задается параметром **-verbosity** , равно <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.
+В некоторых случаях информацию о событии нужно записывать, только если параметр **-verbosity** для MSBuild.exe содержит определенное значение. В этом примере обработчик событий <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> записывает сообщение, только если свойство <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A>, которое задается параметром **-verbosity**, равно <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.
 
 [!code-csharp[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]
 
 ## <a name="specify-a-logger"></a>Указание средства ведения журнала
 
-Когда средство ведения журнала скомпилировано в сборку, нужно передать в MSBuild информацию о том, что это средство ведения журнала следует использовать во время сборки. Для этого используйте параметр **-logger** в *MSBuild.exe* . Дополнительные сведения о доступных параметрах *MSBuild.exe* см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).
+Когда средство ведения журнала скомпилировано в сборку, нужно передать в MSBuild информацию о том, что это средство ведения журнала следует использовать во время сборки. Для этого используйте параметр **-logger** в *MSBuild.exe*. Дополнительные сведения о доступных параметрах *MSBuild.exe* см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).
 
-Следующая команда выполняет сборку проекта *MyProject.csproj* с использованием класса ведения журнала, который реализован в *SimpleLogger.dll* . Параметр **-nologo** позволяет скрыть баннер и сообщение об авторских правах, а параметр **-noconsolelogger** отключает используемое по умолчанию консольное средство ведения журнала MSBuild.
+Следующая команда выполняет сборку проекта *MyProject.csproj* с использованием класса ведения журнала, который реализован в *SimpleLogger.dll*. Параметр **-nologo** позволяет скрыть баннер и сообщение об авторских правах, а параметр **-noconsolelogger** отключает используемое по умолчанию консольное средство ведения журнала MSBuild.
 
 ```cmd
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll

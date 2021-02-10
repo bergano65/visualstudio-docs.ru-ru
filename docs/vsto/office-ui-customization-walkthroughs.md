@@ -14,15 +14,15 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], action panes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5e9cd19687e15cd30c8196183f43709d4ba5149d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9ee5d6cbe372b0a7930b867a98136d132ddb0b2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959887"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Пошаговые руководства по настройке пользовательского интерфейса Office
   В приведенных ниже пошаговых руководствах описываются способы настройки пользовательского интерфейса приложений Microsoft Office с помощью настроек на уровне документа и надстроек VSTO.

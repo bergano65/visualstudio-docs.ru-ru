@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aad77c9b9481ed6ae32c66260b1e3ef2a662c836
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 18edb87170afd023ab2d17970d172a43b6ef35e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847641"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960940"
 ---
 # <a name="sample-implementation-of-locals"></a>Пример реализации локальных переменных
 > [!IMPORTANT]
@@ -36,7 +36,7 @@ ms.locfileid: "96847641"
 
 5. `IDebugExpressionEvaluator::GetMethodProperty` создает экземпляр класса (вызываемого `CFieldProperty` в примере), который запускает `IDebugProperty2` интерфейс для представления локальных переменных метода. `IDebugMethodField`Объект помещается в этот `CFieldProperty` объект вместе с `IDebugSymbolProvider` объектами, `IDebugAddress` и `IDebugBinder` .
 
-6. При `CFieldProperty` инициализации объекта вызывается [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md) метод `IDebugMethodField` GetObject для объекта, чтобы получить структуру [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) , содержащую все сведения о самом методе.
+6. При `CFieldProperty` инициализации объекта вызывается [](../../extensibility/debugger/reference/idebugfield-getinfo.md) метод `IDebugMethodField` GetObject для объекта, чтобы получить структуру [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) , содержащую все сведения о самом методе.
 
 7. `IDebugExpressionEvaluator::GetMethodProperty` Возвращает `CFieldProperty` объект в виде `IDebugProperty2` объекта.
 

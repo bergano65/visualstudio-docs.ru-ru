@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7055be0b089a0b7c582ef0b66d84951d01685870
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 149e99a3ba86f1eec22d90618abfd8972ed68e97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903641"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959900"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Как настроить пакет решения SharePoint
   Для создания и настройки пакета (*WSP*) можно использовать конструктор пакетов. Например, можно добавить элементы и компоненты проекта SharePoint, указать, будет ли веб-сервер сбрасываться при развертывании решения, и задать тип сервера развертывания.
@@ -49,7 +49,7 @@ ms.locfileid: "94903641"
 2. Разверните узел пакет, разверните пакет. Package, а затем откройте файл *Package.Template.xml* .
 
     > [!NOTE]
-    > При открытии XML-файла манифеста для шаблона пакета файлы проверяются автоматически, и предупреждения, отображаемые в окне Список ошибок, можно игнорировать.
+    > При открытии XML-файла манифеста для шаблона пакета файлы проверяются автоматически, и предупреждения, отображаемые в окне список ошибок, можно игнорировать.
 
 ## <a name="change-the-manifest-template"></a>Изменение шаблона манифеста
  Вы можете изменить XML-код для упакованного файла манифеста в редакторе XML Visual Studio или в области шаблона манифеста. Любые изменения в XML-коде объединяются в упакованный файл манифеста для пакета.
