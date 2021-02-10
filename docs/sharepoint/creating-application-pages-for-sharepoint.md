@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 9ecd6573573d76c3e47a2c87a4f455cb9890fb31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850446"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949185"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Создание страниц приложений для SharePoint
   *Страница приложения* — это веб-страница ASP.NET, предназначенная для использования на веб-сайте SharePoint. Страницы приложения являются специализированным типом страницы ASP.NET. Основное различие между страницей приложения и стандартной страницей ASP.NET заключается в том, что страница приложения содержит содержимое, объединенное с главной страницей SharePoint. Главная страница позволяет страницам приложений использовать тот же внешний вид и поведение, что и другие страницы на сайте.
@@ -73,7 +73,7 @@ ms.locfileid: "94850446"
 
  Можно явно изменить, какая Главная страница используется страницей приложения, задав `MasterPageFile` атрибут `Page` элемента Application. (Например: `MasterPageFile="~/_layouts/applicationv4.master"` ). На самом деле, этот атрибут необходимо установить, если на сервере SharePoint не включены динамические главные страницы. Дополнительные сведения о главных страницах в SharePoint см. в разделе [главные страницы](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 - [Подробные сведения о разработке SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [Обзор ASP.NET](/aspnet/overview)
 - [Веб-страницы ASP.NET](/aspnet/web-pages/index)

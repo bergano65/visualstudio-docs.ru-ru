@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7585a4b80322afb37e816758fc7074806a443676
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: c802832a9881cf3bf247c8e48b8ecdc2d784b1c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850576"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949016"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Создание определений сайтов SharePoint
   Проект определения сайта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] позволяет создать *определение сайта*, которое будет служить основой для нового сайта SharePoint. Эти определения задают не только внешний вид и поведение сайта SharePoint, но и его содержимое и функциональные возможности по умолчанию. В определение можно поместить заранее настроенные списки, типы содержимого, приемники событий, изображения и другие элементы. В SharePoint содержатся определения некоторых сайтов, например блога. При создании сайта на основе определения BLOG сайт содержит списки, веб-части и другие элементы, необходимые для ведения блога.

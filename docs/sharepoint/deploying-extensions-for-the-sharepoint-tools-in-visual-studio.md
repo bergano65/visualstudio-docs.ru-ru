@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9c8b05b5cb74a28157436f95f01992515c716e6a
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 6a899bcc132b9229c1046dee5793278f79ea9e5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948899"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Развертывание расширений для инструментов SharePoint в Visual Studio
 
@@ -152,7 +152,7 @@ ms.locfileid: "94672682"
 
      `OutputSubPath`Элемент задает дополнительные папки в пути, по которому создается шаблон проекта при построении проекта. Указанные здесь папки гарантируют, что шаблон элемента будет доступен только тогда, когда клиенты открывают диалоговое окно **Добавление нового проекта** , разверните узел **SharePoint** , а затем выберите узел **2010** .
 
-10. Сохраните файл и закройте его.
+10. Сохраните и закройте файл.
 
 11. В **Обозреватель решений** откройте контекстное меню шаблона проекта или шаблона элемента и выберите **Перезагрузить проект**.
 

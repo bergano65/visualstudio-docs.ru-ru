@@ -18,15 +18,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 29d0ebc33bf3df198f3ee9b3f9d80a747087341c
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: dfdf94f58c0fa7ba40d7c08309f8ea57949310df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949029"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Создание столбцов сайта, типов содержимого и списков для SharePoint
   Visual Studio предоставляет шаблоны элементов проектов для множества различных фундаментальных элементов SharePoint, включая *списки* и *типы содержимого*, которые могут включать столбцы сайта (или *поля*). Конструкторы для новых типов содержимого и списков позволяют создать эти элементы проще, чем когда-либо.
@@ -51,5 +51,5 @@ ms.locfileid: "94850524"
 |-----------|-----------------|
 |[Пошаговое руководство: Создание столбца сайта, типа содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Показывает способы создания столбцов сайта, используемые в пользовательском типе содержимого. Тип содержимого затем используется в пользовательском списке.|
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 - [Приступая к разработке на SharePoint 2010](/sharepoint/dev/)

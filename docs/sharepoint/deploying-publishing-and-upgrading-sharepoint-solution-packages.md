@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ab97efc82575c31c8e05b73063c2b53a09691d2d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd0dfa3a12c675463c46e93aa0d5b25e8b4bd4b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672669"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948860"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Развертывание, публикация и обновление пакетов решений SharePoint
   После разработки решения SharePoint в Visual Studio можно либо развернуть его пакетный файл (.wsp) на локальном сервере SharePoint, либо опубликовать его на локальном или удаленном сервере SharePoint. При развертывании файлов можно настроить, как должна выполняться развертка пакетных файлов (.wsp).
@@ -66,5 +66,5 @@ ms.locfileid: "94672669"
 ### <a name="upgrade-published-packages"></a>Обновление опубликованных пакетов
  При внесении каких-либо изменений в проект SharePoint в Visual Studio после его публикации опубликованный пакет должен быть обновлен для включения изменений. Для успешного обновления пакет должен иметь уникальное имя. Если пакет с тем же именем находится на сайте SharePoint, который может возникать при обновлении существующего приложения, то ошибка предупреждает о конфликте имен файлов и позволяет переименовать пакет. После его повторной публикации новый пакет появится на сайте SharePoint и может быть обновлен. Обновленный пакет обновляет решение с помощью данных из старого пакета, а затем активирует решение в SharePoint. Дополнительные сведения см. в разделе [развертывание, публикация и обновление решений SharePoint на удаленном сервере](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 - [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

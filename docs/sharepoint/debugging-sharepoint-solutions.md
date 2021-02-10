@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c0bd1996f5d42561cb2d44879ab702d6b6c4b4f7
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: f1a6abfbafcbafb9daa52fdc6af85156700efef7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672864"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948951"
 ---
 # <a name="debug-sharepoint-solutions"></a>Отладка решений SharePoint
   Вы можете отлаживать решения SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчика. При запуске отладки [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] развертывает файлы проекта на сервере SharePoint, а затем открывает экземпляр сайта SharePoint в веб-браузере. В следующих разделах объясняется, как выполнять отладку приложений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .

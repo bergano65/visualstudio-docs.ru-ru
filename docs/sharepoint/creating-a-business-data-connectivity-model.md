@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, Business Data Connectivity service
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0486ce6ac53850b1b607f9e7f859806cdc3ef8fe
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 8232847ce336ca559134aa1211a70057a1306faa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949263"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Создание модели подключения к бизнес-данным
   Вы можете создать модель подключения к бизнес-данным или настроить существующую модель BDC с помощью Visual Studio. Каждый проект SharePoint может содержать только одну модель. Дополнительные сведения см. [в статье интеграция бизнес-данных в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -60,7 +60,7 @@ ms.locfileid: "94850472"
 
   В любом случае бизнес-системы, определенные в импортируемой модели, не затрагиваются и будут продолжать работать должным образом. Чтобы добавить существующую модель в проект SharePoint, используйте диалоговое окно **Добавление существующего элемента** в Visual Studio. Дополнительные сведения см. [в разделе инструкции. Добавление существующего файла модели BDC в проект SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).
 
-  Можно добавить бизнес-систему типа .NET Framework сборки в импортированную модель, выбрав параметр в **системе LobSystem "добавить сборку .NET**". Это позволяет писать пользовательский код и использовать конструктор для определения метаданных для импортированной модели.
+  Можно добавить бизнес-систему типа платформа .NET Framework сборки в импортированную модель, выбрав параметр в **системе LobSystem "добавить сборку .NET**". Это позволяет писать пользовательский код и использовать конструктор для определения метаданных для импортированной модели.
 
 ## <a name="related-topics"></a>См. также
 

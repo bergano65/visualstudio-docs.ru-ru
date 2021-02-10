@@ -17,15 +17,15 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating custom templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 59710eb4651f363d669dc27b6190f8d224d9917f
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 538bc709ed3af1c7b1424b56c1bd843b127c6ab7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850641"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949159"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Создание шаблонов элементов и проектов для элементов проектов SharePoint
 
@@ -84,7 +84,7 @@ ms.locfileid: "94850641"
 
  Пошаговые руководства, демонстрирующие создание мастеров для шаблонов элементов и шаблонов проектов, см [. в разделе Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md) и [Пошаговое руководство. Создание элемента проекта столбца сайта с шаблоном проекта, часть 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5ad95ce8b4ab9567f22748453ae59c258f24aa86
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 2b098ac007825745e13481592760be9d2badeb55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671224"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948912"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Отладка расширений для инструментов SharePoint в Visual Studio
   Вы можете выполнять отладку расширений инструментов SharePoint в экспериментальном экземпляре или в обычном экземпляре Visual Studio. Если необходимо устранить неполадки расширения, можно также изменить значения реестра, чтобы отобразить дополнительные сведения об ошибке и настроить выполнение команд SharePoint в Visual Studio.
@@ -53,7 +53,7 @@ ms.locfileid: "94671224"
 
 3. В диалоговом окне **установщик расширений Visual Studio** выберите выпуск Visual Studio, в который необходимо установить расширение, и нажмите кнопку **установить** .
 
-     Visual Studio устанавливает файлы расширения в%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions \\ *author name* \\ *имя расширения* имени автора \\ *version*. Последние три папки в этом пути создаются из `Author` `Name` элементов, и `Version` в файле *Extension. vsixmanifest* для расширения.
+     Visual Studio устанавливает файлы расширения в%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions \\  \\ *имя расширения* имени автора \\ . Последние три папки в этом пути создаются из `Author` `Name` элементов, и `Version` в файле *Extension. vsixmanifest* для расширения.
 
 4. После установки расширения Visual Studio нажмите кнопку **Закрыть** .
 
@@ -130,7 +130,7 @@ ms.locfileid: "94671224"
 |MaxReceivedMessageSize|REG_DWORD, указывающее максимально допустимый размер (в байтах) сообщений WCF, передаваемых между Visual Studio и *vssphost4.exe*.<br /><br /> Значение по умолчанию — 1 048 576 байт (1 МБ).|
 |MaxStringContentLength|REG_DWORD, указывающее максимально допустимый размер (в байтах) строк, передаваемых между Visual Studio и *vssphost4.exe*.<br /><br /> Значение по умолчанию — 1 048 576 байт (1 МБ).|
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Расширение средств SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

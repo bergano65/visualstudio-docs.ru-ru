@@ -6,17 +6,17 @@ ms.date: 03/05/2019
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ad9ec70e5cd0f215dbb138db521dee09d722242
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a7d0f5a683a627999076969dbc9077ba03d65208
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047749"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948561"
 ---
 # <a name="debugging-xslt"></a>Отладка XSLT
 
@@ -48,7 +48,7 @@ ms.locfileid: "93047749"
 
 1. При создании объекта <xref:System.Xml.Xsl.XslCompiledTransform> устанавливайте в своем коде параметр `enableDebug` в значение `true`. Это заставляет обработчик XSLT создавать отладочные данные при компиляции кода.
 
-1. Нажмите клавишу **F11** , чтобы войти в код XSLT.
+1. Нажмите клавишу **F11**, чтобы войти в код XSLT.
 
    Таблица стилей XSLT загружается в новое окно документа и запускается XSLT-отладчик.
 
