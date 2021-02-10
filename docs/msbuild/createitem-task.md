@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ed964c618b59bf02086329715c5b0540039eb16a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: f2d0e165171cb3619d3690e129e18f778504969e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796762"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901401"
 ---
 # <a name="createitem-task"></a>CreateItem - задача
 
@@ -53,7 +53,7 @@ ms.locfileid: "92796762"
 
  В следующем примере кода из коллекции элементов `MySourceItems` создается новая коллекция элементов с именем `MySourceItemsWithMetadata`. Задача `CreateItem` заполняет новую коллекцию элементов элементами из элемента `MySourceItems`. Затем она добавляет в каждый элемент новой коллекции дополнительную запись метаданных с именем `MyMetadata` и значением `Hello`.
 
- После выполнения этой задачи в коллекции элементов `MySourceItemsWithMetadata` содержатся элементы *file1.resx* и *file2.resx* , и для обоих указаны записи метаданных `MyMetadata`. Коллекция элементов `MySourceItems` остается без изменений.
+ После выполнения этой задачи в коллекции элементов `MySourceItemsWithMetadata` содержатся элементы *file1.resx* и *file2.resx*, и для обоих указаны записи метаданных `MyMetadata`. Коллекция элементов `MySourceItems` остается без изменений.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

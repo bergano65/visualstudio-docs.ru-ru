@@ -10,15 +10,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c69fe13821f595a137c07d545a4ccfb10fc89b34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89311395"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904947"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Методы и средства отладки, помогающие писать более качественный код
 
@@ -44,7 +44,7 @@ ms.locfileid: "89311395"
 
 1. Для этого вам потребуется установленная среда Visual Studio с рабочей нагрузкой **Кроссплатформенная разработка .NET Core** или **Разработка классических приложений .NET** (в зависимости от того, приложение какого типа вы создаете).
 
-    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
+    Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/), если еще не сделали этого.
 
     Если у вас уже установлена среда Visual Studio без нужных рабочих нагрузок, щелкните **Сервис** > **Получить средства и компоненты**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Кроссплатформенная разработка .NET Core** или **Разработка классических приложений .NET**, а затем нажмите кнопку **Изменить**.
 

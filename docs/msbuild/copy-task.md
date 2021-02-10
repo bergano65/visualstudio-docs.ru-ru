@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: a46ba9da-3e4e-4890-b4ea-09a099b6bc40
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00544b6d1e797a1fd8a7a197197480cae5620f10
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: b83541a98e995a55a38a5d736c97620f15076ead
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796232"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901495"
 ---
 # <a name="copy-task"></a>Copy - задача
 
@@ -78,7 +78,7 @@ ms.locfileid: "92796232"
 
 ## <a name="example-1"></a>Пример 1
 
-В следующем примере кода выполняется копирование элементов из коллекции `MySourceFiles` в папку *c:\MyProject\Destination* .
+В следующем примере кода выполняется копирование элементов из коллекции `MySourceFiles` в папку *c:\MyProject\Destination*.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: 251c47b9-de32-414b-a138-bf45290af12e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ba80c4d52491a70a7bb8e294c9dd6ca2c9664ec3
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: b8e9f0868cb774ee82c79ba190acddebf63193cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796736"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901381"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName - задача
 
-Создает имя манифеста в стиле Visual Basic на основе заданного имени *RESX* -файла или другого ресурса.
+Создает имя манифеста в стиле Visual Basic на основе заданного имени *RESX*-файла или другого ресурса.
 
 ## <a name="parameters"></a>Параметры
 
@@ -43,11 +43,11 @@ ms.locfileid: "92796736"
 
 ## <a name="remarks"></a>Remarks
 
- [Задача CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) определяет имя соответствующего ресурса манифеста, которое будет назначено указанному *RESX* -файлу или другому файлу ресурсов. Задача присваивает логическое имя файлу ресурсов, а затем присоединяет его к параметру вывода в виде метаданных.
+ [Задача CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) определяет имя соответствующего ресурса манифеста, которое будет назначено указанному *RESX*-файлу или другому файлу ресурсов. Задача присваивает логическое имя файлу ресурсов, а затем присоединяет его к параметру вывода в виде метаданных.
 
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

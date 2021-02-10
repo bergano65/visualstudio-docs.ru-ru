@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4ac1eae8-d6ce-4f05-98f0-a29065f471d4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 66408749688f80b1c49b317336f76ce148f09c74
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 916f886efd25f394483c0b94c6994c364f9ff87b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904218"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Вкладка "Стили" диалогового окна "Свойства окна"
 Используйте вкладку **Стили**, чтобы отобразить стили, применяемые к выбранному окну. Чтобы открыть диалоговое окно [Свойства окна](../debugger/window-properties-dialog-box.md), переместите фокус в окно [представления окон](../debugger/windows-view.md). Выберите любой узел узла в дереве, а затем в меню **Вид** выберите пункт **Свойства**.

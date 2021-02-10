@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 4fc7b5a5-11b0-46ca-9656-8c2a0b08d1fe
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 852b910de742676e1fe7dd0c85129640eb37a9ae
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 6287abee811d406ef7aafa5ce3cc3dc62624b0d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046932"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902620"
 ---
 # <a name="uidmanager-task"></a>Задача UidManager
 
@@ -38,7 +38,7 @@ ms.locfileid: "93046932"
 |-------------------------| - |
 | `IntermediateDirectory` | Необязательный параметр **String** .<br /><br /> Определяет каталог, используемый для резервного копирования файлов источника XAML, которые указываются с помощью параметра **MarkupFiles**. |
 | `MarkupFiles` | Обязательный параметр **ITaskItem[]** .<br /><br /> Определяет файлы XAML источника, включаемые для проверки, обновления или удаления UID. |
-| `Task` | Обязательный параметр **String**.<br /><br /> Определяет задачу управления UID для выполнения. Допустимые параметры: **Check** , **Update** и **Remove**. |
+| `Task` | Обязательный параметр **String**.<br /><br /> Определяет задачу управления UID для выполнения. Допустимые параметры: **Check**, **Update** и **Remove**. |
 
 ## <a name="example"></a>Пример
 

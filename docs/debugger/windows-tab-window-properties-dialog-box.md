@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03cbcee265855c0e3ee26f75d5937315d64661a2
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: ffc7f8a80e86779f2cc419f841a3b80280f39c9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205402"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896407"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Вкладка "Окна" диалогового окна "Свойства окна"
 Вкладка **Окна** используется для отображения сведений об окнах, связанных с выбранным окном. Чтобы открыть диалоговое окно [Свойства окна](../debugger/window-properties-dialog-box.md), переместите фокус в окно [представления окон](../debugger/windows-view.md). Выберите любой узел узла в дереве, а затем в меню **Вид** выберите пункт **Свойства**.

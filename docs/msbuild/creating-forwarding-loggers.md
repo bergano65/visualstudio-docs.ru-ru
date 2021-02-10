@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3aebf9c8-b62c-4cb2-b2d6-8cdfcd369a24
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f8a876ddd4c5c222b608dcea51f98816679181
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 0ffe175d9ea73640cae1197fe91656d3565525f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796580"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901353"
 ---
 # <a name="create-forwarding-loggers"></a>Создание средства ведения журнала с перенаправлением
 
@@ -38,7 +38,7 @@ ms.locfileid: "92796580"
 
 ## <a name="specify-a-forwarding-logger"></a>Указание средства ведения журнала переадресации
 
- Когда средство ведения журнала переадресации скомпилировано в сборку, в MSBuild нужно передать информацию о том, что это средство ведения журнала следует использовать во время сборки. Для этого используйте параметры `-FileLogger`, `-FileLoggerParameters` и `-DistributedFileLogger` вместе с *MSBuild.exe*. Параметр `-FileLogger` сообщает *MSBuild.exe* , что средство ведения журнала подключено напрямую. Параметр `-DistributedFileLogger` означает, что файл журнала присутствует на каждом узле. Чтобы задать параметры средства ведения журнала переадресации, используйте параметр `-FileLoggerParameters`. Дополнительные сведения об этих и других параметрах *MSBuild.exe* см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).
+ Когда средство ведения журнала переадресации скомпилировано в сборку, в MSBuild нужно передать информацию о том, что это средство ведения журнала следует использовать во время сборки. Для этого используйте параметры `-FileLogger`, `-FileLoggerParameters` и `-DistributedFileLogger` вместе с *MSBuild.exe*. Параметр `-FileLogger` сообщает *MSBuild.exe*, что средство ведения журнала подключено напрямую. Параметр `-DistributedFileLogger` означает, что файл журнала присутствует на каждом узле. Чтобы задать параметры средства ведения журнала переадресации, используйте параметр `-FileLoggerParameters`. Дополнительные сведения об этих и других параметрах *MSBuild.exe* см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="multi-processor-aware-loggers"></a>Средства ведения журнала с поддержкой многопроцессорности
 

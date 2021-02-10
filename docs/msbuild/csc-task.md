@@ -17,19 +17,19 @@ helpviewer_keywords:
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 16cf1c2505ad61a8c53d18d8981b8c08f9e6e02c
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: a3787d5aa21e029ab4900bdd89c88f1cc60f3489
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796567"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901344"
 ---
 # <a name="csc-task"></a>Csc - задача
 
-Использует программу-оболочку для файла *csc.exe* и создает исполняемые файлы ( *EXE* -файлы), библиотеки динамической компоновки ( *DLL* -файлы) или модули кода ( *NETMODULE* -файлы). Дополнительные сведения о программе *csc.exe* см. в разделе [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index).
+Использует программу-оболочку для файла *csc.exe* и создает исполняемые файлы (*EXE*-файлы), библиотеки динамической компоновки (*DLL*-файлы) или модули кода (*NETMODULE*-файлы). Дополнительные сведения о программе *csc.exe* см. в разделе [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index).
 
 ## <a name="parameters"></a>Параметры
 
@@ -60,14 +60,14 @@ ms.locfileid: "92796567"
 | `LinkResources` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Создается ссылка на ресурс .NET Framework в выходном файле. Файл ресурса не помещается в выходной файл.<br /><br /> Элементы, передаваемые в этот параметр, могут иметь необязательные метаданные `LogicalName` и `Access`. `LogicalName` соответствует аргументу `identifier` параметра `/linkresource`, а `Access` соответствует аргументу `accessibility-modifier`. Дополнительные сведения см. в разделе [-linkresource (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option). |
 | `MainEntryPoint` | Необязательный параметр `String`.<br /><br /> Указывает расположение метода `Main`. Дополнительные сведения см. в разделе [-main (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option). |
 | `ModuleAssemblyName` | Необязательный параметр `String`.<br /><br /> Задает имя сборки, частью которой будет этот модуль. |
-| `NoConfig` | Необязательный параметр `Boolean`.<br /><br /> Значение `true` предписывает компилятору не использовать файл *csc.rsp* . Дополнительные сведения см. в разделе [-noconfig (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option). |
+| `NoConfig` | Необязательный параметр `Boolean`.<br /><br /> Значение `true` предписывает компилятору не использовать файл *csc.rsp*. Дополнительные сведения см. в разделе [-noconfig (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option). |
 | `NoLogo` | Необязательный параметр `Boolean`.<br /><br /> Если этот параметр равен `true`, отображение заголовка компилятора отключается. Дополнительные сведения см. в разделе [-nologo (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/nologo-compiler-option). |
-| `NoStandardLib` | Необязательный параметр `Boolean`.<br /><br /> Значение `true` отключает импорт библиотеки *mscorlib.dll* , определяющей все пространство имен System. Используйте этот параметр, если вы хотите определить или создать собственное пространство имен System и соответствующие объекты. Дополнительные сведения см. в разделе [-nostdlib (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option). |
+| `NoStandardLib` | Необязательный параметр `Boolean`.<br /><br /> Значение `true` отключает импорт библиотеки *mscorlib.dll*, определяющей все пространство имен System. Используйте этот параметр, если вы хотите определить или создать собственное пространство имен System и соответствующие объекты. Дополнительные сведения см. в разделе [-nostdlib (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option). |
 | `NoWin32Manifest` | Необязательный параметр `Boolean`.<br /><br /> Если значение `true`, манифест Win32 по умолчанию не включается. |
 | `Optimize` | Необязательный параметр `Boolean`.<br /><br /> Значение `true` включает оптимизации. Значение `false` отключает оптимизации. Дополнительные сведения см. в разделе [-optimize (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option). |
 | `OutputAssembly` | Необязательный выходной параметр `String`.<br /><br /> Задает имя выходного файла. Дополнительные сведения см. в разделе [-out (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option). |
 | `OutputRefAssembly` | Необязательный параметр `String`.<br /><br /> Задает имя выходного файла базовой сборки. Дополнительные сведения см. в разделе [-refout (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option). |
-| `PdbFile` | Необязательный параметр `String`.<br /><br /> Задает имя файла отладочной информации. По умолчанию используется имя файла выходных данных с расширением *.pdb* . |
+| `PdbFile` | Необязательный параметр `String`.<br /><br /> Задает имя файла отладочной информации. По умолчанию используется имя файла выходных данных с расширением *.pdb*. |
 | `Platform` | Необязательный параметр `String`.<br /><br /> Указывает целевую платформу процессора для выходного файла. Этот параметр может иметь значение `x86`, `x64` или `anycpu`. Значение по умолчанию — `anycpu`. Дополнительные сведения см. в разделе [-platform (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option). |
 | `References` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Вызывает импорт задачей информации об открытых типах из заданных элементов в текущий проект. Дополнительные сведения см. в разделе [-reference (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Вы можете задать псевдоним ссылки C# в файле MSBuild, добавив метаданные `Aliases` к исходному элементу "Reference". Например, требуется установить псевдоним LS1 в следующей командной строке CSC.<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> Для этого используется следующий код.<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>` |
 | `Resources` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Внедряет ресурс .NET Framework в выходной файл.<br /><br /> Элементы, передаваемые в этот параметр, могут иметь необязательные метаданные `LogicalName` и `Access`. `LogicalName` соответствует аргументу `identifier` параметра `/resource`, а `Access` соответствует аргументу `accessibility-modifier`. Дополнительные сведения см. в разделе [-resource (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option). |
@@ -80,9 +80,9 @@ ms.locfileid: "92796567"
 | `WarningLevel` | Необязательный параметр `Int32`.<br /><br /> Задает уровень предупреждений, которые должны отображаться компилятором. Дополнительные сведения см. в разделе [-warn (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option). |
 | `WarningsAsErrors` | Необязательный параметр `String`.<br /><br /> Задает список предупреждений, которые следует обрабатывать как ошибки. Дополнительные сведения см. в разделе [-warnaserror (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Этот параметр переопределяет параметр `TreatWarningsAsErrors`. |
 | `WarningsNotAsErrors` | Необязательный параметр `String`.<br /><br /> Задает список предупреждений, которые не следует обрабатывать как ошибки. Дополнительные сведения см. в разделе [-warnaserror (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Этот параметр имеет смысл только в том случае, если для параметра `TreatWarningsAsErrors` задано значение `true`. |
-| `Win32Icon` | Необязательный параметр `String`.<br /><br /> Вставляет файл *ICO* в сборку, которая придает выходному файлу необходимый вид в **проводнике** . Дополнительные сведения см. в разделе [-win32icon (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). |
+| `Win32Icon` | Необязательный параметр `String`.<br /><br /> Вставляет файл *ICO* в сборку, которая придает выходному файлу необходимый вид в **проводнике**. Дополнительные сведения см. в разделе [-win32icon (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). |
 | `Win32Manifest` | Необязательный параметр `String`.<br /><br /> Задает манифест Win32, который требуется включить. |
-| `Win32Resource` | Необязательный параметр `String`.<br /><br /> Вставляет файл ресурсов Win32 ( *RES-файл* ) в выходной файл. Дополнительные сведения см. в разделе [-win32res (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
+| `Win32Resource` | Необязательный параметр `String`.<br /><br /> Вставляет файл ресурсов Win32 (*RES-файл*) в выходной файл. Дополнительные сведения см. в разделе [-win32res (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 

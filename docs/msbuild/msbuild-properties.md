@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61cff0bfa1db43b196d7f6403b5140f9af2947ba
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a8f53613c71a51ab2e5bd8441cb4605da795e8a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897752"
 ---
 # <a name="msbuild-properties"></a>свойства MSBuild
 
@@ -66,7 +66,7 @@ ms.locfileid: "93046135"
 
 ## <a name="registry-properties"></a>Свойство реестра
 
- Значения разделов системного реестра можно считывать, используя следующий синтаксис. Здесь `Hive` — это куст реестра (например, **HKEY_LOCAL_MACHINE** ), `MyKey` — имя раздела, `MySubKey` — имя подраздела, `Value` — значение подраздела.
+ Значения разделов системного реестра можно считывать, используя следующий синтаксис. Здесь `Hive` — это куст реестра (например, **HKEY_LOCAL_MACHINE**), `MyKey` — имя раздела, `MySubKey` — имя подраздела, `Value` — значение подраздела.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
@@ -90,7 +90,7 @@ $(registry:Hive\MyKey\MySubKey)
 
 ## <a name="global-properties"></a>Глобальные свойства
 
- MSBuild позволяет задавать свойства в командной строке с помощью параметра **-property** (или **-p** ). Эти значения глобальных свойств переопределяют значения свойств, заданные в файле проекта. Это относится также к свойствам среды за исключением зарезервированных свойств, которые нельзя изменить.
+ MSBuild позволяет задавать свойства в командной строке с помощью параметра **-property** (или **-p**). Эти значения глобальных свойств переопределяют значения свойств, заданные в файле проекта. Это относится также к свойствам среды за исключением зарезервированных свойств, которые нельзя изменить.
 
  В следующем примере показано, как присвоить глобальному свойству `Configuration` значение `DEBUG`.
 

@@ -14,16 +14,16 @@ helpviewer_keywords:
 - profiler, JavaScript [UWP apps]
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 6545fb206096c7b74a7016b506ae3bcade7f136c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: d8756b25f1223f5c7158405748fa69e402f53003
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721883"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906912"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Анализ скорости реагирования пользовательского интерфейса HTML в универсальных приложениях Windows
 В этой статье описано, как можно изолировать проблемы производительности в приложениях с помощью профилировщика скорости реагирования пользовательского интерфейса. Это специальное средство оценки производительности для универсальных приложений Windows.

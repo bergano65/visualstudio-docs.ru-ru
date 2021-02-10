@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 96e692f6-b581-46ca-8cc9-441a1861e371
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 16da018e49e6cb456074ebabac52a8768d06c1c6
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: b6444811750a59de5488b8ca3614f9926d472746
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905486"
 ---
 # <a name="formatversion-task"></a>Задача FormatVersion
 
@@ -47,7 +47,7 @@ ms.locfileid: "92436708"
 
  Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
