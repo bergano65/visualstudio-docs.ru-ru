@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9574a3319d3c43c17d7351e462b6956ae899d84
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 48d642c8a3b7883507c06453c0025badc299ce75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328409"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963423"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>Определение того, какой редактор открывает файл в проекте
 Когда пользователь открывает файл в проекте, среда проходит процесс опроса, в конечном итоге открывая соответствующий редактор или конструктор для этого файла. Начальная процедура, применяемая средой, одинакова для стандартных и пользовательских редакторов. При опросе редактора, используемого для открытия файла, среда использует разнообразные критерии, и пакет VSPackage должен координировать среду во время этого процесса.
