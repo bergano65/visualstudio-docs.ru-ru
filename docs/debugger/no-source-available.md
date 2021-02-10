@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ed0732bc-4b8c-490f-adb1-af06869a2a6b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cf7bf067602586d90271eab1f9289a3b6b884ce
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: e9993c4482d20393a3ca46d9afcd0a8ec1b13f65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975190"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942039"
 ---
 # <a name="no-source-available"></a>Исходный код недоступен
 Проект не содержит исходного кода для кода, который вы пытаетесь просмотреть. Обычно это происходит, когда в окне **Стек вызовов** или **Потоки** производится двойной щелчок по модулю, который не имеет исходного кода. Можно продолжить отладку, но невозможно использовать окно с исходным кодом для установки точек останова и выполнения других действий в этом месте. Если необходимо установить точку останова, следует использовать **окно дизассемблирования**.

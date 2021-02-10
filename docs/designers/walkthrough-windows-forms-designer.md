@@ -8,13 +8,13 @@ helpviewer_keywords:
 - Windows Forms Designer, get started
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: d4d3c0965d638c9e048cef29d7f1b535a54e54a5
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+manager: jmartens
+ms.openlocfilehash: 5803530290988affd6cfbb8342f3b1d545238985
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947856"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>Учебник. Начало работы с конструктором Windows Forms
 
@@ -221,9 +221,9 @@ ms.locfileid: "94493482"
 
    - для элемента управления sixButton замените свойство текста на **6**;
 
-   - для элемента управления multiplicationButton замените свойство текста на * *\** _ (звездочка);
+   - для элемента управления multiplicationButton замените свойство текста на **\*** (звездочка);
 
-   - для элемента управления oneButton замените свойство текста на _ *1**;
+   - для элемента управления oneButton замените свойство текста на **1**;
 
    - для элемента управления twoButton замените свойство текста на **2**;
 

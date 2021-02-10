@@ -7,17 +7,17 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e16b09a165421d36c67dad1fc657fd36846cd382
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52281c403ceb0f2708aa546cbd73559593c419be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285170"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942832"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Создание приложения Vue.js с помощью инструментов Node.js для Visual Studio
 
@@ -40,7 +40,7 @@ Visual Studio поддерживает разработку приложений
     Если у вас не установлена нужная версия, установите [Visual Studio 2019](https://visualstudio.microsoft.com/downloads).
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , если вы еще не сделали этого.
+    Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
     ::: moniker-end
 
     Если вам нужно установить рабочую нагрузку, но вы уже используете Visual Studio, выберите пункт **Средства** > **Получить средства и компоненты...** , после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **Разработка Node.js**, а затем элемент **Изменить**.
@@ -85,7 +85,7 @@ Vue.js предоставляет официальный интерфейс ко
 
 #### <a name="configure-the-project-startup-file"></a>Настройка файла запуска проекта
 
-* Откройте файл *./Startup.cs*и добавьте следующие строки в метод Configure:
+* Откройте файл *./Startup.cs* и добавьте следующие строки в метод Configure:
 
     ```csharp
     app.UseDefaultFiles(); // Enables default file mapping on the web root.
@@ -171,7 +171,7 @@ Vue.js предоставляет официальный интерфейс ко
 
 Неизвестная проблема с vue-cli 3.0 может препятствовать автоматизации сборки. Каждый раз при попытке обновления папки wwwroot выполняйте команду `npm run build` в папке client-app.
 
-Кроме того, с помощью свойств проекта ASP.NET можно скомпилировать проект vue-cli 3.0 как событие перед сборкой. Щелкните проект правой кнопкой мыши, выберите **Свойства**и добавьте следующие команды на вкладку **Сборка** в текстовом поле **Командная строка события перед сборкой**.
+Кроме того, с помощью свойств проекта ASP.NET можно скомпилировать проект vue-cli 3.0 как событие перед сборкой. Щелкните проект правой кнопкой мыши, выберите **Свойства** и добавьте следующие команды на вкладку **Сборка** в текстовом поле **Командная строка события перед сборкой**.
 
 ``` cmd
 cd ./client-app

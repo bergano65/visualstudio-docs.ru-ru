@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5352d11a-debb-4c20-b9a0-d37d94900b1c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 377357345516d210b30dd4db278dd672a8b6b469
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 7c09b9f061c9f718f8830cdb797cc56f35619e20
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940738"
 ---
 # <a name="thread-properties-dialog-box"></a>Диалоговое окно "Свойства потока"
 Используйте это диалоговое окно для получения дополнительных сведений о конкретном потоке. Чтобы отобразить это диалоговое окно, переместите фокус в окно [представления потоков](../debugger/threads-view.md) или откройте окно [представления сообщений](../debugger/messages-view.md) и разверните сообщение. Выберите любой узел потока в дереве, а затем в меню **Вид** выберите пункт **Свойства**.

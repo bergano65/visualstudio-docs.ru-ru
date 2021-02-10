@@ -17,19 +17,19 @@ helpviewer_keywords:
 ms.assetid: 22c5ade4-4159-4667-b891-0c1aa06f4df5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: de2437306dba50a1f93b0b94d86af6351b17c0b6
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 476255e92326b7e9dae950512a5d27871ede2cc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048348"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937853"
 ---
 # <a name="sgen-task"></a>SGen - задача
 
-Создает сборку сериализации XML для типов в указанной сборке. Эта задача служит оболочкой для инструмента создания XML-сериализатора ( *Sgen.exe* ). Дополнительные сведения см. в статье [Инструмент создания XML-сериализатора (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
+Создает сборку сериализации XML для типов в указанной сборке. Эта задача служит оболочкой для инструмента создания XML-сериализатора (*Sgen.exe*). Дополнительные сведения см. в статье [Инструмент создания XML-сериализатора (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
 ## <a name="parameters"></a>Параметры
 
@@ -49,7 +49,7 @@ ms.locfileid: "93048348"
 | `SerializationAssemblyName` | Необязательный параметр `String`.<br /><br /> Указывает имя созданной сборки сериализации. |
 | `ShouldGenerateSerializer` | Обязательный параметр `Boolean` .<br /><br /> Если он имеет значение `true`, задача SGen должна создать сборку сериализации. |
 | `Timeout` | Необязательный параметр `Int32`.<br /><br /> Задает промежуток времени в миллисекундах, после которого исполняемый файл задачи прекращается. Значение по умолчанию — `Int.MaxValue`. Оно указывает, что период ожидания отсутствует. |
-| `ToolPath` | Необязательный параметр `String`.<br /><br /> Указывает расположение, из которого задача загружает базовый исполняемый ( *sgen.exe* ). Если этот параметр не задан, задача использует путь установки пакета SDK, соответствующий версии платформы, на которой выполняется MSBuild. |
+| `ToolPath` | Необязательный параметр `String`.<br /><br /> Указывает расположение, из которого задача загружает базовый исполняемый (*sgen.exe*). Если этот параметр не задан, задача использует путь установки пакета SDK, соответствующий версии платформы, на которой выполняется MSBuild. |
 | `Types` | Необязательный параметр `String[]`.<br /><br /> Возвращает или задает список определенных типов, для которых создается код сериализации. SGen создает код сериализации только для указанных типов. |
 | `UseProxyTypes` | Обязательный параметр `Boolean` .<br /><br /> Если он имеет значение `true`, задача SGen создает код сериализации только для типов прокси веб-службы XML. |
 
