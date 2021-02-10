@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: 1deed23e-b31b-4714-982f-08ceebfc3096
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a896e128f949897b64fd6a273784f39543a9663
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 49d0b5f3c2aade0c6cdf4bd83735de2ba1c888ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721142"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885967"
 ---
 # <a name="use-performance-rules-to-analyze-data"></a>Использование правил производительности для анализа данных
 В предупреждениях о производительности средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] указываются проблемы профилируемого приложения, которые могут замедлить выполнение программы. Предупреждения также могут указывать на то, что может потребоваться изменить методы сбора для сбора более полезных данных. Предупреждения о производительности создаются в сеансе профилирования автоматически. Предупреждения отображаются в окне **Список ошибок** при открытии файла данных профилирования в Visual Studio. В окне **Список ошибок** можно найти исходный код проблемы и отобразить дополнительные сведения об ошибке, например информацию об устранении проблемы. Предупреждения, в которых нет необходимости, можно отключить.

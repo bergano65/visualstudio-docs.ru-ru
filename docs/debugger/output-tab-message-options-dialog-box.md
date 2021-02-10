@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 22dd48c2-6d17-41b1-b84c-9ddeaef68411
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d965b92a30d8d8a5b998a27bea9651f8669c8f
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: d9cb48f061cfda78e3dec8ef515df82fdefb8193
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975086"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891583"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Вкладка "Вывод" диалогового окна "Параметры сообщения"
 На вкладке **Вывод** можно указать, какие данные из каждого сообщения следует вывести в представление [Сообщения](../debugger/messages-view.md). Чтобы открыть диалоговое окно [Параметры сообщений](../debugger/message-options-dialog-box.md), выберите пункт **Записывать сообщения** в меню **Spy**.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: a8cd8c0b74dc06a72e7c20bd3af11fd91df07eb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975099"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891528"
 ---
 # <a name="process-search-dialog-box"></a>Диалоговое окно "Поиск процесса"
 Используйте это диалоговое окно для поиска узла для конкретного процесса в [представлении процессов](../debugger/processes-view.md). Чтобы отобразить это диалоговое окно, переместите фокус в окно представления **процессов**. В меню **Поиск** выберите **Найти процесс**.

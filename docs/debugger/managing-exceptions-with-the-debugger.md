@@ -31,15 +31,15 @@ helpviewer_keywords:
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a701e6297cb81ce84c164b3b6791a6e73c76f8
-ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
+ms.openlocfilehash: b594857b00ee233c186008efc9d0fba7d968a9bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98240274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893169"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Управление исключениями с помощью отладчика в Visual Studio
 
@@ -217,9 +217,9 @@ public class GenericException<T> : Exception
 
    ![Дополнительные условия для исключения](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Для каждой строки условия введите имя модуля и измените список операторов сравнения на **Равно** или **Не равно**. Вы можете указать в имени подстановочные знаки (* *\\\** _), чтобы выбрать несколько модулей.
+3. Для каждой строки условия введите имя модуля и измените список операторов сравнения на **Равно** или **Не равно**. Можно указать подстановочные знаки ( **\\\*** ) в имени, чтобы выбрать более одного модуля.
 
-4. Если необходимо удалить условие, выберите _ *X** в конце строки условия.
+4. Если необходимо удалить условие, выберите **X** в конце строки условия.
 
 ## <a name="see-also"></a>См. также
 

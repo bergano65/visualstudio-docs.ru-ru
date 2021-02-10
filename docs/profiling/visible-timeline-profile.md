@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 559841d1-967c-4b51-8574-6ace23969580
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b8725a6336218bdac413b12a20ff201dd0c287
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 6b63bbd3396e0a4119e59bd47bde31459b3d2145
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723170"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890517"
 ---
 # <a name="visible-timeline-profile"></a>Профиль видимой временной шкалы
 Профиль видимой временной шкалы для представления блокировок потоков обеспечивает статистическую информацию и ссылки на отчеты. При увеличении, уменьшении, горизонтальной прокрутке, скрытии или отображении каналов числа в активной легенде меняются в соответствии с просматриваемым в данный момент содержимым. Чтобы просмотреть отчет о каком-либо элементе в легенде, щелкните этот элемент.

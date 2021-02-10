@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: cdd86bd5-b729-409b-a7c6-374efa091eb1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2db18a1443b0c4faaa288a887a22d935d243f678
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: c735fe4a14a0412fbb41b28b5a40e27083c3bca6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884199"
 ---
 # <a name="visualizer-security-considerations"></a>Вопросы безопасности визуализатора
 Создание визуализатора может быть потенциально небезопасным. В настоящее время нет известных примеров использования потенциальных угроз, но разработчикам следует учитывать возможность разработки вредоносного кода в будущем и принимать соответствующие меры безопасности, описанные в данном разделе.

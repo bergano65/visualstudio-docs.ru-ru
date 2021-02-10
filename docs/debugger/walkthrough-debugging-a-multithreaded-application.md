@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b02d980292eaed40c7c1598c772b52f695bf23e2
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: cd11e722886b77e9faaace768cc30a74c759903f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884212"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Просмотр потоков в отладчике Visual Studio с помощью окна потоков (C#, Visual Basic, C++)
 В окне **Потоки** можно проверять потоки и работать с ними в отлаживаемом приложении. Пошаговые инструкции по использованию **окна потоков** см. в разделе [Пошаговое руководство. Отладка с помощью окна потоков](../debugger/how-to-use-the-threads-window.md).

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 44fb43b7-b006-46cc-a70c-036aac3cceec
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d100b36ff706752f1855939d4c45b5b7793ccfa
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: f4fadb932078358b550e1d2c72bea292684a1954
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903055"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891700"
 ---
 # <a name="message-search-dialog-box"></a>Диалоговое окно "Поиск сообщений"
 Используйте это диалоговое окно для поиска узла для конкретного сообщения в [представлении сообщений](../debugger/messages-view.md). Чтобы отобразить это диалоговое окно, переместите фокус в окно представления сообщений. Затем в меню **Поиск** выберите **Найти сообщение**.
