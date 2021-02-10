@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9dcf3316ba57bbb25ee171cba7e4edc4923fa270
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49e8f151aa01037a0bc18161fbe94a00488394db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737282"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953842"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Описывает одну инструкцию дизассемблирования для отображаемой интегрированной среды разработки (IDE).
@@ -46,7 +46,7 @@ typedef struct tagDisassemblyData {
 ```
 
 ```csharp
-public struct DisassemblyData { 
+public struct DisassemblyData { 
     public uint          dwFields;
     public string        bstrAddress;
     public string        bstrAddressOffset;
@@ -63,7 +63,7 @@ public struct DisassemblyData { 
 };
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 `dwFields`\
 Константа [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) , указывающая, какие поля заполняются.
 
@@ -94,7 +94,7 @@ public struct DisassemblyData { 
 `bstrDocumentUrl`\
 Для текстовых документов, которые могут быть представлены в виде имен файлов, `bstrDocumentUrl` поле заполняется именем файла, в котором можно найти источник, используя формат `file://file name` .
 
-Для текстовых документов, которые не могут быть представлены в виде имен файлов, `bstrDocumentUrl` является уникальным идентификатором документа, а модуль отладки должен реализовать метод [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) GetText.
+Для текстовых документов, которые не могут быть представлены в виде имен файлов, `bstrDocumentUrl` является уникальным идентификатором документа, а модуль отладки должен реализовать метод [](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) GetText.
 
 Это поле также может содержать дополнительные сведения о контрольных суммах. Дополнительные сведения см. в разделе "Примечания".
 
