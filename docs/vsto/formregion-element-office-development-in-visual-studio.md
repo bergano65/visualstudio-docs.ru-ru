@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <formRegion> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9e13576ef673728d673d0351cf289a80944584bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 469b041ac879753e5fe4be0f9bd739be1030a942
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543536"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970395"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент формрегион (разработка решений Office в Visual Studio)
   `formRegion`Элемент `vstov4` пространства имен определяет Microsoft Office область формы Outlook, связанную с надстройкой VSTO.
@@ -43,7 +43,7 @@ ms.locfileid: "85543536"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`name`|Обязательный. Определяет имя области формы.|
+|`name`|Обязательный элемент. Определяет имя области формы.|
 
  Элемент `formRegion` имеет указанные ниже дочерние элементы.
 
@@ -54,7 +54,7 @@ ms.locfileid: "85543536"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`name`|Обязательный. Определяет форму, которая связана с областью формы.|
+|`name`|Обязательный элемент. Определяет форму, которая связана с областью формы.|
 
 ## <a name="example"></a>Пример
  В приведенном ниже примере кода показан элемент `formRegion` манифеста приложения для надстройки VSTO для Outlook, развертываемой с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Имеется три класса сообщений, связанных с одной и той же областью формы. Этот пример кода является частью большого примера, приведенного в разделе [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).

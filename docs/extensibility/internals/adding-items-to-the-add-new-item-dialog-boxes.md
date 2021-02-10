@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 1dbdb2f04ad5038941eeb9790efa9e05781def3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190165"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969013"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Добавление элементов в диалоговое окно "Добавление нового элемента"
 Процесс добавления элементов в диалоговое окно **Добавление нового элемента** начинается с разделов реестра. Как показано в следующих записях реестра, раздел **аддитемтемплатес** содержит путь и имя каталога, в котором помещаются элементы, доступные в диалоговом окне **Добавление нового элемента** .
@@ -33,7 +33,7 @@ ms.locfileid: "96190165"
 
  **@** = #6
 
- **TemplatesDir**  =  \\ Темплатесдир &lt; Путь установки пакета SDK для Visual Studio &gt; \\ всинтегратион \\ &lt; сомефолдер &gt; \\ &lt; сомепаккаже &gt; \\ &lt; сомепрожект &gt; \\ &lt; сомепрожектитемс&gt;
+   =  \\ Темплатесдир &lt; Путь установки пакета SDK для Visual Studio &gt; \\ всинтегратион \\ &lt; сомефолдер &gt; \\ &lt; сомепаккаже &gt; \\ &lt; сомепрожект &gt; \\ &lt; сомепрожектитемс&gt;
 
  **Сортприорити** = DWORD: 00000064
 

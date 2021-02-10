@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 1a9aa122-2d8f-4a09-b503-92975aa6b648
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0640bc238bc300868d42aedc8905da8ffc97f65e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b3a73cec5f05072f0a99940b82a362ccb8e1edde
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723326"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969273"
 ---
 # <a name="modules-view---contention-data"></a>Представление "Модули" — данные о состязаниях
 В представлении "Модули" данных по состязаниям приводятся данные параллелизма, сгруппированные по модулям, выбранным в данных профилирования. Каждый модуль представляет собой корневой узел иерархического дерева. Функции модуля, в котором возникли состязания, перечислены в узле модуля.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d55a4be044c44567f65e312d013ebdb61314ea00
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 7ccd63039b55fce076153cbb2a60bd04a1ca674c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877810"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970170"
 ---
 # <a name="project-type-essentials"></a>Основные компоненты типа проекта
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] включает несколько типов проектов для таких языков, как [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] или [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] также позволяет создавать собственные типы проектов.

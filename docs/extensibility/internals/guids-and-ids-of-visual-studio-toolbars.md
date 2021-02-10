@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480386"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970222"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Идентификаторы GUID и идентификаторы панелей инструментов Visual Studio
 В этом разделе перечисляются идентификаторы GUID и ИДЕНТИФИКАТОРы панелей инструментов, которые включены в интегрированную среду разработки (IDE) Visual Studio, и группы, которые они содержат. Эти значения определены в файлах *. vsct* , которые устанавливаются в составе пакета SDK для Visual Studio. Дополнительные сведения см. в разделе [команды, меню и группы, определяемые интегрированной средой разработки](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -40,7 +40,7 @@ ms.locfileid: "96480386"
 
  Только группы могут переходить непосредственно из панелей инструментов. Чтобы добавить группу, присвойте ее родительскому элементу GUID и идентификатор панели инструментов. Чтобы добавить кнопку на панель инструментов, установите ее родительский элемент в группу на панели инструментов.
 
-|Toolbar|ID|
+|Панель инструментов|ID|
 |-------------|--------|
 |Standard|IDM_VS_TOOL_STANDARD|
 |Сборка|IDM_VS_TOOL_BUILD|
@@ -51,7 +51,7 @@ ms.locfileid: "96480386"
 ### <a name="special-toolbars"></a>Специальные панели инструментов
  Эти панели инструментов определяются интегрированной средой разработки Visual Studio, но они служат специализированными функциями и не размещают группы команд.
 
-|Toolbar|ID|
+|Панель инструментов|ID|
 |-------------|--------|
 |Команда Add|IDM_VS_TOOL_ADDCOMMAND|
 |Не определено.|IDM_VS_TOOL_UNDEFINED|
@@ -73,7 +73,7 @@ ms.locfileid: "96480386"
 |Windows|IDG_VS_TOOLSB_WINDOWS|
 |Новые окна|IDG_VS_TOOLSB_NEWWINDOWS|
 |Загрузка и сохранение|IDG_VS_WINDOWUI_LOADSAVE|
-|Датчик|IDG_VS_TOOLSB_GAUGE|
+|Индикаторная диаграмма|IDG_VS_TOOLSB_GAUGE|
 
 ### <a name="build-toolbar-groups"></a>Создание групп панелей инструментов
 
@@ -88,7 +88,7 @@ ms.locfileid: "96480386"
 |----------|--------|
 |Completion|IDM_VS_TOOL_TEXTEDITOR|
 |Отступ|IDG_VS_EDITTOOLBAR_INDENT|
-|Комментарий|IDG_VS_EDITTOOLBAR_COMMENT|
+|Комментировать|IDG_VS_EDITTOOLBAR_COMMENT|
 |Закладки|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|
 
 ### <a name="debug-toolbar-groups"></a>Отладка групп панелей инструментов
@@ -112,7 +112,7 @@ ms.locfileid: "96480386"
 > [!NOTE]
 > Панели инструментов и группы используют идентификатор GUID `guidSHLMainMenu` , за исключением случаев, когда иное указано с помощью синтаксиса GUID: ID. Если для панели инструментов указан идентификатор GUID, он также применяется к группам, начиная с этой панели инструментов.
 
-|Окно инструментов|Toolbar|Группы|
+|Окно инструментов|Панель инструментов|Группы|
 |-----------------|-------------|------------|
 |Обозреватель решений|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1.. 5.0|
 |Обозреватель серверов|guid_SE_MenuGroup: IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03f1709184126d31845bfe1145afdebfeffcd1d1
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: e34b857d26be49bb98096c6b0ba85ff8049290b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863337"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968987"
 ---
 # <a name="parent-element"></a>Родительский элемент
 Родительским элементом кнопки или поля со списком может быть только группа. Родительским элементом меню или группы может быть любое другое меню или группа. В [элементе CommandPlacement](../extensibility/commandplacement-element.md)этот элемент является обязательным; во всех остальных случаях это необязательно. Если этот элемент опущен, то родительский объект `Group_Undefined:0` будет подразумеваемым.
@@ -36,8 +36,8 @@ ms.locfileid: "97863337"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|guid|Обязательный. Идентификатор GUID идентификатора команды GUID/ID.|
-|идентификатор|Обязательный. Идентификатор идентификатора команды GUID/ID.|
+|guid|Обязательный элемент. Идентификатор GUID идентификатора команды GUID/ID.|
+|идентификатор|Обязательный элемент. Идентификатор идентификатора команды GUID/ID.|
 
 ### <a name="child-elements"></a>Дочерние элементы
  Нет
