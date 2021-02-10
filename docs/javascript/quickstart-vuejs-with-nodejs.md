@@ -7,17 +7,17 @@ ms.topic: quickstart
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 882c3a148164ab88412a817abd72d0608fadf9b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee855700502469783a8eab60bb24a28c2e30a9c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81744979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950644"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Краткое руководство. Создание первого веб-приложения Visual Studio.js с помощью Visual Studio
 
@@ -31,10 +31,10 @@ ms.locfileid: "81744979"
 * У вас должна быть установлена среда Visual Studio и должна иметься рабочая нагрузка "Разработка Node.js".
 
     ::: moniker range=">=vs-2019"
-    Установите Visual Studio 2019 бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
+    Установите Visual Studio 2019 бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/), если еще не сделали этого.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Установите Visual Studio 2017 бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
+    Установите Visual Studio 2017 бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/), если еще не сделали этого.
     ::: moniker-end
 
     Если вам нужно установить рабочую нагрузку, но вы уже используете Visual Studio, выберите пункт **Средства** > **Получить средства и компоненты...** , после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **Разработка Node.js**, а затем элемент **Изменить**.

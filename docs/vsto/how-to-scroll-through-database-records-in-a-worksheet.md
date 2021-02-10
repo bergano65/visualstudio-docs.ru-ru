@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], scrolling records
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 536a3cca0337e8879e64cbc3ffc15b8411c201b6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 29e6d4decf3d314654c4417f71bd7a2bad358b95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528171"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949731"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Пошаговое руководство. Прокрутка записей базы данных на листе
   В следующей процедуре показано, как использовать конструктор для отображения одного поля из таблицы базы данных в Microsoft Office листе Excel с элементами управления, которые позволяют конечному пользователю прокручивать все записи.

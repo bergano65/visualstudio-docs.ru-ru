@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 3c6d58b0-36e8-47aa-bfca-b73dd2045d91
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afb9ff23e2f2533b7c51b500806a025691a232b
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 82275b14fbda0d63e6235b87b55a0dbb5f2416b0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949432"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath - задача
 
@@ -49,7 +49,7 @@ ms.locfileid: "92436741"
 
 ## <a name="example"></a>Пример
 
-В этом примере задача `FindUnderPath` используется для определения наличия в файлах, содержащихся в элементе `MyFiles`, путей ниже указанного в свойстве `SearchPath`. После выполнения задачи элемент `FilesNotFoundInPath` содержит файл *File1.txt* , а элемент `FilesFoundInPath` содержит файл *File2.txt* .
+В этом примере задача `FindUnderPath` используется для определения наличия в файлах, содержащихся в элементе `MyFiles`, путей ниже указанного в свойстве `SearchPath`. После выполнения задачи элемент `FilesNotFoundInPath` содержит файл *File1.txt*, а элемент `FilesFoundInPath` содержит файл *File2.txt*.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

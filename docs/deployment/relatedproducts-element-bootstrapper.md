@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ac9f84fa22526ed03d7a2e9b201cc9afc2f476d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a7987306d9f7fc25f9f9b783d5b0966ac5015ce0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350573"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949692"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;&gt;Элемент релатедпродуктс (начальный загрузчик)
 `RelatedProducts`Элемент определяет другие продукты, которые либо зависят от, либо включены в текущий продукт.
@@ -76,7 +76,7 @@ ms.locfileid: "94350573"
 |`Code`|Кодовое имя включаемого продукта, как указано в `ProductCode` атрибуте `Product` элемента. Дополнительные сведения см. в разделе [\<Product>Element](../deployment/product-element-bootstrapper.md).|
 
 ## <a name="example"></a>Пример
- В следующем примере кода указывается, что установщик Microsoft устанавливается вместе с .NET Framework и поэтому не требует отдельной установки.
+ В следующем примере кода указывается, что установщик Microsoft устанавливается вместе с платформа .NET Framework и поэтому не требует отдельной установки.
 
 ```xml
 <RelatedProducts>
@@ -84,5 +84,5 @@ ms.locfileid: "94350573"
 </RelatedProducts>
 ```
 
-## <a name="see-also"></a>См. также
-- [\<Product> дерев](../deployment/product-element-bootstrapper.md)
+## <a name="see-also"></a>См. также раздел
+- [Элемент \<Product>](../deployment/product-element-bootstrapper.md)

@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: 8059d4b2-af61-4a47-a6c2-8da5c0741c74
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d33b6fe42f786218bf78825a356a25edff2b31ae
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 9e93546c97b2ddec0e944314c51c87da05a725db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950173"
 ---
 # <a name="querycounters"></a>Параметр QueryCounters
 Параметр **QueryCounters** перечисляет доступные на компьютере счетчики производительности ЦП (оборудования).

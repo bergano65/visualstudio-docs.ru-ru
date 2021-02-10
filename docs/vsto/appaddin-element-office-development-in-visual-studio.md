@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a22015fe6183dfd74fff54c34bc6896e1d33d217
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 427d7bc0ec59b98394b292745985be7fdf69b904
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844755"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950514"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент аппаддин (разработка решений Office в Visual Studio)
   Элемент **аппаддин** `vstov4` пространства имен хранит сведения о настройках для надстроек VSTO.
@@ -43,7 +43,7 @@ ms.locfileid: "96844755"
 
  Элемент **аппаддин** имеет следующие атрибуты.
 
-|attribute|Описание|
+|Атрибут|Описание|
 |---------------|-----------------|
 |**приложение**|Обязательный элемент. Идентифицирует приложение Microsoft Office. Может иметь одно из следующих значений: Excel, InfoPath, Outlook, PowerPoint, Project, Visio или Word.|
 |**loadBehavior**|Необязательный элемент. По умолчанию **LoadBehavior** включается путем присвоения этому значению значения. Для отладки надстройку VSTO можно отключить, задав значение 2. Дополнительные сведения см. в таблице значения LoadBehavior в [записях реестра для надстроек VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|

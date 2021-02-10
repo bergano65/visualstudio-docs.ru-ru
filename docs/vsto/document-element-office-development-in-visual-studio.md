@@ -13,15 +13,15 @@ helpviewer_keywords:
 - <document> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 36d822d60d1a28d48f660f6d358b75bf4a913048
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e92c17d71b1c0959cb1918ce6fbad0e2cd44d5ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63000027"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949835"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент Document (разработка решений Office в Visual Studio)
   `document`Элемент `vstov4` пространства имен хранит сведения о настройке для настроек на уровне документа.
@@ -37,7 +37,7 @@ ms.locfileid: "63000027"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`solutionId`|Обязательный. Идентификатор GUID, используемый Инструменты Visual Studio для среды выполнения Office для уникальной идентификации решения на уровне документа. Это значение сохраняется как свойство пользовательского документа _AssemblyLocation. Дополнительные сведения см. в разделе [Общие сведения о настраиваемых свойствах документа](../vsto/custom-document-properties-overview.md).|
+|`solutionId`|Обязательный элемент. Идентификатор GUID, используемый Инструменты Visual Studio для среды выполнения Office для уникальной идентификации решения на уровне документа. Это значение сохраняется как свойство пользовательского документа _AssemblyLocation. Дополнительные сведения см. в разделе [Общие сведения о настраиваемых свойствах документа](../vsto/custom-document-properties-overview.md).|
 
  У элемента`document` нет дочерних элементов.
 

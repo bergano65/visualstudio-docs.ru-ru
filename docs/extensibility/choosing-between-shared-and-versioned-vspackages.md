@@ -1,6 +1,6 @@
 ---
 title: Выбор между общими и версиями пакетов VSPackage | Документация Майкрософт
-description: Узнайте о параллельных установках пакетов VSPackage с помощью общих или версий стратегий с несколькими версиями Visual Studio и .NET Framework.
+description: Узнайте о параллельных установках пакетов VSPackage с помощью общих или версий стратегий с несколькими версиями Visual Studio и платформа .NET Framework.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 725dd8368bd4db9509426fa1a98ce56ef85bc3c0
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 90acdde2c365effd189efe4437b5e41c39f494b0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974398"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949640"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Выбор между общими и версиями пакетов VSPackage
 Разные версии Visual Studio могут сосуществовать на одном компьютере. Пакеты VSPackage могут поддерживать любой набор [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] версий.
 
- Параллельные установки пакетов VSPackage можно включить с помощью одной из двух стратегий: общей стратегии или стратегии управления версиями. Оба варианта удовлетворяют наличие нескольких версий [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и связанных версий .NET Framework.
+ Параллельные установки пакетов VSPackage можно включить с помощью одной из двух стратегий: общей стратегии или стратегии управления версиями. Оба варианта удовлетворяют наличие нескольких версий [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и связанных версий платформа .NET Framework.
 
  В общей стратегии один пакет VSPackage регистрируется для использования в нескольких версиях [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . В стратегии управления версиями устанавливаются несколько библиотек DLL VSPackage, по одной для каждой [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] поддерживаемой версии.
 
@@ -63,6 +63,6 @@ ms.locfileid: "94974398"
 
   Помимо планирования двоичной совместимости для двоичных файлов VSPackage, следует также рассмотреть форматы файлов решения и проекта. Если пакет VSPackage создает новый тип проекта, необходимо решить, может ли он работать только в одной версии или в нескольких версиях [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Дополнительные сведения см. в разделе [Обновление пользовательских проектов](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Установка пакетов VSPackage с помощью установщик Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md)
 - [Управление компонентами](../extensibility/internals/component-management.md)

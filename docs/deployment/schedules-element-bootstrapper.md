@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 28d094cf-64f5-42b1-bd8a-3697082aab4f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f84727647f198c25175139412d3e8509e73fe1c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0154816985076373c3ced4981aa714971a9ded29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349364"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949653"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Элемент Schedules &gt; (начальный загрузчик)
 `Schedules`Элемент содержит `Schedule` элементы, которые определяют определенное время выполнения команд, определенных `Command` элементом.
@@ -64,6 +64,6 @@ ms.locfileid: "94349364"
 ## <a name="afterpackage"></a>AfterPackage
  `AfterPackage`Элемент указывает установщику выполнить команду после установки указанного пакета.
 
-## <a name="see-also"></a>См. также
-- [\<Product> дерев](../deployment/product-element-bootstrapper.md)
+## <a name="see-also"></a>См. также раздел
+- [Элемент \<Product>](../deployment/product-element-bootstrapper.md)
 - [Справочник по схеме продуктов и пакетов](../deployment/product-and-package-schema-reference.md)
