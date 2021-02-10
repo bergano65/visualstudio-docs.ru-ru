@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f0e64c0e-cdb3-4ad4-9723-09934166f3a2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 531b76511d4456f8491e1498c93a9d62ebf0b026
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 018f15fe8c57912294b6b5e6d2772dfa2fcff56a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903250"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916322"
 ---
 # <a name="how-to-display-thread-properties"></a>Практическое руководство. Отображение свойств потока
 Чтобы узнать больше о потоке, указанном в [представлении потоков](../debugger/threads-view.md), используйте [диалоговое окно "Свойства потока"](../debugger/thread-properties-dialog-box.md).

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4c2f52de-bd91-42cf-9028-67aa75f8bd26
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55b4a40f1dae76f2fc0aa807b7099fdd7ac928f0
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 901ec0b6954981622601883a83e27f6f89ca5a71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903965"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916297"
 ---
 # <a name="how-to-display-window-properties"></a>Практическое руководство. отображение свойств окна
 Чтобы узнать больше об окне, указанном в [представлении окон](../debugger/windows-view.md), используйте диалоговое окно [Свойства окна](../debugger/window-properties-dialog-box.md).

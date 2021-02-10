@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76b359eebe0f4a22bef3ff6c6742a5134aa4520c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 6b3bb4c1a17cd5d1481be2fa942686bce3861bb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918915"
 ---
 # <a name="msbuild-tasks"></a>Задачи MSBuild
 
@@ -69,7 +69,7 @@ ms.locfileid: "93049047"
 
 ## <a name="overridden-tasks"></a>Переопределенные задачи
 
- MSBuild ищет задачи в нескольких местах. Во первых, в файлах с расширением *.OverrideTasks* , которые хранятся в каталогах .NET Framework. Задачи в этих файлах переопределяют любые другие задачи с теми же именами, в том числе задачи в файле проекта. Второе место — файлы с расширением *.Tasks* , расположенные в каталогах .NET Framework. Если задача не найдена ни в одном из этих расположений, выполняется задача из файла проекта.
+ MSBuild ищет задачи в нескольких местах. Во первых, в файлах с расширением *.OverrideTasks*, которые хранятся в каталогах .NET Framework. Задачи в этих файлах переопределяют любые другие задачи с теми же именами, в том числе задачи в файле проекта. Второе место — файлы с расширением *.Tasks*, расположенные в каталогах .NET Framework. Если задача не найдена ни в одном из этих расположений, выполняется задача из файла проекта.
 
 ## <a name="see-also"></a>См. также
 

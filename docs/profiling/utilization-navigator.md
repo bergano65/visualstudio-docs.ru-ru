@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 522a981a-37ef-4cdd-a04c-f1e7525a2aab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f209098200333e91f0e5baf9c7a2b73b4a3202f
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 3d92747bb90cae18a79e81e49689ce8c01b8a9b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723222"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917577"
 ---
 # <a name="utilization-navigator"></a>Навигатор использования
 Вы можете применять навигатор использования в визуализаторе параллелизма для выбора интервала времени в трассировке. Визуализатор параллелизма показывает загруженность ядер ЦП целевым процессом во времени. Это облегчает просмотр шаблонов загрузки ЦП, а также позволяет сравнить данные загрузки и данные в других представлениях. Навигатор использования отображается в верхней части каждого представления в визуализаторе параллелизма. На рисунке ниже показан навигатор использования.

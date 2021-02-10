@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3cae844c-7c6d-4144-82dc-efad10ba458f
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da2a38041a8fa4092e0167e60b00e35a7187866b
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 3ac0295b2d6f4300fa29c893d61616977ad44b87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436423"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914412"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Практическое руководство. Отображение списка элементов, разделенных запятыми
 
@@ -30,7 +30,7 @@ ms.locfileid: "92436423"
 
 `<Message Text="This is my list of TXT files: @(TXTFile)"/>`
 
-Когда список элементов `@(TXTFile)` содержит элементы *App1.txt* , *App2.txt* и *App3.txt* , сообщение имеет вид:
+Когда список элементов `@(TXTFile)` содержит элементы *App1.txt*, *App2.txt* и *App3.txt*, сообщение имеет вид:
 
 `This is my list of TXT files: App1.txt;App2.txt;App3.txt`
 
@@ -48,7 +48,7 @@ ms.locfileid: "92436423"
 
 ## <a name="example"></a>Пример
 
-В этом примере задача [Exec](../msbuild/exec-task.md) запускает средство findstr для поиска указанных текстовых строк в файле *Phrases.txt* . В команде findstr искомые литеральные строки обозначены параметром **-c:** , поэтому между элементами в списке `@(Phrase)` вставляется разделитель элементов `-c:`.
+В этом примере задача [Exec](../msbuild/exec-task.md) запускает средство findstr для поиска указанных текстовых строк в файле *Phrases.txt*. В команде findstr искомые литеральные строки обозначены параметром **-c:**, поэтому между элементами в списке `@(Phrase)` вставляется разделитель элементов `-c:`.
 
 Для этого примера эквивалентная команда в командной строке имеет вид:
 

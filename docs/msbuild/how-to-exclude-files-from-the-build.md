@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 48578edd6c7911e858f32b1961b4ef361748788d
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: e838460f1e42f34e92a99198b9d4a0e34ce71dcd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436364"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914375"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Практическое руководство. Исключение файлов из сборки
 
@@ -38,7 +38,7 @@ ms.locfileid: "92436364"
 
  Если вы использовали подстановочные знаки для включения всех файлов в одном каталоге или наборе вложенных каталогов в качестве входных данных для сборки, может присутствовать один или несколько файлов или каталог, которые не требуется включать. Чтобы исключить элемент из списка элементов, используйте атрибут `Exclude`.
 
-#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Включение всех файлов с расширением *CS* или *VB* , кроме *Form2*
+#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Включение всех файлов с расширением *CS* или *VB*, кроме *Form2*
 
 - Используйте один из следующих атрибутов `Include` и `Exclude`:
 
@@ -52,7 +52,7 @@ ms.locfileid: "92436364"
     <VBFile Include="*.vb" Exclude="Form2.vb"/>
     ```
 
-#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Включение всех файлов с расширением *CS* или *VB* , кроме *Form2* и *Form3*
+#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Включение всех файлов с расширением *CS* или *VB*, кроме *Form2* и *Form3*
 
 - Используйте один из следующих атрибутов `Include` и `Exclude`:
 
@@ -66,7 +66,7 @@ ms.locfileid: "92436364"
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>
     ```
 
-#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Включение всех *JPG* -файлов в подкаталогах каталога *Images* , кроме файлов из каталога *Version2*
+#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Включение всех *JPG*-файлов в подкаталогах каталога *Images*, кроме файлов из каталога *Version2*
 
 - Используйте следующие атрибуты `Include` и `Exclude`:
 
@@ -95,7 +95,7 @@ ms.locfileid: "92436364"
 
 ## <a name="example"></a>Пример
 
- В следующем примере кода выполняется сборка проекта со всеми *CS* -файлами из каталога, кроме файла *Form2.cs* .
+ В следующем примере кода выполняется сборка проекта со всеми *CS*-файлами из каталога, кроме файла *Form2.cs*.
 
 ```xml
 <Project DefaultTargets="Compile"

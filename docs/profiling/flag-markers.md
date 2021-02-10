@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fc7b128915b7fc961b44aa7d70a24a813d432ddf
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: fc7e8d9a7c39a0bb7953c309adb9f2abb1c0dc43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801466"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916713"
 ---
 # <a name="flag-markers"></a>Маркеры флагов
 Маркер флага представляет событие, которое произошло в определенный момент времени в приложении. Флаг может представлять различные типы событий приложения. Например, флаг может представлять момент, когда был запланирован определенный рабочий элемент или возникло исключение. Среды выполнения, такие как библиотека параллельных задач, также могут создавать флаги.

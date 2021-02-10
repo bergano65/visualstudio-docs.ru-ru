@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c6a2b27aa08780d440c0e961c9a091c2b2fdb2
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: bd9d77e32f9c287ac2dfcf3905fe9335e119a3a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914499"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Практическое руководство. Построение одинаковых исходных файлов с различными параметрами
 
@@ -53,7 +53,7 @@ ms.locfileid: "92436918"
 
 ## <a name="specify-properties-on-the-command-line"></a>Указание свойств в командной строке
 
-После составления такого файла проекта, который поддерживает несколько конфигураций, вам нужна возможность изменять эти конфигурации при сборке проекта. MSBuild предоставляет такую возможность, позволяя указывать свойства в командной строке с помощью параметра **-property** или **-p** .
+После составления такого файла проекта, который поддерживает несколько конфигураций, вам нужна возможность изменять эти конфигурации при сборке проекта. MSBuild предоставляет такую возможность, позволяя указывать свойства в командной строке с помощью параметра **-property** или **-p**.
 
 ### <a name="to-set-a-project-property-at-the-command-line"></a>Задание свойства проекта в командной строке
 
@@ -71,7 +71,7 @@ ms.locfileid: "92436918"
 
 ### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Задание нескольких свойств проекта в командной строке
 
-- Используйте параметр **-property** или **-p** с указанием свойств и их значений либо используйте один параметр **-property** или **-p** , указав несколько свойств через точку с запятой (;). Пример:
+- Используйте параметр **-property** или **-p** с указанием свойств и их значений либо используйте один параметр **-property** или **-p**, указав несколько свойств через точку с запятой (;). Пример:
 
   ```cmd
   msbuild file.proj -p:Flavor=Debug;Platform=x86

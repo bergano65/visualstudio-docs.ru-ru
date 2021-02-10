@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ccd42c07-0fb6-4e8b-9ebb-a6a6db18aa2e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29fed063d4c223cf0b1862384612ea5aa84b52b0
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 855a07ab21d0396fea4605e5117e312608cb625e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048912"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918884"
 ---
 # <a name="override-toolsversion-settings"></a>Переопределение параметров ToolsVersion
 
@@ -123,7 +123,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     1. Если переменная среды `MSBUILDDEFAULTTOOLSVERSION` задана равной существующему параметру `ToolsVersion`, используйте ее.
 
-    2. Если свойство `DefaultOverrideToolsVersion` задано в *MSBuild.exe.config* , используйте его.
+    2. Если свойство `DefaultOverrideToolsVersion` задано в *MSBuild.exe.config*, используйте его.
 
     3. Если в реестре задано свойство `DefaultOverrideToolsVersion`, используйте его.
 

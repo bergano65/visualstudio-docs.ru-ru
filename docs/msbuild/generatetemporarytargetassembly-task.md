@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 92b6539c-6897-45e0-8989-0c234bbfe782
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a100ad8a3be57288e49a858d6f87851269df303
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: f4a41a5cbecea69d4843cbd70479a604f91b2218
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436760"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914739"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Задача GenerateTemporaryTargetAssembly
 
@@ -35,15 +35,15 @@ ms.locfileid: "92436760"
 
 | Параметр | Описание |
 |--------------------------| - |
-| `AssemblyName` | Обязательный параметр **String** .<br /><br /> Задает короткое имя сборки, которая создается для проекта, и которое также используется для временно создаваемой конечной сборки. Например, если проект создает исполняемый файл Windows с именем *WinExeAssembly.exe* , параметр **AssemblyName** имеет значение **WinExeAssembly** . |
-| `CompileTargetName` | Обязательный параметр **String** .<br /><br /> Указывает имя целевого объекта MSBuild, который используется для создания сборок из файлов исходного кода. Для параметра **CompileTargetName** обычно используется значение **CoreCompile** . |
-| `CompileTypeName` | Обязательный параметр **String** .<br /><br /> Задает тип компиляции, которую выполняет целевой объект, указанный в параметре **CompileTargetName** . Для целевого объекта **CoreCompile** этот параметр имеет значение **Compile** . |
-| `CurrentProject` | Обязательный параметр **String** .<br /><br /> Указывает полный путь к файлу проекта MSBuild для проекта, которому требуется временная конечная сборка. |
+| `AssemblyName` | Обязательный параметр **String**.<br /><br /> Задает короткое имя сборки, которая создается для проекта, и которое также используется для временно создаваемой конечной сборки. Например, если проект создает исполняемый файл Windows с именем *WinExeAssembly.exe*, параметр **AssemblyName** имеет значение **WinExeAssembly**. |
+| `CompileTargetName` | Обязательный параметр **String**.<br /><br /> Указывает имя целевого объекта MSBuild, который используется для создания сборок из файлов исходного кода. Для параметра **CompileTargetName** обычно используется значение **CoreCompile**. |
+| `CompileTypeName` | Обязательный параметр **String**.<br /><br /> Задает тип компиляции, которую выполняет целевой объект, указанный в параметре **CompileTargetName**. Для целевого объекта **CoreCompile** этот параметр имеет значение **Compile**. |
+| `CurrentProject` | Обязательный параметр **String**.<br /><br /> Указывает полный путь к файлу проекта MSBuild для проекта, которому требуется временная конечная сборка. |
 | `GeneratedCodeFiles` | Необязательный параметр **ITaskItem[]** .<br /><br /> Указывает список файлов управляемого кода для определенного языка, созданных задачей [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md). |
-| `IntermediateOutputPath` | Обязательный параметр **String** .<br /><br /> Указывает каталог, в котором создана временная конечная сборка. |
-| `MSBuildBinPath` | Обязательный параметр **String** .<br /><br /> Указывает расположение файла *MSBuild.exe* , который необходим для компиляции временной конечной сборки. |
+| `IntermediateOutputPath` | Обязательный параметр **String**.<br /><br /> Указывает каталог, в котором создана временная конечная сборка. |
+| `MSBuildBinPath` | Обязательный параметр **String**.<br /><br /> Указывает расположение файла *MSBuild.exe*, который необходим для компиляции временной конечной сборки. |
 | `ReferencePath` | Необязательный параметр **ITaskItem[]** .<br /><br /> Указывает список сборок (имя файла и путь), на которые ссылаются все типы, скомпилированные во временной конечной сборке. |
-| `ReferencePathTypeName` | Обязательный параметр **String** .<br /><br /> Задает параметр, используемый параметром целевого объекта компиляции ( **CompileTargetName** ), который задает список ссылок на сборку ( **ReferencePath** ). Мы рекомендуем использовать значение **ReferencePath** . |
+| `ReferencePathTypeName` | Обязательный параметр **String**.<br /><br /> Задает параметр, используемый параметром целевого объекта компиляции (**CompileTargetName**), который задает список ссылок на сборку (**ReferencePath**). Мы рекомендуем использовать значение **ReferencePath**. |
 
 ## <a name="remarks"></a>Remarks
 

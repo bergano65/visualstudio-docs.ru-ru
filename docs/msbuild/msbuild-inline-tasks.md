@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 848e9c8c4e3dcc7d364f2001393730fbcc56be7e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 4a90a5a251169bc9b41dea5bfddcfa2f8459af28
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046330"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919059"
 ---
 # <a name="msbuild-inline-tasks"></a>Встроенные задачи MSBuild
 
@@ -28,7 +28,7 @@ ms.locfileid: "93046330"
  В MSBuild 15.8 был добавлен [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md), позволяющий создавать кроссплатформенные встроенные задачи .NET Standard.  Если вам нужно использовать встроенные задачи в .NET Core, следует использовать RoslynCodeTaskFactory.
 ## <a name="the-structure-of-an-inline-task"></a>Структура встроенной задачи
 
- Элемент [UsingTask](../msbuild/usingtask-element-msbuild.md) содержит встроенную задачу. Встроенная задача и содержащий ее элемент `UsingTask` обычно включены в *TARGETS* -файл и при необходимости импортируются в другие файлы проекта. Ниже представлен пример обычной встроенной задачи. Обратите внимание, что в нем не предусмотрено выполнение каких-либо действий.
+ Элемент [UsingTask](../msbuild/usingtask-element-msbuild.md) содержит встроенную задачу. Встроенная задача и содержащий ее элемент `UsingTask` обычно включены в *TARGETS*-файл и при необходимости импортируются в другие файлы проекта. Ниже представлен пример обычной встроенной задачи. Обратите внимание, что в нем не предусмотрено выполнение каких-либо действий.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -119,7 +119,7 @@ Log.LogError("Hello, world!");
 </Project>
 ```
 
- Задачу HelloWorld можно сохранить в файл с именем *HelloWorld.targets* , а затем вызвать его из проекта, как показано ниже.
+ Задачу HelloWorld можно сохранить в файл с именем *HelloWorld.targets*, а затем вызвать его из проекта, как показано ниже.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
