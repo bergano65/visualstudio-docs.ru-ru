@@ -8,15 +8,15 @@ helpviewer_keywords:
 - tests and requirements
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f49b52bece0c1dddc65da919d266c4f21b1bf69
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e4884ec4eb3e316e22e4ba54cd8defe71d4b8018
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361837"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935174"
 ---
 # <a name="develop-tests-from-a-model"></a>Разработка тестов на основе модели
 Чтобы организовать тесты системы и компонентов, можно использовать требования и модели архитектуры. Такой подход позволяет обеспечить проверку требований, важных для пользователей и других заинтересованных лиц, и помогает быстро обновлять тесты при изменении требований. Если вы используете [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], также поддерживаются ссылки между моделями и тестами.
@@ -133,7 +133,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Присоединение тестовых случаев к элементам модели
  Если в проекте используется [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], вы можете связать тесты с элементами модели. Это позволяет быстро находить тесты, на которые влияет изменение требований, и помогает отслеживать, в какой степени было удовлетворено требование.
 
- Тесты можно связать со всеми видами элементов. Ниже приведены некоторые примеры:
+ Тесты можно связать со всеми видами элементов. Ниже приводится несколько примеров.
 
 - Свяжите вариант использования с выполняющими его тестами.
 

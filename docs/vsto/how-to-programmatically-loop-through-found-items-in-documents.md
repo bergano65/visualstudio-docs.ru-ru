@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], searching in documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 634012cae7f12f5346ec83bbd2b41c1019ef066d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a447b0fd2651ceafd789de084c56e0cea03a69e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525624"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934836"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Пошаговое руководство. Программный перебор найденных элементов в документах
   Класс <xref:Microsoft.Office.Interop.Word.Find> имеет свойство <xref:Microsoft.Office.Interop.Word.Find.Found%2A> , которое возвращает **true** когда найден искомый элемент. Вы циклически просматривать все экземпляры, найденные в <xref:Microsoft.Office.Interop.Word.Range> , с помощью метода <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> .

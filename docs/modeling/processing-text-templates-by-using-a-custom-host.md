@@ -9,15 +9,15 @@ helpviewer_keywords:
 - text templates, custom directive hosts
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dbaa7cf80ba281f085590802127e3ab96776aa6
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b1a4e4c2177e388db1de0b42fe10d92daa1a3e67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360589"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934914"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Обработка текстовых шаблонов с помощью пользовательского основного приложения
 
@@ -52,10 +52,10 @@ string output = engine.ProcessTemplate(templateString, host);
 
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> определяется в **Microsoft. VisualStudio. TextTemplating. \*.0.dll**, а [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) определяется в **Microsoft. VisualStudio. TextTemplating. interfaces. \*.0.dll**.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
  [Пошаговое руководство. Создание узла пользовательского текстового шаблона](../modeling/walkthrough-creating-a-custom-text-template-host.md) Показывает, как создать узел пользовательского текстового шаблона, который делает функциональность текстового шаблона доступной за пределами Visual Studio.
 
-## <a name="reference"></a>Ссылка
+## <a name="reference"></a>Справочные сведения
  [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 ## <a name="related-sections"></a>Связанные разделы

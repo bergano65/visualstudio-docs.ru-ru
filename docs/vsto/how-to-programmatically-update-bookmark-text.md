@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Bookmark control, updating contents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9b9fa4b5ef19fdcaae38ef477952580f6568fcc0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cf38843d2ce7f617d44793769e6ca236c2683805
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523553"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934732"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Руководство. Программное обновление текста закладок
   Вы можете вставить текст в закладку-заполнитель в документе Microsoft Office Word, чтобы позднее извлечь или заменить текст закладки. При разработке настройки на уровне документа можно обновить текст в элементе управления <xref:Microsoft.Office.Tools.Word.Bookmark> с привязкой к данным. Дополнительные сведения см. [в разделе Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0812cee6555ecc576f7fb78f3069a0ae69f5a16c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9abc3d3596a64c04bf25c0471d32a00f1cb7705d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361798"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935083"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Справочник по языку DGML
 
@@ -45,7 +45,7 @@ ms.locfileid: "97361798"
 
    `NeighborhoodDistance` — Если на карте задан макет дерева или быстрый кластер, отображаются только те узлы, которые имеют указанное число (1-7) ссылок за пределами выбранных узлов. См. раздел [изменение макета схемы](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   Пример
+   Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -72,7 +72,7 @@ ms.locfileid: "97361798"
   > [!NOTE]
   > Если сослаться в элементе `<Link/>` на несуществующий элемент карты, она создаст элемент `<Node/>` автоматически.
 
-   Пример
+   Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -110,7 +110,7 @@ ms.locfileid: "97361798"
 
    `Reference` — задайте этот атрибут для связывания с документом или URL-адресом. См. статью [связывание документов или URL-адресов с элементами кода и ссылками](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
 
-   Пример
+   Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -135,7 +135,7 @@ ms.locfileid: "97361798"
 
    Этот элемент содержит список элементов `<Link>`, задающих ссылки между узлами. Дополнительные сведения см. в описании элемента `<Link/>`.
 
-   Пример
+   Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -169,7 +169,7 @@ ms.locfileid: "97361798"
 
    `Property` — Имя свойства, определяющего элементы, имеющие одинаковое значение свойства. Дополнительные сведения см. в описании элемента `<Property/>`.
 
-   Пример
+   Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -193,7 +193,7 @@ ms.locfileid: "97361798"
 
    Этот элемент содержит список элементов `<Category/>`. Дополнительные сведения см. в описании элемента `<Category/>`.
 
-   Пример
+   Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -222,7 +222,7 @@ ms.locfileid: "97361798"
 
    Категории предоставляют также базовый шаблон поведения, который определяет отображение узлов и ссылок на карте. См. раздел [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   Пример
+   Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -250,7 +250,7 @@ ms.locfileid: "97361798"
 
    Этот элемент содержит список элементов `<Property/>`. Дополнительные сведения см. в описании элемента `<Property/>`.
 
-   Пример
+   Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -275,7 +275,7 @@ ms.locfileid: "97361798"
 
     См. раздел [Назначение категорий элементам кода и ссылкам](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).
 
-    Пример
+    Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>

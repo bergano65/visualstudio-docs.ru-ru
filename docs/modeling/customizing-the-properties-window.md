@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, Properties window
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f7d4ac76b8b10fde0c193e3eda73cec611c1441
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b7ee201494ed849062458afdcd41c2aed1b83b42
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362879"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935395"
 ---
 # <a name="customize-the-properties-window"></a>Настройка окно свойств
 
@@ -148,7 +148,7 @@ ms.locfileid: "97362879"
 
 Атрибут можно задать для свойства с помощью записи **настраиваемого атрибута** в окно свойств.
 
-Тип `AnEditor` должен быть производным от типа, указанного во втором параметре. Второй параметр должен иметь значение <xref:System.Drawing.Design.UITypeEditor> или <xref:System.ComponentModel.ComponentEditor> . Дополнительные сведения см. в разделе <xref:System.ComponentModel.EditorAttribute>.
+Тип `AnEditor` должен быть производным от типа, указанного во втором параметре. Второй параметр должен иметь значение <xref:System.Drawing.Design.UITypeEditor> или <xref:System.ComponentModel.ComponentEditor> . Для получения дополнительной информации см. <xref:System.ComponentModel.EditorAttribute>.
 
 Можно указать собственный редактор или редактор .NET, например <xref:System.Windows.Forms.Design.FileNameEditor> или <xref:System.Drawing.Design.ImageEditor> . Например, используйте следующую процедуру, чтобы иметь свойство, в котором пользователь может ввести имя файла.
 
@@ -185,7 +185,7 @@ ms.locfileid: "97362879"
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, чтобы указать, будет ли редактор открывать диалоговое окно или предоставлять раскрывающееся меню.
 
-Можно также предоставить графическое представление значения свойства, которое будет отображаться в сетке свойств. Для этого переопределите `GetPaintValueSupported` и `PaintValue` .  Дополнительные сведения см. в разделе <xref:System.Drawing.Design.UITypeEditor>.
+Можно также предоставить графическое представление значения свойства, которое будет отображаться в сетке свойств. Для этого переопределите `GetPaintValueSupported` и `PaintValue` .  Для получения дополнительной информации см. <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Добавьте код в отдельный файл кода в проекте **DSL** .
@@ -212,7 +212,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
    , typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
-Дополнительные сведения см. в разделе <xref:System.Drawing.Design.UITypeEditor>.
+Для получения дополнительной информации см. <xref:System.Drawing.Design.UITypeEditor>.
 
 ## <a name="provide-a-drop-down-list-of-values"></a>Укажите раскрывающийся список значений
 

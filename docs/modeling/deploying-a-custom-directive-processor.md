@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, custom directive processors
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 638367f2c3a1238edc257a255280c5197e11d3f0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: dc839d4d859a8dd1dcc82774c466d6d103e4e7a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935343"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Развертывание пользовательского обработчика директив
 
@@ -187,7 +187,7 @@ ms.locfileid: "97363930"
 |Имя|Тип|Данные|
 |-|-|-|
 |(по умолчанию)|REG_SZ|(значение не задано)|
-|Класс|REG_SZ|**\<Namespace Name>.\<Class Name>**|
+|Class|REG_SZ|**\<Namespace Name>.\<Class Name>**|
 |CodeBase|REG_SZ|**\<Your Path>\\<имя сборки\>**|
 
  Если сборка находится в глобальном кэше сборок, подраздел реестра должен выглядеть, как в следующей таблице:
@@ -195,7 +195,7 @@ ms.locfileid: "97363930"
 |Имя|Тип|Данные|
 |-|-|-|
 |(по умолчанию)|REG_SZ|(значение не задано)|
-|Класс|REG_SZ|\<**Your Fully Qualified Class Name**>|
+|Class|REG_SZ|\<**Your Fully Qualified Class Name**>|
 |Сборка|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
 ## <a name="see-also"></a>См. также раздел

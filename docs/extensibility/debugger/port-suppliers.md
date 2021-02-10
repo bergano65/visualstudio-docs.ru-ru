@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a8f3db96-1a13-4e93-9ef6-0861880369e0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3226053a23a45c42a45de038e44829d4a150af6
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: b543770e5fcc920b05e5d19a15e312174ddad3dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934394"
 ---
 # <a name="port-suppliers"></a>Поставщики портов
 В архитектуре отладчика *поставщик порта*:
@@ -33,7 +33,7 @@ ms.locfileid: "96606584"
 
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] предоставляет поставщик порта по умолчанию и порт по умолчанию. Если необходимо реализовать пользовательский порт, для предоставления этих настраиваемых портов также необходимо реализовать пользовательский порт.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Серверы](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [Порты](../../extensibility/debugger/ports.md)
 - [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md)
