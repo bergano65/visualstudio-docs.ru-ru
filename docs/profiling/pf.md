@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b920b641a7bfc4583af7b0ec5a9692a25c19adb5
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: ee20d393a4c18c77dd059bbb78ed67b3c7264aee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957339"
 ---
 # <a name="pf"></a>PF
 Параметр **PF** программы *VSPerfCmd.exe* задает событие профилирования, выборка которого осуществляется по ошибкам страниц, и при необходимости может изменить заданное по умолчанию число ошибок страницы в интервале выборки, равное 10.
