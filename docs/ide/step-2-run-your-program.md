@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ddc016df63a7bb6ffbe3923de72c4f23cb32739c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 4939e7a307e39f0548a72feeed7537efdcbd7f2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480659"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950852"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Шаг 2. Запуск приложения для просмотра изображений
 
@@ -34,12 +34,12 @@ ms.locfileid: "96480659"
     - На панели инструментов нажмите кнопку **Начать отладку**, которая показана на рисунке ниже.
 
       ![Кнопка "Начать отладку" на панели инструментов](../ide/media/express_icondebug.png)<br>
-      **_Кнопка "Начать отладку"_* _ _на панели инструментов*
+      ***Кнопка "Начать отладку"** _ _на панели инструментов*
 
 1. Visual Studio запускает приложение, и открывается окно **Form1**. На снимке экрана ниже показано созданное приложение. Приложение выполняется и скоро будет дополнено.
 
      ![Выполняющееся приложение Windows Forms](../ide/media/express_firstrun.png)<br>
-**_Приложение Windows Forms_* _ _в процессе выполнения*
+***Приложение Windows Forms** _ _в процессе выполнения*
 
 1. Вернитесь в интегрированную среду разработки (IDE) Visual Studio и посмотрите на новую панель инструментов. При запуске приложения на панели инструментов появляются дополнительные кнопки. Эти кнопки позволяют выполнять такие действия, как остановка и запуск приложения, а также помогают отслеживать все ошибки. В этом примере мы используем их для запуска и остановки приложения.
 

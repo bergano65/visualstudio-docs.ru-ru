@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76225685a9f68ca6f6cb05f902922f8fa208015d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 04168d6f648a9219c40f81aa042cbc778429ca0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480399"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951008"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Шаг 1. Создание проекта приложения Windows Forms
 
@@ -29,7 +29,7 @@ ms.locfileid: "96480399"
 
 1. В строке меню выберите **Файл** > **Создать** > **Проект**. Диалоговое окно должно выглядеть так же, как на следующем снимке экрана.
 
-     ![Диалоговое окно "Новый проект"](../ide/media/newprojectdialogcallouts.png)<br/>**_Диалоговое окно_* _ _"Новый проект"*
+     ![Диалоговое окно "Новый проект"](../ide/media/newprojectdialogcallouts.png)<br/>***Диалоговое окно** _ _"Новый проект"*
 
 2. В левой части диалогового окна **Новый проект** выберите **Visual C#** или **Visual Basic**, а затем — **Классическое приложение Windows**.
 
@@ -107,7 +107,7 @@ Visual Studio создает решение для приложения. Реш
      Другой вариант — нажать кнопку **Сохранить все** на панели инструментов, как показано на рисунке ниже.
 
      ![Кнопка "Сохранить все" на панели инструментов](../ide/media/express_iconsaveall.png)<br/>
-     **_Кнопка "Сохранить все"_* _ _на панели инструментов*
+     ***Кнопка "Сохранить все"** _ _на панели инструментов*
 
      Visual Studio автоматически заполняет имя папки и имя проекта, а затем сохраняет проект в папке проектов.
 

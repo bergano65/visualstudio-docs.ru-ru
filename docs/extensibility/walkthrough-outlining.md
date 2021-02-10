@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: ea0f16deee17e2cd249c0ee1de0861a936abc75c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: aa66d3b32f6992cb3a5db13bc2b7ee4d5cd9294c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877901"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951190"
 ---
 # <a name="walkthrough-outlining"></a>Пошаговое руководство. Структурирование
 Настройте языковые функции, такие как структурирование, определив типы текстовых областей, которые необходимо развернуть или свернуть. Можно определить регионы в контексте языковой службы или определить собственное расширение имени файла и тип содержимого и применить определение региона только к этому типу или применить определения областей к существующему типу содержимого (например, "Text"). В этом пошаговом руководстве показано, как определить и отобразить области структуры.

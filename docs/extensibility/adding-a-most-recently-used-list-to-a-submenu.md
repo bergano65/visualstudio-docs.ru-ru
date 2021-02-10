@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0de48e30ea20ab2f7df4e512312978e4faa3a46b
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: bdff50655f846ced91e59a93a2d264bb06641ed1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597931"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951554"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Добавление списка недавно использовавшихся в подменю
 Это пошаговое руководство посвящено созданию демонстраций в [меню Добавление подменю](../extensibility/adding-a-submenu-to-a-menu.md)и показано, как добавить динамический список в подменю. Динамический список образует базу для создания списка недавно использованных (MRU) списков.

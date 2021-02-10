@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16b58a6ab6a01ff635b3afd58b06133abacf970e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: b784cae836f1a5cae520a9650c8f396ccc960a72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598020"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951515"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Добавление подменю в меню
 В этом пошаговом руководстве показано, как добавить [меню в строку меню Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) , показывая, как добавить подменю в меню **тестмену** .

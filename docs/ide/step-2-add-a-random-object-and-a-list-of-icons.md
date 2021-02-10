@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1018b390f6ebbf67fab88554aa85fe6a8ecec88d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 496bf75495d864024ef587849edd554bfd435db5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950891"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Шаг 2. Добавление случайного объекта и списка значков
 
@@ -44,7 +44,7 @@ ms.locfileid: "96480698"
 
 3. При добавлении объекта List обратите внимание на открывшееся окно **IntelliSense**. Ниже приведен пример на языке C#, но аналогичный текст отобразится и при добавлении списка в Visual Basic.
 
-     ![Окно свойств, отображающее событие Click](../ide/media/express_listintellisense.png)<br/>**_Окно_* IntelliSense*
+     ![Окно свойств, отображающее событие Click](../ide/media/express_listintellisense.png)<br/>***Окно** IntelliSense*
 
     > [!NOTE]
     > Окно IntelliSense отображается только при вводе кода вручную. При копировании и вставке кода оно не отображается.
@@ -62,6 +62,6 @@ ms.locfileid: "96480698"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
-- Следующий раздел руководства: [**Шаг 3. Присвойте каждой метке случайный значок** ](../ide/step-3-assign-a-random-icon-to-each-label.md).
+- Следующий раздел руководства: [**Шаг 3. Присвойте каждой метке случайный значок**](../ide/step-3-assign-a-random-icon-to-each-label.md).
 
 - Предыдущий раздел руководства: [Шаг 1. Создание проекта и добавление таблицы в форму](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md).
