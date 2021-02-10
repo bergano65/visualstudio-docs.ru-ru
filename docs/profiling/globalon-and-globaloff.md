@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eaeac096c6bdff77368508bd34276d66530fa739
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: c940cc06142fc69460ed1e4a32303a6e3f919164
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801334"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907296"
 ---
 # <a name="globalon-and-globaloff"></a>Параметры GlobalOn и GlobalOff
 Параметры **GlobalOff** и **GlobalOn** средства *VSPerfCmd.exe* позволяют приостанавливать и возобновлять профилирование для всех процессов и потоков в сеансе профилирования, управляемом из командной строки.

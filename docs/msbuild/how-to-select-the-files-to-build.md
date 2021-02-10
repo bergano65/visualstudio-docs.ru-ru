@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4593fff50feb0176ea81f70dc297bc39d8dd1936
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 2f324fb3999c94d8f26e329859e095f31740c76c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436204"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914234"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Практическое руководство. Выбор файлов для сборки
 
@@ -58,7 +58,7 @@ ms.locfileid: "92436204"
 
 Подстановочные знаки можно использовать для рекурсивного включения всех файлов или только определенных файлов из подкаталогов в качестве входных данных для сборки. Дополнительные сведения о подстановочных знаках см. в разделе [Элементы](../msbuild/msbuild-items.md).
 
-В примерах ниже за основу взят проект, в котором содержатся графические файлы в следующих каталогах и подкаталогах (файл проекта находится в каталоге *Project* ):
+В примерах ниже за основу взят проект, в котором содержатся графические файлы в следующих каталогах и подкаталогах (файл проекта находится в каталоге *Project*):
 
 *Project\Images\BestJpgs*
 
@@ -66,13 +66,13 @@ ms.locfileid: "92436204"
 
 *Project\Images\ImgJpgs\Img1*
 
-#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Включение всех *JPG* -файлов в каталоге *Images* и подкаталогах
+#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Включение всех *JPG*-файлов в каталоге *Images* и подкаталогах
 
 - Используйте следующий атрибут `Include`.
 
     `Include="Images\**\*.jpg"`
 
-#### <a name="to-include-all-jpg-files-starting-with-img"></a>Включение всех *JPG* -файлов, начинающихся со слога *img*
+#### <a name="to-include-all-jpg-files-starting-with-img"></a>Включение всех *JPG*-файлов, начинающихся со слога *img*
 
 - Используйте следующий атрибут `Include`.
 
@@ -144,7 +144,7 @@ ms.locfileid: "92436204"
 
 ## <a name="example-2"></a>Пример 2
 
-В примере ниже используется подстановочный знак для включения всех *CS* -файлов.
+В примере ниже используется подстановочный знак для включения всех *CS*-файлов.
 
 ```xml
 <Project DefaultTargets="Compile"

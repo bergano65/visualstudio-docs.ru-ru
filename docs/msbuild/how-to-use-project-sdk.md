@@ -8,15 +8,15 @@ helpviewer_keywords:
 - MSBuild, SDKs, SDK
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bddf5e46fe066a79beb64570d6bf6ec1fedda68c
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: e6303efce016a9e678e4c9e8aa62c91aa116e44f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436121"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914217"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Информация об использовании пакетов SDK проекта MSBuild
 
@@ -123,9 +123,9 @@ MSBuild 15.0 представляет новую концепцию "пакет 
 }
 ```
 
-При сборке проекта может использоваться только одна версия каждого пакета SDK проекта. Если указать ссылки на две разные версии одного пакета SDK проекта, MSBuild выдает предупреждение. Рекомендуем **не** указывать в проектах версию, если она уже указана в файле *global.json* .
+При сборке проекта может использоваться только одна версия каждого пакета SDK проекта. Если указать ссылки на две разные версии одного пакета SDK проекта, MSBuild выдает предупреждение. Рекомендуем **не** указывать в проектах версию, если она уже указана в файле *global.json*.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)
 - [Настройка сборки](../msbuild/customize-your-build.md)

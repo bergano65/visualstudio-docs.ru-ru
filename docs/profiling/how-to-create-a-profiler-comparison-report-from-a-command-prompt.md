@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 00548d16-eb5b-46f7-8a65-862f98a43831
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e647d467dcbc397fe261c2ea83f6fa9ab1bba7b6
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 38303a091838fae6fdc86ab91eb1ee95dfb429ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98800395"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911698"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Практическое руководство. Создание отчета сравнения профилировщиков с помощью командной строки
 Вы можете создать отчет Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] о результатах сравнения данных по производительности в двух файлах данных профилирования (*VSP* или *VSPS*). В отчете приводятся различия, снижение производительности и улучшения в одном сеансе профилирования по сравнению с другим. Значения в отчете отражают отклонения или степень изменения по сравнению с базовым планом в первом из указанных файлов. Это отклонение вычисляется на основе разности между старым (базовым) значением и результатом нового анализа. Сравнение данных профилирования может выполняться на основе функций кода, модулей приложения, строк, указателей инструкций и типов.

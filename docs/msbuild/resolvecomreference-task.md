@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e98d0d64a8df1dac29127ffcf76fe8b6cc39a43
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 0384ee6cbfa749589e15ab073cc31ffebb53985e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048628"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912532"
 ---
 # <a name="resolvecomreference-task"></a>Задача ResolveComReference
 
@@ -38,7 +38,7 @@ ms.locfileid: "93048628"
 |Параметр|Описание|
 |---------------|-----------------|
 |`DelaySign`|Необязательный параметр `Boolean`.<br /><br /> Если присвоено значение `true`, помещает открытый ключ в сборку. Если присвоено значение `false`, полностью подписывает сборку.|
-|`EnvironmentVariables`|Необязательный параметр `String[]`.<br /><br /> Массив пар переменных среды, разделенных знаками равенства. Эти переменные частично передаются в порожденные процессы *tlbimp.exe* и *aximp.exe* , дополняя или выборочно переопределяя обычный блок среды.|
+|`EnvironmentVariables`|Необязательный параметр `String[]`.<br /><br /> Массив пар переменных среды, разделенных знаками равенства. Эти переменные частично передаются в порожденные процессы *tlbimp.exe* и *aximp.exe*, дополняя или выборочно переопределяя обычный блок среды.|
 |`ExecuteAsTool`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, из соответствующей внепроцессной требуемой версии .NET Framework запустятся процессы *Tlbimp.exe* и *Aximp.exe* для создания необходимых сборок-оболочек. Этот параметр разрешает настройку для различных версий.|
 |`IncludeVersionInInteropName`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, версия библиотеки типов будет включена в имя программы-оболочки. Значение по умолчанию — `false`.|
 |`KeyContainer`|Необязательный параметр `String`.<br /><br /> Задает контейнер, хранящий пару из открытого и закрытого ключей.|
