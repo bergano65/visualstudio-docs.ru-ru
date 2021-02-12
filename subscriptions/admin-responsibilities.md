@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: Сведения об обязанностях администраторов подписок.
-ms.openlocfilehash: 183209e5e1fa873ae9af6ff2d9b32caf94c5461e
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 9d2c724fafb41ee44e531a1eec41d76d7e888686
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467470"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511297"
 ---
 # <a name="overview-of-admin-responsibilities"></a>Общие сведения об обязанностях администратора
 Администраторы могут управлять подписками своей организации.  В обязанности администратора также входит контроль за тем, что управление подписками осуществляется в соответствии с условиями лицензии. В этой статье описаны обязанности, преимущества и ограничения роли администратора.
@@ -41,8 +41,9 @@ ms.locfileid: "92467470"
 - [Документация по Azure DevOps](/azure/devops/)
 - [Документация по Azure](/azure/)
 - [Документация по Microsoft 365](/microsoft-365/)
+- [Поддержка по администрированию и подпискам Visual Studio](https://my.visualstudio.com/gethelp)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Узнайте больше об обязанностях администраторов:
 - [Инвентаризация подготовительной среды](admin-inventory.md)
 - [Управление большими рабочими группами и сторонними подрядчиками](manage-teams.md)

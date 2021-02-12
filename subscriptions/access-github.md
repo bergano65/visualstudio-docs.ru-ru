@@ -7,12 +7,12 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 10/22/2020
 ms.topic: conceptual
 description: Узнайте о доступе к GitHub Enterprise в рамках подписок Visual Studio.
-ms.openlocfilehash: 59b665b1da7d46732f1f4e967ae2a98ec54875ff
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 7ad60b1c1a177353cad13e3dbcbc50c67b5500ac
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537907"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511362"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>Подписки Visual Studio с GitHub Enterprise 
 
@@ -85,7 +85,7 @@ Visual Studio Enterprise, Visual Studio Professional и GitHub Enterprise �
 - В [справке по GitHub](https://help.github.com) можно найти ответы на самые разные вопросы, связанные с GitHub.
 - Требуется дополнительная помощь?  Обратитесь в [службу поддержки GitHub](https://support.github.com/).
 - Кроме того, вы можете воспользоваться помощью других пользователей GitHub, посетив [форум сообщества GitHub](https://github.community/).
-- По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
+- Для получения помощи по вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio посетите нашу [страницу справки](https://my.visualstudio.com/GetHelp).
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 - Обратитесь в [службу технической поддержки](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) для GitHub Enterprise.   
 

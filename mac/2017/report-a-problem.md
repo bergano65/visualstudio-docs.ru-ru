@@ -6,20 +6,20 @@ author: jmatthiesen
 ms.author: jomatthi
 ms.date: 11/16/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 3513f4e120db3bab61348f0ee1f0f452d09ded15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b474e39f03663a38bf84c3fb82ed2a3006a4e60
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66501011"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668694"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Как сообщить о проблеме в Visual Studio для Mac
 
-Если во время работы с Visual Studio для Mac возникнет проблема, мы очень хотим узнать об этом. Ниже описано, как сообщить о проблеме в [сообществе разработчиков](https://developercommunity.visualstudio.com/spaces/41/index.html), чтобы мы могли диагностировать и устранить ее.
+Если во время работы с Visual Studio для Mac возникнет проблема, мы очень хотим узнать об этом. Ниже описано, как сообщить о проблеме в [сообществе разработчиков](https://aka.ms/feedback/report?space=41), чтобы мы могли диагностировать и устранить ее.
 
 ## <a name="how-to-report-a-problem"></a>Сообщение о проблеме
 
-Чтобы сообщить о проблеме с Visual Studio для Mac, лучше всего инициировать отчет из Visual Studio для Mac. Отчеты, созданные в Visual Studio для Mac, содержат диагностические сведения. Если вы не можете использовать Visual Studio для Mac (например, из-за сбоя), можно сообщить о проблеме непосредственно на сайте [сообщества разработчиков](https://developercommunity.visualstudio.com/content/problem/post.html?space=41).
+Чтобы сообщить о проблеме с Visual Studio для Mac, лучше всего инициировать отчет из Visual Studio для Mac. Отчеты, созданные в Visual Studio для Mac, содержат диагностические сведения. Если вы не можете использовать Visual Studio для Mac (например, из-за сбоя), можно сообщить о проблеме непосредственно на сайте [сообщества разработчиков](https://aka.ms/feedback/report?space=41).
 
 Чтобы сообщить о проблеме в Visual Studio для Mac, выберите в строке меню **Справка > Сообщить о проблеме**.
 
@@ -44,7 +44,7 @@ ms.locfileid: "66501011"
 1. Если вы не нашли возникшую у вас проблему, выберите элемент **Сообщить о новой проблеме** в боковой части экрана.
 
    > [!NOTE]
-   > Кнопка **Сообщить о новой проблеме** отображается только в интерфейсе Visual Studio для Mac для сообщества разработчиков. Вы не сможете сообщить о проблеме напрямую на сайте [сообщества разработчиков](https://developercommunity.visualstudio.com/).
+   > Кнопка **Сообщить о новой проблеме** отображается только в интерфейсе Visual Studio для Mac для сообщества разработчиков. Вы не сможете сообщить о проблеме напрямую на сайте [сообщества разработчиков](https://aka.ms/feedback/report?space=41/).
 
 1. Создайте описательное название проблемы, чтобы мы передали этот случай соответствующей команде разработчиков Visual Studio для Mac.
 
@@ -62,9 +62,9 @@ ms.locfileid: "66501011"
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Поиск решений или предоставление отзыва
 
-Если вы не хотите или не можете сообщить о проблеме с помощью Visual Studio для Mac, есть вероятность, что о ней уже сообщили и решение опубликовано на странице [сообщества разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
+Если вы не хотите или не можете сообщить о проблеме с помощью Visual Studio для Mac, есть вероятность, что о ней уже сообщили и решение опубликовано на странице [сообщества разработчиков Visual Studio](https://aka.ms/feedback/report?space=41/).
 
-Если у вас нет проблем, но вы хотите предложить функцию, у вас есть такая возможность. Дополнительные сведения см. на странице [Предложить функцию](https://developercommunity.visualstudio.com/content/idea/post.html?space=41).
+Если у вас нет проблем, но вы хотите предложить функцию, у вас есть такая возможность. Дополнительные сведения см. на странице [Предложить функцию](https://aka.ms/feedback/suggest?space=41).
 
 ## <a name="see-also"></a>См. также
 

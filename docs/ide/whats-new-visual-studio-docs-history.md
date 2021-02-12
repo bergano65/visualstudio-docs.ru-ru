@@ -2,29 +2,93 @@
 title: 'Документация по Visual Studio. История изменений '
 titleSuffix: ''
 description: История новых возможностей в документации по Visual Studio
-ms.date: 01/11/2021
+ms.date: 02/01/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
 ms.assetid: 511DAFC7-896E-449A-BFF7-0E8F7BBA8A78
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 49c8d18a35cbe4a64585efa9bc16fd8afd250404
-ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
+ms.openlocfilehash: 178c84be9def77e013da336193877617c1434b2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98113584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960537"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>История новых возможностей в документации по Visual Studio
 
-Добро пожаловать в историю изменений документации по Visual Studio. В этой статье приведены основные изменения в документации до декабря 2020 г. (начиная с июля 2020 г.). Последние изменения см. в разделе [Документация по Visual Studio. Обновления в документации за июль 2020 г.](whats-new-visual-studio-docs.md)
+Добро пожаловать в историю изменений документации по Visual Studio. В этой статье приведены основные изменения в документации до января 2021 г. (начиная с июля 2020 г.). Последние изменения см. в разделе [Документация по Visual Studio. Обновления в документации за июль 2020 г.](whats-new-visual-studio-docs.md)
+
+## <a name="december-2020"></a>Декабрь 2020 г.
+### <a name="azure"></a>Azure
+
+**Новые статьи**
+
+- [Добавление конфигурации приложений Azure с помощью подключенных служб Visual Studio](../azure/vs-azure-tools-connected-services-app-configuration.md). Руководство по подключенным службам конфигурации приложений
+
+### <a name="code-quality"></a>Качество кода
+
+**Обновленные статьи**
+
+- [Обзор](../code-quality/use-roslyn-analyzers.md). Создание из командной строки с помощью editorconfig
+- [Включение или установка сторонних анализаторов .NET](../code-quality/install-net-analyzers.md)
+  - Добавлены уточнения в документацию по миграции с анализаторов FxCop на анализаторы .NET
+  - Изменено оглавление для анализаторов .NET
+- [Миграция с анализаторов FxCop на анализаторы .NET](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md). Добавлены уточнения в документацию по миграции с анализаторов FxCop на анализаторы .NET
+
+### <a name="containers"></a>Контейнеры
+
+**Обновленные статьи**
+
+- [Устранение неполадок при разработке в Visual Studio с использованием Docker](../containers/troubleshooting-docker-errors.md). Обновлено руководство по устранению неполадок с Docker для Visual Studio
+
+### <a name="debugger"></a>Отладчик
+
+**Обновленные статьи**
+
+- [Часто задаваемые вопросы. Поиск нужной функции отладки в Visual Studio](../debugger/find-your-debugging-task.md). Действия по обнаружению для поиска задачи отладки и обзорных тем
+
+### <a name="get-started"></a>Начало работы
+
+**Обновленные статьи**
+
+- [Учебник. Создание простого консольного приложения C# в Visual Studio](../get-started/csharp/tutorial-console.md). Руководство по консольным приложениям C#: Часть 2 относится только к VS 2019
+
+### <a name="ide"></a>IDE
+
+**Обновленные статьи**
+
+- [Решения и проекты в Visual Studio](./solutions-and-projects-in-visual-studio.md). Обновлены темы, посвященные решениям и проектам
+- [Создание проекта в Visual Studio](./create-new-project.md)
+  - Внесены уточнения в замещающий текст для снимков экрана и диаграмм
+  - Обновлены дополнительные темы, посвященные решениям и проектам
+- [Ресурсы, посвященные устранению ошибок интегрированной среды разработки](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md). Пересмотрен устаревший раздел "Ресурсы форума"
+- [Работа с решениями и проектами](./creating-solutions-and-projects.md). Обновлены дополнительные темы, посвященные решениям и проектам
+- [Как сообщить о проблеме с Visual Studio или Visual Studio Installer](./how-to-report-a-problem-with-visual-studio.md)
+  - Обновлен снимок экрана
+  - Изменения в сообществе разработчиков
+- [Советы и рекомендации по улучшению работы Visual Studio](./visual-studio-performance-tips-and-tricks.md). Обновлен раздел "Отключение средств диагностики"
+- [Введение в проекты и решения](../get-started/tutorial-projects-solutions.md)
+  - Обновлены темы, посвященные решениям и проектам
+  - Обновлен файл tutorial-projects-solutions.md
+  - Отсутствующий в меню параметр
+
+### <a name="test"></a>Тест
+
+**Обновленные статьи**
+
+- [Приступая к работе с модульным тестированием](../test/getting-started-with-unit-testing.md). Действия по обнаружению и другие улучшения, связанные со средствами тестирования
+- [Первое знакомство со средствами тестирования в Visual Studio](../test/improve-code-quality.md). Действия по обнаружению и другие улучшения, связанные со средствами тестирования
+- [Средства тестирования Visual Studio; требуемый номер и заголовок страницы отображаются в результатах поиска. Включено название торговой марки. Менее 60 символов.](../test/index.yml) – Действия по обнаружению и другие улучшения, связанные со средствами тестирования
+- [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md). Добавлен XML-формат динамического списка воспроизведения для различных платформ
+
 ## <a name="november-2020"></a>Ноябрь 2020 г.
 ### <a name="code-quality"></a>Качество кода
 

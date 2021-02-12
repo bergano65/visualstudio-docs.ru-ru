@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: Узнайте о ролях суперадминистратора и администратора, а также о том, как назначать администраторов.
-ms.openlocfilehash: 491a8de27477f68b4344ad17b860b80b4ca96aa9
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 2d9abf5a3079320011cb979a8109278c878321e3
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92467379"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511336"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Суперадминистраторы и администраторы для соглашений о подписке Visual Studio
 
@@ -34,7 +34,7 @@ ms.locfileid: "92467379"
    > ![Добавить администраторов](_img/admin-roles/add-admins.png "Щелкните колонку 'Управление администраторами', а затем нажмите кнопку 'Добавить', чтобы назначить новых администраторов.")
 4. Заполните форму, указав сведения о новом администраторе.  
    > [!div class="mx-imgBorder"]
-   > ![Добавление формы администратора](_img/admin-roles/add-form.png "Введите данные для входа для нового администратора и укажите, следует ли сделать его суперадминистратором.  Затем нажмите кнопку 'Добавить'.")
+   > ![Добавление формы администратора](_img/admin-roles/add-form.png "Введите данные для входа для нового администратора и укажите, следует ли сделать его суперадминистратором.  Затем нажмите кнопку "Добавить".")
 
    > [!NOTE]
    > Если вы хотите, чтобы этот администратор мог назначать дополнительных администраторов, не забудьте поставить флажок **Суперадминистратор**.
@@ -42,13 +42,14 @@ ms.locfileid: "92467379"
 5. Когда вы нажмете кнопку **Добавить**, чтобы назначить нового администратора, он получит по электронной почте приглашение для входа на портал.  
 
 ## <a name="resources"></a>Ресурсы
-- [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Поддержка по администрированию и подпискам Visual Studio](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>См. также
 - [Документация по Visual Studio](/visualstudio/)
 - [Документация по Azure DevOps](/azure/devops/)
 - [Документация по Azure](/azure/)
 - [Документация по Microsoft 365](/microsoft-365/)
+
 
 
 ## <a name="next-steps"></a>Следующие шаги

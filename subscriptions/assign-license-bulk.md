@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: how-to
 description: Узнайте, как администраторы могут назначать лицензии нескольким подписчикам, используя функцию массового добавления или группы Microsoft Azure Active Directory.
-ms.openlocfilehash: e9d4cd5c7e73cdc3b71768a498a7c02546d3e1fc
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 995859dce259b3a4edf968fac98723e226cf59d5
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696600"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511375"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Назначение подписок нескольким пользователям
 Портал администрирования подписок позволяет добавлять пользователей по одному или большими группами.  Чтобы добавлять пользователей по одному, см. раздел [Добавление отдельных пользователей](assign-license.md).
@@ -137,7 +137,7 @@ ms.locfileid: "97696600"
    > ![Нажмите кнопку "Сведения"](_img/assign-license-bulk/bulk-add-agreement.png "Нажмите кнопку "Сведения", чтобы узнать тип вашего соглашения")
 
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>Вопрос: Я добавил одного участника в свою группу безопасности Azure AD, но не вижу его на портале администрирования подписок, и у него нет подписки. Причины.  
-Ответ. В зависимости от того, как ваша организация настроила Azure AD, во время добавления пользователя вы можете столкнуться с задержками до 24 часов. Если прошло больше 24 часов, [обратитесь в службу поддержки](https://visualstudio.microsoft.com/support/support-overview-vs).  
+Ответ. В зависимости от того, как ваша организация настроила Azure AD, во время добавления пользователя вы можете столкнуться с задержками до 24 часов. Если это время превышает 24 часа, ознакомьтесь со статьей [Поддержка по администрированию и подпискам Visual Studio](https://my.visualstudio.com/gethelp).  
 
 ## <a name="see-also"></a>См. также
 - [Документация по Visual Studio](/visualstudio/)

@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ac5967d13aa6572b36989150561363555a9705
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a4488c212cabe95d73f75246fb297c17ce073b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809202"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950904"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Шаг 11. Запуск приложения для просмотра изображений и изучение других функций
 
@@ -30,7 +30,7 @@ ms.locfileid: "90809202"
 1. Прежде чем открыть изображение, нажмите кнопку **Установить цвет фона**. Откроется диалоговое окно **Цвет**.
 
      ![Диалоговое окно "Цвет"](../ide/media/express_colordialog.png)<br/>
-*Диалоговое окно* ***Цвет***
+*Диалоговое окно_ _ **Цвет***
 
 1. Выберите цвет фона для элемента управления PictureBox. Внимательно просмотрите метод `backgroundButton_Click()` (или `BackgroundButton_Click()`), чтобы понять, как он работает.
 

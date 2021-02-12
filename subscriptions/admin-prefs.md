@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 10/22/2020
 ms.topic: conceptual
 description: Узнайте, как задать параметры языка, контактов, уровня подписки и другие параметры на портале администрирования
-ms.openlocfilehash: e044db92a318114cd2f159b859843db354fac6c7
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: bdb6a5bc1160c75830fe9f1473222155d8fad781
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467444"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511349"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Настройка параметров соглашения на портале администрирования
 Суперадминистраторы могут устанавливать определенные параметры на портале администрирования, которые будут применяться глобально для каждого соглашения.  Эти параметры автоматически заполняют сведения о подписке при добавлении подписчиков. Эти параметры может менять только суперадминистратор на глобальном уровне.  
@@ -26,7 +26,7 @@ ms.locfileid: "92467444"
    > [!div class="mx-imgBorder"]
    > ![Кнопка "Параметры администратора"](_img/admin-prefs/admin-prefs-button.png "Щелкните «Управление администраторами», а затем «Параметры соглашения», чтобы отобразить настройки.")
 
-3. Щелкните **Параметры соглашения** .
+3. Щелкните **Параметры соглашения**.
 Откроется панель слева с доступными параметрами. 
 
    > [!div class="mx-imgBorder"]
@@ -60,7 +60,7 @@ ms.locfileid: "92467444"
 
 
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
-### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-admins"></a>Вопрос:  Можно ли отключить параметр **Контактный адрес электронной почты** , чтобы подписчики не могли связываться с администраторами?
+### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-admins"></a>Вопрос:  Можно ли отключить параметр **Контактный адрес электронной почты**, чтобы подписчики не могли связываться с администраторами?
 Ответ.  Нет. Вы можете определить, к каким администраторам можно обращаться, с помощью группы безопасности, псевдонима электронной почты группы или отдельного адреса электронной почты, но отключить эту функцию нельзя.
 
 ### <a name="q-if-i-answer-a-subscribers-email-will-they-have-my-email-address"></a>Вопрос: Если я отвечу на сообщение подписчика, он увидит мой адрес электронной почты?
@@ -69,11 +69,11 @@ ms.locfileid: "92467444"
 ### <a name="q-where-can-i-find-out-more-about-the-contact-my-admin-feature-in-the-subscriber-portal"></a>Вопрос: Где можно узнать больше о функции **Обратиться к администратору** на портале подписчиков?
 Ответ.  Ознакомьтесь со статьей [Обращение к администратору](contact-my-admin.md). 
 
-### <a name="q-if-we-dont-complete-the-contact-email-address-and-a-subscriber-uses-the-contact-my-admin-feature-who-receives-their-request"></a>Вопрос: Если мы не укажем **Контактный адрес электронной почты** , а подписчик использует функцию **Обратиться к администратору** , кто получит запрос?
+### <a name="q-if-we-dont-complete-the-contact-email-address-and-a-subscriber-uses-the-contact-my-admin-feature-who-receives-their-request"></a>Вопрос: Если мы не укажем **Контактный адрес электронной почты**, а подписчик использует функцию **Обратиться к администратору**, кто получит запрос?
 Ответ.  Если в параметре **Контактный адрес электронной почты** не задан конкретный адрес, этот запрос получат все администраторы данного соглашения. 
 
 ## <a name="resources"></a>Ресурсы
-- [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Поддержка по администрированию и подпискам Visual Studio](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>См. также
 - [Документация по Visual Studio](/visualstudio/)

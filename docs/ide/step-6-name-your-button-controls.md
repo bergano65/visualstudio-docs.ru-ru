@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa5b69cc106aeae18012a7116fd511263423b2c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0f6612806f8bf1453cf28f9d75c78588c2074bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480321"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868885"
 ---
 # <a name="step-6-name-your-button-controls"></a>Шаг 6. Присвоение имен элементам управления "Кнопка"
 
@@ -35,7 +35,7 @@ ms.locfileid: "96480321"
 
 1. В форме нажмите кнопку **Закрыть** . (Если все кнопки все еще выделены, для отмены выделения нажмите клавишу **ESC**.) Прокрутите содержимое окна **Свойства**, пока не появится свойство **(Name)** . (Свойство **(Name)** расположено в верхней части, когда свойства расположены в алфавитном порядке.) Измените имя на **closeButton**, как показано на снимке экрана ниже.
 
-    ![Окно "Свойства" с именем closeButton](../ide/media/express_setnameproperty.png)<br>**_Окно "Свойства"_* _ _с именем* ***closeButton**_ _*
+    ![Окно "Свойства" с именем closeButton](../ide/media/express_setnameproperty.png)<br>*_Окно **Свойства** _ с именем* ***closeButton**_ _*
 
     > [!NOTE]
     > Попробуйте изменить имя кнопки на **close Button** (с пробелом между словами close и Button). В интегрированной среде разработки появится сообщение об ошибке: "Недопустимое значение свойства". Пробелы (а также несколько других символов) запрещено использовать в именах элементов управления.
@@ -48,7 +48,7 @@ ms.locfileid: "96480321"
    На этой вкладке отображается файл кода для формы, как показано на снимке экрана ниже.
 
     ![Вкладка Form1.cs с кодом Visual C#](../ide/media/express_showbuttoncode.png)<br>
-**_Вкладка Form1.cs_* _ с_кодом C#*
+***Вкладка Form1.cs** _ с_кодом C#*
 
     > [!NOTE]
     > На вкладке Form1.cs или Form1.vb кнопка **showButton** может отображаться как **ShowButton**.

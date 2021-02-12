@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e3ebb1439c7b8eb958d8e7126ca0197462e89a09
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: ecba59e633bf6d456f16e6098f47719e052ac0de
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441637"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006353"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Формирование и компиляция кода, а также соглашения об именовании в Microsoft Fakes
 
@@ -25,7 +25,7 @@ ms.locfileid: "95441637"
 - Visual Studio Enterprise
 - Проект .NET Framework
 ::: moniker range=">=vs-2019"
-- Поддержка проектов в стиле пакета SDK и .NET Core, представленная в Visual Studio 2019 (обновление 6), включена по умолчанию в обновление 8. Дополнительные сведения см. в статье [Microsoft Fakes для проектов .NET Core и проектов в стиле SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+- Поддержка проектов в стиле пакета SDK, .NET Core и .NET 5.0, представленная в Visual Studio 2019 (обновление 6), включена по умолчанию в обновление 8. Дополнительные сведения см. в статье [Microsoft Fakes для проектов .NET Core и проектов в стиле SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
 ::: moniker-end
 
 ## <a name="code-generation-and-compilation"></a>Создание и компиляция кода

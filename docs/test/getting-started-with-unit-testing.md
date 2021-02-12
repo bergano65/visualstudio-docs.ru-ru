@@ -8,15 +8,15 @@ helpviewer_keywords:
 - unit testing, create unit test plans
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31314a669815d38ed408a28e033e4943df0f75d3
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: c83b13b852b9ae53bd2218a62b6681478369df1b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970521"
 ---
 # <a name="get-started-with-unit-testing"></a>Приступая к работе с модульным тестированием
 
@@ -180,13 +180,13 @@ ms.locfileid: "97756660"
 1. Откройте [обозреватель тестов](../test/run-unit-tests-with-test-explorer.md).
 
    ::: moniker range=">=vs-2019"
-   Откройте Обозреватель тестов, выбрав **Тест** > **Обозреватель тестов** в верхней строке меню.
+   Откройте обозреватель тестов, выбрав **Тест** > **Обозреватель тестов** в верхней строке меню (или нажмите клавиши **CTRL** + **E**, **T**).
    ::: moniker-end
    ::: moniker range="vs-2017"
    Откройте Обозреватель тестов, выбрав **Тест** > **Windows** > **Обозреватель тестов** в верхней строке меню.
    ::: moniker-end
 
-1. Выполните модульные тесты, щелкнув **Запустить все**.
+1. Запустите модульные тесты, нажав **Запустить все** (или нажмите клавиши **CTRL** + **R**, **V**).
 
    ![Выполнение модульных тестов в обозревателе тестов](media/vs-2019/test-explorer-run-all.png)
 
@@ -274,7 +274,7 @@ ms.locfileid: "97756660"
 
    ![Добавление кода в файл кода модульного теста](media/vs-2019/unit-test-method.png)
 
-6. Запустите тест в **обозревателе тестов** или щелкните правой кнопкой мыши в коде теста и выберите **Запустить тесты**.
+6. Запустите тест в **обозревателе тестов** или щелкните правой кнопкой мыши в коде теста и выберите **Запустить тесты** (или нажмите клавиши **CTRL** + **R**, **T**).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

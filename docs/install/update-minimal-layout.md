@@ -7,17 +7,17 @@ ms.topic: how-to
 ms.assetid: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 199771b1cda2049d6508832d7d2264558104a566
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168753"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935707"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Обновление Visual Studio с использованием минимального автономного макета
 
@@ -67,6 +67,8 @@ ms.locfileid: "88168753"
 * **Verify**. Используйте эту команду, чтобы определить, повреждена ли папка макета.
 * **Fix**. Используйте эту команду, чтобы исправить поврежденную папку макета, в том числе заменить в ней все отсутствующие пакеты.
 
+::: moniker range="vs-2019"
+
 #### <a name="options"></a>Параметры 
 
 |Параметры    |Описание    |Обязательный/необязательный |Пример |
@@ -81,6 +83,26 @@ ms.locfileid: "88168753"
 |--includeRecommended    |включает в установку рекомендуемые компоненты для всех устанавливаемых рабочих нагрузок, но не дополнительные компоненты.    |Необязательный    |Для определенной рабочей нагрузки: <br> --add Microsoft.VisualStudio.Workload. ManagedDesktop;includeRecommended <br><br> Для применения ко всем рабочим нагрузкам: --includeRecommended |
 |--includeOptional |Включает в установку дополнительные компоненты для всех устанавливаемых рабочих нагрузок, включая рекомендуемые компоненты.    |Необязательный    |Для определенной рабочей нагрузки: <br>--add Microsoft.VisualStudio.Workload. ManagedDesktop;includeOptional <br><br> Для применения ко всем рабочим нагрузкам: --includeOptional |
 
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+#### <a name="options"></a>Параметры 
+
+|Параметры    |Описание    |Обязательный/необязательный |Пример |
+|:----------|:-----------|:------------|:--------------|
+|--targetLocation &lt;каталог&gt; |Указывает каталог, в котором нужно создать минимальный автономный макет.       |Обязательное значение        |--targetLocation c:\VSLayout\ |
+|--baseVersion &lt;версия&gt;|Минимальный автономный макет будет создан для версий начиная с этой.   |Обязательное значение|--baseVersion 15.0.0 |
+|--targetVersion &lt;версия&gt;|Минимальный автономный макет будет создан для версий вплоть до указанной.|Обязательное значение|--targetVersion 15.9.31|
+|--languages    |Указывает языки, которые нужно включить в минимальный автономный макет. Можно указать несколько значений через пробелы.    |Обязательное значение    |--languages en-US fr-FR |
+|--productId &lt;ИД&gt;    |Идентификатор продукта, из которого будет создан минимальный автономный макет. <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|Обязательное значение|--productId Microsoft.VisualStudio.Product.Enterprise |
+|--filePath    |Путь к файлу MinimalLayout.json уже созданного макета. Этот параметр используется только с командой Regenerate.     |Требуется для команды Regenerate    |--filePath C:\VSLayout\minimalLayout.json <br><br> **Обратите внимание, что команда Regenerate принимает только параметр --filePath.** |
+|--add &lt;один или несколько идентификаторов рабочих нагрузок или компонентов&gt;    |Указывает один или несколько идентификаторов рабочих нагрузок или компонентов, которые нужно добавить. Дополнительные компоненты можно добавлять глобально с помощью параметра --includeRecommended и (или) <br> –-includeOptional. Можно указать несколько идентификаторов рабочих нагрузок или компонентов через пробелы.    |Необязательный    |--add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb Component.GitHub.VisualStudio |
+|--includeRecommended    |включает в установку рекомендуемые компоненты для всех устанавливаемых рабочих нагрузок, но не дополнительные компоненты.    |Необязательный    |Для определенной рабочей нагрузки: <br> --add Microsoft.VisualStudio.Workload. ManagedDesktop;includeRecommended <br><br> Для применения ко всем рабочим нагрузкам: --includeRecommended |
+|--includeOptional |Включает в установку дополнительные компоненты для всех устанавливаемых рабочих нагрузок, включая рекомендуемые компоненты.    |Необязательный    |Для определенной рабочей нагрузки: <br>--add Microsoft.VisualStudio.Workload. ManagedDesktop;includeOptional <br><br> Для применения ко всем рабочим нагрузкам: --includeOptional |
+
+::: moniker-end
+
 ### <a name="generating-a-minimal-layout"></a>Создание минимального макета
 
 > [!IMPORTANT]
@@ -91,6 +113,8 @@ ms.locfileid: "88168753"
 Перед созданием макета можно определить общий размер скачиваемых данных и число включаемых пакетов с помощью команды **preview**. Эта команда принимает те же параметры, что и команда **generate**, а сведения выводятся в консоли.
 
 Рассмотрим несколько примеров предварительного просмотра, создания и повторного создания минимального макета.
+
+::: moniker range="vs-2019"
 
 - Ниже приведен пример предварительного просмотра макета для версий Visual Studio Enterprise с 16.4.0 по 16.4.4 только для английского языка.
 
@@ -123,6 +147,44 @@ ms.locfileid: "88168753"
     ```cmd
     MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
     ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+- Ниже приведен пример предварительного просмотра макета для версий Visual Studio Enterprise с 15.0.0 по 15.9.31 только для английского языка.
+
+    ```cmd
+    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
+    ```
+
+- Ниже показано, как создать этот же макет с одной рабочей нагрузкой.
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
+    ```
+
+- Теперь повторно создадим минимальный автономный макет с помощью существующего файла ответов. 
+
+    ```cmd
+    MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
+    ```
+
+Еще несколько примеров использования команды **generate**:
+
+- Ниже показано добавление дополнительной рабочей нагрузки и включение только рекомендуемых пакетов. 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+    ```
+
+- Наконец, так можно включить несколько языков в минимальный макет. 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
+    ```
+
+::: moniker-end
 
 ### <a name="how-to-maintain-a-minimal-layout"></a>Обслуживание минимального макета
 

@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff3e132087b97339bc710555428ba7488fa2e06
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 58f46f80a90cce116b985def0377ef80f5a671c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950670"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Шаг 5. Добавление элементов управления в форму
 
@@ -45,7 +45,7 @@ ms.locfileid: "96480581"
 
 1. Выберите в форме элемент управления **TableLayoutPanel** и добавьте в нее элемент управления CheckBox. Двойным щелчком выберите элемент **CheckBox** на **панели элементов**, чтобы добавить новый элемент управления CheckBox в следующую свободную ячейку таблицы. Поскольку элемент управления PictureBox занимает первые две ячейки в TableLayoutPanel, элемент управления CheckBox добавляется в нижнюю левую ячейку. Выберите свойство **Text** и введите слово **Stretch**, как показано на рисунке ниже.
 
-    ![Элемент управления TextBox со свойством Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>**_Элемент управления_* _ _TextBox* *со свойством **Stretch**_*
+    ![Элемент управления TextBox со свойством Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>*_Элемент управления_ **TextBox** со свойством* ***Stretch**_*
 
 1. Выберите в форме элемент управления **TableLayoutPanel**, а затем на **панели элементов** перейдите к группе **Контейнеры** (из которой был взят элемент управления TableLayoutPanel) и дважды щелкните элемент **FlowLayoutPanel**, чтобы добавить новый элемент управления в последнюю ячейку (справа внизу). Затем закрепите элемент управления FlowLayoutPanel в элементе TableLayoutPanel. Для этого выберите ссылку **Закрепить в родительском контейнере** в списке задач FlowLayoutPanel, раскрываемом с помощью черного треугольника, или присвойте свойству **Dock** элемента FlowLayoutPanel значение **Fill**.
 
@@ -76,7 +76,7 @@ ms.locfileid: "96480581"
 
    Кнопки теперь должны иметь соответствующий размер и быть расположены в правильном порядке. (Пока выделены все четыре кнопки, можно одновременно изменить все четыре свойства **AutoSize**.) На рисунке ниже показаны эти четыре кнопки.
 
-    ![Программа просмотра изображений с четырьмя кнопками](../ide/media/express_autosize.png)<br/>**_Средство просмотра изображений_* _ _с четырьмя кнопками*
+    ![Программа просмотра изображений с четырьмя кнопками](../ide/media/express_autosize.png)<br/>***Средство просмотра изображений** _ _с четырьмя кнопками*
 
 1. Теперь снова запустите программу, чтобы увидеть изменения.
 

@@ -6,20 +6,20 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 2b5fd2fd115c4461659ba1b4f211e645367851d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c104e4d819e58630f894405b3b56a8a442576816
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67691230"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668720"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Как сообщить о проблеме в Visual Studio для Mac
 
-Если во время работы с Visual Studio для Mac возникнет проблема, мы очень хотим узнать об этом. Ниже описано, как сообщить о проблеме в [сообществе разработчиков](https://developercommunity.visualstudio.com/spaces/41/index.html), чтобы мы могли диагностировать и устранить ее.
+Если во время работы с Visual Studio для Mac возникнет проблема, мы очень хотим узнать об этом. Ниже описано, как сообщить о проблеме в [сообществе разработчиков](https://aka.ms/feedback/report?space=41), чтобы мы могли диагностировать и устранить ее.
 
 ## <a name="how-to-report-a-problem"></a>Сообщение о проблеме
 
-Чтобы сообщить о проблеме с Visual Studio для Mac, лучше всего инициировать отчет из Visual Studio для Mac. Отчеты, созданные в Visual Studio для Mac, содержат диагностические сведения. Если вы не можете использовать Visual Studio для Mac (например, из-за сбоя), можно сообщить о проблеме непосредственно на сайте [сообщества разработчиков](https://developercommunity.visualstudio.com/content/problem/post.html?space=41).
+Чтобы сообщить о проблеме с Visual Studio для Mac, лучше всего инициировать отчет из Visual Studio для Mac. Отчеты, созданные в Visual Studio для Mac, содержат диагностические сведения. Если вы не можете использовать Visual Studio для Mac (например, из-за сбоя), можно сообщить о проблеме непосредственно на сайте [сообщества разработчиков](https://aka.ms/feedback/report?space=41).
 
 Чтобы сообщить о проблеме в Visual Studio для Mac, выберите в строке меню **Справка > Сообщить о проблеме**.
 
@@ -59,9 +59,9 @@ ms.locfileid: "67691230"
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Поиск решений или предоставление отзыва
 
-Если вы не хотите или не можете сообщить о проблеме с помощью Visual Studio для Mac, есть вероятность, что о ней уже сообщили и решение опубликовано на странице [сообщества разработчиков Visual Studio](https://developercommunity.visualstudio.com/).
+Если вы не хотите или не можете сообщить о проблеме с помощью Visual Studio для Mac, есть вероятность, что о ней уже сообщили и решение опубликовано на странице [сообщества разработчиков Visual Studio](https://aka.ms/feedback/report?space=41/).
 
-Если у вас нет проблем, но вы хотите предложить функцию, у вас есть такая возможность. Дополнительные сведения см. на странице [Предложить функцию](https://developercommunity.visualstudio.com/content/idea/post.html?space=41).
+Если у вас нет проблем, но вы хотите предложить функцию, у вас есть такая возможность. Дополнительные сведения см. на странице [Предложить функцию](https://aka.ms/feedback/suggest?space=41).
 
 ## <a name="see-also"></a>См. также
 

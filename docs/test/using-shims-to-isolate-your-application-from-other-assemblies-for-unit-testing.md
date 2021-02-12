@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 0ce89246d227d747fee2d3a02484855257f016f8
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: f15af6958c7f5855b5005fc0a6aa4c821346ccb5
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598215"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006407"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Использование оболочек совместимости для изоляции приложения при модульном тестировании
 
@@ -30,7 +30,7 @@ ms.locfileid: "95598215"
 - Visual Studio Enterprise
 - Проект .NET Framework
 ::: moniker range=">=vs-2019"
-- Поддержка проектов в стиле пакета SDK и .NET Core, представленная в Visual Studio 2019 (обновление 6), включена по умолчанию в обновление 8. Дополнительные сведения см. в статье [Microsoft Fakes для проектов .NET Core и проектов в стиле SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+- Поддержка проектов в стиле пакета SDK, .NET Core и .NET 5.0, представленная в Visual Studio 2019 (обновление 6), включена по умолчанию в обновление 8. Дополнительные сведения см. в статье [Microsoft Fakes для проектов .NET Core и проектов в стиле SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
 ::: moniker-end
 
 ## <a name="example-the-y2k-bug"></a>Пример. Ошибка 2000 года
@@ -71,7 +71,7 @@ using (ShimsContext.Create()) {
 1. В **Обозревателе решений** выполните следующие действия: 
     - Для более старого проекта .NET Framework (не в стиле пакета SDK) разверните узел **Ссылки** проекта модульного теста.
     ::: moniker range=">=vs-2019"
-    - Для проекта в стиле SDK, предназначенного для .NET Framework или .NET Core, разверните узел **Зависимости**, чтобы найти сборку, которую нужно имитировать в разделе **Сборки**, **Проекты** или **Пакеты**.
+    - Для проекта в стиле SDK, предназначенного для .NET Framework, .NET Core или .NET 5.0, разверните узел **Зависимости**, чтобы найти сборку, которую нужно имитировать в разделе **Сборки**, **Проекты** или **Пакеты**.
     ::: moniker-end
     - При работе в Visual Basic на панели инструментов **Обозревателя решений** необходимо выбрать команду **Показать все файлы**, чтобы просмотреть узел **Ссылки**.
 
@@ -524,7 +524,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>Ограничения
 
-Оболочки совместимости нельзя использовать для всех типов из библиотеки базовых классов .NET **mscorlib** и **System** в .NET Framework, а также в **System.Runtime** в .NET Core.
+Оболочки совместимости нельзя использовать для всех типов из библиотеки базовых классов .NET **mscorlib** и **System** в .NET Framework, а также в **System.Runtime** в .NET Core или .NET 5.0.
 
 ## <a name="see-also"></a>См. также раздел
 

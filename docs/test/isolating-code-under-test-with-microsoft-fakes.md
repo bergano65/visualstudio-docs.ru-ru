@@ -5,19 +5,19 @@ ms.custom: SEO-VS-2020
 ms.date: 06/03/2020
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: ba3baa1ff06da6497ddc663f888e7c93292d5b98
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: e7e7672ca93c47370f746358203c37826a1b3ad3
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719660"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006417"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Изоляция тестируемого кода с помощью Microsoft Fakes
 
@@ -36,7 +36,7 @@ Fakes предлагает два варианта на выбор:
 - Visual Studio Enterprise
 - Проект .NET Framework
 ::: moniker range=">=vs-2019"
-- Поддержка проектов в стиле пакета SDK и .NET Core, представленная в Visual Studio 2019 (обновление 6), включена по умолчанию в обновление 8. Дополнительные сведения см. в статье [Microsoft Fakes для проектов .NET Core и проектов в стиле SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+- Поддержка проектов в стиле пакета SDK, .NET Core и .NET 5.0, представленная в Visual Studio 2019 (обновление 6), включена по умолчанию в обновление 8. Дополнительные сведения см. в статье [Microsoft Fakes для проектов .NET Core и проектов в стиле SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
 ::: moniker-end
 
 > [!NOTE]
@@ -88,7 +88,7 @@ Fakes предлагает два варианта на выбор:
    1. В **Обозревателе решений** выполните следующие действия: 
        - Для более старого проекта .NET Framework (не в стиле пакета SDK) разверните узел **Ссылки** проекта модульного теста.
        ::: moniker range=">=vs-2019"
-       - Для проекта в стиле SDK, предназначенного для .NET Framework или .NET Core, разверните узел **Зависимости**, чтобы найти сборку, которую нужно имитировать в разделе **Сборки**, **Проекты** или **Пакеты**.
+       - Для проекта в стиле SDK, предназначенного для .NET Framework, .NET Core или .NET 5.0, разверните узел **Зависимости**, чтобы найти сборку, которую нужно имитировать в разделе **Сборки**, **Проекты** или **Пакеты**.
        ::: moniker-end
        - При работе в Visual Basic на панели инструментов **Обозревателя решений** необходимо выбрать команду **Показать все файлы**, чтобы просмотреть узел **Ссылки**.
    2. Выделите сборку, содержащую определения классов, для которых необходимо создать оболочки. Например, если требуется создать оболочку для **DateTime**, выберите **System.dll**.
@@ -269,21 +269,21 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 </Project>
 ```
 
-Эта ссылку необходимо добавить вручную в конкретные проекты в стиле пакета SDK (.NET Core и .NET Framework), так как мы перешли к неявному добавлению ссылок на сборки в тестовом проекте. При использовании этого метода необходимо убедиться, что сборки Fakes обновляются при изменении родительской сборки.
+Эту ссылку необходимо добавить вручную в конкретные проекты в стиле пакета SDK (.NET Core, .NET 5.0 и .NET Framework), так как мы перешли к неявному добавлению ссылок на сборки в тестовом проекте. При использовании этого метода необходимо убедиться, что сборки Fakes обновляются при изменении родительской сборки.
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>Запуск тестов Microsoft Fakes
 Пока в настроенном каталоге `FakesAssemblies` имеются сборки Microsoft Fakes (по умолчанию `$(ProjectDir)FakesAssemblies`), можно запустить тесты с помощью [задачи vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true).
 
 ::: moniker range=">=vs-2019"
-Для распределенного тестирования с помощью [задачи vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) для проектов .NET Core, использующих Microsoft Fakes, требуется Microsoft Visual Studio 2019 (обновление 9) предварительной версии `20201020-06` и более поздней.
+Для распределенного тестирования с помощью [задачи vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) для проектов .NET Core и .NET 5.0, использующих Microsoft Fakes, требуется Microsoft Visual Studio 2019 (обновление 9) предварительной версии `20201020-06` и более поздней.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-or-net-core-projects"></a>Переход от тестовых проектов .NET Framework, использующих Microsoft Fakes, к проектам .NET Core или .NET Framework в стиле пакета SDK
-Потребуется внести минимальные изменения в настройки .NET Framework для Microsoft Fakes, чтобы перейти на использование .NET Core. Ниже приведены требования, которые необходимо учитывать.
+## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-net-core-or-net-50-projects"></a>Переход от тестовых проектов .NET Framework, использующих Microsoft Fakes, к проектам .NET Core, .NET 5.0 или .NET Framework в стиле пакета SDK
+Потребуется внести минимальные изменения в настройки .NET Framework для Microsoft Fakes, чтобы перейти на использование .NET Core или .NET 5.0. Ниже приведены требования, которые необходимо учитывать.
 - Если вы используете шаблон пользовательского проекта, убедитесь, что он в стиле пакета SDK и создан для совместимой требуемой версии .NET Framework.
-- Некоторые типы существуют в разных сборках в .NET Framework и .NET Core (например, `System.DateTime` существует в `System`/`mscorlib` в .NET Framework, а `System.Runtime` — в .NET Core). В этих сценариях необходимо изменить подделываемую сборку.
+- Некоторые типы существуют в разных сборках в .NET Framework и .NET Core/.NET 5.0 (например, `System.DateTime` существует в `System`/`mscorlib` в .NET Framework, а `System.Runtime` — в .NET Core и .NET 5.0). В этих сценариях необходимо изменить подделываемую сборку.
 - Если имеется ссылка на сборку Fakes и тестовый проект, может появиться предупреждение сборки об отсутствии ссылки, подобное этому:
   ```
   (ResolveAssemblyReferences target) ->
@@ -299,12 +299,12 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 - Тесты Microsoft Fakes можно выполнять со всеми доступными пакетами NuGet Microsoft.TestPlatform.
 - Объем протестированного кода поддерживается для тестовых проектов с помощью Microsoft Fakes в Visual Studio Enterprise 2015 и более поздних версиях.
 
-### <a name="microsoft-fakes-in-sdk-style-net-framework-and-net-core-projects"></a>Microsoft Fakes в проектах .NET Core и .NET Framework в стиле пакета SDK
+### <a name="microsoft-fakes-in-sdk-style-net-framework-net-core-and-net-50-projects"></a>Microsoft Fakes в проектах .NET Core, .NET Framework и .NET 5.0 в стиле пакета SDK
 - Создание сборки Microsoft Fakes, представленное в Visual Studio Enterprise 2019 (обновление 6), включено по умолчанию в обновлении 8.
 - Тесты Microsoft Fakes для проектов, которые предназначены для .NET Framework, можно выполнять со всеми доступными пакетами NuGet Microsoft.TestPlatform.
-- Тесты Microsoft Fakes для проектов, которые предназначены для .NET Core, можно выполнять с пакетами NuGet Microsoft.TestPlatform с версиями [16.8.0-preview-20200921-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.8.0-preview-20200921-01) и выше.
+- Тесты Microsoft Fakes для проектов, которые предназначены для .NET Core и .NET 5.0, можно выполнять с пакетами NuGet Microsoft.TestPlatform с версиями [16.9.0-preview-20210106-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.9.0-preview-20210106-01) и выше.
 - Объем протестированного кода поддерживается для тестовых проектов, которые предназначены для .NET Framework, с помощью Microsoft Fakes в Visual Studio Enterprise версии 2015 и более поздних.
-- Поддержка объема протестированного кода для тестовых проектов, которые предназначены для .NET Core, с использованием Microsoft Fakes находится в разработке.
+- Поддержка покрытия кода для тестовых проектов, предназначенных для .NET Core и .NET 5.0, с помощью Microsoft Fakes, доступна в Visual Studio 2019 с обновлением 9 и более поздних версий.
 
 
 ## <a name="in-this-section"></a>Содержание раздела

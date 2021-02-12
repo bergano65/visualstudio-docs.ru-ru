@@ -8,19 +8,19 @@ ms.prod: visual-studio-windows
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2017
-ms.openlocfilehash: 6989de1c5b4542998d048e5eadd47f48dc7e05b1
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: 97bfe7178d3bd744d1e441f8428cd38e8241b721
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99182001"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951931"
 ---
 # <a name="tutorial-open-a-project-from-a-repo-in-visual-studio-2017"></a>Учебник. Открытие проекта из репозитория в Visual Studio 2017
 
@@ -43,7 +43,7 @@ ms.locfileid: "99182001"
 
     ![Выбор действия клонирования из раздела локальных репозиториев Git](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. В поле с текстом **_Enter the URL of a Git repo to clone_ *_ (Введите URL-адрес клонируемого репозитория Git) введите или вставьте URL-адрес нужного репозитория и нажмите клавишу _* ВВОД**. (Если появится запрос на вход в GitHub, выполните его.)
+1. В поле с текстом ***Enter the URL of a Git repo to clone** _ (Введите URL-адрес клонируемого репозитория Git) введите или вставьте URL-адрес нужного репозитория и нажмите клавишу _*ВВОД**. (Если появится запрос на вход в GitHub, выполните его.)
 
    Завершив клонирование репозитория, Visual Studio закрывает Team Explorer и открывает обозреватель решений. Появится сообщение *Click on Solutions and Folders above to view a list of Solutions* (Щелкните выше "Решения и папки", чтобы просмотреть список решений). Щелкните **Решения и папки**.
 

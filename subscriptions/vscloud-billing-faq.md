@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 10/21/2020
+ms.date: 02/04/2021
 ms.topic: conceptual
 description: Вопросы выставления счетов за подписки на облачные службы.
-ms.openlocfilehash: 0140a6250f2c04ad33fec962283e035393a03aae
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353425"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572880"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Вопросы и ответы о выставлении счетов за облачные подписки Visual Studio
 Сначала [сравните преимущества облачных подписок и цены](https://visualstudio.microsoft.com/vs/pricing/), чтобы понять преимущества каждой подписки Visual Studio, сравнить облачные и стандартные подписки Visual Studio, изучить детали преимуществ для подписчиков и многое другое.
@@ -28,6 +28,9 @@ ms.locfileid: "92353425"
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>Вопрос: Нужно ли мне приобретать другие службы Azure?
 Ответ. Нет. Вы можете покупать через Azure только облачные подписки Visual Studio, если хотите.
+
+### <a name="q-where-can-i-view-my-billing-and-usage-data"></a>Вопрос: Где можно просмотреть данные о выставлении счетов и использовании?
+Ответ.  Обратитесь к сведениям о [просмотре выставленных счетов и использовании](https://docs.microsoft.com/azure/cost-management-billing/manage/download-azure-invoice-daily-usage-date).
 
 ## <a name="enterprise-agreement-ea-customers"></a>Клиенты с соглашением Enterprise (EA)
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Вопрос: Могу ли я использовать соглашение Enterprise для приобретения облачных подписок Visual Studio?
@@ -62,7 +65,7 @@ ms.locfileid: "92353425"
 Отмена годовой облачной подписки вступает в силу с первого дня месяца, следующего за 12-месячным периодом после покупки или предыдущего продления. Например, если вы приобрели годовую облачную подписку на Visual Studio Enterprise 3 января 2018 года, она будет действовать до 1 февраля 2019 года, а затем будет автоматически продлена на следующий год. Если вы отмените подписку после этой даты и до 1 февраля 2020 года, срок ее действия истечет 1 февраля 2020 года. За отмену подписки до окончания срока действия не предусмотрено возмещение.
 
 ### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>Вопрос: Какие скидки существуют для оптовой покупки подписок на Visual Studio?
-Ответ.  Вы можете получить скидку 5 % на шестую и все последующие подписки *каждого типа* :
+Ответ.  Вы можете получить скидку 5 % на шестую и все последующие подписки *каждого типа*:
 
 * Visual Studio Professional — месячная подписка
 * Visual Studio Professional — годовая подписка
@@ -92,7 +95,7 @@ ms.locfileid: "92353425"
 Ответ.  Да, если торговый посредник участвует в программе для поставщиков облачных решений (CSP). Просто спросите у своего торгового посредника.
 
 ## <a name="related-resources"></a>Связанные ресурсы
-- [Портал администрирования подписок Visual Studio](https://manage.visualstudio.com/)
+- [Портал администрирования Подписок Visual Studio](https://manage.visualstudio.com/)
 - [Поддержка по подписке Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Приобретение облачных подписок Visual Studio для поставщиков облачных решений](vscloud-csp.md)
 

@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c53afebfd8c39e9c43f82916095d8eeef2ec8b11
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 68a4848f00153206b87dd3e5893bbaaeccf3b358
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479294"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868755"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Шаг 8. Добавление метода для проверки того, выиграл ли игрок
 Вы создали интересную игру, но требуется еще один элемент, чтобы завершить ее. Игра должна заканчиваться победой игрока, поэтому необходимо добавить метод `CheckForWinner()` для проверки, выиграл ли игрок.
@@ -45,10 +45,10 @@ ms.locfileid: "96479294"
 3. Сохраните и выполните программу. Сыграйте в игру и подберите пару всем значкам. Если вы победили, программа отображает сообщение **MessageBox** с поздравлением (как показано на следующем снимке экрана) и закрывает окно.
 
      ![Игра "Подбери пару!" с MessageBox](../ide/media/express_tut4step8.png)<br/>
-**_Игра "Подбери пару!"_* _ _с* ***MessageBox**_
+***Игра "Подбери пару!"** _ _с* ***MessageBox***
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
-- Следующий раздел руководства: _*[Шаг 9. Изучение других возможностей](../ide/step-9-try-other-features.md)**.
+- Следующий раздел руководства: **[Шаг 9. Изучение других возможностей](../ide/step-9-try-other-features.md)** .
 
 - Предыдущий раздел руководства: [Шаг 7. Отмена исчезновения пар значков](../ide/step-7-keep-pairs-visible.md).

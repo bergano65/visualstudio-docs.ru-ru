@@ -5,19 +5,19 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: eeb7b981dcaec97d52c24ea40476f0bec84e608e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 7d5e4d8fb598434bfaa2a8a699c546cdc84febb0
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598566"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006440"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании
 
@@ -152,7 +152,7 @@ analyzer = new StockAnalyzer(new StockFeed());
 1. В **Обозревателе решений** выполните следующие действия: 
     - Для более старого проекта .NET Framework (не в стиле пакета SDK) разверните узел **Ссылки** проекта модульного теста.
     ::: moniker range=">=vs-2019"
-    - Для проекта в стиле SDK, предназначенного для .NET Framework или .NET Core, разверните узел **Зависимости**, чтобы найти сборку, которую нужно имитировать в разделе **Сборки**, **Проекты** или **Пакеты**.
+    - Для проекта в стиле SDK, предназначенного для .NET Framework, .NET Core или .NET 5.0, разверните узел **Зависимости**, чтобы найти сборку, которую нужно имитировать в разделе **Сборки**, **Проекты** или **Пакеты**.
     ::: moniker-end
     - При работе в Visual Basic на панели инструментов **Обозревателя решений** необходимо выбрать команду **Показать все файлы**, чтобы просмотреть узел **Ссылки**.
 

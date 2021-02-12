@@ -9,18 +9,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 484cb82a3659e306bd4c6bd14a3133c4677160db
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: ff5e23a92409a3169add19c8810bec44fa4db9ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833342"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909364"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Учебник. Создание простого консольного приложения C# в Visual Studio
 
@@ -49,13 +49,13 @@ ms.locfileid: "97833342"
 2. В верхней строке меню последовательно выберите **Файл**  > **Создать**  > **Проект**.
    (Или нажмите **CTRL**+**SHIFT**+**N**).
 
-3. В левой панели диалогового окна **Новый проект** разверните узел **C#** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)** . Присвойте файлу имя **_Calculator_* _.
+3. В левой панели диалогового окна **Новый проект** разверните узел **C#** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)** . Присвойте файлу имя **_Calculator_**.
 
    ![Шаблон проекта "Консольное приложение (.NET Core)" в диалоговом окне "Новый проект" в интегрированной среде разработки Visual Studio](./media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>Добавление рабочей нагрузки (необязательно)
 
-Если шаблон проекта _ *Консольное приложение (.NET Core)* * отсутствует, его можно получить, добавив рабочую нагрузку **Кроссплатформенная разработка .NET Core**. Ниже описывается порядок действий.
+Если шаблон проекта **Консольное приложение (.NET Core)** отсутствует, его можно получить, добавив рабочую нагрузку **Кроссплатформенная разработка .NET Core**. Ниже описывается порядок действий.
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Вариант 1: использование диалогового окна "Новый проект"
 

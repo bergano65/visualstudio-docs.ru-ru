@@ -7,12 +7,12 @@ ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: 0808f86f8571210a9048faf2e825b483120e73ca
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 11b0788317cd0a20dd27159aa241db32e3818daf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584208"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722130"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Поддерживает ли Visual Studio для Mac систему управления версиями Team Foundation?
 
@@ -68,7 +68,7 @@ Git поддерживается в Visual Studio для Mac и является
 
 После установки TEE-CLC вы можете выполнить команду `tf eula`, чтобы просмотреть и принять лицензионное соглашение для клиента.
 
-Наконец, для проверки подлинности в вашей среде TFS или Azure DevOps вам необходимо создать личный маркер доступа на сервере. Просмотрите дополнительные сведения о [проверке подлинности с помощью личных маркеров доступа](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). При создании личного маркера доступа для использования с TFVC во время его настройки предоставьте полный доступ.
+Наконец, для проверки подлинности в вашей среде TFS или Azure DevOps вам необходимо создать личный маркер доступа на сервере. Просмотрите дополнительные сведения о [проверке подлинности с помощью личных маркеров доступа](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops&preserve-view=true). При создании личного маркера доступа для использования с TFVC во время его настройки предоставьте полный доступ.
 
 #### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Использование TEE-CLC для подключения к репозиторию
 
