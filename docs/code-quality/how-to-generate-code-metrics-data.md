@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0387542487b2c24baa129fbb0163dee0140cb413
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa0512e5d29cb1b5c5a39715e34667803b752795
+ms.sourcegitcommit: 04954be0c4373f82f79181e1a5e7812be4d3e1f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860049"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496266"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Как создавать данные метрик кода
 
@@ -279,7 +279,7 @@ Build succeeded.
 1. Клонировать репозиторий [DotNet/Roslyn-Analyzers](https://github.com/dotnet/roslyn-analyzers) .
 2. Откройте Командная строка разработчика для Visual Studio с правами администратора.
 3. В корне репозитория **Roslyn-Analyzers** выполните следующую команду: `Restore.cmd`
-4. Перейдите в каталог *срк\тулс*.
+4. Измените каталог на *срк\тулс\метрикс*.
 5. Выполните следующую команду, чтобы выполнить сборку проекта **метрик. csproj** :
 
    ```shell
@@ -310,7 +310,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 Дополнительные сведения см. [в разделе Включение создания метрик кода в устаревшем режиме](https://github.com/dotnet/roslyn-analyzers/pull/1841).
 
-### <a name="previous-versions"></a>Предыдущие версии
+### <a name="previous-versions"></a>предыдущих версий
 
 ::: moniker range=">=vs-2019"
 В Visual Studio 2015 имеется средство метрик кода командной строки, которое также называлось *Metrics.exe*. Предыдущая версия средства выполняла двоичный анализ, то есть анализ на основе сборок. Более новая версия средства *Metrics.exe* анализирует исходный код. Поскольку более новая *Metrics.exe* средство является исходным кодом, результаты метрик кода командной строки могут отличаться от результатов, создаваемых интегрированной средой разработки Visual Studio и предыдущими версиями *Metrics.exe*. Начиная с Visual Studio 2019, интегрированная среда разработки Visual Studio анализирует исходный код, подобный средству командной строки, и результаты должны быть одинаковыми.
