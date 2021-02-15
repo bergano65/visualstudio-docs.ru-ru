@@ -1,16 +1,18 @@
 ---
 title: Пошаговое руководство по расширению Visual Studio для Mac
+description: Узнайте, как создать простой пакет расширений для Visual Studio для Mac, добавляющий новую команду в меню "Правка".
+ms.custom: SEO-VS-2020
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 9274f86e8ade5b49b5db0c7f4773cf6fd57ea353
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985037"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876198"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Пошаговое руководство по расширению Visual Studio для Mac
 
@@ -22,7 +24,7 @@ ms.locfileid: "74985037"
 
    ![Снимок экрана Visual Studio для Mac](media/extending-visual-studio-mac-addin3.png)
 
-2. Установите _пакет расширения Add-in Maker_ с помощью диспетчера расширений. В меню Visual Studio выберите **Расширения...** :
+2. Установите _пакет расширения Add-in Maker_ с помощью диспетчера расширений. В меню Visual Studio выберите **Расширения...**:
 
    ![Вкладка "Диспетчер надстроек"](media/extending-visual-studio-mac-addin4.png)
 
@@ -32,7 +34,7 @@ ms.locfileid: "74985037"
 
 4. Установив Addin Maker, вы можете приступить к созданию пакета расширения. Начнем с создания решения.
 
-5. В диалоговом окне **Новое решение** выберите шаблон **Другие > Прочее > Общие > Xamarin Studio Addin > C#** , а на следующем экране назовите новое решение `DateInserter`:
+5. В диалоговом окне **Новое решение** выберите шаблон **Другие > Прочее > Общие > Xamarin Studio Addin > C#**, а на следующем экране назовите новое решение `DateInserter`:
 
    ![Создание решения](media/extending-visual-studio-mac-addin7New.png)
 
@@ -136,6 +138,6 @@ ms.locfileid: "74985037"
 
     ![Снимок экрана со вставкой даты](media/extending-visual-studio-mac-addin12.png)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание первого расширения (Visual Studio в Windows)](/visualstudio/extensibility/extensibility-hello-world)

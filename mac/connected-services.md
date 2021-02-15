@@ -1,17 +1,17 @@
 ---
 title: Подключенные службы
-description: Добавление хранилища данных Azure, проверка подлинности и push-уведомления в мобильных приложениях в среде Visual Studio для Mac
+description: Узнайте, как добавить хранилище данных Azure, настроить проверку подлинности и push-уведомления для кроссплатформенных приложений в среде Visual Studio для Mac.
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 11/06/2018
 ms.topic: how-to
-ms.openlocfilehash: 8a1287d82096677d20a498756de3d2a9f5af259b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69ad6007283b3c56a8d0e5902cc2b9bdc445f220
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938765"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847088"
 ---
 # <a name="connected-services-walkthrough"></a>Пошаговое руководство по подключенным службам
 
@@ -60,7 +60,7 @@ ms.locfileid: "85938765"
     [![Просмотр инструкций по дальнейшим действиям](media/connected-services-image008-sml.png "Просмотр инструкций по дальнейшим действиям")](media/connected-services-image008.png#lightbox)
 
 9. Если у вас нет ни одной существующей службы приложений, можно создать новые службы в Visual Studio для Mac.
-  Нажмите кнопку **Создать** в левом нижнем углу списка служб, чтобы открыть диалоговое окно**Новая служба приложений**:
+  Нажмите кнопку **Создать** в левом нижнем углу списка служб, чтобы открыть диалоговое окно **Новая служба приложений**:
 
     [![Создание новой службы приложений в Visual Studio для Mac](media/connected-services-image009-sml.png "Создание новой службы приложений в Visual Studio для Mac")](media/connected-services-image009.png#lightbox)
 

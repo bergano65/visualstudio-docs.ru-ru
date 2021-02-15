@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: f971237ecc829fcc4ab660263a1b66c701f86f62
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5155c37a89f566841fc342bbd8213f5a38eb399d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583961"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727571"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Установка Visual Studio для Mac 2019
 
@@ -49,7 +49,7 @@ ms.locfileid: "91583961"
 
 6. Появится список доступных рабочих нагрузок. Выберите нужные компоненты:
 
-    [![Выберите, какие дополнительные функции рабочей нагрузки вы хотите установить](media/install-selection.png)](media/install-selection.png#lightbox)
+    [![Снимок экрана: экран со списком компонентов, доступных для установки, в установщике Visual Studio для Mac.](media/install-selection.png)](media/install-selection.png#lightbox)
 
    Если вы не хотите устанавливать все платформы, выберите нужные с помощью приведенных ниже рекомендаций.
 
@@ -67,7 +67,7 @@ ms.locfileid: "91583961"
 7. Выбрав нужные параметры, нажмите кнопку **Установить**.
 8. Установщик будет отображать ход выполнения, по мере загрузки и установки Visual Studio для Mac и выбранных рабочих нагрузок. Вам будет предложено ввести пароль, чтобы предоставить привилегии, необходимые для установки.
 
-    [![Выберите, какие дополнительные функции рабочей нагрузки вы хотите установить](media/installation-progress.png)](media/installation-progress.png#lightbox)
+    [![Снимок экрана: экран с изображением хода установки средств разработки на .NET для Mac в установщике Visual Studio для Mac.](media/installation-progress.png)](media/installation-progress.png#lightbox)
 
 9. После установки Visual Studio для Mac предложит настроить личные параметры, выполнив вход и выбрав нужные настраиваемые сочетания клавиш.
 
