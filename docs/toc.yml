@@ -190,8 +190,8 @@
           href: ide/creating-solutions-and-projects.md
         - name: "Открытие проекта из репозитория в Visual Studio\_2017"
           href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
-        - name: "Открытие проекта из репозитория в Visual\_Studio"
-          href: get-started/tutorial-open-project-from-repo.md
+        - name: "Открытие проекта из репозитория в Visual\_Studio\_2019"
+          href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: 'Перенос, миграция и обновление проектов'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
         - name: Управление свойствами проектов и решений
@@ -482,7 +482,7 @@
                   href: ide/reference/wrap-indent-align-refactorings.md
             - name: Пошаговое руководство. Создание кода в результате использования
               href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
-        - name: технология IntelliSense
+        - name: IntelliSense
           items:
             - name: Использование IntelliSense
               href: ide/using-intellisense.md
@@ -970,7 +970,7 @@
           href: ide/filtered-solutions.md
         - name: Советы и рекомендации
           href: ide/visual-studio-performance-tips-and-tricks.md
-- name: Возможности доступа
+- name: Специальные возможности
   items:
     - name: Управление специальными возможностями
       href: ide/reference/accessibility-features-of-visual-studio.md
@@ -1104,7 +1104,7 @@
                   href: ide/reference/autorecover-environment-options-dialog-box.md
                 - name: Документы
                   href: ide/reference/documents-environment-options-dialog-box.md
-                - name: Модули
+                - name: Расширения
                   href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
                 - name: Найти и заменить
                   href: ide/reference/find-and-replace-environment-options-dialog-box.md
@@ -1166,7 +1166,7 @@
                       href: ide/reference/options-text-editor-basic-visual-basic.md
                     - name: Стиль кода
                       href: ide/code-styles-and-code-cleanup.md
-                    - name: технология IntelliSense
+                    - name: IntelliSense
                       href: ide/visual-basic-specific-intellisense.md
                 - name: C#
                   items:
@@ -1174,7 +1174,7 @@
                       href: ide/reference/options-text-editor-csharp-advanced.md
                     - name: Стиль кода > Форматирование
                       href: ide/reference/options-text-editor-csharp-formatting.md
-                    - name: технология IntelliSense
+                    - name: IntelliSense
                       href: ide/reference/options-text-editor-csharp-intellisense.md
                 - name: C/C++
                   items:
@@ -1194,7 +1194,7 @@
                       href: ide/reference/options-text-editor-fsharp-code-fixes.md
                     - name: CodeLens
                       href: ide/reference/options-text-editor-fsharp-codelens.md
-                    - name: технология IntelliSense
+                    - name: IntelliSense
                       href: ide/reference/options-text-editor-fsharp-intellisense.md
                 - name: HTML (веб-формы)
                   items:
@@ -1210,7 +1210,7 @@
                       href: ide/reference/options-text-editor-javascript-code-validation.md
                     - name: Форматирование
                       href: ide/reference/options-text-editor-javascript-formatting.md
-                    - name: технология IntelliSense
+                    - name: IntelliSense
                       href: ide/reference/options-text-editor-javascript-intellisense.md
                     - name: Выделение
                       href: ide/reference/options-text-editor-javascript-linting.md
@@ -1220,7 +1220,7 @@
                   items:
                     - name: Форматирование
                       href: ide/reference/options-text-editor-usql-formatting.md
-                    - name: технология IntelliSense
+                    - name: IntelliSense
                       href: ide/reference/options-text-editor-usql-intellisense.md
                 - name: XAML
                   items:
@@ -1409,7 +1409,7 @@
                   href: help-viewer/logical-operators-search-expressions.md
         - name: Настройка окна справки
           href: help-viewer/customize.md
-        - name: Возможности доступа
+        - name: Специальные возможности
           href: help-viewer/accessibility-features.md
         - name: Сочетания клавиш
           href: help-viewer/shortcut-keys.md
