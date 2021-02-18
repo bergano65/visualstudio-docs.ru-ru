@@ -1,20 +1,20 @@
 ---
-title: Покупка, продление или отмена подписок Visual Studio
-description: Часто задаваемые вопросы, связанные с продлением.
+title: Приобретение, продление, отмена или выставление счетов
+description: Список часто задаваемых вопросов по приобретению и отмене подписок Visual Studio, а также по выставлению счетов за них.
 ms.topic: conceptual
 ms.assetid: 3c8d8652-b971-4a5a-887f-3c6944b1decf
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/28/2021
+ms.date: 02/15/2021
 ms.faqid: Section4
-ms.openlocfilehash: 795dbe8ae02c0e8b9bd9f424c432d9d67c7388e3
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: d0b61c31427b2ceebf53b4a4816632063d1ee174
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104538"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100542968"
 ---
-# <a name="purchases-and-renewals"></a>Покупки и продления
+# <a name="purchasing-renewing-canceling-or-billing"></a>Приобретение, продление, отмена или выставление счетов
 
 [!INCLUDE [How do I purchase Visual Studio subscriptions?](includes/how-to-purchase-subscriber.md)]  
 
