@@ -4,21 +4,24 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 12/02/2020
+ms.date: 02/09/2021
 ms.topic: how-to
 description: Сведения об учетной записи разработчика Windows, входящей в вашу подписку Visual Studio.
-ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: a988dabb5849d13733c72ebb5976be489f67dd95
+ms.sourcegitcommit: 0f3606917cf5451e8c4e0b2e0c3fbb9113429645
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537725"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100089597"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Учетная запись разработчика Windows в подписках Visual Studio
 Учетная запись разработчика Windows, включенная в выбранные подписки Visual Studio, позволяет отправлять в Магазин Windows платные и бесплатные приложения Windows.
 
 ## <a name="activation-steps"></a>Процедура активации
 Чтобы использовать учетную запись разработчика Windows, нужно настроить учетную запись или войти с помощью имеющейся учетной записи.
+
+> [!IMPORTANT]
+> Для создания учетной записи разработчика Windows требуется использование учетной записи Майкрософт (MSA).  Использование учетных записей Azure Active Directory не поддерживается.  
 
 Для этого процесса рекомендуется создать использовать окно браузера в режиме конфиденциального просмотра.  Например, в Google Chrome откройте новое окно в режиме "Инкогнито".  В Internet Explorer создайте окно в режиме InPrivate.
 

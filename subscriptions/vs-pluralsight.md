@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 12/02/2020
 ms.topic: how-to
 description: Сведения об учебной подписке Pluralsight, входящей в выбранные подписки Visual Studio.
-ms.openlocfilehash: 02ed0d2417317116182800980206a1fcc7fbfc16
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: c5503c2adad075bdf6f186567fc372705f1ab55f
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537985"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100542994"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Преимущества обучения Pluralsight в подписках Visual Studio
 
@@ -95,6 +95,9 @@ ms.locfileid: "96537985"
 
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>Вопрос: Я использую подписку Visual Studio Enterprise, но не могу найти плитку Pluralsight на странице "Преимущества". В чем проблема?
 Ответ. Не все подписки Visual Studio Enterprise включают преимущество Pluralsight.  Просмотрите [таблицу прав на участие](#eligibility), чтобы проверить доступность для вашей подписки.
+
+### <a name="q-can-i-use-the-pluralsight-benefit-more-than-once"></a>Вопрос: Могу ли я использовать преимущество Pluralsight более одного раза?  
+Ответ.  Преимущество Pluralsight в некоторых подписках Visual Studio продляется после продления подписки. Например, если у вас есть годовая подписка, которую вы продлеваете каждый год, это преимущество доступно вам каждый год. Если у вас есть подписка на несколько лет, преимущество Pluralsight доступно вам в течение срока действия подписки.  Если вы продлеваете подписку на несколько лет, преимущество будет доступно снова после продления.  Чтобы узнать дату продления, перейдите по адресу <https://my.visualstudio.com/subscriptions>, щелкните элемент *Сведения о поддержке* и найдите дату, указанную в поле "Действительна до:". 
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Вопрос: У меня есть доступ к настраиваемым спискам воспроизведения или каналам обучения?
 Ответ. Да. Как подписчик Visual Studio вы имеете доступ к избранным ролям, схемам обучения и настраиваемым каналам (списки воспроизведения) в рамках преимущества Pluralsight. Материалы были специально подобраны корпорацией Майкрософт и Pluralsight для обучения в ключевых областях, представляющих интерес. Активируйте преимущество Pluralsight через портал подписки Visual Studio <https://my.visualstudio.com/benefits>, чтобы получить доступ к этим и другим материалам на главной странице Pluralsight.
