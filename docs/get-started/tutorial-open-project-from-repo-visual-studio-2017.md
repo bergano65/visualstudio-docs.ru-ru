@@ -2,7 +2,7 @@
 title: Учебник. Открытие проекта из репозитория в Visual Studio 2017
 description: Узнайте, как открывать проекты из репозитория Git или Azure DevOps с помощью Visual Studio 2017.
 ms.custom: get-started
-ms.date: 01/25/2021
+ms.date: 02/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2017
-ms.openlocfilehash: 97bfe7178d3bd744d1e441f8428cd38e8241b721
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01aca95bde7a20f746d4faece4090eac60b3849e
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951931"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100542981"
 ---
 # <a name="tutorial-open-a-project-from-a-repo-in-visual-studio-2017"></a>Учебник. Открытие проекта из репозитория в Visual Studio 2017
 
@@ -60,6 +60,9 @@ ms.locfileid: "99951931"
 Просмотрите следующую анимацию для проверки работы, выполненной в предыдущем разделе.
 
    ![Анимация открытия проекта из репозитория GitHub с помощью Visual Studio](./media/open-project-from-github.gif)
+
+> [!NOTE]
+> Сведения для Visual Studio 2019 см. на странице [Открытие проекта из репозитория в Visual Studio 2019](tutorial-open-project-from-repo-visual-studio-2019.md).
 
 ## <a name="open-a-project-from-an-azure-devops-repo-by-using-visual-studio-2017"></a>Открытие проекта из репозитория Azure DevOps с помощью Visual Studio 2017
 
@@ -108,6 +111,7 @@ ms.locfileid: "99951931"
 
 ## <a name="see-also"></a>См. также раздел
 
+- [Открытие проекта из репозитория в Visual Studio 2019](tutorial-open-project-from-repo-visual-studio-2019.md)
+- [Новый интерфейс Git в Visual Studio 2019](../ide/git-with-visual-studio.md)
 - [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/) (Azure DevOps Services. Начало работы с Azure Repos и Visual Studio)
 - [Microsoft Learn. Начало работы с Azure DevOps](/learn/modules/get-started-with-devops/)
-- [Новый интерфейс Git в Visual Studio 2019](../ide/git-with-visual-studio.md?view=vs-2019&preserve-view=true)
