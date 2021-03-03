@@ -5,9 +5,6 @@ ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - project templates, debugging
@@ -20,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcd4375b475106b0428f21057f5b44fc8bee8700
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d91d18208a2d05fc4d4b60da98e3e3f8e3c0c835
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872434"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683054"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Подготовка к отладке: Типы проектов C++
 В этом разделе описана отладка основных типов проектов, созданных с использованием шаблонов проектов [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].
@@ -40,8 +37,6 @@ ms.locfileid: "99872434"
 - [Отладка приложения Win32 на C или C++](#BKMK_To_debug_a_C_or_C___Win32_application)
 
 - [Ручная установка конфигурации отладки](#BKMK_To_manually_set_a_Debug_configuration)
-
-  [Приложения Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)
 
 ## <a name="recommended-property-settings"></a><a name="BKMK_Recommended_Property_Settings"></a> Рекомендуемые значения свойств
  Некоторые свойства должны быть установлены одинаково для всех скриптов неуправляемой отладки. В следующих таблицах приводятся рекомендованные параметры свойств. Параметры, здесь не перечисленные, могут иметь различные значения для различных типов неуправляемых проектов. Дополнительные сведения см. в статье [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
@@ -97,22 +92,8 @@ ms.locfileid: "99872434"
 
    [Содержание раздела](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-## <a name="windows-forms-applications-net"></a><a name="BKMK_Windows_Forms_Applications___NET_"></a> Приложения Windows Forms (.NET)
- Шаблон **Приложение Windows Forms (.NET)** создает приложение Windows Forms [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Дополнительные сведения см. в разделе [Практическое руководство. создать проект приложения Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
-
- Отладка приложений такого типа в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] аналогична отладке управляемых приложений Windows Forms.
-
- При создании проекта Windows Forms из шаблона проекта, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически создает требуемые параметры для отладки и выпуска. Если необходимо, эти параметры можно изменить в диалоговом окне **\<project name>Страницы свойств**. Дополнительные сведения см. в разделе [Конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md).
-
- Дополнительные сведения см. в статье [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
-
- Еще одним способом отладки приложений Windows Forms является запуск приложения вне [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и подключение к этому приложению. Дополнительные сведения см. в разделе [Подключение к выполняющейся программе или к нескольким программам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
-
- [Содержание раздела](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
-
 ## <a name="see-also"></a>См. также
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
 - [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Подключение к выполняющейся программе или к нескольким программам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md)
-- [Практическое руководство. Создание проекта приложения Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

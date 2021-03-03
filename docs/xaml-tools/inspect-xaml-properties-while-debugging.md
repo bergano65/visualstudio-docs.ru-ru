@@ -2,7 +2,7 @@
 title: Проверять свойства XAML во время отладки | Документация Майкрософт
 description: Узнайте, как использовать динамическое визуальное дерево и динамические средства обозревателя свойств во время отладки для проверки свойств XAML и получения представления элементов пользовательского интерфейса в виде дерева.
 ms.custom: SEO-VS-2020
-ms.date: 11/12/2019
+ms.date: 03/02/2021
 ms.topic: how-to
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 author: TerryGLee
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: d9033921c9e9863e5210721fb2c1244c326802d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 76edf9f1af414a67abd83cec3c2f597c6cdf8707
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881377"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683453"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Просмотр свойств XAML во время отладки
 
@@ -34,7 +34,17 @@ ms.locfileid: "99881377"
 
 ### <a name="create-the-project"></a>Создание проекта
 
-1. Создайте новое приложение c# WPF (**файл**  >  **создать**  >  **проект**, введите "C# WPF" и выберите **приложение WPF (.NET Core)** или **приложение WPF (платформа .NET Framework)**). Назовите его **TestXAML**.
+::: moniker range="vs-2019"
+
+1. Создайте новое приложение C# WPF (**файл** > **создать** > **проект**, введите "C# WPF", выберите шаблон проекта **приложения WPF** , назовите проект **тестксамл**, а затем убедитесь, что в раскрывающемся списке **Целевая платформа** отображается **.NET Core 3,1** .
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+1. Создайте новое приложение c# WPF (**файл**  >  **создать**  >  **проект**, затем введите C# WPF и выберите **приложение WPF (платформа .NET Framework)**). Назовите его **TestXAML**.
+
+::: moniker-end
 
 1. Измените файл MainWindow.xaml следующим образом.
 
